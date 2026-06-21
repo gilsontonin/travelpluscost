@@ -70,15 +70,18 @@ One platform, four verticals, added in order of ROI:
 | **Cars** | Duffel Cars | Flat fee | Same Duffel integration as flights — cheap to add |
 | **Attractions** | Viator | Affiliate (8%) | High commission, zero liability — embed as a card, redirect to book |
 
-**The signature UI = the booking card.** Every result celebrates the breakdown instead of hiding it:
+**The signature UI = the booking card.** It celebrates the *promise*, not the supplier's cost —
+showing wholesale (or a precise %, from which wholesale is derivable) would break rate parity and risk
+our supply (see [POSITIONING.md](POSITIONING.md) → Pricing disclosure):
 
 ```
-Their cost   $182
-Our fee      $18   (a flat 10% — the same for everyone)
-You pay      $200
+You pay   $200
+One flat fee — the same for everyone, every search, every day.
+We never use your data to set it.              [ Prove it ↗ ]
 ```
 
-Attractions sit *inside* the card as an affiliate upsell ("add a snorkel tour for this stay").
+The "[ Prove it ]" link is the brand: search the same hotel from any browser, device, or state and get
+the same number. Attractions sit *inside* the card as an affiliate upsell ("add a snorkel tour").
 
 ---
 
