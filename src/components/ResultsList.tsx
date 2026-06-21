@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import HotelRow from "./HotelRow";
 import MapView from "@/components/MapView";
+import FilterChip from "@/components/FilterChip";
 import type { MapMarker } from "@/components/LeafletMap";
 import { ALL_AMENITIES } from "@/lib/oahu";
 import type { CardHotel } from "@/lib/oahu";
@@ -100,12 +101,22 @@ export default function ResultsList({
       ]
     : [21.4, -157.86];
 
+  // Immediate-apply handlers for the inline chips (they share `filters` with the full sheet).
+  const { maxPrice, minRating, stars, amenities } = filters;
+  const setMaxPrice = (v: number | null) => setFilters((f) => ({ ...f, maxPrice: v }));
+  const setMinRating = (v: number | null) => setFilters((f) => ({ ...f, minRating: f.minRating === v ? null : v }));
+  const toggleStar = (s: number) =>
+    setFilters((f) => ({ ...f, stars: f.stars.includes(s) ? f.stars.filter((x) => x !== s) : [...f.stars, s] }));
+  const toggleAmenity = (a: string) =>
+    setFilters((f) => ({ ...f, amenities: f.amenities.includes(a) ? f.amenities.filter((x) => x !== a) : [...f.amenities, a] }));
+  const QUICK = ["Pool", "Free WiFi", "Parking", "Breakfast"];
+
   return (
     <div>
-      {/* sort + filter bar */}
-      <div className="flex items-center justify-between gap-2 mb-2">
+      {/* top line: sort + view + all-filters */}
+      <div className="flex items-center justify-between gap-2 mb-2.5">
         <label className="text-sm flex items-center gap-2 text-black/70">
-          Sort
+          <span className="hidden sm:inline">Sort</span>
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as SortKey)}
@@ -140,9 +151,98 @@ export default function ResultsList({
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M4 6h16M7 12h10M10 18h4" />
             </svg>
-            Filters{n ? ` (${n})` : ""}
+            All filters{n ? ` (${n})` : ""}
           </button>
         </div>
+      </div>
+
+      {/* inline quick-filter chips */}
+      <div className="flex flex-wrap items-center gap-2 mb-3">
+        <FilterChip label={maxPrice != null ? `Up to $${maxPrice}/night` : "Price"} active={maxPrice != null}>
+          <div className="w-60">
+            <p className="font-medium text-sm mb-2">Max price / night</p>
+            <input
+              type="range"
+              min={50}
+              max={1500}
+              step={50}
+              value={maxPrice ?? 1500}
+              onChange={(e) => {
+                const v = Number(e.target.value);
+                setMaxPrice(v >= 1500 ? null : v);
+              }}
+              className="w-full accent-accent"
+            />
+            <div className="flex items-center justify-between mt-1">
+              <span className="text-sm text-black/60">{maxPrice != null ? `Up to $${maxPrice}` : "Any price"}</span>
+              {maxPrice != null ? (
+                <button onClick={() => setMaxPrice(null)} className="text-sm text-accent">
+                  Reset
+                </button>
+              ) : null}
+            </div>
+          </div>
+        </FilterChip>
+
+        <FilterChip label={minRating != null ? `${minRating}+ rating` : "Guest rating"} active={minRating != null}>
+          <div className="w-52 flex flex-col gap-1.5">
+            {RATING_OPTIONS.map((o) => (
+              <button
+                key={o.v}
+                onClick={() => setMinRating(o.v)}
+                className={`text-left text-sm px-3 py-2 rounded-md border transition ${
+                  minRating === o.v ? "bg-accent-tint text-accent border-accent/40" : "border-black/10 hover:border-black/30"
+                }`}
+              >
+                {o.label}
+              </button>
+            ))}
+          </div>
+        </FilterChip>
+
+        <FilterChip
+          label={stars.length ? `${[...stars].sort((a, b) => b - a).join(", ")}-star` : "Star rating"}
+          active={stars.length > 0}
+        >
+          <div className="w-44">
+            <p className="font-medium text-sm mb-2">Star rating</p>
+            <div className="flex gap-2">
+              {STAR_OPTIONS.map((s) => (
+                <button key={s} onClick={() => toggleStar(s)} className={chip(stars.includes(s))}>
+                  {s} ★
+                </button>
+              ))}
+            </div>
+          </div>
+        </FilterChip>
+
+        <FilterChip label={amenities.length ? `Amenities (${amenities.length})` : "Amenities"} active={amenities.length > 0}>
+          <div className="w-64 max-h-72 overflow-y-auto flex flex-col gap-1">
+            {ALL_AMENITIES.map((a) => (
+              <label key={a} className="flex items-center gap-2.5 text-sm py-1.5 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={amenities.includes(a)}
+                  onChange={() => toggleAmenity(a)}
+                  className="w-4 h-4 accent-accent"
+                />
+                {a}
+              </label>
+            ))}
+          </div>
+        </FilterChip>
+
+        {QUICK.map((a) => (
+          <button key={a} onClick={() => toggleAmenity(a)} className={chip(amenities.includes(a))}>
+            {a}
+          </button>
+        ))}
+
+        {n > 0 ? (
+          <button onClick={() => setFilters(EMPTY_FILTERS)} className="text-sm text-black/50 underline ml-1">
+            Clear all
+          </button>
+        ) : null}
       </div>
 
       <p className="text-sm text-black/55 mb-3">
