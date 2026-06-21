@@ -9,6 +9,8 @@ import Reviews from "@/components/Reviews";
 import ExploreArea from "@/components/ExploreArea";
 import ExpandableText from "@/components/ExpandableText";
 import AmenitiesSection from "@/components/AmenitiesSection";
+import PopularAmenities from "@/components/PopularAmenities";
+import PropertyFaq from "@/components/PropertyFaq";
 import PoliciesInfo from "@/components/PoliciesInfo";
 import { nearbyLabel } from "@/lib/distance";
 
@@ -71,6 +73,8 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
 
       <Highlights hotel={hotel} />
 
+      <PopularAmenities facilities={hotel.facilities} />
+
       {/* description + promise */}
       <div className="mt-6 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8">
         <div>
@@ -122,6 +126,8 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
       <ExploreArea lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} />
 
       <ViatorPackages lat={hotel.lat} lng={hotel.lng} />
+
+      <PropertyFaq hotel={hotel} />
 
       <PoliciesInfo policies={hotel.policies} importantInfo={hotel.importantInfo} />
     </div>
