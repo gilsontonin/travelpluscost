@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import HotelRow from "./HotelRow";
+import MapView from "@/components/MapView";
+import type { MapMarker } from "@/components/LeafletMap";
 import { ALL_AMENITIES } from "@/lib/oahu";
 import type { CardHotel } from "@/lib/oahu";
 import type { Price } from "@/lib/rates";
@@ -42,6 +44,7 @@ export default function ResultsList({
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [sort, setSort] = useState<SortKey>("recommended");
   const [open, setOpen] = useState(false);
+  const [view, setView] = useState<"list" | "map">("list");
 
   useEffect(() => {
     let on = true;
@@ -74,6 +77,29 @@ export default function ResultsList({
   );
   const n = activeFilterCount(filters);
 
+  const mapMarkers: MapMarker[] = useMemo(
+    () =>
+      visible
+        .filter((h) => h.lat != null && h.lng != null)
+        .map((h) => {
+          const p = prices?.[h.id];
+          return {
+            id: h.id,
+            lat: h.lat as number,
+            lng: h.lng as number,
+            label: p ? `$${p.perNight}` : undefined,
+            href: `/hotel/${h.id}${cardQuery ? `?${cardQuery}` : ""}`,
+          };
+        }),
+    [visible, prices, cardQuery],
+  );
+  const mapCenter: [number, number] = mapMarkers.length
+    ? [
+        mapMarkers.reduce((s, m) => s + m.lat, 0) / mapMarkers.length,
+        mapMarkers.reduce((s, m) => s + m.lng, 0) / mapMarkers.length,
+      ]
+    : [21.4, -157.86];
+
   return (
     <div>
       {/* sort + filter bar */}
@@ -92,15 +118,31 @@ export default function ResultsList({
             ))}
           </select>
         </label>
-        <button
-          onClick={() => setOpen(true)}
-          className="text-sm border border-black/15 rounded-lg px-3 py-1.5 bg-white hover:border-black/40 flex items-center gap-1.5"
-        >
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M4 6h16M7 12h10M10 18h4" />
-          </svg>
-          Filters{n ? ` (${n})` : ""}
-        </button>
+        <div className="flex items-center gap-2">
+          <div className="flex border border-black/15 rounded-lg overflow-hidden text-sm">
+            <button
+              onClick={() => setView("list")}
+              className={`px-3 py-1.5 ${view === "list" ? "bg-accent-tint text-accent font-medium" : "bg-white text-black/60"}`}
+            >
+              List
+            </button>
+            <button
+              onClick={() => setView("map")}
+              className={`px-3 py-1.5 ${view === "map" ? "bg-accent-tint text-accent font-medium" : "bg-white text-black/60"}`}
+            >
+              Map
+            </button>
+          </div>
+          <button
+            onClick={() => setOpen(true)}
+            className="text-sm border border-black/15 rounded-lg px-3 py-1.5 bg-white hover:border-black/40 flex items-center gap-1.5"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M4 6h16M7 12h10M10 18h4" />
+            </svg>
+            Filters{n ? ` (${n})` : ""}
+          </button>
+        </div>
       </div>
 
       <p className="text-sm text-black/55 mb-3">
@@ -108,7 +150,9 @@ export default function ResultsList({
         {prices === null ? " · loading prices…" : ""}
       </p>
 
-      {visible.length === 0 ? (
+      {view === "map" ? (
+        <MapView center={mapCenter} zoom={12} height={540} markers={mapMarkers} />
+      ) : visible.length === 0 ? (
         <div className="py-16 text-center text-black/50">
           No stays match your filters.{" "}
           <button onClick={() => setFilters(EMPTY_FILTERS)} className="text-accent">

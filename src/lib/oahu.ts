@@ -30,7 +30,7 @@ export interface OahuHotel {
 export type CardHotel = Pick<
   OahuHotel,
   "id" | "name" | "city" | "address" | "image" | "stars" | "rating" | "reviewCount"
-> & { images: string[]; amenities: string[] };
+> & { images: string[]; amenities: string[]; lat: number | null; lng: number | null };
 
 const AMENITY_MATCHERS: [string, RegExp][] = [
   ["Pool", /pool/i],
@@ -63,6 +63,8 @@ export function toCard(h: OahuHotel): CardHotel {
     rating: h.rating,
     reviewCount: h.reviewCount,
     amenities: detectAmenities(h.facilities),
+    lat: h.lat,
+    lng: h.lng,
   };
 }
 
