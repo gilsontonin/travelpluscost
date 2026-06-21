@@ -67,8 +67,7 @@ export default function Header() {
               <path d="M20 6 9 17l-5-5" />
             </svg>
             <span>
-              <b className="text-black/80">Hotels at cost + one flat fee. No surveillance.</b> The same price for
-              everyone, every search.
+              <b className="text-black/80">Hotels at cost + one flat fee.</b> No surveillance pricing. Ever.
             </span>
           </p>
         </div>
