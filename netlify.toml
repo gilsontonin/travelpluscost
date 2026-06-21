@@ -1,0 +1,11 @@
+# Netlify config — Next.js 16 SSR (NOT a static export).
+# The Next runtime plugin turns dynamic routes into Netlify Functions.
+
+[build]
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
