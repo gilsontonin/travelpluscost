@@ -91,6 +91,58 @@ function matchRoom(name: string, rooms: Room[]): Room | undefined {
   }
   return bestScore >= 0.25 ? best : undefined;
 }
+// Collapse the dozens of supplier-named variants of the SAME physical room into one product
+// — e.g. "2 Queen Beds - Oceanfront Room" / "Ocean Front Harbor - 2 Queens" / "OCEAN FRONT
+// HARBOR 2 QUEEN BEDS" are one row, the way Expedia/Priceline group rate plans. LiteAPI returned
+// 200 rate plans / 59 raw names for one hotel; this keys by bed config + view + tier + access,
+// so we show ~15 real room types (cheapest plan each), not 8 near-dupes hiding the rest.
+function canonRoom(name: string): string {
+  let s = name.toLowerCase().replace(/ocean\s*front|oceanfront/g, "oceanfront");
+  s = s
+    .replace(/\bqueens\b/g, "queen")
+    .replace(/\bkings\b/g, "king")
+    .replace(/\bdoubles\b/g, "double")
+    .replace(/\bviews\b/g, "view");
+  s = ` ${s.replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim()} `;
+  const has = (w: string) => s.includes(` ${w} `);
+  const m = s.match(/ (\d+) (king|queen|double|twin)/);
+  const bed = m
+    ? `${m[1]}${m[2]}`
+    : has("king") ? "1king"
+    : has("queen") ? "1queen"
+    : has("double") ? "double"
+    : has("twin") ? "twin"
+    : has("suite") ? "suite"
+    : "room";
+  const view = has("oceanfront")
+    ? "oceanfront"
+    : s.includes("ocean") && has("view") ? "oceanview"
+    : s.includes("ocean") ? "oceanfront"
+    : has("view") ? "view"
+    : "";
+  const tier = has("suite")
+    ? "suite"
+    : has("club") ? "club"
+    : has("premier") ? "premier"
+    : has("lanai") ? "lanai"
+    : has("harbor") || has("harbour") ? "harbor"
+    : has("standard") ? "standard"
+    : "base";
+  const acc = has("accessible") ? "acc" : "";
+  return `${view}|${tier}|${bed}|${acc}`;
+}
+
+// Tidy a raw supplier room name for display (handles ALLCAPS + lowercase suppliers).
+function tidyName(name: string): string {
+  const small = new Set(["with", "and", "the", "of", "a"]);
+  return name
+    .toLowerCase()
+    .trim()
+    .split(/\s+/)
+    .map((w, i) => (i > 0 && small.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
+    .join(" ");
+}
+
 // EVERY mandatory fee collected at the property (included:false) — not just the first.
 // The probe found two on one rate (Resort + Facility Fee); grabbing one undercounts the
 // real out-the-door price, which is the misleading-pricing trap we exist to avoid.
@@ -218,7 +270,7 @@ export async function getRooms(
   ci: string,
   co: string,
   adults: number,
-  limit = 8,
+  limit = 40,
 ): Promise<{ offers: RoomOffer[]; nights: number }> {
   const n = nightsBetween(ci, co);
   const key = `rooms|${id}|${ci}|${co}|${adults}`;
@@ -238,17 +290,17 @@ export async function getRooms(
     for (const r of rt.rates ?? []) {
       const sp = r.retailRate?.suggestedSellingPrice?.[0];
       if (!rt.offerId || !sp || typeof sp.amount !== "number") continue;
-      const roomName = r.name ?? "Room";
-      const groupKey = roomName.toLowerCase().trim();
+      const rawName = r.name ?? "Room";
+      const groupKey = canonRoom(rawName);
       const existing = byRoom.get(groupKey);
       if (existing && existing.price.amount <= sp.amount) continue;
 
-      const cr = matchRoom(roomName, rooms);
+      const cr = matchRoom(rawName, rooms);
       const fees = propertyFeesOf(r);
       const feesTotal = fees.reduce((s, f) => s + f.amount, 0);
       byRoom.set(groupKey, {
         offerId: rt.offerId,
-        roomName,
+        roomName: tidyName(rawName),
         boardName: r.boardName,
         refundable: r.cancellationPolicies?.refundableTag === "RFN",
         freeCancelBefore: freeCancelBefore(r),
