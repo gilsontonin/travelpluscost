@@ -25,13 +25,16 @@ export default async function BookPage({
   const image = hotel?.images[0]?.url;
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
-      <Link href={hotelId ? `/hotel/${hotelId}?checkin=${checkin}&checkout=${checkout}&adults=${adults}` : "/"} className="text-sm text-black/50 hover:text-black">
+    <div className="mx-auto max-w-5xl px-4 py-8">
+      <Link
+        href={hotelId ? `/hotel/${hotelId}?checkin=${checkin}&checkout=${checkout}&adults=${adults}` : "/"}
+        className="text-sm text-black/50 hover:text-black"
+      >
         ← Back
       </Link>
-      <h1 className="text-2xl font-semibold mt-3 mb-6">Confirm your booking</h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6">
+      <div className="mt-4 grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6">
+        {/* left: guest + payment */}
         <BookingForm
           hotelId={hotelId}
           room={room}
@@ -43,26 +46,36 @@ export default async function BookPage({
           adults={adults}
         />
 
-        <aside className="bg-white border border-black/5 rounded-2xl p-5 h-fit">
+        {/* right: price details */}
+        <aside className="bg-white border border-black/5 rounded-2xl p-5 h-fit lg:sticky lg:top-24">
           {image ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={image} alt={hotel?.name ?? ""} className="w-full h-36 object-cover rounded-xl mb-3" />
           ) : null}
           <p className="font-semibold">{hotel?.name ?? "Your stay"}</p>
-          <p className="text-sm text-black/50">{[hotel?.address, hotel?.city].filter(Boolean).join(", ")}</p>
+          <p className="text-sm text-black/50">{room}</p>
+          <p className="text-sm text-black/50 mt-1">
+            {checkin} → {checkout} · {adults} adult{Number(adults) > 1 ? "s" : ""}
+          </p>
+          <p className="text-sm text-[#1a7a4c] mt-1">Fully refundable</p>
 
-          <div className="mt-4 text-sm space-y-1.5 border-t border-black/5 pt-4">
-            <Row label="Room" value={room} />
-            <Row label="Dates" value={`${checkin} → ${checkout}`} />
-            <Row label="Guests" value={`${adults} adult${Number(adults) > 1 ? "s" : ""}`} />
-            <Row label={`${money(perNight, currency)} × ${nights} night${nights > 1 ? "s" : ""}`} value={money(total, currency)} />
+          <div className="mt-4 border-t border-black/5 pt-4 text-sm space-y-1.5">
+            <h3 className="font-semibold mb-1">Price details</h3>
+            <Row label={`${money(perNight, currency)} × ${nights} night${nights > 1 ? "s" : ""}`} value={money(perNight * nights, currency)} />
+            <Row label="Taxes & fees" value="Included" />
           </div>
-          <div className="mt-3 border-t border-black/5 pt-3 flex justify-between font-semibold">
-            <span>Total</span>
+          <div className="mt-3 border-t border-black/5 pt-3 flex justify-between font-semibold text-base">
+            <span>Total ({currency})</span>
             <span>{money(total, currency)}</span>
           </div>
-          <p className="mt-3 text-[11px] text-accent/80">
-            One flat fee, included — the same price for everyone. We never use your data to set it.
+          <div className="mt-1 flex justify-between text-sm text-black/60">
+            <span>Pay today</span>
+            <span>{money(total, currency)}</span>
+          </div>
+
+          <p className="mt-4 rounded-xl bg-accent-tint/60 p-3 text-xs text-black/70">
+            <span className="font-medium text-accent">One honest price.</span> One flat fee, included — the
+            same for everyone, never based on your data. No hidden markup, no fake discounts.
           </p>
         </aside>
       </div>
