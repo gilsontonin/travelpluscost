@@ -1,4 +1,5 @@
 import MapView from "@/components/MapView";
+import { nearbyList, fmtMiles } from "@/lib/distance";
 
 export default function ExploreArea({
   lat,
@@ -12,6 +13,7 @@ export default function ExploreArea({
   city?: string;
 }) {
   if (lat == null || lng == null) return null;
+  const nearby = nearbyList(lat, lng, 5);
   return (
     <section className="mt-10">
       <h2 className="text-xl font-semibold mb-3">Explore the area</h2>
@@ -25,6 +27,27 @@ export default function ExploreArea({
       >
         Open in Google Maps ↗
       </a>
+
+      {nearby.length ? (
+        <div className="mt-5">
+          <h3 className="font-medium text-sm mb-2">What&apos;s nearby</h3>
+          <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-2 max-w-2xl">
+            {nearby.map((n) => (
+              <li key={n.name} className="flex items-center justify-between gap-3 text-sm border-b border-black/[0.06] pb-2">
+                <span className="text-black/75 flex items-center gap-2">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-black/35 shrink-0">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  {n.name}
+                </span>
+                <span className="text-black/55 tabular-nums shrink-0">{fmtMiles(n.miles)}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 text-xs text-black/40">Straight-line distances.</p>
+        </div>
+      ) : null}
     </section>
   );
 }

@@ -10,6 +10,7 @@ import ExploreArea from "@/components/ExploreArea";
 import ExpandableText from "@/components/ExpandableText";
 import AmenitiesSection from "@/components/AmenitiesSection";
 import PoliciesInfo from "@/components/PoliciesInfo";
+import { nearbyLabel } from "@/lib/distance";
 
 // Pre-render every ingested Oahu hotel as a static page (instant).
 export function generateStaticParams() {
@@ -49,6 +50,9 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
             <circle cx="12" cy="10" r="3" />
           </svg>
           {[hotel.address, hotel.city].filter(Boolean).join(", ")}
+          {nearbyLabel(hotel.lat, hotel.lng) ? (
+            <span className="text-black/45">· {nearbyLabel(hotel.lat, hotel.lng)}</span>
+          ) : null}
         </p>
         <div className="flex flex-wrap items-center gap-2 mt-2 text-sm">
           {hotel.rating ? (

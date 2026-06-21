@@ -59,8 +59,18 @@ export default function HotelRow({
           {hotel.name}
         </h3>
 
-        <p className="text-[0.8rem] text-black/55 line-clamp-1">
-          {[hotel.address, hotel.city].filter(Boolean).join(", ")}
+        <p className="text-[0.8rem] text-black/60 line-clamp-1">
+          {hotel.nearby ? (
+            <span className="inline-flex items-center gap-1">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 text-black/40">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              {hotel.nearby}
+            </span>
+          ) : (
+            [hotel.address, hotel.city].filter(Boolean).join(", ")
+          )}
         </p>
 
         {amenities.length ? (

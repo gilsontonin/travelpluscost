@@ -1,6 +1,7 @@
 // Local hotel CONTENT store (ingested from LiteAPI -> content/oahu.json).
 // Served instantly (no live API call for content). Scales: ingest more -> bigger JSON / a DB.
 import oahuData from "../../content/oahu.json";
+import { nearbyLabel } from "./distance";
 
 export interface Room {
   name: string;
@@ -51,7 +52,7 @@ export interface OahuHotel {
 export type CardHotel = Pick<
   OahuHotel,
   "id" | "name" | "city" | "address" | "image" | "stars" | "rating" | "reviewCount"
-> & { images: string[]; amenities: string[]; lat: number | null; lng: number | null };
+> & { images: string[]; amenities: string[]; lat: number | null; lng: number | null; nearby: string | null };
 
 // Ordered by "card-worthiness" — detectAmenities returns matches in this order,
 // so the first few shown on a result card are the ones guests actually filter on.
@@ -98,6 +99,7 @@ export function toCard(h: OahuHotel): CardHotel {
     amenities: detectAmenities(h.facilities),
     lat: h.lat,
     lng: h.lng,
+    nearby: nearbyLabel(h.lat, h.lng),
   };
 }
 
