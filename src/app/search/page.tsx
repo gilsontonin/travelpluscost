@@ -41,16 +41,6 @@ export default async function SearchPage({
             One price for everyone — never based on your data.
           </p>
           <ResultsList hotels={hotels} checkin={checkin} checkout={checkout} adults={adults} />
-          <div className="mt-8 flex items-center justify-center gap-1 text-sm">
-            {["1", "2", "3", "…", "8", "9", "10"].map((p, i) => (
-              <button
-                key={i}
-                className={`w-9 h-9 rounded-md ${p === "1" ? "bg-accent text-white" : "hover:bg-black/5 text-black/70"}`}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
         </div>
       )}
     </div>

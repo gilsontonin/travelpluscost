@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import HotelRow from "./HotelRow";
 import MapResults from "@/components/MapResults";
 import FilterChip from "@/components/FilterChip";
@@ -76,6 +76,25 @@ export default function ResultsList({
     [hotels, prices, filters, sort],
   );
   const n = activeFilterCount(filters);
+
+  // Paginate the list so we don't stack all results at once.
+  const PER_PAGE = 18;
+  const [page, setPage] = useState(1);
+  // reset to page 1 whenever the filtered/sorted set changes (render-time = lint-safe)
+  const sig = `${JSON.stringify(filters)}|${sort}`;
+  const [prevSig, setPrevSig] = useState(sig);
+  if (sig !== prevSig) {
+    setPrevSig(sig);
+    setPage(1);
+  }
+  const pageCount = Math.max(1, Math.ceil(visible.length / PER_PAGE));
+  const safePage = Math.min(page, pageCount);
+  const paged = visible.slice((safePage - 1) * PER_PAGE, safePage * PER_PAGE);
+  const listTop = useRef<HTMLDivElement>(null);
+  const goPage = (p: number) => {
+    setPage(p);
+    listTop.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   // Immediate-apply handlers for the inline chips (they share `filters` with the full sheet).
   const { maxPrice, minRating, stars, amenities, kind } = filters;
@@ -223,7 +242,10 @@ export default function ResultsList({
       {/* count + sort + view */}
       <div className="flex items-center justify-between gap-2 mt-3 mb-3">
         <p className="text-sm text-black/55">
-          {visible.length} stays{prices === null ? " · loading prices…" : ""}
+          {visible.length > PER_PAGE
+            ? `${(safePage - 1) * PER_PAGE + 1}–${Math.min(safePage * PER_PAGE, visible.length)} of ${visible.length} stays`
+            : `${visible.length} stays`}
+          {prices === null ? " · loading prices…" : ""}
         </p>
         <div className="flex items-center gap-2">
           <select
@@ -264,11 +286,14 @@ export default function ResultsList({
           </button>
         </div>
       ) : (
-        <div className="flex flex-col gap-3 sm:gap-4">
-          {visible.map((h) => (
-            <HotelRow key={h.id} hotel={h} query={cardQuery} price={prices?.[h.id] ?? null} loading={prices === null} />
-          ))}
-        </div>
+        <>
+          <div ref={listTop} className="scroll-mt-4 flex flex-col gap-3 sm:gap-4">
+            {paged.map((h) => (
+              <HotelRow key={h.id} hotel={h} query={cardQuery} price={prices?.[h.id] ?? null} loading={prices === null} />
+            ))}
+          </div>
+          {pageCount > 1 ? <Pagination page={safePage} pageCount={pageCount} onGo={goPage} /> : null}
+        </>
       )}
 
       {open ? (
@@ -284,6 +309,49 @@ export default function ResultsList({
         />
       ) : null}
     </div>
+  );
+}
+
+function Pagination({ page, pageCount, onGo }: { page: number; pageCount: number; onGo: (p: number) => void }) {
+  // windowed page numbers with ellipsis
+  const nums: (number | "…")[] = [];
+  const push = (p: number) => nums.push(p);
+  if (pageCount <= 7) {
+    for (let i = 1; i <= pageCount; i++) push(i);
+  } else {
+    push(1);
+    if (page > 3) nums.push("…");
+    for (let i = Math.max(2, page - 1); i <= Math.min(pageCount - 1, page + 1); i++) push(i);
+    if (page < pageCount - 2) nums.push("…");
+    push(pageCount);
+  }
+
+  const arrow = "w-9 h-9 rounded-md grid place-items-center text-black/70 hover:bg-black/5 disabled:opacity-30 disabled:hover:bg-transparent";
+  return (
+    <nav className="mt-8 flex items-center justify-center gap-1 text-sm" aria-label="Pagination">
+      <button onClick={() => onGo(page - 1)} disabled={page <= 1} className={arrow} aria-label="Previous page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m15 18-6-6 6-6" /></svg>
+      </button>
+      {nums.map((p, i) =>
+        p === "…" ? (
+          <span key={`e${i}`} className="w-9 h-9 grid place-items-center text-black/40">
+            …
+          </span>
+        ) : (
+          <button
+            key={p}
+            onClick={() => onGo(p)}
+            aria-current={p === page ? "page" : undefined}
+            className={`w-9 h-9 rounded-md ${p === page ? "bg-accent text-white font-medium" : "text-black/70 hover:bg-black/5"}`}
+          >
+            {p}
+          </button>
+        ),
+      )}
+      <button onClick={() => onGo(page + 1)} disabled={page >= pageCount} className={arrow} aria-label="Next page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m9 18 6-6-6-6" /></svg>
+      </button>
+    </nav>
   );
 }
 
