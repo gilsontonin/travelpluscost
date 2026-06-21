@@ -73,7 +73,8 @@ interface RawDetail {
   name?: string;
   hotelDescription?: string;
   hotelImages?: { url?: string; urlHd?: string; caption?: string }[];
-  facilities?: string[];
+  facilities?: (string | { facilityId?: number; name?: string })[];
+  hotelFacilities?: (string | { name?: string })[];
   starRating?: number;
   stars?: number;
   rating?: number;
@@ -101,6 +102,15 @@ function stripHtml(html?: string): string | undefined {
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+// LiteAPI returns facilities as either strings OR { facilityId, name } objects → normalize to strings.
+type RawFacility = string | { name?: string; facilityId?: number };
+function normFacilities(raw?: RawFacility[]): string[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .map((f) => (typeof f === "string" ? f : f?.name ?? ""))
+    .filter((s): s is string => Boolean(s));
 }
 
 function defaultDates(checkin?: string, checkout?: string) {
@@ -194,7 +204,7 @@ export async function getHotel(id: string): Promise<HotelDetail | null> {
     images: (d.hotelImages ?? [])
       .map((im) => ({ url: im.urlHd || im.url || "", caption: im.caption }))
       .filter((im) => im.url),
-    facilities: d.facilities ?? [],
+    facilities: normFacilities(d.hotelFacilities ?? d.facilities),
     stars: d.starRating ?? d.stars,
     rating: d.rating,
     reviewCount: d.reviewCount,
