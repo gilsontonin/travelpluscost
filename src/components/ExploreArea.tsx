@@ -1,19 +1,21 @@
 import MapView from "@/components/MapView";
-import { nearbyList, fmtMiles } from "@/lib/distance";
+import { nearbyList, fmtMiles, type Landmark } from "@/lib/distance";
 
 export default function ExploreArea({
   lat,
   lng,
   address,
   city,
+  landmarks = [],
 }: {
   lat: number | null;
   lng: number | null;
   address?: string;
   city?: string;
+  landmarks?: Landmark[];
 }) {
   if (lat == null || lng == null) return null;
-  const nearby = nearbyList(lat, lng, 5);
+  const nearby = nearbyList(lat, lng, landmarks, 5);
   return (
     <section className="mt-10">
       <h2 className="text-xl font-semibold mb-3">Explore the area</h2>

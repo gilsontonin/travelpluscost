@@ -56,6 +56,17 @@ Gates before every commit: `npm run typecheck && npm run lint && npm run build` 
    ("$X off", "1 left at this price") — those violate POSITIONING.md.
 3. **Only show data we actually have** (real LiteAPI fields). No faked walk-times, ratings, or urgency.
 
+## Adding a new market (region) — plug-and-play
+The app is region-generalized. To add a market (e.g. Maui):
+1. Add a region to `REGIONS` in `scripts/ingest.mjs` (`island`, `countryCode`, `cities`), then
+   `node scripts/ingest.mjs <slug>` → writes `content/<slug>.json`.
+2. Add a `Region` entry in `src/lib/regions.ts` (slug, name = the `island` value, terms, center, anchor,
+   landmarks) and import the JSON into `DATASETS` in `src/lib/hotels.ts`.
+That's it — search, map, rails, distances, FAQ all read from the region registry; no other code changes.
+(`src/lib/oahu.ts` is a back-compat shim re-exporting `hotels.ts`.) At thousands of hotels, swap the flat
+JSON store for Postgres + Typesense — see `docs/ARCHITECTURE.md`.
+
 ## Current state (one line)
-Hotels search + property pages + a safe demo booking flow are LIVE on real LiteAPI data, styled as the
-Propel layout in Airbnb coral. Oahu is the featured city. **Full details + next steps: `docs/HANDOFF.md`.**
+Hotels search + property pages + map + a safe demo booking flow are LIVE on real LiteAPI data (Airbnb-coral
+Expedia-style UI). Oahu is the only ingested market, but the app is region-generalized (see "Adding a new
+market") so the next location is just an ingest run + a registry entry. **Details: `docs/HANDOFF.md`.**

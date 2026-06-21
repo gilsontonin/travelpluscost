@@ -1,11 +1,8 @@
 // Pure filter + sort logic for search results (testable, no React).
-import type { CardHotel } from "./oahu";
+import type { CardHotel } from "./hotels";
 import type { Price } from "./rates";
-import { haversineMiles, OAHU_LANDMARKS } from "./distance";
-
-const WAIKIKI = OAHU_LANDMARKS.find((l) => l.name === "Waikiki Beach")!;
-const milesToWaikiki = (h: CardHotel) =>
-  h.lat != null && h.lng != null ? haversineMiles(h.lat, h.lng, WAIKIKI.lat, WAIKIKI.lng) : Number.POSITIVE_INFINITY;
+import { haversineMiles } from "./distance";
+import { getRegion, anchorOf } from "./regions";
 
 export interface Filters {
   maxPrice: number | null; // per-night ceiling
@@ -24,7 +21,7 @@ export const SORT_LABELS: Record<SortKey, string> = {
   price_asc: "Price: low to high",
   price_desc: "Price: high to low",
   rating: "Guest rating",
-  distance: "Distance from Waikiki Beach",
+  distance: "Distance",
 };
 
 export function activeFilterCount(f: Filters): number {
@@ -66,7 +63,16 @@ export function applySort(
   if (sort === "price_asc") arr.sort((a, b) => perNight(a) - perNight(b));
   else if (sort === "price_desc") arr.sort((a, b) => perNight(b) - perNight(a));
   else if (sort === "rating") arr.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
-  else if (sort === "distance") arr.sort((a, b) => milesToWaikiki(a) - milesToWaikiki(b));
+  else if (sort === "distance") {
+    // distance from the result set's region anchor (e.g. Waikiki Beach for Oahu)
+    const region = arr[0] ? getRegion(arr[0].region) : undefined;
+    const anchor = region ? anchorOf(region) : undefined;
+    const dist = (h: CardHotel) =>
+      anchor && h.lat != null && h.lng != null
+        ? haversineMiles(h.lat, h.lng, anchor.lat, anchor.lng)
+        : Number.POSITIVE_INFINITY;
+    arr.sort((a, b) => dist(a) - dist(b));
+  }
   // "recommended" keeps the ingested order
   return arr;
 }

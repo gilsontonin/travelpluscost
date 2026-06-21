@@ -1,6 +1,7 @@
 import type { OahuHotel } from "@/lib/oahu";
 import { detectAmenities } from "@/lib/oahu";
-import { OAHU_LANDMARKS, haversineMiles, fmtMiles } from "@/lib/distance";
+import { regionForIsland } from "@/lib/regions";
+import { haversineMiles, fmtMiles } from "@/lib/distance";
 import { reviewLabel } from "@/lib/format";
 
 type QA = { q: string; a: string };
@@ -36,14 +37,16 @@ function buildFaqs(h: OahuHotel): QA[] {
   }
 
   if (h.lat != null && h.lng != null) {
-    const air = OAHU_LANDMARKS.find((l) => l.name.includes("HNL"));
+    const landmarks = regionForIsland(h.island).landmarks;
+    const air = landmarks.find((l) => l.airport);
     if (air) {
       faqs.push({
-        q: `How far is ${h.name} from Honolulu airport (HNL)?`,
-        a: `It's about ${fmtMiles(haversineMiles(h.lat, h.lng, air.lat, air.lng))} (straight-line) from Daniel K. Inouye International Airport (HNL).`,
+        q: `How far is ${h.name} from ${air.name}?`,
+        a: `It's about ${fmtMiles(haversineMiles(h.lat, h.lng, air.lat, air.lng))} (straight-line) from ${air.name}.`,
       });
     }
-    const beach = OAHU_LANDMARKS.filter((l) => l.name.includes("Beach"))
+    const beach = landmarks
+      .filter((l) => l.name.includes("Beach"))
       .map((l) => ({ name: l.name, miles: haversineMiles(h.lat as number, h.lng as number, l.lat, l.lng) }))
       .sort((a, b) => a.miles - b.miles)[0];
     if (beach) {

@@ -1,9 +1,33 @@
-// Ingest Oahu hotel CONTENT from LiteAPI -> content/oahu.json
+// Generic hotel CONTENT ingest from LiteAPI -> content/<region>.json
 // Content (names, photos, descriptions, facilities) rarely changes, so we pull it once and
 // serve it locally (instant, like static). Only live RATES are fetched at request time.
-// Run: node scripts/ingest-oahu.mjs   (needs LITEAPI_KEY in env)
-// Scales to all-US/world later: add cities/regions to CITIES (or paginate offsets).
+//
+// Add a market: add an entry to REGIONS below, then run `node scripts/ingest.mjs <slug>`,
+// then register the same region in src/lib/regions.ts + add it to DATASETS in src/lib/hotels.ts.
+// Run: node scripts/ingest.mjs oahu   (needs LITEAPI_KEY in env)
 import { writeFileSync, mkdirSync } from "node:fs";
+
+// region slug -> { island (must match Region.name in regions.ts), countryCode, cities }
+const REGIONS = {
+  oahu: {
+    island: "Oahu",
+    countryCode: "US",
+    cities: [
+      { city: "Honolulu", limit: 50 },
+      { city: "Kapolei", limit: 20 },
+      { city: "Kailua", limit: 12 },
+    ],
+  },
+  // maui: { island: "Maui", countryCode: "US", cities: [{ city: "Lahaina", limit: 30 }, { city: "Kihei", limit: 30 }] },
+};
+
+const SLUG = (process.argv[2] || "oahu").toLowerCase();
+const REGION = REGIONS[SLUG];
+if (!REGION) {
+  console.error(`Unknown region "${SLUG}". Known: ${Object.keys(REGIONS).join(", ")}`);
+  process.exit(1);
+}
+const CITIES = REGION.cities;
 
 const BASE = process.env.LITEAPI_BASE_URL || "https://api.liteapi.travel/v3.0";
 const KEY = process.env.LITEAPI_KEY;
@@ -17,13 +41,6 @@ const j = async (u, o) => {
   if (!r.ok) throw new Error(`${u} -> ${r.status}`);
   return r.json();
 };
-
-// Oahu = several cities. Add more here (or other islands/states) to scale.
-const CITIES = [
-  { city: "Honolulu", limit: 50 },
-  { city: "Kapolei", limit: 20 },
-  { city: "Kailua", limit: 12 },
-];
 
 function stripHtml(html) {
   if (!html) return "";
@@ -120,7 +137,7 @@ const main = async () => {
   const list = [];
   for (const c of CITIES) {
     const res = await j(
-      `${BASE}/data/hotels?countryCode=US&cityName=${encodeURIComponent(c.city)}&limit=${c.limit}`,
+      `${BASE}/data/hotels?countryCode=${REGION.countryCode}&cityName=${encodeURIComponent(c.city)}&limit=${c.limit}`,
       { headers: h },
     );
     const arr = res?.data ?? [];
@@ -141,7 +158,7 @@ const main = async () => {
     return {
       id: d.id ?? x.id,
       name: d.name ?? x.name,
-      island: "Oahu",
+      island: REGION.island,
       city: d.city ?? x.city ?? "",
       address: d.address ?? x.address ?? "",
       stars: d.starRating ?? d.stars ?? x.stars ?? null,
@@ -179,8 +196,8 @@ const main = async () => {
 
   const hotels = details.filter(Boolean).filter((x) => x.image && x.name);
   mkdirSync("content", { recursive: true });
-  writeFileSync("content/oahu.json", JSON.stringify(hotels, null, 2));
-  console.log(`✓ wrote content/oahu.json with ${hotels.length} hotels`);
+  writeFileSync(`content/${SLUG}.json`, JSON.stringify(hotels, null, 2));
+  console.log(`✓ wrote content/${SLUG}.json with ${hotels.length} hotels`);
 };
 
 main().catch((e) => {

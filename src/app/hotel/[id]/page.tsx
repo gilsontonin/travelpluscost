@@ -16,6 +16,7 @@ import PoliciesInfo from "@/components/PoliciesInfo";
 import SimilarHotels from "@/components/SimilarHotels";
 import TrackView from "@/components/TrackView";
 import { nearbyLabel } from "@/lib/distance";
+import { regionForIsland } from "@/lib/regions";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelpluscost.com";
 
@@ -28,6 +29,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
   const { id } = await params;
   const hotel = getOahuHotel(id);
   if (!hotel) notFound();
+  const landmarks = regionForIsland(hotel.island).landmarks;
 
   return (
     <div className="mx-auto max-w-6xl px-4 pt-3 pb-24 sm:py-6 lg:pb-6">
@@ -92,8 +94,8 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
             <circle cx="12" cy="10" r="3" />
           </svg>
           {[hotel.address, hotel.city].filter(Boolean).join(", ")}
-          {nearbyLabel(hotel.lat, hotel.lng) ? (
-            <span className="text-black/45">· {nearbyLabel(hotel.lat, hotel.lng)}</span>
+          {nearbyLabel(hotel.lat, hotel.lng, landmarks) ? (
+            <span className="text-black/45">· {nearbyLabel(hotel.lat, hotel.lng, landmarks)}</span>
           ) : null}
         </p>
         <div className="flex flex-wrap items-center gap-2 mt-2 text-sm">
@@ -163,7 +165,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
       </Suspense>
 
       <Reviews hotel={hotel} />
-      <ExploreArea lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} />
+      <ExploreArea lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} landmarks={landmarks} />
 
       <SimilarHotels id={hotel.id} />
 

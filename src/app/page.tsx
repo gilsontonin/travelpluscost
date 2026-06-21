@@ -1,29 +1,32 @@
 import SearchPanel from "@/components/SearchPanel";
 import HotelRail from "@/components/HotelRail";
 import RecentlyViewed from "@/components/RecentlyViewed";
-import { getAllOahu, toCard, toRail } from "@/lib/oahu";
-import { haversineMiles, OAHU_LANDMARKS } from "@/lib/distance";
+import { getAllHotels, toCard, toRail } from "@/lib/hotels";
+import { haversineMiles } from "@/lib/distance";
+import { PRIMARY_REGION, anchorOf } from "@/lib/regions";
 
 const search = (q: string) => `/search?destination=${encodeURIComponent(q)}&adults=2`;
 
 export default function Home() {
-  const cards = getAllOahu().map(toCard);
+  const cards = getAllHotels().map(toCard);
   const topRated = [...cards]
     .filter((c) => c.rating != null)
     .sort((a, b) => (b.rating as number) - (a.rating as number))
     .slice(0, 12);
   const beachfront = cards.filter((c) => c.amenities.includes("Beachfront")).slice(0, 12);
   const rentals = cards.filter((c) => c.category === "rental").slice(0, 12);
-  const wk = OAHU_LANDMARKS.find((l) => l.name === "Waikiki Beach")!;
-  const nearWaikiki = [...cards]
-    .filter((c) => c.lat != null && c.lng != null)
-    .sort(
-      (a, b) =>
-        haversineMiles(a.lat as number, a.lng as number, wk.lat, wk.lng) -
-        haversineMiles(b.lat as number, b.lng as number, wk.lat, wk.lng),
-    )
-    .slice(0, 12);
-  const railAll = getAllOahu().map(toRail);
+  const anchor = anchorOf(PRIMARY_REGION);
+  const nearAnchor = anchor
+    ? [...cards]
+        .filter((c) => c.lat != null && c.lng != null)
+        .sort(
+          (a, b) =>
+            haversineMiles(a.lat as number, a.lng as number, anchor.lat, anchor.lng) -
+            haversineMiles(b.lat as number, b.lng as number, anchor.lat, anchor.lng),
+        )
+        .slice(0, 12)
+    : [];
+  const railAll = getAllHotels().map(toRail);
 
   return (
     <div className="mx-auto max-w-5xl px-4 pt-8 pb-16">
@@ -57,10 +60,12 @@ export default function Home() {
       </div>
 
       <RecentlyViewed all={railAll} />
-      <HotelRail title="Top-rated on Oahu" subtitle="Guest-favorite stays" hotels={topRated} seeAllHref={search("Oahu")} />
-      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} seeAllHref={search("Oahu")} />
-      <HotelRail title="Near Waikiki Beach" hotels={nearWaikiki} seeAllHref={search("Waikiki")} />
-      <HotelRail title="Vacation rentals" subtitle="Condos, apartments & homes" hotels={rentals} seeAllHref={search("Oahu")} />
+      <HotelRail title={`Top-rated on ${PRIMARY_REGION.name}`} subtitle="Guest-favorite stays" hotels={topRated} seeAllHref={search(PRIMARY_REGION.name)} />
+      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} seeAllHref={search(PRIMARY_REGION.name)} />
+      {anchor ? (
+        <HotelRail title={`Near ${anchor.name}`} hotels={nearAnchor} seeAllHref={search(PRIMARY_REGION.name)} />
+      ) : null}
+      <HotelRail title="Vacation rentals" subtitle="Condos, apartments & homes" hotels={rentals} seeAllHref={search(PRIMARY_REGION.name)} />
     </div>
   );
 }
