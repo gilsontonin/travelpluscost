@@ -251,33 +251,17 @@ export default function ResultsList({
         <p className="text-sm text-black/55">
           {visible.length} stays{prices === null ? " · loading prices…" : ""}
         </p>
-        <div className="flex items-center gap-2">
-          <select
-            value={sort}
-            onChange={(e) => setSort(e.target.value as SortKey)}
-            className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
-          >
-            {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
-              <option key={k} value={k}>
-                {SORT_LABELS[k]}
-              </option>
-            ))}
-          </select>
-          <div className="flex border border-black/15 rounded-lg overflow-hidden text-sm">
-            <button
-              onClick={() => setView("list")}
-              className={`px-3 py-1.5 ${view === "list" ? "bg-accent-tint text-accent font-medium" : "bg-white text-black/60"}`}
-            >
-              List
-            </button>
-            <button
-              onClick={() => setView("map")}
-              className={`px-3 py-1.5 ${view === "map" ? "bg-accent-tint text-accent font-medium" : "bg-white text-black/60"}`}
-            >
-              Map
-            </button>
-          </div>
-        </div>
+        <select
+          value={sort}
+          onChange={(e) => setSort(e.target.value as SortKey)}
+          className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
+        >
+          {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
+            <option key={k} value={k}>
+              {SORT_LABELS[k]}
+            </option>
+          ))}
+        </select>
       </div>
 
       {view === "map" ? (
@@ -305,6 +289,22 @@ export default function ResultsList({
           )}
         </>
       )}
+
+      {/* floating Map button (Expedia puts it right in the results stream) */}
+      {view === "list" && visible.length > 0 ? (
+        <button
+          onClick={() => setView("map")}
+          aria-label="View results on map"
+          className="fixed left-1/2 -translate-x-1/2 z-40 bottom-[calc(env(safe-area-inset-bottom,0px)+1.5rem)] inline-flex items-center gap-2 bg-accent text-white font-semibold text-sm px-5 py-3 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.28)] hover:opacity-90 active:scale-95 transition"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M9 18 3 21V6l6-3 6 3 6-3v15l-6 3-6-3Z" />
+            <path d="M9 3v15" />
+            <path d="M15 6v15" />
+          </svg>
+          Map
+        </button>
+      ) : null}
 
       {open ? (
         <FilterSheet
