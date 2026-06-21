@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 
-const POPULAR = ["Oahu", "Honolulu", "Waikiki", "Maui", "Las Vegas", "New York"];
+const POPULAR = ["Oahu", "Honolulu", "Waikiki", "Kapolei", "Kailua"];
 
 export default function Home() {
   return (

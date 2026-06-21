@@ -1,18 +1,28 @@
 import Link from "next/link";
-import type { HotelCardData } from "@/lib/hotels";
+import type { OahuHotel } from "@/lib/oahu";
+import type { Price } from "@/lib/rates";
 import { money, reviewLabel } from "@/lib/format";
 
-export default function HotelRow({ hotel, query }: { hotel: HotelCardData; query?: string }) {
+export default function HotelRow({
+  hotel,
+  query,
+  price,
+  loading,
+}: {
+  hotel: OahuHotel;
+  query?: string;
+  price?: Price | null;
+  loading?: boolean;
+}) {
   const href = `/hotel/${hotel.id}${query ? `?${query}` : ""}`;
-  const rev = reviewLabel(hotel.rating);
+  const rev = reviewLabel(hotel.rating ?? undefined);
 
   return (
     <Link
       href={href}
-      className="block bg-white rounded-2xl border border-black/5 overflow-hidden hover:shadow-md transition"
+      className="block bg-white rounded-lg border border-black/5 overflow-hidden hover:shadow-md transition"
     >
       <div className="flex items-stretch">
-        {/* image (left on all sizes, Expedia-style) */}
         <div className="relative w-36 sm:w-72 shrink-0 bg-zinc-100">
           {hotel.image ? (
             // eslint-disable-next-line @next/next/no-img-element
@@ -27,7 +37,6 @@ export default function HotelRow({ hotel, query }: { hotel: HotelCardData; query
           </span>
         </div>
 
-        {/* content */}
         <div className="flex-1 min-w-0 p-3 sm:p-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4 min-h-[150px] sm:min-h-[184px]">
           <div className="min-w-0">
             <h3 className="font-semibold leading-snug line-clamp-2 sm:line-clamp-1">{hotel.name}</h3>
@@ -47,18 +56,20 @@ export default function HotelRow({ hotel, query }: { hotel: HotelCardData; query
           </div>
 
           <div className="shrink-0 sm:w-44 text-right mt-auto sm:mt-0">
-            {hotel.price ? (
+            {price ? (
               <>
                 <div className="text-base sm:text-xl font-bold leading-tight">
-                  {money(hotel.price.perNight, hotel.price.currency)}
+                  {money(price.perNight, price.currency)}
                   <span className="text-xs sm:text-sm font-normal text-black/50"> nightly</span>
                 </div>
-                <div className="text-xs sm:text-sm text-black/70">{money(hotel.price.amount, hotel.price.currency)} total</div>
+                <div className="text-xs sm:text-sm text-black/70">{money(price.amount, price.currency)} total</div>
                 <div className="text-[10px] sm:text-xs text-black/40">Total with taxes and fees</div>
                 <div className="text-[10px] sm:text-[11px] text-accent/80 mt-0.5">Same price for everyone</div>
               </>
+            ) : loading ? (
+              <span className="text-xs text-black/40">Checking price…</span>
             ) : (
-              <span className="text-sm text-black/40">See prices</span>
+              <span className="text-xs text-black/40">Unavailable for these dates</span>
             )}
           </div>
         </div>

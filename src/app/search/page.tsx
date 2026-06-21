@@ -1,10 +1,7 @@
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
-import HotelRow from "@/components/HotelRow";
-import { searchHotels } from "@/lib/hotels";
-
-// Live rates per request — never prerender at build.
-export const dynamic = "force-dynamic";
+import ResultsList from "@/components/ResultsList";
+import { searchOahu } from "@/lib/oahu";
 
 const TABS = ["Any", "Hotels", "Homes"];
 const FILTERS = ["Filters", "Popular", "Price", "Guest rating", "Property amenities", "Sort"];
@@ -20,19 +17,12 @@ export default async function SearchPage({
   const checkout = sp.checkout;
   const adults = sp.adults ? parseInt(sp.adults, 10) : 2;
 
-  const hotels = destination ? await searchHotels(destination, { checkin, checkout, adults }) : [];
-
-  const cardQuery = new URLSearchParams({
-    ...(checkin ? { checkin } : {}),
-    ...(checkout ? { checkout } : {}),
-    adults: String(adults),
-  }).toString();
+  const hotels = destination ? searchOahu(destination) : [];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6">
       <SearchPanel initial={{ destination, checkin, checkout, adults: String(adults) }} />
 
-      {/* tabs (segmented) */}
       <div className="mt-5 inline-flex bg-black/[0.05] rounded-lg p-1">
         {TABS.map((t, i) => (
           <button
@@ -46,7 +36,6 @@ export default async function SearchPage({
         ))}
       </div>
 
-      {/* filter bar */}
       <div className="mt-3 flex flex-wrap items-center gap-2">
         {FILTERS.map((f) => (
           <button
@@ -60,13 +49,11 @@ export default async function SearchPage({
         <span className="text-xs text-black/40 ml-1">How our sort order works ⓘ</span>
       </div>
 
-      {/* honesty banner (our version of Expedia's "sale" strip) */}
-      <div className="mt-4 rounded-xl bg-accent-tint/70 px-4 py-3 text-sm">
+      <div className="mt-4 rounded-lg bg-accent-tint/70 px-4 py-3 text-sm">
         <span className="font-medium text-accent">One honest price.</span> The same for everyone, every
         search — never based on your data.
       </div>
 
-      {/* count */}
       <p className="mt-4 text-sm text-black/60">
         {destination ? (
           <>
@@ -78,26 +65,25 @@ export default async function SearchPage({
         )}
       </p>
 
-      {/* list */}
       <div className="mt-3">
         {!destination ? (
           <p className="text-black/50 py-16 text-center">
-            Enter a city above to see hotels.{" "}
+            Enter a destination above to see hotels.{" "}
             <Link className="text-accent" href="/">
               Back home
             </Link>
           </p>
         ) : hotels.length === 0 ? (
           <p className="text-black/50 py-16 text-center">
-            No hotels found for “{destination}”. Try another US city.
+            We&apos;re live in <span className="font-medium">Oahu, Hawaii</span> first — try{" "}
+            <Link className="text-accent" href="/search?destination=Oahu&adults=2">
+              Oahu
+            </Link>
+            . More destinations are coming.
           </p>
         ) : (
           <>
-            <div className="space-y-4">
-              {hotels.map((h) => (
-                <HotelRow key={h.id} hotel={h} query={cardQuery} />
-              ))}
-            </div>
+            <ResultsList hotels={hotels} checkin={checkin} checkout={checkout} adults={adults} />
             <div className="mt-8 flex items-center justify-center gap-1 text-sm">
               {["1", "2", "3", "…", "8", "9", "10"].map((p, i) => (
                 <button

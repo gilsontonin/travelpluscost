@@ -60,7 +60,7 @@ export default function SearchPanel({ initial }: { initial?: Initial }) {
             value={destination}
             onChange={(e) => setDestination(e.target.value)}
             required
-            placeholder="Las Vegas"
+            placeholder="Oahu, Hawaii"
             className="w-full outline-none text-sm bg-transparent"
           />
         </Field>

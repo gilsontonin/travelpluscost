@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getHotel } from "@/lib/hotels";
+import { getOahuHotel } from "@/lib/oahu";
 import BookingForm from "@/components/BookingForm";
 import { money } from "@/lib/format";
 
@@ -21,8 +21,8 @@ export default async function BookPage({
   const checkout = sp.checkout ?? "";
   const adults = sp.adults ?? "2";
 
-  const hotel = hotelId ? await getHotel(hotelId) : null;
-  const image = hotel?.images[0]?.url;
+  const hotel = hotelId ? getOahuHotel(hotelId) : null;
+  const image = hotel?.images?.[0];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">

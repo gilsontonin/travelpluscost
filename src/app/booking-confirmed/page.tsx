@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getHotel } from "@/lib/hotels";
+import { getOahuHotel } from "@/lib/oahu";
 import { money } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -20,7 +20,7 @@ export default async function ConfirmedPage({
   const guest = sp.guest ?? "";
   const email = sp.email ?? "";
 
-  const hotel = hotelId ? await getHotel(hotelId) : null;
+  const hotel = hotelId ? getOahuHotel(hotelId) : null;
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-12">

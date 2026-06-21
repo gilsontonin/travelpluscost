@@ -1,0 +1,107 @@
+// Ingest Oahu hotel CONTENT from LiteAPI -> content/oahu.json
+// Content (names, photos, descriptions, facilities) rarely changes, so we pull it once and
+// serve it locally (instant, like static). Only live RATES are fetched at request time.
+// Run: node scripts/ingest-oahu.mjs   (needs LITEAPI_KEY in env)
+// Scales to all-US/world later: add cities/regions to CITIES (or paginate offsets).
+import { writeFileSync, mkdirSync } from "node:fs";
+
+const BASE = process.env.LITEAPI_BASE_URL || "https://api.liteapi.travel/v3.0";
+const KEY = process.env.LITEAPI_KEY;
+if (!KEY) {
+  console.error("Set LITEAPI_KEY (export from .env.local).");
+  process.exit(1);
+}
+const h = { "X-API-Key": KEY, Accept: "application/json", "Content-Type": "application/json" };
+const j = async (u, o) => {
+  const r = await fetch(u, o);
+  if (!r.ok) throw new Error(`${u} -> ${r.status}`);
+  return r.json();
+};
+
+// Oahu = several cities. Add more here (or other islands/states) to scale.
+const CITIES = [
+  { city: "Honolulu", limit: 50 },
+  { city: "Kapolei", limit: 20 },
+  { city: "Kailua", limit: 12 },
+];
+
+function stripHtml(html) {
+  if (!html) return "";
+  return html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+}
+function normFacilities(raw) {
+  if (!Array.isArray(raw)) return [];
+  return raw.map((f) => (typeof f === "string" ? f : f?.name ?? "")).filter(Boolean);
+}
+async function pool(items, n, fn) {
+  const out = [];
+  let i = 0;
+  await Promise.all(
+    Array.from({ length: n }, async () => {
+      while (i < items.length) {
+        const idx = i++;
+        try {
+          out[idx] = await fn(items[idx]);
+        } catch (e) {
+          out[idx] = null;
+          console.error("  detail fail", items[idx].id, e.message);
+        }
+      }
+    }),
+  );
+  return out;
+}
+
+const main = async () => {
+  const seen = new Set();
+  const list = [];
+  for (const c of CITIES) {
+    const res = await j(
+      `${BASE}/data/hotels?countryCode=US&cityName=${encodeURIComponent(c.city)}&limit=${c.limit}`,
+      { headers: h },
+    );
+    const arr = res?.data ?? [];
+    for (const x of arr) {
+      if (!seen.has(x.id)) {
+        seen.add(x.id);
+        list.push(x);
+      }
+    }
+    console.log(`${c.city}: ${arr.length} (running total ${list.length})`);
+  }
+
+  console.log(`fetching details for ${list.length} hotels...`);
+  const details = await pool(list, 6, async (x) => {
+    const r = await j(`${BASE}/data/hotel?hotelId=${x.id}`, { headers: h });
+    const d = r?.data ?? r;
+    const images = (d.hotelImages ?? []).map((im) => im.urlHd || im.url).filter(Boolean).slice(0, 12);
+    return {
+      id: d.id ?? x.id,
+      name: d.name ?? x.name,
+      island: "Oahu",
+      city: d.city ?? x.city ?? "",
+      address: d.address ?? x.address ?? "",
+      stars: d.starRating ?? d.stars ?? x.stars ?? null,
+      rating: d.rating ?? x.rating ?? null,
+      reviewCount: d.reviewCount ?? x.reviewCount ?? null,
+      image: x.main_photo || x.thumbnail || images[0] || "",
+      images,
+      facilities: normFacilities(d.hotelFacilities ?? d.facilities).slice(0, 40),
+      description: stripHtml(d.hotelDescription).slice(0, 700),
+      lat: d.latitude ?? x.latitude ?? null,
+      lng: d.longitude ?? x.longitude ?? null,
+      checkin: d.checkinCheckoutTimes?.checkin_start ?? null,
+      checkout: d.checkinCheckoutTimes?.checkout ?? null,
+    };
+  });
+
+  const hotels = details.filter(Boolean).filter((x) => x.image && x.name);
+  mkdirSync("content", { recursive: true });
+  writeFileSync("content/oahu.json", JSON.stringify(hotels, null, 2));
+  console.log(`✓ wrote content/oahu.json with ${hotels.length} hotels`);
+};
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
