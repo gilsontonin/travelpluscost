@@ -1,10 +1,14 @@
-# travel-booking
+# travelpluscost
 
-A US hotel-search site (flights later) — built in public as an SEO experiment and a showcase.
+Travel, at cost, plus a fee we show you — the same fee for everyone, never based on your data.
+A US hotel-search site (flights + rentals later), built in public as an SEO experiment and a showcase.
+
+**Philosophy:** the anti–surveillance-pricing OTA. See [docs/POSITIONING.md](docs/POSITIONING.md).
 
 **Model:** affiliate-first, merchant-ready. v1 searches hotels and hands off to partners (no
-checkout, no liability). The own-checkout path (LiteAPI book) and the flights vertical (Duffel) are
-architected in but **feature-flagged off** until traffic justifies the legal/ops cost.
+checkout, no liability). The own-checkout path (LiteAPI book → the transparent **cost-plus** engine)
+and the flights vertical (Duffel) are architected in but **feature-flagged off** until traffic
+justifies the legal/ops cost.
 
 ## Stack
 
