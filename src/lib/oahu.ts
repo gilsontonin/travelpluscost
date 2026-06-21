@@ -21,6 +21,26 @@ export interface OahuHotel {
   checkout: string | null;
 }
 
+// Lightweight shape for result cards (keeps the search payload small — only what HotelRow renders).
+export type CardHotel = Pick<
+  OahuHotel,
+  "id" | "name" | "city" | "address" | "image" | "stars" | "rating" | "reviewCount"
+> & { images: string[] };
+
+export function toCard(h: OahuHotel): CardHotel {
+  return {
+    id: h.id,
+    name: h.name,
+    city: h.city,
+    address: h.address,
+    image: h.image,
+    images: h.images.slice(0, 3),
+    stars: h.stars,
+    rating: h.rating,
+    reviewCount: h.reviewCount,
+  };
+}
+
 const HOTELS = oahuData as OahuHotel[];
 
 // queries that map to "show all Oahu"

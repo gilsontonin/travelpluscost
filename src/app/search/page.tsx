@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import ResultsList from "@/components/ResultsList";
-import { searchOahu } from "@/lib/oahu";
+import { searchOahu, toCard } from "@/lib/oahu";
 
 const TABS = ["Any", "Hotels", "Homes"];
 const FILTERS = ["Filters", "Popular", "Price", "Guest rating", "Property amenities", "Sort"];
@@ -17,7 +17,7 @@ export default async function SearchPage({
   const checkout = sp.checkout;
   const adults = sp.adults ? parseInt(sp.adults, 10) : 2;
 
-  const hotels = destination ? searchOahu(destination) : [];
+  const hotels = destination ? searchOahu(destination).map(toCard) : [];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6">

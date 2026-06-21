@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import HotelRow from "./HotelRow";
-import type { OahuHotel } from "@/lib/oahu";
+import type { CardHotel } from "@/lib/oahu";
 import type { Price } from "@/lib/rates";
 
 export default function ResultsList({
@@ -11,7 +11,7 @@ export default function ResultsList({
   checkout,
   adults,
 }: {
-  hotels: OahuHotel[];
+  hotels: CardHotel[];
   checkin?: string;
   checkout?: string;
   adults: number;
