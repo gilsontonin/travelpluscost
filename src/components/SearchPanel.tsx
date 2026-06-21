@@ -1,7 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { VERTICALS } from "@/lib/verticals";
+import type { Vertical } from "@/lib/verticals";
 
 type Initial = { destination?: string; checkin?: string; checkout?: string; adults?: string };
 
@@ -14,9 +17,8 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   );
 }
 
-export default function SearchPanel({ initial }: { initial?: Initial }) {
+export default function SearchPanel({ initial, active = "hotels" }: { initial?: Initial; active?: Vertical }) {
   const router = useRouter();
-  const [tab, setTab] = useState<"homes" | "cars">("homes");
   const [destination, setDestination] = useState(initial?.destination ?? "");
   const [checkin, setCheckin] = useState(initial?.checkin ?? "");
   const [checkout, setCheckout] = useState(initial?.checkout ?? "");
@@ -34,21 +36,18 @@ export default function SearchPanel({ initial }: { initial?: Initial }) {
 
   return (
     <div className="bg-[#efeff3] rounded-3xl p-3 sm:p-4">
-      <div className="flex gap-1 mb-3">
-        <button
-          type="button"
-          onClick={() => setTab("cars")}
-          className={`text-sm px-4 py-2 rounded-xl transition ${tab === "cars" ? "bg-white shadow-sm font-medium" : "text-black/55"}`}
-        >
-          Cars
-        </button>
-        <button
-          type="button"
-          onClick={() => setTab("homes")}
-          className={`text-sm px-4 py-2 rounded-xl transition ${tab === "homes" ? "bg-accent-tint text-accent font-medium" : "text-black/55"}`}
-        >
-          Hotels
-        </button>
+      <div className="flex gap-1 mb-3 overflow-x-auto">
+        {VERTICALS.map((v) => (
+          <Link
+            key={v.id}
+            href={v.href}
+            className={`whitespace-nowrap text-sm px-4 py-2 rounded-md transition ${
+              v.id === active ? "bg-accent-tint text-accent font-medium" : "text-black/55 hover:bg-white"
+            }`}
+          >
+            {v.label}
+          </Link>
+        ))}
       </div>
 
       <form

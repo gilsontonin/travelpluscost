@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getAllOahu, getOahuHotel } from "@/lib/oahu";
 import RoomsPanel from "@/components/RoomsPanel";
 import PhotoGallery from "@/components/PhotoGallery";
+import ViatorPackages from "@/components/ViatorPackages";
 
 // Pre-render every ingested Oahu hotel as a static page (instant).
 export function generateStaticParams() {
@@ -83,6 +84,8 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
       <Suspense fallback={<div className="mt-10 h-40 rounded-lg bg-black/[0.04] animate-pulse" />}>
         <RoomsPanel hotelId={hotel.id} />
       </Suspense>
+
+      <ViatorPackages lat={hotel.lat} lng={hotel.lng} />
     </div>
   );
 }
