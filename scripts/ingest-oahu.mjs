@@ -33,6 +33,40 @@ function normFacilities(raw) {
   if (!Array.isArray(raw)) return [];
   return raw.map((f) => (typeof f === "string" ? f : f?.name ?? "")).filter(Boolean);
 }
+// LiteAPI gives room size in m2; US audience wants sqft.
+function toSqft(size, unit) {
+  if (!size || typeof size !== "number") return null;
+  return unit === "m2" ? Math.round(size * 10.7639) : Math.round(size);
+}
+// rooms[] is the richest content we previously dropped: photos, size, beds, per-room amenities.
+function normRooms(raw) {
+  if (!Array.isArray(raw)) return [];
+  const seen = new Set();
+  const out = [];
+  for (const r of raw) {
+    const name = (r.roomName ?? r.name ?? "").trim();
+    if (!name) continue;
+    const key = name.toLowerCase();
+    if (seen.has(key)) continue; // dedupe identical room names
+    seen.add(key);
+    out.push({
+      name,
+      desc: stripHtml(r.description).slice(0, 180),
+      sqft: toSqft(r.roomSizeSquare, r.roomSizeUnit),
+      sleeps: r.maxOccupancy ?? r.maxAdults ?? null,
+      beds: (r.bedTypes ?? [])
+        .map((b) => ({ qty: b.quantity ?? 1, type: (b.bedType ?? "").replace(/\s*bed$/i, "").trim() }))
+        .filter((b) => b.type),
+      amenities: (r.roomAmenities ?? r.amenities ?? [])
+        .map((a) => (typeof a === "string" ? a : a?.name))
+        .filter(Boolean)
+        .slice(0, 10),
+      photos: (r.photos ?? []).map((p) => p.hd_url || p.url).filter(Boolean).slice(0, 6),
+    });
+    if (out.length >= 40) break;
+  }
+  return out;
+}
 async function pool(items, n, fn) {
   const out = [];
   let i = 0;
@@ -88,10 +122,15 @@ const main = async () => {
       images,
       facilities: normFacilities(d.hotelFacilities ?? d.facilities).slice(0, 40),
       description: stripHtml(d.hotelDescription).slice(0, 700),
-      lat: d.latitude ?? x.latitude ?? null,
-      lng: d.longitude ?? x.longitude ?? null,
+      chain: d.chain || null,
+      hotelType: d.hotelType || null,
+      petsAllowed: typeof d.petsAllowed === "boolean" ? d.petsAllowed : null,
+      childAllowed: typeof d.childAllowed === "boolean" ? d.childAllowed : null,
+      lat: d.location?.latitude ?? d.latitude ?? x.latitude ?? null,
+      lng: d.location?.longitude ?? d.longitude ?? x.longitude ?? null,
       checkin: d.checkinCheckoutTimes?.checkin_start ?? null,
       checkout: d.checkinCheckoutTimes?.checkout ?? null,
+      rooms: normRooms(d.rooms),
       sentiment: d.sentiment_analysis
         ? {
             categories: (d.sentiment_analysis.categories ?? [])

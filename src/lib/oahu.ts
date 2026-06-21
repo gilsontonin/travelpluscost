@@ -2,6 +2,16 @@
 // Served instantly (no live API call for content). Scales: ingest more -> bigger JSON / a DB.
 import oahuData from "../../content/oahu.json";
 
+export interface Room {
+  name: string;
+  desc: string;
+  sqft: number | null;
+  sleeps: number | null;
+  beds: { qty: number; type: string }[];
+  amenities: string[];
+  photos: string[];
+}
+
 export interface OahuHotel {
   id: string;
   name: string;
@@ -15,10 +25,15 @@ export interface OahuHotel {
   images: string[];
   facilities: string[];
   description: string;
+  chain: string | null;
+  hotelType: string | null;
+  petsAllowed: boolean | null;
+  childAllowed: boolean | null;
   lat: number | null;
   lng: number | null;
   checkin: string | null;
   checkout: string | null;
+  rooms: Room[];
   sentiment: {
     categories: { name: string; rating: number }[];
     pros: string[];
@@ -32,17 +47,29 @@ export type CardHotel = Pick<
   "id" | "name" | "city" | "address" | "image" | "stars" | "rating" | "reviewCount"
 > & { images: string[]; amenities: string[]; lat: number | null; lng: number | null };
 
+// Ordered by "card-worthiness" — detectAmenities returns matches in this order,
+// so the first few shown on a result card are the ones guests actually filter on.
 const AMENITY_MATCHERS: [string, RegExp][] = [
-  ["Pool", /pool/i],
+  ["Pool", /pool|swimming/i],
   ["Free WiFi", /wi-?fi|internet/i],
+  ["Beachfront", /beach|oceanfront/i],
   ["Parking", /parking/i],
-  ["Beachfront", /beach/i],
+  ["Breakfast", /breakfast/i],
   ["Spa", /\bspa\b/i],
   ["Gym", /gym|fitness/i],
   ["Restaurant", /restaurant|dining/i],
-  ["Pet-friendly", /\bpet/i],
-  ["Hot tub", /hot tub|jacuzzi/i],
+  ["Bar", /\bbar\b|lounge/i],
+  ["Hot tub", /hot tub|jacuzzi|whirlpool/i],
   ["Air conditioning", /air ?conditioning|\ba\/c\b/i],
+  ["Room service", /room service/i],
+  ["Airport shuttle", /shuttle|airport transfer/i],
+  ["Laundry", /laundry|washer|dry clean/i],
+  ["Kitchen", /kitchen/i],
+  ["Business center", /business cent|meeting room|conference/i],
+  ["EV charging", /(electric|ev).{0,12}charg|charging station/i],
+  ["Pet-friendly", /\bpets?\b/i],
+  ["Accessible", /accessible|wheelchair|disab/i],
+  ["Family rooms", /family/i],
 ];
 export const ALL_AMENITIES = AMENITY_MATCHERS.map(([name]) => name);
 
