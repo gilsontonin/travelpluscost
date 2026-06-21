@@ -1,1 +1,48 @@
-@AGENTS.md
+# travelpluscost — agent onboarding (read this first)
+
+You are working on **travelpluscost**: a transparent **cost-plus** online travel agency. The promise:
+*"what the hotel charges us, plus one small flat fee — the same price for everyone, never based on your
+data."* It's the anti–surveillance-pricing OTA. Build-in-public (YouTube) showcase + SEO experiment +
+eventual revenue.
+
+## Read these before doing anything
+- `docs/HANDOFF.md` — **current state, file map, what's real vs demo, what's next.** Start here.
+- `docs/POSITIONING.md` — the brand promise + **hard pricing/compliance guardrails** (non-negotiable).
+- `docs/BUSINESS-PLAN.md` — model, economics, payment decision, roadmap, exit.
+- `docs/ARCHITECTURE.md` — the multi-vertical technical design (hotels→flights→cars→attractions).
+
+## Hard rules (from POSITIONING.md — do not violate)
+1. **Never display the wholesale/net cost, nor a precise fixed markup %** (final price + exact % =
+   derivable net = a parity breach that gets our supply cut off). Show the *principle*, not the number.
+2. **Pricing must be deterministic** (`cost × multiplier`) and **never personalized / never A/B-tested.**
+3. **Public pages show the Suggested Selling Price (SSP)**; below-SSP cost-plus pricing only ever goes
+   behind a free member sign-in (LiteAPI permits below-SSP behind a login). Booking that takes payment
+   = merchant-of-record = Seller-of-Travel + legal — that's a later, flagged phase.
+4. Claims must be **exactly true** (FTC/NY deception risk). Don't overclaim "lowest price" / "no dynamic
+   pricing anywhere" — we control *our* fee, not the hotel's base rate.
+
+## Tech stack
+Next.js 16 (App Router, SSR+ISR) · React 19 · Tailwind v4 · TypeScript. Planned scale infra (not yet
+wired): Supabase (Postgres), Typesense (search), Upstash Redis (rate cache). Data today: **LiteAPI**
+(hotels) via `src/lib/liteapi.ts` + `src/lib/hotels.ts`.
+
+## Running it
+```bash
+export PATH="$HOME/.local/node/bin:$PATH"   # node lives here, not system-wide
+cd /Users/gilsontonin/travelpluscost
+cp .env.example .env.local                  # then add real keys (see HANDOFF.md)
+npm install
+npm run dev                                 # http://localhost:3000
+```
+Gates before every commit: `npm run typecheck && npm run lint && npm run build` (all must pass).
+
+## Conventions
+- Secrets only in `.env.local` (gitignored). Server secrets via `src/lib/env.ts` `requireEnv()` — never
+  `NEXT_PUBLIC_*`. Only search-only keys may reach the browser.
+- Feature flags in `src/lib/flags.ts` (`NEXT_PUBLIC_BOOKING_MODE`, `…_FLIGHTS_ENABLED`).
+- Commit messages end with: `Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>`.
+- **No GitHub remote yet** — commits are local. See `docs/DEPLOY.md` to push + deploy + tie the domain.
+
+## Current state (one line)
+Hotels search + property pages + a safe demo booking flow are LIVE on real LiteAPI data, styled as the
+Propel layout in Airbnb coral. Oahu is the featured city. **Full details + next steps: `docs/HANDOFF.md`.**
