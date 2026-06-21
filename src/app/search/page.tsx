@@ -4,7 +4,6 @@ import ResultsList from "@/components/ResultsList";
 import { searchOahu, toCard } from "@/lib/oahu";
 
 const TABS = ["Any", "Hotels", "Homes"];
-const FILTERS = ["Filters", "Popular", "Price", "Guest rating", "Property amenities", "Sort"];
 
 export default async function SearchPage({
   searchParams,
@@ -36,34 +35,14 @@ export default async function SearchPage({
         ))}
       </div>
 
-      <div className="mt-3 flex flex-wrap items-center gap-2">
-        {FILTERS.map((f) => (
-          <button
-            key={f}
-            className="text-sm border border-black/15 rounded-lg px-3 py-2 bg-white hover:border-black/30 flex items-center gap-1"
-          >
-            {f}
-            {f !== "Filters" ? <span className="text-black/40 text-xs">▾</span> : null}
-          </button>
-        ))}
-        <span className="text-xs text-black/40 ml-1">How our sort order works ⓘ</span>
-      </div>
-
       <div className="mt-4 rounded-lg bg-accent-tint/70 px-4 py-3 text-sm">
         <span className="font-medium text-accent">One honest price.</span> The same for everyone, every
         search — never based on your data.
       </div>
 
-      <p className="mt-4 text-sm text-black/60">
-        {destination ? (
-          <>
-            <span className="font-semibold text-black">{hotels.length}</span> stays near{" "}
-            <span className="font-semibold text-black">{destination}</span>
-          </>
-        ) : (
-          "Search for a destination"
-        )}
-      </p>
+      <h1 className="mt-4 text-lg sm:text-xl font-semibold">
+        {destination ? `Stays in ${destination}` : "Search for a destination"}
+      </h1>
 
       <div className="mt-3">
         {!destination ? (

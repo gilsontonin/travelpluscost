@@ -1,9 +1,31 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import HotelRow from "./HotelRow";
+import { ALL_AMENITIES } from "@/lib/oahu";
 import type { CardHotel } from "@/lib/oahu";
 import type { Price } from "@/lib/rates";
+import {
+  EMPTY_FILTERS,
+  activeFilterCount,
+  applyFilters,
+  applySort,
+  SORT_LABELS,
+} from "@/lib/filters";
+import type { Filters, SortKey } from "@/lib/filters";
+
+const RATING_OPTIONS = [
+  { v: 9, label: "Exceptional 9+" },
+  { v: 8, label: "Very good 8+" },
+  { v: 7, label: "Good 7+" },
+];
+const STAR_OPTIONS = [5, 4, 3];
+
+function chip(active: boolean) {
+  return `text-sm px-3 py-1.5 rounded-lg border transition ${
+    active ? "bg-accent-tint text-accent border-accent/40" : "border-black/15 text-black/70 hover:border-black/40"
+  }`;
+}
 
 export default function ResultsList({
   hotels,
@@ -17,6 +39,9 @@ export default function ResultsList({
   adults: number;
 }) {
   const [prices, setPrices] = useState<Record<string, Price> | null>(null);
+  const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
+  const [sort, setSort] = useState<SortKey>("recommended");
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     let on = true;
@@ -43,11 +68,176 @@ export default function ResultsList({
     adults: String(adults),
   }).toString();
 
+  const visible = useMemo(
+    () => applySort(applyFilters(hotels, prices, filters), prices, sort),
+    [hotels, prices, filters, sort],
+  );
+  const n = activeFilterCount(filters);
+
   return (
-    <div className="space-y-4">
-      {hotels.map((h) => (
-        <HotelRow key={h.id} hotel={h} query={cardQuery} price={prices?.[h.id] ?? null} loading={prices === null} />
-      ))}
+    <div>
+      {/* sort + filter bar */}
+      <div className="flex items-center justify-between gap-2 mb-2">
+        <label className="text-sm flex items-center gap-2 text-black/70">
+          Sort
+          <select
+            value={sort}
+            onChange={(e) => setSort(e.target.value as SortKey)}
+            className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
+          >
+            {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
+              <option key={k} value={k}>
+                {SORT_LABELS[k]}
+              </option>
+            ))}
+          </select>
+        </label>
+        <button
+          onClick={() => setOpen(true)}
+          className="text-sm border border-black/15 rounded-lg px-3 py-1.5 bg-white hover:border-black/40 flex items-center gap-1.5"
+        >
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M4 6h16M7 12h10M10 18h4" />
+          </svg>
+          Filters{n ? ` (${n})` : ""}
+        </button>
+      </div>
+
+      <p className="text-sm text-black/55 mb-3">
+        {visible.length} of {hotels.length} stays
+        {prices === null ? " · loading prices…" : ""}
+      </p>
+
+      {visible.length === 0 ? (
+        <div className="py-16 text-center text-black/50">
+          No stays match your filters.{" "}
+          <button onClick={() => setFilters(EMPTY_FILTERS)} className="text-accent">
+            Clear filters
+          </button>
+        </div>
+      ) : (
+        <div className="space-y-4">
+          {visible.map((h) => (
+            <HotelRow key={h.id} hotel={h} query={cardQuery} price={prices?.[h.id] ?? null} loading={prices === null} />
+          ))}
+        </div>
+      )}
+
+      {open ? (
+        <FilterSheet
+          hotels={hotels}
+          prices={prices}
+          initial={filters}
+          onApply={(f) => {
+            setFilters(f);
+            setOpen(false);
+          }}
+          onClose={() => setOpen(false)}
+        />
+      ) : null}
+    </div>
+  );
+}
+
+function FilterSheet({
+  hotels,
+  prices,
+  initial,
+  onApply,
+  onClose,
+}: {
+  hotels: CardHotel[];
+  prices: Record<string, Price> | null;
+  initial: Filters;
+  onApply: (f: Filters) => void;
+  onClose: () => void;
+}) {
+  const [draft, setDraft] = useState<Filters>(initial);
+  const live = useMemo(() => applyFilters(hotels, prices, draft).length, [hotels, prices, draft]);
+
+  const toggleStar = (s: number) =>
+    setDraft((d) => ({ ...d, stars: d.stars.includes(s) ? d.stars.filter((x) => x !== s) : [...d.stars, s] }));
+  const toggleAmenity = (a: string) =>
+    setDraft((d) => ({ ...d, amenities: d.amenities.includes(a) ? d.amenities.filter((x) => x !== a) : [...d.amenities, a] }));
+
+  return (
+    <div className="fixed inset-0 z-50 bg-white flex flex-col">
+      <div className="flex items-center justify-between p-4 border-b border-black/10">
+        <h2 className="font-semibold text-lg">Filters</h2>
+        <button onClick={onClose} aria-label="Close" className="p-1 text-black/60">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div className="flex-1 overflow-y-auto p-4 space-y-7 max-w-2xl w-full mx-auto">
+        <section>
+          <p className="font-medium mb-2">Max price / night</p>
+          <input
+            type="range"
+            min={50}
+            max={1500}
+            step={50}
+            value={draft.maxPrice ?? 1500}
+            onChange={(e) => {
+              const v = Number(e.target.value);
+              setDraft((d) => ({ ...d, maxPrice: v >= 1500 ? null : v }));
+            }}
+            className="w-full accent-accent"
+          />
+          <p className="text-sm text-black/60">{draft.maxPrice != null ? `Up to $${draft.maxPrice}/night` : "Any price"}</p>
+        </section>
+
+        <section>
+          <p className="font-medium mb-2">Guest rating</p>
+          <div className="flex gap-2 flex-wrap">
+            {RATING_OPTIONS.map((o) => (
+              <button
+                key={o.v}
+                onClick={() => setDraft((d) => ({ ...d, minRating: d.minRating === o.v ? null : o.v }))}
+                className={chip(draft.minRating === o.v)}
+              >
+                {o.label}
+              </button>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <p className="font-medium mb-2">Star rating</p>
+          <div className="flex gap-2">
+            {STAR_OPTIONS.map((s) => (
+              <button key={s} onClick={() => toggleStar(s)} className={chip(draft.stars.includes(s))}>
+                {s} ★
+              </button>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <p className="font-medium mb-2">Amenities</p>
+          <div className="flex gap-2 flex-wrap">
+            {ALL_AMENITIES.map((a) => (
+              <button key={a} onClick={() => toggleAmenity(a)} className={chip(draft.amenities.includes(a))}>
+                {a}
+              </button>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <div className="p-4 border-t border-black/10 flex items-center justify-between gap-3 max-w-2xl w-full mx-auto">
+        <button onClick={() => setDraft(EMPTY_FILTERS)} className="text-sm text-black/60 underline">
+          Clear all
+        </button>
+        <button
+          onClick={() => onApply(draft)}
+          className="bg-accent text-white font-medium px-6 py-3 rounded-lg flex-1 max-w-xs"
+        >
+          Show {live} {live === 1 ? "stay" : "stays"}
+        </button>
+      </div>
     </div>
   );
 }

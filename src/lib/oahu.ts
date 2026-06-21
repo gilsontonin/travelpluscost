@@ -25,7 +25,26 @@ export interface OahuHotel {
 export type CardHotel = Pick<
   OahuHotel,
   "id" | "name" | "city" | "address" | "image" | "stars" | "rating" | "reviewCount"
-> & { images: string[] };
+> & { images: string[]; amenities: string[] };
+
+const AMENITY_MATCHERS: [string, RegExp][] = [
+  ["Pool", /pool/i],
+  ["Free WiFi", /wi-?fi|internet/i],
+  ["Parking", /parking/i],
+  ["Beachfront", /beach/i],
+  ["Spa", /\bspa\b/i],
+  ["Gym", /gym|fitness/i],
+  ["Restaurant", /restaurant|dining/i],
+  ["Pet-friendly", /\bpet/i],
+  ["Hot tub", /hot tub|jacuzzi/i],
+  ["Air conditioning", /air ?conditioning|\ba\/c\b/i],
+];
+export const ALL_AMENITIES = AMENITY_MATCHERS.map(([name]) => name);
+
+export function detectAmenities(facilities: string[]): string[] {
+  const text = facilities.join(" | ");
+  return AMENITY_MATCHERS.filter(([, re]) => re.test(text)).map(([name]) => name);
+}
 
 export function toCard(h: OahuHotel): CardHotel {
   return {
@@ -38,6 +57,7 @@ export function toCard(h: OahuHotel): CardHotel {
     stars: h.stars,
     rating: h.rating,
     reviewCount: h.reviewCount,
+    amenities: detectAmenities(h.facilities),
   };
 }
 
