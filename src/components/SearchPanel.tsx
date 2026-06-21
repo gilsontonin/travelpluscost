@@ -10,13 +10,27 @@ import GuestField from "@/components/GuestField";
 
 type Initial = { destination?: string; checkin?: string; checkout?: string; adults?: string };
 
-export default function SearchPanel({ initial, active = "hotels" }: { initial?: Initial; active?: Vertical }) {
+function fmtDay(d: string) {
+  const dt = new Date(`${d}T00:00:00`);
+  return Number.isNaN(dt.getTime()) ? "" : dt.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+
+export default function SearchPanel({
+  initial,
+  active = "hotels",
+  compact = false,
+}: {
+  initial?: Initial;
+  active?: Vertical;
+  compact?: boolean;
+}) {
   const router = useRouter();
   const [destination, setDestination] = useState(initial?.destination ?? "");
   const [checkin, setCheckin] = useState(initial?.checkin ?? "");
   const [checkout, setCheckout] = useState(initial?.checkout ?? "");
   const [adults, setAdults] = useState(initial?.adults ? parseInt(initial.adults, 10) : 2);
   const [rooms, setRooms] = useState(1);
+  const [open, setOpen] = useState(!compact);
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -26,6 +40,33 @@ export default function SearchPanel({ initial, active = "hotels" }: { initial?: 
     if (checkout) q.set("checkout", checkout);
     q.set("adults", String(adults));
     router.push(`/search?${q.toString()}`);
+    if (compact) setOpen(false);
+  }
+
+  // Collapsed Expedia-style summary bar — one tappable line, opens the full form.
+  if (compact && !open) {
+    const dateLabel = checkin && checkout ? `${fmtDay(checkin)} – ${fmtDay(checkout)}` : "Any dates";
+    return (
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="w-full bg-white border border-black/10 rounded-lg px-4 py-2.5 flex items-center gap-3 text-left hover:border-black/25 transition shadow-sm"
+      >
+        <span className="grid place-items-center w-9 h-9 rounded-full bg-accent-tint text-accent shrink-0">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+        </span>
+        <span className="min-w-0">
+          <span className="block font-semibold truncate">{destination || "Search hotels"}</span>
+          <span className="block text-xs text-black/55 truncate">
+            {dateLabel} · {adults} traveler{adults > 1 ? "s" : ""}
+          </span>
+        </span>
+        <span className="ml-auto text-sm font-medium text-accent shrink-0">Edit</span>
+      </button>
+    );
   }
 
   return (

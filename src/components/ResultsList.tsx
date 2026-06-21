@@ -160,7 +160,7 @@ export default function ResultsList({
           </button>
         </div>
       ) : (
-        <div className="space-y-4">
+        <div className="-mx-4 sm:mx-0 flex flex-col gap-0 sm:gap-4">
           {visible.map((h) => (
             <HotelRow key={h.id} hotel={h} query={cardQuery} price={prices?.[h.id] ?? null} loading={prices === null} />
           ))}

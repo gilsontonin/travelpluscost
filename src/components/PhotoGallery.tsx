@@ -32,36 +32,48 @@ export default function PhotoGallery({ images, name }: { images: string[]; name:
   }, [open, close, next, prev]);
 
   const hero = images[0];
-  if (!hero) return <div className="mt-3 h-[300px] sm:h-[440px] bg-zinc-100 rounded-lg" />;
-  const thumbs = images.slice(1, 5);
+  if (!hero) return <div className="mt-3 h-[260px] sm:h-[420px] bg-zinc-100 rounded-lg" />;
+  const under = images.slice(1, 3);
 
   return (
     <>
-      <div className="relative mt-3">
-        <div className="grid grid-cols-4 grid-rows-2 gap-2 rounded-lg overflow-hidden h-[300px] sm:h-[440px]">
-          <button
-            type="button"
-            onClick={() => show(0)}
-            className="relative col-span-4 row-span-2 sm:col-span-2 cursor-zoom-in"
-          >
-            <Image src={hero} alt={name} fill priority sizes="(max-width: 640px) 100vw, 576px" className="object-cover" />
-          </button>
-          {thumbs.map((src, i) => (
-            <button
-              type="button"
-              key={i}
-              onClick={() => show(i + 1)}
-              className="relative hidden sm:block col-span-1 row-span-1 cursor-zoom-in"
-            >
-              <Image src={src} alt={`${name} photo ${i + 2}`} fill sizes="288px" className="object-cover" />
-            </button>
-          ))}
-        </div>
+      <div className="relative mt-3 space-y-2">
+        {/* main photo */}
+        <button
+          type="button"
+          onClick={() => show(0)}
+          className="relative block w-full h-64 sm:h-[420px] rounded-lg overflow-hidden cursor-zoom-in"
+        >
+          <Image src={hero} alt={name} fill priority sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
+        </button>
+
+        {/* two smaller photos under */}
+        {under.length ? (
+          <div className="grid grid-cols-2 gap-2">
+            {under.map((src, i) => (
+              <button
+                type="button"
+                key={i}
+                onClick={() => show(i + 1)}
+                className="relative h-28 sm:h-44 rounded-lg overflow-hidden cursor-zoom-in"
+              >
+                <Image src={src} alt={`${name} photo ${i + 2}`} fill sizes="(max-width: 640px) 50vw, 512px" className="object-cover" />
+                {/* last tile gets the "view all" overlay when there are more */}
+                {i === under.length - 1 && images.length > 3 ? (
+                  <span className="absolute inset-0 bg-black/45 grid place-items-center text-white text-sm font-medium">
+                    +{images.length - 3} photos
+                  </span>
+                ) : null}
+              </button>
+            ))}
+          </div>
+        ) : null}
+
         {images.length > 1 ? (
           <button
             type="button"
             onClick={() => show(0)}
-            className="absolute bottom-3 right-3 bg-white/95 text-black text-sm font-medium px-3 py-1.5 rounded-md shadow-sm hover:bg-white"
+            className="absolute top-3 right-3 bg-white/95 text-black text-sm font-medium px-3 py-1.5 rounded-md shadow-sm hover:bg-white"
           >
             View all {images.length} photos
           </button>

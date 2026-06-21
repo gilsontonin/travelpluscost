@@ -23,21 +23,22 @@ export default function HotelRow({
   return (
     <Link
       href={href}
-      className="group block bg-white rounded-lg border border-black/[0.07] overflow-hidden hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:border-black/10 transition"
+      className="group block overflow-hidden border-b border-black/[0.08] pb-4 sm:pb-0 sm:bg-white sm:border sm:border-black/[0.07] sm:rounded-lg sm:hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)] sm:hover:border-black/10 transition"
     >
-      <div className="flex items-stretch">
-        <div className="relative w-32 sm:w-72 shrink-0 bg-zinc-100 overflow-hidden">
-          <CardCarousel images={hotel.images} alt={hotel.name} sizes="(max-width: 640px) 128px, 288px" />
-          <span className="absolute top-2 right-2 z-10 bg-white/95 w-7 h-7 rounded-full grid place-items-center shadow-sm text-black/55 pointer-events-none">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <div className="flex flex-col sm:flex-row sm:items-stretch">
+        {/* Full-bleed image on mobile, fixed panel on desktop */}
+        <div className="relative w-full h-60 sm:w-80 sm:h-auto sm:min-h-[210px] shrink-0 bg-zinc-100 overflow-hidden">
+          <CardCarousel images={hotel.images} alt={hotel.name} sizes="(max-width: 640px) 100vw, 320px" />
+          <span className="absolute top-3 right-3 z-10 bg-white/95 w-8 h-8 rounded-full grid place-items-center shadow-sm text-black/55 pointer-events-none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
             </svg>
           </span>
         </div>
 
-        <div className="flex-1 min-w-0 p-3 sm:p-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4 min-h-[220px] sm:min-h-[200px]">
+        <div className="flex-1 min-w-0 px-4 pt-3 sm:p-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">
           <div className="min-w-0 flex flex-col">
-            <h3 className="font-semibold text-[15px] sm:text-base leading-snug line-clamp-2 group-hover:text-accent transition-colors">
+            <h3 className="font-semibold text-base sm:text-[17px] leading-snug line-clamp-2 group-hover:text-accent transition-colors">
               {hotel.name}
             </h3>
             <p className="text-xs sm:text-sm text-black/50 mt-1 flex items-start gap-1 line-clamp-1">
@@ -70,7 +71,7 @@ export default function HotelRow({
             ) : null}
 
             {rev ? (
-              <div className="mt-auto pt-2 flex items-center gap-2">
+              <div className="mt-2 sm:mt-auto sm:pt-2 flex items-center gap-2">
                 <span className="bg-[#1a7a4c] text-white text-xs font-semibold px-1.5 py-0.5 rounded-md">{rev.score}</span>
                 <span className="text-xs sm:text-sm">
                   <span className="font-semibold">{rev.label}</span>
@@ -82,10 +83,10 @@ export default function HotelRow({
             ) : null}
           </div>
 
-          <div className="shrink-0 sm:w-44 text-right mt-auto sm:mt-0 sm:self-end">
+          <div className="shrink-0 sm:w-44 text-left sm:text-right mt-1 sm:mt-0 sm:self-end">
             {price ? (
               <>
-                <div className="text-lg sm:text-2xl font-bold leading-tight">
+                <div className="text-xl sm:text-2xl font-bold leading-tight">
                   {money(price.perNight, price.currency)}
                   <span className="text-xs sm:text-sm font-normal text-black/50"> /night</span>
                 </div>
