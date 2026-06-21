@@ -27,7 +27,7 @@ export default function HotelRow({
     >
       <div className="flex items-stretch">
         <div className="relative w-32 sm:w-72 shrink-0 bg-zinc-100 overflow-hidden">
-          <CardCarousel images={hotel.images} alt={hotel.name} />
+          <CardCarousel images={hotel.images} alt={hotel.name} sizes="(max-width: 640px) 128px, 288px" />
           <span className="absolute top-2 right-2 z-10 bg-white/95 w-7 h-7 rounded-full grid place-items-center shadow-sm text-black/55 pointer-events-none">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />

@@ -1,6 +1,7 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
 export default function PhotoGallery({ images, name }: { images: string[]; name: string }) {
@@ -38,17 +39,21 @@ export default function PhotoGallery({ images, name }: { images: string[]; name:
     <>
       <div className="relative mt-3">
         <div className="grid grid-cols-4 grid-rows-2 gap-2 rounded-lg overflow-hidden h-[300px] sm:h-[440px]">
-          <button type="button" onClick={() => show(0)} className="col-span-4 row-span-2 sm:col-span-2 cursor-zoom-in">
-            <img src={hero} alt={name} className="w-full h-full object-cover" />
+          <button
+            type="button"
+            onClick={() => show(0)}
+            className="relative col-span-4 row-span-2 sm:col-span-2 cursor-zoom-in"
+          >
+            <Image src={hero} alt={name} fill priority sizes="(max-width: 640px) 100vw, 576px" className="object-cover" />
           </button>
           {thumbs.map((src, i) => (
             <button
               type="button"
               key={i}
               onClick={() => show(i + 1)}
-              className="hidden sm:block col-span-1 row-span-1 cursor-zoom-in"
+              className="relative hidden sm:block col-span-1 row-span-1 cursor-zoom-in"
             >
-              <img src={src} alt={`${name} photo ${i + 2}`} className="w-full h-full object-cover" />
+              <Image src={src} alt={`${name} photo ${i + 2}`} fill sizes="288px" className="object-cover" />
             </button>
           ))}
         </div>
@@ -76,12 +81,7 @@ export default function PhotoGallery({ images, name }: { images: string[]; name:
             </button>
           </div>
           <div className="flex-1 flex items-center justify-center px-4 pb-6 select-none" onClick={(e) => e.stopPropagation()}>
-            <button
-              type="button"
-              onClick={prev}
-              className="text-white/80 hover:text-white p-3 shrink-0"
-              aria-label="Previous"
-            >
+            <button type="button" onClick={prev} className="text-white/80 hover:text-white p-3 shrink-0" aria-label="Previous">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="m15 18-6-6 6-6" />
               </svg>

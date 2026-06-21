@@ -1,17 +1,32 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { useRef, useState } from "react";
 
-export default function CardCarousel({ images, alt }: { images: string[]; alt: string }) {
+// Renders only frames the user has actually viewed (starts at 1), and routes every
+// photo through next/image so a card thumbnail downloads ~30 KB, not the 680 KB original.
+export default function CardCarousel({
+  images,
+  alt,
+  sizes = "(max-width: 640px) 50vw, 288px",
+}: {
+  images: string[];
+  alt: string;
+  sizes?: string;
+}) {
   const [i, setI] = useState(0);
+  const [mounted, setMounted] = useState<Set<number>>(() => new Set([0]));
   const startX = useRef<number | null>(null);
 
   if (!images.length) {
     return <div className="absolute inset-0 grid place-items-center text-black/30 text-xs">no photo</div>;
   }
 
-  const move = (dir: number) => setI((p) => (p + dir + images.length) % images.length);
+  const go = (idx: number) => {
+    setI(idx);
+    setMounted((s) => (s.has(idx) ? s : new Set(s).add(idx)));
+  };
+  const move = (dir: number) => go((i + dir + images.length) % images.length);
   const arrow = (e: React.MouseEvent, dir: number) => {
     e.preventDefault();
     e.stopPropagation();
@@ -31,17 +46,18 @@ export default function CardCarousel({ images, alt }: { images: string[]; alt: s
         if (Math.abs(dx) > 30) move(dx < 0 ? 1 : -1);
       }}
     >
-      {images.map((src, idx) => (
-        <img
-          key={idx}
-          src={src}
-          alt={alt}
-          loading="lazy"
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-200 ${
-            idx === i ? "opacity-100" : "opacity-0"
-          }`}
-        />
-      ))}
+      {images.map((src, idx) =>
+        mounted.has(idx) ? (
+          <Image
+            key={idx}
+            src={src}
+            alt={alt}
+            fill
+            sizes={sizes}
+            className={`object-cover transition-opacity duration-200 ${idx === i ? "opacity-100" : "opacity-0"}`}
+          />
+        ) : null,
+      )}
 
       {images.length > 1 ? (
         <>
@@ -66,11 +82,8 @@ export default function CardCarousel({ images, alt }: { images: string[]; alt: s
             </svg>
           </button>
           <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1 pointer-events-none">
-            {images.map((_, idx) => (
-              <span
-                key={idx}
-                className={`w-1.5 h-1.5 rounded-full ${idx === i ? "bg-white" : "bg-white/50"}`}
-              />
+            {images.slice(0, 8).map((_, idx) => (
+              <span key={idx} className={`w-1.5 h-1.5 rounded-full ${idx === i ? "bg-white" : "bg-white/50"}`} />
             ))}
           </div>
         </>

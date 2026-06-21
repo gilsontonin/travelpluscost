@@ -108,7 +108,7 @@ const main = async () => {
   const details = await pool(list, 6, async (x) => {
     const r = await j(`${BASE}/data/hotel?hotelId=${x.id}`, { headers: h });
     const d = r?.data ?? r;
-    const images = (d.hotelImages ?? []).map((im) => im.urlHd || im.url).filter(Boolean).slice(0, 12);
+    const images = (d.hotelImages ?? []).map((im) => im.urlHd || im.url).filter(Boolean).slice(0, 30);
     return {
       id: d.id ?? x.id,
       name: d.name ?? x.name,

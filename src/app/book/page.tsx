@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getOahuHotel } from "@/lib/oahu";
 import BookingForm from "@/components/BookingForm";
 import { money } from "@/lib/format";
@@ -49,8 +50,9 @@ export default async function BookPage({
         {/* right: price details */}
         <aside className="bg-white border border-black/5 rounded-2xl p-5 h-fit lg:sticky lg:top-24">
           {image ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={image} alt={hotel?.name ?? ""} className="w-full h-36 object-cover rounded-xl mb-3" />
+            <div className="relative w-full h-36 rounded-xl overflow-hidden mb-3">
+              <Image src={image} alt={hotel?.name ?? ""} fill sizes="360px" className="object-cover" />
+            </div>
           ) : null}
           <p className="font-semibold">{hotel?.name ?? "Your stay"}</p>
           <p className="text-sm text-black/50">{room}</p>
