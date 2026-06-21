@@ -251,3 +251,61 @@ press, content, and the gate.
 
 **Bottom line:** the financial risk to *start and prove this* is tiny (domain + your time). The real
 cost is **time-to-traffic**. That's why we build cheap, validate SEO, and only then spend.
+
+---
+
+## 15. Exit strategy
+
+Build it so it's *sellable* even if you never sell — the same things that make it acquirable (owned
+audience, clean books, supplier diversification, brand) also make it more profitable to keep.
+
+### The paths (smallest → largest, by likelihood)
+
+| Path | What it is | Realistic valuation | When |
+|---|---|---|---|
+| **A. Lifestyle / cash-flow** | Don't sell. The "exit" is annual profit in your pocket. | n/a (keep the cash) | anytime |
+| **B. Flip the asset** | Sell the site via a broker (Empire Flippers, FE International, Quiet Light, Flippa) | **~30–35× trailing monthly net profit** (~2.5–3× annual) for a stable, diversified travel content/affiliate site | after ~12–24 mo of stable profit history |
+| **C. Strategic acquisition** | An incumbent (Booking, Expedia, Trip.com, Hopper) or travel-media/PE buyer acquires the **brand + audience + member list + tech + the transparency positioning** | **revenue multiple (~1–4× revenue)** depending on growth — much larger, needs real scale | ~3–6 yrs with growth |
+| **D. Acquihire** | A travel/fintech company buys the team + IP + brand | between B and C | opportunistic |
+| **E. Venture path** | Angel → Series A → larger strategic exit | highest ceiling, most dilution/risk | only if clearly compounding |
+
+**Real comps (2026):** content/affiliate sites sell at ~25–35× monthly profit (top-quality 30–34×); a
+tech blog netting **$400k/yr sold for ~$1.1M (≈33× monthly)** on stable traffic + diversified
+affiliates. ([Empire Flippers](https://empireflippers.com/selling-six-figure-affiliate-sites/),
+[FE International](https://www.feinternational.com/blog/how-much-business-worth-valuation-2025))
+The OTA M&A market is active ($850M+ in recent consolidation; Booking ~$22B and Expedia ~$14B revenue
+fund acquisitions). ([PhocusWire](https://www.phocuswire.com/hot-25-travel-startups-2025-revisit))
+
+**Worked example (Path B):** if the site nets **$20k/mo**, a flip is roughly **$600–700k**; at **$5k/mo**,
+roughly **$150–175k**. That's the affiliate-phase exit — achievable without ever becoming a merchant.
+
+### Why *this* asset is attractive to acquire
+An incumbent can buy scale easily but **can't easily buy trust.** The cost-plus brand, the engaged
+member list, and the timely anti-surveillance-pricing positioning are exactly the defensive/PR assets a
+big OTA would pay a premium for — plus a clean, documented, multi-provider codebase that survives
+diligence.
+
+### Value drivers (what moves the multiple)
+- **Defensible organic traffic** (an SEO moat, not paid-traffic dependence).
+- **Owned audience** — the email/member list is the single most portable, valuable asset.
+- **Brand strength** — high % of direct/repeat traffic signals a real brand, not a rankings fluke.
+- **Revenue growth rate** — multiples track trajectory, not just size.
+- **Supplier diversification** — LiteAPI + Duffel + Viator (the adapter architecture already avoids
+  single-provider risk).
+- **Founder-independence** — documented, transferable operations.
+- **Clean books + clean cap table.**
+
+### Do-now moves to protect exit value (cheap insurance)
+1. **Separate entity + bank account + bookkeeping from day one** (a flip needs clean trailing financials).
+2. **Own the audience** — capture the member/email list relentlessly (also your cost-plus gate).
+3. **Diversify suppliers** — already architected; don't let one provider become a single point of failure.
+4. **Document operations** — the build-in-public docs double as the diligence data room.
+5. **Entity structure with the exit in mind** — an **LLC** is simplest for a flip; a **Delaware C-corp**
+   is required if you'll raise venture (Path E). Decide *before* raising — converting later is costly.
+   *(Accountant/attorney call, not a guess.)*
+
+### Honest base case
+Most travel startups never reach a big strategic exit. **Plan for A (cash flow) and B (asset flip) as
+the probable outcomes; treat C/D/E as upside, not the assumption.** The good news: Paths A and B are
+fully reachable on the affiliate model alone — the cost-plus merchant build raises the ceiling (C/E)
+but isn't required to have something worth keeping or selling.
