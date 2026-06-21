@@ -30,13 +30,20 @@ not the whole pitch.
 - So today we *match* the market with a trust angle — we are not yet cheaper. The cheaper
   member price (below SSP) is the membership phase (§4) and must be login-gated (parity).
 
-⚠️ **Trust-but-verify the SSP.** Early spot-checks suggested SSP may be **inflated** vs the real
-live Booking/Expedia price. Validate before sizing margin:
-- `node scripts/margin-check.mjs <region>` — net vs SSP spread per market.
-- `/compare` (private, passphrase-gated, noindex) — net + SSP + one-tap live Google/Expedia/Booking
-  links + a "live $" input that computes how inflated the SSP is and the true spread.
+**SSP validation (Prince Waikiki, Jul 24–25, 2 adults — via /compare + Google Hotels):**
+SSP is **NOT inflated** vs the mainstream. Our SSP $412 = the price *every* trusted OTA showed
+(Expedia, Booking, Priceline, Kayak, Orbitz, Hotels.com, momondo… all $412). So SSP is a reliable
+"what Expedia/Booking charge" reference and the margin math holds.
+- Our **NET ($294) sits near the public floor.** Only opaque deep-discounters were lower
+  (Super.com $286, trivago/Traveluro $297) — at/below our cost; we don't compete there (they sell
+  on opacity, we sell on trust).
+- **Member price (net + card fee ≈ $303) beats every mainstream OTA (~$412) by ~$100 (~26%)**,
+  and beats the official site ($367) and Expedia/Hotels "member" prices ($375). That's the product.
+- **It's lumpy:** near-parity hotels have no room (Halepuna: NET $349 / SSP $354 = $5). Member
+  savings are hotel-dependent → "Members save $X here" loud on high-spread, *match* on flat ones.
 
-Observed spreads (SSP − net, before live-validation): Las Vegas ~38% median, Oahu ~22%, Seattle ~13%.
+Tools: `node scripts/margin-check.mjs <region>` (net vs SSP) · `/compare` (net + SSP + live OTA links
++ "live $" input). Observed SSP−net spreads: Las Vegas ~38% median, Oahu ~22%, Seattle ~13%.
 
 ---
 
@@ -106,7 +113,10 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
 ---
 
 ## 7. Open questions / next steps
-- [ ] Validate SSP vs live Booking/Expedia via `/compare` across markets → is SSP inflated?
+- [x] Validated SSP ≈ mainstream parity (Prince Waikiki: SSP $412 = Expedia/Booking/Priceline/Kayak
+      all $412) — NOT inflated. Net near the public floor; only opaque discounters undercut net
+      (their catch: usually non-refundable + fees added at checkout + reliability risk). Re-check a
+      few more, esp. near-parity hotels (e.g. Halepuna NET $349 / SSP $354 = no member room).
 - [ ] Confirm with LiteAPI: who is MoR in their payment flow? Fixed markup or %-only? Below-SSP flag?
 - [ ] Decide final price points ($/mo, $/yr) once real spreads are known.
 - [ ] Build: Supabase auth + the membership wall → property page shows public price + a
