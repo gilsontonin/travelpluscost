@@ -1,9 +1,9 @@
 "use client";
 
 import "leaflet/dist/leaflet.css";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useReducer, useRef, useState, type ReactNode } from "react";
 import { MapContainer, TileLayer, Marker, useMap, useMapEvents } from "react-leaflet";
-import L, { type LatLngBounds } from "leaflet";
+import L, { type LatLngBounds, type Point } from "leaflet";
 import HotelRow from "@/components/HotelRow";
 import type { CardHotel } from "@/lib/oahu";
 import type { Price } from "@/lib/rates";
@@ -20,6 +20,95 @@ function priceIcon(label: string, active: boolean) {
     iconSize: [52, 24],
     iconAnchor: [26, 12],
   });
+}
+
+function clusterIcon(count: number) {
+  return L.divIcon({
+    className: "tpc-cluster",
+    html: `<div style="background:#1a1a1a;color:#fff;font-weight:700;font-size:12px;line-height:1;padding:7px 11px;border-radius:16px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35);border:2px solid #fff">${count} stays</div>`,
+    iconSize: [64, 28],
+    iconAnchor: [32, 14],
+  });
+}
+
+// Groups overlapping pins into "N stays" bubbles at the current zoom (the selected hotel
+// always renders as its own pin). Recomputes on zoom; clicking a cluster zooms in.
+function ClusterLayer({
+  hotels,
+  prices,
+  currentId,
+  onSelect,
+}: {
+  hotels: CardHotel[];
+  prices: Record<string, Price> | null;
+  currentId: string | null;
+  onSelect: (id: string) => void;
+}) {
+  const map = useMap();
+  const [, bump] = useReducer((x: number) => x + 1, 0);
+  useMapEvents({ moveend: () => bump(), zoomend: () => bump(), load: () => bump() });
+
+  const zoom = map.getZoom();
+  const sel = hotels.find((h) => h.id === currentId && h.lat != null && h.lng != null) ?? null;
+  const rest = hotels.filter((h) => h.id !== currentId);
+
+  // greedy pixel-distance clustering at the current zoom
+  const pts = rest.map((h) => ({ h, p: map.project([h.lat as number, h.lng as number], zoom) }));
+  const used = new Array(pts.length).fill(false);
+  const groups: { h: CardHotel; p: Point }[][] = [];
+  const THRESH = 58;
+  for (let i = 0; i < pts.length; i++) {
+    if (used[i]) continue;
+    used[i] = true;
+    const g = [pts[i]];
+    for (let j = i + 1; j < pts.length; j++) {
+      if (!used[j] && pts[i].p.distanceTo(pts[j].p) < THRESH) {
+        used[j] = true;
+        g.push(pts[j]);
+      }
+    }
+    groups.push(g);
+  }
+
+  const els: ReactNode[] = [];
+  for (const g of groups) {
+    if (g.length === 1) {
+      const h = g[0].h;
+      const p = prices?.[h.id];
+      els.push(
+        <Marker
+          key={h.id}
+          position={[h.lat as number, h.lng as number]}
+          icon={priceIcon(p ? `$${p.perNight}` : "•", false)}
+          eventHandlers={{ click: () => onSelect(h.id) }}
+        />,
+      );
+    } else {
+      const lat = g.reduce((s, x) => s + (x.h.lat as number), 0) / g.length;
+      const lng = g.reduce((s, x) => s + (x.h.lng as number), 0) / g.length;
+      els.push(
+        <Marker
+          key={`c-${g[0].h.id}-${g.length}`}
+          position={[lat, lng]}
+          icon={clusterIcon(g.length)}
+          eventHandlers={{ click: () => map.flyTo([lat, lng], Math.min(zoom + 2, 16), { duration: 0.4 }) }}
+        />,
+      );
+    }
+  }
+  if (sel) {
+    const p = prices?.[sel.id];
+    els.push(
+      <Marker
+        key={`sel-${sel.id}`}
+        position={[sel.lat as number, sel.lng as number]}
+        icon={priceIcon(p ? `$${p.perNight}` : "•", true)}
+        zIndexOffset={1000}
+        eventHandlers={{ click: () => onSelect(sel.id) }}
+      />,
+    );
+  }
+  return <>{els}</>;
 }
 
 // Controls the map: fly to the selected hotel (offset up so its pin clears the bottom
@@ -161,19 +250,7 @@ export default function MapResultsInner({
           onUserMove={() => setShowSearch(true)}
           registerSearch={registerSearch}
         />
-        {shown.map((h) => {
-          const p = prices?.[h.id];
-          const active = h.id === current;
-          return (
-            <Marker
-              key={h.id}
-              position={[h.lat as number, h.lng as number]}
-              icon={priceIcon(p ? `$${p.perNight}` : "•", active)}
-              zIndexOffset={active ? 1000 : 0}
-              eventHandlers={{ click: () => setSelectedId(h.id) }}
-            />
-          );
-        })}
+        <ClusterLayer hotels={shown} prices={prices} currentId={current} onSelect={setSelectedId} />
       </MapContainer>
 
       {showSearch ? (
