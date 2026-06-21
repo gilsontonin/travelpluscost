@@ -2,9 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import HotelRow from "./HotelRow";
-import MapView from "@/components/MapView";
+import MapResults from "@/components/MapResults";
 import FilterChip from "@/components/FilterChip";
-import type { MapMarker } from "@/components/LeafletMap";
 import { ALL_AMENITIES } from "@/lib/oahu";
 import type { CardHotel } from "@/lib/oahu";
 import type { Price } from "@/lib/rates";
@@ -77,29 +76,6 @@ export default function ResultsList({
     [hotels, prices, filters, sort],
   );
   const n = activeFilterCount(filters);
-
-  const mapMarkers: MapMarker[] = useMemo(
-    () =>
-      visible
-        .filter((h) => h.lat != null && h.lng != null)
-        .map((h) => {
-          const p = prices?.[h.id];
-          return {
-            id: h.id,
-            lat: h.lat as number,
-            lng: h.lng as number,
-            label: p ? `$${p.perNight}` : undefined,
-            href: `/hotel/${h.id}${cardQuery ? `?${cardQuery}` : ""}`,
-          };
-        }),
-    [visible, prices, cardQuery],
-  );
-  const mapCenter: [number, number] = mapMarkers.length
-    ? [
-        mapMarkers.reduce((s, m) => s + m.lat, 0) / mapMarkers.length,
-        mapMarkers.reduce((s, m) => s + m.lng, 0) / mapMarkers.length,
-      ]
-    : [21.4, -157.86];
 
   // Immediate-apply handlers for the inline chips (they share `filters` with the full sheet).
   const { maxPrice, minRating, stars, amenities } = filters;
@@ -253,7 +229,7 @@ export default function ResultsList({
       </div>
 
       {view === "map" ? (
-        <MapView center={mapCenter} zoom={12} height={540} markers={mapMarkers} />
+        <MapResults hotels={visible} prices={prices} query={cardQuery} />
       ) : visible.length === 0 ? (
         <div className="py-16 text-center text-black/50">
           No stays match your filters.{" "}
