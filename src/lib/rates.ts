@@ -6,11 +6,18 @@ import { getOahuHotel } from "./oahu";
 import type { Room } from "./oahu";
 
 export interface Price {
-  amount: number;
+  amount: number; // online portion (SSP) — room + taxes paid online
   currency: string;
   nights: number;
-  perNight: number;
+  perNight: number; // online per-night (amount / nights)
   refundable?: boolean;
+  feesAtProperty?: number; // mandatory fees collected at check-in (stay total)
+  allIn?: number; // amount + feesAtProperty — the true out-the-door price
+}
+export interface PropertyFee {
+  label: string;
+  amount: number;
+  currency: string;
 }
 export interface RoomOffer {
   offerId: string;
@@ -25,7 +32,7 @@ export interface RoomOffer {
   amenities?: string[];
   features?: string[];
   photos?: string[];
-  resortFee?: { amount: number; currency: string; label: string } | null;
+  propertyFees?: PropertyFee[]; // ALL mandatory fees paid at the property (every included:false item)
   price: Price;
 }
 
@@ -84,15 +91,21 @@ function matchRoom(name: string, rooms: Room[]): Room | undefined {
   }
   return bestScore >= 0.25 ? best : undefined;
 }
-function resortFeeOf(rate: RateObj): RoomOffer["resortFee"] {
+// EVERY mandatory fee collected at the property (included:false) — not just the first.
+// The probe found two on one rate (Resort + Facility Fee); grabbing one undercounts the
+// real out-the-door price, which is the misleading-pricing trap we exist to avoid.
+function propertyFeesOf(rate: RateObj): PropertyFee[] {
   const fees = rate.retailRate?.taxesAndFees ?? [];
-  const fee = fees.find((f) => f && f.included === false && typeof f.amount === "number" && f.amount > 0);
-  if (!fee) return null;
-  return {
-    amount: fee.amount as number,
-    currency: fee.currency ?? "USD",
-    label: fee.description ? `${fee.description} fee` : "Property fee",
-  };
+  return fees
+    .filter((f) => f && f.included === false && typeof f.amount === "number" && f.amount > 0)
+    .map((f) => ({
+      label: f.description ? `${f.description} fee` : "Property fee",
+      amount: f.amount as number,
+      currency: f.currency ?? "USD",
+    }));
+}
+function propertyFeesTotal(rate: RateObj): number {
+  return propertyFeesOf(rate).reduce((s, f) => s + f.amount, 0);
 }
 function freeCancelBefore(rate: RateObj): string | null {
   const cp = rate.cancellationPolicies;
@@ -121,8 +134,16 @@ function nightsBetween(ci: string, co: string) {
   const n = Math.round((Date.parse(co) - Date.parse(ci)) / 86_400_000);
   return Number.isFinite(n) && n > 0 ? n : 1;
 }
-function priced(m: Money, n: number): Price {
-  return { amount: m.amount, currency: m.currency, nights: n, perNight: Math.max(1, Math.round(m.amount / n)) };
+function priced(m: Money, n: number, feesAtProperty = 0): Price {
+  const fees = Math.round(feesAtProperty * 100) / 100;
+  return {
+    amount: m.amount,
+    currency: m.currency,
+    nights: n,
+    perNight: Math.max(1, Math.round(m.amount / n)),
+    feesAtProperty: fees > 0 ? fees : undefined,
+    allIn: Math.round((m.amount + fees) * 100) / 100,
+  };
 }
 
 export function defaultDates(ci?: string | null, co?: string | null) {
@@ -169,17 +190,22 @@ export async function getPrices(
   for (const data of results) {
     for (const rh of data) {
       let best: Money | undefined;
+      let bestRate: RateObj | undefined;
       let bestRefundable = false;
       for (const rt of rh.roomTypes ?? []) {
         for (const r of rt.rates ?? []) {
           const sp = r.retailRate?.suggestedSellingPrice?.[0];
           if (sp && typeof sp.amount === "number" && (!best || sp.amount < best.amount)) {
             best = sp;
+            bestRate = r;
             bestRefundable = r.cancellationPolicies?.refundableTag === "RFN";
           }
         }
       }
-      if (best) out[rh.hotelId] = { ...priced(best, n), refundable: bestRefundable };
+      if (best) {
+        const fees = bestRate ? propertyFeesTotal(bestRate) : 0;
+        out[rh.hotelId] = { ...priced(best, n, fees), refundable: bestRefundable };
+      }
     }
   }
   writeCache(key, out);
@@ -218,6 +244,8 @@ export async function getRooms(
       if (existing && existing.price.amount <= sp.amount) continue;
 
       const cr = matchRoom(roomName, rooms);
+      const fees = propertyFeesOf(r);
+      const feesTotal = fees.reduce((s, f) => s + f.amount, 0);
       byRoom.set(groupKey, {
         offerId: rt.offerId,
         roomName,
@@ -231,8 +259,8 @@ export async function getRooms(
         amenities: cr?.amenities?.length ? cr.amenities.slice(0, 6) : undefined,
         features: cr?.features?.length ? cr.features : undefined,
         photos: cr?.photos?.length ? cr.photos : hotelPhotos.slice(0, 3),
-        resortFee: resortFeeOf(r),
-        price: priced(sp, n),
+        propertyFees: fees.length ? fees : undefined,
+        price: priced(sp, n, feesTotal),
       });
     }
   }

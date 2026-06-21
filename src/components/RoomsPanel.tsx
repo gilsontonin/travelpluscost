@@ -96,12 +96,30 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
               <p className="text-sm text-black/45">Non-refundable</p>
             )}
             <p className="text-sm text-black/55">{o.boardName ?? "Room only"}</p>
-            {o.resortFee ? (
-              <p className="text-xs text-amber-700">
-                + {money(o.resortFee.amount, o.resortFee.currency)} {o.resortFee.label} (paid at property)
-              </p>
-            ) : null}
           </div>
+
+          {o.propertyFees?.length ? (
+            <div className="mt-3 rounded-lg bg-black/[0.03] p-3 text-sm max-w-sm">
+              <div className="flex justify-between gap-4">
+                <span className="text-black/60">Room &amp; taxes ({o.price.nights} night{o.price.nights > 1 ? "s" : ""})</span>
+                <span className="tabular-nums">{money(o.price.amount, o.price.currency)}</span>
+              </div>
+              {o.propertyFees.map((f) => (
+                <div key={f.label} className="flex justify-between gap-4 mt-1">
+                  <span className="text-black/60">
+                    {f.label} <span className="text-black/40">· paid at property</span>
+                  </span>
+                  <span className="tabular-nums">{money(f.amount, f.currency)}</span>
+                </div>
+              ))}
+              <div className="flex justify-between gap-4 font-semibold border-t border-black/10 mt-2 pt-2">
+                <span>Total (all-in)</span>
+                <span className="tabular-nums">{money(o.price.allIn ?? o.price.amount, o.price.currency)}</span>
+              </div>
+            </div>
+          ) : (
+            <p className="mt-2 text-xs text-black/45">Taxes &amp; fees included — no fees at check-in.</p>
+          )}
 
           {o.features?.length ? (
             <div className="mt-3">
@@ -140,11 +158,11 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
         <div className="shrink-0 sm:text-right flex sm:flex-col items-end justify-between sm:justify-start gap-2 border-t sm:border-t-0 border-black/[0.06] pt-3 sm:pt-0">
           <div>
             <div className="font-bold text-lg">
-              {money(o.price.perNight, o.price.currency)}
+              {money(Math.round((o.price.allIn ?? o.price.amount) / o.price.nights), o.price.currency)}
               <span className="text-black/45 font-normal text-sm">/night</span>
             </div>
             <div className="text-xs text-black/50">
-              {money(o.price.amount, o.price.currency)} total for {o.price.nights} night{o.price.nights > 1 ? "s" : ""}
+              {money(o.price.allIn ?? o.price.amount, o.price.currency)} all-in · {o.price.nights} night{o.price.nights > 1 ? "s" : ""}
             </div>
           </div>
           <a
@@ -201,6 +219,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
       room: o.roomName,
       board: o.boardName ?? "",
       total: String(o.price.amount),
+      feesAtProperty: String(o.price.feesAtProperty ?? 0),
       currency: o.price.currency,
       nights: String(o.price.nights),
       perNight: String(o.price.perNight),
@@ -316,9 +335,9 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
           {name ? <p className="text-xs text-black/55 truncate">{name}</p> : null}
           {cheapest ? (
             <div className="font-bold leading-tight">
-              {money(cheapest.price.perNight, cheapest.price.currency)}
+              {money(Math.round((cheapest.price.allIn ?? cheapest.price.amount) / cheapest.price.nights), cheapest.price.currency)}
               <span className="text-sm font-normal text-black/50"> /night</span>
-              <span className="text-xs font-normal text-black/45"> · {money(cheapest.price.amount, cheapest.price.currency)} total</span>
+              <span className="text-xs font-normal text-black/45"> · {money(cheapest.price.allIn ?? cheapest.price.amount, cheapest.price.currency)} all-in</span>
             </div>
           ) : null}
         </div>

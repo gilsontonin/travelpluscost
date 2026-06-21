@@ -111,11 +111,16 @@ export default function HotelRow({
           {price ? (
             <>
               <div className="leading-tight">
-                <span className="font-bold tracking-tight text-[1.5rem] text-black">{money(price.perNight, price.currency)}</span>
+                <span className="font-bold tracking-tight text-[1.5rem] text-black">
+                  {money(Math.round((price.allIn ?? price.amount) / price.nights), price.currency)}
+                </span>
                 <span className="text-[0.84rem] text-black/70">/night</span>
               </div>
-              <div className="text-[0.84rem] text-black/80">{money(price.amount, price.currency)} total</div>
-              <div className="text-[0.68rem] text-black/45">Total with taxes and fees</div>
+              <div className="text-[0.84rem] text-black/80">{money(price.allIn ?? price.amount, price.currency)} total</div>
+              <div className="text-[0.68rem] text-black/45">
+                All-in · taxes &amp; fees included
+                {price.feesAtProperty ? ` (incl. ${money(price.feesAtProperty, price.currency)} property fees)` : ""}
+              </div>
               <div className="mt-0.5 inline-flex items-center gap-1 text-[0.68rem] font-medium text-accent">
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                   <path d="M20 6 9 17l-5-5" />
