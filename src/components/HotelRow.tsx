@@ -27,23 +27,23 @@ export default function HotelRow({
       className="group block bg-white border border-black/[0.1] rounded-lg overflow-hidden hover:shadow-[0_4px_18px_rgba(0,0,0,0.08)] transition"
     >
       <div className="flex gap-3 sm:gap-4 p-3">
-        {/* photo collage: 1 tall main + 2 small under (Expedia layout) */}
-        <div className="w-[42%] max-w-[230px] sm:w-72 shrink-0">
-          <div className="relative w-full h-36 sm:h-48 rounded-lg overflow-hidden bg-zinc-100">
+        {/* photo collage: 1 tall PORTRAIT main + 2 small square under (Expedia layout) */}
+        <div className="w-[36%] max-w-[210px] sm:w-60 shrink-0">
+          <div className="relative w-full aspect-[4/5] sm:aspect-[4/3] rounded-lg overflow-hidden bg-zinc-100">
             {main ? (
-              <Image src={main} alt={hotel.name} fill sizes="(max-width: 640px) 45vw, 288px" className="object-cover" />
+              <Image src={main} alt={hotel.name} fill sizes="(max-width: 640px) 36vw, 240px" className="object-cover" />
             ) : null}
           </div>
           {(s1 || s2) ? (
-            <div className="grid grid-cols-2 gap-2 mt-2">
+            <div className="grid grid-cols-2 gap-1.5 mt-1.5">
               {[s1, s2].map((src, i) => (
-                <div key={i} className="relative h-[70px] sm:h-24 rounded-lg overflow-hidden bg-zinc-100">
+                <div key={i} className="relative aspect-square rounded-lg overflow-hidden bg-zinc-100">
                   {src ? (
                     <Image
                       src={src}
                       alt={`${hotel.name} photo ${i + 2}`}
                       fill
-                      sizes="(max-width: 640px) 22vw, 144px"
+                      sizes="(max-width: 640px) 18vw, 116px"
                       className="object-cover"
                     />
                   ) : null}
