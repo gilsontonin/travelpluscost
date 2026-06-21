@@ -48,11 +48,49 @@ export interface OahuHotel {
   } | null;
 }
 
+// LiteAPI hotelType → clean label + category (hotel vs vacation rental).
+// We sell all of them (they all come from the hotel channels, NOT Airbnb), but label/filter them.
+const TYPE_LABELS: Record<string, string> = {
+  hotels: "Hotel",
+  resorts: "Resort",
+  "holiday homes": "Vacation home",
+  "private vacation home": "Vacation home",
+  apartments: "Apartment",
+  condos: "Condo",
+  villas: "Villa",
+  houseboat: "Houseboat",
+  aparthotels: "Aparthotel",
+};
+const RENTAL_TYPES = new Set([
+  "holiday homes",
+  "private vacation home",
+  "apartments",
+  "condos",
+  "villas",
+  "houseboat",
+]);
+
+export type StayCategory = "hotel" | "rental";
+
+export function classifyType(hotelType: string | null): { label: string; category: StayCategory } {
+  const lower = (hotelType ?? "").trim().toLowerCase();
+  const label = TYPE_LABELS[lower] ?? "";
+  return { label, category: RENTAL_TYPES.has(lower) ? "rental" : "hotel" };
+}
+
 // Lightweight shape for result cards (keeps the search payload small — only what HotelRow renders).
 export type CardHotel = Pick<
   OahuHotel,
   "id" | "name" | "city" | "address" | "image" | "stars" | "rating" | "reviewCount"
-> & { images: string[]; amenities: string[]; lat: number | null; lng: number | null; nearby: string | null };
+> & {
+  images: string[];
+  amenities: string[];
+  lat: number | null;
+  lng: number | null;
+  nearby: string | null;
+  propertyType: string;
+  category: StayCategory;
+};
 
 // Ordered by "card-worthiness" — detectAmenities returns matches in this order,
 // so the first few shown on a result card are the ones guests actually filter on.
@@ -100,6 +138,8 @@ export function toCard(h: OahuHotel): CardHotel {
     lat: h.lat,
     lng: h.lng,
     nearby: nearbyLabel(h.lat, h.lng),
+    propertyType: classifyType(h.hotelType).label,
+    category: classifyType(h.hotelType).category,
   };
 }
 

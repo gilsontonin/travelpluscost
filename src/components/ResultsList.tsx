@@ -78,7 +78,8 @@ export default function ResultsList({
   const n = activeFilterCount(filters);
 
   // Immediate-apply handlers for the inline chips (they share `filters` with the full sheet).
-  const { maxPrice, minRating, stars, amenities } = filters;
+  const { maxPrice, minRating, stars, amenities, kind } = filters;
+  const setKind = (v: Filters["kind"]) => setFilters((f) => ({ ...f, kind: v }));
   const setMaxPrice = (v: number | null) => setFilters((f) => ({ ...f, maxPrice: v }));
   const setMinRating = (v: number | null) => setFilters((f) => ({ ...f, minRating: f.minRating === v ? null : v }));
   const toggleStar = (s: number) =>
@@ -102,6 +103,31 @@ export default function ResultsList({
           </svg>
           All filters{n ? ` (${n})` : ""}
         </button>
+
+        <FilterChip
+          label={kind === "all" ? "Property type" : kind === "hotels" ? "Hotels & resorts" : "Vacation rentals"}
+          active={kind !== "all"}
+        >
+          <div className="flex flex-col gap-1.5">
+            {(
+              [
+                ["all", "All property types"],
+                ["hotels", "Hotels & resorts"],
+                ["rentals", "Vacation rentals"],
+              ] as const
+            ).map(([v, label]) => (
+              <button
+                key={v}
+                onClick={() => setKind(v)}
+                className={`text-left text-sm px-3 py-2 rounded-md border transition ${
+                  kind === v ? "bg-accent-tint text-accent border-accent/40" : "border-black/10 hover:border-black/30"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </FilterChip>
 
         <FilterChip label={maxPrice != null ? `Up to $${maxPrice}/night` : "Price"} active={maxPrice != null}>
           <p className="font-medium text-sm mb-2">Max price / night</p>

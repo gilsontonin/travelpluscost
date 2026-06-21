@@ -12,9 +12,10 @@ export interface Filters {
   minRating: number | null; // out of 10
   stars: number[]; // selected star levels (e.g. [4,5])
   amenities: string[]; // required amenities
+  kind: "all" | "hotels" | "rentals"; // hotels & resorts vs vacation rentals
 }
 
-export const EMPTY_FILTERS: Filters = { maxPrice: null, minRating: null, stars: [], amenities: [] };
+export const EMPTY_FILTERS: Filters = { maxPrice: null, minRating: null, stars: [], amenities: [], kind: "all" };
 
 export type SortKey = "recommended" | "price_asc" | "price_desc" | "rating" | "distance";
 
@@ -27,7 +28,13 @@ export const SORT_LABELS: Record<SortKey, string> = {
 };
 
 export function activeFilterCount(f: Filters): number {
-  return (f.maxPrice != null ? 1 : 0) + (f.minRating != null ? 1 : 0) + f.stars.length + f.amenities.length;
+  return (
+    (f.maxPrice != null ? 1 : 0) +
+    (f.minRating != null ? 1 : 0) +
+    f.stars.length +
+    f.amenities.length +
+    (f.kind !== "all" ? 1 : 0)
+  );
 }
 
 export function applyFilters(
@@ -36,6 +43,8 @@ export function applyFilters(
   f: Filters,
 ): CardHotel[] {
   return hotels.filter((h) => {
+    if (f.kind === "hotels" && h.category !== "hotel") return false;
+    if (f.kind === "rentals" && h.category !== "rental") return false;
     if (f.minRating != null && (h.rating ?? 0) < f.minRating) return false;
     if (f.stars.length && !(h.stars != null && f.stars.includes(h.stars))) return false;
     if (f.amenities.length && !f.amenities.every((a) => h.amenities.includes(a))) return false;

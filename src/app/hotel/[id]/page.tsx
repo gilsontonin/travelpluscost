@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllOahu, getOahuHotel } from "@/lib/oahu";
+import { getAllOahu, getOahuHotel, classifyType } from "@/lib/oahu";
 import RoomsPanel from "@/components/RoomsPanel";
 import PhotoGallery from "@/components/PhotoGallery";
 import ViatorPackages from "@/components/ViatorPackages";
@@ -77,8 +77,10 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
               ))}
             </span>
           ) : null}
-          {hotel.hotelType ? (
-            <span className="text-xs text-black/55 bg-black/[0.05] px-2 py-0.5 rounded-md">{hotel.hotelType}</span>
+          {classifyType(hotel.hotelType).label ? (
+            <span className="text-xs text-black/55 bg-black/[0.05] px-2 py-0.5 rounded-md">
+              {classifyType(hotel.hotelType).label}
+            </span>
           ) : null}
         </div>
         <h1 className="text-2xl font-semibold mt-1.5">{hotel.name}</h1>

@@ -34,6 +34,11 @@ export default function HotelRow({
       <div className="w-[40%] sm:w-[42%] shrink-0 flex flex-col gap-1.5">
         <div className="relative flex-1 min-h-0 overflow-hidden bg-zinc-100">
           <CardCarousel images={hotel.images} alt={hotel.name} arrows={false} sizes="(max-width: 640px) 42vw, 320px" />
+          {hotel.propertyType && hotel.propertyType !== "Hotel" ? (
+            <span className="absolute top-2 left-2 z-10 bg-white/95 text-black/80 text-[0.65rem] font-semibold px-2 py-0.5 rounded-md shadow-sm">
+              {hotel.propertyType}
+            </span>
+          ) : null}
         </div>
         {(s1 || s2) ? (
           <div className="grid grid-cols-2 gap-1.5 shrink-0">
