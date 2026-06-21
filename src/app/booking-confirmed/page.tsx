@@ -34,7 +34,7 @@ export default async function ConfirmedPage({
         <p className="text-black/55 mt-1">
           {guest ? `Thanks, ${guest}. ` : ""}A confirmation has been sent{email ? ` to ${email}` : ""}.
         </p>
-        <p className="mt-3 inline-block bg-black/[0.04] rounded-full px-4 py-1.5 text-sm font-mono">
+        <p className="mt-3 inline-block bg-black/[0.04] rounded-md px-4 py-1.5 text-sm font-mono">
           Ref: {ref}
         </p>
 

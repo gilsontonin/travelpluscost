@@ -98,7 +98,7 @@ export default async function HotelPage({
               <h2 className="font-semibold mb-3">What this place offers</h2>
               <div className="flex flex-wrap gap-2">
                 {hotel.facilities.slice(0, 14).map((f) => (
-                  <span key={f} className="text-xs px-3 py-1.5 rounded-full bg-black/[0.04] text-black/70">
+                  <span key={f} className="text-xs px-3 py-1.5 rounded-md bg-black/[0.04] text-black/70">
                     {f}
                   </span>
                 ))}

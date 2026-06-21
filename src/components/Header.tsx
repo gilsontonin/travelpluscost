@@ -32,7 +32,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="#"
-              className="bg-accent text-white text-sm font-medium px-4 py-2 rounded-full hover:opacity-90 transition"
+              className="bg-accent text-white text-sm font-medium px-4 py-2 rounded-lg hover:opacity-90 transition"
             >
               Sign in
             </Link>
@@ -61,7 +61,7 @@ export default function Header() {
                 {n.label}
               </Link>
             ))}
-            <Link href="#" className="mt-1 bg-accent text-white text-sm font-medium px-4 py-2 rounded-full text-center">
+            <Link href="#" className="mt-1 bg-accent text-white text-sm font-medium px-4 py-2 rounded-lg text-center">
               Sign in
             </Link>
           </div>

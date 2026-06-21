@@ -14,6 +14,15 @@
   --color-accent-tint: var(--accent-tint);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Tighter corners — max 10px on rectangles (owner preference: no roundy corners).
+     rounded-full stays 9999px for genuine circles (icons, dots). */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-2xl: 10px;
+  --radius-3xl: 10px;
 }
 
 body {

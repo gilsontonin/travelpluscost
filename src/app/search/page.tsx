@@ -32,12 +32,12 @@ export default async function SearchPage({
     <div className="mx-auto max-w-5xl px-4 py-6">
       <SearchPanel initial={{ destination, checkin, checkout, adults: String(adults) }} />
 
-      {/* tabs (segmented pill) */}
-      <div className="mt-5 inline-flex bg-black/[0.05] rounded-full p-1">
+      {/* tabs (segmented) */}
+      <div className="mt-5 inline-flex bg-black/[0.05] rounded-lg p-1">
         {TABS.map((t, i) => (
           <button
             key={t}
-            className={`text-sm px-5 py-2 rounded-full transition ${
+            className={`text-sm px-5 py-2 rounded-md transition ${
               i === 1 ? "bg-white shadow-sm font-semibold" : "text-black/60"
             }`}
           >
@@ -102,7 +102,7 @@ export default async function SearchPage({
               {["1", "2", "3", "…", "8", "9", "10"].map((p, i) => (
                 <button
                   key={i}
-                  className={`w-9 h-9 rounded-full ${p === "1" ? "bg-accent text-white" : "hover:bg-black/5 text-black/70"}`}
+                  className={`w-9 h-9 rounded-md ${p === "1" ? "bg-accent text-white" : "hover:bg-black/5 text-black/70"}`}
                 >
                   {p}
                 </button>

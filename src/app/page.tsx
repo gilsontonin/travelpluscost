@@ -25,7 +25,7 @@ export default function Home() {
           <Link
             key={c}
             href={`/search?destination=${encodeURIComponent(c)}&adults=2`}
-            className="px-4 py-2 rounded-full bg-white border border-black/5 text-sm hover:border-accent hover:text-accent transition"
+            className="px-4 py-2 rounded-lg bg-white border border-black/5 text-sm hover:border-accent hover:text-accent transition"
           >
             {c}
           </Link>
