@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CardCarousel from "@/components/CardCarousel";
 import type { CardHotel } from "@/lib/oahu";
 import type { Price } from "@/lib/rates";
 import { money, reviewLabel } from "@/lib/format";
@@ -23,32 +24,16 @@ export default function HotelRow({
       className="block bg-white rounded-lg border border-black/5 overflow-hidden hover:shadow-md transition"
     >
       <div className="flex items-stretch">
-        <div className="w-36 sm:w-72 shrink-0 bg-zinc-100 flex flex-col">
-          <div className="relative flex-1 min-h-0">
-            {hotel.image ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={hotel.image} alt={hotel.name} loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-            ) : (
-              <div className="absolute inset-0 grid place-items-center text-black/30 text-xs">no photo</div>
-            )}
-            <span className="absolute top-2 right-2 bg-white/95 w-7 h-7 rounded-full grid place-items-center shadow-sm text-black/60">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
-              </svg>
-            </span>
-          </div>
-          {/* two thumbnails under the main photo — mobile only (Expedia-style) */}
-          {hotel.images.length > 2 ? (
-            <div className="grid grid-cols-2 gap-0.5 h-16 sm:hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={hotel.images[1]} alt="" loading="lazy" className="w-full h-full object-cover" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={hotel.images[2]} alt="" loading="lazy" className="w-full h-full object-cover" />
-            </div>
-          ) : null}
+        <div className="relative w-36 sm:w-72 shrink-0 bg-zinc-100 overflow-hidden">
+          <CardCarousel images={hotel.images} alt={hotel.name} />
+          <span className="absolute top-2 right-2 z-10 bg-white/95 w-7 h-7 rounded-full grid place-items-center shadow-sm text-black/60 pointer-events-none">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+            </svg>
+          </span>
         </div>
 
-        <div className="flex-1 min-w-0 p-3 sm:p-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4 min-h-[240px] sm:min-h-[184px]">
+        <div className="flex-1 min-w-0 p-3 sm:p-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4 min-h-[210px] sm:min-h-[184px]">
           <div className="min-w-0">
             <h3 className="font-semibold leading-snug line-clamp-2 sm:line-clamp-1">{hotel.name}</h3>
             <p className="text-sm text-black/50 mt-0.5 line-clamp-1">

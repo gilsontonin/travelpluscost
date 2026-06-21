@@ -34,7 +34,7 @@ export function toCard(h: OahuHotel): CardHotel {
     city: h.city,
     address: h.address,
     image: h.image,
-    images: h.images.slice(0, 3),
+    images: h.images.slice(0, 6),
     stars: h.stars,
     rating: h.rating,
     reviewCount: h.reviewCount,
