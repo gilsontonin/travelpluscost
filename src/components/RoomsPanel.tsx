@@ -4,8 +4,26 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import CardCarousel from "@/components/CardCarousel";
 import AmenityIcon from "@/components/AmenityIcon";
+import RoomDateBar from "@/components/RoomDateBar";
 import { money } from "@/lib/format";
 import type { RoomOffer } from "@/lib/rates";
+
+const ROOM_SORTS = {
+  price_asc: "Lead-in price",
+  price_desc: "Price: high to low",
+  sleeps: "Sleeps: most",
+  size: "Largest room",
+} as const;
+type RoomSortKey = keyof typeof ROOM_SORTS;
+
+function sortOffers(offers: RoomOffer[], key: RoomSortKey): RoomOffer[] {
+  const arr = [...offers];
+  if (key === "price_desc") arr.sort((a, b) => b.price.amount - a.price.amount);
+  else if (key === "sleeps") arr.sort((a, b) => (b.sleeps ?? 0) - (a.sleeps ?? 0));
+  else if (key === "size") arr.sort((a, b) => (b.sqft ?? 0) - (a.sqft ?? 0));
+  else arr.sort((a, b) => a.price.amount - b.price.amount); // lead-in price
+  return arr;
+}
 
 type RoomsData = { offers: RoomOffer[]; nights: number; checkin: string; checkout: string };
 
@@ -138,6 +156,7 @@ export default function RoomsPanel({ hotelId }: { hotelId: string }) {
   const checkout = sp.get("checkout") ?? "";
   const adults = sp.get("adults") ?? "2";
   const [data, setData] = useState<RoomsData | null>(null);
+  const [sort, setSort] = useState<RoomSortKey>("price_asc");
 
   useEffect(() => {
     let on = true;
@@ -178,7 +197,28 @@ export default function RoomsPanel({ hotelId }: { hotelId: string }) {
   return (
     <>
       <section id="rooms" className="mt-10 scroll-mt-24">
-        <h2 className="text-xl font-semibold mb-4">Choose your room</h2>
+        <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
+          <h2 className="text-xl font-semibold">Choose your room</h2>
+          {data && data.offers.length > 1 ? (
+            <label className="text-sm flex items-center gap-2 text-black/70">
+              <span className="hidden sm:inline">Sort</span>
+              <select
+                value={sort}
+                onChange={(e) => setSort(e.target.value as RoomSortKey)}
+                className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
+              >
+                {(Object.keys(ROOM_SORTS) as RoomSortKey[]).map((k) => (
+                  <option key={k} value={k}>
+                    {ROOM_SORTS[k]}
+                  </option>
+                ))}
+              </select>
+            </label>
+          ) : null}
+        </div>
+
+        <RoomDateBar />
+
         {data === null ? (
           <div className="space-y-4">
             {[0, 1, 2].map((i) => (
@@ -189,7 +229,7 @@ export default function RoomsPanel({ hotelId }: { hotelId: string }) {
           <p className="text-black/50">No rooms available for these dates. Try different dates.</p>
         ) : (
           <div className="space-y-4">
-            {data.offers.map((o) => (
+            {sortOffers(data.offers, sort).map((o) => (
               <RoomCard key={o.offerId} o={o} href={reserveHref(o)} />
             ))}
           </div>
