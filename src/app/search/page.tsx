@@ -6,7 +6,7 @@ import { searchHotels } from "@/lib/hotels";
 // Live rates per request — never prerender at build.
 export const dynamic = "force-dynamic";
 
-const TABS = ["All stays", "Hotels", "Homes"];
+const TABS = ["Any", "Hotels", "Homes"];
 const FILTERS = ["Filters", "Popular", "Price", "Guest rating", "Property amenities", "Sort"];
 
 export default async function SearchPage({
@@ -32,13 +32,13 @@ export default async function SearchPage({
     <div className="mx-auto max-w-5xl px-4 py-6">
       <SearchPanel initial={{ destination, checkin, checkout, adults: String(adults) }} />
 
-      {/* tabs */}
-      <div className="mt-5 flex gap-1 border-b border-black/10">
+      {/* tabs (segmented pill) */}
+      <div className="mt-5 inline-flex bg-black/[0.05] rounded-full p-1">
         {TABS.map((t, i) => (
           <button
             key={t}
-            className={`text-sm px-4 py-2.5 -mb-px border-b-2 ${
-              i === 1 ? "border-accent text-accent font-medium" : "border-transparent text-black/60"
+            className={`text-sm px-5 py-2 rounded-full transition ${
+              i === 1 ? "bg-white shadow-sm font-semibold" : "text-black/60"
             }`}
           >
             {t}

@@ -44,7 +44,7 @@ export default async function HotelPage({
   }
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6">
+    <div className="mx-auto max-w-6xl px-4 py-6 pb-24 lg:pb-6">
       <Link href={`/search?destination=Oahu&adults=${adults}`} className="text-sm text-black/50 hover:text-black">
         ← Back to results
       </Link>
@@ -52,12 +52,15 @@ export default async function HotelPage({
       {/* gallery */}
       <div className="mt-3 grid grid-cols-4 grid-rows-2 gap-2 rounded-2xl overflow-hidden h-[300px] sm:h-[440px]">
         {hero ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={hero.url}
-            alt={hotel.name}
-            className="col-span-4 row-span-2 sm:col-span-2 w-full h-full object-cover"
-          />
+          <div className="relative col-span-4 row-span-2 sm:col-span-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={hero.url} alt={hotel.name} className="w-full h-full object-cover" />
+            {hotel.images.length > 1 ? (
+              <span className="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-2.5 py-1 rounded-lg">
+                {hotel.images.length} photos
+              </span>
+            ) : null}
+          </div>
         ) : (
           <div className="col-span-4 row-span-2 bg-zinc-100" />
         )}
@@ -145,7 +148,7 @@ export default async function HotelPage({
 
       {/* rooms */}
       {offers.length ? (
-        <section className="mt-10">
+        <section id="rooms" className="mt-10 scroll-mt-24">
           <h2 className="text-xl font-semibold mb-4">Choose your room</h2>
           <div className="space-y-3">
             {offers.map((o) => (
@@ -178,6 +181,22 @@ export default async function HotelPage({
             ))}
           </div>
         </section>
+      ) : null}
+
+      {/* mobile sticky price bar */}
+      {cheapest ? (
+        <div className="lg:hidden fixed bottom-0 inset-x-0 z-20 bg-white border-t border-black/10 px-4 py-3 flex items-center justify-between">
+          <div>
+            <div className="font-bold">
+              {money(cheapest.price.perNight, cheapest.price.currency)}
+              <span className="text-sm font-normal text-black/50"> nightly</span>
+            </div>
+            <div className="text-xs text-black/50">{money(cheapest.price.amount, cheapest.price.currency)} total</div>
+          </div>
+          <a href="#rooms" className="bg-accent text-white font-medium px-6 py-3 rounded-xl">
+            Select a room
+          </a>
+        </div>
       ) : null}
     </div>
   );
