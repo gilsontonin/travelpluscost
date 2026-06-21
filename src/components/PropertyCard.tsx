@@ -1,16 +1,14 @@
+import Link from "next/link";
 import type { HotelCardData } from "@/lib/hotels";
+import { money } from "@/lib/format";
 
-function money(n: number, c: string) {
-  try {
-    return new Intl.NumberFormat("en-US", { style: "currency", currency: c, maximumFractionDigits: 0 }).format(n);
-  } catch {
-    return `$${Math.round(n)}`;
-  }
-}
-
-export default function PropertyCard({ hotel }: { hotel: HotelCardData }) {
+export default function PropertyCard({ hotel, query }: { hotel: HotelCardData; query?: string }) {
+  const href = `/hotel/${hotel.id}${query ? `?${query}` : ""}`;
   return (
-    <article className="bg-white rounded-2xl border border-black/5 overflow-hidden hover:shadow-md transition">
+    <Link
+      href={href}
+      className="block group bg-white rounded-2xl border border-black/5 overflow-hidden hover:shadow-md transition"
+    >
       <div className="relative aspect-[16/11] bg-zinc-100">
         {hotel.image ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -42,9 +40,7 @@ export default function PropertyCard({ hotel }: { hotel: HotelCardData }) {
                 {money(hotel.price.perNight, hotel.price.currency)}
                 <span className="text-black/45 font-normal text-sm">/night</span>
               </div>
-              <div className="text-xs text-black/45 underline decoration-black/20">
-                {money(hotel.price.amount, hotel.price.currency)}/total
-              </div>
+              <div className="text-xs text-black/45">{money(hotel.price.amount, hotel.price.currency)}/total</div>
             </div>
           ) : (
             <span className="text-sm text-black/40">See prices</span>
@@ -52,6 +48,6 @@ export default function PropertyCard({ hotel }: { hotel: HotelCardData }) {
         </div>
         <p className="mt-2 text-[11px] text-accent/80">Same price for everyone · no hidden markup</p>
       </div>
-    </article>
+    </Link>
   );
 }

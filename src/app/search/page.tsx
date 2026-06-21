@@ -37,11 +37,16 @@ export default async function SearchPage({
 
   const hotels = destination ? await searchHotels(destination, { checkin, checkout, adults }) : [];
 
+  const cardQuery = new URLSearchParams({
+    ...(checkin ? { checkin } : {}),
+    ...(checkout ? { checkout } : {}),
+    adults: String(adults),
+  }).toString();
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">
       <SearchPanel initial={{ destination, checkin, checkout, adults: String(adults) }} />
 
-      {/* results bar */}
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
         <h1 className="text-lg sm:text-xl">
           {destination ? (
@@ -67,7 +72,6 @@ export default async function SearchPage({
         </div>
       </div>
 
-      {/* category chips */}
       <div className="mt-4 flex gap-2 overflow-x-auto pb-2 -mx-1 px-1">
         {CATEGORIES.map((c, i) => (
           <button
@@ -83,7 +87,6 @@ export default async function SearchPage({
         ))}
       </div>
 
-      {/* results + filters */}
       <div className="mt-5 grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
         <div>
           {!destination ? (
@@ -101,7 +104,7 @@ export default async function SearchPage({
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {hotels.map((h) => (
-                  <PropertyCard key={h.id} hotel={h} />
+                  <PropertyCard key={h.id} hotel={h} query={cardQuery} />
                 ))}
               </div>
               <div className="mt-8 flex items-center justify-center gap-1 text-sm">
@@ -118,7 +121,6 @@ export default async function SearchPage({
           )}
         </div>
 
-        {/* filters sidebar (visual) */}
         <aside className="hidden lg:block">
           <div className="bg-white rounded-2xl border border-black/5 p-5 sticky top-24">
             <div className="flex items-center justify-between mb-4">

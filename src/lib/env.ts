@@ -9,6 +9,7 @@ import { z } from "zod";
 const serverSchema = z.object({
   // LiteAPI
   LITEAPI_KEY: z.string().default(""),
+  LITEAPI_SANDBOX: z.string().default(""), // safe test bookings (no real charge)
   LITEAPI_ENV: z.enum(["sandbox", "production"]).default("production"),
   LITEAPI_BASE_URL: z.string().default("https://api.liteapi.travel/v3.0"),
 
