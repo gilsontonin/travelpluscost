@@ -14,6 +14,7 @@ import PopularAmenities from "@/components/PopularAmenities";
 import PropertyFaq from "@/components/PropertyFaq";
 import PoliciesInfo from "@/components/PoliciesInfo";
 import SimilarHotels from "@/components/SimilarHotels";
+import TrackView from "@/components/TrackView";
 import { nearbyLabel } from "@/lib/distance";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelpluscost.com";
@@ -30,6 +31,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
 
   return (
     <div className="mx-auto max-w-6xl px-4 pt-3 pb-24 sm:py-6 lg:pb-6">
+      <TrackView id={hotel.id} />
       {/* gallery */}
       <PhotoGallery images={hotel.images} name={hotel.name} backHref="/search?destination=Oahu&adults=2" />
 

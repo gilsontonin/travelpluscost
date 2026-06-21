@@ -123,6 +123,29 @@ export function detectAmenities(facilities: string[]): string[] {
   return AMENITY_MATCHERS.filter(([, re]) => re.test(text)).map(([name]) => name);
 }
 
+// Minimal shape for home rails / recently-viewed (small client payload).
+export interface RailHotel {
+  id: string;
+  name: string;
+  image: string;
+  city: string;
+  rating: number | null;
+  reviewCount: number | null;
+  propertyType: string;
+}
+
+export function toRail(h: OahuHotel): RailHotel {
+  return {
+    id: h.id,
+    name: h.name,
+    image: h.image,
+    city: h.city,
+    rating: h.rating,
+    reviewCount: h.reviewCount,
+    propertyType: classifyType(h.hotelType).label,
+  };
+}
+
 export function toCard(h: OahuHotel): CardHotel {
   return {
     id: h.id,
