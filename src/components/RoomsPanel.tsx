@@ -159,7 +159,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
   );
 }
 
-export default function RoomsPanel({ hotelId }: { hotelId: string }) {
+export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: string }) {
   const sp = useSearchParams();
   const checkin = sp.get("checkin") ?? "";
   const checkout = sp.get("checkout") ?? "";
@@ -167,6 +167,15 @@ export default function RoomsPanel({ hotelId }: { hotelId: string }) {
   const [data, setData] = useState<RoomsData | null>(null);
   const [sort, setSort] = useState<RoomSortKey>("price_asc");
   const [beds, setBeds] = useState<"all" | "1" | "2" | "3">("all");
+  const [scrolled, setScrolled] = useState(false);
+
+  // Sticky CTA appears once you scroll past the hero (Expedia pattern).
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 420);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     let on = true;
@@ -298,20 +307,25 @@ export default function RoomsPanel({ hotelId }: { hotelId: string }) {
         )}
       </section>
 
-      {cheapest ? (
-        <div className="lg:hidden fixed bottom-0 inset-x-0 z-20 bg-white border-t border-black/10 px-4 py-3 flex items-center justify-between">
-          <div>
-            <div className="font-bold">
+      <div
+        className={`lg:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-black/10 px-4 py-3 flex items-center justify-between gap-3 shadow-[0_-2px_10px_rgba(0,0,0,0.06)] transition-transform duration-200 ${
+          scrolled && cheapest ? "translate-y-0" : "translate-y-full"
+        }`}
+      >
+        <div className="min-w-0">
+          {name ? <p className="text-xs text-black/55 truncate">{name}</p> : null}
+          {cheapest ? (
+            <div className="font-bold leading-tight">
               {money(cheapest.price.perNight, cheapest.price.currency)}
               <span className="text-sm font-normal text-black/50"> /night</span>
+              <span className="text-xs font-normal text-black/45"> · {money(cheapest.price.amount, cheapest.price.currency)} total</span>
             </div>
-            <div className="text-xs text-black/50">{money(cheapest.price.amount, cheapest.price.currency)} total</div>
-          </div>
-          <a href="#rooms" className="bg-accent text-white font-medium px-6 py-3 rounded-lg">
-            Select a room
-          </a>
+          ) : null}
         </div>
-      ) : null}
+        <a href="#rooms" className="bg-accent text-white font-medium px-6 py-3 rounded-lg whitespace-nowrap shrink-0">
+          Select a room
+        </a>
+      </div>
     </>
   );
 }

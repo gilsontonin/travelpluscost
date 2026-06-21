@@ -13,6 +13,7 @@ import AmenitiesSection from "@/components/AmenitiesSection";
 import PopularAmenities from "@/components/PopularAmenities";
 import PropertyFaq from "@/components/PropertyFaq";
 import PoliciesInfo from "@/components/PoliciesInfo";
+import SimilarHotels from "@/components/SimilarHotels";
 import { nearbyLabel } from "@/lib/distance";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelpluscost.com";
@@ -154,11 +155,13 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
 
       {/* rooms + prices (live, client-loaded) */}
       <Suspense fallback={<div className="mt-10 h-40 rounded-lg bg-black/[0.04] animate-pulse" />}>
-        <RoomsPanel hotelId={hotel.id} />
+        <RoomsPanel hotelId={hotel.id} name={hotel.name} />
       </Suspense>
 
       <Reviews hotel={hotel} />
       <ExploreArea lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} />
+
+      <SimilarHotels id={hotel.id} />
 
       <ViatorPackages lat={hotel.lat} lng={hotel.lng} />
 

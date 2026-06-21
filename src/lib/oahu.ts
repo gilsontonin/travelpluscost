@@ -1,7 +1,7 @@
 // Local hotel CONTENT store (ingested from LiteAPI -> content/oahu.json).
 // Served instantly (no live API call for content). Scales: ingest more -> bigger JSON / a DB.
 import oahuData from "../../content/oahu.json";
-import { nearbyLabel } from "./distance";
+import { nearbyLabel, haversineMiles } from "./distance";
 
 export interface Room {
   name: string;
@@ -114,6 +114,16 @@ export function getAllOahu(): OahuHotel[] {
 
 export function getOahuHotel(id: string): OahuHotel | null {
   return HOTELS.find((h) => h.id === id) ?? null;
+}
+
+/** The closest other hotels in our set (for "Other places to stay nearby"). */
+export function getNearbyHotels(id: string, limit = 6): { hotel: OahuHotel; miles: number }[] {
+  const self = getOahuHotel(id);
+  if (!self || self.lat == null || self.lng == null) return [];
+  return HOTELS.filter((h) => h.id !== id && h.lat != null && h.lng != null && h.image)
+    .map((h) => ({ hotel: h, miles: haversineMiles(self.lat as number, self.lng as number, h.lat as number, h.lng as number) }))
+    .sort((a, b) => a.miles - b.miles)
+    .slice(0, limit);
 }
 
 /** Search the local Oahu set. Returns all Oahu for island-wide queries, filters by city when given,
