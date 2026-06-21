@@ -11,6 +11,8 @@ export default async function ConfirmedPage({
 }) {
   const sp = await searchParams;
   const ref = sp.ref ?? "TPC-DEMO";
+  const bookingId = sp.bookingId ?? "";
+  const status = sp.status ?? "";
   const hotelId = sp.hotelId ?? "";
   const room = sp.room ?? "Room";
   const total = Number(sp.total ?? 0);
@@ -30,24 +32,29 @@ export default async function ConfirmedPage({
             <path d="M20 6 9 17l-5-5" />
           </svg>
         </div>
-        <h1 className="text-2xl font-semibold mt-4">Booking confirmed</h1>
+        <span className="mt-3 inline-block rounded-full bg-amber-100 text-amber-800 text-[0.7rem] font-semibold px-2.5 py-1 tracking-wide">
+          SANDBOX · TEST BOOKING · NO CHARGE
+        </span>
+        <h1 className="text-2xl font-semibold mt-3">Booking {status ? status.toLowerCase() : "confirmed"}</h1>
         <p className="text-black/55 mt-1">
           {guest ? `Thanks, ${guest}. ` : ""}A confirmation has been sent{email ? ` to ${email}` : ""}.
         </p>
         <p className="mt-3 inline-block bg-black/[0.04] rounded-md px-4 py-1.5 text-sm font-mono">
-          Ref: {ref}
+          Confirmation: {ref}
         </p>
 
         <div className="mt-6 text-left text-sm border-t border-black/5 pt-5 space-y-2">
           <Row label="Hotel" value={hotel?.name ?? "—"} />
           <Row label="Room" value={room} />
           <Row label="Dates" value={`${checkin} → ${checkout}`} />
-          <Row label="Total paid" value={money(total, currency)} />
+          {bookingId ? <Row label="Booking ID" value={bookingId} /> : null}
+          {status ? <Row label="Status" value={status} /> : null}
+          <Row label="Total" value={money(total, currency)} />
         </div>
 
         <p className="mt-6 text-xs text-black/40">
-          Test booking — no card was charged and no real reservation was made (demo / sandbox). The price you saw
-          is the same price everyone sees.
+          This is a real reservation in LiteAPI&apos;s sandbox — a genuine confirmation code, but no card
+          was charged and no live booking was made. The price shown is the same price everyone sees.
         </p>
 
         <Link href="/" className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-xl hover:opacity-90 transition">

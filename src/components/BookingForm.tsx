@@ -22,10 +22,6 @@ const PAY = [
   { id: "googlepay", label: "Google Pay" },
 ];
 
-function makeRef() {
-  return "TPC-" + Math.random().toString(36).slice(2, 8).toUpperCase();
-}
-
 export default function BookingForm(props: Props) {
   const router = useRouter();
   const [firstName, setFirstName] = useState("");
@@ -33,23 +29,48 @@ export default function BookingForm(props: Props) {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [pay, setPay] = useState("card");
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState("");
 
-  function submit(e: React.FormEvent) {
+  async function submit(e: React.FormEvent) {
     e.preventDefault();
-    const q = new URLSearchParams({
-      ref: makeRef(),
-      hotelId: props.hotelId,
-      room: props.room,
-      total: props.total,
-      currency: props.currency,
-      nights: props.nights,
-      checkin: props.checkin,
-      checkout: props.checkout,
-      adults: props.adults,
-      guest: `${firstName} ${lastName}`.trim(),
-      email,
-    });
-    router.push(`/booking-confirmed?${q.toString()}`);
+    setBusy(true);
+    setError("");
+    try {
+      const res = await fetch("/api/book", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          hotelId: props.hotelId,
+          room: props.room,
+          checkin: props.checkin,
+          checkout: props.checkout,
+          adults: props.adults,
+          firstName,
+          lastName,
+          email,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data?.error || "Booking failed.");
+      const q = new URLSearchParams({
+        ref: data.bookingId || data.confirmationCode || "—",
+        bookingId: data.bookingId || "",
+        status: data.status || "",
+        hotelId: props.hotelId,
+        room: data.room || props.room,
+        total: String(data.total || props.total),
+        currency: data.currency || props.currency,
+        checkin: props.checkin,
+        checkout: props.checkout,
+        guest: `${firstName} ${lastName}`.trim(),
+        email,
+      });
+      router.push(`/booking-confirmed?${q.toString()}`);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Booking failed.");
+      setBusy(false);
+    }
   }
 
   const field = "w-full border border-black/15 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-accent";
@@ -85,11 +106,20 @@ export default function BookingForm(props: Props) {
         <input className={`${field} mt-2`} placeholder="Billing ZIP code" />
       </section>
 
-      <button type="submit" className="w-full bg-accent text-white font-semibold px-5 py-3.5 rounded-xl hover:opacity-90 transition">
-        Book now
+      {error ? (
+        <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-3 py-2.5 text-center">{error}</p>
+      ) : null}
+
+      <button
+        type="submit"
+        disabled={busy}
+        className="w-full bg-accent text-white font-semibold px-5 py-3.5 rounded-xl hover:opacity-90 transition disabled:opacity-60"
+      >
+        {busy ? "Confirming your booking…" : "Book now"}
       </button>
       <p className="text-xs text-black/40 text-center">
-        Test booking · no card required, no charge (demo). One flat fee — the same price for everyone.
+        Sandbox test booking — creates a real, no-charge test reservation via LiteAPI. No card is
+        charged. One honest price, the same for everyone.
       </p>
     </form>
   );

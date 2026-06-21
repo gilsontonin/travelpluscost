@@ -96,7 +96,7 @@ function matchRoom(name: string, rooms: Room[]): Room | undefined {
 // HARBOR 2 QUEEN BEDS" are one row, the way Expedia/Priceline group rate plans. LiteAPI returned
 // 200 rate plans / 59 raw names for one hotel; this keys by bed config + view + tier + access,
 // so we show ~15 real room types (cheapest plan each), not 8 near-dupes hiding the rest.
-function canonRoom(name: string): string {
+export function canonRoom(name: string): string {
   let s = name.toLowerCase().replace(/ocean\s*front|oceanfront/g, "oceanfront");
   s = s
     .replace(/\bqueens\b/g, "queen")

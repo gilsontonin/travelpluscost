@@ -34,6 +34,11 @@ export default async function BookPage({
         ← Back
       </Link>
 
+      <div className="mt-3 rounded-xl bg-amber-50 border border-amber-200 px-4 py-2.5 text-sm text-amber-900">
+        <b>Sandbox test checkout.</b> This creates a real, no-charge test reservation — no card is charged
+        and no live booking is made.
+      </div>
+
       <div className="mt-4 grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6">
         {/* left: guest + payment */}
         <BookingForm
