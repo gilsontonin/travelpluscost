@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllOahu, getOahuHotel } from "@/lib/oahu";
 import RoomsPanel from "@/components/RoomsPanel";
@@ -14,6 +15,8 @@ import PropertyFaq from "@/components/PropertyFaq";
 import PoliciesInfo from "@/components/PoliciesInfo";
 import { nearbyLabel } from "@/lib/distance";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelpluscost.com";
+
 // Pre-render every ingested Oahu hotel as a static page (instant).
 export function generateStaticParams() {
   return getAllOahu().map((h) => ({ id: h.id }));
@@ -28,6 +31,38 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
     <div className="mx-auto max-w-6xl px-4 pt-3 pb-24 sm:py-6 lg:pb-6">
       {/* gallery */}
       <PhotoGallery images={hotel.images} name={hotel.name} backHref="/search?destination=Oahu&adults=2" />
+
+      {/* breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="mt-3 flex flex-wrap items-center gap-1.5 text-xs text-black/50">
+        <Link href="/" className="hover:text-black">
+          Home
+        </Link>
+        <span aria-hidden>›</span>
+        <Link href="/search?destination=Oahu&adults=2" className="hover:text-black">
+          Oahu hotels
+        </Link>
+        <span aria-hidden>›</span>
+        <span className="text-black/70 truncate max-w-[60%]">{hotel.name}</span>
+      </nav>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { name: "Home", path: "/" },
+              { name: "Oahu hotels", path: "/search?destination=Oahu&adults=2" },
+              { name: hotel.name, path: `/hotel/${hotel.id}` },
+            ].map((c, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              name: c.name,
+              item: `${SITE_URL}${c.path}`,
+            })),
+          }),
+        }}
+      />
 
       {/* header */}
       <div className="mt-5">

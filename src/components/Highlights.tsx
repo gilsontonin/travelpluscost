@@ -31,11 +31,22 @@ const ICON: Record<string, ReactNode> = {
 function highlightsFor(h: OahuHotel): { title: string; desc: string; icon: string }[] {
   const am = detectAmenities(h.facilities);
   const out: { title: string; desc: string; icon: string }[] = [];
+
+  // Sentiment-driven (like Expedia's "Top-rated …" / "Guests loved …").
+  const topCat = h.sentiment?.categories?.slice().sort((a, b) => b.rating - a.rating)[0];
+  if (topCat && topCat.rating >= 9.3) {
+    const name = topCat.name.toLowerCase();
+    out.push({ title: `Top-rated ${name}`, desc: `Guests rate ${name} ${topCat.rating.toFixed(1)}/10.`, icon: "sparkle" });
+  }
+
   if ((h.rating ?? 0) >= 9)
     out.push({ title: "Guest favorite", desc: "Exceptional reviews from recent guests.", icon: "award" });
   if (am.includes("Beachfront")) out.push({ title: "By the beach", desc: "Steps from the sand.", icon: "beach" });
   if ((h.stars ?? 0) >= 5) out.push({ title: "Luxury stay", desc: "A top-tier 5-star property.", icon: "sparkle" });
   if (am.includes("Pool")) out.push({ title: "Pool on site", desc: "Cool off without leaving.", icon: "pool" });
+
+  const pro = h.sentiment?.pros?.[0];
+  if (pro && out.length < 3) out.push({ title: "Guests loved it", desc: pro, icon: "star" });
   if (out.length < 2 && (h.reviewCount ?? 0) > 500)
     out.push({ title: "Well reviewed", desc: `${(h.reviewCount ?? 0).toLocaleString()} guest reviews.`, icon: "star" });
   return out.slice(0, 3);

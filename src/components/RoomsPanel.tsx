@@ -37,7 +37,11 @@ function bedLine(o: RoomOffer): string {
   return o.beds.map((b) => `${b.qty} ${b.type} bed${b.qty > 1 ? "s" : ""}`).join(" + ");
 }
 
-function RoomCard({ o, href }: { o: RoomOffer; href: string }) {
+function bedCount(o: RoomOffer): number {
+  return (o.beds ?? []).reduce((s, b) => s + (b.qty || 0), 0);
+}
+
+function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?: boolean }) {
   const [details, setDetails] = useState(false);
   const meta = [bedLine(o), o.sleeps ? `Sleeps ${o.sleeps}` : "", o.sqft ? `${o.sqft} sq ft` : ""]
     .filter(Boolean)
@@ -53,6 +57,11 @@ function RoomCard({ o, href }: { o: RoomOffer; href: string }) {
 
       <div className="flex-1 min-w-0 p-4 flex flex-col sm:flex-row sm:justify-between gap-4">
         <div className="min-w-0">
+          {isLowest ? (
+            <span className="inline-flex items-center gap-1 rounded-md bg-[#2e7d46] text-white text-[0.7rem] font-semibold px-1.5 py-0.5 mb-1">
+              Lowest price
+            </span>
+          ) : null}
           <p className="font-semibold leading-snug">{o.roomName}</p>
           <div className="flex flex-wrap items-center gap-2 mt-1">
             {o.view ? (
@@ -157,6 +166,7 @@ export default function RoomsPanel({ hotelId }: { hotelId: string }) {
   const adults = sp.get("adults") ?? "2";
   const [data, setData] = useState<RoomsData | null>(null);
   const [sort, setSort] = useState<RoomSortKey>("price_asc");
+  const [beds, setBeds] = useState<"all" | "1" | "2" | "3">("all");
 
   useEffect(() => {
     let on = true;
@@ -228,11 +238,63 @@ export default function RoomsPanel({ hotelId }: { hotelId: string }) {
         ) : data.offers.length === 0 ? (
           <p className="text-black/50">No rooms available for these dates. Try different dates.</p>
         ) : (
-          <div className="space-y-4">
-            {sortOffers(data.offers, sort).map((o) => (
-              <RoomCard key={o.offerId} o={o} href={reserveHref(o)} />
-            ))}
-          </div>
+          (() => {
+            const lowestId = [...data.offers].sort((a, b) => a.price.amount - b.price.amount)[0]?.offerId;
+            const hasBedData = data.offers.some((o) => bedCount(o) > 0);
+            const sorted = sortOffers(data.offers, sort);
+            const shown =
+              beds === "all"
+                ? sorted
+                : sorted.filter((o) => {
+                    const c = bedCount(o);
+                    return beds === "3" ? c >= 3 : c === Number(beds);
+                  });
+            return (
+              <>
+                {hasBedData ? (
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {([
+                      ["all", "All rooms"],
+                      ["1", "1 bed"],
+                      ["2", "2 beds"],
+                      ["3", "3+ beds"],
+                    ] as const).map(([v, label]) => (
+                      <button
+                        key={v}
+                        onClick={() => setBeds(v)}
+                        className={`text-sm px-3.5 py-1.5 rounded-full border transition ${
+                          beds === v
+                            ? "bg-accent-tint text-accent border-accent/40 font-medium"
+                            : "border-black/20 text-black/70 hover:border-black/40"
+                        }`}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                ) : null}
+
+                <p className="text-sm text-black/55 mb-3">
+                  Showing {shown.length} of {data.offers.length} room{data.offers.length === 1 ? "" : "s"}
+                </p>
+
+                {shown.length === 0 ? (
+                  <p className="text-black/50">
+                    No rooms match that bed count.{" "}
+                    <button onClick={() => setBeds("all")} className="text-accent">
+                      Show all rooms
+                    </button>
+                  </p>
+                ) : (
+                  <div className="space-y-4">
+                    {shown.map((o) => (
+                      <RoomCard key={o.offerId} o={o} href={reserveHref(o)} isLowest={o.offerId === lowestId} />
+                    ))}
+                  </div>
+                )}
+              </>
+            );
+          })()
         )}
       </section>
 
