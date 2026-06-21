@@ -38,6 +38,24 @@ function toSqft(size, unit) {
   if (!size || typeof size !== "number") return null;
   return unit === "m2" ? Math.round(size * 10.7639) : Math.round(size);
 }
+// LiteAPI room.description is rich, structured HTML:
+//   <p><strong>1 King Bed</strong></p><p>141-sq-foot room ...</p>
+//   <p><b>Internet</b> - Free WiFi 50+ Mbps</p><p><b>Entertainment</b> - 42-inch LCD TV ...</p>
+// Split into the "Label - value" feature bullets (the genuinely useful part) + a short summary.
+function parseRoomDesc(html) {
+  if (!html) return { summary: "", features: [] };
+  const blocks = html
+    .split(/<\/p>|<br\s*\/?>/i)
+    .map((b) => stripHtml(b))
+    .filter(Boolean);
+  const features = [];
+  let summary = "";
+  for (const b of blocks) {
+    if (/\s-\s/.test(b) && b.length < 220) features.push(b);
+    else if (!summary && b.length < 160) summary = b;
+  }
+  return { summary, features: features.slice(0, 8) };
+}
 // rooms[] is the richest content we previously dropped: photos, size, beds, per-room amenities.
 function normRooms(raw) {
   if (!Array.isArray(raw)) return [];
@@ -49,9 +67,12 @@ function normRooms(raw) {
     const key = name.toLowerCase();
     if (seen.has(key)) continue; // dedupe identical room names
     seen.add(key);
+    const { summary, features } = parseRoomDesc(r.description);
     out.push({
       name,
-      desc: stripHtml(r.description).slice(0, 180),
+      summary,
+      features,
+      view: (r.views ?? []).map((v) => v?.view).filter(Boolean)[0] ?? null,
       sqft: toSqft(r.roomSizeSquare, r.roomSizeUnit),
       sleeps: r.maxOccupancy ?? r.maxAdults ?? null,
       beds: (r.bedTypes ?? [])
@@ -60,12 +81,20 @@ function normRooms(raw) {
       amenities: (r.roomAmenities ?? r.amenities ?? [])
         .map((a) => (typeof a === "string" ? a : a?.name))
         .filter(Boolean)
-        .slice(0, 10),
+        .slice(0, 12),
       photos: (r.photos ?? []).map((p) => p.hd_url || p.url).filter(Boolean).slice(0, 6),
     });
     if (out.length >= 40) break;
   }
   return out;
+}
+// Structured policies (Pets, Children, Groups, deposit…) — keep the ones with real text.
+function normPolicies(raw) {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .map((p) => ({ name: (p?.name ?? "").trim(), description: stripHtml(p?.description).trim() }))
+    .filter((p) => p.name && p.description)
+    .slice(0, 8);
 }
 async function pool(items, n, fn) {
   const out = [];
@@ -126,10 +155,14 @@ const main = async () => {
       hotelType: d.hotelType || null,
       petsAllowed: typeof d.petsAllowed === "boolean" ? d.petsAllowed : null,
       childAllowed: typeof d.childAllowed === "boolean" ? d.childAllowed : null,
+      importantInfo: stripHtml(d.hotelImportantInformation).slice(0, 1200) || null,
+      policies: normPolicies(d.policies),
+      reviewsUpdated: d.sentiment_updated_at ?? null,
       lat: d.location?.latitude ?? d.latitude ?? x.latitude ?? null,
       lng: d.location?.longitude ?? d.longitude ?? x.longitude ?? null,
       checkin: d.checkinCheckoutTimes?.checkin_start ?? null,
       checkout: d.checkinCheckoutTimes?.checkout ?? null,
+      airportCode: d.airportCode ?? null,
       rooms: normRooms(d.rooms),
       sentiment: d.sentiment_analysis
         ? {

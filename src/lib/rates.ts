@@ -10,6 +10,7 @@ export interface Price {
   currency: string;
   nights: number;
   perNight: number;
+  refundable?: boolean;
 }
 export interface RoomOffer {
   offerId: string;
@@ -17,10 +18,12 @@ export interface RoomOffer {
   boardName?: string;
   refundable: boolean;
   freeCancelBefore?: string | null;
+  view?: string | null;
   sleeps?: number | null;
   beds?: { qty: number; type: string }[];
   sqft?: number | null;
   amenities?: string[];
+  features?: string[];
   photos?: string[];
   resortFee?: { amount: number; currency: string; label: string } | null;
   price: Price;
@@ -166,13 +169,17 @@ export async function getPrices(
   for (const data of results) {
     for (const rh of data) {
       let best: Money | undefined;
+      let bestRefundable = false;
       for (const rt of rh.roomTypes ?? []) {
         for (const r of rt.rates ?? []) {
           const sp = r.retailRate?.suggestedSellingPrice?.[0];
-          if (sp && typeof sp.amount === "number" && (!best || sp.amount < best.amount)) best = sp;
+          if (sp && typeof sp.amount === "number" && (!best || sp.amount < best.amount)) {
+            best = sp;
+            bestRefundable = r.cancellationPolicies?.refundableTag === "RFN";
+          }
         }
       }
-      if (best) out[rh.hotelId] = priced(best, n);
+      if (best) out[rh.hotelId] = { ...priced(best, n), refundable: bestRefundable };
     }
   }
   writeCache(key, out);
@@ -217,10 +224,12 @@ export async function getRooms(
         boardName: r.boardName,
         refundable: r.cancellationPolicies?.refundableTag === "RFN",
         freeCancelBefore: freeCancelBefore(r),
+        view: cr?.view ?? null,
         sleeps: r.maxOccupancy ?? cr?.sleeps ?? null,
         beds: cr?.beds?.length ? cr.beds : undefined,
         sqft: cr?.sqft ?? null,
         amenities: cr?.amenities?.length ? cr.amenities.slice(0, 6) : undefined,
+        features: cr?.features?.length ? cr.features : undefined,
         photos: cr?.photos?.length ? cr.photos : hotelPhotos.slice(0, 3),
         resortFee: resortFeeOf(r),
         price: priced(sp, n),

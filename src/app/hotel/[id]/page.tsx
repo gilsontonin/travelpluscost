@@ -8,7 +8,9 @@ import ViatorPackages from "@/components/ViatorPackages";
 import Highlights from "@/components/Highlights";
 import Reviews from "@/components/Reviews";
 import ExploreArea from "@/components/ExploreArea";
-import AmenityIcon from "@/components/AmenityIcon";
+import ExpandableText from "@/components/ExpandableText";
+import AmenitiesSection from "@/components/AmenitiesSection";
+import PoliciesInfo from "@/components/PoliciesInfo";
 
 // Pre-render every ingested Oahu hotel as a static page (instant).
 export function generateStaticParams() {
@@ -74,25 +76,13 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
       <div className="mt-6 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8">
         <div>
           {hotel.description ? (
-            <p className="text-black/70 leading-relaxed line-clamp-6">{hotel.description}</p>
-          ) : null}
-
-          {hotel.facilities.length ? (
-            <div className="mt-8">
-              <h2 className="text-lg font-semibold mb-4">What this place offers</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
-                {hotel.facilities.slice(0, 16).map((f) => (
-                  <div key={f} className="flex items-center gap-3 text-sm text-black/75">
-                    <AmenityIcon name={f} className="w-5 h-5 text-black/45 shrink-0" />
-                    <span className="truncate">{f}</span>
-                  </div>
-                ))}
-              </div>
-              {hotel.facilities.length > 16 ? (
-                <p className="mt-3 text-sm text-black/40">+{hotel.facilities.length - 16} more amenities</p>
-              ) : null}
+            <div>
+              <h2 className="text-lg font-semibold mb-2">About this property</h2>
+              <ExpandableText text={hotel.description} />
             </div>
           ) : null}
+
+          <AmenitiesSection facilities={hotel.facilities} />
 
           {/* Good to know — facts we actually have from content */}
           <div className="mt-8">
@@ -133,6 +123,8 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
       <ExploreArea lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} />
 
       <ViatorPackages lat={hotel.lat} lng={hotel.lng} />
+
+      <PoliciesInfo policies={hotel.policies} importantInfo={hotel.importantInfo} />
     </div>
   );
 }

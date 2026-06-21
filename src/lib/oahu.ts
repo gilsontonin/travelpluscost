@@ -4,7 +4,9 @@ import oahuData from "../../content/oahu.json";
 
 export interface Room {
   name: string;
-  desc: string;
+  summary: string;
+  features: string[];
+  view: string | null;
   sqft: number | null;
   sleeps: number | null;
   beds: { qty: number; type: string }[];
@@ -29,6 +31,10 @@ export interface OahuHotel {
   hotelType: string | null;
   petsAllowed: boolean | null;
   childAllowed: boolean | null;
+  importantInfo: string | null;
+  policies: { name: string; description: string }[];
+  reviewsUpdated: string | null;
+  airportCode: string | null;
   lat: number | null;
   lng: number | null;
   checkin: string | null;

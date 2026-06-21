@@ -91,6 +91,9 @@ export default function HotelRow({
                 </div>
                 <div className="text-xs sm:text-sm text-black/70">{money(price.amount, price.currency)} total</div>
                 <div className="text-[10px] sm:text-xs text-black/40">includes taxes &amp; fees</div>
+                {price.refundable ? (
+                  <div className="mt-1 text-[11px] text-[#1a7a4c] font-medium">Fully refundable</div>
+                ) : null}
                 <div className="mt-1 inline-flex items-center gap-1 text-[10px] sm:text-[11px] text-accent font-medium">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                     <path d="M20 6 9 17l-5-5" />

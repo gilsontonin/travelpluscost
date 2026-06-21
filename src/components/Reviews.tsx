@@ -5,6 +5,9 @@ export default function Reviews({ hotel }: { hotel: OahuHotel }) {
   const s = hotel.sentiment;
   const overall = reviewLabel(hotel.rating ?? undefined);
   if (!overall && !s) return null;
+  const updated = hotel.reviewsUpdated
+    ? new Date(hotel.reviewsUpdated).toLocaleDateString("en-US", { month: "long", year: "numeric" })
+    : "";
 
   return (
     <section className="mt-10">
@@ -16,7 +19,10 @@ export default function Reviews({ hotel }: { hotel: OahuHotel }) {
           <div>
             <p className="font-semibold">{overall.label}</p>
             {hotel.reviewCount ? (
-              <p className="text-sm text-black/55">{hotel.reviewCount.toLocaleString()} reviews</p>
+              <p className="text-sm text-black/55">
+                {hotel.reviewCount.toLocaleString()} reviews
+                {updated ? ` · updated ${updated}` : ""}
+              </p>
             ) : null}
           </div>
         </div>
