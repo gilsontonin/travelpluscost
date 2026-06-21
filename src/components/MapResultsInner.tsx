@@ -138,7 +138,9 @@ function MapBrain({
     // Center BELOW the pin so the pin sits in the upper area, clear of the bottom card.
     const pt = map.project([h.lat, h.lng], zoom).add([0, 120]);
     programmatic.current = true;
-    map.flyTo(map.unproject(pt, zoom), zoom, { duration: 0.4 });
+    // panTo (flat slide), NOT flyTo — flyTo arcs zoom out/in even for tiny pans, which
+    // looks like a "shake" when switching between nearby (clustered) properties.
+    map.panTo(map.unproject(pt, zoom), { animate: true, duration: 0.4 });
   }, [selectedId, hotels, map]);
 
   useMapEvents({
