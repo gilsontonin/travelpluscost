@@ -3,28 +3,36 @@
 _Last updated: 2026-06-20. This is the living state doc. Update it as you work._
 
 ## TL;DR
-A working hotel-booking demo on **real LiteAPI data**, styled as the Propel layout in Airbnb coral.
-**Oahu** is the featured city. Flow works end-to-end: **search → property page → guest details →
-confirmation**. Booking is a **safe demo** (no charge, no real reservation). No GitHub remote / not yet
-deployed — see `docs/DEPLOY.md`.
+A working hotel-booking demo on **real LiteAPI data**, styled as the **Expedia layout** in Airbnb coral
+(switched from Propel 2026-06-20). **Oahu** is the featured city. Flow works end-to-end: **search →
+property page → guest details → confirmation**. Booking is a **safe demo** (no charge, no real
+reservation). No GitHub remote / not yet deployed — see `docs/DEPLOY.md`.
 
 ## What works (real)
 - **Home** (`/`) — hero + search panel (Cars/Hotels tabs) + popular chips (Oahu, Honolulu, Waikiki, …).
 - **Search** (`/search?destination=…`) — real hotels w/ photos + live prices (SSP). "Oahu" aliases to
-  Honolulu. Propel results layout: results bar, category chips, 2-col grid + filters sidebar, pagination.
+  Honolulu. **Expedia results layout**: All stays/Hotels/Homes tabs, filter bar, full-width **list rows**
+  (`HotelRow`) with green review-score badges, honesty banner, pagination. Stacks to 1 column on mobile.
 - **Property** (`/hotel/[id]`) — gallery, description, facilities, star/rating, "Choose your room" with
   real room offers + prices, cost-plus promise box, Reserve buttons.
-- **Book** (`/book`) — order summary + guest form.
+- **Book** (`/book`) — **Expedia-style checkout**: left = guest form + payment-method selector
+  (`BookingForm`); right = sticky price-details box (nightly×nights, taxes included, total, pay today).
 - **Confirmation** (`/booking-confirmed`) — booking ref + details + "no charge / test booking" note.
 - All routes typecheck/lint/build green. `/` static; the rest `force-dynamic` (live rates per request).
+
+## Layout note
+Cloned **Expedia's structure** (from owner's full-page screenshots) with **Airbnb colors** (coral
+`#ff385c`, white/clean — NOT Expedia's blue). Honest-brand deviations from Expedia: no fake scarcity
+("only 2 left!"), no invented resort fees, "same price for everyone" instead of a sale strip.
 
 ## What's placeholder / demo (be honest about this)
 - **Booking does NOT charge or reserve.** It generates a `TPC-XXXX` ref and a confirmation screen. The
   real LiteAPI `prebook → book → payment` is the next step (sandbox key is wired + verified reachable;
   see "LiteAPI notes"). Real booking that takes payment = merchant-of-record = Seller-of-Travel/legal.
-- **Visual-only (not wired):** category chips, filters sidebar, Latest sort, Map View, favorites heart,
-  pagination, "Sign in". They look right; they don't act yet.
-- **Cards** show star rating where Propel showed bed/bath (LiteAPI gives stars, not bed/bath per hotel).
+- **Visual-only (not wired):** the filter bar (Filters/Popular/Price/Guest rating/Amenities/Sort), tabs,
+  payment-method selector, favorites heart, pagination, "Sign in". They look right; they don't act yet.
+- **List rows** show star rating where Expedia showed walk-distance/amenities (LiteAPI gives stars +
+  rating, not per-hotel bed/bath or walk distance).
 - Images use plain `<img>` (no `next/image` optimization yet — fine; configure `remotePatterns` for
   `static.cupid.travel` if you switch to `next/image`).
 
