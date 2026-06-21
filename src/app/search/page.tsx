@@ -1,7 +1,8 @@
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import ResultsList from "@/components/ResultsList";
-import { searchOahu, toCard } from "@/lib/oahu";
+import { searchHotels, toCard } from "@/lib/hotels";
+import { REGIONS } from "@/lib/regions";
 
 export default async function SearchPage({
   searchParams,
@@ -14,7 +15,7 @@ export default async function SearchPage({
   const checkout = sp.checkout;
   const adults = sp.adults ? parseInt(sp.adults, 10) : 2;
 
-  const hotels = destination ? searchOahu(destination).map(toCard) : [];
+  const hotels = destination ? searchHotels(destination).map(toCard) : [];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-4">
@@ -28,13 +29,22 @@ export default async function SearchPage({
           </Link>
         </p>
       ) : hotels.length === 0 ? (
-        <p className="text-black/50 py-16 text-center">
-          We&apos;re live in <span className="font-medium">Oahu, Hawaii</span> first — try{" "}
-          <Link className="text-accent" href="/search?destination=Oahu&adults=2">
-            Oahu
-          </Link>
-          . More destinations are coming.
-        </p>
+        <div className="text-black/50 py-16 text-center">
+          <p>
+            We don&apos;t cover <span className="font-medium">{destination}</span> yet. We&apos;re live in:
+          </p>
+          <div className="mt-3 flex flex-wrap justify-center gap-2">
+            {REGIONS.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/search?destination=${encodeURIComponent(r.name)}&adults=2`}
+                className="px-3 py-1.5 rounded-lg border border-black/15 text-sm text-black/70 hover:border-accent hover:text-accent transition"
+              >
+                {r.label}
+              </Link>
+            ))}
+          </div>
+        </div>
       ) : (
         <div className="mt-3">
           <p className="text-xs text-accent font-medium mb-2.5">

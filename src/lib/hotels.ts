@@ -3,11 +3,21 @@
 // add it to DATASETS below + a Region entry in regions.ts. (Scales to a DB later — see
 // docs/ARCHITECTURE.md — once a single JSON gets too big.)
 import oahuData from "../../content/oahu.json";
+import mauiData from "../../content/maui.json";
+import lasVegasData from "../../content/lasvegas.json";
+import seattleData from "../../content/seattle.json";
+import sanDiegoData from "../../content/sandiego.json";
 import { nearbyLabel, haversineMiles } from "./distance";
 import { regionForIsland, resolveRegion, type Region } from "./regions";
 
-// Add a market here: `import mauiData from "../../content/maui.json"` then `, mauiData as Hotel[]`.
-const DATASETS: Hotel[][] = [oahuData as Hotel[]];
+// Add a market: ingest -> content/<slug>.json, import it, add it here + to REGIONS in regions.ts.
+const DATASETS: Hotel[][] = [
+  oahuData as Hotel[],
+  mauiData as Hotel[],
+  lasVegasData as Hotel[],
+  seattleData as Hotel[],
+  sanDiegoData as Hotel[],
+];
 
 export interface Room {
   name: string;

@@ -18,7 +18,30 @@ const REGIONS = {
       { city: "Kailua", limit: 12 },
     ],
   },
-  // maui: { island: "Maui", countryCode: "US", cities: [{ city: "Lahaina", limit: 30 }, { city: "Kihei", limit: 30 }] },
+  maui: {
+    island: "Maui",
+    countryCode: "US",
+    cities: [
+      { city: "Lahaina", limit: 20 },
+      { city: "Kihei", limit: 20 },
+      { city: "Wailea", limit: 10 },
+    ],
+  },
+  lasvegas: {
+    island: "Las Vegas",
+    countryCode: "US",
+    cities: [{ city: "Las Vegas", limit: 40 }],
+  },
+  seattle: {
+    island: "Seattle",
+    countryCode: "US",
+    cities: [{ city: "Seattle", limit: 35 }],
+  },
+  sandiego: {
+    island: "San Diego",
+    countryCode: "US",
+    cities: [{ city: "San Diego", limit: 35 }],
+  },
 };
 
 const SLUG = (process.argv[2] || "oahu").toLowerCase();

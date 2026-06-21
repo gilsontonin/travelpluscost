@@ -1,32 +1,30 @@
+import Image from "next/image";
+import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import HotelRail from "@/components/HotelRail";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
-import { haversineMiles } from "@/lib/distance";
-import { PRIMARY_REGION, anchorOf } from "@/lib/regions";
+import { REGIONS } from "@/lib/regions";
 
 const search = (q: string) => `/search?destination=${encodeURIComponent(q)}&adults=2`;
 
 export default function Home() {
-  const cards = getAllHotels().map(toCard);
+  const all = getAllHotels();
+  const cards = all.map(toCard);
   const topRated = [...cards]
     .filter((c) => c.rating != null)
     .sort((a, b) => (b.rating as number) - (a.rating as number))
     .slice(0, 12);
   const beachfront = cards.filter((c) => c.amenities.includes("Beachfront")).slice(0, 12);
   const rentals = cards.filter((c) => c.category === "rental").slice(0, 12);
-  const anchor = anchorOf(PRIMARY_REGION);
-  const nearAnchor = anchor
-    ? [...cards]
-        .filter((c) => c.lat != null && c.lng != null)
-        .sort(
-          (a, b) =>
-            haversineMiles(a.lat as number, a.lng as number, anchor.lat, anchor.lng) -
-            haversineMiles(b.lat as number, b.lng as number, anchor.lat, anchor.lng),
-        )
-        .slice(0, 12)
-    : [];
-  const railAll = getAllHotels().map(toRail);
+  const railAll = all.map(toRail);
+
+  // markets we cover (the multi-region picker)
+  const destinations = REGIONS.map((r) => {
+    const hs = all.filter((h) => h.island.toLowerCase() === r.name.toLowerCase());
+    const top = [...hs].filter((h) => h.rating != null).sort((a, b) => (b.rating as number) - (a.rating as number))[0] ?? hs[0];
+    return { region: r, image: top?.image ?? "", count: hs.length };
+  }).filter((d) => d.count > 0);
 
   return (
     <div className="mx-auto max-w-5xl px-4 pt-8 pb-16">
@@ -47,7 +45,7 @@ export default function Home() {
         <SearchPanel />
       </div>
 
-      {/* honest trust strip (our take on Expedia's value banner) */}
+      {/* honest trust strip */}
       <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-black/60">
         {["Same price for everyone", "Never based on your data", "No fake discounts"].map((t) => (
           <span key={t} className="inline-flex items-center gap-1.5">
@@ -60,12 +58,29 @@ export default function Home() {
       </div>
 
       <RecentlyViewed all={railAll} />
-      <HotelRail title={`Top-rated on ${PRIMARY_REGION.name}`} subtitle="Guest-favorite stays" hotels={topRated} seeAllHref={search(PRIMARY_REGION.name)} />
-      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} seeAllHref={search(PRIMARY_REGION.name)} />
-      {anchor ? (
-        <HotelRail title={`Near ${anchor.name}`} hotels={nearAnchor} seeAllHref={search(PRIMARY_REGION.name)} />
-      ) : null}
-      <HotelRail title="Vacation rentals" subtitle="Condos, apartments & homes" hotels={rentals} seeAllHref={search(PRIMARY_REGION.name)} />
+
+      {/* destinations we cover */}
+      <section className="mt-10">
+        <h2 className="text-xl font-semibold mb-3">Where to?</h2>
+        <div className="flex gap-4 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 snap-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+          {destinations.map(({ region, image, count }) => (
+            <Link key={region.slug} href={search(region.name)} className="group relative shrink-0 w-56 h-36 rounded-lg overflow-hidden snap-start">
+              {image ? (
+                <Image src={image} alt={region.label} fill sizes="224px" className="object-cover transition-transform group-hover:scale-105" />
+              ) : null}
+              <span className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+              <span className="absolute bottom-3 left-3 right-3 text-white">
+                <span className="block font-semibold leading-tight">{region.label}</span>
+                <span className="block text-xs text-white/85">{count} stays</span>
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <HotelRail title="Top-rated stays" subtitle="Guest favorites across our markets" hotels={topRated} />
+      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} />
+      <HotelRail title="Vacation rentals" subtitle="Condos, apartments & homes" hotels={rentals} />
     </div>
   );
 }
