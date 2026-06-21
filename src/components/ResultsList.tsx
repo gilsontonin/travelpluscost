@@ -113,79 +113,46 @@ export default function ResultsList({
 
   return (
     <div>
-      {/* top line: sort + view + all-filters */}
-      <div className="flex items-center justify-between gap-2 mb-2.5">
-        <label className="text-sm flex items-center gap-2 text-black/70">
-          <span className="hidden sm:inline">Sort</span>
-          <select
-            value={sort}
-            onChange={(e) => setSort(e.target.value as SortKey)}
-            className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
-          >
-            {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
-              <option key={k} value={k}>
-                {SORT_LABELS[k]}
-              </option>
-            ))}
-          </select>
-        </label>
-        <div className="flex items-center gap-2">
-          <div className="flex border border-black/15 rounded-lg overflow-hidden text-sm">
-            <button
-              onClick={() => setView("list")}
-              className={`px-3 py-1.5 ${view === "list" ? "bg-accent-tint text-accent font-medium" : "bg-white text-black/60"}`}
-            >
-              List
-            </button>
-            <button
-              onClick={() => setView("map")}
-              className={`px-3 py-1.5 ${view === "map" ? "bg-accent-tint text-accent font-medium" : "bg-white text-black/60"}`}
-            >
-              Map
-            </button>
-          </div>
-          <button
-            onClick={() => setOpen(true)}
-            className="text-sm border border-black/15 rounded-lg px-3 py-1.5 bg-white hover:border-black/40 flex items-center gap-1.5"
-          >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M4 6h16M7 12h10M10 18h4" />
-            </svg>
-            All filters{n ? ` (${n})` : ""}
-          </button>
-        </div>
-      </div>
+      {/* single slidable filter chip row (saves vertical space) */}
+      <div className="flex flex-nowrap items-center gap-2 -mx-4 px-4 sm:mx-0 sm:px-0 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        <button
+          onClick={() => setOpen(true)}
+          className={`shrink-0 inline-flex items-center gap-1.5 text-sm px-3.5 py-2 rounded-full border transition whitespace-nowrap ${
+            n > 0 ? "bg-accent-tint text-accent border-accent/40 font-medium" : "border-black/20 text-black/75 hover:border-black/40"
+          }`}
+        >
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M4 6h16M7 12h10M10 18h4" />
+          </svg>
+          All filters{n ? ` (${n})` : ""}
+        </button>
 
-      {/* inline quick-filter chips */}
-      <div className="flex flex-wrap items-center gap-2 mb-3">
         <FilterChip label={maxPrice != null ? `Up to $${maxPrice}/night` : "Price"} active={maxPrice != null}>
-          <div className="w-60">
-            <p className="font-medium text-sm mb-2">Max price / night</p>
-            <input
-              type="range"
-              min={50}
-              max={1500}
-              step={50}
-              value={maxPrice ?? 1500}
-              onChange={(e) => {
-                const v = Number(e.target.value);
-                setMaxPrice(v >= 1500 ? null : v);
-              }}
-              className="w-full accent-accent"
-            />
-            <div className="flex items-center justify-between mt-1">
-              <span className="text-sm text-black/60">{maxPrice != null ? `Up to $${maxPrice}` : "Any price"}</span>
-              {maxPrice != null ? (
-                <button onClick={() => setMaxPrice(null)} className="text-sm text-accent">
-                  Reset
-                </button>
-              ) : null}
-            </div>
+          <p className="font-medium text-sm mb-2">Max price / night</p>
+          <input
+            type="range"
+            min={50}
+            max={1500}
+            step={50}
+            value={maxPrice ?? 1500}
+            onChange={(e) => {
+              const v = Number(e.target.value);
+              setMaxPrice(v >= 1500 ? null : v);
+            }}
+            className="w-full accent-accent"
+          />
+          <div className="flex items-center justify-between mt-1">
+            <span className="text-sm text-black/60">{maxPrice != null ? `Up to $${maxPrice}` : "Any price"}</span>
+            {maxPrice != null ? (
+              <button onClick={() => setMaxPrice(null)} className="text-sm text-accent">
+                Reset
+              </button>
+            ) : null}
           </div>
         </FilterChip>
 
         <FilterChip label={minRating != null ? `${minRating}+ rating` : "Guest rating"} active={minRating != null}>
-          <div className="w-52 flex flex-col gap-1.5">
+          <div className="flex flex-col gap-1.5">
             {RATING_OPTIONS.map((o) => (
               <button
                 key={o.v}
@@ -204,20 +171,18 @@ export default function ResultsList({
           label={stars.length ? `${[...stars].sort((a, b) => b - a).join(", ")}-star` : "Star rating"}
           active={stars.length > 0}
         >
-          <div className="w-44">
-            <p className="font-medium text-sm mb-2">Star rating</p>
-            <div className="flex gap-2">
-              {STAR_OPTIONS.map((s) => (
-                <button key={s} onClick={() => toggleStar(s)} className={chip(stars.includes(s))}>
-                  {s} ★
-                </button>
-              ))}
-            </div>
+          <p className="font-medium text-sm mb-2">Star rating</p>
+          <div className="flex gap-2">
+            {STAR_OPTIONS.map((s) => (
+              <button key={s} onClick={() => toggleStar(s)} className={chip(stars.includes(s))}>
+                {s} ★
+              </button>
+            ))}
           </div>
         </FilterChip>
 
         <FilterChip label={amenities.length ? `Amenities (${amenities.length})` : "Amenities"} active={amenities.length > 0}>
-          <div className="w-64 max-h-72 overflow-y-auto flex flex-col gap-1">
+          <div className="flex flex-col gap-1">
             {ALL_AMENITIES.map((a) => (
               <label key={a} className="flex items-center gap-2.5 text-sm py-1.5 cursor-pointer">
                 <input
@@ -233,22 +198,59 @@ export default function ResultsList({
         </FilterChip>
 
         {QUICK.map((a) => (
-          <button key={a} onClick={() => toggleAmenity(a)} className={chip(amenities.includes(a))}>
+          <button
+            key={a}
+            onClick={() => toggleAmenity(a)}
+            className={`shrink-0 inline-flex items-center text-sm px-3.5 py-2 rounded-full border transition whitespace-nowrap ${
+              amenities.includes(a)
+                ? "bg-accent-tint text-accent border-accent/40 font-medium"
+                : "border-black/20 text-black/75 hover:border-black/40"
+            }`}
+          >
             {a}
           </button>
         ))}
 
         {n > 0 ? (
-          <button onClick={() => setFilters(EMPTY_FILTERS)} className="text-sm text-black/50 underline ml-1">
+          <button onClick={() => setFilters(EMPTY_FILTERS)} className="shrink-0 text-sm text-black/50 underline whitespace-nowrap px-1">
             Clear all
           </button>
         ) : null}
       </div>
 
-      <p className="text-sm text-black/55 mb-3">
-        {visible.length} of {hotels.length} stays
-        {prices === null ? " · loading prices…" : ""}
-      </p>
+      {/* count + sort + view */}
+      <div className="flex items-center justify-between gap-2 mt-3 mb-3">
+        <p className="text-sm text-black/55">
+          {visible.length} stays{prices === null ? " · loading prices…" : ""}
+        </p>
+        <div className="flex items-center gap-2">
+          <select
+            value={sort}
+            onChange={(e) => setSort(e.target.value as SortKey)}
+            className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
+          >
+            {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
+              <option key={k} value={k}>
+                {SORT_LABELS[k]}
+              </option>
+            ))}
+          </select>
+          <div className="flex border border-black/15 rounded-lg overflow-hidden text-sm">
+            <button
+              onClick={() => setView("list")}
+              className={`px-3 py-1.5 ${view === "list" ? "bg-accent-tint text-accent font-medium" : "bg-white text-black/60"}`}
+            >
+              List
+            </button>
+            <button
+              onClick={() => setView("map")}
+              className={`px-3 py-1.5 ${view === "map" ? "bg-accent-tint text-accent font-medium" : "bg-white text-black/60"}`}
+            >
+              Map
+            </button>
+          </div>
+        </div>
+      </div>
 
       {view === "map" ? (
         <MapView center={mapCenter} zoom={12} height={540} markers={mapMarkers} />

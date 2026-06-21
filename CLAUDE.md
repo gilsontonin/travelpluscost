@@ -41,7 +41,20 @@ Gates before every commit: `npm run typecheck && npm run lint && npm run build` 
   `NEXT_PUBLIC_*`. Only search-only keys may reach the browser.
 - Feature flags in `src/lib/flags.ts` (`NEXT_PUBLIC_BOOKING_MODE`, `…_FLIGHTS_ENABLED`).
 - Commit messages end with: `Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>`.
-- **No GitHub remote yet** — commits are local. See `docs/DEPLOY.md` to push + deploy + tie the domain.
+- Remote: `git@github.com:gilsontonin/travelpluscost` (push via `GIT_SSH_COMMAND='ssh -p 443 -o
+  Hostname=ssh.github.com -o StrictHostKeyChecking=accept-new' git push origin main`). Auto-deploys to
+  Netlify (travelpluscost.com) on push. See `docs/DEPLOY.md`.
+
+## Design principles (the owner repeats these — honor them on every change)
+1. **Valuable real estate.** The top of every screen is the most valuable space — spend it on inventory,
+   not chrome. Shortest path to *see properties and click them*. Collapse anything the user already acted
+   on (search inputs → a one-line summary), cut banners/headings, keep controls compact (e.g. filters are
+   ONE horizontally-slidable chip row, never wrapping to multiple lines). This is *why* OTAs convert.
+2. **Copy Expedia's patterns exactly** when given a screenshot — match layout/proportions, not a loose
+   approximation. (Search card = 1 tall main photo + 2 small under, content right. Property page = full-
+   width hero carousel with dots + photo-count + back/share.) But never copy fake **discounts/scarcity**
+   ("$X off", "1 left at this price") — those violate POSITIONING.md.
+3. **Only show data we actually have** (real LiteAPI fields). No faked walk-times, ratings, or urgency.
 
 ## Current state (one line)
 Hotels search + property pages + a safe demo booking flow are LIVE on real LiteAPI data, styled as the

@@ -2,44 +2,66 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-// A single Expedia-style filter chip that opens an inline dropdown.
+// Expedia-style filter chip. The dropdown is position:fixed (anchored to the chip)
+// so it escapes the horizontally-scrolling chip row instead of being clipped by it.
 export default function FilterChip({
   label,
   active = false,
-  align = "left",
   children,
 }: {
   label: string;
   active?: boolean;
-  align?: "left" | "right";
   children: ReactNode;
 }) {
   const [open, setOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+  const [pos, setPos] = useState({ top: 0, left: 0 });
+  const btnRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  const place = () => {
+    const r = btnRef.current?.getBoundingClientRect();
+    if (!r) return;
+    const width = 288;
+    const left = Math.max(8, Math.min(r.left, window.innerWidth - width - 8));
+    setPos({ top: r.bottom + 8, left });
+  };
+
+  const toggle = () => {
+    if (!open) place();
+    setOpen((o) => !o);
+  };
 
   useEffect(() => {
     if (!open) return;
     const onDown = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+      const t = e.target as Node;
+      if (btnRef.current?.contains(t) || panelRef.current?.contains(t)) return;
+      setOpen(false);
     };
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    const onScroll = () => setOpen(false);
     document.addEventListener("mousedown", onDown);
     document.addEventListener("keydown", onKey);
+    window.addEventListener("scroll", onScroll, true);
+    window.addEventListener("resize", onScroll);
     return () => {
       document.removeEventListener("mousedown", onDown);
       document.removeEventListener("keydown", onKey);
+      window.removeEventListener("scroll", onScroll, true);
+      window.removeEventListener("resize", onScroll);
     };
   }, [open]);
 
   return (
-    <div ref={ref} className="relative">
+    <>
       <button
+        ref={btnRef}
         type="button"
-        onClick={() => setOpen((o) => !o)}
-        className={`inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg border transition whitespace-nowrap ${
+        onClick={toggle}
+        className={`shrink-0 inline-flex items-center gap-1.5 text-sm px-3.5 py-2 rounded-full border transition whitespace-nowrap ${
           active
             ? "bg-accent-tint text-accent border-accent/40 font-medium"
-            : "border-black/15 text-black/70 hover:border-black/40"
+            : "border-black/20 text-black/75 hover:border-black/40"
         }`}
       >
         {label}
@@ -57,13 +79,13 @@ export default function FilterChip({
       </button>
       {open ? (
         <div
-          className={`absolute z-30 mt-2 bg-white border border-black/10 rounded-lg shadow-lg p-4 max-w-[80vw] ${
-            align === "right" ? "right-0" : "left-0"
-          }`}
+          ref={panelRef}
+          style={{ position: "fixed", top: pos.top, left: pos.left }}
+          className="z-50 w-72 max-w-[calc(100vw-16px)] max-h-[70vh] overflow-y-auto bg-white border border-black/10 rounded-lg shadow-xl p-4"
         >
           {children}
         </div>
       ) : null}
-    </div>
+    </>
   );
 }
