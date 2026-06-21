@@ -15,10 +15,19 @@ export default async function ConfirmedPage({
   const status = sp.status ?? "";
   const hotelId = sp.hotelId ?? "";
   const room = sp.room ?? "Room";
-  const total = Number(sp.total ?? 0);
+  const total = Number(sp.total ?? 0); // all-in (online + at-property)
+  const online = Number(sp.online ?? total);
+  const feesAtProperty = Number(sp.feesAtProperty ?? 0);
   const currency = sp.currency ?? "USD";
   const checkin = sp.checkin ?? "";
   const checkout = sp.checkout ?? "";
+  const refundable = sp.refundable === "1";
+  const freeCancelBefore = sp.freeCancelBefore ?? "";
+  const cancelLabel = refundable
+    ? freeCancelBefore
+      ? `Free cancellation before ${fmtDate(freeCancelBefore)}`
+      : "Fully refundable"
+    : "Non-refundable";
   const guest = sp.guest ?? "";
   const email = sp.email ?? "";
 
@@ -47,9 +56,18 @@ export default async function ConfirmedPage({
           <Row label="Hotel" value={hotel?.name ?? "—"} />
           <Row label="Room" value={room} />
           <Row label="Dates" value={`${checkin} → ${checkout}`} />
+          <Row label="Cancellation" value={cancelLabel} />
           {bookingId ? <Row label="Booking ID" value={bookingId} /> : null}
           {status ? <Row label="Status" value={status} /> : null}
-          <Row label="Total" value={money(total, currency)} />
+        </div>
+
+        <div className="mt-4 text-left text-sm border-t border-black/5 pt-4 space-y-1.5">
+          <Row label="Room & taxes" value={money(online, currency)} />
+          {feesAtProperty > 0 ? <Row label="Fees · paid at property" value={money(feesAtProperty, currency)} /> : null}
+          <div className="flex justify-between gap-3 font-semibold border-t border-black/5 mt-1.5 pt-1.5">
+            <span>Total all-in ({currency})</span>
+            <span>{money(total, currency)}</span>
+          </div>
         </div>
 
         <p className="mt-6 text-xs text-black/40">
@@ -63,6 +81,12 @@ export default async function ConfirmedPage({
       </div>
     </div>
   );
+}
+
+function fmtDate(d?: string | null) {
+  if (!d) return "";
+  const dt = new Date(`${d}T00:00:00`);
+  return Number.isNaN(dt.getTime()) ? "" : dt.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
 function Row({ label, value }: { label: string; value: string }) {

@@ -14,13 +14,21 @@ export default async function BookPage({
   const sp = await searchParams;
   const hotelId = sp.hotelId ?? "";
   const room = sp.room ?? "Room";
-  const total = Number(sp.total ?? 0);
+  const online = Number(sp.total ?? 0); // room + online taxes (SSP)
+  const feesAtProperty = Number(sp.feesAtProperty ?? 0); // mandatory fees collected at check-in
+  const allIn = online + feesAtProperty; // the one honest number, same as the property page
   const currency = sp.currency ?? "USD";
   const nights = Number(sp.nights ?? 1);
-  const perNight = Number(sp.perNight ?? (nights ? Math.round(total / nights) : total));
   const checkin = sp.checkin ?? "";
   const checkout = sp.checkout ?? "";
   const adults = sp.adults ?? "2";
+  const refundable = sp.refundable === "1";
+  const freeCancelBefore = sp.freeCancelBefore ?? "";
+  const cancelLabel = refundable
+    ? freeCancelBefore
+      ? `Free cancellation before ${fmtDate(freeCancelBefore)}`
+      : "Fully refundable"
+    : "Non-refundable";
 
   const hotel = hotelId ? getOahuHotel(hotelId) : null;
   const image = hotel?.images?.[0];
@@ -44,12 +52,15 @@ export default async function BookPage({
         <BookingForm
           hotelId={hotelId}
           room={room}
-          total={String(total)}
+          total={String(online)}
+          feesAtProperty={String(feesAtProperty)}
           currency={currency}
           nights={String(nights)}
           checkin={checkin}
           checkout={checkout}
           adults={adults}
+          refundable={refundable ? "1" : "0"}
+          freeCancelBefore={freeCancelBefore}
         />
 
         {/* right: price details */}
@@ -64,30 +75,44 @@ export default async function BookPage({
           <p className="text-sm text-black/50 mt-1">
             {checkin} → {checkout} · {adults} adult{Number(adults) > 1 ? "s" : ""}
           </p>
-          <p className="text-sm text-[#1a7a4c] mt-1">Fully refundable</p>
+          <p className={`text-sm mt-1 ${refundable ? "text-[#1a7a4c]" : "text-black/45"}`}>{cancelLabel}</p>
 
           <div className="mt-4 border-t border-black/5 pt-4 text-sm space-y-1.5">
             <h3 className="font-semibold mb-1">Price details</h3>
-            <Row label={`${money(perNight, currency)} × ${nights} night${nights > 1 ? "s" : ""}`} value={money(perNight * nights, currency)} />
-            <Row label="Taxes & fees" value="Included" />
+            <Row label={`Room & taxes (${nights} night${nights > 1 ? "s" : ""})`} value={money(online, currency)} />
+            {feesAtProperty > 0 ? (
+              <Row label="Fees · paid at property" value={money(feesAtProperty, currency)} />
+            ) : null}
           </div>
           <div className="mt-3 border-t border-black/5 pt-3 flex justify-between font-semibold text-base">
-            <span>Total ({currency})</span>
-            <span>{money(total, currency)}</span>
+            <span>Total all-in ({currency})</span>
+            <span>{money(allIn, currency)}</span>
           </div>
           <div className="mt-1 flex justify-between text-sm text-black/60">
             <span>Pay today</span>
-            <span>{money(total, currency)}</span>
+            <span>{money(online, currency)}</span>
           </div>
+          {feesAtProperty > 0 ? (
+            <div className="flex justify-between text-sm text-black/60">
+              <span>At property</span>
+              <span>{money(feesAtProperty, currency)}</span>
+            </div>
+          ) : null}
 
           <p className="mt-4 rounded-xl bg-accent-tint/60 p-3 text-xs text-black/70">
-            <span className="font-medium text-accent">One honest price.</span> One flat fee, included — the
-            same for everyone, never based on your data. No hidden markup, no fake discounts.
+            <span className="font-medium text-accent">One honest price.</span> The same for everyone, never
+            based on your data. Every fee shown up front — no hidden markup, no fake discounts.
           </p>
         </aside>
       </div>
     </div>
   );
+}
+
+function fmtDate(d?: string | null) {
+  if (!d) return "";
+  const dt = new Date(`${d}T00:00:00`);
+  return Number.isNaN(dt.getTime()) ? "" : dt.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
 function Row({ label, value }: { label: string; value: string }) {

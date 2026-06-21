@@ -6,12 +6,15 @@ import { useState } from "react";
 type Props = {
   hotelId: string;
   room: string;
-  total: string;
+  total: string; // online portion (room + online taxes)
+  feesAtProperty: string; // mandatory fees collected at check-in
   currency: string;
   nights: string;
   checkin: string;
   checkout: string;
   adults: string;
+  refundable: string; // "1" | "0"
+  freeCancelBefore: string;
 };
 
 const PAY = [
@@ -53,16 +56,25 @@ export default function BookingForm(props: Props) {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data?.error || "Booking failed.");
+      // Show the price the guest actually saw (production all-in), NOT the sandbox test
+      // amount — the sandbox call is only the reservation mechanism here.
+      const online = Number(props.total) || 0;
+      const fees = Number(props.feesAtProperty) || 0;
       const q = new URLSearchParams({
         ref: data.bookingId || data.confirmationCode || "—",
         bookingId: data.bookingId || "",
         status: data.status || "",
         hotelId: props.hotelId,
-        room: data.room || props.room,
-        total: String(data.total || props.total),
-        currency: data.currency || props.currency,
+        room: props.room,
+        total: String(online + fees),
+        online: String(online),
+        feesAtProperty: String(fees),
+        currency: props.currency,
+        nights: props.nights,
         checkin: props.checkin,
         checkout: props.checkout,
+        refundable: props.refundable,
+        freeCancelBefore: props.freeCancelBefore,
         guest: `${firstName} ${lastName}`.trim(),
         email,
       });

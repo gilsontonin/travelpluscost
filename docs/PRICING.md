@@ -79,6 +79,24 @@ Alternative considered — **public "cost + 15%"** (no paywall): simpler, % cove
 upside, but lands *above* Booking in thin-spread markets (bad look while preaching transparency),
 and below-SSP cases still need gating. Kept as a fallback, not the lead.
 
+### 4a. Payment architecture — DECIDED 2026-06-21: LiteAPI payment + % margin (LiteAPI = MoR)
+Go to market lean. Use **LiteAPI's payment system** (their SDK/wallet), set a small **margin %**
+(passable per request, NOT just the dashboard slider — proven: `margin:20` → `retailRate.total`
+= net × 1.20; SSP unaffected). LiteAPI charges `retailRate.total` = **net + our margin** = literally
+**"cost + one small fee."** This avoids us becoming merchant of record / registering Seller of
+Travel in every state up front — the cumbersome path a lean startup should defer.
+
+Consequences this locks in:
+- **The fee is a % (of net), not flat.** Matches §3 (we already rejected flat). → the tagline
+  "one **flat** fee" should read "one **small** fee."
+- **What LiteAPI's payment charges = `retailRate.total`, NOT our frontend number.** Hard-coding a
+  price in our UI does nothing to the charge. So **display must equal `retailRate.total`** (net +
+  margin), not SSP. (Today we display SSP but would charge net at margin 0 — that gap must close.)
+- **Cost+fee is below SSP → it MUST be behind a membership/login (closed user group)** per LiteAPI
+  parity. So this is the **member price**; the public/ungated price stays ~SSP. → the next real
+  build is the **membership/auth gate**; until then public = SSP (parity-safe).
+- **MoR ≠ Seller-of-Travel exemption** — see §6. Confirm both before real money; sandbox until then.
+
 ---
 
 ## 5. The "subscribe → book → cancel" worry, and how it's handled
@@ -100,17 +118,31 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
 ---
 
 ## 6. Compliance ties (see also POSITIONING.md + the MoR notes)
-- Showing your price + branding + taking payment = **Merchant of Record** → **Seller of Travel**
-  registration where required: **CA, HI, WA** (NV none; FL if added). Using LiteAPI's payment SDK
-  handles PCI/processing but does **not** transfer seller-of-travel status — confirm MoR in writing
-  with LiteAPI; verify with a travel-compliance attorney before taking real money.
-- LiteAPI production has a **markup setting** (buy net, set your margin, keep the spread = the
-  cost-plus engine, productized). **Resolved (docs, 2026-06-21): it's percentage-only — NO fixed
-  amount; `margin:15` makes `retailRate.total = net×1.15` and does NOT move SSP; you keep the
-  markup, LiteAPI takes no cut.** For the membership model we're MoR and compute `net + flat card
-  fee` ourselves, so the %-only limit doesn't bind us. See `docs/LITEAPI.md`.
-- Never display NET or the exact markup %/fee math that lets a user derive NET (parity + the
-  derivation problem). Show the *principle*, not the number. Below-SSP only behind the membership login.
+**Three distinct concepts — do not collapse them:**
+1. **Payment processing / PCI** — who handles card data. LiteAPI's SDK does this. ✅ settled.
+2. **Merchant of Record (MoR)** — whose name the charge is under; owns refunds/chargebacks/liability.
+   Per the §4a decision we want **LiteAPI to be MoR** (their payment flow). Docs describe two modes
+   but don't explicitly assign MoR → **get it in writing.**
+3. **Seller of Travel (SoT)** — *state* registration to sell/advertise travel to consumers
+   (**CA, HI, WA**; FL if added; NV none). This can attach to **us** as the price-setting storefront
+   **even if LiteAPI is MoR.** MoR ≠ an SoT exemption.
+- So LiteAPI-as-MoR likely removes PCI/chargeback burden and *may* reduce SoT exposure, but doesn't
+  automatically eliminate it. **Before charging a real card, confirm two things:** (a) LiteAPI's MoR
+  status in writing, (b) a travel-compliance attorney's read on our SoT obligation given the
+  structure. Stay in sandbox until both land. (None of this blocks building.)
+- **ToS reviewed 2026-06-21** (liteapi.travel/terms): SILENT on payment MoR and SILENT on customer
+  licensing — but grants a license "to deliver travel services *to your end users*" (frames US as the
+  seller to consumers), and indemnity (§7) covers only our "misuse/breach," not regulatory
+  non-compliance. So their onboarding approval protects THEM (fraud/KYB), is NOT evidence we're
+  SoT-compliant. Reality check that lowers the worry: only **4 states** have SoT laws (CA/FL/HI/WA);
+  realistically launch = home state (if one of the 4) + maybe CA (~$100/yr); FL is the only heavy one
+  ($300 + $25k bond) and isn't required. Action: email LiteAPI "who is MoR in your payment flow?" +
+  read CA SoT FAQ / 1-hr attorney consult. Cheap, not a 50-state gauntlet.
+- Markup is **percentage-only** (resolved 2026-06-21): `margin:15` → `retailRate.total = net×1.15`,
+  does NOT move SSP, LiteAPI takes no cut of it. Since we charge via LiteAPI's payment, **that
+  `retailRate.total` is what the guest pays** — so display must equal it (see §4a). See `docs/LITEAPI.md`.
+- Never display NET or the exact margin math that lets a user derive NET (parity + the derivation
+  problem). Show the *principle*, not the number. Below-SSP (cost+fee) only behind the membership login.
 
 ---
 
@@ -120,10 +152,13 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
       (their catch: usually non-refundable + fees added at checkout + reliability risk). Re-check a
       few more, esp. near-parity hotels (e.g. Halepuna NET $349 / SSP $354 = no member room).
 - [x] Markup is **%-only** (no fixed amount) — resolved from docs (`docs/LITEAPI.md §4`).
-- [ ] Confirm with LiteAPI **in writing**: who is MoR in the Payment-SDK flow (Nuitee vs us)? PCI +
-      Seller-of-Travel implications? (Docs describe both modes but don't assign MoR.)
-- [ ] Decide final price points ($/mo, $/yr) once real spreads are known.
-- [ ] Build: Supabase auth + the membership wall → property page shows public price + a
-      "Member price · unlock" panel (`net + card fee`). This is the feature that turns the site from
-      "a nice OTA clone" into "the un-rigged travel club."
+- [x] Payment architecture DECIDED 2026-06-21 (§4a): LiteAPI payment + % margin, LiteAPI as MoR —
+      go to market without becoming MoR / SoT-registered up front.
+- [ ] **Before real money** — confirm in writing: (a) LiteAPI is MoR in the Payment-SDK flow;
+      (b) travel attorney's read on our Seller-of-Travel exposure (CA/HI/WA) given LiteAPI is MoR.
+- [ ] Decide the member fee % (modeling ~10%) and the membership price points ($/mo, $/yr).
+- [ ] Build (real next step): **membership/auth gate** → behind it, display & charge `net + margin%`
+      (= cost + fee), display == `retailRate.total`. Public/ungated stays SSP (parity). This is the
+      feature that turns the site from "a nice OTA clone" into "the un-rigged travel club."
+- [ ] Wire `margin` into the rates/prebook calls (the cost-plus engine) — gated behind the above.
 - [ ] GA4 + Search Console now (measure the SEO bet from day one).
