@@ -28,17 +28,17 @@ export default function HotelRow({
   return (
     <Link
       href={href}
-      className="group flex gap-3 sm:gap-4 overflow-hidden rounded-[10px] border border-black/[0.1] bg-white p-3 transition-colors hover:border-black/30"
+      className="group flex overflow-hidden rounded-[10px] border border-black/[0.1] bg-white min-h-[14rem] transition-colors hover:border-black/30"
     >
-      {/* photo collage: 1 tall main (swipe + dots, no arrows) + 2 small under */}
-      <div className="w-[42%] shrink-0">
-        <div className="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-zinc-100">
+      {/* photo collage: tall main (grows to fill card height) + 2 small under, flush to card edges */}
+      <div className="w-[40%] sm:w-[42%] shrink-0 flex flex-col gap-1.5">
+        <div className="relative flex-1 min-h-0 overflow-hidden bg-zinc-100">
           <CardCarousel images={hotel.images} alt={hotel.name} arrows={false} sizes="(max-width: 640px) 42vw, 320px" />
         </div>
         {(s1 || s2) ? (
-          <div className="grid grid-cols-2 gap-1.5 mt-1.5">
+          <div className="grid grid-cols-2 gap-1.5 shrink-0">
             {[s1, s2].map((src, i) => (
-              <div key={i} className="relative aspect-square rounded-lg overflow-hidden bg-zinc-100">
+              <div key={i} className="relative h-[70px] sm:h-24 overflow-hidden bg-zinc-100">
                 {src ? (
                   <Image
                     src={src}
@@ -54,7 +54,7 @@ export default function HotelRow({
         ) : null}
       </div>
 
-      <div className="flex flex-1 flex-col gap-1.5 min-w-0 py-0.5">
+      <div className="flex flex-1 flex-col gap-1.5 min-w-0 p-3.5 sm:p-4">
         <h3 className="line-clamp-2 font-bold leading-snug tracking-tight text-[1.02rem] sm:text-[1.12rem] text-black group-hover:text-accent transition-colors">
           {hotel.name}
         </h3>
