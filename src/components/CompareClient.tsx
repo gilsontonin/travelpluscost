@@ -48,6 +48,7 @@ export default function CompareClient() {
   const ci = checkin;
   const co = checkout;
   const links = (h: Row) => ({
+    ours: `/hotel/${h.id}`,
     google: `https://www.google.com/travel/search?q=${encodeURIComponent(`${h.name} ${h.city}`)}`,
     expedia: `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(`${h.name}, ${h.city}`)}&startDate=${ci}&endDate=${co}&rooms=1&adults=2`,
     booking: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(h.name)}&checkin=${ci}&checkout=${co}&group_adults=2&no_rooms=1`,
@@ -129,7 +130,7 @@ export default function CompareClient() {
                 <th className="py-2 px-2 text-right">Live $</th>
                 <th className="py-2 px-2 text-right">SSP vs live</th>
                 <th className="py-2 px-2 text-right">Real spread</th>
-                <th className="py-2 pl-2">Check live</th>
+                <th className="py-2 pl-2">Open listing</th>
               </tr>
             </thead>
             <tbody>
@@ -163,6 +164,8 @@ export default function CompareClient() {
                       {realSpread == null ? "—" : `$${realSpread.toFixed(0)}`}
                     </td>
                     <td className="py-2 pl-2 whitespace-nowrap">
+                      <a href={l.ours} target="_blank" rel="noopener noreferrer" className="text-accent font-semibold">Ours</a>
+                      <span className="text-black/20"> · </span>
                       <a href={l.google} target="_blank" rel="noopener noreferrer" className="text-accent">Google</a>
                       <span className="text-black/20"> · </span>
                       <a href={l.expedia} target="_blank" rel="noopener noreferrer" className="text-accent">Expedia</a>
