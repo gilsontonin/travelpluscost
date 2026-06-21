@@ -92,6 +92,16 @@ const main = async () => {
       lng: d.longitude ?? x.longitude ?? null,
       checkin: d.checkinCheckoutTimes?.checkin_start ?? null,
       checkout: d.checkinCheckoutTimes?.checkout ?? null,
+      sentiment: d.sentiment_analysis
+        ? {
+            categories: (d.sentiment_analysis.categories ?? [])
+              .map((c) => ({ name: c.name, rating: c.rating }))
+              .filter((c) => c.name && typeof c.rating === "number")
+              .slice(0, 6),
+            pros: (d.sentiment_analysis.pros ?? []).slice(0, 4),
+            cons: (d.sentiment_analysis.cons ?? []).slice(0, 4),
+          }
+        : null,
     };
   });
 

@@ -6,6 +6,8 @@ import RoomsPanel from "@/components/RoomsPanel";
 import PhotoGallery from "@/components/PhotoGallery";
 import ViatorPackages from "@/components/ViatorPackages";
 import Highlights from "@/components/Highlights";
+import Reviews from "@/components/Reviews";
+import ExploreArea from "@/components/ExploreArea";
 
 // Pre-render every ingested Oahu hotel as a static page (instant).
 export function generateStaticParams() {
@@ -87,6 +89,9 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
       <Suspense fallback={<div className="mt-10 h-40 rounded-lg bg-black/[0.04] animate-pulse" />}>
         <RoomsPanel hotelId={hotel.id} />
       </Suspense>
+
+      <Reviews hotel={hotel} />
+      <ExploreArea lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} />
 
       <ViatorPackages lat={hotel.lat} lng={hotel.lng} />
     </div>

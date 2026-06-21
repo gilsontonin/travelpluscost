@@ -69,7 +69,45 @@
     "lat": 21.28643,
     "lng": -157.839959,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.7
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 9.7
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.7
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.2
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.7
+        }
+      ],
+      "pros": [
+        "Beautiful facility",
+        "Great service",
+        "Nice views"
+      ],
+      "cons": [
+        "Not enough food options",
+        "Extremely overpriced",
+        "Dated rooms"
+      ]
+    }
   },
   {
     "id": "lp1bee1",
@@ -141,7 +179,43 @@
     "lat": 21.271833,
     "lng": -157.821035,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.88
+        },
+        {
+          "name": "Service",
+          "rating": 9.35
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.84
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.37
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.83
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Accommodating staff"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "Poor service at the restaurant"
+      ]
+    }
   },
   {
     "id": "lp22856",
@@ -213,7 +287,44 @@
     "lat": 21.278125,
     "lng": -157.830537,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.36
+        },
+        {
+          "name": "Service",
+          "rating": 8.83
+        },
+        {
+          "name": "Location",
+          "rating": 9.87
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.32
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.35
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.81
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff",
+        "Clean and well-maintained facilities"
+      ],
+      "cons": [
+        "Service inconsistencies",
+        "Some cleanliness issues reported"
+      ]
+    }
   },
   {
     "id": "lp2adc7",
@@ -285,7 +396,43 @@
     "lat": 21.278044,
     "lng": -157.831482,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.65
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 9.65
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.65
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.65
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.65
+        }
+      ],
+      "pros": [
+        "Beautiful environment",
+        "Excellent staff"
+      ],
+      "cons": [
+        "High prices",
+        "Limited in-room dining options"
+      ]
+    }
   },
   {
     "id": "lp1b498",
@@ -357,7 +504,44 @@
     "lat": 21.27728,
     "lng": -157.827122,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9
+        },
+        {
+          "name": "Service",
+          "rating": 9.5
+        },
+        {
+          "name": "Location",
+          "rating": 9.5
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.5
+        },
+        {
+          "name": "Amenities",
+          "rating": 9
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff",
+        "Clean hotel"
+      ],
+      "cons": [
+        "Dated rooms",
+        "High food prices"
+      ]
+    }
   },
   {
     "id": "lp29a7f",
@@ -429,7 +613,44 @@
     "lat": 21.283393,
     "lng": -157.83115,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.5
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 9.5
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.5
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.5
+        }
+      ],
+      "pros": [
+        "Helpful staff",
+        "Good location",
+        "Variety in breakfast"
+      ],
+      "cons": [
+        "Cleanliness concerns",
+        "High parking fees"
+      ]
+    }
   },
   {
     "id": "lp322cd",
@@ -501,7 +722,44 @@
     "lat": 21.284658,
     "lng": -157.831172,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.71
+        },
+        {
+          "name": "Service",
+          "rating": 9.18
+        },
+        {
+          "name": "Location",
+          "rating": 9.22
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.17
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.2
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.66
+        }
+      ],
+      "pros": [
+        "Excellent service",
+        "Spacious and comfortable rooms",
+        "Great location with beautiful views"
+      ],
+      "cons": [
+        "Rude restaurant staff",
+        "Water pressure in shower could be improved"
+      ]
+    }
   },
   {
     "id": "lp1dd71",
@@ -573,7 +831,46 @@
     "lat": 21.271879,
     "lng": -157.773841,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.6
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 9.6
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.6
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.1
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.6
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Exceptional service",
+        "Spacious rooms",
+        "Peaceful environment"
+      ],
+      "cons": [
+        "Limited dining options",
+        "High prices for food",
+        "Concerns about cleanliness of certain amenities"
+      ]
+    }
   },
   {
     "id": "lp350f7",
@@ -645,7 +942,45 @@
     "lat": 21.275097,
     "lng": -157.823489,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.65
+        },
+        {
+          "name": "Service",
+          "rating": 9.15
+        },
+        {
+          "name": "Location",
+          "rating": 9.15
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.15
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.15
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.65
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff",
+        "Clean environment"
+      ],
+      "cons": [
+        "WiFi issues",
+        "Problems with room assignments",
+        "Concerns about cleanliness"
+      ]
+    }
   },
   {
     "id": "lp20eb8",
@@ -717,7 +1052,43 @@
     "lat": 21.274661,
     "lng": -157.823571,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.31
+        },
+        {
+          "name": "Service",
+          "rating": 9.28
+        },
+        {
+          "name": "Location",
+          "rating": 9.82
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.77
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.3
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.26
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "High costs for basic amenities"
+      ]
+    }
   },
   {
     "id": "lp1b4a3",
@@ -789,7 +1160,45 @@
     "lat": 21.280977,
     "lng": -157.828257,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.23
+        },
+        {
+          "name": "Service",
+          "rating": 9.2
+        },
+        {
+          "name": "Location",
+          "rating": 9.24
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.69
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.22
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.18
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff",
+        "Clean and comfortable rooms"
+      ],
+      "cons": [
+        "Hidden fees",
+        "Noise insulation issues",
+        "Rooms are smaller than expected"
+      ]
+    }
   },
   {
     "id": "lp3b56d",
@@ -861,7 +1270,44 @@
     "lat": 21.27914,
     "lng": -157.831669,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.25
+        },
+        {
+          "name": "Service",
+          "rating": 9.75
+        },
+        {
+          "name": "Location",
+          "rating": 9.25
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.75
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.25
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.25
+        }
+      ],
+      "pros": [
+        "Excellent service",
+        "Great location",
+        "Delicious breakfast"
+      ],
+      "cons": [
+        "Expensive rates",
+        "Cleanliness issues"
+      ]
+    }
   },
   {
     "id": "lp2d548",
@@ -933,7 +1379,45 @@
     "lat": 21.271729,
     "lng": -157.822286,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.85
+        },
+        {
+          "name": "Service",
+          "rating": 8.85
+        },
+        {
+          "name": "Location",
+          "rating": 8.85
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.35
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.35
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.35
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Beautiful location",
+        "Clean rooms",
+        "Great amenities"
+      ],
+      "cons": [
+        "WiFi issues",
+        "Some services not working properly"
+      ]
+    }
   },
   {
     "id": "lp1ac44",
@@ -1005,7 +1489,43 @@
     "lat": 21.27352,
     "lng": -157.821519,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.26
+        },
+        {
+          "name": "Service",
+          "rating": 8.83
+        },
+        {
+          "name": "Location",
+          "rating": 9.07
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.02
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.55
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.51
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Helpful staff"
+      ],
+      "cons": [
+        "Limited breakfast options",
+        "Slow elevators"
+      ]
+    }
   },
   {
     "id": "lp19e24",
@@ -1077,7 +1597,45 @@
     "lat": 21.276143,
     "lng": -157.8252,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 6.96
+        },
+        {
+          "name": "Service",
+          "rating": 9.23
+        },
+        {
+          "name": "Location",
+          "rating": 9.47
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.92
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.95
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.41
+        }
+      ],
+      "pros": [
+        "Convenient location",
+        "Friendly staff",
+        "Regency Club dining"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "Noisy rooms",
+        "Dated amenities"
+      ]
+    }
   },
   {
     "id": "lp6292e",
@@ -1149,7 +1707,47 @@
     "lat": 21.279702,
     "lng": -157.827716,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.26
+        },
+        {
+          "name": "Service",
+          "rating": 8.93
+        },
+        {
+          "name": "Location",
+          "rating": 9.27
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.22
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.75
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.41
+        }
+      ],
+      "pros": [
+        "Clean rooms",
+        "Great location",
+        "Friendly staff",
+        "Good amenities"
+      ],
+      "cons": [
+        "Noisy rooms",
+        "Small room size",
+        "WiFi issues",
+        "Limited food options"
+      ]
+    }
   },
   {
     "id": "lp39fde",
@@ -1221,7 +1819,43 @@
     "lat": 21.272914,
     "lng": -157.822277,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.81
+        },
+        {
+          "name": "Service",
+          "rating": 9.28
+        },
+        {
+          "name": "Location",
+          "rating": 9.32
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.77
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.3
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.76
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location"
+      ],
+      "cons": [
+        "Noise issues",
+        "Room size concerns"
+      ]
+    }
   },
   {
     "id": "lp56994",
@@ -1293,7 +1927,44 @@
     "lat": 21.284921,
     "lng": -157.83929,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.94
+        },
+        {
+          "name": "Service",
+          "rating": 9.41
+        },
+        {
+          "name": "Location",
+          "rating": 9.45
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.4
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.93
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.89
+        }
+      ],
+      "pros": [
+        "Clean and spacious rooms",
+        "Friendly staff",
+        "Great location"
+      ],
+      "cons": [
+        "Issues with cleanliness",
+        "High prices"
+      ]
+    }
   },
   {
     "id": "lp200a2",
@@ -1365,7 +2036,43 @@
     "lat": 21.27227,
     "lng": -157.822801,
     "checkin": "04:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.58
+        },
+        {
+          "name": "Service",
+          "rating": 8.55
+        },
+        {
+          "name": "Location",
+          "rating": 9.09
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.04
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.07
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.03
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Helpful staff"
+      ],
+      "cons": [
+        "Dirty rooms",
+        "Dated amenities"
+      ]
+    }
   },
   {
     "id": "lp2130c",
@@ -1437,7 +2144,43 @@
     "lat": 21.262768,
     "lng": -157.820707,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.53
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 9.5
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.54
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.99
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.02
+        }
+      ],
+      "pros": [
+        "Friendly and helpful staff",
+        "Great location near beach"
+      ],
+      "cons": [
+        "Outdated property",
+        "Some maintenance issues"
+      ]
+    }
   },
   {
     "id": "lp22779",
@@ -1509,7 +2252,45 @@
     "lat": 21.277878,
     "lng": -157.829676,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.76
+        },
+        {
+          "name": "Service",
+          "rating": 9.73
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.27
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.72
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.25
+        }
+      ],
+      "pros": [
+        "Location",
+        "Beautiful building",
+        "Great staff"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "Outdated rooms",
+        "High prices"
+      ]
+    }
   },
   {
     "id": "lp923b9",
@@ -1581,7 +2362,42 @@
     "lat": 21.282735,
     "lng": -157.829638,
     "checkin": "04:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.51
+        },
+        {
+          "name": "Service",
+          "rating": 9.48
+        },
+        {
+          "name": "Location",
+          "rating": 9.52
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.47
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.5
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.96
+        }
+      ],
+      "pros": [
+        "Excellent service",
+        "Beautiful room with great views"
+      ],
+      "cons": [
+        "Some minor issues with amenities"
+      ]
+    }
   },
   {
     "id": "lp1b90f",
@@ -1653,7 +2469,45 @@
     "lat": 21.282546,
     "lng": -157.837476,
     "checkin": "04:00 PM",
-    "checkout": "11:30 AM"
+    "checkout": "11:30 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.3
+        },
+        {
+          "name": "Service",
+          "rating": 8.8
+        },
+        {
+          "name": "Location",
+          "rating": 8.8
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.8
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.3
+        },
+        {
+          "name": "Value for Money",
+          "rating": 6.8
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly and helpful staff",
+        "Spacious rooms"
+      ],
+      "cons": [
+        "Need for renovation",
+        "Food quality issues",
+        "Expensive for what is offered"
+      ]
+    }
   },
   {
     "id": "lp1eb75",
@@ -1725,7 +2579,45 @@
     "lat": 21.278252,
     "lng": -157.827337,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.04
+        },
+        {
+          "name": "Service",
+          "rating": 9.51
+        },
+        {
+          "name": "Location",
+          "rating": 9.05
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.5
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.03
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.49
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location",
+        "Clean facilities",
+        "Excellent service"
+      ],
+      "cons": [
+        "Small pool area",
+        "Noise from air conditioners"
+      ]
+    }
   },
   {
     "id": "lp1b8d4",
@@ -1797,7 +2689,43 @@
     "lat": 21.263349,
     "lng": -157.821034,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.48
+        },
+        {
+          "name": "Service",
+          "rating": 9.95
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.94
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.97
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.93
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff"
+      ],
+      "cons": [
+        "Limited parking",
+        "Cleanliness issues"
+      ]
+    }
   },
   {
     "id": "lp365c1",
@@ -1869,7 +2797,46 @@
     "lat": 21.283883,
     "lng": -157.831974,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.78
+        },
+        {
+          "name": "Service",
+          "rating": 8.85
+        },
+        {
+          "name": "Location",
+          "rating": 9.09
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.44
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.37
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.53
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff",
+        "Clean rooms",
+        "Good value"
+      ],
+      "cons": [
+        "Limited parking",
+        "Small pool",
+        "Uncomfortable bed"
+      ]
+    }
   },
   {
     "id": "lp2f231",
@@ -1939,7 +2906,43 @@
     "lat": 21.276781,
     "lng": -157.823462,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 9.5
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.5
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.5
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "Noise at night"
+      ]
+    }
   },
   {
     "id": "lp3f624",
@@ -2011,7 +3014,43 @@
     "lat": 21.277696,
     "lng": -157.824738,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.14
+        },
+        {
+          "name": "Service",
+          "rating": 9.61
+        },
+        {
+          "name": "Location",
+          "rating": 9.15
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.1
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.13
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.09
+        }
+      ],
+      "pros": [
+        "Clean rooms",
+        "Attentive staff",
+        "Great location"
+      ],
+      "cons": [
+        "Small room size for some guests"
+      ]
+    }
   },
   {
     "id": "lp19d41",
@@ -2083,7 +3122,43 @@
     "lat": 21.278254,
     "lng": -157.829905,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.59
+        },
+        {
+          "name": "Service",
+          "rating": 9.56
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.6
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.55
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.58
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff"
+      ],
+      "cons": [
+        "Unclean rooms",
+        "High parking fees"
+      ]
+    }
   },
   {
     "id": "lp3f626",
@@ -2155,7 +3230,45 @@
     "lat": 21.278943,
     "lng": -157.825025,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.93
+        },
+        {
+          "name": "Service",
+          "rating": 8.4
+        },
+        {
+          "name": "Location",
+          "rating": 8.94
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.89
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.42
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.88
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff",
+        "Clean rooms"
+      ],
+      "cons": [
+        "Cold pool",
+        "Slow check-in process",
+        "Expensive parking"
+      ]
+    }
   },
   {
     "id": "lp22e98",
@@ -2227,7 +3340,43 @@
     "lat": 21.276658,
     "lng": -157.826532,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.08
+        },
+        {
+          "name": "Service",
+          "rating": 9.05
+        },
+        {
+          "name": "Location",
+          "rating": 9.59
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.04
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.07
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.03
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff"
+      ],
+      "cons": [
+        "Noise disturbance",
+        "Rude front desk staff"
+      ]
+    }
   },
   {
     "id": "lp1db97",
@@ -2299,7 +3448,45 @@
     "lat": 21.273919,
     "lng": -157.822155,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 6.96
+        },
+        {
+          "name": "Service",
+          "rating": 9.93
+        },
+        {
+          "name": "Location",
+          "rating": 9.47
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.92
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.95
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.91
+        }
+      ],
+      "pros": [
+        "Friendly and helpful staff",
+        "Good room quality",
+        "Great location"
+      ],
+      "cons": [
+        "Dirty and tired hotel",
+        "Limited food options",
+        "High cost for low value"
+      ]
+    }
   },
   {
     "id": "lp1b4a2",
@@ -2371,7 +3558,43 @@
     "lat": 21.275305,
     "lng": -157.822128,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.36
+        },
+        {
+          "name": "Service",
+          "rating": 9.33
+        },
+        {
+          "name": "Location",
+          "rating": 9.37
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.82
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.35
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.81
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location"
+      ],
+      "cons": [
+        "High prices",
+        "Food quality issues"
+      ]
+    }
   },
   {
     "id": "lp209eb",
@@ -2430,7 +3653,47 @@
     "lat": 21.274808,
     "lng": -157.824319,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.84
+        },
+        {
+          "name": "Service",
+          "rating": 8.81
+        },
+        {
+          "name": "Location",
+          "rating": 9.35
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.3
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.33
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.79
+        }
+      ],
+      "pros": [
+        "Great Location",
+        "Friendly Staff",
+        "Nice View",
+        "Good Restaurant"
+      ],
+      "cons": [
+        "Small Rooms",
+        "Infrequent Cleaning",
+        "Limited Amenities",
+        "Parking Issues"
+      ]
+    }
   },
   {
     "id": "lp3252c",
@@ -2502,7 +3765,43 @@
     "lat": 21.280225,
     "lng": -157.825525,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.39
+        },
+        {
+          "name": "Service",
+          "rating": 9.86
+        },
+        {
+          "name": "Location",
+          "rating": 9.4
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.35
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.88
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.34
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly and responsive staff"
+      ],
+      "cons": [
+        "Cleanliness issues with carpets",
+        "No elevator for luggage"
+      ]
+    }
   },
   {
     "id": "lp19d44",
@@ -2574,7 +3873,43 @@
     "lat": 21.277169,
     "lng": -157.825785,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.7
+        },
+        {
+          "name": "Service",
+          "rating": 8.7
+        },
+        {
+          "name": "Location",
+          "rating": 8.7
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.2
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.2
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.7
+        }
+      ],
+      "pros": [
+        "Excellent location",
+        "Friendly and helpful staff"
+      ],
+      "cons": [
+        "Slow elevators",
+        "Small bathroom"
+      ]
+    }
   },
   {
     "id": "lp9ebf4",
@@ -2646,7 +3981,45 @@
     "lat": 21.279603,
     "lng": -157.82694,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.89
+        },
+        {
+          "name": "Service",
+          "rating": 9.86
+        },
+        {
+          "name": "Location",
+          "rating": 9.4
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.85
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.38
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.84
+        }
+      ],
+      "pros": [
+        "Amazing staff",
+        "Great amenities",
+        "Convenient location",
+        "Comfortable rooms"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "Limited dining options"
+      ]
+    }
   },
   {
     "id": "lp1dafc",
@@ -2718,7 +4091,44 @@
     "lat": 21.2837,
     "lng": -157.831031,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 6.54
+        },
+        {
+          "name": "Service",
+          "rating": 9.51
+        },
+        {
+          "name": "Location",
+          "rating": 9.05
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.5
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.53
+        },
+        {
+          "name": "Value for Money",
+          "rating": 6.99
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Helpful staff",
+        "Delicious breakfast"
+      ],
+      "cons": [
+        "Room cleanliness issues",
+        "Small standard rooms"
+      ]
+    }
   },
   {
     "id": "lp34e17",
@@ -2790,7 +4200,44 @@
     "lat": 21.282546,
     "lng": -157.82747,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.96
+        },
+        {
+          "name": "Service",
+          "rating": 9.43
+        },
+        {
+          "name": "Location",
+          "rating": 9.47
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.42
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.45
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.91
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Friendly staff",
+        "Comfortable room"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "Unstable air conditioning"
+      ]
+    }
   },
   {
     "id": "lp1dc2a",
@@ -2861,7 +4308,45 @@
     "lat": 21.280762,
     "lng": -157.829381,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.21
+        },
+        {
+          "name": "Service",
+          "rating": 9.18
+        },
+        {
+          "name": "Location",
+          "rating": 9.22
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.17
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.2
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.16
+        }
+      ],
+      "pros": [
+        "Location",
+        "Friendly staff",
+        "Clean and comfortable rooms"
+      ],
+      "cons": [
+        "Poor breakfast variety",
+        "Cleanliness issues",
+        "Aging room condition"
+      ]
+    }
   },
   {
     "id": "lp224e4",
@@ -2933,7 +4418,45 @@
     "lat": 21.33713,
     "lng": -157.918105,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 6.69
+        },
+        {
+          "name": "Service",
+          "rating": 8.16
+        },
+        {
+          "name": "Location",
+          "rating": 9.2
+        },
+        {
+          "name": "Room Quality",
+          "rating": 6.65
+        },
+        {
+          "name": "Amenities",
+          "rating": 6.68
+        },
+        {
+          "name": "Value for Money",
+          "rating": 6.14
+        }
+      ],
+      "pros": [
+        "Convenient location",
+        "Proximity to the airport",
+        "Shuttle service"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "High fees",
+        "Room comfort concerns"
+      ]
+    }
   },
   {
     "id": "lp20934",
@@ -3005,7 +4528,46 @@
     "lat": 21.278807,
     "lng": -157.82325,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.28
+        },
+        {
+          "name": "Service",
+          "rating": 9.25
+        },
+        {
+          "name": "Location",
+          "rating": 9.29
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.24
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.77
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.73
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location",
+        "Clean facilities",
+        "Good food and beverage options"
+      ],
+      "cons": [
+        "Parking situation",
+        "Small room sizes",
+        "Heat pump filter dirty"
+      ]
+    }
   },
   {
     "id": "lp4f72f",
@@ -3077,7 +4639,43 @@
     "lat": 21.279507,
     "lng": -157.832125,
     "checkin": "04:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.4
+        },
+        {
+          "name": "Service",
+          "rating": 9.9
+        },
+        {
+          "name": "Location",
+          "rating": 9.9
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.9
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.4
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.4
+        }
+      ],
+      "pros": [
+        "Kind and accommodating staff",
+        "Clean and beautiful rooms"
+      ],
+      "cons": [
+        "Restaurant menu limited",
+        "Renovation ongoing"
+      ]
+    }
   },
   {
     "id": "lp1e1e0",
@@ -3149,7 +4747,43 @@
     "lat": 21.2795,
     "lng": -157.826327,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.24
+        },
+        {
+          "name": "Service",
+          "rating": 9.71
+        },
+        {
+          "name": "Location",
+          "rating": 9.25
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.2
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.23
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.69
+        }
+      ],
+      "pros": [
+        "Great location",
+        "Excellent service"
+      ],
+      "cons": [
+        "Poor room lighting",
+        "Noise insulation issues"
+      ]
+    }
   },
   {
     "id": "lp1c0ae",
@@ -3221,7 +4855,45 @@
     "lat": 21.285011,
     "lng": -157.8371,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.41
+        },
+        {
+          "name": "Service",
+          "rating": 8.88
+        },
+        {
+          "name": "Location",
+          "rating": 9.42
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.87
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.9
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.36
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location",
+        "Comfortable rooms"
+      ],
+      "cons": [
+        "Inconsistency in cleanliness",
+        "Limited food options",
+        "Wifi issues"
+      ]
+    }
   },
   {
     "id": "lp1e1ee",
@@ -3291,7 +4963,43 @@
     "lat": 21.279308,
     "lng": -157.825119,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.38
+        },
+        {
+          "name": "Service",
+          "rating": 9.35
+        },
+        {
+          "name": "Location",
+          "rating": 9.39
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.34
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.87
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.33
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location"
+      ],
+      "cons": [
+        "Noise issues",
+        "Inconsistent room service"
+      ]
+    }
   },
   {
     "id": "lp1fd5b",
@@ -3351,7 +5059,46 @@
     "lat": 21.309225,
     "lng": -157.860639,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 6.74
+        },
+        {
+          "name": "Service",
+          "rating": 8.71
+        },
+        {
+          "name": "Location",
+          "rating": 9.25
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.2
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.23
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.69
+        }
+      ],
+      "pros": [
+        "Spacious rooms",
+        "Friendly staff",
+        "Good location",
+        "Nice views"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "Dated rooms",
+        "Odor problems"
+      ]
+    }
   },
   {
     "id": "lp32645",
@@ -3423,7 +5170,45 @@
     "lat": 21.281169,
     "lng": -157.826033,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 5.19
+        },
+        {
+          "name": "Service",
+          "rating": 9.99
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 6.15
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.18
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.14
+        }
+      ],
+      "pros": [
+        "Convenient location",
+        "Helpful staff",
+        "Beautiful views"
+      ],
+      "cons": [
+        "Dirty rooms",
+        "Unresponsive room issues",
+        "Inconsistent amenities"
+      ]
+    }
   },
   {
     "id": "lp1b2bfe",
@@ -3485,7 +5270,45 @@
     "lat": 21.276212,
     "lng": -157.82363,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 6.1
+        },
+        {
+          "name": "Service",
+          "rating": 8.6
+        },
+        {
+          "name": "Location",
+          "rating": 9.1
+        },
+        {
+          "name": "Room Quality",
+          "rating": 6.6
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.1
+        },
+        {
+          "name": "Value for Money",
+          "rating": 7.6
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location",
+        "Nice pool"
+      ],
+      "cons": [
+        "Noise from the street",
+        "Room quality issues",
+        "Cleanliness concerns"
+      ]
+    }
   },
   {
     "id": "lp2b377",
@@ -3557,7 +5380,45 @@
     "lat": 21.336446,
     "lng": -157.91313,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 6.9
+        },
+        {
+          "name": "Service",
+          "rating": 8.4
+        },
+        {
+          "name": "Location",
+          "rating": 7.9
+        },
+        {
+          "name": "Room Quality",
+          "rating": 6.4
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.4
+        },
+        {
+          "name": "Value for Money",
+          "rating": 6.9
+        }
+      ],
+      "pros": [
+        "Airport proximity",
+        "Friendly staff",
+        "Decent breakfast"
+      ],
+      "cons": [
+        "Noisy environment",
+        "Dated rooms",
+        "High parking fees"
+      ]
+    }
   },
   {
     "id": "lp96b5f",
@@ -3629,7 +5490,46 @@
     "lat": 21.333493,
     "lng": -158.052975,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.35
+        },
+        {
+          "name": "Service",
+          "rating": 9.85
+        },
+        {
+          "name": "Location",
+          "rating": 9.35
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.85
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.35
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.85
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location",
+        "Clean rooms",
+        "Good breakfast"
+      ],
+      "cons": [
+        "Pillow quality",
+        "Limited views",
+        "Plastic dining utensils"
+      ]
+    }
   },
   {
     "id": "lp2787b",
@@ -3701,7 +5601,43 @@
     "lat": 21.339464,
     "lng": -158.125148,
     "checkin": "03:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.16
+        },
+        {
+          "name": "Service",
+          "rating": 9.63
+        },
+        {
+          "name": "Location",
+          "rating": 9.67
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.12
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.65
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.11
+        }
+      ],
+      "pros": [
+        "Excellent service",
+        "Great food and beverage options"
+      ],
+      "cons": [
+        "Cleanliness issues",
+        "Value for money concerns"
+      ]
+    }
   },
   {
     "id": "lpa8c95",
@@ -3773,7 +5709,45 @@
     "lat": 21.330469,
     "lng": -158.074882,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.33
+        },
+        {
+          "name": "Service",
+          "rating": 9.8
+        },
+        {
+          "name": "Location",
+          "rating": 8.34
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.29
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.32
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.28
+        }
+      ],
+      "pros": [
+        "Clean and comfortable rooms",
+        "Friendly and helpful staff",
+        "Great breakfast options"
+      ],
+      "cons": [
+        "Issues with cleanliness (cockroaches)",
+        "Potentially overpriced",
+        "Noise from adjacent rooms"
+      ]
+    }
   },
   {
     "id": "lp32a07",
@@ -3845,7 +5819,43 @@
     "lat": 21.330735,
     "lng": -158.121509,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.46
+        },
+        {
+          "name": "Service",
+          "rating": 9.93
+        },
+        {
+          "name": "Location",
+          "rating": 9.47
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.42
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.45
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.41
+        }
+      ],
+      "pros": [
+        "Family-friendly activities",
+        "Beautiful surroundings"
+      ],
+      "cons": [
+        "Long check-in process",
+        "Limited beach access"
+      ]
+    }
   },
   {
     "id": "lp5f790",
@@ -3917,7 +5927,42 @@
     "lat": 21.33747,
     "lng": -158.1236,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.04
+        },
+        {
+          "name": "Service",
+          "rating": 9.01
+        },
+        {
+          "name": "Location",
+          "rating": 9.05
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.5
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.53
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.49
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Great location"
+      ],
+      "cons": [
+        "Cleanliness issues"
+      ]
+    }
   },
   {
     "id": "lp219caa",
@@ -3989,7 +6034,43 @@
     "lat": 21.328572,
     "lng": -158.073089,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.68
+        },
+        {
+          "name": "Service",
+          "rating": 9.15
+        },
+        {
+          "name": "Location",
+          "rating": 8.69
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.14
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.17
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.63
+        }
+      ],
+      "pros": [
+        "Friendly staff",
+        "Good amenities"
+      ],
+      "cons": [
+        "Uncomfortable beds and couches",
+        "Inconsistent service"
+      ]
+    }
   },
   {
     "id": "lp73028",
@@ -4037,7 +6118,42 @@
     "lat": 21.3354,
     "lng": -158.12233,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.6
+        },
+        {
+          "name": "Service",
+          "rating": 9.8
+        },
+        {
+          "name": "Location",
+          "rating": 9.9
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.6
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.6
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.5
+        }
+      ],
+      "pros": [
+        "Clean property",
+        "Great location",
+        "Beautiful appearance",
+        "Well-equipped villa"
+      ],
+      "cons": []
+    }
   },
   {
     "id": "lp6868f",
@@ -4109,7 +6225,8 @@
     "lat": 21.33885,
     "lng": -158.12315,
     "checkin": "04:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": null
   },
   {
     "id": "lp656e4ab1",
@@ -4159,7 +6276,40 @@
     "lat": 21.335357,
     "lng": -158.121464,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.6
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.6
+        },
+        {
+          "name": "Amenities",
+          "rating": 10
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.6
+        }
+      ],
+      "pros": [
+        "Beautiful resort",
+        "Stunning sunsets"
+      ],
+      "cons": []
+    }
   },
   {
     "id": "lp656e88a0",
@@ -4215,7 +6365,42 @@
     "lat": 21.334999,
     "lng": -158.123001,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.95
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.42
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.46
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.41
+        }
+      ],
+      "pros": [
+        "Excellent communication",
+        "Immaculate place",
+        "Amazing location",
+        "Perfect for family vacation"
+      ],
+      "cons": []
+    }
   },
   {
     "id": "lp656f2754",
@@ -4264,7 +6449,43 @@
     "lat": 21.334999,
     "lng": -158.123001,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 6.8
+        },
+        {
+          "name": "Service",
+          "rating": 9.9
+        },
+        {
+          "name": "Location",
+          "rating": 9.9
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.5
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.8
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.9
+        }
+      ],
+      "pros": [
+        "Morning bird sightings at the guest room window",
+        "Comfortable and satisfying stay"
+      ],
+      "cons": [
+        "Roaches found in the room",
+        "Beetles discovered in the room"
+      ]
+    }
   },
   {
     "id": "lp6575b79a",
@@ -4319,7 +6540,43 @@
     "lat": 21.34533,
     "lng": -158.127066,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.64
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 9.11
+        },
+        {
+          "name": "Room Quality",
+          "rating": 10
+        },
+        {
+          "name": "Amenities",
+          "rating": 10
+        },
+        {
+          "name": "Value for Money",
+          "rating": 10
+        }
+      ],
+      "pros": [
+        "Good value for money",
+        "Comfortable beds"
+      ],
+      "cons": [
+        "Location is a bit far",
+        "Issues with bed preparation"
+      ]
+    }
   },
   {
     "id": "lp657391d9",
@@ -4391,7 +6648,46 @@
     "lat": 21.335031,
     "lng": -158.125091,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.5
+        },
+        {
+          "name": "Service",
+          "rating": 8.3
+        },
+        {
+          "name": "Location",
+          "rating": 8.1
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.8
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.2
+        },
+        {
+          "name": "Value for Money",
+          "rating": 6.9
+        }
+      ],
+      "pros": [
+        "Superb location",
+        "Amazing staff",
+        "Comfortable beds",
+        "Spacious rooms"
+      ],
+      "cons": [
+        "Limited parking",
+        "Expensive breakfast",
+        "No spa services"
+      ]
+    }
   },
   {
     "id": "lp656c8e21",
@@ -4431,7 +6727,45 @@
     "lat": 21.33533,
     "lng": -158.12149,
     "checkin": "",
-    "checkout": ""
+    "checkout": "",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.7
+        },
+        {
+          "name": "Service",
+          "rating": 8.5
+        },
+        {
+          "name": "Location",
+          "rating": 9.1
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.7
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8
+        }
+      ],
+      "pros": [
+        "Beautiful property",
+        "Great location near beach/lagoons",
+        "Clean and spacious units",
+        "Amazing views"
+      ],
+      "cons": [
+        "Limited variety in food and beverage options",
+        "Absence of spa services"
+      ]
+    }
   },
   {
     "id": "lp656c85a0",
@@ -4476,7 +6810,40 @@
     "lat": 21.334318,
     "lng": -158.12166,
     "checkin": "",
-    "checkout": ""
+    "checkout": "",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 10
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 10
+        },
+        {
+          "name": "Amenities",
+          "rating": 10
+        },
+        {
+          "name": "Value for Money",
+          "rating": 10
+        }
+      ],
+      "pros": [
+        "Quiet and beautiful place",
+        "Great amenities and location"
+      ],
+      "cons": []
+    }
   },
   {
     "id": "lp656ed998",
@@ -4526,7 +6893,43 @@
     "lat": 21.33535,
     "lng": -158.121426,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.14
+        },
+        {
+          "name": "Service",
+          "rating": 9.61
+        },
+        {
+          "name": "Location",
+          "rating": 9.65
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.1
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.13
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.09
+        }
+      ],
+      "pros": [
+        "Excellent location",
+        "Close to the lagoon"
+      ],
+      "cons": [
+        "Leaking kitchen faucet",
+        "Master bedroom mattress needs replacement"
+      ]
+    }
   },
   {
     "id": "lp65744256",
@@ -4598,7 +7001,8 @@
     "lat": 21.3355,
     "lng": -158.12231,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": null
   },
   {
     "id": "lp6563bf59",
@@ -4670,7 +7074,42 @@
     "lat": 21.335258,
     "lng": -158.122691,
     "checkin": "04:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.4
+        },
+        {
+          "name": "Service",
+          "rating": 9.9
+        },
+        {
+          "name": "Location",
+          "rating": 9.9
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.4
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.4
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.4
+        }
+      ],
+      "pros": [
+        "Excellent layout",
+        "Great location"
+      ],
+      "cons": [
+        "Single beds"
+      ]
+    }
   },
   {
     "id": "lp656e3c33",
@@ -4707,7 +7146,42 @@
     "lat": 21.33533,
     "lng": -158.121483,
     "checkin": "",
-    "checkout": ""
+    "checkout": "",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.58
+        },
+        {
+          "name": "Service",
+          "rating": 9.05
+        },
+        {
+          "name": "Location",
+          "rating": 9.09
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.04
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.07
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.03
+        }
+      ],
+      "pros": [
+        "Beautiful place",
+        "Returning guest"
+      ],
+      "cons": [
+        "Missing glass tabletop on patio"
+      ]
+    }
   },
   {
     "id": "lp6560f226",
@@ -4779,7 +7253,8 @@
     "lat": 21.33504,
     "lng": -158.122738,
     "checkin": "04:00 PM",
-    "checkout": "10:30 AM"
+    "checkout": "10:30 AM",
+    "sentiment": null
   },
   {
     "id": "lp6580b37f",
@@ -4829,7 +7304,42 @@
     "lat": 21.405278,
     "lng": -157.755543,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.16
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 9.63
+        },
+        {
+          "name": "Room Quality",
+          "rating": 9.17
+        },
+        {
+          "name": "Amenities",
+          "rating": 9.62
+        },
+        {
+          "name": "Value for Money",
+          "rating": 9.65
+        }
+      ],
+      "pros": [
+        "Helpful host",
+        "Clean and spacious van"
+      ],
+      "cons": [
+        "Old van had some issues"
+      ]
+    }
   },
   {
     "id": "lp6568cd11",
@@ -4895,7 +7405,43 @@
     "lat": 21.403055,
     "lng": -157.740992,
     "checkin": "04:00 PM",
-    "checkout": "12:00 PM"
+    "checkout": "12:00 PM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 8.51
+        },
+        {
+          "name": "Service",
+          "rating": 9.98
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.47
+        },
+        {
+          "name": "Amenities",
+          "rating": 9
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.46
+        }
+      ],
+      "pros": [
+        "Friendly and responsive host",
+        "Great location near the beach"
+      ],
+      "cons": [
+        "Difficult to use light switches",
+        "Some noise from other guests"
+      ]
+    }
   },
   {
     "id": "lp6568d8e3",
@@ -4947,7 +7493,46 @@
     "lat": 21.401131,
     "lng": -157.739086,
     "checkin": "04:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 9.29
+        },
+        {
+          "name": "Service",
+          "rating": 9.76
+        },
+        {
+          "name": "Location",
+          "rating": 9.3
+        },
+        {
+          "name": "Room Quality",
+          "rating": 8.75
+        },
+        {
+          "name": "Amenities",
+          "rating": 8.78
+        },
+        {
+          "name": "Value for Money",
+          "rating": 8.74
+        }
+      ],
+      "pros": [
+        "Friendly host",
+        "Great location",
+        "Clean unit",
+        "Amenities provided"
+      ],
+      "cons": [
+        "No air conditioning",
+        "No dedicated parking",
+        "Room feels warm without AC"
+      ]
+    }
   },
   {
     "id": "lp657425fe",
@@ -4984,7 +7569,43 @@
     "lat": 21.418667,
     "lng": -157.750943,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 10
+        },
+        {
+          "name": "Service",
+          "rating": 10
+        },
+        {
+          "name": "Location",
+          "rating": 10
+        },
+        {
+          "name": "Room Quality",
+          "rating": 10
+        },
+        {
+          "name": "Amenities",
+          "rating": 10
+        },
+        {
+          "name": "Value for Money",
+          "rating": 10
+        }
+      ],
+      "pros": [
+        "Well appointed kitchen",
+        "Responsive host"
+      ],
+      "cons": [
+        "Lack of a grill",
+        "No beach wagon or chairs"
+      ]
+    }
   },
   {
     "id": "lp65558381",
@@ -5026,7 +7647,8 @@
     "lat": 21.409026,
     "lng": -157.743412,
     "checkin": "03:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": null
   },
   {
     "id": "lp655852c4",
@@ -5067,7 +7689,8 @@
     "lat": 21.407466,
     "lng": -157.741876,
     "checkin": "04:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": null
   },
   {
     "id": "lp655852f6",
@@ -5108,7 +7731,8 @@
     "lat": 21.399513,
     "lng": -157.733446,
     "checkin": "04:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": null
   },
   {
     "id": "lp655908c4",
@@ -5146,7 +7770,8 @@
     "lat": 21.4052,
     "lng": -157.74,
     "checkin": "04:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": null
   },
   {
     "id": "lp6554ec44",
@@ -5183,7 +7808,8 @@
     "lat": 21.401708,
     "lng": -157.737942,
     "checkin": "03:00 PM",
-    "checkout": "10:00 AM"
+    "checkout": "10:00 AM",
+    "sentiment": null
   },
   {
     "id": "lp6573a3db",
@@ -5212,7 +7838,8 @@
     "lat": 21.3999,
     "lng": -157.74759,
     "checkin": "",
-    "checkout": ""
+    "checkout": "",
+    "sentiment": null
   },
   {
     "id": "lp65758cd9",
@@ -5244,7 +7871,43 @@
     "lat": 21.39987,
     "lng": -157.74757,
     "checkin": "05:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": {
+      "categories": [
+        {
+          "name": "Cleanliness",
+          "rating": 7.5
+        },
+        {
+          "name": "Service",
+          "rating": 8.3
+        },
+        {
+          "name": "Location",
+          "rating": 8.1
+        },
+        {
+          "name": "Room Quality",
+          "rating": 7.8
+        },
+        {
+          "name": "Amenities",
+          "rating": 7.2
+        },
+        {
+          "name": "Value for Money",
+          "rating": 6.9
+        }
+      ],
+      "pros": [
+        "Great service",
+        "Spacious rooms"
+      ],
+      "cons": [
+        "Lights not working",
+        "Limited parking"
+      ]
+    }
   },
   {
     "id": "lp6577d29a",
@@ -5296,6 +7959,7 @@
     "lat": 21.397818,
     "lng": -157.75116,
     "checkin": "03:00 PM",
-    "checkout": "11:00 AM"
+    "checkout": "11:00 AM",
+    "sentiment": null
   }
 ]

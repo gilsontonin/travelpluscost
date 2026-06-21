@@ -19,6 +19,11 @@ export interface OahuHotel {
   lng: number | null;
   checkin: string | null;
   checkout: string | null;
+  sentiment: {
+    categories: { name: string; rating: number }[];
+    pros: string[];
+    cons: string[];
+  } | null;
 }
 
 // Lightweight shape for result cards (keeps the search payload small — only what HotelRow renders).
