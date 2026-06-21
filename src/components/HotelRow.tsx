@@ -14,11 +14,13 @@ export default function HotelRow({
   query,
   price,
   loading,
+  compact = false,
 }: {
   hotel: CardHotel;
   query?: string;
   price?: Price | null;
   loading?: boolean;
+  compact?: boolean;
 }) {
   const href = `/hotel/${hotel.id}${query ? `?${query}` : ""}`;
   const rev = reviewLabel(hotel.rating ?? undefined);
@@ -28,7 +30,9 @@ export default function HotelRow({
   return (
     <Link
       href={href}
-      className="group flex overflow-hidden rounded-[10px] border border-black/[0.1] bg-white min-h-[14rem] transition-colors hover:border-black/30"
+      className={`group flex overflow-hidden rounded-[10px] border border-black/[0.1] bg-white transition-colors hover:border-black/30 ${
+        compact ? "min-h-[11.5rem]" : "min-h-[14rem]"
+      }`}
     >
       {/* photo collage: tall main (grows to fill card height) + 2 small under, flush to card edges */}
       <div className="w-[40%] sm:w-[42%] shrink-0 flex flex-col gap-1.5">

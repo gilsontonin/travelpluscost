@@ -281,7 +281,7 @@ export default function ResultsList({
       </div>
 
       {view === "map" ? (
-        <MapResults hotels={visible} prices={prices} query={cardQuery} />
+        <MapResults hotels={visible} prices={prices} query={cardQuery} onClose={() => setView("list")} />
       ) : visible.length === 0 ? (
         <div className="py-16 text-center text-black/50">
           No stays match your filters.{" "}

@@ -14,6 +14,7 @@ export default function MapResults(props: {
   hotels: CardHotel[];
   prices: Record<string, Price> | null;
   query?: string;
+  onClose?: () => void;
 }) {
   return <Inner {...props} />;
 }

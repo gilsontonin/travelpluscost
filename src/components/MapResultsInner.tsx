@@ -159,11 +159,21 @@ export default function MapResultsInner({
   hotels,
   prices,
   query,
+  onClose,
 }: {
   hotels: CardHotel[];
   prices: Record<string, Price> | null;
   query?: string;
+  onClose?: () => void;
 }) {
+  // Full-screen map — lock the page behind it.
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   const geo = useMemo(() => hotels.filter((h) => h.lat != null && h.lng != null), [hotels]);
   const [bounds, setBounds] = useState<LatLngBounds | null>(null);
   const shown = useMemo(
@@ -227,16 +237,29 @@ export default function MapResultsInner({
     }
   };
 
+  const listButton = (
+    <button
+      onClick={onClose}
+      className="absolute top-3 left-3 z-[1000] inline-flex items-center gap-1.5 bg-white text-black font-medium text-sm pl-2.5 pr-3.5 py-2 rounded-full shadow-lg border border-black/10 hover:bg-paper"
+    >
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="m15 18-6-6 6-6" />
+      </svg>
+      List
+    </button>
+  );
+
   if (!geo.length) {
     return (
-      <div className="h-[60vh] min-h-[400px] rounded-lg border border-black/10 grid place-items-center text-black/50">
+      <div className="fixed inset-0 z-50 bg-white grid place-items-center text-black/50">
+        {listButton}
         No mappable stays.
       </div>
     );
   }
 
   return (
-    <div className="relative h-[72vh] min-h-[460px] rounded-lg overflow-hidden border border-black/10">
+    <div className="fixed inset-0 z-50 bg-white">
       <MapContainer center={center} zoom={12} scrollWheelZoom style={{ height: "100%", width: "100%" }}>
         <TileLayer
           attribution='&copy; OpenStreetMap &copy; CARTO'
@@ -252,6 +275,8 @@ export default function MapResultsInner({
         />
         <ClusterLayer hotels={shown} prices={prices} currentId={current} onSelect={setSelectedId} />
       </MapContainer>
+
+      {listButton}
 
       {showSearch ? (
         <button
@@ -274,15 +299,15 @@ export default function MapResultsInner({
         </button>
       ) : null}
 
-      {/* swipeable bottom card carousel (synced with the pins) */}
+      {/* swipeable bottom card carousel (synced with the pins) — lifted off the bottom edge */}
       <div
         ref={carouselRef}
         onScroll={onCarouselScroll}
-        className="absolute bottom-0 inset-x-0 z-[1000] flex overflow-x-auto snap-x snap-mandatory pb-3 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+        className="absolute bottom-[calc(env(safe-area-inset-bottom,0px)+1.25rem)] inset-x-0 z-[1000] flex overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
       >
         {shown.map((h) => (
           <div key={h.id} className="w-full shrink-0 snap-start px-3">
-            <HotelRow hotel={h} query={query} price={prices?.[h.id] ?? null} loading={prices === null} />
+            <HotelRow hotel={h} query={query} price={prices?.[h.id] ?? null} loading={prices === null} compact />
           </div>
         ))}
       </div>
