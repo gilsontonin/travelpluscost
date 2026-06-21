@@ -30,3 +30,20 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
+
+/* Never let anything cause a horizontal scroll/zoom. `clip` (not hidden) so it
+   doesn't create a scroll container that would break position: sticky. */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* iOS Safari auto-zooms when you focus an input smaller than 16px (and often
+   doesn't zoom back out) — keep mobile form controls at 16px to prevent it. */
+@media (max-width: 640px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}

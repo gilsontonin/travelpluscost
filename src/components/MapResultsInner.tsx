@@ -46,7 +46,8 @@ function MapBrain({
     const h = hotels.find((x) => x.id === selectedId);
     if (!h || h.lat == null || h.lng == null) return;
     const zoom = map.getZoom();
-    const pt = map.project([h.lat, h.lng], zoom).subtract([0, 120]);
+    // Center BELOW the pin so the pin sits in the upper area, clear of the bottom card.
+    const pt = map.project([h.lat, h.lng], zoom).add([0, 120]);
     programmatic.current = true;
     map.flyTo(map.unproject(pt, zoom), zoom, { duration: 0.4 });
   }, [selectedId, hotels, map]);
