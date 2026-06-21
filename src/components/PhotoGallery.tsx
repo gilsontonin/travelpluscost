@@ -2,11 +2,23 @@
 
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import Link from "next/link";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-export default function PhotoGallery({ images, name }: { images: string[]; name: string }) {
+export default function PhotoGallery({
+  images,
+  name,
+  backHref,
+}: {
+  images: string[];
+  name: string;
+  backHref?: string;
+}) {
   const [open, setOpen] = useState(false);
-  const [idx, setIdx] = useState(0);
+  const [idx, setIdx] = useState(0); // lightbox index
+  const [hero, setHero] = useState(0); // hero carousel index
+  const [mounted, setMounted] = useState<Set<number>>(() => new Set([0]));
+  const startX = useRef<number | null>(null);
 
   const show = useCallback((i: number) => {
     setIdx(i);
@@ -31,53 +43,128 @@ export default function PhotoGallery({ images, name }: { images: string[]; name:
     };
   }, [open, close, next, prev]);
 
-  const hero = images[0];
-  if (!hero) return <div className="mt-3 h-[260px] sm:h-[420px] bg-zinc-100 rounded-lg" />;
-  const under = images.slice(1, 3);
+  if (!images.length) return <div className="mt-3 h-80 sm:h-[440px] bg-zinc-100 sm:rounded-lg" />;
+
+  const goHero = (i: number) => {
+    const ni = (i + images.length) % images.length;
+    setHero(ni);
+    setMounted((s) => (s.has(ni) ? s : new Set(s).add(ni)));
+  };
+  const share = async () => {
+    const url = typeof window !== "undefined" ? window.location.href : "";
+    try {
+      if (navigator.share) await navigator.share({ title: name, url });
+      else {
+        await navigator.clipboard.writeText(url);
+      }
+    } catch {
+      /* user dismissed */
+    }
+  };
+
+  const dots = Math.min(5, images.length);
+  const activeDot = images.length > 1 ? Math.round((hero / (images.length - 1)) * (dots - 1)) : 0;
 
   return (
     <>
-      <div className="relative mt-3 space-y-2">
-        {/* main photo */}
-        <button
-          type="button"
-          onClick={() => show(0)}
-          className="relative block w-full h-64 sm:h-[420px] rounded-lg overflow-hidden cursor-zoom-in"
+      {/* full-bleed hero carousel on mobile, contained on desktop */}
+      <div className="-mx-4 sm:mx-0 mt-0 sm:mt-3">
+        <div
+          className="relative w-full h-80 sm:h-[440px] bg-zinc-100 sm:rounded-lg overflow-hidden"
+          onTouchStart={(e) => {
+            startX.current = e.touches[0].clientX;
+          }}
+          onTouchEnd={(e) => {
+            if (startX.current === null) return;
+            const dx = e.changedTouches[0].clientX - startX.current;
+            startX.current = null;
+            if (Math.abs(dx) > 30) goHero(hero + (dx < 0 ? 1 : -1));
+          }}
         >
-          <Image src={hero} alt={name} fill priority sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
-        </button>
+          {images.map((src, i) =>
+            mounted.has(i) ? (
+              <button
+                key={i}
+                type="button"
+                onClick={() => show(hero)}
+                aria-label="Open photo"
+                className={`absolute inset-0 cursor-zoom-in transition-opacity duration-200 ${i === hero ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+              >
+                <Image src={src} alt={`${name} photo ${i + 1}`} fill priority={i === 0} sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
+              </button>
+            ) : null,
+          )}
 
-        {/* two smaller photos under */}
-        {under.length ? (
-          <div className="grid grid-cols-2 gap-2">
-            {under.map((src, i) => (
+          {/* top overlay: back + share */}
+          <div className="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
+            {backHref ? (
+              <Link
+                href={backHref}
+                aria-label="Back to results"
+                className="pointer-events-auto w-9 h-9 rounded-full bg-white/95 grid place-items-center shadow hover:bg-white"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </Link>
+            ) : <span />}
+            <button
+              type="button"
+              onClick={share}
+              aria-label="Share"
+              className="pointer-events-auto w-9 h-9 rounded-full bg-white/95 grid place-items-center shadow hover:bg-white text-black/70"
+            >
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                <path d="m16 6-4-4-4 4" />
+                <path d="M12 2v13" />
+              </svg>
+            </button>
+          </div>
+
+          {images.length > 1 ? (
+            <>
+              {/* arrows (desktop) */}
               <button
                 type="button"
-                key={i}
-                onClick={() => show(i + 1)}
-                className="relative h-28 sm:h-44 rounded-lg overflow-hidden cursor-zoom-in"
+                onClick={() => goHero(hero - 1)}
+                aria-label="Previous photo"
+                className="hidden sm:grid absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 place-items-center shadow hover:bg-white"
               >
-                <Image src={src} alt={`${name} photo ${i + 2}`} fill sizes="(max-width: 640px) 50vw, 512px" className="object-cover" />
-                {/* last tile gets the "view all" overlay when there are more */}
-                {i === under.length - 1 && images.length > 3 ? (
-                  <span className="absolute inset-0 bg-black/45 grid place-items-center text-white text-sm font-medium">
-                    +{images.length - 3} photos
-                  </span>
-                ) : null}
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m15 18-6-6 6-6" /></svg>
               </button>
-            ))}
-          </div>
-        ) : null}
+              <button
+                type="button"
+                onClick={() => goHero(hero + 1)}
+                aria-label="Next photo"
+                className="hidden sm:grid absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 place-items-center shadow hover:bg-white"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m9 18 6-6-6-6" /></svg>
+              </button>
 
-        {images.length > 1 ? (
-          <button
-            type="button"
-            onClick={() => show(0)}
-            className="absolute top-3 right-3 bg-white/95 text-black text-sm font-medium px-3 py-1.5 rounded-md shadow-sm hover:bg-white"
-          >
-            View all {images.length} photos
-          </button>
-        ) : null}
+              {/* dots */}
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-black/35 rounded-full px-2.5 py-1.5">
+                {Array.from({ length: dots }).map((_, i) => (
+                  <span key={i} className={`rounded-full transition-all ${i === activeDot ? "w-2 h-2 bg-white" : "w-1.5 h-1.5 bg-white/60"}`} />
+                ))}
+              </div>
+
+              {/* photo count → opens lightbox */}
+              <button
+                type="button"
+                onClick={() => show(hero)}
+                className="absolute bottom-3 right-3 flex items-center gap-1.5 bg-black/55 text-white text-sm font-medium px-3 py-1.5 rounded-full hover:bg-black/70"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="9" cy="9" r="2" />
+                  <path d="m21 15-5-5L5 21" />
+                </svg>
+                {images.length}
+              </button>
+            </>
+          ) : null}
+        </div>
       </div>
 
       {open ? (

@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllOahu, getOahuHotel } from "@/lib/oahu";
 import RoomsPanel from "@/components/RoomsPanel";
@@ -23,13 +22,9 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
   if (!hotel) notFound();
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6 pb-24 lg:pb-6">
-      <Link href="/search?destination=Oahu&adults=2" className="text-sm text-black/50 hover:text-black">
-        ← Back to results
-      </Link>
-
+    <div className="mx-auto max-w-6xl px-4 pt-3 pb-24 sm:py-6 lg:pb-6">
       {/* gallery */}
-      <PhotoGallery images={hotel.images} name={hotel.name} />
+      <PhotoGallery images={hotel.images} name={hotel.name} backHref="/search?destination=Oahu&adults=2" />
 
       {/* header */}
       <div className="mt-5">
