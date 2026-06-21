@@ -5,6 +5,7 @@ import { getAllOahu, getOahuHotel } from "@/lib/oahu";
 import RoomsPanel from "@/components/RoomsPanel";
 import PhotoGallery from "@/components/PhotoGallery";
 import ViatorPackages from "@/components/ViatorPackages";
+import Highlights from "@/components/Highlights";
 
 // Pre-render every ingested Oahu hotel as a static page (instant).
 export function generateStaticParams() {
@@ -35,6 +36,8 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
           {hotel.stars ? ` · ${hotel.stars}-star hotel` : ""}
         </p>
       </div>
+
+      <Highlights hotel={hotel} />
 
       {/* description + promise */}
       <div className="mt-6 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8">
