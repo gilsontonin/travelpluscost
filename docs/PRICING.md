@@ -105,8 +105,10 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
   handles PCI/processing but does **not** transfer seller-of-travel status — confirm MoR in writing
   with LiteAPI; verify with a travel-compliance attorney before taking real money.
 - LiteAPI production has a **markup setting** (buy net, set your margin, keep the spread = the
-  cost-plus engine, productized). Open question: does it support a **fixed** amount or only a **%**?
-  For the membership model we compute `net + card fee` ourselves anyway (we're MoR).
+  cost-plus engine, productized). **Resolved (docs, 2026-06-21): it's percentage-only — NO fixed
+  amount; `margin:15` makes `retailRate.total = net×1.15` and does NOT move SSP; you keep the
+  markup, LiteAPI takes no cut.** For the membership model we're MoR and compute `net + flat card
+  fee` ourselves, so the %-only limit doesn't bind us. See `docs/LITEAPI.md`.
 - Never display NET or the exact markup %/fee math that lets a user derive NET (parity + the
   derivation problem). Show the *principle*, not the number. Below-SSP only behind the membership login.
 
@@ -117,7 +119,9 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
       all $412) — NOT inflated. Net near the public floor; only opaque discounters undercut net
       (their catch: usually non-refundable + fees added at checkout + reliability risk). Re-check a
       few more, esp. near-parity hotels (e.g. Halepuna NET $349 / SSP $354 = no member room).
-- [ ] Confirm with LiteAPI: who is MoR in their payment flow? Fixed markup or %-only? Below-SSP flag?
+- [x] Markup is **%-only** (no fixed amount) — resolved from docs (`docs/LITEAPI.md §4`).
+- [ ] Confirm with LiteAPI **in writing**: who is MoR in the Payment-SDK flow (Nuitee vs us)? PCI +
+      Seller-of-Travel implications? (Docs describe both modes but don't assign MoR.)
 - [ ] Decide final price points ($/mo, $/yr) once real spreads are known.
 - [ ] Build: Supabase auth + the membership wall → property page shows public price + a
       "Member price · unlock" panel (`net + card fee`). This is the feature that turns the site from
