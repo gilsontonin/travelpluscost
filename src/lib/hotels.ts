@@ -11,7 +11,7 @@ export interface HotelCardData {
   stars?: number;
   rating?: number; // LiteAPI rating is out of 10
   reviewCount?: number;
-  price?: { amount: number; currency: string };
+  price?: { amount: number; currency: string; nights: number; perNight: number };
 }
 
 // ---- raw LiteAPI shapes (only the fields we use) ----
@@ -58,6 +58,11 @@ function defaultDates(checkin?: string, checkout?: string) {
   return { checkin: ci, checkout: co };
 }
 
+function nightsBetween(checkin: string, checkout: string) {
+  const n = Math.round((Date.parse(checkout) - Date.parse(checkin)) / 86_400_000);
+  return Number.isFinite(n) && n > 0 ? n : 1;
+}
+
 function cheapestSSP(rh: RatesHotel): Money | undefined {
   let best: Money | undefined;
   for (const rt of rh.roomTypes ?? []) {
@@ -75,12 +80,13 @@ export async function searchHotels(
   cityName: string,
   opts?: { checkin?: string; checkout?: string; adults?: number; limit?: number },
 ): Promise<HotelCardData[]> {
-  const limit = opts?.limit ?? 21;
+  const limit = opts?.limit ?? 24;
   const hotelsRes = (await getHotels({ countryCode: "US", cityName, limit })) as HotelsResponse;
   const hotels = hotelsRes?.data ?? [];
   if (hotels.length === 0) return [];
 
   const { checkin, checkout } = defaultDates(opts?.checkin, opts?.checkout);
+  const nights = nightsBetween(checkin, checkout);
   const adults = opts?.adults ?? 2;
 
   const priceMap = new Map<string, Money>();
@@ -101,15 +107,20 @@ export async function searchHotels(
     // prices are optional in the MVP — show hotels even if rates fail
   }
 
-  return hotels.map((h) => ({
-    id: h.id,
-    name: h.name,
-    city: h.city,
-    address: h.address,
-    image: h.main_photo || h.thumbnail,
-    stars: h.stars,
-    rating: h.rating,
-    reviewCount: h.reviewCount,
-    price: priceMap.get(h.id),
-  }));
+  return hotels.map((h) => {
+    const m = priceMap.get(h.id);
+    return {
+      id: h.id,
+      name: h.name,
+      city: h.city,
+      address: h.address,
+      image: h.main_photo || h.thumbnail,
+      stars: h.stars,
+      rating: h.rating,
+      reviewCount: h.reviewCount,
+      price: m
+        ? { amount: m.amount, currency: m.currency, nights, perNight: Math.max(1, Math.round(m.amount / nights)) }
+        : undefined,
+    };
+  });
 }
