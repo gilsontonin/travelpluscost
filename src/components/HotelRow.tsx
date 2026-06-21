@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import CardCarousel from "@/components/CardCarousel";
 import AmenityIcon from "@/components/AmenityIcon";
 import type { CardHotel } from "@/lib/oahu";
@@ -22,22 +23,38 @@ export default function HotelRow({
   const href = `/hotel/${hotel.id}${query ? `?${query}` : ""}`;
   const rev = reviewLabel(hotel.rating ?? undefined);
   const amenities = hotel.amenities.slice(0, 2);
+  const [s1, s2] = hotel.images.slice(1, 3);
 
   return (
     <Link
       href={href}
-      className="group flex overflow-hidden rounded-[10px] border border-black/[0.1] bg-white min-h-[15rem] transition-colors hover:border-black/30"
+      className="group flex gap-3 sm:gap-4 overflow-hidden rounded-[10px] border border-black/[0.1] bg-white p-3 transition-colors hover:border-black/30"
     >
-      <div className="relative shrink-0 w-[46%] bg-zinc-100">
-        <CardCarousel images={hotel.images} alt={hotel.name} sizes="(max-width: 640px) 46vw, 460px" />
-        <span className="absolute top-2 right-2 z-10 bg-white/95 w-8 h-8 rounded-full grid place-items-center shadow-sm text-black/55 pointer-events-none">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
-          </svg>
-        </span>
+      {/* photo collage: 1 tall main (swipe + dots, no arrows) + 2 small under */}
+      <div className="w-[42%] shrink-0">
+        <div className="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-zinc-100">
+          <CardCarousel images={hotel.images} alt={hotel.name} arrows={false} sizes="(max-width: 640px) 42vw, 320px" />
+        </div>
+        {(s1 || s2) ? (
+          <div className="grid grid-cols-2 gap-1.5 mt-1.5">
+            {[s1, s2].map((src, i) => (
+              <div key={i} className="relative aspect-square rounded-lg overflow-hidden bg-zinc-100">
+                {src ? (
+                  <Image
+                    src={src}
+                    alt={`${hotel.name} photo ${i + 2}`}
+                    fill
+                    sizes="(max-width: 640px) 21vw, 150px"
+                    className="object-cover"
+                  />
+                ) : null}
+              </div>
+            ))}
+          </div>
+        ) : null}
       </div>
 
-      <div className="flex flex-1 flex-col gap-1.5 p-3.5 sm:p-4 min-w-0">
+      <div className="flex flex-1 flex-col gap-1.5 min-w-0 py-0.5">
         <h3 className="line-clamp-2 font-bold leading-snug tracking-tight text-[1.02rem] sm:text-[1.12rem] text-black group-hover:text-accent transition-colors">
           {hotel.name}
         </h3>

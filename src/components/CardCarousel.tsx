@@ -9,10 +9,12 @@ export default function CardCarousel({
   images,
   alt,
   sizes = "(max-width: 640px) 50vw, 288px",
+  arrows = true,
 }: {
   images: string[];
   alt: string;
   sizes?: string;
+  arrows?: boolean;
 }) {
   const [i, setI] = useState(0);
   const [mounted, setMounted] = useState<Set<number>>(() => new Set([0]));
@@ -59,7 +61,7 @@ export default function CardCarousel({
         ) : null,
       )}
 
-      {images.length > 1 ? (
+      {images.length > 1 && arrows ? (
         <>
           <button
             type="button"
@@ -81,12 +83,15 @@ export default function CardCarousel({
               <path d="m9 18 6-6-6-6" />
             </svg>
           </button>
-          <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1 pointer-events-none">
-            {images.slice(0, 8).map((_, idx) => (
-              <span key={idx} className={`w-1.5 h-1.5 rounded-full ${idx === i ? "bg-white" : "bg-white/50"}`} />
-            ))}
-          </div>
         </>
+      ) : null}
+
+      {images.length > 1 ? (
+        <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1 pointer-events-none">
+          {images.slice(0, 8).map((_, idx) => (
+            <span key={idx} className={`w-1.5 h-1.5 rounded-full ${idx === i ? "bg-white" : "bg-white/50"}`} />
+          ))}
+        </div>
       ) : null}
     </div>
   );
