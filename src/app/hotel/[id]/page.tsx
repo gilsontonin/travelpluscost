@@ -1,4 +1,5 @@
-import { Suspense } from "react";
+import type { Metadata } from "next";
+import { Suspense, cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllOahu, classifyType } from "@/lib/oahu";
@@ -18,8 +19,49 @@ import SimilarHotels from "@/components/SimilarHotels";
 import TrackView from "@/components/TrackView";
 import { nearbyLabel } from "@/lib/distance";
 import { REGIONS } from "@/lib/regions";
+import { SITE_NAME } from "@/lib/site";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelpluscost.com";
+
+// Deduped per request: generateMetadata and the page both need the content; this fetches it once.
+const getHotel = cache(getHotelContent);
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const hotel = await getHotel(id);
+  if (!hotel) return {};
+  const loc = hotel.city || hotel.island || "";
+  const titleCore = loc ? `${hotel.name}, ${loc}` : hotel.name;
+  const raw = (hotel.description || "").replace(/\s+/g, " ").trim();
+  const description = raw
+    ? raw.length > 155
+      ? `${raw.slice(0, 152).replace(/\s+\S*$/, "")}…`
+      : raw
+    : `Compare ${hotel.name}${loc ? ` in ${loc}` : ""} — the room rate plus one small flat fee, the same price for everyone. No surveillance pricing.`;
+  const url = `/hotel/${id}`;
+  return {
+    title: titleCore,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "website",
+      title: `${titleCore} · ${SITE_NAME}`,
+      description,
+      url,
+      ...(hotel.image ? { images: [{ url: hotel.image, alt: hotel.name }] } : {}),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: titleCore,
+      description,
+      ...(hotel.image ? { images: [hotel.image] } : {}),
+    },
+  };
+}
 
 // Pre-render the curated markets as static pages (instant). Every OTHER hotel (the 274k+ directory)
 // renders on demand and is cached — ISR — so a page exists for any property without a giant build.
@@ -30,7 +72,7 @@ export const revalidate = 3600;
 
 export default async function HotelPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const hotel = await getHotelContent(id);
+  const hotel = await getHotel(id);
   if (!hotel) notFound();
   // Landmarks / "nearby" only exist for our curated markets; non-curated hotels degrade gracefully.
   const region = REGIONS.find((r) => r.name.toLowerCase() === (hotel.island || "").toLowerCase());

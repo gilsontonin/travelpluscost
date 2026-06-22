@@ -17,6 +17,7 @@ const COLS: { title: string; links: FLink[] }[] = [
     title: "Explore",
     links: [
       { label: "Hotels", href: "/search" },
+      { label: "Travel guides", href: "/blog" },
       { label: "Flights — soon", href: "/flights" },
       { label: "Cars — soon", href: "/cars" },
     ],

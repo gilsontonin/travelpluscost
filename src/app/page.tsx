@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
@@ -10,6 +11,11 @@ import ViatorPackages from "@/components/ViatorPackages";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
 import { REGIONS } from "@/lib/regions";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: { url: "/" },
+};
 
 const search = (q: string) => `/search?destination=${encodeURIComponent(q)}&adults=2`;
 

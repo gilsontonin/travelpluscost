@@ -7,6 +7,7 @@ import VibeSearchCta from "@/components/VibeSearchCta";
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/search", label: "Hotels" },
+  { href: "/blog", label: "Guides" },
   { href: "/#how", label: "How pricing works" },
   { href: "/#about", label: "About" },
 ];
