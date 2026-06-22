@@ -1,16 +1,38 @@
 import Link from "next/link";
 
-const COLS = [
-  { title: "Company", links: ["About", "How pricing works", "Press", "Careers"] },
-  { title: "Explore", links: ["Hotels", "Flights — soon", "Cars — soon", "Attractions — soon"] },
-  { title: "Support", links: ["Help Center", "Contact", "Trust & Safety", "Privacy"] },
+// Links with an href are live; those without aren't built yet and render as muted text
+// (so the footer never has dead "#" links).
+type FLink = { label: string; href?: string };
+const COLS: { title: string; links: FLink[] }[] = [
+  {
+    title: "Company",
+    links: [
+      { label: "About", href: "/#about" },
+      { label: "How pricing works", href: "/#how" },
+      { label: "Press" },
+      { label: "Careers" },
+    ],
+  },
+  {
+    title: "Explore",
+    links: [
+      { label: "Hotels", href: "/search" },
+      { label: "Flights — soon", href: "/flights" },
+      { label: "Cars — soon", href: "/cars" },
+      { label: "Attractions — soon", href: "/things-to-do" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [{ label: "Help Center" }, { label: "Contact" }, { label: "Trust & Safety" }, { label: "Privacy" }],
+  },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-[#15151a] text-white/70 mt-16">
       <div className="mx-auto max-w-7xl px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div className="col-span-2 md:col-span-1">
+        <div id="about" className="scroll-mt-24 col-span-2 md:col-span-1">
           <div className="font-bold text-lg text-white">
             <span className="text-accent">travel</span>pluscost
           </div>
@@ -24,10 +46,16 @@ export default function Footer() {
             <p className="text-white font-medium text-sm mb-3">{c.title}</p>
             <ul className="space-y-2 text-sm">
               {c.links.map((l) => (
-                <li key={l}>
-                  <Link href="#" className="hover:text-white transition">
-                    {l}
-                  </Link>
+                <li key={l.label}>
+                  {l.href ? (
+                    <Link href={l.href} className="hover:text-white transition">
+                      {l.label}
+                    </Link>
+                  ) : (
+                    <span className="text-white/30 cursor-default" title="Coming soon">
+                      {l.label}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>

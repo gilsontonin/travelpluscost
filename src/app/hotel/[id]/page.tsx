@@ -136,20 +136,22 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
 
           <AmenitiesSection facilities={hotel.facilities} />
 
-          {/* Good to know — facts we actually have from content */}
-          <div className="mt-8">
-            <h2 className="text-lg font-semibold mb-4">Good to know</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <Fact label="Check-in" value={hotel.checkin ?? "—"} />
-              <Fact label="Check-out" value={hotel.checkout ?? "—"} />
-              {hotel.petsAllowed != null ? (
-                <Fact label="Pets" value={hotel.petsAllowed ? "Allowed" : "Not allowed"} />
-              ) : null}
-              {hotel.childAllowed != null ? (
-                <Fact label="Children" value={hotel.childAllowed ? "Welcome" : "Adults only"} />
-              ) : null}
+          {/* Good to know — only the facts we actually have (no empty "—" cells) */}
+          {hotel.checkin || hotel.checkout || hotel.petsAllowed != null || hotel.childAllowed != null ? (
+            <div className="mt-8">
+              <h2 className="text-lg font-semibold mb-4">Good to know</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {hotel.checkin ? <Fact label="Check-in" value={hotel.checkin} /> : null}
+                {hotel.checkout ? <Fact label="Check-out" value={hotel.checkout} /> : null}
+                {hotel.petsAllowed != null ? (
+                  <Fact label="Pets" value={hotel.petsAllowed ? "Allowed" : "Not allowed"} />
+                ) : null}
+                {hotel.childAllowed != null ? (
+                  <Fact label="Children" value={hotel.childAllowed ? "Welcome" : "Adults only"} />
+                ) : null}
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
 
         <aside className="lg:sticky lg:top-24 h-fit bg-white border border-black/5 rounded-lg p-5">

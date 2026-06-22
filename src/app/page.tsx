@@ -28,8 +28,8 @@ export default function Home() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 pt-8 pb-16">
-      {/* hero */}
-      <div className="text-center max-w-2xl mx-auto">
+      {/* hero (also the "how pricing works" anchor target for the nav) */}
+      <div id="how" className="scroll-mt-24 text-center max-w-2xl mx-auto">
         <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">
           One honest price.
           <br />

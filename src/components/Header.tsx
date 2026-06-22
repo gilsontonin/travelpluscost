@@ -5,12 +5,13 @@ import { useState } from "react";
 
 const NAV = [
   { href: "/", label: "Home" },
-  { href: "/search?destination=Oahu&adults=2", label: "Hotels" },
+  { href: "/search", label: "Hotels" },
   { href: "/#how", label: "How pricing works" },
   { href: "/#about", label: "About" },
 ];
 
-const SEARCH_HREF = "/search?destination=Oahu&adults=2";
+// The sticky CTA opens the search entry (not a hardcoded Oahu search).
+const SEARCH_HREF = "/search";
 
 function SearchCta({ className = "" }: { className?: string }) {
   return (

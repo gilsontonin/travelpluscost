@@ -244,10 +244,11 @@ function priced(m: Money, n: number, feesAtProperty = 0): Price {
 
 export function defaultDates(ci?: string | null, co?: string | null) {
   if (ci && co) return { checkin: ci, checkout: co };
+  // No dates picked → show a near-term, relatable "from" price: 1 night, starting tomorrow.
   const d = new Date();
-  d.setDate(d.getDate() + 30);
+  d.setDate(d.getDate() + 1);
   const a = d.toISOString().slice(0, 10);
-  d.setDate(d.getDate() + 2);
+  d.setDate(d.getDate() + 1);
   const b = d.toISOString().slice(0, 10);
   return { checkin: a, checkout: b };
 }
