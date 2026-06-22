@@ -79,6 +79,29 @@ Alternative considered — **public "cost + 15%"** (no paywall): simpler, % cove
 upside, but lands *above* Booking in thin-spread markets (bad look while preaching transparency),
 and below-SSP cases still need gating. Kept as a fallback, not the lead.
 
+### 4b. Refined member pricing — DECIDED 2026-06-21: "net + 5%, capped at SSP", subscription = the revenue
+The member price = **`min(net × 1.05, SSP)`**. The +5% is a *proportional safety/admin fee* that covers
+the card-processing fee (~2.9% + $0.30 ≈ 3%) with a small buffer; it is NOT the profit. **The revenue is
+the subscription itself** — net+5% just keeps each booking self-funding (Costco model).
+- **Why 5% not flat:** proportional (covers %-based card fees on any booking size); on big stays it
+  over-covers (e.g. $1,000 booking → 5% = $50 vs ~$30 card fee = $20 buffer), quietly extra margin.
+- **GUARD — cap at SSP:** on thin-spread hotels `net×1.05` can exceed SSP; a member must NEVER pay more
+  than the public price. So `min(net×1.05, SSP)`; on those show "Members save $0 — already at our floor"
+  (the "match, don't beat" case). Never a penalty for being a member.
+- **The strikethrough is HONEST:** SSP is the real verified market/parity price (every OTA shows it), so
+  crossing it out and showing the member price is a genuine discount off market — not a fake "was" price
+  (the anti-Super.com point). Public/logged-out = SSP shown normally; member = SSP struck through + member price.
+- **Parity stays open:** non-members (and members who prefer) can always book at SSP — no forced paywall to
+  browse or book. The membership only *unlocks* the lower price.
+- **Verified savings (real numbers):** Trump LV Superior net $194.86 → member ~$205 vs SSP $314 (**save ~$110/35%**);
+  Outrigger King net ~$716 → member ~$752 vs SSP $1,008 (**save ~$256/25%**).
+- **OPEN — who eats the card fee?** If LiteAPI (payment MoR) absorbs Stripe's processing, the 5% is nearly
+  pure buffer; if passed through, we net ~2%. Confirm with LiteAPI (ties to the MoR question in §6).
+- **Implementation = the membership gate:** public stays at SSP (current behaviour); members get
+  `min(net+5%, SSP)` by setting the per-rate margin to 5% instead of margin-to-SSP, behind a Supabase login +
+  Stripe subscription. This supersedes §4's "net + card fee, $0 markup" wording (the 5% replaces "pass the
+  card fee through").
+
 ### 4a. Payment architecture — DECIDED 2026-06-21: LiteAPI payment + % margin (LiteAPI = MoR)
 Go to market lean. Use **LiteAPI's payment system** (their SDK/wallet), set a small **margin %**
 (passable per request, NOT just the dashboard slider — proven: `margin:20` → `retailRate.total`
@@ -161,11 +184,25 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
 - [x] Markup is **%-only** (no fixed amount) — resolved from docs (`docs/LITEAPI.md §4`).
 - [x] Payment architecture DECIDED 2026-06-21 (§4a): LiteAPI payment + % margin, LiteAPI as MoR —
       go to market without becoming MoR / SoT-registered up front.
-- [ ] **Before real money** — confirm in writing: (a) LiteAPI is MoR in the Payment-SDK flow;
-      (b) travel attorney's read on our Seller-of-Travel exposure (CA/HI/WA) given LiteAPI is MoR.
-- [ ] Decide the member fee % (modeling ~10%) and the membership price points ($/mo, $/yr).
-- [ ] Build (real next step): **membership/auth gate** → behind it, display & charge `net + margin%`
-      (= cost + fee), display == `retailRate.total`. Public/ungated stays SSP (parity). This is the
-      feature that turns the site from "a nice OTA clone" into "the un-rigged travel club."
-- [ ] Wire `margin` into the rates/prebook calls (the cost-plus engine) — gated behind the above.
+- [x] Member fee = **net + 5%, capped at SSP** (§4b). Revenue is the subscription, not the per-booking fee.
+- [x] **Checkout flow LIVE end-to-end** (2026-06-21): real Stripe Payment SDK widget (prebook → pay →
+      book TRANSACTION_ID), SSP-compliant pricing (charge ≈ SSP, never below), deduped property fees,
+      prefetch+preload for speed, sandbox warnings gated to sandbox mode. **Live mode is ON via Netlify
+      `NEXT_PUBLIC_PAYMENT_ENV=live` + production key** (real charges). Bookings land in LiteAPI dashboard
+      with commission.
+
+**CURRENT LIVE PRICING (as of 2026-06-21):** we DISPLAY and CHARGE the **SSP (full market/parity price)** —
+no membership tier yet, so the site prices like a standard OTA and earns the full SSP−net spread. The
+"cost + 5%" member price is NOT live (needs the gate below).
+
+- [ ] **Before real money at scale** — confirm in writing: (a) LiteAPI is MoR in the Payment-SDK flow;
+      (b) travel attorney's read on Seller-of-Travel exposure (CA/HI/WA); (c) who eats the card fee (§4b).
+- [ ] Decide membership price points ($/mo, $/yr) — model "save more than the fee on trip 1 or refunded".
+- [ ] **Build (THE next project): membership/auth gate** — public stays at SSP (current behaviour); members
+      get `min(net×1.05, SSP)` by setting the prebook `margin` to 5% instead of margin-to-SSP. Needs Supabase
+      auth + Stripe subscription + the gated price logic + SSP-strikethrough "subscribe to unlock" UI. This is
+      the feature that turns the site from "a market-priced OTA" into "the un-rigged travel club."
+- [ ] Operational before real volume: **booking confirmation email** (Resend, send in `/booking-complete`),
+      a **support contact** on the confirmation, and a **self-serve cancel page** (`GET`/`PUT /bookings/{id}`
+      by booking-id + email — stateless, no accounts needed).
 - [ ] GA4 + Search Console now (measure the SEO bet from day one).
