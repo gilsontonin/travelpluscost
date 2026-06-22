@@ -21,8 +21,9 @@ interface PrebookData {
   prebookId: string;
   secretKey: string;
   transactionId: string;
-  price: number;
+  price: number; // amount charged NOW (room + online taxes, margin applied)
   currency: string;
+  feesAtProperty: number; // mandatory fees paid at the hotel — NOT charged now
 }
 
 declare global {
@@ -61,8 +62,11 @@ export default function BookingForm(props: Props) {
     mounted.current = true;
     (async () => {
       try {
+        console.log("[pay] loading SDK…");
         await loadScript(SDK_SRC);
+        console.log("[pay] SDK loaded; LiteAPIPayment =", typeof window.LiteAPIPayment);
         if (!window.LiteAPIPayment) throw new Error("Payment form unavailable.");
+        if (!document.getElementById("pe")) throw new Error("Payment container missing.");
         const params = new URLSearchParams({
           prebookId: prebook.prebookId,
           transactionId: prebook.transactionId,
@@ -71,9 +75,10 @@ export default function BookingForm(props: Props) {
           email,
           hotelId: props.hotelId,
           room: props.room,
-          online: props.total,
-          feesAtProperty: props.feesAtProperty,
-          currency: props.currency,
+          // the authoritative numbers from prebook — what was actually charged + the real at-property fee
+          online: String(prebook.price),
+          feesAtProperty: String(prebook.feesAtProperty),
+          currency: prebook.currency,
           checkin: props.checkin,
           checkout: props.checkout,
           refundable: props.refundable,
@@ -84,11 +89,16 @@ export default function BookingForm(props: Props) {
           appearance: { theme: "flat" },
           options: { business: { name: "travelpluscost" } },
           targetElement: "#pe",
+          amount: prebook.price,
+          currency: prebook.currency,
           secretKey: prebook.secretKey,
           returnUrl: `${window.location.origin}/booking-complete?${params.toString()}`,
         });
+        console.log("[pay] calling handlePayment() into #pe", { env: PAYMENT_ENV, amount: prebook.price });
         payment.handlePayment();
+        console.log("[pay] handlePayment() returned (widget should now be in #pe)");
       } catch (e) {
+        console.error("[pay] mount failed:", e);
         setError(e instanceof Error ? e.message : "Could not start payment.");
         mounted.current = false;
         setPrebook(null);
@@ -132,12 +142,17 @@ export default function BookingForm(props: Props) {
       <div className="space-y-5">
         <section className="bg-white border border-black/5 rounded-2xl p-5">
           <h2 className="font-semibold mb-1">Payment</h2>
-          <p className="text-sm text-black/55 mb-4">
-            Paying {money(allIn, props.currency)} for {firstName} {lastName}. Test card{" "}
-            <span className="font-mono">4242 4242 4242 4242</span>, any future date + CVC.
+          <p className="text-sm text-black/55">
+            Paying <b>{money(prebook.price, prebook.currency)}</b> now for {firstName} {lastName}.
+            {prebook.feesAtProperty > 0
+              ? ` A ${money(prebook.feesAtProperty, prebook.currency)} fee is collected at the hotel — not now.`
+              : ""}
+          </p>
+          <p className="text-xs text-black/40 mb-4">
+            Test card <span className="font-mono">4242 4242 4242 4242</span>, any future date + CVC.
           </p>
           {/* LiteAPI Payment SDK mounts the card form here */}
-          <div id="pe" />
+          <div id="pe" className="min-h-[220px]" />
         </section>
         {error ? (
           <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-3 py-2.5 text-center">

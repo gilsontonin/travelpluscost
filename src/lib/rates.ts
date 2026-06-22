@@ -146,15 +146,32 @@ function tidyName(name: string): string {
 // EVERY mandatory fee collected at the property (included:false) — not just the first.
 // The probe found two on one rate (Resort + Facility Fee); grabbing one undercounts the
 // real out-the-door price, which is the misleading-pricing trap we exist to avoid.
+// Collapse supplier fee variants into ONE line per real fee. Suppliers return the SAME fee multiple
+// times with different spellings/amounts — verified on Outrigger Waikiki: one rate had 4 "resort"
+// entries ("resort"/"Resort"/"Resort Fee"/"resort fee", $102–119). These must NOT be summed. We key
+// by a normalized name (strip "fee", non-alphanumerics, case) and keep ONE line, taking the max as
+// the disclosed estimate (the property charges the real amount at check-in). Genuinely distinct fees
+// (e.g. "resort" vs "facility") keep separate lines. Also fixes the "Resort Fee fee" double-print.
+export function dedupePropertyFees(
+  fees: { included?: boolean; description?: string; amount?: number; currency?: string }[],
+): PropertyFee[] {
+  const normKey = (d: string) => d.toLowerCase().replace(/\bfees?\b/g, "").replace(/[^a-z0-9]+/g, "");
+  const niceLabel = (d: string) => {
+    const core = d.toLowerCase().replace(/\bfees?\b/g, " ").replace(/\s+/g, " ").trim();
+    return core ? `${core.replace(/\b\w/g, (c) => c.toUpperCase())} fee` : "Property fee";
+  };
+  const byKey = new Map<string, PropertyFee>();
+  for (const f of fees ?? []) {
+    if (!f || f.included !== false || typeof f.amount !== "number" || f.amount <= 0) continue;
+    const key = normKey(f.description ?? "") || "property";
+    const cur = byKey.get(key);
+    if (!cur) byKey.set(key, { label: niceLabel(f.description ?? ""), amount: f.amount, currency: f.currency ?? "USD" });
+    else if (f.amount > cur.amount) cur.amount = f.amount; // same fee, different spelling → keep one (max)
+  }
+  return [...byKey.values()];
+}
 function propertyFeesOf(rate: RateObj): PropertyFee[] {
-  const fees = rate.retailRate?.taxesAndFees ?? [];
-  return fees
-    .filter((f) => f && f.included === false && typeof f.amount === "number" && f.amount > 0)
-    .map((f) => ({
-      label: f.description ? `${f.description} fee` : "Property fee",
-      amount: f.amount as number,
-      currency: f.currency ?? "USD",
-    }));
+  return dedupePropertyFees(rate.retailRate?.taxesAndFees ?? []);
 }
 function propertyFeesTotal(rate: RateObj): number {
   return propertyFeesOf(rate).reduce((s, f) => s + f.amount, 0);

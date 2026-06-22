@@ -1,17 +1,14 @@
-// SANDBOX booking flow — server-only. Runs the real LiteAPI chain (rates -> prebook -> book)
-// against the SANDBOX key, with the production-correct Payment SDK path:
-//   1) sandboxPrebook(): re-find a sandbox offer, prebook with usePaymentSdk:true → returns the
-//      Stripe `secretKey` + `transactionId` (the client Payment SDK collects the card with these).
+// SANDBOX booking flow — server-only. Production-correct Payment SDK path against the SANDBOX key.
+//
+//   1) sandboxPrebook(): find a sandbox offer, PRICE IT with a per-rate margin so the amount charged
+//      equals what we display (LiteAPI's payment charges retailRate.total = NET at margin 0, i.e. the
+//      raw wholesale — verified; the margin lifts it to ~SSP). prebook with usePaymentSdk:true →
+//      returns the Stripe secretKey + transactionId + the binding price + at-property fees.
 //   2) sandboxBookWithTransaction(): after the card is charged, book with method TRANSACTION_ID.
-// This mirrors the official example app (github.com/liteapi-travel/build-website-example).
 //
-// NEVER point this at the production key — that takes real money, which is gated on LiteAPI MoR
-// confirmation + Seller-of-Travel + refund/support process (see docs/PRICING.md §6, docs/LITEAPI.md).
-//
-// Why re-fetch rates here: a sandbox prebook needs a SANDBOX offerId, but the offerIds shown on the
-// property page come from the PRODUCTION key and aren't valid in sandbox. Sandbox carries the same
-// hotel data, so we look the room up again here.
-import { canonRoom } from "./rates";
+// NEVER point this at the production key — that takes real money, gated on LiteAPI MoR confirmation +
+// Seller-of-Travel + a refund/support process (docs/PRICING.md §6, docs/LITEAPI.md).
+import { canonRoom, dedupePropertyFees } from "./rates";
 
 const API = process.env.LITEAPI_BASE_URL || "https://api.liteapi.travel/v3.0";
 const BOOK = process.env.LITEAPI_BOOK_BASE_URL || "https://book.liteapi.travel/v3.0";
@@ -33,28 +30,46 @@ async function call<T>(url: string, body: unknown): Promise<T> {
   return (json.data ?? (json as unknown)) as T;
 }
 
-interface SandboxRate {
-  retailRate?: { suggestedSellingPrice?: { amount: number; currency: string }[] };
+interface TaxFee {
+  included?: boolean;
+  description?: string;
+  amount?: number;
+  currency?: string;
 }
-interface SandboxRoomType {
+interface RateLite {
+  name?: string;
+  retailRate?: {
+    total?: { amount: number }[];
+    suggestedSellingPrice?: { amount: number }[];
+    taxesAndFees?: TaxFee[];
+  };
+}
+interface RoomTypeLite {
   offerId?: string;
-  rates?: (SandboxRate & { name?: string; offerId?: string })[];
+  rates?: (RateLite & { offerId?: string })[];
 }
 
+export interface PropertyFeeLite {
+  label: string;
+  amount: number;
+  currency: string;
+}
 export interface PrebookInput {
   hotelId: string;
-  room: string; // chosen room name (from the property page)
+  room: string;
   checkin: string;
   checkout: string;
   adults: number;
 }
 export interface PrebookResult {
   prebookId: string;
-  secretKey: string; // Stripe client secret — the Payment SDK uses this to collect the card
-  transactionId: string; // passed to book() once the card is charged
-  price: number; // binding price from prebook
+  secretKey: string;
+  transactionId: string;
+  price: number; // the amount the Stripe widget charges NOW (room + online taxes, margin applied)
   currency: string;
   room: string;
+  feesAtProperty: number; // sum of mandatory fees paid AT the hotel — NOT in `price`
+  propertyFees: PropertyFeeLite[];
 }
 export interface BookInput {
   prebookId: string;
@@ -69,43 +84,73 @@ export interface BookingResult {
   status: string;
 }
 
-// Candidate offers for the chosen room: canonical matches first, then cheapest. Not every offer
-// is prebookable (a rate can be gone, or a supplier flaky), so sandboxPrebook tries them in order.
-async function findOffers(input: PrebookInput): Promise<{ offerId: string; room: string }[]> {
-  const data = await call<{ hotelId: string; roomTypes?: SandboxRoomType[] }[]>(`${API}/hotels/rates`, {
+interface Offer {
+  offerId: string;
+  room: string;
+  net: number; // retailRate.total — what the widget would charge for this offer
+  ssp: number;
+  fees: PropertyFeeLite[];
+  key: string;
+}
+
+// Same normalizer the property page uses — collapses "resort"/"Resort"/"Resort Fee" variants to one.
+function feesFrom(rate: RateLite): PropertyFeeLite[] {
+  return dedupePropertyFees(rate.retailRate?.taxesAndFees ?? []);
+}
+
+async function fetchOffers(input: PrebookInput, margin?: number): Promise<Offer[]> {
+  const body: Record<string, unknown> = {
     hotelIds: [input.hotelId],
     checkin: input.checkin,
     checkout: input.checkout,
     occupancies: [{ adults: input.adults }],
     currency: "USD",
     guestNationality: "US",
-  });
-  const want = canonRoom(input.room);
-  const all: { offerId: string; room: string; price: number; matched: boolean }[] = [];
+  };
+  if (margin && margin > 0) body.margin = margin; // margin lifts retailRate.total toward SSP
+  const data = await call<RoomTypeLite[] | { roomTypes?: RoomTypeLite[] }[]>(`${API}/hotels/rates`, body);
+  const hotels = (data as { roomTypes?: RoomTypeLite[] }[]) ?? [];
+  const out: Offer[] = [];
   const seen = new Set<string>();
-  for (const rh of data ?? []) {
+  for (const rh of hotels) {
     for (const rt of rh.roomTypes ?? []) {
       for (const rate of rt.rates ?? []) {
         const offerId = rt.offerId ?? rate.offerId;
-        const price = rate.retailRate?.suggestedSellingPrice?.[0]?.amount;
+        const net = rate.retailRate?.total?.[0]?.amount;
+        const ssp = rate.retailRate?.suggestedSellingPrice?.[0]?.amount;
         const name = rate.name ?? "Room";
-        if (!offerId || typeof price !== "number" || seen.has(offerId)) continue;
+        if (!offerId || typeof net !== "number" || seen.has(offerId)) continue;
         seen.add(offerId);
-        all.push({ offerId, room: name, price, matched: canonRoom(name) === want });
+        out.push({
+          offerId,
+          room: name,
+          net,
+          ssp: typeof ssp === "number" ? ssp : net,
+          fees: feesFrom(rate),
+          key: canonRoom(name),
+        });
       }
     }
   }
-  if (!all.length) throw new Error("No availability for this hotel/date.");
-  all.sort((a, b) => Number(b.matched) - Number(a.matched) || a.price - b.price);
-  return all.map((o) => ({ offerId: o.offerId, room: o.room }));
+  return out;
 }
 
-// Step 1 — prebook with the Payment SDK enabled. Returns the keys the client widget needs.
-// Walks candidate offers until one prebooks (sandbox 409s on some offers; rates also expire).
+// Step 1 — price the chosen room to ~SSP, prebook with the Payment SDK enabled.
 export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult> {
-  const candidates = await findOffers(input);
+  const base = await fetchOffers(input); // no margin: discover net + SSP
+  if (!base.length) throw new Error("No availability for this hotel/date.");
+  const want = canonRoom(input.room);
+  base.sort((a, b) => Number(b.key === want) - Number(a.key === want) || a.ssp - b.ssp);
+
+  // Per-rate margin so the charge ≈ SSP (parity-safe public price), not raw wholesale.
+  const top = base[0];
+  const margin = Math.max(0, Math.ceil((top.ssp / top.net - 1) * 100));
+  const priced = margin > 0 ? await fetchOffers(input, margin) : base;
+  const pricedByKey = new Map(priced.map((o) => [o.key, o]));
+
   let lastError = "No bookable rate for this room.";
-  for (const offer of candidates.slice(0, 6)) {
+  for (const cand of base.slice(0, 6)) {
+    const offer = pricedByKey.get(cand.key) ?? cand;
     try {
       const pre = await call<{
         prebookId: string;
@@ -115,13 +160,16 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
         currency?: string;
       }>(`${BOOK}/rates/prebook`, { offerId: offer.offerId, usePaymentSdk: true });
       if (pre.prebookId && pre.secretKey && pre.transactionId) {
+        const feeSum = Math.round(offer.fees.reduce((s, f) => s + f.amount, 0) * 100) / 100;
         return {
           prebookId: pre.prebookId,
           secretKey: pre.secretKey,
           transactionId: pre.transactionId,
-          price: pre.price ?? 0,
+          price: pre.price ?? offer.net,
           currency: pre.currency ?? "USD",
           room: offer.room,
+          feesAtProperty: feeSum,
+          propertyFees: offer.fees,
         };
       }
       lastError = "Prebook did not return Payment SDK credentials.";
