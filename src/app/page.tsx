@@ -3,6 +3,7 @@ import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import VibePromptPill from "@/components/VibePromptPill";
 import HotelRail from "@/components/HotelRail";
+import NearbyRail from "@/components/NearbyRail";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
 import { REGIONS } from "@/lib/regions";
@@ -60,6 +61,8 @@ export default function Home() {
       </div>
 
       <RecentlyViewed all={railAll} />
+
+      <NearbyRail />
 
       {/* destinations we cover */}
       <section className="mt-10">
