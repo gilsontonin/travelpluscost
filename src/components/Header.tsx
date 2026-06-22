@@ -68,7 +68,7 @@ export default function Header() {
                 {n.label}
               </Link>
             ))}
-            <VibeSearchCta className="mt-1 justify-center" />
+            <VibeSearchCta className="mt-1 self-center" />
           </div>
         )}
       </div>
