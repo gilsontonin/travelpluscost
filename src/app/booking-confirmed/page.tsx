@@ -41,12 +41,14 @@ export default async function ConfirmedPage({
             <path d="M20 6 9 17l-5-5" />
           </svg>
         </div>
-        <span className="mt-3 inline-block rounded-full bg-amber-100 text-amber-800 text-[0.7rem] font-semibold px-2.5 py-1 tracking-wide">
-          SANDBOX · TEST BOOKING · NO CHARGE
-        </span>
+        {process.env.NEXT_PUBLIC_PAYMENT_ENV !== "live" ? (
+          <span className="mt-3 inline-block rounded-full bg-amber-100 text-amber-800 text-[0.7rem] font-semibold px-2.5 py-1 tracking-wide">
+            SANDBOX · TEST BOOKING · NO CHARGE
+          </span>
+        ) : null}
         <h1 className="text-2xl font-semibold mt-3">Booking {status ? status.toLowerCase() : "confirmed"}</h1>
         <p className="text-black/55 mt-1">
-          {guest ? `Thanks, ${guest}. ` : ""}A confirmation has been sent{email ? ` to ${email}` : ""}.
+          {guest ? `Thanks, ${guest}. ` : ""}Your reservation is confirmed{email ? ` for ${email}` : ""}.
         </p>
         <p className="mt-3 inline-block bg-black/[0.04] rounded-md px-4 py-1.5 text-sm font-mono">
           Confirmation: {ref}
@@ -71,8 +73,9 @@ export default async function ConfirmedPage({
         </div>
 
         <p className="mt-6 text-xs text-black/40">
-          This is a real reservation in LiteAPI&apos;s sandbox — a genuine confirmation code, but no card
-          was charged and no live booking was made. The price shown is the same price everyone sees.
+          {process.env.NEXT_PUBLIC_PAYMENT_ENV !== "live"
+            ? "This is a real reservation in LiteAPI's sandbox — a genuine confirmation code, but no card was charged and no live booking was made. The price shown is the same price everyone sees."
+            : "Save your confirmation code above. The price shown is the same price everyone sees — never based on your data."}
         </p>
 
         <Link href="/" className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-xl hover:opacity-90 transition">

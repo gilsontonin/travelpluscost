@@ -46,6 +46,28 @@ function loadScript(src: string): Promise<void> {
   });
 }
 
+const IS_SANDBOX = PAYMENT_ENV !== "live";
+const EMAIL_DOMAINS = ["gmail.com", "yahoo.com", "outlook.com", "icloud.com", "hotmail.com"];
+
+// US phone, formatted as the user types: (555) 123-4567
+function formatPhone(v: string): string {
+  const d = v.replace(/\D/g, "").slice(0, 10);
+  if (d.length <= 3) return d;
+  if (d.length <= 6) return `(${d.slice(0, 3)}) ${d.slice(3)}`;
+  return `(${d.slice(0, 3)}) ${d.slice(3, 6)}-${d.slice(6)}`;
+}
+
+// Suggest common providers once they start the email (before or after the "@").
+function emailSuggestions(email: string): string[] {
+  if (!email || /\s/.test(email)) return [];
+  const at = email.indexOf("@");
+  if (at === -1) return EMAIL_DOMAINS.map((d) => `${email}@${d}`);
+  const local = email.slice(0, at);
+  if (!local) return [];
+  const partial = email.slice(at + 1).toLowerCase();
+  return EMAIL_DOMAINS.filter((d) => d.startsWith(partial) && d !== partial).map((d) => `${local}@${d}`);
+}
+
 export default function BookingForm(props: Props) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -182,14 +204,16 @@ export default function BookingForm(props: Props) {
       <div className="space-y-5">
         <section className="bg-white border border-black/5 rounded-2xl p-5">
           <h2 className="font-semibold mb-1">Payment</h2>
-          <p className="text-sm text-black/55">
+          <p className="text-sm text-black/55 mb-4">
             Paying <b>{money(prebook.price, prebook.currency)}</b> now for {firstName} {lastName}.
             {prebook.feesAtProperty > 0
               ? ` A ${money(prebook.feesAtProperty, prebook.currency)} fee is collected at the hotel — not now.`
               : ""}
-          </p>
-          <p className="text-xs text-black/40 mb-4">
-            Test card <span className="font-mono">4242 4242 4242 4242</span>, any future date + CVC.
+            {IS_SANDBOX ? (
+              <>
+                {" "}Test card <span className="font-mono">4242 4242 4242 4242</span>, any future date + CVC.
+              </>
+            ) : null}
           </p>
           {/* LiteAPI Payment SDK mounts the card form here */}
           <div id="pe" className="min-h-[220px]" />
@@ -200,7 +224,9 @@ export default function BookingForm(props: Props) {
           </p>
         ) : null}
         <p className="text-xs text-black/40 text-center">
-          Sandbox test booking — no card is charged and no live reservation is made.
+          {IS_SANDBOX
+            ? "Sandbox test booking — no card is charged and no live reservation is made."
+            : "Your card is processed securely. One honest price — the same for everyone."}
         </p>
       </div>
     );
@@ -212,11 +238,20 @@ export default function BookingForm(props: Props) {
       <section className="bg-white border border-black/5 rounded-2xl p-5 space-y-3">
         <h2 className="font-semibold">Who&apos;s checking in?</h2>
         <div className="grid grid-cols-2 gap-3">
-          <input className={field} placeholder="First name" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
-          <input className={field} placeholder="Last name" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
+          <input className={field} placeholder="First name" autoComplete="given-name" name="given-name"
+            value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+          <input className={field} placeholder="Last name" autoComplete="family-name" name="family-name"
+            value={lastName} onChange={(e) => setLastName(e.target.value)} required />
         </div>
-        <input className={field} type="email" placeholder="Email address" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <input className={field} type="tel" placeholder="Phone number" value={phone} onChange={(e) => setPhone(e.target.value)} />
+        <input className={field} type="email" placeholder="Email address" autoComplete="email" name="email"
+          list="tpc-email-domains" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <datalist id="tpc-email-domains">
+          {emailSuggestions(email).map((s) => (
+            <option key={s} value={s} />
+          ))}
+        </datalist>
+        <input className={field} type="tel" placeholder="Phone number" autoComplete="tel" name="tel" inputMode="tel"
+          value={phone} onChange={(e) => setPhone(formatPhone(e.target.value))} />
       </section>
 
       {error ? (
@@ -231,8 +266,9 @@ export default function BookingForm(props: Props) {
         {busy ? "Confirming the room…" : `Continue to payment · ${money(allIn, props.currency)}`}
       </button>
       <p className="text-xs text-black/40 text-center">
-        Sandbox test booking — creates a real, no-charge test reservation via LiteAPI. One honest
-        price, the same for everyone.
+        {IS_SANDBOX
+          ? "Sandbox test booking — creates a real, no-charge test reservation via LiteAPI."
+          : "One honest price — the same for everyone, never based on your data."}
       </p>
     </form>
   );
