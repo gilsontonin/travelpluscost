@@ -2,7 +2,7 @@
 // In-memory cache (per server instance, ~10 min) so repeat loads are instant. Swap for Upstash
 // Redis to share the cache across instances at scale (see docs/ARCHITECTURE.md).
 import { getRates } from "./liteapi";
-import { getOahuHotel } from "./oahu";
+import { getHotelContent } from "./hotelContent";
 import type { Room } from "./oahu";
 
 export interface Price {
@@ -334,7 +334,7 @@ export async function getRooms(
 
   const data = await fetchRates([id], ci, co, adults, true); // roomMapping for exact room content
   const rh = data[0];
-  const content = getOahuHotel(id);
+  const content = await getHotelContent(id); // curated JSON or live LiteAPI content (cached)
   const rooms = content?.rooms ?? [];
   const hotelPhotos = content?.images ?? [];
 

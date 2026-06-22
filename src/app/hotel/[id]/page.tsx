@@ -1,7 +1,8 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllOahu, getOahuHotel, classifyType } from "@/lib/oahu";
+import { getAllOahu, classifyType } from "@/lib/oahu";
+import { getHotelContent } from "@/lib/hotelContent";
 import RoomsPanel from "@/components/RoomsPanel";
 import PhotoGallery from "@/components/PhotoGallery";
 import ViatorPackages from "@/components/ViatorPackages";
@@ -16,26 +17,32 @@ import PoliciesInfo from "@/components/PoliciesInfo";
 import SimilarHotels from "@/components/SimilarHotels";
 import TrackView from "@/components/TrackView";
 import { nearbyLabel } from "@/lib/distance";
-import { regionForIsland } from "@/lib/regions";
+import { REGIONS } from "@/lib/regions";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelpluscost.com";
 
-// Pre-render every ingested Oahu hotel as a static page (instant).
+// Pre-render the curated markets as static pages (instant). Every OTHER hotel (the 274k+ directory)
+// renders on demand and is cached — ISR — so a page exists for any property without a giant build.
 export function generateStaticParams() {
   return getAllOahu().map((h) => ({ id: h.id }));
 }
+export const revalidate = 3600;
 
 export default async function HotelPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const hotel = getOahuHotel(id);
+  const hotel = await getHotelContent(id);
   if (!hotel) notFound();
-  const landmarks = regionForIsland(hotel.island).landmarks;
+  // Landmarks / "nearby" only exist for our curated markets; non-curated hotels degrade gracefully.
+  const region = REGIONS.find((r) => r.name.toLowerCase() === (hotel.island || "").toLowerCase());
+  const landmarks = region?.landmarks ?? [];
+  const cityLabel = hotel.city ? `${hotel.city} hotels` : "Hotels";
+  const searchHref = `/search?destination=${encodeURIComponent(hotel.city || "")}&adults=2`;
 
   return (
     <div className="mx-auto max-w-6xl px-4 pt-3 pb-24 sm:py-6 lg:pb-6">
       <TrackView id={hotel.id} />
       {/* gallery */}
-      <PhotoGallery images={hotel.images} name={hotel.name} backHref="/search?destination=Oahu&adults=2" />
+      <PhotoGallery images={hotel.images} name={hotel.name} backHref={searchHref} />
 
       {/* breadcrumbs */}
       <nav aria-label="Breadcrumb" className="mt-3 flex flex-wrap items-center gap-1.5 text-xs text-black/50">
@@ -43,8 +50,8 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
           Home
         </Link>
         <span aria-hidden>›</span>
-        <Link href="/search?destination=Oahu&adults=2" className="hover:text-black">
-          Oahu hotels
+        <Link href={searchHref} className="hover:text-black">
+          {cityLabel}
         </Link>
         <span aria-hidden>›</span>
         <span className="text-black/70 truncate max-w-[60%]">{hotel.name}</span>
@@ -57,7 +64,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
             "@type": "BreadcrumbList",
             itemListElement: [
               { name: "Home", path: "/" },
-              { name: "Oahu hotels", path: "/search?destination=Oahu&adults=2" },
+              { name: cityLabel, path: searchHref },
               { name: hotel.name, path: `/hotel/${hotel.id}` },
             ].map((c, i) => ({
               "@type": "ListItem",
