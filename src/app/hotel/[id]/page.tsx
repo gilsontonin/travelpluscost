@@ -222,7 +222,9 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
               ) : null}
             </span>
           ) : null}
-          {hotel.chain ? <span className="text-black/60">· Part of {hotel.chain}</span> : null}
+          {hotel.chain && !/^\s*(not available|n\/?a|none)\s*$/i.test(hotel.chain) ? (
+            <span className="text-black/60">· Part of {hotel.chain}</span>
+          ) : null}
         </div>
       </div>
 

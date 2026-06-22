@@ -46,7 +46,7 @@ export default function DateQuickPicks({ compact = false, className = "" }: { co
 
   if (compact) {
     return (
-      <div className={`flex flex-wrap gap-1.5 ${className}`}>
+      <div className={`flex gap-1.5 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${className}`}>
         {ranges.map((r) => {
           const active = checkin === r.checkin && checkout === r.checkout;
           return (
@@ -54,7 +54,7 @@ export default function DateQuickPicks({ compact = false, className = "" }: { co
               key={r.label}
               type="button"
               onClick={() => pick(r.checkin, r.checkout)}
-              className={`rounded-full border px-3 py-1 text-[13px] transition ${
+              className={`shrink-0 rounded-full border px-3 py-1 text-[13px] transition ${
                 active
                   ? "border-accent bg-accent-tint font-medium text-accent"
                   : "border-black/20 text-black/70 hover:border-black/40"
