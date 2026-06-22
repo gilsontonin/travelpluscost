@@ -4,6 +4,7 @@ import SearchPanel from "@/components/SearchPanel";
 import VibePromptPill from "@/components/VibePromptPill";
 import HotelRail from "@/components/HotelRail";
 import NearbyRail from "@/components/NearbyRail";
+import SeasonalRail from "@/components/SeasonalRail";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
 import { REGIONS } from "@/lib/regions";
@@ -63,6 +64,8 @@ export default function Home() {
       <RecentlyViewed all={railAll} />
 
       <NearbyRail />
+
+      <SeasonalRail />
 
       {/* destinations we cover */}
       <section className="mt-10">

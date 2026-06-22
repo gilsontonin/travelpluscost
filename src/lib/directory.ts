@@ -96,6 +96,22 @@ export async function hotelsNear(lat: number, lng: number, radiusKm = 15, limit 
   return (data ?? []) as DirectoryHotel[];
 }
 
+/** Top hotels across a set of US states — powers the seasonal home collection. */
+export async function hotelsByStates(states: string[], limit = 60): Promise<DirectoryHotel[]> {
+  if (!states.length) return [];
+  const { data, error } = await supabaseAdmin()
+    .from("hotels")
+    .select(COLS)
+    .eq("country", "us")
+    .in("state", states.map((s) => s.toUpperCase()))
+    .eq("kind", "hotel")
+    .not("thumbnail", "is", null) // rails need a photo
+    .order("review_count", ORDER_REVIEWS)
+    .limit(limit);
+  if (error) throw new Error(error.message);
+  return (data ?? []) as DirectoryHotel[];
+}
+
 /** One hotel by id (for the property page's directory shell before live content loads). */
 export async function getDirectoryHotel(id: string): Promise<DirectoryHotel | null> {
   const { data, error } = await supabaseAdmin().from("hotels").select(COLS).eq("id", id).maybeSingle();

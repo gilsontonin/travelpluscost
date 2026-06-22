@@ -25,7 +25,8 @@ export default function HotelRail({
   hotels: RailHotelLike[];
   seeAllHref?: string;
 }) {
-  if (!hotels.length) return null;
+  const shown = hotels.filter((h) => h.image); // guard: directory cards may lack a photo
+  if (!shown.length) return null;
   return (
     <section className="mt-10">
       <div className="flex items-end justify-between gap-3 mb-3">
@@ -43,9 +44,9 @@ export default function HotelRail({
       {/* Full-bleed on mobile (-mx-4). Leading/trailing gutter = margin on the first/last card;
           scroll-pl-4 stops scroll-snap from snapping the first card flush and eating that gutter. */}
       <div className="flex gap-4 overflow-x-auto -mx-4 sm:mx-0 snap-x scroll-pl-4 sm:scroll-pl-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-        {hotels.map((h, i) => {
+        {shown.map((h, i) => {
           const rev = reviewLabel(h.rating ?? undefined);
-          const edge = `${i === 0 ? " ms-4 sm:ms-0" : ""}${i === hotels.length - 1 ? " me-4 sm:me-0" : ""}`;
+          const edge = `${i === 0 ? " ms-4 sm:ms-0" : ""}${i === shown.length - 1 ? " me-4 sm:me-0" : ""}`;
           return (
             <Link key={h.id} href={`/hotel/${h.id}`} className={`group shrink-0 w-52 snap-start${edge}`}>
               <div className="relative h-40 rounded-lg overflow-hidden bg-zinc-100">
