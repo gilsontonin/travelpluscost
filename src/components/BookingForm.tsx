@@ -32,7 +32,7 @@ declare global {
   }
 }
 
-const SDK_SRC = "https://payment-wrapper.liteapi.travel/dist/liteAPIPayment.js";
+const SDK_SRC = "https://payment-wrapper.liteapi.travel/dist/liteAPIPayment.js?a=11";
 const PAYMENT_ENV = process.env.NEXT_PUBLIC_PAYMENT_ENV === "live" ? "live" : "sandbox";
 
 function loadScript(src: string): Promise<void> {
@@ -84,19 +84,30 @@ export default function BookingForm(props: Props) {
           refundable: props.refundable,
           freeCancelBefore: props.freeCancelBefore,
         });
+        // Match LiteAPI's reference exactly: pass ONLY secretKey (no amount/currency — those trigger
+        // a different code path). The SDK swallows its own errors silently, so we add a watchdog.
         const payment = new window.LiteAPIPayment({
           publicKey: PAYMENT_ENV,
           appearance: { theme: "flat" },
           options: { business: { name: "travelpluscost" } },
           targetElement: "#pe",
-          amount: prebook.price,
-          currency: prebook.currency,
           secretKey: prebook.secretKey,
           returnUrl: `${window.location.origin}/booking-complete?${params.toString()}`,
         });
-        console.log("[pay] calling handlePayment() into #pe", { env: PAYMENT_ENV, amount: prebook.price });
+        console.log("[pay] calling handlePayment() into #pe", { env: PAYMENT_ENV });
         payment.handlePayment();
-        console.log("[pay] handlePayment() returned (widget should now be in #pe)");
+        console.log("[pay] handlePayment() returned; waiting for the provider to render…");
+        // The SDK fetches /config then async-loads Stripe and renders — all inside a silent try/catch.
+        // If nothing lands in #pe, surface it (the real error will be in the Network tab).
+        window.setTimeout(() => {
+          const pe = document.getElementById("pe");
+          if (pe && pe.childElementCount === 0) {
+            console.error("[pay] widget never rendered into #pe — check Network tab for blocked calls to payment-wrapper.liteapi.travel/config or the Stripe provider script");
+            setError("The payment form didn't load. Open the browser console / Network tab and look for a blocked request to payment-wrapper.liteapi.travel.");
+          } else {
+            console.log("[pay] widget rendered ✓ (#pe has content)");
+          }
+        }, 6000);
       } catch (e) {
         console.error("[pay] mount failed:", e);
         setError(e instanceof Error ? e.message : "Could not start payment.");
