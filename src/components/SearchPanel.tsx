@@ -43,20 +43,22 @@ export default function SearchPanel({
   initial,
   active = "hotels",
   compact = false,
+  startVibe = false,
 }: {
   initial?: Initial;
   active?: Vertical;
   compact?: boolean;
+  startVibe?: boolean;
 }) {
   const router = useRouter();
-  const [mode, setMode] = useState<"city" | "vibe">(initial?.vibe ? "vibe" : "city");
+  const [mode, setMode] = useState<"city" | "vibe">(startVibe || initial?.vibe ? "vibe" : "city");
   const [destination, setDestination] = useState(initial?.destination ?? "");
   const [vibe, setVibe] = useState(initial?.vibe ?? "");
   const [checkin, setCheckin] = useState(initial?.checkin ?? "");
   const [checkout, setCheckout] = useState(initial?.checkout ?? "");
   const [adults, setAdults] = useState(initial?.adults ? parseInt(initial.adults, 10) : 2);
   const [rooms, setRooms] = useState(1);
-  const [open, setOpen] = useState(!compact);
+  const [open, setOpen] = useState(!compact || startVibe);
 
   function submit(e: React.FormEvent) {
     e.preventDefault();

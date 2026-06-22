@@ -15,6 +15,7 @@ export default async function SearchPage({
   const sp = await searchParams;
   const destination = sp.destination ?? "";
   const vibe = sp.vibe ?? "";
+  const vibeMode = sp.mode === "vibe"; // header "Search by vibe" → open the vibe input (no query yet)
   const checkin = sp.checkin;
   const checkout = sp.checkout;
   const adults = sp.adults ? parseInt(sp.adults, 10) : 2;
@@ -26,8 +27,9 @@ export default async function SearchPage({
   return (
     <div className="mx-auto max-w-5xl px-4 py-4">
       <SearchPanel
-        key={`${destination}|${vibe}|${checkin}|${checkout}|${adults}`}
+        key={`${destination}|${vibe}|${vibeMode ? "v" : ""}|${checkin}|${checkout}|${adults}`}
         compact
+        startVibe={vibeMode}
         initial={{ destination, vibe, checkin, checkout, adults: String(adults) }}
       />
 
@@ -35,6 +37,8 @@ export default async function SearchPage({
         <div className="mt-3">
           <VibeResults key={`${vibe}|${checkin}|${checkout}|${adults}`} query={vibe} checkin={checkin} checkout={checkout} adults={adults} />
         </div>
+      ) : vibeMode ? (
+        <p className="text-black/50 py-16 text-center">Describe your perfect trip in the box above to search by vibe.</p>
       ) : !destination ? (
         <p className="text-black/50 py-16 text-center">
           Enter a destination above to see hotels.{" "}
