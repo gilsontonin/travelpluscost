@@ -18,10 +18,16 @@ export interface DirectoryHotel {
   rating: number | null;
   review_count: number | null;
   thumbnail: string | null;
+  kind: string | null; // 'hotel' | 'rental'
+  property_type: string | null; // 'Hotel','Resort','Villa',…
 }
 
-const COLS = "id,name,slug,city,state,country,lat,lng,stars,rating,review_count,thumbnail";
-const byRating = { column: "rating", options: { ascending: false, nullsFirst: false } } as const;
+const COLS = "id,name,slug,city,state,country,lat,lng,stars,rating,review_count,thumbnail,kind,property_type";
+
+// Lead with hotels (kind 'hotel' sorts before 'rental'), then best-rated first.
+// Lead with hotels (kind 'hotel' sorts before 'rental'), then best-rated first.
+const ORDER_KIND = { ascending: true, nullsFirst: false } as const;
+const ORDER_RATING = { ascending: false, nullsFirst: false } as const;
 
 /** Hotels in a named city — powers "hotels in <city>" pages and city search. */
 export async function hotelsByCity(city: string, country = "us", limit = 60): Promise<DirectoryHotel[]> {
@@ -30,7 +36,8 @@ export async function hotelsByCity(city: string, country = "us", limit = 60): Pr
     .select(COLS)
     .eq("country", country.toLowerCase())
     .ilike("city", city)
-    .order(byRating.column, byRating.options)
+    .order("kind", ORDER_KIND)
+    .order("rating", ORDER_RATING)
     .limit(limit);
   if (error) throw new Error(error.message);
   return (data ?? []) as DirectoryHotel[];
@@ -44,7 +51,8 @@ export async function searchHotelsByText(q: string, limit = 25): Promise<Directo
     .from("hotels")
     .select(COLS)
     .or(`name.ilike.%${term}%,city.ilike.%${term}%`)
-    .order(byRating.column, byRating.options)
+    .order("kind", ORDER_KIND)
+    .order("rating", ORDER_RATING)
     .limit(limit);
   if (error) throw new Error(error.message);
   return (data ?? []) as DirectoryHotel[];
@@ -61,7 +69,8 @@ export async function hotelsNear(lat: number, lng: number, radiusKm = 15, limit 
     .lte("lat", lat + dLat)
     .gte("lng", lng - dLng)
     .lte("lng", lng + dLng)
-    .order(byRating.column, byRating.options)
+    .order("kind", ORDER_KIND)
+    .order("rating", ORDER_RATING)
     .limit(limit);
   if (error) throw new Error(error.message);
   return (data ?? []) as DirectoryHotel[];
@@ -90,8 +99,8 @@ export function directoryToCard(h: DirectoryHotel): CardHotel {
     lat: h.lat,
     lng: h.lng,
     nearby: null,
-    propertyType: "",
-    category: "hotel",
+    propertyType: h.property_type ?? "",
+    category: h.kind === "rental" ? "rental" : "hotel",
     region: "",
   };
 }

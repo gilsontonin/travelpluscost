@@ -32,7 +32,22 @@ const BATCH = 500;
 const slugify = (s) =>
   (s || "").toLowerCase().normalize("NFKD").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").replace(/-+/g, "-").slice(0, 80);
 
+// LiteAPI hotelTypeId → our category (hotel vs vacation rental) + a display label. Verified by
+// resolving each id against /data/hotel. Hotels lead search; rentals are real inventory but rank below.
+const TYPE_MAP = {
+  204: ["hotel", "Hotel"], 206: ["hotel", "Resort"], 218: ["hotel", "Inn"], 205: ["hotel", "Motel"],
+  221: ["hotel", "Lodge"], 264: ["hotel", "Hostel"], 208: ["hotel", "B&B"], 216: ["hotel", "Guesthouse"],
+  219: ["hotel", "Aparthotel"], 277: ["hotel", ""],
+  201: ["rental", "Apartment"], 220: ["rental", "Holiday home"], 213: ["rental", "Villa"],
+  229: ["rental", "Condo"], 250: ["rental", "Vacation home"], 230: ["rental", "Cottage"],
+  222: ["rental", "Homestay"], 228: ["rental", "Chalet"], 207: ["rental", "Residence"], 254: ["rental", "Campsite"],
+};
+function classify(typeId) {
+  return TYPE_MAP[typeId] ?? ["hotel", ""]; // unknown → treat as a hotel (don't hide it)
+}
+
 function mapHotel(x, country) {
+  const [kind, propertyType] = classify(x.hotelTypeId);
   return {
     id: x.id,
     name: x.name,
@@ -46,6 +61,8 @@ function mapHotel(x, country) {
     rating: x.rating ?? null,
     review_count: x.reviewCount ?? null,
     thumbnail: x.thumbnail || x.main_photo || null,
+    kind,
+    property_type: propertyType || null,
   };
 }
 
