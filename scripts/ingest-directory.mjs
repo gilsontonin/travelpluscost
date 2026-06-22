@@ -34,16 +34,19 @@ const slugify = (s) =>
 
 // LiteAPI hotelTypeId → our category (hotel vs vacation rental) + a display label. Verified by
 // resolving each id against /data/hotel. Hotels lead search; rentals are real inventory but rank below.
+// "Real hotels only" policy: only these 7 types are shown (kind 'hotel'); everything else —
+// apartments, villas, homes, condos, B&Bs, guesthouses, and anything UNRECOGNIZED — is 'rental'
+// and hidden from search. Default-exclude so junk inventory can't leak in.
 const TYPE_MAP = {
   204: ["hotel", "Hotel"], 206: ["hotel", "Resort"], 218: ["hotel", "Inn"], 205: ["hotel", "Motel"],
-  221: ["hotel", "Lodge"], 264: ["hotel", "Hostel"], 208: ["hotel", "B&B"], 216: ["hotel", "Guesthouse"],
-  219: ["hotel", "Aparthotel"], 277: ["hotel", ""],
+  221: ["hotel", "Lodge"], 219: ["hotel", "Aparthotel"], 264: ["hotel", "Hostel"],
+  208: ["rental", "B&B"], 216: ["rental", "Guesthouse"], 277: ["rental", ""],
   201: ["rental", "Apartment"], 220: ["rental", "Holiday home"], 213: ["rental", "Villa"],
   229: ["rental", "Condo"], 250: ["rental", "Vacation home"], 230: ["rental", "Cottage"],
   222: ["rental", "Homestay"], 228: ["rental", "Chalet"], 207: ["rental", "Residence"], 254: ["rental", "Campsite"],
 };
 function classify(typeId) {
-  return TYPE_MAP[typeId] ?? ["hotel", ""]; // unknown → treat as a hotel (don't hide it)
+  return TYPE_MAP[typeId] ?? ["rental", ""]; // unrecognized → excluded from search
 }
 
 function mapHotel(x, country) {

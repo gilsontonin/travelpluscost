@@ -25,9 +25,29 @@ export interface DirectoryHotel {
 const COLS = "id,name,slug,city,state,country,lat,lng,stars,rating,review_count,thumbnail,kind,property_type";
 
 // Lead with hotels (kind 'hotel' sorts before 'rental'), then best-rated first.
-// Lead with hotels (kind 'hotel' sorts before 'rental'), then best-rated first.
-const ORDER_KIND = { ascending: true, nullsFirst: false } as const;
-const ORDER_RATING = { ascending: false, nullsFirst: false } as const;
+// Candidate fetch order: most-reviewed first (surfaces established places into the result set);
+// final ranking is the review-weighted score below, applied in JS.
+const ORDER_REVIEWS = { ascending: false, nullsFirst: false } as const;
+
+// Review-weighted (Bayesian) rating: weighted = (v·R + M·C)/(v+M). A 1-review perfect 10 gets
+// pulled toward the prior mean C, so it can't outrank a well-reviewed favourite. M = prior weight.
+function weightedRating(h: DirectoryHotel): number {
+  const v = h.review_count ?? 0;
+  const R = h.rating ?? 0;
+  const M = 25;
+  const C = 8;
+  return (v * R + M * C) / (v + M);
+}
+
+/** Final ranking for results: hotels before rentals, then review-weighted rating. */
+export function rankHotels(rows: DirectoryHotel[]): DirectoryHotel[] {
+  return [...rows].sort((a, b) => {
+    const ka = a.kind === "rental" ? 1 : 0;
+    const kb = b.kind === "rental" ? 1 : 0;
+    if (ka !== kb) return ka - kb;
+    return weightedRating(b) - weightedRating(a);
+  });
+}
 
 /** Hotels in a named city — powers "hotels in <city>" pages and city search. */
 export async function hotelsByCity(city: string, country = "us", limit = 60): Promise<DirectoryHotel[]> {
@@ -36,8 +56,8 @@ export async function hotelsByCity(city: string, country = "us", limit = 60): Pr
     .select(COLS)
     .eq("country", country.toLowerCase())
     .ilike("city", city)
-    .order("kind", ORDER_KIND)
-    .order("rating", ORDER_RATING)
+    .eq("kind", "hotel") // real hotels only — rentals/B&Bs/etc. are hidden from search
+    .order("review_count", ORDER_REVIEWS)
     .limit(limit);
   if (error) throw new Error(error.message);
   return (data ?? []) as DirectoryHotel[];
@@ -51,8 +71,8 @@ export async function searchHotelsByText(q: string, limit = 25): Promise<Directo
     .from("hotels")
     .select(COLS)
     .or(`name.ilike.%${term}%,city.ilike.%${term}%`)
-    .order("kind", ORDER_KIND)
-    .order("rating", ORDER_RATING)
+    .eq("kind", "hotel")
+    .order("review_count", ORDER_REVIEWS)
     .limit(limit);
   if (error) throw new Error(error.message);
   return (data ?? []) as DirectoryHotel[];
@@ -69,8 +89,8 @@ export async function hotelsNear(lat: number, lng: number, radiusKm = 15, limit 
     .lte("lat", lat + dLat)
     .gte("lng", lng - dLng)
     .lte("lng", lng + dLng)
-    .order("kind", ORDER_KIND)
-    .order("rating", ORDER_RATING)
+    .eq("kind", "hotel")
+    .order("review_count", ORDER_REVIEWS)
     .limit(limit);
   if (error) throw new Error(error.message);
   return (data ?? []) as DirectoryHotel[];
@@ -107,19 +127,20 @@ export function directoryToCard(h: DirectoryHotel): CardHotel {
 
 /** Resolve a free-text destination to result cards from the directory. City first; an island/market
  * name (e.g. "Oahu") expands to its cities; otherwise a fuzzy name/city match. Covers any US city. */
-export async function searchDirectory(destination: string, limit = 80): Promise<CardHotel[]> {
+export async function searchDirectory(destination: string, limit = 50): Promise<CardHotel[]> {
+  const CAND = 150; // fetch a generous candidate set, then weight-rank down to `limit`
   const city = destination.split(",")[0].trim();
-  let rows: DirectoryHotel[] = city ? await hotelsByCity(city, "us", limit) : [];
+  let rows: DirectoryHotel[] = city ? await hotelsByCity(city, "us", CAND) : [];
   if (!rows.length) {
     const region = resolveRegion(destination);
     if (region) {
-      const lists = await Promise.all(region.cities.map((c) => hotelsByCity(c, "us", limit)));
+      const lists = await Promise.all(region.cities.map((c) => hotelsByCity(c, "us", CAND)));
       const seen = new Set<string>();
       rows = lists.flat().filter((h) => (seen.has(h.id) ? false : seen.add(h.id)));
     }
   }
-  if (!rows.length) rows = await searchHotelsByText(destination, limit);
-  return rows.map(directoryToCard);
+  if (!rows.length) rows = await searchHotelsByText(destination, CAND);
+  return rankHotels(rows).slice(0, limit).map(directoryToCard);
 }
 
 /** Total directory size — for status/health. */

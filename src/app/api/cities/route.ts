@@ -14,6 +14,7 @@ export async function GET(req: Request) {
     .from("hotels")
     .select("city,state,country")
     .ilike("city", `${q}%`)
+    .eq("kind", "hotel") // suggest only cities where we have real hotels
     .not("city", "is", null)
     .limit(300);
   if (error) return NextResponse.json({ cities: [] });

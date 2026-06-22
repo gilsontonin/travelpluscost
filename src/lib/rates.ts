@@ -258,6 +258,7 @@ async function fetchRates(
   co: string,
   adults: number,
   roomMapping = false,
+  timeoutSec = 10,
 ): Promise<RatesHotel[]> {
   const res = (await getRates({
     hotelIds: ids,
@@ -266,9 +267,9 @@ async function fetchRates(
     occupancies: [{ adults }],
     currency: "USD",
     guestNationality: "US",
-    // Bound latency: take whatever rates respond within 10s rather than hang on one slow hotel
-    // (LiteAPI recommends 4–10s for live requests; 10 keeps inventory complete).
-    timeout: 10,
+    // Bound latency: take whatever rates respond in time rather than hang on one slow hotel.
+    // Result cards just need a "from" price (shorter); the room list wants completeness (longer).
+    timeout: timeoutSec,
     // Only the property page (room list) needs per-rate room mapping; result cards don't.
     ...(roomMapping ? { roomMapping: true } : {}),
   })) as { data?: RatesHotel[] };
@@ -291,7 +292,7 @@ export async function getPrices(
   // LiteAPI caps hotels per rates call, so chunk + fetch in parallel + merge.
   const chunks: string[][] = [];
   for (let i = 0; i < ids.length; i += 20) chunks.push(ids.slice(i, i + 20));
-  const results = await Promise.all(chunks.map((c) => fetchRates(c, ci, co, adults)));
+  const results = await Promise.all(chunks.map((c) => fetchRates(c, ci, co, adults, false, 6)));
 
   const out: Record<string, Price> = {};
   for (const data of results) {

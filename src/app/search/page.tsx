@@ -22,7 +22,11 @@ export default async function SearchPage({
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-4">
-      <SearchPanel compact initial={{ destination, checkin, checkout, adults: String(adults) }} />
+      <SearchPanel
+        key={`${destination}|${checkin}|${checkout}|${adults}`}
+        compact
+        initial={{ destination, checkin, checkout, adults: String(adults) }}
+      />
 
       {!destination ? (
         <p className="text-black/50 py-16 text-center">
