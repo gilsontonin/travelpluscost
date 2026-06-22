@@ -149,20 +149,36 @@ function marginToSSP(net: number, ssp: number): number {
 }
 
 // Step 1 — price the chosen room AT its SSP, prebook with the Payment SDK enabled.
+// Production has real availability: many offers 409 ("no availability"). So we walk MANY priced
+// offers (matched room first, then cheapest), trying each until one prebooks — never charging
+// below the room's SSP.
+const MAX_PREBOOK_ATTEMPTS = 10;
 export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult> {
   const base = await fetchOffers(input); // no margin: discover net + SSP
   if (!base.length) throw new Error("No availability for this hotel/date.");
   const want = canonRoom(input.room);
+
+  // SSP floor per room (the price we must never sell below on a public site).
+  const sspByKey = new Map<string, number>();
+  for (const o of base) {
+    const cur = sspByKey.get(o.key);
+    if (cur == null || o.ssp < cur) sspByKey.set(o.key, o.ssp);
+  }
+
+  // One margin tuned to the chosen (matched, else cheapest) room, so its charge lands at SSP.
   base.sort((a, b) => Number(b.key === want) - Number(a.key === want) || a.ssp - b.ssp);
+  const margin = marginToSSP(base[0].net, base[0].ssp);
+  const priced = margin > 0 ? await fetchOffers(input, margin) : base;
+  // Try the matched room first, then by ascending charge.
+  priced.sort((a, b) => Number(b.key === want) - Number(a.key === want) || a.net - b.net);
 
   let lastError = "No bookable rate for this room.";
-  for (const cand of base.slice(0, 4)) {
-    // Price THIS room with ITS OWN margin so the charge lands at its SSP (never below).
-    const margin = marginToSSP(cand.net, cand.ssp);
-    const priced = margin > 0 ? await fetchOffers(input, margin) : base;
-    const offer = priced.find((o) => o.key === cand.key);
-    if (!offer) continue; // no margined offer for this room → skip, never charge net publicly
-    if (offer.net < cand.ssp - 0.5) continue; // compliance guard: must be >= SSP (allow 1c rounding)
+  let attempts = 0;
+  for (const offer of priced) {
+    const floor = sspByKey.get(offer.key);
+    if (floor != null && offer.net < floor - 0.5) continue; // never sell below SSP
+    if (attempts >= MAX_PREBOOK_ATTEMPTS) break;
+    attempts++;
     try {
       const pre = await call<{
         prebookId: string;
@@ -171,7 +187,11 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
         price?: number;
         currency?: string;
       }>(`${BOOK}/rates/prebook`, { offerId: offer.offerId, usePaymentSdk: true });
-      if (pre.prebookId && pre.secretKey && pre.transactionId && typeof pre.price === "number" && pre.price >= cand.ssp - 0.5) {
+      if (pre.prebookId && pre.secretKey && pre.transactionId && typeof pre.price === "number") {
+        if (floor != null && pre.price < floor - 0.5) {
+          lastError = "Confirmed price was below SSP.";
+          continue; // compliance: never charge below SSP
+        }
         const feeSum = Math.round(offer.fees.reduce((s, f) => s + f.amount, 0) * 100) / 100;
         return {
           prebookId: pre.prebookId,
@@ -184,9 +204,9 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
           propertyFees: offer.fees,
         };
       }
-      lastError = "Prebook did not confirm a compliant price.";
+      lastError = "Prebook did not return Payment SDK credentials.";
     } catch (e) {
-      lastError = e instanceof Error ? e.message : String(e);
+      lastError = e instanceof Error ? e.message : String(e); // e.g. 409 "no availability" → try next
     }
   }
   throw new Error(lastError);
