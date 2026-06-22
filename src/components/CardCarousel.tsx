@@ -17,7 +17,15 @@ export default function CardCarousel({
   arrows?: boolean;
 }) {
   const [i, setI] = useState(0);
-  const [mounted, setMounted] = useState<Set<number>>(() => new Set([0]));
+  // Preload the current frame + its neighbours so a swipe never waits on a download (no white flash).
+  const [mounted, setMounted] = useState<Set<number>>(() => {
+    const s = new Set([0]);
+    if (images.length > 1) {
+      s.add(1);
+      s.add(images.length - 1);
+    }
+    return s;
+  });
   const startX = useRef<number | null>(null);
 
   if (!images.length) {
@@ -26,7 +34,13 @@ export default function CardCarousel({
 
   const go = (idx: number) => {
     setI(idx);
-    setMounted((s) => (s.has(idx) ? s : new Set(s).add(idx)));
+    setMounted((s) => {
+      const n = new Set(s);
+      n.add(idx);
+      n.add((idx + 1) % images.length);
+      n.add((idx - 1 + images.length) % images.length);
+      return n;
+    });
   };
   const move = (dir: number) => go((i + dir + images.length) % images.length);
   const arrow = (e: React.MouseEvent, dir: number) => {
@@ -56,7 +70,7 @@ export default function CardCarousel({
             alt={alt}
             fill
             sizes={sizes}
-            className={`object-cover transition-opacity duration-200 ${idx === i ? "opacity-100" : "opacity-0"}`}
+            className={`object-cover transition-opacity duration-150 ${idx === i ? "opacity-100" : "opacity-0"}`}
           />
         ) : null,
       )}

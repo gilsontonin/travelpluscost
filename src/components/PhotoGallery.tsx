@@ -17,7 +17,15 @@ export default function PhotoGallery({
   const [open, setOpen] = useState(false);
   const [idx, setIdx] = useState(0); // lightbox index
   const [hero, setHero] = useState(0); // hero carousel index
-  const [mounted, setMounted] = useState<Set<number>>(() => new Set([0]));
+  // Preload current frame + neighbours so a swipe never waits on a download (no white flash).
+  const [mounted, setMounted] = useState<Set<number>>(() => {
+    const s = new Set([0]);
+    if (images.length > 1) {
+      s.add(1);
+      s.add(images.length - 1);
+    }
+    return s;
+  });
   const startX = useRef<number | null>(null);
 
   const show = useCallback((i: number) => {
@@ -48,7 +56,13 @@ export default function PhotoGallery({
   const goHero = (i: number) => {
     const ni = (i + images.length) % images.length;
     setHero(ni);
-    setMounted((s) => (s.has(ni) ? s : new Set(s).add(ni)));
+    setMounted((s) => {
+      const n = new Set(s);
+      n.add(ni);
+      n.add((ni + 1) % images.length);
+      n.add((ni - 1 + images.length) % images.length);
+      return n;
+    });
   };
   const share = async () => {
     const url = typeof window !== "undefined" ? window.location.href : "";
@@ -88,7 +102,7 @@ export default function PhotoGallery({
                 type="button"
                 onClick={() => show(hero)}
                 aria-label="Open photo"
-                className={`absolute inset-0 cursor-zoom-in transition-opacity duration-200 ${i === hero ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+                className={`absolute inset-0 cursor-zoom-in transition-opacity duration-150 ${i === hero ? "opacity-100" : "opacity-0 pointer-events-none"}`}
               >
                 <Image src={src} alt={`${name} photo ${i + 1}`} fill priority={i === 0} sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
               </button>
@@ -179,13 +193,23 @@ export default function PhotoGallery({
               </svg>
             </button>
           </div>
-          <div className="flex-1 flex items-center justify-center px-4 pb-6 select-none" onClick={(e) => e.stopPropagation()}>
+          <div className="flex-1 flex items-center justify-center gap-1 px-2 sm:px-4 pb-6 select-none" onClick={(e) => e.stopPropagation()}>
             <button type="button" onClick={prev} className="text-white/80 hover:text-white p-3 shrink-0" aria-label="Previous">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="m15 18-6-6 6-6" />
               </svg>
             </button>
-            <img src={images[idx]} alt={`${name} photo ${idx + 1}`} className="max-h-[80vh] max-w-[85vw] object-contain rounded-lg" />
+            {/* fixed image area — every photo is contained in the SAME box, so the layout never
+                jumps as you arrow through portrait/landscape shots */}
+            <div className="flex-1 h-full min-w-0 flex items-center justify-center">
+              <img src={images[idx]} alt={`${name} photo ${idx + 1}`} className="max-h-full max-w-full object-contain rounded-lg" />
+              {images.length > 1 ? (
+                <>
+                  <img src={images[(idx + 1) % images.length]} alt="" aria-hidden className="hidden" />
+                  <img src={images[(idx - 1 + images.length) % images.length]} alt="" aria-hidden className="hidden" />
+                </>
+              ) : null}
+            </div>
             <button type="button" onClick={next} className="text-white/80 hover:text-white p-3 shrink-0" aria-label="Next">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="m9 18 6-6-6-6" />
