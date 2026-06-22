@@ -5,13 +5,13 @@ import { fmtMiles } from "@/lib/distance";
 import { reviewLabel } from "@/lib/format";
 
 // "Other places to stay nearby" — the closest hotels in our set. Engagement + internal linking.
-export default function SimilarHotels({ id }: { id: string }) {
+export default function SimilarHotels({ id, name }: { id: string; name?: string }) {
   const nearby = getNearbyHotels(id, 8);
   if (!nearby.length) return null;
 
   return (
     <section className="mt-10">
-      <h2 className="text-xl font-semibold mb-4">Other places to stay nearby</h2>
+      <h2 className="text-xl font-semibold mb-4">{name ? `Hotels near ${name}` : "Other places to stay nearby"}</h2>
       {/* Gutter via first/last-card margin + scroll-pl-4 so snap keeps it (see HotelRail). */}
       <div className="flex gap-4 overflow-x-auto -mx-4 sm:mx-0 snap-x scroll-pl-4 sm:scroll-pl-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         {nearby.map(({ hotel, miles }, i) => {

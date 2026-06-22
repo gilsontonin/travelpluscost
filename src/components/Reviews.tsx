@@ -18,7 +18,7 @@ export default function Reviews({ hotel }: { hotel: OahuHotel }) {
 
   return (
     <section className="mt-10">
-      <h2 className="text-xl font-semibold mb-3">Guest reviews</h2>
+      <h2 className="text-xl font-semibold mb-3">{hotel.name ? `${hotel.name} reviews` : "Guest reviews"}</h2>
 
       {overall ? (
         <div className="flex items-center gap-3 mb-5">

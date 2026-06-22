@@ -12,7 +12,7 @@ function Row({ label }: { label: string }) {
   );
 }
 
-export default function AmenitiesSection({ facilities }: { facilities: string[] }) {
+export default function AmenitiesSection({ facilities, name }: { facilities: string[]; name?: string }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function AmenitiesSection({ facilities }: { facilities: string[] 
 
   return (
     <div className="mt-8">
-      <h2 className="text-lg font-semibold mb-4">What this place offers</h2>
+      <h2 className="text-lg font-semibold mb-4">{name ? `Amenities at ${name}` : "What this place offers"}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
         {preview.map((f) => (
           <Row key={f} label={f} />

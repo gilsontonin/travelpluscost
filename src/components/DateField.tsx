@@ -75,7 +75,7 @@ export default function DateField({
       </button>
 
       {open ? (
-        <div className="absolute left-0 z-30 mt-2 w-[300px] bg-white border border-black/10 rounded-lg shadow-xl p-3">
+        <div className="absolute left-0 z-[70] mt-2 w-[300px] bg-white border border-black/10 rounded-lg shadow-xl p-3">
           <div className="flex items-center justify-between mb-2">
             <button
               type="button"

@@ -5,16 +5,22 @@ import { notFound } from "next/navigation";
 import { getAllOahu, classifyType } from "@/lib/oahu";
 import { getHotelContent } from "@/lib/hotelContent";
 import RoomsPanel from "@/components/RoomsPanel";
+import PropertyNav from "@/components/PropertyNav";
+import PropertySearchBar from "@/components/PropertySearchBar";
+import ShareSaveButtons from "@/components/ShareSaveButtons";
 import PhotoGallery from "@/components/PhotoGallery";
 import ViatorPackages from "@/components/ViatorPackages";
 import Highlights from "@/components/Highlights";
 import Reviews from "@/components/Reviews";
 import ExploreArea from "@/components/ExploreArea";
+// AboutNeighborhood (OSM/OSRM "About the neighborhood") is BACKLOGGED — built but unwired until we
+// precompute its data to our DB (public Overpass is too slow for a live call). See lib/neighborhood.ts.
 import ExpandableText from "@/components/ExpandableText";
 import AmenitiesSection from "@/components/AmenitiesSection";
 import PopularAmenities from "@/components/PopularAmenities";
 import PropertyFaq from "@/components/PropertyFaq";
 import PoliciesInfo from "@/components/PoliciesInfo";
+import PriceTransparency from "@/components/PriceTransparency";
 import SimilarHotels from "@/components/SimilarHotels";
 import TrackView from "@/components/TrackView";
 import { nearbyLabel } from "@/lib/distance";
@@ -83,21 +89,22 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
   return (
     <div className="mx-auto max-w-6xl px-4 pt-3 pb-24 sm:py-6 lg:pb-6">
       <TrackView id={hotel.id} />
-      {/* gallery */}
-      <PhotoGallery images={hotel.images} name={hotel.name} backHref={searchHref} />
 
-      {/* breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="mt-3 flex flex-wrap items-center gap-1.5 text-xs text-black/55">
-        <Link href="/" className="hover:text-black">
-          Home
-        </Link>
-        <span aria-hidden>›</span>
-        <Link href={searchHref} className="hover:text-black">
-          {cityLabel}
-        </Link>
-        <span aria-hidden>›</span>
-        <span className="text-black/70 truncate max-w-[60%]">{hotel.name}</span>
-      </nav>
+      {/* breadcrumbs + share/save */}
+      <div className="mt-3 flex items-start justify-between gap-3">
+        <nav aria-label="Breadcrumb" className="flex min-w-0 flex-wrap items-center gap-1.5 text-xs text-black/55">
+          <Link href="/" className="hover:text-black">
+            Home
+          </Link>
+          <span aria-hidden>›</span>
+          <Link href={searchHref} className="hover:text-black">
+            {cityLabel}
+          </Link>
+          <span aria-hidden>›</span>
+          <span className="text-black/70 truncate max-w-[60%]">{hotel.name}</span>
+        </nav>
+        <ShareSaveButtons id={hotel.id} name={hotel.name} />
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -114,6 +121,43 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
               name: c.name,
               item: `${SITE_URL}${c.path}`,
             })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Hotel",
+            name: hotel.name,
+            url: `${SITE_URL}/hotel/${hotel.id}`,
+            ...(hotel.image ? { image: hotel.image } : {}),
+            ...(hotel.address || hotel.city
+              ? {
+                  address: {
+                    "@type": "PostalAddress",
+                    ...(hotel.address ? { streetAddress: hotel.address } : {}),
+                    ...(hotel.city ? { addressLocality: hotel.city } : {}),
+                    addressCountry: "US",
+                  },
+                }
+              : {}),
+            ...(hotel.lat != null && hotel.lng != null
+              ? { geo: { "@type": "GeoCoordinates", latitude: hotel.lat, longitude: hotel.lng } }
+              : {}),
+            ...(hotel.stars ? { starRating: { "@type": "Rating", ratingValue: hotel.stars } } : {}),
+            ...(hotel.rating && hotel.reviewCount
+              ? {
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: hotel.rating,
+                    reviewCount: hotel.reviewCount,
+                    bestRating: 10,
+                    worstRating: 1,
+                  },
+                }
+              : {}),
           }),
         }}
       />
@@ -162,26 +206,39 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
         </div>
       </div>
 
+      {/* Choose dates → prices update in the rooms section. Above the gallery, Expedia-style. */}
+      <div className="mt-4">
+        <Suspense fallback={<div className="h-24 rounded-xl bg-black/[0.04] animate-pulse" />}>
+          <PropertySearchBar hotelName={hotel.name} />
+        </Suspense>
+      </div>
+
+      {/* gallery */}
+      <PhotoGallery images={hotel.images} name={hotel.name} backHref={searchHref} />
+
+      {/* sticky section jump-nav */}
+      <PropertyNav />
+
       <Highlights hotel={hotel} />
 
       <PopularAmenities facilities={hotel.facilities} />
 
       {/* description + promise */}
-      <div className="mt-6 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8">
+      <div id="overview" className="scroll-mt-32 mt-6 grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-8">
         <div>
           {hotel.description ? (
             <div>
-              <h2 className="text-lg font-semibold mb-2">About this property</h2>
+              <h2 className="text-lg font-semibold mb-2">{hotel.name ? `About ${hotel.name}` : "About this property"}</h2>
               <ExpandableText text={hotel.description} />
             </div>
           ) : null}
 
-          <AmenitiesSection facilities={hotel.facilities} />
+          <AmenitiesSection facilities={hotel.facilities} name={hotel.name} />
 
           {/* Good to know — only the facts we actually have (no empty "—" cells) */}
           {hotel.checkin || hotel.checkout || hotel.petsAllowed != null || hotel.childAllowed != null ? (
             <div className="mt-8">
-              <h2 className="text-lg font-semibold mb-4">Good to know</h2>
+              <h2 className="text-lg font-semibold mb-4">Good to know about {hotel.name}</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {hotel.checkin ? <Fact label="Check-in" value={hotel.checkin} /> : null}
                 {hotel.checkout ? <Fact label="Check-out" value={hotel.checkout} /> : null}
@@ -215,16 +272,29 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
         <RoomsPanel hotelId={hotel.id} name={hotel.name} />
       </Suspense>
 
-      <Reviews hotel={hotel} />
-      <ExploreArea lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} landmarks={landmarks} />
+      <PriceTransparency name={hotel.name} />
 
-      <SimilarHotels id={hotel.id} />
+      <Reviews hotel={hotel} />
+      <ExploreArea name={hotel.name} lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} landmarks={landmarks} />
+
+      <SimilarHotels id={hotel.id} name={hotel.name} />
+      <div className="mt-5 flex justify-center">
+        <Link
+          href={searchHref}
+          className="inline-flex items-center gap-2 rounded-full border border-accent/30 px-6 py-2.5 text-sm font-semibold text-accent transition hover:bg-accent-tint/40"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4" />
+          </svg>
+          Compare similar properties
+        </Link>
+      </div>
 
       <ViatorPackages lat={hotel.lat} lng={hotel.lng} />
 
       <PropertyFaq hotel={hotel} />
 
-      <PoliciesInfo policies={hotel.policies} importantInfo={hotel.importantInfo} />
+      <PoliciesInfo policies={hotel.policies} importantInfo={hotel.importantInfo} name={hotel.name} />
     </div>
   );
 }

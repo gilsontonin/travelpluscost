@@ -72,7 +72,7 @@ export default function GuestField({
       </button>
 
       {open ? (
-        <div className="absolute right-0 z-30 mt-2 w-[240px] bg-white border border-black/10 rounded-lg shadow-xl p-3">
+        <div className="absolute right-0 z-[70] mt-2 w-[240px] bg-white border border-black/10 rounded-lg shadow-xl p-3">
           <Stepper label="Adults" value={adults} min={1} max={8} onChange={(v) => onChange(v, rooms)} />
           <Stepper label="Rooms" value={rooms} min={1} max={4} onChange={(v) => onChange(adults, v)} />
           <button

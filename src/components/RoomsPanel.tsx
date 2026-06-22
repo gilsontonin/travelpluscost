@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import CardCarousel from "@/components/CardCarousel";
 import AmenityIcon from "@/components/AmenityIcon";
 import RoomDateBar from "@/components/RoomDateBar";
+import DateQuickPicks from "@/components/DateQuickPicks";
 import { money } from "@/lib/format";
 import type { RoomOffer } from "@/lib/rates";
 
@@ -240,9 +241,9 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
 
   return (
     <>
-      <section id="rooms" className="mt-10 scroll-mt-24">
+      <section id="rooms" className="mt-10 scroll-mt-32">
         <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
-          <h2 className="text-xl font-semibold">Choose your room</h2>
+          <h2 className="text-xl font-semibold">{name ? `Choose your room at ${name}` : "Choose your room"}</h2>
           {data && data.offers.length > 1 ? (
             <label className="text-sm flex items-center gap-2 text-black/70">
               <span className="hidden sm:inline">Sort</span>
@@ -263,6 +264,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
         </div>
 
         <RoomDateBar />
+        <DateQuickPicks className="-mt-1 mb-4" />
 
         {data === null ? (
           <div className="space-y-4">

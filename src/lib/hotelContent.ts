@@ -183,7 +183,7 @@ function mapDetail(d: RawDetail): Hotel {
     images,
     facilities: normFacilities(d.hotelFacilities ?? d.facilities).slice(0, 40),
     description: cleanDescription(d.hotelDescription),
-    chain: d.chain || null,
+    chain: d.chain && !/^\s*(not available|n\/?a|none)\s*$/i.test(d.chain) ? d.chain : null,
     hotelType: d.hotelType || null,
     petsAllowed: typeof d.petsAllowed === "boolean" ? d.petsAllowed : null,
     childAllowed: typeof d.childAllowed === "boolean" ? d.childAllowed : null,

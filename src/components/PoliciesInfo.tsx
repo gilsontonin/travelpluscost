@@ -3,14 +3,16 @@ import ExpandableText from "@/components/ExpandableText";
 export default function PoliciesInfo({
   policies,
   importantInfo,
+  name,
 }: {
   policies: { name: string; description: string }[];
   importantInfo: string | null;
+  name?: string;
 }) {
   if (!policies.length && !importantInfo) return null;
   return (
-    <section className="mt-10">
-      <h2 className="text-xl font-semibold mb-4">Policies</h2>
+    <section id="policies" className="mt-10 scroll-mt-32">
+      <h2 className="text-xl font-semibold mb-4">{name ? `${name} policies` : "Policies"}</h2>
       {policies.length ? (
         <div className="space-y-4 max-w-3xl">
           {policies.map((p) => (

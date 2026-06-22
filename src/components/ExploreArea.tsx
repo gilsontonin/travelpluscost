@@ -2,12 +2,14 @@ import MapView from "@/components/MapView";
 import { nearbyList, fmtMiles, type Landmark } from "@/lib/distance";
 
 export default function ExploreArea({
+  name,
   lat,
   lng,
   address,
   city,
   landmarks = [],
 }: {
+  name?: string;
   lat: number | null;
   lng: number | null;
   address?: string;
@@ -17,8 +19,8 @@ export default function ExploreArea({
   if (lat == null || lng == null) return null;
   const nearby = nearbyList(lat, lng, landmarks, 5);
   return (
-    <section className="mt-10">
-      <h2 className="text-xl font-semibold mb-3">Explore the area</h2>
+    <section id="location" className="mt-10 scroll-mt-32">
+      <h2 className="text-xl font-semibold mb-3">{name ? `Things to do near ${name}` : "Explore the area"}</h2>
       <MapView center={[lat, lng]} zoom={14} markers={[{ lat, lng }]} height={300} />
       <p className="text-sm text-black/60 mt-2">{[address, city].filter(Boolean).join(", ")}</p>
       <a

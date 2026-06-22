@@ -78,11 +78,48 @@ export default function PhotoGallery({
 
   const dots = Math.min(5, images.length);
   const activeDot = images.length > 1 ? Math.round((hero / (images.length - 1)) * (dots - 1)) : 0;
+  const mosaic = images.length >= 5;
 
   return (
     <>
-      {/* full-bleed hero carousel on mobile, contained on desktop */}
-      <div className="-mx-4 sm:mx-0 mt-0 sm:mt-3">
+      {/* desktop mosaic (Expedia grid) — 1 big + 4 small; the last tile opens the full gallery */}
+      {mosaic ? (
+        <div className="hidden sm:grid grid-cols-4 grid-rows-2 gap-2 mt-3 h-[440px] rounded-lg overflow-hidden">
+          <button
+            type="button"
+            onClick={() => show(0)}
+            aria-label="Open photo 1"
+            className="relative col-span-2 row-span-2 cursor-zoom-in group bg-zinc-100"
+          >
+            <Image src={images[0]} alt={`${name} photo 1`} fill priority sizes="(max-width: 1024px) 50vw, 560px" className="object-cover transition group-hover:brightness-95" />
+          </button>
+          {images.slice(1, 5).map((src, k) => (
+            <button
+              key={k}
+              type="button"
+              onClick={() => show(k + 1)}
+              aria-label={`Open photo ${k + 2}`}
+              className="relative cursor-zoom-in group bg-zinc-100"
+            >
+              <Image src={src} alt={`${name} photo ${k + 2}`} fill sizes="280px" className="object-cover transition group-hover:brightness-95" />
+              {k === 3 ? (
+                <span className="absolute bottom-2.5 right-2.5 flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-1.5 text-sm font-medium text-white">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <circle cx="9" cy="9" r="2" />
+                    <path d="m21 15-5-5L5 21" />
+                  </svg>
+                  {images.length}
+                  {images.length > 5 ? "+" : ""}
+                </span>
+              ) : null}
+            </button>
+          ))}
+        </div>
+      ) : null}
+
+      {/* full-bleed hero carousel on mobile (and on desktop when too few photos for the mosaic) */}
+      <div className={`-mx-4 sm:mx-0 mt-0 sm:mt-3${mosaic ? " sm:hidden" : ""}`}>
         <div
           className="relative w-full h-80 sm:h-[440px] bg-zinc-100 sm:rounded-lg overflow-hidden"
           onTouchStart={(e) => {
@@ -107,7 +144,7 @@ export default function PhotoGallery({
                 className="relative h-full w-full shrink-0 cursor-zoom-in"
               >
                 {mounted.has(i) ? (
-                  <Image src={src} alt={`${name} photo ${i + 1}`} fill priority={i === 0} sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
+                  <Image src={src} alt={`${name} photo ${i + 1}`} fill priority={i === 0 && !mosaic} sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
                 ) : null}
               </button>
             ))}
