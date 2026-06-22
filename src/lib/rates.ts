@@ -176,11 +176,19 @@ function propertyFeesOf(rate: RateObj): PropertyFee[] {
 function propertyFeesTotal(rate: RateObj): number {
   return propertyFeesOf(rate).reduce((s, f) => s + f.amount, 0);
 }
+// "Free cancellation before X" = the earliest deadline where a charge actually begins.
+// Per LiteAPI's cancellation guide each policy charges `amount` after its `cancelTime`, and a
+// 0-amount policy is still free — so we skip 0/empty-amount policies and take the first NON-ZERO
+// charge date. (RFN with no non-zero policy = fully refundable, no deadline → null → "Fully
+// refundable".) Previously we took the earliest cancelTime regardless of amount, which understated
+// the free window whenever a leading 0-amount policy was present.
 function freeCancelBefore(rate: RateObj): string | null {
   const cp = rate.cancellationPolicies;
   if (!cp || cp.refundableTag !== "RFN") return null;
-  const infos = cp.cancelPolicyInfos ?? [];
-  const first = infos.map((i) => i.cancelTime).filter(Boolean).sort()[0];
+  const first = (cp.cancelPolicyInfos ?? [])
+    .filter((i) => i.cancelTime && (i.amount ?? 0) > 0)
+    .map((i) => i.cancelTime as string)
+    .sort()[0];
   return first ? first.slice(0, 10) : null;
 }
 interface RatesHotel {
