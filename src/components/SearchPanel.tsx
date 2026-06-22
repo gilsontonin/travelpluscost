@@ -7,6 +7,7 @@ import { VERTICALS } from "@/lib/verticals";
 import type { Vertical } from "@/lib/verticals";
 import DateField from "@/components/DateField";
 import GuestField from "@/components/GuestField";
+import DestinationField from "@/components/DestinationField";
 
 type Initial = { destination?: string; checkin?: string; checkout?: string; adults?: string };
 
@@ -37,9 +38,6 @@ function VerticalIcon({ id }: { id: Vertical }) {
       return (<svg {...p}><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M13 5v14" /></svg>);
   }
 }
-
-// Shared style for the three input "pill" fields (Where / Dates / Travelers).
-const FIELD = "w-full flex items-center gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 text-left transition hover:border-black/30 focus-within:border-accent";
 
 export default function SearchPanel({
   initial,
@@ -141,23 +139,7 @@ export default function SearchPanel({
       </div>
 
       <form onSubmit={submit} className="space-y-2.5">
-        {/* Where */}
-        <label className={`${FIELD} cursor-text`}>
-          <svg className="shrink-0 text-black/40" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M20 10c0 4.4-5.5 9-8 11-2.5-2-8-6.6-8-11a8 8 0 0 1 16 0Z" />
-            <circle cx="12" cy="10" r="3" />
-          </svg>
-          <span className="min-w-0 flex-1">
-            <span className="block text-xs text-black/45">Where to?</span>
-            <input
-              value={destination}
-              onChange={(e) => setDestination(e.target.value)}
-              required
-              placeholder="Oahu, Hawaii"
-              className="w-full bg-transparent outline-none text-[15px] font-medium mt-0.5 placeholder:font-normal placeholder:text-black/40"
-            />
-          </span>
-        </label>
+        <DestinationField value={destination} onChange={setDestination} />
 
         <DateField checkin={checkin} checkout={checkout} onChange={(ci, co) => { setCheckin(ci); setCheckout(co); }} />
         <GuestField adults={adults} rooms={rooms} onChange={(a, r) => { setAdults(a); setRooms(r); }} />
