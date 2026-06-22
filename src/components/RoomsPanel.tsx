@@ -77,7 +77,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
             <div className="mt-2.5 flex flex-wrap gap-x-4 gap-y-1.5">
               {o.amenities.slice(0, 4).map((a) => (
                 <span key={a} className="inline-flex items-center gap-1.5 text-xs text-black/60">
-                  <AmenityIcon name={a} className="w-4 h-4 text-black/40" />
+                  <AmenityIcon name={a} className="w-4 h-4 text-black/60" />
                   {a}
                 </span>
               ))}
@@ -93,12 +93,12 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
                 <span>
                   {o.freeCancelBefore ? `Free cancellation before ${fmtDate(o.freeCancelBefore)}` : "Fully refundable"}
                   {o.freeCancelBefore && o.cancelChargeAfter ? (
-                    <span className="text-black/45"> · then {money(o.cancelChargeAfter.amount, o.cancelChargeAfter.currency)}</span>
+                    <span className="text-black/60"> · then {money(o.cancelChargeAfter.amount, o.cancelChargeAfter.currency)}</span>
                   ) : null}
                 </span>
               </p>
             ) : (
-              <p className="text-sm text-black/45">Non-refundable</p>
+              <p className="text-sm text-black/60">Non-refundable</p>
             )}
             <p className="text-sm text-black/55">{o.boardName ?? "Room only"}</p>
           </div>
@@ -112,7 +112,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
               {o.propertyFees.map((f) => (
                 <div key={f.label} className="flex justify-between gap-4 mt-1">
                   <span className="text-black/60">
-                    {f.label} <span className="text-black/40">· paid at property</span>
+                    {f.label} <span className="text-black/60">· paid at property</span>
                   </span>
                   <span className="tabular-nums">{money(f.amount, f.currency)}</span>
                 </div>
@@ -123,7 +123,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
               </div>
             </div>
           ) : (
-            <p className="mt-2 text-xs text-black/45">Taxes &amp; fees included — no fees at check-in.</p>
+            <p className="mt-2 text-xs text-black/60">Taxes &amp; fees included — no fees at check-in.</p>
           )}
 
           {o.features?.length ? (
@@ -150,7 +150,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
                 <ul className="mt-2 space-y-1.5">
                   {o.features.map((f) => (
                     <li key={f} className="text-sm text-black/65 flex gap-2">
-                      <span className="text-black/30 mt-0.5">•</span>
+                      <span className="text-black/55 mt-0.5">•</span>
                       <span>{f}</span>
                     </li>
                   ))}
@@ -164,9 +164,9 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
           <div>
             <div className="font-bold text-lg">
               {money(Math.round((o.price.allIn ?? o.price.amount) / o.price.nights), o.price.currency)}
-              <span className="text-black/45 font-normal text-sm">/night</span>
+              <span className="text-black/60 font-normal text-sm">/night</span>
             </div>
-            <div className="text-xs text-black/50">
+            <div className="text-xs text-black/55">
               {money(o.price.allIn ?? o.price.amount, o.price.currency)} all-in · {o.price.nights} night{o.price.nights > 1 ? "s" : ""}
             </div>
           </div>
@@ -271,7 +271,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
             ))}
           </div>
         ) : data.offers.length === 0 ? (
-          <p className="text-black/50">No rooms available for these dates. Try different dates.</p>
+          <p className="text-black/55">No rooms available for these dates. Try different dates.</p>
         ) : (
           (() => {
             const lowestId = [...data.offers].sort((a, b) => a.price.amount - b.price.amount)[0]?.offerId;
@@ -314,7 +314,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
                 </p>
 
                 {shown.length === 0 ? (
-                  <p className="text-black/50">
+                  <p className="text-black/55">
                     No rooms match that bed count.{" "}
                     <button onClick={() => setBeds("all")} className="text-accent">
                       Show all rooms
@@ -343,8 +343,8 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
           {cheapest ? (
             <div className="font-bold leading-tight">
               {money(Math.round((cheapest.price.allIn ?? cheapest.price.amount) / cheapest.price.nights), cheapest.price.currency)}
-              <span className="text-sm font-normal text-black/50"> /night</span>
-              <span className="text-xs font-normal text-black/45"> · {money(cheapest.price.allIn ?? cheapest.price.amount, cheapest.price.currency)} all-in</span>
+              <span className="text-sm font-normal text-black/55"> /night</span>
+              <span className="text-xs font-normal text-black/60"> · {money(cheapest.price.allIn ?? cheapest.price.amount, cheapest.price.currency)} all-in</span>
             </div>
           ) : null}
         </div>

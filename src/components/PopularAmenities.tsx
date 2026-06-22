@@ -11,7 +11,7 @@ export default function PopularAmenities({ facilities }: { facilities: string[] 
       <div className="flex flex-wrap gap-x-6 gap-y-3">
         {amenities.map((a) => (
           <span key={a} className="inline-flex items-center gap-2 text-sm text-black/75">
-            <AmenityIcon name={a} className="w-5 h-5 text-black/45" />
+            <AmenityIcon name={a} className="w-5 h-5 text-black/60" />
             {a}
           </span>
         ))}

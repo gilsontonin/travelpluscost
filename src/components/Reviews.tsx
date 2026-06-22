@@ -71,7 +71,7 @@ export default function Reviews({ hotel }: { hotel: OahuHotel }) {
               <ul className="space-y-1.5">
                 {s.cons.map((c) => (
                   <li key={c} className="text-sm text-black/70 flex gap-2">
-                    <span className="text-black/40">–</span> {c}
+                    <span className="text-black/60">–</span> {c}
                   </li>
                 ))}
               </ul>
@@ -93,9 +93,9 @@ export default function Reviews({ hotel }: { hotel: OahuHotel }) {
                     </span>
                   ) : null}
                   <span className="text-sm font-medium truncate">{r.name}</span>
-                  {r.type ? <span className="text-xs text-black/45 truncate">· {r.type}</span> : null}
+                  {r.type ? <span className="text-xs text-black/60 truncate">· {r.type}</span> : null}
                   {fmtReviewDate(r.date) ? (
-                    <span className="text-xs text-black/40 ml-auto shrink-0">{fmtReviewDate(r.date)}</span>
+                    <span className="text-xs text-black/60 ml-auto shrink-0">{fmtReviewDate(r.date)}</span>
                   ) : null}
                 </div>
                 {r.headline ? <p className="text-sm font-medium mb-1.5">{r.headline}</p> : null}
@@ -107,14 +107,14 @@ export default function Reviews({ hotel }: { hotel: OahuHotel }) {
                 ) : null}
                 {r.cons ? (
                   <p className="text-sm text-black/70 flex gap-2 mt-1.5">
-                    <span className="text-black/40 mt-0.5">–</span>
+                    <span className="text-black/60 mt-0.5">–</span>
                     <span>{r.cons}</span>
                   </p>
                 ) : null}
               </article>
             ))}
           </div>
-          <p className="mt-3 text-xs text-black/40">
+          <p className="mt-3 text-xs text-black/60">
             Verified guest reviews from completed stays{updated ? ` · updated ${updated}` : ""}.
           </p>
         </div>

@@ -45,7 +45,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
       <PhotoGallery images={hotel.images} name={hotel.name} backHref={searchHref} />
 
       {/* breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="mt-3 flex flex-wrap items-center gap-1.5 text-xs text-black/50">
+      <nav aria-label="Breadcrumb" className="mt-3 flex flex-wrap items-center gap-1.5 text-xs text-black/55">
         <Link href="/" className="hover:text-black">
           Home
         </Link>
@@ -102,7 +102,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
           </svg>
           {[hotel.address, hotel.city].filter(Boolean).join(", ")}
           {nearbyLabel(hotel.lat, hotel.lng, landmarks) ? (
-            <span className="text-black/45">· {nearbyLabel(hotel.lat, hotel.lng, landmarks)}</span>
+            <span className="text-black/60">· {nearbyLabel(hotel.lat, hotel.lng, landmarks)}</span>
           ) : null}
         </p>
         <div className="flex flex-wrap items-center gap-2 mt-2 text-sm">
@@ -116,7 +116,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
               ) : null}
             </span>
           ) : null}
-          {hotel.chain ? <span className="text-black/45">· Part of {hotel.chain}</span> : null}
+          {hotel.chain ? <span className="text-black/60">· Part of {hotel.chain}</span> : null}
         </div>
       </div>
 
@@ -190,7 +190,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
 function Fact({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-lg border border-black/[0.07] bg-white p-3">
-      <p className="text-xs text-black/45">{label}</p>
+      <p className="text-xs text-black/60">{label}</p>
       <p className="text-sm font-medium mt-0.5">{value}</p>
     </div>
   );

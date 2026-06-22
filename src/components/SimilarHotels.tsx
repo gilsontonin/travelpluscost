@@ -25,7 +25,7 @@ export default function SimilarHotels({ id }: { id: string }) {
               <p className="mt-2 font-medium text-sm leading-snug line-clamp-2 group-hover:text-accent transition-colors">
                 {hotel.name}
               </p>
-              <p className="text-xs text-black/50 mt-0.5">
+              <p className="text-xs text-black/55 mt-0.5">
                 {fmtMiles(miles)} away{hotel.city ? ` · ${hotel.city}` : ""}
               </p>
               {rev ? (

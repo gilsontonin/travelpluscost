@@ -47,7 +47,7 @@ export default function ExploreArea({
               </li>
             ))}
           </ul>
-          <p className="mt-2 text-xs text-black/40">Straight-line distances.</p>
+          <p className="mt-2 text-xs text-black/60">Straight-line distances.</p>
         </div>
       ) : null}
     </section>
