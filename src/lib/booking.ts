@@ -88,6 +88,118 @@ export interface BookingResult {
   status: string;
 }
 
+// ── Manage / cancel (GET + PUT /bookings/{id}, book host) — field names verified against a live
+// sandbox round-trip (book → retrieve → cancel). The same key the booking was made with must be
+// used, which apiKey() already handles (live→prod, else sandbox). ──
+export interface BookingDetails {
+  bookingId: string;
+  status: string; // CONFIRMED | CANCELLED | CANCELLED_WITH_CHARGES | …
+  confirmationCode: string;
+  holderEmail: string; // lowercased — used to verify the requester owns the booking
+  holderName: string;
+  hotelName: string;
+  checkin: string;
+  checkout: string;
+  roomName: string;
+  boardName?: string;
+  price: number;
+  currency: string;
+  refundable: boolean;
+  freeCancelBefore: string | null;
+  cancelChargeAfter: { amount: number; currency: string } | null;
+  cancelled: boolean;
+}
+export interface CancelResult {
+  status: string;
+  cancellationFee: number;
+  refundAmount: number;
+  currency: string;
+}
+
+interface RawCancelInfo {
+  refundableTag?: string;
+  cancelPolicyInfos?: { cancelTime?: string; amount?: number; currency?: string }[];
+}
+interface RawBooking {
+  bookingId?: string;
+  status?: string;
+  hotelConfirmationCode?: string;
+  holder?: { firstName?: string; lastName?: string; email?: string };
+  email?: string;
+  firstName?: string;
+  lastName?: string;
+  hotel?: { name?: string };
+  hotelName?: string;
+  checkin?: string;
+  checkout?: string;
+  bookedRooms?: { roomType?: { name?: string }; boardName?: string }[];
+  price?: number;
+  sellingPriceToUser?: number;
+  currency?: string;
+  cancellationPolicies?: RawCancelInfo;
+}
+
+async function callMethod<T>(url: string, method: "GET" | "PUT"): Promise<T> {
+  const res = await fetch(url, { method, headers: { "X-API-Key": apiKey() } });
+  const json = (await res.json().catch(() => ({}))) as { data?: T; error?: { message?: string } };
+  if (!res.ok) throw new Error(json?.error?.message || `LiteAPI ${res.status}`);
+  return (json.data ?? (json as unknown)) as T;
+}
+
+// Free-cancel date / post-window charge from a booking's policies — same 0-amount-discard rule as
+// rates.ts (LiteAPI's recommended impl): a 0-amount node is still free, so skip it.
+function policyDates(cp: RawCancelInfo | undefined) {
+  if (!cp || cp.refundableTag !== "RFN") return { freeCancelBefore: null, cancelChargeAfter: null };
+  const charged = (cp.cancelPolicyInfos ?? [])
+    .filter((i) => i.cancelTime && (i.amount ?? 0) > 0)
+    .sort((a, b) => (a.cancelTime as string).localeCompare(b.cancelTime as string))[0];
+  return {
+    freeCancelBefore: charged ? (charged.cancelTime as string).slice(0, 10) : null,
+    cancelChargeAfter: charged ? { amount: charged.amount as number, currency: charged.currency ?? "USD" } : null,
+  };
+}
+
+const isCancelled = (status: string) => /CANCEL/i.test(status);
+
+export async function retrieveBooking(bookingId: string): Promise<BookingDetails> {
+  const d = await callMethod<RawBooking>(`${BOOK}/bookings/${encodeURIComponent(bookingId)}`, "GET");
+  const cp = d.cancellationPolicies;
+  const room = d.bookedRooms?.[0] ?? {};
+  const status = d.status ?? "UNKNOWN";
+  return {
+    bookingId: d.bookingId ?? bookingId,
+    status,
+    confirmationCode: d.hotelConfirmationCode ?? d.bookingId ?? bookingId,
+    holderEmail: (d.holder?.email ?? d.email ?? "").trim().toLowerCase(),
+    holderName: [d.holder?.firstName ?? d.firstName, d.holder?.lastName ?? d.lastName].filter(Boolean).join(" "),
+    hotelName: d.hotel?.name ?? d.hotelName ?? "your hotel",
+    checkin: d.checkin ?? "",
+    checkout: d.checkout ?? "",
+    roomName: room.roomType?.name ?? "Room",
+    boardName: room.boardName,
+    price: d.price ?? d.sellingPriceToUser ?? 0,
+    currency: d.currency ?? "USD",
+    refundable: cp?.refundableTag === "RFN",
+    ...policyDates(cp),
+    cancelled: isCancelled(status),
+  };
+}
+
+export async function cancelBooking(bookingId: string): Promise<CancelResult> {
+  const d = await callMethod<{
+    status?: string;
+    cancellation_fee?: number;
+    refund_amount?: number;
+    currency?: string;
+  }>(`${BOOK}/bookings/${encodeURIComponent(bookingId)}`, "PUT");
+  return {
+    status: d.status ?? "CANCELLED",
+    cancellationFee: d.cancellation_fee ?? 0,
+    refundAmount: d.refund_amount ?? 0,
+    currency: d.currency ?? "USD",
+  };
+}
+
 interface Offer {
   offerId: string;
   room: string;

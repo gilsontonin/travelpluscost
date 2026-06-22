@@ -78,7 +78,17 @@ export default async function ConfirmedPage({
             : "Save your confirmation code above. The price shown is the same price everyone sees — never based on your data."}
         </p>
 
-        <Link href="/" className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-xl hover:opacity-90 transition">
+        <p className="mt-6 text-sm text-black/55">
+          Need to cancel or change?{" "}
+          <Link
+            href={bookingId ? `/cancel?bookingId=${encodeURIComponent(bookingId)}` : "/cancel"}
+            className="text-accent font-medium hover:underline"
+          >
+            Manage your booking
+          </Link>
+        </p>
+
+        <Link href="/" className="mt-4 inline-block bg-accent text-white font-medium px-6 py-3 rounded-xl hover:opacity-90 transition">
           Back to home
         </Link>
       </div>
