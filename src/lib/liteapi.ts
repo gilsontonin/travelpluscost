@@ -60,6 +60,7 @@ export function getRates(body: {
   occupancies: { adults: number; children?: number[] }[];
   currency?: string;
   guestNationality?: string;
+  roomMapping?: boolean; // true → each rate carries a mappedRoomId for exact room content
 }) {
   return liteApiFetch<unknown>("/hotels/rates", { method: "POST", body: JSON.stringify(body) });
 }

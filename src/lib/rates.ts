@@ -33,6 +33,7 @@ export interface RoomOffer {
   features?: string[];
   photos?: string[];
   propertyFees?: PropertyFee[]; // ALL mandatory fees paid at the property (every included:false item)
+  cancelChargeAfter?: { amount: number; currency: string } | null; // charged if cancelled after the free window
   price: Price;
 }
 
@@ -48,13 +49,14 @@ interface TaxFee {
 }
 interface CancelPolicies {
   refundableTag?: string;
-  cancelPolicyInfos?: { cancelTime?: string; amount?: number }[];
+  cancelPolicyInfos?: { cancelTime?: string; amount?: number; currency?: string }[];
 }
 interface RateObj {
   name?: string;
   boardName?: string;
   boardType?: string;
   maxOccupancy?: number;
+  mappedRoomId?: number; // roomMapping:true → resolves to a Room.ids entry (exact photos/beds/size)
   cancellationPolicies?: CancelPolicies;
   retailRate?: { suggestedSellingPrice?: Money[]; total?: Money[]; taxesAndFees?: TaxFee[] };
 }
@@ -72,6 +74,12 @@ function tokenize(s: string): Set<string> {
   return new Set(
     s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 1 && !STOP.has(w)),
   );
+}
+// Preferred match: a rate's mappedRoomId (roomMapping:true) → the exact room content. Reliable,
+// unlike the name heuristic below (which stays as the fallback for un-mapped hotels/rates).
+function matchByMappedId(mappedRoomId: number | undefined, rooms: Room[]): Room | undefined {
+  if (mappedRoomId == null) return undefined;
+  return rooms.find((r) => r.ids?.includes(mappedRoomId));
 }
 function matchRoom(name: string, rooms: Room[]): Room | undefined {
   const a = tokenize(name);
@@ -191,6 +199,17 @@ function freeCancelBefore(rate: RateObj): string | null {
     .sort()[0];
   return first ? first.slice(0, 10) : null;
 }
+// The amount charged if a refundable room is cancelled AFTER its free window — the first non-zero
+// policy (the one whose cancelTime is the free-cancel deadline). Lets the UI say "free until X,
+// then $Y" the way LiteAPI's cancellation guide displays it. Null when fully refundable / non-refundable.
+function cancelChargeAfter(rate: RateObj): { amount: number; currency: string } | null {
+  const cp = rate.cancellationPolicies;
+  if (!cp || cp.refundableTag !== "RFN") return null;
+  const charged = (cp.cancelPolicyInfos ?? [])
+    .filter((i) => i.cancelTime && (i.amount ?? 0) > 0)
+    .sort((a, b) => (a.cancelTime as string).localeCompare(b.cancelTime as string))[0];
+  return charged ? { amount: charged.amount as number, currency: charged.currency ?? "USD" } : null;
+}
 interface RatesHotel {
   hotelId: string;
   roomTypes?: RoomType[];
@@ -233,7 +252,13 @@ export function defaultDates(ci?: string | null, co?: string | null) {
   return { checkin: a, checkout: b };
 }
 
-async function fetchRates(ids: string[], ci: string, co: string, adults: number): Promise<RatesHotel[]> {
+async function fetchRates(
+  ids: string[],
+  ci: string,
+  co: string,
+  adults: number,
+  roomMapping = false,
+): Promise<RatesHotel[]> {
   const res = (await getRates({
     hotelIds: ids,
     checkin: ci,
@@ -241,6 +266,8 @@ async function fetchRates(ids: string[], ci: string, co: string, adults: number)
     occupancies: [{ adults }],
     currency: "USD",
     guestNationality: "US",
+    // Only the property page (room list) needs per-rate room mapping; result cards don't.
+    ...(roomMapping ? { roomMapping: true } : {}),
   })) as { data?: RatesHotel[] };
   return res?.data ?? [];
 }
@@ -302,7 +329,7 @@ export async function getRooms(
   const hit = readCache<{ offers: RoomOffer[]; nights: number }>(key);
   if (hit) return hit;
 
-  const data = await fetchRates([id], ci, co, adults);
+  const data = await fetchRates([id], ci, co, adults, true); // roomMapping for exact room content
   const rh = data[0];
   const content = getOahuHotel(id);
   const rooms = content?.rooms ?? [];
@@ -320,7 +347,8 @@ export async function getRooms(
       const existing = byRoom.get(groupKey);
       if (existing && existing.price.amount <= sp.amount) continue;
 
-      const cr = matchRoom(rawName, rooms);
+      // Exact room mapping first (mappedRoomId → room.ids), name heuristic as fallback.
+      const cr = matchByMappedId(r.mappedRoomId, rooms) ?? matchRoom(rawName, rooms);
       const fees = propertyFeesOf(r);
       const feesTotal = fees.reduce((s, f) => s + f.amount, 0);
       byRoom.set(groupKey, {
@@ -329,6 +357,7 @@ export async function getRooms(
         boardName: r.boardName,
         refundable: r.cancellationPolicies?.refundableTag === "RFN",
         freeCancelBefore: freeCancelBefore(r),
+        cancelChargeAfter: cancelChargeAfter(r),
         view: cr?.view ?? null,
         sleeps: r.maxOccupancy ?? cr?.sleeps ?? null,
         beds: cr?.beds?.length ? cr.beds : undefined,

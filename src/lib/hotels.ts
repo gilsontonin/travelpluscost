@@ -20,6 +20,7 @@ const DATASETS: Hotel[][] = [
 ];
 
 export interface Room {
+  ids?: number[]; // LiteAPI room id(s) for this product — a rate's mappedRoomId resolves here
   name: string;
   summary: string;
   features: string[];

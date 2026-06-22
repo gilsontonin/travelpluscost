@@ -115,6 +115,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          3479965
+        ],
         "name": "Two-Bedroom Penthouse with City View",
         "summary": "",
         "features": [],
@@ -150,6 +153,9 @@
         ]
       },
       {
+        "ids": [
+          1459799067
+        ],
         "name": "Superior Room, 1 King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -193,6 +199,9 @@
         ]
       },
       {
+        "ids": [
+          1459367996
+        ],
         "name": "Superior Room, 2 Queen Beds",
         "summary": "2 Queen Beds",
         "features": [
@@ -235,6 +244,9 @@
         ]
       },
       {
+        "ids": [
+          3479964
+        ],
         "name": "One-Bedroom Penthouse with Strip View",
         "summary": "",
         "features": [],
@@ -270,6 +282,9 @@
         ]
       },
       {
+        "ids": [
+          3479966
+        ],
         "name": "Two-Bedroom Penthouse with Strip View",
         "summary": "",
         "features": [],
@@ -304,6 +319,9 @@
         ]
       },
       {
+        "ids": [
+          3479967
+        ],
         "name": "Three-Bedroom Penthouse",
         "summary": "",
         "features": [],
@@ -340,11 +358,14 @@
         ]
       },
       {
+        "ids": [
+          3479968
+        ],
         "name": "Superior Quadruple Room",
         "summary": "This room offers sleek, modern decor and luxurious furnishings. It includes sweeping views of Las Vegas outside the floor-to-ceiling windows.",
         "features": [],
         "view": null,
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -374,6 +395,9 @@
         ]
       },
       {
+        "ids": [
+          3479963
+        ],
         "name": "One-Bedroom Penthouse with City View",
         "summary": "",
         "features": [],
@@ -408,6 +432,9 @@
         ]
       },
       {
+        "ids": [
+          1459992536
+        ],
         "name": "Premium Suite, 1 Bedroom, Corner",
         "summary": "1 King Bed",
         "features": [
@@ -451,11 +478,14 @@
         ]
       },
       {
+        "ids": [
+          3479969
+        ],
         "name": "Deluxe Queen Room with Two Queen Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -485,11 +515,14 @@
         ]
       },
       {
+        "ids": [
+          3479958
+        ],
         "name": "Superior King Room",
         "summary": "This room offers sleek, modern decor and luxurious furnishings. It features sweeping views of Las Vegas from floor-to-ceiling windows.",
         "features": [],
         "view": null,
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -523,11 +556,14 @@
         ]
       },
       {
+        "ids": [
+          3479959
+        ],
         "name": "Deluxe King Room",
         "summary": "This deluxe room includes a plush love seat seating area featuring a flat-screen HDTV. It features a deluxe Italian marble bath.",
         "features": [],
         "view": null,
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -561,6 +597,9 @@
         ]
       },
       {
+        "ids": [
+          3479960
+        ],
         "name": "Superior Suite",
         "summary": "",
         "features": [],
@@ -595,6 +634,9 @@
         ]
       },
       {
+        "ids": [
+          3479961
+        ],
         "name": "Deluxe Suite",
         "summary": "This suite offers floor-to-ceiling views of the Las Vegas Strip, luxury lavish living areas, a top-notch European-style kitchen and an Italian marble bath.",
         "features": [],
@@ -629,6 +671,9 @@
         ]
       },
       {
+        "ids": [
+          3479962
+        ],
         "name": "One Bedroom Corner Suite",
         "summary": "",
         "features": [],
@@ -893,6 +938,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1321514012
+        ],
         "name": "Deluxe Room, 2 Queen Beds, Hearing Accessible, City View",
         "summary": "2 Queen Beds",
         "features": [
@@ -935,6 +983,9 @@
         ]
       },
       {
+        "ids": [
+          1321514029
+        ],
         "name": "Deluxe Room, 1 King Bed, Hearing Accessible (Panoramic View)",
         "summary": "1 King Bed",
         "features": [
@@ -977,6 +1028,9 @@
         ]
       },
       {
+        "ids": [
+          1321514016
+        ],
         "name": "Deluxe Room, 2 Queen Beds (Panoramic View)",
         "summary": "2 Queen Beds",
         "features": [
@@ -1019,6 +1073,9 @@
         ]
       },
       {
+        "ids": [
+          1321514061
+        ],
         "name": "Deluxe Room, 2 Queen Beds, City View",
         "summary": "2 Queen Beds",
         "features": [
@@ -1061,6 +1118,9 @@
         ]
       },
       {
+        "ids": [
+          1321513966
+        ],
         "name": "Deluxe Room, 1 King Bed (Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -1105,6 +1165,9 @@
         ]
       },
       {
+        "ids": [
+          1321514060
+        ],
         "name": "Deluxe Room, 1 King Bed (Panoramic View)",
         "summary": "1 King Bed",
         "features": [
@@ -1149,6 +1212,9 @@
         ]
       },
       {
+        "ids": [
+          1321514108
+        ],
         "name": "Deluxe Room, 2 Queen Beds",
         "summary": "2 Queen Beds",
         "features": [
@@ -1193,6 +1259,9 @@
         ]
       },
       {
+        "ids": [
+          1321514109
+        ],
         "name": "Deluxe Room, 2 Queen Beds, Mobility Accessible, City View (Roll-in Shower)",
         "summary": "2 Queen Beds",
         "features": [
@@ -1235,6 +1304,9 @@
         ]
       },
       {
+        "ids": [
+          1321514072
+        ],
         "name": "Deluxe Room, 1 King Bed, Mobility Accessible, City View (Roll-in Shower)",
         "summary": "1 King Bed",
         "features": [
@@ -1278,6 +1350,9 @@
         ]
       },
       {
+        "ids": [
+          1321514011
+        ],
         "name": "Deluxe Room, 1 King Bed, Hearing Accessible (Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -1322,6 +1397,9 @@
         ]
       },
       {
+        "ids": [
+          1321514028
+        ],
         "name": "Deluxe Room, 2 Queen Beds (Strip View)",
         "summary": "2 Queen Beds",
         "features": [
@@ -1365,6 +1443,9 @@
         ]
       },
       {
+        "ids": [
+          1321514084
+        ],
         "name": "Deluxe Room, 1 King Bed, City View",
         "summary": "1 King Bed",
         "features": [
@@ -1408,6 +1489,9 @@
         ]
       },
       {
+        "ids": [
+          1321513986
+        ],
         "name": "Deluxe Room, 1 King Bed, Mobility Accessible (Roll-in Shower, Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -1452,6 +1536,9 @@
         ]
       },
       {
+        "ids": [
+          1321514010
+        ],
         "name": "Deluxe Room, 1 King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -1495,6 +1582,9 @@
         ]
       },
       {
+        "ids": [
+          1321514073
+        ],
         "name": "Deluxe Room, 2 Queen Beds, Hearing Accessible (Hearing)",
         "summary": "2 Queen Beds",
         "features": [
@@ -1751,6 +1841,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459473936
+        ],
         "name": "Executive Studio Suite",
         "summary": "1 King Bed or 2 Double Beds",
         "features": [
@@ -1796,6 +1889,9 @@
         ]
       },
       {
+        "ids": [
+          1459473937
+        ],
         "name": "Executive Studio Suite, Non Smoking",
         "summary": "2 Double Beds or 1 King Bed",
         "features": [
@@ -1841,6 +1937,9 @@
         ]
       },
       {
+        "ids": [
+          1459972857
+        ],
         "name": "Executive Studio Suite, Smoking",
         "summary": "2 Double Beds or 1 King Bed",
         "features": [
@@ -1886,6 +1985,9 @@
         ]
       },
       {
+        "ids": [
+          1459972858
+        ],
         "name": "Deluxe Studio Suite, 1 King Bed, Non Smoking",
         "summary": "1 King Bed",
         "features": [
@@ -1931,6 +2033,9 @@
         ]
       },
       {
+        "ids": [
+          1459972859
+        ],
         "name": "Deluxe Studio Suite, 2 Double Beds, Non Smoking",
         "summary": "2 Double Beds",
         "features": [
@@ -1976,6 +2081,9 @@
         ]
       },
       {
+        "ids": [
+          3472507
+        ],
         "name": "Accessible Executive Non-Smoking Suite",
         "summary": "",
         "features": [],
@@ -2012,11 +2120,14 @@
         ]
       },
       {
+        "ids": [
+          1458958761
+        ],
         "name": "Siena King Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -2043,11 +2154,14 @@
         ]
       },
       {
+        "ids": [
+          1458958762
+        ],
         "name": "Siena Double Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -2074,11 +2188,14 @@
         ]
       },
       {
+        "ids": [
+          1458958763
+        ],
         "name": "Siena King Suite Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -2105,11 +2222,14 @@
         ]
       },
       {
+        "ids": [
+          1458958764
+        ],
         "name": "Siena Double Suite Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -2136,6 +2256,9 @@
         ]
       },
       {
+        "ids": [
+          3472503
+        ],
         "name": "Deluxe Executive Double Non-Smoking Suite",
         "summary": "",
         "features": [],
@@ -2172,6 +2295,9 @@
         ]
       },
       {
+        "ids": [
+          3472504
+        ],
         "name": "Deluxe Executive King Non-Smoking Suite",
         "summary": "This suite offers a refrigerator and tea- and coffee-making facilities as well as cable TV.",
         "features": [],
@@ -2212,6 +2338,9 @@
         ]
       },
       {
+        "ids": [
+          3472505
+        ],
         "name": "Executive Smoking Suite",
         "summary": "",
         "features": [],
@@ -2441,6 +2570,9 @@
     "airportCode": "",
     "rooms": [
       {
+        "ids": [
+          1751257
+        ],
         "name": "Regal Suite Mountain Best View",
         "summary": "The spacious air-conditioned suite features a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as mountain views. The unit has 1 bed.",
         "features": [],
@@ -2476,11 +2608,14 @@
         ]
       },
       {
+        "ids": [
+          1458971683
+        ],
         "name": "Bleau King (No Resort Fee)",
         "summary": "The spacious air-conditioned double room offers a flat-screen TV, a mini-bar, a seating area and a wardrobe. The unit has 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 45,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -2512,11 +2647,14 @@
         ]
       },
       {
+        "ids": [
+          1458971687
+        ],
         "name": "Bleau Two Queen Mountain Best View (No Resort Fee)",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -2546,6 +2684,19 @@
         ]
       },
       {
+        "ids": [
+          1458971694,
+          1458971695,
+          1458971696,
+          1458971698,
+          1458971699,
+          1458971705,
+          1458971692,
+          1458971693,
+          1458971700,
+          1458971701,
+          1458971702
+        ],
         "name": "Suite",
         "summary": "The spacious air-conditioned suite features a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as city views. The unit has 1 bed.",
         "features": [],
@@ -2575,6 +2726,9 @@
         ]
       },
       {
+        "ids": [
+          1460313133
+        ],
         "name": "Regal Suite Mountain Best View (No Resort Fee)",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -2593,6 +2747,9 @@
         ]
       },
       {
+        "ids": [
+          1460313134
+        ],
         "name": "Executive Suite Mountain Best View (No Resort Fee)",
         "summary": "The spacious air-conditioned double room features a seating area, a wardrobe and a safe deposit box. The unit has 1 bed.",
         "features": [],
@@ -2624,6 +2781,9 @@
         ]
       },
       {
+        "ids": [
+          1460313135
+        ],
         "name": "Executive Suite Mountain Great View (No Resort Fee)",
         "summary": "The spacious air-conditioned double room features a seating area, a wardrobe and a safe deposit box. The unit has 1 bed.",
         "features": [],
@@ -2655,11 +2815,14 @@
         ]
       },
       {
+        "ids": [
+          1751254
+        ],
         "name": "Gold Queen Mountain Best View",
         "summary": "The spacious air-conditioned double room features a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as mountain views. The unit has 2 beds.",
         "features": [],
         "view": "Mountain View",
-        "sqft": 55,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -2689,6 +2852,9 @@
         ]
       },
       {
+        "ids": [
+          1751256
+        ],
         "name": "Regal Suite Mountain Great View",
         "summary": "",
         "features": [],
@@ -2724,11 +2890,14 @@
         ]
       },
       {
+        "ids": [
+          1460319738
+        ],
         "name": "Platinum King Strip Best View (No Resort Fee)",
         "summary": "The spacious air-conditioned double room features a seating area, a wardrobe and a safe deposit box. The unit has 1 bed.",
         "features": [],
         "view": "Strip Best View",
-        "sqft": 61,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -2755,11 +2924,14 @@
         ]
       },
       {
+        "ids": [
+          1460319739
+        ],
         "name": "Platinum King Strip Great View (No Resort Fee)",
         "summary": "The spacious air-conditioned double room provides a seating area, a wardrobe and a safe deposit box. The unit offers 1 bed.",
         "features": [],
         "view": "Strip Great View",
-        "sqft": 61,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -2786,6 +2958,9 @@
         ]
       },
       {
+        "ids": [
+          1460319741
+        ],
         "name": "Regal Suite Mountain Great View (No Resort Fee)",
         "summary": "The unit has 1 bed.",
         "features": [],
@@ -2804,6 +2979,9 @@
         ]
       },
       {
+        "ids": [
+          1460319742
+        ],
         "name": "Noble Suite Pool View (No Resort Fee)",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -2822,6 +3000,9 @@
         ]
       },
       {
+        "ids": [
+          1460319743
+        ],
         "name": "Noble Suite Strip Great View (No Resort Fee)",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -2840,6 +3021,9 @@
         ]
       },
       {
+        "ids": [
+          1460319744
+        ],
         "name": "Noble Suite Strip Best View (No Resort Fee)",
         "summary": "The unit has 1 bed.",
         "features": [],
@@ -2858,6 +3042,9 @@
         ]
       },
       {
+        "ids": [
+          1460319745
+        ],
         "name": "Royal Suite Pool View(No Resort Fee)",
         "summary": "The unit has 1 bed.",
         "features": [],
@@ -2876,6 +3063,9 @@
         ]
       },
       {
+        "ids": [
+          1460319746
+        ],
         "name": "Royal Suite Strip Great View (No Resort Fee)",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -2894,6 +3084,9 @@
         ]
       },
       {
+        "ids": [
+          1460319747
+        ],
         "name": "Royal Suite Strip Best View (No Resort Fee)",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -2912,6 +3105,9 @@
         ]
       },
       {
+        "ids": [
+          1460319748
+        ],
         "name": "Panorama Suite Mountain Great View (No Resort Fee)",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -2930,6 +3126,9 @@
         ]
       },
       {
+        "ids": [
+          1460319749
+        ],
         "name": "Panorama Suite Mountain View(No Resort Fee)",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -2948,11 +3147,14 @@
         ]
       },
       {
+        "ids": [
+          1751247
+        ],
         "name": "Bleau Queen",
         "summary": "The spacious air-conditioned double room provides a flat-screen TV, a mini-bar, a seating area and a wardrobe. The unit offers 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -2983,11 +3185,14 @@
         ]
       },
       {
+        "ids": [
+          1751248
+        ],
         "name": "Bleau Queen Mountain Great View",
         "summary": "The spacious air-conditioned double room provides a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as mountain views. The unit offers 2 beds.",
         "features": [],
         "view": "Mountain View",
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -3018,11 +3223,14 @@
         ]
       },
       {
+        "ids": [
+          1751252
+        ],
         "name": "Gold King Strip Best View",
         "summary": "The spacious air-conditioned double room features a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as city views. The unit has 1 bed.",
         "features": [],
         "view": "City View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -3053,6 +3261,9 @@
         ]
       },
       {
+        "ids": [
+          1751258
+        ],
         "name": "Noble Suite Pool View",
         "summary": "",
         "features": [],
@@ -3089,6 +3300,9 @@
         ]
       },
       {
+        "ids": [
+          1458971682
+        ],
         "name": "Panorama Suite Mountain View",
         "summary": "",
         "features": [],
@@ -3120,11 +3334,14 @@
         ]
       },
       {
+        "ids": [
+          1458971684
+        ],
         "name": "Bleau Two Queen (No Resort Fee)",
         "summary": "The spacious quadruple room features air conditioning, a mini-bar, a seating area, a wardrobe and a flat-screen TV. The unit has 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -3155,11 +3372,14 @@
         ]
       },
       {
+        "ids": [
+          1458971685
+        ],
         "name": "Bleau Two Queen Mountain Great View (No Resort Fee)",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -3190,11 +3410,14 @@
         ]
       },
       {
+        "ids": [
+          1458971686
+        ],
         "name": "Bleau King Mountain Best View (No Resort Fee)",
         "summary": "The spacious air-conditioned double room features a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as mountain views. The unit has 1 bed.",
         "features": [],
         "view": "Mountain View",
-        "sqft": 45,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -3224,11 +3447,14 @@
         ]
       },
       {
+        "ids": [
+          1458971689
+        ],
         "name": "Gold King Strip Great View (No Resort Fee)",
         "summary": "The spacious air-conditioned double room features a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as city views. The unit has 1 bed.",
         "features": [],
         "view": "City View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -3259,11 +3485,14 @@
         ]
       },
       {
+        "ids": [
+          1458971690
+        ],
         "name": "Gold Queen Mountain Great View (No Resort Fee)",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 55,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -3294,11 +3523,14 @@
         ]
       },
       {
+        "ids": [
+          1458971691
+        ],
         "name": "Gold Queen Mountain Best View  (No Resort Fee)",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 55,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -3329,11 +3561,14 @@
         ]
       },
       {
+        "ids": [
+          1460313136
+        ],
         "name": "Platinum King (No Resort Fee)",
         "summary": "The spacious air-conditioned double room features a seating area, a wardrobe and a safe deposit box. The unit has 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 61,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -3360,11 +3595,14 @@
         ]
       },
       {
+        "ids": [
+          1458971703
+        ],
         "name": "Bleau King Mountain Great View (No Resort Fee)",
         "summary": "The spacious air-conditioned double room features a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as mountain views. The unit has 1 bed.",
         "features": [],
         "view": "Mountain View",
-        "sqft": 45,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -3394,11 +3632,14 @@
         ]
       },
       {
+        "ids": [
+          1458971704
+        ],
         "name": "Gold King Strip Best View (No Resort Fee)",
         "summary": "The spacious air-conditioned double room offers a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as city views. The unit has 1 bed.",
         "features": [],
         "view": "City View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -3429,11 +3670,14 @@
         ]
       },
       {
+        "ids": [
+          1751251
+        ],
         "name": "Gold King Strip Great View",
         "summary": "The spacious air-conditioned double room provides a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as city views. The unit offers 1 bed.",
         "features": [],
         "view": "City View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -3464,6 +3708,9 @@
         ]
       },
       {
+        "ids": [
+          1752165
+        ],
         "name": "Royal Suite Strip Great View",
         "summary": "",
         "features": [],
@@ -3498,6 +3745,9 @@
         ]
       },
       {
+        "ids": [
+          1752166
+        ],
         "name": "Royal Suite Strip Best View",
         "summary": "",
         "features": [],
@@ -3532,6 +3782,9 @@
         ]
       },
       {
+        "ids": [
+          1458971681
+        ],
         "name": "Panorama Suite Mountain Great View",
         "summary": "",
         "features": [],
@@ -3563,11 +3816,14 @@
         ]
       },
       {
+        "ids": [
+          1751250
+        ],
         "name": "Gold King Pool View",
         "summary": "The spacious air-conditioned double room features a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as pool views. The unit has 1 bed.",
         "features": [],
         "view": "Pool View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -3598,11 +3854,14 @@
         ]
       },
       {
+        "ids": [
+          1751253
+        ],
         "name": "Gold Queen Mountain Great View",
         "summary": "The spacious air-conditioned double room provides a flat-screen TV, a mini-bar, a seating area, a wardrobe as well as mountain views. The unit offers 2 beds.",
         "features": [],
         "view": "Mountain View",
-        "sqft": 55,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -3838,6 +4097,9 @@
     "airportCode": "",
     "rooms": [
       {
+        "ids": [
+          1459799268
+        ],
         "name": "Suite with Pool View",
         "summary": "",
         "features": [],
@@ -3874,11 +4136,14 @@
         ]
       },
       {
+        "ids": [
+          1459799269
+        ],
         "name": "King Suite with Pool View",
         "summary": "The unit offers 2 beds.",
         "features": [],
         "view": "Pool View",
-        "sqft": 66,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -3899,6 +4164,10 @@
         ]
       },
       {
+        "ids": [
+          1459369709,
+          1321491062
+        ],
         "name": "One Bedroom Suite",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -3948,6 +4217,10 @@
         ]
       },
       {
+        "ids": [
+          1459369710,
+          1321491063
+        ],
         "name": "Two Bedroom Suite",
         "summary": "2 King Beds and 2 Queen Sofa Beds",
         "features": [
@@ -3997,6 +4270,9 @@
         ]
       },
       {
+        "ids": [
+          1321491097
+        ],
         "name": "Studio, 1 Queen Bed",
         "summary": "1 Queen Bed",
         "features": [
@@ -4270,6 +4546,12 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1321515551,
+          1321515816,
+          1321515844,
+          1321515965
+        ],
         "name": "Suite, 1 King Bed, Bathtub (Mobility, Hearing)",
         "summary": "1 King Bed",
         "features": [
@@ -4315,6 +4597,13 @@
         ]
       },
       {
+        "ids": [
+          1321515595,
+          1321515662,
+          1321515663,
+          1321515883,
+          1321515866
+        ],
         "name": "Studio, 1 King Bed, Bathtub (Mobility, Hearing)",
         "summary": "1 King Bed",
         "features": [
@@ -4360,6 +4649,9 @@
         ]
       },
       {
+        "ids": [
+          1321515641
+        ],
         "name": "Studio, 1 King Bed, Accessible, Kitchenette (Roll-In Shower, Hearing)",
         "summary": "1 King Bed",
         "features": [
@@ -4405,6 +4697,13 @@
         ]
       },
       {
+        "ids": [
+          1321515658,
+          1321515686,
+          1321515661,
+          1321515672,
+          1321515868
+        ],
         "name": "Suite, 1 Bedroom",
         "summary": "1 King Bed",
         "features": [
@@ -4450,6 +4749,9 @@
         ]
       },
       {
+        "ids": [
+          1321515685
+        ],
         "name": "Suite, 1 King Bed, Accessible, Kitchen (Roll-in Shower)",
         "summary": "1 King Bed",
         "features": [
@@ -4495,6 +4797,9 @@
         ]
       },
       {
+        "ids": [
+          1321515673
+        ],
         "name": "Suite, 2 Bedrooms",
         "summary": "2 King Beds",
         "features": [
@@ -4540,6 +4845,9 @@
         ]
       },
       {
+        "ids": [
+          1321515707
+        ],
         "name": "Premier Suite, 3 Bedrooms, Kitchen",
         "summary": "3 King Beds and 1 Queen Sofa Bed",
         "features": [
@@ -4589,6 +4897,9 @@
         ]
       },
       {
+        "ids": [
+          1321515728
+        ],
         "name": "Suite, 2 Bedrooms, Accessible, Kitchen (Mobility & Hearing)",
         "summary": "2 King Beds and 1 Queen Sofa Bed",
         "features": [
@@ -4638,6 +4949,10 @@
         ]
       },
       {
+        "ids": [
+          1321515729,
+          1321515792
+        ],
         "name": "Studio, 1 King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -4683,6 +4998,9 @@
         ]
       },
       {
+        "ids": [
+          1321515730
+        ],
         "name": "Suite, 1 King Bed with Sofa bed, Accessible (Hearing)",
         "summary": "1 King Bed and 1 Queen Sofa Bed",
         "features": [
@@ -4732,6 +5050,9 @@
         ]
       },
       {
+        "ids": [
+          1321515736
+        ],
         "name": "Suite, 1 King Bed with Sofa bed, Accessible, Kitchen (Roll-In Shower, Hearing)",
         "summary": "1 King Bed and 1 Queen Sofa Bed",
         "features": [
@@ -4781,6 +5102,9 @@
         ]
       },
       {
+        "ids": [
+          1321515786
+        ],
         "name": "Studio, 1 King Bed, Accessible, Kitchenette (Hearing)",
         "summary": "1 King Bed",
         "features": [
@@ -4826,6 +5150,9 @@
         ]
       },
       {
+        "ids": [
+          1321515787
+        ],
         "name": "Suite, 1 Bedroom, Kitchen",
         "summary": "1 King Bed",
         "features": [
@@ -4871,6 +5198,10 @@
         ]
       },
       {
+        "ids": [
+          1321515725,
+          1321515875
+        ],
         "name": "Suite, 2 Bedrooms, Kitchen",
         "summary": "2 King Beds and 1 Queen Sofa Bed",
         "features": [
@@ -4920,6 +5251,9 @@
         ]
       },
       {
+        "ids": [
+          1321515774
+        ],
         "name": "Studio, 1 King Bed, Kitchenette",
         "summary": "1 King Bed",
         "features": [
@@ -4965,6 +5299,9 @@
         ]
       },
       {
+        "ids": [
+          1321515747
+        ],
         "name": "Studio, 1 King Bed, Accessible, Kitchenette (Roll-In Shower)",
         "summary": "1 King Bed",
         "features": [
@@ -5010,6 +5347,9 @@
         ]
       },
       {
+        "ids": [
+          1321515748
+        ],
         "name": "Studio, 1 King Bed (Hearing, Roll-In Shower)",
         "summary": "1 King Bed",
         "features": [
@@ -5055,6 +5395,10 @@
         ]
       },
       {
+        "ids": [
+          1321515869,
+          1321515851
+        ],
         "name": "Suite, 1 Bedroom (Hearing, Roll-In Shower)",
         "summary": "1 King Bed",
         "features": [
@@ -5100,6 +5444,9 @@
         ]
       },
       {
+        "ids": [
+          1321515881
+        ],
         "name": "Studio, 1 King Bed, Accessible, Kitchenette",
         "summary": "1 King Bed",
         "features": [
@@ -5145,6 +5492,9 @@
         ]
       },
       {
+        "ids": [
+          1321515882
+        ],
         "name": "Studio, 1 King Bed, Accessible, Kitchenette (Mobility & Hearing)",
         "summary": "1 King Bed",
         "features": [
@@ -5190,6 +5540,9 @@
         ]
       },
       {
+        "ids": [
+          1321515911
+        ],
         "name": "Suite, 1 King Bed, Accessible, Kitchen (Mobility & Hearing)",
         "summary": "1 King Bed",
         "features": [
@@ -5235,6 +5588,9 @@
         ]
       },
       {
+        "ids": [
+          1321515964
+        ],
         "name": "Suite, 1 King Bed with Sofa bed, Accessible, Kitchen",
         "summary": "1 King Bed and 1 Queen Sofa Bed",
         "features": [
@@ -5500,11 +5856,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          2361060
+        ],
         "name": "One-Bedroom Suite (No Resort Fees)",
         "summary": "This is a comprehensive room featuring a lounge and a kitchen with a dining area. Areas open out on to a private balcony.",
         "features": [],
         "view": null,
-        "sqft": 60,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -5536,6 +5895,9 @@
         ]
       },
       {
+        "ids": [
+          2361061
+        ],
         "name": "Two-Bedroom Suite (No Resort Fees)",
         "summary": "A separate living room is featured in this 2-bedroom suite.",
         "features": [],
@@ -5767,11 +6129,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          5132452
+        ],
         "name": "Corner Studio",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 49,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -5801,6 +6166,9 @@
         ]
       },
       {
+        "ids": [
+          5132453
+        ],
         "name": "Circa Suite",
         "summary": "",
         "features": [],
@@ -5836,11 +6204,14 @@
         ]
       },
       {
+        "ids": [
+          5132454
+        ],
         "name": "Bunk Pad",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 66,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -5871,11 +6242,14 @@
         ]
       },
       {
+        "ids": [
+          5132451
+        ],
         "name": "Double King",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 41,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -5905,11 +6279,14 @@
         ]
       },
       {
+        "ids": [
+          5132450
+        ],
         "name": "Single King",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 41,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -6168,6 +6545,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1321496434
+        ],
         "name": "Premium Suite, 2 Bedrooms",
         "summary": "1 King Bed and 2 Queen Beds",
         "features": [
@@ -6212,6 +6592,9 @@
         ]
       },
       {
+        "ids": [
+          1321496435
+        ],
         "name": "Premium Room, 1 King Bed, Mobility Accessible (Roll-in Shower, Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -6255,6 +6638,9 @@
         ]
       },
       {
+        "ids": [
+          1321496437
+        ],
         "name": "Premium Room, 1 King Bed (Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -6296,6 +6682,9 @@
         ]
       },
       {
+        "ids": [
+          1321496438
+        ],
         "name": "Premium Room, 2 Queen Beds",
         "summary": "2 Queen Beds",
         "features": [
@@ -6339,6 +6728,9 @@
         ]
       },
       {
+        "ids": [
+          1321496455
+        ],
         "name": "Premium Room, 1 King Bed, Hearing Accessible (Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -6382,6 +6774,9 @@
         ]
       },
       {
+        "ids": [
+          1321496456
+        ],
         "name": "Suite, 2 Bedrooms (2 King Beds, Strip View)",
         "summary": "2 King Beds",
         "features": [
@@ -6422,6 +6817,9 @@
         ]
       },
       {
+        "ids": [
+          1321496472
+        ],
         "name": "Room, 1 King Bed, Roll-in Shower (Mobility/Hearing Access, Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -6465,6 +6863,9 @@
         ]
       },
       {
+        "ids": [
+          1321496449
+        ],
         "name": "Premium Room, 2 Queen Beds (Strip View)",
         "summary": "2 Queen Beds",
         "features": [
@@ -6509,6 +6910,9 @@
         ]
       },
       {
+        "ids": [
+          1321496518
+        ],
         "name": "Suite, 1 Bedroom (1 King Bed)",
         "summary": "1 King Bed",
         "features": [
@@ -6552,6 +6956,9 @@
         ]
       },
       {
+        "ids": [
+          1321496520
+        ],
         "name": "Premium Room, 1 King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -6596,6 +7003,9 @@
         ]
       },
       {
+        "ids": [
+          1321496467
+        ],
         "name": "Premium Room, 2 Queen Beds, Mobility Accessible, City View (Hearing Access/Roll-in Shower)",
         "summary": "2 Queen Beds",
         "features": [
@@ -6639,6 +7049,9 @@
         ]
       },
       {
+        "ids": [
+          1321496484
+        ],
         "name": "Premium Room, 2 Queen Beds, Mobility Accessible, City View (Roll-in Shower)",
         "summary": "2 Queen Beds",
         "features": [
@@ -6682,6 +7095,9 @@
         ]
       },
       {
+        "ids": [
+          1321496409
+        ],
         "name": "Premium Room, 2 Queen Beds, City View",
         "summary": "2 Queen Beds",
         "features": [
@@ -6725,6 +7141,9 @@
         ]
       },
       {
+        "ids": [
+          1321496433
+        ],
         "name": "Suite, 1 Bedroom, City View (1 King Bed)",
         "summary": "1 King Bed",
         "features": [
@@ -6769,6 +7188,9 @@
         ]
       },
       {
+        "ids": [
+          1321496519
+        ],
         "name": "Premium Room, 1 King Bed, City View",
         "summary": "1 King Bed",
         "features": [
@@ -7025,6 +7447,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          3493312
+        ],
         "name": "Alexandria Ultra Suite",
         "summary": "",
         "features": [],
@@ -7060,11 +7485,14 @@
         ]
       },
       {
+        "ids": [
+          3493315
+        ],
         "name": "Marra Style King Mountain View",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -7096,11 +7524,14 @@
         ]
       },
       {
+        "ids": [
+          3493316
+        ],
         "name": "Marra Style King Downtown View",
         "summary": "",
         "features": [],
         "view": "Town View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -7132,11 +7563,14 @@
         ]
       },
       {
+        "ids": [
+          1459805859
+        ],
         "name": "Room Assigned at Check In",
         "summary": "The spacious double room provides air conditioning, a wardrobe, as well as a private bathroom featuring a bath and a shower. The unit offers 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7168,11 +7602,14 @@
         ]
       },
       {
+        "ids": [
+          1460159459
+        ],
         "name": "Marra Style King City View",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -7203,6 +7640,9 @@
         ]
       },
       {
+        "ids": [
+          1459610920
+        ],
         "name": "Blanca Double Accessible",
         "summary": "2 Double Beds",
         "features": [
@@ -7241,11 +7681,14 @@
         ]
       },
       {
+        "ids": [
+          3493309
+        ],
         "name": "Alexandria Iconic King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -7276,11 +7719,14 @@
         ]
       },
       {
+        "ids": [
+          3493310
+        ],
         "name": "Alexandria Iconic Double",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7311,11 +7757,14 @@
         ]
       },
       {
+        "ids": [
+          3493311
+        ],
         "name": "Alexandria King Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7346,11 +7795,14 @@
         ]
       },
       {
+        "ids": [
+          3493313
+        ],
         "name": "Marra Style King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -7382,11 +7834,14 @@
         ]
       },
       {
+        "ids": [
+          3493318
+        ],
         "name": "Marra Style Queens Downtown View",
         "summary": "",
         "features": [],
         "view": "Town View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7416,11 +7871,14 @@
         ]
       },
       {
+        "ids": [
+          3493320
+        ],
         "name": "Marra Style Signature One Bedroom Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 68,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7451,11 +7909,14 @@
         ]
       },
       {
+        "ids": [
+          1460159460
+        ],
         "name": "Marra Style Queens City View",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7486,11 +7947,14 @@
         ]
       },
       {
+        "ids": [
+          3493319
+        ],
         "name": "Marra Style Signature Junior Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7520,11 +7984,14 @@
         ]
       },
       {
+        "ids": [
+          3493307
+        ],
         "name": "Alexandria King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 30,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -7554,11 +8021,14 @@
         ]
       },
       {
+        "ids": [
+          3493314
+        ],
         "name": "Marra Style Queens",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7588,11 +8058,14 @@
         ]
       },
       {
+        "ids": [
+          3493317
+        ],
         "name": "Marra Style Queens Mountain View",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7622,6 +8095,9 @@
         ]
       },
       {
+        "ids": [
+          3493300
+        ],
         "name": "Marra King",
         "summary": "",
         "features": [],
@@ -7658,11 +8134,14 @@
         ]
       },
       {
+        "ids": [
+          3493302
+        ],
         "name": "Blanca King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 30,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -7694,11 +8173,14 @@
         ]
       },
       {
+        "ids": [
+          3493303
+        ],
         "name": "Blanca Double",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 30,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7729,11 +8211,14 @@
         ]
       },
       {
+        "ids": [
+          3493304
+        ],
         "name": "Accessible Room Assigned at Check In",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 30,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -7763,11 +8248,14 @@
         ]
       },
       {
+        "ids": [
+          3493306
+        ],
         "name": "Blanca Junior Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 41,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -7797,6 +8285,9 @@
         ]
       },
       {
+        "ids": [
+          3493301
+        ],
         "name": "Marra Double",
         "summary": "",
         "features": [],
@@ -7833,6 +8324,9 @@
         ]
       },
       {
+        "ids": [
+          3493305
+        ],
         "name": "Marra Junior Suite",
         "summary": "The spacious suite offers air conditioning, a wardrobe, as well as a private bathroom boasting a bath and a shower. The unit has 1 bed.",
         "features": [],
@@ -7869,11 +8363,14 @@
         ]
       },
       {
+        "ids": [
+          3493308
+        ],
         "name": "Alexandria Deluxe King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 39,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -8117,6 +8614,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459482613
+        ],
         "name": "Lodge Queen Pool View",
         "summary": "2 Queen Beds",
         "features": [
@@ -8159,6 +8659,9 @@
         ]
       },
       {
+        "ids": [
+          1459482614
+        ],
         "name": "Lodge Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -8204,6 +8707,9 @@
         ]
       },
       {
+        "ids": [
+          1459978802
+        ],
         "name": "Lodge Queen ADA",
         "summary": "2 Queen Beds",
         "features": [
@@ -8248,11 +8754,14 @@
         ]
       },
       {
+        "ids": [
+          5377659
+        ],
         "name": "Lodge King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 35,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -8284,11 +8793,14 @@
         ]
       },
       {
+        "ids": [
+          5377660
+        ],
         "name": "Lodge 2 Queen Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 35,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -8320,11 +8832,14 @@
         ]
       },
       {
+        "ids": [
+          5377661
+        ],
         "name": "Lodge 2 Queens Beds ADA",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 35,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -8354,6 +8869,9 @@
         ]
       },
       {
+        "ids": [
+          5377662
+        ],
         "name": "Luxe Lodge Suite",
         "summary": "",
         "features": [],
@@ -8388,11 +8906,14 @@
         ]
       },
       {
+        "ids": [
+          5377663
+        ],
         "name": "Lodge King Pool View",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 35,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -8422,11 +8943,14 @@
         ]
       },
       {
+        "ids": [
+          5377664
+        ],
         "name": "Lodge 2 Queen Beds Pool View",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 35,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -8456,11 +8980,14 @@
         ]
       },
       {
+        "ids": [
+          5377665
+        ],
         "name": "Grand Terrace",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 35,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -8490,6 +9017,9 @@
         ]
       },
       {
+        "ids": [
+          5377666
+        ],
         "name": "Ranchero Suite",
         "summary": "",
         "features": [],
@@ -8740,6 +9270,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459541117
+        ],
         "name": "Strip View Bellagio Suite",
         "summary": "1 King Bed",
         "features": [
@@ -8785,6 +9318,9 @@
         ]
       },
       {
+        "ids": [
+          1459541118
+        ],
         "name": "Strip View Spa Two Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -8830,6 +9366,9 @@
         ]
       },
       {
+        "ids": [
+          1459541123
+        ],
         "name": "Fountain View Penthouse Suite",
         "summary": "1 King Bed",
         "features": [
@@ -8875,6 +9414,9 @@
         ]
       },
       {
+        "ids": [
+          1459541125
+        ],
         "name": "Resort Tower King",
         "summary": "1 King Bed",
         "features": [
@@ -8918,6 +9460,9 @@
         ]
       },
       {
+        "ids": [
+          1459541128
+        ],
         "name": "Tower Fountain View King",
         "summary": "1 King Bed",
         "features": [
@@ -8963,6 +9508,9 @@
         ]
       },
       {
+        "ids": [
+          1459541119
+        ],
         "name": "Two Bedroom Tower Suite",
         "summary": "1 King Bed and 2 Queen Beds",
         "features": [
@@ -9010,6 +9558,9 @@
         ]
       },
       {
+        "ids": [
+          1459541122
+        ],
         "name": "Strip View Penthouse Suite",
         "summary": "1 King Bed",
         "features": [
@@ -9054,6 +9605,9 @@
         ]
       },
       {
+        "ids": [
+          1459541129
+        ],
         "name": "Cypress Suite",
         "summary": "1 King Bed",
         "features": [
@@ -9097,6 +9651,9 @@
         ]
       },
       {
+        "ids": [
+          1459541116
+        ],
         "name": "Accessible Bellagio Suite",
         "summary": "1 King Bed",
         "features": [
@@ -9140,6 +9697,9 @@
         ]
       },
       {
+        "ids": [
+          1459541121
+        ],
         "name": "Accessible Premier Two Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -9184,6 +9744,9 @@
         ]
       },
       {
+        "ids": [
+          1459541126
+        ],
         "name": "Strip View Salone Suite",
         "summary": "1 King Bed",
         "features": [
@@ -9228,6 +9791,9 @@
         ]
       },
       {
+        "ids": [
+          1459541120
+        ],
         "name": "Accessible Premier King",
         "summary": "1 King Bed",
         "features": [
@@ -9272,6 +9838,9 @@
         ]
       },
       {
+        "ids": [
+          1459541124
+        ],
         "name": "Two Bedroom Bellagio Suite",
         "summary": "2 King Beds",
         "features": [
@@ -9316,6 +9885,9 @@
         ]
       },
       {
+        "ids": [
+          1459541127
+        ],
         "name": "Two Bedroom Grand Lakeview Suite",
         "summary": "2 King Beds",
         "features": [
@@ -9361,11 +9933,14 @@
         ]
       },
       {
+        "ids": [
+          4793402
+        ],
         "name": "Premier Two Queen",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -9395,6 +9970,9 @@
         ]
       },
       {
+        "ids": [
+          4792962
+        ],
         "name": "Salone Suite",
         "summary": "",
         "features": [],
@@ -9431,6 +10009,9 @@
         ]
       },
       {
+        "ids": [
+          4792963
+        ],
         "name": "Bellagio Suite",
         "summary": "",
         "features": [],
@@ -9465,6 +10046,9 @@
         ]
       },
       {
+        "ids": [
+          4792964
+        ],
         "name": "Penthouse Suite",
         "summary": "",
         "features": [],
@@ -9501,11 +10085,14 @@
         ]
       },
       {
+        "ids": [
+          4793401
+        ],
         "name": "Premier King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -9535,11 +10122,14 @@
         ]
       },
       {
+        "ids": [
+          4792961
+        ],
         "name": "Strip View Spa King",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -9571,11 +10161,14 @@
         ]
       },
       {
+        "ids": [
+          4793394
+        ],
         "name": "Spa Premier Two Queen",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -9607,11 +10200,14 @@
         ]
       },
       {
+        "ids": [
+          4793395
+        ],
         "name": "Fountain View King",
         "summary": "",
         "features": [],
         "view": "Fountain View",
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -9642,11 +10238,14 @@
         ]
       },
       {
+        "ids": [
+          4793396
+        ],
         "name": "Spa Premier King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -9678,6 +10277,9 @@
         ]
       },
       {
+        "ids": [
+          4793397
+        ],
         "name": "Bellagio Two Queen Suite",
         "summary": "",
         "features": [],
@@ -9712,6 +10314,9 @@
         ]
       },
       {
+        "ids": [
+          4793398
+        ],
         "name": "Two Bedroom Penthouse Suite",
         "summary": "",
         "features": [],
@@ -9748,11 +10353,14 @@
         ]
       },
       {
+        "ids": [
+          4793399
+        ],
         "name": "Restore Premier King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -9782,11 +10390,14 @@
         ]
       },
       {
+        "ids": [
+          4793400
+        ],
         "name": "Restore Premier Two Queen",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -10029,6 +10640,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          4792931
+        ],
         "name": "Sky Suites One Bedroom Penthouse – Strip View",
         "summary": "",
         "features": [],
@@ -10063,11 +10677,14 @@
         ]
       },
       {
+        "ids": [
+          4792932
+        ],
         "name": "Deluxe Strip View Two Queen",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -10098,11 +10715,14 @@
         ]
       },
       {
+        "ids": [
+          4792933
+        ],
         "name": "Deluxe Two Queen Room",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -10133,6 +10753,9 @@
         ]
       },
       {
+        "ids": [
+          4792934
+        ],
         "name": "Corner Suite Strip View",
         "summary": "This suite features a spa bath, bathrobe and seating area. This suite includes a private lounge check in as well as an in room tablet to customize your stay.",
         "features": [],
@@ -10169,11 +10792,14 @@
         ]
       },
       {
+        "ids": [
+          4792935
+        ],
         "name": "Restore Deluxe King Room",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -10204,6 +10830,9 @@
         ]
       },
       {
+        "ids": [
+          4792937
+        ],
         "name": "Corner Suite Panoramic View",
         "summary": "",
         "features": [],
@@ -10239,11 +10868,14 @@
         ]
       },
       {
+        "ids": [
+          4792936
+        ],
         "name": "Restore Deluxe Two Queen Room",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -10274,6 +10906,9 @@
         ]
       },
       {
+        "ids": [
+          1459541112
+        ],
         "name": "Executive Hospitality Tower Suite",
         "summary": "1 King Bed",
         "features": [
@@ -10318,6 +10953,9 @@
         ]
       },
       {
+        "ids": [
+          1459541111
+        ],
         "name": "Center Tower Suite - Strip View",
         "summary": "2 Queen Beds",
         "features": [
@@ -10363,6 +11001,9 @@
         ]
       },
       {
+        "ids": [
+          1459541108
+        ],
         "name": "Deluxe Two Queen Accessible Room",
         "summary": "2 Queen Beds",
         "features": [
@@ -10407,6 +11048,9 @@
         ]
       },
       {
+        "ids": [
+          1459541109
+        ],
         "name": "Tower Suite",
         "summary": "1 King Bed",
         "features": [
@@ -10451,6 +11095,9 @@
         ]
       },
       {
+        "ids": [
+          1459541110
+        ],
         "name": "Deluxe Room Accessible",
         "summary": "1 King Bed",
         "features": [
@@ -10494,11 +11141,14 @@
         ]
       },
       {
+        "ids": [
+          4792927
+        ],
         "name": "Deluxe King Room",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -10529,11 +11179,14 @@
         ]
       },
       {
+        "ids": [
+          4792928
+        ],
         "name": "Deluxe Strip View King Room",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -10564,6 +11217,9 @@
         ]
       },
       {
+        "ids": [
+          4792929
+        ],
         "name": "Corner Suite",
         "summary": "",
         "features": [],
@@ -10599,6 +11255,9 @@
         ]
       },
       {
+        "ids": [
+          4792930
+        ],
         "name": "Sky Suites One Bedroom – Mountain View",
         "summary": "",
         "features": [],
@@ -10843,11 +11502,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          4578400
+        ],
         "name": "Salon Corner View Suite",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 60,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -10877,6 +11539,9 @@
         ]
       },
       {
+        "ids": [
+          1459479160
+        ],
         "name": "Fantasy King Strip View",
         "summary": "1 King Bed",
         "features": [
@@ -10922,6 +11587,9 @@
         ]
       },
       {
+        "ids": [
+          1459479161
+        ],
         "name": "Fantasy Executive Two Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -10967,6 +11635,9 @@
         ]
       },
       {
+        "ids": [
+          1459479162
+        ],
         "name": "Fantasy 1 Bedroom Penthouse",
         "summary": "1 King Bed",
         "features": [
@@ -11010,6 +11681,9 @@
         ]
       },
       {
+        "ids": [
+          1459479159
+        ],
         "name": "Fantasy Executive Suite",
         "summary": "1 King Bed",
         "features": [
@@ -11054,6 +11728,9 @@
         ]
       },
       {
+        "ids": [
+          4578401
+        ],
         "name": "Grand Suite",
         "summary": "",
         "features": [],
@@ -11089,6 +11766,9 @@
         ]
       },
       {
+        "ids": [
+          1459991760
+        ],
         "name": "Fantasy Salon Suite",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -11137,6 +11817,9 @@
         ]
       },
       {
+        "ids": [
+          1459991761
+        ],
         "name": "Fantasy Salon Corner View Suite",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -11185,11 +11868,14 @@
         ]
       },
       {
+        "ids": [
+          4578391
+        ],
         "name": "Ivory Two Queens",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 41,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -11221,6 +11907,9 @@
         ]
       },
       {
+        "ids": [
+          4578392
+        ],
         "name": "Ivory Suite",
         "summary": "",
         "features": [],
@@ -11256,11 +11945,14 @@
         ]
       },
       {
+        "ids": [
+          4578393
+        ],
         "name": "Ivory King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 41,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -11292,11 +11984,14 @@
         ]
       },
       {
+        "ids": [
+          4578394
+        ],
         "name": "Fantasy King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -11327,11 +12022,14 @@
         ]
       },
       {
+        "ids": [
+          4578395
+        ],
         "name": "Fantasy Two Queens",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -11363,11 +12061,14 @@
         ]
       },
       {
+        "ids": [
+          4578396
+        ],
         "name": "Executive Two Queens",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -11399,6 +12100,9 @@
         ]
       },
       {
+        "ids": [
+          4578397
+        ],
         "name": "Executive Suite",
         "summary": "",
         "features": [],
@@ -11433,11 +12137,14 @@
         ]
       },
       {
+        "ids": [
+          4578398
+        ],
         "name": "Fantasy Corner King",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -11469,11 +12176,14 @@
         ]
       },
       {
+        "ids": [
+          4578399
+        ],
         "name": "Salon Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 60,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -11723,6 +12433,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          7682871
+        ],
         "name": "Premium Room, 2 Queen Beds, Non Smoking (Premium View)",
         "summary": "2 Queen Beds",
         "features": [
@@ -11767,6 +12480,9 @@
         ]
       },
       {
+        "ids": [
+          7682872
+        ],
         "name": "Premium Room, 2 Queen Beds, Smoking (Premium View)",
         "summary": "2 Queen Beds",
         "features": [
@@ -11811,6 +12527,9 @@
         ]
       },
       {
+        "ids": [
+          7682876
+        ],
         "name": "Premium Room, 1 King Bed, Non Smoking (Premium View)",
         "summary": "1 King Bed",
         "features": [
@@ -11855,6 +12574,9 @@
         ]
       },
       {
+        "ids": [
+          7682874
+        ],
         "name": "Premium Room, 1 King Bed, Smoking (Premium View)",
         "summary": "1 King Bed",
         "features": [
@@ -11899,6 +12621,9 @@
         ]
       },
       {
+        "ids": [
+          7682879
+        ],
         "name": "Premium 2 Queens - Non Smoking",
         "summary": "2 Queen Beds",
         "features": [
@@ -11943,6 +12668,9 @@
         ]
       },
       {
+        "ids": [
+          7682875
+        ],
         "name": "Premium King - Non Smoking",
         "summary": "1 King Bed",
         "features": [
@@ -11986,6 +12714,9 @@
         ]
       },
       {
+        "ids": [
+          7682877
+        ],
         "name": "Specialty 1 Bedroom Suite",
         "summary": "1 King Bed",
         "features": [
@@ -12031,6 +12762,9 @@
         ]
       },
       {
+        "ids": [
+          7682878
+        ],
         "name": "Junior Suite",
         "summary": "1 King Bed",
         "features": [
@@ -12076,6 +12810,9 @@
         ]
       },
       {
+        "ids": [
+          7682873
+        ],
         "name": "Professional Suite",
         "summary": "1 King Bed",
         "features": [
@@ -12348,6 +13085,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          6045512
+        ],
         "name": "Luxury Room, 2 Queen Beds",
         "summary": "2 Queen Beds",
         "features": [
@@ -12392,6 +13132,9 @@
         ]
       },
       {
+        "ids": [
+          6045513
+        ],
         "name": "Luxury King Suite Sphere View",
         "summary": "1 King Bed",
         "features": [
@@ -12436,6 +13179,9 @@
         ]
       },
       {
+        "ids": [
+          6045514
+        ],
         "name": "Luxury Two Queen Suite Sphere View",
         "summary": "2 Queen Beds",
         "features": [
@@ -12480,6 +13226,9 @@
         ]
       },
       {
+        "ids": [
+          6045518
+        ],
         "name": "Grand Room, 1 King Bed, City View",
         "summary": "1 King Bed",
         "features": [
@@ -12523,6 +13272,9 @@
         ]
       },
       {
+        "ids": [
+          6045521
+        ],
         "name": "Luxury Room, 1 King Bed, City View",
         "summary": "1 King Bed",
         "features": [
@@ -12565,6 +13317,9 @@
         ]
       },
       {
+        "ids": [
+          6045522
+        ],
         "name": "Luxury Room, 2 Queen Beds, City View",
         "summary": "2 Queen Beds",
         "features": [
@@ -12609,6 +13364,9 @@
         ]
       },
       {
+        "ids": [
+          6045524
+        ],
         "name": "Grand Room, 1 King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -12652,6 +13410,9 @@
         ]
       },
       {
+        "ids": [
+          6045525
+        ],
         "name": "Luxury Room, 1 King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -12694,6 +13455,9 @@
         ]
       },
       {
+        "ids": [
+          6045515
+        ],
         "name": "Newly Remodeled Grand One Bedroom King Suite City View",
         "summary": "1 King Bed",
         "features": [
@@ -12739,6 +13503,9 @@
         ]
       },
       {
+        "ids": [
+          6045510
+        ],
         "name": "Newly Remodeled Luxury Room, 2 Queen Beds, City View",
         "summary": "2 Queen Beds",
         "features": [
@@ -12782,6 +13549,9 @@
         ]
       },
       {
+        "ids": [
+          1459187315
+        ],
         "name": "Newly Remodeled Grand King Suite City View",
         "summary": "1 King Bed",
         "features": [
@@ -12827,6 +13597,9 @@
         ]
       },
       {
+        "ids": [
+          1459817119
+        ],
         "name": "Newly Remodeled Luxury King Suite Strip View",
         "summary": "1 King Bed",
         "features": [
@@ -12869,6 +13642,9 @@
         ]
       },
       {
+        "ids": [
+          1459817120
+        ],
         "name": "Newly Remodeled Luxury Two Queen Suite Strip View",
         "summary": "2 Queen Beds",
         "features": [
@@ -12911,6 +13687,9 @@
         ]
       },
       {
+        "ids": [
+          6045511
+        ],
         "name": "Grand Suite, 1 King Bed (Newly Remodeled, Prestige Club Lounge)",
         "summary": "1 King Bed",
         "features": [
@@ -12956,6 +13735,9 @@
         ]
       },
       {
+        "ids": [
+          6045526
+        ],
         "name": "Executive Suite",
         "summary": "1 King Bed",
         "features": [
@@ -13000,6 +13782,9 @@
         ]
       },
       {
+        "ids": [
+          6045516
+        ],
         "name": "Luxury Suite, 2 Queen Beds (Newly Remodeled, Prestige Club Lounge)",
         "summary": "2 Queen Beds",
         "features": [
@@ -13045,6 +13830,9 @@
         ]
       },
       {
+        "ids": [
+          6045527
+        ],
         "name": "Newly Remodeled Luxury Room, 1 King Bed, City View",
         "summary": "1 King Bed",
         "features": [
@@ -13088,6 +13876,9 @@
         ]
       },
       {
+        "ids": [
+          6045528
+        ],
         "name": "Newly Remodeled Luxury King Suite Sphere View",
         "summary": "1 King Bed",
         "features": [
@@ -13131,6 +13922,9 @@
         ]
       },
       {
+        "ids": [
+          6045517
+        ],
         "name": "Newly Remodeled Luxury Two Queen Suite Sphere View",
         "summary": "2 Queen Beds",
         "features": [
@@ -13174,6 +13968,9 @@
         ]
       },
       {
+        "ids": [
+          6045529
+        ],
         "name": "Newly Remodeled Luxury Room, 2 Queen Beds",
         "summary": "2 Queen Beds",
         "features": [
@@ -13217,6 +14014,9 @@
         ]
       },
       {
+        "ids": [
+          6045508
+        ],
         "name": "Newly Remodeled Luxury Room, 1 King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -13260,6 +14060,9 @@
         ]
       },
       {
+        "ids": [
+          6045519
+        ],
         "name": "Newly Remodeled Premium Room, 2 Queen Beds",
         "summary": "2 Queen Beds",
         "features": [
@@ -13303,6 +14106,9 @@
         ]
       },
       {
+        "ids": [
+          1459187317
+        ],
         "name": "Newly Remodeled Grand King Suite",
         "summary": "1 King Bed",
         "features": [
@@ -13347,6 +14153,9 @@
         ]
       },
       {
+        "ids": [
+          6045523
+        ],
         "name": "Newly Remodeled Premium Room, 2 Queen Beds (Prestige Club Lounge)",
         "summary": "2 Queen Beds",
         "features": [
@@ -13392,6 +14201,9 @@
         ]
       },
       {
+        "ids": [
+          6045509
+        ],
         "name": "Newly Remodeled Premium Room, 2 Queen Beds, City View",
         "summary": "2 Queen Beds",
         "features": [
@@ -13436,6 +14248,9 @@
         ]
       },
       {
+        "ids": [
+          6045520
+        ],
         "name": "Luxury Suite, 1 King Bed (Newly Remodeled, Prestige Club Lounge)",
         "summary": "1 King Bed",
         "features": [
@@ -13696,6 +14511,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459509835
+        ],
         "name": "Room, 2 Queen Beds, Refrigerator & Microwave (Shower Only)",
         "summary": "2 Queen Beds",
         "features": [
@@ -13736,6 +14554,9 @@
         ]
       },
       {
+        "ids": [
+          1459509837
+        ],
         "name": "Room, 1 King Bed, Non Smoking (Conference Suite)",
         "summary": "1 King Bed",
         "features": [
@@ -13781,6 +14602,9 @@
         ]
       },
       {
+        "ids": [
+          1459509836
+        ],
         "name": "Room, Multiple Beds, Refrigerator & Microwave",
         "summary": "2 Queen Beds and 1 Double Sofa Bed",
         "features": [
@@ -13829,11 +14653,14 @@
         ]
       },
       {
+        "ids": [
+          1281333
+        ],
         "name": "Non-Smoking Study with Sofa Bed",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -13869,11 +14696,14 @@
         ]
       },
       {
+        "ids": [
+          1281331
+        ],
         "name": "Queen Room with Two Queen Beds - Mobility and Hearing Access",
         "summary": "This room comes with microwave and mini fridge, refrigerator, microwave, keurig coffee maker, cell phone charger and in room safe.",
         "features": [],
         "view": null,
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -13905,6 +14735,9 @@
         ]
       },
       {
+        "ids": [
+          1459975558
+        ],
         "name": "Suite, 1 King Bed with Sofa bed, Non Smoking",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -13953,11 +14786,14 @@
         ]
       },
       {
+        "ids": [
+          1281330
+        ],
         "name": "Suite with Two Queen Beds and Sofa Bed - Non-Smoking",
         "summary": "This is not a suite. This is a standard room with (2) Queen beds and a sofa bed",
         "features": [],
         "view": null,
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 6,
         "beds": [
           {
@@ -13993,11 +14829,14 @@
         ]
       },
       {
+        "ids": [
+          1281332
+        ],
         "name": "King Room - Non-Smoking",
         "summary": "This king room comes with microwave and mini fridge,refrigerator, microwave, keurig coffee maker, cell phone charger and in room safe.",
         "features": [],
         "view": null,
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -14029,11 +14868,14 @@
         ]
       },
       {
+        "ids": [
+          1281334
+        ],
         "name": "Queen Room with Two Queen Beds - Non-Smoking",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14065,11 +14907,14 @@
         ]
       },
       {
+        "ids": [
+          1458969299
+        ],
         "name": "Queen Room with Two Queen Beds and Sofa Bed - Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 6,
         "beds": [
           {
@@ -14104,11 +14949,14 @@
         ]
       },
       {
+        "ids": [
+          1281335
+        ],
         "name": "King Room with Shower - Non-Smoking",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -14140,11 +14988,14 @@
         ]
       },
       {
+        "ids": [
+          1281326
+        ],
         "name": "King Room with Sofa Bed - Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14176,11 +15027,14 @@
         ]
       },
       {
+        "ids": [
+          1281327
+        ],
         "name": "King Room with Accessible Tub - Mobility and Hearing Access/Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -14212,11 +15066,14 @@
         ]
       },
       {
+        "ids": [
+          1281328
+        ],
         "name": "One-Bedroom King Suite - Non-Smoking",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 46,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14248,11 +15105,14 @@
         ]
       },
       {
+        "ids": [
+          1281329
+        ],
         "name": "Two Queen Beds - Non-Smoking",
         "summary": "This double room features air conditioning and a Flat screen TV,refrigerator, microwave, keurig coffee maker, cell phone charger and in room safe.",
         "features": [],
         "view": null,
-        "sqft": 33,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14501,6 +15361,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          3547129
+        ],
         "name": "Junior Studio Room",
         "summary": "",
         "features": [],
@@ -14535,11 +15398,14 @@
         ]
       },
       {
+        "ids": [
+          3547128
+        ],
         "name": "Deluxe Room",
         "summary": "This room features a 32-inch flat-screen TV with premium cable channels, ironing facilities, a clock radio, an in-room safe and bath amenities.",
         "features": [],
         "view": null,
-        "sqft": 30,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14573,11 +15439,14 @@
         ]
       },
       {
+        "ids": [
+          3547130
+        ],
         "name": "Luxe Room",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 30,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14612,11 +15481,14 @@
         ]
       },
       {
+        "ids": [
+          3547131
+        ],
         "name": "Deluxe Double Room",
         "summary": "This room features a 32-inch flat-screen TV with premium cable channels, ironing facilities, a clock radio, an in-room safe and bath amenities.",
         "features": [],
         "view": null,
-        "sqft": 30,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14840,11 +15712,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          4007821
+        ],
         "name": "Deluxe Room",
         "summary": "Featuring a cable HDTV, this air-conditioned room features an private bathroom complete with bath amenities.",
         "features": [],
         "view": null,
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14873,11 +15748,14 @@
         ]
       },
       {
+        "ids": [
+          4007822
+        ],
         "name": "Deluxe Double Room with City View",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -14906,11 +15784,14 @@
         ]
       },
       {
+        "ids": [
+          4007823
+        ],
         "name": "Premium King Room",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 31,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15160,6 +16041,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459367717
+        ],
         "name": "Encore Tower Suite King",
         "summary": "1 King Bed",
         "features": [
@@ -15203,6 +16087,9 @@
         ]
       },
       {
+        "ids": [
+          1459367714
+        ],
         "name": "Wynn Panoramic View Two Queens",
         "summary": "2 Queen Beds",
         "features": [
@@ -15246,6 +16133,9 @@
         ]
       },
       {
+        "ids": [
+          1459367715
+        ],
         "name": "Encore Tower Suite Parlor",
         "summary": "1 King Bed",
         "features": [
@@ -15289,6 +16179,9 @@
         ]
       },
       {
+        "ids": [
+          1459367716
+        ],
         "name": "Encore Tower Suite Salon",
         "summary": "1 King Bed",
         "features": [
@@ -15332,6 +16225,9 @@
         ]
       },
       {
+        "ids": [
+          1459367718
+        ],
         "name": "Encore Panoramic View King",
         "summary": "1 King Bed",
         "features": [
@@ -15375,11 +16271,14 @@
         ]
       },
       {
+        "ids": [
+          586774
+        ],
         "name": "Special Offer - Wynn Resort Queens - Resort Credit",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -15409,13 +16308,16 @@
         ]
       },
       {
+        "ids": [
+          586777
+        ],
         "name": "SPECIAL OFFER – Resort Two Queens Two (2) Complimentary Awakening Sapphire Show Tickets Offer",
         "summary": "",
         "features": [
           "The unit offers 2 beds. This room offers: - Complimentary Awakening Sapphire Show Tickets (available on specific dates)"
         ],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15445,11 +16347,14 @@
         ]
       },
       {
+        "ids": [
+          586766
+        ],
         "name": "Wynn Tower Suite King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15484,6 +16389,9 @@
         ]
       },
       {
+        "ids": [
+          586767
+        ],
         "name": "Wynn Tower Suite Parlor",
         "summary": "",
         "features": [],
@@ -15520,6 +16428,9 @@
         ]
       },
       {
+        "ids": [
+          586768
+        ],
         "name": "Wynn Tower Suite Salon",
         "summary": "",
         "features": [],
@@ -15556,11 +16467,14 @@
         ]
       },
       {
+        "ids": [
+          586769
+        ],
         "name": "Wynn Resort King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15591,11 +16505,14 @@
         ]
       },
       {
+        "ids": [
+          586770
+        ],
         "name": "Wynn Panoramic View King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 60,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15627,11 +16544,14 @@
         ]
       },
       {
+        "ids": [
+          586771
+        ],
         "name": "Wynn Resort Two Queens",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -15661,11 +16581,14 @@
         ]
       },
       {
+        "ids": [
+          586772
+        ],
         "name": "Wynn Resort Panoramic Two Queens",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 60,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -15695,11 +16618,14 @@
         ]
       },
       {
+        "ids": [
+          586773
+        ],
         "name": "Special Offer - Wynn Resort King - Resort Credit",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15730,11 +16656,14 @@
         ]
       },
       {
+        "ids": [
+          586775
+        ],
         "name": "SPECIAL OFFER – Resort King - Two (2) Complimentary Awakening Sapphire Show Tickets Offer",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15765,11 +16694,14 @@
         ]
       },
       {
+        "ids": [
+          586776
+        ],
         "name": "SPECIAL OFFER – Panoramic View King - Two (2) Complimentary Awakening Sapphire Show Tickets Offer",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15799,13 +16731,16 @@
         ]
       },
       {
+        "ids": [
+          586778
+        ],
         "name": "SPECIAL OFFER – Panoramic View Two Queens - Two (2) Complimentary Awakening Sapphire Show Tickets Offer",
         "summary": "",
         "features": [
           "The unit has 2 beds. This room offers: - Complimentary Awakening Sapphire Show Tickets (available on specific dates)"
         ],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15835,11 +16770,14 @@
         ]
       },
       {
+        "ids": [
+          586779
+        ],
         "name": "Special Offer - Wynn Panoramic View King - Resort Credit",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 60,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15871,11 +16809,14 @@
         ]
       },
       {
+        "ids": [
+          586780
+        ],
         "name": "Special Offer - Wynn Resort Panoramic Two Queens - Resort Credit",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 60,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -15905,11 +16846,14 @@
         ]
       },
       {
+        "ids": [
+          1459184847
+        ],
         "name": "Encore Resort King (Check-in at Encore)",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -15939,11 +16883,14 @@
         ]
       },
       {
+        "ids": [
+          1459184848
+        ],
         "name": "Encore Resort Two Queens (Check-in at Encore)",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -15973,11 +16920,14 @@
         ]
       },
       {
+        "ids": [
+          1459184849
+        ],
         "name": "Encore Resort King (Check-in at Encore) Special Offer - Resort Credit",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -16007,11 +16957,14 @@
         ]
       },
       {
+        "ids": [
+          1459798800
+        ],
         "name": "Wynn Resort King - Enjoy Daily Brunch for Two at the Buffet",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -16042,11 +16995,14 @@
         ]
       },
       {
+        "ids": [
+          1459798801
+        ],
         "name": "Wynn Resort Two Queens - Enjoy Daily Brunch for Two at the Buffet",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -16076,11 +17032,14 @@
         ]
       },
       {
+        "ids": [
+          1459798802
+        ],
         "name": "Wynn Panoramic View Two Queens - Enjoy Daily Brunch for Two at the Buffet",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -16110,11 +17069,14 @@
         ]
       },
       {
+        "ids": [
+          1459798803
+        ],
         "name": "Encore Resort King - Enjoy Daily Brunch for Two at the Buffet (Check-in at Encore)",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -16144,11 +17106,14 @@
         ]
       },
       {
+        "ids": [
+          1459798804
+        ],
         "name": "Encore Resort Two Queens - Enjoy Daily Brunch for Two at the Buffet (Check-in at Encore)",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -16178,11 +17143,14 @@
         ]
       },
       {
+        "ids": [
+          1459798805
+        ],
         "name": "Wynn Panoramic View King - Enjoy Daily Brunch for Two at the Buffet",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -16439,6 +17407,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1321490807
+        ],
         "name": "Suite, 2 Bedrooms, Kitchen",
         "summary": "1 King Bed, 2 Queen Beds and 1 Queen Sofa Bed",
         "features": [
@@ -16492,6 +17463,9 @@
         ]
       },
       {
+        "ids": [
+          1321490816
+        ],
         "name": "Studio, 1 Queen Bed, Accessible, Kitchenette (Hearing)",
         "summary": "1 Queen Bed",
         "features": [
@@ -16537,6 +17511,9 @@
         ]
       },
       {
+        "ids": [
+          1321490834
+        ],
         "name": "Suite, 1 Bedroom, Kitchen",
         "summary": "1 King Bed and 1 Queen Sofa Bed",
         "features": [
@@ -16586,6 +17563,9 @@
         ]
       },
       {
+        "ids": [
+          1321490789
+        ],
         "name": "Suite, 1 Bedroom, Accessible, Kitchen (Hearing)",
         "summary": "1 King Bed and 1 Queen Sofa Bed",
         "features": [
@@ -16635,6 +17615,9 @@
         ]
       },
       {
+        "ids": [
+          1321490739
+        ],
         "name": "Studio, 1 Queen Bed, Accessible, Kitchenette (Bathtub)",
         "summary": "1 Queen Bed",
         "features": [
@@ -16680,6 +17663,9 @@
         ]
       },
       {
+        "ids": [
+          1321490740
+        ],
         "name": "Suite, 1 King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -16725,6 +17711,9 @@
         ]
       },
       {
+        "ids": [
+          1321490801
+        ],
         "name": "Studio, 1 Queen Bed, Accessible, Kitchenette (Mobility & Hearing, Bathtub)",
         "summary": "1 Queen Bed",
         "features": [
@@ -16770,6 +17759,9 @@
         ]
       },
       {
+        "ids": [
+          1321490837
+        ],
         "name": "Suite, 1 Bedroom, Accessible, Kitchen (Mobility & Hearing, Bathtub)",
         "summary": "1 King Bed and 1 Queen Sofa Bed",
         "features": [
@@ -16819,6 +17811,9 @@
         ]
       },
       {
+        "ids": [
+          1321490838
+        ],
         "name": "Studio, 2 Queen Beds, Kitchenette",
         "summary": "2 Queen Beds",
         "features": [
@@ -16864,6 +17859,9 @@
         ]
       },
       {
+        "ids": [
+          1321490791
+        ],
         "name": "Suite, 1 Bedroom (Hearing)",
         "summary": "1 King Bed",
         "features": [
@@ -16909,6 +17907,9 @@
         ]
       },
       {
+        "ids": [
+          1321490840
+        ],
         "name": "Suite, 1 Bedroom, Accessible, Kitchen (Roll-in Shower)",
         "summary": "1 King Bed and 1 Queen Sofa Bed",
         "features": [
@@ -17168,6 +18169,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1272003
+        ],
         "name": "Modern Mountain View King",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -17186,11 +18190,14 @@
         ]
       },
       {
+        "ids": [
+          1271995
+        ],
         "name": "Luxury Mountain View King",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -17220,11 +18227,14 @@
         ]
       },
       {
+        "ids": [
+          1271996
+        ],
         "name": "Luxury Strip View King",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -17254,11 +18264,14 @@
         ]
       },
       {
+        "ids": [
+          1271997
+        ],
         "name": "Luxury Mountain View 2 Queen",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -17288,11 +18301,14 @@
         ]
       },
       {
+        "ids": [
+          1272001
+        ],
         "name": "Luxury Strip View 2 Queen",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -17319,6 +18335,9 @@
         ]
       },
       {
+        "ids": [
+          1272002
+        ],
         "name": "Modern Mountain View 2 Queen",
         "summary": "The unit has 2 beds.",
         "features": [],
@@ -17337,6 +18356,9 @@
         ]
       },
       {
+        "ids": [
+          1272004
+        ],
         "name": "Modern Strip View 2 Queen",
         "summary": "The unit has 2 beds.",
         "features": [],
@@ -17355,6 +18377,9 @@
         ]
       },
       {
+        "ids": [
+          1272005
+        ],
         "name": "Modern Strip View King",
         "summary": "The unit has 1 bed.",
         "features": [],
@@ -17373,6 +18398,9 @@
         ]
       },
       {
+        "ids": [
+          1272006
+        ],
         "name": "Deluxe Queen Room",
         "summary": "This air-conditioned double room features a mini-bar and a wardrobe. The unit offers 2 beds.",
         "features": [],
@@ -17396,6 +18424,9 @@
         ]
       },
       {
+        "ids": [
+          1272007
+        ],
         "name": "Deluxe King Room",
         "summary": "The double room features air conditioning, a mini-bar and a wardrobe. The unit has 1 bed.",
         "features": [],
@@ -17632,11 +18663,16 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          2323032,
+          2323033,
+          2323034
+        ],
         "name": "STUDIO 1 QUEEN MURPHY BED WITH BALCONY",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -17668,6 +18704,10 @@
         ]
       },
       {
+        "ids": [
+          1459514166,
+          1459514167
+        ],
         "name": "1 BEDROOM 1 KING SUITE ROLL IN SHOWER",
         "summary": "1 King Bed",
         "features": [
@@ -17713,6 +18753,9 @@
         ]
       },
       {
+        "ids": [
+          1459514168
+        ],
         "name": "1 BEDROOM ACCESSIBLE WITH BATHTUB",
         "summary": "1 King Bed",
         "features": [
@@ -17758,6 +18801,9 @@
         ]
       },
       {
+        "ids": [
+          1459514165
+        ],
         "name": "1 BEDROOM 1 KING SUITE AND SOFABED",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -17807,6 +18853,9 @@
         ]
       },
       {
+        "ids": [
+          1459514164
+        ],
         "name": "1 BEDROOM 1 KG DLX SUITE HEARING ACC RI SHWR",
         "summary": "1 King Bed",
         "features": [
@@ -17852,6 +18901,9 @@
         ]
       },
       {
+        "ids": [
+          1459987174
+        ],
         "name": "1 BEDROOM 1 KING SUITE WITH SOFABED",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -17901,11 +18953,14 @@
         ]
       },
       {
+        "ids": [
+          2323026
+        ],
         "name": "One-Bedroom King Suite with Sofa Bed",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -17941,11 +18996,15 @@
         ]
       },
       {
+        "ids": [
+          2323019,
+          2323022
+        ],
         "name": "1 BEDROOM 1 KING DELUXE SUITE ACCESSIBLE TUB",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -17981,11 +19040,14 @@
         ]
       },
       {
+        "ids": [
+          2323020
+        ],
         "name": "1 BEDROOM 1 KING DELUXE SUITE WITH SOFABED",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18021,11 +19083,14 @@
         ]
       },
       {
+        "ids": [
+          2323021
+        ],
         "name": "1 BEDROOM 1 KING DELUXE SUITE AND SOFABED",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18061,11 +19126,14 @@
         ]
       },
       {
+        "ids": [
+          2323023
+        ],
         "name": "1 BEDROOM 1 KING DELUXE SUITE ROLL IN SHOWER",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18101,11 +19169,14 @@
         ]
       },
       {
+        "ids": [
+          2323024
+        ],
         "name": "1 BEDROOM 1 KING SUITE ACCESSIBLE TUB",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18141,11 +19212,15 @@
         ]
       },
       {
+        "ids": [
+          2323025,
+          2323028
+        ],
         "name": "One-Bedroom King Suite with Roll-In Shower",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18181,11 +19256,14 @@
         ]
       },
       {
+        "ids": [
+          2323027
+        ],
         "name": "One-Bedroom King Suite - Sofa Bed",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18221,11 +19299,16 @@
         ]
       },
       {
+        "ids": [
+          2323029,
+          2323030,
+          2323031
+        ],
         "name": "STUDIO 1 QUEEN WITH BALCONY",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -18257,6 +19340,9 @@
         ]
       },
       {
+        "ids": [
+          2323038
+        ],
         "name": "2 BEDROOM 1 KING 1 QUEEN DELUXE SUITE BALCONY",
         "summary": "",
         "features": [],
@@ -18297,6 +19383,9 @@
         ]
       },
       {
+        "ids": [
+          2323039
+        ],
         "name": "2 BEDROOM 1 KING 1 QUEEN SUITE WITH BALCONY",
         "summary": "",
         "features": [],
@@ -18528,11 +19617,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1727941
+        ],
         "name": "Terrace Studio Fountain View",
         "summary": "A seating area with a flat-screen TV, a desk, a terrace and a private bathroom are available in this spacious double room. The unit has 1 bed.",
         "features": [],
         "view": "Fountain View",
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -18562,11 +19654,14 @@
         ]
       },
       {
+        "ids": [
+          1460199617
+        ],
         "name": "Terrace Studio Two Queen Fountain View",
         "summary": "A seating area with a flat-screen TV, a desk, a terrace and a private bathroom are offered in this spacious studio. The unit has 2 beds.",
         "features": [],
         "view": "Fountain View",
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18597,11 +19692,14 @@
         ]
       },
       {
+        "ids": [
+          1727922
+        ],
         "name": "Terrace Studio",
         "summary": "A seating area with a flat-screen TV, a desk, a terrace and a private bathroom are offered in this spacious studio. The unit has 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -18631,11 +19729,14 @@
         ]
       },
       {
+        "ids": [
+          1727942
+        ],
         "name": "Terrace Studio Two Queen",
         "summary": "A seating area with a flat-screen TV, a desk, a terrace and a private bathroom are featured in this spacious quadruple room. The unit offers 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18665,6 +19766,9 @@
         ]
       },
       {
+        "ids": [
+          1727945
+        ],
         "name": "Terrace Suite Fountain View",
         "summary": "",
         "features": [],
@@ -18699,6 +19803,9 @@
         ]
       },
       {
+        "ids": [
+          1459236087
+        ],
         "name": "Bungalow",
         "summary": "A seating area with a flat-screen TV, a desk, a terrace and a private bathroom are provided in this spacious double room. The unit offers 1 bed.",
         "features": [],
@@ -18733,6 +19840,9 @@
         ]
       },
       {
+        "ids": [
+          1459236089
+        ],
         "name": "Two Bedroom City Suite",
         "summary": "",
         "features": [],
@@ -18772,11 +19882,14 @@
         ]
       },
       {
+        "ids": [
+          1727940
+        ],
         "name": "City Room",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 43,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -18806,11 +19919,14 @@
         ]
       },
       {
+        "ids": [
+          1727943
+        ],
         "name": "Terrace One Bedroom Suite",
         "summary": "A seating area with a flat-screen TV, a desk, a terrace and a private bathroom are available in this spacious double room. The unit has 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 57,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -18840,11 +19956,14 @@
         ]
       },
       {
+        "ids": [
+          1727944
+        ],
         "name": "Terrace One Bedroom Suite Fountain View",
         "summary": "A seating area with a flat-screen TV, a desk, a terrace and a private bathroom are available in this spacious double room. The unit has 1 bed.",
         "features": [],
         "view": "Fountain View",
-        "sqft": 57,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -18874,6 +19993,9 @@
         ]
       },
       {
+        "ids": [
+          1727946
+        ],
         "name": "Wraparound Terrace Suite",
         "summary": "",
         "features": [],
@@ -18908,11 +20030,14 @@
         ]
       },
       {
+        "ids": [
+          1459236085
+        ],
         "name": "City King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 43,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -18942,6 +20067,9 @@
         ]
       },
       {
+        "ids": [
+          1459236086
+        ],
         "name": "Restore Lanai Suite",
         "summary": "",
         "features": [],
@@ -18977,6 +20105,9 @@
         ]
       },
       {
+        "ids": [
+          1459236088
+        ],
         "name": "Two Bedroom Chelsea Penthouse",
         "summary": "",
         "features": [],
@@ -19021,6 +20152,9 @@
         ]
       },
       {
+        "ids": [
+          1459991658
+        ],
         "name": "Terrace Studio Two Queen Beds Fountain View",
         "summary": "2 Queen Beds",
         "features": [
@@ -19065,6 +20199,9 @@
         ]
       },
       {
+        "ids": [
+          1459991659
+        ],
         "name": "Terrace Studio Two Queen Beds",
         "summary": "2 Queen Beds",
         "features": [
@@ -19321,11 +20458,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          3469720
+        ],
         "name": "Deluxe Queen",
         "summary": "The spacious double room offers air conditioning, a tea and coffee maker, as well as a private bathroom boasting a bath and a hairdryer. The unit has 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 42,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -19360,11 +20500,14 @@
         ]
       },
       {
+        "ids": [
+          3469718
+        ],
         "name": "Parlor Queen",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 42,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -19400,11 +20543,14 @@
         ]
       },
       {
+        "ids": [
+          3469719
+        ],
         "name": "Parlor Double",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -19436,11 +20582,14 @@
         ]
       },
       {
+        "ids": [
+          3469722
+        ],
         "name": "Deluxe Double Double",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -19475,11 +20624,14 @@
         ]
       },
       {
+        "ids": [
+          3469726
+        ],
         "name": "Extended Stay Crown Loft",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -19508,6 +20660,9 @@
         ]
       },
       {
+        "ids": [
+          3469727
+        ],
         "name": "Extended Stay Majestic Suite",
         "summary": "",
         "features": [],
@@ -19542,6 +20697,9 @@
         ]
       },
       {
+        "ids": [
+          3469728
+        ],
         "name": "Extended Stay Two-Bedroom Suite",
         "summary": "",
         "features": [],
@@ -19577,11 +20735,14 @@
         ]
       },
       {
+        "ids": [
+          3469723
+        ],
         "name": "Extended Stay Parlor Queen",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 42,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -19611,11 +20772,14 @@
         ]
       },
       {
+        "ids": [
+          1458948922
+        ],
         "name": "Standard Double Suite",
         "summary": "The unit offers 3 beds.",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -19632,6 +20796,9 @@
         ]
       },
       {
+        "ids": [
+          1459518170
+        ],
         "name": "Deluxe Room",
         "summary": "2 Double Beds and 1 Double Sofa Bed",
         "features": [
@@ -19671,6 +20838,9 @@
         ]
       },
       {
+        "ids": [
+          1459518163
+        ],
         "name": "Studio Deluxe Queen Suite",
         "summary": "1 Queen Bed and 1 Double Sofa Bed",
         "features": [
@@ -19718,6 +20888,9 @@
         ]
       },
       {
+        "ids": [
+          1459518165
+        ],
         "name": "Studio 2 Double Beds",
         "summary": "2 Double Beds",
         "features": [
@@ -19762,6 +20935,9 @@
         ]
       },
       {
+        "ids": [
+          1459518166
+        ],
         "name": "Regal 2 Story 2 BR Suite 1 Queen",
         "summary": "1 King Bed and 1 Queen Bed",
         "features": [
@@ -19808,6 +20984,9 @@
         ]
       },
       {
+        "ids": [
+          1459518167
+        ],
         "name": "Majestic 1 Bedroom King Suite",
         "summary": "1 King Bed",
         "features": [
@@ -19851,6 +21030,9 @@
         ]
       },
       {
+        "ids": [
+          1459518168
+        ],
         "name": "Pet Friendly Monarch 2 Double Beds",
         "summary": "2 Double Beds and 1 Double Sofa Bed",
         "features": [
@@ -19899,11 +21081,15 @@
         ]
       },
       {
+        "ids": [
+          1458948923,
+          1458948921
+        ],
         "name": "King Suite",
         "summary": "The unit has 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -19920,6 +21106,9 @@
         ]
       },
       {
+        "ids": [
+          1459518164
+        ],
         "name": "Monarch King Suite",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -19968,6 +21157,9 @@
         ]
       },
       {
+        "ids": [
+          1459518172
+        ],
         "name": "Monarch Deluxe King Suite",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -20016,6 +21208,9 @@
         ]
       },
       {
+        "ids": [
+          1459518162
+        ],
         "name": "Double Room",
         "summary": "2 Double Beds",
         "features": [
@@ -20056,6 +21251,9 @@
         ]
       },
       {
+        "ids": [
+          1459518169
+        ],
         "name": "Pet Friendly- Monarch One bedroom suite",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -20103,6 +21301,9 @@
         ]
       },
       {
+        "ids": [
+          1459518171
+        ],
         "name": "Studio Queen Suite",
         "summary": "1 Queen Bed and 1 Double Sofa Bed",
         "features": [
@@ -20150,6 +21351,9 @@
         ]
       },
       {
+        "ids": [
+          1458948925
+        ],
         "name": "Two-Bedroom Suite",
         "summary": "The unit offers 2 beds.",
         "features": [],
@@ -20172,11 +21376,14 @@
         ]
       },
       {
+        "ids": [
+          3469721
+        ],
         "name": "Deluxe King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -20212,6 +21419,9 @@
         ]
       },
       {
+        "ids": [
+          1458948924
+        ],
         "name": "Executive Suite",
         "summary": "The unit offers 1 bed.",
         "features": [],
@@ -20233,6 +21443,9 @@
         ]
       },
       {
+        "ids": [
+          1459991754
+        ],
         "name": "Crown 2 Story Suite with Loft King bed (Extended)",
         "summary": "1 King Bed",
         "features": [
@@ -20276,6 +21489,9 @@
         ]
       },
       {
+        "ids": [
+          1459991755
+        ],
         "name": "Crown 2 Story Suite with Loft King bed",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -20323,6 +21539,9 @@
         ]
       },
       {
+        "ids": [
+          1459991756
+        ],
         "name": "Monarch 2 Double Beds",
         "summary": "2 Double Beds and 1 Double Sofa Bed",
         "features": [
@@ -20371,6 +21590,9 @@
         ]
       },
       {
+        "ids": [
+          1459991757
+        ],
         "name": "Studio Suite Queen Bed (Extended)",
         "summary": "1 Queen Bed",
         "features": [
@@ -20414,11 +21636,14 @@
         ]
       },
       {
+        "ids": [
+          3469716
+        ],
         "name": "Monarch Double",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -20453,11 +21678,14 @@
         ]
       },
       {
+        "ids": [
+          3469717
+        ],
         "name": "King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -20491,11 +21719,14 @@
         ]
       },
       {
+        "ids": [
+          3469724
+        ],
         "name": "Extended Stay King Bed Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -20524,11 +21755,14 @@
         ]
       },
       {
+        "ids": [
+          3469725
+        ],
         "name": "Extended Stay 2 Double Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 58,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -20765,6 +21999,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459525095
+        ],
         "name": "Deluxe Condo, 1 Bedroom",
         "summary": "1 King Bed",
         "features": [
@@ -20809,6 +22046,9 @@
         ]
       },
       {
+        "ids": [
+          1460003538
+        ],
         "name": "Deluxe Apartment, 1 Bedroom",
         "summary": "1 King Bed",
         "features": [
@@ -20849,6 +22089,9 @@
         ]
       },
       {
+        "ids": [
+          1460003539
+        ],
         "name": "Deluxe Apartment, 2 Bedrooms",
         "summary": "1 King Bed and 1 Queen Bed",
         "features": [
@@ -20898,6 +22141,9 @@
         ]
       },
       {
+        "ids": [
+          3505905
+        ],
         "name": "One-Bedroom Unit",
         "summary": "This unit contains a fully equipped kitchen, furnished living room and dining room, furnished balconies or patios, and all linens and bath towels are provided.",
         "features": [],
@@ -20934,6 +22180,9 @@
         ]
       },
       {
+        "ids": [
+          3505906
+        ],
         "name": "Two-Bedroom Unit",
         "summary": "This unit contains a fully equipped kitchen, furnished living room and dining room, furnished balconies or patios, and all linens and bath towels are provided.",
         "features": [],
@@ -21180,6 +22429,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459605401
+        ],
         "name": "One Bedroom Parlor Suite",
         "summary": "1 King Bed",
         "features": [
@@ -21223,11 +22475,14 @@
         ]
       },
       {
+        "ids": [
+          3159273
+        ],
         "name": "Carson Tower Deluxe King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 34,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -21255,6 +22510,9 @@
         ]
       },
       {
+        "ids": [
+          1459991997
+        ],
         "name": "Gold Tower Deluxe Two Beds",
         "summary": "2 Double Beds",
         "features": [
@@ -21296,11 +22554,14 @@
         ]
       },
       {
+        "ids": [
+          3159274
+        ],
         "name": "Carson Tower Deluxe with Two Double Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 34,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -21328,11 +22589,14 @@
         ]
       },
       {
+        "ids": [
+          3159268
+        ],
         "name": "Run of House",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 34,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -21366,11 +22630,14 @@
         ]
       },
       {
+        "ids": [
+          3159272
+        ],
         "name": "Gold Tower Deluxe with Two Double Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 35,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -21398,6 +22665,9 @@
         ]
       },
       {
+        "ids": [
+          3159275
+        ],
         "name": "One Bedroom Spa Suite",
         "summary": "This suite features a sofa, seating area and hot tub. Please note: The theme and decor varies and cannot be guaranteed.",
         "features": [],
@@ -21433,11 +22703,14 @@
         ]
       },
       {
+        "ids": [
+          3159269
+        ],
         "name": "Rush Tower King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 41,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -21465,11 +22738,14 @@
         ]
       },
       {
+        "ids": [
+          3159270
+        ],
         "name": "Rush Tower Corner Suite",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 57,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -21497,11 +22773,14 @@
         ]
       },
       {
+        "ids": [
+          3159271
+        ],
         "name": "Gold Tower Deluxe King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 35,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -21755,6 +23034,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          7697989
+        ],
         "name": "Resort Accessible King",
         "summary": "1 King Bed",
         "features": [
@@ -21798,6 +23080,9 @@
         ]
       },
       {
+        "ids": [
+          7697997
+        ],
         "name": "W Premier Two Queen Suite",
         "summary": "2 Queen Beds",
         "features": [
@@ -21841,6 +23126,9 @@
         ]
       },
       {
+        "ids": [
+          7697995
+        ],
         "name": "Resort Two Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -21885,6 +23173,9 @@
         ]
       },
       {
+        "ids": [
+          7697952
+        ],
         "name": "Panoramic Two Bedroom Suite -King",
         "summary": "2 King Beds",
         "features": [
@@ -21929,6 +23220,9 @@
         ]
       },
       {
+        "ids": [
+          7697988
+        ],
         "name": "Resort Two Queen Strip View",
         "summary": "2 Queen Beds",
         "features": [
@@ -21973,6 +23267,9 @@
         ]
       },
       {
+        "ids": [
+          7697990
+        ],
         "name": "Reef Suite",
         "summary": "1 King Bed",
         "features": [
@@ -22017,6 +23314,9 @@
         ]
       },
       {
+        "ids": [
+          7697998
+        ],
         "name": "W Premier King Suite",
         "summary": "1 King Bed",
         "features": [
@@ -22060,6 +23360,9 @@
         ]
       },
       {
+        "ids": [
+          7697950
+        ],
         "name": "Resort King",
         "summary": "1 King Bed",
         "features": [
@@ -22104,6 +23407,9 @@
         ]
       },
       {
+        "ids": [
+          7697951
+        ],
         "name": "One Bedroom Penthouse Sky View Suite",
         "summary": "1 King Bed",
         "features": [
@@ -22147,6 +23453,9 @@
         ]
       },
       {
+        "ids": [
+          7697993
+        ],
         "name": "Executive King",
         "summary": "1 King Bed",
         "features": [
@@ -22190,6 +23499,9 @@
         ]
       },
       {
+        "ids": [
+          7697996
+        ],
         "name": "Resort King Strip View",
         "summary": "1 King Bed",
         "features": [
@@ -22234,6 +23546,9 @@
         ]
       },
       {
+        "ids": [
+          7697994
+        ],
         "name": "Resort Accessible Two Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -22277,6 +23592,9 @@
         ]
       },
       {
+        "ids": [
+          7697999
+        ],
         "name": "Elite Suite",
         "summary": "1 King Bed and 1 Queen Sofa Bed",
         "features": [
@@ -22324,6 +23642,9 @@
         ]
       },
       {
+        "ids": [
+          7697991
+        ],
         "name": "Restore Resort King",
         "summary": "1 King Bed",
         "features": [
@@ -22367,6 +23688,9 @@
         ]
       },
       {
+        "ids": [
+          7697992
+        ],
         "name": "Restore Resort Two Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -22624,11 +23948,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          2339535
+        ],
         "name": "Junior Suite, 1 King, Sofa bed",
         "summary": "The spacious double room provides air conditioning, a seating area, as well as a private bathroom featuring a bath and a shower. The unit offers 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 49,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -22656,6 +23983,9 @@
         ]
       },
       {
+        "ids": [
+          1459516833
+        ],
         "name": "Room, 2 Double Beds, Lake View (Mobility Accessible, Tub)",
         "summary": "2 Double Beds",
         "features": [
@@ -22697,6 +24027,9 @@
         ]
       },
       {
+        "ids": [
+          1459516834
+        ],
         "name": "Room, Lake View",
         "summary": "1 Double Sofa Bed",
         "features": [
@@ -22738,6 +24071,9 @@
         ]
       },
       {
+        "ids": [
+          1459516835
+        ],
         "name": "Room, 2 Double Beds (Mobility Accessible, Roll-In Shower)",
         "summary": "2 Double Beds",
         "features": [
@@ -22779,11 +24115,14 @@
         ]
       },
       {
+        "ids": [
+          2339531
+        ],
         "name": "Hospitality, Parlor, Sofa bed, Lake view",
         "summary": "",
         "features": [],
         "view": "Lake View",
-        "sqft": 49,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -22815,11 +24154,14 @@
         ]
       },
       {
+        "ids": [
+          2339532
+        ],
         "name": "1 KING LAKE VIEW",
         "summary": "",
         "features": [],
         "view": "Lake View",
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -22851,11 +24193,14 @@
         ]
       },
       {
+        "ids": [
+          2339534
+        ],
         "name": "2 Double, Pool view",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -22885,11 +24230,14 @@
         ]
       },
       {
+        "ids": [
+          2339537
+        ],
         "name": "1 King, Pool View",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -22919,11 +24267,14 @@
         ]
       },
       {
+        "ids": [
+          2339538
+        ],
         "name": "Guest Room, 1 King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -22953,6 +24304,9 @@
         ]
       },
       {
+        "ids": [
+          2339541
+        ],
         "name": "Westin Grand, Suite, 1 King, Balcony",
         "summary": "The spacious double room offers air conditioning, a tea and coffee maker, as well as a private bathroom featuring a bath and a shower. The unit offers 1 bed.",
         "features": [],
@@ -22986,6 +24340,9 @@
         ]
       },
       {
+        "ids": [
+          2339533
+        ],
         "name": "Presidential Suite, 1 King, Sofa bed",
         "summary": "",
         "features": [],
@@ -23024,6 +24381,9 @@
         ]
       },
       {
+        "ids": [
+          2339539
+        ],
         "name": "Casbah, 1 Bedroom Villa, 1 King, Sofa bed, Pool view",
         "summary": "The spacious double room offers air conditioning, a seating area, as well as a private bathroom boasting a bath and a shower. The unit has 1 bed.",
         "features": [],
@@ -23060,11 +24420,14 @@
         ]
       },
       {
+        "ids": [
+          2339540
+        ],
         "name": "Guest room, 2 Double",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -23095,6 +24458,9 @@
         ]
       },
       {
+        "ids": [
+          1459990909
+        ],
         "name": "Villa, 1 Bedroom, Pool View",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -23144,11 +24510,14 @@
         ]
       },
       {
+        "ids": [
+          2339536
+        ],
         "name": "2 Double, Lake view",
         "summary": "The spacious double room offers air conditioning, a carpeted floor, as well as a private bathroom featuring a bath and a shower. The unit offers 2 beds.",
         "features": [],
         "view": "Lake View",
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -23178,6 +24547,9 @@
         ]
       },
       {
+        "ids": [
+          2339542
+        ],
         "name": "1 Bedroom Suite, 1 King, Sofa bed",
         "summary": "",
         "features": [],
@@ -23214,11 +24586,14 @@
         ]
       },
       {
+        "ids": [
+          2339543
+        ],
         "name": "King Room with Pool View and Roll-in Shower - Mobility Accessible",
         "summary": "The unit has 1 bed.",
         "features": [],
         "view": "Pool View",
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -23235,11 +24610,14 @@
         ]
       },
       {
+        "ids": [
+          2339544
+        ],
         "name": "King Room with Lake View and Roll-in Shower - Mobility Accessible",
         "summary": "The unit offers 1 bed.",
         "features": [],
         "view": "Lake View",
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -23472,11 +24850,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          4795584
+        ],
         "name": "Deluxe King Room with Mountain View",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -23507,11 +24888,14 @@
         ]
       },
       {
+        "ids": [
+          4795585
+        ],
         "name": "Deluxe Room Queen Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -23541,11 +24925,14 @@
         ]
       },
       {
+        "ids": [
+          4795586
+        ],
         "name": "Deluxe Accessible Room",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -23575,11 +24962,14 @@
         ]
       },
       {
+        "ids": [
+          4795588
+        ],
         "name": "Strip View Accessible Room with roll-in shower",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -23610,6 +25000,9 @@
         ]
       },
       {
+        "ids": [
+          4795604
+        ],
         "name": "One-Bedroom Suite with Stadium View",
         "summary": "",
         "features": [],
@@ -23646,11 +25039,14 @@
         ]
       },
       {
+        "ids": [
+          4795587
+        ],
         "name": "Deluxe Accessible Room with Roll-In Shower",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -23680,11 +25076,14 @@
         ]
       },
       {
+        "ids": [
+          4795589
+        ],
         "name": "King Room with Strip View",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -23715,6 +25114,9 @@
         ]
       },
       {
+        "ids": [
+          4795595
+        ],
         "name": "Stadium View One-Bedroom Suite Queen Beds",
         "summary": "",
         "features": [],
@@ -23751,6 +25153,9 @@
         ]
       },
       {
+        "ids": [
+          4795603
+        ],
         "name": "Stadium View Executive Suite",
         "summary": "",
         "features": [],
@@ -23786,6 +25191,9 @@
         ]
       },
       {
+        "ids": [
+          1459480487
+        ],
         "name": "Panoramic Suite (Sunrise View)",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -23834,6 +25242,9 @@
         ]
       },
       {
+        "ids": [
+          1459480488
+        ],
         "name": "Premier Suite (Strip View)",
         "summary": "1 King Bed and 1 Double Sofa Bed",
         "features": [
@@ -23881,6 +25292,9 @@
         ]
       },
       {
+        "ids": [
+          4795607
+        ],
         "name": "Premier Panoramic Suite - Stadium View Accessible",
         "summary": "",
         "features": [],
@@ -23917,6 +25331,9 @@
         ]
       },
       {
+        "ids": [
+          4795606
+        ],
         "name": "Premier Panoramic Suite - Stadium View",
         "summary": "",
         "features": [],
@@ -23953,6 +25370,9 @@
         ]
       },
       {
+        "ids": [
+          4795605
+        ],
         "name": "One-Bedroom Suite with Stadium View - Disability Access",
         "summary": "",
         "features": [],
@@ -23989,6 +25409,9 @@
         ]
       },
       {
+        "ids": [
+          4795608
+        ],
         "name": "Penthouse Suite King",
         "summary": "The unit has 1 bed.",
         "features": [],
@@ -24011,11 +25434,14 @@
         ]
       },
       {
+        "ids": [
+          4795581
+        ],
         "name": "Superior King Room with Valley View",
         "summary": "",
         "features": [],
         "view": "Valley View",
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -24045,11 +25471,14 @@
         ]
       },
       {
+        "ids": [
+          4795582
+        ],
         "name": "Superior King Room with Roll-in Shower - Disability Access",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -24079,11 +25508,14 @@
         ]
       },
       {
+        "ids": [
+          4795583
+        ],
         "name": "Superior King Room - Disability Access",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -24113,11 +25545,14 @@
         ]
       },
       {
+        "ids": [
+          4795590
+        ],
         "name": "Strip-View Room Queen Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 47,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -24147,6 +25582,9 @@
         ]
       },
       {
+        "ids": [
+          4795591
+        ],
         "name": "Studio with Strip View",
         "summary": "",
         "features": [],
@@ -24185,6 +25623,9 @@
         ]
       },
       {
+        "ids": [
+          4795592
+        ],
         "name": "Executive Suite",
         "summary": "",
         "features": [],
@@ -24220,6 +25661,9 @@
         ]
       },
       {
+        "ids": [
+          4795594
+        ],
         "name": "One-Bedroom Suite",
         "summary": "",
         "features": [],
@@ -24256,6 +25700,9 @@
         ]
       },
       {
+        "ids": [
+          4795596
+        ],
         "name": "One Bedroom Suite with Strip View",
         "summary": "",
         "features": [],
@@ -24292,6 +25739,9 @@
         ]
       },
       {
+        "ids": [
+          4795597
+        ],
         "name": "One-Bedroom Suite with Strip View - Disability Access",
         "summary": "",
         "features": [],
@@ -24328,6 +25778,9 @@
         ]
       },
       {
+        "ids": [
+          4795598
+        ],
         "name": "Valley View Suite",
         "summary": "",
         "features": [],
@@ -24363,6 +25816,9 @@
         ]
       },
       {
+        "ids": [
+          4795599
+        ],
         "name": "Premier Panoramic Suite",
         "summary": "",
         "features": [],
@@ -24398,6 +25854,9 @@
         ]
       },
       {
+        "ids": [
+          4795600
+        ],
         "name": "Presidential Suite with Strip View",
         "summary": "",
         "features": [],
@@ -24434,11 +25893,14 @@
         ]
       },
       {
+        "ids": [
+          4795601
+        ],
         "name": "King Room with Stadium View",
         "summary": "",
         "features": [],
         "view": "Stadium View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -24469,11 +25931,14 @@
         ]
       },
       {
+        "ids": [
+          4795602
+        ],
         "name": "Stadium View Room Queen Beds",
         "summary": "",
         "features": [],
         "view": "Stadium View",
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -24717,6 +26182,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459474146
+        ],
         "name": "2 BEDROOM 1 KING 1 QUEEN SUITE ACCESSIBLE TUB",
         "summary": "1 King Bed and 1 Queen Bed",
         "features": [
@@ -24766,6 +26234,9 @@
         ]
       },
       {
+        "ids": [
+          1459474147
+        ],
         "name": "2 BEDROOM 1 KING 1 QUEEN SUITE WITH SOFABED",
         "summary": "1 King Bed and 1 Queen Bed",
         "features": [
@@ -24815,6 +26286,9 @@
         ]
       },
       {
+        "ids": [
+          3487230
+        ],
         "name": "One-Bedroom King Suite with Sofa Bed",
         "summary": "",
         "features": [],
@@ -24855,6 +26329,9 @@
         ]
       },
       {
+        "ids": [
+          3487231
+        ],
         "name": "Two-Bedroom Suite with Sofa Bed",
         "summary": "",
         "features": [],
@@ -24891,6 +26368,9 @@
         ]
       },
       {
+        "ids": [
+          1459920128
+        ],
         "name": "1 BEDROOM 1 KING SUITE WITH SOFABED",
         "summary": "1 King Bed and 1 Twin Sofa Bed",
         "features": [
@@ -24940,6 +26420,9 @@
         ]
       },
       {
+        "ids": [
+          3487227
+        ],
         "name": "1 BEDROOM 1 KING SUITE ACCESSIBLE TUB",
         "summary": "",
         "features": [],
@@ -24980,6 +26463,9 @@
         ]
       },
       {
+        "ids": [
+          3487228
+        ],
         "name": "Two-Bedroom Suite with Accessible Tub",
         "summary": "",
         "features": [],
@@ -25016,6 +26502,9 @@
         ]
       },
       {
+        "ids": [
+          3487229
+        ],
         "name": "2 BEDROOM 1 KING 1 QUEEN SUITE ROLL-IN SHOWER",
         "summary": "",
         "features": [],
@@ -25277,6 +26766,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          7059051
+        ],
         "name": "The Reserve Classic King",
         "summary": "1 King Bed",
         "features": [
@@ -25320,6 +26812,9 @@
         ]
       },
       {
+        "ids": [
+          7059052
+        ],
         "name": "Park Accessible King Roll-in Shower",
         "summary": "1 King Bed",
         "features": [
@@ -25363,6 +26858,9 @@
         ]
       },
       {
+        "ids": [
+          7059045
+        ],
         "name": "Park MGM King Strip View",
         "summary": "1 King Bed",
         "features": [
@@ -25407,6 +26905,9 @@
         ]
       },
       {
+        "ids": [
+          7059046
+        ],
         "name": "Park MGM Nighthawk Suite",
         "summary": "1 King Bed",
         "features": [
@@ -25451,6 +26952,9 @@
         ]
       },
       {
+        "ids": [
+          7059047
+        ],
         "name": "Park MGM Two Queen Restore",
         "summary": "2 Queen Beds",
         "features": [
@@ -25494,6 +26998,9 @@
         ]
       },
       {
+        "ids": [
+          7059055
+        ],
         "name": "Park MGM King Restore",
         "summary": "1 King Bed",
         "features": [
@@ -25538,6 +27045,9 @@
         ]
       },
       {
+        "ids": [
+          7059048
+        ],
         "name": "Park MGM Two Queen Strip View",
         "summary": "2 Queen Beds",
         "features": [
@@ -25583,6 +27093,9 @@
         ]
       },
       {
+        "ids": [
+          7059050
+        ],
         "name": "Park MGM King",
         "summary": "1 King Bed",
         "features": [
@@ -25628,6 +27141,9 @@
         ]
       },
       {
+        "ids": [
+          7059044
+        ],
         "name": "Park Accessible King",
         "summary": "1 King Bed",
         "features": [
@@ -25671,6 +27187,9 @@
         ]
       },
       {
+        "ids": [
+          7059049
+        ],
         "name": "Park MGM Nightingale Suite",
         "summary": "2 Queen Beds",
         "features": [
@@ -25715,6 +27234,9 @@
         ]
       },
       {
+        "ids": [
+          7059053
+        ],
         "name": "The Reserve Classic Two Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -25758,6 +27280,9 @@
         ]
       },
       {
+        "ids": [
+          7059054
+        ],
         "name": "Park MGM Two Queen",
         "summary": "2 Queen Beds",
         "features": [
@@ -25994,6 +27519,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459448994
+        ],
         "name": "One 80 Suite",
         "summary": "2 King Beds",
         "features": [
@@ -26039,6 +27567,9 @@
         ]
       },
       {
+        "ids": [
+          1459448997
+        ],
         "name": "Presidential Suite, 2 Bedrooms",
         "summary": "2 King Beds",
         "features": [
@@ -26084,6 +27615,9 @@
         ]
       },
       {
+        "ids": [
+          1459449000
+        ],
         "name": "Twist Suite",
         "summary": "2 King Beds",
         "features": [
@@ -26129,6 +27663,9 @@
         ]
       },
       {
+        "ids": [
+          1459448989
+        ],
         "name": "Canyon Suite",
         "summary": "2 King Beds",
         "features": [
@@ -26174,6 +27711,9 @@
         ]
       },
       {
+        "ids": [
+          1459448991
+        ],
         "name": "Viva Suite",
         "summary": "2 King Beds",
         "features": [
@@ -26219,6 +27759,9 @@
         ]
       },
       {
+        "ids": [
+          1459448993
+        ],
         "name": "Presidential Suite, 1 Bedroom",
         "summary": "1 King Bed",
         "features": [
@@ -26264,6 +27807,9 @@
         ]
       },
       {
+        "ids": [
+          1459448995
+        ],
         "name": "Luxury Suite, 2 Bedrooms",
         "summary": "2 King Beds",
         "features": [
@@ -26308,6 +27854,9 @@
         ]
       },
       {
+        "ids": [
+          1459448996
+        ],
         "name": "Straight Up Suite",
         "summary": "1 King Bed and 2 Queen Beds",
         "features": [
@@ -26357,6 +27906,9 @@
         ]
       },
       {
+        "ids": [
+          1459448999
+        ],
         "name": "Villa Suite, 2 Bedrooms",
         "summary": "2 King Beds",
         "features": [
@@ -26402,6 +27954,9 @@
         ]
       },
       {
+        "ids": [
+          1459448990
+        ],
         "name": "Top of the Rock",
         "summary": "2 King Beds",
         "features": [
@@ -26447,6 +28002,9 @@
         ]
       },
       {
+        "ids": [
+          1459448992
+        ],
         "name": "Grand Villa, 2 Bedrooms",
         "summary": "2 King Beds",
         "features": [
@@ -26492,6 +28050,9 @@
         ]
       },
       {
+        "ids": [
+          1459448998
+        ],
         "name": "Strip Suite",
         "summary": "2 King Beds",
         "features": [
@@ -26537,6 +28098,9 @@
         ]
       },
       {
+        "ids": [
+          1459449001
+        ],
         "name": "Luxury Suite, 1 Bedroom",
         "summary": "1 King Bed",
         "features": [
@@ -26582,6 +28146,9 @@
         ]
       },
       {
+        "ids": [
+          1459449002
+        ],
         "name": "Executive Corner Room - One King Bed",
         "summary": "1 King Bed",
         "features": [
@@ -26627,6 +28194,9 @@
         ]
       },
       {
+        "ids": [
+          2086842
+        ],
         "name": "Signature Suite - 2 Queen Beds",
         "summary": "",
         "features": [],
@@ -26663,11 +28233,14 @@
         ]
       },
       {
+        "ids": [
+          2082731
+        ],
         "name": "Luxury Room - Bed Type Assigned at Check-In",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -26703,11 +28276,14 @@
         ]
       },
       {
+        "ids": [
+          2086836
+        ],
         "name": "Luxury Room - Canyon View King",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -26739,11 +28315,14 @@
         ]
       },
       {
+        "ids": [
+          2086837
+        ],
         "name": "Luxury Room - Canyon View Two Queen",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -26775,11 +28354,14 @@
         ]
       },
       {
+        "ids": [
+          2086838
+        ],
         "name": "Luxury Room - City View King",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 2,
         "beds": [
           {
@@ -26811,11 +28393,14 @@
         ]
       },
       {
+        "ids": [
+          2086840
+        ],
         "name": "Executive Corner Room - Two Queen Beds",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 57,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -26847,11 +28432,14 @@
         ]
       },
       {
+        "ids": [
+          2086839
+        ],
         "name": "Luxury Room - City View Two Queen",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 48,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -26883,6 +28471,9 @@
         ]
       },
       {
+        "ids": [
+          2086841
+        ],
         "name": "Signature Suite - 1 King Bed",
         "summary": "",
         "features": [],
@@ -27148,6 +28739,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459813338
+        ],
         "name": "Grand Suite, 2 Queen Beds (Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -27191,6 +28785,10 @@
         ]
       },
       {
+        "ids": [
+          1459813343,
+          6753565
+        ],
         "name": "Grand Suite, 2 Queen Beds (Ruby, Strip View, Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -27235,6 +28833,9 @@
         ]
       },
       {
+        "ids": [
+          1459813348
+        ],
         "name": "Grand Room, 1 Bedroom (Opal, King, Two-Story Villa)",
         "summary": "1 King Bed",
         "features": [
@@ -27279,6 +28880,9 @@
         ]
       },
       {
+        "ids": [
+          1459813349
+        ],
         "name": "Room, 1 King Bed, Hearing Accessible (Strip View, Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27322,6 +28926,9 @@
         ]
       },
       {
+        "ids": [
+          1459813350
+        ],
         "name": "Room, 2 Queen Beds, Roll-in Shower (Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -27366,6 +28973,9 @@
         ]
       },
       {
+        "ids": [
+          1459813351
+        ],
         "name": "Suite, 1 King Bed (Canyon Oasis Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27409,6 +29019,9 @@
         ]
       },
       {
+        "ids": [
+          1459813352
+        ],
         "name": "Room, 1 King Bed (Strip View, Dog-Friendly, Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27453,6 +29066,9 @@
         ]
       },
       {
+        "ids": [
+          1459813353
+        ],
         "name": "Grand Suite, 1 King Bed (Canyon Deluxe Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27496,6 +29112,9 @@
         ]
       },
       {
+        "ids": [
+          1459813354
+        ],
         "name": "Room, 1 King Bed (Strip View, Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27539,6 +29158,9 @@
         ]
       },
       {
+        "ids": [
+          1459813355
+        ],
         "name": "Room, 1 King Bed (Opal, One-Story, Villa)",
         "summary": "1 King Bed",
         "features": [
@@ -27582,6 +29204,9 @@
         ]
       },
       {
+        "ids": [
+          1459813356
+        ],
         "name": "Room, 1 King Bed, Hearing Accessible (Opal, Corner Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27625,6 +29250,9 @@
         ]
       },
       {
+        "ids": [
+          1459813358
+        ],
         "name": "Grand Room, 1 King Bed (Corner Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27668,6 +29296,9 @@
         ]
       },
       {
+        "ids": [
+          1459813359
+        ],
         "name": "Room, 2 Queen Beds (Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -27712,6 +29343,9 @@
         ]
       },
       {
+        "ids": [
+          1459813360
+        ],
         "name": "Room, 1 King Bed, Hearing Accessible (Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27755,6 +29389,9 @@
         ]
       },
       {
+        "ids": [
+          1459813361
+        ],
         "name": "Room, 2 Queen Beds, Hearing Accessible (Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -27799,6 +29436,9 @@
         ]
       },
       {
+        "ids": [
+          1459813364
+        ],
         "name": "Room, 1 King Bed, Roll-in Shower (Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27842,6 +29482,9 @@
         ]
       },
       {
+        "ids": [
+          1459813366
+        ],
         "name": "Room, 1 King Bed (Transfer Tub, Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27885,6 +29528,9 @@
         ]
       },
       {
+        "ids": [
+          1459813367
+        ],
         "name": "Suite, 1 King Bed (Ruby, Dog-Friendly, Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -27930,6 +29576,9 @@
         ]
       },
       {
+        "ids": [
+          1459813368
+        ],
         "name": "Grand Room, 1 King Bed, Hearing Accessible (Ruby, Corner)",
         "summary": "1 King Bed",
         "features": [
@@ -27975,6 +29624,9 @@
         ]
       },
       {
+        "ids": [
+          1459813369
+        ],
         "name": "Grand Suite, 1 King Bed (Ruby, Chamber, Corner)",
         "summary": "1 King Bed",
         "features": [
@@ -28020,6 +29672,9 @@
         ]
       },
       {
+        "ids": [
+          6753308
+        ],
         "name": "Deluxe Villa, 1 King Bed (Opal, 1 Story)",
         "summary": "1 King Bed",
         "features": [
@@ -28064,6 +29719,9 @@
         ]
       },
       {
+        "ids": [
+          6752988
+        ],
         "name": "Grand Suite, 1 King Bed, Corner (Ruby, Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -28107,6 +29765,9 @@
         ]
       },
       {
+        "ids": [
+          6753566
+        ],
         "name": "Grand Suite, 1 King Bed, Accessible, Corner (Ruby)",
         "summary": "1 King Bed",
         "features": [
@@ -28151,6 +29812,9 @@
         ]
       },
       {
+        "ids": [
+          6753505
+        ],
         "name": "Room, 1 King Bed, Accessible (Resort, Chamber, Roll-In Shower)",
         "summary": "1 King Bed",
         "features": [
@@ -28194,6 +29858,9 @@
         ]
       },
       {
+        "ids": [
+          6752993
+        ],
         "name": "Grand Suite, 2 Queen Beds (Ruby, Dog, Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -28238,6 +29905,9 @@
         ]
       },
       {
+        "ids": [
+          6753360
+        ],
         "name": "Room, 1 King Bed (Resort, Strip View, Dog, Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -28283,6 +29953,9 @@
         ]
       },
       {
+        "ids": [
+          6753007
+        ],
         "name": "Villa, 1 King Bed (Opal, 1 Bedroom, 1 Story)",
         "summary": "1 King Bed",
         "features": [
@@ -28326,6 +29999,9 @@
         ]
       },
       {
+        "ids": [
+          6752987
+        ],
         "name": "Room, 1 King Bed, Accessible, Bathtub (Resort, Chamber, Bathtub)",
         "summary": "1 King Bed",
         "features": [
@@ -28369,6 +30045,9 @@
         ]
       },
       {
+        "ids": [
+          6753507
+        ],
         "name": "Room, 2 Queen Beds, Accessible (Resort, Chamber, Roll-In Shower)",
         "summary": "2 Queen Beds",
         "features": [
@@ -28411,6 +30090,9 @@
         ]
       },
       {
+        "ids": [
+          6753500
+        ],
         "name": "Grand Villa, 1 King Bed (Opal, 1 Bedroom, 2 Story Villa)",
         "summary": "1 King Bed",
         "features": [
@@ -28455,6 +30137,9 @@
         ]
       },
       {
+        "ids": [
+          6753394
+        ],
         "name": "Room, 2 Queen Beds (Ruby Tower, Strip View, Dog Friendly)",
         "summary": "2 Queen Beds",
         "features": [
@@ -28494,6 +30179,9 @@
         ]
       },
       {
+        "ids": [
+          6753405
+        ],
         "name": "Room, 2 Queen Beds, Accessible (Resort, Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -28537,6 +30225,9 @@
         ]
       },
       {
+        "ids": [
+          6753401
+        ],
         "name": "Room, 1 King Bed (Resort, Strip View, Chamber)",
         "summary": "1 King Bed",
         "features": [
@@ -28580,6 +30271,9 @@
         ]
       },
       {
+        "ids": [
+          1459813336
+        ],
         "name": "Deluxe Room, 1 King Bed (Opal, One-Story, Villa)",
         "summary": "1 King Bed",
         "features": [
@@ -28624,6 +30318,9 @@
         ]
       },
       {
+        "ids": [
+          1459813337
+        ],
         "name": "Room, 1 King Bed, Hearing Accessible (Ruby, Chamber, Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -28669,6 +30366,9 @@
         ]
       },
       {
+        "ids": [
+          1459813339
+        ],
         "name": "Grand Suite, 1 King Bed (Ruby, Chamber, Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -28714,6 +30414,9 @@
         ]
       },
       {
+        "ids": [
+          1459813340
+        ],
         "name": "Room, 2 Queen Beds, Hearing Accessible (Ruby, Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -28758,6 +30461,9 @@
         ]
       },
       {
+        "ids": [
+          1459813341
+        ],
         "name": "Grand Suite, 2 Queen Beds (Ruby, Dog-Friendly, Chamber)",
         "summary": "2 Queen Beds",
         "features": [
@@ -28803,6 +30509,9 @@
         ]
       },
       {
+        "ids": [
+          1459813342
+        ],
         "name": "Room, 1 King Bed, Transfer Shower (Ruby, Chamber, Strip View, Hearing)",
         "summary": "1 King Bed",
         "features": [
@@ -28848,6 +30557,9 @@
         ]
       },
       {
+        "ids": [
+          1459813344
+        ],
         "name": "Suite, 1 King Bed (Ruby, Chamber, Strip View)",
         "summary": "1 King Bed",
         "features": [
@@ -29108,11 +30820,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          2330864
+        ],
         "name": "Ultra Resort Vista Room, 1 King, Non-Smoking",
         "summary": "Fuchsia floor-to-ceiling drapes, plush seating and gold accents are featured throughout these rooms.",
         "features": [],
         "view": null,
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29143,6 +30858,9 @@
         ]
       },
       {
+        "ids": [
+          2330866
+        ],
         "name": "Ultra Panorama Suite, 1 King Strip View - Non-Smoking",
         "summary": "",
         "features": [],
@@ -29178,11 +30896,14 @@
         ]
       },
       {
+        "ids": [
+          2330869
+        ],
         "name": "Ultra Resort Room, 1 King, Non Smoking",
         "summary": "This king room includes a 41\" flat-screen TV, an iron with an ironing board, complimentary toiletries, and a hair dryer.",
         "features": [],
         "view": null,
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29212,11 +30933,14 @@
         ]
       },
       {
+        "ids": [
+          2330872
+        ],
         "name": "Ultra Hip, 1 King, Non-Smoking, Hearing Impaired",
         "summary": "The spacious double room features air conditioning, a seating area, as well as a private bathroom boasting a bath and a shower. The unit has 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29246,11 +30970,14 @@
         ]
       },
       {
+        "ids": [
+          2330877
+        ],
         "name": "Ultra Hip Room King Pool View Non-Smoking",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29280,11 +31007,14 @@
         ]
       },
       {
+        "ids": [
+          2330883
+        ],
         "name": "Ultra Hip Room 2 Queens Attraction View",
         "summary": "",
         "features": [],
         "view": "Attraction View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29313,11 +31043,14 @@
         ]
       },
       {
+        "ids": [
+          2330863
+        ],
         "name": "Ultra Hip, 2 Queens Fountain View, Non-Smoking",
         "summary": "Fountain show views are featured from these rooms. Luxurious bedding and Planet Hollywood inspired decor is provided.",
         "features": [],
         "view": "Fountain View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29347,11 +31080,14 @@
         ]
       },
       {
+        "ids": [
+          2330867
+        ],
         "name": "Ultra Hip, King, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29381,6 +31117,9 @@
         ]
       },
       {
+        "ids": [
+          2330870
+        ],
         "name": "Ultra Boulevard Suite, 1 King, Non-Smoking",
         "summary": "This king room includes a 41\" flat-screen TV, an iron with an ironing board, complimentary toiletries, and a hair dryer.",
         "features": [],
@@ -29415,11 +31154,14 @@
         ]
       },
       {
+        "ids": [
+          2330875
+        ],
         "name": "Ultra Hip Room King City View Non-Smoking",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29449,11 +31191,14 @@
         ]
       },
       {
+        "ids": [
+          2330876
+        ],
         "name": "Ultra Hip Room 2 Queens City View Non-Smoking",
         "summary": "This air-conditioned quadruple room is consisted of of a flat-screen TV with cable channels and a private bathroom. The unit has 2 beds.",
         "features": [],
         "view": "City View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29483,11 +31228,14 @@
         ]
       },
       {
+        "ids": [
+          2330880
+        ],
         "name": "Ultra Hip Room 2 Queens Non-Smoking Mountain View",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29517,11 +31265,14 @@
         ]
       },
       {
+        "ids": [
+          2330882
+        ],
         "name": "Ultra Hip Room King Attraction View",
         "summary": "",
         "features": [],
         "view": "Attraction View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29550,6 +31301,9 @@
         ]
       },
       {
+        "ids": [
+          1459473120
+        ],
         "name": "Ultra Hip Panorama Suite 2 Queens Strip View (Newly Renovated)",
         "summary": "2 Queen Beds",
         "features": [
@@ -29594,6 +31348,9 @@
         ]
       },
       {
+        "ids": [
+          1459473122
+        ],
         "name": "Ultra Hip Room, 2 Queen Beds, Smoking",
         "summary": "2 Queen Beds",
         "features": [
@@ -29639,6 +31396,9 @@
         ]
       },
       {
+        "ids": [
+          1459473121
+        ],
         "name": "Ultra Resort Room, 1 King Bed, Smoking",
         "summary": "1 King Bed",
         "features": [
@@ -29683,11 +31443,14 @@
         ]
       },
       {
+        "ids": [
+          2330871
+        ],
         "name": "Ultra Hip, 1 King, Non-Smoking, Roll-in Shower",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29717,11 +31480,14 @@
         ]
       },
       {
+        "ids": [
+          2330873
+        ],
         "name": "Ultra Hip, King, Non-Smoking, Accessible Tub Transfer",
         "summary": "The spacious double room provides air conditioning, a seating area, as well as a private bathroom featuring a bath and a shower. The unit offers 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29751,6 +31517,9 @@
         ]
       },
       {
+        "ids": [
+          2330886
+        ],
         "name": "Ultra Panorama Suite 2 Queen Strip View",
         "summary": "",
         "features": [],
@@ -29786,11 +31555,14 @@
         ]
       },
       {
+        "ids": [
+          2330868
+        ],
         "name": "Ultra Hip, 2 Queens, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29820,11 +31592,14 @@
         ]
       },
       {
+        "ids": [
+          2330874
+        ],
         "name": "Ultra Hip, 2 Queens, Non-Smoking, Tub Transfer",
         "summary": "The spacious double room provides air conditioning, a seating area, as well as a private bathroom featuring a bath and a shower. The unit offers 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29854,11 +31629,14 @@
         ]
       },
       {
+        "ids": [
+          2330884
+        ],
         "name": "Ultra Hip Room King Near Elevator",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29887,11 +31665,14 @@
         ]
       },
       {
+        "ids": [
+          1459189488
+        ],
         "name": "Room Type Assigned on Arrival",
         "summary": "The unit has 1 or 2 beds and will be assigned at check-in.",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29909,11 +31690,14 @@
         ]
       },
       {
+        "ids": [
+          2330878
+        ],
         "name": "Ultra Hip Room 2 Queens Pool View Non-Smoking",
         "summary": "This air-conditioned quadruple room is consisted of of a flat-screen TV with cable channels and a private bathroom. The unit has 2 beds.",
         "features": [],
         "view": "Pool View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29943,11 +31727,14 @@
         ]
       },
       {
+        "ids": [
+          2330879
+        ],
         "name": "Ultra Hip Room King Non-Smoking Mountain View",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -29977,6 +31764,9 @@
         ]
       },
       {
+        "ids": [
+          1459992648
+        ],
         "name": "Ultra Boulevard Suite, 1 King Bed, Non Smoking, Strip View",
         "summary": "1 King Bed",
         "features": [
@@ -30022,6 +31812,9 @@
         ]
       },
       {
+        "ids": [
+          1459992649
+        ],
         "name": "Ultra Hip Strip Suite, 1 King Bed, Non Smoking, Strip View (Newly Renovated)",
         "summary": "1 King Bed",
         "features": [
@@ -30066,6 +31859,9 @@
         ]
       },
       {
+        "ids": [
+          1459992650
+        ],
         "name": "Ultra Panorama Suite, 1 King Bed, Non Smoking (Newly Renovated)",
         "summary": "1 King Bed",
         "features": [
@@ -30109,6 +31905,9 @@
         ]
       },
       {
+        "ids": [
+          1459992651
+        ],
         "name": "Ultra Resort Vista Room, 1 King Bed, Non Smoking (Newly Renovated)",
         "summary": "1 King Bed",
         "features": [
@@ -30154,11 +31953,14 @@
         ]
       },
       {
+        "ids": [
+          2330860
+        ],
         "name": "Ultra Hip, King, Smoking",
         "summary": "This air-conditioned room includes a 42\" flat-screen TV, an iron with ironing board, complimentary toiletries, a hair dryer, and a refrigerator.",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -30188,11 +31990,14 @@
         ]
       },
       {
+        "ids": [
+          2330861
+        ],
         "name": "Ultra Resort Room, 2 Queens, Non-Smoking",
         "summary": "Dual sinks are featured in the private bathroom. An executive workstation and a seating area with a sofa chair and coffee table are provided.",
         "features": [],
         "view": null,
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -30222,11 +32027,14 @@
         ]
       },
       {
+        "ids": [
+          2330862
+        ],
         "name": "Ultra Hip Room, Premium King Fountain View, Non-Smoking",
         "summary": "Fountain views are featured from this room. Luxurious bedding and linens with a mix Planet Hollywood inspired decor is featured.",
         "features": [],
         "view": "Fountain View",
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -30256,6 +32064,9 @@
         ]
       },
       {
+        "ids": [
+          2330865
+        ],
         "name": "Ultra Hip Strip Suite, 1 King, Non-Smoking",
         "summary": "Offering a view of the Las Vegas Strip, each 850 square foot suite includes an over-sized soaking tub. A lounge seating area with a flat-screen TV is featured.",
         "features": [],
@@ -30291,11 +32102,14 @@
         ]
       },
       {
+        "ids": [
+          2330885
+        ],
         "name": "Ultra Hip Room 2 Queens Near Elevator",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 40,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -30540,6 +32354,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459367555
+        ],
         "name": "Run of the House",
         "summary": "1 King Bed OR 2 Queen Beds",
         "features": [
@@ -30582,6 +32399,9 @@
         ]
       },
       {
+        "ids": [
+          1459367554
+        ],
         "name": "Strip View Room",
         "summary": "1 King Bed OR 2 Queen Beds",
         "features": [
@@ -30624,6 +32444,9 @@
         ]
       },
       {
+        "ids": [
+          1459368139
+        ],
         "name": "Deluxe Room, 2 Queen Beds, Non Smoking",
         "summary": "2 Queen Beds",
         "features": [
@@ -30665,11 +32488,14 @@
         ]
       },
       {
+        "ids": [
+          1458949618
+        ],
         "name": "Deluxe Spa Room",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -30703,11 +32529,14 @@
         ]
       },
       {
+        "ids": [
+          2135308
+        ],
         "name": "Deluxe King Room or Queen Room with Two Queen Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -30739,11 +32568,14 @@
         ]
       },
       {
+        "ids": [
+          2135305
+        ],
         "name": "Strip View King Room or Queen Room with Two Queen Beds",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -30776,11 +32608,14 @@
         ]
       },
       {
+        "ids": [
+          2135306
+        ],
         "name": "Petite Suite",
         "summary": "",
         "features": [],
         "view": "Mountain View",
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -30812,6 +32647,9 @@
         ]
       },
       {
+        "ids": [
+          2135307
+        ],
         "name": "Tower Suite",
         "summary": "",
         "features": [],
@@ -30844,11 +32682,14 @@
         ]
       },
       {
+        "ids": [
+          2135309
+        ],
         "name": "Deluxe Queen Room with Two Queen Beds",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 37,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -31089,6 +32930,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459513936
+        ],
         "name": "Wynn Panoramic View Two Queens",
         "summary": "2 Queen Beds",
         "features": [
@@ -31132,11 +32976,14 @@
         ]
       },
       {
+        "ids": [
+          586736
+        ],
         "name": "SPECIAL OFFER – Encore Resort Two Queens Two (2) Complimentary Awakening Sapphire Show Tickets Offer",
         "summary": "The spacious double room provides air conditioning, a mini-bar, as well as a private bathroom featuring a bath and a shower. The unit offers 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -31166,6 +33013,9 @@
         ]
       },
       {
+        "ids": [
+          1459513933
+        ],
         "name": "Wynn Tower Suite Salon",
         "summary": "1 King Bed",
         "features": [
@@ -31209,6 +33059,9 @@
         ]
       },
       {
+        "ids": [
+          1459513934
+        ],
         "name": "Wynn Panoramic View King",
         "summary": "1 King Bed",
         "features": [
@@ -31252,6 +33105,9 @@
         ]
       },
       {
+        "ids": [
+          1459513935
+        ],
         "name": "Wynn Tower Suite King",
         "summary": "1 King Bed",
         "features": [
@@ -31295,6 +33151,9 @@
         ]
       },
       {
+        "ids": [
+          1459513937
+        ],
         "name": "Wynn Tower Suite Parlor",
         "summary": "1 King Bed",
         "features": [
@@ -31338,11 +33197,14 @@
         ]
       },
       {
+        "ids": [
+          1459818079
+        ],
         "name": "Encore Resort King - Enjoy Daily Brunch for Two at the Buffet",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31373,11 +33235,14 @@
         ]
       },
       {
+        "ids": [
+          586729
+        ],
         "name": "Encore Tower Suite King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31407,6 +33272,9 @@
         ]
       },
       {
+        "ids": [
+          586730
+        ],
         "name": "Encore Tower Suite Parlor",
         "summary": "",
         "features": [],
@@ -31441,11 +33309,14 @@
         ]
       },
       {
+        "ids": [
+          586727
+        ],
         "name": "Encore Resort King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31475,11 +33346,14 @@
         ]
       },
       {
+        "ids": [
+          586728
+        ],
         "name": "Encore Panoramic View King",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31510,6 +33384,9 @@
         ]
       },
       {
+        "ids": [
+          586731
+        ],
         "name": "Encore Tower Suite Salon",
         "summary": "",
         "features": [],
@@ -31544,11 +33421,14 @@
         ]
       },
       {
+        "ids": [
+          586732
+        ],
         "name": "Encore Resort Two Queens",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -31578,11 +33458,14 @@
         ]
       },
       {
+        "ids": [
+          586733
+        ],
         "name": "Special Offer - Encore Resort King - Resort Credit",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31612,11 +33495,14 @@
         ]
       },
       {
+        "ids": [
+          586734
+        ],
         "name": "Special Offer - Encore Resort Two Queens - Resort Credit",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -31646,11 +33532,14 @@
         ]
       },
       {
+        "ids": [
+          1458949795
+        ],
         "name": "Wynn Resort King (Check-in at Wynn)",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31681,11 +33570,14 @@
         ]
       },
       {
+        "ids": [
+          1458949796
+        ],
         "name": "Wynn Resort Two Queens (Check-in at Wynn)",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -31715,11 +33607,14 @@
         ]
       },
       {
+        "ids": [
+          1459818080
+        ],
         "name": "Encore Panoramic View King - Enjoy Daily Brunch for Two at the Buffet",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31749,11 +33644,14 @@
         ]
       },
       {
+        "ids": [
+          1459818082
+        ],
         "name": "Wynn Resort King - Enjoy Daily Brunch for Two at the Buffet (Check-in at Wynn)",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31783,11 +33681,14 @@
         ]
       },
       {
+        "ids": [
+          1459818083
+        ],
         "name": "Wynn Resort Two Queens - Enjoy Daily Brunch for Two at the Buffet (Check-in at Wynn)",
         "summary": "The spacious double room features air conditioning, a mini-bar, as well as a private bathroom boasting a bath and a shower. The unit has 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -31817,11 +33718,14 @@
         ]
       },
       {
+        "ids": [
+          586735
+        ],
         "name": "SPECIAL OFFER – Encore Resort King - Two (2) Complimentary Awakening Sapphire Show Tickets Offer",
         "summary": "The spacious double room features air conditioning, a mini-bar, as well as a private bathroom boasting a bath and a shower. The unit has 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31851,11 +33755,14 @@
         ]
       },
       {
+        "ids": [
+          586737
+        ],
         "name": "SPECIAL OFFER – Encore Panoramic View King - Two (2) Complimentary Awakening Sapphire Show Tickets Offer",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31886,11 +33793,14 @@
         ]
       },
       {
+        "ids": [
+          586739
+        ],
         "name": "Special Offer - Encore Panoramic View King - Resort Credit",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31921,11 +33831,14 @@
         ]
       },
       {
+        "ids": [
+          586740
+        ],
         "name": "Wynn Resort King (Check-in at Wynn) Special Offer-Resort Credit",
         "summary": "The spacious double room provides air conditioning, a mini-bar, as well as a private bathroom featuring a bath and a shower. The unit offers 1 bed.",
         "features": [],
         "view": null,
-        "sqft": 59,
+        "sqft": null,
         "sleeps": 3,
         "beds": [
           {
@@ -31956,11 +33869,14 @@
         ]
       },
       {
+        "ids": [
+          1459818081
+        ],
         "name": "Encore Resort Two Queens - Enjoy Daily Brunch for Two at the Buffet",
         "summary": "The spacious double room provides air conditioning, a mini-bar, as well as a private bathroom featuring a bath and a shower. The unit offers 2 beds.",
         "features": [],
         "view": null,
-        "sqft": 69,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -31990,6 +33906,9 @@
         ]
       },
       {
+        "ids": [
+          586738
+        ],
         "name": "Special Offer – Encore Panoramic View Two Queens - Two (2) Complimentary Awakening Sapphire Show Tickets Offer",
         "summary": "",
         "features": [],
@@ -32240,11 +34159,14 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          3497441
+        ],
         "name": "Valley Tower Studio Room, 2 Queen Beds, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32275,11 +34197,14 @@
         ]
       },
       {
+        "ids": [
+          3497461
+        ],
         "name": "Mountain Executive Suite 2 Queens Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32309,11 +34234,14 @@
         ]
       },
       {
+        "ids": [
+          1459187331
+        ],
         "name": "Room Type Assigned on Arrival",
         "summary": "The unit has 1 or 2 beds and will be assigned at check-in.",
         "features": [],
         "view": null,
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32341,11 +34269,14 @@
         ]
       },
       {
+        "ids": [
+          3497458
+        ],
         "name": "Mountain Deluxe Room King Strip View Non-Smoking",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32377,11 +34308,14 @@
         ]
       },
       {
+        "ids": [
+          3497462
+        ],
         "name": "Valley Deluxe Room King Attraction View",
         "summary": "",
         "features": [],
         "view": "Attraction View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32411,11 +34345,14 @@
         ]
       },
       {
+        "ids": [
+          3497463
+        ],
         "name": "Valley Deluxe Room 2 Queens Attraction View",
         "summary": "",
         "features": [],
         "view": "Attraction View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32445,11 +34382,14 @@
         ]
       },
       {
+        "ids": [
+          3497440
+        ],
         "name": "Valley Tower Studio Room, 1 King Bed, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32480,11 +34420,14 @@
         ]
       },
       {
+        "ids": [
+          3497450
+        ],
         "name": "Mountain Tower Deluxe Room, 1 King Bed, Non-Smoking, Pool View",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32514,11 +34457,14 @@
         ]
       },
       {
+        "ids": [
+          3497452
+        ],
         "name": "Valley Tower Deluxe Room, 1 King Bed, Non-Smoking, Pool View",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32549,11 +34495,14 @@
         ]
       },
       {
+        "ids": [
+          3497456
+        ],
         "name": "Valley Deluxe Room King Strip View Smoking",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32584,11 +34533,14 @@
         ]
       },
       {
+        "ids": [
+          3497453
+        ],
         "name": "Valley Tower Deluxe Room, 2 Queen Beds, Non-Smoking, Pool View",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32620,11 +34572,14 @@
         ]
       },
       {
+        "ids": [
+          3497454
+        ],
         "name": "Valley Deluxe Room King Strip View Non-Smoking",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32655,11 +34610,14 @@
         ]
       },
       {
+        "ids": [
+          3497459
+        ],
         "name": "Mountain Deluxe Room 2 Queens Strip View Non-Smoking",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32689,11 +34647,14 @@
         ]
       },
       {
+        "ids": [
+          3497460
+        ],
         "name": "Mountain Executive Suite King Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 56,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32723,11 +34684,14 @@
         ]
       },
       {
+        "ids": [
+          3497438
+        ],
         "name": "Valley Tower Deluxe Room, 1 King Bed, Non-Smoking, City View",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32757,11 +34721,14 @@
         ]
       },
       {
+        "ids": [
+          3497442
+        ],
         "name": "Valley Tower Executive Suite, 2 Queen Beds, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 63,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32791,11 +34758,14 @@
         ]
       },
       {
+        "ids": [
+          3497449
+        ],
         "name": "Mountain Tower Deluxe Room, 2 Double Beds, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32825,11 +34795,14 @@
         ]
       },
       {
+        "ids": [
+          3497455
+        ],
         "name": "Valley Deluxe Room 2 Queens Strip View Non-Smoking",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32860,11 +34833,14 @@
         ]
       },
       {
+        "ids": [
+          3497457
+        ],
         "name": "Valley Deluxe Room 2 Queens Strip View Smoking",
         "summary": "",
         "features": [],
         "view": "Strip View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32895,11 +34871,14 @@
         ]
       },
       {
+        "ids": [
+          3497439
+        ],
         "name": "Valley Tower Deluxe Room, 2 Queen Beds, Non-Smoking, City View",
         "summary": "",
         "features": [],
         "view": "City View",
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32929,11 +34908,14 @@
         ]
       },
       {
+        "ids": [
+          3497446
+        ],
         "name": "Mountain Tower Deluxe Room, 1 King Bed, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32963,11 +34945,14 @@
         ]
       },
       {
+        "ids": [
+          3497447
+        ],
         "name": "Mountain Tower Deluxe Room, 2 Queens, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -32997,11 +34982,14 @@
         ]
       },
       {
+        "ids": [
+          3497448
+        ],
         "name": "Mountain Tower Studio Room, 1 King Bed, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 51,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33031,11 +35019,14 @@
         ]
       },
       {
+        "ids": [
+          3497451
+        ],
         "name": "Mountain Tower Deluxe Room, 2 Double Beds, Non-Smoking, Pool View",
         "summary": "",
         "features": [],
         "view": "Pool View",
-        "sqft": 28,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33065,11 +35056,14 @@
         ]
       },
       {
+        "ids": [
+          3497432
+        ],
         "name": "Valley Tower Deluxe Room, 1 King Bed, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33099,11 +35093,14 @@
         ]
       },
       {
+        "ids": [
+          3497433
+        ],
         "name": "Valley Tower Deluxe Room, 2 Queen Beds, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33133,11 +35130,14 @@
         ]
       },
       {
+        "ids": [
+          3497434
+        ],
         "name": "Valley Tower Deluxe Room, 1 King, Non-Smoking, Accessible",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33167,11 +35167,14 @@
         ]
       },
       {
+        "ids": [
+          3497435
+        ],
         "name": "Valley Tower Deluxe Room, 2 Queen Beds, Non-Smoking, Accessible",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33201,11 +35204,14 @@
         ]
       },
       {
+        "ids": [
+          3497436
+        ],
         "name": "Valley Tower Deluxe Room, 1 King Bed, Non-Smoking, Hearing Impaired",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33235,11 +35241,14 @@
         ]
       },
       {
+        "ids": [
+          3497437
+        ],
         "name": "Valley Tower Deluxe Room, 2 Queen Beds, Non-Smoking, Hearing Impaired",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 32,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33269,11 +35278,14 @@
         ]
       },
       {
+        "ids": [
+          3497443
+        ],
         "name": "Valley Tower Executive Suite, 1 King Bed, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 63,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33303,6 +35315,9 @@
         ]
       },
       {
+        "ids": [
+          3497444
+        ],
         "name": "Valley Tower Vise Presidential Suite, 1 King Bed, Non-Smoking",
         "summary": "",
         "features": [],
@@ -33338,11 +35353,14 @@
         ]
       },
       {
+        "ids": [
+          3497445
+        ],
         "name": "Mountain Tower Deluxe Room, 1 Queen Bed, Non-Smoking",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 26,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33585,6 +35603,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          4793739
+        ],
         "name": "One Bedroom Penthouse Suite",
         "summary": "This suite features air conditioning, dining area and cable TV.",
         "features": [],
@@ -33624,6 +35645,9 @@
         ]
       },
       {
+        "ids": [
+          4793738
+        ],
         "name": "Executive Corner Suite",
         "summary": "",
         "features": [],
@@ -33664,11 +35688,14 @@
         ]
       },
       {
+        "ids": [
+          4793740
+        ],
         "name": "Restore Studio",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33703,11 +35730,14 @@
         ]
       },
       {
+        "ids": [
+          4793741
+        ],
         "name": "Studio Two Queen",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33738,11 +35768,14 @@
         ]
       },
       {
+        "ids": [
+          4793731
+        ],
         "name": "Studio",
         "summary": "This room features flat-screen TV and an private bathroom.",
         "features": [],
         "view": null,
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33778,11 +35811,14 @@
         ]
       },
       {
+        "ids": [
+          4793732
+        ],
         "name": "Studio Fountain View",
         "summary": "",
         "features": [],
         "view": "Fountain View",
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33817,6 +35853,9 @@
         ]
       },
       {
+        "ids": [
+          4793733
+        ],
         "name": "Vdara Suite",
         "summary": "This spacious suite features a washer, dryer, and separate living area with a sofa bed. Bathrobe and slippers are also offered in this spacious suite.",
         "features": [],
@@ -33856,6 +35895,9 @@
         ]
       },
       {
+        "ids": [
+          4793734
+        ],
         "name": "City Corner Suite",
         "summary": "Featuring mountain and city views, this spacious suite includes a kitchenette. A large soaking tub is provided.",
         "features": [],
@@ -33895,11 +35937,14 @@
         ]
       },
       {
+        "ids": [
+          4793735
+        ],
         "name": "Studio V Dog",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -33935,6 +35980,9 @@
         ]
       },
       {
+        "ids": [
+          4793736
+        ],
         "name": "Panoramic Suite",
         "summary": "Featuring expansive views of the city center, this spacious suite features a spa-style soaking tub. Guests can prepare meals in the kitchenette.",
         "features": [],
@@ -33974,11 +36022,14 @@
         ]
       },
       {
+        "ids": [
+          4793737
+        ],
         "name": "Studio Parlor",
         "summary": "",
         "features": [],
         "view": null,
-        "sqft": 54,
+        "sqft": null,
         "sleeps": 4,
         "beds": [
           {
@@ -34207,6 +36258,9 @@
     "airportCode": "LAS",
     "rooms": [
       {
+        "ids": [
+          1459244451
+        ],
         "name": "Petite Suite with Soaking Tub, Non - Smoking",
         "summary": "1 King Bed",
         "features": [
@@ -34248,6 +36302,9 @@
         ]
       },
       {
+        "ids": [
+          1459244452
+        ],
         "name": "Classic Room, 2 Queen Beds, Non Smoking",
         "summary": "2 Queen Beds",
         "features": [
@@ -34291,6 +36348,9 @@
         ]
       },
       {
+        "ids": [
+          1459244453
+        ],
         "name": "Deluxe Room, 2 Queen Beds, Non Smoking",
         "summary": "2 Queen Beds",
         "features": [
@@ -34335,6 +36395,9 @@
         ]
       },
       {
+        "ids": [
+          1459244454
+        ],
         "name": "Classic Room, 1 King Bed, Non Smoking",
         "summary": "1 King Bed",
         "features": [
@@ -34380,6 +36443,9 @@
         ]
       },
       {
+        "ids": [
+          1459244455
+        ],
         "name": "Deluxe Room, 1 King Bed, Non Smoking",
         "summary": "1 King Bed",
         "features": [

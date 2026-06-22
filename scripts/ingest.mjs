@@ -6,6 +6,7 @@
 // then register the same region in src/lib/regions.ts + add it to DATASETS in src/lib/hotels.ts.
 // Run: node scripts/ingest.mjs oahu   (needs LITEAPI_KEY in env)
 import { writeFileSync, mkdirSync } from "node:fs";
+import { normRooms } from "./lib/rooms.mjs";
 
 // region slug -> { island (must match Region.name in regions.ts), countryCode, cities }
 const REGIONS = {
@@ -73,61 +74,9 @@ function normFacilities(raw) {
   if (!Array.isArray(raw)) return [];
   return raw.map((f) => (typeof f === "string" ? f : f?.name ?? "")).filter(Boolean);
 }
-// LiteAPI gives room size in m2; US audience wants sqft.
-function toSqft(size, unit) {
-  if (!size || typeof size !== "number") return null;
-  return unit === "m2" ? Math.round(size * 10.7639) : Math.round(size);
-}
-// LiteAPI room.description is rich, structured HTML:
-//   <p><strong>1 King Bed</strong></p><p>141-sq-foot room ...</p>
-//   <p><b>Internet</b> - Free WiFi 50+ Mbps</p><p><b>Entertainment</b> - 42-inch LCD TV ...</p>
-// Split into the "Label - value" feature bullets (the genuinely useful part) + a short summary.
-function parseRoomDesc(html) {
-  if (!html) return { summary: "", features: [] };
-  const blocks = html
-    .split(/<\/p>|<br\s*\/?>/i)
-    .map((b) => stripHtml(b))
-    .filter(Boolean);
-  const features = [];
-  let summary = "";
-  for (const b of blocks) {
-    if (/\s-\s/.test(b) && b.length < 220) features.push(b);
-    else if (!summary && b.length < 160) summary = b;
-  }
-  return { summary, features: features.slice(0, 8) };
-}
-// rooms[] is the richest content we previously dropped: photos, size, beds, per-room amenities.
-function normRooms(raw) {
-  if (!Array.isArray(raw)) return [];
-  const seen = new Set();
-  const out = [];
-  for (const r of raw) {
-    const name = (r.roomName ?? r.name ?? "").trim();
-    if (!name) continue;
-    const key = name.toLowerCase();
-    if (seen.has(key)) continue; // dedupe identical room names
-    seen.add(key);
-    const { summary, features } = parseRoomDesc(r.description);
-    out.push({
-      name,
-      summary,
-      features,
-      view: (r.views ?? []).map((v) => v?.view).filter(Boolean)[0] ?? null,
-      sqft: toSqft(r.roomSizeSquare, r.roomSizeUnit),
-      sleeps: r.maxOccupancy ?? r.maxAdults ?? null,
-      beds: (r.bedTypes ?? [])
-        .map((b) => ({ qty: b.quantity ?? 1, type: (b.bedType ?? "").replace(/\s*bed$/i, "").trim() }))
-        .filter((b) => b.type),
-      amenities: (r.roomAmenities ?? r.amenities ?? [])
-        .map((a) => (typeof a === "string" ? a : a?.name))
-        .filter(Boolean)
-        .slice(0, 12),
-      photos: (r.photos ?? []).map((p) => p.hd_url || p.url).filter(Boolean).slice(0, 6),
-    });
-    if (out.length >= 40) break;
-  }
-  return out;
-}
+// Room normalization (incl. LiteAPI room ids for mapping) lives in ./lib/rooms.mjs so it stays in
+// sync with the enrich-rooms.mjs backfill.
+
 // Structured policies (Pets, Children, Groups, deposit…) — keep the ones with real text.
 function normPolicies(raw) {
   if (!Array.isArray(raw)) return [];

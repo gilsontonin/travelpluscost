@@ -87,10 +87,15 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
           <div className="mt-3 space-y-1">
             {o.refundable ? (
               <p className="text-sm text-[#1a7a4c] flex items-center gap-1.5">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="shrink-0">
                   <path d="M20 6 9 17l-5-5" />
                 </svg>
-                {o.freeCancelBefore ? `Free cancellation before ${fmtDate(o.freeCancelBefore)}` : "Fully refundable"}
+                <span>
+                  {o.freeCancelBefore ? `Free cancellation before ${fmtDate(o.freeCancelBefore)}` : "Fully refundable"}
+                  {o.freeCancelBefore && o.cancelChargeAfter ? (
+                    <span className="text-black/45"> · then {money(o.cancelChargeAfter.amount, o.cancelChargeAfter.currency)}</span>
+                  ) : null}
+                </span>
               </p>
             ) : (
               <p className="text-sm text-black/45">Non-refundable</p>
