@@ -337,6 +337,10 @@ export async function sandboxBookWithTransaction(input: BookInput): Promise<Book
       { occupancyNumber: 1, firstName: input.firstName, lastName: input.lastName, email: input.email },
     ],
     payment: { method: "TRANSACTION_ID", transactionId: input.transactionId },
+    // Idempotency key: the booking-complete return URL can fire twice (reload/back), and the card
+    // is already charged by then — a stable reference per paid transaction lets LiteAPI dedupe
+    // instead of creating a second reservation on the same charge.
+    clientReference: input.transactionId,
   });
   return {
     bookingId: booked.bookingId ?? "—",
