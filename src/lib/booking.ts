@@ -13,16 +13,20 @@ import { canonRoom, dedupePropertyFees } from "./rates";
 const API = process.env.LITEAPI_BASE_URL || "https://api.liteapi.travel/v3.0";
 const BOOK = process.env.LITEAPI_BOOK_BASE_URL || "https://book.liteapi.travel/v3.0";
 
-function sandboxKey(): string {
-  const k = process.env.LITEAPI_SANDBOX;
-  if (!k) throw new Error("LITEAPI_SANDBOX not set — sandbox booking is unavailable.");
+// LIVE mode (NEXT_PUBLIC_PAYMENT_ENV=live) uses the PRODUCTION key → real Stripe PaymentIntents
+// (real money). Anything else uses the sandbox key. The deployed site reads Netlify's env (not
+// "live"), so production stays sandbox; only a local .env.local set to "live" flips this machine.
+function apiKey(): string {
+  const live = process.env.NEXT_PUBLIC_PAYMENT_ENV === "live";
+  const k = live ? process.env.LITEAPI_KEY : process.env.LITEAPI_SANDBOX;
+  if (!k) throw new Error(`${live ? "LITEAPI_KEY" : "LITEAPI_SANDBOX"} not set.`);
   return k;
 }
 
 async function call<T>(url: string, body: unknown): Promise<T> {
   const res = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json", "X-API-Key": sandboxKey() },
+    headers: { "Content-Type": "application/json", "X-API-Key": apiKey() },
     body: JSON.stringify(body),
   });
   const json = (await res.json().catch(() => ({}))) as { data?: T; error?: { message?: string } };
