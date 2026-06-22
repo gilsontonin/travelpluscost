@@ -135,22 +135,30 @@ async function fetchOffers(input: PrebookInput, margin?: number): Promise<Offer[
   return out;
 }
 
-// Step 1 — price the chosen room to ~SSP, prebook with the Payment SDK enabled.
+// Smallest 2-decimal margin% that lifts net to >= SSP (decimals are supported per LiteAPI docs).
+// LiteAPI rule: never sell BELOW the suggested selling price on a public site — so we price at SSP,
+// not at raw wholesale. (Below-SSP "cost + small fee" is reserved for the future logged-in member
+// tier — a permitted "closed user group".)
+function marginToSSP(net: number, ssp: number): number {
+  if (!(net > 0) || !(ssp > net)) return 0;
+  return Math.ceil((ssp / net - 1) * 10000) / 100;
+}
+
+// Step 1 — price the chosen room AT its SSP, prebook with the Payment SDK enabled.
 export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult> {
   const base = await fetchOffers(input); // no margin: discover net + SSP
   if (!base.length) throw new Error("No availability for this hotel/date.");
   const want = canonRoom(input.room);
   base.sort((a, b) => Number(b.key === want) - Number(a.key === want) || a.ssp - b.ssp);
 
-  // Per-rate margin so the charge ≈ SSP (parity-safe public price), not raw wholesale.
-  const top = base[0];
-  const margin = Math.max(0, Math.ceil((top.ssp / top.net - 1) * 100));
-  const priced = margin > 0 ? await fetchOffers(input, margin) : base;
-  const pricedByKey = new Map(priced.map((o) => [o.key, o]));
-
   let lastError = "No bookable rate for this room.";
-  for (const cand of base.slice(0, 6)) {
-    const offer = pricedByKey.get(cand.key) ?? cand;
+  for (const cand of base.slice(0, 4)) {
+    // Price THIS room with ITS OWN margin so the charge lands at its SSP (never below).
+    const margin = marginToSSP(cand.net, cand.ssp);
+    const priced = margin > 0 ? await fetchOffers(input, margin) : base;
+    const offer = priced.find((o) => o.key === cand.key);
+    if (!offer) continue; // no margined offer for this room → skip, never charge net publicly
+    if (offer.net < cand.ssp - 0.5) continue; // compliance guard: must be >= SSP (allow 1c rounding)
     try {
       const pre = await call<{
         prebookId: string;
@@ -159,20 +167,20 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
         price?: number;
         currency?: string;
       }>(`${BOOK}/rates/prebook`, { offerId: offer.offerId, usePaymentSdk: true });
-      if (pre.prebookId && pre.secretKey && pre.transactionId) {
+      if (pre.prebookId && pre.secretKey && pre.transactionId && typeof pre.price === "number" && pre.price >= cand.ssp - 0.5) {
         const feeSum = Math.round(offer.fees.reduce((s, f) => s + f.amount, 0) * 100) / 100;
         return {
           prebookId: pre.prebookId,
           secretKey: pre.secretKey,
           transactionId: pre.transactionId,
-          price: pre.price ?? offer.net,
+          price: pre.price,
           currency: pre.currency ?? "USD",
           room: offer.room,
           feesAtProperty: feeSum,
           propertyFees: offer.fees,
         };
       }
-      lastError = "Prebook did not return Payment SDK credentials.";
+      lastError = "Prebook did not confirm a compliant price.";
     } catch (e) {
       lastError = e instanceof Error ? e.message : String(e);
     }

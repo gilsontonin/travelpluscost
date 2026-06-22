@@ -138,9 +138,16 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
   realistically launch = home state (if one of the 4) + maybe CA (~$100/yr); FL is the only heavy one
   ($300 + $25k bond) and isn't required. Action: email LiteAPI "who is MoR in your payment flow?" +
   read CA SoT FAQ / 1-hr attorney consult. Cheap, not a 50-state gauntlet.
-- Markup is **percentage-only** (resolved 2026-06-21): `margin:15` → `retailRate.total = net×1.15`,
-  does NOT move SSP, LiteAPI takes no cut of it. Since we charge via LiteAPI's payment, **that
-  `retailRate.total` is what the guest pays** — so display must equal it (see §4a). See `docs/LITEAPI.md`.
+- Markup is a **percentage** (decimals supported): `margin` overrides the dashboard default,
+  `additionalMarkup` adds to it; `margin:0` = net. The `margin` lifts `retailRate.total` (does NOT
+  move SSP), LiteAPI takes no cut, and **that `retailRate.total` is what LiteAPI's payment charges** —
+  so display must equal it (see §4a).
+- **SSP FLOOR — hard compliance rule (revenue-management doc, complied 2026-06-21):** you may sell
+  *at or above* SSP on a public site, and **below SSP only for a closed user group** (logged-in /
+  app-only / bundled). So our public checkout prices **at SSP**: `sandboxPrebook` computes the smallest
+  2-decimal `margin` that lifts net to ≥ SSP per rate, and a guard **rejects any prebook whose price is
+  below SSP** (never charge wholesale publicly). Verified: Outrigger charge $1,008.57 vs SSP $1,008.32.
+  The below-SSP "cost + small fee" model is reserved for the future **logged-in member tier**.
 - Never display NET or the exact margin math that lets a user derive NET (parity + the derivation
   problem). Show the *principle*, not the number. Below-SSP (cost+fee) only behind the membership login.
 
