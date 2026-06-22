@@ -127,8 +127,8 @@ export function directoryToCard(h: DirectoryHotel): CardHotel {
 
 /** Resolve a free-text destination to result cards from the directory. City first; an island/market
  * name (e.g. "Oahu") expands to its cities; otherwise a fuzzy name/city match. Covers any US city. */
-export async function searchDirectory(destination: string, limit = 50): Promise<CardHotel[]> {
-  const CAND = 150; // fetch a generous candidate set, then weight-rank down to `limit`
+export async function searchDirectory(destination: string, limit = 500): Promise<CardHotel[]> {
+  const CAND = Math.max(limit + 100, 600); // fetch a generous candidate set, then weight-rank down to `limit`
   const city = destination.split(",")[0].trim();
   let rows: DirectoryHotel[] = city ? await hotelsByCity(city, "us", CAND) : [];
   if (!rows.length) {

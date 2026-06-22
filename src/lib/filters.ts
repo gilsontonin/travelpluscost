@@ -60,9 +60,15 @@ export function applySort(
 ): CardHotel[] {
   const arr = [...hotels];
   const perNight = (h: CardHotel) => prices?.[h.id]?.perNight ?? Number.POSITIVE_INFINITY;
-  if (sort === "price_asc") arr.sort((a, b) => perNight(a) - perNight(b));
-  else if (sort === "price_desc") arr.sort((a, b) => perNight(b) - perNight(a));
-  else if (sort === "rating") arr.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
+  // "No data" (no live price / unavailable for these dates) always sinks to the bottom, in EVERY
+  // sort mode — you should never scroll past unbookable hotels to reach available ones. (This also
+  // fixes "price: high to low", where unpriced hotels used to float to the top via Infinity.)
+  const available = (h: CardHotel) => (prices?.[h.id] != null ? 0 : 1);
+
+  let cmp: (a: CardHotel, b: CardHotel) => number = () => 0; // "recommended" keeps the ranked order
+  if (sort === "price_asc") cmp = (a, b) => perNight(a) - perNight(b);
+  else if (sort === "price_desc") cmp = (a, b) => perNight(b) - perNight(a);
+  else if (sort === "rating") cmp = (a, b) => (b.rating ?? 0) - (a.rating ?? 0);
   else if (sort === "distance") {
     // distance from the result set's region anchor (e.g. Waikiki Beach for Oahu)
     const region = arr[0] ? getRegion(arr[0].region) : undefined;
@@ -71,8 +77,8 @@ export function applySort(
       anchor && h.lat != null && h.lng != null
         ? haversineMiles(h.lat, h.lng, anchor.lat, anchor.lng)
         : Number.POSITIVE_INFINITY;
-    arr.sort((a, b) => dist(a) - dist(b));
+    cmp = (a, b) => dist(a) - dist(b);
   }
-  // "recommended" keeps the ingested order
+  arr.sort((a, b) => available(a) - available(b) || cmp(a, b));
   return arr;
 }

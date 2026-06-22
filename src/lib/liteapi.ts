@@ -47,9 +47,14 @@ export function getHotels(
   return liteApiFetch<unknown>("/data/hotels", { method: "GET", query: params });
 }
 
-/** Full content for a single hotel. */
-export function getHotelDetails(hotelId: string) {
-  return liteApiFetch<unknown>("/data/hotel", { method: "GET", query: { hotelId } });
+/** Full content for a single hotel. timeoutMs caps the wait so a slow LiteAPI can't block the
+ *  property-page render — getHotelContent falls back to the thin directory row on timeout. */
+export function getHotelDetails(hotelId: string, timeoutMs = 5000) {
+  return liteApiFetch<unknown>("/data/hotel", {
+    method: "GET",
+    query: { hotelId },
+    signal: AbortSignal.timeout(timeoutMs),
+  });
 }
 
 /** Live rates for a set of hotels on given dates/occupancy. */

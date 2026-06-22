@@ -40,30 +40,25 @@ export default function ResultsList({
   checkout?: string;
   adults: number;
 }) {
-  const [prices, setPrices] = useState<Record<string, Price> | null>(null);
+  const [prices, setPrices] = useState<Record<string, Price>>({}); // accumulates as you scroll
+  const [done, setDone] = useState<Set<string>>(() => new Set()); // ids whose price lookup finished
+  const inflight = useRef<Set<string>>(new Set()); // de-dupe in-flight requests
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [sort, setSort] = useState<SortKey>("recommended");
   const [open, setOpen] = useState(false);
   const [view, setView] = useState<"list" | "map">("list");
 
+  // Reset prices when the search itself changes (render-time check avoids a flash of stale prices).
+  const searchSig = `${hotels.length}:${hotels[0]?.id ?? ""}:${hotels[hotels.length - 1]?.id ?? ""}|${checkin}|${checkout}|${adults}`;
+  const [prevSearchSig, setPrevSearchSig] = useState(searchSig);
+  if (searchSig !== prevSearchSig) {
+    setPrevSearchSig(searchSig);
+    setPrices({});
+    setDone(new Set());
+  }
   useEffect(() => {
-    let on = true;
-    fetch("/api/prices", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ hotelIds: hotels.map((h) => h.id), checkin, checkout, adults }),
-    })
-      .then((r) => r.json())
-      .then((d) => {
-        if (on) setPrices(d.prices ?? {});
-      })
-      .catch(() => {
-        if (on) setPrices({});
-      });
-    return () => {
-      on = false;
-    };
-  }, [hotels, checkin, checkout, adults]);
+    inflight.current = new Set();
+  }, [searchSig]);
 
   const cardQuery = new URLSearchParams({
     ...(checkin ? { checkin } : {}),
@@ -89,6 +84,34 @@ export default function ResultsList({
   }
   const paged = visible.slice(0, shown);
   const hasMore = shown < visible.length;
+
+  // Per-page price loading: fetch live "from" prices only for the cards currently revealed (not all
+  // ~500 up front), so big-city result sets stay fast. Each scroll step fetches just the new ids.
+  const pagedSig = paged.map((h) => h.id).join(",");
+  useEffect(() => {
+    const toFetch = paged.filter((h) => !done.has(h.id) && !inflight.current.has(h.id)).map((h) => h.id);
+    if (!toFetch.length) return;
+    toFetch.forEach((id) => inflight.current.add(id));
+    const settle = (got: Record<string, Price>) => {
+      if (Object.keys(got).length) setPrices((p) => ({ ...p, ...got }));
+      setDone((s) => {
+        const n = new Set(s);
+        toFetch.forEach((id) => n.add(id));
+        return n;
+      });
+      toFetch.forEach((id) => inflight.current.delete(id));
+    };
+    fetch("/api/prices", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ hotelIds: toFetch, checkin, checkout, adults }),
+    })
+      .then((r) => r.json())
+      .then((d) => settle((d.prices ?? {}) as Record<string, Price>))
+      .catch(() => settle({}));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pagedSig, checkin, checkout, adults]);
+
   const sentinel = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = sentinel.current;
@@ -249,7 +272,7 @@ export default function ResultsList({
       {/* count + sort + view */}
       <div className="flex items-center justify-between gap-2 mt-3 mb-3">
         <p className="text-sm text-black/55">
-          {visible.length} stays{prices === null ? " · loading prices…" : ""}
+          {visible.length} stays{paged.some((h) => !done.has(h.id)) ? " · loading prices…" : ""}
         </p>
         <select
           value={sort}
@@ -282,8 +305,8 @@ export default function ResultsList({
                 key={h.id}
                 hotel={h}
                 query={cardQuery}
-                price={prices?.[h.id] ?? null}
-                loading={prices === null}
+                price={prices[h.id] ?? null}
+                loading={!done.has(h.id)}
                 priority={idx < 2}
               />
             ))}
