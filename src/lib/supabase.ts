@@ -1,12 +1,29 @@
-// Supabase (Postgres) — hotel content store. Service-role client for ingestion/server reads.
-import { createClient } from "@supabase/supabase-js";
+// Supabase connection layer — two clients, deliberately split:
+//   • supabaseAdmin()   — SECRET key, full access (bypasses RLS). SERVER ONLY (SSR reads, ingest,
+//     admin writes). Never import into a client component.
+//   • supabaseBrowser() — PUBLISHABLE (anon) key, safe to expose. Login/signup + RLS-gated reads.
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { requireEnv } from "./env";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+const URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
 
-/** Service-role client — server-side ONLY (ingestion, privileged reads). Never ship to the browser. */
-export function supabaseAdmin() {
-  return createClient(supabaseUrl, requireEnv("SUPABASE_SERVICE_ROLE_KEY"), {
-    auth: { persistSession: false },
-  });
+let _admin: SupabaseClient | null = null;
+
+/** Server-only client (secret key, full DB access). Cached per server instance. */
+export function supabaseAdmin(): SupabaseClient {
+  if (typeof window !== "undefined") {
+    throw new Error("supabaseAdmin() is server-only — never call it from the browser.");
+  }
+  if (!_admin) {
+    _admin = createClient(URL, requireEnv("SUPABASE_SECRET_KEY"), {
+      auth: { persistSession: false, autoRefreshToken: false },
+    });
+  }
+  return _admin;
+}
+
+/** Browser/auth client (publishable key, safe to expose). */
+export function supabaseBrowser(): SupabaseClient {
+  const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+  return createClient(URL, anon);
 }
