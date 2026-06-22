@@ -63,7 +63,10 @@ function mapHotel(x, country) {
     stars: x.stars ?? null,
     rating: x.rating ?? null,
     review_count: x.reviewCount ?? null,
-    thumbnail: x.thumbnail || x.main_photo || null,
+    // Store the FULL-RES main_photo (not the small thumbnail): cards stretch the image across ~42%
+    // of the card, where the thumbnail looked soft upscaled. Next/image downscales main_photo to a
+    // crisp card-sized image. Falls back to thumbnail if a hotel has no main_photo.
+    thumbnail: x.main_photo || x.thumbnail || null,
     kind,
     property_type: propertyType || null,
   };
