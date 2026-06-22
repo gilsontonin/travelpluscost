@@ -16,7 +16,7 @@ import ExploreArea from "@/components/ExploreArea";
 // AboutNeighborhood (OSM/OSRM "About the neighborhood") is BACKLOGGED — built but unwired until we
 // precompute its data to our DB (public Overpass is too slow for a live call). See lib/neighborhood.ts.
 import ExpandableText from "@/components/ExpandableText";
-import AmenitiesSection from "@/components/AmenitiesSection";
+import AmenityGroups from "@/components/AmenityGroups";
 import PopularAmenities from "@/components/PopularAmenities";
 import PropertyFaq from "@/components/PropertyFaq";
 import PoliciesInfo from "@/components/PoliciesInfo";
@@ -26,6 +26,7 @@ import TrackView from "@/components/TrackView";
 import { nearbyLabel } from "@/lib/distance";
 import { REGIONS } from "@/lib/regions";
 import { SITE_NAME } from "@/lib/site";
+import { categorizeProperty, categorizeRoom } from "@/lib/amenityGroups";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelpluscost.com";
 
@@ -42,12 +43,29 @@ export async function generateMetadata({
   if (!hotel) return {};
   const loc = hotel.city || hotel.island || "";
   const titleCore = loc ? `${hotel.name}, ${loc}` : hotel.name;
+  // Amenity-led meta description (Expedia-style): lead with the standout amenities, then location.
+  const fac = (hotel.facilities ?? []).join(" | ").toLowerCase();
+  const amen: string[] = [];
+  if (/pool|swimming/.test(fac)) amen.push("a pool");
+  if (/spa|sauna|massage/.test(fac)) amen.push("a spa");
+  if (/fitness|gym/.test(fac)) amen.push("a fitness center");
+  if (/restaurant|dining/.test(fac)) amen.push("an on-site restaurant");
+  if (/free wi-?fi/.test(fac)) amen.push("free WiFi");
+  if (/beach/.test(fac)) amen.push("beach access");
+  if (/\bbar\b|lounge/.test(fac)) amen.push("a bar");
+  if (/parking/.test(fac)) amen.push("parking");
   const raw = (hotel.description || "").replace(/\s+/g, " ").trim();
-  const description = raw
-    ? raw.length > 155
-      ? `${raw.slice(0, 152).replace(/\s+\S*$/, "")}…`
-      : raw
-    : `Compare ${hotel.name}${loc ? ` in ${loc}` : ""} — the room rate plus one small flat fee, the same price for everyone. No surveillance pricing.`;
+  let description: string;
+  if (amen.length >= 2) {
+    const top = amen.slice(0, 3);
+    const list = top.length > 1 ? `${top.slice(0, -1).join(", ")} and ${top[top.length - 1]}` : top[0];
+    description = `Enjoy ${list} at ${hotel.name}${loc ? ` in ${loc}` : ""}. One honest price — the rate plus one small flat fee, the same for everyone.`;
+  } else if (raw) {
+    description = raw;
+  } else {
+    description = `Compare ${hotel.name}${loc ? ` in ${loc}` : ""} — the room rate plus one small flat fee, the same price for everyone. No surveillance pricing.`;
+  }
+  description = description.length > 160 ? `${description.slice(0, 157).replace(/\s+\S*$/, "")}…` : description;
   const url = `/hotel/${id}`;
   return {
     title: titleCore,
@@ -85,6 +103,8 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
   const landmarks = region?.landmarks ?? [];
   const cityLabel = hotel.city ? `${hotel.city} hotels` : "Hotels";
   const searchHref = `/search?destination=${encodeURIComponent(hotel.city || "")}&adults=2`;
+  const propertyGroups = categorizeProperty(hotel.facilities ?? []);
+  const roomGroups = categorizeRoom(Array.from(new Set((hotel.rooms ?? []).flatMap((r) => r.amenities ?? []))));
 
   return (
     <div className="mx-auto max-w-6xl px-4 pt-3 pb-24 sm:py-6 lg:pb-6">
@@ -233,8 +253,6 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
             </div>
           ) : null}
 
-          <AmenitiesSection facilities={hotel.facilities} name={hotel.name} />
-
           {/* Good to know — only the facts we actually have (no empty "—" cells) */}
           {hotel.checkin || hotel.checkout || hotel.petsAllowed != null || hotel.childAllowed != null ? (
             <div className="mt-8">
@@ -289,6 +307,9 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
           Compare similar properties
         </Link>
       </div>
+
+      <AmenityGroups title={`${hotel.name} property amenities`} groups={propertyGroups} seeAllLabel="See all property amenities" />
+      <AmenityGroups title={`${hotel.name} room amenities`} groups={roomGroups} seeAllLabel="See all room amenities" />
 
       <ViatorPackages lat={hotel.lat} lng={hotel.lng} />
 

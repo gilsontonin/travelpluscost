@@ -25,7 +25,7 @@ export default function PoliciesInfo({
       ) : null}
       {importantInfo ? (
         <div className="mt-6 max-w-3xl border-t border-black/[0.07] pt-5">
-          <h3 className="font-medium text-sm mb-2">You need to know</h3>
+          <h3 className="font-medium text-sm mb-2">{name ? `You need to know about ${name}` : "You need to know"}</h3>
           <ExpandableText text={importantInfo} threshold={240} />
         </div>
       ) : null}

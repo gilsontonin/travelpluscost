@@ -1,22 +1,60 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 
-// Renders the hotel description as clean, separated paragraphs. Collapsed by default with a soft
-// fade (not a hard line-clamp), expandable via "Read more".
+// Render a LiteAPI text blob as clean paragraphs + bullet lists. Lines starting with -, •, *, – or ·
+// become list items; everything else is a paragraph. Collapsed by default with a soft fade.
+function renderBlocks(text: string): ReactNode[] {
+  const out: ReactNode[] = [];
+  const blocks = text.split(/\n{2,}/).map((s) => s.trim()).filter(Boolean);
+  blocks.forEach((block, bi) => {
+    const lines = block.split(/\n/).map((l) => l.trim()).filter(Boolean);
+    let para: string[] = [];
+    let bullets: string[] = [];
+    const flushPara = () => {
+      if (para.length) {
+        out.push(<p key={`p${bi}-${out.length}`}>{para.join(" ")}</p>);
+        para = [];
+      }
+    };
+    const flushBullets = () => {
+      if (bullets.length) {
+        out.push(
+          <ul key={`u${bi}-${out.length}`} className="list-disc space-y-1 pl-5">
+            {bullets.map((b, i) => (
+              <li key={i}>{b}</li>
+            ))}
+          </ul>,
+        );
+        bullets = [];
+      }
+    };
+    for (const line of lines) {
+      const m = line.match(/^[-•*–·]\s+(.*)/);
+      if (m) {
+        flushPara();
+        bullets.push(m[1].trim());
+      } else {
+        flushBullets();
+        para.push(line);
+      }
+    }
+    flushPara();
+    flushBullets();
+  });
+  return out;
+}
+
 export default function ExpandableText({ text, threshold = 280 }: { text: string; threshold?: number }) {
   const [open, setOpen] = useState(false);
   if (!text) return null;
-  const paras = text.split(/\n{2,}/).map((s) => s.trim()).filter(Boolean);
-  const long = text.length > threshold || paras.length > 2;
+  const long = text.length > threshold;
 
   return (
     <div>
       <div className="relative">
         <div className={`space-y-3 text-[15px] leading-relaxed text-black/75 ${!open && long ? "max-h-32 overflow-hidden" : ""}`}>
-          {paras.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+          {renderBlocks(text)}
         </div>
         {!open && long ? (
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-[#f4f4f6] to-transparent" />
