@@ -61,6 +61,7 @@ export function getRates(body: {
   currency?: string;
   guestNationality?: string;
   roomMapping?: boolean; // true → each rate carries a mappedRoomId for exact room content
+  timeout?: number; // seconds; LiteAPI returns whatever responded in time (recommended 4–10 for live)
 }) {
   return liteApiFetch<unknown>("/hotels/rates", { method: "POST", body: JSON.stringify(body) });
 }

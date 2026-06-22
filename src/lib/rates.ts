@@ -266,6 +266,9 @@ async function fetchRates(
     occupancies: [{ adults }],
     currency: "USD",
     guestNationality: "US",
+    // Bound latency: take whatever rates respond within 10s rather than hang on one slow hotel
+    // (LiteAPI recommends 4–10s for live requests; 10 keeps inventory complete).
+    timeout: 10,
     // Only the property page (room list) needs per-rate room mapping; result cards don't.
     ...(roomMapping ? { roomMapping: true } : {}),
   })) as { data?: RatesHotel[] };
