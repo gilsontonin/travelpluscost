@@ -29,6 +29,23 @@ const h = { "X-API-Key": KEY, accept: "application/json" };
 const PAGE = 1000;
 const BATCH = 500;
 
+// Page fetch with a hard timeout + retry/backoff. Without the timeout a hung connection stalls the
+// whole ingest forever (it has, twice) — AbortSignal.timeout aborts it so the retry can recover.
+async function fetchJson(url, tries = 4) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const r = await fetch(url, { headers: h, signal: AbortSignal.timeout(30000) });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return await r.json();
+    } catch (e) {
+      if (attempt >= tries) throw e;
+      const wait = 1000 * attempt;
+      process.stdout.write(`\n  retry ${attempt}/${tries - 1} (${e.message}); waiting ${wait}ms\n`);
+      await new Promise((res) => setTimeout(res, wait));
+    }
+  }
+}
+
 const slugify = (s) =>
   (s || "").toLowerCase().normalize("NFKD").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").replace(/-+/g, "-").slice(0, 80);
 
@@ -56,7 +73,8 @@ function mapHotel(x, country) {
     name: x.name,
     slug: `${slugify(x.name)}-${x.id}`,
     city: x.city || null,
-    state: null, // not in the list response — enriched later for state-level SEO
+    // state intentionally omitted from the payload — it's populated by scripts/enrich-state.mjs
+    // (lat/lng -> state). Leaving it out of the upsert preserves that enriched value on re-ingest.
     country: (x.country || country).toLowerCase(),
     lat: typeof x.latitude === "number" ? x.latitude : null,
     lng: typeof x.longitude === "number" ? x.longitude : null,
@@ -86,9 +104,7 @@ async function ingestCountry(country) {
   console.log(`\n${country}: ingesting (cap ${MAX === Infinity ? "all" : MAX})…`);
   for (;;) {
     const url = `${BASE}/data/hotels?countryCode=${country}&limit=${PAGE}&offset=${offset}&timeout=10`;
-    const r = await fetch(url, { headers: h });
-    if (!r.ok) throw new Error(`hotels ${r.status} at offset ${offset}`);
-    const j = await r.json();
+    const j = await fetchJson(url);
     const list = (j.data || []).filter((x) => x && x.id && x.name && !x.deletedAt);
     if (total === null) total = j.total ?? list.length;
     if (!list.length) break;

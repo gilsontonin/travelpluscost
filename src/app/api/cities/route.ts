@@ -23,7 +23,7 @@ export async function GET(req: Request) {
   const counts = new Map<string, { city: string; state: string | null; country: string; n: number }>();
   for (const r of data ?? []) {
     if (!r.city) continue;
-    const key = `${r.city.toLowerCase()}|${r.country}`;
+    const key = `${r.city.toLowerCase()}|${r.state ?? ""}|${r.country}`; // same city, different states = separate suggestions
     const cur = counts.get(key);
     if (cur) cur.n++;
     else counts.set(key, { city: r.city, state: r.state ?? null, country: r.country, n: 1 });

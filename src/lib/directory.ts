@@ -50,15 +50,15 @@ export function rankHotels(rows: DirectoryHotel[]): DirectoryHotel[] {
 }
 
 /** Hotels in a named city — powers "hotels in <city>" pages and city search. */
-export async function hotelsByCity(city: string, country = "us", limit = 60): Promise<DirectoryHotel[]> {
-  const { data, error } = await supabaseAdmin()
+export async function hotelsByCity(city: string, country = "us", limit = 60, state?: string): Promise<DirectoryHotel[]> {
+  let q = supabaseAdmin()
     .from("hotels")
     .select(COLS)
     .eq("country", country.toLowerCase())
     .ilike("city", city)
-    .eq("kind", "hotel") // real hotels only — rentals/B&Bs/etc. are hidden from search
-    .order("review_count", ORDER_REVIEWS)
-    .limit(limit);
+    .eq("kind", "hotel"); // real hotels only — rentals/B&Bs/etc. are hidden from search
+  if (state) q = q.eq("state", state.toUpperCase()); // disambiguate same-named cities (Austin TX vs MN)
+  const { data, error } = await q.order("review_count", ORDER_REVIEWS).limit(limit);
   if (error) throw new Error(error.message);
   return (data ?? []) as DirectoryHotel[];
 }
@@ -129,8 +129,12 @@ export function directoryToCard(h: DirectoryHotel): CardHotel {
  * name (e.g. "Oahu") expands to its cities; otherwise a fuzzy name/city match. Covers any US city. */
 export async function searchDirectory(destination: string, limit = 500): Promise<CardHotel[]> {
   const CAND = Math.max(limit + 100, 600); // fetch a generous candidate set, then weight-rank down to `limit`
-  const city = destination.split(",")[0].trim();
-  let rows: DirectoryHotel[] = city ? await hotelsByCity(city, "us", CAND) : [];
+  // "Austin, TX" -> city "Austin" + state "TX" (a trailing 2-letter token); "Austin" -> no state filter.
+  const parts = destination.split(",").map((s) => s.trim()).filter(Boolean);
+  const city = parts[0] ?? "";
+  const state = parts[1] && /^[A-Za-z]{2}$/.test(parts[1]) ? parts[1].toUpperCase() : undefined;
+  let rows: DirectoryHotel[] = city ? await hotelsByCity(city, "us", CAND, state) : [];
+  if (!rows.length && state) rows = await hotelsByCity(city, "us", CAND); // state had no match -> try city-only
   if (!rows.length) {
     const region = resolveRegion(destination);
     if (region) {

@@ -52,7 +52,7 @@ export function getHotels(
 export function getHotelDetails(hotelId: string, timeoutMs = 5000) {
   return liteApiFetch<unknown>("/data/hotel", {
     method: "GET",
-    query: { hotelId },
+    query: { hotelId, timeout: 4 }, // LiteAPI's own server-side cap (s); returns just before the client AbortSignal
     signal: AbortSignal.timeout(timeoutMs),
   });
 }
