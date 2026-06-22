@@ -2,6 +2,8 @@
 // This is the search + SEO layer that scales to every hotel in the US, then the world. Full content
 // and live rates still come from LiteAPI on demand (the directory holds no prices). Server-only.
 import { supabaseAdmin } from "./supabase";
+import { resolveRegion } from "./regions";
+import type { CardHotel } from "./hotels";
 
 export interface DirectoryHotel {
   id: string;
@@ -70,6 +72,45 @@ export async function getDirectoryHotel(id: string): Promise<DirectoryHotel | nu
   const { data, error } = await supabaseAdmin().from("hotels").select(COLS).eq("id", id).maybeSingle();
   if (error) throw new Error(error.message);
   return (data as DirectoryHotel) ?? null;
+}
+
+/** Directory row → the CardHotel shape the search results pipeline already renders. */
+export function directoryToCard(h: DirectoryHotel): CardHotel {
+  return {
+    id: h.id,
+    name: h.name,
+    city: h.city ?? "",
+    address: "",
+    image: h.thumbnail ?? "",
+    images: h.thumbnail ? [h.thumbnail] : [],
+    stars: h.stars,
+    rating: h.rating,
+    reviewCount: h.review_count,
+    amenities: [], // directory holds no amenity data (fetched live on the property page)
+    lat: h.lat,
+    lng: h.lng,
+    nearby: null,
+    propertyType: "",
+    category: "hotel",
+    region: "",
+  };
+}
+
+/** Resolve a free-text destination to result cards from the directory. City first; an island/market
+ * name (e.g. "Oahu") expands to its cities; otherwise a fuzzy name/city match. Covers any US city. */
+export async function searchDirectory(destination: string, limit = 80): Promise<CardHotel[]> {
+  const city = destination.split(",")[0].trim();
+  let rows: DirectoryHotel[] = city ? await hotelsByCity(city, "us", limit) : [];
+  if (!rows.length) {
+    const region = resolveRegion(destination);
+    if (region) {
+      const lists = await Promise.all(region.cities.map((c) => hotelsByCity(c, "us", limit)));
+      const seen = new Set<string>();
+      rows = lists.flat().filter((h) => (seen.has(h.id) ? false : seen.add(h.id)));
+    }
+  }
+  if (!rows.length) rows = await searchHotelsByText(destination, limit);
+  return rows.map(directoryToCard);
 }
 
 /** Total directory size — for status/health. */

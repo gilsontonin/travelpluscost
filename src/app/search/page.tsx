@@ -1,8 +1,10 @@
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import ResultsList from "@/components/ResultsList";
-import { searchHotels, toCard } from "@/lib/hotels";
+import { searchDirectory } from "@/lib/directory";
 import { REGIONS } from "@/lib/regions";
+
+export const dynamic = "force-dynamic";
 
 export default async function SearchPage({
   searchParams,
@@ -15,7 +17,8 @@ export default async function SearchPage({
   const checkout = sp.checkout;
   const adults = sp.adults ? parseInt(sp.adults, 10) : 2;
 
-  const hotels = destination ? searchHotels(destination).map(toCard) : [];
+  // Every US city, from the directory (live "from" prices fetched per result set).
+  const hotels = destination ? await searchDirectory(destination) : [];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-4">
@@ -31,7 +34,8 @@ export default async function SearchPage({
       ) : hotels.length === 0 ? (
         <div className="text-black/50 py-16 text-center">
           <p>
-            We don&apos;t cover <span className="font-medium">{destination}</span> yet. We&apos;re live in:
+            No stays found for <span className="font-medium">{destination}</span>. Check the spelling, or try a
+            popular destination:
           </p>
           <div className="mt-3 flex flex-wrap justify-center gap-2">
             {REGIONS.map((r) => (
