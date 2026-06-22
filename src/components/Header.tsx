@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import VibeSearchCta from "@/components/VibeSearchCta";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -9,24 +10,6 @@ const NAV = [
   { href: "/#how", label: "How pricing works" },
   { href: "/#about", label: "About" },
 ];
-
-// The sticky CTA opens the search entry (not a hardcoded Oahu search).
-const SEARCH_HREF = "/search";
-
-function SearchCta({ className = "" }: { className?: string }) {
-  return (
-    <Link
-      href={SEARCH_HREF}
-      className={`bg-accent text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 active:scale-95 transition inline-flex items-center gap-1.5 ${className}`}
-    >
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-        <circle cx="11" cy="11" r="7" />
-        <path d="m21 21-4.3-4.3" />
-      </svg>
-      Search<span className="hidden sm:inline">&nbsp;hotels</span>
-    </Link>
-  );
-}
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -49,7 +32,7 @@ export default function Header() {
             </nav>
 
             <div className="flex items-center gap-2 shrink-0">
-              <SearchCta />
+              <VibeSearchCta />
               <button
                 onClick={() => setOpen(!open)}
                 className="md:hidden p-2 -mr-1 text-black/70"
@@ -85,7 +68,7 @@ export default function Header() {
                 {n.label}
               </Link>
             ))}
-            <SearchCta className="mt-1 justify-center" />
+            <VibeSearchCta className="mt-1 justify-center" />
           </div>
         )}
       </div>
