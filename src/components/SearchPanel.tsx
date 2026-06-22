@@ -78,25 +78,32 @@ export default function SearchPanel({
   if (compact && !open) {
     const dateLabel = checkin && checkout ? `${fmtDay(checkin)} – ${fmtDay(checkout)}` : "Any dates";
     return (
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="w-full bg-white border border-black/10 rounded-lg px-4 py-2.5 flex items-center gap-3 text-left hover:border-black/25 transition shadow-sm"
-      >
-        <span className="grid place-items-center w-9 h-9 rounded-full bg-accent-tint text-accent shrink-0">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <circle cx="11" cy="11" r="7" />
-            <path d="m21 21-4.3-4.3" />
-          </svg>
-        </span>
-        <span className="min-w-0">
-          <span className="block font-semibold truncate">{vibe || destination || "Search hotels"}</span>
-          <span className="block text-xs text-black/55 truncate">
-            {dateLabel} · {adults} traveler{adults > 1 ? "s" : ""}
+      <div className="flex w-full items-center gap-3 rounded-lg border border-black/10 bg-white px-4 py-2.5 shadow-sm transition hover:border-black/25">
+        <button type="button" onClick={() => setOpen(true)} className="flex min-w-0 flex-1 items-center gap-3 text-left">
+          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-accent-tint text-accent">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
           </span>
-        </span>
-        <span className="ml-auto text-sm font-medium text-accent shrink-0">Edit</span>
-      </button>
+          <span className="min-w-0">
+            <span className="block truncate font-semibold">{vibe || destination || "Search hotels"}</span>
+            <span className="block truncate text-xs text-black/55">
+              {dateLabel} · {adults} traveler{adults > 1 ? "s" : ""}
+            </span>
+          </span>
+        </button>
+        {/* Sparkle "vibe" entry — the highlighted top spot on results (the Map button owns the floating slot) */}
+        <button
+          type="button"
+          onClick={() => { setMode("vibe"); setOpen(true); }}
+          aria-label="Search by vibe"
+          className="inline-flex shrink-0 items-center gap-1 rounded-full border border-accent/30 px-2.5 py-1.5 text-sm font-medium text-accent transition hover:border-accent/60"
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 1.9 5.8L19.5 9l-4.6 3.8L16.4 19 12 15.5 7.6 19l1.5-6.2L4.5 9l5.6-1.2z" /></svg>
+          Vibe
+        </button>
+      </div>
     );
   }
 

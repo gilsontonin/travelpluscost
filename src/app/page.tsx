@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
+import VibePromptPill from "@/components/VibePromptPill";
 import HotelRail from "@/components/HotelRail";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
@@ -43,6 +44,7 @@ export default function Home() {
 
       <div className="mt-8">
         <SearchPanel />
+        <VibePromptPill />
       </div>
 
       {/* honest trust strip */}
