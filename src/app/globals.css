@@ -47,3 +47,36 @@ body {
     font-size: 16px;
   }
 }
+
+/* LiteAPI Payment SDK ships NO css (its /config returns cssFile:"") and renders a plain
+   <button class="lp-submit-button">Pay</button>. Tailwind Preflight strips native button
+   styling, so without this the Pay button is invisible (the form still submits via Enter /
+   Link, which is why a charge fires with "no visible button"). Style it so it's clickable. */
+.lp-submit-button-wrapper {
+  margin-top: 1rem;
+}
+.lp-submit-button {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.875rem 1.25rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.lp-submit-button:hover {
+  opacity: 0.92;
+}
+.lp-submit-button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+#st-error-message {
+  margin-top: 0.5rem;
+  color: #dc2626;
+  font-size: 0.85rem;
+  text-align: center;
+}
