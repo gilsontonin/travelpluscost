@@ -144,7 +144,7 @@ interface RawDetail {
   stars?: number;
   rating?: number;
   reviewCount?: number;
-  hotelImages?: { url?: string; urlHd?: string }[];
+  hotelImages?: { url?: string; urlHd?: string; defaultImage?: boolean }[];
   hotelFacilities?: (string | { name?: string })[];
   facilities?: { name?: string }[];
   hotelDescription?: string;
@@ -164,7 +164,11 @@ interface RawDetail {
 }
 
 function mapDetail(d: RawDetail): Hotel {
-  const images = (d.hotelImages ?? []).map((im) => im.urlHd || im.url).filter(Boolean).slice(0, 100) as string[];
+  // Lead with the flagged hero image (defaultImage:true) if present, else keep source order.
+  const rawImages = (d.hotelImages ?? []).filter((im) => im.urlHd || im.url);
+  const di = rawImages.findIndex((im) => im.defaultImage);
+  if (di > 0) rawImages.unshift(rawImages.splice(di, 1)[0]);
+  const images = rawImages.map((im) => im.urlHd || im.url).slice(0, 100) as string[];
   const sa = d.sentiment_analysis;
   return {
     id: d.id ?? "",
