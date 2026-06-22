@@ -15,12 +15,18 @@ const search = (q: string) => `/search?destination=${encodeURIComponent(q)}&adul
 export default function Home() {
   const all = getAllHotels();
   const cards = all.map(toCard);
+  // Review-weighted (Bayesian) sort so a 1-review perfect-10 can't outrank a well-reviewed favourite
+  // (M = prior weight, C = prior mean) — same idea as the search ranking.
+  const weighted = (c: (typeof cards)[number]) => {
+    const v = c.reviewCount ?? 0;
+    const R = c.rating ?? 0;
+    return (v * R + 25 * 8) / (v + 25);
+  };
   const topRated = [...cards]
     .filter((c) => c.rating != null)
-    .sort((a, b) => (b.rating as number) - (a.rating as number))
+    .sort((a, b) => weighted(b) - weighted(a))
     .slice(0, 12);
   const beachfront = cards.filter((c) => c.amenities.includes("Beachfront")).slice(0, 12);
-  const rentals = cards.filter((c) => c.category === "rental").slice(0, 12);
   const railAll = all.map(toRail);
 
   // markets we cover (the multi-region picker)
@@ -89,7 +95,6 @@ export default function Home() {
 
       <HotelRail title="Top-rated stays" subtitle="Guest favorites across our markets" hotels={topRated} />
       <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} />
-      <HotelRail title="Vacation rentals" subtitle="Condos, apartments & homes" hotels={rentals} />
 
       <PopularDestinations />
     </div>
