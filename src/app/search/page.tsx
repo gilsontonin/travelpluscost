@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import ResultsList from "@/components/ResultsList";
+import VibeResults from "@/components/VibeResults";
 import { searchDirectory } from "@/lib/directory";
 import { REGIONS } from "@/lib/regions";
 
@@ -13,22 +14,28 @@ export default async function SearchPage({
 }) {
   const sp = await searchParams;
   const destination = sp.destination ?? "";
+  const vibe = sp.vibe ?? "";
   const checkin = sp.checkin;
   const checkout = sp.checkout;
   const adults = sp.adults ? parseInt(sp.adults, 10) : 2;
 
-  // Every US city, from the directory (live "from" prices fetched per result set).
-  const hotels = destination ? await searchDirectory(destination) : [];
+  // Every US city, from the directory (live "from" prices fetched per result set). Vibe (AI) search
+  // is handled client-side by <VibeResults> — it's a slow, paid call that wants a loading state.
+  const hotels = !vibe && destination ? await searchDirectory(destination) : [];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-4">
       <SearchPanel
-        key={`${destination}|${checkin}|${checkout}|${adults}`}
+        key={`${destination}|${vibe}|${checkin}|${checkout}|${adults}`}
         compact
-        initial={{ destination, checkin, checkout, adults: String(adults) }}
+        initial={{ destination, vibe, checkin, checkout, adults: String(adults) }}
       />
 
-      {!destination ? (
+      {vibe ? (
+        <div className="mt-3">
+          <VibeResults key={`${vibe}|${checkin}|${checkout}|${adults}`} query={vibe} checkin={checkin} checkout={checkout} adults={adults} />
+        </div>
+      ) : !destination ? (
         <p className="text-black/50 py-16 text-center">
           Enter a destination above to see hotels.{" "}
           <Link className="text-accent" href="/">

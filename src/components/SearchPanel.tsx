@@ -9,7 +9,7 @@ import DateField from "@/components/DateField";
 import GuestField from "@/components/GuestField";
 import DestinationField from "@/components/DestinationField";
 
-type Initial = { destination?: string; checkin?: string; checkout?: string; adults?: string };
+type Initial = { destination?: string; vibe?: string; checkin?: string; checkout?: string; adults?: string };
 
 function fmtDay(d: string) {
   const dt = new Date(`${d}T00:00:00`);
@@ -49,7 +49,9 @@ export default function SearchPanel({
   compact?: boolean;
 }) {
   const router = useRouter();
+  const [mode, setMode] = useState<"city" | "vibe">(initial?.vibe ? "vibe" : "city");
   const [destination, setDestination] = useState(initial?.destination ?? "");
+  const [vibe, setVibe] = useState(initial?.vibe ?? "");
   const [checkin, setCheckin] = useState(initial?.checkin ?? "");
   const [checkout, setCheckout] = useState(initial?.checkout ?? "");
   const [adults, setAdults] = useState(initial?.adults ? parseInt(initial.adults, 10) : 2);
@@ -59,7 +61,12 @@ export default function SearchPanel({
   function submit(e: React.FormEvent) {
     e.preventDefault();
     const q = new URLSearchParams();
-    q.set("destination", destination);
+    if (mode === "vibe") {
+      if (!vibe.trim()) return;
+      q.set("vibe", vibe.trim());
+    } else {
+      q.set("destination", destination);
+    }
     if (checkin) q.set("checkin", checkin);
     if (checkout) q.set("checkout", checkout);
     q.set("adults", String(adults));
@@ -83,7 +90,7 @@ export default function SearchPanel({
           </svg>
         </span>
         <span className="min-w-0">
-          <span className="block font-semibold truncate">{destination || "Search hotels"}</span>
+          <span className="block font-semibold truncate">{vibe || destination || "Search hotels"}</span>
           <span className="block text-xs text-black/55 truncate">
             {dateLabel} · {adults} traveler{adults > 1 ? "s" : ""}
           </span>
@@ -139,7 +146,43 @@ export default function SearchPanel({
       </div>
 
       <form onSubmit={submit} className="space-y-2.5">
-        <DestinationField value={destination} onChange={setDestination} />
+        {/* City search vs natural-language "search by vibe" */}
+        <div className="flex gap-1.5 rounded-xl bg-black/[0.04] p-1">
+          <button
+            type="button"
+            onClick={() => setMode("city")}
+            className={`flex-1 rounded-lg py-2 text-sm font-medium transition ${mode === "city" ? "bg-white text-black shadow-sm" : "text-black/55 hover:text-black"}`}
+          >
+            Search by city
+          </button>
+          <button
+            type="button"
+            onClick={() => setMode("vibe")}
+            className={`flex flex-1 items-center justify-center gap-1.5 rounded-lg py-2 text-sm font-medium transition ${mode === "vibe" ? "bg-white text-accent shadow-sm" : "text-black/55 hover:text-black"}`}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 1.9 5.8L19.5 9l-4.6 3.8L16.4 19 12 15.5 7.6 19l1.5-6.2L4.5 9l5.6-1.2z" /></svg>
+            Search by vibe
+          </button>
+        </div>
+
+        {mode === "vibe" ? (
+          <label className="flex w-full items-start gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 transition hover:border-black/30 focus-within:border-accent">
+            <svg className="mt-1.5 shrink-0 text-accent" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 1.9 5.8L19.5 9l-4.6 3.8L16.4 19 12 15.5 7.6 19l1.5-6.2L4.5 9l5.6-1.2z" /></svg>
+            <span className="min-w-0 flex-1">
+              <span className="block text-xs text-black/45">Describe your perfect trip</span>
+              <input
+                value={vibe}
+                onChange={(e) => setVibe(e.target.value)}
+                required
+                placeholder="romantic beachfront resort in Maui with ocean views"
+                autoComplete="off"
+                className="mt-0.5 w-full bg-transparent text-[15px] font-medium outline-none placeholder:font-normal placeholder:text-black/40"
+              />
+            </span>
+          </label>
+        ) : (
+          <DestinationField value={destination} onChange={setDestination} />
+        )}
 
         <DateField checkin={checkin} checkout={checkout} onChange={(ci, co) => { setCheckin(ci); setCheckout(co); }} />
         <GuestField adults={adults} rooms={rooms} onChange={(a, r) => { setAdults(a); setRooms(r); }} />

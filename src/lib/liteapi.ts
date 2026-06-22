@@ -59,13 +59,17 @@ export function getHotelDetails(hotelId: string, timeoutMs = 5000) {
 
 /** Live rates for a set of hotels on given dates/occupancy. */
 export function getRates(body: {
-  hotelIds: string[];
+  hotelIds?: string[];
+  aiSearch?: string; // natural-language "search by vibe" — response adds a `hotels` array w/ persona/story/tags
+  placeId?: string; // alternative to hotelIds (LiteAPI places)
+  includeHotelData?: boolean; // include hotel content inline with the rates
   checkin: string; // YYYY-MM-DD
   checkout: string; // YYYY-MM-DD
   occupancies: { adults: number; children?: number[] }[];
   currency?: string;
   guestNationality?: string;
   roomMapping?: boolean; // true → each rate carries a mappedRoomId for exact room content
+  maxRatesPerHotel?: number; // NOTE: 1 is NOT guaranteed cheapest (verified) — don't use it for "from" prices
   timeout?: number; // seconds; LiteAPI returns whatever responded in time (recommended 4–10 for live)
 }) {
   return liteApiFetch<unknown>("/hotels/rates", { method: "POST", body: JSON.stringify(body) });
