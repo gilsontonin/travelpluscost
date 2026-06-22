@@ -6,6 +6,7 @@ import HotelRail from "@/components/HotelRail";
 import NearbyRail from "@/components/NearbyRail";
 import SeasonalRail from "@/components/SeasonalRail";
 import PopularDestinations from "@/components/PopularDestinations";
+import ViatorPackages from "@/components/ViatorPackages";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
 import { REGIONS } from "@/lib/regions";
@@ -95,6 +96,8 @@ export default function Home() {
 
       <HotelRail title="Top-rated stays" subtitle="Guest favorites across our markets" hotels={topRated} />
       <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} />
+
+      <ViatorPackages />
 
       <PopularDestinations />
     </div>
