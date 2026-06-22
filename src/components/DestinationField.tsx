@@ -1,58 +1,31 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { REGIONS } from "@/lib/regions";
 
 // Same pill styling as the other search fields.
-const FIELD = "w-full flex items-center gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 text-left transition hover:border-black/30 focus-within:border-accent";
+const FIELD =
+  "w-full flex items-center gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 text-left transition hover:border-black/30 focus-within:border-accent";
 
 type Suggestion = {
   id: string;
-  title: string; // bold line, e.g. "Honolulu"
-  subtitle: string; // muted line, e.g. "Oahu, Hawaii"
-  value: string; // what we put in the box — must resolve via searchHotels()
-  match: string; // lowercased haystack for filtering (title + subtitle + region terms)
-  kind: "region" | "city" | "area";
+  title: string;
+  subtitle: string;
+  value: string; // what we put in the box — resolves via searchDirectory()
+  kind: "region" | "city";
 };
 
-// Build the suggestion list once from the markets we actually cover. Every `value` is chosen so
-// searchHotels() resolves it: cities narrow within a region; regions/areas fall back to the region.
-const SUGGESTIONS: Suggestion[] = REGIONS.flatMap((r) => {
+// Default list (before typing): the curated markets, as a friendly starting point.
+const POPULAR: Suggestion[] = REGIONS.map((r) => {
   const state = r.label.split(",").slice(1).join(",").trim();
-  const sub = state ? `${state}, USA` : "USA";
-  const region: Suggestion = {
+  return {
     id: `r-${r.slug}`,
     title: r.name,
-    subtitle: sub,
+    subtitle: state ? `${state}, USA` : "United States",
     value: r.label,
-    match: `${r.name} ${sub} ${r.terms.join(" ")}`.toLowerCase(),
     kind: "region",
   };
-  const cities: Suggestion[] = r.cities
-    .filter((c) => c.toLowerCase() !== r.name.toLowerCase())
-    .map((c) => ({
-      id: `c-${r.slug}-${c}`,
-      title: c,
-      subtitle: r.label,
-      value: c,
-      match: `${c} ${r.label}`.toLowerCase(),
-      kind: "city",
-    }));
-  const areas: Suggestion[] = r.landmarks
-    .filter((l) => !l.airport && l.name !== r.anchor)
-    .slice(0, 4)
-    .map((l) => ({
-      id: `a-${r.slug}-${l.name}`,
-      title: l.name,
-      subtitle: r.label,
-      value: r.label,
-      match: `${l.name} ${r.label}`.toLowerCase(),
-      kind: "area",
-    }));
-  return [region, ...cities, ...areas];
 });
-
-const REGION_ONLY = SUGGESTIONS.filter((s) => s.kind === "region");
 
 function BuildingIcon({ className }: { className?: string }) {
   return (
@@ -65,6 +38,12 @@ function BuildingIcon({ className }: { className?: string }) {
   );
 }
 
+interface CityResult {
+  city: string;
+  state: string | null;
+  country: string;
+}
+
 export default function DestinationField({
   value,
   onChange,
@@ -74,6 +53,8 @@ export default function DestinationField({
 }) {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
+  const [results, setResults] = useState<Suggestion[]>([]);
+  const [loading, setLoading] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -85,20 +66,51 @@ export default function DestinationField({
     return () => document.removeEventListener("mousedown", onDoc);
   }, [open]);
 
-  // What to show: typed → ranked matches; empty → the markets we cover. Falls back to the market
-  // list (with a header) when the text matches nothing, so people land somewhere real.
-  const { list, header } = useMemo(() => {
-    const q = value.trim().toLowerCase();
-    if (!q) return { list: REGION_ONLY, header: "Popular destinations" };
-    // Match at a word boundary so "wai" hits Wailea/Waikiki but not Ha·wai·i, while "las vegas"
-    // (multi-word) still matches. \b before the escaped query does both.
-    const re = new RegExp("\\b" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-    const hits = SUGGESTIONS.filter((s) => re.test(s.match))
-      .sort((a, b) => Number(b.title.toLowerCase().startsWith(q)) - Number(a.title.toLowerCase().startsWith(q)))
-      .slice(0, 7);
-    if (hits.length) return { list: hits, header: "" };
-    return { list: REGION_ONLY, header: "We're live in these markets" };
+  // Debounced lookup against our own directory (free; no external autocomplete API). All state
+  // updates happen inside the async timeout (not synchronously in the effect body).
+  useEffect(() => {
+    const q = value.trim();
+    const ctrl = new AbortController();
+    const t = setTimeout(async () => {
+      if (q.length < 2) {
+        setResults([]);
+        setLoading(false);
+        return;
+      }
+      setLoading(true);
+      try {
+        const res = await fetch(`/api/cities?q=${encodeURIComponent(q)}`, { signal: ctrl.signal });
+        const d = (await res.json()) as { cities?: CityResult[] };
+        setResults(
+          (d.cities ?? []).map((c) => ({
+            id: `db-${c.city}-${c.country}`,
+            title: c.city,
+            subtitle: c.state ? `${c.state}, ${(c.country || "").toUpperCase()}` : "United States",
+            value: c.state ? `${c.city}, ${c.state}` : c.city,
+            kind: "city" as const,
+          })),
+        );
+        setLoading(false);
+      } catch {
+        /* aborted or failed — keep the last results */
+      }
+    }, 150);
+    return () => {
+      clearTimeout(t);
+      ctrl.abort();
+    };
   }, [value]);
+
+  const typing = value.trim().length >= 2;
+  const hasResults = results.length > 0;
+  const list: Suggestion[] = typing ? (hasResults ? results : loading ? [] : POPULAR) : POPULAR;
+  const header = !typing
+    ? "Popular destinations"
+    : hasResults
+      ? ""
+      : loading
+        ? "Searching…"
+        : "No matches — popular destinations";
 
   function choose(s: Suggestion) {
     onChange(s.value);
@@ -118,7 +130,7 @@ export default function DestinationField({
       e.preventDefault();
       setActive((i) => Math.max(i - 1, 0));
     } else if (e.key === "Enter" && open && active >= 0 && list[active]) {
-      e.preventDefault(); // pick the highlighted item instead of submitting the form
+      e.preventDefault();
       choose(list[active]);
     } else if (e.key === "Escape") {
       setOpen(false);
@@ -140,8 +152,9 @@ export default function DestinationField({
             onFocus={() => setOpen(true)}
             onKeyDown={onKeyDown}
             required
-            placeholder="Oahu, Hawaii"
+            placeholder="City, state, or destination"
             autoComplete="off"
+            role="combobox"
             aria-autocomplete="list"
             aria-expanded={open}
             className="w-full bg-transparent outline-none text-[15px] font-medium mt-0.5 placeholder:font-normal placeholder:text-black/40"
@@ -159,7 +172,6 @@ export default function DestinationField({
               <li key={s.id}>
                 <button
                   type="button"
-                  // mousedown fires before the input blur, so the pick isn't lost to a close
                   onMouseDown={(e) => { e.preventDefault(); choose(s); }}
                   onMouseEnter={() => setActive(i)}
                   className={`flex w-full items-center gap-3 px-4 py-2.5 text-left ${i === active ? "bg-accent-tint/60" : "hover:bg-black/[0.03]"}`}
