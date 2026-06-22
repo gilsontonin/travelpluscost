@@ -62,9 +62,9 @@ export default function Home() {
       {/* destinations we cover */}
       <section className="mt-10">
         <h2 className="text-xl font-semibold mb-3">Where to?</h2>
-        <div className="flex gap-4 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 snap-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-          {destinations.map(({ region, image, count }) => (
-            <Link key={region.slug} href={search(region.name)} className="group relative shrink-0 w-56 h-36 rounded-lg overflow-hidden snap-start">
+        <div className="flex gap-4 overflow-x-auto -mx-4 sm:mx-0 snap-x scroll-pl-4 sm:scroll-pl-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+          {destinations.map(({ region, image, count }, i) => (
+            <Link key={region.slug} href={search(region.name)} className={`group relative shrink-0 w-56 h-36 rounded-lg overflow-hidden snap-start${i === 0 ? " ms-4 sm:ms-0" : ""}${i === destinations.length - 1 ? " me-4 sm:me-0" : ""}`}>
               {image ? (
                 <Image src={image} alt={region.label} fill sizes="224px" className="object-cover transition-transform group-hover:scale-105" />
               ) : null}

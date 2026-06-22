@@ -12,11 +12,13 @@ export default function SimilarHotels({ id }: { id: string }) {
   return (
     <section className="mt-10">
       <h2 className="text-xl font-semibold mb-4">Other places to stay nearby</h2>
-      <div className="flex gap-4 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 snap-x [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-        {nearby.map(({ hotel, miles }) => {
+      {/* Gutter via first/last-card margin + scroll-pl-4 so snap keeps it (see HotelRail). */}
+      <div className="flex gap-4 overflow-x-auto -mx-4 sm:mx-0 snap-x scroll-pl-4 sm:scroll-pl-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        {nearby.map(({ hotel, miles }, i) => {
           const rev = reviewLabel(hotel.rating ?? undefined);
+          const edge = `${i === 0 ? " ms-4 sm:ms-0" : ""}${i === nearby.length - 1 ? " me-4 sm:me-0" : ""}`;
           return (
-            <Link key={hotel.id} href={`/hotel/${hotel.id}`} className="group shrink-0 w-52 snap-start">
+            <Link key={hotel.id} href={`/hotel/${hotel.id}`} className={`group shrink-0 w-52 snap-start${edge}`}>
               <div className="relative h-36 rounded-lg overflow-hidden bg-zinc-100">
                 <Image src={hotel.image} alt={hotel.name} fill sizes="208px" className="object-cover" />
               </div>
