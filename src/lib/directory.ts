@@ -171,3 +171,33 @@ export async function directoryCount(country?: string): Promise<number> {
   if (error) throw new Error(error.message);
   return count ?? 0;
 }
+
+// Stable, paginated id pull for the sharded hotel sitemap. PostgREST caps reads at 1,000 rows, so
+// we fan out fixed-offset range() queries (bounded concurrency) and concatenate. Ordered by id so
+// pagination is deterministic and shards never overlap or drop rows.
+export async function directoryIdsRange(offset: number, count: number, country = "us"): Promise<string[]> {
+  const sb = supabaseAdmin();
+  const PAGE = 1000;
+  const CONC = 25;
+  const pages = Math.ceil(count / PAGE);
+  const ids: string[] = [];
+  for (let b = 0; b < pages; b += CONC) {
+    const batch = await Promise.all(
+      Array.from({ length: Math.min(CONC, pages - b) }, (_, i) => {
+        const from = offset + (b + i) * PAGE;
+        return sb
+          .from("hotels")
+          .select("id")
+          .eq("country", country.toLowerCase())
+          .order("id", { ascending: true })
+          .range(from, from + PAGE - 1)
+          .then(({ data, error }) => {
+            if (error) throw new Error(error.message);
+            return (data ?? []).map((r) => r.id as string);
+          });
+      }),
+    );
+    for (const part of batch) ids.push(...part);
+  }
+  return ids;
+}

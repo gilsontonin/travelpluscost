@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/posts";
 import { abs } from "@/lib/site";
 
-// Core routes + every blog post. The 274k-hotel long tail is rendered on-demand (ISR) and
-// belongs in a sharded sitemap later — not this static one.
+// Core routes + every blog post. The 274k-hotel long tail lives in the sharded sitemap at
+// app/hotels/sitemap.ts (served as /hotels/sitemap/[id].xml), advertised via robots.txt.
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
