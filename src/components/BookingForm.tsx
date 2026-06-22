@@ -55,6 +55,38 @@ export default function BookingForm(props: Props) {
   const [error, setError] = useState("");
   const [prebook, setPrebook] = useState<PrebookData | null>(null);
   const mounted = useRef(false);
+  const prefetch = useRef<Promise<PrebookData> | null>(null);
+  const prefetchStarted = useRef(false);
+
+  const requestPrebook = (): Promise<PrebookData> =>
+    fetch("/api/prebook", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        hotelId: props.hotelId,
+        room: props.room,
+        checkin: props.checkin,
+        checkout: props.checkout,
+        adults: props.adults,
+      }),
+    }).then(async (res) => {
+      const d = await res.json();
+      if (!res.ok) throw new Error(d?.error || "Could not confirm the room.");
+      return d as PrebookData;
+    });
+
+  // Warm everything up while the guest is typing: preload the payment SDK script AND kick off the
+  // prebook (2 rate calls + walking production offers takes several seconds). By the time they click
+  // "Continue to payment" it's already done, so Stripe appears instantly instead of after 10–15s.
+  useEffect(() => {
+    if (prefetchStarted.current) return;
+    prefetchStarted.current = true;
+    loadScript(SDK_SRC).catch(() => {});
+    const p = requestPrebook();
+    p.catch(() => {}); // ignore here — surfaced on submit if it failed
+    prefetch.current = p;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Once prebook succeeds, load the Payment SDK and mount the card widget into #pe.
   useEffect(() => {
@@ -122,20 +154,17 @@ export default function BookingForm(props: Props) {
     setBusy(true);
     setError("");
     try {
-      const res = await fetch("/api/prebook", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          hotelId: props.hotelId,
-          room: props.room,
-          checkin: props.checkin,
-          checkout: props.checkout,
-          adults: props.adults,
-        }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data?.error || "Could not confirm the room.");
-      setPrebook(data as PrebookData);
+      // Use the prebook already in flight from page load; only fetch fresh if it failed/absent.
+      let data: PrebookData | null = null;
+      if (prefetch.current) {
+        try {
+          data = await prefetch.current;
+        } catch {
+          data = null;
+        }
+      }
+      if (!data) data = await requestPrebook();
+      setPrebook(data);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not confirm the room.");
     } finally {
