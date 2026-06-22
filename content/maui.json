@@ -900,7 +900,63 @@
         "Food quality issues",
         "Concerns about animal treatment"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Snjezana",
+        "date": "2026-06-05",
+        "score": 2,
+        "type": "Couple",
+        "headline": "Neugodno iskustvo",
+        "pros": "Almost nothing",
+        "cons": "absurd situation at breakfast, the line of guests stretches for tens of meters. it is not possible to experience something like that in any hotel, even a much lower category, let alone in a hotel with a reputation like the Hyatt. in addition, it is the only hotel among many that does not have a…"
+      },
+      {
+        "name": "James",
+        "date": "2026-05-10",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Lovely Resort on the Beach.",
+        "pros": "It’s a lovely location on the beach with great views and some very good swimming pools etc You can walk along the resort to other hotels and shops",
+        "cons": "Quite small bathtubs. Standing in line every morning to get seated for breakfast. Food poolside not great. It might be me but having been here 38 years ago I rated it my number 1 hotel in the world. So in a way a bit disappointed we cut short our trip but maybe driven by my expectation rather than…"
+      },
+      {
+        "name": "Yaroslav",
+        "date": "2026-04-27",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Great ocean views, convenient location, good breakfast with the view",
+        "cons": "Very unwelcoming and slow valet - use the self parking. Very crowded and almost zero shade at the pool."
+      },
+      {
+        "name": "Ahmed",
+        "date": "2026-04-27",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Great stay,would do it again",
+        "pros": "Its a well maintained propert in a great area and with excellent restaurants on site. Staff is very attentive and responsive and really tried to accommodate pur extra requests. Views were phenomenal as well which adds to the value of the stay there",
+        "cons": "It did get a little crowded as both a wedding and a work conference fell on similar dates. The closed beach access didn't help either which isn't really their fault as they were recovering from recent flooding events"
+      },
+      {
+        "name": "elisehA9122GK",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Family",
+        "headline": "Great Family Vacation!",
+        "pros": "We just returned from a wonderful trip to Maui with our son who just graduated from high school. We thought the hotel was fantastic! The room had a gorgeous view (ours was ocean view and his was partial ocean view, and both were great). Nice, clean spacious rooms (though not a ton of storage). We…",
+        "cons": ""
+      },
+      {
+        "name": "kulsoomj2026",
+        "date": "2026-06-18",
+        "score": 6,
+        "type": "Family",
+        "headline": "Adequate but not my favorite hotel in Maui",
+        "pros": "Third time to Maui, previously stayed at The Grand Wailea and The Ritz Carlton. Was not impressed with the Hyatt at all. Definitely adequate for families, Kaanapali is a beautiful beach but we just were not thrilled with the service at the hotel. Not given the room we had paid for, trouble with our…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp3205f",
@@ -2494,7 +2550,63 @@
         "Outdated rooms",
         "Poor breakfast quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "John Nick",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great location and nice renovated rooms.",
+        "pros": "Best location in Maui.",
+        "cons": "Nothing, perfect place to stay if you’re visiting Kaanapali."
+      },
+      {
+        "name": "Jeanette",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Good relaxation spot",
+        "pros": "Location to the beach",
+        "cons": "The ac was not working properly even after the came to fix. The room was humid."
+      },
+      {
+        "name": "Robert",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Everything",
+        "cons": "Nothing. Just couldnt stay long enough."
+      },
+      {
+        "name": "Melani",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "We are so glad that we chose this resort for our honeymoon. The staff were lovely and kind. The rooms are spacious and clean. We picked a room with a partial ocean view and we got a beautiful ocean view. The garden is beautiful, ful of flowers and birds. Everything smells so good. Wifi works very…",
+        "cons": "The pool is small and does not look appealing, but the property is a couple meteres from the ocean so it did not matter to us. Literally everything else was superb!"
+      },
+      {
+        "name": "Daphne",
+        "date": "2026-06-03",
+        "score": 8,
+        "type": "Couple",
+        "headline": "So close to beach and nice spacious lawn to lounge and sunbathe",
+        "pros": "Location very comfortable room with nice view and provided toiletries",
+        "cons": "Could have a microwave"
+      },
+      {
+        "name": "Richelle",
+        "date": "2026-05-31",
+        "score": 10,
+        "type": "Couple",
+        "headline": "I would stay at outrigger again! It was fantastic!",
+        "pros": "The location is excellent and the property is beautiful. The rooms are clean and the staff are kind.",
+        "cons": "It’s not upscale. But I don’t necessarily think that’s a bad thing!"
+      }
+    ]
   },
   {
     "id": "lp3b0be",
@@ -4233,7 +4345,63 @@
         "Cleanliness issues",
         "Mixed reviews on food quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Ross",
+        "date": "2026-06-11",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Nice stay, but probably not worth the high price tag.",
+        "pros": "The resort occupies a premium spot in an exclusive part of the island and is very relaxing. The adults only pool is a nice touch and the hotel rooms were very clean. The fire pit patio was a nice touch.",
+        "cons": "We were given a room with a connecting door which unfortunately meant we could hear everything next door including low-volume conversations. We requested a different room but were informed they were all occupied. Furthermore the hotel is quite a distance from popular tours and activities so a car…"
+      },
+      {
+        "name": "Paulin",
+        "date": "2026-02-12",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Location ,servive people ffz",
+        "cons": "Facility Dated …"
+      },
+      {
+        "name": "Juan",
+        "date": "2026-01-05",
+        "score": 2,
+        "type": "Couple",
+        "headline": "Disappointing",
+        "pros": "The area was nice.",
+        "cons": "Even though the brand is Ritz Carlton, the hotel was not up to the brand standards in any way. It felt like a low cost all inclusive, with Ritz Carlton prices."
+      },
+      {
+        "name": "Emily",
+        "date": "2025-12-29",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Classic family “trip”",
+        "pros": "Beautiful room and club level",
+        "cons": "Lack of help when we needed it the most when our son was injured at the beach. Absolutely zero help from the beach hut staff including not calling a buggy to help us get back to the hotel with our crying son who we found out later had a broken collarbone. Requested a wheel chair to our room and…"
+      },
+      {
+        "name": "Oleg",
+        "date": "2025-12-21",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Beautiful interior and stunning views.",
+        "cons": "The food at the Club Level did not fully match the expected standard, and the mattress felt too soft for me."
+      },
+      {
+        "name": "Caroline",
+        "date": "2025-12-03",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Perfect week! We have stayed before and we live the friendliness of the staff, the beautiful views, the beach, the acces",
+        "pros": "It’s a sprawling property nestled between the beautiful hills of Kapalua and the views are stunning. Beach is small but beautiful.",
+        "cons": "Everything is great"
+      }
+    ]
   },
   {
     "id": "lp32ec2",
@@ -5209,7 +5377,63 @@
         "Some cleanliness issues",
         "Unit furnishings may be outdated"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "KAZUHIKO",
+        "date": "2025-10-08",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "また行きたいです",
+        "cons": ""
+      },
+      {
+        "name": "WILLIAM BENN",
+        "date": "2025-09-24",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "We have stayed there several times over the last 30 years. The location cant be beat. The views are fantastic and the rooms and grounds are wonderful.",
+        "cons": ""
+      },
+      {
+        "name": "Lauree",
+        "date": "2025-08-30",
+        "score": 8,
+        "type": "Friends",
+        "headline": "",
+        "pros": "We had internet password but had no idea what the server was. No internet for two days. The location which originally I thought was not what I wanted. Overlooking whalers village, turned out to be the best. Ice maker never worked, we bought ice. Problem solved. The employees were great, so helpful…",
+        "cons": ""
+      },
+      {
+        "name": "Ujjwal",
+        "date": "2025-08-06",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Good",
+        "cons": ""
+      },
+      {
+        "name": "Carlos Javier",
+        "date": "2025-07-26",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Staff was super friendly. Close to shopping and everything.",
+        "cons": ""
+      },
+      {
+        "name": "Beverly",
+        "date": "2025-07-21",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "It was just a beautiful property and everything was kept really pristine. And the front desk folks were really nice!",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp1f657",
@@ -6992,7 +7216,63 @@
         "Cleanliness issues",
         "Limited dining options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Harrison",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Couple",
+        "headline": "We had flooding on first night. Poor water pressure in second room. Wasn't a good start for our 35th",
+        "pros": "Breakfast was good as well as dinner. Nice area by beach and pools.",
+        "cons": "Need more nondairy options. Birds flying around food."
+      },
+      {
+        "name": "Ekaterina",
+        "date": "2026-06-14",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Hospitality is lacking in majority of outlets. Some staff is talking back. Pigeons are dining with guests. Room was dirt",
+        "pros": "Proximity to town center.",
+        "cons": "Cleanliness is much to be desired. Staff wasn’t very friendly."
+      },
+      {
+        "name": "Alica",
+        "date": "2026-06-02",
+        "score": 1,
+        "type": "Couple",
+        "headline": "Terrible place, expensive but way below standard",
+        "pros": "Not much, it was on the beach which was nice and had nice views but there are many other hotels on the beach too.",
+        "cons": "This is an old, smelly, dirty hotel. We had to keep the window open as we were not able to breathe in the room. It smelled of mould and dog wee. There was mould in the bathroom. The carpet was dirty and smelled really bad. We were on the top floor and the wind was whistling so much that we were not…"
+      },
+      {
+        "name": "John",
+        "date": "2026-05-31",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Every day we said out loud “I’m glad we chose the royal lahaina” and we meant it. Everything was great",
+        "pros": "Everything was wonderful",
+        "cons": "Nothing comes to mind"
+      },
+      {
+        "name": "richard",
+        "date": "2026-05-28",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "We had a nice relaxing stay at the Royal Lahaina Resort",
+        "pros": "The Royal Lahaina Resort is a nicely decorated and well maintained hotel. With some great facilities. The hotel is located next to a golf course, on a beautiful stretch of coastline. The hotel has a lovely stretch of beach in front of it. With some lovely opportunities for beach or coastal walks…",
+        "cons": "1. The room cleaning policy is once every other day - make bed up and change towels if requested (hotel has the option of requesting towels etc. for the days no room service is offered). Whilst I understand the potential benefits to using less water etc. This has to be balanced against the reason…"
+      },
+      {
+        "name": "Jose",
+        "date": "2026-05-26",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Disappointing Service and Misleading Breakfast Inclusion",
+        "pros": "The location",
+        "cons": "The personnel should be more friendly and helpful, especially at the front desk, which definitely needs improvement. I requested maintenance for the shower drain because it was not working properly, but no one ever showed up to fix it. Additionally, staff members would see me struggling with my…"
+      }
+    ]
   },
   {
     "id": "lp1c872",
@@ -8892,7 +9172,63 @@
         "Food quality concerns",
         "Service inconsistencies"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Alisha",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "The view from the room was amazing off of the 8th floor",
+        "cons": ""
+      },
+      {
+        "name": "sara",
+        "date": "2025-10-10",
+        "score": 6,
+        "type": "Friends",
+        "headline": "",
+        "pros": "Beach view was very nice. Views to pools also very nice. What was missing was the “hospitality”. Mostly felt self serve. Checkin did not offer luggage assistance. Lugged our own luggage. Nicest staff were the room cleaning ladies. Expected more hospitality at this resort. No luau on site due to a…",
+        "cons": ""
+      },
+      {
+        "name": "Eric",
+        "date": "2025-10-09",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "We loved the room, pools were excellent, the food was delicious, and the mixologist was lovely.",
+        "cons": ""
+      },
+      {
+        "name": "BERNARD",
+        "date": "2025-10-08",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Room and view were great. Staff was EXCELLENT. Pool outstanding.",
+        "cons": ""
+      },
+      {
+        "name": "Craig",
+        "date": "2025-10-07",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Overall this was an excellent experience and a wonderful location. The staff were very friendly and attentive. The room was as advertised. For sure would recommend this location and I would be happy to stay here again.",
+        "cons": ""
+      },
+      {
+        "name": "Judith",
+        "date": "2025-10-01",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Pool area was great!",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp19d42",
@@ -10558,7 +10894,63 @@
       "cons": [
         "Inconvenient check-in process"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jessica",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Perfect spot to hoop in pool, go to beach, or go to whalers village",
+        "pros": "Perfect location!! Not high rise resort like all the others around if had character and was so peaceful and beautiful",
+        "cons": "Rooms are dated with the flooring and bathrooms. Breakfast buffet was soooo expensive and other breakfast place was under construction"
+      },
+      {
+        "name": "Kelly",
+        "date": "2026-05-27",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Beautiful",
+        "pros": "The property is lovely, and a very nice location. The staff is nice and the food is decent. Breakfast is amazing.",
+        "cons": "The only thing that I feel truly needs to be improved, are the chair situations by the pool. The sun is extremely hard there and shade is very hard to find. I get that they want to sell chairs but it’s so competitive, it’s become insane. They have no system to monitor people abusing the chairs. We…"
+      },
+      {
+        "name": "Gustavo",
+        "date": "2026-05-26",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great place and staff. Beautiful and perfect being next to the beach",
+        "pros": "It was a great resort and beautiful",
+        "cons": "A lot of people but that’s a given because it is a resort. Everything was perfect"
+      },
+      {
+        "name": "Daniel",
+        "date": "2026-05-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Sensational, couldnt have asked for a better honeymoon",
+        "pros": "Everything, absolutelty beautiful hotel, fulfilled our wildest expectations",
+        "cons": "If you want to explore, you need a car, otherwise it's the perfect relaxation spot"
+      },
+      {
+        "name": "Deborah",
+        "date": "2026-04-29",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Absolutely perfection. I wanted to live at the hotel and never leave!",
+        "pros": "This hotel is the most beautiful and super location from Black Rock to points past Whalers Village! Absolutely breathtaking! Great staff, views and amenities!",
+        "cons": "mini fridge is noisy The beach showers are hard to use by pushing a stiff button and have low pressure. Rooms could use more lighting near the TV area and brighter for older eyes! A small microwave would be nice. Parking price is outrageous, make it free please!"
+      },
+      {
+        "name": "Charles",
+        "date": "2026-04-28",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Wonderful beach location and luau is on site ! Loved it all!",
+        "pros": "Beautiful grounds and the best location ! Loved the pools and black rock divers was great to watch !",
+        "cons": "Seen a few roaches but staff was notified they took care of it."
+      }
+    ]
   },
   {
     "id": "lp30900",
@@ -11235,7 +11627,63 @@
         "Cleanliness issues",
         "Room discrepancies"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lynda",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "Grounds are well kept. Walking distance to ABC, grocery store, food trucks and restaurants. Condo was updated and bed was comfortable. Office was prompt when requested extra toiletries. Beautiful view of the ocean and pool.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Evita-Sofia",
+        "date": "2026-06-19",
+        "score": 5,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The accommodation was not very expensive.",
+        "cons": "Unfortunately, our stay did not meet our expectations. The room we received was quite different from what we had anticipated based on the listing. The air conditioning did not work properly, which made the room uncomfortable at times. The bed was a fold-out bed that felt unstable and was not…"
+      },
+      {
+        "name": "Юлия",
+        "date": "2026-06-11",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Please poison the cockroaches in room E208.",
+        "pros": "I liked that the room had everything you need for life: a kettle, iron, ironing board, microwave. And we had a nice view. The pool and jacuzzi were very nice.",
+        "cons": "I didn't like the fact that when we went to check in, we were met by a cockroach in the room. It was terrible. We asked to change rooms, they kindly agreed, but offered a room with no view, and that didn't suit me. So we preferred to stay there and killed the cockroach. It's a shame that when we…"
+      },
+      {
+        "name": "William",
+        "date": "2026-05-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Good kitchenette, amazing views",
+        "cons": "All great, only maybe have salt and pepper sachets available"
+      },
+      {
+        "name": "Michael",
+        "date": "2026-05-07",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "This property is a great place to relax and unwind",
+        "cons": "Nil"
+      },
+      {
+        "name": "B.",
+        "date": "2026-05-06",
+        "score": 3,
+        "type": "Couple",
+        "headline": "We did not enjoy our stay at all",
+        "pros": "The ground maintained well",
+        "cons": "There has never been breakfasts. It’s condos or time share. No lobby, just the check-in counter. No fitness center, beach is 2,200 ft. If you walk ocean front (by car about 8 blocks). Aston only owns some units and name not on sign. No maid service in 13 nights. Had to change sheets and take out…"
+      }
+    ]
   },
   {
     "id": "lp308fa",
@@ -12003,7 +12451,63 @@
         "Food options variability",
         "Cleanliness concerns in some areas"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lyndsie",
+        "date": "2026-06-14",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Really loved the pool for the kids.. felt like our room was a bit dated though. Kitchen was clean.",
+        "pros": "Pool",
+        "cons": "Cockroach in bathroom"
+      },
+      {
+        "name": "troy",
+        "date": "2026-06-13",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Overall, we would stay here again.",
+        "pros": "the pools and access to the beach were wonderful. We also enjoyed playing tennis as well as the scheduled activities- which we didn’t end up taking part in.",
+        "cons": "The pull out couch was not super comfy and the kitchen didn’t seem to be stocked too great."
+      },
+      {
+        "name": "Joel",
+        "date": "2026-05-26",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "The location is great. The people are really helpful and hospitable. The restaurant and amenities are great.",
+        "cons": "The beach in front of the property is not perfect but there is plenty of sand nearby."
+      },
+      {
+        "name": "Carl",
+        "date": "2026-05-15",
+        "score": 3,
+        "type": "Family With Children",
+        "headline": "Room was infested with mosquitos, had to go to store for bug zappers, still got bit… half the cabinets were locked with",
+        "pros": "Property itself is pretty",
+        "cons": "The room itself was terrible, bed was a rock, cabinets locked was very unwelcoming"
+      },
+      {
+        "name": "Brittany",
+        "date": "2026-05-11",
+        "score": 4,
+        "type": "Family With Children",
+        "headline": "Would not stay here in the hotel again. In a private condo on the property would have been much more comfortable.",
+        "pros": "The location, and beach are great.",
+        "cons": "For the price, the room was incredible dated and basic. Not comfortable at all. The pool and hot tub were open to anyone, so it was packed."
+      },
+      {
+        "name": "doherty",
+        "date": "2026-05-03",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "overall, great, which it has been every time, which is why we come back !",
+        "pros": "breakfast was good love sitting out by the pool, looking out at the ocean. Service at restaurant is always great.",
+        "cons": "The dinner is at the restaurant are kind of mediocre although the services always wonderful."
+      }
+    ]
   },
   {
     "id": "lp3f66f",
@@ -12604,7 +13108,63 @@
         "Cleanliness issues",
         "Inconsistent food quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lisa",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "This was our second visit to Napili Kai. The beach at Napili Bay is unbeatable- the staff was wonderful, restaurant was ok, a nice relaxing vacation",
+        "cons": ""
+      },
+      {
+        "name": "Linda",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "The only issue was parking in the Puna Point section, and multiple times the small parking area was full. Due to property layout and size I don't think there is a remedy for this.",
+        "cons": ""
+      },
+      {
+        "name": "Drees",
+        "date": "2025-10-09",
+        "score": 10,
+        "type": "Friends",
+        "headline": "",
+        "pros": "Very clean and well kept facility. Attached beach access is amazing. Rooms spacious and comfortable beds. Parking limited in some areas but manageable to find a spot. Overall great experience.",
+        "cons": ""
+      },
+      {
+        "name": "michael",
+        "date": "2025-10-08",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "2 great beaches on the property. Both great for snorkeling. Great hike from property along the coast. Staff very friendly. Quiet at night. Highly recommended.",
+        "cons": ""
+      },
+      {
+        "name": "Kellie",
+        "date": "2025-10-06",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Lovely ocean beach sunset views. Gentle surf. Quiet relaxing - perfect vacation spot. Will definitely return.",
+        "cons": ""
+      },
+      {
+        "name": "Michael",
+        "date": "2025-10-06",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Beautiful property. Great amenities.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp33a03",
@@ -12955,7 +13515,63 @@
         "Restaurant closed",
         "Parking challenges"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Cassady",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Beautiful, clean property in amazing location. Two pools, beach and snorkel spot! Would stay again.",
+        "pros": "Easy check in, very relaxed feel. Tons of families, yet felt quaint and small. Location was perfect. Could walk to a beach and an amazing snorkel spot, as well as a couple restaurants.",
+        "cons": "Tiny little complaint but the overhead fans and lights were so hard to figure out! We just kept pushing buttons to turn lights on/off. I wish there was a little diagram or something."
+      },
+      {
+        "name": "Victoria",
+        "date": "2026-04-28",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "The stay was beautiful. The staff was friendly. Sea turtles on the beach. You can snorkel off the beach as well",
+        "pros": "The property was great for the value",
+        "cons": "The restaurant was shut down and the Gazebo was only open until 2. It was also in need of updating"
+      },
+      {
+        "name": "Vadym",
+        "date": "2026-04-20",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Exceptional!",
+        "pros": "A Family Paradise! Napili Shores by Outrigger is exceptional, especially if you’re traveling with kids. Having a fully furnished kitchen was a total game-changer for us—it made mealtime easy and kept the snacks flowing without constant trips out. The location is unbeatable. You are steps away from…",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Rowe Hernandez",
+        "date": "2026-03-07",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Short walk to Napili Bay",
+        "pros": "Perfect location in Napili, just a short walk to Napili Bay. Beautiful resort grounds with two restaurants on site.",
+        "cons": "Our specific unit was right in front of a pathway where people frequently walked Whenever we had our curtains open, people could see directly inside our unit."
+      },
+      {
+        "name": "Ryan",
+        "date": "2026-01-25",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Short (only 1 night) and sweet",
+        "pros": "Location hard to beat. Edge of property is ocean front. Grounds between buildings is nice and wide. On site pool, jacuzzi, and restaurant. Staff extremely friendly.",
+        "cons": "Parking lot closed at the time. A little work to park and get to room."
+      },
+      {
+        "name": "Trinity",
+        "date": "2026-01-19",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Great location and view but there’s almost nothing you need inside for a real stay- toiletries, etc",
+        "pros": "The view and the location",
+        "cons": "There was barely anything in the actual rental- no beach chairs, 2 towels, one coffee pouch, one shampoo and conditioner all in one…. Like it was BARE BONES. we didn’t feel we had enough to make it multiple days with 2 people staying. The price is very high for lot even having sufficient toiletries…"
+      }
+    ]
   },
   {
     "id": "lp308ff",
@@ -14245,7 +14861,63 @@
         "Inconsistent service",
         "Issues with cleanliness"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Andrew",
+        "date": "2026-04-13",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Weekend getaway",
+        "pros": "Everything and the front desk unremarkable respect and exceptional service ur worker are awesome easy check in .I will be back everything we r in kaanapali...UR HOST R GREAT 👍 👌 😀",
+        "cons": "The rain hahaha 😆"
+      },
+      {
+        "name": "David",
+        "date": "2026-04-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Thoroughly enjoyed a great stay with friendly staff and clean rooms",
+        "pros": "Well laid out, 2 swimming pools (so the one I used was very quiet)",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Joseph",
+        "date": "2026-02-28",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Another perfect stay in Kaanapali Hawaii.",
+        "pros": "The location was perfect. Easy walk along the beach to the Whalers shopping and restaurant district. The property had its own beach and associated amenities.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Larry",
+        "date": "2026-01-27",
+        "score": 10,
+        "type": "Couple",
+        "headline": "A real Hawaiian experience",
+        "pros": "Room was exceptional Great location Quiet",
+        "cons": "Nothing…..we loved everything"
+      },
+      {
+        "name": "Ivan",
+        "date": "2026-01-22",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We enjoyed our first stay in Maui at this location",
+        "pros": "Good location for beach access. Nice pools and hot tub. Well equipped kitchen. Beach accessories available in unit. Plenty of towels",
+        "cons": "Main bed mattress tended to sink towards the middle"
+      },
+      {
+        "name": "Cheryl",
+        "date": "2026-01-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Room 241 in the Banyan building was exceptional! We loved the decoration!",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp6554885f",
@@ -15264,7 +15936,63 @@
         "Cleanliness issues",
         "Limited housekeeping"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Andrew",
+        "date": "2026-04-13",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Weekend getaway",
+        "pros": "Everything and the front desk unremarkable respect and exceptional service ur worker are awesome easy check in .I will be back everything we r in kaanapali...UR HOST R GREAT 👍 👌 😀",
+        "cons": "The rain hahaha 😆"
+      },
+      {
+        "name": "David",
+        "date": "2026-04-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Thoroughly enjoyed a great stay with friendly staff and clean rooms",
+        "pros": "Well laid out, 2 swimming pools (so the one I used was very quiet)",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Joseph",
+        "date": "2026-02-28",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Another perfect stay in Kaanapali Hawaii.",
+        "pros": "The location was perfect. Easy walk along the beach to the Whalers shopping and restaurant district. The property had its own beach and associated amenities.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Larry",
+        "date": "2026-01-27",
+        "score": 10,
+        "type": "Couple",
+        "headline": "A real Hawaiian experience",
+        "pros": "Room was exceptional Great location Quiet",
+        "cons": "Nothing…..we loved everything"
+      },
+      {
+        "name": "Ivan",
+        "date": "2026-01-22",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We enjoyed our first stay in Maui at this location",
+        "pros": "Good location for beach access. Nice pools and hot tub. Well equipped kitchen. Beach accessories available in unit. Plenty of towels",
+        "cons": "Main bed mattress tended to sink towards the middle"
+      },
+      {
+        "name": "Cheryl",
+        "date": "2026-01-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Room 241 in the Banyan building was exceptional! We loved the decoration!",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp4e808",
@@ -15457,7 +16185,63 @@
       "cons": [
         "Old"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Melissa",
+        "date": "2026-06-15",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Disappointing overall but the view was great. Construction on our floor was constantly loud in our unit.",
+        "pros": "Great view.",
+        "cons": "Fridge wouldn’t get cold enough. Freezer melted everything, despite our attempts to make it work. Furniture was older. Beds advertised as 3 kings and a queen fold out couch. They were 2 kings, one double, and no fold out couch. Small fouton could hold a child under 8 only. Er had to rent a cot."
+      },
+      {
+        "name": "brian",
+        "date": "2026-02-26",
+        "score": 6,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "Not enough place to eat",
+        "cons": "Old"
+      },
+      {
+        "name": "Tom",
+        "date": "2025-09-04",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "The setting is beautiful and the views were priceless and sunsets were stunning!!",
+        "pros": "The Location, the View, the amenities",
+        "cons": "The condo was very dirty. Lots of trash under the furniture, the balcony was very dirty, the kitchen was not all well furnished, the patio furniture was not comfortable and old. The condo needs cleaning and all the furniture and kitchen wares need updated"
+      },
+      {
+        "name": "Maria",
+        "date": "2025-10-14",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "",
+        "cons": "Internet very slow, 14 Megabits/sec. Overpriced rental for 3 Tommy chairs and umbrella ($100)"
+      },
+      {
+        "name": "Verified traveler",
+        "date": "2017-02-18",
+        "score": 10,
+        "type": null,
+        "headline": "Perfect!",
+        "pros": "Unfortunately, I was mis represented as I paid for and it was advertised as Ocean view and that was not the casei had a new Building right in front AND noise from the construction. I fell I am owed some compensation for this mis representation as I had no option to move somewhere else.",
+        "cons": ""
+      },
+      {
+        "name": "Edward",
+        "date": "2024-08-06",
+        "score": 10,
+        "type": "Review Category Business Travellers",
+        "headline": "Exceptional",
+        "pros": "",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp4c89d",
@@ -15747,7 +16531,63 @@
         "Cleanliness issues",
         "No air conditioning"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Angel",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Staffs of front desk were so friendly and helpful.",
+        "cons": ""
+      },
+      {
+        "name": "Hollidey",
+        "date": "2025-10-07",
+        "score": 6,
+        "type": null,
+        "headline": "",
+        "pros": "No air conditioning in the rooms. The bedroom had a small window that faced the noisy hallway. We slept on the living room couch pull out bed just to get a cross breeze from the patio to cool off.",
+        "cons": ""
+      },
+      {
+        "name": "Sara",
+        "date": "2025-09-27",
+        "score": 6,
+        "type": null,
+        "headline": "Nice unit but warm",
+        "pros": "The room had no air conditioning and it was hot. You have to be able to tolerate being warm while you sleep....",
+        "cons": ""
+      },
+      {
+        "name": "Cynthia",
+        "date": "2025-09-02",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Great pool and beautiful beach",
+        "cons": ""
+      },
+      {
+        "name": "Michael",
+        "date": "2025-08-25",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Our first impression of the unit was this is beautiful. We had the loft unit which had a fantastic ocean view, sunsets were amazing. The pool and beach area was very nice and the on-site restaurant was a nice option. There is no AC in any of the units but really wasn't an issue because of the…",
+        "cons": ""
+      },
+      {
+        "name": "Dustin Robert",
+        "date": "2025-08-18",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Great place, very big condo, great food onsite, great pool everything about it was great",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp33569",
@@ -17895,7 +18735,63 @@
         "Room cleanliness issues",
         "Inconsistent room quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Joan",
+        "date": "2026-05-28",
+        "score": 5,
+        "type": "Couple",
+        "headline": "",
+        "pros": "I like the ocean view and the room was spacious",
+        "cons": "The tv and wifi werent working"
+      },
+      {
+        "name": "Bilyk",
+        "date": "2026-04-16",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Medium experience. As an air b &b, ok value. Would maybe stay again in future.",
+        "pros": "Great view. Nice to have washer and dryer in unit. Bed was VERY comfortable.",
+        "cons": "Dated. Floor had sags and glue joints throughout. Dryer had lint box and dumped heat into room when running. Drawers didn’t close properly."
+      },
+      {
+        "name": "Schow",
+        "date": "2026-04-08",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "Very comfortable and clean stay",
+        "cons": "Beach had eroded away"
+      },
+      {
+        "name": "morron",
+        "date": "2026-04-01",
+        "score": 3,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Clean nice people",
+        "cons": "Never was told no maid service and you have to wash your own towels never been in 49 yrs of travel had to wash my own towels and sweep my floors"
+      },
+      {
+        "name": "Itsa",
+        "date": "2026-03-08",
+        "score": 8,
+        "type": "Couple",
+        "headline": "It was amazing … will be back soon!!!!!",
+        "pros": "Everyone was friendly helpful and great all round",
+        "cons": "Wasn’t ocean front"
+      },
+      {
+        "name": "Christian",
+        "date": "2026-03-04",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Great views and comfort in an aging place",
+        "pros": "We had unit 912. The view was amazing, the place was comfortable, clean and well-appointed except for a few misses (see below).",
+        "cons": "There were problems with the hot water supply throughout our stay. About half of my showers were cold (as cold as the water ever gets on Maui, so it was tolerable), and only a few were the temperature I wanted. We let the staff know, but it wasn‘t fixed when we left 5 days later. The staff was nice…"
+      }
+    ]
   },
   {
     "id": "lp385cb",
@@ -19617,7 +20513,63 @@
         "Not ocean front",
         "Villa was old and run down"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Owen",
+        "date": "2026-04-14",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Crap",
+        "pros": "Location and scenery",
+        "cons": "Unit was dirty and being renovated , fridge sitting in the middle of the dining room, chain length fence for a pull out bed , bad"
+      },
+      {
+        "name": "Chisa",
+        "date": "2026-04-04",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Beautiful views, spacious house, wifi and bathrooms need to be updated.",
+        "pros": "spacious room and beautiful surrounding.",
+        "cons": "wifi is on and off, due to old router and modem. They could not fix it due to owner’s property. The bathrooms need to be updated. small bugs are in the dish washer."
+      },
+      {
+        "name": "Klemmer",
+        "date": "2025-12-19",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Nice enough place but lacking in amenities",
+        "pros": "The condo its self was nice but other things weren't.",
+        "cons": "First of all, It was supposed to have an ocean view and all we saw were NorfolK Pines. There were to be twin beds in one bedroom and there weren't. There was no beach ware to use. There were very few dishes and silverware so that the dishwasher had to be run constantly. The refrigerator had…"
+      },
+      {
+        "name": "Harumi",
+        "date": "2025-06-04",
+        "score": 10,
+        "type": "With Friends",
+        "headline": "Wonderful view with great atmosphere.",
+        "pros": "The unit was wonderful view with spacious floor plan, all rooms have a balcony with table and chairs. The best of the best.",
+        "cons": "Nothing negative impressions."
+      },
+      {
+        "name": "Arturo",
+        "date": "2025-10-08",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Gorgeous property, the staff, beach, hiking close by, restaurants in area all were great. Room was spotless and we were able to check in early.",
+        "cons": ""
+      },
+      {
+        "name": "jordon",
+        "date": "2025-10-01",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Everything about this property was amazing. We loved the stag and the facilities. The pools were amazing and easy beach access allowed you to be in the water in 5 minutes. There was a grocery store right across the street making it very easy to grab anything you may need. We did try the food trucks…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp9ef04",
@@ -20130,7 +21082,63 @@
         "Minimal staff affecting service",
         "Breakfast changes"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Theodelinde",
+        "date": "2026-01-26",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Wonderful stay!",
+        "pros": "Comfortable, space with 2 bed and 2 bath, very nice beach. Many amenities located nearby",
+        "cons": "roach on the wall, strong garbage smell in the hallway near us"
+      },
+      {
+        "name": "Rondallyn",
+        "date": "2025-11-18",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Most likely I would choose to stay at another Marriott location",
+        "pros": "What I liked about this property is that the two bedroom suites",
+        "cons": "Didn’t get to the accommodations that I needed! Especially for medical reasons!"
+      },
+      {
+        "name": "bradlV33KG",
+        "date": "2026-05-31",
+        "score": 2,
+        "type": "Family",
+        "headline": "Bad experience",
+        "pros": "Caution when booking. This is a time share, not what you would expect in a Marriott property. The Marriott rewards benefits do not apply at this property. They are very disorganized. They could not find my reservation and did not give me the room as promised when I initially checked in. I would not…",
+        "cons": ""
+      },
+      {
+        "name": "KUJayhawks99",
+        "date": "2026-05-30",
+        "score": 10,
+        "type": "Family",
+        "headline": "Fantasic!",
+        "pros": "This place is excellent. The two bedroom suite is gorgeous and in fantastic condition for a 9 year old property. The service was SUPER snd they could not be more helpful. The pool areas were awesome right on the beach. Lots of great areas to walk to for dining and other activities. Sunsets were…",
+        "cons": ""
+      },
+      {
+        "name": "garyrW9942UD",
+        "date": "2026-05-24",
+        "score": 10,
+        "type": "Couples",
+        "headline": "Maui Rocks",
+        "pros": "Fantastic location. Near shops and restaurant. (Dukes) Walkway alone ocean.",
+        "cons": ""
+      },
+      {
+        "name": "Climber57663556263",
+        "date": "2026-05-16",
+        "score": 10,
+        "type": "Family",
+        "headline": "Exceptional",
+        "pros": "Our recent Westin Nanea Ocean Villa’s visit was truly remarkable. For my son’s birthday, we appreciate the complimentary cake and treats. Our comfortable two-bedroom villa equipped with a full kitchen and living room area was ideal. We feel compelled to specifically commend General Manager Mr…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp40c99",
@@ -20472,7 +21480,63 @@
         "Small rooms",
         "Outdated furniture"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "CalgaryFisherman",
+        "date": "2026-04-08",
+        "score": 10,
+        "type": "Couples",
+        "headline": "A fabulous week on Maui's NW coast",
+        "pros": "We had the wonderful opportunity to stay at the Kahana Falls Resort from March 28 to April 4. Everything was excellent (even the weather was great unlike Honolulu earlier in the month). The most impressive and appreciated experience was from our interaction with Hannah, the consierge. She went out…",
+        "cons": ""
+      },
+      {
+        "name": "pkjed",
+        "date": "2026-02-27",
+        "score": 6,
+        "type": "NONE",
+        "headline": "Studio",
+        "pros": "the room was overall clean, the pull down bed was uncomfortable, enjoyed the washer/dryer, the front desk allows cats in and out of front desk area, not sure why they charge extra fees for staying there, I feel like we should get that refunded. the overall cleanliness of the property is ok. they…",
+        "cons": ""
+      },
+      {
+        "name": "Voyager668072",
+        "date": "2026-02-23",
+        "score": 10,
+        "type": "NONE",
+        "headline": "Kahana falls",
+        "pros": "Staff was friendly and very accommodating rooms were dated but everything worked well. The hot tub was great and the pool was perfect. It made a rainy windy trip to Maui very well worth it. Beds could be more comfortable but it was a great value so no complaints there. Great location, close to the…",
+        "cons": ""
+      },
+      {
+        "name": "Y2945DKdylant",
+        "date": "2026-02-07",
+        "score": 2,
+        "type": "Couples",
+        "headline": "Infested with roaches - stay away",
+        "pros": "This place is infested with German roaches and management is dismissive and offers no recourse. Do not come here unless you want to sleep with the roaches",
+        "cons": ""
+      },
+      {
+        "name": "ashashroth",
+        "date": "2026-02-03",
+        "score": 8,
+        "type": "NONE",
+        "headline": "Excellent mid-rate hotel experience!!",
+        "pros": "We (a couple) stayed in a studio unit equipped with all the kitchen and bathroom appliances needed, AC, and television with everything being functional. We were greeted by two kitty cats in the lobby, and given informative instructions regarding our stay. We walked across the street to sip our…",
+        "cons": ""
+      },
+      {
+        "name": "EdnJudy",
+        "date": "2026-01-12",
+        "score": 4,
+        "type": "NONE",
+        "headline": "Hotel room should not be offered",
+        "pros": "The hotel room at Kahana Falls is a lock-off from the larger room. Clearly hear the occupants of the larger unit. Worst of all is the smell when they cooked in their unit. If you need to stay at a Kahana Falls hotel unit have solid plans that keep you out of the unit for the majority of your stay.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp308fd",
@@ -20635,7 +21699,27 @@
         "Outdated facilities",
         "Limited food options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Patricia",
+        "date": "2026-05-25",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Great location and views!!",
+        "pros": "The location and views were excellent",
+        "cons": "Shower could use an update. Client has to supply all their own household items (toilet paper, garbage bags, etc)."
+      },
+      {
+        "name": "Lance",
+        "date": "2026-06-02",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "we had a great time at this condo and would recommend it to anyone who visits.",
+        "pros": "Excellent location for a sunset view.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp20390",
@@ -21357,7 +22441,63 @@
         "Limited food and beverage options",
         "Room assignments could be better"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Siri",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location and staff",
+        "cons": "N/a"
+      },
+      {
+        "name": "Fuertes",
+        "date": "2026-05-29",
+        "score": 7,
+        "type": "Couple",
+        "headline": "we possibly book again to them, because my Daughter love the place",
+        "pros": "the lobby receptionist. staff are nice. approachable, and my early check in and extension check out was granted",
+        "cons": "no room service for food, the room is too dark."
+      },
+      {
+        "name": "Ana",
+        "date": "2026-05-24",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "The staff at Maui Coast Hotel know what hospitality is. Every single employee was polite, knowledgeable and just joys to",
+        "pros": "Everything!!! Very inviting. Clean and well run.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "MARCIA",
+        "date": "2026-05-21",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Nice stay reasonably priced compared to others places.",
+        "pros": "The staff was extremely accommodating. I liked the fresh water availability for the water bottles supplied. Nice pool.",
+        "cons": "No gift shop. Shuttle only takes you up to 3 miles."
+      },
+      {
+        "name": "Ryan",
+        "date": "2026-04-22",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Amazing!",
+        "pros": "Hotel was really nice, super clean, and all employees were very welcoming. Mahalo to everyone there. They made the stay very pleasant and relaxing.",
+        "cons": "Nothing bad to say!"
+      },
+      {
+        "name": "614angelau",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Couples",
+        "headline": "Stay here!",
+        "pros": "Wonderful hotel! Pool area was excellent and live music every night was so chill and enjoyable! Great food from the pool bar/kihea grill. Staff was friendly and helpful. Appreciated the hospitality room since our departure flight didn’t leave until 11pm.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp1bfc8",
@@ -23034,7 +24174,63 @@
         "Food quality could improve",
         "Spa access limitations"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Mary",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Staff was excellent",
+        "cons": "Wish activities were a little more publicized."
+      },
+      {
+        "name": "Robert",
+        "date": "2026-06-01",
+        "score": 6,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Staff was very accommodating and friendly. Appreciated the beach set up of lounge chairs and umbrellas included with your resort fee. Beautiful ocean views from the hotel.",
+        "cons": "Did not care for the pool set-up, which consisted of three pools architecturally tiered, thus ALOT of steps up and down from pool to pool, and a long walk to the beach once you reached the bottom of the stairs. Restaurants were very, very expensive for breakfast, lunch and dinner. Property felt…"
+      },
+      {
+        "name": "Nima",
+        "date": "2026-05-09",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Great location, good facility, poor staff and service. Bad bugs and they did nothing about it",
+        "pros": "Location",
+        "cons": "Bugs and poor unfriendly staff. Not helpful staff"
+      },
+      {
+        "name": "Maria",
+        "date": "2026-04-13",
+        "score": 1,
+        "type": "Family With Children",
+        "headline": "I would never recommend that property to anyone",
+        "pros": "I didn’t like anything about the property",
+        "cons": "People are not happy or accommodating property was extremely dirty rooms were dirty. When you ask the housekeepers to clean they had it attitude about it."
+      },
+      {
+        "name": "Michael",
+        "date": "2026-04-05",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Average for a premium property, not worth the money.",
+        "pros": "Concierge was super helpful, A+ , private beach area.",
+        "cons": "No self park, 100% valet at $50+ a day, getting your room cleaned was a hassle. For $900+ a night, I expect premium service. No ice on each floor. We were odd level, only even had ice and water refill stations. AC was erratic. Shower drain had to be addressed, phone service went out had to have…"
+      },
+      {
+        "name": "Fearless48460363329",
+        "date": "2026-05-09",
+        "score": 10,
+        "type": "NONE",
+        "headline": "Next trip to Hawaii - would be here again!",
+        "pros": "100% amazing and would go back again. The place, the amenities, the food, and staff - were all top notch. Best Luau experience, too.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp223fb",
@@ -24977,7 +26173,63 @@
         "High prices",
         "Cleanliness concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Paul",
+        "date": "2025-10-10",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Wonderful accommodations!",
+        "cons": ""
+      },
+      {
+        "name": "james",
+        "date": "2025-10-07",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "The property is beautiful",
+        "cons": ""
+      },
+      {
+        "name": "Francisco",
+        "date": "2025-10-06",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Excellent property, beautiful rooms, very clean rooms and property, the beach is excellent with nice clear water year round, staff is very attentive, food is first class, very safe, property is kept in excellent shape, pools are nice and clean, the gardens are always clean and nicely manicured…",
+        "cons": ""
+      },
+      {
+        "name": "Taryn",
+        "date": "2025-10-05",
+        "score": 6,
+        "type": "Family",
+        "headline": "",
+        "pros": "Pros: The pools and water slides were nice for and the beach access and beach were great. Rooms were cleaned daily and were large and nice. Check in and billing were easy. Cons: Very large property so it took a while to get where you were going. The only parking option was valet for $75/overnight…",
+        "cons": ""
+      },
+      {
+        "name": "Rainer",
+        "date": "2025-10-04",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Large balcony ocean views",
+        "cons": ""
+      },
+      {
+        "name": "James Ronald",
+        "date": "2025-10-01",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Great",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp43dd9",
@@ -25278,7 +26530,63 @@
       "cons": [
         "No outlets on the nightstands (minor)"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Nii",
+        "date": "2026-03-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Would definitely come back!",
+        "pros": "Great pool. Wonderful ocean views. Loved having access to a washer & dryer. Full kitchen was a plus. Enjoyed the space to spread out and meals on the lanai. Access to the activity pool and valet parking over at the main Grand Wailea was great.",
+        "cons": "Only a minor comment -- wished there would have been outlets on the nightstands to plug in our devices."
+      },
+      {
+        "name": "Cristen",
+        "date": "2025-02-23",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Exceptional",
+        "pros": "Gorgeous facilities, impeccable service.",
+        "cons": "nothing"
+      },
+      {
+        "name": "Leslie",
+        "date": "2025-06-15",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Perfect for Families. Quite spacious and great for a relaxing Family vacation.",
+        "cons": ""
+      },
+      {
+        "name": "winepig64",
+        "date": "2025-04-25",
+        "score": 6,
+        "type": "Family",
+        "headline": "Overall Great Service but Beware of Housekeeping",
+        "pros": "We stayed in a 3 bedroom that was very spacious and clean. Plenty big for our family of 4 plus our niece fresh from college graduation who also stayed with us. The \"uber\" service via app was great and took us quickly to the main hotel and local restaurants/shops. Despite its vast size, the service…",
+        "cons": ""
+      },
+      {
+        "name": "jennyjA8746AH",
+        "date": "2025-03-04",
+        "score": 4,
+        "type": "Family",
+        "headline": "Not worth it.",
+        "pros": "When I was reading Nicole L.'s review below, I thought we must have had the same unit because I had almost the EXACT same experience. Then I looked through the photos and saw that it was actually a different unit that was just as poorly kept as the one my family stayed in! I thought that we just…",
+        "cons": ""
+      },
+      {
+        "name": "jamie",
+        "date": "2025-02-22",
+        "score": 6,
+        "type": null,
+        "headline": "",
+        "pros": "$150/day to rent two lounge chairs and an umbrella on the beach! And when someone took the volleyball we checked out, we were charged $75 for not returning it . The hotel is starting to look dated on the outside and construction is ongoing around the spa, which makes it not a relaxing experience…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp2a2eb",
@@ -25856,7 +27164,63 @@
         "Limited food options",
         "Some dated areas"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Townsend",
+        "date": "2025-09-16",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Great Location by the Beach, Locked out of our Room for 2 hours because of incorrect code given",
+        "pros": "The location was in Kihei with a beautiful beach on the property. The location is perfect and is close to food and restaurants. The units were small but reasonably priced for the location and compared to other resorts. Good parking at night but difficult during the day due to beach access. Nice…",
+        "cons": "Paulu on the phone as a manager did not help us at first when we mentioned we were locked out. We did not receive any type of compensation for being locked out and we needed to wake up early the next morning at 530 am on the north of the island to visit Molokini via reservation with a Captain. We…"
+      },
+      {
+        "name": "Matthew Sean",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Great room. Great view. Amazing beach attached. Couldn’t have asked for better.",
+        "cons": ""
+      },
+      {
+        "name": "Ricardo",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "The room was clean and the staff was very friendly. The location was quiet, calm, and perfect for a relaxing getaway. The beach was warm and the waves were also nice to swim in. The location was perfect as there were plenty of restaurants and shops within walking distance.",
+        "cons": ""
+      },
+      {
+        "name": "Irene",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "The location couldn’t be more perfect, right on the beach, with great snorkeling. The staff were lovely. Really enjoyed fresh air, ocean breezes and the sound of the waves over air conditioning!",
+        "cons": ""
+      },
+      {
+        "name": "Maria",
+        "date": "2025-10-10",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "We loved that our room had a view of the beach! Room was perfect for our family of 4.",
+        "cons": ""
+      },
+      {
+        "name": "Lisa",
+        "date": "2025-10-06",
+        "score": 10,
+        "type": null,
+        "headline": "Beachside Beauty.",
+        "pros": "Beautiful view of the beach, ocean, & pool. I could watch the sunset from my balcony . I could hear the ocean waves from my room. Convenient general store attached to the building. Easy parking. Resort vibes.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp35133",
@@ -26346,7 +27710,63 @@
         "High cleaning fees",
         "Limited food options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Paul",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Our unit was clean and quite up to date, and exterior facilities like the pool, gym, and community BBQ grills (gas) were also up to date, and well maintained. Room layout was great: as a 2BR (1 queen in upstairs loft bedroom with a “master bath”; 2 twins in main floor hallway bedroom) it also had a…",
+        "cons": ""
+      },
+      {
+        "name": "John",
+        "date": "2025-10-06",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "We used this property for a technician working in the area, and he found it very nice and comfortable. The location was convenient, with grocery stores nearby, which made his stay easier since he was there for a few days. There’s no cleaning service provided, so you’re responsible for tidying up…",
+        "cons": ""
+      },
+      {
+        "name": "Murtadha",
+        "date": "2025-09-30",
+        "score": 8,
+        "type": null,
+        "headline": "",
+        "pros": "They don’t clean",
+        "cons": ""
+      },
+      {
+        "name": "Shad",
+        "date": "2025-09-24",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Front desk was wonderful.",
+        "cons": ""
+      },
+      {
+        "name": "John",
+        "date": "2025-09-17",
+        "score": 10,
+        "type": "Friends",
+        "headline": "",
+        "pros": "Loved the grounds, full of beautiful tropical plantings. Nice pool area and places to grill outdoors. All building have lanais with tables. Only a short walk to the beach and the Pacific ocean. Great sunsets!",
+        "cons": ""
+      },
+      {
+        "name": "miguel",
+        "date": "2025-08-20",
+        "score": 6,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Everything was great first time staying on a condo. I did let them know on the front desk. I should’ve asked more questions though about how many times a day they will go clean. I would never put the do not disturb sign on the door, but they never came in wants to clean or change towels but yet…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp6556a73b",
@@ -27005,7 +28425,63 @@
         "10am checkout time is too early",
         "Beach area is not great"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lauren",
+        "date": "2026-04-23",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Extraordinary resort with many amenities none of them at any additional cost.",
+        "pros": "Everything was brand new spotless luxurious and thoughtful. Yoga every morning by the pool- water aerobics twice per week. Lots of pools & lounge chairs to choose from- none of them crowded. Happy hour at two different pool bars at two different times. Adult- only pool was nice option and water…",
+        "cons": "Nothing that we don’t like about the property itself but it wasn’t walkable to any shops or restaurants. However the $2 bus ride took you to all those things. A transportation shuttle would be nice to the excursions that we booked through the concierge as we chose not to rent a car and the Uber…"
+      },
+      {
+        "name": "Crystal",
+        "date": "2026-04-20",
+        "score": 4,
+        "type": "Family With Children",
+        "headline": "Supposed to have resort view but had a view of parking lot.",
+        "pros": "Swimming pool",
+        "cons": "Location"
+      },
+      {
+        "name": "Racheal",
+        "date": "2026-04-06",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Overall a beautiful place and unit. Wish I could give it a 10/10 but the bed was horrible.",
+        "pros": "Clean and peaceful",
+        "cons": "The bed was very uncomfortable. We could feel each spring in the mattress. Woke up each morning with a sore back and body."
+      },
+      {
+        "name": "Jennifer",
+        "date": "2026-03-27",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "Lovely unit. Quiet. No smells. Comfortable bed. Kitchen had most of what we needed and the grocery store is also just down the street. Ample parking. An easy drive to anywhere on the island. Housekeeping staff was wonderful.",
+        "cons": "Check out was 10am and they wouldn't budge on that even though we had booked an early morning canoe (7-9:30am) the day of check out. We were asked repeatedly to attend a time share presentation (called and texted daily). The best pool (across the street next to the ocean) closes at 5pm, well before…"
+      },
+      {
+        "name": "Austin",
+        "date": "2025-09-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "I liked being able to text the staff.",
+        "cons": "I wish there were a more traditional buffet breakfast."
+      },
+      {
+        "name": "999kerstint",
+        "date": "2026-04-14",
+        "score": 4,
+        "type": "Family",
+        "headline": "Beautiful property, disappointing service",
+        "pros": "Stayed at the Hilton Grand Vacations Maui Bay Villas and had a mixed experience. The room was spacious and perfect for our family, and the property is beautiful, easy to navigate, with a great pool. Grounds staff were friendly and accommodating. Security was excellent—when we were harassed by two…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp33a04",
@@ -28313,7 +29789,63 @@
         "Inadequate air conditioning",
         "Draining issues in bathroom"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "peter",
+        "date": "2026-03-11",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Loved the location and the view. The unit was a bit dated - chairs, sliding screen doors, mattress.",
+        "pros": "The location was wonderful - close to Wailea and other beaches but not in the most crowded area of Kihei. Easy to get to beaches, restaurants, supermarkets. Our unit had great view of ocean and sunsets - one of the best features.",
+        "cons": "Had to call twice to get unit number and door code. Not available until day before arrival but never got text or email. Per property, the email for me they got from Booking.com was a \"junk\" email. But someone answered the phone promptly both times."
+      },
+      {
+        "name": "Grant",
+        "date": "2026-03-02",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Last minute change = poor experience.",
+        "pros": "Location, pool and gardens nicely kept",
+        "cons": "Our condo booked was cancelled at last minute by email and alternative offered was dirty with terrible, old and dated furnishing and minimal natural light.a really poor experience which ruined our stay."
+      },
+      {
+        "name": "Eric",
+        "date": "2025-12-07",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Good value in Wailea, would stay again",
+        "pros": "Comfortability, full kitchen",
+        "cons": "Floors were mopped but our feet still got dirty walking on them"
+      },
+      {
+        "name": "Peter",
+        "date": "2025-03-12",
+        "score": 9,
+        "type": "Young Couple",
+        "headline": "Great place for a vacation that gives you more space and flexibility than a hotel.",
+        "pros": "Location was great. Very close to Wailea beach, Shops at Wailea, Kihei businesses. Unit was very roomy and had most things we needed. Had air conditioning as well.",
+        "cons": "We were checking in after hours and didn't get a response to how we would get into unit until day before arrival. Some confusion as to which unit we were to check into. All got resolved but I would have preferred knowing in advance rather than last minute. Our unit was next to the pool - great if…"
+      },
+      {
+        "name": "Debbie",
+        "date": "2025-03-02",
+        "score": 8,
+        "type": "Family With Young Children",
+        "headline": "Overall it’s pleasant stay for us and the 2 condos are clean",
+        "pros": "Location and good price This is our 3rd time staying at the Palm and cheapest deal we have for the condo",
+        "cons": "No central air so the house can get hot during the day Need new set of knives as they are very dull. We used to cut papayas and hard to peel the skins Not enough kitchen ware and lack of basic cooking ingredients like salt, sugar, oil There is not enough dish washer detergent for daily wash Not…"
+      },
+      {
+        "name": "Terri",
+        "date": "2026-01-23",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Comfortable for what we needed.",
+        "pros": "",
+        "cons": "television in the living room was difficult to get started. The microwave did not heat. Called twice to report this and it was switched out."
+      }
+    ]
   },
   {
     "id": "lp3d1a1",
@@ -28796,7 +30328,63 @@
         "Cleanliness issues",
         "Limited food options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Andre",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "It was worth the money.",
+        "pros": "The staff was very helpful and pleasant to deal with. The room was very clean and roomy.",
+        "cons": "Nothing."
+      },
+      {
+        "name": "Michael",
+        "date": "2026-06-07",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "A pleasant stay in Kihei.",
+        "pros": "The bed, pillows, and sheets were clean and comfortable. The wifi and television worked well. The hot water was hot. The walk to the beach was short.",
+        "cons": "The beach access was under construction, but beach access was available to the south."
+      },
+      {
+        "name": "Jacy",
+        "date": "2026-06-01",
+        "score": 9,
+        "type": "Couple",
+        "headline": "I would stay here again due to great value/cost.",
+        "pros": "I liked the fact that I got email alerts with reminders, easy online check in, and check outs. The staff was very friendly. Property was easy to find with ample parking. Beds were comfy. Easy to reserve with booking.com",
+        "cons": "A little bit run down. Could use a bit of maintenance/renovations but the place served its purpose as a comfortable place to stay."
+      },
+      {
+        "name": "Naksavang",
+        "date": "2026-05-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "The staff was extremely professional and apologetic when they couldn’t get our AC working. They rectified the situation",
+        "pros": "The room was nice and clean, especially the bed and bathroom! The beach was right across from the hotel which was super convenient for a chance to watch the sunrise on the beach!",
+        "cons": "Sadly the AC didn’t work when we were there and the staff tried their best to fix it but to no avail. Also there was a stale smell in the room which was bearable to me, but ultimately had to buy some perfume to spray around the room to get rid of the smell."
+      },
+      {
+        "name": "Robert",
+        "date": "2026-04-08",
+        "score": 1,
+        "type": "Couple",
+        "headline": "Pictures on the website must be 20 years old, we were very disappointed in the resort, see above",
+        "pros": "Nothing",
+        "cons": "Bathroom had black mold, there were exposed electrical wires in the kitchen. Rain flooded under door seal, Floor in the kitchen and bathroom was filthy. We had talked to the Manager on duty about a refund of the 2nd night stay. Due to health issues, I can't be around black mold, the manager on duty…"
+      },
+      {
+        "name": "Andreas",
+        "date": "2026-04-07",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Nice location 👌",
+        "cons": "So, the room had an open ceiling facing the sky, which resulted in the light waking us up really early. Also, the bathroom was smelling piss. Overall, I would not suggest it."
+      }
+    ]
   },
   {
     "id": "lp4e7e4",
@@ -29051,7 +30639,63 @@
         "Lack of cleanliness",
         "No air conditioning"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Keiko",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Great location for good value",
+        "cons": "Jacuzzi was not warm"
+      },
+      {
+        "name": "Jonas",
+        "date": "2026-06-15",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Disappointing",
+        "pros": "Good location and large unit. The fans worked really well (no AC, but didn't miss it)",
+        "cons": "We got a ground-floor unit, so instead of the ocean view, we looked out at the pool, walkway, and parking lot, and it was less private than the booking.com page made it look. Also, there were several ant highways, everyday a few small cockroaches, and once a large cockroach. The staff couldn't…"
+      },
+      {
+        "name": "Cheryl",
+        "date": "2026-05-11",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Definitely would recommend and would return especially due to the excellent and accommodating staff.",
+        "pros": "We liked the location- far away from the hustle bustle yet close enough. The entire staff was AMAZING!!",
+        "cons": "No air conditioning and need of a little more pool chairs and much needed few umbrellas or some type of cover for being able to be outside by the pool."
+      },
+      {
+        "name": "Richard",
+        "date": "2026-05-07",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Clean, spacious, comfortable apartment in perfect location; best place we booked during a month on 3 islands.",
+        "pros": "Location superb— views were stunning; immediately across from beach and mountain backdrop. Apartment was excellent. Very clean. Comfortable beds. Full kitchen well equipped and very nice living area. Screened balcony.",
+        "cons": "Really liked everything. Our only complaint was that concierge was not up to date on a few questions and we got some advice that was incorrect, therefore having to turn around and do a four hour return drive. Also just down the street is a whale sanctuary educational facility and staff knew nothing…"
+      },
+      {
+        "name": "Jeanna",
+        "date": "2026-04-24",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Gorgeous location great rooms, beautiful view. Lovely pool bbq and hot tub. Need more chairs and a twice a week cleaning",
+        "pros": "Pool",
+        "cons": "Piano resident playing for hours and walking dogs by pool area. We felt like it wasn’t our vacation but rather guests invading her space."
+      },
+      {
+        "name": "Sue",
+        "date": "2026-03-08",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great place with everything you’d need",
+        "pros": "Great location. Plenty of space and anenuties",
+        "cons": "No air conditioning"
+      }
+    ]
   },
   {
     "id": "lp3572f",
@@ -29476,7 +31120,63 @@
         "Room size complaints",
         "Noisy air conditioning"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Seth",
+        "date": "2025-09-21",
+        "score": 8,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Best thing is location followed by the property grounds (landscape, pool, grills, and gym). Unfortunately, our one bed unit had a small bedroom with even smaller on suite bath. I think it was remodeled (converting one bath into two). The condo was a good size with ocean and mountain views from…",
+        "cons": ""
+      },
+      {
+        "name": "Sarath chandra",
+        "date": "2025-09-09",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Great property with beach view",
+        "cons": ""
+      },
+      {
+        "name": "Tomasz",
+        "date": "2025-08-30",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Good place to spend your vacation",
+        "cons": ""
+      },
+      {
+        "name": "Trang T",
+        "date": "2025-08-27",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "I love Maui Sunset because of the great view, great staffing, and the location convenient",
+        "cons": ""
+      },
+      {
+        "name": "Colette",
+        "date": "2025-08-24",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "The property is well maintained, the only negative is that the air conditioner and fans can be quite noisy. However for the space and amenities it is excellent value.",
+        "cons": ""
+      },
+      {
+        "name": "Richard",
+        "date": "2025-08-23",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Outside of property a little shabby but inside very good.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp9cea8",
@@ -29642,7 +31342,63 @@
         "Expensive for an older hotel",
         "Beach condition not ideal"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Andrea",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "I would love to return, I came home relaxed and happy.",
+        "pros": "Attentive front desk, very communicative.",
+        "cons": "Having to fill the water up in the lobby was a bit of a bust."
+      },
+      {
+        "name": "Jiahui",
+        "date": "2026-05-29",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great stay.",
+        "pros": "Location! ‘Private’ beach at the back.",
+        "cons": "Reception only opens between 8am-6pm."
+      },
+      {
+        "name": "Stephan",
+        "date": "2026-05-27",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Affordable accommodation at a nice turtle beach",
+        "pros": "Appartment was clean, well equipped, especially the beach chairs, towels and cooler were highly appreciated and every day used. Ice bricks available for the cooler at the pool. Comfortable and cosy king size bed. Nice terrace with beach view. Good air condition and climate in the room. At the beach…",
+        "cons": "Unfortunately no gym and the check out time was below the normal check out hours (10 o’clock is little too early!). And the room service already knocked at 9:45 am at the door asking when we leave. The sofa bed is something for kids and below a body weight of 90 Lbs only. Otherwise you feel the…"
+      },
+      {
+        "name": "Davide",
+        "date": "2026-05-15",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Gorgeous stay in Kīhei. Lovely resort with a great array of convenient services.",
+        "pros": "Great location, well maintained property, beautifully landscaped, all the amenities and services added lots of value to the overall resort’s package offer.",
+        "cons": "Condos were overall comfortable, but the main bedroom was bit tight in size, especially when traveling with large luggage."
+      },
+      {
+        "name": "Daniel",
+        "date": "2026-05-09",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Not too far from the beach",
+        "cons": "Thêir not very flexible for late check out even for 30 minutes but it’s ok"
+      },
+      {
+        "name": "Julia",
+        "date": "2026-05-04",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Good stay if looking for a big family accommodation",
+        "pros": "Quite big apartment, very well equipped.",
+        "cons": "Beach in front is not great, not good for swimming"
+      }
+    ]
   },
   {
     "id": "lp4ed60",
@@ -30066,7 +31822,63 @@
         "Some equipment in poor condition",
         "Rooms a bit old"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Laura",
+        "date": "2025-09-20",
+        "score": 10,
+        "type": null,
+        "headline": "Great Condow",
+        "pros": "Excellent, great place to stay for price. Would definitely stay here again. Bed super comfortable, air conditioning worked great. Condo in great condition. Would stay here again!",
+        "cons": ""
+      },
+      {
+        "name": "Alexey",
+        "date": "2025-09-06",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Great location near the beaches and close to the surfing spots. Rooms are a bit old, but still good. Some equimpment like fans were not at good conditions but workable. But nature around and great location level out these disadavntages.",
+        "cons": ""
+      },
+      {
+        "name": "Suzanne",
+        "date": "2025-06-02",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "We love this place! This was our fourth time here. Conveniently located, clean, easy to check in/out.",
+        "cons": ""
+      },
+      {
+        "name": "Daniel James",
+        "date": "2025-05-13",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Everything was wonderful",
+        "cons": ""
+      },
+      {
+        "name": "Amy",
+        "date": "2025-04-28",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "The washer and dryer could be upgraded and fan in bathroom",
+        "cons": ""
+      },
+      {
+        "name": "Gary W",
+        "date": "2025-04-24",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Beautiful property great view close to beach",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp354b9",
@@ -30378,7 +32190,63 @@
       "cons": [
         "Lacked shampoo and conditioner"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Robert",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "very beautiful and wonderful place to make memories.",
+        "pros": "i liked that it had all the amenities as your house would. were able to cook and keep food refrigerated. it was very convenient and they had every utensil that you could need. the place was beautiful. it was kept very clean and groomed. thank you so much for the wonderful vacation. and memories.",
+        "cons": "can't think of anything."
+      },
+      {
+        "name": "Karen",
+        "date": "2026-02-14",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Great location, but disappointed with property",
+        "pros": "Within walking distance to a lovely beach and snorkeling. Also not far from restaurants and shopping. Ample parking available.",
+        "cons": "Very noisy. Garbage trucks near our window every morning and lots of leaf blowers, lawn maintenance noises. Ground floor patio only partially covered so we couldn't use it on rainy days. Air condioner didn't work correctly; had to unplug it. Poor lighting in condo; hard to read in bed or on couch."
+      },
+      {
+        "name": "George",
+        "date": "2026-02-13",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Nice place to stay I would recommend it if I were to go back to Maui I would stay there again",
+        "pros": "The location was excellent nice quiet place",
+        "cons": "Suite 174 was a nice quiet unit comfortable could use a little Maintenance"
+      },
+      {
+        "name": "Vern",
+        "date": "2026-02-09",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Location was great but this is clearly a revenue property that lacks ownership attention to detail.",
+        "pros": "Easy access to the beach. Unit has a/c, washer & dryer, oven, stove microwave. Fairly well stocked utensils. Community BBQ that is well maintained. Beach chairs & umbrella supplied. Unit is close walking distance to restaurants and shops. No carpet.",
+        "cons": "The first unit we were given was very run down and not the one shown in the photos. The second property that we moved to was better but clearly lacks regular upkeep. No hooks or shelves in the bathroom, TV lacks proper instructions and very frustrating to use. Furniture is minimal and old. Dresser…"
+      },
+      {
+        "name": "Zlata",
+        "date": "2026-01-27",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Perfect location near beach , clean . We had everything what we needed : washing machine, dishwasher, kitchen utensils",
+        "pros": "Everything was perfect",
+        "cons": "Anything"
+      },
+      {
+        "name": "Sarah",
+        "date": "2026-01-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great location and cute property!",
+        "pros": "Amazing amenities such as beach chairs and cooler for the beach! Such a great spot!!! We will be back!",
+        "cons": "Lacked shampoo and conditioner for a party of 5."
+      }
+    ]
   },
   {
     "id": "lp6555680c",
@@ -30721,7 +32589,63 @@
         "No beach gear",
         "Limited shade at pool"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sergio",
+        "date": "2025-09-27",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Great staff. The condo was immaculate and well-equipped. A short walk to the beach. Couldn’t have asked for more!",
+        "cons": ""
+      },
+      {
+        "name": "melanie ann",
+        "date": "2025-09-20",
+        "score": 8,
+        "type": "Family",
+        "headline": "",
+        "pros": "I like that this property was quiet because some of the older condos are not. I like that the one bedroom had 2 bathrooms. Many condos have only a view of the parking garage and the lanai is narrow and noisy if the AC is running. There is no elevator to the parking garage and you have to park on…",
+        "cons": ""
+      },
+      {
+        "name": "james",
+        "date": "2025-07-15",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Excellent stay and wonderful staff!",
+        "cons": ""
+      },
+      {
+        "name": "Doron",
+        "date": "2025-06-09",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "We enjoyed our stay. The suite exceeded our expectations. The picture doesn’t do it justice",
+        "cons": ""
+      },
+      {
+        "name": "Stephanie",
+        "date": "2025-03-31",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Very easy to walk to dinner, across From the beach.",
+        "cons": ""
+      },
+      {
+        "name": "Michael",
+        "date": "2025-01-30",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Great property, Great Staff. Only negative was condo was a little dated . Otherwise was very good",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp89c38",
@@ -30881,7 +32805,63 @@
         "Quiet location near bakery and outdoor market"
       ],
       "cons": []
-    }
+    },
+    "reviews": [
+      {
+        "name": "Mykola",
+        "date": "2026-06-15",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Worth to stay",
+        "pros": "Great location, right at the beach. Home style apartment - there’s anything you may need. The owner really cares about guests. Overall. We loved our family stay.",
+        "cons": "Not the best beach - the water is brownish. The furniture is somewhat old. The convertible couch is uncomfortable when expanded to the bed, needs a repair."
+      },
+      {
+        "name": "stewart",
+        "date": "2025-08-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Don't miss out on this great deal!",
+        "pros": "Nicely located, edge of Kihei so quick to get to other areas. Host was very receptive and gracious. Has the amenities you would need for a great stay. We were able to use the beach items that were a great help. ABC store within walking distance (watch the traffic!) Enjoyed our stay! Loved walking…",
+        "cons": "Windy when we got there, but not something they could do about that!"
+      },
+      {
+        "name": "Roberta",
+        "date": "2025-07-06",
+        "score": 10,
+        "type": "Couple",
+        "headline": "This is a great place to stay, everything we needed.",
+        "pros": "Beautiful view from the balcony. Very nice grass area with good bbq and tables. Great beach and swimming plus pool.",
+        "cons": "Lots of sand everywhere in the condo because the wind blows a lot."
+      },
+      {
+        "name": "Chris",
+        "date": "2025-03-17",
+        "score": 10,
+        "type": "Young Couple",
+        "headline": "Relaxing stay at Nani",
+        "pros": "Right on the beach, great facilities, lawn, beach front, pool, etc.. good location for all sites in Maui. Room had all amenities needed with beach accessories.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Helena",
+        "date": "2024-11-02",
+        "score": 9,
+        "type": "With Friends",
+        "headline": "Superb",
+        "pros": "Fully furbished appartment. 2 bathrooms. Things to borrow if you needed it Good info and connection with the host. Access to parking, patio area to barbecue, at the beach and access to pool.",
+        "cons": "Non on the appartment only that the location it self was a little bit far from restaurants etc . Not the best beach outside."
+      },
+      {
+        "name": "Daniels",
+        "date": "2024-09-25",
+        "score": 9,
+        "type": "Young Couple",
+        "headline": "This property was comfortable & quiet & a great value for the money.",
+        "pros": "The location was convenient & centrally located for the activities we wanted to do. It was a great place to watch the sunset. I really enjoyed the outdoor area at this property. It was was very welcoming & so close to the beach without the sand. There was a great cookout area plus the pool was…",
+        "cons": "The restaurants were not in walking distance."
+      }
+    ]
   },
   {
     "id": "lp657a6081",
@@ -32530,7 +34510,63 @@
       "cons": [
         "Staff not overly helpful"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Tena",
+        "date": "2026-06-06",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Incredible",
+        "pros": "Fair",
+        "cons": "Choices"
+      },
+      {
+        "name": "Nancy",
+        "date": "2026-05-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Amazing 🤩",
+        "pros": "Loved this property ! Outstanding in every way !!",
+        "cons": "Slippery shower floor ."
+      },
+      {
+        "name": "Janis",
+        "date": "2026-05-01",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Perfect transition before having to go back home to work.",
+        "pros": "Loved the MaiTai’s and the food at the poolside restaurant. Excellent bartenders! Lovely atmosphere.",
+        "cons": "Could have been cheaper but we understand why prices are high."
+      },
+      {
+        "name": "Landysh",
+        "date": "2026-04-21",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Generally good",
+        "pros": "I'll give the rooms a 10/10. The suits and the bathrooms are spacious, making for a very comfortable stay with a kid. The cleaning ladies did a great job twice daily.",
+        "cons": "I requested a room at least 3-4 floors above, away from elevators and vending machines. This wasn’t a luxury craving or whim; I clearly mentioned my sleep issues in the request, made over two months ago. Despite this, we ended up on the first floor right next to the elevators and vending machines…"
+      },
+      {
+        "name": "Craig",
+        "date": "2026-04-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Traditional values.",
+        "pros": "Extremely clean and pleasant surroundings. Staff were great and you truly felt pampered. Lots of extras that were just part of a quality organization.",
+        "cons": "N/A"
+      },
+      {
+        "name": "Corniello",
+        "date": "2026-01-06",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Hotel was clean. Staff was exceptionally friendly and helpful. Food was delicious. Number of pools and the fact that there was an adult only pool was great.",
+        "cons": "N/A"
+      }
+    ]
   },
   {
     "id": "lp77d38",
@@ -32895,7 +34931,63 @@
         "Issues with TV during stay",
         "Some minor noise from the street"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Colin",
+        "date": "2026-05-27",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "We stayed in the studio suite, suite C, which might be the hidden gem of the property. It's located to the back of the property, looking right out into the garden and trees they grow the leis from. Very private, quiet, and a great view of sunrise. If you're looking for something more secluded and…",
+        "cons": "Studio suite C gets a lot of sun midday, could use some sort of sunshade on the patio."
+      },
+      {
+        "name": "Joanne",
+        "date": "2026-05-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Exceptional location for people desiring long walks on a beach and easy access to good food .",
+        "pros": "Location wonderful across from beach, private deck, gracious host, beautiful grounds, very clean.",
+        "cons": "Road between cottage and beach quiet most of the time. Unfortunately as in anywhere sometimes a loud vehicle."
+      },
+      {
+        "name": "Banovic",
+        "date": "2026-04-01",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Amazing property, spacious room and lovely hosts!",
+        "pros": "We were absolutely thrilled with the property—beautiful lush greenery all around, and the accommodation itself is just as lovely. The hosts were amazing and went out of their way to help us with many things. They even let us do our laundry for free and provided a hose and water so we could wash our…",
+        "cons": "Everything was great!"
+      },
+      {
+        "name": "Clinton",
+        "date": "2026-03-22",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Stay here to feel like you live here!",
+        "pros": "Loved that it felt like your own little house. Very relaxing and private. Could walk right across the street to one of the best beaches (mostly all to yourself).",
+        "cons": "Really can’t think of anything."
+      },
+      {
+        "name": "Scott",
+        "date": "2026-03-05",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great staff, really clean, well-appointed cottage. The beach across the street is very nice!",
+        "pros": "The cottage, right across the street from a very nice, sandy beach.",
+        "cons": "The property was great, but be sure to note that the ‘studio apartment’ is NOT a cottage. It’s in a multi-story building. We were lucky that a cottage was available, although we had to pay extra."
+      },
+      {
+        "name": "Brian",
+        "date": "2026-03-04",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Relaxing and was hard to leave. Wanted to stay a few more days.",
+        "pros": "Close to beach. Quiet at night. Spacious room.",
+        "cons": "Parking a bit tight."
+      }
+    ]
   },
   {
     "id": "lp3ad7e",
@@ -35127,7 +37219,63 @@
         "High price",
         "Lack of restaurant for drinks"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Gideon Lee",
+        "date": "2025-06-28",
+        "score": 10,
+        "type": null,
+        "headline": "Family Loved It",
+        "pros": "The WB Villas are fantastic \"ApartHotels\" complete with all the trappings & comfort of our own home, particularly in the kitchen. The property is more of an adult resort with only one small 'family' pool while the larger pool near the beach is adults only. Our unit was furnished for adults, but…",
+        "cons": ""
+      },
+      {
+        "name": "Sharon",
+        "date": "2025-04-06",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "We had nice scenic view of the ocean and great house to vacation in!😁",
+        "cons": ""
+      },
+      {
+        "name": "Adela",
+        "date": "2025-04-03",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "We had a great time enjoying of all the amazing property amenities and friendly staff. Best place we’ve ever had stayed in Maui.",
+        "cons": ""
+      },
+      {
+        "name": "Nisrine",
+        "date": "2025-03-25",
+        "score": 8,
+        "type": null,
+        "headline": "",
+        "pros": "We received a different room that was booked so ended up needing some roll-away beds. There is no restaurant at the property nor any drinks pool.beach side...that kinds sucked. Otherwise it was great",
+        "cons": ""
+      },
+      {
+        "name": "Oralee",
+        "date": "2025-03-06",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Exceeded expectations! Top notch! The nearby resorts are beautiful to visit but wouldn’t want stay anywhere else!",
+        "cons": ""
+      },
+      {
+        "name": "Donna",
+        "date": "2025-02-08",
+        "score": 10,
+        "type": null,
+        "headline": "Beautiful property",
+        "pros": "Our unit was spacious, gorgeous and well appointed. The beach and pools are lovely. Highly recommend the location.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp3f686",
@@ -37193,7 +39341,63 @@
         "Expensive breakfast",
         "No spa services"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Ann",
+        "date": "2025-04-28",
+        "score": 10,
+        "type": "Young Couple",
+        "headline": "Very enjoyable and relaxing stay.",
+        "pros": "Spacious, well-designed condo unit. Beautifully landscaped property. Location at a great beach.",
+        "cons": "Some traffic noise from nearby road."
+      },
+      {
+        "name": "Robert",
+        "date": "2025-04-27",
+        "score": 7,
+        "type": "Family With Young Children",
+        "headline": "Lovely stay but a little disappointing...",
+        "pros": "We love the resort... Beautiful setting and magical location.",
+        "cons": "We stayed in exactly the same condo 5.5 years ago (708) for a week and paid $4,900. This time we paid $7,700 for only 5 days. The condo is now looking a bit tired. Some of the utensils and pot & pans were the same as 5 years ago... A little disappointing. Not great value."
+      },
+      {
+        "name": "Menees",
+        "date": "2024-06-19",
+        "score": 9,
+        "type": "Group",
+        "headline": "Perfect location for our family celebration of grandson’s wedding.",
+        "pros": "Great location the pool and beach were amazing! Our view was exceptional. Beautiful unit quiet and spacious.",
+        "cons": "Great room furniture was not very comfortable. Distance from our suite to the pool and beach was quite a walk."
+      },
+      {
+        "name": "Karen",
+        "date": "2023-06-11",
+        "score": 7,
+        "type": "Young Couple",
+        "headline": "very nice stay",
+        "pros": "gardens",
+        "cons": "lack of toilet paper"
+      },
+      {
+        "name": "Cole",
+        "date": "2022-08-07",
+        "score": 10,
+        "type": "Young Couple",
+        "headline": "Excellent accommodations.",
+        "pros": "We enjoyed the condo rental. It was spacious and comfortable.",
+        "cons": "Our room could have been closer to the ocean."
+      },
+      {
+        "name": "David",
+        "date": "2025-05-05",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Everything was perfect. The only thing that could be improved is providing a beach umbrella. They do provide chairs, but the sun is strong there.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp3551d",
@@ -37532,7 +39736,63 @@
         "Luxurious amenities"
       ],
       "cons": []
-    }
+    },
+    "reviews": [
+      {
+        "name": "Rachel",
+        "date": "2026-04-25",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "TEN STARS: Unforgettable!",
+        "pros": "The property is a curated exotic garden with postcard picture pockets with sweeping views, places to relax like hammocks, and sensory soothers like water features, birds. The pool was serene with light music, attentive staff, and never felt crowded. Staying at Hotel Wailea felt like stepping into a…",
+        "cons": "I have no complaints"
+      },
+      {
+        "name": "Sandra",
+        "date": "2026-03-03",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Gorgeous property with excellent staff and services.",
+        "pros": "This was our second time staying at this property. We love the adult only aspect, mainly at the pool, but also just serene in general. The grounds are beautifully landscaped and kept, the food was delicious, and the staff always available, prompt, and friendly. The pool was a very comfortable temp…",
+        "cons": "No faults whatsoever."
+      },
+      {
+        "name": "Olga",
+        "date": "2025-11-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Nice and lovely, perfect to disconnect",
+        "pros": "Everything! The location is great and you can feel intimacy and relax in every corner. On top of how beautiful and well designed is.",
+        "cons": "I absolutely loved everything"
+      },
+      {
+        "name": "Nicholas",
+        "date": "2025-09-04",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Service was absolutely incredible. And adults only was exceptional!",
+        "cons": "The Restaurant at Hotel Wailea is overpriced and the food is underwhelming"
+      },
+      {
+        "name": "Morse",
+        "date": "2025-08-15",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "Hotel Wailea did not live up to their 5 star rating.",
+        "pros": "The staff could not have been more attentive and exceptionally respectful. The grounds are well maintained and in a jungle like setting.",
+        "cons": "My room ( Celebration Ocean View Suite. Their most expensive suite. $1500 per night) needed to be painted. Visible large touch up spots on walls in livingroom and bedroom. View was beautiful but location right near main road. Constant traffic. Breakfast arrived lukewarm and not the caliber I…"
+      },
+      {
+        "name": "Hans",
+        "date": "2026-04-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "",
+        "cons": "the birdcage restaurant food is great but very overpriced. menu sizes between starters and mains are inconsistent."
+      }
+    ]
   },
   {
     "id": "lp2565b",
@@ -38824,7 +41084,63 @@
         "Noisy areas",
         "Chaotic beach chair situation"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Meghan",
+        "date": "2026-06-05",
+        "score": 7,
+        "type": "Couple",
+        "headline": "It was good, but if you’re gonna spend that kind of money and you’re looking for waterslides, the Westin resort and spa",
+        "pros": "I liked the property itself. The water slides are nice. It’s a bit maze like and hard to navigate, but it’s beautiful. It’s a little bit more rundown in the hallways than I expected it to be for the price.",
+        "cons": "Some of the lifeguards at the Kids Nalu adventure, Pool did not pay attention to what was happening at the pool at all twice I saw fights between older children and parents of younger children for a rough housing too much. It seems that they don’t pay attention at all to how hard some of the older…"
+      },
+      {
+        "name": "Carlos J",
+        "date": "2026-05-26",
+        "score": 9,
+        "type": "Couple",
+        "headline": "A place to return.",
+        "pros": "The amazing view from our room, the infinity pool, the environment",
+        "cons": "Only thing I didn’t like was that CASH was not allowed, they had a machine where you buy gift cards instead, sometimes there was a line, it was a little bit annoying, otherwise the property was very pleasant and relaxing, our server at the pool was 10/10."
+      },
+      {
+        "name": "Sanaz",
+        "date": "2026-05-14",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Fair stay.",
+        "pros": "Nice view and location",
+        "cons": "Staff not so friendly and with attitude, food was unbelievably expensive without being special. Other much more luxury restaurants nearby charge less than this hotel."
+      },
+      {
+        "name": "Marie-Louise",
+        "date": "2026-05-07",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Awesome! If we can, we come again!",
+        "pros": "Everything!! We had such a great time, rooms were great, staff were sooooo friendly, food was awesome! Pools super nice! The beach area super nice, we loved everything!",
+        "cons": "Maybe cocktails a bit pricey… but they were really nice 😊"
+      },
+      {
+        "name": "Staci",
+        "date": "2026-03-30",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The room was spacious and the bed very comfortable. Having multiple pool options was nice. All the staff were very friendly. The location is great with an easy walk to the Wailea Shops.",
+        "cons": "My only complaint is the price. Do you really need to charge $25 for a Mai tai in a plastic cup?"
+      },
+      {
+        "name": "Jackson",
+        "date": "2026-03-28",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "The resort was beautiful and great location. The rooms were spacious.",
+        "cons": "The price per night was alittle high"
+      }
+    ]
   },
   {
     "id": "lp1d817",
@@ -40343,7 +42659,63 @@
         "Poor check-in experience",
         "Unmet upgrade promise"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Núbia",
+        "date": "2026-05-01",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Great hotel with a lot of potential, but it clearly feels neglected for a Four Seasons level property.",
+        "pros": "The view, the beach, and the staff were amazing. I loved the adult pool service — when you arrive, they give you a bottle of fresh water, which is such a nice touch. Macana was the best server at the pool. I also loved the bar/restaurant by the reception. Nate provided great service, the singer on…",
+        "cons": "Overall, the hotel feels very old and could use a refresh. The furniture needs to be modernized, and the gym equipment is outdated. The pool menu had limited options and very few healthy choices — the tuna poke was the only one. The adult pool is also very small; they should expand the area so more…"
+      },
+      {
+        "name": "apashchenko",
+        "date": "2026-01-21",
+        "score": 6,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Beautiful location and hotel. I liked the valet service, they did a great job!",
+        "cons": "Construction works made it a bit noisy."
+      },
+      {
+        "name": "John",
+        "date": "2026-01-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "10+",
+        "pros": "Great vacation",
+        "cons": "Beautiful and good service"
+      },
+      {
+        "name": "robbin0425",
+        "date": "2026-05-06",
+        "score": 10,
+        "type": "Friends Getaway",
+        "headline": "A Masterclass in Birthday Celebrations – Mahalo, Rachel and Galina!",
+        "pros": "Huge thanks to Rachel and Galina. We recently spent four days at the Four Seasons Resort Maui at Wailea in late April to celebrate my partner’s 45th birthday, and it was nothing short of spectacular. Three weeks before arrival, I challenged the Concierge Team with a series of high-demand sunset…",
+        "cons": ""
+      },
+      {
+        "name": "TheLuxeBro",
+        "date": "2026-04-25",
+        "score": 10,
+        "type": "Family",
+        "headline": "The most exceptional, truest 5-star resort on earth!",
+        "pros": "I am rating this property based on 13 specific criteria on a 1-10 scale (with several 11s for going above and beyond and into \"the best on earth\" status): 1. Overall rating and vibe: 11. This is the most exceptional, truest 5-star resort on earth. 2. Service: 11. Service is UNIFORMLY warm, genuine…",
+        "cons": ""
+      },
+      {
+        "name": "AELisbon",
+        "date": "2026-04-19",
+        "score": 10,
+        "type": "Solo Travel",
+        "headline": "Classic Hotel",
+        "pros": "This is one of my favorite hotels. Rooms are very well decorated and spacious . Bathrooms are large. Only one area that needs perhaps needs update are toilets . Very very low.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp6556624a",
@@ -40953,7 +43325,63 @@
         "Lack of transparency",
         "Limited food variety"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Tierney",
+        "date": "2026-06-01",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Beautiful views, nice hotel, good location for price.",
+        "pros": "While not right on the beach, the hotel pool was positioned with beautiful views of the ocean and mountains. The bar was great, as were the staff there. The gym was quite good as well.",
+        "cons": "The room was on a low floor and had very little light, which was not ideal. I should have asked to move."
+      },
+      {
+        "name": "Emma",
+        "date": "2026-05-12",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Good but could be better",
+        "pros": "- Stylish - Good breakfast - Loved the pool and jacuzzi - Clean",
+        "cons": "- When we checked in we were falsely told we hadn’t paid when we had. - Not only that I was overcharged for the room. - We were then given a room that faced the road which was quite noisy. This was disappointing because we were on honeymoon and meant the balcony wasn’t that pleasant. We noticed…"
+      },
+      {
+        "name": "Bryce",
+        "date": "2026-04-21",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Daytime front desk during the weekday ruined our first day.",
+        "pros": "Nighttime front desk was friendly and helpful. Guest service was good.",
+        "cons": "Day time frontdesk during the weekday has an attitude problem. She was extremely rude when we questioned about the destination fees. When there is no clear answer towards whether we could avoid the fees, she told us that she didn’t like my attitude and she requested us to bring two complimentary…"
+      },
+      {
+        "name": "Cristel",
+        "date": "2026-03-30",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Lovely stay for 3 nights.",
+        "pros": "The bed was comfortable. Loved the infinity pool. It is small, like a boutique hotel. Parking was convenient. Easy in and out, but it’s $40/day.",
+        "cons": "No espresso available. Only drip coffee with breakfast for $30. It would be nice to get a latte and a croissant in the morning. I thought the room was adequate, but nothing special. We did not have any housekeeping for three nights, the whole time we were there. I did ask at the front desk and that…"
+      },
+      {
+        "name": "Fiona",
+        "date": "2026-01-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Excellent hotel and staff",
+        "pros": "Staff were polite and went out of their way to help with any query, offering helpful advice about the local area. The bedrooms were spotlessly clean, the mini fridge in the room actually was cold kept at a certain temperature. Upon arrival given a tin bottle of water to reuse at their water…",
+        "cons": "Breakfast was good but a bit repetative but food was good quality"
+      },
+      {
+        "name": "Wendy",
+        "date": "2026-01-19",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Thank you so much! My daughter and I loved our stay.",
+        "pros": "Everything and everyone was wonderful!!",
+        "cons": "Noisy people above us at 5am but not hotels fault."
+      }
+    ]
   },
   {
     "id": "lp308fb",
@@ -41564,7 +43992,63 @@
         "Overpriced rooms",
         "Inconsistent room quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Melissa",
+        "date": "2026-06-12",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Beautiful location on the beach.",
+        "pros": "This is an excellent location right on the water. The pool was very nice, and the surrounding grounds are kept up neatly. It was appreciated that the condo owners and the association checked in on us after the earthquake. The area is just far enough away from the main shopping area to feel quieter…",
+        "cons": "My only thing was that there was no AC in the unit. It was pretty rough at times with the heat and lack of crosswinds. Although the team quickly got us more fans for the room, AC is a much-needed upgrade."
+      },
+      {
+        "name": "Bac",
+        "date": "2026-05-26",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Stress free.",
+        "pros": "Definitely felt like home away from home.",
+        "cons": "Parking situation could’ve been better. Property staff did accommodate with situation and everything worked out."
+      },
+      {
+        "name": "shir",
+        "date": "2026-05-20",
+        "score": 4,
+        "type": "Couple",
+        "headline": "I’m disappointed, and left the place with a headache",
+        "pros": "Nice room",
+        "cons": "Know before you go: This condo is apparently also used by permanent residents, which means you might wake up at 8:00 am to loud banging on your wall because one of the residents is doing renovations. And when you call the front desk to complain, they’ll tell you that “most people don’t know this,”…"
+      },
+      {
+        "name": "Serena",
+        "date": "2026-05-02",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Very nice stay in Maui! Great location.",
+        "pros": "In front of the beach. Nice and easy.",
+        "cons": "No food service available in the hotel. Many small flies in the room at night."
+      },
+      {
+        "name": "Parag",
+        "date": "2026-04-17",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Nice stay at nice location",
+        "pros": "Simple check in process, location, facilities",
+        "cons": "Nothing"
+      },
+      {
+        "name": "rothner",
+        "date": "2026-04-13",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Great vacation!",
+        "pros": "Beautiful location, spacious room, good value",
+        "cons": "Poorly equipped for the storm, no one working during an emergency. Some issues with insects in the room."
+      }
+    ]
   },
   {
     "id": "lp88ced",
@@ -42676,7 +45160,63 @@
         "Some bed discomfort",
         "High parking cost"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Stephanie",
+        "date": "2026-03-10",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Comfortable in Wailea",
+        "pros": "Nice rooms close to everything. Clean and comfortable.",
+        "cons": "Nice having a small kitchen especially on a longer vacation"
+      },
+      {
+        "name": "Otgonbayar",
+        "date": "2026-02-26",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "had a wonderful time",
+        "pros": "the pool is constantly open which is nice for entertainment the room was very spacious and clean breakfast was great with many options and the parking was decent also very close to the beach.",
+        "cons": "there could of been more fruits native to Hawaii in the breakfast selection and also could of made the time longer also the property is a bit old and the pool is very cold"
+      },
+      {
+        "name": "Ashma",
+        "date": "2026-02-24",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Overall a good stay. I did enjoy it.",
+        "pros": "Location was excellent. Breakfast was good but would have liked more veggie options",
+        "cons": "Swimming pool area was def not enough for the size of the hotel & would have liked a restaurant or two."
+      },
+      {
+        "name": "Yudelky",
+        "date": "2026-01-30",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Very good value stay",
+        "pros": "It’s a beautiful landscape.",
+        "cons": "Rooms were average on the older spectrum but clean and in good condition."
+      },
+      {
+        "name": "Lynette",
+        "date": "2026-01-27",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The location was very convenient",
+        "cons": "Parking prices"
+      },
+      {
+        "name": "angeleen",
+        "date": "2026-01-20",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Not worth the pay",
+        "pros": "Location",
+        "cons": "Was a bit dated the beds were as hard as a rock. I upgraded to a ocean view and got a view of a palm tree"
+      }
+    ]
   },
   {
     "id": "lp308fe",
@@ -43475,7 +46015,63 @@
         "Cleanliness issues",
         "Dated rooms"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Vishwas",
+        "date": "2026-06-13",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "One of the best affordable accommodation in Maui",
+        "pros": "Amenities, spacious rooms, professional staff, free parking and value for money",
+        "cons": "Bathroom needs some upgrade especially shower heads and Hope they can provide shower gel in place of a soap"
+      },
+      {
+        "name": "Emily",
+        "date": "2026-06-12",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great place for families",
+        "pros": "This is a CONDO, not a hotel. Each room is different from the photo on booking. It is two blocks from the ocean, an easy walk. It is too far to walk to town, but great if you have a car. The condo is perfect for families. It was clean and had a full kitchen. The bed was comfortable, which we like a…",
+        "cons": "The ocean view was over the solar panels and parking lot, the ocean is in the distance, but you can see it. The air conditioners were in the living room and bedroom, and were so noisy we had to turn it off in the bedroom so were hot at night. The pool is very noisy with kids throwing balls and…"
+      },
+      {
+        "name": "Allison",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Great stay. Highly recommend to family and friends!",
+        "pros": "So friendly and accommodating to all our needs.",
+        "cons": "We were able to use the pool before check in time and they promptly came and fixed a curtain in the bedroom that was broken"
+      },
+      {
+        "name": "Martínez Solá",
+        "date": "2026-06-07",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great environment and service",
+        "pros": "The location was good, excellent facilities, greatly equipped. Great daily cleaning service and very nice aorroindings gardens ocean view and swimming pool. Everything very luxurious",
+        "cons": "Neighbours upstairs were noisy. Also doing grocery shopping is not that easy. For this reason optional breakfast could have been served"
+      },
+      {
+        "name": "Elena",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Everything! The location, the unit itself, the view. From check in to check out was effortless. The unit was ready with everything we needed. Thank you so much.",
+        "cons": "That I had to leave and that it was only for 2 days. I told the front desk when I checked out that I would like to request the same unit in Sept. (Sept 3 thru 8) She said that I would have to request it. So, I'm requesting for this unit from Thurs, Sept 3rd thru Tuesday, Sept 8th. Please let me…"
+      },
+      {
+        "name": "Erica Ka Yee",
+        "date": "2026-05-29",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Great value for money but need to be careful of the bugs!",
+        "pros": "Great value for money, the place was massive & felt like an airbnb. There was a washing machine & the kitchen was fully equipped. Good WiFi. The room was abit dated though. They also have a swimming pool & hot tub if memory doesn’t fail. Overall the area felt safe & was in good proximity to…",
+        "cons": "I understand there was just a flood but we found two MASSIVE cockroaches in our room & there were sooooo many flies during the night. Appreciate that they swapped the room for us straight away but the flies persisted"
+      }
+    ]
   },
   {
     "id": "lp1e9c7",
@@ -43932,7 +46528,63 @@
         "Basic breakfast",
         "Limited parking options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Candice",
+        "date": "2026-06-06",
+        "score": 3,
+        "type": "Couple",
+        "headline": "Be prepared not to get the room you request when booking through booking",
+        "pros": "Being a short walk to the ocean was very nice.",
+        "cons": "I paid for and reserved a room with balcony and sea view. My view was of another part of the complex and no balcony as the room described. I even paid for that particular room. I went to front desk and her alternative room was the same except ground floor and during the day you could see a slight…"
+      },
+      {
+        "name": "Sienna",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Amazing hotel in a great location",
+        "pros": "It was very close to the pretties beach.",
+        "cons": "I honesty have no complaints."
+      },
+      {
+        "name": "Julio",
+        "date": "2026-05-30",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Best place ever",
+        "pros": "It was a great trip, definitely worth it",
+        "cons": "The bugs."
+      },
+      {
+        "name": "Zachary",
+        "date": "2026-05-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great stay",
+        "pros": "Great location and value",
+        "cons": "Rooms on smaller side but cost made up for it"
+      },
+      {
+        "name": "Bradford",
+        "date": "2026-05-18",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Was convenient for access to airport but would t stay as a holiday.",
+        "pros": "Being near the beach for sunset and close to airport for our departure. Bed was comfortable and loved the portable chairs provided for beach. Snacks available for breakfast was convenient.",
+        "cons": "Used to Wyndham in Australia being more hotel quality, this felt like a cheap motel only it was not cheap. Our room was small and faced the road and had no view of the beach or sound of beach waves. Definitely over priced."
+      },
+      {
+        "name": "Nikki",
+        "date": "2026-05-16",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Relaxing stay with easy access to beach",
+        "pros": "Easy check-in and good communication with the hotel. Room was well proportioned and had everything we needed. Ideally positioned for access to the beach.",
+        "cons": "Nothing really, shops/restaurants/bars all a drive away."
+      }
+    ]
   },
   {
     "id": "lp3565f",
@@ -44136,7 +46788,63 @@
         "Good service"
       ],
       "cons": []
-    }
+    },
+    "reviews": [
+      {
+        "name": "Eva",
+        "date": "2025-05-11",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Beautiful apartment in a gorgeous condo complex",
+        "pros": "Such a beautiful apartment in a beautiful complex, with breathtaking views. The condo grounds are spectacular and so well maintained, beautiful trees, flowers… Walking distance to many nice coffee places, restaurants and shops. Very professionally managed, great support & service.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Alexis",
+        "date": "2025-03-19",
+        "score": 10,
+        "type": "Young Couple",
+        "headline": "A perfect place for peace, quiet and beautiful views.",
+        "pros": "Lovely unit, beautiful location on the golf course. Very peaceful and so quiet. Wonderful views.",
+        "cons": "I wish the water had been hotter in the showers."
+      },
+      {
+        "name": "laurelr365",
+        "date": "2025-12-07",
+        "score": 10,
+        "type": "NONE",
+        "headline": "Lovely memorable stay",
+        "pros": "We had a lovely stay in the well-appointed, comfortable, and clean condo. Sipping morning beverages on the lanai while looking at the distant ocean and listening to the nearby birds was sublime. We appreciated the advance notification that the housekeeping team would be visiting. We hope to return…",
+        "cons": ""
+      },
+      {
+        "name": "Odyssey624329",
+        "date": "2025-07-09",
+        "score": 10,
+        "type": "NONE",
+        "headline": "View!!",
+        "pros": "Beautiful views, beautiful accommodations. Staying just a couple minute walk from Waikoloa village made every morning walk to the beach easy and beautiful! The location is priceless.",
+        "cons": ""
+      },
+      {
+        "name": "Eric",
+        "date": "2025-06-25",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "property was clean and very accessible to what we were doing.",
+        "cons": ""
+      },
+      {
+        "name": "Raymond",
+        "date": "2025-06-23",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "This is a great location. Very quiet, but close to most everything in Wailea and surrounding areas. The condo was very clean and well kept, with many upgrades. We would definitely stay here again.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp3f646",
@@ -44338,6 +47046,62 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": [
+      {
+        "name": "Cathy",
+        "date": "2024-03-24",
+        "score": 8,
+        "type": "Group",
+        "headline": "Beautiful location!",
+        "pros": "Patio and lots of windows/doors looking out into the ocean was wonderful!",
+        "cons": "Twin beds in living room should have been disclosed. Numerous outlets in second bedroom didn't work. Tv went out several times."
+      },
+      {
+        "name": "Tegue",
+        "date": "2023-05-17",
+        "score": 10,
+        "type": "Review Category Business Travellers",
+        "headline": "It was a great experience.",
+        "pros": "The location was perfect for me. Quiet and relaxing and super close to the beach. Which was awesome.",
+        "cons": "Some of the other people staying at the resort seemed a bit unfriendly. Mosquito bites"
+      },
+      {
+        "name": "Barbara",
+        "date": "2024-11-28",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "I really loved this place. Ocean side. Able to open the patio door and hear the ocean",
+        "cons": ""
+      },
+      {
+        "name": "Lucas Sebastian",
+        "date": "2024-08-04",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Outstanding location, view and property. Strongly recommend for a family.",
+        "cons": ""
+      },
+      {
+        "name": "Jeanne",
+        "date": "2024-07-28",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "We were greeted warmly, the room exceeded our expectation.It was clean and very comfortable.",
+        "cons": ""
+      },
+      {
+        "name": "Amy",
+        "date": "2023-07-08",
+        "score": 5,
+        "type": "Family With Young Children",
+        "headline": "Disappointed none of the pictures shown was the actual unit we were given.",
+        "pros": "",
+        "cons": "I booked an oceanfront condo but we were set back from the ocean and other buildings were closer and in front of us. The unit under us was being worked on. We dealt with banging noises, saws and sanders. We had painters on our actual balcony and looking inside our condo and windows. Plastic over…"
+      }
+    ]
   }
 ]

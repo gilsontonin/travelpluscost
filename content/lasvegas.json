@@ -703,7 +703,63 @@
         "Restaurant service",
         "Pillow comfort"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Nathaniel",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Fourth time",
+        "pros": "Everything",
+        "cons": "Leaving"
+      },
+      {
+        "name": "Nathaniel",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Best view of the strip",
+        "pros": "One bedroom corner suites",
+        "cons": "Having to check out"
+      },
+      {
+        "name": "Bernaleen",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Fabulous",
+        "pros": "I like everything! the room is massive with all the mods and cons. Very Comfortable bed. Most of all is the location. It’s not in the madness of the strip which makes me feel safer.",
+        "cons": "Can’t find any fault"
+      },
+      {
+        "name": "Fabienne",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "From the deluxe king room we had a great view of the sphere. Big rooms with kitchen",
+        "cons": "When we turned on the hot tub in the bathroom, green ugly stuff came out. This was really disgusting. And it‘s also expensive"
+      },
+      {
+        "name": "Sylvia",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Easy and confortable",
+        "pros": "Location and pool",
+        "cons": "We had a problem with a bed. It was fixed but took a couple days to figure out."
+      },
+      {
+        "name": "Roberta",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Amazing",
+        "pros": "Perfection",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp6556d561",
@@ -1521,7 +1577,63 @@
         "Confusing parking",
         "Rude staff at times"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sam",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Everything is perfect",
+        "cons": "The parking process and the parking cost"
+      },
+      {
+        "name": "kyle",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great off-season deal. Loved all the eateries on property. Excellent stores and gym - great resort feel.",
+        "cons": "Sometimes you pay for parking, ours was included though."
+      },
+      {
+        "name": "Marcin",
+        "date": "2026-06-17",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Shade Costs Extra in the Desert 😔",
+        "pros": "great location with very nice rooms, bathrooms, and facilities. The property is well maintained, and there are plenty of pools to choose from, which is a definite plus.",
+        "cons": "There were several issues that significantly affected my experience. The biggest problem was the lack of accessible shaded areas around the pools. While shaded spots were available, many of them had to be reserved and paid for separately. In Southern Nevada, where summer temperatures are extreme…"
+      },
+      {
+        "name": "Mgbabyphat23",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "I liked that even though the hotel is a lil far from the strip transportation was convenient",
+        "cons": "I didnt like that we went to the pool area 2 hours before they closed. We were in the 3rd pool i was the one sitting taking a nap and I hear an employee making noise folding the chairs and letting them fall flat. It was an hour before closing that this happen. They took all of my family towels and…"
+      },
+      {
+        "name": "Igor",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Best",
+        "cons": "Best"
+      },
+      {
+        "name": "Kelly",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Amazing.",
+        "pros": "Staff and cleanliness",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp30c66",
@@ -2172,7 +2284,63 @@
         "Dirty rooms",
         "Noisy environment"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Briana",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Clean ! Spacious & great customer service at the desk",
+        "pros": "The friendliness and cleanness",
+        "cons": "Nothing :)"
+      },
+      {
+        "name": "SHERYL",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Luxury hotel in great location with exquisite suites",
+        "pros": "Tuscany is a beautiful property, with two outside pools and lush grounds. It has huge comfortable rooms with living room and small kitchenette with table and chairs.",
+        "cons": "It has so many buildings, it’s easy to get lost!"
+      },
+      {
+        "name": "Timothy",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Rooms were huge, clean, and comfortable. Absolutely loved the stay.",
+        "cons": "One of the rooms wasn’t ready until 5pm. Everything else was great!"
+      },
+      {
+        "name": "Floor",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Great",
+        "pros": "Our room was very big. Very comfortable beds. The bathroom was so spacious and clean.",
+        "cons": "Noise from the room above us."
+      },
+      {
+        "name": "Roxana",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "My adult kids loved it. Pool, coffee, restaurant. There was a hiccup and the alarm system went in and we were outside",
+        "pros": "Loved how close it was to the strip. Everything in close proximity",
+        "cons": "I didn’t like that our room didn’t have a microwave. I thought we had a sofa bed"
+      },
+      {
+        "name": "Mary",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Las Vegas off the strip...",
+        "pros": "Great location! Clean, super comfortable, a great value. There are elevators for the 3 floorLots of parking, the pool was very clean and large. Outdoor pool menu and drinks. The food was great at Marilyn's (try the Fajitas) and the on site casino was a good size and fun. Very close to the Las Vegas…",
+        "cons": "This ADA (accessible)suite had a small kitchenette that included disposable cups, and ice bucket, a very small refrigerator, a small coffee maker and 4 coffee pods. No microwave, no dishes, no napkins. The mini refrigerator froze everything I put in it and caused the canned drinks to explode. The…"
+      }
+    ]
   },
   {
     "id": "lp656bbd6b",
@@ -3501,7 +3669,63 @@
         "Cleanliness issues in the bathroom",
         "Location not ideal"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Honey",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Excellent",
+        "pros": "Newest",
+        "cons": "A little further but no biggie"
+      },
+      {
+        "name": "Roxanne",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The best trip ever",
+        "pros": "Absolutely everything",
+        "cons": "The fact we had to leave"
+      },
+      {
+        "name": "Benjamin",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Couple",
+        "headline": "We enjoyed it very much.",
+        "pros": "Beautiful Hotel, Amazing Rooms with great views. Wonderful restaurants.",
+        "cons": "Not much, maybe location less favorable to the other locations except the Convention Center."
+      },
+      {
+        "name": "Peiman",
+        "date": "2026-06-13",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Take one star from it.",
+        "pros": "New building",
+        "cons": "The room was not clear like a real 5-star hotel. The hotel is not generous in providing a brush, toothpaste etc."
+      },
+      {
+        "name": "Anita",
+        "date": "2026-06-10",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Fab place but expensive",
+        "pros": "Safety",
+        "cons": "Prices"
+      },
+      {
+        "name": "Lucinda",
+        "date": "2026-06-10",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "I stayed at the Fountainbleu for three days and didn’t want to leave. Everything was so nice and clean. I will return!",
+        "pros": "Everything was so lovely and beautiful. A very elegant stay!",
+        "cons": "I liked how lively it was throughout the entire day/night. Not a dull moment!"
+      }
+    ]
   },
   {
     "id": "lpa5db2",
@@ -3856,7 +4080,63 @@
         "Some amenities not functioning properly",
         "Elevator delays during peak hours"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Antonia",
+        "date": "2026-06-19",
+        "score": 1,
+        "type": "Couple",
+        "headline": "CLEANERS STOLEN FROM HOTEL / LOST PROPERTY “GONE MISSING”",
+        "pros": "Nothing",
+        "cons": "Be careful staying here. My partner bought 3 brand new items of clothing and ironed them and accidentally left them in the wardrobe. I emailed the hotel many times and they completely ignored me. I emailed Ace on the front desk who initially replied, and then when I described the items, he didn’t…"
+      },
+      {
+        "name": "Tramelia",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Me and my significant other had a very nice time at the Berkley and we will be going back soon we stayed on the 18th flo",
+        "pros": "Everyone was very professional very clean atmosphere quiet I felt safe",
+        "cons": "I loved everything about the property"
+      },
+      {
+        "name": "lucio",
+        "date": "2026-06-15",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Location, space and comfort all for a low price.",
+        "pros": "For the price - you get a small apartment not too far from Vegas Strip. The amenities were nice too, especially the pool area. NIce large hot tub, nice clean pool with plenty of seats. Also, it was nice to be close to some essentials shopping like a Super Target.",
+        "cons": "Without a car, it can be a hassle. I was there for a festival (EDC) and Ubers were already surge pricing so getting back and forth to the Strip was quite expensive."
+      },
+      {
+        "name": "LaCher",
+        "date": "2026-06-15",
+        "score": 3,
+        "type": "Couple",
+        "headline": "Cheap",
+        "pros": "Price",
+        "cons": "Rooms smelled like seafood"
+      },
+      {
+        "name": "Sonia",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Good stay",
+        "pros": "Area is perfect. Easy to check in",
+        "cons": "Elevator always down"
+      },
+      {
+        "name": "Roshawna",
+        "date": "2026-06-13",
+        "score": 4,
+        "type": "Couple",
+        "headline": "uncomfortable",
+        "pros": "The property is nice and well maintained",
+        "cons": "Upon checking into the room noticed the towels hadn’t been replaced there was hair in the drainage and the sink nozzle was broken"
+      }
+    ]
   },
   {
     "id": "lp3f617",
@@ -5042,7 +5322,63 @@
         "Cleanliness issues in smoking area",
         "Unfriendly staff at times"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Elisabeth",
+        "date": "2026-06-17",
+        "score": 7,
+        "type": "Couple",
+        "headline": "It was good experience",
+        "pros": "The room was of sufficient size, the pool was great, and the staff were really helpful and provided great customer service. The cafe by the pool offers great food!!",
+        "cons": "The breakfast. It's a choice from 2 same breakfast items every day, not worth $20. 1 hot, 1 cold drink. 1 savory muffin and 1 sweet pastry. If I had known this, I would not have opted for breakfast."
+      },
+      {
+        "name": "Lindsey Rains",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "The room and view were beautiful, super quiet, and truly felt like a home away from home. TThe staff was exceptionally kind and attentive. Every single room in the suite felt spacious an luxurious.",
+        "cons": "The sofa bed was really uncomfortable to sleep on. The main bed was super comfortable so I was surprised that the sofa bed was so uncomfortable. Would not recommend a King Suite for 2 people who wouldn't normally share a bed."
+      },
+      {
+        "name": "Vanessa",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Good value and nice space.",
+        "pros": "friendly , safe and good service.",
+        "cons": "rooms could have been cleaner. Found dirt and hair from previous guest so i know room was not thoroughly cleaned."
+      },
+      {
+        "name": "Demetrice",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Excellent and I do recommend this location to family and friends.",
+        "pros": "Love there is no casino, none smoking hotel. Everything about my room is clean and functional. Staff is always friendly. Also the daily free bottles of water is a priceless selling point of why I choose this location every visit.",
+        "cons": "The food at the pool area is very bad. Needs great improvement."
+      },
+      {
+        "name": "Salim",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Excellent stay. I would definitely stay here again.",
+        "pros": "The property was very clean, comfortable, and well maintained. The staff were friendly and helpful, and the location was good",
+        "cons": "Nothing. Everything was great."
+      },
+      {
+        "name": "Brenden",
+        "date": "2026-06-09",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "The rooms and pool area were good",
+        "cons": "The elevator was a nightmare. Waits of 20+ minutes"
+      }
+    ]
   },
   {
     "id": "lp3a754",
@@ -5274,7 +5610,63 @@
         "Noise from adjacent rooms",
         "Limited food options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "David",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Sweet, affordable, homey.",
+        "pros": "Great staff, huge apartment with kitchen, great gym, $100 near the strip!",
+        "cons": "Faded decor, no a/c in hallways"
+      },
+      {
+        "name": "Shrack",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Would stay here Everytime!",
+        "pros": "Location was great! Loved not being in a casino! Very clean!",
+        "cons": "Everything was excellent!"
+      },
+      {
+        "name": "Kasprzyk",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Awesome",
+        "pros": "Pool clean space",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Ashe",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great",
+        "pros": "Great stay",
+        "cons": "Great"
+      },
+      {
+        "name": "Fonseca",
+        "date": "2026-06-13",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Front staff was very friendly. Good location.",
+        "pros": "Location. Although off the strip, it was steps away.",
+        "cons": "I used to have a timeshare there."
+      },
+      {
+        "name": "Ayala",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Wonderful",
+        "pros": "How nice and quiet it was. Didn’t feel like we were in Vegas but somewhere relaxing.",
+        "cons": "Just could use more house keeping check ins."
+      }
+    ]
   },
   {
     "id": "lp65551d7c",
@@ -5586,7 +5978,63 @@
         "Food quality inconsistencies",
         "Check-in delays"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Clarissa",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great staff, convenient location, nice rooms",
+        "pros": "Convenient for the stadium swim and Fremont street",
+        "cons": "The bathroom sinks were slow"
+      },
+      {
+        "name": "Jamel",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great customer service and great experience",
+        "pros": "It’s close to everything",
+        "cons": "…"
+      },
+      {
+        "name": "Michael",
+        "date": "2026-06-09",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Like the fact Circa is 21 plus. Loved Stadium swim. Liked the location .",
+        "cons": "All the fees. The high prices of everything. The fact I booked months in advance and even upgraded rooms but still did get the location of room i requested. The prices at Stadium swim when renting day beds for alcohol and food. Some of the staffs attitudes."
+      },
+      {
+        "name": "Sapna",
+        "date": "2026-06-09",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "It was clean, quiet, and had an awesome pool",
+        "cons": "I didn’t like that they didn’t have a coffee maker in the room or a breakfast buffet"
+      },
+      {
+        "name": "Alfonso",
+        "date": "2026-06-08",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Loved it",
+        "pros": "We love to stay at Circa, great location, swimming pool and gaming area!",
+        "cons": "Confusing directions to the parking garage on google"
+      },
+      {
+        "name": "Marlene",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Beautiful hotel/casino. Staff was very helpful and friendly. Went out of their way to help in any way they could. De",
+        "pros": "We upgraded our room and it was very well worth it! Super clean and easy to get around the casino.",
+        "cons": "We were in a suite rm #5129 overlooking Swim Club. The bass from the music was very loud. We considered sleeping in the living quarters because there was less noise there but the bed was sooo comfortable that we made it work. There was so much going on that we kept forgetting to buy earplugs. Other…"
+      }
+    ]
   },
   {
     "id": "lp6556d569",
@@ -6399,7 +6847,63 @@
         "Cleanliness issues",
         "High service fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sherline",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "The resort and restaurants and customer service.",
+        "cons": "Everything"
+      },
+      {
+        "name": "Ben",
+        "date": "2026-06-14",
+        "score": 6,
+        "type": "Couple",
+        "headline": "A little overpriced, but a very nice hotel.",
+        "pros": "Very clean, new hotel. Good location. Pool was open, unlike other hotels in the area. No resort fee.",
+        "cons": "Very expensive, didn't offer anything special."
+      },
+      {
+        "name": "Melanie",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Couple",
+        "headline": "It was short, sweet, comfortable and would definitely comeback!",
+        "pros": "Very clean and the accommodations were great for the guest.",
+        "cons": "It’s a bit further from the center of the strip but not the worst thing ever"
+      },
+      {
+        "name": "Stephanie",
+        "date": "2026-06-13",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Disappointing",
+        "pros": "Large room and comfortable bed, good facilities like gym and pools.",
+        "cons": "Bathroom was not very clean. Found hairs of previous guests on the floor in the toilet and shower. Confusion about the meal/drinks voucher that was included in our reservation. It clearly stated meals and drinks but reception said it was only for drinks. At check out another staff member said it…"
+      },
+      {
+        "name": "guijosa",
+        "date": "2026-06-11",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Perfect 👌",
+        "pros": "Everything!",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Ana",
+        "date": "2026-06-08",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Clean, comfortable, and convenient. A great value for a Las Vegas getaway.",
+        "pros": "Really enjoyed my stay at Conrad. The room was clean and comfortable. I loved having so many restaurant options on site, plus a Starbucks for quick coffee runs. The pool area was spacious, well maintained, and never felt overly crowded during my stay. There were plenty of lounge chairs available…",
+        "cons": "The only minor drawback was the location on the far end of the strip which meant a bit more walking. Otherwise, I had a very pleasant stay."
+      }
+    ]
   },
   {
     "id": "lp1f982",
@@ -7439,7 +7943,63 @@
         "Frustrating check-in process",
         "Poor room design"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Miguel",
+        "date": "2026-06-20",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "It was adventurous",
+        "pros": "The table games",
+        "cons": "I wish they had better 24 hr food"
+      },
+      {
+        "name": "Shelby",
+        "date": "2026-06-19",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "I booked on booking.com a smoking room; come to my surprise I asked Front desk if I had the smoking room they told me they discontinued smoking rooms!!! Very disappointed in that but none the less beautiful hotel and restaurants! I was Also over charged and no one reached back out to me so check…",
+        "cons": "Over charged and no smoking rooms"
+      },
+      {
+        "name": "Manish",
+        "date": "2026-06-17",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "Ok ok",
+        "pros": "Pool, decor, casino, free parking",
+        "cons": "Room sizes, no In-room amenities, Charged resort taxes of $ 62 which was not disclosed earlier."
+      },
+      {
+        "name": "Vazquez",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Overall Excellent Thank's.",
+        "cons": "None."
+      },
+      {
+        "name": "Brandon",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Everything was great",
+        "cons": "That the pool closes too early should stay open for late nights"
+      },
+      {
+        "name": "Joshua",
+        "date": "2026-06-20",
+        "score": 5,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "",
+        "cons": "That my room was super hot and it was hot outside so it sucks getting into a room that wasn’t cool down"
+      }
+    ]
   },
   {
     "id": "lp224b9",
@@ -8002,7 +8562,63 @@
         "Cleanliness issues",
         "Limited daytime dining options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Carla",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Very relaxing ,I got the best sleep",
+        "pros": "The location is great also the hotel is very clean",
+        "cons": "The incident fees"
+      },
+      {
+        "name": "Rita",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "all service since my arrival, was excellent.",
+        "cons": "That the pool was closed for an especial event."
+      },
+      {
+        "name": "Hunter",
+        "date": "2026-06-05",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "I won't stay ever again or even gamble penny slots there",
+        "pros": "Curt casino host compt 2 nights hotel room cuz I spent 3,000$ on the spot machines in 4 days I was there",
+        "cons": "Front desk girls need to take a class on hospitality greetings and smile negative attitudes not cool"
+      },
+      {
+        "name": "Mark",
+        "date": "2026-06-03",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Worth it if you get a chance to stay here. Lovely hotel and staff. Should be 5 star hotel.",
+        "pros": "Absolutely amazing place. Best place we stayed on our trip.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Bryan",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great Atmosphere and spot for the family! The aquarium was amazing. The Restaurant was a great place for a quick dessert!",
+        "cons": "Overall great stay with no bad or negative comments."
+      },
+      {
+        "name": "Karen Denise",
+        "date": "2026-05-26",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Everything",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp1d30e",
@@ -9235,7 +9851,63 @@
         "Poor service",
         "High prices"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Josephine",
+        "date": "2026-06-20",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Was an experience for sure",
+        "pros": "Large room, clean. Amazing fountains. Central location. Great atmosphere on casino floor.",
+        "cons": "Long queues at desk all the time, maybe increase staff numbers here. Large pool that was adult only was all paid extra beds so it was either pay more or be in the other pools which is fine but if you are a guest all the paid extras becomes annoying after a while. So much unmovable mini bar items in…"
+      },
+      {
+        "name": "Armine",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "We had a very good three days of rest. We liked everything about the hotel. The rooms were clean. They were cleaned every day. The beds and towels were changed every morning. We liked it very much. Everything was great. The food and the restaurants. My husband and I came to celebrate our 23rd…",
+        "cons": "Everything was very impressive, we are satisfied."
+      },
+      {
+        "name": "Tim",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Another enjoyable stay at this hotel.",
+        "pros": "Location and the pool.",
+        "cons": "Why in this day when everybody has ear pods and their preferred music on their pods to you have to continuously play piped music around the pool area. It was very annoying"
+      },
+      {
+        "name": "Bridgett",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Mini vacation",
+        "pros": "Very nice and clean",
+        "cons": "N/a"
+      },
+      {
+        "name": "James",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Fun, Fun, Fun",
+        "pros": "Excellent view of fountains and strip. Spacious room and bathroom. Overall excellent",
+        "cons": "Only negative during stay was having only lukewarm water for shower one day. Fine the next."
+      },
+      {
+        "name": "Tania",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Awesome!!!",
+        "pros": "They received us with a glass of champagne, made us feel relaxed while in line to check in ❤️",
+        "cons": "There’s nothing not to like, everything was good overall ❤️"
+      }
+    ]
   },
   {
     "id": "lp4c002",
@@ -9997,7 +10669,63 @@
         "Cleanliness issues",
         "Room lacks amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Clifton",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "You really didn’t have to leave.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Anita",
+        "date": "2026-06-18",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Location and Casino are great, but the hotel rooms need some improvement",
+        "pros": "Fun casino and restaurants",
+        "cons": "Our room smelled off. It was humid in the room and our shower did not drain well even after calling down to have it fixed"
+      },
+      {
+        "name": "Naheed",
+        "date": "2026-06-17",
+        "score": 3,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Location and fitness center",
+        "cons": "The staff are poorly trained. I had to make several visits to the front desk and make multiple phone calls to complain about a broken air conditioner, malfunctioning mini bar with warm drinks when or was 105 degrees outside, I put my friend's. name on the room reservation and when he tried to check…"
+      },
+      {
+        "name": "Sophie",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Fabulous hotel",
+        "pros": "Room was very spacious, clean and beds were super comfy.",
+        "cons": "Signage could’ve been better"
+      },
+      {
+        "name": "Austen",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Excellent Resort to enjoy LV, the quality of stay and location",
+        "pros": "Reception was very easy when arriving.",
+        "cons": "The hotel internal corridors (10th floor) are getting tired. Rooms are good well featured, the bathroom sinks were blocked. Report to Reception."
+      },
+      {
+        "name": "lisa",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Perfect",
+        "pros": "Beautiful and close to everything",
+        "cons": "N/a"
+      }
+    ]
   },
   {
     "id": "lp2ffb4",
@@ -10813,7 +11541,63 @@
         "Buffet variety limited",
         "Security issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jessica",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Happy stay",
+        "pros": "I loved the buffet, and I also enjoyed the restaurants and entertainments.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Katelynn",
+        "date": "2026-06-14",
+        "score": 4,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The room was spacious and the bed was super comfortable",
+        "cons": "The tables, walls and floors were not clean and there was some kind of stain on the couch"
+      },
+      {
+        "name": "Geraldine",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Nice room,good gambling, great food",
+        "cons": "Nothing"
+      },
+      {
+        "name": "mark",
+        "date": "2026-06-11",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Check in was a nightmare. Room was fine. Pool was mid. The casino, concert and ghost bar were awesome.",
+        "pros": "The pearl and ghost bar.",
+        "cons": "At check in was given room key. Go up key doesn’t work. Come down given new key. Go back up key works, walk in door and the room still has people in it! Go back down. Get new room. No room upgrade. No waive resort fee. No food or drink comps. No nothing. Just a “oh I don’t know how that happened”."
+      },
+      {
+        "name": "Joanna",
+        "date": "2026-06-08",
+        "score": 2,
+        "type": "Couple",
+        "headline": "I will never stay at Palms again",
+        "pros": "The smell in the hotel (except for the cigarettes).",
+        "cons": "Let's start with the room: our room was dirty, with black hair in the shower and all over the bathroom, the carpet wasn't vacuumed, when I moved the puffs, I found trash, the table next to the puffs was dirty and sticky, the fridge was broken and empty. The mattress was, I think, broken or old; it…"
+      },
+      {
+        "name": "Jane",
+        "date": "2026-06-15",
+        "score": 5,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Bathroom handheld head was moldy. Curtain did not cover windows at night. Walls were pealing. Bed frame was peeling. Very long walk to casino and restaurants from Palms Place room.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp399d2",
@@ -11374,7 +12158,63 @@
         "Service inconsistencies",
         "High resort fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Tony",
+        "date": "2025-10-13",
+        "score": 8,
+        "type": null,
+        "headline": "",
+        "pros": "My go to away from the strip",
+        "cons": ""
+      },
+      {
+        "name": "Shelly",
+        "date": "2025-10-13",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "We always stay here and will be back in a week for 2 nights….",
+        "cons": ""
+      },
+      {
+        "name": "john",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Overall a decent hotel, priced right (midweek) Spa has nice specials. Wasn't impressed with restaurants, including buffet. WAY, WAY to much casino cig smoke really ruins the gambling experience.",
+        "cons": ""
+      },
+      {
+        "name": "Olga",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Clean",
+        "cons": ""
+      },
+      {
+        "name": "Yvonne",
+        "date": "2025-10-11",
+        "score": 8,
+        "type": "Friends",
+        "headline": "",
+        "pros": "This Resort had all the amenities that you needed. We just don’t gamble so we were a little bored during the day. There were no umbrellas by the pool. The night time show we went to was Awesome “The Bronx Wanderers”",
+        "cons": ""
+      },
+      {
+        "name": "Rick",
+        "date": "2025-10-11",
+        "score": 8,
+        "type": null,
+        "headline": "",
+        "pros": "Rooms were very comfortable",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp2408a",
@@ -12678,7 +13518,63 @@
         "Issues with coffee availability",
         "Hair found in the tub"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Raquel",
+        "date": "2025-10-13",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "I really enjoyed the cleanest of everywhere SPECIALLY OF MY ROOM I was exhausted but when I opened my room and I saw that everything was in order and I had plenty of towels and specially that EVERYTHING WAS AND CLEAN. Thanks🙌👍 .",
+        "cons": ""
+      },
+      {
+        "name": "Naushad",
+        "date": "2025-10-12",
+        "score": 8,
+        "type": "Family",
+        "headline": "",
+        "pros": "everything was fine except that the toilet room was smelling sewer. I reported and they fixed it but we could not use the toilet room for first day due to the bad odor.",
+        "cons": ""
+      },
+      {
+        "name": "Ron",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "The rooms are so spacious it feels like home.",
+        "cons": ""
+      },
+      {
+        "name": "Sherry",
+        "date": "2025-10-12",
+        "score": 8,
+        "type": null,
+        "headline": "",
+        "pros": "Great quick overnight stay ! Rooms clean beds comfy we had view of sphere. Great signage to find things especially parking. Be prepared for big hit on resort fees and parking tho which is ridiculous!! Almost $90!",
+        "cons": ""
+      },
+      {
+        "name": "Michelle",
+        "date": "2025-10-11",
+        "score": 4,
+        "type": "Friends",
+        "headline": "",
+        "pros": "We ordered room service at 7:30. It was delivered to the wrong room! They just wanted to refund the meal! Yeah, refund something I didn’t get was the first thing that should have happened!",
+        "cons": ""
+      },
+      {
+        "name": "Craig",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Everything is there.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp2529b",
@@ -13427,7 +14323,63 @@
         "Staff rudeness in isolated cases",
         "Limited room views"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Pablo",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Nice hotel with pool in Vegas",
+        "pros": "Pool, friendly staff",
+        "cons": "Not very close to the strip"
+      },
+      {
+        "name": "Candis",
+        "date": "2026-06-18",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Great location, lovely staff, short walk to Allegiant",
+        "pros": "I booked for the proximity to Allegiant Stadium. It was a quick walk and saved me from the super long Uber lines. The staff was incredibly friendly and the breakfast was really good! You could walk to the strip without too much of a problem and there was a bus stop less than a block away.",
+        "cons": "There was only one elevator in the hotel. During off hours it wasn't so bad, but during the last 40 minutes of breakfast the wait to go up or down was so very long."
+      },
+      {
+        "name": "Marcus",
+        "date": "2026-06-13",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Good value near T-Mobile Center",
+        "pros": "Great location just a short walk from the hockey arena. Good value for money.",
+        "cons": "Breakfast wasn’t great."
+      },
+      {
+        "name": "Susan",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Excellent stay in a hotel within walking distance of the strip and a quiet relaxing place to stay.",
+        "pros": "Lovely comfy bed with everything you need for a comfortable stay in the room and great breakfast each morning. Friendly staff and hotel within walking distance of the strip.",
+        "cons": "A few issues with the room, safe deposit box wouldn’t lock and couldn’t turn off the air conditioning. These were dealt with promptly."
+      },
+      {
+        "name": "Jennifer",
+        "date": "2026-06-11",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Would stay again",
+        "pros": "Friendly staff, good breakfast",
+        "cons": "The pillows were awful, hotel not near strip attractions so had to use Uber every time instead of walking"
+      },
+      {
+        "name": "Sylvester",
+        "date": "2026-06-10",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Good",
+        "pros": "Room king size bed, the cleanliness",
+        "cons": "Breakfast and paying for parking"
+      }
+    ]
   },
   {
     "id": "lp25475",
@@ -13731,7 +14683,63 @@
         "Service inconsistencies",
         "Unpleasant staff demeanor"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Patricia",
+        "date": "2026-06-20",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Other than finding the roach in the restroom when we checked in everything else was decent. Didn’t really rest due to th",
+        "pros": "Staff was nice and informative",
+        "cons": "There was a big dead roach in the restroom. Really obvious. Who ever did the cleaning did not do a good job."
+      },
+      {
+        "name": "Denise",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The room was large and clean.",
+        "cons": "N/A"
+      },
+      {
+        "name": "Bianca",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "We are frequent flyers to Vegas and we try different hotels each time. This time we decided to get away from the Strip and went to Plaza Hotel. The location, restaurant, room, I mean all of the things were checked. Fremont Street was there and was great experience from the Strip hustle and bustle…",
+        "cons": "Wasn't one thing I could complain about"
+      },
+      {
+        "name": "Tung",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Clean",
+        "cons": "Small restrooms"
+      },
+      {
+        "name": "Jacqueline",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "I was in Vegas because my brother lives in Vegas, he had a stroke a year and a half ago, so I came to Vegas to check on him, everybody that comes to Vegas is not to spend money or on vacation , I couldn’t afford to go to Vegas but my brother is sick and I needed to get to him, I spent a lot of…",
+        "cons": "No microwave"
+      },
+      {
+        "name": "Griselda",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Overall was great with exemption of the not maintained pool.",
+        "pros": "Location and value",
+        "cons": "The pool needed cleaning. Pool was not maintained"
+      }
+    ]
   },
   {
     "id": "lp1b14d",
@@ -13974,7 +14982,63 @@
         "Limited food options",
         "Parking issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jason",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Sweet tea",
+        "pros": "Sweet",
+        "cons": "Tea"
+      },
+      {
+        "name": "Jason",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "I would stay again if my room does not face Fremont street due to noise.",
+        "pros": "Value was good, customer service was excellent.",
+        "cons": "The room was very noisy from the music on Fremont street till about 3am so sleep was impossible. Rooms can use a remodel. Other than that I was happy."
+      },
+      {
+        "name": "Elena",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Check in and valet was wonderful! As well as bell check. A friend of ours in another room had an issue with AC and they",
+        "pros": "Location and staff",
+        "cons": "Outdated, but you get what you pay for"
+      },
+      {
+        "name": "Alicia",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Anniversary",
+        "pros": "Was Exlent",
+        "cons": "Good attention everyone nice"
+      },
+      {
+        "name": "Tina",
+        "date": "2026-06-20",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "Great location to party!",
+        "pros": "The location is great! Staff is very friendly.",
+        "cons": "Bed was so uncomfortable and the rooms toilet was disgusting.."
+      },
+      {
+        "name": "Shelly",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "We were pleasantly pleased!",
+        "pros": "Beds were so comfortable! They cleaned everything so great each day! The pool was so relaxing and simple! The hotel was on Fremont, close to Walgreens, the pass to Stadium swim- so fun! The people that worked here were so helpful. The ELEVATORS were amazing- our fav and so simple to use- we never…",
+        "cons": "Absolutely nothing!"
+      }
+    ]
   },
   {
     "id": "lp37b49",
@@ -15185,7 +16249,63 @@
         "Limited signage in casino",
         "No Starbucks availability"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Giora",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "A luxurious hotel in a great location, but I'm not sure it really offers good value for money",
+        "pros": "Wonderful view from the room, location was good and hotel is very nice",
+        "cons": "We came early and hotel staff suggested a $120 upgrade (better room and earlier CI) , we took this but the shower faucet was dripping and it was making noise. We spend long time to call house keeping and until they fix it the upgrade was not really worth the money, we spend long tome to get some…"
+      },
+      {
+        "name": "bernard",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Luxurious and peaceful",
+        "pros": "Everything. Attention to detail",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Gökhan",
+        "date": "2026-06-04",
+        "score": 3,
+        "type": "Family With Children",
+        "headline": "Beautiful building, zero service.",
+        "pros": "The hotel is exceptionally stylish and well-maintained. The casino is excellent, and there is a great shopping area featuring a wide variety of well-known brands. The hotel also offers several outstanding restaurants, providing plenty of dining options. Overall, it delivers a very enjoyable and…",
+        "cons": "While the hotel itself is stylish and offers good facilities, the service is extremely disappointing. The staff seem completely uninterested in helping guests and show very little concern for customer satisfaction. We had an issue with our Booking.com reservation, and the response we received was…"
+      },
+      {
+        "name": "Ruth",
+        "date": "2026-06-02",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Nice room and staff, but improvements are warranted for this price",
+        "pros": "The room was spacious and the view looked out to surrounding hills. There are several good restaurants (including SW Steakhouse and Delilah's), and the staff are friendly.",
+        "cons": "The hotel lobby smells like cigarettes. Our room was spacious and comfortable, but this was offset by loud nightclub noise below. It was a holiday weekend, and this noise was probably unique to that. We requested to be moved to a room on the other side (the Strip) of the hotel, and that was quiet…"
+      },
+      {
+        "name": "Christopher",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Simply great. We often go to Vegas & will be staying here again in the future.",
+        "pros": "Everything was fantastic. Our favorite hotel in Vegas.",
+        "cons": "Can't think of anything."
+      },
+      {
+        "name": "ben",
+        "date": "2026-05-31",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Luxury impetsonal",
+        "pros": "Luxury rooms",
+        "cons": "Very big highly impersonal but I guess this is what you get in Vegas."
+      }
+    ]
   },
   {
     "id": "lp29807",
@@ -15874,7 +16994,63 @@
         "Limited breakfast options",
         "Concerns with cleanliness"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "robbie",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Everything",
+        "cons": "Na"
+      },
+      {
+        "name": "Christina",
+        "date": "2026-06-15",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Quiet, don’t sit through the timeshare presentation",
+        "pros": "Loved the quiet",
+        "cons": "They heavily persuaded us to sit through a timeshare presentation for Hilton grand vacations and the salesmen were super aggressive"
+      },
+      {
+        "name": "Katheryn",
+        "date": "2026-06-10",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "It was a short stay but I was wishing I could have stayed longer",
+        "pros": "It was very clean and security was top notch you need a room card to go up in the elevator, I’ve never seen that before that was unexpected",
+        "cons": "Nothing really"
+      },
+      {
+        "name": "Frank",
+        "date": "2026-06-02",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Perfect Hotel for us, we would come again.",
+        "pros": "Great Hotel, nice and helpful staff, very quiet, pool was everday fun, close to Westgate Hotel and Sahara. For families perfect! We would come again.",
+        "cons": "nothing"
+      },
+      {
+        "name": "Elaine",
+        "date": "2026-06-01",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Bare bones Hilton close to Convention Center",
+        "pros": "It was clean and close to tram . Beds were comfortable location was quiet.",
+        "cons": "The location was very far away from everything we did . With the exception of the convention center , it is too far from all the main activities. There is no restaurant in the hotel with the exception of a small cafe that is open from 7 am- 7 pm. There is no servi bar in the room. There wasn’t even…"
+      },
+      {
+        "name": "Janice",
+        "date": "2026-05-29",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Friendly staff, beautiful hotel. Very comfortable. Would definitely stay again.",
+        "cons": "Would of liked a restaurant or at least the shop open longer hours. We arrived on a Sunday late afternoon & it was closed."
+      }
+    ]
   },
   {
     "id": "lp84939",
@@ -16278,7 +17454,63 @@
         "Inconsistent service",
         "Distance from major attractions"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Angel",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Courteous staff and beautiful views.",
+        "cons": "Pool needed more shade"
+      },
+      {
+        "name": "Lori",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Had a fun staycation",
+        "pros": "Clean, quiet, relaxing",
+        "cons": "NA"
+      },
+      {
+        "name": "Taraya",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Everything was Excellent (room, in room dining, staff, view, cleanliness). I was celebrating my 40th birthday and loved my stay",
+        "cons": "Hours of the pool should be extended."
+      },
+      {
+        "name": "Brian",
+        "date": "2026-06-10",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Great stay of you don’t want to be in the middle of the strip",
+        "pros": "Second time at this hotel. Great location, away from the chaos and quiet while still being lively. And I love the Knight Time Hockey Bar. Seek out bartender Martini!",
+        "cons": "There really isn’t any negative to this hotel that they can control."
+      },
+      {
+        "name": "Curtis",
+        "date": "2026-05-31",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Clean",
+        "cons": "Hard mattress"
+      },
+      {
+        "name": "Cindy",
+        "date": "2026-05-28",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Easy access hotel off the highway",
+        "pros": "The price and ease of access",
+        "cons": "Far from the strip"
+      }
+    ]
   },
   {
     "id": "lp42ab9",
@@ -17139,7 +18371,63 @@
         "Uncomfortable bed",
         "Time share pressure at check-in"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "OzoCho",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Excellent Hotel and Location Love it!",
+        "pros": "The location is excellent. Close to major hotels on the strip. Also very close to the strip.",
+        "cons": "I did not like that it does not have any restaurant."
+      },
+      {
+        "name": "Shanon",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "We really enjoyed the stay",
+        "pros": "Acces to everything",
+        "cons": "Not much"
+      },
+      {
+        "name": "William",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Very nice would stay again.",
+        "pros": "Convenient location.",
+        "cons": "Parking"
+      },
+      {
+        "name": "Kelly",
+        "date": "2026-06-10",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Would stay again if we’re back in Vegas",
+        "pros": "Location was great- could walk to most places. The layout (kitchen, living area and separate bedroom was perfect. Plenty of places to walk to pick up food items. Also very large market in the hotel (large for a hotel - like a small 7 11). They also sent texts every day asking if anything was needed",
+        "cons": "Liked everything"
+      },
+      {
+        "name": "Alsu",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "I liked everything!",
+        "cons": "The price for parking"
+      },
+      {
+        "name": "Albenis Yenith",
+        "date": "2026-06-05",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The location is excellent!",
+        "cons": "There is not free parking for guests or at least a special price"
+      }
+    ]
   },
   {
     "id": "lp591b8",
@@ -17859,7 +19147,63 @@
         "Issues with cleanliness",
         "Expensive fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Ennio Carlos",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Perfect in every regard will be back",
+        "pros": "The accessibility for being so connected to the strip and the concierge was the best info desk we have ever had",
+        "cons": "N/A"
+      },
+      {
+        "name": "Matteo",
+        "date": "2026-06-17",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The room was extra large comfy and silent. The position is excellent, being in front of the Bellagio. Crew was very kind.",
+        "cons": "Check in has been super long. No buffet breakfast, water was pouring boiling hot for a few minutes before chilling down and become usable. The bath tube spilled brown water. No way to get the valet car ready in advance, but you have to physically go there and ask for it and wait."
+      },
+      {
+        "name": "Sunnie",
+        "date": "2026-06-17",
+        "score": 1,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The room itself, the wraparound terrace, the artwork, and the furnishings are all notable.",
+        "cons": "I have observed a recurring need to request the cleaning of specific items, and I find the pricing structure to be elevated, with additional charges applied to various services. Furthermore, the absence of a coffee maker and the generally unsatisfactory quality of the on-site dining establishments…"
+      },
+      {
+        "name": "Laura",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great overall value for a beautiful room and view.",
+        "pros": "Clean, convenient. I loved the tub!",
+        "cons": "Check out and bag storage was a long process."
+      },
+      {
+        "name": "Alexander",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Amazing stay for our wedding. Didn’t want to leave",
+        "pros": "Great location, amazing view and facilities",
+        "cons": "Need more light in the bedroom"
+      },
+      {
+        "name": "Jane",
+        "date": "2026-06-14",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Fantastic location, super comfy bed",
+        "pros": "Fantastic location, great view of the Belagio fountain and the Strip from our balcony, super comfy bed, very clean, helpful staff",
+        "cons": "For a 5 star hotel, I would expect at the very minimum to get complimentary tea and coffee making facilities in our room. There was nothing complimentary in our room which is such a shame, especially when you look at room charges."
+      }
+    ]
   },
   {
     "id": "lp1bddb",
@@ -19252,7 +20596,63 @@
         "Bed bugs",
         "Old furniture"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Liliana",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Exelent",
+        "pros": "Everything",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Norcaltrckn",
+        "date": "2026-06-16",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Not much",
+        "cons": "Air conditioning was not great!"
+      },
+      {
+        "name": "Magnificent Antwerp Diamonds Llc",
+        "date": "2026-06-09",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location , good enough for the price",
+        "cons": "Bathroom a bit need to refresh"
+      },
+      {
+        "name": "FRANKLIN",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Couple",
+        "headline": "If you’re looking for a room in Vegas you have got to check this place out",
+        "pros": "The room was large and clean. When I need a room in Vegas I don’t look anywhere else other than Alexis Park. It’s a smoke free environment it’s a wonderful place to stay",
+        "cons": "There’s nothing to not like about the property everything is excellent"
+      },
+      {
+        "name": "Tuy",
+        "date": "2026-05-31",
+        "score": 5,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Room spaces",
+        "cons": "Parking"
+      },
+      {
+        "name": "Raymundo",
+        "date": "2026-05-31",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Good",
+        "pros": "I love the two door restroom and property is good",
+        "cons": "None"
+      }
+    ]
   },
   {
     "id": "lp375b2",
@@ -19606,7 +21006,63 @@
         "Issues with cleanliness",
         "Service delays reported"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Morgan",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "When I needed help someone came right away.",
+        "cons": "I wanted to have another guest join us at the pool but we had to pay an additional fee if I invited them."
+      },
+      {
+        "name": "Veronica",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Nice clean confortable location!",
+        "cons": "Only had one pool"
+      },
+      {
+        "name": "Tony",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Pretty good",
+        "pros": "Beautiful outdoor pool area condo was nice even though a timeshare. I like that it had a full kitchen, washer and dryer",
+        "cons": "Beds could have been more comfortable"
+      },
+      {
+        "name": "Steven",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The Cliffs at Peace Canyon is an excellent bargain, with 5 very professional, friendly staff, and in a great part of tow",
+        "pros": "As with most stays, the staff set the tone , and walking into the lobby I was greeted by a team with a level of 5 star excellence. I felt like I was visiting a luxury style apartment complex, and I mean that in a good way: a large full kitchen, dining area, living room, closet room, 2 full…",
+        "cons": "There were a few burned out light bulbs, a couple power outlets that didn’t work, and a lampshade or two that had needed to be replaced. The gym was small and didn’t have much equipment."
+      },
+      {
+        "name": "Steven",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "The best value I could have hoped for, and in a great part of town.",
+        "pros": "We liked it enough to extend our stay by a couple nights!",
+        "cons": "A few little things: lamp shades, burned out light bulbs, and small gym."
+      },
+      {
+        "name": "Jiri Georg",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Comfortable room, very well equipped kitchen, beds large and of good quality The garden very nice, pool and clean and warm. The fitnes room well equipped. Everything clean, perfection all around.",
+        "cons": "There was nothing I could complain about."
+      }
+    ]
   },
   {
     "id": "lp25431",
@@ -20109,7 +21565,63 @@
         "Room quality",
         "Service inconsistency"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Robert",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Took several hours to find where things were.",
+        "pros": "Had everything and nicely located downtown",
+        "cons": "Very confusing layout and serious problem getting room cleaned daily. A confused system. Also everything is supposed to be scanned. Why not simple instructions???"
+      },
+      {
+        "name": "thompson",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Hotel, and location",
+        "cons": "N/A"
+      },
+      {
+        "name": "Nicholas",
+        "date": "2026-06-19",
+        "score": 1,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "Location was as expected. Room was ok",
+        "cons": "Check in was horrible. Staff did not know what to do and there were not enough of them to serve the number of clients Casino was grimy and smelt"
+      },
+      {
+        "name": "Chantelle",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Our 1st time to Vegas. Great overall experience. Spacious rooms. Comfy beds. Good quality towels/linens. Quiet, no noise from freemont street. Cleanliness was on point. Even hallways and casino/property restrooms. Staff members were all polite, helpful and easy to find. Hate when i have to wonder…",
+        "cons": "All the \"vultures\" from other hotels trying to get you to come do atour of their place so they can sell you time shares. I actually avoided most restaurants and things because it entailed walking by them. they were so pushy and was a real neussance, not taking NO for an answer. Made me feel…"
+      },
+      {
+        "name": "Cashanna",
+        "date": "2026-06-16",
+        "score": 4,
+        "type": "Couple",
+        "headline": "",
+        "pros": "We went there to swim and was not told the slide has been down for one year was very disappointing and also the pool closed at 6 PM",
+        "cons": "n/a"
+      },
+      {
+        "name": "Kizzy",
+        "date": "2026-06-16",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Short but sweet trip",
+        "pros": "The adult only pool and the staff was very friendly and helpful.",
+        "cons": "The noise at 8am in the morning by a work crew working somewhere in the hotel. The shark tank closed as well as the slide was closed. Enjoyed the St.Troy lounge but told a different story once inside regarding drinks."
+      }
+    ]
   },
   {
     "id": "lp27e76",
@@ -20934,7 +22446,63 @@
         "Outdated room facilities",
         "Poor customer service"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Annameinhardt",
+        "date": "2026-04-04",
+        "score": 4,
+        "type": "Family",
+        "headline": "A total let down",
+        "pros": "As a family, we chose this hotel primarily for the pool. Sadly, both the wave pool and lazy river were very cold. On top of that you have to pay to use an inner tube in the lazy river. And the pool had the smallest waves I’ve ever seen in a wave pool. It was not even fun. Our check-in was delayed…",
+        "cons": ""
+      },
+      {
+        "name": "Navigate37317723782",
+        "date": "2026-04-04",
+        "score": 4,
+        "type": "Family",
+        "headline": "Not worth going for the Mandalay Bay/ Beach area/ Pool area.",
+        "pros": "Pools are cold, small, extremely crowded with children, no working hot tubs, no bubbles, one with bubbles was very small and there was no room because children were cold and stayed in the hot tub. It was filled to the brim. The lazy river only has one option for the tubes- buying them at the gift…",
+        "cons": ""
+      },
+      {
+        "name": "M6493JScindyb",
+        "date": "2026-04-03",
+        "score": 8,
+        "type": "Friends Getaway",
+        "headline": "Watch out for fees",
+        "pros": "Nice but quite expensive. You will need to pay extra if you want to use the mini fridge. Watch out for resort fees that are in addition to your room rate and taxes. I didn't use anything to trigger this fee and, therefore waiting for my $300 refund. It's been almost 30 days. After reaching out…",
+        "cons": ""
+      },
+      {
+        "name": "mattsT6064YC",
+        "date": "2026-04-02",
+        "score": 2,
+        "type": "Couples",
+        "headline": "Poor Late Check Out Experience",
+        "pros": "We paid days ahead of time for late checkout and the process to confirm checkout time was exhausting affair on our last day in Vegas souring the experience. The phone in our room did not work so we could not call the front desk. The line at the front desk was 20-40 people deep at all times. We…",
+        "cons": ""
+      },
+      {
+        "name": "felipelV7679QQ",
+        "date": "2026-04-01",
+        "score": 2,
+        "type": "Family",
+        "headline": "Everything takes a lot of time",
+        "pros": "Everything takes a lot of time and cost a lot. Old room with old towels. Unauthorized charges to my room. I am sure you can fix them, but it will take 50 minutes of your day. Misleading survey.",
+        "cons": ""
+      },
+      {
+        "name": "S6286MPkathleenf",
+        "date": "2026-03-31",
+        "score": 4,
+        "type": "Friends Getaway",
+        "headline": "Mandalay Bay is the worst place in Las Vegas I have ever stayed.",
+        "pros": "TERRIBLE PLACE! I will never go back. While the hotel is clean and modern, guests are treated like cattle. Nickel and dime you for everything. Example, you can buy a bottle of water at the vending machine in the hotel for $3.00; when you take that bottle of water to the pool, they pour it out and…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp2213f",
@@ -21726,7 +23294,63 @@
         "Construction noise",
         "Cleanliness issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Kylee",
+        "date": "2026-06-10",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great stay for a family staycation.",
+        "pros": "Relaxing! The pool was amazing for the whole family, we had a great time. The ambiance outside at night with the fire pits was amazing.",
+        "cons": "Not stroller friendly for the baby to get around. The handicap lifts were down and we had to just lift the stroller up and down stairs."
+      },
+      {
+        "name": "Tracie",
+        "date": "2026-06-07",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Overpriced for what we got",
+        "pros": "The location was perfect for visiting my son who lives nearby. Easy to find and the grounds looked lovely. Bonus was valet parking because my Mom is in a wheelchair and parking is pretty far to take her.",
+        "cons": "I requested an accessible room but we found that in fact, it wasn't accessible for her. There was only a bar on the left side of the toilet and she's unable to use her left hand. The shower leaked all over the bathroom floor and out into the foyer, creating a slippery surface for someone who's not…"
+      },
+      {
+        "name": "Leo",
+        "date": "2026-06-07",
+        "score": 6,
+        "type": "Couple",
+        "headline": "The dining options and the golf course are the big winners at this resort. Room, not so much.",
+        "pros": "Marssa - Dinner was fantastic, and the service staff was great. Ricks - Another outstanding meal and service felt rushed. The server was a bit rough, pushy, and pressed. Location was great. Golf was memorable.",
+        "cons": "The shower water temperature was barely lukewarm. Not cold but definitely not hot. The room was pretty basic. The bathroom was also very basic. The room was a bit tired and did not feel very resorty!"
+      },
+      {
+        "name": "Elizabeth",
+        "date": "2026-05-30",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "We really liked the facilities. Had fun and will stay again",
+        "pros": "It was lovely the pool was great. The drinks were great",
+        "cons": "Restaurant was WAY understaffed. People got up and left. It was sad because the staff there was working hard but wow it was pretty bad tho food was great."
+      },
+      {
+        "name": "John E Robinson",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The location was perfect. Loved the peace and quiet.",
+        "cons": "The rooms bathroom walls needed a wipe down."
+      },
+      {
+        "name": "Julia",
+        "date": "2026-05-26",
+        "score": 3,
+        "type": "Couple",
+        "headline": "This hotel is in need of a full makeover.",
+        "pros": "The price",
+        "cons": "The hotel is run down. Our room smelled like smoke. Beds were hard. The photos online do not look like the actual rooms."
+      }
+    ]
   },
   {
     "id": "lp27e6e",
@@ -22915,7 +24539,63 @@
         "Location not convenient",
         "Inconsistent service quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Arlene",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Thank you to all the great staff of the Four Seasons Hotel.",
+        "pros": "Very clean and no smoking!",
+        "cons": "Nothing! We love the Four Seasons Hotel!"
+      },
+      {
+        "name": "Yasani",
+        "date": "2026-06-10",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The hotel was very clean and comfortable. They offer in room breakfast service which great. We also like the location as it was walking distance from the Allegiant stadium and also the last hotel on the strip. So not a lot of tourists around the Four Seasons. Another thing we liked was that all the…",
+        "cons": "We have nothing to complain about. We liked everything about the hotel."
+      },
+      {
+        "name": "Jason",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Epic weekend in an epic hotel with an epic staff!",
+        "pros": "Quiet and first class.",
+        "cons": "Perfect location"
+      },
+      {
+        "name": "Valerie",
+        "date": "2026-05-12",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The only place I stay in Vegas",
+        "pros": "This is the best hotel in Vegas if you want peace away from the craziness! The luxury and attention to detail that Four Seasons is known for is consistently delivered here and I could not be more grateful for the opportunity to step into a magical cocoon of happiness when I'm in town. The bed is…",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Marc",
+        "date": "2026-04-30",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Loved it!",
+        "pros": "Great hotel - away from the noise but close enough to visit. Amazing customer service!",
+        "cons": "Vegetarian food and breakfast options could have been better."
+      },
+      {
+        "name": "Graham",
+        "date": "2026-04-06",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Perfect for families looking to be set back from the hustle and bustle of it all",
+        "pros": "A peaceful family friendly hotel located away from the hustle bustle of Vegas.",
+        "cons": "Only one restaurant (Veranda) for breakfast , lunch and pool side. A Hotel of this stature should have more choice, going to Mandalay Bay next door shouldn’t be that choice."
+      }
+    ]
   },
   {
     "id": "lp30880",
@@ -23407,7 +25087,63 @@
         "Cleanliness issues in some areas",
         "Difficulties in navigation to the location"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Tim",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Spacious but had better rooms at the Westgate Flamingo",
+        "pros": "Very spacious.",
+        "cons": "We had a security guard stop us because we remote started our car. He talked down to us and acted like our car could be stolen from their property, even though we knew better. He actually stood at our car until we exited our room, which was sort of stalking behavior. We also didn't like that the AC…"
+      },
+      {
+        "name": "Tommy",
+        "date": "2026-06-12",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Served its purpose for a few days road trip",
+        "pros": "Easy to drive to, nice pool area, large room suitable for 5",
+        "cons": "Rooms have seen their best days"
+      },
+      {
+        "name": "Jennifer",
+        "date": "2026-06-09",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Great stay, very convenient to both the strip and off strip stores and restaurants. Would absolutely stay again",
+        "pros": "Good location, great price, and staff was terrific",
+        "cons": "The floors in the condo were very dirty. They left our barefeet black on the bottom"
+      },
+      {
+        "name": "Vinh",
+        "date": "2026-06-05",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Excellent, definitely recommended",
+        "pros": "Very nice and comfortable",
+        "cons": "None"
+      },
+      {
+        "name": "Shelley",
+        "date": "2026-05-29",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "It was spacious and affordable. Had everything we needed for our stay. Really liked the daily text communication.",
+        "cons": "The floors were very dirty. The day we arrive 30mins later socks were black on bottom from the floors."
+      },
+      {
+        "name": "everly",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Couple",
+        "headline": "although it was only for a night and we didnt get to enjoy the amenities, this was really a great pick!",
+        "pros": "nice and spacious! great place to stay if you want to be away from crowd, noise and a break from the casino!",
+        "cons": "n/a"
+      }
+    ]
   },
   {
     "id": "lp1e390",
@@ -24101,7 +25837,63 @@
         "Cleanliness issues",
         "Lengthy check-in process"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Clayton",
+        "date": "2025-10-13",
+        "score": 8,
+        "type": null,
+        "headline": "",
+        "pros": "Large, clean room. Friendly staff. The bed did seem a little too soft for me, but i do like a firm mattress. The dining options were great. Fitness and pool were wonderful.",
+        "cons": ""
+      },
+      {
+        "name": "Jason",
+        "date": "2025-10-13",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Everything was perfectly well.",
+        "cons": ""
+      },
+      {
+        "name": "Kathleen",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Very comfortable property, helpful staff, very walkable to areas on the strip, and all the way to Bellagio via the tram.",
+        "cons": ""
+      },
+      {
+        "name": "Rebecca",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Great hotel! Perfect if you are going to TMobile arena across the street! Room was nice size and shower was amazing.",
+        "cons": ""
+      },
+      {
+        "name": "Robert",
+        "date": "2025-10-12",
+        "score": 6,
+        "type": null,
+        "headline": "",
+        "pros": "M",
+        "cons": ""
+      },
+      {
+        "name": "Kelly",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Very nice pool and amenities",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp39e4a",
@@ -25166,7 +26958,63 @@
         "Limited airport shuttle",
         "Inconsistent service quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Yesenia",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Overall, I enjoyed the room and the facilities.",
+        "pros": "The hospitality and service of the staff",
+        "cons": "The room could have been better cleaned and it took a long time to get the room. No robes. Before the upgrade the room I had booked had robes and this one did not."
+      },
+      {
+        "name": "Rachael",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Beautifully appointed resort with all the amenities",
+        "pros": "The resort has everything you need - so many great restaurants and beautiful rooms.",
+        "cons": "It’s not in the centre of town…. But it does have everything you could need!"
+      },
+      {
+        "name": "ken",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Everything",
+        "cons": "Nothing"
+      },
+      {
+        "name": "JJ",
+        "date": "2026-06-15",
+        "score": 9,
+        "type": "Couple",
+        "headline": "It was excellent and worthy of repeating.",
+        "pros": "Breakfast was fabulous. The food was excellent and the staff very friendly and professional.",
+        "cons": "The room doors have an automatic closer. If you didn’t hold onto the door while it was closing, it would make a loud noise. Woke me up a couple of times during my stay. I thought someone was trying to get to my room."
+      },
+      {
+        "name": "Lorelie",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Couple",
+        "headline": "I’m going back soon",
+        "pros": "Smells so good!",
+        "cons": "N/a"
+      },
+      {
+        "name": "Russel",
+        "date": "2026-05-31",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The staff were fantastic at check in",
+        "cons": "The room was not clean. Good thing I brought wipes. To clean the chairs which were covered in something. Also I couldn't use thr mini fridge to keep anything i brought cold. It was full fo their stuff to sell."
+      }
+    ]
   },
   {
     "id": "lp27e73",
@@ -27082,7 +28930,63 @@
         "Noise from airplanes",
         "Missing amenities like fridge"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Shuo",
+        "date": "2025-10-12",
+        "score": 6,
+        "type": null,
+        "headline": "",
+        "pros": "The parking building is dirty.",
+        "cons": ""
+      },
+      {
+        "name": "Tracy",
+        "date": "2025-10-12",
+        "score": 8,
+        "type": null,
+        "headline": "Too many fees!",
+        "pros": "First of all very excited about my price per night until I got my bill at the end of our stay! $53 resort fee charged every day! On top of that charged for moving some cans in mini bar to get our water cold! Ridiculous. That monitoring system does not work! Very sad because we had such a nice time…",
+        "cons": ""
+      },
+      {
+        "name": "Ian",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "I was really impressed with Virgin Hotels Las Vegas. The property felt very modern and well-maintained, with clean grounds and stylish décor throughout. The rooms were sleek, comfortable, and thoughtfully designed definitely one of the more updated hotels off the Strip.",
+        "cons": ""
+      },
+      {
+        "name": "John",
+        "date": "2025-10-12",
+        "score": 6,
+        "type": "Family",
+        "headline": "",
+        "pros": "The property was fine, but we had a handicapped person with and with construction it was a very long confusing path to get to our room. We also had a car topper on and it wouldn’t fit. We were told where to go and all where to short. It took two hours to park",
+        "cons": ""
+      },
+      {
+        "name": "Falicia",
+        "date": "2025-10-12",
+        "score": 8,
+        "type": "Family",
+        "headline": "",
+        "pros": "The rooms are spacious and clean.",
+        "cons": ""
+      },
+      {
+        "name": "Melissa",
+        "date": "2025-10-12",
+        "score": 2,
+        "type": null,
+        "headline": "",
+        "pros": "Loud rooms and security and",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp27e66",
@@ -28458,7 +30362,63 @@
         "Poor Service Experience",
         "Inconvenient Parking"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "cynthia",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great time!!",
+        "pros": "Everything was wonderful, food was little expensive but manageable. Friendly, bright, upbeat atmosphere",
+        "cons": "Pushy time share people"
+      },
+      {
+        "name": "christy",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Close to everything",
+        "cons": "Self parking was a bit far to walk to the check in area"
+      },
+      {
+        "name": "April",
+        "date": "2026-06-20",
+        "score": 3,
+        "type": "Couple",
+        "headline": "I booked 3 rooms for myself and my boys to celebrate my husbands 50th birthday.",
+        "pros": "Location",
+        "cons": "Staff at check in"
+      },
+      {
+        "name": "Gene",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Overall, a positive experience. Booking.com was excellent.",
+        "pros": "Very professional staff and easy check-in process. Room was good. Nice restaurants and casino. Check-out was easy as well. Overall, a positive experience.",
+        "cons": "No comment."
+      },
+      {
+        "name": "paul",
+        "date": "2026-06-19",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Location",
+        "cons": "Staff are rude at the hotel and clearly do not enjoy their job"
+      },
+      {
+        "name": "Judith",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "safety restaurants cleanliness",
+        "cons": "nothing"
+      }
+    ]
   },
   {
     "id": "lp20d9c",
@@ -28951,7 +30911,63 @@
         "Cleanliness issues",
         "Poor food quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Javier",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Cool place",
+        "pros": "Fast access to room",
+        "cons": "Lifts flashing into the room"
+      },
+      {
+        "name": "Tiffany",
+        "date": "2026-06-20",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Nice place to stay for a decent price.",
+        "pros": "Room was nice. Check in was easy. Good location on the strip.",
+        "cons": "I picked the hotel since it was pirate themed, but there was nothing inside with a pirate theme. We also didn’t like that it was so smoky inside (but ever casino seems to be like that). The parking garage did not have signs telling us where to go. We ended up walking really far to get to the doors…"
+      },
+      {
+        "name": "Manish",
+        "date": "2026-06-19",
+        "score": 3,
+        "type": "Solo Traveller",
+        "headline": "Bad experience. Never stay",
+        "pros": "View",
+        "cons": "Old stinky place Weed smell in the hallway Unfriendly staff No security"
+      },
+      {
+        "name": "Cynthia",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Nice time",
+        "pros": "Clean",
+        "cons": "Na"
+      },
+      {
+        "name": "Kim",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Great value for money.",
+        "pros": "Check in staff were great, polite and helpful. Our room was clean, comfortable and spacious.",
+        "cons": "The pool. The pool area was great the pool just wasn't clean."
+      },
+      {
+        "name": "Rosa",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Couple",
+        "headline": "It was good all in all",
+        "pros": "Everything",
+        "cons": "The water from the tub was not going to fast"
+      }
+    ]
   },
   {
     "id": "lp42c13",
@@ -30046,7 +32062,63 @@
         "Aging facilities",
         "High prices for amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "arbrandes",
+        "date": "2026-06-13",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Had a good time, but not really worth the price. Maybe this is a Vegas thing, not an Encore thing.",
+        "pros": "The hotel is, on the surface, very good. The room is great, bathroom very clean, the elevators are fast, etc. The location is also good, for Vegas. (Nothing is truly walkable in Vegas - distances are deceiving because of the size of the buildings - but there is a mall right \"beside\" the Encore.)",
+        "cons": "They will nickel-and-dime you left and right. Open the mini bar to cool that water you brought? Charge. Pick up something from the room display just to see what it is? You bought it. 40 dollars."
+      },
+      {
+        "name": "Todd",
+        "date": "2026-06-09",
+        "score": 3,
+        "type": "Couple",
+        "headline": "Nice place but certainly not luxury",
+        "pros": "Encore is close to many fun attractions, that why I originally picked it.",
+        "cons": "Sadly that was the mainly only positive thing. For a higher up-scale location, I thought I would be treated more, but at the end of the day, it’s your basic Vegas hotel, it seems. Any other place in the world, upscale luxury means celebrating your guests. We don’t get welcomed, there was not a free…"
+      },
+      {
+        "name": "Pavel",
+        "date": "2026-05-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "An amazing place",
+        "pros": "Impeccable. I keep coming back every year, and it is by far the best hotel in town! The quality of everything and the attention to detail is unprecedented!",
+        "cons": "The pool hours are 9AM to 5PM. I wish it could be at least 8AM to 6PM..))"
+      },
+      {
+        "name": "Russ",
+        "date": "2026-05-12",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Would not go back other hotels give higher service for your money.",
+        "pros": "Usual high quality for this type hotel.",
+        "cons": "Do not expect anything for free but seeing as it was our wedding hotel could have made even the smallest of efforts. WiFi was not good, having to log in and out daily. Smart room controls really did not work well, and I do feel food and drink was over priced even to its sister hotel."
+      },
+      {
+        "name": "Dasia",
+        "date": "2026-04-30",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Very comfortable and relaxing",
+        "pros": "The room itself was huge and the in-room tablet that controls everything? dangerously convenient. Honestly, draw a bath, throw on one of those cloud-level robes….;) Their breakfast buffet is massive and one of my favorites on the strip!",
+        "cons": "The fridge in my room started humming like it was training for a marathon… and then kept leveling up until it was basically a full-blown motor concert. To their credit, the hotel sent a tech up right away and even offered to move me."
+      },
+      {
+        "name": "25d509b78a9673b14ae0070570ab59bb",
+        "date": "2026-04-17",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Elegant higher class of people we feel comfortable with!",
+        "pros": "I love the food guilting guests never too crowded when we go and we love that. Nice and Quiet around the pool restaurants are awesome! Shows are amazing!",
+        "cons": "Three times we have been here I run HOT and the air conditioning doesn’t reach the bed at night! My friends said the same thing too hot at night for us! I need it cold to sleep! Only room cold was the sitting room and air conditioning seems to only cool the windows, Not the whole room! My only…"
+      }
+    ]
   },
   {
     "id": "lp1b9fd",
@@ -31335,7 +33407,63 @@
         "Cleanliness issues",
         "Room quality concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jeff",
+        "date": "2026-06-19",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "easy to get to my room., staff was very friendly",
+        "cons": "I thought having to pay for a refrigerator was ridiculous, this is the first place I have ever stayed that had that policy."
+      },
+      {
+        "name": "Anna",
+        "date": "2026-06-19",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "Overall fine but buy new pillows please!",
+        "pros": "Harrahs was in a good location! Room was fine.",
+        "cons": "The mattresses were not comfortable but I have actually never had such awful pillows at a hotel ever. They probably would have brought us new ones (I hope) but my family was too stubborn to ask. But it will be a long time before we forget those pillows! 4 out of 4 were bad."
+      },
+      {
+        "name": "Mireia",
+        "date": "2026-06-19",
+        "score": 1,
+        "type": "Couple",
+        "headline": "The worst nightmare of place and it was not my first time in Vegas",
+        "pros": "The swimming pool was ok…",
+        "cons": "We got stuck in the elevator 3 times and we only stayed one night. We moved a little bit further the mini bar so we could use the desk And got charged 220$ for it… you have to do a long cue to check in. Very difficult to find staff around to ask questions… they also did some other charges without…"
+      },
+      {
+        "name": "Noelia",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Cleaners, spacious and accessible to other easy locations",
+        "cons": "Restroom door not closed fully."
+      },
+      {
+        "name": "Alicia",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great location with places to eat and entertainment, right next door to outside bar and live mucus and club.",
+        "pros": "Great location",
+        "cons": "Restroom locations"
+      },
+      {
+        "name": "Joe",
+        "date": "2026-06-17",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "I liked the location, the room was standard, and the shower should have been cleaned better.",
+        "cons": "There was no microwave and / or refrigerator."
+      }
+    ]
   },
   {
     "id": "lp4c003",
@@ -31922,7 +34050,63 @@
         "Service delays",
         "Cleanliness issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Barry",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "All good",
+        "pros": "Location",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Veronica",
+        "date": "2026-06-18",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The location",
+        "cons": "The staff was not very helpful, my family were placed on separate floors."
+      },
+      {
+        "name": "kellee",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The property is beautifully maintained and in a great location. We had a room with amazing views of the Bellagio fountains, sphere, high roller, Eiffel Tower, and all the city lights",
+        "cons": "There wasn’t anything to dislike."
+      },
+      {
+        "name": "Akmaral",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Peaceful stay, no casino gauntlet",
+        "pros": "Loved this hotel! Such a relief to walk straight to my room without having to weave through rows of slot machines and smoke. The lobby was calm, clean, and quiet. Felt like an actual hotel, not a casino with beds. Would 100% stay again just for that",
+        "cons": "The only thing I didn’t like is that there’s no self parking garage. Valet parking is too pricy."
+      },
+      {
+        "name": "Jane",
+        "date": "2026-06-13",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Nice hotel, clean and comfortable",
+        "pros": "Great location easy access to othern hotels and tram, comfy bed, staff friendly",
+        "cons": "Don't expect anything complimentary in your room (not even complimentary tea or coffee making facility), our room had a kitchen (microwave, cooking element, sink) but all the cupboards and drawers were empty, no plates, cups, glasses, cutlery etc. There was no point having the kitchen in the room!"
+      },
+      {
+        "name": "Favian",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Would diffentley be staying here in the future",
+        "pros": "Service, view and price were great",
+        "cons": "No complaints"
+      }
+    ]
   },
   {
     "id": "lp22480",
@@ -32278,6 +34462,62 @@
         "Dirty surrounding area",
         "High food prices"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sherry",
+        "date": "2025-10-12",
+        "score": 2,
+        "type": "Family",
+        "headline": "",
+        "pros": "The property is a great property and was pretty clean. The pool was not ideal as sun was very limited due to placement. Could have used more room and more opportunities for sun. The staff at restaurants were friendly and good service. That being said we were told we could check in at 730am. We…",
+        "cons": ""
+      },
+      {
+        "name": "Wayne",
+        "date": "2025-10-12",
+        "score": 8,
+        "type": null,
+        "headline": "",
+        "pros": "I was surprised and impressed on how beautiful the hotel is from the other side of the casino. Very eco friendly environment, friendly staff. All away from the craziness of the Las Vegas strip.",
+        "cons": ""
+      },
+      {
+        "name": "William",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "As good as it get's. Very satisfied.",
+        "cons": ""
+      },
+      {
+        "name": "William",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Everything was as good as it get's.",
+        "cons": ""
+      },
+      {
+        "name": "Amy",
+        "date": "2025-10-11",
+        "score": 8,
+        "type": "Family",
+        "headline": "",
+        "pros": "The Hotel was pleasant and friendly and clean. Their should be added discounts for hotel stay guests with the other amenities ( i. e. bowling, movies, etc).",
+        "cons": ""
+      },
+      {
+        "name": "Richard Vincent",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Dining choices from fast food to steak dinners. Abundant parking and close to other shopping.",
+        "cons": ""
+      }
+    ]
   }
 ]

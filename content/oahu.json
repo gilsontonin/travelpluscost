@@ -960,7 +960,63 @@
         "Extremely overpriced",
         "Dated rooms"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Joyce",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Overall, we enjoyed our short overnight stay.",
+        "pros": "The room was spacious with all the necessary amenities, and the ocean view from our 21st floor room was awesomely beautiful. We watched the sun setting while sipping on the complimentary champagne that was delivered to our room to celebrate our 50th wedding anniversary; and later, we watched the…",
+        "cons": "Although we enjoyed the food at the 100 Sails Restaurant, we were disappointed with the casual ambience of this high-end hotel. For example, no tablecloth, and although it was a buffet style dinner, the wait staff was almost invisible in our area. Also, for our overnight stay, we were charged $50…"
+      },
+      {
+        "name": "Susan",
+        "date": "2026-06-11",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Overall, a beautiful property with the amenities we desired! We would stay there again upon visiting Waikīkī",
+        "pros": "Beautiful, comfortable rooms and view. Love the bathroom layout for multi-use. Thoroughly enjoyed the convenience of Club Level dining. There was a nice daily selection with attentive concierge. Valets were exceptional especially Hermie! Remembered is and greeted us by name daily. Enjoyed the…",
+        "cons": "Room level hallways were hot and stuffy. Issues with elevators not working at times. Had 4 people in the room and needed to reach out with to housekeeping with reminders to bring 4 sets of towels. Housekeeping kept turning up the temperature in the room from what we set it at. Workers noisily…"
+      },
+      {
+        "name": "Xueyan",
+        "date": "2026-06-06",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Good value.",
+        "pros": "Modern, good view, spacious, close to the shopping mall, nice sushi restaurant. I spent good amount of time within the hotel, so it is quite relax.",
+        "cons": "It is not very close to Waikiki beach, however there are other beaches nearby. Elevator is a little bit old."
+      },
+      {
+        "name": "Conrad",
+        "date": "2026-06-02",
+        "score": 6,
+        "type": "Couple",
+        "headline": "",
+        "pros": "View and location",
+        "cons": "Very noisy at the harbour"
+      },
+      {
+        "name": "Shalysse",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great stay right outside Waikiki",
+        "pros": "Everyone was kind and helpful. The restaurants were great, the location was awesome.",
+        "cons": "N/A"
+      },
+      {
+        "name": "Michael",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "A beautiful place to stay with an amazing staff. Very close to Ala Moana Mall and beaches.",
+        "pros": "The staff were incredible and the view from the room was amazing. The hotel staff carry the aloha spirit with pride.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp1bee1",
@@ -2075,7 +2131,63 @@
         "Cleanliness issues",
         "Poor service at the restaurant"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Malaysia",
+        "date": "2026-06-11",
+        "score": 1,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Bed bugs",
+        "cons": "Bed bugs"
+      },
+      {
+        "name": "Paul",
+        "date": "2026-06-01",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Its location was great and very comfortable",
+        "cons": "There was noise from the plumbing that disturbed us"
+      },
+      {
+        "name": "Loretta",
+        "date": "2026-05-30",
+        "score": 1,
+        "type": "Solo Traveller",
+        "headline": "Never again!",
+        "pros": "The baggage person was personable and efficient.",
+        "cons": "The desk clerks were unfriendly and failed to provide a decent room when asked to change it. The bed and furniture are old and coming apart. Who wants to pay hundreds of dollars to vacation in a room where furniture is coming apart and dingy."
+      },
+      {
+        "name": "Joseph",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The rooms were clean and the facility is beautiful. Close to all shops and Waikiki beach.",
+        "cons": "Fridge didn’t really work"
+      },
+      {
+        "name": "Albert",
+        "date": "2026-05-23",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Amazing",
+        "pros": "How clean & neath the hotel and the room & the people was excellent everything was perfect and beautiful..",
+        "cons": "Couldn’t find any that I don’t like about it"
+      },
+      {
+        "name": "Milos",
+        "date": "2026-05-16",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Location",
+        "pros": "Positive about this hotel is the location just short walk to the beach, few minutes. Its relatively quiet away from main Waikiki strip but still close enough to go the restaurant or bar. You can also rent beach chairs and towels for free they have small pool. We enjoyed our time and wouldnt mind to…",
+        "cons": "All hotels in Waikiki are overpriced and old just trying to preserve whats left from good old days. Parking for $60/night is no fun."
+      }
+    ]
   },
   {
     "id": "lp22856",
@@ -3179,7 +3291,63 @@
         "Service inconsistencies",
         "Some cleanliness issues reported"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "MaryAnn",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Such a great experience",
+        "pros": "The staff was very friendly and helpful. The location was perfect, we had the view of the ocean and literally could walk to the beach.",
+        "cons": "I wish it would have included breakfast with our stay"
+      },
+      {
+        "name": "Susan",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Great hotel and wonderful staff.",
+        "pros": "The staff was very friendly and helpful. The room was very clean and well appointed. The hotel was very close to the beach and the pool deck was a nice retreat and well staffed. I would definitely recommend this property and would stay here again.",
+        "cons": "The only complaint would be the the loud truck noise (lots of beeping) on the street below our room. But that is not the fault of the hotel and I would think all hotels in that vicinity would be impacted."
+      },
+      {
+        "name": "Angel",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The service was impeccable. The staff was wonderful. The location was perfect. The view from my room was marvelous. The birthday champagne was a grand surprise. So grateful for everything!",
+        "cons": "No microwaves. I understand why, though."
+      },
+      {
+        "name": "Katherine",
+        "date": "2026-06-15",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Clean. Beautiful. Noisy.",
+        "pros": "Excellent location! Immaculately clean!!! Amazing staff and perfect amenities.",
+        "cons": "We were on the top floor and the across from the elevator lobby- there was constant noise from the movement of the elevator. All hours of the night whenever any of the 3 elevators moved there was an initial loud thump accompanied by 2-3 more when the elevator stopped. If you’re someone who is a…"
+      },
+      {
+        "name": "Thanh Thuy",
+        "date": "2026-06-14",
+        "score": 8,
+        "type": "Couple",
+        "headline": "This hotel is modern and comfortable and located in a great park of Waikiki for ease of access to beach, shopping, and d",
+        "pros": "Location was great for exploring Waikiki. The hotel is modern and clean. I also enjoyed the pool and gym.",
+        "cons": "The layout of the hotel was kind of strange."
+      },
+      {
+        "name": "Tony Bishop",
+        "date": "2026-06-12",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Location and comfort",
+        "pros": "Location is good and room was comfortable with a good view out to sea. The room was quiet",
+        "cons": "No bathroom amenities like body lotion or shower cap."
+      }
+    ]
   },
   {
     "id": "lp2adc7",
@@ -4244,7 +4412,63 @@
         "High prices",
         "Limited in-room dining options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Peter",
+        "date": "2026-06-04",
+        "score": 6,
+        "type": "Couple",
+        "headline": "It was just ‘ok’, I have stayed in far nicer hotels for significantly less $$$",
+        "pros": "The pool beds and service",
+        "cons": "The tiny beach area, the inability to have a drink in either bar area as they were full!! The bath towels were too small The hotel is significantly overpriced for what it is"
+      },
+      {
+        "name": "Linda",
+        "date": "2026-05-29",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Love Halekalani, looking forward to next visit",
+        "pros": "Everything!",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Allan",
+        "date": "2026-05-28",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "It is the peaceful calm that makes this hotel stand out. The staff are very respectful and friendly. Their role is to make your stay as good as it can be.",
+        "cons": "Our bathroom setup where the shower over bath, not good as we age"
+      },
+      {
+        "name": "Anna",
+        "date": "2026-05-06",
+        "score": 1,
+        "type": "Couple",
+        "headline": "Left early as felt like a number not a person",
+        "pros": "Not much",
+        "cons": "I had an upgrade but the automatic blinds didn’t work and the lights didn’t work. Also, when we did turn lights on the Gnatts came as well (small little Insects attracted to the light) so it didn’t end well"
+      },
+      {
+        "name": "markzz2",
+        "date": "2026-05-28",
+        "score": 10,
+        "type": "Couples",
+        "headline": "A perfect Oasis in the Heart of Waikiki",
+        "pros": "We had very high expectations of our stay at the Halekulani. We had eaten here numerous times over the past few years and always had good experiences which had tempted us in to staying at the Hotel on our next visit. The Rates are high and so we did worry whether we should consider the stay good…",
+        "cons": ""
+      },
+      {
+        "name": "663anniem",
+        "date": "2026-05-25",
+        "score": 10,
+        "type": "Couples",
+        "headline": "Housekeeping were exceptional!",
+        "pros": "We had a wonderful stay and thoroughly enjoyed our time. The housekeeping staff were exceptional — so warm, attentive and professional, they really made our stay feel special. Beautiful atmosphere, lovely facilities and overall a really relaxing experience. Thank you to the team for looking after…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp1b498",
@@ -5527,7 +5751,63 @@
         "Dated rooms",
         "High food prices"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Patricia",
+        "date": "2026-06-18",
+        "score": 6,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "Location was great",
+        "cons": "Hotel under construction and the noise and disarray was distracting and not at all attractive. Was not a conductive atmosphere for a relaxing vacation. It was a disappointing stay."
+      },
+      {
+        "name": "Rubie",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "We loved that it was close to the beach and the food was good.",
+        "cons": "The beds were not the most comfortable and there was lots construction going on."
+      },
+      {
+        "name": "Vicki",
+        "date": "2026-06-06",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Super helpful staff. Makes a huge difference. Will be great to return once the renovations are completed.",
+        "pros": "Location",
+        "cons": "Temporary as under construction"
+      },
+      {
+        "name": "Mary",
+        "date": "2026-06-02",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Good hotel in great location on the beach. .",
+        "pros": "Location Location Location - tight on the beach. Great staff and entertainment. Would stay here again.",
+        "cons": "Comfortable but scheduled for renovation. Renovation is timely."
+      },
+      {
+        "name": "Harold",
+        "date": "2026-05-30",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Bad experience based on construction going on.",
+        "pros": "Love the location.",
+        "cons": "Construction going on and parts of the hotel closed. Never was informed that this was going on when we booked."
+      },
+      {
+        "name": "Michelle",
+        "date": "2026-05-27",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Disappointed in the experience.happy with the location",
+        "pros": "Right on the beach just steps away.",
+        "cons": "Valet parking is $60 per day. Really it’s the only place you can park. We had a horrible experience from the second we checked in. The room was $2700 for the whole stay with parking and resort fees. However, they charged us 3 TIMES on our card holding almost 8k they charged us 2x $2,466 and one…"
+      }
+    ]
   },
   {
     "id": "lp29a7f",
@@ -6507,7 +6787,63 @@
         "Cleanliness concerns",
         "High parking fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Amina",
+        "date": "2026-06-16",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Hawaii is beautiful no doubt about it. The hotel gr8 point was its location! The staff cleaning was very mediocre.",
+        "pros": "The location was great.",
+        "cons": "The cleaning was very mediocre"
+      },
+      {
+        "name": "yvette",
+        "date": "2026-06-14",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Atmosphere and help from staff very pleasant",
+        "cons": "No microwave"
+      },
+      {
+        "name": "Johnson",
+        "date": "2026-06-07",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Very memorable! Will visit this hotel again!",
+        "pros": "The front desk staff, were exceptional in Customer service! A wet towel and glass of POG(passion fruit, orange, guava) juice was offered! Employee's Chickie and Princess, treated us better than some Flight Attendants, that I have encountered!",
+        "cons": "No complaints! Balcony with a view!"
+      },
+      {
+        "name": "Leonora",
+        "date": "2026-06-02",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "We have a good time",
+        "pros": "location is superb and staff are very helpful. Facility is clean and nice. We are just a minute a walk going to the beach.",
+        "cons": "Aircon is not working well. It's not cooling well even its 24 hours working"
+      },
+      {
+        "name": "356drea",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couples",
+        "headline": "an amazing time",
+        "pros": "the staff was phenomenal! i would highly recommend to any family or friends visiting the island. Miles the Valet provided excellent service and hospitality and has a great personality! 15/10 !",
+        "cons": ""
+      },
+      {
+        "name": "Crossley",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Incredible location & staff, a vacationers dream!",
+        "pros": "The staff here is absolutely incredible! They all go above and beyond to ensure you feel welcome, comfortable, and have everything you need. Breakfast on the terrace was delicious and a beautiful little spot! The pool bar was convenient and the bartender was great. This hotel is also in a great…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp322cd",
@@ -7936,7 +8272,63 @@
         "Rude restaurant staff",
         "Water pressure in shower could be improved"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Amber",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Good bang for your buck !",
+        "pros": "Convenient location",
+        "cons": "Cars driving loud at night"
+      },
+      {
+        "name": "Gordon",
+        "date": "2026-06-02",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Will definitely go back next time we are in Waikiki.",
+        "pros": "Comfortable beds, quiet A/C unit, pool area was great.",
+        "cons": "Only negative, and it is minor, power point location not useful. The charging points next to the beds didn’t work."
+      },
+      {
+        "name": "Robert",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Most fun wonderful staff beautiful ladies great guys",
+        "pros": "Best ever",
+        "cons": "Nothing"
+      },
+      {
+        "name": "DANIEL",
+        "date": "2026-05-31",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "wonderful experience for 70 th birthday holiday",
+        "pros": "Location on top floor with 2 bathrooms, lounge, bedroom and deck overlooking the ocean",
+        "cons": "Parking rental cars was extremelly expensive for family of 12.."
+      },
+      {
+        "name": "Keiance",
+        "date": "2026-05-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "I would recommend ppl to go here and this gonna be go to hotel when I flew in Hawaii",
+        "pros": "The property was clean and great location was close to all the corner stores. I really enjoyed my stay and all the staffs are really helpful and nice.and view waasss nicee..",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Jade",
+        "date": "2026-05-19",
+        "score": 3,
+        "type": "Family With Children",
+        "headline": "Will not be returning",
+        "pros": "My friends were at the same hotel",
+        "cons": "The staff were very rude at the front desk.. they tried to over charge us.. rooms weren’t cleaned"
+      }
+    ]
   },
   {
     "id": "lp1dd71",
@@ -9162,7 +9554,63 @@
         "High prices for food",
         "Concerns about cleanliness of certain amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Ross",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "5 star stay at a true 5 star hotel",
+        "pros": "The hotel has a lot of classic charm and is positioned on a beautiful stretch of beach. The staff are incredibly friendly, the rooms are spacious and exceptionally clean. We had a top floor oceanfront room and the view was, as you can imagine, beautiful. The spa was also top tier.",
+        "cons": "The pool area is small and quite busy. There’s no adults-only pool so be prepared for splashing from kids doing cannonballs and similar activities."
+      },
+      {
+        "name": "Francesca",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Couple",
+        "headline": "AMAZING, would live here if possible!",
+        "pros": "Attention to detail, friendly staff makes you feel like family. Amazing location, room was fantastic and the beach is beautiful. Peaceful tranquility.",
+        "cons": "Nothing it was all up to par. From when you enter through the valet to when you check-in, the pool guys. Everyone is so friendly there is nothing to not like."
+      },
+      {
+        "name": "Chris",
+        "date": "2026-05-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We were glad to stay here",
+        "pros": "Very quiet property away from downtown . Dolphins amazing",
+        "cons": "There should be warning signs on the beach of potential water contamination from the prior storm runoff . I got sick 2 days later from accidentally swallowing the saltwater"
+      },
+      {
+        "name": "Lance",
+        "date": "2026-05-06",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Convenient enough, a little dated, small pool, would be nice to have an adult only pool.",
+        "pros": "The beach location",
+        "cons": "Not much around the hotel directly"
+      },
+      {
+        "name": "Fiona",
+        "date": "2026-04-02",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Beautiful and unforgettable",
+        "pros": "Very stylish Hotel, the rooms were exceptional and great location not far from Waikiki",
+        "cons": "The Restaurant was quite basic, where Breakfast was served. Expensive for what we ordered."
+      },
+      {
+        "name": "VijiS78",
+        "date": "2026-04-22",
+        "score": 10,
+        "type": "Solo Travel",
+        "headline": "EXcellent, highly recommend it",
+        "pros": "Leslie was great, it was special day for me and it made is very especially by giving a great massage and facial. She knew all the sore areas and worked on them. I felt totally relaxed after the massage. She was great!",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp350f7",
@@ -9914,7 +10362,63 @@
         "Problems with room assignments",
         "Concerns about cleanliness"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "William",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Near the beach",
+        "cons": "The staff"
+      },
+      {
+        "name": "Joshua",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Couple",
+        "headline": "It was ok",
+        "pros": "NA",
+        "cons": "NA"
+      },
+      {
+        "name": "Wayne Rodgers",
+        "date": "2026-06-16",
+        "score": 3,
+        "type": "Couple",
+        "headline": "terrible beds",
+        "pros": "the lobby is nice and the hotel is in a good location",
+        "cons": "we were not given the room type we requested and were informed that room type and the beds were very uncomfortable."
+      },
+      {
+        "name": "ALI",
+        "date": "2026-06-15",
+        "score": 1,
+        "type": "Family With Children",
+        "headline": "Poor customer service and an overall disappointing experience",
+        "pros": "Only the location",
+        "cons": "Before our trip, I called the hotel and was assured by an employee that our request for two queen beds would be accommodated. Based on that promise, I paid for this hotel and canceled other reservations. When we arrived, the hotel denied the conversation and claimed that no employee by that name…"
+      },
+      {
+        "name": "Norma",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "I was happy with the lady that helped me extend my stay, she’s really helpful and nice",
+        "pros": "It’s very nice",
+        "cons": "Too expensive and no free parking and breakfast"
+      },
+      {
+        "name": "shelly",
+        "date": "2026-06-13",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Enjoyed the location, but would not choose this resort again.",
+        "pros": "Literally, the only decent thing about the resort is the location.",
+        "cons": "Very outdated. Pool area is just blah breakfast only restaurant one vending machine near the pool that does not work. Small bar that does not open until 6 PM, and does not serve food. Employees were just blah. Windows are old and thin, so there’s a lot of noise at night."
+      }
+    ]
   },
   {
     "id": "lp20eb8",
@@ -11427,7 +11931,63 @@
         "Cleanliness issues",
         "High costs for basic amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Stewart",
+        "date": "2026-06-20",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Nice stay, but overall we were left a little underwhelmed for the price of the stay",
+        "pros": "Location was perfect. We had a high room, & the view was incredible. Staff were very friendly and helpful.",
+        "cons": "Room was basic, with few amenities. Bathroom is tiny, with no fan or windows. Pool area was nice, but too busy for us to use a sunbed at all times. The pool & bar was closed for a whole day for a private event, which was disappointing."
+      },
+      {
+        "name": "Paige",
+        "date": "2026-06-17",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Nice",
+        "pros": "Great location & friendly staff. Breakfast and swell bar was nice",
+        "cons": "Rooms were average and quite noisy. Wouldn’t bother paying extra for the view unless it is oceanfront. We had ocean view but would say it was partial and obstructed by lots"
+      },
+      {
+        "name": "Mahyar",
+        "date": "2026-06-17",
+        "score": 3,
+        "type": "Solo Traveller",
+        "headline": "Big shame, right place. Wrong management.",
+        "pros": "Location and reception staff, specifically Tamara who was very caring.",
+        "cons": "All diamond head view106 infinity pool152 ocean view127 beach access129 +6 Sort by Most relevant Newest Highest Lowest ￼ Mahyar Mortazavi Local Guide·102 reviews·36 photos Vacation | Couple This could be an amazing hotel based on its location and its design, HOWEVER, it has the most unprofessional…"
+      },
+      {
+        "name": "Sela",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Longboard Club and location to the beach.",
+        "cons": "Can be a bit noisy from the activities outside."
+      },
+      {
+        "name": "Phillip",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Made our week",
+        "pros": "Swell pool and bar was amazing, great service and facility, very clean and classy building",
+        "cons": "Spa/massage prices were a bit high but a very pleasant experience"
+      },
+      {
+        "name": "Felix",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Great place!",
+        "pros": "Beautiful hotel and location, great service",
+        "cons": "Pool was very often closed for private events, bar not accessible."
+      }
+    ]
   },
   {
     "id": "lp1b4a3",
@@ -12083,7 +12643,63 @@
         "Noise insulation issues",
         "Rooms are smaller than expected"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sofia",
+        "date": "2026-06-17",
+        "score": 5,
+        "type": "Couple",
+        "headline": "The hotel gave me a staph infection.",
+        "pros": "The hotel is in a great location. Really makes you walk and get in all your steps but outside of the crazy of the main strip. The hotel provided free water and free coffee which was super nice and saved us money. The staff are all lovely and super pleasant.",
+        "cons": "The hotel does the job. Decent place to stay. However the hotel is not that clean and also gave me a staph infection (skin infection) that I had to treat with antibiotics. The carpet in the room is extremely dirty bring slides for the hotel. The towels all smelt a bit gross. The hotel lifts are…"
+      },
+      {
+        "name": "Samuel",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Everything",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Nour",
+        "date": "2026-06-15",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "Never again",
+        "pros": "Renovated, good location",
+        "cons": "Very noisy, you can hear all your neighbours"
+      },
+      {
+        "name": "dorit",
+        "date": "2026-05-31",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Pleasant stay.",
+        "pros": "Location",
+        "cons": "It is a bit run down, compared to other hotels in the area."
+      },
+      {
+        "name": "Gil",
+        "date": "2026-05-22",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Decent hotel but not for a romantic Hawaiian vacation",
+        "pros": "The location is very good. Walking distance to beach and right next to the tourist center. The staff was very good. The room was clean.",
+        "cons": "This is not the place for your dreamy romantic Hawaiian vacation. The double beds (2 double bed room) were narrow. The washroom was extremely small and crowded. It also was very run down. The pool was very disappointing."
+      },
+      {
+        "name": "Samuel",
+        "date": "2026-06-09",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Pool and Sauna",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp3b56d",
@@ -13969,7 +14585,63 @@
         "Expensive rates",
         "Cleanliness issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jennifer",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Excellent location, excellent service.",
+        "pros": "Location is close almost everything from groceries, restaurants, shopping stores, beach, Main Street, etc. value price with excellent accommodation.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Rachel",
+        "date": "2026-06-18",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "It was just ok, I expected more out of Hilton.",
+        "pros": "Close proximity to lots of things, does include breakfast, staff was friendly, provided a water refill station",
+        "cons": "Beds were uncomfortable, water never got hot in the shower it was lukewarm at best, shower towels were thin, power went out and stayed out for what felt like a couple of minutes before coming back on"
+      },
+      {
+        "name": "Andrea",
+        "date": "2026-06-13",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Would definitely consider a return stay st",
+        "pros": "Our room was clean and comfortable and the breakfast buffet was excellent lots of options, the workers in the dining area were very friendly and helpful and courteous, location was very close to everything in the downtown area.",
+        "cons": "The ice machine was broken on my floor, but the breakfast was awesome"
+      },
+      {
+        "name": "Lisa",
+        "date": "2026-06-10",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Great fun other than the soap dispenser issue",
+        "pros": "Location Kamaina rate parking (50% off) Free breakfast and afternoon drinks/snacks",
+        "cons": "We had a 2 bedroom suite with 2 bathrooms. Both showers were missing body soap dispensers. We had to pump soap from the sink to use in our showers. We had friends in another room who also said 1 of 2 bathrooms in their unit had missing body soap dispenser. For this inconvenience, I deducted my…"
+      },
+      {
+        "name": "Alexandra",
+        "date": "2026-06-06",
+        "score": 9,
+        "type": "Couple",
+        "headline": "It’s my forth time that I have stayed there and absolutely love it",
+        "pros": "The location was excellent",
+        "cons": "A little expensive"
+      },
+      {
+        "name": "Kira",
+        "date": "2026-05-18",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The friendly staff, the food options were great and the location was superb. Plus the little touch of free beverages at happy hour was an added bonus, nice touch 👌",
+        "cons": "The lifts were a little slow but manageable."
+      }
+    ]
   },
   {
     "id": "lp2d548",
@@ -15123,7 +15795,63 @@
         "WiFi issues",
         "Some services not working properly"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "faithaZ9989PD",
+        "date": "2026-05-30",
+        "score": 10,
+        "type": "Solo Travel",
+        "headline": "Beach yoga",
+        "pros": "Morning yoga on the beach was a beautiful way to start the day! Paige was great!",
+        "cons": ""
+      },
+      {
+        "name": "heathercZ3637DX",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Family",
+        "headline": "Sunrise Beach Yoga",
+        "pros": "The yoga classes provided here are outstanding! Paige was incredible. She was able to teach her class based on everyone’s experience level. She was pleasant and knowledgeable. I really enjoyed my practice on the beach. Both Julia and Paige are excellent! I’ll be back to take their classes!",
+        "cons": ""
+      },
+      {
+        "name": "namastemamala",
+        "date": "2026-05-25",
+        "score": 10,
+        "type": "NONE",
+        "headline": "Exceptional!",
+        "pros": "Wonderful experience! Hotel location and staff were amazing! Best Mai Tai and best Loco Moco at LuLu's restaurant located in hotel! Right next to Diamond Head and quiter side of Waikiki.",
+        "cons": ""
+      },
+      {
+        "name": "893ajdag",
+        "date": "2026-05-22",
+        "score": 10,
+        "type": "Couples",
+        "headline": "Amazing morning beach yoga with Paige",
+        "pros": "Paige was amazing, the best possible to wake up with a beach yoga with the sounds of the waves and stretching out your body to start the day. Highly recommend!",
+        "cons": ""
+      },
+      {
+        "name": "marneyl2026",
+        "date": "2026-05-19",
+        "score": 10,
+        "type": "Solo Travel",
+        "headline": "A must-do experience",
+        "pros": "Great experience! Julia is outstanding. So glad I got up early to go. I’ll probably try to go at least one more time while I’m here before the class fills up.",
+        "cons": ""
+      },
+      {
+        "name": "191dena",
+        "date": "2026-05-19",
+        "score": 10,
+        "type": "Family",
+        "headline": "So very helpful and professional!",
+        "pros": "It’s awesome. Very good. The staff was phenomenal. Five star. Thank you. Special thank you to guest service manager Jules Davis. She made our stay so personal and enjoyable. Lito with valet was kind and very helpful.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp1ac44",
@@ -15986,7 +16714,63 @@
         "Limited breakfast options",
         "Slow elevators"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Leslie",
+        "date": "2026-06-20",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Mostly great aside from parking situation and cost",
+        "pros": "Location",
+        "cons": "Valet only option poor service and overpriced"
+      },
+      {
+        "name": "Carol",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Very enjoyable relaxing and will recommend you to my friends. My family and I had a great time.",
+        "pros": "Lovely area, close to everything, comfortable and clean.",
+        "cons": "Our aircon had a leak, got fixed straight away thank you but when he took the cover off the filter was filthy it hadn’t been cleaned for a while. Too many birds around at breakfast time, maybe invest in some sort of netting that can come out and across and then retract back afterwards."
+      },
+      {
+        "name": "nestie",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "I would stay here again!",
+        "pros": "It’s great location. free breakfast buffet. Staff are all nice and accommodating especially the house keeping!!! The only thing I don’t like is waiting for the elevators, that’s about it. I will definitely be back.",
+        "cons": "The elevator wait time"
+      },
+      {
+        "name": "Annie",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great!",
+        "pros": "Location",
+        "cons": "Everything else about this hotel is perfect other than the destination tax of 42 dollars which has to be charged to each of your room every day for the duration of your stay. We had 4 rooms and we had to pay that damn tax for each room x 8 days plus the cost of the hotel 😞😳🤷‍♀️"
+      },
+      {
+        "name": "Jayson",
+        "date": "2026-05-30",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Good value! Great breakfast!",
+        "pros": "room spacious, clean",
+        "cons": "water pressure shower, almost squeaks when pressure down sofa bed mattress is worn, and slopes to the middle of the bed"
+      },
+      {
+        "name": "Rob",
+        "date": "2026-05-28",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Great location & cleanliness",
+        "cons": "Lifts… lifts were very slow in peak times"
+      }
+    ]
   },
   {
     "id": "lp19e24",
@@ -17100,7 +17884,63 @@
         "Noisy rooms",
         "Dated amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Christina",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Beautiful ocean view room",
+        "pros": "Location was good. Nice view of the ocean.",
+        "cons": "Unable to find elevator access to the ground floor, only to lobby floor."
+      },
+      {
+        "name": "Gins",
+        "date": "2026-06-15",
+        "score": 4,
+        "type": "Family With Children",
+        "headline": "Extremely convenient and staff were very pleasant",
+        "pros": "The location was perfect, although I think I would have preferred a lower level The staff were extremely kind.",
+        "cons": "The sliding glass door to the patio did not seal properly so it was extremely loud with the wind trying to get through so me and my daughter had to sleep with the door cracked, which did alleviated the extremely loud noise. The hotel was also under some sort of renovation, which I wasn't aware of."
+      },
+      {
+        "name": "Mike",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Loved the property and wouldn’t hesitate to stay there again.",
+        "pros": "Quality and location to the beach, shopping and restaurant.",
+        "cons": "Lot’s of areas under renovation or construction."
+      },
+      {
+        "name": "divya",
+        "date": "2026-06-14",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Excellent stay with extraordinary views",
+        "pros": "Location is excellent! Self parking at the hotel is a huge challenge. Steep drive up so be careful. Lots of shops inside the hotel, very lively and buzzing through the night. I felt water replenishment was a bit of a challenge sometimes",
+        "cons": "Breakfast was okayish"
+      },
+      {
+        "name": "Polina",
+        "date": "2026-06-14",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Good value for your money",
+        "pros": "It’s a nice affordable hotel with a very friendly staff.",
+        "cons": "It’s in extremely loud area."
+      },
+      {
+        "name": "Wilson",
+        "date": "2026-06-11",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Parking lot too crowded",
+        "cons": "Parking lot, if you want to do by your own"
+      }
+    ]
   },
   {
     "id": "lp6292e",
@@ -17392,7 +18232,63 @@
         "WiFi issues",
         "Limited food options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Goncearenco",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Very colourful place. Clean and nice. The location is amazing literally walking distance to anywhere",
+        "cons": "Just the attitude of one of the girls at the reception."
+      },
+      {
+        "name": "Ramgopal",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Excellent Hotel with Amazing Staff and close to shopping and dining",
+        "pros": "Wonderful hotel with best location, room, close to shopping and dining",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Angelika",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Cool, vibrant hotel in a central location with absolutely amazing staff!",
+        "pros": "Staff were amazing! Celebrated my birthday and they really went above and beyond to make my stay great! Really pleased we picked this hotel.",
+        "cons": "Everything in the room and hotel was absolutely fantastic. If I could say one bad thing- Could do with some shower/changing facilities for guests to use post-checkout as showering on the roof in the open wasn’t too convenient."
+      },
+      {
+        "name": "Grimes",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great staff and enjoyed my room!",
+        "pros": "Clean and simple!",
+        "cons": "Limited parking."
+      },
+      {
+        "name": "PITOON",
+        "date": "2026-06-10",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Goog location",
+        "pros": "Location in the center of Waikiki and Staff are very helpful And good services Happy to see them again this year Marijoy MJ at Front Desk Also House Keeping Yayie and Mycel",
+        "cons": "Room condition need to do renovation , especially carpet in the room and corridor of the hotel Look very old and tired"
+      },
+      {
+        "name": "David",
+        "date": "2026-06-10",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Love the convenience",
+        "pros": "Close to everything",
+        "cons": "Small rooms lumpy pillows"
+      }
+    ]
   },
   {
     "id": "lp39fde",
@@ -18012,7 +18908,63 @@
         "Noise issues",
         "Room size concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "jody",
+        "date": "2026-06-05",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Ok",
+        "pros": "Breakfast was crappy - no options. Crappy rice thing",
+        "cons": "Very noisy area late at night"
+      },
+      {
+        "name": "Ken",
+        "date": "2026-06-01",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Relaxed and comfortable",
+        "pros": "Location was excellent. Staff very friendly, polite and professional and willing to assist in any way possible. Rooms were a good size and very clean. Toiletries provided daily (eg, soap, shampoo clean towels). Close to beach, pubs restaurants. Would highly recommend this establishment to anyone…",
+        "cons": "Nothing."
+      },
+      {
+        "name": "Bonnie",
+        "date": "2026-05-28",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Wonderful!",
+        "pros": "Location",
+        "cons": "I enjoyed my time at Hotel Renew. I have nothing negative to say."
+      },
+      {
+        "name": "Anjelica Pascual Cosino",
+        "date": "2026-05-23",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "We had a wonderful time at your hotel and would like to visit again.",
+        "pros": "It was great that the hotel was walking distance from the beach and that the hotel provided complimentary beach towels, chairs, and sand toys. The room was nice and fit the needs of our family just fine. I appreciate the effort that the staff made to clean our room of the daily sand that my family…",
+        "cons": "We went to the beach daily and it would have been nice if there was a clothes line in the bathroom or extra hangers to hang our wet swimsuits. Parking wasn't the greatest but we anticipated that. It was helpful that the hotel was located within walking distance of the Honolulu Zoo. We were able to…"
+      },
+      {
+        "name": "Susan",
+        "date": "2026-05-12",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The location was perfect and all the staff were very helpful and friendly.",
+        "cons": "The patio door to the balcony was very hard to open."
+      },
+      {
+        "name": "David",
+        "date": "2026-05-12",
+        "score": 7,
+        "type": "Couple",
+        "headline": "great location but very outdated,shower curtain had lots of stains,carpet was wet on arrival",
+        "pros": "location and size of room",
+        "cons": "very outdated decor,lack of cafe/restaurant,could not even get tea"
+      }
+    ]
   },
   {
     "id": "lp56994",
@@ -19089,7 +20041,63 @@
         "Issues with cleanliness",
         "High prices"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "guadalupe",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We love Hawaii and this place is worth coming back to",
+        "pros": "The property was a good place to be. It was good walk distance to stores the beach restaurants",
+        "cons": "Maybe some of the flies"
+      },
+      {
+        "name": "carrie",
+        "date": "2026-05-19",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Good value.",
+        "pros": "Nice and convenient location. Nice open pool deck and walkway.",
+        "cons": "Uncomfortable bed and loud people in room next door"
+      },
+      {
+        "name": "Ash",
+        "date": "2026-04-29",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Staff friendly and room was spacious and clean.",
+        "cons": "The elevators could be heard so waking up in the morning consisted of the sounds of the elevator whirring up and down."
+      },
+      {
+        "name": "Sandra",
+        "date": "2026-04-20",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great large poolside area and fantastic location for lagoon swimming and Ala Moana Shopping centre",
+        "cons": "No breakfast option"
+      },
+      {
+        "name": "Brianna",
+        "date": "2026-04-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "It was a nice stay for our first time in Hawaii.",
+        "pros": "The location was pretty close to a lot of things.",
+        "cons": "The area is not the cleanest."
+      },
+      {
+        "name": "Brad Gragert",
+        "date": "2026-04-11",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Good location and nice pool",
+        "pros": "The room was good size, and the bed was good. Needed a bit of updating. Location was good. Close to the beach, and there was a great bar accross the street that sold good food and cheap drinks.",
+        "cons": "Hotel seemed dark and dated."
+      }
+    ]
   },
   {
     "id": "lp200a2",
@@ -20274,7 +21282,63 @@
         "Dirty rooms",
         "Dated amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Anne",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great spot, wonderful views from our room and a comfortable stay",
+        "pros": "Our first time to Hawaii and such a great location for us - close to the beach, shops but also not too busy like further along Waikiki. The room was good, loved the view and nothing was outstanding but we were not expecting that for the price (compared with other seafront hotels). It was great to…",
+        "cons": "Check in took some tme due to the queues, but perhaps to be expected with so many rooms!"
+      },
+      {
+        "name": "stlfamilyrobinson",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Would stay again!",
+        "pros": "A 5Star stay for myself (F62 and sister F55). The view from the balcony was awesome. Enjoyed the pool, towels were provided. The location was awesome (beach across the street, so many restaurant choices with in a block). Tours picked up right in front of hotel or down the block at the Marriott)…",
+        "cons": "I really can't think any complaints. Just know that this is not a 5star Hotel but it does provide a 5Star Stay for someone on a budget."
+      },
+      {
+        "name": "Margaret",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Perfect place to stay in Waikīkī if you are wanting to maximise views & location.",
+        "pros": "Excellent location. Breakfast was different each day with plenty of choice. Super comfy beds. Beach rentals included in the stay.",
+        "cons": "Beach towels were a hot commodity."
+      },
+      {
+        "name": "William",
+        "date": "2026-06-19",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "Big Disappointment",
+        "pros": "Location is great and rooms are outdated but clean",
+        "cons": "This is not even close to a 4 star hotel. Pictures on website are definitely photo shopped. Hotel is outdated, trash cans always overflowing everywhere, never have towels for the pool. Stayed for 5 nights and unfortunately I booked nonrefundable. Met other couples that felt the same way. One even…"
+      },
+      {
+        "name": "Leslie",
+        "date": "2026-06-19",
+        "score": 6,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The pool, access to tikis, location",
+        "cons": "The pillows were terrible and no beach towels available at the pool. People partying right Nextdoor-on the balcony until 3am."
+      },
+      {
+        "name": "Monina",
+        "date": "2026-06-15",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Not a bad stay but there are lots of room for improvement",
+        "pros": "Location",
+        "cons": "Expensive parking"
+      }
+    ]
   },
   {
     "id": "lp2130c",
@@ -20816,7 +21880,63 @@
         "Outdated property",
         "Some maintenance issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Susan",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Wonderful, we would stay there again in a heartbeat.",
+        "pros": "The whole unit was wonderful, especially the master suite. The views from our balcony were 360 degrees, from Diamond Head to Honolulu and were unbeatable and the spaciousness of the unit, the fact that it was self-contained and we were able to cater for ourselves, was great. You didn't really need…",
+        "cons": "The air-conditioning, while working, was struggling to cool the place. It needs to be replaced. For the amount of room in the unit, the master bedroom taking up a great deal, it could have been better designed so that our grown-up family did not have to share two queen beds in one room, but we were…"
+      },
+      {
+        "name": "Blaise",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Hotel is in a great location, right near the beach and a short walk into Waikiki. The room was spacious, great view, lots of light, clean. Staff were friendly and welcoming.",
+        "cons": "Nothing."
+      },
+      {
+        "name": "Jennifer",
+        "date": "2026-05-24",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "It was pleasant but hot the first night.",
+        "pros": "Clean. Friendly staff. Good location. Free laundry. DIL likes the coffee van outside.",
+        "cons": "The air conditioner did not work the first night. Slept with doors open on third floor. Wish we were higher in the building and next to the other room that I reserved."
+      },
+      {
+        "name": "Janet",
+        "date": "2026-04-21",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Lovely luxurious stay in great location.",
+        "pros": "The rooms are so relaxing , the design and luxury. Staff all very kings and friendly.",
+        "cons": "The restaurant was overpriced. There needs to be a breakfast and bar area."
+      },
+      {
+        "name": "Amanda",
+        "date": "2026-04-18",
+        "score": 9,
+        "type": "Couple",
+        "headline": "The stay was short and sweet with lovely check in and check out process.",
+        "pros": "We stayed in room 624, slightly older style. This room had a partial ocean view, but the mountain view was actually more impressive. The bathroom was nice and big and clean. The bed was comfortable and the white sheets were very clean. Loved having coffee and a fridge as well. Restaurant was…",
+        "cons": "The only thing was the price, I wish it would have been a little bit cheaper. For 1 night is was fine, but if we wanted to come back for more days, might not be as affordable."
+      },
+      {
+        "name": "Don",
+        "date": "2026-04-10",
+        "score": 8,
+        "type": "Couple",
+        "headline": "The staff was fantastic , Location great , Price to high for condition of the building",
+        "pros": "The staff was exceptional",
+        "cons": "The price for the room was high considering the age of the building"
+      }
+    ]
   },
   {
     "id": "lp22779",
@@ -22067,7 +23187,63 @@
         "Outdated rooms",
         "High prices"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Kessler",
+        "date": "2026-06-07",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Royal Hawaiian Waikiki Vacation Experience.",
+        "pros": "We liked the location and the staff. We arrived at the hotel in the morning due to an early flight to Oahu and they accommodated our request for a very early check-in.",
+        "cons": "We were very unhappy that there was no room service and no 24 hour places to get any type of food or drinks or coffee without leaving the hotel. Their bakery closes at 12 noon which is totally unacceptable for a luxury rated hotel. The restaurants disappointed us so we are most of our meals outside…"
+      },
+      {
+        "name": "Angela",
+        "date": "2026-05-24",
+        "score": 2,
+        "type": "Couple",
+        "headline": "The room was small, dark and crowded.not at all worth what they were charging us at the end.",
+        "pros": "The property is beautiful and historic, which we appreciated.",
+        "cons": "Most importantly, at the end of our stay, when we checked out we were shocked to know that we were over charged and incorrectly charged for our room. We had paid in full to Booking.com for our stay, so we found this experience upsetting."
+      },
+      {
+        "name": "SHIVANTHIE",
+        "date": "2026-05-11",
+        "score": 6,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The location was great. Staff were friendly and helpful",
+        "cons": "The price for the facilities offered was limited."
+      },
+      {
+        "name": "Antonio Tadeu",
+        "date": "2026-05-08",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Very good location, historical builidng, gourgeours gardens.",
+        "pros": "Suite was very nice, location is excellent and the gardens are gourgeous",
+        "cons": "Overall property Maintenance, cleanliness and amount of Events impacting the guest Services"
+      },
+      {
+        "name": "Gong",
+        "date": "2026-05-04",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Upgrading of room decor, furnishings, and toiletries badly needed to bring hotel to luxury category.",
+        "pros": "The hotel is located in the heart of Waikiki and our room, being an end unit had a full view of Waikiki beach.",
+        "cons": "We had a very difficult time checking in despite providing a confirmed reservation number. For the price, the room decor and furnishings are sadly dated/worn and not considered luxury. No slippers were provided and the toiletries provided were basically generic and not of luxurious grade."
+      },
+      {
+        "name": "Junior",
+        "date": "2026-04-20",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Good structure and sea view",
+        "pros": "The location and parking onsite, as well as, the sea view.",
+        "cons": "I thought the room details a bit poor considering the money spent, however, the sea view is amazing and the resort has a good structure and breakfast included. The other point to highlight is the parking paid aside."
+      }
+    ]
   },
   {
     "id": "lp923b9",
@@ -23244,7 +24420,63 @@
       "cons": [
         "Some minor issues with amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "John",
+        "date": "2026-06-03",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Classic RC experience with exceptional serivice.",
+        "pros": "Beautiful well designed property with good restaurants and great service",
+        "cons": "Location is far from the beach and in a neighborhood that is not fully safe or desirable."
+      },
+      {
+        "name": "Bizzell",
+        "date": "2026-06-01",
+        "score": 9,
+        "type": "Couple",
+        "headline": "I enjoyed my stay. It was pricey considering they only did surface cleaning of the rooms. I expected them to clean bette",
+        "pros": "The staff was incredibly kind and the location was good. I also enjoyed breakfast at the restaurant.",
+        "cons": "Easy access to the beach and other areas."
+      },
+      {
+        "name": "Mariah",
+        "date": "2026-05-18",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Felt very personal",
+        "pros": "Made my stay feel special and personal",
+        "cons": "If they throw away a luffa please give me a new one"
+      },
+      {
+        "name": "Christina",
+        "date": "2026-05-17",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Very decent choice but considerably overpriced.",
+        "pros": "Excellent location, extremely convenient. Very kind staff, everyone was really eager to support with a smile. Room was spacious and clean.",
+        "cons": "It’s a decent stay but totally overpriced for what it offers. The facilities need a refurbishment to justify this level of pricing - the quality is not representative of what someone would expect from Ritz-Carlton. It was also disappointing to see such a high parking cost for hotel guests."
+      },
+      {
+        "name": "Giulia",
+        "date": "2026-04-22",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Expensive stay with not great food options",
+        "pros": "Rooms and service was great.",
+        "cons": "The food absolutely not up to standard, very disappointing. No options for lunch whatsoever."
+      },
+      {
+        "name": "ESZTER",
+        "date": "2026-04-08",
+        "score": 4,
+        "type": "Couple",
+        "headline": "We will never go back there, an AirBnB experience could have been better",
+        "pros": "Not a lot. It was like an over paid airBnB, not a ritz-carlton.",
+        "cons": "Extremely loud, noisy location. The dryer was broken. The ground floor is like a wind tunnel, stormy, unpleasant to get out of the car regardless the crew. The handlers in the bathroom has cut my forehead, they are so sharp. The aircon on the corridors is so cold, like being in a freezer. Luckily…"
+      }
+    ]
   },
   {
     "id": "lp1b90f",
@@ -24727,7 +25959,63 @@
         "Food quality issues",
         "Expensive for what is offered"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Tom",
+        "date": "2026-06-20",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Good value.",
+        "pros": "Prime location, beach and lagoon were not that crowded.",
+        "cons": "Pool chairs are unavailable all day. Taken by people in the morning."
+      },
+      {
+        "name": "ALEJANDRO",
+        "date": "2026-06-20",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "It was a great place to stay but not now… one hour to wait for breakfast",
+        "pros": "Old not well maintained… dirty in some places…not enough chairs at the pool… paying for beach chairs is not fair with hotel guests",
+        "cons": "Room was old with broken doors and furniture There were lieces!!!!!!!!"
+      },
+      {
+        "name": "Guest",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Very comfortable and enjoyable",
+        "pros": "Loved the space in my room and balcony view",
+        "cons": "The hair in the shower"
+      },
+      {
+        "name": "Phaly",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Had a wonderful time vacation.",
+        "pros": "Very spacious and comfortable to stay",
+        "cons": "Elevator took long to go up and down to the room"
+      },
+      {
+        "name": "MARIA",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "It was a great vacation.",
+        "pros": "Location.",
+        "cons": "Too crowded"
+      },
+      {
+        "name": "Donna",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We stayed for our 50th Anniversary and had stayed there on our honeymoon. It took us 50 years to get back and so happy w",
+        "pros": "We loved everything.",
+        "cons": "Absolutely nothing!"
+      }
+    ]
   },
   {
     "id": "lp1eb75",
@@ -25633,7 +26921,63 @@
         "Small pool area",
         "Noise from air conditioners"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sam",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great location, great staff and great value.",
+        "pros": "The location is great. The staff is amazing! This is our second visit.",
+        "cons": "Wish I could get the room cooler"
+      },
+      {
+        "name": "Yolanda",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "It was very good, the beach is so close just cross street.",
+        "pros": "Location, rooms are very comfortable and our room has an excellent view. Also they have Circle de Solei and it was wonderful.",
+        "cons": "Needs more tourist information"
+      },
+      {
+        "name": "Maddison",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Overall Amazing Experience",
+        "pros": "Overall amazing experience! the staff were lovely and rooms were very clean.",
+        "cons": "There could have been more breakfast options for the included breakfast"
+      },
+      {
+        "name": "Brian",
+        "date": "2026-06-19",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "You can call a pig a princess but it is still a pig.",
+        "pros": "Not much. I set my expectations on my previous experience visiting the REAL OUTRIGGER Hotel years ago. It appears Outrigger had decided to bastardize its name by selling it and slapping it on adjacent hotels and deceive the public that they are staying at an \"Outrigger\" resort. Nothing can be…",
+        "cons": "Location, name, parking, pool, other \"amenities\" , the guests, beds, view, layout of the hotel,"
+      },
+      {
+        "name": "OLGA",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We loved the location - have stayed before and will again",
+        "pros": "Very central and clean and friendly",
+        "cons": "The swimming pool is far too small And it needs a better bar and restaurant"
+      },
+      {
+        "name": "Gail",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "I will stay here again for sure!!",
+        "pros": "I stay here often - was an Aston property back in the day (1985) lol.....and I stay loyal! Close to everything. Beach right across the street. Great restaurants super close. Like having to go up off the main walk way to get into the hotel. Views are always great from outside areas and rooms! :*)",
+        "cons": "That non hotel guests came for happy hour :( Maybe choose to only have happy hour for non guests on just one day, not everyday. There is limited seating, so this encroaches on paying guests ability to find seating. Maybe reconfigure in pool area and put a counter type bar along outside wall with…"
+      }
+    ]
   },
   {
     "id": "lp1b8d4",
@@ -26293,7 +27637,63 @@
         "Limited parking",
         "Cleanliness issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "barbara",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great room -great staff",
+        "pros": "We were upgraded to a ocean front king and it was wonderful . The staff was great! We are members at the Outrigger canoe club and walked over every day",
+        "cons": "It’s a little tired but our view made up for it"
+      },
+      {
+        "name": "Robert",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The views and location were amazing!",
+        "pros": "The view from the ocean view rooms was amazing! We loved the huge windows. We had such an amazing view of Waikiki Beach!",
+        "cons": "The bed was a little soft."
+      },
+      {
+        "name": "Tunisia",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "A beautiful place to stay with lots of activities in the area.",
+        "pros": "Close to the beach, had its own salon, coffee shop and local store on site staff were friendly and considerate. Great location for long walks and sightseeing",
+        "cons": "Unfortunately the beach was closed but understandably due to wild life on the beach."
+      },
+      {
+        "name": "nicole",
+        "date": "2026-06-02",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "Since I like running to Cromwell, I would stay there again.",
+        "pros": "The view was wonderful. The bed and pillows were comfortable and the sheets were crisp.",
+        "cons": "Room was a tad small and for the price of the room I would have expected a bathrobe and slippers, there was not a full length mirror and the light cans were flickering."
+      },
+      {
+        "name": "Tarzanjr",
+        "date": "2026-05-22",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Overpriced three star room with limited parking/few amenities at five star prices due to location.",
+        "pros": "The location is excellent. It is by its own beach and it is a short walk to Waikiki Beach and downtown Waikiki shopping. Great view from the room with a couple large panoramic windows.",
+        "cons": "Very busy, only parking was $55 a day valet. Three star room at five star prices. No microwave or coffee maker in room and no courtesy coffee in lobby. Very expensive (and below average food) restaurant off lobby only place to get coffee. Hotel lets you borrow a towel, but no fins/snorkels or other…"
+      },
+      {
+        "name": "William",
+        "date": "2026-05-18",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Nice rooms, great beach, good restaurant",
+        "cons": "Parking is on street"
+      }
+    ]
   },
   {
     "id": "lp365c1",
@@ -27197,7 +28597,63 @@
         "Small pool",
         "Uncomfortable bed"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Timothy",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Good value in Hawaii",
+        "pros": "Good location, spacious room. reasonable cost for the area. The food trucks across the road were great.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Bouchard",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Amazing staff great price",
+        "pros": "Staff was amazing, friendly and helpful especially Larissa who helped with canceling a booking mistake. Location was fantastic, walking distance to everything.",
+        "cons": "Pillows were not great very hard and flat. We stayed in 2 different rooms, second room A/C was not sufficient enough to cool the room. Kids in the pool from open to close, specifically 4 young girls under 12 with no supervision. There should be adult only swim times. More lighting at night around…"
+      },
+      {
+        "name": "KAW",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Great Location, Extra Fees!",
+        "pros": "This location was great. It was close to a lot of places to eat and shop. The room had a kitchen setup and lots of room.",
+        "cons": "This hotel added an amenity fee that was not mentioned on the website. Housekeeping did not clean room daily. We were told they would for an additional fee. No linens, soap, or shampoo replaced. They would not refund our night that we were not able to stay."
+      },
+      {
+        "name": "Uriel",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The best stay",
+        "pros": "Wednesday and Fridays there’s complimentary cheese and crackers with a musician Great location and loved the pool",
+        "cons": "The ac wasn’t the strongest but it worked out"
+      },
+      {
+        "name": "Gabriela",
+        "date": "2026-06-16",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Very expensive for an old hotel without car parking",
+        "pros": "Location is great. Overall value for money it does not meet.",
+        "cons": "A lot of noises coming above our room. No car parking even though they say they have, it is 3rd party car parking next to the hotel."
+      },
+      {
+        "name": "Ariadna",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Enjoyed my stay and definitely will book again in the future.",
+        "pros": "The property was clean and the staff were great. The location of the property was amazing. Great places to eat a block away.",
+        "cons": "Everything was great!"
+      }
+    ]
   },
   {
     "id": "lp2f231",
@@ -27915,7 +29371,63 @@
         "Cleanliness issues",
         "Noise at night"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Angela",
+        "date": "2026-06-18",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location was great",
+        "cons": "Aircon was very loud"
+      },
+      {
+        "name": "Debora Sofia",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Breakfast. The hotel staff was also super helpful.",
+        "cons": "We were supposed to be on the 17th floor but we arrived super earlier and we payed for the early checkin. However, the only room available at the time was on the 8th. Since it was a lower floor, the room was a bit noisy and smelled like old. Plus, the shower did not work properly."
+      },
+      {
+        "name": "Najah",
+        "date": "2026-06-17",
+        "score": 5,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The staff was very helpful and friendly.",
+        "cons": "The rooms are a bit old and worn"
+      },
+      {
+        "name": "Julie",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Clean. Close to everything and 2 blocks fr beach. Public bus outside. Towels chairs etc free for beach.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Ilias",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great and inexpensive place, offering a lot of amenities",
+        "pros": "Incredible staff, they really helped with every aspect of my stay. If you have an early tour, you may request a breakfast box, so you won’t stay hungry! Overall, this hotel has everything a person needs, and I would definitely consider staying there should I return to Waikiki.",
+        "cons": "The only downside is that there is no laundry in the hotel, but you can find a few laundromats not too far away from the hotel"
+      },
+      {
+        "name": "SHEIKH",
+        "date": "2026-06-10",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Very very good.",
+        "pros": "Wonderful staff, especially Melvin at the reception. He is simply excellent. He was very helpful and understanding. Others in the reception are also very helpful. The room service was great. 24-hr tea: coffee & water service was great.",
+        "cons": "Tea/coffee making facilities in the rooms. An ironing board would help."
+      }
+    ]
   },
   {
     "id": "lp3f624",
@@ -28729,7 +30241,63 @@
       "cons": [
         "Small room size for some guests"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Guest",
+        "date": "2026-06-18",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Great Experience.",
+        "pros": "I liked that the hotel was priced well and it was very close to everything. The beach was only a block a way. We found a cute tourist shop as well, so were able to purchase souvenirs. Our car rental was just down the street. Everything seemed close.",
+        "cons": "We arrived late because our plane was delayed, so we got to the hotel about 9:00ish and there was only one person at the check in counter. It was annoying because we wanted to grab the key and get to the room as quickly as possible. But I wouldn't say the wait was that long. We were just tired."
+      },
+      {
+        "name": "Darren koops",
+        "date": "2026-06-07",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great location from shopping departments an also to the beach ⛱️ an great pool am spa an lounge chairs an free cabanas Highly recommended",
+        "cons": "Mattress medium -soft as I'm used to medium- firm but not a big deal"
+      },
+      {
+        "name": "Lynn",
+        "date": "2026-06-06",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Enjoyable stay",
+        "pros": "The location was good. Close to Waikiki beach, cafes, ABCs etc",
+        "cons": "Our initial presentation when politely asking if we could check in - it was around 11:00am was to be curtly told it would cost an extra $75.00 to check-in. We had had an early departure from our cruise ship so asked if there was somewhere we might be able to store our suitcases was again to be told…"
+      },
+      {
+        "name": "John",
+        "date": "2026-06-05",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "I had a wonderful time",
+        "pros": "Everything was great. The staff were all so nice and helpful.",
+        "cons": "Nothing!"
+      },
+      {
+        "name": "Jeri",
+        "date": "2026-06-03",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Good, but eating in waikiki is expensive!",
+        "pros": "Clean, recently refreshed Close to beach Good parking area",
+        "cons": "The restaurant was good, but limited and expensive. But priced about the same as other restaurant in waikiki"
+      },
+      {
+        "name": "Nadine",
+        "date": "2026-06-02",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great location",
+        "pros": "Room was comfortable. Conveniently located to shops, target etc and a short walk to the beach.",
+        "cons": "I can’t fault the hotel, though currently there are building works across the road- a little noisy early morning with trucks and workers."
+      }
+    ]
   },
   {
     "id": "lp19d41",
@@ -29989,7 +31557,63 @@
         "Unclean rooms",
         "High parking fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Rozella",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Outstanding customer service!",
+        "pros": "The location was perfect and within walking distance of restaurants, stores, and the beach.",
+        "cons": "The pool hours should be extended for those who like to swim early or late."
+      },
+      {
+        "name": "Deborah",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Beautiful hotel in the heart of Waikiki offering amenities for couples and families.",
+        "pros": "Location, pools and direct beach access. Room type matched our request. Appreciated toothbrush and toothpaste. Liked being close to other hotels. Included pool chaise chairs were plentiful though full. But that happens. Lei making and ukulele sessions were fun. Liked the shops, especially Honolulu…",
+        "cons": "I didn’t realize complimentary newspapers were available. Also, I think robes and slippers should automatically be placed in the room."
+      },
+      {
+        "name": "John",
+        "date": "2026-05-29",
+        "score": 10,
+        "type": "Couple",
+        "headline": "A luxury stay we were pleased to have splashed out on.",
+        "pros": "The ocean view [from the 26th floor] was stunning. Very clean. Maybe just a tad small - nowhere to put open the suitcase out of the way. Rumfire bar was excellent and not too busy, even on Memorial day.",
+        "cons": "It is expensive, and in the US way they do add and add extra taxes and charges onto the bill."
+      },
+      {
+        "name": "Cindy",
+        "date": "2026-05-22",
+        "score": 7,
+        "type": "Couple",
+        "headline": "The Stay was great. That was our only complaint.",
+        "pros": "I like the pool areas",
+        "cons": "Our room had a really bad order from the drain in the bathroom"
+      },
+      {
+        "name": "Aldo",
+        "date": "2026-05-12",
+        "score": 1,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location. It's very well placed in the middle of shopping area and beach",
+        "cons": "Cleanliness, staff attitude"
+      },
+      {
+        "name": "Cobus",
+        "date": "2026-05-11",
+        "score": 9,
+        "type": "Couple",
+        "headline": "What a view from the room!",
+        "pros": "Location, location, location.",
+        "cons": "Would have loved a dedicated shower. That’s it."
+      }
+    ]
   },
   {
     "id": "lp3f626",
@@ -31492,7 +33116,63 @@
         "Slow check-in process",
         "Expensive parking"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sofia",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "It was ok",
+        "pros": "It is clean. A lot of restaurants around.",
+        "cons": "It is a little bit outdated. Furniture not modern. Pretty noisy during the night."
+      },
+      {
+        "name": "Vinicius",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Very short stay, would love to come back",
+        "pros": "Close to the mall and the beach. Comfortable room. Great shower!!",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Mutuku",
+        "date": "2026-06-16",
+        "score": 5,
+        "type": "Couple",
+        "headline": "It was horrible stay. Below the expeceted standards for Hilton i know",
+        "pros": "Staff and cleanliness",
+        "cons": "The shower was so messy. The pressure was too much and no way pf adjusting it. The shower curtain was just a cloth that allowed water to pass through so after every shower, i had to mop the floor outside the shower room to dry it. The TV never connected to youtube for the 4 days i stayed and when i…"
+      },
+      {
+        "name": "Narelle",
+        "date": "2026-06-14",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Good location, clean and comfortable.",
+        "pros": "Very central to shops and not too far to the beach.",
+        "cons": "One of the lifts wasn’t working and it was very busy at the hotel."
+      },
+      {
+        "name": "Richard",
+        "date": "2026-06-10",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Walkable and able to take public transportation a block away.",
+        "pros": "It was smack in the middle of everything.",
+        "cons": "Nothing."
+      },
+      {
+        "name": "Ronald",
+        "date": "2026-06-06",
+        "score": 8,
+        "type": "Couple",
+        "headline": "good stay",
+        "pros": "everything",
+        "cons": "we requested a high room but did not get a goo view butnthat was on us"
+      }
+    ]
   },
   {
     "id": "lp22e98",
@@ -33128,7 +34808,63 @@
         "Noise disturbance",
         "Rude front desk staff"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lusa",
+        "date": "2026-05-29",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Iconic beach hotel",
+        "pros": "The location of this hotel is perfect for anyone wanting to stay on the beach. It is a beautiful and iconic hotel that just celebrated 125 years. When you check in, you get a lei, and I also got a free lotion. The check in line is also not as long as other hotels and moves fairly quickly.",
+        "cons": "The only issue is the cost. The bathroom was also pretty small in the Banyan room with a partial ocean view."
+      },
+      {
+        "name": "Helen",
+        "date": "2026-05-26",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Excellent stay, beautiful location",
+        "pros": "Location",
+        "cons": "No room service"
+      },
+      {
+        "name": "Carl",
+        "date": "2026-05-23",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Location! Location! Location!",
+        "pros": "The location both to the beach and streets where everything is happening is what we liked the most.",
+        "cons": "No Room Service, No Mini Bar stacked with both alcohol and food and the beds weren't as comfortable as they were when stayed back in 2007."
+      },
+      {
+        "name": "Ellis",
+        "date": "2026-05-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Location, unbeatable history, and modern conveniences perfectly combine.",
+        "pros": "Location Location Location",
+        "cons": "Loved it all!!"
+      },
+      {
+        "name": "Karen",
+        "date": "2026-05-03",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "location as always, we only come to the wakiki water front, after a few small staffing behaviours well go back to Pink Palace next time",
+        "cons": "dissapointed to see trash in a hallway overnight and sometimes well into the next day, a quick whip thru by a clean is needed more often, went to front desk and was thoroughhly ignored by your \"elite\" desk whilst waitng for another service person, even a smile and a wont be a minute would be well…"
+      },
+      {
+        "name": "Julie",
+        "date": "2026-04-25",
+        "score": 10,
+        "type": "Couple",
+        "headline": "a great choice to be centrally located and walkable to many places",
+        "pros": "the amazing bed, the location and the rockers on the porch were great",
+        "cons": "nothing"
+      }
+    ]
   },
   {
     "id": "lp1db97",
@@ -34979,7 +36715,63 @@
         "Limited food options",
         "High cost for low value"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Tiffany",
+        "date": "2026-06-13",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Great location, but the construction noise and lack of balcony access made the stay less enjoyable than expected.",
+        "pros": "You can’t beat the location. We were able to walk to most of the places we wanted to visit. A great home base for exploring the area. Walking distance to the beach and an ABC store on every corner",
+        "cons": "While the hotel has a great location, our stay was impacted by ongoing construction. The noise started early and continued throughout the day, making it difficult to relax. We were also disappointed that the balcony was inaccessible during our stay, which was one of the features we were looking…"
+      },
+      {
+        "name": "Jennifer",
+        "date": "2026-06-08",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Good location but hotel was not what it should’ve been.",
+        "pros": "Room was nice, clean and updated",
+        "cons": "Couldn’t use our balcony, we were not made aware of the construction with ongoing at the hotel at time of booking."
+      },
+      {
+        "name": "Kerry",
+        "date": "2026-05-26",
+        "score": 6,
+        "type": "Couple",
+        "headline": "There are better options that are more reasonable and higher quality experiences available whilst construction works are",
+        "pros": "Our sea view room was very comfortable and the best part of our stay. You could just make out the sea if you stood at the right angle on the balcony.",
+        "cons": "Construction works. Plus we thought that we had booked a resort experience. This property is more so a large 3 star in need of a refurb however still charging 4 star rates plus a daily resort fee whilst the property was undergoing construction."
+      },
+      {
+        "name": "Daniel",
+        "date": "2026-05-25",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Beautiful, well worth the money",
+        "pros": "Beautiful hotel, amazing location, right on the beach side",
+        "cons": "Staff were painfully slow at helping with any requirements, asked something simple about my room and they had me waiting 30 mins for it"
+      },
+      {
+        "name": "Baker",
+        "date": "2026-05-18",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Good for a few days, we liked the location and ocean view.",
+        "pros": "Location was just perfect, especially if having kids as it’s close to the protected bay in Waikiki.",
+        "cons": "The two double beds in the room were very small. Breakfast can be significantly improved."
+      },
+      {
+        "name": "Latoya",
+        "date": "2026-04-29",
+        "score": 1,
+        "type": "Solo Traveller",
+        "headline": "Overall it is a beautiful property but I think diversity and inclusion practices need to be taught.",
+        "pros": "I had a great stay until the end. The property is nice, the food could be better but overall the property wasn’t the issue.",
+        "cons": "The day before I checked out I requested a late check out for 1pm. It was approved and they switched my keys out. The day of departure I woke up with a letter for balances to be paid before departure. I continued to the pool and vacationing and was going to handle those balances at check out as I…"
+      }
+    ]
   },
   {
     "id": "lp1b4a2",
@@ -36217,7 +38009,63 @@
         "High prices",
         "Food quality issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Mandy",
+        "date": "2026-05-25",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Short stay, expensive for the location. Comfortable bed though",
+        "pros": "Proximity to shops.",
+        "cons": "Unfriendly staff"
+      },
+      {
+        "name": "Amanda",
+        "date": "2026-05-24",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The staff were all helpful and we had an amazing view. Loved the extra amenities, the pool and mini putt area was cool.",
+        "cons": "The resort fee upfront was hefty and unexpected but at least it was partially refunded at the end."
+      },
+      {
+        "name": "magdalena",
+        "date": "2026-05-13",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Great hotel except for the included breakfast",
+        "pros": "I loved the location, the staff was great, parking on the same hotel is expensive, but they have valet parking that works great. They also provide towels for the beach or pool and you can ask for a boogie/surf board or chair for free for the day.",
+        "cons": "I didn't like the breakfast that was included. It was very low quality. The coffee comes from a horrible machine, tasted like the worst coffee you can get at Walmart. Not too many options of fruit, cereal dispenser didn't work, eggs were made from a box. If you are staying for a week it becomes…"
+      },
+      {
+        "name": "Manjunath",
+        "date": "2026-05-10",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Not value for money",
+        "pros": "Location",
+        "cons": "Breakfast and service was not upto expectation"
+      },
+      {
+        "name": "MEI",
+        "date": "2026-05-06",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Good choice!",
+        "pros": "good location，free room updated without requesting!",
+        "cons": "Parking is difficult and charging 60dollars per night is higher than others"
+      },
+      {
+        "name": "Christopher",
+        "date": "2026-05-06",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Overall comfortable and clean. Pleasant stay",
+        "pros": "Book in process was smooth. Support from staff when guidance/assistance needed was efficient and very polite",
+        "cons": "Noise from the air-conditioning vent was unusually loud. The complimentary coffee etc was a bit light on -- especially the tiny little milk cups -- only two of them was not adequate. Paid the account by cash but the credit card swipe is still active and showing as \"pending\" on my Bank -- should be…"
+      }
+    ]
   },
   {
     "id": "lp209eb",
@@ -36580,7 +38428,63 @@
         "Limited Amenities",
         "Parking Issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Maria Antonette",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Location is amazing!",
+        "pros": "Location",
+        "cons": "The room needs upgrading, the shower water pressure was so low you can’t enjoy a decent shower end of the day. When you finally get pressure by adjusting water head, it goes on bathroom floor since the shower is so tiny."
+      },
+      {
+        "name": "steven",
+        "date": "2026-06-11",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Great location for the beach and the views were excellent,",
+        "pros": "Location was great, rooms were ok and parking guys were great and the front desk was also very good.",
+        "cons": "Nothing was what I expected for the price"
+      },
+      {
+        "name": "Janine",
+        "date": "2026-06-10",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Woulod stay there definitely again and ask for roon 1402!",
+        "pros": "Awesome location! Staff extra friendly and helpful. Beds very comfy and room with its ocean view just gorgeous! Towels on demand and as the beach was lirterally across the road excellent service! Very happy to order taxi or rideshare for us!",
+        "cons": "Very difficult to get into the breakfast cafe located next to Circle Hotel. However, only a block walk to another very tasty place so not an issue."
+      },
+      {
+        "name": "Cristell",
+        "date": "2026-06-06",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Excellent Location and Value for Money!",
+        "pros": "Excellent location, very accommodating staff",
+        "cons": "rooms are small for a family of 4 but still okay, driveway is also small"
+      },
+      {
+        "name": "Marguerite",
+        "date": "2026-06-05",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Perfect location",
+        "cons": "A little dated"
+      },
+      {
+        "name": "Miranda",
+        "date": "2026-05-31",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The location is amazing, right on Waikiki beach.. The staff is friendly and helpful. Wonderful restaurant on site. Clean rooms. Surf boards and other beach equipment for rent on site.",
+        "cons": "The room was small for 4, but doable. And the mattress was not very comfortable."
+      }
+    ]
   },
   {
     "id": "lp3252c",
@@ -37785,7 +39689,63 @@
         "Cleanliness issues with carpets",
         "No elevator for luggage"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jacinta",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great vibes, great location, great bar and happy hour!",
+        "pros": "Great location and such a cool vibe the hotel had. There is a great bar with a fantastic happy hour. We loved our stay. Easy to walk to anywhere you want too in Waikiki.",
+        "cons": "The floor in the room was filthy I wipe it with a face washer and it was black."
+      },
+      {
+        "name": "Albert",
+        "date": "2026-05-26",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Good location, but expensive to eat or drink there.",
+        "pros": "Good location.",
+        "cons": "Our check-in was delayed by 2 hours. We were given a $50 credit, but everything was so expensive, it didn’t take long to use that up. Taking advantage of amenities was very complicated."
+      },
+      {
+        "name": "Mundey",
+        "date": "2026-05-25",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Disappointing to say the least",
+        "pros": "Location was central but the street was awful. Pool/bar staff very friendly and helpful",
+        "cons": "Where do I start! The room was dirty, noisy and there were no facilities to make drinks or eat so why have a microwave? There were only outside steps up to the 3rd floor - this was unexpected and dangerous as it rained a little most days. The signs don’t make it less dangerous!The road the hotel…"
+      },
+      {
+        "name": "Gabriela",
+        "date": "2026-05-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Well located, good staff and the balcony was a plus!",
+        "cons": "No parking, curtains shower (they could ou a glass door)"
+      },
+      {
+        "name": "József",
+        "date": "2026-05-14",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "It was one of the cheapest hotel at Waikiki beach when i booked it, but everything was perfect for the price. They let me to check-in earlier. The room was beautiful with a nice view to the inner garden, everything is very green. The hot bath is very nice and the pool area also. The airport bus…",
+        "cons": "In the kitchen there was no silverware."
+      },
+      {
+        "name": "traveller019283",
+        "date": "2026-06-20",
+        "score": 2,
+        "type": "NONE",
+        "headline": "Disappointing",
+        "pros": "Can't understand all the great reviews. Overall, the hotel needed a good clean but we specifically asked 2 different reception staff to have the floor of our room cleaned and it never was. Room wasn't serviced during our 3-night stay. Another guest was assigned our room and came right through the…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp19d44",
@@ -39010,7 +40970,63 @@
         "Slow elevators",
         "Small bathroom"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Suzanne",
+        "date": "2026-06-14",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Mason on reception made us feel very welcome on arrival after a long flight. The housekeepers have been very obliging an",
+        "pros": "Location, facilities and staff.",
+        "cons": "N/a"
+      },
+      {
+        "name": "Michele",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Centrally located to everything! Beach across the street!",
+        "pros": "Location was perfect! Close to beach, shops and restaurants.",
+        "cons": "Our bathroom was dated. Even though we upgraded to the towers for beach views."
+      },
+      {
+        "name": "Alexandra",
+        "date": "2026-06-05",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Old style, good location",
+        "pros": "Location, parking, view",
+        "cons": "Noise from neighbours. Large gap under door. Connected rooms could hear and smell the other rooms"
+      },
+      {
+        "name": "Maureen",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "I will happily stay here on my next visit.",
+        "pros": "The location in the middle of Waikiki is excellent. I like that the hotel is set back so much from the street with the main entrance on the side street. The pool area is large with plenty of lounge chairs and food and drink service. The restaurant provides 'dinner' service as well as casual service…",
+        "cons": "I was not disappointed by anything at the hotel."
+      },
+      {
+        "name": "Sandra",
+        "date": "2026-06-01",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Rude staff. On arrival the said no king beds available and had to settle for a double or upgrade to suite, even though w",
+        "pros": "Location",
+        "cons": "Fees, fees and more fees. It cost us an extra $500 a day on top of what we already paid. Absolutely unrealistic and unaffordable"
+      },
+      {
+        "name": "Peter",
+        "date": "2026-05-31",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Relaxing ‘do nothing’ getaway.",
+        "pros": "Location very central. Room’s size excellent. Great water pressure. Superb view. Loved the daily water bottles. And great to have an empty fridge for milk and fruit etc.",
+        "cons": "Bed was good, pillows were awful. The only thing we can fault."
+      }
+    ]
   },
   {
     "id": "lp9ebf4",
@@ -39864,7 +41880,63 @@
         "Cleanliness issues",
         "Limited dining options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Ernest",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Good value for a stay in Hawaii",
+        "pros": "Location and staff were outstanding",
+        "cons": "There really was nothing that I disliked about the hotel."
+      },
+      {
+        "name": "Lily",
+        "date": "2026-06-12",
+        "score": 8,
+        "type": "Couple",
+        "headline": "A very nice and clean hotel that is very convenient located.",
+        "pros": "The location and room space. It is if very easy access to many shops and restaurants. Also quite close to the beaches. Staff were also very friendly.",
+        "cons": "The sofa doesn’t feel clean and extra blankets given are old. Although we booked an Ocean View high floor, the view was blocked by another hotel but we could still see a portion of the ocean."
+      },
+      {
+        "name": "Bridget",
+        "date": "2026-06-06",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Great views & staff was always welcoming to us guest as well as amazing location very close to quite everything definitely would stay here again !",
+        "cons": "Parking was definitely on the pricey side $55 so definitely a big number when staying awhile. Also parking structure is very narrow and very easy to hit your car so definitely becareful while driving!"
+      },
+      {
+        "name": "Catherine",
+        "date": "2026-05-07",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Happy with the say",
+        "pros": "Perfect location. Very generous room size. Very clear with all charges.",
+        "cons": "The room decor quality could be better"
+      },
+      {
+        "name": "Patricia",
+        "date": "2026-04-07",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "This location is in a great spot and they have beach chairs and umbrellas to use for the close beach. Along with unlimited beach towels for the pool and beach. The rooms are also very nice and the staff was helpful.",
+        "cons": "Some of the rooms were awkwardly laid out no way to see the tv from bed. and the bed themselves were not super comfortable l also don’t like they charged almost $50 per room per night for amenities on top of the room rate. There was no breakfast or drinks in the hotel at all. The pool doesn’t go…"
+      },
+      {
+        "name": "Dovie",
+        "date": "2026-03-19",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "I liked the bathroom and the bed and closet and the dimmable lights.",
+        "cons": "The worn down leather on the chair."
+      }
+    ]
   },
   {
     "id": "lp1dafc",
@@ -41032,7 +43104,63 @@
         "Room cleanliness issues",
         "Small standard rooms"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sang jin",
+        "date": "2026-06-01",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Fair",
+        "pros": "Location. Cleanness,",
+        "cons": "No hot water, airconditioner was too nosy"
+      },
+      {
+        "name": "Christina",
+        "date": "2026-05-29",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "I would stay again I would just request to make sure that my linen is clean",
+        "pros": "It was right in the middle of mostly everything so we could walk. Most of the staff was nice",
+        "cons": "The bedding and towels were dirty, visibily dirty. There was a women at the concierge desk after recheck in that we both me and my kids feel very uncomfortable with all the questions she was asking us and wouldn’t even let us like walk away to go get a room"
+      },
+      {
+        "name": "Sudipto",
+        "date": "2026-05-29",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Disappointing experince.",
+        "pros": "Breakfast was good, lot of options to choose from and quite convenient to get started with the day.",
+        "cons": "Room was too small. Elevators have a horrible experience. People had to be in queue for several minutes before being able to go up or down. Location was far from beach. No good view from hotel room. Price to comfort ratio is poor."
+      },
+      {
+        "name": "Gloria",
+        "date": "2026-05-27",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Price was reasonable for the area. Staff was nice.",
+        "cons": "$51 to park per day with no guarantee you will have a slot to park in if you leave and return. Slowest elevator ever often waited 15 minutes for an elevator."
+      },
+      {
+        "name": "Page",
+        "date": "2026-05-24",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Wouldn’t go back",
+        "pros": "Location",
+        "cons": "Very crowded, elevators were terrible- waited an average of 10 minutes to get on an elevator. Totally ridiculous"
+      },
+      {
+        "name": "IRENE",
+        "date": "2026-05-21",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Holiday Inn Express has the Aloha spirit.",
+        "pros": "The property is conveniently located near the beach, offering easy access to two shopping malls and numerous restaurants. The cleanliness of the property is commendable, and paid parking is available on-site. The excursion pick-up is either right on the property or just across the street. The hotel…",
+        "cons": "There were six elevators and they were always busy but adequate."
+      }
+    ]
   },
   {
     "id": "lp34e17",
@@ -41394,7 +43522,63 @@
         "Cleanliness issues",
         "Unstable air conditioning"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "BRUCE",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "It was a lovely stay",
+        "pros": "The cost",
+        "cons": "The drive in"
+      },
+      {
+        "name": "Thomas",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The room was clean good size had a spare bedroom and we got the larger suite which is awesome thank you so much",
+        "cons": "The microwave didn't work some of the room doors are a little bit weird to open up and close the beds could have had new mattresses which I would have appreciated the pool could have been warmer and the basement didn't have an elevator which is where the laundry room is located at"
+      },
+      {
+        "name": "Kelly",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "I lucked upon this adorable boujie boutique hotel in the heart of everything fun in this area of honolulu and it was amazing! Not only is the hotel facade clean, quaint and adorable BUT the staff couldn't be nicer and I somehow landed a free upgrade in what was a lovely room on the 2nd floor with…",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Reamy",
+        "date": "2026-06-09",
+        "score": 9,
+        "type": "Couple",
+        "headline": "We had a great time at the Coconut Waikiki.",
+        "pros": "Staff was very helpful and kind. We felt safe in the environment and had an overall comfortable stay.",
+        "cons": "We would've like a smoking area."
+      },
+      {
+        "name": "Rita",
+        "date": "2026-06-05",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Safe and convenient location, value for money.",
+        "pros": "We absolutely loved the location, and the mountain view. It is a quiet and pleasant lagoon side yet very close to hustle and bustle of Waikiki tourist area, easy walk for dinner, stroll, shops or the public transport. Tea/coffee/water available 24/7 The pop corn in the afternoon was always…",
+        "cons": "The pool was very small and towels were not ‘hotel whites’."
+      },
+      {
+        "name": "Jared",
+        "date": "2026-05-25",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The staff was awesome, always quick to solve any issue",
+        "cons": "The pool needs to have a better entrance and exit for the older person. It's hard to climb in and out on build in stairs, pool hours needs to adjusted"
+      }
+    ]
   },
   {
     "id": "lp1dc2a",
@@ -42047,7 +44231,63 @@
         "Cleanliness issues",
         "Aging room condition"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Daisy",
+        "date": "2026-06-17",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Aliyah is very nice check in and check out she’s very good and the rest of the staff are not friendly. The front desk st",
+        "pros": "The location is close by the shopping mall and beach",
+        "cons": "The room is outdated and the carpet has a little smell"
+      },
+      {
+        "name": "Jean",
+        "date": "2026-06-04",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Great staff and easy going vibe.",
+        "pros": "The staff were extremely helpful and friendly. We enjoyed the atmosphere.",
+        "cons": "Difficult to sleep when patrons from down the road left the pub."
+      },
+      {
+        "name": "Sarah",
+        "date": "2026-06-02",
+        "score": 6,
+        "type": "Couple",
+        "headline": "I would pick a different spot next time.",
+        "pros": "Front desk people were all very nice.",
+        "cons": "The speaker system was constantly shorting out. Breakfast was basically all carbs. Pool area was definitely not inviting or somewhere you’d want to hang out and had very limited hours."
+      },
+      {
+        "name": "Robert",
+        "date": "2026-05-16",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Best time I had staying in hotel.",
+        "pros": "The staff are amazing.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Melvyn",
+        "date": "2026-05-10",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Good home away from home.",
+        "pros": "Friendly staff.Quiet room.Fast route to get to by car.",
+        "cons": "Essential kitchen prep food equipment,ie. collander,mixing bowls,deep soup bowls,ladles,etc."
+      },
+      {
+        "name": "Aklesh",
+        "date": "2026-05-07",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Average",
+        "pros": "Location is good",
+        "cons": "My room was facing a wrecked building opposite and too noisy"
+      }
+    ]
   },
   {
     "id": "lp224e4",
@@ -42551,7 +44791,63 @@
         "High fees",
         "Room comfort concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Brandon",
+        "date": "2026-06-20",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Exceeded expectations. Location is perfect. Nice pool!",
+        "pros": "Restaurant and bar with live music and the pool was great! Clean room and clean sheets towels, etc.",
+        "cons": "Older hotel, carpets are due for a refresh."
+      },
+      {
+        "name": "Donna",
+        "date": "2026-06-20",
+        "score": 4,
+        "type": "Family With Children",
+        "headline": "Do not plan to book this hotel on our next trip",
+        "pros": "No continental free breakfast offered so cannot give a breakfast review. Did like the location to the airport",
+        "cons": "The room had a slight smell upon entering, the worst bed/mattress & pillow ever, AC very loud, ducks in the pool."
+      },
+      {
+        "name": "Theresa",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "It was exactly what we required for an overnight stay for an early morning flight.",
+        "cons": "The noise!"
+      },
+      {
+        "name": "Thomas",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "We had an exceptionally long layover headed to Japan. We needed a single night.",
+        "pros": "It was close to the airport so it was convenient. They also had a perfect room for my large family even with late notice.",
+        "cons": "The price was a little high. Then they charged a $50 service fee per room and I needed 2 rooms. I got service fee refunded four days later. It was just a little inconvenient since I was traveling further on those days."
+      },
+      {
+        "name": "Isha",
+        "date": "2026-06-10",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "It works well for overnight layovers.",
+        "pros": "The location is really close to the airport, which made catching an early morning flight easy.",
+        "cons": "The area of the location seems a bit sketchy."
+      },
+      {
+        "name": "Rujack",
+        "date": "2026-06-08",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Great",
+        "pros": "It clean, close, safe place",
+        "cons": "Ok"
+      }
+    ]
   },
   {
     "id": "lp20934",
@@ -43411,7 +45707,63 @@
         "Small room sizes",
         "Heat pump filter dirty"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Marsilinou",
+        "date": "2025-10-12",
+        "score": 8,
+        "type": "Family",
+        "headline": "",
+        "pros": "Overall average experience",
+        "cons": ""
+      },
+      {
+        "name": "Keri",
+        "date": "2025-10-11",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Incredible!! I am so happy I chose Wayfinder. It was perfect from check in to check out. Such a special property. Everyone is so helpful and friendly. Rooms are beautiful!! Views are amazing! The pool is amazing. Clean and quiet. Poolside bar has delicious drinks and food. Very safe area if you are…",
+        "cons": ""
+      },
+      {
+        "name": "Lydia",
+        "date": "2025-10-11",
+        "score": 8,
+        "type": "Friends",
+        "headline": "",
+        "pros": "Great stay at the Wayfinder Waikiki. I spent four nights here and it's a good base for exploring the area. The 2x bed double room was a good size for two people. Its a little on the smaller side but great attention paid to decor, finishing touches, lighting etc. Staff were always responsive, and I…",
+        "cons": ""
+      },
+      {
+        "name": "Lorelei",
+        "date": "2025-10-11",
+        "score": 8,
+        "type": "Family",
+        "headline": "",
+        "pros": "Property is within walking distance within walking distance to beach and shopping.",
+        "cons": ""
+      },
+      {
+        "name": "Brenda",
+        "date": "2025-10-10",
+        "score": 8,
+        "type": "Family",
+        "headline": "",
+        "pros": "Walkable distance from the beach, the canal, the zoo and many dining options. It is next to a busy main road and cars driving by do make it a bit noisy. Other than that the property itself is clean with modern beach decor.",
+        "cons": ""
+      },
+      {
+        "name": "Silvia",
+        "date": "2025-10-09",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "The room was perfect and clean. Interior of the hotel is very pretty and gives a lot of that Hawaii vibe. Staff was very friendly and always helpful. Pool was amazing too. Very close to Waikiki beach and the main street, literally 3-4 min walk. Loved everything about staying in that hotel!",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp4f72f",
@@ -45257,7 +47609,63 @@
         "Restaurant menu limited",
         "Renovation ongoing"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lauren",
+        "date": "2026-01-15",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Excellent Stay in a Great Location With All Your Needs Met",
+        "pros": "This was a return visit from 10 years ago, and the standard of the hotel was still excellent. The rooms are clean, and having a kitchenette is a bonus, which we made use of and needed. Loved the partial view of the ocean with a balcony, and the bathroom was roomy with everything you need. The…",
+        "cons": "The hotel is going through a renovation, so a few facilities are impacted, but this did not affect our stay. Look forward to coming back when the hotel is completed. There was not much else we didn't like."
+      },
+      {
+        "name": "NANA",
+        "date": "2025-07-18",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Spacious and good location",
+        "cons": "Under construction but didn’t notify me at all, overpriced"
+      },
+      {
+        "name": "Larry",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The Upgrade",
+        "cons": ""
+      },
+      {
+        "name": "fdrone",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Family",
+        "headline": "⭐⭐⭐⭐⭐ An Exceptional 25th Anniversary Stay at Ka La‘i Waikīkī Beach, LXR Hotels & Resorts",
+        "pros": "My wife and I recently stayed at Ka La‘i Waikīkī Beach, LXR Hotels & Resorts while celebrating our 25th Wedding Anniversary, and our son joined us as we celebrated his 21st birthday. From the moment we arrived, we were welcomed with genuine warmth, hospitality, and aloha spirit. We would like to…",
+        "cons": ""
+      },
+      {
+        "name": "rayeR5943DU",
+        "date": "2026-05-08",
+        "score": 10,
+        "type": "Couples",
+        "headline": "Hospitality at its finest",
+        "pros": "My experience has been exceptional from start to finish. The front desk, housekeeping, maintenance, valet, concierge, and food & beverage teams have all been incredibly guest-service oriented, professional, and attentive. Everyone consistently created a welcoming atmosphere, making my stay feel…",
+        "cons": ""
+      },
+      {
+        "name": "Megan",
+        "date": "2026-04-17",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Would definitely stay again.",
+        "pros": "Hotel was nice and clean. We were very impressed with how friendly and accommodating the staff was.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp1e1e0",
@@ -46047,7 +48455,63 @@
         "Poor room lighting",
         "Noise insulation issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Kelley",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Clean, safe, entertaining and overall comfortable. I would highly recommend",
+        "pros": "The property was very nice, great location to the beach and food options. Atmosphere was super kid friendly!",
+        "cons": "N/A"
+      },
+      {
+        "name": "Emily",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "A relaxing retreat conveniently located to the beach, stores and restaurants.",
+        "pros": "The staff was excellent and the rooms were nice. The room cleaning crew did an excellent job each day in ensuring fresh towels were left and the bed was made.",
+        "cons": "The valet parking pricing is quite high if you rent a car."
+      },
+      {
+        "name": "Tehani",
+        "date": "2026-05-09",
+        "score": 8,
+        "type": "Couple",
+        "headline": "It was overall amazing and will come back ! Great for a young couple !!!! You guys are amazing",
+        "pros": "The location and style . Live music everyday! And amenities upon arrival. Shave ice cream by the pool.",
+        "cons": "The breakfast and the birthday amenities I asked for my wife that was confirmed never came. It was on the 3may."
+      },
+      {
+        "name": "Kaia",
+        "date": "2026-03-08",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Lovely and accommodating. Friendly staff and beautiful hotel",
+        "pros": "So gorgeous and open. Very close to the beach. Really cute rooms and extremely cute little bar.",
+        "cons": "Nothing it was awesome"
+      },
+      {
+        "name": "alexzY4376DW",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Business",
+        "headline": "Amazing place, great location close to shopping, helpful staff",
+        "pros": "Come here for work a lot, great location close to all of the shopping, and the water- right in the heart of Waikiki. Bern here more than a dozen times, all personnel is phenomenal, great rooms, beautiful pool, great evening entertainment that is live, great restaurant on property, coffee shop in…",
+        "cons": ""
+      },
+      {
+        "name": "D8257TKbarbarat",
+        "date": "2026-05-31",
+        "score": 10,
+        "type": "Family",
+        "headline": "Laylow Never Disappoints!",
+        "pros": "Stayed at the Laylow many times and each time, they exceed my expectations! Bar and food service is excellent (call out to Jerrod and Brenda and Cassidy) and the menu and quality of food superb. Rooms are comfortable and lots of storage space and little welcome basket of fun treasures. Top class…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp1c0ae",
@@ -46516,7 +48980,63 @@
         "Limited food options",
         "Wifi issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Mercedalia",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Overall, the Ramada offered excellent value, a fantastic location, and a comfortable stay for our family, making our vac",
+        "pros": "I really liked the Ramada hotel because of its exceptional location. It is close to everything, and Waikiki Beach is just across the street, making it easy to walk there anytime. I also loved the restaurant located in the same building as the hotel. The food was always fresh, and the customer…",
+        "cons": "One thing to keep in mind is that this is not a luxury hotel. However, for the price we paid, we received much more than we expected. The rooms were comfortable, the location was excellent, and the overall value was outstanding. If you are looking for an affordable hotel in Waikiki with a great…"
+      },
+      {
+        "name": "Gainer",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Good but different than advertised",
+        "pros": "Clean, friendly staff, let us keep to ourselves, not crowded",
+        "cons": "Room description is different than advertised. Picture showed a couch and 2 beds. We based our booking upon this. Please update photos."
+      },
+      {
+        "name": "Jeanine",
+        "date": "2026-06-12",
+        "score": 5,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Location",
+        "cons": "Noise. Smell in the hallway that made me cough. Musty"
+      },
+      {
+        "name": "Heidi",
+        "date": "2026-06-12",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Pool, good cleaning, location.",
+        "cons": "Terrible noise from the street and from the air conditioning. Felt like a car was in the same room. Staff was negligent and almost rude. Early check in costs 95$. Poor beds."
+      },
+      {
+        "name": "Brigida",
+        "date": "2026-06-08",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Good location",
+        "pros": "Location",
+        "cons": "No glass cups"
+      },
+      {
+        "name": "Roberto",
+        "date": "2026-06-07",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Hawaii trip",
+        "pros": "Location. Ice machine.",
+        "cons": "Room, no restaurant. Internet was useless. Pool was small and not heated. We cannot use from late afternoon onwards."
+      }
+    ]
   },
   {
     "id": "lp1e1ee",
@@ -47190,7 +49710,63 @@
         "Noise issues",
         "Inconsistent room service"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "konstantin",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Second time staying here and will come againc",
+        "cons": ""
+      },
+      {
+        "name": "Cherry Lyn",
+        "date": "2025-10-12",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Staff are acommodating. Helpful. Good area for shopping food and fun for children",
+        "cons": ""
+      },
+      {
+        "name": "Matthew",
+        "date": "2025-10-10",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Great location & very friendly staff.",
+        "cons": ""
+      },
+      {
+        "name": "Vardhaman",
+        "date": "2025-10-09",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Great location between the Intl Mkt Place and the Canal. Awesome staff quick to help with your stay and exploration of the neighborhood or island. The warm saltwater pool and bar are also great and very space efficient. The aesthetics are clean and the Toto toilets are a great upgrade vs many other…",
+        "cons": ""
+      },
+      {
+        "name": "Amelie",
+        "date": "2025-10-07",
+        "score": 10,
+        "type": "Friends",
+        "headline": "",
+        "pros": "Hotel was in a great central location very close to shops and walkable to the beach. The beds were the comfiest I had ever slept in and I really enjoyed our room. The best part of the hotel were the fantastic staff who made everyday better with their kindness and humour. Especially Joseph, Kelea…",
+        "cons": ""
+      },
+      {
+        "name": "Karen",
+        "date": "2025-10-05",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "Very nice cozy hotel. Close to the beach and shopping but tucked away. We would definitely stay here again.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp1fd5b",
@@ -47831,7 +50407,63 @@
         "Dated rooms",
         "Odor problems"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Amanda",
+        "date": "2026-06-21",
+        "score": 1,
+        "type": "Couple",
+        "headline": "Do not be deceived",
+        "pros": "Location is great",
+        "cons": "Apparently the rooms are individually owned and then rendered by the hotel. Which means there is no certainty you will get the room or anything like the room that is used in the hotel advertising."
+      },
+      {
+        "name": "Raymond",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "The place to stay for business or a get away.",
+        "pros": "Overall I love staying at this Hotel! The view from the higher floors is AMAZING! The space afforded in the one-bedroom suites make you feel like a king. And the beds make you feel just as good. The location is convenient to the places I need to get to and has plenty of restaurants to eat at close…",
+        "cons": "Sometimes the price fluctuates. But still worth it for the stay. Book early!"
+      },
+      {
+        "name": "Robert",
+        "date": "2026-05-21",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Much different than staying in Waikiki, where we stayed many times.",
+        "pros": "Great view from 31st floor. Staff was very helpful with luggage when we arrive early and quickly fixing small glitches with TV remote and safe.",
+        "cons": "I expected that parking was included in the cost. Also we did not like getting up & down to 8th floor parking. Room was not cleaned during our 4 day stay; I was told it would be cleaned on the 3rd day."
+      },
+      {
+        "name": "PhoebeBlue",
+        "date": "2026-05-04",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The bathtub and the view and very very comfy bed Spacious with separate room and desk to work in very very close to amenities bus routes and food",
+        "cons": "The room is a bit dated but it was spacious the internet kept dropping out but at least a half an hour taxi ride or longer on public transport to Waikiki"
+      },
+      {
+        "name": "Akoto",
+        "date": "2026-05-03",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Very enjoyable stay",
+        "pros": "We loved the location, the facilities and especially the bed which was very comfortable to sleep on. Also we love the late check out as well.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Danilo",
+        "date": "2026-04-29",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Refreshing, close to everything. Public transport is very convenient.",
+        "pros": "Location, the room and amenities.",
+        "cons": "None"
+      }
+    ]
   },
   {
     "id": "lp32645",
@@ -48367,7 +50999,63 @@
         "Unresponsive room issues",
         "Inconsistent amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Rosa",
+        "date": "2026-06-08",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Overall beautiful stay",
+        "pros": "We have stayed at that property many times. We like it so much, we like that there is a sauna, pool, jacuzzi and gym This time we got a room with beautiful view . The property is close to the beach and everything.",
+        "cons": "This time, we got a room with no sick in the kitchenette. We had to use the sink in the bathroom for washing dishes, we did not like that. Also, it would be nice to install proof noise windows and the AC is very noisy. We had to turned it off every night to be able to sleep"
+      },
+      {
+        "name": "Tawana",
+        "date": "2026-06-05",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "I rested well",
+        "pros": "Location",
+        "cons": "Furniture old"
+      },
+      {
+        "name": "Mahoe",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Cozy",
+        "cons": "Great"
+      },
+      {
+        "name": "Shante'",
+        "date": "2026-05-26",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The property was located in a great area and staff was amazing",
+        "pros": "The staff was extremely helpful",
+        "cons": "It was all good"
+      },
+      {
+        "name": "Summar",
+        "date": "2026-05-22",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "We absolutely loved the location, close to everything but away from crowds. I also appreciated the staff on getting us to a better room.",
+        "cons": "I didn't enjoy not getting bored in a room we reserved."
+      },
+      {
+        "name": "Stacy",
+        "date": "2026-05-18",
+        "score": 3,
+        "type": "Extended Group",
+        "headline": "The worst hotel experience. Rude gossiping staff and dirty rooms.",
+        "pros": "Pool and hot tub",
+        "cons": "We were first given a room that wasn’t even cleaned, and it also wasn’t the room type I originally booked. We had to go back down to the lobby and request another room with two beds. After finally getting settled for the night, we discovered a huge dried blood stain on the sheets. It was obvious…"
+      }
+    ]
   },
   {
     "id": "lp1b2bfe",
@@ -48996,7 +51684,63 @@
         "Room quality issues",
         "Cleanliness concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Joseph Zia",
+        "date": "2026-06-12",
+        "score": 3,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "location close to beaches & all others attractios",
+        "cons": "very old place with poor furniture& unsafty door lock privacy."
+      },
+      {
+        "name": "Esther",
+        "date": "2026-06-12",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Location Location Location",
+        "pros": "Location. Size of the room. Kitchen. Shower water pressure was great. Comfy bed.",
+        "cons": "No complaints."
+      },
+      {
+        "name": "Natsumi",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "It was a wonderful place to stay for the price. Right in the middle of everything and walking distance. Loved the staff",
+        "pros": "The staff was very kind. I loved the location it was perfect. Was able to rent beach towels for free. The room was perfect and comfortable for sleeping. Had a lovely stay.",
+        "cons": "The rooms were a little bit outdated but that did not affect the stay at all."
+      },
+      {
+        "name": "Anita",
+        "date": "2026-06-05",
+        "score": 3,
+        "type": "Couple",
+        "headline": "Not worth what I paid for the stay!",
+        "pros": "This place did NOT look anything like photos online, the photos show a very nice kitchen and outside area. Very disappointed!",
+        "cons": "Nicer kitchen and more supplies"
+      },
+      {
+        "name": "Dan Trung",
+        "date": "2026-05-25",
+        "score": 5,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Well-located in the center of Waikiki, next to the beach",
+        "cons": "My room had no windows and I was affected by the noise outside which never stops in the animated area of Waikiki"
+      },
+      {
+        "name": "Carbys",
+        "date": "2026-05-16",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Parking not available or included. Must valet at a different hotel.",
+        "pros": "Good vibe and location friendly people.",
+        "cons": "False advertising on the parking. It’s not included and a ten minute walk away and $47 more."
+      }
+    ]
   },
   {
     "id": "lp2b377",
@@ -49775,7 +52519,63 @@
         "Dated rooms",
         "High parking fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lorraine",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "All In All My Stay Is Always Next To Perfect.",
+        "pros": "Very close to airport and van was already waiting. I always stay here when I fly in for work just to get a good nights rest. Thank You For Always Greeting Me With Professionalism.",
+        "cons": "The bathroom was a little small only 1 person could be in there at a time."
+      },
+      {
+        "name": "Leila",
+        "date": "2026-06-18",
+        "score": 1,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Nice beds. Airport shuttle.",
+        "cons": "The noise at night when facing the highway side is mental. It's like being in a rave. The door has no insulation - it may as well be open! If you bring earplugs you might survive. The breakfast was abysmal. Self serve with plastic and paper plates and cutlery - disgusting by modern day standards…"
+      },
+      {
+        "name": "Natsuko",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "ok",
+        "pros": "clean and big room",
+        "cons": "wind of the air conditioning system directly on my bed. it was cold."
+      },
+      {
+        "name": "Benjamin",
+        "date": "2026-06-18",
+        "score": 5,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Very close to HNL Airport",
+        "cons": "No elevator to second floor pool area we had a lot of luggage. Good place to rest before flight."
+      },
+      {
+        "name": "mercedes",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Nice room & staff",
+        "pros": "Shuttle to airport ; bus stop across the street for $3.00 pp",
+        "cons": "The breakfast layout, long lines, hard to find seat between 7:00 am and 7:30am"
+      },
+      {
+        "name": "craig",
+        "date": "2026-06-15",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "All good",
+        "cons": "All goood"
+      }
+    ]
   },
   {
     "id": "lp96b5f",
@@ -50523,7 +53323,63 @@
         "Limited views",
         "Plastic dining utensils"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Gina",
+        "date": "2026-06-10",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Stay was excellent",
+        "pros": "Breakfast was delicious",
+        "cons": "None"
+      },
+      {
+        "name": "Cristell",
+        "date": "2026-06-04",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Excellent Location and value for money!",
+        "pros": "i like the location, it’s next to a new mall, a lot of fastfood chains, restaurants and shops. Staff are friendly, breakfast is good they even have breakfast to go, and even allowed us to bring breakfast food in our room. They have ice maker, water dispenser and free flowing coffee, tea and hot…",
+        "cons": "Some areas have leak in the ceiling, but they’re fixing it."
+      },
+      {
+        "name": "David",
+        "date": "2026-06-04",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Good",
+        "pros": "Clean, room good sized",
+        "cons": "Didn’t get room in upper floor bc of renovation yet other people had room on 5th floor"
+      },
+      {
+        "name": "Geoffrey",
+        "date": "2026-06-02",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Better than most hotels in Hawaii",
+        "pros": "Nice hotel with good amenities close by",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Masela",
+        "date": "2026-05-28",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Great vacation stay accessible to so much!",
+        "pros": "Friendly staff, cleanliness, availability, great breakfast, on-site laundry, great spacious room.",
+        "cons": "Refrigerator wasn't always as cold which made us discard some fresh poke (low temperature)"
+      },
+      {
+        "name": "William",
+        "date": "2026-05-23",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Its a great place to stay.",
+        "pros": "Breakfast and location were pretty good. My husband loves that he can make his own waffles 🧇. The hotel is around of Mall and a supermarket. We request housekeeping every day and was pretty good. The best was that the parking and Breakfast was free , this is a plus .",
+        "cons": "From the begging we have problems with the room . It was a very bad odor which I wasn't sure where is coming from, I thought might be the floor. The next day they wash and dry the carpet, but soon as i increased the ac a little bit, the smell was back . Taking with Teeana , we concluded that it the…"
+      }
+    ]
   },
   {
     "id": "lp2787b",
@@ -51855,7 +54711,63 @@
         "Cleanliness issues",
         "Value for money concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Francesca",
+        "date": "2026-03-08",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Utterly wonderful",
+        "pros": "Comfortable and beautiful Always a lot of staff Easy to enjoy and relax",
+        "cons": "Food is good but for the price is poor value Pop over the road and you’ll get better food and drinks"
+      },
+      {
+        "name": "Laura",
+        "date": "2026-02-23",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The rooms and the adult pool",
+        "cons": "Restaurants"
+      },
+      {
+        "name": "Liubov",
+        "date": "2025-11-25",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "We enjoyed our vacation very much!",
+        "pros": "Service, Food, Location, Kids Camp",
+        "cons": "Service at the Spa"
+      },
+      {
+        "name": "Oleksandra",
+        "date": "2025-11-23",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Excellent staff",
+        "cons": "A bit too expensive for what is offered"
+      },
+      {
+        "name": "850jimb",
+        "date": "2026-05-20",
+        "score": 10,
+        "type": "Couples",
+        "headline": "Best Resort on this Side of Oahu",
+        "pros": "We had an incredible stay at this hotel! The room was immaculate. The service is exceptional. The food was top notch. We loved every moment of our stay.",
+        "cons": ""
+      },
+      {
+        "name": "Antoine Waldner",
+        "date": "2026-05-02",
+        "score": 10,
+        "type": "Couple",
+        "headline": "I think the biggest highlight of this place is the staff—the service is unmatched on this island. We truly felt special",
+        "pros": "I think the biggest highlight of this place is the staff—the service is unmatched on this island. We truly felt special and had an incredible time there. The infinity pool is amazing, and the bed is incredibly comfortable.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lpa8c95",
@@ -53211,7 +56123,63 @@
         "Potentially overpriced",
         "Noise from adjacent rooms"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Kevin",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Great stay. Pool had lots of kids. Lol",
+        "pros": "Burger place and breakfast. Menu at restaurant not my favorite everything else was great.",
+        "cons": "Nice place. The burger place saved it for location. Kinda far from Other places"
+      },
+      {
+        "name": "William",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "We had 2 rooms and everything was fantastic!",
+        "pros": "Quiet location and outstanding service from all staff.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "George",
+        "date": "2026-05-04",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Ok room not made up one day",
+        "pros": "Food ok. Omelets good",
+        "cons": "Some hot foods were not hot."
+      },
+      {
+        "name": "Michele",
+        "date": "2026-05-01",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Wē enjoyed ourselves 🌺🌺",
+        "pros": "Everything",
+        "cons": "Need to upgrade the pullout bed."
+      },
+      {
+        "name": "sandra",
+        "date": "2026-03-30",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Room was great love how the bathroom had 2 ways of getting in was easy for my mom who was on a wheelchair.",
+        "cons": "It was a little pricey. I wish as a kamaina we would get a better deal. The only thing we got was a discount on parking."
+      },
+      {
+        "name": "Aaron",
+        "date": "2026-03-28",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Spent our anniversary and hope to in the future",
+        "pros": "The staff",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp32a07",
@@ -54799,7 +57767,63 @@
         "Long check-in process",
         "Limited beach access"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Susan",
+        "date": "2026-05-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Stay was very good.",
+        "pros": "Beautiful setting! Very clean too. You wouldn’t even have to leave the property.",
+        "cons": "They charged my credit card after the room was paid when booked and tried to collect again at checkout."
+      },
+      {
+        "name": "Dona",
+        "date": "2026-04-02",
+        "score": 7,
+        "type": "Couple",
+        "headline": "The setting was beautiful, the room not so much.",
+        "pros": "The beach was wonderful and safe. I appreciated a shower room since our room wasn't ready yet. It was very enjoyable eating dinner next to the ocean and listening to the musician at Longboards. The different pools were beautiful but not heated and it was cold the first of March.",
+        "cons": "We didn't have an ocean view so the room was dark and dated. For the price, there should have been complimentary water. This was the only resort ot of 5 that we stayed at that didn't offer anything."
+      },
+      {
+        "name": "Mir",
+        "date": "2026-01-30",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Not many entertainments",
+        "pros": "It is clean",
+        "cons": "Room keys did not work for half a day. Not very good restaurants on the site."
+      },
+      {
+        "name": "Steven",
+        "date": "2025-12-18",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Beautiful location and very well maintained.",
+        "cons": "No real area to be on the beach on the ocean. Just at the lagoon that often had lots of seaweed or something floating on top. Best pool area was also closed 5 of the 9 nights we stayed there ."
+      },
+      {
+        "name": "Max",
+        "date": "2025-11-30",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "The peaceful view if you have ocean front, is wonderful. The check in process is tedious.",
+        "pros": "Ocean front view. Good beds. Kids loved the pool.",
+        "cons": "The check in process is always long and drawn out. I hate it. It seems you could be a great deal more efficient and consolidate the procedures. Then a day later we get a call to come get discount coupons at a welcome desk. We skipped it. Just include it all at check in!!!"
+      },
+      {
+        "name": "Irene",
+        "date": "2025-08-14",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Everything was perfect and beautiful",
+        "cons": "N/a"
+      }
+    ]
   },
   {
     "id": "lp5f790",
@@ -54950,7 +57974,63 @@
       "cons": [
         "Cleanliness issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "F6752RCjoannea",
+        "date": "2026-04-10",
+        "score": 6,
+        "type": "Family",
+        "headline": "Dreaming of the old days",
+        "pros": "This is our 7th trip to Aulani. We have been visiting since the grand opening in 2011. We are not DVC owners. I do regret not buying during our first visit but I didn’t really see myself coming back to the same place so frequently. That was not our traveling style back then but ko olina has been…",
+        "cons": ""
+      },
+      {
+        "name": "johndoesquared",
+        "date": "2026-04-04",
+        "score": 6,
+        "type": "Family",
+        "headline": "Not what it used to be.",
+        "pros": "We have been to Disney Aulani 3 previous times, this was the worst. For context, we have been to disneyland hotel, hotel Californian, disneyland, disney world, disney sea, disney tokyo, disney Paris, and multiple Disney cruises. Aulani just isn't worth it anymore. They don't put the effort in to…",
+        "cons": ""
+      },
+      {
+        "name": "jeffwY6393WM",
+        "date": "2026-04-04",
+        "score": 6,
+        "type": "Family",
+        "headline": "Poor Chair Policy - Ruins the fun",
+        "pros": "The place was nice overall. But the pool seating was absolutely terrible, and it ruined a lot of the experience. They \"Claim\" to enforce a 1 hour chair policy, but in my entire week there I never saw it enforced. There should be no reason people can hold chairs all day and not be there. This should…",
+        "cons": ""
+      },
+      {
+        "name": "Zayd84",
+        "date": "2026-04-01",
+        "score": 2,
+        "type": "Family",
+        "headline": "Over rated",
+        "pros": "The main issue we had was there not being any room service available through out the resort. Given the insanely high price for a room at this resort, room service should be a given. You’re on vacation with family and little kids and may not always be able to go down to get food. Also, only…",
+        "cons": ""
+      },
+      {
+        "name": "Curiosity20882321741",
+        "date": "2026-03-31",
+        "score": 4,
+        "type": "Family",
+        "headline": "Great Cast Members, Terrible Resort Management",
+        "pros": "Honestly, for $1,000 a night, I expected way more than this. Aulani is basically a lesson in corporate greed disguised as \"magic.\" The service is just poor. You’re paying a premium, but they don’t even clean your room every day—only every other day. It’s ridiculous to be tripping over trash or…",
+        "cons": ""
+      },
+      {
+        "name": "toddtM6190TT",
+        "date": "2026-03-31",
+        "score": 6,
+        "type": "Family",
+        "headline": "The Pool Chair saga",
+        "pros": "Great staff, good room and nice amenities. My only complaint is pool chairs. This is Disney folks and with their creative team they should be able to come up with a solution to pool chairs. 80% are unused but “saved”. I shouldn’t have to spend this money for a week and literally never have a pair…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp219caa",
@@ -55756,7 +58836,63 @@
         "Uncomfortable beds and couches",
         "Inconsistent service"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Frank",
+        "date": "2026-05-01",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Because of floods and road closures our stay was just ok",
+        "pros": "ok",
+        "cons": "Parking was ridiculous"
+      },
+      {
+        "name": "Julia",
+        "date": "2026-04-21",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "great.",
+        "pros": "Friendly atmosphere",
+        "cons": "high cost to park my rental.. the parking cost to be more than my Rental."
+      },
+      {
+        "name": "Avesh",
+        "date": "2026-04-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Very good getaway option for a reasonable price",
+        "pros": "Decent breakfast, moderate selection, but very comfortable and sizeable room",
+        "cons": "Not much"
+      },
+      {
+        "name": "Antonio",
+        "date": "2026-03-10",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Awesome",
+        "pros": "Quiet, calm,",
+        "cons": "Easy to find"
+      },
+      {
+        "name": "Eleanor",
+        "date": "2026-01-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "I would recommend Residence Inn at Kapolei to everyone.",
+        "pros": "Breakfast was awesome!",
+        "cons": "We stayed a total of five days. After the third day, no one came to service our room or to check on us. I had to call for someone to come and take our trash and get clean towels. other than that, our stay was perfect."
+      },
+      {
+        "name": "Fuhrken",
+        "date": "2025-12-12",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Convenient, comfortable stay",
+        "pros": "Location Size of room Size of bathroom Kitchenette Breakfast Laundry facility Starbucks next door",
+        "cons": "Parking fee Shower design is weird but I’ve seen it in a lot of hotels. I don’t like how the water goes all over the floor from the shower."
+      }
+    ]
   },
   {
     "id": "lp73028",
@@ -56157,7 +59293,63 @@
         "Well-equipped villa"
       ],
       "cons": []
-    }
+    },
+    "reviews": [
+      {
+        "name": "Peter",
+        "date": "2025-09-23",
+        "score": 10,
+        "type": "Partner",
+        "headline": "",
+        "pros": "2nd time at beach villas and had a wonderful time. Property was quiet, clean and right on the lagoon.",
+        "cons": ""
+      },
+      {
+        "name": "Gurpreet",
+        "date": "2025-09-10",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Property was great and location was 5 star",
+        "cons": ""
+      },
+      {
+        "name": "roselani",
+        "date": "2025-08-26",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Beautiful location",
+        "cons": ""
+      },
+      {
+        "name": "Brian",
+        "date": "2025-07-29",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "We had such a great time here. The villa has everything we needed and enjoyed it so much.",
+        "cons": ""
+      },
+      {
+        "name": "Sara",
+        "date": "2025-07-16",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Beautiful condo!",
+        "cons": ""
+      },
+      {
+        "name": "Leah",
+        "date": "2025-07-01",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Loved staying here it was worth the money would definitely stay here again",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp6868f",
@@ -56274,7 +59466,8 @@
     "checkout": "11:00 AM",
     "airportCode": "HNL",
     "rooms": [],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": []
   },
   {
     "id": "lp656e4ab1",
@@ -56438,7 +59631,63 @@
         "Stunning sunsets"
       ],
       "cons": []
-    }
+    },
+    "reviews": [
+      {
+        "name": "Kristin",
+        "date": "2025-04-21",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Amazing",
+        "pros": "Quiet location. Family friendly",
+        "cons": "Oven took a long time to preheat"
+      },
+      {
+        "name": "Baltazar",
+        "date": "2024-07-27",
+        "score": 9,
+        "type": "Family With Young Children",
+        "headline": "Superb",
+        "pros": "Gorgeous view. Very spacious. Clean. Kitchen pretty well stocked. Pools are awesome and beach just steps away from pool also Gorgeous and relaxing, not crowded and you can see plenty of fish.",
+        "cons": "Only two rolls of toilet paper per bathroom for 7nights for 7 people. Not enough and for the cost to rent the property pretty disappointing. Same for the paper towels only 2 rolls provided."
+      },
+      {
+        "name": "Patty",
+        "date": "2024-05-04",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "I would stay here again in a heartbeat. Absolutely loved it.",
+        "pros": "Stunning views, spacious, clean and comfortable",
+        "cons": "I had no complaints"
+      },
+      {
+        "name": "Mamaritt",
+        "date": "2023-12-22",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Beautiful location",
+        "pros": "Beautifully maintained facilities, friendly staff. Plenty of Pool chairs and not crowded like the Disney resort. Parking spots were easy to access and we liked the semi-private elevators. Apartment is quiet and set back from the street, was clean and had adequate kitchen equipment for cooking.",
+        "cons": "Description says three bathrooms, but it is really two full bathrooms with showers, and a half bath with just a toilet and sink. It would be very crowded with eight people in this apartment, unless two are infants. The room with twin beds is very small, and there is no room for cots in the living…"
+      },
+      {
+        "name": "Toshi",
+        "date": "2023-04-18",
+        "score": 10,
+        "type": "Review Category Business Travellers",
+        "headline": "Awesome and great hosts.",
+        "pros": "It's a beautiful penthouse property with outstanding ocean view from a luxurious lanai. Private entrance with easy access to the parking. Highly recommended for a party of four or more.",
+        "cons": "I ended up renting snorkeling gears for my kids then realized there was a closet full of boogie boards, masks, fins, and beach toys. The host supposedly described the closet during the initial orientation, but I was parking at the time and the rest of the family do not understand English thereby…"
+      },
+      {
+        "name": "Kristina",
+        "date": "2026-01-10",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "Beachfront and whole family was able to stay together. Restaurants nearby.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp656e88a0",
@@ -56610,7 +59859,63 @@
         "Perfect for family vacation"
       ],
       "cons": []
-    }
+    },
+    "reviews": [
+      {
+        "name": "Timothy",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Beautiful and relaxing stay on Oahu.",
+        "pros": "Nice pool and close to the beach. We had fun feeding the koi fish and could walk to some limited food and shopping. The grounds are well kept and everything seems well maintained and cared for.",
+        "cons": "It is out of the way of some stuff on the island."
+      },
+      {
+        "name": "Holly",
+        "date": "2026-05-25",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Great for a family get together!!",
+        "pros": "I loved being so close to the beach!",
+        "cons": "It was hard being so far from Manoa/Honolulu"
+      },
+      {
+        "name": "Darla",
+        "date": "2025-01-07",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "An extended family with 7 people, 5 adults and 2 children really enjoyed the stay.",
+        "pros": "The location was spectacular. We had a lovely view of the ocean and lagoon from the lanai. Just a short walk to the pools and or beach. There was a little beach bar on premise by the pool. Drinks were good but, spendy. Some food was also available but we did not try it.",
+        "cons": "We booked for 7 guests but, only 4 beds available in the 3 bedrooms. A king bed in one bedroom, queen bed in second bedroom and 2 twin beds in the third bedroom. There was a hide a bed in the living room but. we chose not to utilize it. Was under the impression from the description that there would…"
+      },
+      {
+        "name": "Jose",
+        "date": "2024-10-29",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "We enjoy all the amenities and pool areas. We had a great time and experience and will definitely return to your propert",
+        "pros": "The property is very well kept and clean and beautiful . We loved the easy access to the property and the added security to only access with key card. The staff, especially Ms. Lynn, are extremely friendly and very accommodating. The rooms are very well equipped. We had a wonderful vacation.",
+        "cons": "Mirrors in the bedrooms would make it easier for the bathrooms to become accessible sooner when several guests are getting ready to go out."
+      },
+      {
+        "name": "John",
+        "date": "2024-10-03",
+        "score": 8,
+        "type": "Review Category Business Travellers",
+        "headline": "Beautiful view, spacious tastefully furnished unit - close to Kapolei.",
+        "pros": "Beautiful view of the sunset over lagoon number 2 from the lanai. Spacious. On the \"quiet\" (nonpool) side of the building. Walk in master closet. Short stroll to the lagoon. Restaurants and market within walking distance. The up and coming town of Kapolei is nearby (complete with Island Vintage…",
+        "cons": "Some mechanical problems, likely unique to our visit: master bathtub drain mechanism got stuck in closed position. Washing machine malfunction required daily resetting of circuit breaker. Watch that westbound traffic from 4 pm."
+      },
+      {
+        "name": "Ladislas",
+        "date": "2024-03-17",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Perfect!",
+        "pros": "Our place was clean, spacious, with a partial view of the ocean. It was perfect for our family . The area was full of things to do and conveniently located to a grocery store, restaurants and some cute boutiques. Target is 10 min from the property which we found to have better prices on essentials…",
+        "cons": "The parking space was tight and hard to get in and out of. That’s a minor inconvenience compared to all the positives."
+      }
+    ]
   },
   {
     "id": "lp656f2754",
@@ -56776,7 +60081,63 @@
         "Roaches found in the room",
         "Beetles discovered in the room"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "QI",
+        "date": "2026-05-24",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "comfortable and satisfied",
+        "pros": "There are birds showing up at the guest room window every morning, highly recommended for bird lovers!",
+        "cons": "There were some roaches and beetles discovered in the room."
+      },
+      {
+        "name": "Ana-marie",
+        "date": "2024-07-15",
+        "score": 10,
+        "type": "Group",
+        "headline": "Exceptional",
+        "pros": "Property came stocked with all the beach toys, chairs, all the kitchen utensils, basic spices, and even a rice cooker!!",
+        "cons": "You have to carry a key everywhere with you even to exit the property to go to the beach."
+      },
+      {
+        "name": "Steven",
+        "date": "2024-04-09",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Great Stay!",
+        "pros": "Great place to enjoy the sun! Shane was a great help",
+        "cons": "Nothing to not like here!"
+      },
+      {
+        "name": "Yelena",
+        "date": "2023-09-19",
+        "score": 5,
+        "type": "Review Category Business Travellers",
+        "headline": "Good location, but the price is a little steep for what it has to offfer.",
+        "pros": "The location is fantastic. The property is right on the lagoon., which is the best lagoon among the four of them. The host was very nice and accommodating to our asks.",
+        "cons": "The place is outdated and not very clean.."
+      },
+      {
+        "name": "Clarissa",
+        "date": "2023-08-07",
+        "score": 10,
+        "type": "Review Category Business Travellers",
+        "headline": "Great place to stay if you are vacationing for peace and quiet.",
+        "pros": "Peace and quiet. Beautiful lagoon. Near Disney Aulani. Spacious. High tech appliances in unit. Shane Lewis very easy to deal with. Reception friendly and helpful. All staff were friendly and helpful. Pools for children and adults. 3 jacuzzis, a bar with option to barbecue. Huge, clean fitness…",
+        "cons": "No VENDO machine for soft drinks. Lack of dining options. No luggage storage facility while waiting for shuttle to airport."
+      },
+      {
+        "name": "Brett",
+        "date": "2023-04-25",
+        "score": 10,
+        "type": "Group",
+        "headline": "aside from parking would stay here again.",
+        "pros": "good location, good views of ocean and mountains. quiet and comfortable. pools and beach were great.",
+        "cons": "parking was as far away from the unit as it could get. spot was tight, and in a different building. sofa bed mattress was a stained mess."
+      }
+    ]
   },
   {
     "id": "lp6575b79a",
@@ -56928,7 +60289,27 @@
         "Location is a bit far",
         "Issues with bed preparation"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Maree",
+        "date": "2025-12-09",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Good family property",
+        "pros": "It was good value for money",
+        "cons": "The location was far from Ko Olina resorts"
+      },
+      {
+        "name": "Russell",
+        "date": "2026-01-17",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Fabulous house in a nice complex with pool and spa close.",
+        "pros": "Beautiful place to stay with the best equipped house you could think of. Owners super responsive to any need. Thankyou!",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp657391d9",
@@ -57119,7 +60500,45 @@
         "Expensive breakfast",
         "No spa services"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Roland",
+        "date": "2025-02-18",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Absolutely amazing",
+        "pros": "Superb location, great beaches and amazing staff",
+        "cons": ""
+      },
+      {
+        "name": "Alan",
+        "date": "2025-02-14",
+        "score": 10,
+        "type": "Review Category Business Travellers",
+        "headline": "Excellent relaxing stay. Just what I was looking for. Enjoyed grlling outside. No going out to ea",
+        "pros": "No breakfast eaten.",
+        "cons": ""
+      },
+      {
+        "name": "Ken",
+        "date": "2024-08-17",
+        "score": 9,
+        "type": "Group",
+        "headline": "Great trip",
+        "pros": "Great overall experience and location.",
+        "cons": ""
+      },
+      {
+        "name": "Ronald",
+        "date": "2023-10-16",
+        "score": 9,
+        "type": "Family With Young Children",
+        "headline": "Superb",
+        "pros": "",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp656c8e21",
@@ -57307,7 +60726,18 @@
         "Limited variety in food and beverage options",
         "Absence of spa services"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Nicole",
+        "date": "2025-06-09",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "The property was beautiful, with multiple pools and spas. Loved the location and close proximity to the beach/lagoons. This side of the island is very quiet and peaceful. The unit itself was more than great for our family. Very clean, spacious, amazing views, and it was stocked with everything we…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp656c85a0",
@@ -57499,7 +60929,18 @@
         "Great amenities and location"
       ],
       "cons": []
-    }
+    },
+    "reviews": [
+      {
+        "name": "kevin",
+        "date": "2025-07-29",
+        "score": 10,
+        "type": "Family",
+        "headline": "",
+        "pros": "Was a quiet and beautiful place. Set aside from the hustle of the rest of oahu. Huge condo very clean and modern with all the amenities of home. The whole place..the grounds , the pools, the ponds and beaches, the bar at the beach with live music.. . Absolutely a great place to spend a week. Also…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp656ed998",
@@ -57666,7 +61107,63 @@
         "Leaking kitchen faucet",
         "Master bedroom mattress needs replacement"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Karen",
+        "date": "2026-02-22",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "I would definitely recommend this property. All in all a great stay.",
+        "pros": "The location is wonderful and it is not nearly as crowded as the nearby resorts. Great value for the price.",
+        "cons": "The A/C was too cold and confusing to program. The dryer takes 3 hours to dry. A foldable drying rack would have been helpful. Also could have used a few stemless wine glasses."
+      },
+      {
+        "name": "Deborah",
+        "date": "2025-12-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "This was our 3rd trip to this property and our 2nd booking at this exact room and we plan to return.",
+        "pros": "Excellent location, close to the lagoon.",
+        "cons": "Kitchen faucet was leaking and master bedroom mattress is in need of replacement."
+      },
+      {
+        "name": "Kelly",
+        "date": "2025-04-02",
+        "score": 9,
+        "type": "Family With Young Children",
+        "headline": "It is a wonderful place to relax and enjoy the ocean and beautiful pools",
+        "pros": "I loved the location and amenities",
+        "cons": "The snorkeling equipment was broken . We used one head piece for all four of us"
+      },
+      {
+        "name": "Valerie",
+        "date": "2024-12-30",
+        "score": 7,
+        "type": "Family With Young Children",
+        "headline": "Love the location. Beautiful pools and koi pond. Beautiful view and easy beach access.",
+        "pros": "Fantastic view! Fully equipped kitchen.",
+        "cons": "Unit wasn’t very clean. Dust covered the overhead light fixtures and fans. The king bed needs a new mattress, it was so sunken in it was incredibly uncomfortable."
+      },
+      {
+        "name": "Simp",
+        "date": "2024-04-23",
+        "score": 10,
+        "type": "Review Category Business Travellers",
+        "headline": "It was still an amazing place!",
+        "pros": "Location, location, location",
+        "cons": "The “Queen” bed in the living space. Doesn’t really constitute as a bed. We had 6 large adults stay in this condo and two of us had a pretty tough time with the “bed” in the living room. It was more like an actual sofa that two people barely fit on and we couldn’t even get the fitted sheet to fit…"
+      },
+      {
+        "name": "James",
+        "date": "2025-06-05",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Exceptional",
+        "pros": "We really loved the view and the ability to make the main living area open air by sliding the doors to the lanai completely open. The lagoon is awesome - we routinely swam out with our goggles and watched the beautiful fish swimming below us. We spent a lot of time on the grassy area around the…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp65744256",
@@ -57820,7 +61317,27 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": [
+      {
+        "name": "Dirk",
+        "date": "2022-08-29",
+        "score": 9,
+        "type": "Review Category Business Travellers",
+        "headline": "Memorable. Iconic beach feel.",
+        "pros": "Nice beach view from balcony. Good BBQ facilities around pools. Great kid pool. Nice gym facilities.",
+        "cons": "Nothing. I bought wine glasses and a coffee plunger for the apartment, as no wine glasses. No big deal."
+      },
+      {
+        "name": "Naiyu",
+        "date": "2025-06-19",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Exceptional",
+        "pros": "",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp6563bf59",
@@ -57991,7 +61508,63 @@
       "cons": [
         "Single beds"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Rob",
+        "date": "2026-03-07",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Everything was great",
+        "pros": "Excellent layout and location",
+        "cons": "The single beds"
+      },
+      {
+        "name": "Merci",
+        "date": "2024-10-27",
+        "score": 8,
+        "type": "Family With Young Children",
+        "headline": "Very good",
+        "pros": "The location was amazing! The unit is on the bottom floor and overlooks the pool with a gate to access. We never had to walk thru the building to go anywhere. The additional green space was a nice bonus.",
+        "cons": "We are a family of 5. The living room and outdoor area only seat 3. This is a bit strange for a unit that sleeps 6. Also the check in process was strange, we had to arrange a time to meet with a \"greeter\" after checking in at the desk."
+      },
+      {
+        "name": "William",
+        "date": "2024-08-11",
+        "score": 9,
+        "type": "Family With Young Children",
+        "headline": "Superb",
+        "pros": "The location and the feel of the unit was great.",
+        "cons": "Wish there could have been a few \"roach hotels\" to combat the roaches in the unit."
+      },
+      {
+        "name": "Darin",
+        "date": "2024-07-17",
+        "score": 8,
+        "type": "Family With Young Children",
+        "headline": "Fabulous vacation with the family!",
+        "pros": "Love the location of the property and the price for the size of the unit. Ko Olina is beautiful.",
+        "cons": "There was a continuous problem with the washing machine."
+      },
+      {
+        "name": "Joyce",
+        "date": "2024-04-17",
+        "score": 9,
+        "type": "Family With Young Children",
+        "headline": "Superb",
+        "pros": "The location and the place.",
+        "cons": "The place needs to be in better condition….too many repairs needed to be done while we were there . Paid too much considering all that needed to be done. Not senior friendly…no safety bars in tub or showers. Bed too high."
+      },
+      {
+        "name": "Vishwesh",
+        "date": "2023-12-31",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "Good (but not great) value for money--watch out for taxes/charges/surcharges",
+        "pros": "Easy access to the lagoon, parking areas and access to the highway--clean, well maintained and great experience of stay",
+        "cons": "Even though the rental unit was privately owned, we reported 1 major issue and 1 minor issue once we checked out--these issues were there even before we checked-in (both related to water draining and water management in the bathrooms)"
+      }
+    ]
   },
   {
     "id": "lp656e3c33",
@@ -58156,7 +61729,18 @@
       "cons": [
         "Missing glass tabletop on patio"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "John",
+        "date": "2025-12-15",
+        "score": 10,
+        "type": null,
+        "headline": "",
+        "pros": "Second time staying here. Only issue that I identified was the glass tabletop was missing on our patio furniture. Otherwise overall beautiful place to stay.",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp6560f226",
@@ -58310,7 +61894,18 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": [
+      {
+        "name": "Ken",
+        "date": "2024-06-27",
+        "score": 10,
+        "type": "Family With Young Children",
+        "headline": "We had a great time and did everything we wanted to do in Honolulu",
+        "pros": "The property was awesome right on the beach",
+        "cons": "They shut the pool down at 9 o’clock. I thought it was a little too early. But I understand because there’s people that live there."
+      }
+    ]
   },
   {
     "id": "lp6580b37f",
@@ -58437,7 +62032,63 @@
       "cons": [
         "Old van had some issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "amelia",
+        "date": "2026-01-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "10/10 experience- the van was an amazing way to see the whole island and super good value. Carl was the perfect host",
+        "pros": "The van was spacious, equipped with everything you could need plus extras like bodyboards and snorkel gear!!",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Lorie",
+        "date": "2026-01-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Best way to see the island, hands down! ♥️",
+        "cons": "Flexibility to vacation my way"
+      },
+      {
+        "name": "Allison",
+        "date": "2026-01-15",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Wonderful experience driving around the island.",
+        "pros": "Had a wonderful experience renting this van, easy and ready to roll! We loved our stay and would recommend it to anyone. Easy to drive and easy logistics.",
+        "cons": "No issues. Sheets smelled slightly musty but easy to air out."
+      },
+      {
+        "name": "Vinalin",
+        "date": "2025-10-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "It’s was good the host was super nice and informative",
+        "pros": "It was very nice",
+        "cons": "N/a"
+      },
+      {
+        "name": "Lisa",
+        "date": "2025-07-25",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "This was an incredible way to see O’ahu. My fiancé and I rented a van for 5 nights. The island is beautiful, and the van the Rio was very comfortable, clean and reliable",
+        "cons": "Nothing, it was fantastic"
+      },
+      {
+        "name": "Stevie",
+        "date": "2025-07-19",
+        "score": 1,
+        "type": "Couple",
+        "headline": "Good old bait and switch! Oahu was fantastic! We showered at a friends house because the shower in the trailer was disgu",
+        "pros": "It moved.",
+        "cons": "The camper trailer was not what was advertised. It was in horrible shape and it was filthy. I told the owner the van was filthy and he responded with, “Can you be more specific?” I sent him pictures of the black grim down the back door, the silverware drawer, which clearly had never been cleaned as…"
+      }
+    ]
   },
   {
     "id": "lp6568cd11",
@@ -58656,7 +62307,63 @@
         "Difficult to use light switches",
         "Some noise from other guests"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Amy",
+        "date": "2026-05-31",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "We were in Kailua for a family wedding and appreciated the spa iuu on s",
+        "pros": "Very spacious and clean. We were very comfortable with plenty of closets and amenities. Great to have a driveway and carport.. It’s an easy 5 minute walk to the beach. The area is quiet and peaceful.",
+        "cons": "A little warm at times with no AC but this is typical for Hawaii. The stovetop was difficult to operate and constantly showed error codes. (No instructions found) The upstairs bathroom needs some blinds or curtains."
+      },
+      {
+        "name": "Sandi",
+        "date": "2026-05-15",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "A perfect house to relax in and enjoy beautiful Kailua.",
+        "pros": "We had a wonderful stay in this lovely house. It was equipped with almost everything we needed (a coffee grinder would have been great for our Hawaiian beans). The kitchen has plenty of pots, pans, bowls, etc to create delicious meals, if you are so inclined. The beds and pillows are comfortable…",
+        "cons": "The living room is quite dark with only dim recessed lighting making reading quite difficult. A table lamp or two would be a good addition."
+      },
+      {
+        "name": "Richard",
+        "date": "2026-04-02",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Clean and comfortable, quiet and location!",
+        "pros": "The location is in a quiet neighborhood and easily walkable to Kailua beach. This is great as the beach is beautiful and very popular but there’s very limited parking available. We were able to come and go whenever we wanted.",
+        "cons": "There could have been more clarity in the booking. The property has two separate units, one is a two bedroom house and the other is a good size all-in-one efficiency apartment. We thought that we had booked the house but we ended up in the other. That said, we enjoyed our stay and particularly…"
+      },
+      {
+        "name": "Bolesky",
+        "date": "2026-01-21",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "We would rent again if the opportunity arose",
+        "pros": "Location, home was done very nicely, host was quick to respond and easy to work with. All in all a very nice stay.",
+        "cons": "lighting was confusing, and many bulbs needed to be changed. Curtains in master bedroom, even though it was upstairs, would be good for female privacy...no problem for men."
+      },
+      {
+        "name": "Sabrina",
+        "date": "2026-01-19",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Nice place, good facilities, close to the beach and to Kailua.",
+        "pros": "For a rental rhis place was great. Well appointed, spacious, and easy living.",
+        "cons": "There was nothing to not like."
+      },
+      {
+        "name": "Patrica",
+        "date": "2026-01-16",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "It was clean and the owner's son was very friendly. Washer and dryer, fully equipped kitchen",
+        "cons": "No comfortable places to sit except at the tables - no comfortable couch or lounge areas. No seats or table in upstairs bedroom. No outside area to lounge"
+      }
+    ]
   },
   {
     "id": "lp6568d8e3",
@@ -58826,7 +62533,63 @@
         "No dedicated parking",
         "Room feels warm without AC"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "angelika",
+        "date": "2026-03-04",
+        "score": 8,
+        "type": "Couple",
+        "headline": "I loved it, the bed situation was unfortunate but things happen.",
+        "pros": "The location is unbeatable",
+        "cons": "The bed was broken for both of our nights. I’m pregnant and already have difficulties sleeping but that made it even worst. Also I wish there was a shower soap available. My bad for not packing one but I kinda expect nowadays for it to be provided, not a big deal since it was an easy fix with a…"
+      },
+      {
+        "name": "Rascha",
+        "date": "2026-02-26",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Cozy Kailua beach house with giant bathroom. Loved the counter space.",
+        "pros": "Location, options for windows or AC, wonderful porch, comfy bed. Provides beach towels, coolers and everything we needed.",
+        "cons": "Just the decorations were quite cheesy and could use an update. For that price we expected better design."
+      },
+      {
+        "name": "Kimberly",
+        "date": "2026-02-14",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great stay! Walk to gorgeous long beach with no tourists",
+        "pros": "Great hosts. Hosts made everything easy and met us at the property. Helped me out when I forgot the key. This beach here is gorgeous!!",
+        "cons": "A little odd there isn’t an indoor dining /sitting area but we knew that from the description. The weather is so nice we sat outside all the time and it was perfect."
+      },
+      {
+        "name": "Sandy",
+        "date": "2026-01-03",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Loved our stay. Host was available if needed but we had no issues at all. Since our daughter lives there we will definit",
+        "pros": "We were greeted by our very friendly host Kay. The unit is very bright and clean with nice amenities such as a double sink roomy bathroom, galley kitchen with all the appliances you’d need. Access to a washer and dryer and a comfortable king size bed and front porch with table and chairs made semi…",
+        "cons": "It was perfect for us. Others might not like that there is no sofa or comfortable chairs. So TV watching or just relaxing is from the bed. The unit is attached to a house which is also a rental but no one was staying in it while we were there so can’t speak to that. The only thing I’d recommend…"
+      },
+      {
+        "name": "Kathleen",
+        "date": "2025-07-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "It was a really nice stay.",
+        "pros": "Great location. Cute little guest house. Laundry facilities were available. There was a full-sized kitchen.",
+        "cons": "No air conditioning. No dedicated parking. Beachgoers park in front of the property and you get forced to park down the street sometimes."
+      },
+      {
+        "name": "Deanne",
+        "date": "2025-05-06",
+        "score": 8,
+        "type": "Young Couple",
+        "headline": "Very nice place in the area",
+        "pros": "Fantastic location and nice lot of space. Super clean and kitchen well equipped.",
+        "cons": "Would have been much better with a little area to sit inside. Could be easily do in the bedroom with a sofa and a little table as there is plenty of space."
+      }
+    ]
   },
   {
     "id": "lp657425fe",
@@ -58952,7 +62715,18 @@
         "Lack of a grill",
         "No beach wagon or chairs"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Mark",
+        "date": "2025-08-08",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Nice, quiet, relaxing stay in a modern, well appointed home for our family and parents.",
+        "pros": "The place was exceptionally well appointed for a rental unit, especially the kitchen where nearly every appliance or utensil or tool is stocked from high end brands. The house was very clean and had ample spare toiletries, towels, cleaning supplies, sheets, dinnerware and utensils, etc. to use or…",
+        "cons": "There honestly weren’t any issues with the place. Only things I could note as additional nice-to-haves would be a grill and maybe a beach wagon and chairs. We fortunately had friends/family on the island who could provide those so never had to reach out to the host but future renters may not have…"
+      }
+    ]
   },
   {
     "id": "lp65558381",
@@ -59101,7 +62875,8 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": []
   },
   {
     "id": "lp655852c4",
@@ -59252,7 +63027,8 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": []
   },
   {
     "id": "lp655852f6",
@@ -59397,7 +63173,8 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": []
   },
   {
     "id": "lp655908c4",
@@ -59542,7 +63319,8 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": []
   },
   {
     "id": "lp6554ec44",
@@ -59684,7 +63462,8 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": []
   },
   {
     "id": "lp6573a3db",
@@ -59747,7 +63526,8 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": []
   },
   {
     "id": "lp65758cd9",
@@ -59853,7 +63633,8 @@
         "Lights not working",
         "Limited parking"
       ]
-    }
+    },
+    "reviews": []
   },
   {
     "id": "lp6577d29a",
@@ -59957,6 +63738,7 @@
         ]
       }
     ],
-    "sentiment": null
+    "sentiment": null,
+    "reviews": []
   }
 ]

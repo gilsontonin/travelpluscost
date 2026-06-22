@@ -31,6 +31,17 @@ export interface Room {
   photos: string[];
 }
 
+// A single guest review (sampled from LiteAPI /data/reviews — see scripts/enrich-reviews.mjs).
+export interface Review {
+  name: string;
+  date: string | null; // YYYY-MM-DD
+  score: number | null; // averageScore, out of 10
+  type: string | null; // traveller type, e.g. "Family with children"
+  headline: string;
+  pros: string;
+  cons: string;
+}
+
 export interface Hotel {
   id: string;
   name: string;
@@ -62,6 +73,7 @@ export interface Hotel {
     pros: string[];
     cons: string[];
   } | null;
+  reviews?: Review[]; // individual guest reviews (added by scripts/enrich-reviews.mjs)
 }
 
 // LiteAPI hotelType → clean label + category (hotel vs vacation rental).

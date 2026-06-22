@@ -682,7 +682,63 @@
         "Overpriced food",
         "Convention crowd impact"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Amira Aisha",
+        "date": "2026-06-13",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Excellent",
+        "pros": "Proximity to the central attraction",
+        "cons": "Need to go to another building for the swimming pool"
+      },
+      {
+        "name": "Diane",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Very comfortable and convenient",
+        "pros": "Excellent customer service the rooms were very clean and comfortable location was great",
+        "cons": "No issues"
+      },
+      {
+        "name": "Bee Hong",
+        "date": "2026-06-02",
+        "score": 7,
+        "type": "Couple",
+        "headline": "It was quite good in general.",
+        "pros": "Nice and clean, good location",
+        "cons": "Very limited amenities."
+      },
+      {
+        "name": "Jean-Marc",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Beautiful stay at the Hyatt Regency, Seattle.",
+        "pros": "Nice, upmarket, location",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Amy",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "We lived it here and would stay again!",
+        "pros": "They had a shuttle to the cruise ship and a coffee shop! The views from our room were insane!",
+        "cons": "Nothing."
+      },
+      {
+        "name": "chris",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Very friendly and welcoming. We had amazing views",
+        "cons": "The 80$ breakfast."
+      }
+    ]
   },
   {
     "id": "lp24419",
@@ -1392,7 +1448,63 @@
         "Older building showing wear",
         "Staff shortages affecting service"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "william",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "As above",
+        "pros": "Location, plus good feel.",
+        "cons": "Room was a bit dated"
+      },
+      {
+        "name": "Patty",
+        "date": "2026-06-18",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Location was good. Staff was helpful.",
+        "cons": "Not much choice for food on site. With the mall no longer having much to offer, it would be nice to have more options at the hotel"
+      },
+      {
+        "name": "William",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Very comfortable",
+        "pros": "Retains some feeling of yesteryear with well appointed rooms and furnishings.",
+        "cons": "As above and very well located"
+      },
+      {
+        "name": "yolanda",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Couple",
+        "headline": "It’s was really good …. Old style hotel and the best location",
+        "pros": "Location and very nice rooms",
+        "cons": "The restaurant closes to early 🤣"
+      },
+      {
+        "name": "Thompson",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location was perfect for walking and public transportation. Friendly staff.",
+        "cons": "Nothing I can think of."
+      },
+      {
+        "name": "Nathalye",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Location, facilitied, staff",
+        "cons": "I did love everything about my stay."
+      }
+    ]
   },
   {
     "id": "lpb9a82",
@@ -3074,7 +3186,63 @@
         "Dirty room",
         "Damaged TV"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Barbara",
+        "date": "2026-06-20",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Fabulous location.",
+        "pros": "The breakfast, happy hour and location was fabulous. You looked after our luggage which was greatly appreciated.",
+        "cons": "The first time we stayed there the phone next to the bed kept lighting up and kept me awake. The room was a little too dark."
+      },
+      {
+        "name": "Shelley",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The location was perfect.",
+        "cons": "The protesters so very early in the morning waking everyone up."
+      },
+      {
+        "name": "Mrs.mannyvanscoit",
+        "date": "2026-06-01",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Large room and breakfast.",
+        "cons": "The hotel is decent. The area in front of the elevator on the 7th and 8th floor were dirty. Lots of crumbs. The room was okay. I paid less the last time we stayed in a single room and the view and room were much better. The King suite is extremely plain. I feel like the hotel has went down in…"
+      },
+      {
+        "name": "Paul",
+        "date": "2026-06-01",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Overall I enjoyed my stay",
+        "pros": "Nice location",
+        "cons": "I hate the sliding bathroom doors! They provide no privacy!"
+      },
+      {
+        "name": "Francis",
+        "date": "2026-05-29",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Excellent hotel for Mariners games",
+        "pros": "Close to the stadiums and waterfront. Great restaurant.",
+        "cons": "No sauna"
+      },
+      {
+        "name": "Robert",
+        "date": "2026-05-28",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Close to Amtrak and excellent, comfortable room",
+        "pros": "The welcome was genuine. I asked for an upgrade and moved up to a two room suite. It was only me, but I deserved it. The bed was very comfortable, room temperature was ideal for sleeping and the shower had very good water pressure. I chose this hotel due to its proximity to the Amtrak station…",
+        "cons": "Everything was very good"
+      }
+    ]
   },
   {
     "id": "lp53836",
@@ -3624,7 +3792,63 @@
         "Limited restaurant variety",
         "Small pool size"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Guest",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "A great place to stay.",
+        "pros": "The staff was exceptional. We enjoyed the food and location. Everyone was friendly and helpful, overall a top ten experience.",
+        "cons": "I'm not sure that the experience could be improved."
+      },
+      {
+        "name": "Agnes",
+        "date": "2026-06-14",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Great service and the customer service was excellent. Thank you.",
+        "pros": "The facilities were great. The pool was smaller than expected but it was good.",
+        "cons": "Everything was great"
+      },
+      {
+        "name": "Marianne",
+        "date": "2026-06-14",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Nice staff and lobby, but not accessible for amputees!!",
+        "pros": "The lobby and restaurant was very pretty and entertaining!",
+        "cons": "I’m handicapped and the bed was sooooo tall I had to sleep in a chair, please lower your bed!!!"
+      },
+      {
+        "name": "Melissa",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Excellent",
+        "pros": "Clean, friendly staff",
+        "cons": "Price a bit high"
+      },
+      {
+        "name": "DeAnna",
+        "date": "2026-06-07",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Was comfortable for the one night stay and our grandkids enjoyed the pool",
+        "pros": "Very nice and in a good location",
+        "cons": "Not great views"
+      },
+      {
+        "name": "Deborah",
+        "date": "2026-06-06",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Good location. The best part was discovering that there were bicycles for the guests’ use.",
+        "cons": "It was fairly charmless, the room was on the small side, the bed wasn’t particularly comfortable, and it didn’t feel clean."
+      }
+    ]
   },
   {
     "id": "lp324b5",
@@ -3922,7 +4146,63 @@
         "Limited amenities",
         "Some room issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sheila",
+        "date": "2026-06-20",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Great location. Fab rooftop!",
+        "pros": "The rooftop!!!",
+        "cons": "Old. No bar if restaurant."
+      },
+      {
+        "name": "Lisa",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The area.",
+        "cons": "The loud ac in our room."
+      },
+      {
+        "name": "Donald",
+        "date": "2026-06-19",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "The hotel worked out great for us and served its purpose.",
+        "pros": "The property was clean and convenient to Seattle center. Coffee bar in the room and lobby was very nice. Rooftop lounge was great for mornings and evenings.",
+        "cons": "The room was way too small for 2 full size beds."
+      },
+      {
+        "name": "Rusty",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "It was a nice 1 mile walk to the Space Needle, where you could catch a free trolley to the Aquarium, Pike Place Market, China town, and pier. There were lots of places to eat within walking distance and a grocery store down the block.",
+        "cons": "The ride from the airport to the Mediterranean Inn was easy to set up, but was $70 and then we had to pay $10 each to get a ride to Pier 91."
+      },
+      {
+        "name": "Julianne",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Patrick was a really helpful desk manager and gave us a really nice accommodating room, even though I made a mistake wit",
+        "pros": "Super clean great window view ADA room",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Lora",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Close to proximity of our destination",
+        "cons": "N/a"
+      }
+    ]
   },
   {
     "id": "lp1a354",
@@ -5189,7 +5469,63 @@
         "Small bathrooms",
         "Room sizes vary significantly"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Guest",
+        "date": "2026-05-24",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Delightful accommodations and staff - all were wonderful",
+        "pros": "Terrific staff - friendly service, delightful treatment.",
+        "cons": "All aspects of exceeded expectations"
+      },
+      {
+        "name": "Louise",
+        "date": "2026-05-18",
+        "score": 7,
+        "type": "Couple",
+        "headline": "I would probably look for something that offers better value for money next time",
+        "pros": "Great location and comfortable beds",
+        "cons": "Paid to have breakfast included which was a waste of money as the cafe had such a limited menu."
+      },
+      {
+        "name": "Kaleigh",
+        "date": "2026-05-09",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Amazing hotel!!",
+        "pros": "This was my first time checking into a hotel alone and the hotel staff were so kind and helpful. Additionally, as an 18 year old female solo traveler, this property was in a safe area that I felt comfortable walking around alone even at night. The rooms were super clean as well. No complaints about…",
+        "cons": "The ONLY flaw was the fridge not working in the second room I stayed in. Otherwise this hotel was perfect."
+      },
+      {
+        "name": "Sharon",
+        "date": "2026-05-02",
+        "score": 10,
+        "type": "Couple",
+        "headline": "I have stayed at Hotel Theodore 3 times now, and absolutely love it. Just love the scent of smoldering wood that permeat",
+        "pros": "Excellent location, safe area, short walk to Pike Place Market, the monorail and Westlake Link station.",
+        "cons": "Bathrooms are a bit tiny, but very clean and sufficient."
+      },
+      {
+        "name": "afsaneh",
+        "date": "2026-04-20",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The location was very good, downtown and within walking distance of my conference at the convention centre. My studio room had several windows with a very nice city view and a small sea view.",
+        "cons": "I booked a studio room and expected a larger room, but it was small and packed."
+      },
+      {
+        "name": "CHRISTOPHER",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great stay",
+        "pros": "Superb lolcation",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lpfe1d8",
@@ -5447,7 +5783,63 @@
         "Inconsistent staff friendliness",
         "Noise issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Mohamed",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location is good Breakfast is good",
+        "cons": "Room size is very small"
+      },
+      {
+        "name": "Steven",
+        "date": "2026-06-17",
+        "score": 6,
+        "type": "Couple",
+        "headline": "This room was way too small !!",
+        "pros": "The Lobby area was fun and funky to sit in and eat it okay games .",
+        "cons": "Sorry, but we did not care for this hotel!! I can’t believe it got such a high rating! We paid more to have a higher room, but there wasn’t a view and the room was SO small! Smaller than a cruise ship room! We had to change the configuration on how we slept on the bed otherwise we would have to…"
+      },
+      {
+        "name": "David",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Very comfortable",
+        "pros": "Very clean",
+        "cons": "The price to. Angel was outrageous"
+      },
+      {
+        "name": "Joanne",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Excellent Hotel!",
+        "pros": "Very clean and comfortable. Staff were extremely helpful. Great position for Space needle plus an amazing breakfast. Would definitely stay again.",
+        "cons": "Nothing!"
+      },
+      {
+        "name": "Arwin",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Vibrant hotel with great staff. Great location and a wonderful stay.",
+        "pros": "Great location, very clean. Vibrant with good lighting, art, good bar and coffee and in general energizing place to walk into. The rooms are very small but modern and modeled after their",
+        "cons": "Overall great, no complaints. Rooms are small but designed well."
+      },
+      {
+        "name": "Jordan",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Would stay again",
+        "pros": "Nice clean area. Very luxury feel to it.",
+        "cons": "Room is kinda small. No microwave."
+      }
+    ]
   },
   {
     "id": "lp43da6",
@@ -5707,7 +6099,63 @@
         "Noisy at times",
         "Parking issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "tracey",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Great location loved the free coffee in the mornings",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Ivy",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "I loved how it was close to downtown.",
+        "cons": "n/a"
+      },
+      {
+        "name": "Rhonda",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Couple",
+        "headline": "It was great except for the bug.",
+        "pros": "The location was perfect for walking to attractions that I wanted to see prior to boarding cruise ship. The staff was very attentive and helpful. I would use this hotel again in the future.",
+        "cons": "There was a bug in my bed when I turned back the covers. My husband said it wasn't a roach or bedbug. It was removed by my spouse. Didn't report as I was tired and just wanted to go to sleep,"
+      },
+      {
+        "name": "Jennifer",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We really enjoyed our 3 nights in Seattle.",
+        "pros": "Location near the harbour and downtown close to Pike market and other tourist sites, within walking distance. Comfortable bed and room with a view over the city and dog park. Arranged shuttle bus to harbour for cruise.",
+        "cons": "Nothing."
+      },
+      {
+        "name": "Terry",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Ideal for first trip to Seattle and will do it again.",
+        "pros": "Location was easier for walking or picking up bus/ public transportation. The room was just right with the small kitchenette. Beds super comfortable. Cleanliness well done. Will stay again.",
+        "cons": "Nothing comes to mind."
+      },
+      {
+        "name": "Angela",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "reasonable with the price.",
+        "pros": "price",
+        "cons": "no parking, dirty and chaos traffic, homeless people on the street surrounding and don't feel safe at all. Seattle used to be an attractive beautiful city, but in the recently years, it has been going downhill with the terrible traffic, increased homeless people, graffties... easily get traffic…"
+      }
+    ]
   },
   {
     "id": "lp655785e4",
@@ -6004,7 +6452,63 @@
         "Limited TV options",
         "Extra charges for breakfast"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Omar Abulazm",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The room setup and location",
+        "cons": "Checking in happened after 2 although i was there since 11 no flexibility"
+      },
+      {
+        "name": "Samantha",
+        "date": "2026-06-19",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Friendly & very helpful staff , good location & view. Room on the small side",
+        "cons": "Room quite small. Bed in the window can’t walk round it bit great view."
+      },
+      {
+        "name": "Douglas",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Disappointed and not what I expected from Marriott.",
+        "pros": "Good",
+        "cons": "They couldn’t find our reservation for two rooms close together, booked 2 to 3 months previously. Ended up staying in rooms three floors apart. Our view was excellent however, I was just disappointed in how small it was. The bed was literally the width of the room."
+      },
+      {
+        "name": "Davoud",
+        "date": "2026-06-18",
+        "score": 2,
+        "type": "Couple",
+        "headline": "Room is smaller and less practical than even a cheap cruise ship cabin.",
+        "pros": "I did not like anything about our room in this hotel.",
+        "cons": "The room is unusually small. I’ve never seen a hotel room this small in the U.S. It’s basically a room where the width is about the same as the length of the bed. Inside the same rectangular space, there’s a glass-enclosed bathroom with a shower and a small sink area. When you use the bathroom, you…"
+      },
+      {
+        "name": "Col",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Location was excellent.",
+        "cons": "Room was very small but great for a 1 night stay if you did not spend much time in the room."
+      },
+      {
+        "name": "Lydia",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Couple",
+        "headline": "A fun and fun weekend in Seattle.",
+        "pros": "It’s modern, beautifully designed, quiet and very comfortable for what we needed this weekend.",
+        "cons": "The amount of mentally ill homeless people. I wouldn’t have felt really safe alone traveling."
+      }
+    ]
   },
   {
     "id": "lp28114",
@@ -7024,7 +7528,63 @@
         "Cleanliness issues",
         "Poor food quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Sherein",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "The best choice for a comfortable stay at a good location",
+        "pros": "Location Cleanliness Staff Comfortable",
+        "cons": "Breakfast is not included! There’s no coffee/tea at the lobby like most hotels do!"
+      },
+      {
+        "name": "Plubplung",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "A comfortable nice stay overall.",
+        "pros": "The hotel looks grand and clean. Staffs was friendly. Nice lobby area and Starbuck at the lobby is a plus. Walkable to Pike place market.",
+        "cons": "A little here and there. Fridge dead, hair on towel, bedding not done like a 4 star hotel, conditioner out and refill the 3 days. The valet can be expensive."
+      },
+      {
+        "name": "Judith",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Great location and able to walk to many sites or take a quick uber",
+        "cons": "To get to the pool in pike tower from union tower you have to walk through the lobby"
+      },
+      {
+        "name": "Susie McMichael",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Great time! especially because of the FIFA crowds and energy.",
+        "pros": "Location was great, staff was exceptionally professional and attentive",
+        "cons": "Bathrooms need some type of area to place toiletries for easy access. Mine had to sit on the floor below the sink"
+      },
+      {
+        "name": "Stephen",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "At the room price charged, the combination of location, facilities, amenities, service, and quality of the room offers outstanding value.",
+        "cons": "no particular complaints."
+      },
+      {
+        "name": "Toyia",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great stay. And great location.",
+        "pros": "Very clean. Great location.",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp1eeb4",
@@ -7887,7 +8447,63 @@
         "Limited food options for dietary preferences",
         "Unsafe bathroom door"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jessica",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We loved our stay, hopefully we can come back!",
+        "pros": "The staff and valet guys were so nice!",
+        "cons": "Price was a little more than we anticipated."
+      },
+      {
+        "name": "Stacey",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Lovely start to our vacation",
+        "pros": "The hotel was beautiful and in an excellent location in the city. The staff (especially Robin) was exceptional and took wonderful care of us during our stay.",
+        "cons": "Honestly, everything was wonderful"
+      },
+      {
+        "name": "Brensinger Norvell",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Comfortable, spacious and fantastic service",
+        "pros": "Clean and location",
+        "cons": "No view"
+      },
+      {
+        "name": "Suzie",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Nice breakfast, very comfy beds, easy walk to lots of places of interest, located mid-way between cruise terminal and airport, ideal for overnight stay before long flight back to Australia",
+        "cons": "nothing to comment about, all good"
+      },
+      {
+        "name": "Vincent",
+        "date": "2026-06-11",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Nothing special, but fine.",
+        "pros": "Location",
+        "cons": "Cost adjustment at end of stay should be an upfront detail."
+      },
+      {
+        "name": "James",
+        "date": "2026-06-01",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great location",
+        "pros": "The location to the the waterfront and pikes market was excellent. Room was clean and staff accommodating.",
+        "cons": "There should be a comfortable chair or two in the room. There was an uncomfortable desk chair and a large footstool, but you couldn’t sit on it very long without a back. also, the room was a little dark, but they brought an extra lamp for us, which was wonderful."
+      }
+    ]
   },
   {
     "id": "lp4385f",
@@ -8500,7 +9116,63 @@
         "Poor dining options",
         "Pet policy unclear"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Amy",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Great fitness center! Very clean. Beds comfortable. Staff great! Loved the post card mailing.",
+        "cons": "Wish there was breakfast included"
+      },
+      {
+        "name": "Brooke",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The staff were so pleasant and kind. The food at the Tidal was excellent. And the parking valets great. It couldn't have been a nicer stay all around! Thank you.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Robin",
+        "date": "2026-06-08",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Hotel was very clean Comfortable",
+        "cons": "Staff said not aware of reservation for transport to port when was confirmed in feb! Transportation to port was confusing as told different things day of transportation"
+      },
+      {
+        "name": "Leggette",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Wonderful location",
+        "cons": "Pool and the food was great"
+      },
+      {
+        "name": "K Young",
+        "date": "2026-05-28",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Gabriel was amazing!",
+        "pros": "Scott the valet was excellent when we first arrived. Gabriel, the concierge, went above and beyond several times. Super helpful. Very kind. Ran out to chase down a door dash person who could not understand where we were located.",
+        "cons": "A fridge but no microwave."
+      },
+      {
+        "name": "Gavin",
+        "date": "2026-05-26",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Our family enjoyed the visit for the weekend",
+        "pros": "I liked the convenient location of the property. Additionally I thought that the steam and dry sauna's were interesting and something you don't see often. I appreciated the water pressure and the buildings forward appearance in being echo freindly",
+        "cons": "It wasn't that I didn't like it, but if there was one critique is that I wished the elevators did not need a keycard to operate. With hands full of luggage it was cumbersome to find the card, scan it, and then select the floor you were interested"
+      }
+    ]
   },
   {
     "id": "lp2a786",
@@ -9049,7 +9721,63 @@
         "Expensive parking",
         "Pervasive smell from restaurant"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Fontain",
+        "date": "2026-06-10",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Very convenient and great service",
+        "pros": "I was on the 29th floor the view was amazing. The staff was very helpful and friendly . This was a pre cruise stay for us I forgot my cruise boarding pass at home and she was able to print out everything for me. They had shuttle service to the cruise port for $17 per person which was very…",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Roy",
+        "date": "2026-06-01",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location , Size of the Room , Service & Staff",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Hesham Albaqer",
+        "date": "2026-05-26",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "Good",
+        "pros": "The room was good, clean, and comfortable.",
+        "cons": "Nobody offered to help me with my luggage."
+      },
+      {
+        "name": "Robert",
+        "date": "2026-05-26",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great location and nice facilities.",
+        "pros": "Jazz the bellman greeted us and brought us up to our room and was fantastic at sharing how everything worked. Later when we discovered our safe had low battery and wouldn’t lock. Jazz was our go to person and he called it in to get it fix. He made our experience better! Thank him for us.",
+        "cons": "Phone didn’t work in room. Safe battery was low and had to get that addressed. Room seemed dusty."
+      },
+      {
+        "name": "Randy",
+        "date": "2026-05-23",
+        "score": 8,
+        "type": "Couple",
+        "headline": "This grand hotel deserves a grander area around it",
+        "pros": "The room size including the hallway and especially the large bathroom. The bath salts and other amenities were most appreciated. Staff was very helpful and accommodating.",
+        "cons": "The hotel room decor (f.e. walls, furniture and curtains) gives a bit darker 90’s vibe. It’s well maintained but could use some brightening up imo."
+      },
+      {
+        "name": "Victoria",
+        "date": "2026-05-21",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location, bed, quiet, great staff",
+        "cons": "paper cups instead of real cups for coffee/tea"
+      }
+    ]
   },
   {
     "id": "lp1d30a",
@@ -9661,7 +10389,63 @@
         "WiFi was bad",
         "Some rooms a bit small"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Philip",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We would definitely return to Andra Hotel Seattle!",
+        "pros": "Our room was beautifully decorated, spacious and comfortable. We enjoyed the Inviting lobby area and the friendly staff.",
+        "cons": "?"
+      },
+      {
+        "name": "KEPPENS",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Location was great, size of room for us 3 girls was great, but could have configured storage for our suitcases a little better.",
+        "cons": "Room for our suitcases was not really thought out, no wardrobes, which is fine if you've space to put your suitcase (there was only one spot) which made it seem tight with 3 of us."
+      },
+      {
+        "name": "Timothy",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Unexpectedly even more pleasant than hoped for.",
+        "pros": "Quick trip to meet old friends. Lovely staff and suite.",
+        "cons": "A longer stay"
+      },
+      {
+        "name": "Cassandra",
+        "date": "2026-06-07",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location was very convent to everything",
+        "cons": "N/a"
+      },
+      {
+        "name": "Melissa",
+        "date": "2026-06-03",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Five-star service and luxurious accommodations in the heart of Seattle.",
+        "pros": "Incredible staff! Great location! Superb accommodations and the most comfortable hotel mattress I’ve ever slept on. This is my favorite place to stay in Seattle.",
+        "cons": "I wish they had real coffee service in the rooms. I want a real cup of coffee in the morning. The lighting system is super confusing."
+      },
+      {
+        "name": "Marjorie",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "From our early check-in to late check-out, we were treated like family.",
+        "pros": "Beautiful. Luxurious. Friendly. Perfect location. Very helpful staff.",
+        "cons": "Nothing! Loved every minute."
+      }
+    ]
   },
   {
     "id": "lp1c180",
@@ -11059,7 +11843,63 @@
         "High restaurant prices",
         "Issues with room quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Ahmed",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Comfortable, Classy, clean hotel in Down town Seattle with an amazing hot Tub Jacuzzi, amazing staff and very comfortabl",
+        "pros": "Staff Cleanliness Location Comfort",
+        "cons": "Gym is too small for such a great hotel Needs more Dinning and food options Other than that exceptional"
+      },
+      {
+        "name": "Courtney",
+        "date": "2026-06-16",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Lobby beautiful, wish rooms were as nice",
+        "pros": "Lobby was wonderful and welcome staff and front desk",
+        "cons": "Room was just ok for the price. Very basic."
+      },
+      {
+        "name": "Sally",
+        "date": "2026-06-15",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Was very near all the sights so would stay there again we like to have a pool so we can swim",
+        "pros": "Great location",
+        "cons": "A bit tired"
+      },
+      {
+        "name": "Christopher",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "It was clean. It was well kept, and the rooms were spacious and comfortable.",
+        "cons": "I love that there was a restaurant and a bar available. We didn’t use the pool or the spa area, but it looked nice too."
+      },
+      {
+        "name": "Catherine",
+        "date": "2026-06-06",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Would stay there again but not in the same inside corner room.",
+        "pros": "Location, the size of the room and the swimming pool.",
+        "cons": "Only one USB charging point in the room and limited socket outlets, which was restricting for two people. We had an inside corner view room, which looked directly into adjacent windows."
+      },
+      {
+        "name": "susan",
+        "date": "2026-05-27",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Lovely property. Bedroom and lounge area of suite were excellent.",
+        "cons": "The resort fee. Bit of a rip off. Meant to provide water in room but only 1 carton left per day for 2 travelers. Coffee credit each day but coffee shop shut on 2 of our days. Old bath in bathroom with shower curtain - not in keeping with rest of room."
+      }
+    ]
   },
   {
     "id": "lp19ce31",
@@ -11696,7 +12536,63 @@
         "Parking difficulties",
         "Slow restaurant service"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Tirmary",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Wonderful customer service and great location.",
+        "pros": "The property was close to everything and clean!",
+        "cons": "To be honest there was not anything I didn’t like."
+      },
+      {
+        "name": "Brian",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Very comfortable stay in a good location",
+        "pros": "The staff were very friendly, particularly the staff on the front desk and the bell boys",
+        "cons": "Service at the bar could have been quicker"
+      },
+      {
+        "name": "Dorit",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Cool hotel in a great location",
+        "pros": "Excellent location. Cool decor. Friendly and helpful staff. Spacious room. Comfortable bed. Great bathroom.",
+        "cons": "Cleaning was inconsistent (e.g. , coffee cups unwashed) . You need to request daily cleanup, otherwise - every other day. Also - no complimentary water; you need to pay $5 for a small bottle"
+      },
+      {
+        "name": "Bonnie",
+        "date": "2026-06-14",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Costly but Nice",
+        "pros": "Walkable to Pike Market and waterfront. Nice bar and restaurant in facility. Modern, upscale decor. Friendly and helpful staff. Lots of coffee houses and restaurants and shopping nearby.",
+        "cons": "Mainly just the price. Also thought bottled water should be included for what I paid per night."
+      },
+      {
+        "name": "williams",
+        "date": "2026-05-31",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "It was a decent stay for one night.",
+        "pros": "Good location. Friendly staff, especially the concierge guy.",
+        "cons": "Beds were not very comfortable, kind of hard. Very small lobby area."
+      },
+      {
+        "name": "April",
+        "date": "2026-05-25",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Staff is amazing, views from the 7th floor balcony/wine bar are amazing!",
+        "cons": "Expensive!"
+      }
+    ]
   },
   {
     "id": "lpf673b",
@@ -12600,7 +13496,63 @@
         "Limited restaurant hours",
         "Uncomfortable bed"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Diane",
+        "date": "2026-06-18",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Nice interior and attention to détail.",
+        "cons": "Funky smell in the room"
+      },
+      {
+        "name": "Karen",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location",
+        "cons": "Terrible lighting by sink for facial care i.e. make up,shaving etc Some Electrical outlets not functioning-essential one for coffee pot"
+      },
+      {
+        "name": "Alana",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The location & the front desk staff, we encountered three of them separately, were phenomenal!",
+        "cons": "Signage to which way the elevator is on the room floors would be helpful."
+      },
+      {
+        "name": "Linda",
+        "date": "2026-06-16",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Wasn’t worth the money we paid",
+        "pros": "Walking distance to the market",
+        "cons": "Barking dogs in the hotel"
+      },
+      {
+        "name": "Maria",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Wonderful will stay there again",
+        "pros": "Everything, beautiful place and perfect location",
+        "cons": "I liked everything about . I specially loved the scent of the toiletries provided"
+      },
+      {
+        "name": "Linda",
+        "date": "2026-06-15",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Won't be back to this hotel.",
+        "pros": "Close to restaurants & shopping areas.",
+        "cons": "The room was very dark. Some of the electrical outlets were not working. Not enough counterspace by bathroom sink. And come on, $18 for a bottle of water!!??"
+      }
+    ]
   },
   {
     "id": "lp30ffe",
@@ -13070,7 +14022,63 @@
         "High parking fees",
         "Noise disturbances"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "CYNTHIA",
+        "date": "2026-06-18",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "It was pleasant and no hassle getting in and out of the hotel except elevator took awhile sometimes.",
+        "pros": "Location is good it's easy to get to away from traffic.",
+        "cons": "My view from my room was a rooftop so I kept my window closed. Hot water took so long to get, had to just shower with lukewarm water."
+      },
+      {
+        "name": "Vera",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "We enjoyed our stay at this place! The hotel is perfectly located within walking distance of downtown. The room was spacious and clean with a great view of the city. The bidet toilet was a nice surprise. We highly recommend this hotel.",
+        "cons": "Parking was an additional cost."
+      },
+      {
+        "name": "Yuan yuan",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Love it",
+        "pros": "location and noise-proof",
+        "cons": "Shower is not strong enough"
+      },
+      {
+        "name": "Tofilaumua Wall",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "I like the location of the view from our room, cleaned room and comfortable bed. Room service at night was great. We ordered pizza and sliders for dinner. Awesome food.",
+        "cons": "The Staff is unfriendly checking in. The breakfast was closed for 30mins early. No one answered the room service phone so we could order our breakfast, we went downstairs no one was at the counter waiting for ages for service, no one turned up so we left without breakfast and checked out early. The…"
+      },
+      {
+        "name": "Darren",
+        "date": "2026-06-16",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Ok stay in the city",
+        "pros": "Location was good. Easy to access all major attractions and close by the Link rail",
+        "cons": "Staff member at check in was lacking personality. No real welcome or explanation of hotel at all. Appeared she was fed up or tired. Having travelled over 12 hours to reach the hotel, a nicer welcome would have been appreciated"
+      },
+      {
+        "name": "Naomi",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great clean affordable place centrally located",
+        "pros": "The hotel is very centrally located. It had very comfortable rooms, and the room was very clean. I loved the bidet in the room! The staff was very accommodating, friendly, and helpful to new visitors to Seattle",
+        "cons": "The construction in the lobby made it a little confusing. The elevators were kinda slow"
+      }
+    ]
   },
   {
     "id": "lp21466",
@@ -13411,7 +14419,63 @@
         "Family-friendly atmosphere"
       ],
       "cons": []
-    }
+    },
+    "reviews": [
+      {
+        "name": "Paul",
+        "date": "2026-06-11",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Really nice hotel",
+        "pros": "Good location friendly staff really helpful",
+        "cons": "Needs more food options"
+      },
+      {
+        "name": "Mary",
+        "date": "2026-05-12",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Very nice. Views were beautiful",
+        "pros": "Location",
+        "cons": "No in house restaurant"
+      },
+      {
+        "name": "Glen",
+        "date": "2026-05-10",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Our stay at the “Inn at the Marketplace” was a pleasant and memorable stay, and I would have no reservation in recommend",
+        "pros": "We couldn’t have asked for a more perfect location, with so much being within walking distance. The Inn was very clean, and we were lucky enough to get a room with an absolutely incredible view of the waterfront, the Ferris wheel, and the market. Evenings on the outdoor patio were also quite nice…",
+        "cons": "I really can’t say anything negative. One minor recommendation would be a full size mirror in the room, but that would certainly not deter me from returning. We really enjoyed our stay."
+      },
+      {
+        "name": "Diana Christy",
+        "date": "2026-05-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "perfect stay for a day in seattle",
+        "pros": "location!!!! we explored the market and walked to the space needle, the staff were truly helpful plus the japanese restaurant right outside was really good!",
+        "cons": "nothing"
+      },
+      {
+        "name": "Kim",
+        "date": "2026-05-07",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Incredible location, very comfortable bed, loved the glass shower door that didn’t flood the bathroom, super clean and e",
+        "pros": "Location, view, clean, courtyard entrance, excellent staff",
+        "cons": "Pricey"
+      },
+      {
+        "name": "Carrin",
+        "date": "2026-05-03",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Will definitely again if we ever come back to Seattle",
+        "pros": "Great location, very clean, staff super friendly",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lpbaae5",
@@ -14542,7 +15606,63 @@
         "Limited pool",
         "Unexpected fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Erika",
+        "date": "2026-06-12",
+        "score": 7,
+        "type": "Couple",
+        "headline": "It’s was ok",
+        "pros": "Staff was great",
+        "cons": "Bed was hard and pillows too soft"
+      },
+      {
+        "name": "Tadeu",
+        "date": "2026-06-04",
+        "score": 3,
+        "type": "Solo Traveller",
+        "headline": "Never again",
+        "pros": "Nothing",
+        "cons": "Room smelled bad, breakfast was bad, staff were rude."
+      },
+      {
+        "name": "Kimberly",
+        "date": "2026-06-03",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Our stay was amazing!",
+        "pros": "The location to the convention center is amazing!, About a 3 min walk. The staff was so great! We arrived in the morning to drop our bags at the hotel prior to going to our early classes, but instead the reception gladly checked us in early! She also gave us a 2 queen room, instead of the king we…",
+        "cons": "Really didnt have any complaints other than the price of parking, but that is just seattle parking!"
+      },
+      {
+        "name": "Stephen",
+        "date": "2026-05-31",
+        "score": 9,
+        "type": "Couple",
+        "headline": "No hesitations in booking again",
+        "pros": "Nice location easy walk to the attractions.",
+        "cons": "Nice sized room with cooking facilities and nice large walk in shower. Evening bar and restaurant."
+      },
+      {
+        "name": "Dale",
+        "date": "2026-05-29",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The staff was very helpful, especially the young lady that did our check-in.",
+        "cons": "A little walk from the market."
+      },
+      {
+        "name": "Wheeler",
+        "date": "2026-05-26",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Loved it!",
+        "pros": "The hotel was clean and beautiful. The breakfast was delicious. The location was fairly closed to both the space needle and pike market about a 15 minute walk.",
+        "cons": "N/a"
+      }
+    ]
   },
   {
     "id": "lp1eb17",
@@ -15049,7 +16169,63 @@
         "Unexpected fees",
         "Heat issues in room"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Allen",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Convenient and comfortable.",
+        "pros": "The coupon for drink or coffee was appreciated. The transportation to the cruise dock was so convenient. Thanks for directions from airport to hotel using the tram.",
+        "cons": "N/A"
+      },
+      {
+        "name": "Amy",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Comfortable, friendly staff, safe",
+        "pros": "Design and comfort",
+        "cons": "Nothing"
+      },
+      {
+        "name": "ercoli",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Loved the location and the room,",
+        "pros": "We left for breakfast",
+        "cons": "Larger beds would be nice and something to put my suitcase on."
+      },
+      {
+        "name": "Catherine",
+        "date": "2026-06-12",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Clean, cute hotel close to everything",
+        "pros": "Overall the hotel was great. It was centrally located and easy to walk to Pike's Place Market and the Chihuly museum and Space Needle. There was easy paid parking in their lot. They offered a coupon for free drinks for everyone (alcoholic and non-alcoholic). It was clean and in general comfortable.",
+        "cons": "It was loud in the room at night from city noises which was easily remedied with a sound machine app. The beds were comfortable but were not our style/preference. For two queen beds they gave 4 twin types of comforters so you each could have your own as to not fight with your bedmate - however we…"
+      },
+      {
+        "name": "William",
+        "date": "2026-06-12",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "Decent place but I wouldn’t stay there again or recommend it.",
+        "pros": "Location, water bottle, bed and bath",
+        "cons": "The room faced the monorail, which was very audible despite thick glass windows. I also was charged $25 more for my queen room than my reservation showed."
+      },
+      {
+        "name": "Annette",
+        "date": "2026-06-09",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Great hotel for a quick stay in Seattle.",
+        "pros": "Super cute hotel concept; the bed was amazingly comfy, loved all the pineapple themed amenities! Great staff. Got one free drink, which was nice. They also had a shuttle for a reasonable fee to the cruise ship Terminal.",
+        "cons": "The surrounding area seemed a little dodgy."
+      }
+    ]
   },
   {
     "id": "lp2064c",
@@ -15425,7 +16601,63 @@
         "Small room sizes",
         "Maintenance concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Mary",
+        "date": "2026-06-20",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Great location. Bathroom is rundown.",
+        "pros": "location, pillows",
+        "cons": "Kiosk check-in is a pain. Feels like flying on a budget airline with staff directing you to check in on a screen when they are right there and could easily pull up reservation. Parking is expensive and not that great. Room is tiny. Bathroom needs updates."
+      },
+      {
+        "name": "Daniel",
+        "date": "2026-06-19",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "Super great friendly staff and convenient location. Small room and no AC was brutal.",
+        "pros": "Great location as far as being able to zip around Seattle easily. We weren’t staying in our room much because we were so busy. Great food on site and the cafe was it! The staff was super nice and easy to work with! Ari was delight.",
+        "cons": "It was pretty small and dusty in our room. Totally can overlook those things, but we were so hot AC wasn’t working at all and the room was small so it felt claustrophobic. Glad they gave us ear plugs night life was popping."
+      },
+      {
+        "name": "Danielle",
+        "date": "2026-06-19",
+        "score": 3,
+        "type": "Family With Children",
+        "headline": "Pictures on website don’t show the real view of what hotel looks like.",
+        "pros": "Convenient location",
+        "cons": "My room did not have a working thermostat on air conditioner they were completely booked and unable to accommodate another room, asked to have all 3 rooms booked by each other and we ended up on 3 different floors, room smaller than expected and bathrooms are tiny. Rundown hotel"
+      },
+      {
+        "name": "Rohan",
+        "date": "2026-06-18",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "NO A/C",
+        "pros": "Location, Staff Staff facilitated room change",
+        "cons": "Limited Breakfast Options - For pre paid breakfast No AC, Soiled Sheets, Toilet needed replacement"
+      },
+      {
+        "name": "Manal",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Home away from Home",
+        "pros": "Cosy, super close from everything , super friendly staff - I’d stay here again and again",
+        "cons": "N/A"
+      },
+      {
+        "name": "Amity",
+        "date": "2026-06-17",
+        "score": 5,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great location",
+        "cons": "The air conditioner did not work well, the floor was not very clean, there is no bathroom exhaust fan. Very stuffy. Expensive."
+      }
+    ]
   },
   {
     "id": "lp1c3c0",
@@ -16160,7 +17392,63 @@
         "Old room conditions",
         "Breakfast quality concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Glenda",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "I would stay at this hotel again on my next visit. Centrally located.",
+        "pros": "The breakfast was delicious and plentiful!",
+        "cons": "Everything was great"
+      },
+      {
+        "name": "Mary",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Very clean, great service. The 2 bdrm was perfect for our family!",
+        "pros": "The location was central to restaurants & our cruise ship dock !",
+        "cons": "NA"
+      },
+      {
+        "name": "Hughes",
+        "date": "2026-06-17",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "Will not stay at this location again",
+        "pros": "Breakfast, shuttle to port",
+        "cons": "I have stayed at several Hampton hotel this one was old and shabby. Front desk AM shift rude, and pretended to not understand English"
+      },
+      {
+        "name": "Lorraine",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Great stay",
+        "pros": "Centrally located",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Ronald",
+        "date": "2026-06-08",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Great stay. Will come back if/when we have another Alaska.",
+        "pros": "Location was close to everything & despite the hills, was easy walking. One block away was QVF, a full service Kroger store. We had a suite with a full kitchen. You could prepare simple meals if you wanted.",
+        "cons": "Television channels were limited. With the Seattle, a hot tub would be a welcome addition."
+      },
+      {
+        "name": "Johnson",
+        "date": "2026-06-05",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Just an overnight stay before cruise.",
+        "pros": "Rooms were clean and comfortable. Breakfast was good need more drink choices. . Location of the hotel was nice.",
+        "cons": "We were are the floor 3 and it was very noisy. Kids running up and down."
+      }
+    ]
   },
   {
     "id": "lp972cf",
@@ -17157,7 +18445,63 @@
         "Pool closed",
         "Dirty facilities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "dennis",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Staff helped my sister with a double booking and were very kind.",
+        "pros": "Clean and simple. Breakfast was excellent. Staff helpful and friendly.",
+        "cons": "The shared sliding door to closet and bathroom was lame."
+      },
+      {
+        "name": "Jerry",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Will definitely stay with Hampton Inn again.",
+        "pros": "We arrived much earlier than expected and received an unexpected upgrade. Our room was large and very nice. We appreciated the extra attention. Breakfast was also quite good.",
+        "cons": "Everything was great."
+      },
+      {
+        "name": "Marie",
+        "date": "2026-05-31",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Overall , it was nice clean hotel but the matress wasn’t comfortable",
+        "pros": "Clean and nice location close to restaurants",
+        "cons": "The bed mattress is worn out . My hip and back hurt after sleeping on it for 2 days . It sinks in once you lay on it ."
+      },
+      {
+        "name": "Politte",
+        "date": "2026-05-30",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The quiet of the location",
+        "cons": "The ladies checking in were not welcoming, not helpful when asking for help with local food options nearby. The lady C##### acted like the question was a burden and inferring on her time. Even though there was no other customers there. I asked if they provided a bottle of water for guests at check…"
+      },
+      {
+        "name": "Brendan",
+        "date": "2026-05-27",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Good stay, a little pricey when you add on 15+% to the cost .",
+        "pros": "Quiet room! Comfortable bed, clean room.",
+        "cons": "Seating in room was not set up for watching TV, but then nobody goes to Seattle to watch TV. Bed faced one way, TV the other way. What is this beast of an easy chair? See picture"
+      },
+      {
+        "name": "Annette",
+        "date": "2026-05-11",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great hotel in good location. Good price for the ammenities offered.",
+        "pros": "The front desk staff was extremely helpfull, polite, patient and courteous. The texting was a great feature and not having to call the front desk was a pleasant surprise. Sofia did an excellent job with the housekeeping and I had the most restful 2 nights sleep ever with that comfortable bed. The…",
+        "cons": "All good"
+      }
+    ]
   },
   {
     "id": "lp20fe0",
@@ -17531,7 +18875,63 @@
         "Housekeeping issues",
         "Limited breakfast choices"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Catherine",
+        "date": "2026-06-12",
+        "score": 5,
+        "type": "Solo Traveller",
+        "headline": "Cute aesthetics but low quality",
+        "pros": "The staff was wonderful and everything was clean and well stocked. Room was spacious except for the bathroom which was small but not uncomfortably so.",
+        "cons": "Surprise \"amenities\" fee per day at check in - I can't stand hotels who pull that trick to make their prices seem lower. The pillows were the worst I've had at a hotel in a while - just immediately went flat when I lay down. The room had no sound isolation. I was kept up at night by noises in the…"
+      },
+      {
+        "name": "Kimberly",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "It was clean, good price, staff was really friendly",
+        "cons": "Pool closed at 9pm and somewhat far from downtown Seattle"
+      },
+      {
+        "name": "Gina",
+        "date": "2026-06-06",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "A great place to stay if you have business with the UW",
+        "pros": "Check in was fast and easy. The staff was friendly and helpful. The room was clean and ready for me to be there for the single night stay. The hotel is directly across the street from the UW, which is why I stay there. Close to where I need to go and secure parking (even though they make sure you…",
+        "cons": "The issue that was not explained was that the door to the patio was permanently locked due to safety concerns. It would have been nice to know that. The AC unit was pretty noisy as well and I figured I could live with it for the single night I was there. I should have asked to change rooms bcz of…"
+      },
+      {
+        "name": "Tami",
+        "date": "2026-05-29",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Comfortable, clean, affordable and quirky stay right next to campus.",
+        "pros": "Affordable, clean. Comfy beds, great linen. Nice to have beverages and things downstairs!",
+        "cons": "Common areas and elevators could use a glow up. Some of the charger ports were not functional and looked cheap like they were going to blow up."
+      },
+      {
+        "name": "Catie",
+        "date": "2026-05-28",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Very comfortable bed, linens, pillows and comforters. Close to UW Hospitals, clinics and doctor’s office but all surrounding streets are currently under construction make it difficult to navigate and to find. I have stayed before so I knew where I was going. Also, 520 bridge to Bellevue and…",
+        "cons": "Parking lot, parking space sizes were unreasonably small even for our compact car, garbage and furniture cluttered all over parking lot making the are feel unsafe, absolutely nothing to eat, snack on or to buy to eat. Coffee supply was very stingy and not great tasting. There was a sign in the room…"
+      },
+      {
+        "name": "Daniel",
+        "date": "2026-05-10",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Bed was comfortable",
+        "cons": "Room needs updating, change the carpets. I like the watertown property better"
+      }
+    ]
   },
   {
     "id": "lp18c997",
@@ -18343,7 +19743,63 @@
         "Room size may be small for some guests",
         "Temperature control issues noted"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Patterson",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Couple",
+        "headline": "It’s a wonderful hotel with an adjoining restaurant both well kept and secure.",
+        "pros": "Everything we needed was available and an easy walk to things we wanted to see. We just wished we could have stayed longer.",
+        "cons": "We had a room with no view but we weren’t in it that much and there’s a terrace on the 8th floor which was nice and we met a nice couple."
+      },
+      {
+        "name": "Paul",
+        "date": "2026-06-11",
+        "score": 7,
+        "type": "Couple",
+        "headline": "It was okay",
+        "pros": "Good location",
+        "cons": "Room is small"
+      },
+      {
+        "name": "Laura",
+        "date": "2026-06-07",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great location",
+        "pros": "Location",
+        "cons": "Little pricey"
+      },
+      {
+        "name": "Martina",
+        "date": "2026-05-31",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Best hotel we have stayed at in Seattle",
+        "pros": "Fantastic location, just around the corner from the Pike Place Market. Loved the design of the hotel, especially the beautiful and at the same time very traveler-practical room. Super comfortable bed, very quiet, even when facing the street, wonderful bathroom & shower. Lovely rooftop bar from 4…",
+        "cons": "The glass doors that need to be manually opened / held open are very difficult to navigate with a cart full of bags. It would be nice to have a small fridge in the room. The menu options at the Ben Paris restaurant are very limited and niche, would be nice to have some more mainstream / classic…"
+      },
+      {
+        "name": "Eric",
+        "date": "2026-05-24",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Great location to Pike Place, room was clean and quiet. Staff was friendly and informative.",
+        "cons": "Entrance door was locked and we had to call the front desk to let us in."
+      },
+      {
+        "name": "Chris",
+        "date": "2026-05-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The front desk staff worked to get us an early check in then followed up with something special for celebrating birthday",
+        "pros": "Staff was excellent! Clean, comfortable bed, views and location.",
+        "cons": "Na"
+      }
+    ]
   },
   {
     "id": "lp321dd",
@@ -18966,7 +20422,63 @@
         "Parking fees",
         "Construction noise nearby"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Nilofer",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Proud mom of graduate from SoCal",
+        "pros": "Size of room was wonderful. Welcome drink was nice. Staff was very fast in responding to requests.",
+        "cons": "A further walk than the Graduate hotel."
+      },
+      {
+        "name": "DEBBIE",
+        "date": "2026-06-07",
+        "score": 9,
+        "type": "Couple",
+        "headline": "To far from downtown and no easy way to get there",
+        "pros": "Nice room",
+        "cons": "No restaurant / bar"
+      },
+      {
+        "name": "James",
+        "date": "2026-06-06",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Good hotel for UW visit",
+        "pros": "Close to UW. Nice amenities like free drink (we used for lattes). Convenient parking. Comfortable beds.",
+        "cons": "Room was warm."
+      },
+      {
+        "name": "CESAR",
+        "date": "2026-06-06",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Excellent accommodation!",
+        "pros": "Cleanliness and awesome staff",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Christopher",
+        "date": "2026-05-16",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Expensive but close to good restaurants",
+        "pros": "The room was quiet and clean.",
+        "cons": "Very expensive comparatively to other locations."
+      },
+      {
+        "name": "Gina",
+        "date": "2026-05-15",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Besides downtown construction hotel was very clean staff I’m very accessible to university of Washington Hospital",
+        "pros": "Clean and parking is very easy.",
+        "cons": "More food options!"
+      }
+    ]
   },
   {
     "id": "lp341f9",
@@ -20223,7 +21735,63 @@
         "Inconsistent service",
         "Expectations of luxury not met"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Reuben",
+        "date": "2026-06-04",
+        "score": 6,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Very clean and good location.",
+        "cons": "Over priced food and drinks, and confusing driving experience."
+      },
+      {
+        "name": "Jerry",
+        "date": "2026-04-06",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Location was fantastic! Nice room, but not impressed with the dining options",
+        "cons": "Cafeteria-esque restaurant with limited menu"
+      },
+      {
+        "name": "Bradley",
+        "date": "2026-03-26",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Fabulous and the front reception staff are the best I’ve experienced",
+        "pros": "Clean and modern. Tasteful",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Clifford",
+        "date": "2026-03-08",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "The staff was amazing, very accomodating and friendly.",
+        "cons": "We used to stay here many years ago and I do not feel the property has been kept up like it used to. Also, I don't mind paying for Valet - but 75.00 a night is high, even for Seattle."
+      },
+      {
+        "name": "James",
+        "date": "2026-01-19",
+        "score": 7,
+        "type": "Couple",
+        "headline": "It was OK but will not be returning.",
+        "pros": "Did not know about breakfast. No one told us anything about breakfast.",
+        "cons": "W felt like any other hotel. The price was high but expectations were not met."
+      },
+      {
+        "name": "Marissa",
+        "date": "2026-01-19",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Excellent home base to explore Seattle via foot, public transportation, or ride share.",
+        "pros": "Location is great, corner suite was excellent, helpful & informative staff",
+        "cons": "Parking was limited & expensive"
+      }
+    ]
   },
   {
     "id": "lp1bb12",
@@ -20878,7 +22446,63 @@
         "Small rooms",
         "Unpleasant odors"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Anna",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great hotel, highly recommended",
+        "pros": "Stuff is amazing! Location one of the best",
+        "cons": "Clean and friendly"
+      },
+      {
+        "name": "Stephanie",
+        "date": "2026-06-13",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Location was amazing!",
+        "cons": "The room was a bit small for my stay. I had a lot of downtime so roomier would have been better."
+      },
+      {
+        "name": "Carmine",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Very cool hotel and great staff",
+        "pros": "The music history and location",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Jing Bell",
+        "date": "2026-06-01",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Convenient location.",
+        "pros": "Location.",
+        "cons": "Sink was clogged. Sheet was not clean."
+      },
+      {
+        "name": "Jacqueline",
+        "date": "2026-05-29",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Excellent, great value hotel in a fantastic location.",
+        "pros": "Location excellent. Bus services plenty. Easy to walk and bits a beautiful clean and green city. Signs everywhere, very easy. The room was great, bathroom clean . The staff at reception, brillant.",
+        "cons": "Storage space limited, but it’s an older building and they have done their best with the room design."
+      },
+      {
+        "name": "Seng Poe",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "it's centrally located and easy access to all places of interest. the hotel is clean and highly recommended. staff are very helpful",
+        "cons": "none"
+      }
+    ]
   },
   {
     "id": "lp1a79c",
@@ -21560,7 +23184,63 @@
         "Some complaints about bed comfort",
         "Parking fees not disclosed"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lynda",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Great hotel to stay in close to the airport.",
+        "pros": "The location was close to the airport and the rooms are updated and nice.",
+        "cons": "Check in took a while."
+      },
+      {
+        "name": "Ruthanne",
+        "date": "2026-06-16",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Very uncomfortable",
+        "pros": "Nothing very uncomfortable",
+        "cons": "Bathrooms were awful , who in this time has nowhere to hang towels , shower door fell off hinges, toilet flushed some times"
+      },
+      {
+        "name": "elizabeth",
+        "date": "2026-06-12",
+        "score": 2,
+        "type": "Couple",
+        "headline": "Awful. I booked under hotels .com and am unable to cancel my return reservation otherwise I would.",
+        "pros": "Not much",
+        "cons": "No room service. Having to pay to park."
+      },
+      {
+        "name": "Kevin",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Will use again for my next Alaskan cruise.",
+        "pros": "Clean and spacious enough. Great location",
+        "cons": "None"
+      },
+      {
+        "name": "Duncan",
+        "date": "2026-06-08",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "Sleepless in Seattle",
+        "pros": "Near the airport",
+        "cons": "Paid for a bigger room and got put by the ice machine. People woke me up every 30 minutes until 4 in the morning getting ice. Kind of made my 18 hour travel day the next day harder."
+      },
+      {
+        "name": "Pamela",
+        "date": "2026-06-06",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Perfect for proximity to SeaTac airport. Very comfortable stay with fantastic staff.",
+        "pros": "We stayed there to get some rest prior to a long red eye flight. The hotel was lovely, comfortable and clean. The staff were friendly and helpful. The on property restaurant was very good and the 24 hr, on the hour and half hour, complimentary shuttle was so convenient. I would definitely stay…",
+        "cons": "There was nothing to complain about."
+      }
+    ]
   },
   {
     "id": "lp6557a7ba",
@@ -22286,7 +23966,63 @@
         "None noted specifically",
         "One review mentioned dissatisfaction with room's amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Saharnaz",
+        "date": "2026-06-03",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Overall, a very pleasant stay with excellent breakfast, though the hotel could benefit from better soundproofing.",
+        "pros": "The hotel was clean, comfortable, and well maintained. The staff were friendly and helpful, and the location was convenient. Breakfast was excellent with a good variety of options.",
+        "cons": "The only downside was the sound insulation. Noise from the corridor and other guests could be heard from the room, which occasionally affected comfort."
+      },
+      {
+        "name": "Mahoney",
+        "date": "2026-05-31",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "It was okay",
+        "pros": "It was very clean and modern",
+        "cons": "The evening cafe was poorly staffed, the wait time to be served was too long , the female waitress totally ignored us"
+      },
+      {
+        "name": "Karla",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Can’t wait to book again in September for Bumbershoot.",
+        "pros": "Everything, everyone. The staff were wonderful, the hotel was great, bed was comfortable and the space was so clean.",
+        "cons": "The Keurig just needed to be routinely cleaned."
+      },
+      {
+        "name": "Angela",
+        "date": "2026-05-25",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Perfect spot to stay to take in Seattle.",
+        "pros": "Super friendly and helpful staff. Also, the location was perfect to walk to the Space Needle and the Pike Market Place. I also loved the restaurant available onsite. Great food!",
+        "cons": "Nothing."
+      },
+      {
+        "name": "william",
+        "date": "2026-05-18",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great",
+        "pros": "MODERN GREAT STAFF LOCATION",
+        "cons": "In room cups and lack of refills of milk etc"
+      },
+      {
+        "name": "Orgeron",
+        "date": "2026-05-14",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Good shower, good room. Friendly staff.",
+        "cons": "Good luck unloading in front of hotel. Cramped street."
+      }
+    ]
   },
   {
     "id": "lpd8060",
@@ -23166,7 +24902,63 @@
         "Inconsistent cleanliness and availability of supplies",
         "Food options limited due to renovations"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Anna",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Nice room in a good location.",
+        "pros": "Very clean. Nice room. Love the modern vibe.",
+        "cons": "They seemed a little understaffed with valet, front desk, and the restaurant."
+      },
+      {
+        "name": "Timothy",
+        "date": "2026-06-15",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Air conditioner went out, but they got us a different room the next morning",
+        "pros": "Right near the market and we could walk almost everywhere but the zoo.",
+        "cons": "Paid for the breakfast, but got a voucher which was not enough to provide breakfast. So never used it."
+      },
+      {
+        "name": "LORELIE",
+        "date": "2026-06-14",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "It was good to be fair. Staff are all nice. I just don't like the elevator. It has smell. A little bit pricey. Overa",
+        "pros": "Near restaurants, shopping area, Pike Market.",
+        "cons": "Our room, 2 queen size bed room is facing the car park, an eye sore."
+      },
+      {
+        "name": "Anna",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Perfect",
+        "pros": "The front desk staff were amazing!",
+        "cons": "Location, location, location. And the front desk staff!"
+      },
+      {
+        "name": "Terri",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The accommodations was excellent.",
+        "cons": "Your staff was very accommodating and helpful."
+      },
+      {
+        "name": "Tina",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great service, clean and comfortable.",
+        "cons": "Food choices in the restaurant. Was looking for more like sandwich type choices at lunch. And dinner lighter choices. Had to go up to the bar for an appetizer pizza ."
+      }
+    ]
   },
   {
     "id": "lp1c3f6",
@@ -23930,7 +25722,63 @@
         "Missing amenities like microwave",
         "High prices for parking"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Maria",
+        "date": "2026-06-20",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Great location, easy to walk to main destinations and public transport close by. Nice lobby area.",
+        "cons": "One out of two elevator didn’t work when we arrived, when we left both weren’t working. Nothing the hotel can do about however very unfortunate to carry the suitcases down when we left. Rooms a bit outdated and A/C didn’t work. Too expensive for what we got but I think it was just that pricy due to…"
+      },
+      {
+        "name": "Aly",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Short stay but elevators need to be fixed. Not good value for money",
+        "pros": "Location",
+        "cons": "Elevators"
+      },
+      {
+        "name": "Scott",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Great location",
+        "cons": "One elevator was broken and the other suspect."
+      },
+      {
+        "name": "Brennan",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "It was easy to get any place for the hotels location.",
+        "pros": "THEY STUCK ME IN THE BACK WITH NO VIEW. But it was fine. One of the elevators was down. The front desk was great on getting me a shuttle to my ship.",
+        "cons": "It was clean and great location."
+      },
+      {
+        "name": "Michael",
+        "date": "2026-06-15",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "We had a very nice stay.",
+        "pros": "The room was good. The beds were good. The transfer to our port was fabulous. Everyone was very helpful.",
+        "cons": "Only one elevator was working."
+      },
+      {
+        "name": "Elizabeth",
+        "date": "2026-06-15",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Location",
+        "cons": "One elevator wasn’t working, the room was small for the price I paid. The water would spill out of the shower onto the floor"
+      }
+    ]
   },
   {
     "id": "lp78dfb",
@@ -25019,7 +26867,63 @@
         "High parking fees",
         "Inconsistent food quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Eduardo",
+        "date": "2026-06-18",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The location, the space in the room.",
+        "cons": "The elevators didn’t work well, there was always a line."
+      },
+      {
+        "name": "Deedra",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Perfect location!",
+        "pros": "This hotel is in a fabulous location. It sits at the bottom of the Space Needle, which you can view from the rooftop terrace. Across the street, you can visit parks, attractions, restaurants, and food trucks. 100% try the filipino BBQ skewers! The hotel offers parking under the hotel if you are…",
+        "cons": "One of the elevators is a bit creepy. They should have it where the patrons can't accidentally open the storage / laundry areas. It's only in the elevator that goes to the parking area, but it is a bit unnerving at night to have that other side of the elevator open unexpectedly."
+      },
+      {
+        "name": "Loida",
+        "date": "2026-06-08",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Location",
+        "cons": "Wifi isnt working well"
+      },
+      {
+        "name": "Willis",
+        "date": "2026-06-04",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Overall great, staff was awesome. Place was nice.",
+        "pros": "Location and staff, room was good value for the size and comfortable.",
+        "cons": "Not a fan of all of the homeless. Didn’t really feel safe going out at night. Not the hotel’s fault."
+      },
+      {
+        "name": "Ramon",
+        "date": "2026-06-04",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great hotel, everything we needed for our 4 night stay in Seattle. Right across Space needle, close to public transportation, safe neighborhood and breakfast is delicious!",
+        "cons": "Maybe walls in between floors were kind of thin, so we heard kids' steps running around on the upper floor from our room"
+      },
+      {
+        "name": "Jeanne",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Excellent",
+        "pros": "Location staff",
+        "cons": "No parking"
+      }
+    ]
   },
   {
     "id": "lp1c1b3",
@@ -25959,6 +27863,62 @@
         "Limited food options",
         "Cleanliness concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Larry",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Extremely great",
+        "pros": "E c erev",
+        "cons": "Everything"
+      },
+      {
+        "name": "Steven",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Affordable quality in heart of Seattle.",
+        "pros": "Clean. Very helpful staff.",
+        "cons": "Pool was small, but to be honest was a bonus."
+      },
+      {
+        "name": "Sylvia",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Nice",
+        "cons": "Everything was good"
+      },
+      {
+        "name": "Leticia",
+        "date": "2026-06-18",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Overall great",
+        "pros": "Everything was great! Especially grace and sysco.",
+        "cons": "Air conditioner in the room wasnt working well."
+      },
+      {
+        "name": "Kirsty Smith 1",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "EXCELLENT!!!",
+        "pros": "Very friendly staff, always happy to help. Bed was very comfy rooms were generous and view was lovely :)",
+        "cons": "Nothing relly."
+      },
+      {
+        "name": "Taher",
+        "date": "2026-06-17",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Its ok for the price i got but wouldnt want to book again",
+        "pros": "I liked the Balcony",
+        "cons": "Feels very old and staff arent the friendliest"
+      }
+    ]
   }
 ]

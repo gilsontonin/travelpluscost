@@ -774,7 +774,63 @@
         "Bathrooms need refreshing",
         "Potential noise from hallway guests"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Anze",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Nice hotel with interesting design and top location",
+        "pros": "Great location in the heart of San Diego, comfortable room design and very friendly staff",
+        "cons": "Expensive parking"
+      },
+      {
+        "name": "Judith",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "What a fun way to put us in the middle of things!",
+        "pros": "First trip to San Diego and we Loved every minute! Staying in the Gaslamp District at this hotel put us very close to ballpark, and walking distance to most everything. Quick Ubers too. Very casual, great customer service and very quiet.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Anna",
+        "date": "2026-06-16",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Overpriced",
+        "pros": "It was clean and in a good location, and the food was good.",
+        "cons": "You can hear everything in the hallway because there are large gaps around the door. Be prepared to wake up around 7 a.m. every morning. We stayed for a week, and it was very difficult to sleep. Parking very expensive. No fridge in the room"
+      },
+      {
+        "name": "Christin",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Couple",
+        "headline": "This place is perfect! The whole Margaritaville vibe is perfection! The lobby, the rooms, the restaurant and the pool de",
+        "pros": "Stayed here for the first time and I loved everything! They have a restaurant and bar connected to the lobby. You can also watch live music! The pool deck is phenomenal! They have a whole lounge area at the pool where you can order food as well as a bar. You also get text messages when there is…",
+        "cons": "I loved everything!"
+      },
+      {
+        "name": "Dan",
+        "date": "2026-06-14",
+        "score": 8,
+        "type": "Couple",
+        "headline": "I would stay here again and recommend to friends and family",
+        "pros": "Location to dining and waterfront",
+        "cons": "All good"
+      },
+      {
+        "name": "Terri",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Excellent",
+        "pros": "I have stayed twice this year and it has been wonderful",
+        "cons": "Pool bar open sooner"
+      }
+    ]
   },
   {
     "id": "lp3f338",
@@ -1413,7 +1469,63 @@
         "Inconsistent water temperature",
         "Missing jacuzzi jets"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Irene",
+        "date": "2026-06-20",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Will definitely stay here again",
+        "pros": "The staff is always very nice and very helpful. Our room was nice and clean.",
+        "cons": "Dont have anything negative to say"
+      },
+      {
+        "name": "Ahmadreza",
+        "date": "2026-06-20",
+        "score": 5,
+        "type": "Extended Group",
+        "headline": "They are just looking and trying give money",
+        "pros": "Just in city center",
+        "cons": "Everything is expensive"
+      },
+      {
+        "name": "Jannette",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Great",
+        "pros": "Very comfortable stay and it was clean so that’s always a plus. Staff was friendly and helpful",
+        "cons": "The prices of valet parking is crazy"
+      },
+      {
+        "name": "Blanca",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Relaxing 😊🤗",
+        "pros": "The jacuzzi was awesome and the breakfast restaurant. I love the chilaquiles",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Guy",
+        "date": "2026-06-18",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Take me out to the ballgame",
+        "pros": "Proximity to ball park",
+        "cons": "Corner room with funky layout"
+      },
+      {
+        "name": "Samir",
+        "date": "2026-06-18",
+        "score": 6,
+        "type": "Couple",
+        "headline": "It was ok, nicely decorated and themed hotel in a great location. If only looking for a place to sleep this is sufficien",
+        "pros": "Location",
+        "cons": "Televisions had issues, must purchase a la carte breakfast separately, snacks and beverages included in room were 200% more than normal value, was unnecessarily promised a room upgrade we did not receive."
+      }
+    ]
   },
   {
     "id": "lp1f5cb",
@@ -2227,7 +2339,63 @@
         "High parking fees",
         "Hot water issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "steven",
+        "date": "2026-06-18",
+        "score": 9,
+        "type": "Couple",
+        "headline": "I would come back in the near future.",
+        "pros": "Clean and relaxing",
+        "cons": "The wine that we had for evening by the pool."
+      },
+      {
+        "name": "Carol",
+        "date": "2026-06-14",
+        "score": 6,
+        "type": "Couple",
+        "headline": "A fun hotel right on the beach, but don’t expect quiet, privacy, or a decent restaurant.",
+        "pros": "The location is fun, and very convenient to the beach. The staff is great. We really enjoyed the entertainment - a fire dancer and a steel drum duo and both were terrific!",
+        "cons": "There is not really a restaurant, just some tables on the patio with food mostly take-out from a restaurant around the corner. The food was mostly greasy burgers and tacos. They prepared breakfast onsite, but everything I tried was swimming in grease. Our room location (partial ocean view?) was…"
+      },
+      {
+        "name": "marjorie",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We plan to return next year for a week. We loved watching the surfers, easy to access beach walkway, sunsets, and people",
+        "pros": "Staff were extremely friendly and professional. A lot of attention to details - such as equipped kitchenettes, turndown service with chocolates.",
+        "cons": "Bed was too soft"
+      },
+      {
+        "name": "Jmcicon",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Amenities",
+        "cons": "Parking"
+      },
+      {
+        "name": "Lydia",
+        "date": "2026-06-07",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "It was wonderful! Will definitely return.",
+        "pros": "The pool and hot tub were fabulous. The view was beautiful. It was clean and comfortable and the staff was very solicitous.",
+        "cons": "Nothing."
+      },
+      {
+        "name": "Daniela",
+        "date": "2026-06-06",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Very pleasant, and comfortable",
+        "pros": "Very relaxed hotel, spacious rooms, great beds, very clean. We stayed on the ground floor with a terrace door opening right on to the pool which felt for us quite nice and easy. There is some noise from the pool area but nothing major and it gets quiet in the evening. The restaurant is indeed small…",
+        "cons": "the only mild complain is maybe that they have sliding wooden interior window shutters which - though they do look quite pretty - do not close down very well so there is quite a bit of light in the room during the night from the lamps just outside the window. But not a major nuisance!"
+      }
+    ]
   },
   {
     "id": "lp1fa70",
@@ -2699,7 +2867,63 @@
         "Cleanliness issues",
         "Cashless laundry"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "laurie",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Friendly staff clean great pool and movies for the kids forever pits",
+        "cons": "Chicken tenders were over cooked, pool food wasnt to good"
+      },
+      {
+        "name": "TheElliotK",
+        "date": "2026-06-16",
+        "score": 7,
+        "type": "Family With Children",
+        "headline": "Great Hotel with a busy venue.",
+        "pros": "Facilities and staff were great. The communial pool and bar were fantastic.",
+        "cons": "Live concerts were held over the weekend which ended at 22h30, and our room was located near the entrance to the venue. The concerts themselves were not the issue. It was the noise due to people leaving and hanging around afterwards until the early hours. Guest experience could be improved by…"
+      },
+      {
+        "name": "Cabot",
+        "date": "2026-06-16",
+        "score": 7,
+        "type": "Couple",
+        "headline": "It was okay but not nothing memorable",
+        "pros": "Tropical vibe",
+        "cons": "Musty room, uncomfortable beds"
+      },
+      {
+        "name": "Sarah",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Beautiful hotel on Shelter island",
+        "pros": "Beautiful property! I love the tropical and botanical vibe. Great pool area with jacuzzi and bar offering great views of the marina!",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Michelle",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Great location with calm ambiance",
+        "pros": "The ambiance, security officer and pool staff were helpful.",
+        "cons": "Couldn’t order food via room service or find places to eat after 8P had to order via DoorDash."
+      },
+      {
+        "name": "Devin",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "I would stay here again if I came back to San Diego",
+        "pros": "Absolutely beautiful.",
+        "cons": "Concert tickets were expensive. Should be discounted for hotel guests"
+      }
+    ]
   },
   {
     "id": "lp280e6",
@@ -3879,7 +4103,63 @@
         "Overcharging",
         "Small rooms"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Saleh",
+        "date": "2026-06-16",
+        "score": 1,
+        "type": "Couple",
+        "headline": "Bad experience and I would not recommend it to anyone.",
+        "pros": "Disappointed",
+        "cons": "Extremely disappointing experience. I would not recommend staying at this hotel. We booked and paid for a room with a full water view, but we were given a room with only a partial water view. The front desk did not explain this to us, and we only found out from a housekeeping employee that we had…"
+      },
+      {
+        "name": "Mccoy",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Pretty room, clean and comfortable as well. The bed was comfortable and the bathroom good size. Nice pool and restaurant",
+        "cons": "Small room a tad bit dingy"
+      },
+      {
+        "name": "Blanco",
+        "date": "2026-06-11",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "Overall good",
+        "pros": "Location is nice, room was nice as well and clean.",
+        "cons": "I didn't get what I had booked and paid for. Was given wrong room at first then given a different room with not enough beds/pullout couch."
+      },
+      {
+        "name": "Missyp",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Clean comfortable room! Great hot tub!",
+        "cons": "Paying for parking"
+      },
+      {
+        "name": "Todd",
+        "date": "2026-06-07",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Luved it",
+        "pros": "Will 4 sure stay there again great location",
+        "cons": "All was good"
+      },
+      {
+        "name": "Chris",
+        "date": "2026-06-07",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Hawaii on the Mainland.",
+        "pros": "Location, pools, Bluwave restaurant.",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp31b7b",
@@ -5462,7 +5742,63 @@
         "Dated facilities",
         "Some cleanliness issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Haleh",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Nice weekend overall",
+        "pros": "Walking distance to the beach and restaurants and shops",
+        "cons": "Huge property on the older side. So rooms are a bit dingy and old"
+      },
+      {
+        "name": "Gaspar",
+        "date": "2026-06-19",
+        "score": 8,
+        "type": "Couple",
+        "headline": "We had a nice relaxing and enjoyable time.",
+        "pros": "The location was good. The food at the restaurants was good as well.",
+        "cons": "It had been a very long time since we stayed at the Bahia and I was looking forward to the room service they used to have. Unfortunately, they no longer have it so it was a disappointment for me."
+      },
+      {
+        "name": "woodfire",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Perfectly relaxing. Have stayed here multiple times and will keep coming back.",
+        "pros": "Perfect location, calm and quiet bay to relax on day and night plus an easy walk to Mission and Pacific Beach. Love the thoughtful details i.e. cabanas on private beach, beautiful and well maintained grounds, attentive staff and management. Everyone here works hard to maintain the resort feel.",
+        "cons": "The TV covered the bedroom window in the particular room we had. Wish the restaurant had more vegan options other than hummus and salad, but luckily lots of other options in SD."
+      },
+      {
+        "name": "Andrew",
+        "date": "2026-06-17",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "Convenient location with great view but not worth the price for the outdated room and lack of cleanliness",
+        "pros": "The view and convenience of having a private beach was nice",
+        "cons": "The rooms were small, and seemed outdated for the price. Unfortunately our beachfront room wasn’t ready by the “guaranteed” 4PM hour and we had to wait an additional 30 min before receiving our room key. Normally I wouldn’t make a deal out of this but after making an 11 hr road trip with 3 kids…"
+      },
+      {
+        "name": "Megan",
+        "date": "2026-06-11",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Good location and friendly staff. Easy walk to Belmont park and mission beach.",
+        "cons": "Not well maintained overall and some issues with cleaning. From the moment you walk into the lobby you get a sense of things- musty and dated. Choose rooms carefully as there are many buildings and some obviously much newer/updated than others."
+      },
+      {
+        "name": "Natalie",
+        "date": "2026-06-11",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Hot tub and seals. The beach. Close to beach and bay. Good food at the beach. Saw seals being fed. My mom was given a great view from her room. Drink at hot tub. Another day was delicious, and the hot tub was clean and hot like I remember from my first stay here with my daughter and mom.",
+        "cons": "I'm disappointed with Bianchi. Server spilled drink on my mom. Food wasn't as good as i thought it would be. They put us in the wrong room when we checked in. So it took a while to get that straightened out. The hot tub wasn't working the first time we used it. The water was milky."
+      }
+    ]
   },
   {
     "id": "lp1dd47",
@@ -6708,7 +7044,63 @@
         "Insects in room",
         "Parking difficulties"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Minhchau",
+        "date": "2026-06-16",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Clean, spacious room; great customer service; convenient location.",
+        "cons": "High parking fee ($45 a night), and parking entry/exit are narrow, hard to get in/out. In-room refrigerator is not cold; weak shower."
+      },
+      {
+        "name": "Alan",
+        "date": "2026-06-16",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Great place, right on Little Italy",
+        "pros": "Nice, clean comfortable room, big bed. Great location. Nice pool area",
+        "cons": "Nothing , for what we needed"
+      },
+      {
+        "name": "Angela",
+        "date": "2026-06-14",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great - would def stay again",
+        "pros": "Lovely rooms , great location would def stay again. Nice to have fridge and microwave in room. Nice bar and lobby area. Did not have time to use pool or bar area.",
+        "cons": "Couple of things - but not a deal breaker would have liked a light complementary continental breakfast and ceramic mugs rather than paper cups for hot drinks in rooms"
+      },
+      {
+        "name": "Eugene",
+        "date": "2026-06-13",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Receptionist very nice Josh was very professional",
+        "cons": "Breakfast not buffet"
+      },
+      {
+        "name": "Bernadette",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Excellent location. Plus view",
+        "cons": "The parking structure is tight"
+      },
+      {
+        "name": "Rachel",
+        "date": "2026-06-08",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Excellent place to stay in San Diego",
+        "pros": "Staff are excellent and so helpful. The hotel lobby is beautiful. Rooms are spacious and clean, no complaints from us. Nice to have an easy to access, well stocked gym available also. Location is excellent for Little Italy and most things are walkable from the hotel.",
+        "cons": "Pool could have been so much bigger and a hot tub would have been great, other than that the pool area is nice."
+      }
+    ]
   },
   {
     "id": "lp4f293",
@@ -7638,7 +8030,63 @@
         "Unexpected deposit charges",
         "Noise from elevators"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Timothy",
+        "date": "2026-05-18",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Awesome Location",
+        "pros": "Location",
+        "cons": "Hot water in shower took to long"
+      },
+      {
+        "name": "Keren",
+        "date": "2026-04-29",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Okay",
+        "pros": "The location",
+        "cons": "The staff. I paid extra for parking, the staff didn’t acknowledge, even after showing them a screen shot of the reservation which showed that it included parking"
+      },
+      {
+        "name": "Jose",
+        "date": "2026-04-15",
+        "score": 1,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Nothing",
+        "cons": "Everything"
+      },
+      {
+        "name": "Fernando",
+        "date": "2026-03-26",
+        "score": 1,
+        "type": "Solo Traveller",
+        "headline": "400 DOLLAR DEPOSIT FOR A 3 DAY STAY THAT I HAVEN'T GOT BACK AFTER 9 DAYS INSANITY",
+        "pros": "The lifts were very quick and also the location is ok if you are going to the convention center",
+        "cons": "It's been 9 days since my stay and I still haven't got my 400 dollars deposit back! that's right, a 400 USD DEPOSIT that I was told I would be released in maximum a couple of days. They wouldn't even charge you that much in a top Las Vegas resort, hopefully I'll get my money back soon, but I can't…"
+      },
+      {
+        "name": "David",
+        "date": "2026-03-16",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "We had a first class stay at Hotel Indego Dan Diego.",
+        "pros": "Clean room, friendly and accommodating staff from front desk to housekeeping. Everyone went out of their way to make sure we had a great stay. Thank you all.",
+        "cons": "I wish the downstairs restaurant would have been open for more than just breakfast."
+      },
+      {
+        "name": "Amanda",
+        "date": "2026-03-15",
+        "score": 5,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location. We were able to walk to where we wanted to go",
+        "cons": "My fridge was broken in my room and my food went bad. I was told my valet would be reimbursed but it never was"
+      }
+    ]
   },
   {
     "id": "lp2f3e4",
@@ -8100,7 +8548,63 @@
         "Cleanliness issues",
         "Small rooms"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Gatten",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "It met and exceeded my expectations for a value added budget hotel.",
+        "pros": "Its a good value for the money.",
+        "cons": "The internet and television capalbilities were terrible."
+      },
+      {
+        "name": "Lisa",
+        "date": "2026-06-18",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Good price for being right at Mission Bay but keep expectations low",
+        "pros": "Standard room, so grateful for a hotel bathroom with a good fan!",
+        "cons": "This isn't the same standard as other best Western hotels. On par with quality inn maybe. Beds were very firm but the pillows were great. I arrived at night and had to pause while waiting for local unhoused folks to wander away from the parking lot before I felt safe to even go check in. They were…"
+      },
+      {
+        "name": "Bhargava",
+        "date": "2026-06-10",
+        "score": 1,
+        "type": "Family With Children",
+        "headline": "Dingy, uncomfortable, and gross place to stay without any basic amenities for the price charged.",
+        "pros": "Nothing at all.",
+        "cons": "The bed sheets were not changed and clearly were soiled and smelling from the previous guest’s stay. The bathroom was untidy and the toilets didn’t flush properly. The floor in the room was very dirty and cannot walk barefoot as some grime would stick to your feet. Very uncomfortable and gross…"
+      },
+      {
+        "name": "Jocette",
+        "date": "2026-06-08",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "We like the carpetless room. Location was near restaurants, churches, & freeway. The staff was friendly and easy check in.",
+        "cons": "The room was tight and dog fees were ridiculously expensive! 70$ per night is outrageous. If they are charging for dogs stay then the hotel should provide something for the dogs such as snacks or towels. We have stayed at others hotels with dog fees of 15$ per dog/ night."
+      },
+      {
+        "name": "Dorothy",
+        "date": "2026-06-08",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Everything you need at a fair price",
+        "pros": "Convenient and has everything you need.",
+        "cons": "Noisy. Rooms have issues: fridge, clogged sink, AC having difficulty"
+      },
+      {
+        "name": "Christina",
+        "date": "2026-06-01",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Over it was okay and comfortable",
+        "pros": "It was clean and ready and good location",
+        "cons": "Kitchen. Waffle maker was down and there was a container of dirty liquids.telling customers to pour thier drinks in there rather than a drain"
+      }
+    ]
   },
   {
     "id": "lp1fa71",
@@ -8731,7 +9235,63 @@
         "Outdated workout room",
         "Minor cleanliness issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lee",
+        "date": "2026-06-19",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great location. Pools are awesome, staff was great.",
+        "cons": "Rooms are small and a bit dated. We had issues getting our room cleaned daily as well."
+      },
+      {
+        "name": "Kari",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Great stay with my family. Beautiful property, great heated pool and delicious restaurant!",
+        "pros": "Clean and comfortable",
+        "cons": "N/A"
+      },
+      {
+        "name": "Justin",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "The rooms are pretty basic, but the rest of the resort was pretty awesome. The whole atmosphere makes a person feel good. The staff is very helpful and they drive you to different locations if needed. It was one of the experiences I've ever had with a 3 star hotel. Also, it's also nice to look up…",
+        "cons": "There's nothing that was bad.. The only thing is the rooms are very basic which is expected from a 3 star hotel."
+      },
+      {
+        "name": "Patricia",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "They did provide a upgrade!",
+        "pros": "Pools and location",
+        "cons": "All the extra fees"
+      },
+      {
+        "name": "Mai",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Overall it was a good stay in the mid point of La Jolla and Balboa Park.",
+        "pros": "The location is good in Mission Bay Area.",
+        "cons": "Nothing to dislike."
+      },
+      {
+        "name": "Elisa",
+        "date": "2026-06-12",
+        "score": 3,
+        "type": "Couple",
+        "headline": "Even though the Bahia is a little more we will be returning to it. NO more Dana for us.",
+        "pros": "Bar staff was very pleasant and service was great.",
+        "cons": "The location is noisy. Too much road noise and the property is surrounded by public park with people blaring their music all day and night. People around the property smoking weed. Elevator smelled like weed every time we got into it."
+      }
+    ]
   },
   {
     "id": "lp3e850",
@@ -9636,7 +10196,63 @@
         "Noise from air conditioning",
         "High parking costs"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Gregory",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "Awesome Stay!!!",
+        "pros": "Cleanliness, staff and breakfast was awesome",
+        "cons": "Liked everything about the property"
+      },
+      {
+        "name": "Jessica",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Stay here - the staff are amazing and the rooms are great!",
+        "pros": "Check-in was fast and easy, staff were very friendly and welcoming, breakfast had a wide variety of options and all were above average for hotel breakfast. Our room was super-clean, well-appointed and the mattresses and pillows were great. Highly recommend and will stay again.",
+        "cons": "The pool was a little chilly - other guests said it was much warmer the prior day. But it was clean, they had a small variety of toys for kids which was awesome, so this was just a hiccup for us - not a significant issue."
+      },
+      {
+        "name": "Reza",
+        "date": "2026-05-27",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "The breakfast had many options and if you have special diet needs they will try to accommodate.",
+        "cons": "The parking fee it's steep."
+      },
+      {
+        "name": "Diana",
+        "date": "2026-05-26",
+        "score": 10,
+        "type": "Couple",
+        "headline": "comfortable, convenient, pricey",
+        "pros": "They have an outstanding buffet breakfast in the morning. The rooms are exceptional - full suites with kitchen area",
+        "cons": "early checkout by 11 am"
+      },
+      {
+        "name": "Rashida",
+        "date": "2026-05-09",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Beautiful hotel",
+        "pros": "The hotel and the grounds were beautiful.",
+        "cons": "The AC is rather loud when it’s running"
+      },
+      {
+        "name": "Karyn",
+        "date": "2026-05-07",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "all",
+        "cons": "n/a"
+      }
+    ]
   },
   {
     "id": "lp40614",
@@ -10452,7 +11068,63 @@
         "Some amenities not functioning",
         "Overpriced services"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Choo",
+        "date": "2026-06-14",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Beautiful luxury resort in San Diego",
+        "pros": "Great resort and overall property! The staff was very nice and responsive. Their primary restaurant Amaya had a tasty breakfast. Beautiful landscaping with a lot of activities for everyone.",
+        "cons": "We ordered room service and the chocolate strawberries and charcuterie board were great! We later ordered dinner (salmon and the smash burger). The salmon entree was very salty and the smash burger was not cooked well. Suggest you to go the restaurant for dining. We also had an issue with the wine…"
+      },
+      {
+        "name": "Laura",
+        "date": "2026-05-30",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Memorable",
+        "pros": "Everything",
+        "cons": "Nothing it was perfect"
+      },
+      {
+        "name": "I6480LVmichelec",
+        "date": "2026-06-12",
+        "score": 10,
+        "type": "Family",
+        "headline": "Amazing experience",
+        "pros": "Your senior director Neil Patel was so warm, knowledgeable and helpful. We will come back just for him! Addison was amazing.",
+        "cons": ""
+      },
+      {
+        "name": "S7874FRmichaeld",
+        "date": "2026-06-08",
+        "score": 4,
+        "type": "Family",
+        "headline": "I‘ll skip next time I‘m in SanDiegi",
+        "pros": "Nice room, very good concierge, very expensive Food and inattentive service. Isolated environment",
+        "cons": ""
+      },
+      {
+        "name": "Trip36515164287",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Family",
+        "headline": "Flawless and beautiful",
+        "pros": "My wife and I decided to go to there for our 30th wedding anniversary. We are avid travelers and I have been to 54 countries and stayed at hundreds of hotels and resorts. We were not familiar with this resort but we both enjoy golf and pickleball. Being from commercial construction and…",
+        "cons": ""
+      },
+      {
+        "name": "EscapedTheCity",
+        "date": "2026-06-04",
+        "score": 8,
+        "type": "Couples",
+        "headline": "Great reception",
+        "pros": "Most grateful that our room was available despite us checking in 4 hours early without any pre-request. We just assumed to drop our bags and go for lunch whilst waiting. Reception lady was amazing as was our room too, a Deluxe Veranda King. This room had a decent sized bath, separate shower, toilet…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp4247f",
@@ -11762,7 +12434,63 @@
         "Lack of attention to detail in cleanliness",
         "Sketchy area outside the hotel"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Chris",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "Lovely hotel and it is right in the centre but expensive parking and big drug homeless problem",
+        "pros": "Lovely pool and excellent rooms",
+        "cons": "Although it’s near the centre there a huge drug problem so many people homeless and scoring right in front of you. Can’t help but feel so sad Beware of parking it’s $60-70 a day!"
+      },
+      {
+        "name": "Ivan",
+        "date": "2026-06-08",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "Kind of disappointed in overall stay. For the price I would expect a higher level of cleanliness, th",
+        "pros": "View from the room was very nice",
+        "cons": "Terrible location, overrun with homeless people from the nearby train tracks. I would never return to this place again"
+      },
+      {
+        "name": "stephany",
+        "date": "2026-06-03",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Very nice views from our room. In a central area. Next to the house of blues",
+        "cons": "Valet is pretty pricey"
+      },
+      {
+        "name": "Alan",
+        "date": "2026-06-03",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Beautiful and comfortable accommodations...Spa suite was outstanding",
+        "cons": "Downtown is loud, but good insulated windowvhelped. Slept good for most part. Very comfortable bed. Bathroom was amazing"
+      },
+      {
+        "name": "Rachel",
+        "date": "2026-05-22",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Comfortable stay in lively area",
+        "pros": "The staff were so friendly! Hotel was very cute, and appreciated the coffee and breakfast.",
+        "cons": "Really wish the bathroom had a proper door."
+      },
+      {
+        "name": "Karla",
+        "date": "2026-05-04",
+        "score": 7,
+        "type": "Extended Group",
+        "headline": "Good room probably will stay again in a bigger room",
+        "pros": "Location was good, good value for money",
+        "cons": "Some of the room looks like it needs renovating"
+      }
+    ]
   },
   {
     "id": "lp27311",
@@ -12432,7 +13160,63 @@
         "Safety concerns in the vicinity",
         "Noise disturbances in rooms"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Suzanne",
+        "date": "2026-05-31",
+        "score": 5,
+        "type": "Couple",
+        "headline": "",
+        "pros": "beautiful building",
+        "cons": "too loud"
+      },
+      {
+        "name": "Rana Shoaaib",
+        "date": "2026-05-30",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "The historic facade and architecture",
+        "cons": "The facilities were limited. The WiFi was not working when we stayed there."
+      },
+      {
+        "name": "Orlando",
+        "date": "2026-05-06",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Fantastic",
+        "pros": "Very comfortable beds",
+        "cons": "N/A"
+      },
+      {
+        "name": "Paul",
+        "date": "2026-05-03",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Decent location, Features from the building being originally a bank were interesting.",
+        "cons": "Noisy at night"
+      },
+      {
+        "name": "David",
+        "date": "2026-04-08",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Our stay was definitely spoilt by the homeless, we would never stay in that area again.",
+        "pros": "The room was very comfortable. The lifts were very good we never waited too long.",
+        "cons": "The main thing that spoiled our stay was the dozens of homeless around the hotel.Sometimes they could be very intimidating, they were lying in the street, bus shelters, shop doorways and on occasions shouting at us."
+      },
+      {
+        "name": "William",
+        "date": "2026-03-27",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The room was excellent, and the staff was helpful. They even brought up some toothpaste.",
+        "pros": "The hotel had interesting architecture because it was a remodeled bank.",
+        "cons": "The hotel didn’t provide parking, which I hadn’t realized. But the close by private parking was available and inexpensive. I fully understand why they couldn’t provide parking."
+      }
+    ]
   },
   {
     "id": "lp896c7",
@@ -13335,7 +14119,63 @@
         "Breakfast could be improved",
         "Initial cleanliness concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Willen",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Close proximity to everything. Pblic transportation was excellent to get to further destinations on our agenda.",
+        "cons": "Use of parking garage with room key needs improvement."
+      },
+      {
+        "name": "von Minden",
+        "date": "2026-06-17",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Good option for cruisers",
+        "pros": "Location right near the cruise dock! Room had plenty of space.",
+        "cons": "We had to move rooms because first one was dirty. But staff was helpful and quick to make changes."
+      },
+      {
+        "name": "Tamara",
+        "date": "2026-06-15",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "It’s nice we enjoy staying there and will use the place again for next out get away",
+        "pros": "Our room was facing nice view to the ocean",
+        "cons": "The pool was small and lots of kids and to crowded , also we called for late check out , but we did pay full price for the garage bcz the late check up 🙂"
+      },
+      {
+        "name": "monica",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Had a great time.",
+        "pros": "both of you was nice. I like everything was on one floor.",
+        "cons": "That It was a little pricey for just two nights"
+      },
+      {
+        "name": "Marija",
+        "date": "2026-06-10",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Fabulous and go back to hotel!",
+        "pros": "Location, view, clean and superb very friendly staff. Great breakfast. Spacious room - our was bay view - dream. Restaurant on the 5th floor fantastic. Swimming pool!",
+        "cons": "There is nothing I didn't like!"
+      },
+      {
+        "name": "Álvarez",
+        "date": "2026-06-06",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Great stay",
+        "pros": "It is very nice and comfortable, good location and very clean",
+        "cons": "Nothing"
+      }
+    ]
   },
   {
     "id": "lp334b9",
@@ -14009,7 +14849,63 @@
         "Room comfort issues",
         "Overpriced for some"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Margarita",
+        "date": "2026-06-17",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Comfortable",
+        "pros": "Close to shops, grocery.",
+        "cons": "Still under renovation, for the price breakfast should come with the stay."
+      },
+      {
+        "name": "Andrew",
+        "date": "2026-06-15",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Ok for a couple of nights.",
+        "pros": "Location and staff",
+        "cons": "Felt out dated wth lots of brown!"
+      },
+      {
+        "name": "Timothy",
+        "date": "2026-06-15",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Room was decent. Wasn’t the weekend beach getaway we had planned and hoped for. There were several other hotels for le",
+        "pros": "Room was clean, quiet and newly remodeled.",
+        "cons": "Didn’t get notified the property was fully under construction, was told in a message on the app there was “some” renovation taking place but none of the amenities would be affected. The entire parking lot and parking structure was closed, equipment and dumpsters as far as the eye could see. Yet…"
+      },
+      {
+        "name": "Amanda",
+        "date": "2026-06-14",
+        "score": 4,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location is perfect for walking to restaurants and beach.",
+        "cons": "The property is under construction and we were not told before booking. They were remodeling the room directly above us and drilling and sawing started at 8 am every morning except Sat….parking is under construction so there are really only about 10 parking spots, I got two tickets bc parking on…"
+      },
+      {
+        "name": "Lolita Falk",
+        "date": "2026-06-12",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Nice stay",
+        "pros": "Room was nice, staff was nice The rooms were nice, except there are no electrical plugs near the nightstands.",
+        "cons": "I wish I would have been told about the coffee in the lobby in the morning."
+      },
+      {
+        "name": "Mariel",
+        "date": "2026-06-12",
+        "score": 3,
+        "type": "Solo Traveller",
+        "headline": "If you don't need a peaceful stay or kind staff, this option suffices.",
+        "pros": "The location is all it has going for it. It's walkable to cafes, gyms, and multiple beaches. The room itself works just fine.",
+        "cons": "Rude and dismissive customer service, made me cry. Loud crashing and screeching construction noises wake you up early in the morning and continue throughout the day. The room listing says \"streaming services (like Netflix) available\" and the TV quite literally doesn't let you select anything except…"
+      }
+    ]
   },
   {
     "id": "lp19eda",
@@ -15262,7 +16158,63 @@
         "Long breakfast lines",
         "No hot tub"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Cecelia",
+        "date": "2026-06-20",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Madison at the property provided above beyond service. She was well experience, good research and w",
+        "pros": "Madison at the property provided above beyond service. She was well experience, good research and went out her way to accommodate. Outgoing personality. Thank you, Ms. Madison Square Garden.",
+        "cons": "n/a"
+      },
+      {
+        "name": "Najiah",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Nice",
+        "pros": "The people in the manager, it’s awesome",
+        "cons": "The manager, it’s awesome and understand customer problem in he’s looking forward to Help"
+      },
+      {
+        "name": "Karen",
+        "date": "2026-06-19",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Not clean and the $70 per parking is very expensive, but the location is great.",
+        "pros": "The location is great, and the receptionist Khalid was very kind, welcoming, and willing to help with everything we needed.",
+        "cons": "Cleanliness and room maintenance definitely need improvement. I had a semi-clogged bathroom sink, and the room was dirty. The staff changed our room and even upgraded us to one with a better view, but in the new room, the hall light wasn’t working, and there was water leaking from the side of the…"
+      },
+      {
+        "name": "Rex",
+        "date": "2026-06-17",
+        "score": 5,
+        "type": "Couple",
+        "headline": "A decent enough hotel in a nice location close to the bay, especially for people who don’t really eat breakfast.",
+        "pros": "Good location. Spacious room.",
+        "cons": "Breakfast buffet requires waiting in long lines for an employee to ladle out the food for each guest. Also, there are no convenient nearby restaurants for breakfast options."
+      },
+      {
+        "name": "Connie",
+        "date": "2026-06-08",
+        "score": 4,
+        "type": "Family With Children",
+        "headline": "Disappointing!",
+        "pros": "The hotel restaurant while overpriced was very accessible and had a good variety of food. They were a little large on the kids portions and could cut back there on price and quantity. The food was good and the staff in the restaurant were excellent. The hotel location is excellent and allows access…",
+        "cons": "The carpet in our room was filthy. I doubt it has been shampooed in a very long time. The platforms that they now have the beds on were also filthy and felt gritty and sticky. We were asked to go green and avoid having our room made up everyday. We did so willingly, but when they did clean they…"
+      },
+      {
+        "name": "Brian",
+        "date": "2026-06-04",
+        "score": 4,
+        "type": "Family With Children",
+        "headline": "Good location, poor front desk operations. They need more training.",
+        "pros": "Clean, indoor pool, the restaurant, breakfast and evening reception.",
+        "cons": "Front desk lady. Check-in took too long (it took them until 6:30pm to check us in). Never received a call from them stating our room was ready. Overcharged us on parking by double. Called and they are issuing a credit back in 2-3 days."
+      }
+    ]
   },
   {
     "id": "lp7c194",
@@ -15968,7 +16920,63 @@
         "Cleaning product smell",
         "Parking issues"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Yufang",
+        "date": "2026-05-31",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Excellent location",
+        "pros": "Excellent location and friendly staff",
+        "cons": "No fridge and carpet can use deep cleaning"
+      },
+      {
+        "name": "Timothy",
+        "date": "2026-05-30",
+        "score": 9,
+        "type": "Couple",
+        "headline": "All good",
+        "pros": "Really appreciated them bringing us a fridge when we asked if there was one in the room",
+        "cons": "Nothing"
+      },
+      {
+        "name": "wickens",
+        "date": "2026-05-22",
+        "score": 10,
+        "type": "Couple",
+        "headline": "We came down for the Dodger/Padre game and walked from our Hotel there is was convenient",
+        "pros": "Close to everything ,free nice aluminum water bottle , fresh cookies the staff especially Samm she was great!",
+        "cons": "Nothing it was great"
+      },
+      {
+        "name": "Peg",
+        "date": "2026-05-21",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Good location, no parking, tiny room, won’t stay again",
+        "pros": "Bikes, location",
+        "cons": "Noise, location above a noisy bar and the exhaust fans underneath our room, tiny room, no microwave, no refrigerator, no parking"
+      },
+      {
+        "name": "G",
+        "date": "2026-05-18",
+        "score": 5,
+        "type": "Solo Traveller",
+        "headline": "My stay was fair.",
+        "pros": "The location was superior.",
+        "cons": "There was a smell to the room. The room was small. There weren't many bonuses included (i.e. breakfast). This would not be an area of contention if the overall price for a three day stay was not over $850.00."
+      },
+      {
+        "name": "Heather",
+        "date": "2026-05-17",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "It was ok",
+        "pros": "There was no breakfast the location was bad it was. A pet friendly hotel but no place to take your pet for bathroom brakss",
+        "cons": "It was kinda far to where I was goong"
+      }
+    ]
   },
   {
     "id": "lp1cbe8",
@@ -17687,7 +18695,63 @@
         "Long check-out process",
         "High resort fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Karim",
+        "date": "2026-06-14",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Below average unfortunately",
+        "pros": "The hotel stay was great and staff very professional",
+        "cons": ", HOWEVER the parking situation is absolutely terrible. First off we were given a parking card for the convention center and not for the main parking, second the main parking was closed so we had to park a bit too far, carrying our luggage was a real pain, then we were given a parking paper with a…"
+      },
+      {
+        "name": "Cheryl",
+        "date": "2026-06-09",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "I usually stay at the Grand Hyatt but my family and I really enjoyed our time here so I’m sure we will be back.",
+        "pros": "The pool area is fantastic! Plus the balcony off the room made it more memorable.",
+        "cons": "It’s pretty pricey especially after you include the daily parking fees and daily mandatory resort fees."
+      },
+      {
+        "name": "Christine",
+        "date": "2026-05-28",
+        "score": 10,
+        "type": "Couple",
+        "headline": "I will definitely stay there again. I love the location of the hotel.",
+        "pros": "Property is clean . Access at the seaport where you can walk/run.",
+        "cons": "None."
+      },
+      {
+        "name": "Mustafa",
+        "date": "2026-05-28",
+        "score": 3,
+        "type": "Extended Group",
+        "headline": "Never ever!",
+        "pros": "Nothing!!!",
+        "cons": "From the moment you arrive, you are greeted by the rudest staff. After a 6-hour journey, you are met by the rudest person imaginable, acting as if you don't know why you're there. They don't even offer you water; you're told to buy it yourself at the market. In the morning, despite a \"do not…"
+      },
+      {
+        "name": "Christine",
+        "date": "2026-05-26",
+        "score": 2,
+        "type": "Family With Children",
+        "headline": "Was I even at a Marriott?",
+        "pros": "Pool area was fun for kids",
+        "cons": "Tampon applicator found in room, my kid picked it up - that’s beyond disgusting. House keeping also left out door open, pool water was cloudy from all the folks, hot tub had dead flies floating around…everything was beyond overpriced but that could just be our economy…parking garage trash was…"
+      },
+      {
+        "name": "Daniel",
+        "date": "2026-05-26",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Great location but very busy",
+        "pros": "Really nice location and pool area",
+        "cons": "Elevator situation was a mess. Often had to wait in lines or for several full elevators to pass, 5-10 minutes was usual."
+      }
+    ]
   },
   {
     "id": "lp20091",
@@ -19179,7 +20243,63 @@
         "Poor cleanliness",
         "Maintenance issues reported"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Lesley",
+        "date": "2026-06-18",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Amazing stay",
+        "pros": "We had a fantastic time at this hotel. The location was brilliant close to waterfront and the local transport Also close to seaport village. This had shops and restaurants We had breakfast included which was great- buffet style We were celebrating both my husband and son’s birthday and the hotel…",
+        "cons": "There were only 2 issues 1 there was a lot of work going on to improve the hotel. One of the pools was closed during our stay. We were not aware of these improvements when we checked in. It didn’t impact on our stay but it would have been good to know about it at check in 2. The only other thing…"
+      },
+      {
+        "name": "Sandra",
+        "date": "2026-06-15",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Good Location in Down Town",
+        "pros": "Nice Hotel close to the port in San Diego. Location is good to explore the city and to go out for diner. Nice rooftop in the hotel with a nice view. Staff was friendly and check in was really fast and easy.",
+        "cons": "Parking is way to expensive for hotel guest. Pool are needs renovation."
+      },
+      {
+        "name": "Leah",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Impeccable, perfect, and I am hypercritical.",
+        "pros": "Beautiful, spotless, spacious, convenient, wonderful staff!",
+        "cons": "It was literally perfect!"
+      },
+      {
+        "name": "Brandin",
+        "date": "2026-05-24",
+        "score": 1,
+        "type": "Family With Children",
+        "headline": "Rude staff. Did not give us what we booked",
+        "pros": "Property is nice staff is rude",
+        "cons": "Booked a queen room with 2 queen beds on a high floor and got a double room with 2 double beds. When I went to. Check in the receptionist said they were very booked and had “a lot of moving around to do” sounds like a you guys problem and not mine. Not sure why I made the booking if I didn’t get…"
+      },
+      {
+        "name": "Milton",
+        "date": "2026-05-24",
+        "score": 4,
+        "type": "Solo Traveller",
+        "headline": "Not worth the price",
+        "pros": "Location",
+        "cons": "First, the key card system failed twice, and we had to wait a total of 2 hours in line to resolve the issue. The rooms didn't have enough space to store our clothing or enough drawers. There was a hole or crack in the wall near the fire sensor, which is very concerning. The view through the windows…"
+      },
+      {
+        "name": "sylvie",
+        "date": "2026-05-08",
+        "score": 7,
+        "type": "Solo Traveller",
+        "headline": "mini vacation",
+        "pros": "they finally have the adult pool open after 3-4 years perfect for relaxing",
+        "cons": "I wasnt aware that part of the hotel was STILL under construction and some areas closed if I knew this... I might of not stay there. this hotel is my usual go too place"
+      }
+    ]
   },
   {
     "id": "lp31b3c",
@@ -20003,7 +21123,63 @@
         "Rude service",
         "Outdated rooms"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Omri",
+        "date": "2026-06-13",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Great location but old, outdated and dirty room.",
+        "pros": "Location",
+        "cons": "Rooms are outdated. Carpet is filthy with many stains. Curtains are dirty and ripped. Beds are uncomfortable. Door to bathroom doesn’t close properly. Toilet doesn’t flush properly. Safe in room is locked. The kitchen has no utensils, pots, or any dish wares."
+      },
+      {
+        "name": "Brandon",
+        "date": "2026-06-13",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The amenities were very nice and the property was clean and well kept the rooms were always cleaned by housekeeping with no hassle, valet was very efficient",
+        "cons": "I didn’t like how for the price of the rooms valet is not included for guests. For the price of a luxury hotel that should be included"
+      },
+      {
+        "name": "Michelle",
+        "date": "2026-05-29",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great stay in San Diego on Mission Bay. Food was delicious and location, the BEST",
+        "pros": "Loved the breakfast outside . Super choices!",
+        "cons": "Spa menu was unclear"
+      },
+      {
+        "name": "Karla",
+        "date": "2026-05-29",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Overall great place and staff was wonderful, will visit again",
+        "pros": "It was very nice and well kept",
+        "cons": "The only thing was valet parking. It could of been shortage of staff but when we arrived there was only 1 car ahead of us and the non busy valet person was just hanging around and never approached the car, I had to get off and go ask if he was valet and if they were in service and he was like yeah…"
+      },
+      {
+        "name": "Crystal",
+        "date": "2026-05-21",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "We stayed there to celebrate my granddaughter‘s San Diego State graduation. We paid for and reserved a bonfire with Bays",
+        "pros": "It’s right on the beach and it’s very pretty like Hawaii",
+        "cons": "Not enough signs to tell you how to get to the lobby or to the beach"
+      },
+      {
+        "name": "Marcelo",
+        "date": "2026-04-27",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Location and hotel resort",
+        "pros": "Oceana restaurant, beach, pool.",
+        "cons": "Cleaning could be better and staff could be more helpful and friendly. Interaction with front desk was not as you expect from a resort"
+      }
+    ]
   },
   {
     "id": "lpf46fb",
@@ -20920,7 +22096,63 @@
         "Breakfast service issues",
         "Unpleasant condition with the complimentary water"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Nayef",
+        "date": "2026-05-04",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Good view, basic stay.",
+        "pros": "The view",
+        "cons": "Room service is closed at 9pm. Also, starbucks that is in the hotel closes 4pm. Also, you need two elevators to reach your room. The cost of the valet was overpriced."
+      },
+      {
+        "name": "Limor",
+        "date": "2026-04-24",
+        "score": 2,
+        "type": "Solo Traveller",
+        "headline": "Great Facility and location but unprofessional staff that makes this un worth it",
+        "pros": "the location is pefect, the food at tbe bar was great and the facility was great",
+        "cons": "The staff is just unproffesional, to be honest I am so tiered of tell the story over and over and over again... there is an overcharge of two days that booking.com and this property keep sending me back to one another, and no one at the hotel was even close to giving some kind of an answer that…"
+      },
+      {
+        "name": "Erin",
+        "date": "2026-04-22",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Great spot for downtown access",
+        "pros": "Fabulous views, great bar. Room was clean, comfortable.",
+        "cons": "Getting into / out of the hotel requires transferring from one elevator from street or parking garage to 3rd floor lobby, different elevator to rooms. Waits were sometimes long . Bathroom was dimly lit."
+      },
+      {
+        "name": "Drew",
+        "date": "2026-03-31",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Bright",
+        "cons": "Not the best set up for someone who needs ADA."
+      },
+      {
+        "name": "Roman",
+        "date": "2026-03-23",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Amazing stay",
+        "pros": "How everything was clean and with friendly staff",
+        "cons": "The elevators were working to slow"
+      },
+      {
+        "name": "Resort15467161785",
+        "date": "2026-06-07",
+        "score": 2,
+        "type": "Couples",
+        "headline": "A very poor representation of the InterContinental brand, expired food included!",
+        "pros": "TL;DR: DO NOT STAY HERE. Two month expired food provided in room service. Security used to intimidate as part of their process to collect complaint information handled via their insurance. 1/ FOOD SAFETY + SERVICE We stayed two nights at the InterContinental San Diego because the InterContinental…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp297d2",
@@ -21753,7 +22985,63 @@
       "cons": [
         "Cleanliness issues with sliding door"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Michael",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "All in all, it was pretty good",
+        "pros": "The location was good. The staff was wonderful nice bar that’s about all. I got out of it, but it was a very nice hotel top of the list.",
+        "cons": "The extra fees were a little disappointing"
+      },
+      {
+        "name": "Glover",
+        "date": "2026-06-08",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The property was clean but some maintenance issues.",
+        "cons": "The maintenance issues."
+      },
+      {
+        "name": "christopher",
+        "date": "2026-04-07",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location",
+        "cons": "Coffee"
+      },
+      {
+        "name": "Grace",
+        "date": "2026-04-03",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Good location",
+        "cons": "Waited for my room"
+      },
+      {
+        "name": "366makana",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Friends Getaway",
+        "headline": "Guest service",
+        "pros": "The valet, Hasan, was extremely helpful with everything and made the night much smoother. He was very kind, helped guide us on where to go, and answered any questions we had. Great service and very appreciated.",
+        "cons": ""
+      },
+      {
+        "name": "664belles",
+        "date": "2026-05-26",
+        "score": 10,
+        "type": "Friends Getaway",
+        "headline": "An Epic Night Made Even Better by Amazing Hospitality!",
+        "pros": "I attended Love Isn't Blind at the Hilton San Diego Gaslamp Quarter and had such a fun experience! Before the event even started, there was a wonderful outdoor space where guests could mingle, play games, take fun photos, and grab drinks. It created such a relaxed and welcoming atmosphere and was…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp41323",
@@ -22296,7 +23584,63 @@
         "High food prices",
         "Inoperative amenities"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Gretchen",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "I would stay again fir the location, facilities, and staff.",
+        "pros": "Location and facilities",
+        "cons": "There was an hour and a half after midnight of loud partying."
+      },
+      {
+        "name": "Marie Joy",
+        "date": "2026-06-12",
+        "score": 5,
+        "type": "Extended Group",
+        "headline": "I will never stay here again.",
+        "pros": "It had a lot of parking. But we had to pay daily. The staff was very nice and accommodating .",
+        "cons": "It needs an up grade, No cabinets to store clothes, it had a free standing cabinet that held the iron and ironing board, not much room to hang clothes, the iron was leaking. So many extra fees. It felt old for a hotel under the Marriott logo."
+      },
+      {
+        "name": "Roxanne",
+        "date": "2026-06-11",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "Overall great hotel and location. Clean and comfortable",
+        "pros": "Location, close to nearby entertainment",
+        "cons": "Paying for parking"
+      },
+      {
+        "name": "Fiscus",
+        "date": "2026-06-08",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "Overall it was okay and nice but not sure if I'd stay there again",
+        "pros": "Our first night we went to the lounge and a nice gentleman was our bartender and he was amazing. Very accommodating and he made us laugh. Also nice people staying there that we met as well.",
+        "cons": "That I thought complimentary meant a free breakfast as it said on the booking app. After picking out what was available then we thought we were going to take our stuff back up to our room and the lady says that will be $57.23... Both my man and I were jaw dropped. The homeless being told about…"
+      },
+      {
+        "name": "Ora",
+        "date": "2026-06-05",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Excellent choice. Would stay again in the future.",
+        "pros": "Service excellent. Food good. Staff cordial and helpful. Enjoyed my stay.",
+        "cons": "Handicapped room beds too low. Not as much space as regular rooms. Had to change to regular room. Low Toliet."
+      },
+      {
+        "name": "Jolenr",
+        "date": "2026-06-03",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Nice hotel great staff very clean. Good price.",
+        "cons": "The beds were not comfortable."
+      }
+    ]
   },
   {
     "id": "lp1ae805",
@@ -22882,7 +24226,63 @@
         "Cleanliness could be significantly improved",
         "Food service was inadequate at times"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Steven",
+        "date": "2026-06-11",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "",
+        "pros": "The employees are outstanding. Breakfast was great. Rooms",
+        "cons": "Had to go to your sister property to use the computer and printer."
+      },
+      {
+        "name": "Juliet",
+        "date": "2026-06-08",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Very airport-convenient",
+        "pros": "Proximity to airport. Staff was very nice including the morning airport shuttle driver.",
+        "cons": "The front desk was overworked. They were doing there best but the hotel was fully booked and there was not enough staff to refill the hot water and look after everyone’s needs (on top of checking a constant flow of people checking in)"
+      },
+      {
+        "name": "Kenny",
+        "date": "2026-06-02",
+        "score": 9,
+        "type": "Couple",
+        "headline": "not bad stay and play. will be back",
+        "pros": "the location was good",
+        "cons": "could have add more fruits and different types of food to the breakfast."
+      },
+      {
+        "name": "James",
+        "date": "2026-06-02",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Functional hotel near the airport used for a one-night stay after a flight from the UK. Good-sized gym and pool (although I did not use the latter). Good - and free - transport to the car hire terminal at the airport.",
+        "cons": "Nothing I didn't like - just fairly basic and functional (as advertised)."
+      },
+      {
+        "name": "Karen",
+        "date": "2026-06-01",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Quick over night stay .",
+        "pros": "Friendly reception, convenient to airport , shuttle service was quick , room was clean and comfortable .",
+        "cons": "No restaurant on site . Continental breakfast does open until 7 am so if you have early flight to catch it's unavailable. Was one of reasons for choosing this facility ."
+      },
+      {
+        "name": "Martha",
+        "date": "2026-05-22",
+        "score": 8,
+        "type": "Couple",
+        "headline": "It was a great location near the airport. Shuttle service was provided and you can ride public transportation to downtow",
+        "pros": "The location.",
+        "cons": "It was undergoing some kind of renovation. The pool was not really heated like advertised. Very cold."
+      }
+    ]
   },
   {
     "id": "lp1efe9",
@@ -24080,7 +25480,63 @@
         "Limited healthy food options",
         "Parking fees"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Jack",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Great location on the water. Staff were friendly and accomodative.",
+        "cons": "Its a large place and it can feel a bit impersonal. You feel like a conventioneer and not necessarily a guest. Parking is steep."
+      },
+      {
+        "name": "Juliette",
+        "date": "2026-06-13",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Ruined experienced through reception scam but otherwise would have been good",
+        "pros": "Great room and facilities. Very comfortable bed. Lovely views of San Diego. Great location. Very peaceful.",
+        "cons": "On check I was asked to pay an extra $46 to maintain the facilities which were all included in my booking. It was a scam to make money out of guests - be careful folks. Really upset and unsettled me and given I was there only one night tainted the experience ."
+      },
+      {
+        "name": "Nigel",
+        "date": "2026-06-09",
+        "score": 7,
+        "type": "Couple",
+        "headline": "Corporate",
+        "pros": "Location beautiful",
+        "cons": "I was charged on my credit card of a bill that wasn’t mine and I still havnt got the full amount back and the apology was poor"
+      },
+      {
+        "name": "Daniela",
+        "date": "2026-06-06",
+        "score": 8,
+        "type": "Extended Group",
+        "headline": "Pleasant",
+        "pros": "Very spacious hotel with very large swimming pool areas, several options for eating on the premises, spa, gym, tennis. Rooms spacious, beds comfortable. Aside from being around the pool and having a drink at the bar, there isn't much one can do here as the place is quite isolated. The free shuttle…",
+        "cons": "Wifi, not requiring any password, gave us some trouble. Though I found the price per night to be very reasonable for the value, the prices for the Spa services were ridiculous. Some of the staff could be slightly friendlier."
+      },
+      {
+        "name": "Teresita",
+        "date": "2026-06-06",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Good for a weekend getaway.",
+        "pros": "Quiet, access to beach, great views.",
+        "cons": "Charge for parking."
+      },
+      {
+        "name": "cherrell",
+        "date": "2026-05-18",
+        "score": 6,
+        "type": "Couple",
+        "headline": "Very quiet and nice view.",
+        "pros": "THE VIEW . FOOD AND DRINKS WERE GOOD. THE FRONT DESK LADY WAS VERY SWEET AND HELPFUL. LOVE THAT THERE IS A ADULTS ONLY POOL AS WELL . THE RESORT IS WATER FRONT.",
+        "cons": "The room needs to be updated aslo Valet or self parking should be free for guess stay at the resort because the location is literally on it on island also the price you pay there was no perks. If you don't valet you pay a fee everytime you exit the resort."
+      }
+    ]
   },
   {
     "id": "lp1db4a",
@@ -24509,7 +25965,63 @@
         "Fridge issues",
         "Check-in delays"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Andrea",
+        "date": "2026-06-14",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Friendly staff, clean and quiet room, great breakfast",
+        "cons": "Nothing."
+      },
+      {
+        "name": "roeland",
+        "date": "2026-06-02",
+        "score": 5,
+        "type": "Couple",
+        "headline": "Horroble for a family trip",
+        "pros": "Literally nothing",
+        "cons": "It’s old and aimed at businesses. They call themselves La Jolla but they are far away from any fun that La Jolla has. Misleading name!"
+      },
+      {
+        "name": "Jane",
+        "date": "2026-05-25",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Only thing I wish was that I was able to book soccer tournament rate (I booked after discounts had expired). Nicole, wor",
+        "pros": "Wonderful for a large group of young kids participating in a soccer tournament nearby. Pool was wonderful till someone pooped in it, then closed for Saturday & Sunday of Mem Day weekend….",
+        "cons": "Loved everything! Closure of pool was to protect guests"
+      },
+      {
+        "name": "Merino",
+        "date": "2026-05-24",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Ver clean room, staff was friendly, and great safe location.",
+        "cons": "Nothing"
+      },
+      {
+        "name": "susanmL2926TP",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "NONE",
+        "headline": "Perfect Facility for Entertaining Family, Facilitating Flow, Ease",
+        "pros": "A perfect location and hotel where personal, ease are facilitated by the Hyatt Regency La Jolla at Aventine. Food, service, amenities, lovely.",
+        "cons": ""
+      },
+      {
+        "name": "JoyGarch",
+        "date": "2026-06-15",
+        "score": 8,
+        "type": "NONE",
+        "headline": "Comfortable stay…",
+        "pros": "We had a pleasant stay at the Hyatt Regency La Jolla. The hotel was clean and well maintained, although the standard room felt a bit small. Breakfast at Shor was very good, but the breakfast menu offered only limited choices. One feature I especially appreciated was the complimentary Tesla charging…",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp9aa02",
@@ -25516,7 +27028,63 @@
         "Service inconsistency",
         "Long wait times"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Adrine",
+        "date": "2026-05-26",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "Great hotel close to conference center",
+        "pros": "Convenient location in the center close to conference center.",
+        "cons": "Prices became too high."
+      },
+      {
+        "name": "kari",
+        "date": "2026-05-21",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Nice but seems over priced",
+        "pros": "Location was perfect for baseball game but 4 blocks and you were with the homeless of San Diego",
+        "cons": "Price"
+      },
+      {
+        "name": "JoseAntonio",
+        "date": "2026-04-17",
+        "score": 4,
+        "type": "Couple",
+        "headline": "Great rooms but untrained staff with lack of service attitude.",
+        "pros": "Rooms",
+        "cons": "Staff lacks hospitality skills, I was not helped with the luggage when I arrived. I had to call to ask for sleepers, when I asked about a reservation I was referred to “use open table”."
+      },
+      {
+        "name": "Chinara",
+        "date": "2026-03-30",
+        "score": 3,
+        "type": "Couple",
+        "headline": "Everything is wrong with the hotel. No fresh fruits or juice by the pool, no herbal tea, paper cups and plastic cutlery.",
+        "pros": "Location only",
+        "cons": "I travel a lot. This hotel really puzzled me why charges as 5 star. Room smelled unpleasantly. Hideous design of the rooms. We couldn't stop laughing why shower room has clear glass almost in the middle of the room in front of the bed. Don't believe me? Have a visit. It's hilarious. There are…"
+      },
+      {
+        "name": "Julie",
+        "date": "2026-03-09",
+        "score": 9,
+        "type": "Extended Group",
+        "headline": "Overall a positive experience",
+        "pros": "Comfortable a clean rooms. Restaurants and lounge were very good, food and service.",
+        "cons": "Concierge and front desk service was lacking, asked about having a hair blowout somewhere, gave one suggestion,and said if we wanted any help from them it had to be within the n xt 20 minutes as they were leaving for day (4:30p) and it would have been extremely helpful for the front desk knowing we…"
+      },
+      {
+        "name": "scmami",
+        "date": "2026-06-11",
+        "score": 10,
+        "type": "NONE",
+        "headline": "Perfect Stay",
+        "pros": "Excellent hotel with really good food right near the ballpark. We had early check in and late check out. Room was immaculate. We had a great bellhop and desk agents. I truly could not have asked for a better stay! We'll be back next time we're in San Diego!",
+        "cons": ""
+      }
+    ]
   },
   {
     "id": "lp6d771",
@@ -26114,7 +27682,63 @@
         "Small rooms",
         "Limited breakfast options"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Angel Salvador",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Breakfast, staff, location",
+        "cons": "parking"
+      },
+      {
+        "name": "Daria",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The location is the main advantage of the place - it is right in the center of Little Italy with all the bars, restaurants and farmer's market around. There is no space to serve a proper breakfast but the hotel is doing their best with serving yoghurt, cheese, pastries, fruit, juice and tea/coffee…",
+        "cons": "The room was tiny, we could barely move around with two people, even though we didn't have big luggage. It is ok for a very short stay but would be annoying for longer stays."
+      },
+      {
+        "name": "Yesenia",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Not that far from my business meeting",
+        "cons": "Parking"
+      },
+      {
+        "name": "Ryan",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "My stay was short but if I had to do the trip all over again I would definitely stay here again.",
+        "pros": "The room was very well kept and clean when I arrived. The staff was great and very accommodating, and I think the location was in a solid area.",
+        "cons": "NA"
+      },
+      {
+        "name": "Hannah",
+        "date": "2026-06-13",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Nice place, quiet, good location",
+        "pros": "The staff were nice, helpful and efficient. Hotel is close to the train station, easy to find. Area is pretty safe and very quiet. There's a convenience store nearby, a 7Eleven (24h store) next door, close to Little Italy with lots of nice restaurants. There's coffee at the lobby, PLUS a decent…",
+        "cons": "Room was a bit small, but since I was traveling solo, it met my needs. I think the room size was very reasonable for the price, but if you're a family of 3 - you need something bigger. As for the coffee machine in the room: you might want to BYO half-and-half/milk (maybe get some at 7Eleven)…"
+      },
+      {
+        "name": "Christopher",
+        "date": "2026-06-13",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Good location near Little Italy",
+        "cons": "Our room was next to the alley and there was a lot of noise happening back there at night."
+      }
+    ]
   },
   {
     "id": "lp2bb63",
@@ -26853,7 +28477,63 @@
         "High prices",
         "Poor food quality"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "mary",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great food, great service. The location to downtown and other activities couldn’t be better.",
+        "pros": "All the staff were super friendly",
+        "cons": "Some minor fixes on the pool."
+      },
+      {
+        "name": "Beth",
+        "date": "2026-06-14",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "No relaxation but pretty to look at",
+        "pros": "The grounds are pretty and maintained well. Location was close to many attractions and the highway.",
+        "cons": "The room had A/C so loud we had to turn it off at night to sleep. Walls are thin, you can hear full conversations from your neighbors. Patio lacks privacy wall or fence so be prepared to share with strangers."
+      },
+      {
+        "name": "RB",
+        "date": "2026-06-13",
+        "score": 8,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Lots of activities. Beautiful pools. Loved the fire pits. Loved the birds, turtles and ducks. Beautiful grounds. Bayside restaurants were great. Rooms were clean, modern and nicely appointed.",
+        "cons": "Accounting/ billing was very frustrating. We had 4 rooms for 3 nights, and at check-in they put a $7500 hold for a $2700 bill. A week later, we're still waiting for all holds to drop off."
+      },
+      {
+        "name": "Amighetti",
+        "date": "2026-06-07",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "We loved the pool experience as it was kid, friendly, and the food and by the pool was delicious.",
+        "pros": "We love the golf cart service that would take us to different places from our room.",
+        "cons": "We wish they had more restaurants on the property."
+      },
+      {
+        "name": "Anjayla",
+        "date": "2026-06-03",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Amazing location will definitely visit again",
+        "pros": "Everything",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Annalisa",
+        "date": "2026-06-03",
+        "score": 10,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location was amazing, friendly staff , beautiful resort",
+        "cons": "The cantina on the main pool only serves food during the weekend, the body wash was not filled ,"
+      }
+    ]
   },
   {
     "id": "lp5fc63",
@@ -27742,7 +29422,63 @@
         "No swimming pool",
         "Price concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Michael",
+        "date": "2026-06-20",
+        "score": 8,
+        "type": "Couple",
+        "headline": "Fabulous location close to town centre with sea views.",
+        "pros": "Fabulous location and neat set up with outdoor relaxation areas.",
+        "cons": "Our room was clean and comfortable but the bed was too soft for us and one of the shower heads didn’t work properly."
+      },
+      {
+        "name": "Richard",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Would come back again!",
+        "pros": "Outstanding location and amenities.",
+        "cons": "Could have used more comfortable and updated furnishings."
+      },
+      {
+        "name": "Francesca",
+        "date": "2026-06-17",
+        "score": 5,
+        "type": "Extended Group",
+        "headline": "5",
+        "pros": "The hotel is very nice and the location is fantastic. However, be careful and make sure you receive the room category you actually booked and paid for. During our stay, there was confusion regarding our room assignment, and we ended up having to move rooms, which was inconvenient and disrupted our…",
+        "cons": "I was very disappointed with this booking experience. The hotel had overbooked the rooms, and as a result, we were forced to change rooms during our stay. Booking.com said it was the hotel’s fault, while the hotel manager claimed it was Booking.com’s mistake. Neither party took responsibility. We…"
+      },
+      {
+        "name": "Catherine",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "A great place to stay in La Jolla! Highly recommend.",
+        "pros": "Charming boutique hotel steps away from the ocean. This hotel was the definition of excellent customer service. Lots of little \"extras\" that it is hard to find these days. They have complimentary golf cart service to local restaurants and the grocery store and a beautiful rooftop deck to watch the…",
+        "cons": "Everything during our stay was excellent."
+      },
+      {
+        "name": "Christopher",
+        "date": "2026-06-12",
+        "score": 9,
+        "type": "Couple",
+        "headline": "Boutique hotel was a great experience for us.",
+        "pros": "Location near ocean and the rooftop longe. Free breakfast was quite decent.",
+        "cons": "Bathroom was small. Outlets were not abundant."
+      },
+      {
+        "name": "Mark",
+        "date": "2026-06-12",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Nice view",
+        "pros": "Proximity to the shoreline; outdoor dining area",
+        "cons": "The suite they gave us (room 121 across the street) was very dingy, old fashioned, and ugly. Although it functioned, it looked and felt like it had not been refurbished for several years. They a"
+      }
+    ]
   },
   {
     "id": "lp2015f",
@@ -29063,7 +30799,63 @@
         "Cleanliness issues",
         "Old shower"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Nicole",
+        "date": "2026-06-10",
+        "score": 6,
+        "type": "Family With Children",
+        "headline": "It was good.",
+        "pros": "The hotel is in a Great Location. The view is wonderful.",
+        "cons": "The staff was not always friendly. The refrigerator in my room was extremely loud and it was hard to sleep."
+      },
+      {
+        "name": "Robyn",
+        "date": "2026-06-02",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Fabulous San Diego location by the bay and harbor!",
+        "pros": "We love the location and the views from all windows, of the bay and sailboats, and the yacht harbor and boats. This hotel is casual classy from the lobby to the bar/dining area (outdoor dining is a plus). We love being in this part of town because it's quiet, not crowded, surrounded by water, close…",
+        "cons": "Only the king size bed wasn't totally comfortable after each night's sleep. We have such a nice bed at home that most hotel beds can't compete ;)"
+      },
+      {
+        "name": "Harry",
+        "date": "2026-06-01",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Best place ever",
+        "pros": "Very clean the staff was very friendly and they have really good food",
+        "cons": "I had to leave"
+      },
+      {
+        "name": "Kevin",
+        "date": "2026-05-25",
+        "score": 7,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Updated bathrooms, overall very nice",
+        "cons": "Thin walls, loud guests, beds probably should be replaced"
+      },
+      {
+        "name": "Anamaria",
+        "date": "2026-05-02",
+        "score": 6,
+        "type": "Extended Group",
+        "headline": "Too expensive for what they offer",
+        "pros": "The location",
+        "cons": "The hotel facilities were poor, the bathrooms were not so clean, a lot of noise from neighbors. The price value is not for that hotel"
+      },
+      {
+        "name": "Dale",
+        "date": "2026-04-30",
+        "score": 10,
+        "type": "Couple",
+        "headline": "The Bay Club has a great location, and is a very pleasant place to stay in a large city.",
+        "pros": "We have stayed at the Bay Club numerous times and always had a very pleasant time. The staff is very helpful and friendly.",
+        "cons": "NA"
+      }
+    ]
   },
   {
     "id": "lp20928a",
@@ -30191,7 +31983,63 @@
         "Pool and jacuzzi problems",
         "Some maintenance concerns"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Andrew",
+        "date": "2026-04-15",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Staff, Gym",
+        "cons": "Not always water in the room"
+      },
+      {
+        "name": "Fabiola",
+        "date": "2026-01-30",
+        "score": 4,
+        "type": "Family With Children",
+        "headline": "Disappointed",
+        "pros": "Never ate there",
+        "cons": "I noticed a few things that didn't quite meet expectations for the price I paid. The parking situation, the elevator's smell, and the jacuzzi not working were a bit disappointing. Additionally, when the rooftop was open, we were asked to leave because of a private event. The microwave was quite…"
+      },
+      {
+        "name": "ÒSCAR",
+        "date": "2026-01-20",
+        "score": 1,
+        "type": "Couple",
+        "headline": "Liers",
+        "pros": "Nothing",
+        "cons": "Front desk service very unprofessional"
+      },
+      {
+        "name": "Evyn",
+        "date": "2026-06-19",
+        "score": 9,
+        "type": "Couple",
+        "headline": "",
+        "pros": "Location is great beautiful rooms and great environment",
+        "cons": ""
+      },
+      {
+        "name": "Jolanda",
+        "date": "2026-06-08",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "",
+        "pros": "Amazing stay. Rooms,staff,amenities were all much better than expected",
+        "cons": ""
+      },
+      {
+        "name": "Richardson [Legacy HS]",
+        "date": "2026-05-11",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "overall lovely",
+        "pros": "",
+        "cons": "My shower was leaking nothing a few towels couldn't fix, but was a bit annoying"
+      }
+    ]
   },
   {
     "id": "lp1c9c5",
@@ -31449,7 +33297,63 @@
         "Cleanliness issues",
         "Room quality needs improvement"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "MAKI",
+        "date": "2026-06-19",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "N/a",
+        "pros": "Location was convenient for my event. Free breakfast is nice",
+        "cons": "Room is little dark."
+      },
+      {
+        "name": "Tiana",
+        "date": "2026-06-09",
+        "score": 10,
+        "type": "Family With Children",
+        "headline": "IT WAS EXCELLENT!!!",
+        "pros": "FACILITY WAS EXCEPTIONAL",
+        "cons": "STAFF MEMBER WAS RUDE AND DID NOT GREET ME WHEN REQUESTING INFORMATION ABOUTTHE PARKING FOR DISABLED, IT WAS A OLDER AFRICAN AMERIAN WOMAN AT NIGHT. SHE IMMEDIATELY ASKED THE SECURITY GUY TO SHOW ME; HE HAPPILY HELPED WITHOUT BLINKING AN EYE."
+      },
+      {
+        "name": "Ms .",
+        "date": "2026-06-01",
+        "score": 9,
+        "type": "Solo Traveller",
+        "headline": "Overall Good Experience",
+        "pros": "Older hotel however beautiful Lobby. Staff was very nice and welcoming.",
+        "cons": "This may be nit-picking but for the money charged per night, the sofa in room 517 could be updated with one that isn't worn out."
+      },
+      {
+        "name": "Elysha",
+        "date": "2026-05-26",
+        "score": 8,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Really good breakfast.",
+        "cons": "The elevators kept breaking down."
+      },
+      {
+        "name": "volgs",
+        "date": "2026-05-26",
+        "score": 5,
+        "type": "Family With Children",
+        "headline": "Overall, it is a great place to stay at except when there's some kind of kids sport tournaments",
+        "pros": "I've been coming to this hotel for more than 4 years and it's always been very good. Customer service and room service and food service.",
+        "cons": "This time around, there was a lot of activity the week that we stood here in the hotel. There was probably a tournament for kids soccer or some kind of sport. I didn't like the fact that there was kids running around knocking at my door and hiding. Me and my family couldn't enjoy being in the pool…"
+      },
+      {
+        "name": "David",
+        "date": "2026-05-18",
+        "score": 9,
+        "type": "Family With Children",
+        "headline": "",
+        "pros": "Very close to the mall (eating, shopping, movie theater) and San Diego trolley (access to downtown).",
+        "cons": "Busy streets are nearby and a little noisy"
+      }
+    ]
   },
   {
     "id": "lp409ab",
@@ -32331,6 +34235,62 @@
         "High parking fees",
         "Confusing billing for dining"
       ]
-    }
+    },
+    "reviews": [
+      {
+        "name": "Joel A",
+        "date": "2026-06-20",
+        "score": 6,
+        "type": "Solo Traveller",
+        "headline": "Meh...",
+        "pros": "Great view and good location.",
+        "cons": "Wanted help with my luggage and staff said they would be up in 5 minutes. Waited 15 minutes and no staff. Had to carry multiple bags by myself. By the time I got to the car, I was out of breath and sweating. Also, the toilet in our hotel room clogged multiple times. You'd think with such an…"
+      },
+      {
+        "name": "Jennifer",
+        "date": "2026-06-17",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Great memories with a good friend",
+        "pros": "Location! Beautiful view and close to the stadium",
+        "cons": "Pay to add ac"
+      },
+      {
+        "name": "James",
+        "date": "2026-06-17",
+        "score": 8,
+        "type": "Couple",
+        "headline": "",
+        "pros": "The location was great. Staff are willing to assist. Front desk willing to answer any questions.",
+        "cons": "To many hidden fees."
+      },
+      {
+        "name": "Janet Mckeiver",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Extended Group",
+        "headline": "Great",
+        "pros": "Great",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Robert",
+        "date": "2026-06-16",
+        "score": 10,
+        "type": "Couple",
+        "headline": "Excellent",
+        "pros": "Room and view",
+        "cons": "Nothing"
+      },
+      {
+        "name": "Jonathan",
+        "date": "2026-06-15",
+        "score": 10,
+        "type": "Solo Traveller",
+        "headline": "Luxurious",
+        "pros": "Simply stunning location overlooking the bay",
+        "cons": "The gym, pool and bars"
+      }
+    ]
   }
 ]

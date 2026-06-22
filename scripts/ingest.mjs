@@ -221,6 +221,9 @@ const main = async () => {
   mkdirSync("content", { recursive: true });
   writeFileSync(`content/${SLUG}.json`, JSON.stringify(hotels, null, 2));
   console.log(`✓ wrote content/${SLUG}.json with ${hotels.length} hotels`);
+  // Individual guest reviews are added in a separate, non-destructive pass:
+  //   node scripts/enrich-reviews.mjs ${SLUG}
+  console.log(`  next: node scripts/enrich-reviews.mjs ${SLUG}  (adds guest reviews)`);
 };
 
 main().catch((e) => {
