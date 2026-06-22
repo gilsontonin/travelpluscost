@@ -1,11 +1,16 @@
 // SANDBOX booking flow — server-only. Runs the real LiteAPI chain (rates -> prebook -> book)
-// against the SANDBOX key, so it creates a genuine test reservation with a real confirmation
-// code and ZERO charge. NEVER use the production key here — that would take real money, which we
-// are not licensed/registered for yet (see docs/PRICING.md §6, docs/LITEAPI.md §6).
+// against the SANDBOX key, with the production-correct Payment SDK path:
+//   1) sandboxPrebook(): re-find a sandbox offer, prebook with usePaymentSdk:true → returns the
+//      Stripe `secretKey` + `transactionId` (the client Payment SDK collects the card with these).
+//   2) sandboxBookWithTransaction(): after the card is charged, book with method TRANSACTION_ID.
+// This mirrors the official example app (github.com/liteapi-travel/build-website-example).
 //
-// Why re-fetch rates here: a prebook needs a SANDBOX offerId, but the offerIds shown on the
-// property page come from the PRODUCTION key and aren't valid in sandbox. Sandbox carries the
-// same hotel data, so we look the room up again here and use prebook's price as the binding one.
+// NEVER point this at the production key — that takes real money, which is gated on LiteAPI MoR
+// confirmation + Seller-of-Travel + refund/support process (see docs/PRICING.md §6, docs/LITEAPI.md).
+//
+// Why re-fetch rates here: a sandbox prebook needs a SANDBOX offerId, but the offerIds shown on the
+// property page come from the PRODUCTION key and aren't valid in sandbox. Sandbox carries the same
+// hotel data, so we look the room up again here.
 import { canonRoom } from "./rates";
 
 const API = process.env.LITEAPI_BASE_URL || "https://api.liteapi.travel/v3.0";
@@ -36,12 +41,24 @@ interface SandboxRoomType {
   rates?: (SandboxRate & { name?: string; offerId?: string })[];
 }
 
-export interface BookingInput {
+export interface PrebookInput {
   hotelId: string;
   room: string; // chosen room name (from the property page)
   checkin: string;
   checkout: string;
   adults: number;
+}
+export interface PrebookResult {
+  prebookId: string;
+  secretKey: string; // Stripe client secret — the Payment SDK uses this to collect the card
+  transactionId: string; // passed to book() once the card is charged
+  price: number; // binding price from prebook
+  currency: string;
+  room: string;
+}
+export interface BookInput {
+  prebookId: string;
+  transactionId: string;
   firstName: string;
   lastName: string;
   email: string;
@@ -50,15 +67,11 @@ export interface BookingResult {
   bookingId: string;
   confirmationCode: string;
   status: string;
-  currency: string;
-  total: number;
-  checkin: string;
-  checkout: string;
-  room: string;
 }
 
-// Find a sandbox offer for the chosen room (canonical match), else the cheapest available.
-async function findOffer(input: BookingInput): Promise<{ offerId: string; room: string }> {
+// Candidate offers for the chosen room: canonical matches first, then cheapest. Not every offer
+// is prebookable (a rate can be gone, or a supplier flaky), so sandboxPrebook tries them in order.
+async function findOffers(input: PrebookInput): Promise<{ offerId: string; room: string }[]> {
   const data = await call<{ hotelId: string; roomTypes?: SandboxRoomType[] }[]>(`${API}/hotels/rates`, {
     hotelIds: [input.hotelId],
     checkin: input.checkin,
@@ -68,58 +81,74 @@ async function findOffer(input: BookingInput): Promise<{ offerId: string; room: 
     guestNationality: "US",
   });
   const want = canonRoom(input.room);
-  let cheapest: { offerId: string; room: string; price: number } | null = null;
-  let match: { offerId: string; room: string } | null = null;
+  const all: { offerId: string; room: string; price: number; matched: boolean }[] = [];
+  const seen = new Set<string>();
   for (const rh of data ?? []) {
     for (const rt of rh.roomTypes ?? []) {
       for (const rate of rt.rates ?? []) {
         const offerId = rt.offerId ?? rate.offerId;
         const price = rate.retailRate?.suggestedSellingPrice?.[0]?.amount;
         const name = rate.name ?? "Room";
-        if (!offerId || typeof price !== "number") continue;
-        if (!cheapest || price < cheapest.price) cheapest = { offerId, room: name, price };
-        if (!match && canonRoom(name) === want) match = { offerId, room: name };
+        if (!offerId || typeof price !== "number" || seen.has(offerId)) continue;
+        seen.add(offerId);
+        all.push({ offerId, room: name, price, matched: canonRoom(name) === want });
       }
     }
   }
-  const pick = match ?? (cheapest ? { offerId: cheapest.offerId, room: cheapest.room } : null);
-  if (!pick) throw new Error("No sandbox availability for this hotel/date.");
-  return pick;
+  if (!all.length) throw new Error("No availability for this hotel/date.");
+  all.sort((a, b) => Number(b.matched) - Number(a.matched) || a.price - b.price);
+  return all.map((o) => ({ offerId: o.offerId, room: o.room }));
 }
 
-export async function sandboxBook(input: BookingInput): Promise<BookingResult> {
-  const offer = await findOffer(input);
+// Step 1 — prebook with the Payment SDK enabled. Returns the keys the client widget needs.
+// Walks candidate offers until one prebooks (sandbox 409s on some offers; rates also expire).
+export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult> {
+  const candidates = await findOffers(input);
+  let lastError = "No bookable rate for this room.";
+  for (const offer of candidates.slice(0, 6)) {
+    try {
+      const pre = await call<{
+        prebookId: string;
+        secretKey?: string;
+        transactionId?: string;
+        price?: number;
+        currency?: string;
+      }>(`${BOOK}/rates/prebook`, { offerId: offer.offerId, usePaymentSdk: true });
+      if (pre.prebookId && pre.secretKey && pre.transactionId) {
+        return {
+          prebookId: pre.prebookId,
+          secretKey: pre.secretKey,
+          transactionId: pre.transactionId,
+          price: pre.price ?? 0,
+          currency: pre.currency ?? "USD",
+          room: offer.room,
+        };
+      }
+      lastError = "Prebook did not return Payment SDK credentials.";
+    } catch (e) {
+      lastError = e instanceof Error ? e.message : String(e);
+    }
+  }
+  throw new Error(lastError);
+}
 
-  // 1) prebook — confirms availability + binding price, returns prebookId
-  const pre = await call<{ prebookId: string; price?: number; currency?: string }>(
-    `${BOOK}/rates/prebook`,
-    { offerId: offer.offerId, usePaymentSdk: false },
-  );
-
-  // 2) book — sandbox test card (ACC_CREDIT_CARD) = real confirmation, no charge
+// Step 2 — after the card is charged by the Payment SDK, finalise the reservation.
+export async function sandboxBookWithTransaction(input: BookInput): Promise<BookingResult> {
   const booked = await call<{
     bookingId?: string;
     hotelConfirmationCode?: string;
     status?: string;
-    price?: number;
-    currency?: string;
   }>(`${BOOK}/rates/book`, {
-    prebookId: pre.prebookId,
+    prebookId: input.prebookId,
     holder: { firstName: input.firstName, lastName: input.lastName, email: input.email },
     guests: [
       { occupancyNumber: 1, firstName: input.firstName, lastName: input.lastName, email: input.email },
     ],
-    payment: { method: "ACC_CREDIT_CARD" },
+    payment: { method: "TRANSACTION_ID", transactionId: input.transactionId },
   });
-
   return {
     bookingId: booked.bookingId ?? "—",
     confirmationCode: booked.hotelConfirmationCode ?? booked.bookingId ?? "—",
     status: booked.status ?? "UNKNOWN",
-    currency: booked.currency ?? pre.currency ?? "USD",
-    total: booked.price ?? pre.price ?? 0,
-    checkin: input.checkin,
-    checkout: input.checkout,
-    room: offer.room,
   };
 }

@@ -1,38 +1,34 @@
 import { NextResponse } from "next/server";
-import { sandboxBook, type BookingInput } from "@/lib/booking";
+import { sandboxPrebook, type PrebookInput } from "@/lib/booking";
 
-// SANDBOX booking — creates a real test reservation (no charge). Never wired to the
-// production key. See src/lib/booking.ts.
+// SANDBOX prebook — returns the Stripe secretKey + transactionId the client Payment SDK needs.
+// No charge happens here. See src/lib/booking.ts.
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
-  let body: Partial<BookingInput>;
+  let body: Partial<PrebookInput>;
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
-  const required = ["hotelId", "room", "checkin", "checkout", "firstName", "lastName", "email"] as const;
-  for (const k of required) {
+  for (const k of ["hotelId", "room", "checkin", "checkout"] as const) {
     if (!body[k]) return NextResponse.json({ error: `Missing ${k}.` }, { status: 400 });
   }
 
   try {
-    const result = await sandboxBook({
+    const result = await sandboxPrebook({
       hotelId: String(body.hotelId),
       room: String(body.room),
       checkin: String(body.checkin),
       checkout: String(body.checkout),
       adults: Number(body.adults) || 2,
-      firstName: String(body.firstName),
-      lastName: String(body.lastName),
-      email: String(body.email),
     });
     return NextResponse.json(result);
   } catch (e) {
     return NextResponse.json(
-      { error: e instanceof Error ? e.message : "Booking failed." },
+      { error: e instanceof Error ? e.message : "Prebook failed." },
       { status: 502 },
     );
   }

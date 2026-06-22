@@ -24,12 +24,32 @@ wired in config + client, but the flow itself is PARKED behind `NEXT_PUBLIC_BOOK
    a fresh rate, a `prebookId`, and `changed` flags (price/cancellation/board). `usePaymentSdk:true`
    → returns `secretKey` + `transactionId` to collect the guest card via LiteAPI's SDK.
 4. **Book** `POST /rates/book` `{ prebookId, holder, guests[], payment }`. `payment.method`:
-   `WALLET`/`CREDIT` (our LiteAPI balance), `TRANSACTION` (+`transactionId`, guest card via SDK),
-   `ACC_CREDIT_CARD` (sandbox test). `clientReference` = idempotency key.
+   `WALLET`/`CREDIT` (our LiteAPI balance), **`TRANSACTION_ID`** (+`transactionId`, guest card via the
+   Payment SDK — the production path), `ACC_CREDIT_CARD` (sandbox test, no real card). `clientReference`
+   = idempotency key.
 5. **Manage** retrieve / cancel on the book host.
 
 > The price the guest legally owes comes from **prebook**, not search. Search is for display
 > ("from $X approx"). We're display-only today, so this is fine.
+
+### 2a. Production payment flow — VERIFIED against the official example app (2026-06-21)
+Source: `github.com/liteapi-travel/build-website-example` (SDK `liteapi-node-sdk@^3.0.4`; we use raw
+fetch, equivalent). Their reference does it like this — this is the path to build for real money:
+1. `preBook({ offerId, usePaymentSdk: true })` → returns `prebookId`, **`secretKey`**, **`transactionId`**,
+   and the **binding `price`** (show this as the total before payment).
+2. Client-side **Payment SDK (Stripe-based)** initialised with `secretKey` collects + charges the card
+   (sandbox test card `4242 4242 4242 4242`). LiteAPI/Stripe is the processor → supports LiteAPI-as-MoR.
+3. `book({ prebookId, holder, guests[], payment: { method: "TRANSACTION_ID", transactionId } })`.
+
+**Our current sandbox uses the `ACC_CREDIT_CARD` shortcut (no card collected) — fine to *demo* a booking,
+but NOT the production path.** Switch to `usePaymentSdk:true` + Payment SDK + `TRANSACTION_ID` for real money.
+
+**Pricing pattern their app uses (validates our member view):** it displays `retailRate.total`
+(net + margin) as the price and `suggestedSellingPrice` **struck through** as the "Public Rate." That's
+exactly our cost-plus member display — show cost+fee, cross out SSP as the savings anchor.
+
+**Things we already do better than the demo:** offline content ingest (not live `getHotels` per search),
+POST /book (they GET with `transactionId` in the URL = leaks to logs), real pages, room grouping + all-in fees.
 
 ## 3. Price fields (what we display, what we hide) — VERIFIED
 | Field | Meaning | We |
