@@ -32,7 +32,7 @@ declare global {
   }
 }
 
-const SDK_SRC = "https://payment-wrapper.liteapi.travel/dist/liteAPIPayment.js?a=11";
+const SDK_SRC = "https://payment-wrapper.liteapi.travel/dist/liteAPIPayment.js?v=a1";
 const PAYMENT_ENV = process.env.NEXT_PUBLIC_PAYMENT_ENV === "live" ? "live" : "sandbox";
 
 function loadScript(src: string): Promise<void> {
