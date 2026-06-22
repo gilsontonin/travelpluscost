@@ -15,12 +15,14 @@ export default function HotelRow({
   price,
   loading,
   compact = false,
+  priority = false,
 }: {
   hotel: CardHotel;
   query?: string;
   price?: Price | null;
   loading?: boolean;
   compact?: boolean;
+  priority?: boolean;
 }) {
   const href = `/hotel/${hotel.id}${query ? `?${query}` : ""}`;
   const rev = reviewLabel(hotel.rating ?? undefined);
@@ -37,7 +39,7 @@ export default function HotelRow({
       {/* photo collage: tall main (grows to fill card height) + 2 small under, flush to card edges */}
       <div className="w-[40%] sm:w-[42%] shrink-0 flex flex-col gap-1.5">
         <div className="relative flex-1 min-h-0 overflow-hidden bg-zinc-100">
-          <CardCarousel images={hotel.images} alt={hotel.name} arrows={false} sizes="(max-width: 640px) 42vw, 320px" />
+          <CardCarousel images={hotel.images} alt={hotel.name} arrows={false} priority={priority} sizes="(max-width: 640px) 42vw, 320px" />
           {hotel.propertyType && hotel.propertyType !== "Hotel" ? (
             <span className="absolute top-2 left-2 z-10 bg-white/95 text-black/80 text-[0.65rem] font-semibold px-2 py-0.5 rounded-md shadow-sm">
               {hotel.propertyType}
@@ -54,6 +56,7 @@ export default function HotelRow({
                     alt={`${hotel.name} photo ${i + 2}`}
                     fill
                     sizes="(max-width: 640px) 21vw, 150px"
+                    quality={65}
                     className="object-cover"
                   />
                 ) : null}

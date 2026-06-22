@@ -254,6 +254,7 @@ export default function ResultsList({
         <select
           value={sort}
           onChange={(e) => setSort(e.target.value as SortKey)}
+          aria-label="Sort results"
           className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
         >
           {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
@@ -276,8 +277,15 @@ export default function ResultsList({
       ) : (
         <>
           <div className="flex flex-col gap-3 sm:gap-4">
-            {paged.map((h) => (
-              <HotelRow key={h.id} hotel={h} query={cardQuery} price={prices?.[h.id] ?? null} loading={prices === null} />
+            {paged.map((h, idx) => (
+              <HotelRow
+                key={h.id}
+                hotel={h}
+                query={cardQuery}
+                price={prices?.[h.id] ?? null}
+                loading={prices === null}
+                priority={idx < 2}
+              />
             ))}
           </div>
           {hasMore ? (

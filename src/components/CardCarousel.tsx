@@ -10,11 +10,13 @@ export default function CardCarousel({
   alt,
   sizes = "(max-width: 640px) 50vw, 288px",
   arrows = true,
+  priority = false,
 }: {
   images: string[];
   alt: string;
   sizes?: string;
   arrows?: boolean;
+  priority?: boolean; // true for the first above-the-fold card → its lead image is the LCP
 }) {
   const [i, setI] = useState(0);
   // Preload the current frame + its neighbours so a swipe never waits on a download (no white flash).
@@ -70,6 +72,8 @@ export default function CardCarousel({
             alt={alt}
             fill
             sizes={sizes}
+            quality={65}
+            priority={priority && idx === 0}
             className={`object-cover transition-opacity duration-150 ${idx === i ? "opacity-100" : "opacity-0"}`}
           />
         ) : null,

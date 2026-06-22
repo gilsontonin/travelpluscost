@@ -249,6 +249,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
               <select
                 value={sort}
                 onChange={(e) => setSort(e.target.value as RoomSortKey)}
+                aria-label="Sort rooms"
                 className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
               >
                 {(Object.keys(ROOM_SORTS) as RoomSortKey[]).map((k) => (

@@ -52,7 +52,7 @@ export default function Footer() {
                       {l.label}
                     </Link>
                   ) : (
-                    <span className="text-white/30 cursor-default" title="Coming soon">
+                    <span className="text-white/55 cursor-default" title="Coming soon">
                       {l.label}
                     </span>
                   )}
