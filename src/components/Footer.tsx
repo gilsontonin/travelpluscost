@@ -19,7 +19,6 @@ const COLS: { title: string; links: FLink[] }[] = [
       { label: "Hotels", href: "/search" },
       { label: "Flights — soon", href: "/flights" },
       { label: "Cars — soon", href: "/cars" },
-      { label: "Attractions — soon", href: "/things-to-do" },
     ],
   },
   {

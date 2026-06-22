@@ -32,13 +32,6 @@ export const VERTICALS: VerticalConfig[] = [
     enabled: false,
     blurb: "Car rentals with one flat, transparent fee — the same for everyone.",
   },
-  {
-    id: "things-to-do",
-    label: "Things to do",
-    href: "/things-to-do",
-    enabled: false,
-    blurb: "Tours, activities and experiences (Viator) — same honest pricing, no hidden markup.",
-  },
 ];
 
 export function getVertical(id: Vertical): VerticalConfig {
