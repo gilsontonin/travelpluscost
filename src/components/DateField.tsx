@@ -63,10 +63,15 @@ export default function DateField({
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="w-full flex flex-col justify-center px-4 py-2 rounded-md border border-transparent hover:border-black/5 text-left"
+        className="w-full flex items-center gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 text-left transition hover:border-black/30"
       >
-        <span className="text-[11px] uppercase tracking-wide text-black/40">Dates</span>
-        <span className="mt-0.5 text-sm text-black/70">{label}</span>
+        <svg className="shrink-0 text-black/40" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+        </svg>
+        <span className="min-w-0 flex-1">
+          <span className="block text-xs text-black/45">Dates</span>
+          <span className={`block mt-0.5 text-[15px] font-medium truncate ${ci ? "text-black/90" : "text-black/50"}`}>{label}</span>
+        </span>
       </button>
 
       {open ? (

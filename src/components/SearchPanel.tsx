@@ -15,6 +15,32 @@ function fmtDay(d: string) {
   return Number.isNaN(dt.getTime()) ? "" : dt.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
+// Short labels for the tab row (kept tight under the icons, Expedia-style).
+const TAB_LABEL: Record<Vertical, string> = {
+  hotels: "Hotels",
+  flights: "Flights",
+  cars: "Cars",
+  "things-to-do": "Tours",
+};
+
+// The icon for each vertical (line icons, matched weight to the rest of the UI).
+function VerticalIcon({ id }: { id: Vertical }) {
+  const p = { width: 24, height: 24, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.7, strokeLinecap: "round", strokeLinejoin: "round" } as const;
+  switch (id) {
+    case "hotels":
+      return (<svg {...p}><path d="M2 4v16" /><path d="M2 8h18a2 2 0 0 1 2 2v10" /><path d="M2 17h20" /><path d="M6 8v9" /></svg>);
+    case "flights":
+      return (<svg {...p}><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" /></svg>);
+    case "cars":
+      return (<svg {...p}><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg>);
+    default:
+      return (<svg {...p}><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M13 5v14" /></svg>);
+  }
+}
+
+// Shared style for the three input "pill" fields (Where / Dates / Travelers).
+const FIELD = "w-full flex items-center gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 text-left transition hover:border-black/30 focus-within:border-accent";
+
 export default function SearchPanel({
   initial,
   active = "hotels",
@@ -70,34 +96,67 @@ export default function SearchPanel({
   }
 
   return (
-    <div className="bg-[#efeff3] rounded-lg p-3 sm:p-4">
-      <div className="flex gap-1 mb-3 overflow-x-auto">
-        {VERTICALS.map((v) => (
-          <Link
-            key={v.id}
-            href={v.href}
-            className={`whitespace-nowrap text-sm px-4 py-2 rounded-md transition ${
-              v.id === active ? "bg-accent-tint text-accent font-medium" : "text-black/55 hover:bg-white"
-            }`}
-          >
-            {v.label}
-          </Link>
-        ))}
+    <div className={`${compact ? "" : "mx-auto max-w-xl"} bg-white rounded-2xl border border-black/5 shadow-sm p-3 sm:p-4`}>
+      {/* Vertical switcher — Hotels is live; the rest are greyed with a "Soon" badge. */}
+      <div className="flex border-b border-black/10 mb-4">
+        {VERTICALS.map((v) => {
+          const isActive = v.id === active;
+          const inner = (
+            <span className="relative flex w-full flex-col items-center gap-1 pt-1 pb-2.5">
+              <VerticalIcon id={v.id} />
+              <span className="text-xs font-medium">{TAB_LABEL[v.id]}</span>
+              {!v.enabled ? (
+                <span className="absolute right-1 -top-0.5 rounded bg-black/[0.07] px-1 py-px text-[8px] font-bold uppercase tracking-wide text-black/40">
+                  Soon
+                </span>
+              ) : null}
+            </span>
+          );
+          const base = "flex flex-1 justify-center border-b-2 -mb-px";
+          if (isActive) {
+            return (
+              <span key={v.id} aria-current="page" className={`${base} border-accent text-accent`}>
+                {inner}
+              </span>
+            );
+          }
+          if (v.enabled) {
+            return (
+              <Link key={v.id} href={v.href} className={`${base} border-transparent text-black/55 hover:text-black`}>
+                {inner}
+              </Link>
+            );
+          }
+          return (
+            <span
+              key={v.id}
+              aria-disabled="true"
+              title="Coming soon"
+              className={`${base} border-transparent text-black/30 cursor-not-allowed select-none`}
+            >
+              {inner}
+            </span>
+          );
+        })}
       </div>
 
-      <form
-        onSubmit={submit}
-        className="bg-white rounded-lg p-2 grid grid-cols-1 sm:grid-cols-[1.5fr_1.3fr_1.1fr_auto] gap-1 sm:gap-2 items-stretch"
-      >
-        <label className="flex flex-col justify-center px-4 py-2 rounded-md border border-transparent hover:border-black/5 cursor-text">
-          <span className="text-[11px] uppercase tracking-wide text-black/40">Where</span>
-          <input
-            value={destination}
-            onChange={(e) => setDestination(e.target.value)}
-            required
-            placeholder="Oahu, Hawaii"
-            className="w-full outline-none text-sm bg-transparent mt-0.5"
-          />
+      <form onSubmit={submit} className="space-y-2.5">
+        {/* Where */}
+        <label className={`${FIELD} cursor-text`}>
+          <svg className="shrink-0 text-black/40" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20 10c0 4.4-5.5 9-8 11-2.5-2-8-6.6-8-11a8 8 0 0 1 16 0Z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span className="min-w-0 flex-1">
+            <span className="block text-xs text-black/45">Where to?</span>
+            <input
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
+              required
+              placeholder="Oahu, Hawaii"
+              className="w-full bg-transparent outline-none text-[15px] font-medium mt-0.5 placeholder:font-normal placeholder:text-black/40"
+            />
+          </span>
         </label>
 
         <DateField checkin={checkin} checkout={checkout} onChange={(ci, co) => { setCheckin(ci); setCheckout(co); }} />
@@ -105,9 +164,9 @@ export default function SearchPanel({
 
         <button
           type="submit"
-          className="bg-accent text-white font-medium px-5 py-3 rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition"
+          className="w-full bg-accent text-white font-semibold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.99] transition"
         >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
             <circle cx="11" cy="11" r="7" />
             <path d="m21 21-4.3-4.3" />
           </svg>

@@ -53,17 +53,22 @@ export default function GuestField({
     return () => document.removeEventListener("mousedown", onDoc);
   }, [open]);
 
-  const label = `${adults} adult${adults > 1 ? "s" : ""}, ${rooms} room${rooms > 1 ? "s" : ""}`;
+  const label = `${adults} traveler${adults > 1 ? "s" : ""}, ${rooms} room${rooms > 1 ? "s" : ""}`;
 
   return (
     <div className="relative" ref={ref}>
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="w-full flex flex-col justify-center px-4 py-2 rounded-md border border-transparent hover:border-black/5 text-left"
+        className="w-full flex items-center gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 text-left transition hover:border-black/30"
       >
-        <span className="text-[11px] uppercase tracking-wide text-black/40">Guests</span>
-        <span className="mt-0.5 text-sm text-black/70">{label}</span>
+        <svg className="shrink-0 text-black/40" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
+        </svg>
+        <span className="min-w-0 flex-1">
+          <span className="block text-xs text-black/45">Travelers</span>
+          <span className="block mt-0.5 text-[15px] font-medium text-black/90 truncate">{label}</span>
+        </span>
       </button>
 
       {open ? (
