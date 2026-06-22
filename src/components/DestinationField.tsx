@@ -150,6 +150,7 @@ export default function DestinationField({
             value={value}
             onChange={(e) => { onChange(e.target.value); setOpen(true); setActive(-1); }}
             onFocus={() => setOpen(true)}
+            onBlur={() => window.setTimeout(() => setOpen(false), 120)}
             onKeyDown={onKeyDown}
             required
             placeholder="City, state, or destination"

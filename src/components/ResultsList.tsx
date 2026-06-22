@@ -91,24 +91,29 @@ export default function ResultsList({
   useEffect(() => {
     const toFetch = paged.filter((h) => !done.has(h.id) && !inflight.current.has(h.id)).map((h) => h.id);
     if (!toFetch.length) return;
-    toFetch.forEach((id) => inflight.current.add(id));
-    const settle = (got: Record<string, Price>) => {
-      if (Object.keys(got).length) setPrices((p) => ({ ...p, ...got }));
-      setDone((s) => {
-        const n = new Set(s);
-        toFetch.forEach((id) => n.add(id));
-        return n;
-      });
-      toFetch.forEach((id) => inflight.current.delete(id));
-    };
-    fetch("/api/prices", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ hotelIds: toFetch, checkin, checkout, adults }),
-    })
-      .then((r) => r.json())
-      .then((d) => settle((d.prices ?? {}) as Record<string, Price>))
-      .catch(() => settle({}));
+    // Debounce: fast-scrolling fires this on every page step, which spews a burst of rate calls that
+    // time each other out. Wait for the scroll to settle, then fetch the revealed cards in one batch.
+    const timer = setTimeout(() => {
+      toFetch.forEach((id) => inflight.current.add(id));
+      const settle = (got: Record<string, Price>) => {
+        if (Object.keys(got).length) setPrices((p) => ({ ...p, ...got }));
+        setDone((s) => {
+          const n = new Set(s);
+          toFetch.forEach((id) => n.add(id));
+          return n;
+        });
+        toFetch.forEach((id) => inflight.current.delete(id));
+      };
+      fetch("/api/prices", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ hotelIds: toFetch, checkin, checkout, adults }),
+      })
+        .then((r) => r.json())
+        .then((d) => settle((d.prices ?? {}) as Record<string, Price>))
+        .catch(() => settle({}));
+    }, 350);
+    return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pagedSig, checkin, checkout, adults]);
 

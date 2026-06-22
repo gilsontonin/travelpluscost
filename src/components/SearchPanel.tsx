@@ -188,6 +188,16 @@ export default function SearchPanel({
                 className="mt-0.5 w-full bg-transparent text-[15px] font-medium outline-none placeholder:font-normal placeholder:text-black/40"
               />
             </span>
+            {vibe ? (
+              <button
+                type="button"
+                onClick={() => setVibe("")}
+                aria-label="Clear"
+                className="shrink-0 self-center rounded-full p-1 text-black/35 transition hover:bg-black/[0.05] hover:text-black/70"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12" /></svg>
+              </button>
+            ) : null}
           </label>
         ) : (
           <DestinationField value={destination} onChange={setDestination} />
@@ -198,7 +208,7 @@ export default function SearchPanel({
 
         <button
           type="submit"
-          className="w-full bg-accent text-white font-semibold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.99] transition"
+          className="relative z-[60] w-full bg-accent text-white font-semibold py-3.5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.99] transition"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
             <circle cx="11" cy="11" r="7" />
