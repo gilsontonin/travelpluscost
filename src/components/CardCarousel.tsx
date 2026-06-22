@@ -44,7 +44,7 @@ export default function CardCarousel({
       return n;
     });
   };
-  const move = (dir: number) => go((i + dir + images.length) % images.length);
+  const move = (dir: number) => go(Math.max(0, Math.min(images.length - 1, i + dir)));
   const arrow = (e: React.MouseEvent, dir: number) => {
     e.preventDefault();
     e.stopPropagation();
@@ -53,7 +53,7 @@ export default function CardCarousel({
 
   return (
     <div
-      className="absolute inset-0 group/car"
+      className="absolute inset-0 overflow-hidden group/car"
       onTouchStart={(e) => {
         startX.current = e.touches[0].clientX;
       }}
@@ -64,20 +64,16 @@ export default function CardCarousel({
         if (Math.abs(dx) > 30) move(dx < 0 ? 1 : -1);
       }}
     >
-      {images.map((src, idx) =>
-        mounted.has(idx) ? (
-          <Image
-            key={idx}
-            src={src}
-            alt={alt}
-            fill
-            sizes={sizes}
-            quality={65}
-            priority={priority && idx === 0}
-            className={`object-cover transition-opacity duration-150 ${idx === i ? "opacity-100" : "opacity-0"}`}
-          />
-        ) : null,
-      )}
+      {/* sliding track — neighbouring frames stay mounted so one image pushes the other out */}
+      <div className="flex h-full w-full transition-transform duration-300 ease-out" style={{ transform: `translateX(-${i * 100}%)` }}>
+        {images.map((src, idx) => (
+          <div key={idx} className="relative h-full w-full shrink-0">
+            {mounted.has(idx) ? (
+              <Image src={src} alt={alt} fill sizes={sizes} quality={65} priority={priority && idx === 0} className="object-cover" />
+            ) : null}
+          </div>
+        ))}
+      </div>
 
       {images.length > 1 && arrows ? (
         <>

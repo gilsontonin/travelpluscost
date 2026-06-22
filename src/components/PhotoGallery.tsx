@@ -54,7 +54,7 @@ export default function PhotoGallery({
   if (!images.length) return <div className="mt-3 h-80 sm:h-[440px] bg-zinc-100 sm:rounded-lg" />;
 
   const goHero = (i: number) => {
-    const ni = (i + images.length) % images.length;
+    const ni = Math.max(0, Math.min(images.length - 1, i));
     setHero(ni);
     setMounted((s) => {
       const n = new Set(s);
@@ -95,19 +95,23 @@ export default function PhotoGallery({
             if (Math.abs(dx) > 30) goHero(hero + (dx < 0 ? 1 : -1));
           }}
         >
-          {images.map((src, i) =>
-            mounted.has(i) ? (
+          {/* sliding track — both frames are visible mid-transition (one pushes the other out) */}
+          <div className="flex h-full w-full transition-transform duration-300 ease-out" style={{ transform: `translateX(-${hero * 100}%)` }}>
+            {images.map((src, i) => (
               <button
                 key={i}
                 type="button"
                 onClick={() => show(hero)}
                 aria-label="Open photo"
-                className={`absolute inset-0 cursor-zoom-in transition-opacity duration-150 ${i === hero ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+                tabIndex={i === hero ? 0 : -1}
+                className="relative h-full w-full shrink-0 cursor-zoom-in"
               >
-                <Image src={src} alt={`${name} photo ${i + 1}`} fill priority={i === 0} sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
+                {mounted.has(i) ? (
+                  <Image src={src} alt={`${name} photo ${i + 1}`} fill priority={i === 0} sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
+                ) : null}
               </button>
-            ) : null,
-          )}
+            ))}
+          </div>
 
           {/* top overlay: back + share */}
           <div className="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
