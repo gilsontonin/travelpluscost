@@ -293,7 +293,7 @@ export async function getPrices(
   // LiteAPI caps hotels per rates call, so chunk + fetch in parallel + merge.
   const chunks: string[][] = [];
   for (let i = 0; i < ids.length; i += 20) chunks.push(ids.slice(i, i + 20));
-  const results = await Promise.all(chunks.map((c) => fetchRates(c, ci, co, adults, false, 6)));
+  const results = await Promise.all(chunks.map((c) => fetchRates(c, ci, co, adults, false, 10)));
 
   const out: Record<string, Price> = {};
   for (const data of results) {
