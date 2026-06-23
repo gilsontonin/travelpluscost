@@ -56,7 +56,7 @@ export default function Highlights({ hotel }: { hotel: OahuHotel }) {
   const items = highlightsFor(hotel);
   if (!items.length) return null;
   return (
-    <div className="mt-6 grid sm:grid-cols-3 gap-4 border-y border-black/[0.07] py-5">
+    <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 border-y border-black/[0.07] py-4">
       {items.map((it) => (
         <div key={it.title} className="flex gap-3">
           <span className="shrink-0 w-9 h-9 rounded-full bg-accent-tint grid place-items-center text-accent">

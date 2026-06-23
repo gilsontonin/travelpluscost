@@ -51,7 +51,7 @@ export default function PhotoGallery({
     };
   }, [open, close, next, prev]);
 
-  if (!images.length) return <div className="mt-3 h-80 sm:h-[440px] bg-zinc-100 sm:rounded-lg" />;
+  if (!images.length) return <div className="mt-3 h-[400px] sm:h-[440px] bg-zinc-100 sm:rounded-lg" />;
 
   const goHero = (i: number) => {
     const ni = Math.max(0, Math.min(images.length - 1, i));
@@ -121,7 +121,7 @@ export default function PhotoGallery({
       {/* full-bleed hero carousel on mobile (and on desktop when too few photos for the mosaic) */}
       <div className={`-mx-4 sm:mx-0 mt-0 sm:mt-3${mosaic ? " sm:hidden" : ""}`}>
         <div
-          className="relative w-full h-80 sm:h-[440px] bg-zinc-100 sm:rounded-lg overflow-hidden"
+          className="relative w-full h-[400px] sm:h-[440px] bg-zinc-100 sm:rounded-lg overflow-hidden"
           onTouchStart={(e) => {
             startX.current = e.touches[0].clientX;
           }}

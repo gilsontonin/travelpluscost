@@ -8,6 +8,7 @@ import RoomsPanel from "@/components/RoomsPanel";
 import PropertyNav from "@/components/PropertyNav";
 import PropertySearchBar from "@/components/PropertySearchBar";
 import ShareSaveButtons from "@/components/ShareSaveButtons";
+import PriceCta from "@/components/PriceCta";
 import PhotoGallery from "@/components/PhotoGallery";
 import ViatorPackages from "@/components/ViatorPackages";
 import Highlights from "@/components/Highlights";
@@ -43,6 +44,9 @@ export async function generateMetadata({
   if (!hotel) return {};
   const loc = hotel.city || hotel.island || "";
   const titleCore = loc ? `${hotel.name}, ${loc}` : hotel.name;
+  // Freshness signal in the SERP title (Expedia/Booking style). Computed from the current date, so a
+  // rebuild / ISR refresh rolls the year forward automatically. Brandless — Google shows the site name.
+  const year = new Date().getFullYear();
   // Amenity-led meta description (Expedia-style): lead with the standout amenities, then location.
   const fac = (hotel.facilities ?? []).join(" | ").toLowerCase();
   const amen: string[] = [];
@@ -68,7 +72,7 @@ export async function generateMetadata({
   description = description.length > 160 ? `${description.slice(0, 157).replace(/\s+\S*$/, "")}…` : description;
   const url = `/hotel/${id}`;
   return {
-    title: titleCore,
+    title: { absolute: `${titleCore} — ${year} Rates & Reviews` },
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -152,7 +156,7 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
             "@type": "Hotel",
             name: hotel.name,
             url: `${SITE_URL}/hotel/${hotel.id}`,
-            ...(hotel.image ? { image: hotel.image } : {}),
+            ...(hotel.images?.length ? { image: hotel.images.slice(0, 6) } : hotel.image ? { image: hotel.image } : {}),
             ...(hotel.address || hotel.city
               ? {
                   address: {
@@ -240,6 +244,13 @@ export default async function HotelPage({ params }: { params: Promise<{ id: stri
 
       {/* sticky section jump-nav */}
       <PropertyNav />
+
+      {/* price + CTA high on the page (mobile/tablet; desktop has the sticky sidebar) */}
+      <div className="lg:hidden">
+        <Suspense fallback={<div className="mt-5 h-16 rounded-xl bg-black/[0.04] animate-pulse" />}>
+          <PriceCta hotelId={hotel.id} />
+        </Suspense>
+      </div>
 
       <Highlights hotel={hotel} />
 

@@ -51,7 +51,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
   return (
     <div className="flex flex-col sm:flex-row bg-white border border-black/[0.07] rounded-lg overflow-hidden">
       {o.photos?.length ? (
-        <div className="relative w-full sm:w-60 h-44 sm:h-auto shrink-0 bg-zinc-100">
+        <div className="relative w-full sm:w-60 h-52 sm:h-auto shrink-0 bg-zinc-100">
           <CardCarousel images={o.photos} alt={o.roomName} sizes="(max-width: 640px) 100vw, 240px" />
         </div>
       ) : null}
