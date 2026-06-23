@@ -16,10 +16,10 @@ import { existsSync } from "node:fs";
 const SB_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SB_SECRET = process.env.SUPABASE_SECRET_KEY;
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://travelpluscost.com").replace(/\/$/, "");
-// Google's hard cap is 50k URLs / 50MB per file, but in practice big shards (~5MB) timed out
-// Google's sitemap fetcher → "Couldn't fetch" in GSC (only the small final shard succeeded).
-// ~10k URLs ≈ 1MB raw / ~180KB gzipped → fetches in well under a second. See docs/HANDOFF.md.
-const SHARD_SIZE = 10000;
+// Google's hard cap is 50k URLs / 50MB per file, but big shards (~5MB) timed out Google's sitemap
+// fetcher → "Couldn't fetch" in GSC. 5k URLs ≈ 500KB raw / ~90KB gzipped → fetches near-instantly,
+// zero timeout risk. (66k hotels ⇒ ~14 shards.) See docs/HANDOFF.md.
+const SHARD_SIZE = 5000;
 // City hubs (/hotels/<city>): only list a hub once the city has at least this many real hotels.
 // Thinner cities still render on demand, but a 1–2 hotel hub is near-duplicate of the hotel page
 // itself — keeping those out of the sitemap avoids a doorway-page footprint. ≥3 ⇒ ~3.7k hubs.
