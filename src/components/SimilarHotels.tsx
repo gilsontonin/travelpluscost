@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getNearbyHotels } from "@/lib/oahu";
 import { fmtMiles } from "@/lib/distance";
 import { reviewLabel } from "@/lib/format";
+import { hotelHref } from "@/lib/hotelUrl";
 
 // "Other places to stay nearby" — the closest hotels in our set. Engagement + internal linking.
 export default function SimilarHotels({ id, name }: { id: string; name?: string }) {
@@ -18,7 +19,7 @@ export default function SimilarHotels({ id, name }: { id: string; name?: string 
           const rev = reviewLabel(hotel.rating ?? undefined);
           const edge = `${i === 0 ? " ms-4 sm:ms-0" : ""}${i === nearby.length - 1 ? " me-4 sm:me-0" : ""}`;
           return (
-            <Link key={hotel.id} href={`/hotel/${hotel.id}`} className={`group shrink-0 w-52 snap-start${edge}`}>
+            <Link key={hotel.id} href={hotelHref(hotel)} className={`group shrink-0 w-52 snap-start${edge}`}>
               <div className="relative h-36 rounded-lg overflow-hidden bg-zinc-100">
                 <Image src={hotel.image} alt={hotel.name} fill sizes="208px" className="object-cover" />
               </div>

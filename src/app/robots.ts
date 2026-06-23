@@ -13,7 +13,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
   }
   const sitemaps = [
     abs("/sitemap.xml"),
-    ...Array.from({ length: shards }, (_, i) => abs(`/hotels/sitemap/${i}.xml`)),
+    ...Array.from({ length: shards }, (_, i) => abs(`/hotel-sitemap/sitemap/${i}.xml`)),
   ];
   return {
     rules: {

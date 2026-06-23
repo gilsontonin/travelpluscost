@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { REGIONS } from "@/lib/regions";
+import { hotelHref } from "@/lib/hotelUrl";
 
 type Row = { id: string; name: string; city: string; net: number | null; ssp: number | null };
 
@@ -48,7 +49,7 @@ export default function CompareClient() {
   const ci = checkin;
   const co = checkout;
   const links = (h: Row) => ({
-    ours: `/hotel/${h.id}`,
+    ours: hotelHref(h),
     google: `https://www.google.com/travel/search?q=${encodeURIComponent(`${h.name} ${h.city}`)}`,
     expedia: `https://www.expedia.com/Hotel-Search?destination=${encodeURIComponent(`${h.name}, ${h.city}`)}&startDate=${ci}&endDate=${co}&rooms=1&adults=2`,
     booking: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(h.name)}&checkin=${ci}&checkout=${co}&group_adults=2&no_rooms=1`,

@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { VibeHotel } from "@/lib/vibeSearch";
+import { hotelHref } from "@/lib/hotelUrl";
 import { money, reviewLabel } from "@/lib/format";
 
 // Showcases what makes vibe search different: the editorial story + matched tags, not just a price.
 export default function VibeCard({ hotel, query, priority = false }: { hotel: VibeHotel; query: string; priority?: boolean }) {
-  const href = `/hotel/${hotel.id}${query ? `?${query}` : ""}`;
+  const href = `${hotelHref(hotel)}${query ? `?${query}` : ""}`;
   const rev = reviewLabel(hotel.rating ?? undefined);
 
   return (

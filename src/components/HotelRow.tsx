@@ -3,6 +3,7 @@ import Image from "next/image";
 import CardCarousel from "@/components/CardCarousel";
 import AmenityIcon from "@/components/AmenityIcon";
 import type { CardHotel } from "@/lib/oahu";
+import { hotelHref } from "@/lib/hotelUrl";
 import type { Price } from "@/lib/rates";
 import { money, reviewLabel } from "@/lib/format";
 
@@ -24,7 +25,7 @@ export default function HotelRow({
   compact?: boolean;
   priority?: boolean;
 }) {
-  const href = `/hotel/${hotel.id}${query ? `?${query}` : ""}`;
+  const href = `${hotelHref(hotel)}${query ? `?${query}` : ""}`;
   const rev = reviewLabel(hotel.rating ?? undefined);
   const amenities = hotel.amenities.slice(0, 2);
   const [s1, s2] = hotel.images.slice(1, 3);

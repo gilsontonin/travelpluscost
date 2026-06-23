@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { reviewLabel } from "@/lib/format";
+import { hotelHref } from "@/lib/hotelUrl";
 
 // A titled horizontal scroller of compact hotel cards (Expedia-style home rail).
 // Accepts any object with these fields (CardHotel and RailHotel both satisfy it).
@@ -48,7 +49,7 @@ export default function HotelRail({
           const rev = reviewLabel(h.rating ?? undefined);
           const edge = `${i === 0 ? " ms-4 sm:ms-0" : ""}${i === shown.length - 1 ? " me-4 sm:me-0" : ""}`;
           return (
-            <Link key={h.id} href={`/hotel/${h.id}`} className={`group shrink-0 w-52 snap-start${edge}`}>
+            <Link key={h.id} href={hotelHref(h)} className={`group shrink-0 w-52 snap-start${edge}`}>
               <div className="relative h-40 rounded-lg overflow-hidden bg-zinc-100">
                 <Image src={h.image} alt={h.name} fill sizes="208px" className="object-cover" />
                 {h.propertyType && h.propertyType !== "Hotel" ? (
