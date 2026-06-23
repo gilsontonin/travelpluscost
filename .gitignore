@@ -48,3 +48,9 @@ next-env.d.ts
 # generated at build (prebuild → scripts/gen-sitemaps.mjs); regenerated on every deploy
 /public/sitemaps/
 /public/sitemap-index.xml
+
+# local data snapshots / one-off exports (sitemap CSV dumps, screenshots) — not part of the build
+/exports/
+
+# DB safety backups (e.g. rows removed in a cleanup) — local restore artifacts, never deployed
+/backups/

@@ -15,7 +15,10 @@ import { existsSync } from "node:fs";
 const SB_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SB_SECRET = process.env.SUPABASE_SECRET_KEY;
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://travelpluscost.com").replace(/\/$/, "");
-const SHARD_SIZE = 45000; // < Google's 50k/50MB cap, with headroom
+// Google's hard cap is 50k URLs / 50MB per file, but in practice big shards (~5MB) timed out
+// Google's sitemap fetcher → "Couldn't fetch" in GSC (only the small final shard succeeded).
+// ~10k URLs ≈ 1MB raw / ~180KB gzipped → fetches in well under a second. See docs/HANDOFF.md.
+const SHARD_SIZE = 10000;
 const OUT_DIR = "public/sitemaps";
 
 if (!SB_URL || !SB_SECRET) {
@@ -48,7 +51,10 @@ async function fetchAll() {
   const rows = [];
   let cursor = null;
   for (;;) {
-    let q = sb.from("hotels").select("id,name,city").eq("country", "us").order("id", { ascending: true }).limit(1000);
+    // kind='hotel' only — never list rentals (apartments/vacation homes/condos/B&Bs…). They have no
+    // availability and were SEO junk (208k of 274k rows). Belt-and-suspenders even though the cleanup
+    // deleted them: a future re-ingest can't leak them back into the sitemap.
+    let q = sb.from("hotels").select("id,name,city").eq("country", "us").eq("kind", "hotel").order("id", { ascending: true }).limit(1000);
     if (cursor) q = q.gt("id", cursor);
     const { data, error } = await q;
     if (error) throw new Error(error.message);

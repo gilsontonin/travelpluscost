@@ -50,10 +50,11 @@ const slugify = (s) =>
   (s || "").toLowerCase().normalize("NFKD").replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-").replace(/-+/g, "-").slice(0, 80);
 
 // LiteAPI hotelTypeId → our category (hotel vs vacation rental) + a display label. Verified by
-// resolving each id against /data/hotel. Hotels lead search; rentals are real inventory but rank below.
-// "Real hotels only" policy: only these 7 types are shown (kind 'hotel'); everything else —
+// resolving each id against /data/hotel.
+// "Real hotels only" policy: only these 7 types (kind 'hotel') are ingested. Everything else —
 // apartments, villas, homes, condos, B&Bs, guesthouses, and anything UNRECOGNIZED — is 'rental'
-// and hidden from search. Default-exclude so junk inventory can't leak in.
+// and is NOT stored at all (the ingest loop skips it). Rentals never have availability, so they
+// were pure SEO junk (208k of 274k US rows, deleted 2026-06-23). Default-exclude can't leak junk in.
 const TYPE_MAP = {
   204: ["hotel", "Hotel"], 206: ["hotel", "Resort"], 218: ["hotel", "Inn"], 205: ["hotel", "Motel"],
   221: ["hotel", "Lodge"], 219: ["hotel", "Aparthotel"], 264: ["hotel", "Hostel"],
@@ -109,7 +110,13 @@ async function ingestCountry(country) {
     if (total === null) total = j.total ?? list.length;
     if (!list.length) break;
     for (const x of list) {
-      buffer.push(mapHotel(x, country));
+      const row = mapHotel(x, country);
+      // Real hotels only — don't even STORE rentals (apartments, vacation homes, condos, B&Bs,
+      // guesthouses, …). They never have availability and were dead SEO weight (208k of 274k rows,
+      // deleted 2026-06-23). The sitemap filters on kind too, but skipping the upsert keeps the
+      // directory itself clean.
+      if (row.kind !== "hotel") continue;
+      buffer.push(row);
       if (buffer.length >= BATCH) {
         await flush(buffer);
         count += buffer.length;

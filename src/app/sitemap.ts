@@ -4,9 +4,10 @@ import { abs } from "@/lib/site";
 import { REGIONS } from "@/lib/regions";
 import { slugify } from "@/lib/hotelUrl";
 
-// Core routes + city hub pages + every blog post. The 274k-hotel long tail lives in static shard
-// files (public/sitemaps/hotels-*.xml, built by scripts/gen-sitemaps.mjs); /sitemap-index.xml ties
-// this core sitemap and those shards together for a single GSC submission.
+// Core routes + city hub pages + every blog post. The real-hotel long tail (~66k US hotels — rentals
+// are excluded; see scripts/gen-sitemaps.mjs) lives in static shard files (public/sitemaps/hotels-*.xml,
+// built by scripts/gen-sitemaps.mjs); /sitemap-index.xml ties this core sitemap and those shards
+// together for a single GSC submission.
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
