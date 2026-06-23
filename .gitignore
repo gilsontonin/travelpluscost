@@ -47,6 +47,7 @@ next-env.d.ts
 
 # generated at build (npm run sitemaps → scripts/gen-sitemaps.mjs); regenerated on every deploy
 /public/sitemaps/
+/public/sitemap-main.xml
 /public/sitemap-hotels.xml
 /public/sitemap-index.xml
 

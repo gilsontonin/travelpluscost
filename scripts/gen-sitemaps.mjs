@@ -116,13 +116,14 @@ const entries = [
   ...shardFiles.map((f) => `<sitemap><loc>${SITE}/sitemaps/${f}</loc><lastmod>${today}</lastmod></sitemap>`),
 ];
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</sitemapindex>\n`;
-// sitemap-hotels.xml is the CURRENT index (the one robots.txt advertises + you submit to GSC). It's a
-// fresh URL Google never saw the old 274k-junk version at, so it has no cached "Couldn't fetch" history.
-// sitemap-index.xml is the legacy name, still written (identical) so any old reference stays live & clean.
-for (const name of ["sitemap-hotels.xml", "sitemap-index.xml"]) {
+// sitemap-main.xml is the CURRENT index (robots.txt advertises it + you submit it to GSC). A fresh URL
+// Google has never read, so it has no cached old read (the prior /sitemap-hotels.xml stayed stuck on a
+// stale 10k-shard read in GSC). sitemap-hotels.xml + sitemap-index.xml are kept (identical copies) so
+// any previously-submitted URL stays live & clean. Going forward this URL is stable — no more renames.
+for (const name of ["sitemap-main.xml", "sitemap-hotels.xml", "sitemap-index.xml"]) {
   await writeFile(`public/${name}`, indexXml);
 }
-console.log(`[gen-sitemaps] wrote public/sitemap-hotels.xml (+ legacy sitemap-index.xml), ${entries.length} sitemaps each`);
+console.log(`[gen-sitemaps] wrote public/sitemap-main.xml (+ legacy hotels/index copies), ${entries.length} sitemaps each`);
 
 // ── Geo index (content/geo-index.json) ───────────────────────────────────────
 // Powers the /hotels browse index, the state hubs (/destinations/<state>) and the same-state
