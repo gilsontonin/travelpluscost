@@ -63,6 +63,20 @@ export async function hotelsByCity(city: string, country = "us", limit = 60, sta
   return (data ?? []) as DirectoryHotel[];
 }
 
+/** Count of real hotels in a named city — the "{n} hotels in {city}" line on the city hub. */
+export async function cityHotelCount(city: string, country = "us", state?: string): Promise<number> {
+  let q = supabaseAdmin()
+    .from("hotels")
+    .select("id", { count: "exact", head: true })
+    .eq("country", country.toLowerCase())
+    .ilike("city", city)
+    .eq("kind", "hotel");
+  if (state) q = q.eq("state", state.toUpperCase());
+  const { count, error } = await q;
+  if (error) throw new Error(error.message);
+  return count ?? 0;
+}
+
 /** Fuzzy name/city match — typeahead + free-text search. */
 export async function searchHotelsByText(q: string, limit = 25): Promise<DirectoryHotel[]> {
   const term = q.trim().replace(/[%,()]/g, " ");

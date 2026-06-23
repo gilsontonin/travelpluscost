@@ -115,6 +115,8 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
   const landmarks = region?.landmarks ?? [];
   const cityLabel = hotel.city ? `${hotel.city} hotels` : "Hotels";
   const searchHref = `/search?destination=${encodeURIComponent(hotel.city || "")}&adults=2`;
+  // Breadcrumb up-links to the city hub (an indexable landing page), not the dynamic search page.
+  const cityHubHref = hotel.city ? `/hotels/${slugify(hotel.city)}` : searchHref;
   const propertyGroups = categorizeProperty(hotel.facilities ?? []);
   const roomGroups = categorizeRoom(Array.from(new Set((hotel.rooms ?? []).flatMap((r) => r.amenities ?? []))));
 
@@ -129,7 +131,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
             Home
           </Link>
           <span aria-hidden>›</span>
-          <Link href={searchHref} className="hover:text-black">
+          <Link href={cityHubHref} className="hover:text-black">
             {cityLabel}
           </Link>
           <span aria-hidden>›</span>
@@ -145,7 +147,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
             "@type": "BreadcrumbList",
             itemListElement: [
               { name: "Home", path: "/" },
-              { name: cityLabel, path: searchHref },
+              { name: cityLabel, path: cityHubHref },
               { name: hotel.name, path: hotelHref({ id: hotel.id, name: hotel.name, city: hotel.city }) },
             ].map((c, i) => ({
               "@type": "ListItem",
