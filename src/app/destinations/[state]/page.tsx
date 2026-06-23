@@ -42,6 +42,10 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
     .slice(0, 12)
     .map(directoryToCard);
 
+  const topNames = st.cities.slice(0, 3).map((c) => c.name);
+  const topList =
+    topNames.length > 1 ? `${topNames.slice(0, -1).join(", ")} and ${topNames[topNames.length - 1]}` : topNames[0] ?? "";
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">
       <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs text-black/55">
@@ -55,9 +59,9 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
       <header className="mt-4 max-w-3xl">
         <h1 className="text-2xl font-semibold sm:text-3xl">Hotels in {st.name}</h1>
         <p className="mt-3 text-[15px] leading-relaxed text-black/70">
-          Compare <strong>{st.hotels.toLocaleString()} hotels</strong> across {st.cityCount} cities in {st.name},
-          all on one honest price — the room rate plus one small flat fee, the same for everyone, never based on
-          your data.
+          Compare <strong>{st.hotels.toLocaleString()} hotels</strong> across {st.cityCount} cities in {st.name}
+          {topList ? <> — from {topList} to smaller towns</> : null} — all on one honest price: the room rate plus
+          one small flat fee, the same for everyone, never based on your data.
         </p>
       </header>
 

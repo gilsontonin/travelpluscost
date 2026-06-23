@@ -49,6 +49,16 @@ export default function HotelsIndexPage() {
               <p className="mt-0.5 text-xs text-black/50">
                 {s.hotels.toLocaleString()} hotels · {s.cityCount.toLocaleString()} cities
               </p>
+              <div className="mt-1.5 flex flex-wrap gap-x-2 gap-y-0.5 text-[13px] text-black/60">
+                {s.topCities.slice(0, 5).map((c, i) => (
+                  <span key={c.slug}>
+                    <Link href={`/hotels/${c.slug}`} className="hover:text-accent hover:underline">
+                      {c.name}
+                    </Link>
+                    {i < Math.min(4, s.topCities.length - 1) ? <span className="text-black/25"> ·</span> : null}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>

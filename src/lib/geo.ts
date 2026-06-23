@@ -27,6 +27,7 @@ export interface StateSummary {
   slug: string;
   hotels: number;
   cityCount: number;
+  topCities: GeoCity[]; // most hotels first — for index/state-hub quick links
 }
 
 export function geoTotals() {
@@ -40,6 +41,7 @@ function summary(code: string, s: GeoState): StateSummary {
     slug: stateSlugFromCode(code) ?? code.toLowerCase(),
     hotels: s.hotels,
     cityCount: s.cities.length,
+    topCities: s.cities.slice(0, 6),
   };
 }
 
