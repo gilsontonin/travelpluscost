@@ -107,7 +107,7 @@ export default function PhotoGallery({
       ) : null}
 
       {/* full-bleed hero carousel on mobile (and on desktop when too few photos for the mosaic) */}
-      <div className={`-mx-4 sm:mx-0 mt-0 sm:mt-3${mosaic ? " sm:hidden" : ""}`}>
+      <div className={`-mx-4 sm:mx-0 mt-3${mosaic ? " sm:hidden" : ""}`}>
         <div className="relative w-full h-[400px] sm:h-[440px] bg-zinc-100 sm:rounded-lg overflow-hidden">
           {/* native scroll-snap track — full finger-drag control; stop mid-swipe, snaps on release */}
           <div

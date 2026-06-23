@@ -78,7 +78,7 @@ export async function generateMetadata({
   description = description.length > 160 ? `${description.slice(0, 157).replace(/\s+\S*$/, "")}…` : description;
   const url = hotelHref({ id, name: hotel.name, city: hotel.city });
   return {
-    title: { absolute: `${titleCore} – ${year} Rates, Photos & Reviews` },
+    title: { absolute: `${titleCore} | ${year} Rates, Photos & Reviews` },
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -194,8 +194,33 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
         }}
       />
 
-      {/* header */}
-      <div className="mt-5">
+      {/* slim header above the photo: name + rating only (the rest moves below the gallery) */}
+      <div className="mt-4">
+        <h1 className="text-2xl font-semibold">{hotel.name}</h1>
+        {hotel.rating ? (
+          <div className="mt-1.5 flex items-center gap-1.5 text-sm">
+            <span className="bg-[#1a7a4c] text-white text-xs font-semibold px-1.5 py-0.5 rounded-md">
+              {hotel.rating.toFixed(1)}
+            </span>
+            {hotel.reviewCount ? (
+              <span className="text-black/55">{hotel.reviewCount.toLocaleString()} reviews</span>
+            ) : null}
+          </div>
+        ) : null}
+      </div>
+
+      {/* Choose dates → prices update in the rooms section. Above the gallery, Expedia-style. */}
+      <div className="mt-4">
+        <Suspense fallback={<div className="h-24 rounded-xl bg-black/[0.04] animate-pulse" />}>
+          <PropertySearchBar hotelName={hotel.name} />
+        </Suspense>
+      </div>
+
+      {/* gallery */}
+      <PhotoGallery images={hotel.images} name={hotel.name} backHref={searchHref} />
+
+      {/* property details (under the photo): stars, type, address, distance */}
+      <div className="mt-4">
         <div className="flex flex-wrap items-center gap-2">
           {hotel.stars ? (
             <span className="flex items-center gap-0.5 text-accent" aria-label={`${hotel.stars} star hotel`}>
@@ -211,44 +236,21 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
               {classifyType(hotel.hotelType).label}
             </span>
           ) : null}
+          {hotel.chain && !/^\s*(not available|n\/?a|none)\s*$/i.test(hotel.chain) ? (
+            <span className="text-xs text-black/60">Part of {hotel.chain}</span>
+          ) : null}
         </div>
-        <h1 className="text-2xl font-semibold mt-1.5">{hotel.name}</h1>
-        <p className="text-sm text-black/55 mt-1 flex items-center gap-1">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0">
+        <p className="mt-1.5 flex items-start gap-1.5 text-sm text-black/60">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 shrink-0">
             <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
             <circle cx="12" cy="10" r="3" />
           </svg>
-          {[hotel.address, hotel.city].filter(Boolean).join(", ")}
-          {nearbyLabel(hotel.lat, hotel.lng, landmarks) ? (
-            <span className="text-black/60">· {nearbyLabel(hotel.lat, hotel.lng, landmarks)}</span>
-          ) : null}
+          <span>
+            {[hotel.address, hotel.city].filter(Boolean).join(", ")}
+            {nearbyLabel(hotel.lat, hotel.lng, landmarks) ? ` — ${nearbyLabel(hotel.lat, hotel.lng, landmarks)}` : ""}
+          </span>
         </p>
-        <div className="flex flex-wrap items-center gap-2 mt-2 text-sm">
-          {hotel.rating ? (
-            <span className="inline-flex items-center gap-1.5">
-              <span className="bg-[#1a7a4c] text-white text-xs font-semibold px-1.5 py-0.5 rounded-md">
-                {hotel.rating.toFixed(1)}
-              </span>
-              {hotel.reviewCount ? (
-                <span className="text-black/55">{hotel.reviewCount.toLocaleString()} reviews</span>
-              ) : null}
-            </span>
-          ) : null}
-          {hotel.chain && !/^\s*(not available|n\/?a|none)\s*$/i.test(hotel.chain) ? (
-            <span className="text-black/60">· Part of {hotel.chain}</span>
-          ) : null}
-        </div>
       </div>
-
-      {/* Choose dates → prices update in the rooms section. Above the gallery, Expedia-style. */}
-      <div className="mt-4">
-        <Suspense fallback={<div className="h-24 rounded-xl bg-black/[0.04] animate-pulse" />}>
-          <PropertySearchBar hotelName={hotel.name} />
-        </Suspense>
-      </div>
-
-      {/* gallery */}
-      <PhotoGallery images={hotel.images} name={hotel.name} backHref={searchHref} />
 
       {/* sticky section jump-nav */}
       <PropertyNav />

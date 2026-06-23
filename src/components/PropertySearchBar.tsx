@@ -54,18 +54,20 @@ export default function PropertySearchBar({ hotelName }: { hotelName: string }) 
         <div className="min-w-0 sm:flex-[1.3]">
           <DestinationField value={dest} onChange={setDest} />
         </div>
-        <div className="min-w-0 rounded-xl border border-black/15 bg-white sm:flex-1">
-          <DateField checkin={checkin} checkout={checkout} onChange={(ci, co) => update({ checkin: ci, checkout: co })} />
-        </div>
-        <div className="min-w-0 rounded-xl border border-black/15 bg-white sm:flex-1">
-          <GuestField
-            adults={adults}
-            rooms={rooms}
-            onChange={(a, r) => {
-              setRooms(r);
-              update({ adults: String(a) });
-            }}
-          />
+        <div className="grid grid-cols-2 gap-2 sm:contents">
+          <div className="min-w-0 rounded-xl border border-black/15 bg-white sm:flex-1">
+            <DateField checkin={checkin} checkout={checkout} onChange={(ci, co) => update({ checkin: ci, checkout: co })} />
+          </div>
+          <div className="min-w-0 rounded-xl border border-black/15 bg-white sm:flex-1">
+            <GuestField
+              adults={adults}
+              rooms={rooms}
+              onChange={(a, r) => {
+                setRooms(r);
+                update({ adults: String(a) });
+              }}
+            />
+          </div>
         </div>
         <button
           type="button"
