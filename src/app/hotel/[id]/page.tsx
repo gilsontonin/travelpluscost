@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllOahu, classifyType } from "@/lib/oahu";
 import { getHotelContent } from "@/lib/hotelContent";
+import { getDirectoryHotel } from "@/lib/directory";
 import RoomsPanel from "@/components/RoomsPanel";
 import PropertyNav from "@/components/PropertyNav";
 import PropertySearchBar from "@/components/PropertySearchBar";
@@ -33,6 +34,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://travelpluscost.com
 
 // Deduped per request: generateMetadata and the page both need the content; this fetches it once.
 const getHotel = cache(getHotelContent);
+const getDir = cache(getDirectoryHotel);
 
 export async function generateMetadata({
   params,
@@ -42,7 +44,8 @@ export async function generateMetadata({
   const { id } = await params;
   const hotel = await getHotel(id);
   if (!hotel) return {};
-  const loc = hotel.city || hotel.island || "";
+  const dir = await getDir(id);
+  const loc = [hotel.city || hotel.island, dir?.state].filter(Boolean).join(", ");
   const titleCore = loc ? `${hotel.name}, ${loc}` : hotel.name;
   // Freshness signal in the SERP title (Expedia/Booking style). Computed from the current date, so a
   // rebuild / ISR refresh rolls the year forward automatically. Brandless — Google shows the site name.
@@ -72,7 +75,7 @@ export async function generateMetadata({
   description = description.length > 160 ? `${description.slice(0, 157).replace(/\s+\S*$/, "")}…` : description;
   const url = `/hotel/${id}`;
   return {
-    title: { absolute: `${titleCore} — ${year} Rates & Reviews` },
+    title: { absolute: `${titleCore} – ${year} Rates, Photos & Reviews` },
     description,
     alternates: { canonical: url },
     openGraph: {
