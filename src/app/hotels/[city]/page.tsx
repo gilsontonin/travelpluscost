@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { hotelsByCity, cityHotelCount, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
 import { slugify } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
+import { siblingCities } from "@/lib/geo";
 import { SITE_NAME, abs } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
 import HotelRow from "@/components/HotelRow";
@@ -116,10 +117,9 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
     });
   }
 
-  // Cross-link the other markets we cover — builds the hub graph (helps crawl + indexing).
-  const otherCities = REGIONS.flatMap((r) => r.cities.map((c) => ({ name: c, label: r.label })))
-    .filter((c) => slugify(c.name) !== slugify(city))
-    .slice(0, 8);
+  // Same-state cross-links + the state hub — builds a dense hub graph (state ⇄ city) so every hub is
+  // crawlable, not orphaned. Falls back to nothing for the rare city we can't place in a state.
+  const sib = siblingCities(slugify(city), 12);
 
   // Search-page card model: directory rows -> CardHotel. Enrich with the distance-to-anchor line
   // for curated markets (so cards read "0.4 mi from Waikiki Beach", not just the city name again).
@@ -136,6 +136,14 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
       <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs text-black/55">
         <Link href="/" className="hover:text-black">Home</Link>
         <span aria-hidden>›</span>
+        <Link href="/hotels" className="hover:text-black">Hotels</Link>
+        {sib ? (
+          <>
+            <span aria-hidden>›</span>
+            <Link href={`/destinations/${sib.state.slug}`} className="hover:text-black">{sib.state.name}</Link>
+          </>
+        ) : null}
+        <span aria-hidden>›</span>
         <span className="text-black/70">Hotels in {city}</span>
       </nav>
       <script
@@ -146,6 +154,8 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
             "@type": "BreadcrumbList",
             itemListElement: [
               { name: "Home", path: "/" },
+              { name: "Hotels", path: "/hotels" },
+              ...(sib ? [{ name: `Hotels in ${sib.state.name}`, path: `/destinations/${sib.state.slug}` }] : []),
               { name: `Hotels in ${city}`, path: canonical },
             ].map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: abs(c.path) })),
           }),
@@ -273,20 +283,26 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
         }}
       />
 
-      {/* cross-links to other markets */}
-      {otherCities.length ? (
+      {/* same-state cross-links — dense hub graph (city ⇄ sibling cities ⇄ state hub) */}
+      {sib && sib.cities.length ? (
         <section className="mt-12">
-          <h2 className="text-lg font-semibold">More destinations</h2>
+          <h2 className="text-lg font-semibold">More hotels in {sib.state.name}</h2>
           <div className="mt-3 flex flex-wrap gap-2">
-            {otherCities.map((c) => (
+            {sib.cities.map((c) => (
               <Link
-                key={c.name}
-                href={`/hotels/${slugify(c.name)}`}
+                key={c.slug}
+                href={`/hotels/${c.slug}`}
                 className="rounded-full border border-black/12 px-4 py-1.5 text-sm text-black/70 transition hover:border-black/30 hover:text-black"
               >
                 Hotels in {c.name}
               </Link>
             ))}
+            <Link
+              href={`/destinations/${sib.state.slug}`}
+              className="rounded-full border border-accent/30 bg-accent-tint/40 px-4 py-1.5 text-sm font-semibold text-accent transition hover:bg-accent-tint/70"
+            >
+              All {sib.state.name} hotels →
+            </Link>
           </div>
         </section>
       ) : null}

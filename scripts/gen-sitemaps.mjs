@@ -59,7 +59,7 @@ async function fetchAll() {
     // kind='hotel' only — never list rentals (apartments/vacation homes/condos/B&Bs…). They have no
     // availability and were SEO junk (208k of 274k rows). Belt-and-suspenders even though the cleanup
     // deleted them: a future re-ingest can't leak them back into the sitemap.
-    let q = sb.from("hotels").select("id,name,city").eq("country", "us").eq("kind", "hotel").order("id", { ascending: true }).limit(1000);
+    let q = sb.from("hotels").select("id,name,city,state").eq("country", "us").eq("kind", "hotel").order("id", { ascending: true }).limit(1000);
     if (cursor) q = q.gt("id", cursor);
     const { data, error } = await q;
     if (error) throw new Error(error.message);
@@ -123,3 +123,39 @@ for (const name of ["sitemap-hotels.xml", "sitemap-index.xml"]) {
   await writeFile(`public/${name}`, indexXml);
 }
 console.log(`[gen-sitemaps] wrote public/sitemap-hotels.xml (+ legacy sitemap-index.xml), ${entries.length} sitemaps each`);
+
+// ── Geo index (content/geo-index.json) ───────────────────────────────────────
+// Powers the /hotels browse index, the state hubs (/destinations/<state>) and the same-state
+// cross-links on city hubs. Built here because the whole directory is already in memory. Each city
+// slug is assigned to its PRIMARY state (the one with the most hotels), since the city-hub URL
+// (/hotels/<slug>) isn't state-scoped. Committed (not gitignored) so dev/build always has it.
+const cityAgg = new Map(); // slug -> { name, byState: Map<code,count> }
+const stateHotels = new Map(); // code -> total hotels in state
+for (const h of rows) {
+  const code = (h.state || "").toUpperCase();
+  if (code) stateHotels.set(code, (stateHotels.get(code) || 0) + 1);
+  const slug = slugify(h.city);
+  if (!slug || !code) continue;
+  let rec = cityAgg.get(slug);
+  if (!rec) { rec = { name: h.city, byState: new Map() }; cityAgg.set(slug, rec); }
+  rec.byState.set(code, (rec.byState.get(code) || 0) + 1);
+}
+const statesObj = {};
+for (const [code, count] of stateHotels) statesObj[code] = { hotels: count, cities: [] };
+for (const [slug, rec] of cityAgg) {
+  let primary = null, max = -1, total = 0;
+  for (const [code, n] of rec.byState) { total += n; if (n > max) { max = n; primary = code; } }
+  if (primary) (statesObj[primary] ??= { hotels: 0, cities: [] }).cities.push({ slug, name: rec.name, count: total });
+}
+let geoCities = 0;
+for (const code of Object.keys(statesObj)) {
+  statesObj[code].cities.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+  geoCities += statesObj[code].cities.length;
+}
+const geo = {
+  generated: today,
+  totals: { hotels: rows.length, cities: geoCities, states: Object.keys(statesObj).length },
+  states: statesObj,
+};
+await writeFile("content/geo-index.json", JSON.stringify(geo));
+console.log(`[gen-sitemaps] wrote content/geo-index.json (${geo.totals.states} states, ${geo.totals.cities} cities)`);

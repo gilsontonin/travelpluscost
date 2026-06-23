@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/posts";
 import { abs } from "@/lib/site";
+import { statesSorted } from "@/lib/geo";
 
 // Core static routes + every blog post. Two big derived lists ship as static shards built by
 // scripts/gen-sitemaps.mjs from the directory: the ~66k real-hotel pages (public/sitemaps/hotels-*.xml)
@@ -18,6 +19,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: abs("/disclosure"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
 
+  // Browse index + every state hub (/destinations/<state>). The 3.7k city hubs live in cities.xml.
+  const browse: MetadataRoute.Sitemap = [
+    { url: abs("/hotels"), lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    ...statesSorted().map((s) => ({
+      url: abs(`/destinations/${s.slug}`),
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    })),
+  ];
+
   const posts: MetadataRoute.Sitemap = getAllPosts().map((p) => ({
     url: abs(`/blog/${p.slug}`),
     lastModified: new Date((p.updated ?? p.date) + "T00:00:00"),
@@ -25,5 +37,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...posts];
+  return [...staticRoutes, ...browse, ...posts];
 }
