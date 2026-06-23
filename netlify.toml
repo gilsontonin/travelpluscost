@@ -2,7 +2,9 @@
 # The Next runtime plugin turns dynamic routes into Netlify Functions.
 
 [build]
-  command = "npm run build"
+  # Pre-generate the static hotel sitemaps (scripts/gen-sitemaps.mjs) before the Next build, so they
+  # ship as static files in public/ (instant CDN serve) instead of slow per-request dynamic routes.
+  command = "npm run sitemaps && npm run build"
 
 [build.environment]
   NODE_VERSION = "22"
