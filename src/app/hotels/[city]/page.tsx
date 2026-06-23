@@ -77,6 +77,44 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
   const canonical = `/hotels/${slugify(city)}`;
   const countLabel = count >= 10 ? `${(Math.floor(count / 10) * 10).toLocaleString()}+` : String(count);
 
+  // Light per-city uniqueness (from the rows we already fetched — no extra queries): the actual
+  // top-rated property, whether the city has resorts, and the region anchor for a "near X" line.
+  // This is what keeps each hub from reading as a thin, templated doorway page.
+  const topRated = ranked[0];
+  const region = REGIONS.find((r) => r.cities.some((c) => slugify(c) === slugify(city)));
+  const anchor = region?.anchor;
+  const hasResorts = data.rows.some((h) => (h.property_type ?? "").toLowerCase() === "resort");
+  const faqs: { q: string; a: string }[] = [
+    {
+      q: `How many hotels are in ${city}?`,
+      a: `There are ${countLabel} hotels in ${loc} on ${SITE_NAME}${hasResorts ? ", including beachfront resorts and smaller boutique stays" : ""}.${
+        topRated?.rating
+          ? ` The highest-rated right now is ${topRated.name}, with a ${topRated.rating.toFixed(1)}/10 guest score${
+              topRated.review_count ? ` from ${topRated.review_count.toLocaleString()} reviews` : ""
+            }.`
+          : ""
+      }`,
+    },
+    {
+      q: `How does ${SITE_NAME} keep ${city} hotels cheaper?`,
+      a: `You pay what the hotel charges us plus one small flat fee — the same price for every traveler, on every device. We never raise the price based on your location, browser or history. That flat fee is usually less than the hidden markup most travel sites bake in.`,
+    },
+    {
+      q: `Are taxes and resort fees included in the price?`,
+      a: `Yes. Every room shows the all-in price — the nightly rate plus taxes and known fees — so the total you see is the total you pay. Where a ${city} hotel charges a resort or property fee, it's already in that number.`,
+    },
+    {
+      q: `Can I cancel a ${city} hotel booking?`,
+      a: `Many ${city} hotels offer fully refundable rates. When a room can be cancelled for free we label it "Fully refundable", so you can spot a flexible rate at a glance.`,
+    },
+  ];
+  if (anchor && region) {
+    faqs.push({
+      q: `How far are ${city} hotels from ${anchor}?`,
+      a: `Most ${city} stays sit within a few miles of ${anchor}. Each hotel page shows the exact distance to ${anchor} and other ${region.label} landmarks, so you can choose by location.`,
+    });
+  }
+
   // Cross-link the other markets we cover — builds the hub graph (helps crawl + indexing).
   const otherCities = REGIONS.flatMap((r) => r.cities.map((c) => ({ name: c, label: r.label })))
     .filter((c) => slugify(c.name) !== slugify(city))
@@ -131,6 +169,22 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
         </p>
       </header>
 
+      {/* per-city quick facts (varies by city) */}
+      <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm text-black/60">
+        <span>
+          <strong className="text-black">{countLabel}</strong> hotels
+        </span>
+        {topRated?.rating ? (
+          <span className="inline-flex items-center gap-1.5">
+            <span className="rounded bg-[#2e7d46] px-1.5 py-0.5 text-xs font-semibold text-white">
+              {topRated.rating.toFixed(1)}
+            </span>
+            top guest score
+          </span>
+        ) : null}
+        {anchor ? <span>Near {anchor}</span> : null}
+      </div>
+
       {top.length ? (
         <>
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -179,6 +233,46 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           same number for every traveler on every screen. No surveillance pricing. Ever.
         </p>
       </section>
+
+      {/* FAQ — useful, mostly per-city answers; carries FAQPage schema */}
+      <section className="mt-12">
+        <h2 className="text-lg font-semibold">Hotels in {city}: common questions</h2>
+        <div className="mt-3 border-y border-black/10">
+          {faqs.map((f, i) => (
+            <details key={i} className="group border-b border-black/10 py-3 last:border-b-0" open={i === 0}>
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-medium [&::-webkit-details-marker]:hidden">
+                <span>{f.q}</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="shrink-0 text-black/40 transition group-open:rotate-180"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </summary>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-black/70">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        }}
+      />
 
       {/* cross-links to other markets */}
       {otherCities.length ? (
