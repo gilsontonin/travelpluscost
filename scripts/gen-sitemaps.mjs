@@ -24,7 +24,11 @@ const SHARD_SIZE = 5000;
 // Thinner cities still render on demand, but a 1–2 hotel hub is near-duplicate of the hotel page
 // itself — keeping those out of the sitemap avoids a doorway-page footprint. ≥3 ⇒ ~3.7k hubs.
 const MIN_HUB_HOTELS = 3;
-const OUT_DIR = "public/sitemaps";
+// Versioned shard path. Google caches each child sitemap URL and is slow to re-read; bumping the
+// version (v2 → v3 → …) gives every child a fresh address Google has never read, so a content change
+// (e.g. shard size) is picked up immediately instead of serving a stale cached read of /sitemaps/.
+const SITEMAP_DIR = "sitemaps/v2";
+const OUT_DIR = `public/${SITEMAP_DIR}`;
 
 if (!SB_URL || !SB_SECRET) {
   console.warn("[gen-sitemaps] Missing Supabase env — skipping hotel sitemaps (build continues).");
@@ -77,7 +81,8 @@ console.log("[gen-sitemaps] fetching directory…");
 const rows = await fetchAll();
 console.log(`[gen-sitemaps] ${rows.length} hotels in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 
-if (existsSync(OUT_DIR)) await rm(OUT_DIR, { recursive: true, force: true });
+// Wipe the whole sitemaps/ tree (old version dirs included) so stale child URLs 404 and Google drops them.
+if (existsSync("public/sitemaps")) await rm("public/sitemaps", { recursive: true, force: true });
 await mkdir(OUT_DIR, { recursive: true });
 
 const today = new Date().toISOString().slice(0, 10);
@@ -112,8 +117,8 @@ console.log(`[gen-sitemaps] wrote ${OUT_DIR}/cities.xml (${citySlugs.length} cit
 // Master index: core (static pages + blog) sitemap, the city-hubs shard, then every hotel shard.
 const entries = [
   `<sitemap><loc>${SITE}/sitemap.xml</loc><lastmod>${today}</lastmod></sitemap>`,
-  `<sitemap><loc>${SITE}/sitemaps/cities.xml</loc><lastmod>${today}</lastmod></sitemap>`,
-  ...shardFiles.map((f) => `<sitemap><loc>${SITE}/sitemaps/${f}</loc><lastmod>${today}</lastmod></sitemap>`),
+  `<sitemap><loc>${SITE}/${SITEMAP_DIR}/cities.xml</loc><lastmod>${today}</lastmod></sitemap>`,
+  ...shardFiles.map((f) => `<sitemap><loc>${SITE}/${SITEMAP_DIR}/${f}</loc><lastmod>${today}</lastmod></sitemap>`),
 ];
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</sitemapindex>\n`;
 // sitemap-main.xml is the CURRENT index (robots.txt advertises it + you submit it to GSC). A fresh URL
