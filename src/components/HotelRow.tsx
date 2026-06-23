@@ -17,6 +17,7 @@ export default function HotelRow({
   loading,
   compact = false,
   priority = false,
+  awaitingDates = false,
 }: {
   hotel: CardHotel;
   query?: string;
@@ -24,6 +25,7 @@ export default function HotelRow({
   loading?: boolean;
   compact?: boolean;
   priority?: boolean;
+  awaitingDates?: boolean; // no dates chosen yet (city hub) → invite the visitor to pick dates, no fake price
 }) {
   const href = `${hotelHref(hotel)}${query ? `?${query}` : ""}`;
   const rev = reviewLabel(hotel.rating ?? undefined);
@@ -132,6 +134,16 @@ export default function HotelRow({
                 Same price for everyone
               </div>
             </>
+          ) : awaitingDates ? (
+            <div className="leading-tight">
+              <span className="inline-flex items-center gap-1 whitespace-nowrap text-[0.98rem] font-semibold text-accent">
+                See your price
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+              <div className="text-[0.68rem] text-black/45">All-in · same price for everyone</div>
+            </div>
           ) : loading ? (
             <span className="text-xs text-black/40">Checking price…</span>
           ) : (

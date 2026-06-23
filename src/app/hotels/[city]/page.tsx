@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { hotelsByCity, cityHotelCount, rankHotels, type DirectoryHotel } from "@/lib/directory";
+import { hotelsByCity, cityHotelCount, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
 import { slugify } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
 import { SITE_NAME, abs } from "@/lib/site";
-import HotelGridCard from "@/components/HotelGridCard";
+import { nearbyLabel } from "@/lib/distance";
+import HotelRow from "@/components/HotelRow";
 
 // Title-case a city slug for display when the directory has no row to read the real casing from.
 function cityFromSlug(slug: string): string {
@@ -120,8 +121,17 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
     .filter((c) => slugify(c.name) !== slugify(city))
     .slice(0, 8);
 
+  // Search-page card model: directory rows -> CardHotel. Enrich with the distance-to-anchor line
+  // for curated markets (so cards read "0.4 mi from Waikiki Beach", not just the city name again).
+  const landmarks = region?.landmarks ?? [];
+  const cards = top.map((h) => {
+    const c = directoryToCard(h);
+    if (landmarks.length && h.lat != null && h.lng != null) c.nearby = nearbyLabel(h.lat, h.lng, landmarks);
+    return c;
+  });
+
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6">
+    <div className="mx-auto max-w-5xl px-4 py-6">
       {/* breadcrumb */}
       <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs text-black/55">
         <Link href="/" className="hover:text-black">Home</Link>
@@ -185,23 +195,12 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
         {anchor ? <span>Near {anchor}</span> : null}
       </div>
 
-      {top.length ? (
+      {cards.length ? (
         <>
-          <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {top.map((h, i) => (
-              <HotelGridCard
-                key={h.id}
-                priority={i < 4}
-                hotel={{
-                  id: h.id,
-                  name: h.name,
-                  image: h.thumbnail ?? "",
-                  city: h.city ?? city,
-                  rating: h.rating,
-                  reviewCount: h.review_count,
-                  propertyType: h.property_type ?? "",
-                }}
-              />
+          <p className="mt-5 mb-2.5 text-xs font-medium text-accent">One price for everyone — never based on your data.</p>
+          <div className="flex flex-col gap-3 sm:gap-4">
+            {cards.map((c, i) => (
+              <HotelRow key={c.id} hotel={c} query="adults=2" awaitingDates priority={i < 2} />
             ))}
           </div>
 
