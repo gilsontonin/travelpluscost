@@ -24,7 +24,12 @@ const COLS: { title: string; links: FLink[] }[] = [
   },
   {
     title: "Support",
-    links: [{ label: "Help Center" }, { label: "Contact" }, { label: "Trust & Safety" }, { label: "Privacy" }],
+    links: [
+      { label: "Contact", href: "mailto:hello@travelpluscost.com" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Affiliate disclosure", href: "/disclosure" },
+    ],
   },
 ];
 
