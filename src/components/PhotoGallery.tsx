@@ -16,17 +16,8 @@ export default function PhotoGallery({
 }) {
   const [open, setOpen] = useState(false);
   const [idx, setIdx] = useState(0); // lightbox index
-  const [hero, setHero] = useState(0); // hero carousel index
-  // Preload current frame + neighbours so a swipe never waits on a download (no white flash).
-  const [mounted, setMounted] = useState<Set<number>>(() => {
-    const s = new Set([0]);
-    if (images.length > 1) {
-      s.add(1);
-      s.add(images.length - 1);
-    }
-    return s;
-  });
-  const startX = useRef<number | null>(null);
+  const [hero, setHero] = useState(0); // hero carousel index (tracked from scroll position)
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const show = useCallback((i: number) => {
     setIdx(i);
@@ -53,16 +44,13 @@ export default function PhotoGallery({
 
   if (!images.length) return <div className="mt-3 h-[400px] sm:h-[440px] bg-zinc-100 sm:rounded-lg" />;
 
-  const goHero = (i: number) => {
-    const ni = Math.max(0, Math.min(images.length - 1, i));
-    setHero(ni);
-    setMounted((s) => {
-      const n = new Set(s);
-      n.add(ni);
-      n.add((ni + 1) % images.length);
-      n.add((ni - 1 + images.length) % images.length);
-      return n;
-    });
+  const scrollByOne = (dir: number) => {
+    const el = scrollRef.current;
+    if (el) el.scrollBy({ left: dir * el.clientWidth, behavior: "smooth" });
+  };
+  const onHeroScroll = () => {
+    const el = scrollRef.current;
+    if (el) setHero(Math.round(el.scrollLeft / el.clientWidth));
   };
   const share = async () => {
     const url = typeof window !== "undefined" ? window.location.href : "";
@@ -120,32 +108,22 @@ export default function PhotoGallery({
 
       {/* full-bleed hero carousel on mobile (and on desktop when too few photos for the mosaic) */}
       <div className={`-mx-4 sm:mx-0 mt-0 sm:mt-3${mosaic ? " sm:hidden" : ""}`}>
-        <div
-          className="relative w-full h-[400px] sm:h-[440px] bg-zinc-100 sm:rounded-lg overflow-hidden"
-          onTouchStart={(e) => {
-            startX.current = e.touches[0].clientX;
-          }}
-          onTouchEnd={(e) => {
-            if (startX.current === null) return;
-            const dx = e.changedTouches[0].clientX - startX.current;
-            startX.current = null;
-            if (Math.abs(dx) > 30) goHero(hero + (dx < 0 ? 1 : -1));
-          }}
-        >
-          {/* sliding track — both frames are visible mid-transition (one pushes the other out) */}
-          <div className="flex h-full w-full transition-transform duration-300 ease-out" style={{ transform: `translateX(-${hero * 100}%)` }}>
+        <div className="relative w-full h-[400px] sm:h-[440px] bg-zinc-100 sm:rounded-lg overflow-hidden">
+          {/* native scroll-snap track — full finger-drag control; stop mid-swipe, snaps on release */}
+          <div
+            ref={scrollRef}
+            onScroll={onHeroScroll}
+            className="flex h-full w-full overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
             {images.map((src, i) => (
               <button
                 key={i}
                 type="button"
-                onClick={() => show(hero)}
-                aria-label="Open photo"
-                tabIndex={i === hero ? 0 : -1}
-                className="relative h-full w-full shrink-0 cursor-zoom-in"
+                onClick={() => show(i)}
+                aria-label={`Open photo ${i + 1}`}
+                className="relative h-full w-full shrink-0 snap-start cursor-zoom-in"
               >
-                {mounted.has(i) ? (
-                  <Image src={src} alt={`${name} photo ${i + 1}`} fill priority={i === 0 && !mosaic} sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
-                ) : null}
+                <Image src={src} alt={`${name} photo ${i + 1}`} fill priority={i === 0 && !mosaic} sizes="(max-width: 640px) 100vw, 1024px" className="object-cover" />
               </button>
             ))}
           </div>
@@ -182,7 +160,7 @@ export default function PhotoGallery({
               {/* arrows (desktop) */}
               <button
                 type="button"
-                onClick={() => goHero(hero - 1)}
+                onClick={() => scrollByOne(-1)}
                 aria-label="Previous photo"
                 className="hidden sm:grid absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 place-items-center shadow hover:bg-white"
               >
@@ -190,7 +168,7 @@ export default function PhotoGallery({
               </button>
               <button
                 type="button"
-                onClick={() => goHero(hero + 1)}
+                onClick={() => scrollByOne(1)}
                 aria-label="Next photo"
                 className="hidden sm:grid absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/90 place-items-center shadow hover:bg-white"
               >
@@ -198,7 +176,7 @@ export default function PhotoGallery({
               </button>
 
               {/* dots */}
-              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-black/35 rounded-full px-2.5 py-1.5">
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-black/35 rounded-full px-2.5 py-1.5 pointer-events-none">
                 {Array.from({ length: dots }).map((_, i) => (
                   <span key={i} className={`rounded-full transition-all ${i === activeDot ? "w-2 h-2 bg-white" : "w-1.5 h-1.5 bg-white/60"}`} />
                 ))}

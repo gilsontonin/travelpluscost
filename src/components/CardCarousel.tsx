@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 
-// Renders only frames the user has actually viewed (starts at 1), and routes every
-// photo through next/image so a card thumbnail downloads ~30 KB, not the 680 KB original.
+// Native scroll-snap carousel: full finger-drag control (stop mid-swipe, snaps on release).
+// Routes every photo through next/image so a card thumbnail downloads ~30 KB, not the original.
 export default function CardCarousel({
   images,
   alt,
@@ -19,58 +19,33 @@ export default function CardCarousel({
   priority?: boolean; // true for the first above-the-fold card → its lead image is the LCP
 }) {
   const [i, setI] = useState(0);
-  // Preload the current frame + its neighbours so a swipe never waits on a download (no white flash).
-  const [mounted, setMounted] = useState<Set<number>>(() => {
-    const s = new Set([0]);
-    if (images.length > 1) {
-      s.add(1);
-      s.add(images.length - 1);
-    }
-    return s;
-  });
-  const startX = useRef<number | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   if (!images.length) {
     return <div className="absolute inset-0 grid place-items-center text-black/30 text-xs">no photo</div>;
   }
 
-  const go = (idx: number) => {
-    setI(idx);
-    setMounted((s) => {
-      const n = new Set(s);
-      n.add(idx);
-      n.add((idx + 1) % images.length);
-      n.add((idx - 1 + images.length) % images.length);
-      return n;
-    });
+  const onScroll = () => {
+    const el = ref.current;
+    if (el) setI(Math.round(el.scrollLeft / el.clientWidth));
   };
-  const move = (dir: number) => go(Math.max(0, Math.min(images.length - 1, i + dir)));
   const arrow = (e: React.MouseEvent, dir: number) => {
     e.preventDefault();
     e.stopPropagation();
-    move(dir);
+    const el = ref.current;
+    if (el) el.scrollBy({ left: dir * el.clientWidth, behavior: "smooth" });
   };
 
   return (
-    <div
-      className="absolute inset-0 overflow-hidden group/car"
-      onTouchStart={(e) => {
-        startX.current = e.touches[0].clientX;
-      }}
-      onTouchEnd={(e) => {
-        if (startX.current === null) return;
-        const dx = e.changedTouches[0].clientX - startX.current;
-        startX.current = null;
-        if (Math.abs(dx) > 30) move(dx < 0 ? 1 : -1);
-      }}
-    >
-      {/* sliding track — neighbouring frames stay mounted so one image pushes the other out */}
-      <div className="flex h-full w-full transition-transform duration-300 ease-out" style={{ transform: `translateX(-${i * 100}%)` }}>
+    <div className="absolute inset-0 overflow-hidden group/car">
+      <div
+        ref={ref}
+        onScroll={onScroll}
+        className="flex h-full w-full overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      >
         {images.map((src, idx) => (
-          <div key={idx} className="relative h-full w-full shrink-0">
-            {mounted.has(idx) ? (
-              <Image src={src} alt={alt} fill sizes={sizes} quality={65} priority={priority && idx === 0} className="object-cover" />
-            ) : null}
+          <div key={idx} className="relative h-full w-full shrink-0 snap-start">
+            <Image src={src} alt={alt} fill sizes={sizes} quality={65} priority={priority && idx === 0} className="object-cover" />
           </div>
         ))}
       </div>
