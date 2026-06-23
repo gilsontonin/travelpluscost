@@ -5,8 +5,12 @@ on:
     branches: [main]
   pull_request:
 
+# Fast static checks only — type-check + lint. The production build + deploy runs on Netlify, which
+# has the Supabase/LiteAPI env needed to pre-render the data-backed pages (city hubs, hotel pages).
+# Running `next build` here would always fail because GitHub Actions has none of those secrets.
+# (Want a full build check in CI too? Add the keys as repo secrets and we can wire an env: block.)
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,4 +21,3 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm run lint
-      - run: npm run build
