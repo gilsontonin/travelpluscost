@@ -7,7 +7,8 @@
 //
 // Wired as `prebuild`, so Netlify regenerates these on every deploy. Output:
 //   public/sitemaps/hotels-{k}.xml   urlset shards (<= SHARD_SIZE URLs each)
-//   public/sitemap-index.xml         sitemapindex: core /sitemap.xml + every hotel shard
+//   public/sitemap-hotels.xml        sitemapindex (current): core /sitemap.xml + every hotel shard
+//   public/sitemap-index.xml         legacy copy of the same index (back-compat)
 import { createClient } from "@supabase/supabase-js";
 import { mkdir, writeFile, rm } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -94,5 +95,10 @@ const entries = [
   ...shardFiles.map((f) => `<sitemap><loc>${SITE}/sitemaps/${f}</loc><lastmod>${today}</lastmod></sitemap>`),
 ];
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</sitemapindex>\n`;
-await writeFile("public/sitemap-index.xml", indexXml);
-console.log(`[gen-sitemaps] wrote public/sitemap-index.xml (${entries.length} sitemaps)`);
+// sitemap-hotels.xml is the CURRENT index (the one robots.txt advertises + you submit to GSC). It's a
+// fresh URL Google never saw the old 274k-junk version at, so it has no cached "Couldn't fetch" history.
+// sitemap-index.xml is the legacy name, still written (identical) so any old reference stays live & clean.
+for (const name of ["sitemap-hotels.xml", "sitemap-index.xml"]) {
+  await writeFile(`public/${name}`, indexXml);
+}
+console.log(`[gen-sitemaps] wrote public/sitemap-hotels.xml (+ legacy sitemap-index.xml), ${entries.length} sitemaps each`);
