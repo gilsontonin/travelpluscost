@@ -26,6 +26,7 @@ import PoliciesInfo from "@/components/PoliciesInfo";
 import PriceTransparency from "@/components/PriceTransparency";
 import SimilarHotels from "@/components/SimilarHotels";
 import TrackView from "@/components/TrackView";
+import CityHotels from "@/components/CityHotels";
 import { nearbyLabel } from "@/lib/distance";
 import { REGIONS } from "@/lib/regions";
 import { SITE_NAME } from "@/lib/site";
@@ -108,6 +109,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
   const id = extractHotelId(slug);
   const hotel = await getHotel(id);
   if (!hotel) notFound();
+  const dir = await getDir(id);
   // Landmarks / "nearby" only exist for our curated markets; non-curated hotels degrade gracefully.
   const region = REGIONS.find((r) => r.name.toLowerCase() === (hotel.island || "").toLowerCase());
   const landmarks = region?.landmarks ?? [];
@@ -335,6 +337,8 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
       <PropertyFaq hotel={hotel} />
 
       <PoliciesInfo policies={hotel.policies} importantInfo={hotel.importantInfo} name={hotel.name} />
+
+      <CityHotels city={hotel.city || ""} state={dir?.state} excludeId={hotel.id} />
     </div>
   );
 }
