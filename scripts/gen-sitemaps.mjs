@@ -20,6 +20,10 @@ const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://travelpluscost.com").
 // Google's sitemap fetcher → "Couldn't fetch" in GSC (only the small final shard succeeded).
 // ~10k URLs ≈ 1MB raw / ~180KB gzipped → fetches in well under a second. See docs/HANDOFF.md.
 const SHARD_SIZE = 10000;
+// City hubs (/hotels/<city>): only list a hub once the city has at least this many real hotels.
+// Thinner cities still render on demand, but a 1–2 hotel hub is near-duplicate of the hotel page
+// itself — keeping those out of the sitemap avoids a doorway-page footprint. ≥3 ⇒ ~3.7k hubs.
+const MIN_HUB_HOTELS = 3;
 const OUT_DIR = "public/sitemaps";
 
 if (!SB_URL || !SB_SECRET) {
@@ -89,9 +93,26 @@ for (let k = 0; k < shardCount; k++) {
 }
 console.log(`[gen-sitemaps] wrote ${shardCount} shard file(s) to ${OUT_DIR}/`);
 
-// Master index: the core (pages + city hubs + blog) sitemap, then every hotel shard.
+// City hubs (/hotels/<city>): one entry per city with ≥ MIN_HUB_HOTELS real hotels. Group by the
+// SAME slug the route uses, so the URL here resolves to a real, non-thin hub page.
+const cityCounts = new Map();
+for (const h of rows) {
+  const slug = slugify(h.city);
+  if (slug) cityCounts.set(slug, (cityCounts.get(slug) || 0) + 1);
+}
+const citySlugs = [...cityCounts.entries()]
+  .filter(([, n]) => n >= MIN_HUB_HOTELS)
+  .map(([s]) => s)
+  .sort();
+const cityBody = citySlugs.map((s) => `<url><loc>${SITE}/hotels/${s}</loc></url>`).join("\n");
+const cityXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${cityBody}\n</urlset>\n`;
+await writeFile(`${OUT_DIR}/cities.xml`, cityXml);
+console.log(`[gen-sitemaps] wrote ${OUT_DIR}/cities.xml (${citySlugs.length} city hubs, ≥${MIN_HUB_HOTELS} hotels)`);
+
+// Master index: core (static pages + blog) sitemap, the city-hubs shard, then every hotel shard.
 const entries = [
   `<sitemap><loc>${SITE}/sitemap.xml</loc><lastmod>${today}</lastmod></sitemap>`,
+  `<sitemap><loc>${SITE}/sitemaps/cities.xml</loc><lastmod>${today}</lastmod></sitemap>`,
   ...shardFiles.map((f) => `<sitemap><loc>${SITE}/sitemaps/${f}</loc><lastmod>${today}</lastmod></sitemap>`),
 ];
 const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</sitemapindex>\n`;

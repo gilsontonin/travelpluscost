@@ -1,13 +1,11 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/posts";
 import { abs } from "@/lib/site";
-import { REGIONS } from "@/lib/regions";
-import { slugify } from "@/lib/hotelUrl";
 
-// Core routes + city hub pages + every blog post. The real-hotel long tail (~66k US hotels — rentals
-// are excluded; see scripts/gen-sitemaps.mjs) lives in static shard files (public/sitemaps/hotels-*.xml,
-// built by scripts/gen-sitemaps.mjs); /sitemap-index.xml ties this core sitemap and those shards
-// together for a single GSC submission.
+// Core static routes + every blog post. Two big derived lists ship as static shards built by
+// scripts/gen-sitemaps.mjs from the directory: the ~66k real-hotel pages (public/sitemaps/hotels-*.xml)
+// and every city hub with ≥3 hotels (public/sitemaps/cities.xml). /sitemap-hotels.xml ties this core
+// sitemap and those shards together for a single GSC submission.
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
@@ -20,11 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: abs("/disclosure"), lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
 
-  // Curated city hub pages — destination landing pages ("hotels in <city>").
-  const cityHubs: MetadataRoute.Sitemap = [
-    ...new Set(REGIONS.flatMap((r) => r.cities.map((c) => slugify(c)))),
-  ].map((slug) => ({ url: abs(`/hotels/${slug}`), lastModified: now, changeFrequency: "weekly", priority: 0.8 }));
-
   const posts: MetadataRoute.Sitemap = getAllPosts().map((p) => ({
     url: abs(`/blog/${p.slug}`),
     lastModified: new Date((p.updated ?? p.date) + "T00:00:00"),
@@ -32,5 +25,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...cityHubs, ...posts];
+  return [...staticRoutes, ...posts];
 }
