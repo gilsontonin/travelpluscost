@@ -1,99 +1,63 @@
 # HANDOFF — current state & next steps
 
-_Last updated: 2026-06-20. This is the living state doc. Update it as you work._
+_Last updated: 2026-06-23. Living state doc — update as you work._
 
 ## TL;DR
-A working hotel-booking demo on **real LiteAPI data**, styled as the **Expedia layout** in Airbnb coral
-(switched from Propel 2026-06-20). **Oahu** is the featured city. Flow works end-to-end: **search →
-property page → guest details → confirmation**. Booking is a **safe demo** (no charge, no real
-reservation). No GitHub remote / not yet deployed — see `docs/DEPLOY.md`.
+A real, SEO-rich hotel site on live **LiteAPI** data, Airbnb-coral Expedia-style UI. **Google is indexing
+it and an AI Overview already describes the cost-plus model verbatim.** Search → city hubs → property →
+(demo) booking all work. Booking is still a **safe demo / affiliate-default** (no real charge yet —
+merchant/cost-plus is a later phase). Deploys to **travelpluscost.com** (Netlify) on push to `main`.
 
-## What works (real)
-- **Home** (`/`) — hero + search panel (Cars/Hotels tabs) + popular chips (Oahu, Honolulu, Waikiki, …).
-- **Search** (`/search?destination=…`) — real hotels w/ photos + live prices (SSP). "Oahu" aliases to
-  Honolulu. **Expedia results layout**: All stays/Hotels/Homes tabs, filter bar, full-width **list rows**
-  (`HotelRow`) with green review-score badges, honesty banner, pagination. Stacks to 1 column on mobile.
-- **Property** (`/hotel/[id]`) — gallery, description, facilities, star/rating, "Choose your room" with
-  real room offers + prices, cost-plus promise box, Reserve buttons.
-- **Book** (`/book`) — **Expedia-style checkout**: left = guest form + payment-method selector
-  (`BookingForm`); right = sticky price-details box (nightly×nights, taxes included, total, pay today).
-- **Confirmation** (`/booking-confirmed`) — booking ref + details + "no charge / test booking" note.
-- All routes typecheck/lint/build green. `/` static; the rest `force-dynamic` (live rates per request).
+## What's live (real)
+- **Home / search / property** — live LiteAPI data, all-in SSP prices, Expedia-style cards (`HotelRow`),
+  filters, list⇄map (`ResultsList` + `MapResults`).
+- **Hub system** (rebuilt this session, Expedia+Trivago hybrid, mobile-first):
+  - `/hotels` browse index → `/destinations/<state>` (51 state hubs) → `/hotels/<city>` (city hubs) →
+    `/hotels/<city>/<slug>` (property). Dense internal-link graph; breadcrumbs + schema throughout.
+  - **City hub** is the polished template: from-$X hook, "Check prices for these dates" chips,
+    relevance chips, priced cards (lazy `/api/prices`, tomorrow-night) with **Popular badges** + **save
+    hearts**, sticky "View map" bar, themed rails (Luxury/Resorts/Most-reviewed), **Things to do**
+    (Viator), per-city FAQ, and "More hotels / same-state / Popular destinations" link clusters.
+- **Brand / SEO**: `Organization`+`WebSite`+`SearchAction` JSON-LD, coral "+" favicon/logo/OG image,
+  **/about** manifesto (mission/vision/values + anti-gimmick), `/disclosure` (how-we-make-money),
+  privacy/terms. Sitemap is **`/sitemap-v3.xml`** (versioned tree: pages + cities + hotel shards, all
+  under `/sitemaps/v3/`); robots advertises it.
+- **Directory**: Supabase `hotels` = **66,235 real US hotels** (rentals purged — see git history).
 
-## Layout note
-Cloned **Expedia's structure** (from owner's full-page screenshots) with **Airbnb colors** (coral
-`#ff385c`, white/clean — NOT Expedia's blue). Honest-brand deviations from Expedia: no fake scarcity
-("only 2 left!"), no invented resort fees, "same price for everyone" instead of a sale strip.
+## What's demo / not wired (be honest)
+- **Booking doesn't charge or reserve.** `bookingMode` defaults to `affiliate`; the flow ends on a
+  `TPC-DEMO` confirmation. Real revenue path (affiliate hand-off or sandbox→merchant) is **Track C** of
+  `docs/LAUNCH-PLAN.md` and the #1 thing before scaling content.
+- **Cost-plus member pricing** (below-SSP behind login — the differentiator) is **not built** (merchant
+  phase). Public shows SSP only.
+- **Amenity sections** ("pool/spa hotels in {city}") — script + schema committed
+  (`scripts/enrich-amenities.mjs`), run **deferred** (needs the 2-line SQL + ~66k LiteAPI calls).
 
-## What's placeholder / demo (be honest about this)
-- **Booking does NOT charge or reserve.** It generates a `TPC-XXXX` ref and a confirmation screen. The
-  real LiteAPI `prebook → book → payment` is the next step (sandbox key is wired + verified reachable;
-  see "LiteAPI notes"). Real booking that takes payment = merchant-of-record = Seller-of-Travel/legal.
-- **Visual-only (not wired):** the filter bar (Filters/Popular/Price/Guest rating/Amenities/Sort), tabs,
-  payment-method selector, favorites heart, pagination, "Sign in". They look right; they don't act yet.
-- **List rows** show star rating where Expedia showed walk-distance/amenities (LiteAPI gives stars +
-  rating, not per-hotel bed/bath or walk distance).
-- Images use plain `<img>` (no `next/image` optimization yet — fine; configure `remotePatterns` for
-  `static.cupid.travel` if you switch to `next/image`).
+## Needs the OWNER (I can't)
+- Netlify env: set **`NEXT_PUBLIC_GA_ID`** (GA4) + **`NEXT_PUBLIC_GSC_VERIFICATION`** — both wired, no-op until set.
+- **Create social accounts** (YouTube/X/IG/LinkedIn, "+" avatar) → send URLs → I add `sameAs`.
+- Run the amenity column SQL in Supabase if/when you want Hybrid 4.
+- Logo: the generated "+" wordmark is launch-fine; commission a designed one later if wanted.
 
-## File map
-```
-src/
-  app/
-    layout.tsx            Header + Footer + light bg
-    page.tsx              home (hero, SearchPanel, popular chips incl. Oahu)
-    search/page.tsx       results (Propel layout) — searchHotels()
-    hotel/[id]/page.tsx   property page — getHotel() + getRoomOffers()
-    book/page.tsx         booking summary + <BookingForm/>
-    booking-confirmed/page.tsx  confirmation screen
-    globals.css           Tailwind v4 + --accent (#ff385c coral) + --accent-tint
-  components/
-    Header.tsx            floating header, mobile hamburger (client)
-    Footer.tsx            dark footer
-    SearchPanel.tsx       Cars/Hotels tabs + fields + Update Search (client)
-    PropertyCard.tsx      result card (links to /hotel/[id])
-    BookingForm.tsx       guest form -> /booking-confirmed (client)
-  lib/
-    liteapi.ts            raw LiteAPI client (X-API-Key, getHotels/getHotelDetails/getRates)
-    hotels.ts             normalized: searchHotels, getHotel, getRoomOffers + Oahu alias
-    format.ts             money()
-    env.ts  flags.ts      env (zod) + feature flags
-    typesense.ts redis.ts supabase.ts   scale infra wrappers (NOT used yet)
-docs/  POSITIONING · BUSINESS-PLAN · ARCHITECTURE · HANDOFF (this) · DEPLOY
-```
+## Docs map
+`POSITIONING` (guardrails) · `BRAND-STRATEGY` (transparency moat, Charter, content, monetization) ·
+`LAUNCH-PLAN` (prioritized deliverables, 7 tracks) · `REFERENCE-SPECS` (Expedia/Trivago blueprints +
+the shoot loop) · `ARCHITECTURE` · `DEPLOY` · `HANDOFF` (this).
 
-## LiteAPI notes (discovered via probes — saves you the round trips)
-- Base `https://api.liteapi.travel/v3.0`, auth header **`X-API-Key`**.
-- `GET /data/hotels?countryCode=US&cityName=Honolulu&limit=N` → `{ data: [{ id, name, main_photo,
-  thumbnail, address, city, stars, rating(/10), reviewCount, latitude, longitude }] }`.
-- `GET /data/hotel?hotelId=ID` → rich detail: `hotelImages[].url`, `facilities[]` (strings),
-  `hotelDescription` (HTML), `starRating`, `rating`, `reviewCount`, `checkinCheckoutTimes`, `rooms`.
-- `POST /hotels/rates` `{hotelIds, checkin, checkout, occupancies:[{adults}], currency, guestNationality}`
-  → `{ data: [{ hotelId, roomTypes:[{ offerId, rates:[{ name, boardName, retailRate:{
-  suggestedSellingPrice:[{amount,currency}], total:[...] } }] }] }] }`. **We display
-  `suggestedSellingPrice` (SSP, parity-safe); `total` is the net cost — never display it.**
-  Join rates→hotels by `hotelId`.
-- **Sandbox** (`LITEAPI_SANDBOX` key, same base URL): rates return 200 for real hotels, BUT `rates/prebook`
-  can 409 "provider price exceeds locked selling price" (rate drift). Real booking must: fetch fresh
-  rates → prebook immediately → book within the lock window, and handle 409 by re-searching.
+## Design / verify loop
+- `npm run shoot` / `npm run shoot:local` — iPhone-13 profile, fold+full screenshots → `design/shots/`
+  (gitignored). `SHOOT_BASE` switches prod vs local dev. ffmpeg (miniconda) extracts frames from
+  reference videos into `design/refs/` (gitignored — third-party IP, never committed).
 
-## Env keys
-In `.env.local` (gitignored; template in `.env.example`):
-- `LITEAPI_KEY` — **set** (production; powers all current data).
-- `LITEAPI_SANDBOX` — **set** (for safe test bookings later).
-- Empty/future: Supabase, Typesense, Upstash, Travelpayouts, Duffel.
-
-## Next steps (priority order)
-1. **Deploy + tie `travelpluscost.com`** — `docs/DEPLOY.md` (needs owner's Vercel/GitHub login).
-2. **Wire real (sandbox) booking** — prebook→book on the sandbox key, handle 409, confirmation from the
-   real booking ID. Keep it sandbox until merchant/legal is sorted.
-3. **Make the UI controls real** — filters, category chips, sort, favorites, pagination, map.
-4. **Scale infra** — ingest LiteAPI content → Supabase → Typesense (see ARCHITECTURE.md) for all-US/world.
-5. **Member gate + cost-plus engine** (Phase 6) — the deterministic markup + login-gated below-SSP price.
-6. **Verticals** — flights/cars (Duffel), attractions (Viator affiliate).
+## Next steps (priority)
+1. **Funnel + measurement** (LAUNCH-PLAN Track C) — GA id, conversion events, a real booking endpoint.
+2. **Brand-first content** (BRAND-STRATEGY §3): the Charter page, "test it yourself" demo, and **real
+   researched SEO blogs/videos on the transparency topic itself** — BEFORE generic "things to do in X".
+3. **Socials** → wire `sameAs`. Then tech CWV pass. Then scale destination content.
 
 ## Gotchas
-- Node: `export PATH="$HOME/.local/node/bin:$PATH"` before npm/node.
-- Dynamic routes use `export const dynamic = "force-dynamic"` (live rates; don't prerender).
-- `searchParams`/`params` are **Promises** in Next 16 — `await` them.
-- No git remote yet; commits are local.
+- **Run `npm run lint` BEFORE committing** — eslint errors fail the Netlify `next build` (the deploy
+  keeps the old version). Watch `react/no-unescaped-entities` (use curly `’ “ ”`) + `react-hooks/refs`.
+- Node: `export PATH="$HOME/.local/node/bin:$PATH"`. `searchParams`/`params` are Promises (await them).
+- Sitemap cache-busting: bump `SITEMAP_VERSION` in `scripts/gen-sitemaps.mjs` (v3→v4) to rotate the whole
+  tree to fresh URLs at once when GSC clings to a stale read.
