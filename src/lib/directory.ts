@@ -177,6 +177,21 @@ export async function searchDirectory(destination: string, limit = 500): Promise
   return rankHotels(rows).slice(0, limit).map(directoryToCard);
 }
 
+/** Hotels in a named NEIGHBOURHOOD of a city — city-scoped (no cross-city leak). Located by NAME-SEEDS:
+ * hotels whose name contains the area sit in it. Accurate even in compact towns (a geo-radius pollutes —
+ * "Thousand Hills" + 1.5 mi pulls the whole central core). It returns only hotels that NAME the area (a
+ * sample), which is exactly right for a rail. Falls back to the whole city when an area has too few
+ * name-seeds (e.g. "the Strip" / "Highway 76", which hotels rarely put in their name). */
+export async function hotelsInArea(city: string, area: string, limit = 12): Promise<CardHotel[]> {
+  const a = area.trim().toLowerCase();
+  // Drop vacation-rental/condo listings mis-tagged kind=hotel — they shouldn't sit in a "hotels" rail
+  // (matches the rate-verified pool's name-spam guard in scripts/blog/hotels.mjs).
+  const rows = (await hotelsByCity(city, "us", 400)).filter((h) => !SPAM_NAME.test(h.name ?? ""));
+  const seeds = rows.filter((h) => h.name?.toLowerCase().includes(a));
+  return rankHotels(seeds.length >= 3 ? seeds : rows).slice(0, limit).map(directoryToCard);
+}
+const SPAM_NAME = /\b(condos?|condotel|remodeled|sleeps|\d+\s*(br|bed|bedrooms?)|vacation rentals?|townhomes?|entire (home|place|house))\b/i;
+
 /** Total directory size — for status/health. */
 export async function directoryCount(country?: string): Promise<number> {
   let q = supabaseAdmin().from("hotels").select("id", { count: "exact", head: true });

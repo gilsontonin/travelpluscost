@@ -5,7 +5,7 @@ import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
 import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
 import { parseBlocks, extractHeadings, hotelIdsInBody, railDestsInBody, areasDestsInBody } from "@/lib/blogBody";
-import { getDirectoryHotel, searchDirectory, cityHotelCount, type DirectoryHotel } from "@/lib/directory";
+import { getDirectoryHotel, searchDirectory, hotelsInArea, cityHotelCount, type DirectoryHotel } from "@/lib/directory";
 import { resolveRegion } from "@/lib/regions";
 import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
@@ -81,9 +81,20 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   );
   const hotels = Object.fromEntries(hotelEntries.filter(([, h]) => h)) as Record<string, DirectoryHotel>;
 
-  // `::rail <dest>` / `::map <dest>` — pre-fetch each area's hotels from the directory (server-side, at build).
+  // `::rail <dest>` — pre-fetch each rail's hotels (server-side, at build). When the rail names a
+  // NEIGHBOURHOOD of the post's city (not the city itself), resolve it city-scoped via hotelsInArea so it
+  // returns that area's hotels and never leaks cross-city (a "Strip" text-search would otherwise hit Vegas).
+  const cityLc = post.region?.destination.trim().toLowerCase();
   const railEntries = await Promise.all(
-    railDestsInBody(post.body).map(async (d) => [d, await searchDirectory(d, 12)] as const),
+    railDestsInBody(post.body).map(
+      async (d) =>
+        [
+          d,
+          cityLc && d.trim().toLowerCase() !== cityLc
+            ? await hotelsInArea(post.region!.destination, d, 12)
+            : await searchDirectory(d, 12),
+        ] as const,
+    ),
   );
   const rails = Object.fromEntries(railEntries) as Record<string, CardHotel[]>;
 
