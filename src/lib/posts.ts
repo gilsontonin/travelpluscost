@@ -342,13 +342,13 @@ The trade is the drive: most days it's fifteen to twenty minutes to the theaters
 
 **Thousand Hills is the spacious condo pocket dropped right in the center of everything.** It's minutes from the Strip but tucked into the trees around the Thousand Hills golf course, with condos that include full kitchens, laundry and enough room that nobody has to draw the short straw and take the pull out couch. You get the quiet of the woods and the location of the Strip — the rare Branson combination that doesn't make you pick one.
 
-### The Thousand Hills Condos
+### Thousand Hills Hotels and Condos
 
-These are full condos, not hotel rooms: most include kitchens, washers, multiple bedrooms and a pool on site, which is why families and longer stays book them out first.
+The neighbourhood mixes vacation condos (you book those direct) with dependable hotels minutes from the golf course and the Strip. The Comfort Inn at Thousand Hills is the easy bookable pick — a pool, the quiet of the woods, and easy access to the golf course and the Strip without the Strip's noise.
 
-::hotel lp657385ef
+::hotel lp1fae7
 
-**Best for:** families, longer stays, golfers, and anyone who wants a kitchen and amenities of their own.
+**Best for:** families, longer stays, golfers, and anyone who wants quiet without the drive.
 
 ## Big Cedar Lodge: The Splurge South of Town
 
@@ -356,7 +356,7 @@ These are full condos, not hotel rooms: most include kitchens, washers, multiple
 
 It's a destination, not a base, so you'll drive in for shows. But if the whole trip is the splurge, this is the unforgettable one.
 
-::hotel lp1828a0
+It books direct rather than through us, so we can't show you a price here — but it's the one Branson-area splurge worth knowing about. For a lakefront splurge you *can* book with us, the Chateau on the Lake above is the call.
 
 ## A Few Branson Hotels Worth Booking
 
@@ -369,7 +369,7 @@ Once you've settled on an area, here are real, well reviewed Branson hotels and 
 | The Stone Castle | The Strip | 8.0 | Kids (it's a castle) |
 | Chateau on the Lake | Table Rock Lake | 9.0 | The splurge |
 | Hilton Promenade | Branson Landing | 8.5 | Walkable lakefront |
-| Palace View Resort | Near the lake | 8.9 | Families, longer stays |
+| Comfort Inn & Suites | Branson Meadows | 9.2 | Families, suites |
 | Baymont, Thousand Hills | Thousand Hills | 10.0 | Value |
 | Seven Gables Inn | Off the Strip | 9.2 | Budget |
 
@@ -385,11 +385,11 @@ It is a literal castle, so the kids will lobby hard for it. Thousands of familie
 
 ::hotel lp2a316
 
-### Palace View Resort by Spinnaker — families and longer stays
+### Comfort Inn & Suites Branson Meadows — families and suites
 
-Condo style suites with room to spread out, modern amenities including a resort's worth of pools, with easy access to both the Strip and the lake.
+Roomy suites scoring a 9.2, near the Branson Meadows shops and IMAX — an indoor pool, free breakfast, modern amenities and room to spread out, which is exactly what a family on a multi-night trip wants.
 
-::hotel lp83ba2
+::hotel lp30837
 
 ### Baymont by Wyndham, Thousand Hills — the value perfect score
 
@@ -422,7 +422,7 @@ Start from the trip and the rest sorts itself out. First timers and show goers d
 | Couple's getaway | Branson Landing or Table Rock Lake |
 | On a budget | An inn just off Highway 76 |
 | Lake or Silver Dollar City | Table Rock Lake / Indian Point |
-| A splurge | Big Cedar Lodge |
+| A splurge | Chateau on the Lake |
 
 Timing matters as much as location here. Branson runs on two sold out seasons: summer, and the **Ozark Mountain Christmas** (November and December), when the whole town wires itself with lights, the holiday shows sell out, and the hotels fill. Fall — late September and October — is the quiet, mild, leaf peeping sweet spot the locals would rather you didn't know about.
 
