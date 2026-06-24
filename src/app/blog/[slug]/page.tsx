@@ -10,7 +10,7 @@ import { resolveRegion } from "@/lib/regions";
 import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
 import BlogSearch from "@/components/blog/BlogSearch";
-import HotelList from "@/components/HotelList";
+import BlogStaysList from "@/components/BlogStaysList";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -169,7 +169,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       {/* Inventory-intent: search → straight to inventory (OTA pattern), above the editorial chrome. */}
       {post.region ? <BlogSearch dest={post.region.destination} /> : null}
       {post.region && heroRail.length ? (
-        <HotelList
+        <BlogStaysList
           title={`Top-rated stays in ${post.region.name}`}
           subtitle="One honest price — the rate plus one flat fee, the same for everyone"
           hotels={heroRail}
