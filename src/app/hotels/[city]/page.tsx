@@ -8,7 +8,7 @@ import { REGIONS } from "@/lib/regions";
 import { siblingCities } from "@/lib/geo";
 import { SITE_NAME, abs } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
-import HotelRow from "@/components/HotelRow";
+import CityResults from "@/components/CityResults";
 
 // Title-case a city slug for display when the directory has no row to read the real casing from.
 function cityFromSlug(slug: string): string {
@@ -74,7 +74,7 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
   if (!data) notFound();
   const { ranked, city, state, count } = data;
   const loc = [city, state].filter(Boolean).join(", ");
-  const top = ranked.slice(0, 24);
+  const top = ranked.slice(0, 48);
   const searchHref = `/search?destination=${encodeURIComponent(city)}&adults=2`;
   const canonical = `/hotels/${slugify(city)}`;
   const countLabel = count >= 10 ? `${(Math.floor(count / 10) * 10).toLocaleString()}+` : String(count);
@@ -180,52 +180,31 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
         />
       ) : null}
 
-      <header className="mt-4 max-w-3xl">
+      {/* Compact header — H1 + real per-city facts + one value line; inventory leads (no wall of text). */}
+      <header className="mt-4">
         <h1 className="text-2xl font-semibold sm:text-3xl">Hotels in {loc}</h1>
-        <p className="mt-3 text-[15px] leading-relaxed text-black/70">
-          Compare <strong>{countLabel} hotels in {city}</strong> on one honest price — the room rate plus one small
-          flat fee, the same for everyone, never based on your data. Browse top-rated stays below, then pick your
-          dates to see the live all-in price.
+        <div className="mt-2 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm text-black/60">
+          <span>
+            <strong className="text-black">{countLabel}</strong> hotels
+          </span>
+          {topRated?.rating ? (
+            <span className="inline-flex items-center gap-1.5">
+              <span className="rounded bg-[#2e7d46] px-1.5 py-0.5 text-xs font-semibold text-white">
+                {topRated.rating.toFixed(1)}
+              </span>
+              top guest score
+            </span>
+          ) : null}
+          {anchor ? <span>Near {anchor}</span> : null}
+        </div>
+        <p className="mt-2 max-w-2xl text-sm text-black/60">
+          One honest price — the room rate plus one small flat fee, the same for everyone, never based on your data.
+          Pick dates on any stay to see the live all-in total.
         </p>
       </header>
 
-      {/* per-city quick facts (varies by city) */}
-      <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-sm text-black/60">
-        <span>
-          <strong className="text-black">{countLabel}</strong> hotels
-        </span>
-        {topRated?.rating ? (
-          <span className="inline-flex items-center gap-1.5">
-            <span className="rounded bg-[#2e7d46] px-1.5 py-0.5 text-xs font-semibold text-white">
-              {topRated.rating.toFixed(1)}
-            </span>
-            top guest score
-          </span>
-        ) : null}
-        {anchor ? <span>Near {anchor}</span> : null}
-      </div>
-
       {cards.length ? (
-        <>
-          <p className="mt-5 mb-2.5 text-xs font-medium text-accent">One price for everyone — never based on your data.</p>
-          <div className="flex flex-col gap-3 sm:gap-4">
-            {cards.map((c, i) => (
-              <HotelRow key={c.id} hotel={c} query="adults=2" awaitingDates priority={i < 2} />
-            ))}
-          </div>
-
-          <div className="mt-8 flex justify-center">
-            <Link
-              href={searchHref}
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3 text-sm font-semibold text-white transition hover:opacity-90"
-            >
-              See all {countLabel} hotels in {city}
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M13 6l6 6-6 6" />
-              </svg>
-            </Link>
-          </div>
-        </>
+        <CityResults cards={cards} city={city} countLabel={countLabel} searchHref={searchHref} />
       ) : (
         <p className="mt-6 text-black/60">
           We&apos;re still adding photos for {city}.{" "}
