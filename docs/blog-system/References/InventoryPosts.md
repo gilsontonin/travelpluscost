@@ -66,5 +66,13 @@ We hold a huge amount of real hotel imagery (directory thumbnails + ~30 images p
 - **Ramp** (new domain): publish in batches, measure, scale — not thousands at once.
 - Slowest per-city steps: cover sourcing + reading-grade tuning.
 
+## 7. CTA & relational linking — the marketing-hat pass (every section)
+**Replicable rule for every post, every section.** Before shipping, wear the marketing hat at each H2/H3 and answer:
+- **What's the CTA?** One action the reader should take here — *book this hotel · search this area · compare A vs B · see this area's stays*. Every section ships with a ready-made CTA; no section is a dead end.
+- **Which hotels did I mention?** Any hotel named in the section → a `::hotel` **card** or a **link to that hotel**. Path of least resistance: see a hotel, book it right there (the "card rule" — also applies to hotel-named H2/H3s).
+- **Is it relational + correct?** Every `::rail`/`::search`/`::map`/`::cta` and `/search` link must resolve to the **right hotel/city — never a leak.** The directory is **city-level** (no neighbourhood field), so a text search for "Strip" pulls the *Las Vegas* Strip, and "Table Rock" leaks cross-state. For single-city neighbourhoods, point area widgets/links at the **city** (e.g. `::rail Branson`, `/search?destination=Branson`), or do a neighbourhood-tagging data pass. Per-area rails/links are clean only on **multi-city regions** (Maui → `::rail Wailea` = exactly Wailea).
+
+**Tool:** `npm run blog:cta -- <slug>` (Gemini + the directory). Per section it surfaces the suggested CTA, the directory hotels mentioned (matched to real ids → carded ✓ or a **gap**), and any destination that doesn't resolve to this post's city (**🔴 LEAK?**). It SURFACES — *you* reason and **hand-curate**: did I maximise the CTA? Is every card/link the correct hotel? Fix gaps + leaks by hand; the matcher can miss or leak, so never apply blind. Target: 0 leaks, every mentioned hotel actioned, a CTA in every section.
+
 ## Session state (for the next run)
 Live posts: `surveillance-pricing`, `where-to-stay-in-oahu`, `where-to-stay-in-maui`, `where-to-stay-in-branson` (city pilot #1, serp 74), `where-to-stay-in-telluride` (city pilot #2, serp 82). Shipped: Semrush wiring + keyword ledger + `blog:keywords`; the widgets + inventory-first layout; the pSEO toolkit (`blog:opportunities` / `blog:hotels` directory mode / `blog:scaffold` / `blog:areas`); the post-stats directive-strip fix; CTR titles + hotel-photo alt. **Next:** `::photo` + cadence-count hotel photos; Charleston (after SC/WV state disambiguation, KD 28 / vol 1,300); then the next tier from `blog:opportunities`; request GSC indexing for the live posts + measure rankings.

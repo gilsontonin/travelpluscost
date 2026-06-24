@@ -71,6 +71,13 @@ This skill is the execution wrapper. The brand promise + hard limits live in `do
      `blog:opportunities` → Semrush-vet → `blog:hotels -- <city>` (directory mode) → researched post →
      accept serp ~75 on low-KD city SERPs (don't grind to 90). Full program: `InventoryPosts.md` §6.
 7. **Regenerate + clean.** `npm run blog:related` (Gemini vectors) · `node scripts/blog/dehyphenate.mjs <slug> --apply`.
+   - **Marketing-hat CTA + relational pass (every section).** `npm run blog:cta -- <slug>` — per section it
+     surfaces the CTA, the directory hotels mentioned (matched to real ids → a `::hotel` card or a link to
+     *that* hotel), and any destination that LEAKS to the wrong city. Then **reason + hand-curate**: a
+     ready-made CTA in every section, every mentioned hotel actioned (path of least resistance, card or
+     link), and **0 leaks** (a "Strip" search must not pull the Vegas Strip — the directory is city-level,
+     so verify each dest resolves to this post's city). The script surfaces; *you* decide — curate by hand,
+     never blind. Full rule: `InventoryPosts.md` §7.
 8. **Loop the gates until green:** `npm run blog:qa -- <slug>` (re-run serp/stats/voice/slop after every
    edit). Then `npm run typecheck && npm run lint && npm run build` (lint MUST be 0 errors). Optional Opus
    polish: `npm run blog:fable -- <slug>`.

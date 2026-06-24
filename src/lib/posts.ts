@@ -306,8 +306,6 @@ The catch is the obvious one. In summer, Highway 76 traffic becomes its own attr
 
 ## Branson Landing: Lakefront Hotels and Walkable Dining
 
-::rail Branson
-
 **Branson Landing is the grown up end of town — the part that offers a waterfront instead of a wax museum.** It's a lakeside boardwalk along Lake Taneycomo with shopping, multiple dining options and a fountain and fire show, anchored by the Hilton hotels and a flagship Bass Pro Shops. Historic downtown sits right behind it, so you park once and walk to dinner, a show and a lake breeze.
 
 Yes, that Ferris wheel is the one from Chicago's Navy Pier. Branson has a habit of collecting other towns' landmarks.
@@ -323,8 +321,6 @@ You'll pay a little more to sit on the main waterfront, and the area leans coupl
 **Best for:** couples, conference goers, walkable lakefront dining.
 
 ## Table Rock Lake Resorts: Still Waters and Indian Point
-
-::rail Branson
 
 **Table Rock Lake is where Branson exhales.** It's the big, clear Ozarks lake, with some 800 miles of shoreline. Lakeside resorts and condos ring the shore — kitchens, docks, and the kind of natural beauty no theater can light.
 
@@ -343,8 +339,6 @@ The trade is the drive: most days it's fifteen to twenty minutes to the theaters
 **Best for:** boating, Silver Dollar City families, couples who want still water and quiet.
 
 ## Thousand Hills: Spacious Condos and Golf in the Middle
-
-::rail Branson
 
 **Thousand Hills is the spacious condo pocket dropped right in the center of everything.** It's minutes from the Strip but tucked into the trees around the Thousand Hills golf course, with condos that include full kitchens, laundry and enough room that nobody has to draw the short straw and take the pull out couch. You get the quiet of the woods and the location of the Strip — the rare Branson combination that doesn't make you pick one.
 

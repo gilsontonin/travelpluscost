@@ -334,6 +334,10 @@ market ranges, never your net), and an FAQ — funneling throughout to your `/ho
 5. First-screen test + one quotable line + a close that earns the next click?
 6. Is every gate green AND printed, and the checklist pasted in full?
 7. *(travelpluscost)* Did I make any claim that isn't exactly true, or reveal a net cost / markup? Kill it.
+8. *(travelpluscost)* **CTA + relational pass** (`npm run blog:cta -- <slug>`, the marketing hat): does every
+   section have a CTA, is every hotel I mentioned a card or a link to the *right* hotel, and **0 leaks** (no
+   `::rail`/`::search`/link pointing at the wrong city — the directory is city-level)? Maximise the CTA; the
+   script surfaces, *you* hand-curate. (Full rule: `References/InventoryPosts.md` §7.)
 
 **If any answer is no, the run isn't done.** When it's all yes: commit, hold the push, and hand the owner
 the status board (the gate scores), the full checklist table, the exec-summary path, and the held commit
