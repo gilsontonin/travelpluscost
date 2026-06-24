@@ -15,7 +15,7 @@
 ## 2. Conversion widgets (directives) — one per line, blank line around it
 | Directive | Renders | Data |
 |---|---|---|
-| `::hotel <lpId>` | Photo-forward property card (score badge, "See your price", no $) | `getDirectoryHotel` (pre-fetched) |
+| `::hotel <lpId>` | Photo-forward property card — score badge + a live **"from $X/night · all-in"** SSP + "See rooms" ("See your price" when no near-term availability) | `getDirectoryHotel` + `/api/prices` via `BlogPriceProvider` |
 | `::rail <dest>` | Carousel of real area hotels | `searchDirectory` |
 | `::map <dest>` | **"View on map" button** → `/search` (NOT an embedded Leaflet map — it broke mobile/screenshots) | link |
 | `::compare <id> <id>` | Honest side-by-side (real fields, no fake "deal") | pre-fetched |
@@ -28,8 +28,14 @@
 
 The QA scripts strip `::` lines from the prose word count (post-stats + serp-optimize), so directives don't inflate the length band.
 
-## 3. Inventory-first layout (the OTA pattern, our honest version)
-For market posts (`region: { name, destination }` set) the template renders **H1 → search bar → hero rail of top hotels → cover → TL;DR → body**, and the body **leads with inventory** (`::areas`/`::rail`/`::hotel`) with the deep editorial prose **collapsed in `::details`** below. "Where to stay" intent = research hotels; the big brands lead with property and bury the text. We match the structure but keep the honest line: **review scores + "search current prices," never a stamped $X, a "Deal" badge, or urgency.** Collapsed text still counts for SEO, so we lose nothing.
+## 3. Inventory-first layout (Hotels.com-style, our honest version) — auto-rendered for `region` posts
+Set `region: { name, destination }` and the blog template (`src/app/blog/[slug]/page.tsx`) renders, in order, all client-side and isolated to the blog:
+1. **Hero photo + a white stacked search card overlapping it** — the cover image is the hero; `BlogSearch` sits over its bottom with **Where-to / Dates / Travelers stacked full-width + a full-width Search button** (`src/components/blog/BlogSearch.tsx`). (Non-region posts keep a normal cover figure lower down.)
+2. **"Check prices for these dates" quick picker** — `BlogDatePicks` (Tonight / Tomorrow / This weekend / Next weekend, auto-computed); each opens `/search` **preprogrammed** with destination + those dates + travelers.
+3. **The inventory as the REAL search-result card** — `BlogStaysList` reuses the `/search` card (`HotelRow`) and shows a **live "from $X/night · all-in" price** (client-fetched from `/api/prices`).
+4. Then **TL;DR → body**. Body leads with inventory; **every `::hotel` card also carries a live price** (one batched `/api/prices` call via `BlogPriceProvider` wrapping `PostBody`).
+
+Honest line preserved everywhere: **SSP (the public price, same for everyone), "from" + the property page has live rates for the reader's dates — never a stamped fake $X, "Deal" badge, or urgency.** `HotelList` (the old big-vertical-card hero) is **retired**, replaced by `BlogStaysList`. NEVER touch the home page for a blog ask (a home-page detour broke its rails — reverted).
 
 ## 4. CTR titles + descriptions (from the competitor study)
 Every ranking "where to stay" page uses **keyword + (year) + "Best Areas" + "Hotels"/"Resorts"** (often + area names, "rates"). Generic "Area Guide" leaves CTR on the table.
@@ -38,7 +44,7 @@ Every ranking "where to stay" page uses **keyword + (year) + "Best Areas" + "Hot
 Google rewrites long-tail titles, but *from the ingredients you give it*; the **description is the snippet → the direct CTR lever**, so stack it with `hotels` / `rates` / `<year>` / area names.
 
 ## 5. Photos — use our own inventory, and ALWAYS inspect
-We hold a huge amount of real hotel imagery (directory thumbnails + ~30 images per ingested-region hotel, on `static.cupid.travel`). The hero (now **`HotelList`** — big vertical cards, see §3) and `::hotel` / `::rail` render them with alt **"Name — hotel in City"**.
+We hold a huge amount of real hotel imagery (directory thumbnails + ~30 images per ingested-region hotel, on `static.cupid.travel`). The hero (`BlogStaysList` = the real `HotelRow` search card, see §3), the `::hotel` cards, and `::rail` render them with alt **"Name — hotel in City"**.
 
 **Cover photo rules (owner-mandated):**
 - **INSPECT every candidate before using it.** The `Read` tool can't open a URL, but it *can* view a local image — so `curl` each candidate to the scratchpad and `Read` it. Never pick a cover (or a card photo) blind. (This is how the dull gray Branson lake shot slipped through — don't repeat it.)
@@ -75,4 +81,4 @@ We hold a huge amount of real hotel imagery (directory thumbnails + ~30 images p
 **Tool:** `npm run blog:cta -- <slug>` (Gemini + the directory). Per section it surfaces the suggested CTA, the directory hotels mentioned (matched to real ids → carded ✓ or a **gap**), and any destination that doesn't resolve to this post's city (**🔴 LEAK?**). It SURFACES — *you* reason and **hand-curate**: did I maximise the CTA? Is every card/link the correct hotel? Fix gaps + leaks by hand; the matcher can miss or leak, so never apply blind. Target: 0 leaks, every mentioned hotel actioned, a CTA in every section.
 
 ## Session state (for the next run)
-Live posts: `surveillance-pricing`, `where-to-stay-in-oahu`, `where-to-stay-in-maui`, `where-to-stay-in-branson` (city pilot #1, serp 74), `where-to-stay-in-telluride` (city pilot #2, serp 82). Shipped: Semrush wiring + keyword ledger + `blog:keywords`; the widgets + inventory-first layout; the pSEO toolkit (`blog:opportunities` / `blog:hotels` directory mode / `blog:scaffold` / `blog:areas`); the post-stats directive-strip fix; CTR titles + hotel-photo alt. **Next:** `::photo` + cadence-count hotel photos; Charleston (after SC/WV state disambiguation, KD 28 / vol 1,300); then the next tier from `blog:opportunities`; request GSC indexing for the live posts + measure rankings.
+Live posts: `surveillance-pricing`, `where-to-stay-in-oahu`, `where-to-stay-in-maui`, `where-to-stay-in-branson` (city pilot #1 — **rewritten to the playbook standard: funny-first voice, serp 90, the full UI below**), `where-to-stay-in-telluride` (city pilot #2, serp 82 — slated for the same redo). Shipped: Semrush wiring + keyword ledger + `blog:keywords`; the **Hotels.com-style inventory-first UI** (§3: hero photo + stacked `BlogSearch` overlay + `BlogDatePicks` quick picker + `BlogStaysList` priced search cards + live prices on `::hotel` cards via `BlogPriceProvider`); the **card rule** (hotel-named heading → its card); `blog:cta` (per-section CTA + relational/leak auditor, §7); the pSEO toolkit (`blog:opportunities` / `blog:hotels` directory mode / `blog:scaffold` / `blog:areas`); CTR titles + photo-inspection rule. **Next:** the less-text/more-inventory `::details` restructure (PAUSED — owner call); neighbourhood-tagging data pass (the real unlock for per-area widgets — directory is city-level today); Charleston (after SC/WV state disambiguation); GSC indexing + measure.
