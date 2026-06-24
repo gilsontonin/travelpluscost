@@ -23,6 +23,9 @@ This skill is the execution wrapper. The brand promise + hard limits live in `do
   transfer** verbatim: heading lever, tokenizer/hyphen/comma traps, ToC over-count, "infographic deletes its
   terms"; ignore the Hawaii-specific examples) + `skills/enhance-with-surfer.md` **Mode C** (how to raise the
   serp score the right way — no stuffing)
+- `docs/blog-system/References/InventoryPosts.md` (the conversion widgets `::search/::rail/::map/::compare/
+  ::areas/::cta/::priceproof/::details`, the inventory-first layout, the **CTR title/description formula**,
+  using our hotel photos, and the long-tail **"where to stay in <city>" pSEO program** + its build tools)
 
 ## Workflow
 1. **Keyword + live Semrush research** (`References/Semrush.md`). We keep no stored keyword cluster — we
@@ -56,6 +59,13 @@ This skill is the execution wrapper. The brand promise + hard limits live in `do
    `::hotel <lpId>` cards for any named property. `date`/`updated` = today; author "The travelpluscost team".
    Then update its `content/keywords.json` entry: fill the `secondary` cluster from `phrase_related` and
    flip `status` → `published` (`npm run blog:keywords` should read clean).
+   - **Title + description = the CTR formula** (`InventoryPosts.md` §4): keyword + (year) + "Best Areas" +
+     "Hotels"/"Resorts" + area names; the description is the snippet, so stack it with hotels/rates/year.
+   - **Inventory-forward** for "where to stay" posts: set `region: { name, destination }` (fires the top
+     search bar + hero rail + CTA off the directory), lead the body with inventory widgets, collapse the
+     deep prose in `::details`. For a **long-tail city** (not an ingested region) run the pSEO flow:
+     `blog:opportunities` → Semrush-vet → `blog:hotels -- <city>` (directory mode) → researched post →
+     accept serp ~75 on low-KD city SERPs (don't grind to 90). Full program: `InventoryPosts.md` §6.
 7. **Regenerate + clean.** `npm run blog:related` (Gemini vectors) · `node scripts/blog/dehyphenate.mjs <slug> --apply`.
 8. **Loop the gates until green:** `npm run blog:qa -- <slug>` (re-run serp/stats/voice/slop after every
    edit). Then `npm run typecheck && npm run lint && npm run build` (lint MUST be 0 errors). Optional Opus

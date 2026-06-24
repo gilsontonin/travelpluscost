@@ -62,7 +62,9 @@ count ≈ working-target ÷ ~280.
    lever** (exact phrase + competitor subtopics in H2/H3; raw `.includes()`, so drop `&`/commas), match the
    median length, add real subtopics/entities/facts, proper-nouns-not-pronouns. **NEVER stuff** — it craters
    the AI-Search dial that ranks. A thin/legalese SERP can density-cap in the low-80s = owner-override, not a
-   stuff signal. Method: `References/WritingLessons.md` + `skills/enhance-with-surfer.md` Mode C.
+   stuff signal. Method: `References/WritingLessons.md` + `skills/enhance-with-surfer.md` Mode C. **On a
+   long-tail city SERP (low KD, small band, few competitors) the no-stuff ceiling is ~mid-70s — accept it;
+   serp-90 is a big-city bar** (`References/InventoryPosts.md` §6).
 2. **Wrong length (too short OR too long).** Fatten thin sections when under; merge/cut when over. Never pad.
 3. **Spot-checking QA.** Run `blog:qa` and paste it; answer every 👁 row.
 4. **Editing after stats, not re-running.** Re-run `blog:stats` + `blog:voice` + `blog:slop` after every edit batch.
@@ -92,7 +94,7 @@ count ≈ working-target ÷ ~280.
 3. **Plan structure + the ONE CTA together** (`AffiliateLinks.md`): which city hub / search the post routes to. Headings carry the exact keyword phrases (heading match is the biggest lever).
 4. **Intro formula:** sentence 1 = the answer with the primary keyword verbatim, the answer phrase **bolded**; one dry hook within 50 words; then what it covers, who it's for, a visible "as of 2026".
 5. **Body unit per section:** benefit H2 → prose with a beat → 2–3 sentences of real detail → a quick-facts strip or a table. One opinion (Opinions.md, number/principle-backed), ≤1 true story (Stories.md), ≥2 honest "when not to" beats.
-6. **Add the post** to the TOP of `POSTS` in `src/lib/posts.ts` (fill every `Post` field + `faqs[]` → schema is automatic). `date`/`updated` = today.
+6. **Add the post** to the TOP of `POSTS` in `src/lib/posts.ts` (fill every `Post` field + `faqs[]` → schema is automatic). `date`/`updated` = today. **Title + description use the CTR formula** (keyword + year + "Best Areas" + "Hotels"/"Resorts" + area names; `References/InventoryPosts.md` §4). For "where to stay" posts go **inventory-forward**: set `region`, lead with the widgets, collapse deep prose in `::details`.
 7. **Loop §2 gates until green**, add 3–5 internal links, dehyphenate, build, lint, then commit (held for go-live).
 
 ## 5. What every run's final report MUST contain
