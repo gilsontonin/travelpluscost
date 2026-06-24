@@ -51,8 +51,11 @@ ${bar}
             npm run blog:pros -- ${city}
   [ ] 1. KEYWORD — Semrush-vet "${kw}" (aim real demand + KD ≤ ~30). Log it in the ledger:
             npm run blog:keywords
-  [ ] 2. SERP RESEARCH — WebSearch "${kw}"; open the top 3-4 GENUINE competitor guides (not OTA category
-         pages). Note their areas / subtopics / entities. Keep their URLs for --urls (real competitors only).
+  [ ] 2. SERP RESEARCH — pull the ACTUAL top rankers first (Semrush phrase_organic) + WebSearch "${kw}".
+         Use the REAL ranking guide pages as the serp --urls (NOT long off-SERP listicles, or you'll chase
+         the wrong word count). If the rankers are thin/incoherent — a ~270w page, Reddit, OTA listings,
+         resort homepages, no genuine guide — it's a THIN-SERP EXEC-DECISION keyword: write the best honest
+         guide and ship it; don't pad to a meaningless serp number (that's stuffing). Note areas/entities.
   [ ] 3. ${exists ? `EDIT the existing post in src/lib/posts.ts` : `PASTE the scaffold above into src/lib/posts.ts, then WRITE every <!-- … --> stub`}
          — funny-first, real voice; CARD RULE (every hotel named in a heading/prose → its ::hotel card or a
          link to that hotel); honor POSITIONING (never the net cost or markup %; claims exactly true; no fake
