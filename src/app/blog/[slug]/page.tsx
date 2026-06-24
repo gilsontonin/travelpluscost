@@ -12,6 +12,8 @@ import PostBody from "@/components/blog/PostBody";
 import BlogSearch from "@/components/blog/BlogSearch";
 import BlogStaysList from "@/components/BlogStaysList";
 import BlogDatePicks from "@/components/blog/BlogDatePicks";
+import BlogStatsStrip from "@/components/blog/BlogStatsStrip";
+import BlogStickyCta from "@/components/blog/BlogStickyCta";
 import BlogPriceProvider from "@/components/blog/BlogPriceProvider";
 
 export function generateStaticParams() {
@@ -111,6 +113,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   // Inventory-intent: a hero rail of the market's top stays, rendered right under the search (above the
   // editorial chrome) so the page goes search → inventory, OTA-style.
   const heroRail: CardHotel[] = post.region ? await searchDirectory(post.region.destination, 10) : [];
+  const hotelCount: number = post.region ? await cityHotelCount(post.region.destination) : 0;
+  const ratedHero = heroRail.filter((h) => h.rating != null);
+  const avgRating: number | null = ratedHero.length
+    ? Math.round((ratedHero.reduce((s, h) => s + (h.rating as number), 0) / ratedHero.length) * 10) / 10
+    : null;
 
   const jsonLd = [
     {
@@ -202,6 +209,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               {post.cover.credit.url?.includes("unsplash.com") ? " on Unsplash" : ""}
             </p>
           ) : null}
+          <BlogStatsStrip city={post.region.name} hotelCount={hotelCount} avgRating={avgRating} />
         </div>
       ) : null}
       {post.region ? <BlogDatePicks destination={post.region.destination} /> : null}
@@ -341,6 +349,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           ← All travel guides
         </Link>
       </div>
+
+      {post.region ? (
+        <BlogStickyCta city={post.region.name} href={`/search?destination=${encodeURIComponent(post.region.destination)}&adults=2`} />
+      ) : null}
     </article>
   );
 }
