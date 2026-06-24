@@ -74,8 +74,11 @@ export default function CityResults({
     setPrevDsig(dsig);
     setPrices({});
     setDone(new Set());
-    inflight.current = new Set();
   }
+  // Reset in-flight tracking when the date window changes (refs can't be mutated during render).
+  useEffect(() => {
+    inflight.current = new Set();
+  }, [dsig]);
 
   // Only surface a category chip when there's a real, non-trivial set behind it.
   const cats = useMemo<Category[]>(() => {
