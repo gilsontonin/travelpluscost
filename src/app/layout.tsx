@@ -38,10 +38,41 @@ export const metadata: Metadata = {
   ...(GSC ? { verification: { google: GSC } } : {}),
 };
 
+// Brand entity (Organization) + WebSite with a SearchAction. Establishes travelpluscost as a distinct
+// entity (knowledge panel, clean site name, disambiguation from other "TravelPlus" brands) and earns
+// the sitelinks search box. Add sameAs (YouTube/X/IG/LinkedIn) once those accounts exist.
+const ENTITY_LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.svg`,
+      description: SITE_DESCRIPTION,
+      slogan: SITE_TAGLINE,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/search?destination={search_term_string}` },
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#f4f4f6] text-foreground">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ENTITY_LD) }} />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
