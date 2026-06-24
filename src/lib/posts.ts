@@ -47,6 +47,172 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-telluride",
+    title: "Where to Stay in Telluride, CO: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Telluride in 2026: best areas — historic town vs ski-in/ski-out Mountain Village, with real hotels and honest rates.",
+    excerpt:
+      "Town or Mountain Village? A plain-English guide to picking the right Telluride base — by area, budget, ski access, and the free gondola that links them.",
+    tldr: {
+      answer:
+        "Two bases define a Telluride trip: the old mining town down in the canyon, and Mountain Village up at the ski slopes. Pick the town for restaurants, walkable nightlife and a wider price range; pick the Village for slope-side luxury. The free, 13-minute gondola joins them, so neither choice locks you out of the other.",
+      points: [
+        "**Town of Telluride** — historic, walkable streets; the best dining, nightlife and budget range.",
+        "**Mountain Village** — ski-in, ski-out resorts and the upscale hotels, at the top of the gondola.",
+        "**The free gondola** — links the two in about 13 minutes, so a town stay still skis and a Village stay still dines out.",
+        "**Skiers and luxury** lean Mountain Village; **first-timers, foodies and festival-goers** lean the town.",
+        "**Two peak seasons** — winter skiing and summer festivals; book early, and watch the spring and fall off-season closures.",
+      ],
+    },
+    date: "2026-06-24",
+    updated: "2026-06-24",
+    author: "The travelpluscost team",
+    category: "Destination guides",
+    cover: {
+      src: "https://images.unsplash.com/photo-1632440672308-e84787ecc86a?fm=webp&fit=crop&w=1200&h=675&q=80",
+      alt: "Telluride, Colorado, a historic town in its box canyon below the San Juan Mountains",
+      credit: { name: "Balazs Busznyak", url: "https://unsplash.com/@balazsbusznyak" },
+    },
+    region: { name: "Telluride", destination: "Telluride" },
+    faqs: [
+      {
+        q: "Is it better to stay in Telluride or Mountain Village?",
+        a: "It depends on the trip. The Town of Telluride wins for dining, nightlife, festivals and the widest budget range; Mountain Village wins for ski-in, ski-out access, the bigger luxury hotels and slope-side convenience. The free gondola links the two in about 13 minutes, so you can stay in either and still reach the other.",
+      },
+      {
+        q: "Do you need a car in Telluride?",
+        a: "No. Telluride is one of the rare mountain towns you can do car-free — the town is walkable, the gondola between the two bases is free, and both have restaurants and lifts within reach. A car only helps if you're flying into Montrose or planning day trips, and parking in town is tight.",
+      },
+      {
+        q: "How do you get to Telluride?",
+        a: "Three ways: fly into the small Telluride Regional Airport (weather-dependent), fly into Montrose Regional about an hour and a half away (more flights, more reliable), or drive roughly six and a half hours from Denver. Most visitors use Montrose.",
+      },
+      {
+        q: "Is Telluride on the Epic or Ikon pass?",
+        a: "Telluride Ski Resort is on the Ikon Pass, not Epic. If you ski on an Epic Pass, you'd be buying lift tickets here, so factor that into the trip.",
+      },
+      {
+        q: "When is the best time to visit Telluride?",
+        a: "Winter (December through March) for skiing, with Christmas and Presidents' week the busiest and priciest. Summer (June through September) for the festivals and hiking. Late September brings the golden aspens. Avoid the spring and fall mud season (April–May and November), when many places — and sometimes the gondola — close.",
+      },
+      {
+        q: "Where can you stay in Telluride on a budget?",
+        a: "The town's inns, the hostel, and condos or vacation rentals down-valley give you the most room for less, especially in the shoulder seasons. Nothing in Telluride is truly cheap, but the town holds the widest range of prices.",
+      },
+    ],
+    body: `Where to stay in Telluride comes down to one choice: **the historic town or Mountain Village.** Stay in the Town of Telluride for Victorian streets, restaurants and nightlife you can walk to; stay in Mountain Village for ski in, ski out resorts and the bigger hotels. A free gondola links the two, so you're never really stuck. Below are the real hotels in each, then the area by area rundown across Telluride, Colorado, as of 2026.
+
+Telluride is small — a few thousand rooms tucked into a box canyon in the San Juan Mountains — so the question isn't whether you'll find a room. It's which of the two bases fits your trip, and how much ski access and luxury you want to pay for.
+
+## Telluride Hotels by Area, at a Glance
+
+Telluride's lodging sorts by one factor — how close you want to be to the lifts versus the restaurants:
+
+| Where | Feel | Best for | Ski access |
+|---|---|---|---|
+| Town of Telluride | Historic, walkable, lively | Dining, nightlife, festivals | Lift 7 + the free gondola |
+| Mountain Village | Modern resort village, quiet | Luxury, families, convenience | Ski in, ski out |
+| Town, budget end | Inns, a hostel, condos | Saving money | Gondola from the core |
+| Mountain Village, luxury | The Peaks, Madeline, Lumière | A splurge | Steps to the lifts |
+| Down valley | Drive-in lodges, rentals | Quiet, lower rates | A drive to the lifts |
+
+::hotel lp31628
+
+## The Town of Telluride: Historic Downtown, Walkable Hotels and Nightlife
+
+**The Town of Telluride is the original — a Victorian mining town from 1878, hemmed into a box canyon under 13,000-foot peaks.** Its main street is where most of the restaurants, bars, galleries and shops are, and the whole town is small enough to cross on foot in minutes. You stay here for atmosphere, dining and the festivals — Bluegrass in June, the Film Festival over Labor Day — not for slope side convenience.
+
+Downtown Telluride packs an outsized number of restaurants, coffee shops and bars into a handful of walkable blocks, and the box canyon walls put mountain views at the end of every street. It's a working mountain town as much as a resort, which is most of the appeal.
+
+The hotels lean smaller and historic. The New Sheridan has anchored main street since 1895, and you'll find inns, condos and even a hostel alongside a few upscale residences. It's the broadest range of prices in Telluride — which isn't to say it's cheap, because nothing here is, but the town is where the value sits.
+
+The trade off is the mountain. You'll ride the free gondola or Lift 7 to ski, a few minutes either way, rather than rolling out of bed onto a run.
+
+**Best for:** dining and nightlife, festivals, history, the widest budget range.
+
+::hotel lp35ebc
+
+## Telluride Mountain Village: Ski in, Ski out Resorts and Hotels
+
+**Mountain Village is the purpose built resort base, up around 9,500 feet at the top of the gondola.** This is where the big hotels are — The Peaks Resort and Spa, the Madeline, the Inn at Lost Creek, the Fairmont's Franz Klammer Lodge — alongside luxury condos and ski in, ski out residences. Expect heated pools, spas, concierge desks and rooms newer and larger than anything in town, at prices to match.
+
+The draw is obvious in winter: many properties put you on snow, or a few steps from a lift, so ski days start and end at your door. The Village Center has its own restaurants and shops, so you don't have to ride down to town for dinner.
+
+The Village Core is the compact, pedestrian heart — hotels, condos, restaurants and the gondola station clustered around a plaza, so you have easy access to the lifts and to dinner without a car. Many rooms come with long views down the valley or up at the ski runs.
+
+The trade off is character. Mountain Village is handsome but modern and quiet — the historic, lived in feel is all down in the old town.
+
+**Best for:** skiers, luxury, families who want everything a few steps away.
+
+::compare lp2ff71 lp21ee2
+
+## The Free Gondola: How Town and Mountain Village Connect
+
+**Telluride's free gondola is the thing that makes the two base choice low stakes.** It runs between the Town of Telluride and Mountain Village from about 7 a.m. to midnight, takes roughly 13 minutes, and costs nothing to ride. It carries skis, bikes and dogs, and the trip over the ridge is sightseeing in itself.
+
+What that means in practice: stay in town and you can still ski Mountain Village; stay in the Village and you can still get down to main street for dinner. The one catch is the off season — the gondola usually shuts for a few weeks in spring and fall for maintenance, so check the dates if you're visiting in April, May or November.
+
+## Telluride Vacation Rentals and Condos
+
+**For families, groups or longer stays, a vacation rental or condo often beats a hotel room.** Telluride and Mountain Village are full of them — private condos with full kitchens, multi bedroom homes, and ski in, ski out residences that sleep eight. You trade a front desk for space, a kitchen and, when you split it, a better rate per guest.
+
+In town, rentals put you steps from the restaurants and the gondola; in Mountain Village, they put you on or near the snow with long views down the valley. Mountain Village in particular is known for its condos and private homes, many with hot tubs and a garage for the gear.
+
+The trade offs are the usual ones: cleaning fees, a check in process instead of a lobby, and no daily housekeeping. But for a week with a kitchen, or a group that wants its own space, a vacation rental is often the most comfortable — and best value — way to stay in Telluride.
+
+## Telluride Ski Resort, the Lifts and Ski in, Ski out Access
+
+**Telluride Ski Resort straddles both bases, which is why where you stay shapes your ski day.** From the Town of Telluride, the free gondola and Lift 7 carry you up to the slopes in minutes. From Mountain Village, you're already on the mountain — many properties are true ski in, ski out, with easy access to the lifts a few steps from the door.
+
+The resort runs on the Ikon Pass, not Epic, so check your pass before you book. It's known for steep, high terrain and shorter lift lines than Colorado's bigger name resorts.
+
+If your trip is built around skiing and you want the least friction, Mountain Village wins. If you're happy to ride the gondola each morning — and want the town's restaurants at night — staying downtown costs you only a few minutes.
+
+## What's Around Each Base: Activities, Trails and Views
+
+Wherever you land, the box canyon is the draw. From downtown Telluride, the Bear Creek and Jud Wiebe trails climb straight out of town, and the gondola ride is the easiest big view going. Bridal Veil Falls — Colorado's tallest free falling waterfall — sits at the canyon's east end, a short trip up valley.
+
+From Mountain Village, the resort's summer hiking and biking trails start near your door, with long views west across the San Juans. In winter, both bases sit minutes from the lifts.
+
+For shops and restaurants, downtown wins; for quiet and views, Mountain Village does. Either way, you're never far from the mountains that brought you.
+
+## Where to Stay in Telluride by Trip and Season
+
+If you're still deciding, start from the trip. Skiers who want convenience lean to **Mountain Village**; first timers, foodies and festival goers do best in **the Town of Telluride**; budgets stretch furthest at the town's inns or down valley.
+
+| Your trip | Stay |
+|---|---|
+| First time in Telluride | Town of Telluride |
+| Ski trip, want ski in/ski-out | Mountain Village |
+| Dining, nightlife, festivals | Town of Telluride |
+| A luxury splurge | Mountain Village (The Peaks, Madeline) |
+| On a budget | A town inn, the hostel, or down valley |
+| Car free trip | Either — the free gondola links them |
+
+One timing note: Telluride has two peak seasons. Winter brings skiing, with Christmas and Presidents' week the busiest; summer brings the festivals and hiking. The shoulder weeks are quiet and cheaper, but many places — and sometimes the gondola — close.
+
+| Season | The scene | Booking |
+|---|---|---|
+| Winter (Dec–Mar) | Skiing; Christmas is peak | Book early |
+| Summer (Jun–Sep) | Festivals, hiking, warm days | Book ahead |
+| Fall (late Sep) | Golden aspens, crisp and quiet | Moderate |
+| Mud season (Apr–May, Nov) | Many closures, low rates | Easy — if it's open |
+
+## Do You Need a Car in Telluride?
+
+**No — Telluride is one of the rare mountain towns you can do car free.** The town is walkable, the gondola is free, and both bases have restaurants and lifts within reach. A car helps only if you're flying into Montrose, an hour and a half away, or planning day trips. In town, parking is tight and you won't miss it.
+
+::map Telluride
+
+## How We Price the Stays You Find Here
+
+**Whatever base you choose, the price you see from us is the rate plus one small, flat fee — the same for everyone, never shaped by your device, location or history.** That's the opposite of [surveillance pricing](/blog/surveillance-pricing), where two people pricing the same Telluride hotel can be shown two different numbers.
+
+So weighing the town against Mountain Village is a fair comparison: no fake discounts, no "1 room left" pressure, just the honest, all in number on any device. Comparing Telluride with somewhere warmer? See our other [where to stay guides](/blog), like [Maui](/blog/where-to-stay-in-maui).
+
+::priceproof`,
+  },
+  {
     slug: "where-to-stay-in-branson",
     title: "Where to Stay in Branson, MO: Best Areas & Hotels (2026)",
     description:

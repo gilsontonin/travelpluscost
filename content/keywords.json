@@ -1,4 +1,22 @@
 {
+  "where-to-stay-in-telluride": {
+    "primary": "where to stay in telluride",
+    "secondary": [
+      "telluride hotels",
+      "mountain village telluride",
+      "places to stay in telluride",
+      "telluride where to stay",
+      "telluride lodging",
+      "the peaks telluride"
+    ],
+    "volume": 480,
+    "kd": 21,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-24",
+    "status": "published",
+    "history": []
+  },
   "where-to-stay-in-branson": {
     "primary": "where to stay in branson",
     "secondary": [
