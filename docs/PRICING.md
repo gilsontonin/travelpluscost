@@ -144,8 +144,9 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
 **Three distinct concepts — do not collapse them:**
 1. **Payment processing / PCI** — who handles card data. LiteAPI's SDK does this. ✅ settled.
 2. **Merchant of Record (MoR)** — whose name the charge is under; owns refunds/chargebacks/liability.
-   Per the §4a decision we want **LiteAPI to be MoR** (their payment flow). Docs describe two modes
-   but don't explicitly assign MoR → **get it in writing.**
+   **RESOLVED 2026-06-21: LiteAPI/Nuitée is MoR when we use their Payment SDK flow** (confirmed in
+   their docs). So PCI, refunds, and chargebacks are theirs, and they issue the guest payment receipt.
+   The you-as-MoR-on-net-rates mode is the path we are NOT taking. (See `LITEAPI.md §6`.)
 3. **Seller of Travel (SoT)** — *state* registration to sell/advertise travel to consumers
    (**CA, HI, WA**; FL if added; NV none). This can attach to **us** as the price-setting storefront
    **even if LiteAPI is MoR.** MoR ≠ an SoT exemption.
@@ -195,8 +196,9 @@ Anti-churn mechanisms — all **on-brand, no traps** (a dark pattern would betra
 no membership tier yet, so the site prices like a standard OTA and earns the full SSP−net spread. The
 "cost + 5%" member price is NOT live (needs the gate below).
 
-- [ ] **Before real money at scale** — confirm in writing: (a) LiteAPI is MoR in the Payment-SDK flow;
-      (b) travel attorney's read on Seller-of-Travel exposure (CA/HI/WA); (c) who eats the card fee (§4b).
+- [x] (a) **LiteAPI is MoR in the Payment-SDK flow** — confirmed in their docs 2026-06-21 (§6, `LITEAPI.md §6`).
+- [ ] **Before real money at scale** — still confirm: (b) travel attorney's read on Seller-of-Travel
+      exposure (CA/HI/WA); (c) who eats the card fee (§4b).
 - [ ] Decide membership price points ($/mo, $/yr) — model "save more than the fee on trip 1 or refunded".
 - [ ] **Build (THE next project): membership/auth gate** — public stays at SSP (current behaviour); members
       get `min(net×1.05, SSP)` by setting the prebook `margin` to 5% instead of margin-to-SSP. Needs Supabase

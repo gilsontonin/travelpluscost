@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
+import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
+import { parseBlocks, extractHeadings, hotelIdsInBody } from "@/lib/blogBody";
+import { getDirectoryHotel, type DirectoryHotel } from "@/lib/directory";
+import PostBody from "@/components/blog/PostBody";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -20,7 +22,7 @@ export async function generateMetadata({
   if (!post) return {};
   const url = `/blog/${post.slug}`;
   return {
-    title: post.title,
+    title: post.seoTitle ?? post.title,
     description: post.description,
     alternates: { canonical: url },
     openGraph: {
@@ -39,6 +41,19 @@ export async function generateMetadata({
 const fmtDate = (d: string) =>
   new Date(d + "T00:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 
+// Render a TL;DR takeaway whose lead phrase is **bold** (the rest stays plain).
+function PointMd({ text }: { text: string }) {
+  const m = /^\*\*(.+?)\*\*(.*)$/.exec(text);
+  return m ? (
+    <span>
+      <strong className="font-semibold text-black">{m[1]}</strong>
+      {m[2]}
+    </span>
+  ) : (
+    <span>{text}</span>
+  );
+}
+
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
@@ -50,6 +65,15 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     { name: "Guides", path: "/blog" },
     { name: post.title, path: url },
   ];
+
+  // Parse the body into ordered blocks (Markdown + ::infographic / ::hotel) and pre-fetch any hotel
+  // cards from the directory server-side. Headings drive the table of contents.
+  const blocks = parseBlocks(post.body);
+  const headings = extractHeadings(post.body);
+  const hotelEntries = await Promise.all(
+    [...new Set(hotelIdsInBody(post.body))].map(async (id) => [id, await getDirectoryHotel(id)] as const),
+  );
+  const hotels = Object.fromEntries(hotelEntries.filter(([, h]) => h)) as Record<string, DirectoryHotel>;
 
   const jsonLd = [
     {
@@ -134,40 +158,42 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         ) : null}
       </figure>
 
+      {/* TL;DR quick-answer box */}
+      {post.tldr ? (
+        <div className="mt-7 rounded-2xl border border-accent/20 bg-accent-tint/40 p-5">
+          <p className="text-[11px] font-bold uppercase tracking-wide text-accent">The short answer</p>
+          <p className="mt-1.5 text-[15.5px] leading-relaxed text-black/85">{post.tldr.answer}</p>
+          {post.tldr.points.length ? (
+            <ul className="mt-3 space-y-1.5">
+              {post.tldr.points.map((pt) => (
+                <li key={pt} className="flex gap-2 text-[14.5px] text-black/75">
+                  <span className="mt-0.5 text-accent" aria-hidden>✓</span>
+                  <PointMd text={pt} />
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      ) : null}
+
+      {/* Table of contents */}
+      {headings.filter((h) => h.level === 2).length >= 3 ? (
+        <nav aria-label="Contents" className="mt-6 rounded-2xl border border-black/[0.08] p-4">
+          <p className="text-[11px] font-bold uppercase tracking-wide text-black/45">On this page</p>
+          <ul className="mt-2 space-y-1.5">
+            {headings
+              .filter((h) => h.level === 2)
+              .map((h) => (
+                <li key={h.id}>
+                  <a href={`#${h.id}`} className="text-sm text-accent hover:underline">{h.text}</a>
+                </li>
+              ))}
+          </ul>
+        </nav>
+      ) : null}
+
       {/* body */}
-      <div className="mt-7 space-y-4 text-[15.5px] leading-relaxed text-black/80">
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
-          components={{
-            h2: ({ children }) => <h2 className="mt-9 mb-1 text-xl font-bold text-black">{children}</h2>,
-            h3: ({ children }) => <h3 className="mt-6 mb-1 text-lg font-semibold text-black">{children}</h3>,
-            p: ({ children }) => <p>{children}</p>,
-            ul: ({ children }) => <ul className="list-disc space-y-1.5 pl-5">{children}</ul>,
-            ol: ({ children }) => <ol className="list-decimal space-y-1.5 pl-5">{children}</ol>,
-            strong: ({ children }) => <strong className="font-semibold text-black">{children}</strong>,
-            a: ({ href, children }) => {
-              const h = href ?? "";
-              return h.startsWith("/") || h.startsWith("#") ? (
-                <Link href={h} className="font-medium text-accent underline underline-offset-2">{children}</Link>
-              ) : (
-                <a href={h} target="_blank" rel="noopener noreferrer" className="font-medium text-accent underline underline-offset-2">
-                  {children}
-                </a>
-              );
-            },
-            table: ({ children }) => (
-              <div className="my-5 overflow-x-auto">
-                <table className="w-full border-collapse text-sm">{children}</table>
-              </div>
-            ),
-            thead: ({ children }) => <thead className="border-b border-black/15 text-left">{children}</thead>,
-            th: ({ children }) => <th className="py-2 pr-4 font-semibold text-black">{children}</th>,
-            td: ({ children }) => <td className="border-b border-black/[0.06] py-2 pr-4 align-top">{children}</td>,
-          }}
-        >
-          {post.body}
-        </ReactMarkdown>
-      </div>
+      <PostBody blocks={blocks} hotels={hotels} />
 
       {/* CTA */}
       {post.region ? (
@@ -202,6 +228,28 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           </dl>
         </section>
       ) : null}
+
+      {/* Related guides — by content similarity, not date */}
+      {(() => {
+        const related = relatedSlugs(post.slug, 4)
+          .map((s) => getPostBySlug(s))
+          .filter((p): p is NonNullable<typeof p> => Boolean(p));
+        return related.length ? (
+          <section className="mt-10 border-t border-black/[0.08] pt-6">
+            <h2 className="text-xl font-bold">Related guides</h2>
+            <ul className="mt-3 space-y-2">
+              {related.map((r) => (
+                <li key={r.slug}>
+                  <Link href={`/blog/${r.slug}`} className="font-medium text-accent hover:underline">
+                    {r.title}
+                  </Link>
+                  <span className="block text-sm text-black/55">{r.excerpt}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null;
+      })()}
 
       <div className="mt-10 border-t border-black/[0.08] pt-5">
         <Link href="/blog" className="text-sm font-medium text-accent hover:underline">

@@ -13,13 +13,24 @@ export interface PostImage {
   credit?: { name: string; url: string };
 }
 
+export interface PostTldr {
+  /** 35–60 word direct answer — must NOT duplicate the excerpt or the first body paragraph */
+  answer: string;
+  /** 3–5 bold-led real takeaways (each should start with **bold**) */
+  points: string[];
+}
+
 export interface Post {
   slug: string;
   title: string;
+  /** ≤60 chars — SEO <title> when it should differ from the on-page H1 (optional) */
+  seoTitle?: string;
   /** ≤160 chars — meta description */
   description: string;
   /** one-line teaser for the index card */
   excerpt: string;
+  /** quick-answer box rendered above the body (featured-snippet ready) */
+  tldr?: PostTldr;
   /** YYYY-MM-DD published */
   date: string;
   /** YYYY-MM-DD last meaningful edit (drives sitemap lastmod) */
@@ -42,6 +53,16 @@ export const POSTS: Post[] = [
       "Where to stay in Oahu by neighborhood — Waikiki, Ko Olina, the North Shore, Kailua and Downtown — matched to the kind of trip you're taking.",
     excerpt:
       "Waikiki, Ko Olina, the North Shore or Kailua? A plain-English guide to picking the right Oahu base for your trip.",
+    tldr: {
+      answer:
+        "For a first visit, base yourself in Waikiki — it's the most walkable, best-connected part of the island, so you spend less time driving and more time on the sand. Choose Ko Olina for young kids, the North Shore for winter surf, or Kailua if great beaches matter more than nightlife.",
+      points: [
+        "**Waikiki** — most hotels, walkable, no car needed; the easy default for first-timers.",
+        "**Ko Olina** — calm lagoons 40 minutes west; the pick for families with young kids.",
+        "**North Shore** — big winter surf and a slow pace; rent a car and skip the nightlife.",
+        "**Kailua** — the island's best beaches, residential and low-key; a car is close to essential.",
+      ],
+    },
     date: "2026-06-22",
     author: "The travelpluscost team",
     category: "Destination guides",
@@ -78,6 +99,8 @@ Waikiki is the dense strip of hotels along Honolulu's south shore, and it's wher
 The trade-off is that Waikiki is busy and built-up. If your picture of Hawaii is an empty beach at dawn, you'll find calmer water early, but you won't find solitude. For a first visit, the convenience usually wins.
 
 **Best for:** first-timers, no-car trips, nightlife and dining, shorter stays.
+
+::hotel lp1e13c
 
 ## Ko Olina — calm lagoons for families
 
@@ -122,6 +145,8 @@ Just west of Waikiki, the Ala Moana and downtown areas put you next to the islan
 ## How we price the stays you find here
 
 When you search Oahu hotels with us, the number you see is the rate plus one small, flat fee — [the same for everyone](/#how), never shaped by your device, location or browsing history. No fake discounts, no "1 room left" pressure. Just the honest number, so comparing areas is comparing like for like.
+
+::infographic how-pricing-works
 
 If you only do one thing with this guide: pick the base that matches your trip, then [search Oahu stays](/search?destination=Oahu&adults=2) and sort by what actually matters to you.`,
   },

@@ -4,7 +4,9 @@
 [build]
   # Pre-generate the static hotel sitemaps (scripts/gen-sitemaps.mjs) before the Next build, so they
   # ship as static files in public/ (instant CDN serve) instead of slow per-request dynamic routes.
-  command = "npm run sitemaps && npm run build"
+  # `npm run check` is the content gate (AI-slop + claims-integrity on blog/brand copy) — a red check
+  # FAILS THE DEPLOY so bad content can't ship (the last good version stays live).
+  command = "npm run sitemaps && npm run build && npm run check"
 
 [build.environment]
   NODE_VERSION = "22"

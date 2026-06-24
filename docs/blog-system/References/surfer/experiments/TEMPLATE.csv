@@ -1,0 +1,55 @@
+# Surfer perturbation experiment — copy to <slug>.csv and fill the seo/ai/content/words columns.
+# Record scores AFTER each step settles (~3-5s). One edit per step. See experiment-protocol.md.
+# Legend (fill in — panel rank = position in the term panel, 1 = top):
+# keyword = <exact keyword>
+# T1 = <term> (panel rank <n>, range <lo>-<hi>)
+# T2 = <term> (panel rank <n>, range <lo>-<hi>)
+# T3 = <term> (panel rank <n>, range <lo>-<hi>)
+# T4 = <term> (panel rank <n>, range <lo>-<hi>)
+# words-target = <lo>-<hi>  (Surfer's word range)
+step,phase,seo,ai,content,words,term,count,notes
+A0,A,,,,0,,,empty doc
+A1,A,,,,0,,,exact keyword in Title field
+A2,A,,,,0,,,H1 = exact keyword
+A3,A,,,,,,,first para ~50w with exact keyword 1x
+B250,B,,,,,,,filler to ~250w (record actual words)
+B500,B,,,,,,,filler to ~500w
+B1000,B,,,,,,,filler to ~1000w
+B1500,B,,,,,,,filler to ~1500w
+B2000,B,,,,,,,filler to ~2000w
+B-lo,B,,,,,,,filler to word-range LOW
+B-hi,B,,,,,,,filler to word-range HIGH
+B-over,B,,,,,,,filler to ~1.3x range high
+C-T1-1,C,,,,,T1,1,replace filler word with T1 (words constant)
+C-T1-min,C,,,,,T1,,T1 at range min (fill count)
+C-T1-mid,C,,,,,T1,,T1 at range mid
+C-T1-max,C,,,,,T1,,T1 at range max
+C-T1-3x,C,,,,,T1,,T1 at ~3x range max
+C-T1-back,C,,,,,T1,,delete back to range mid — must equal C-T1-mid
+C-T2-1,C,,,,,T2,1,
+C-T2-min,C,,,,,T2,,
+C-T2-mid,C,,,,,T2,,
+C-T2-max,C,,,,,T2,,
+C-T2-3x,C,,,,,T2,,
+C-T2-back,C,,,,,T2,,must equal C-T2-mid
+C-T3-1,C,,,,,T3,1,
+C-T3-min,C,,,,,T3,,
+C-T3-mid,C,,,,,T3,,
+C-T3-max,C,,,,,T3,,
+C-T3-3x,C,,,,,T3,,
+C-T3-back,C,,,,,T3,,must equal C-T3-mid
+C-T4-1,C,,,,,T4,1,
+C-T4-min,C,,,,,T4,,
+C-T4-mid,C,,,,,T4,,
+C-T4-max,C,,,,,T4,,
+C-T4-3x,C,,,,,T4,,
+C-T4-back,C,,,,,T4,,must equal C-T4-mid
+D1,D,,,,,T1,,MOVE one T1 occurrence body -> new H2 (count unchanged)
+D2,D,,,,,,,add H2 containing exact keyword
+D3,D,,,,,T2,,MOVE one T2 occurrence into first 100 words
+E1,E,,,,,,,split 2 paragraphs into 6 (+4 paras, same words)
+E2,E,,,,,,,add 3 generic H2s with NO panel terms
+E3,E,,,,,,,insert 2 images no alt text
+E4,E,,,,,T3,,alt text on both; one alt contains T3 1x
+F1,F,,,,,,,undo+redo E4 — must equal E4
+F2,F,,,,,,,cut all + re-paste — must equal F1

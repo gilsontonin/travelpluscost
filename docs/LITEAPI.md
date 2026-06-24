@@ -86,7 +86,12 @@ guard only in the merchant phase (prebook gives the binding number there anyway)
 - Docs recommend **exponential-backoff retry on HTTP 429**. We don't have it yet — low priority
   (add a small retry wrapper in `liteApiFetch` before high traffic).
 
-## 6. Merchant of record — STILL OPEN
-Docs describe two modes (Nuitee-as-MoR via the Payment SDK vs. you-as-MoR on net rates) but do
-**not** state who is MoR in each, nor PCI/Seller-of-Travel implications. **Confirm in writing with
-LiteAPI before taking real money.** See `PRICING.md §6` and `POSITIONING.md`.
+## 6. Merchant of record — RESOLVED (2026-06-21)
+**LiteAPI / Nuitée is the merchant of record when we use their payment system (the Payment SDK
+flow we already build: `prebook usePaymentSdk:true` → SDK charge → `book TRANSACTION_ID`).**
+Confirmed in LiteAPI's docs (owner-verified 2026-06-21). So Nuitée's name is on the charge and they
+own payment liability: **PCI, refunds, and chargebacks are theirs, not ours** — and as MoR they issue
+the guest payment receipt. (The you-as-MoR alternative on net rates is the path we are NOT taking.)
+**Still separate: Seller of Travel** — a *state storefront* registration that can attach to us as the
+price-setter even though LiteAPI is MoR. MoR ≠ an SoT exemption; get an attorney read before real
+money. See `PRICING.md §6` and `POSITIONING.md`.

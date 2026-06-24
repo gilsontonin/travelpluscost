@@ -59,3 +59,9 @@ next-env.d.ts
 # design working files: our own screenshots (scripts/shoot.mjs) + reference shots you drop in.
 # Reference images are someone else's IP — never commit them. The written specs live in docs/.
 /design/
+
+# generated QA logs + SERP briefs from the blog robots (scripts/blog/) — regenerate on demand
+/qa-logs/
+/scripts/blog/serp-brief-*.md
+# local Claude settings (never commit personal/agent settings)
+/.claude/settings.local.json

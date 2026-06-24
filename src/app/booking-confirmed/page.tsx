@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getOahuHotel } from "@/lib/oahu";
+import { getDirectoryHotel } from "@/lib/directory";
 import { money } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -31,7 +31,16 @@ export default async function ConfirmedPage({
   const guest = sp.guest ?? "";
   const email = sp.email ?? "";
 
-  const hotel = hotelId ? getOahuHotel(hotelId) : null;
+  // Resolve ANY hotel from the directory (not just curated Oahu) for the name + directions.
+  const hotel = hotelId ? await getDirectoryHotel(hotelId) : null;
+  const hotelLoc = hotel ? [hotel.city, hotel.state].filter(Boolean).join(", ") : "";
+  const dirDest =
+    hotel?.lat != null && hotel?.lng != null
+      ? `${hotel.lat},${hotel.lng}`
+      : [hotel?.name, hotel?.city].filter(Boolean).join(", ");
+  const directionsHref = dirDest
+    ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dirDest)}`
+    : "";
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-12">
@@ -75,18 +84,58 @@ export default async function ConfirmedPage({
         <p className="mt-6 text-xs text-black/40">
           {process.env.NEXT_PUBLIC_PAYMENT_ENV !== "live"
             ? "This is a real reservation in LiteAPI's sandbox — a genuine confirmation code, but no card was charged and no live booking was made. The price shown is the same price everyone sees."
-            : "Save your confirmation code above. The price shown is the same price everyone sees — never based on your data."}
+            : "A confirmation has been sent to your email. The price shown is the same price everyone sees — never based on your data."}
         </p>
 
-        <p className="mt-6 text-sm text-black/55">
-          Need to cancel or change?{" "}
-          <Link
-            href={bookingId ? `/cancel?bookingId=${encodeURIComponent(bookingId)}` : "/cancel"}
-            className="text-accent font-medium hover:underline"
-          >
-            Manage your booking
-          </Link>
-        </p>
+        {/* getting there */}
+        {hotel ? (
+          <div className="mt-6 border-t border-black/5 pt-5 text-left">
+            <h2 className="text-sm font-semibold">Getting there</h2>
+            <p className="mt-1 text-sm text-black/60">{[hotel.name, hotelLoc].filter(Boolean).join(" · ")}</p>
+            {directionsHref ? (
+              <a
+                href={directionsHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Get directions
+              </a>
+            ) : null}
+          </div>
+        ) : null}
+
+        {/* cancellation & refunds — handled by LiteAPI (auto-refund to card per policy) */}
+        <div className="mt-5 border-t border-black/5 pt-5 text-left">
+          <h2 className="text-sm font-semibold">Cancellation &amp; refunds</h2>
+          <p className="mt-1 text-sm text-black/60">
+            {cancelLabel}. Any refund follows the room&apos;s policy and is returned to your card automatically. To
+            view or cancel, use{" "}
+            <Link
+              href={bookingId ? `/cancel?bookingId=${encodeURIComponent(bookingId)}` : "/cancel"}
+              className="font-medium text-accent hover:underline"
+            >
+              Manage your booking
+            </Link>{" "}
+            and enter your email and booking ID.
+          </p>
+        </div>
+
+        {/* support — provided 24/7 by the travel supplier */}
+        <div className="mt-5 border-t border-black/5 pt-5 text-left">
+          <h2 className="text-sm font-semibold">Need help with your stay?</h2>
+          <p className="mt-1 text-sm text-black/60">
+            A travel support team is available 24/7. Email{" "}
+            <a href="mailto:hello@travelpluscost.com" className="font-medium text-accent hover:underline">
+              hello@travelpluscost.com
+            </a>{" "}
+            with your confirmation code and we&apos;ll help.
+          </p>
+        </div>
 
         <Link href="/" className="mt-4 inline-block bg-accent text-white font-medium px-6 py-3 rounded-xl hover:opacity-90 transition">
           Back to home

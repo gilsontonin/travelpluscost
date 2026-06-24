@@ -13,6 +13,7 @@ const serverSchema = z.object({
   LITEAPI_ENV: z.enum(["sandbox", "production"]).default("production"),
   LITEAPI_BASE_URL: z.string().default("https://api.liteapi.travel/v3.0"), // search + static content
   LITEAPI_BOOK_BASE_URL: z.string().default("https://book.liteapi.travel/v3.0"), // prebook/book/manage — DIFFERENT host
+  LITEAPI_WEBHOOK_SECRET: z.string().default(""), // shared secret to verify inbound LiteAPI webhook calls
 
   // Supabase (new key format: sb_secret_… server-only; sb_publishable_… is the NEXT_PUBLIC anon key)
   SUPABASE_SECRET_KEY: z.string().default(""),
