@@ -4,8 +4,15 @@ import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Infographic from "./Infographic";
 import BlogHotelCard from "./BlogHotelCard";
+import PriceProof from "./PriceProof";
+import CtaWidget from "./CtaWidget";
+import BlogSearch from "./BlogSearch";
+import BlogMap from "./BlogMap";
+import BlogCompare from "./BlogCompare";
+import HotelRail from "@/components/HotelRail";
 import { slugify, type Block } from "@/lib/blogBody";
 import type { DirectoryHotel } from "@/lib/directory";
+import type { CardHotel } from "@/lib/hotels";
 
 // Flatten heading children to a plain string so we can give H2/H3 stable anchor ids (for the ToC).
 function textOf(c: ReactNode): string {
@@ -48,14 +55,36 @@ const mdComponents: Components = {
 export default function PostBody({
   blocks,
   hotels,
+  rails,
 }: {
   blocks: Block[];
   hotels: Record<string, DirectoryHotel>;
+  rails: Record<string, CardHotel[]>;
 }) {
   return (
     <div className="mt-7 space-y-4 text-[15.5px] leading-relaxed text-black/80">
       {blocks.map((b, i) => {
         if (b.type === "infographic") return <Infographic key={i} id={b.key} />;
+        if (b.type === "priceproof") return <PriceProof key={i} />;
+        if (b.type === "cta") return <CtaWidget key={i} dest={b.dest} />;
+        if (b.type === "search") return <BlogSearch key={i} dest={b.dest} />;
+        if (b.type === "rail") {
+          const hs = rails[b.dest] ?? [];
+          return hs.length ? (
+            <HotelRail
+              key={i}
+              title={`Stays in ${b.dest}`}
+              subtitle="One honest price — the rate plus one flat fee, the same for everyone"
+              hotels={hs}
+              seeAllHref={`/search?destination=${encodeURIComponent(b.dest)}&adults=2`}
+            />
+          ) : null;
+        }
+        if (b.type === "map") return <BlogMap key={i} dest={b.dest} hotels={rails[b.dest] ?? []} />;
+        if (b.type === "compare") {
+          const hs = b.ids.map((id) => hotels[id]).filter(Boolean) as DirectoryHotel[];
+          return <BlogCompare key={i} hotels={hs} />;
+        }
         if (b.type === "hotel") {
           const h = hotels[b.id];
           return h ? <BlogHotelCard key={i} hotel={h} /> : null;

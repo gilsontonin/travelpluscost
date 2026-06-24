@@ -4,8 +4,9 @@ import { notFound } from "next/navigation";
 import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
 import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
-import { parseBlocks, extractHeadings, hotelIdsInBody } from "@/lib/blogBody";
-import { getDirectoryHotel, type DirectoryHotel } from "@/lib/directory";
+import { parseBlocks, extractHeadings, hotelIdsInBody, railDestsInBody } from "@/lib/blogBody";
+import { getDirectoryHotel, searchDirectory, type DirectoryHotel } from "@/lib/directory";
+import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
 
 export function generateStaticParams() {
@@ -74,6 +75,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     [...new Set(hotelIdsInBody(post.body))].map(async (id) => [id, await getDirectoryHotel(id)] as const),
   );
   const hotels = Object.fromEntries(hotelEntries.filter(([, h]) => h)) as Record<string, DirectoryHotel>;
+
+  // `::rail <dest>` / `::map <dest>` — pre-fetch each area's hotels from the directory (server-side, at build).
+  const railEntries = await Promise.all(
+    railDestsInBody(post.body).map(async (d) => [d, await searchDirectory(d, 12)] as const),
+  );
+  const rails = Object.fromEntries(railEntries) as Record<string, CardHotel[]>;
 
   const jsonLd = [
     {
@@ -193,7 +200,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       ) : null}
 
       {/* body */}
-      <PostBody blocks={blocks} hotels={hotels} />
+      <PostBody blocks={blocks} hotels={hotels} rails={rails} />
 
       {/* CTA */}
       {post.region ? (

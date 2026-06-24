@@ -147,6 +147,8 @@ The big decision is really just which coast, so start there before you ever look
 
 ::infographic maui-west-vs-south
 
+::search Maui
+
 ![Cliff diver on Black Rock (Puu Kekaa) at Kaanapali Beach, Maui, with swimmers in the turquoise water below](https://images.unsplash.com/photo-1664486755049-a5f82a4a0ae0?fm=webp&fit=crop&w=1200&h=800&q=58)
 
 *Photo: [Justin Busa](https://unsplash.com/@justinbusa) on [Unsplash](https://unsplash.com)*
@@ -166,6 +168,8 @@ Black Rock, at the north end by the Sheraton, is the bonus. Wade in and you're s
 **Best for:** first timers, families, beach days without a long drive.
 
 ::hotel lp19e33
+
+::rail Kaanapali
 
 ## Kapalua (West Maui): Quiet and Upscale
 
@@ -198,6 +202,8 @@ The Wailea Beach Path ties it all together — a flat, paved 1.3-mile walk past 
 **Best for:** couples, honeymoons, a no compromises splurge.
 
 ::hotel lp223fb
+
+::cta Wailea
 
 ## Kihei (South Maui): Sunny and the Value Pick
 
@@ -317,6 +323,8 @@ One more variable is how long you're staying. For a short three- or four night t
 Weigh the pros and cons, but don't overthink it. Whether you want sun, calm or value, every area here is a short drive from the island's main sights, and there's no truly wrong base on a sunny coast — only trade offs to weigh against your budget and your plans.
 
 If you only take one thing from this guide: pick the side first, the town second, and the hotel last. The island gets simple the moment the area is settled.
+
+::compare lp19e33 lp223fb
 
 ## Do you need a car in Maui?
 
@@ -629,11 +637,15 @@ Just west of Waikiki, the Ala Moana and downtown areas put you next to the islan
 | Kailua / Windward | Residential, beachy | Beach purists, rentals | Yes |
 | Ala Moana / Downtown | City, shopping | Shoppers, longer stays | No |
 
+::map Oahu
+
 ## How we price the stays you find here
 
 When you search Oahu hotels with us, the number you see is the rate plus one small, flat fee — [the same for everyone](/#how), never shaped by your device, location or browsing history. That's the opposite of the [surveillance pricing](/blog/surveillance-pricing) other sites quietly run. No fake discounts, no "1 room left" pressure. Just the honest number, so comparing areas is comparing like for like.
 
 ::infographic how-pricing-works
+
+::priceproof
 
 If you only do one thing with this guide: pick the base that matches your trip, then [search Oahu stays](/search?destination=Oahu&adults=2) and sort by what actually matters to you.
 
