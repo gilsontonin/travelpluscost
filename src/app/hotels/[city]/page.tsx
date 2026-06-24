@@ -10,6 +10,7 @@ import { SITE_NAME, abs } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
 import CityResults from "@/components/CityResults";
 import HotelRail from "@/components/HotelRail";
+import ViatorPackages from "@/components/ViatorPackages";
 
 // Title-case a city slug for display when the directory has no row to read the real casing from.
 function cityFromSlug(slug: string): string {
@@ -142,6 +143,15 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
     { title: `Most-reviewed hotels in ${city}`, subtitle: "the most-booked, by review volume", rows: [...ranked].sort((a, b) => (b.review_count ?? 0) - (a.review_count ?? 0)) },
   ].filter((t) => t.rows.length >= 4);
 
+  // City center = centroid of the hotels we have → "Things to do in {city}" via Viator (real data).
+  const geoRows = data.rows.filter((h) => h.lat != null && h.lng != null);
+  const center = geoRows.length
+    ? {
+        lat: geoRows.reduce((s, h) => s + (h.lat as number), 0) / geoRows.length,
+        lng: geoRows.reduce((s, h) => s + (h.lng as number), 0) / geoRows.length,
+      }
+    : null;
+
   return (
     <div className="mx-auto max-w-5xl px-4 py-6 pb-28">
       {/* breadcrumb */}
@@ -230,6 +240,9 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           seeAllHref={searchHref}
         />
       ))}
+
+      {/* things to do — real Viator activities near the city center (self-hides if none) */}
+      {center ? <ViatorPackages lat={center.lat} lng={center.lng} /> : null}
 
       {/* price promise */}
       <section className="mt-12 rounded-xl bg-accent-tint/50 p-6">
