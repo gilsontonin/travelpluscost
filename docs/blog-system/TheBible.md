@@ -58,7 +58,11 @@ count ≈ working-target ÷ ~280.
 > `Post` fields, so for now verify those by reading `src/app/blog/[slug]/page.tsx`. (See blog-system README.)
 
 ## 3. The corner-cutting catalogue (confirm each, every run)
-1. **Stopping at 88–89.** Loop the serp-brief ADD list top-down; land 92+.
+1. **Stopping at 88–89.** Loop the serp-brief ADD list top-down; land 92+ — the RIGHT way: the **heading
+   lever** (exact phrase + competitor subtopics in H2/H3; raw `.includes()`, so drop `&`/commas), match the
+   median length, add real subtopics/entities/facts, proper-nouns-not-pronouns. **NEVER stuff** — it craters
+   the AI-Search dial that ranks. A thin/legalese SERP can density-cap in the low-80s = owner-override, not a
+   stuff signal. Method: `References/WritingLessons.md` + `skills/enhance-with-surfer.md` Mode C.
 2. **Wrong length (too short OR too long).** Fatten thin sections when under; merge/cut when over. Never pad.
 3. **Spot-checking QA.** Run `blog:qa` and paste it; answer every 👁 row.
 4. **Editing after stats, not re-running.** Re-run `blog:stats` + `blog:voice` + `blog:slop` after every edit batch.
@@ -72,8 +76,19 @@ count ≈ working-target ÷ ~280.
 12. **Declaring done with anything red.** Sub-90, ▲ over-band, ❌ in `blog:qa`, or an eslint error never ships.
 
 ## 4. Drafting method (order)
-1. **Pick the topic** (brand/transparency angle first, then destination). Avoid cannibalizing an existing post's intent.
-2. **Research the SERP:** run `serp-optimize` over ~6–10 genuine competitor URLs (fresh WebSearch, no pinning). Read the brief: must-have subtopics, questions, fact candidates, length band.
+1. **Pick the topic + vet it with live Semrush** (`References/Semrush.md` — the MCP, no stored cluster).
+   Brand/transparency angle first, then destination. For each candidate pull `phrase_this` (volume) +
+   `phrase_kdi` (KD) and **derive intent**; aim KD ≤ 30 / volume > 100 / informational-or-commercial.
+   **Run the cannibalization check** (`npm run blog:keywords` lists the used cluster from
+   `content/keywords.json`; `phrase_related` + `phrase_these` confirm vs the candidate): never ship two
+   posts on one intent — update the existing post or pick a distinct sub-intent instead. **Log the locked
+   cluster to `content/keywords.json`** (the used-keyword ledger; flip to `status: published` when it ships).
+   (If the Semrush MCP isn't loaded, restart; else note `semrush: unavailable` and fall back to SERP-only —
+   never invent volumes/KD.)
+2. **Research the SERP:** expand the cluster with `phrase_related` (secondary keywords + H2 phrases) and
+   `phrase_questions` (FAQ seeds), then run `serp-optimize` over ~6–10 genuine competitor URLs (fresh
+   WebSearch, no pinning), feeding those terms in. Read the brief: must-have subtopics, questions, fact
+   candidates, length band.
 3. **Plan structure + the ONE CTA together** (`AffiliateLinks.md`): which city hub / search the post routes to. Headings carry the exact keyword phrases (heading match is the biggest lever).
 4. **Intro formula:** sentence 1 = the answer with the primary keyword verbatim, the answer phrase **bolded**; one dry hook within 50 words; then what it covers, who it's for, a visible "as of 2026".
 5. **Body unit per section:** benefit H2 → prose with a beat → 2–3 sentences of real detail → a quick-facts strip or a table. One opinion (Opinions.md, number/principle-backed), ≤1 true story (Stories.md), ≥2 honest "when not to" beats.
@@ -81,6 +96,8 @@ count ≈ working-target ÷ ~280.
 7. **Loop §2 gates until green**, add 3–5 internal links, dehyphenate, build, lint, then commit (held for go-live).
 
 ## 5. What every run's final report MUST contain
+- [ ] **The keyword line:** primary keyword + **Semrush volume / KD / derived intent**, and the
+      cannibalization verdict (`clear`, or `conflicts with <slug> → <resolution>`). `semrush: unavailable` if it didn't load.
 - [ ] **The `npm run blog:qa` verdict** pasted in full + a one-line answer to every 👁 row.
 - [ ] **Length band** (floor–ceiling), the post's word count, and the verdict (✅ in band / ▲ over / ▼ under).
 - [ ] **SEO score**, **AI-slop** (0 HARD), **voice scorecard** (with one dry beat listed per section).

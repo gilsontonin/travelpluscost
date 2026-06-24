@@ -1,0 +1,37 @@
+{
+  "where-to-stay-in-oahu": {
+    "primary": "where to stay in oahu",
+    "secondary": [
+      "where to stay in oahu hawaii",
+      "where to stay in oahu with family",
+      "best place to stay in oahu",
+      "where to stay in oahu north shore"
+    ],
+    "volume": 1300,
+    "kd": 28,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-23",
+    "status": "published",
+    "history": []
+  },
+  "surveillance-pricing": {
+    "primary": "surveillance pricing",
+    "secondary": [
+      "what is surveillance pricing",
+      "personalized pricing",
+      "algorithmic pricing",
+      "is surveillance pricing legal",
+      "how to avoid surveillance pricing",
+      "does amazon use surveillance pricing",
+      "surveillance pricing travel"
+    ],
+    "volume": 3600,
+    "kd": 41,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-23",
+    "status": "published",
+    "history": []
+  }
+}

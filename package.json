@@ -26,7 +26,8 @@
     "blog:lh": "node scripts/blog/check-lh.mjs",
     "blog:paa": "node --env-file=.env.local scripts/blog/paa-suggest.mjs",
     "blog:freshness": "node --env-file=.env.local scripts/blog/freshness-audit.mjs",
-    "blog:fable": "node --env-file=.env.local scripts/blog/fable-pass.mjs"
+    "blog:fable": "node --env-file=.env.local scripts/blog/fable-pass.mjs",
+    "blog:keywords": "node scripts/blog/keywords.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.9",

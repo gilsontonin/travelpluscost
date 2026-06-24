@@ -15,18 +15,34 @@ This skill is the execution wrapper. The brand promise + hard limits live in `do
 
 ## Before writing a sentence, read
 - `docs/blog-system/TheBible.md` (the contract + gates)
+- `docs/blog-system/References/Semrush.md` (the live keyword-research wiring — Steps 1–2 run this)
 - `docs/blog-system/References/Voice.md` + `DanKennedyVoice.md` + `Humour.md` + `PassAISlopAndDetection.md`
 - `docs/blog-system/References/stats.md` (the ONLY numbers you may state) · `Opinions.md` · `Stories.md`
 - `docs/blog-system/References/BlogStructure.MD` + `OnPageSEOCheckList.md` + `AffiliateLinks.md` (linking)
+- `docs/blog-system/References/WritingLessons.md` (the ported Hawaii feedback-loop — the **scorer mechanics
+  transfer** verbatim: heading lever, tokenizer/hyphen/comma traps, ToC over-count, "infographic deletes its
+  terms"; ignore the Hawaii-specific examples) + `skills/enhance-with-surfer.md` **Mode C** (how to raise the
+  serp score the right way — no stuffing)
 
 ## Workflow
-1. **Keyword.** Use the one the owner gives. If none, propose 3 candidates (brand/transparency angle
-   first, then a destination among Oahu/Maui/Las Vegas/Seattle/San Diego) and **PAUSE for the owner's pick.**
-   (We don't keep a keyword cluster — that system was intentionally left out.)
-2. **Research the SERP.** `node scripts/blog/serp-optimize.mjs "<kw>" --urls "u1,u2,…" --draft <slug>` over
-   ~6–10 genuine competitor URLs (fresh WebSearch, no Reddit/TA/Wiki/YT/news). Read the brief: must-have
-   subtopics, questions, fact candidates, the length band. Mine PAA with `npm run blog:paa -- <slug>` (Gemini)
-   — grep-gate every suggestion (most are already covered).
+1. **Keyword + live Semrush research** (`References/Semrush.md`). We keep no stored keyword cluster — we
+   pull data **live from the Semrush MCP** (`mcp__semrush__*`; if those tools are absent the server didn't
+   load — restart Claude Code, or note `semrush: unavailable` and fall back to SERP-only). Take the owner's
+   keyword if given; else propose candidates (brand/transparency angle first, then a destination among
+   Oahu/Maui/Las Vegas/Seattle/San Diego). **For each candidate get the real numbers:** `phrase_this`
+   (volume/CPC/competition) + `phrase_kdi` (difficulty) → **derive intent** (phrasing + question share +
+   `phrase_organic` SERP features — Semrush's intent field isn't exposed) → run the **cannibalization
+   check** against the keyword ledger (`npm run blog:keywords`, reads `content/keywords.json`). Present a
+   table — `kw | vol | KD | intent | cannibalization` — aim KD ≤ 30 / volume > 100 /
+   informational-or-commercial, and **PAUSE for the owner's pick.** On the pick, **log the cluster to
+   `content/keywords.json`** (status `researching`; see `References/Semrush.md` for the shape).
+2. **Expand the keyword + research the SERP.** Pull the cluster with `phrase_related` (→ secondary keywords
+   + H2 phrases; filter the foreign-language junk) and `phrase_questions` (→ FAQ + body sub-questions).
+   Then `node scripts/blog/serp-optimize.mjs "<kw>" --urls "u1,u2,…" --draft <slug>` over ~6–10 genuine
+   competitor URLs (fresh WebSearch, no Reddit/TA/Wiki/YT/news), feeding the Semrush terms/questions into
+   the corpus. Read the brief: must-have subtopics, questions, fact candidates, the length band. Mine PAA
+   with `npm run blog:paa -- <slug>` (Gemini) — grep-gate every suggestion against the Semrush questions and
+   the draft (most are already covered).
 3. **Plan + PAUSE.** Show the angle, outline, the ONE CTA (a city hub / search — `AffiliateLinks.md`), and
    which `::hotel <id>` cards / `::infographic <key>` you'll use. Wait for the owner's OK.
 4. **Draft in the house voice** per TheBible §4: answer-first intro with the keyword verbatim + a bolded
@@ -38,11 +54,23 @@ This skill is the execution wrapper. The brand promise + hard limits live in `do
    { answer (35–60w, ≠ excerpt/first paragraph), points (3–5 bold-led) }**, `faqs` (4–8 leftover questions),
    3–5 internal links to real pages, `::infographic <key>` (keys live in `src/lib/infographics.ts`), and
    `::hotel <lpId>` cards for any named property. `date`/`updated` = today; author "The travelpluscost team".
+   Then update its `content/keywords.json` entry: fill the `secondary` cluster from `phrase_related` and
+   flip `status` → `published` (`npm run blog:keywords` should read clean).
 7. **Regenerate + clean.** `npm run blog:related` (Gemini vectors) · `node scripts/blog/dehyphenate.mjs <slug> --apply`.
 8. **Loop the gates until green:** `npm run blog:qa -- <slug>` (re-run serp/stats/voice/slop after every
    edit). Then `npm run typecheck && npm run lint && npm run build` (lint MUST be 0 errors). Optional Opus
    polish: `npm run blog:fable -- <slug>`.
-9. **PAUSE before commit.** Paste the full `blog:qa` verdict + the gate numbers. **Commit only when the
+   - **Raising serp < 90 the RIGHT way (never stuff — stuffing craters the AI-Search dial that actually
+     ranks; measured SEO +5 / AI-Search −31):** in order — (a) the **HEADING lever** (biggest weight): put the
+     exact phrase + the brief's competitor subtopics in H2/**H3**s; the heading check is a raw lowercased
+     `.includes()`, so write the bare contiguous phrase and drop `&`/commas. (b) **Match the competitor median
+     length** (never under it). (c) Add **real subtopic H3s, named entities, and fact candidates** from the
+     brief; **use proper nouns, not pronouns**, to lift core terms into range. (d) SKIP mood-filler. A
+     thin/legalese SERP (few genuine competitors) can be **density-capped in the low-80s** — that's the
+     owner-override case (note it on the board), not a reason to stuff. Full method: `enhance-with-surfer.md`
+     Mode C + `WritingLessons.md`.
+9. **PAUSE before commit.** Paste the keyword line (primary kw + Semrush **volume / KD / intent** +
+   cannibalization verdict), the full `blog:qa` verdict, and the gate numbers. **Commit only when the
    owner says so; never `git push` until "go live"** (use the publish-post skill).
 
 ## Hard rules (never break)
