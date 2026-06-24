@@ -286,10 +286,6 @@ Five areas, one deciding factor: how far you're willing to sit from the theaters
 
 ::infographic branson-by-numbers
 
-The single best reviewed hotel in town sits a block off the Strip — which tells you most of what you need to know about Branson's priorities.
-
-::hotel lp40c1a
-
 ## Highway 76, the Strip — Branson's Neon Entertainment Spine
 
 **The Strip (Highway 76 Country Boulevard) is the easy first timer base — Branson's entertainment capital.** It's the neon main drag, lined end to end with theaters, live shows, attractions, mini golf and hotels. From your door you're within walking distance of most of what you came for.
@@ -298,7 +294,9 @@ The big shows — Dolly Parton's Stampede, the Sight & Sound Theatre — sit on 
 
 ### Strip Hotels: Lodge of the Ozarks and the Show-District Brands
 
-Strip hotels compete on the amenities families actually use: indoor and outdoor pools, free breakfast, arcades. A few even hide an indoor water park, for the afternoon the Ozark weather turns on you. The best reviewed of them, the Lodge of the Ozarks, sits right in the show district, with a deep bench of dependable national brand hotels around it.
+Strip hotels compete on the amenities families actually use, including indoor and outdoor pools, free breakfast and arcades. A few even hide an indoor water park, for the afternoon the Ozark weather turns on you. The best reviewed of them, the Lodge of the Ozarks, sits right in the entertainment district, with a deep bench of dependable national brand hotels around it.
+
+::hotel lp40c1a
 
 The catch is the obvious one. In summer, Highway 76 traffic becomes its own attraction — the kind you experience bumper to bumper. You book the Strip for the location and the nonstop entertainment, not the view out the window.
 
@@ -306,25 +304,31 @@ The catch is the obvious one. In summer, Highway 76 traffic becomes its own attr
 
 ## Branson Landing: Lakefront Hotels and Walkable Dining
 
-**Branson Landing is the grown up end of town — the part that offers a waterfront instead of a wax museum.** It's a boardwalk along Lake Taneycomo with shopping, multiple dining options and a fountain and fire show, anchored by the Hilton hotels and a flagship Bass Pro Shops. Historic downtown sits right behind it, so you park once and walk to dinner, a show and a lake breeze.
+**Branson Landing is the grown up end of town — the part that offers a waterfront instead of a wax museum.** It's a lakeside boardwalk along Lake Taneycomo with shopping, multiple dining options and a fountain and fire show, anchored by the Hilton hotels and a flagship Bass Pro Shops. Historic downtown sits right behind it, so you park once and walk to dinner, a show and a lake breeze.
 
 Yes, that Ferris wheel is the one from Chicago's Navy Pier. Branson has a habit of collecting other towns' landmarks.
 
-### Hilton Promenade and the Landing Hotels
+### Hilton Promenade and the Branson Convention Center Hotels
 
-The Landing's hotels skew upscale: the lakefront Hilton Promenade and the Hilton Convention Center anchor the boardwalk, with walkable dining and the water right outside the door. You'll pay a little more to sit on the main waterfront, and the area leans couples and conventions over go karts and kids. But if your idea of a good evening is a walkable dinner by the water with the car keys left in the room, no other Branson location offers it this cleanly.
+The Landing's hotels skew upscale: the lakefront Hilton Promenade and the Hilton Convention Center anchor the boardwalk, with walkable dining and the water right outside the door.
+
+::hotel lp39a68
+
+You'll pay a little more to sit on the main waterfront, and the area leans couples and conventions over go karts and kids. But if your idea of a good evening is a walkable dinner by the water with the car keys left in the room, no other Branson location offers it this cleanly.
 
 **Best for:** couples, conference goers, walkable lakefront dining.
 
 ## Table Rock Lake Resorts: Still Waters and Indian Point
 
-**Table Rock Lake is where Branson exhales.** It's the big, clear Ozarks lake, with some 800 miles of shoreline. Lake resorts and condos ring the shore — kitchens, docks, and the kind of natural beauty no theater can light.
+**Table Rock Lake is where Branson exhales.** It's the big, clear Ozarks lake, with some 800 miles of shoreline. Lakeside resorts and condos ring the shore — kitchens, docks, and the kind of natural beauty no theater can light.
 
 Indian Point, a wooded peninsula a few miles from the Strip and a short hop from Silver Dollar City, is the classic lake base; lake resorts like Still Waters sit right on the water.
 
-### Chateau on the Lake and the Table Rock Resorts
+### Chateau on the Lake Resort Spa and the Table Rock Resorts
 
-The marquee lake resort is the Chateau on the Lake, a grand hilltop hotel above the marina; around the shore sit dozens of condos and smaller lake resorts with docks and pools. Marinas rent boats and jet skis, lake resort guests wake up to open water instead of a billboard, and the Showboat Branson Belle paddles out for dinner cruises. It's a quieter, more spacious Branson — pontoons and pine trees where the Strip keeps its pavement.
+The marquee lake resort is the Chateau on the Lake, a grand hilltop hotel above the marina with lake views; around the shore sit dozens of condos and smaller lakeside resorts with docks and pools.
+
+::hotel lp205ae Marinas rent boats and jet skis, lake resort guests wake up to open water instead of a billboard, and the Showboat Branson Belle paddles out for dinner cruises. It's a quieter, more spacious Branson — pontoons and pine trees where the Strip keeps its pavement.
 
 The trade is the drive: most days it's fifteen to twenty minutes to the theaters. For a trip built around the water, or a family pairing the lake with Silver Dollar City, that drive buys you a much better morning.
 
@@ -348,9 +352,11 @@ These are full condos, not hotel rooms: most include kitchens, washers, multiple
 
 It's a destination, not a base, so you'll drive in for shows. But if the whole trip is the splurge, this is the unforgettable one.
 
+::hotel lp1828a0
+
 ## A Few Branson Hotels Worth Booking
 
-Once you've settled on an area, here are real, well reviewed Branson hotels and locations to start from, whether you want the Strip or the lake — guest scores as of 2026, and no stamped prices, because the rates move daily.
+Once you've settled on an area, here are real, well reviewed Branson hotels and locations offering comfort and value, whether you want the Strip or the lake — guest scores as of 2026, and no stamped prices, because the rates move daily.
 
 | Hotel | Area | Guest score | Best for |
 |---|---|---|---|
@@ -363,39 +369,35 @@ Once you've settled on an area, here are real, well reviewed Branson hotels and 
 | Baymont, Thousand Hills | Thousand Hills | 10.0 | Value |
 | Seven Gables Inn | Off the Strip | 9.2 | Budget |
 
-### Lodge of the Ozarks — the Strip
-
-The best reviewed hotel in town, with a near perfect 10 across more than 4,000 stays, a block off the theaters. If you want one safe Strip pick, stop here.
-
 ### Savannah House Hotel — the quieter Strip
 
 A boutique style hotel scoring a 9.4 that punches well above its star rating — the grown up Strip choice for couples who still want to walk to a show.
+
+::hotel lp3532b
 
 ### The Stone Castle Hotel — for the kids
 
 It is a literal castle, so the kids will lobby hard for it. Thousands of families have caved, and the indoor and outdoor pools close the argument.
 
-### Chateau on the Lake Resort Spa — the splurge
-
-Branson's grand four star lake resort and spa above Table Rock: a full resort spa, a marina with lake views, and an atrium lobby that looks like a national park lodge with a trust fund. It doubles as a convention center, so you may share the elevator with a name tag.
-
-::hotel lp3532b
-
-### Hilton Promenade and the Branson Convention Center Hotels
-
-You step out the door onto the boardwalk, with the dining and the fountain show right there and the Branson Convention Center next door. Book here whether you're in town for a conference or an anniversary.
+::hotel lp2a316
 
 ### Palace View Resort by Spinnaker — families and longer stays
 
-Condo style suites with room to spread out, modern amenities and a resort's worth of pools, with easy access to both the Strip and the lake.
+Condo style suites with room to spread out, modern amenities including a resort's worth of pools, with easy access to both the Strip and the lake.
+
+::hotel lp83ba2
 
 ### Baymont by Wyndham, Thousand Hills — the value perfect score
 
 A no drama national brand tucked into Thousand Hills that quietly posts a 10 from its guests. Sleeping well in Branson isn't reserved for the resorts.
 
+::hotel lp19de8
+
 ### Seven Gables Inn — the budget pick
 
 A long running value inn carrying a 9.2 from nearly 4,000 guests. The move when the trip is about the shows, not the room.
+
+::hotel lp36adf
 
 ## Where to Stay in Branson: Make the Call by Trip and Season
 
