@@ -56,6 +56,34 @@ The standard "Hotels in {City}" destination page (common across the majors).
 - [ ] Inline mini-map near the top (desktop) vs. our toggle-only approach?
 - [ ] "Popular/Top areas" or neighborhood module — only if we have the data (we don't yet)
 
+### Observed Expedia mobile structure (recording 2026-06-23) — the SEO-rich stack
+
+Top → bottom on `expedia.com` "Hotels in Las Vegas" (mobile). Each module targets a related search
+intent + adds internal links. **Bold = honest fit for us. ~~strike~~ = skip (positioning).**
+
+1. Header + breadcrumb (Nevada › Las Vegas) → hero destination photo → **H1 with price hook
+   ("Find hotels in {city} from ${low}")** → search widget → value props (upfront price, etc.)
+2. **Quick date chips** — Tonight / Tomorrow / This weekend / Next weekend (+ View map + Filter)
+3. **"Our top choices"** — numbered cards: photo, name, stars, location, rating + review count,
+   1-line blurb, $/night + total + "taxes & fees included"
+4. ~~Vacation rentals carousel~~ · ~~"sign in to save 10%" member-price banner~~
+5. **Top hotel reviews** (photo + quote) · **"More cheap stays"** (budget cards)
+6. **"Hotels with {star} rating"** + **"by price"** groupings — query-targeted link sections
+7. ~~Price trends / cheapest months~~ (no data) · **Attractions** (we have Viator real data)
+8. **Destination editorial** (Recreation/Nightlife/etc.) — the hard one: needs real, accurate copy,
+   not fabricated. Defer or generate only from data we actually have.
+9. **"Find great hotels in {city}"** — paragraphs on specific top hotels (real, from our data)
+10. **Footer link clusters** — popular cities / nearby / state hubs (we have the geo graph for this)
+
+**Build plan for our SEO-rich city hub (honest data only):**
+- [ ] H1 price hook "Hotels in {city} from ${low}/night" (real low from /api/prices)
+- [ ] Quick date chips (Tonight/Tomorrow/Weekend) → drive the indicative price + into search
+- [ ] Themed crawlable sections below inventory: **Top-rated · Budget/Cheapest · Luxury (4–5★) ·
+      Resorts** — real hotels, each a query target + internal links
+- [ ] **Things to do in {city}** via `ViatorPackages` (real attraction data)
+- [ ] Footer/interlink clusters (popular + nearby + state) — extend what we have
+- [ ] Honest destination context only (landmark proximity, star mix, price range) — never faked editorial
+
 ---
 
 ## Backlog templates (stub — fill when we get there)
