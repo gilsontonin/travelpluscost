@@ -120,6 +120,7 @@ export type CardHotel = Pick<
   propertyType: string;
   category: StayCategory;
   region: string; // region slug (for distance sort etc.)
+  popular?: boolean; // top by review volume in its city — drives the "Popular" card badge
 };
 
 // Ordered by "card-worthiness" — detectAmenities returns matches in this order,

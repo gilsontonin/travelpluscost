@@ -147,9 +147,19 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
   // Search-page card model: directory rows -> CardHotel. Enrich with the distance-to-anchor line
   // for curated markets (so cards read "0.4 mi from Waikiki Beach", not just the city name again).
   const landmarks = region?.landmarks ?? [];
+  // "Popular" = most-reviewed (most-booked) among the stays we actually surface — honest social proof,
+  // not urgency. Scoped to the shown set so the badge reliably lands on cards the visitor sees.
+  const popularIds = new Set(
+    [...top.slice(0, 18)]
+      .filter((h) => (h.review_count ?? 0) > 0)
+      .sort((a, b) => (b.review_count ?? 0) - (a.review_count ?? 0))
+      .slice(0, 5)
+      .map((h) => h.id),
+  );
   const cards = top.map((h) => {
     const c = directoryToCard(h);
     if (landmarks.length && h.lat != null && h.lng != null) c.nearby = nearbyLabel(h.lat, h.lng, landmarks);
+    c.popular = popularIds.has(h.id);
     return c;
   });
 
