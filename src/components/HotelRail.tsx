@@ -51,7 +51,7 @@ export default function HotelRail({
           return (
             <Link key={h.id} href={hotelHref(h)} className={`group shrink-0 w-52 snap-start${edge}`}>
               <div className="relative h-40 rounded-lg overflow-hidden bg-zinc-100">
-                <Image src={h.image} alt={h.name} fill sizes="208px" className="object-cover" />
+                <Image src={h.image} alt={h.city ? `${h.name} — hotel in ${h.city}` : h.name} fill sizes="208px" className="object-cover" />
                 {h.propertyType && h.propertyType !== "Hotel" ? (
                   <span className="absolute top-2 left-2 bg-white/95 text-black/80 text-[0.65rem] font-semibold px-2 py-0.5 rounded-md shadow-sm">
                     {h.propertyType}

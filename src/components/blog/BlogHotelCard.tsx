@@ -18,7 +18,7 @@ export default function BlogHotelCard({ hotel }: { hotel: DirectoryHotel }) {
     >
       <div className="relative aspect-[16/10] bg-zinc-100">
         {hotel.thumbnail ? (
-          <Image src={hotel.thumbnail} alt={hotel.name} fill sizes="(max-width:768px) 100vw, 720px" className="object-cover" />
+          <Image src={hotel.thumbnail} alt={loc ? `${hotel.name} — hotel in ${loc}` : hotel.name} fill sizes="(max-width:768px) 100vw, 720px" className="object-cover" />
         ) : null}
         {hotel.rating != null ? (
           <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-lg bg-white/95 px-2 py-1 shadow-sm">

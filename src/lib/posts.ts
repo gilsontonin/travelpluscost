@@ -48,9 +48,9 @@ export interface Post {
 export const POSTS: Post[] = [
   {
     slug: "where-to-stay-in-branson",
-    title: "Where to Stay in Branson, Missouri: An Area Guide",
+    title: "Where to Stay in Branson, MO: Best Areas & Hotels (2026)",
     description:
-      "Where to stay in Branson, MO by area — Highway 76 (the Strip), Branson Landing, Table Rock Lake and Thousand Hills — matched to your trip, with honest pricing.",
+      "Where to stay in Branson, MO in 2026: best areas — Highway 76, Branson Landing, Table Rock Lake, Thousand Hills — with real hotels and honest rates.",
     excerpt:
       "The shows or the lake? A plain-English guide to picking the right Branson base — by area, budget, and the trip you're taking.",
     tldr: {
@@ -202,9 +202,9 @@ Once you've picked your side of town, [search current Branson prices](/search?de
   },
   {
     slug: "where-to-stay-in-maui",
-    title: "Where to Stay in Maui: An Area-by-Area Guide",
+    title: "Where to Stay in Maui: Best Areas, Hotels & Resorts (2026)",
     description:
-      "Where to stay in Maui by area — Kaanapali, Wailea, Kihei, Kapalua and beyond — matched to the kind of trip you're taking, updated for 2026.",
+      "Where to stay in Maui in 2026: best areas — Kaanapali, Wailea, Kihei, Kapalua — with real hotels and resorts, honest rates, matched to your trip.",
     excerpt:
       "West side or South side? A plain-English guide to picking the right Maui base — by area, by budget, and by the trip you're taking.",
     tldr: {
@@ -705,9 +705,9 @@ And if you change one habit after reading this: before you book anything, check 
   },
   {
     slug: "where-to-stay-in-oahu",
-    title: "Where to Stay in Oahu: A Neighborhood Guide",
+    title: "Where to Stay in Oahu: Best Areas & Hotels (2026)",
     description:
-      "Where to stay in Oahu by neighborhood — Waikiki, Ko Olina, the North Shore, Kailua and Downtown — matched to the kind of trip you're taking.",
+      "Where to stay in Oahu in 2026: best areas — Waikiki, Ko Olina, North Shore, Kailua — with real hotels and honest rates, matched to your trip.",
     excerpt:
       "Waikiki, Ko Olina, the North Shore or Kailua? A plain-English guide to picking the right Oahu base for your trip.",
     tldr: {
