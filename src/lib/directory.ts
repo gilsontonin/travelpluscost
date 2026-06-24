@@ -20,9 +20,10 @@ export interface DirectoryHotel {
   thumbnail: string | null;
   kind: string | null; // 'hotel' | 'rental'
   property_type: string | null; // 'Hotel','Resort','Villa',…
+  pros?: string[] | null; // LiteAPI AI-sentiment highlights ("Friendly staff"…), backfilled by blog:pros
 }
 
-const COLS = "id,name,slug,city,state,country,lat,lng,stars,rating,review_count,thumbnail,kind,property_type";
+const COLS = "id,name,slug,city,state,country,lat,lng,stars,rating,review_count,thumbnail,kind,property_type,pros";
 
 // Lead with hotels (kind 'hotel' sorts before 'rental'), then best-rated first.
 // Candidate fetch order: most-reviewed first (surfaces established places into the result set);

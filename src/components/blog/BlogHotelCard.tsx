@@ -44,6 +44,11 @@ export default function BlogHotelCard({ hotel }: { hotel: DirectoryHotel }) {
           {loc ? <span>{loc}</span> : null}
           {hotel.review_count ? <span className="text-black/40">· {hotel.review_count.toLocaleString()} reviews</span> : null}
         </div>
+        {hotel.pros?.length ? (
+          <p className="mt-1.5 line-clamp-1 text-xs text-black/55">
+            <span className="font-semibold text-accent">Guests loved:</span> {hotel.pros.slice(0, 2).join(" · ")}
+          </p>
+        ) : null}
         <div className="mt-3 flex items-center justify-between gap-2">
           <div className="leading-tight">
             {price ? (

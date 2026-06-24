@@ -34,6 +34,11 @@ create index if not exists hotels_slug_idx    on public.hotels (slug);
 alter table public.hotels add column if not exists amenities text[];
 create index if not exists hotels_amenities_idx on public.hotels using gin (amenities);
 
+-- AI-sentiment review highlights ("Friendly staff", "Great location") for honest social proof on
+-- cards. Backfilled per-city by scripts/blog/backfill-pros.mjs (LiteAPI /data/hotel sentiment_analysis.
+-- pros). No index — selected for display, never filtered. Run this once:
+alter table public.hotels add column if not exists pros text[];
+
 -- ── Blog posts (SEO content wired to inventory) ─────────────────────────────
 create table if not exists public.posts (
   id               uuid primary key default gen_random_uuid(),

@@ -47,6 +47,8 @@ ${bar}
   Bars to clear: serp ≥ 90 · 0 HARD slop · length in band · 0 leaks · a CTA every section · build green.
 ${bar}
 
+  [ ] 0. DATA — backfill review social proof so the cards show "Guests loved …":
+            npm run blog:pros -- ${city}
   [ ] 1. KEYWORD — Semrush-vet "${kw}" (aim real demand + KD ≤ ~30). Log it in the ledger:
             npm run blog:keywords
   [ ] 2. SERP RESEARCH — WebSearch "${kw}"; open the top 3-4 GENUINE competitor guides (not OTA category
