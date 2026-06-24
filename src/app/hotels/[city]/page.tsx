@@ -131,7 +131,7 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
   });
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6">
+    <div className="mx-auto max-w-5xl px-4 py-6 pb-28">
       {/* breadcrumb */}
       <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs text-black/55">
         <Link href="/" className="hover:text-black">Home</Link>

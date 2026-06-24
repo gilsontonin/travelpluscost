@@ -109,33 +109,9 @@ export default function CityResults({
         ))}
       </div>
 
-      {/* count + list/map toggle */}
-      <div className="mt-3 mb-3 flex items-center justify-between gap-2">
-        <p className="text-sm text-black/55">
-          Showing {visible.length} of {countLabel} stays
-        </p>
-        <button
-          type="button"
-          onClick={() => setView((v) => (v === "list" ? "map" : "list"))}
-          className="inline-flex items-center gap-1.5 rounded-full border border-black/20 px-3.5 py-2 text-sm text-black/75 transition hover:border-black/40"
-        >
-          {view === "list" ? (
-            <>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M9 18 3 21V6l6-3 6 3 6-3v15l-6 3-6-3Z" /><path d="M9 3v15" /><path d="M15 6v15" />
-              </svg>
-              Map
-            </>
-          ) : (
-            <>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-              List
-            </>
-          )}
-        </button>
-      </div>
+      <p className="mt-3 mb-3 text-sm text-black/55">
+        Showing {visible.length} of {countLabel} stays
+      </p>
 
       {view === "map" ? (
         <MapResults hotels={visible} prices={prices} query={cardQuery} onClose={() => setView("list")} />
@@ -154,6 +130,24 @@ export default function CityResults({
           ))}
         </div>
       )}
+
+      {/* sticky CTA bar pinned to the bottom of the page — persistent map access */}
+      {view === "list" && visible.length > 0 ? (
+        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-black/10 bg-white/95 px-4 py-3 pb-[calc(env(safe-area-inset-bottom,0px)+0.75rem)] backdrop-blur">
+          <button
+            type="button"
+            onClick={() => setView("map")}
+            className="mx-auto flex w-full max-w-sm items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 active:scale-95"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M9 18 3 21V6l6-3 6 3 6-3v15l-6 3-6-3Z" />
+              <path d="M9 3v15" />
+              <path d="M15 6v15" />
+            </svg>
+            View map
+          </button>
+        </div>
+      ) : null}
 
       <div className="mt-8 flex justify-center">
         <Link
