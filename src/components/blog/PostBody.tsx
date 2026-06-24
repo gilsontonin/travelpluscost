@@ -83,7 +83,7 @@ export default function PostBody({
             />
           ) : null;
         }
-        if (b.type === "map") return <BlogMap key={i} dest={b.dest} hotels={rails[b.dest] ?? []} />;
+        if (b.type === "map") return <BlogMap key={i} dest={b.dest} />;
         if (b.type === "areas") return <BlogAreas key={i} dest={b.dest} areas={areas[b.dest] ?? []} />;
         if (b.type === "details")
           return (

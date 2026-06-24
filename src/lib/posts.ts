@@ -100,9 +100,11 @@ export const POSTS: Post[] = [
         a: "Five to seven is the sweet spot. That's enough to settle into one sunny base, take a full day for the Road to Hana, catch a Haleakala sunrise, and still have beach days. Shorter and you're rushing; much longer and one base starts to feel small.",
       },
     ],
-    body: `Where to stay in Maui comes down to one question first: **the West side or the South side?** Get the area right and the island feels easy. Get it wrong and you'll spend the trip in the car, narrating the drive.
+    body: `Where to stay in Maui comes down to one question first: **the West side or the South side?** Below are the real places to stay — searchable at one honest price, the same on every device — then the full area by area guide, as of 2026.
 
-This guide covers every place worth basing yourself on Maui — Kaanapali, Wailea, Kihei, Kapalua, the West Maui condos, Hana and the quieter pockets — matched to the kind of trip you're taking, as of 2026. It's for first timers picking a base, returning visitors trying a new side, and anyone who wants the honest trade offs and the real options before they book. Most Maui guides bury the trade offs; this one leads with them.
+::areas Maui
+
+::map Maui
 
 ## Where to Stay in Maui, at a Glance
 
@@ -147,10 +149,6 @@ The big decision is really just which coast, so start there before you ever look
 
 ::infographic maui-west-vs-south
 
-::search Maui
-
-::areas Maui
-
 ![Cliff diver on Black Rock (Puu Kekaa) at Kaanapali Beach, Maui, with swimmers in the turquoise water below](https://images.unsplash.com/photo-1664486755049-a5f82a4a0ae0?fm=webp&fit=crop&w=1200&h=800&q=58)
 
 *Photo: [Justin Busa](https://unsplash.com/@justinbusa) on [Unsplash](https://unsplash.com)*
@@ -159,6 +157,8 @@ The big decision is really just which coast, so start there before you ever look
 
 **Kaanapali is the best all round base for a first trip to Maui.** It's a three mile stretch of golden beach lined with large, well known resorts, an oceanfront walking path that connects them, and a lava promontory called Black Rock that swimmers snorkel by day and watch the sunset cliff dive from at dusk.
 
+::details More on Kaanapali
+
 It's about 45 minutes to an hour from the Kahului airport, lively without tipping into chaos. Whalers Village puts shops and restaurants right on the sand, and the beach itself is wide, swimmable and genuinely good — not a consolation prize for the resort behind it. Most of the island's catamaran and snorkel trips are an easy reach.
 
 The trade off is that you pay for the location and the crowds. Kaanapali is busier and pricier than Kihei to the south, and in whale season the rates climb with the crowds. For most first timers, the walkable beach and the no fuss logistics are worth the premium — you came to be on the sand, and here you can step onto it without starting the car.
@@ -166,6 +166,8 @@ The trade off is that you pay for the location and the crowds. Kaanapali is busi
 The strip is built for staying put. Whalers Village drops open air restaurants, shopping and activities right on the sand, the resorts run oceanfront bars and a luau or two, and the paved beach path links it all for an easy sunset stroll.
 
 Black Rock, at the north end by the Sheraton, is the bonus. Wade in and you're snorkeling a healthy little reef within a few fin kicks, no boat required. It's also the launch point for the nightly cliff dive ceremony, which is exactly as touristy and as fun as it sounds.
+
+::/details
 
 **Best for:** first timers, families, beach days without a long drive.
 

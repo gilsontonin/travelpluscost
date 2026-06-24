@@ -9,6 +9,8 @@ import { getDirectoryHotel, searchDirectory, cityHotelCount, type DirectoryHotel
 import { resolveRegion } from "@/lib/regions";
 import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
+import BlogSearch from "@/components/blog/BlogSearch";
+import HotelRail from "@/components/HotelRail";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -93,6 +95,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   );
   const areas = Object.fromEntries(areaEntries) as Record<string, { city: string; count: number }[]>;
 
+  // Inventory-intent: a hero rail of the market's top stays, rendered right under the search (above the
+  // editorial chrome) so the page goes search → inventory, OTA-style.
+  const heroRail: CardHotel[] = post.region ? await searchDirectory(post.region.destination, 10) : [];
+
   const jsonLd = [
     {
       "@context": "https://schema.org",
@@ -132,7 +138,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   ];
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-7 sm:py-10">
+    <article className="mx-auto max-w-3xl overflow-x-clip px-4 py-7 sm:py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* breadcrumbs */}
@@ -154,6 +160,17 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           {readingMinutes(post.body)} min read
         </p>
       </header>
+
+      {/* Inventory-intent: search → straight to inventory (OTA pattern), above the editorial chrome. */}
+      {post.region ? <BlogSearch dest={post.region.destination} /> : null}
+      {post.region && heroRail.length ? (
+        <HotelRail
+          title={`Top-rated stays in ${post.region.name}`}
+          subtitle="One honest price — the rate plus one flat fee, the same for everyone"
+          hotels={heroRail}
+          seeAllHref={`/search?destination=${encodeURIComponent(post.region.destination)}&adults=2`}
+        />
+      ) : null}
 
       {/* cover */}
       <figure className="mt-5">
