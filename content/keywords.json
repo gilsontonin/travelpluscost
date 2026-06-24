@@ -1,4 +1,22 @@
 {
+  "where-to-stay-in-branson": {
+    "primary": "where to stay in branson",
+    "secondary": [
+      "where to stay in branson mo",
+      "branson hotels",
+      "places to stay in branson mo",
+      "where to stay in branson for christmas",
+      "table rock lake",
+      "indian point branson"
+    ],
+    "volume": 480,
+    "kd": 18,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-24",
+    "status": "published",
+    "history": []
+  },
   "where-to-stay-in-oahu": {
     "primary": "where to stay in oahu",
     "secondary": [
