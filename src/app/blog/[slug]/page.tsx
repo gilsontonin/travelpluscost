@@ -11,6 +11,7 @@ import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
 import BlogSearch from "@/components/blog/BlogSearch";
 import BlogStaysList from "@/components/BlogStaysList";
+import BlogDatePicks from "@/components/blog/BlogDatePicks";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -191,6 +192,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           ) : null}
         </div>
       ) : null}
+      {post.region ? <BlogDatePicks destination={post.region.destination} /> : null}
       {post.region && heroRail.length ? (
         <BlogStaysList
           title={`Top-rated stays in ${post.region.name}`}
