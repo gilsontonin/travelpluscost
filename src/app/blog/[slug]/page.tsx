@@ -12,6 +12,7 @@ import PostBody from "@/components/blog/PostBody";
 import BlogSearch from "@/components/blog/BlogSearch";
 import BlogStaysList from "@/components/BlogStaysList";
 import BlogDatePicks from "@/components/blog/BlogDatePicks";
+import BlogPriceProvider from "@/components/blog/BlogPriceProvider";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -264,7 +265,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       ) : null}
 
       {/* body */}
-      <PostBody blocks={blocks} hotels={hotels} rails={rails} areas={areas} />
+      <BlogPriceProvider ids={Object.keys(hotels)}>
+        <PostBody blocks={blocks} hotels={hotels} rails={rails} areas={areas} />
+      </BlogPriceProvider>
 
       {/* CTA */}
       {post.region ? (
