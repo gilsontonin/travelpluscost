@@ -55,3 +55,7 @@ next-env.d.ts
 
 # DB safety backups (e.g. rows removed in a cleanup) — local restore artifacts, never deployed
 /backups/
+
+# design working files: our own screenshots (scripts/shoot.mjs) + reference shots you drop in.
+# Reference images are someone else's IP — never commit them. The written specs live in docs/.
+/design/
