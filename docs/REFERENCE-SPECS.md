@@ -84,6 +84,33 @@ intent + adds internal links. **Bold = honest fit for us. ~~strike~~ = skip (pos
 - [ ] Footer/interlink clusters (popular + nearby + state) — extend what we have
 - [ ] Honest destination context only (landmark proximity, star mix, price range) — never faked editorial
 
+### Observed Trivago mobile structure (recording 2026-06-23) + the hybrid model
+
+Trivago "Hotels in Las Vegas" (mobile). Bold = take it (honest fit). ~~strike~~ = skip.
+
+- **Cards**: ~~"See prices from N sites" (meta-search price comparison)~~ — opposite of our one-price model.
+  **Take**: "From $X" + a clear price/CTA; a **"Popular choice" badge** (honest: high review volume);
+  amenity tags (need data we don't have at directory level); save/share on the card.
+- **"These hotels may also be interesting for you"** — flat text-link list of specific hotels (cheap,
+  crawlable internal linking). **Take it** (nearby/other top hotels as text links).
+- **City Districts** (Hotels in Downtown…) + **Points of Interest** — neighborhood hubs. We have **no
+  neighborhood data** → skip/honest until we do.
+- ~~"When to book" seasonality~~ (no price-history data) · **Amenity FAQs** ("best pool/spa hotels in
+  {city}") — needs per-hotel amenity flags in the directory (future enrichment).
+- **Footer**: Top + More Destinations — we already have the Popular-destinations cluster.
+
+**Hybrid model — what each does best, and our synthesis:**
+- *Card display*: Expedia = whole card is the link, price bottom-right. Trivago = explicit "See prices"
+  button + badges + save/share. **Us**: keep whole-card link, but our price block is our **edge** — lean
+  into **"one honest price · same for everyone"** vs their "from $X across N sites" opacity. Add a real
+  **"Popular" badge** (review volume) and (optional) a **save heart**.
+- *Internal linking*: Expedia = themed module stack + footer clusters; Trivago = districts + "also
+  interesting" hotel lists + Top/More destinations. **Us**: themed rails ✅ + popular cluster ✅; add a
+  **text-link "you may also like" hotel list** (Trivago) and, when we have the data, **amenity sections**
+  ("pool/spa hotels in {city}") and **neighborhood hubs**.
+- *Honesty edge over both*: they obscure price (comparison/urgency); we show one transparent number.
+  That's a feature to **emphasize on the card**, not hide.
+
 ---
 
 ## Backlog templates (stub — fill when we get there)
