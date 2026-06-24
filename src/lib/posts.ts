@@ -340,6 +340,16 @@ The trade is the drive: most days it's fifteen to twenty minutes to the theaters
 
 **Best for:** boating, Silver Dollar City families, couples who want still water and quiet.
 
+## Staying Near Silver Dollar City
+
+**Silver Dollar City — the 1880s theme park that anchors the whole trip for a lot of Branson families — sits about ten miles west of the Strip, out past Indian Point.** If the park is your reason for coming, you want to wake up on its side of town, not crawl the length of Highway 76 every morning.
+
+The Indian Point peninsula is the closest bookable base: lake resorts a few minutes from the gates, with Table Rock and the marina right there for the days you trade roller coasters for a boat. The Lofts on Indian Point is the rate-verified pick out here, and the Table Rock lake resorts above are all a short drive from the park.
+
+::hotel lp656d05f7
+
+**Best for:** Silver Dollar City families, anyone pairing the theme park with lake time.
+
 ## Thousand Hills: Spacious Condos and Golf in the Middle
 
 **Thousand Hills is the spacious condo pocket dropped right in the center of everything.** It's minutes from the Strip but tucked into the trees around the Thousand Hills golf resort, with condos that include full kitchens, laundry and enough room that nobody has to draw the short straw and take the pull out couch. You get the quiet of the woods and the location of the Strip — the rare Branson combination that doesn't make you pick one.
