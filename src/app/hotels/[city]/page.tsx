@@ -197,10 +197,6 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           ) : null}
           {anchor ? <span>Near {anchor}</span> : null}
         </div>
-        <p className="mt-2 max-w-2xl text-sm text-black/60">
-          One honest price — the room rate plus one small flat fee, the same for everyone, never based on your data.
-          Pick dates on any stay to see the live all-in total.
-        </p>
       </header>
 
       {cards.length ? (

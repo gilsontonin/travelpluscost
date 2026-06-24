@@ -68,6 +68,13 @@ export default function CityResults({
     return (active.sort ? [...filtered].sort(active.sort) : filtered).slice(0, SHOWN);
   }, [cards, active]);
 
+  // Bubble cards that have a loaded price above the sold-out ones (stable within the category order),
+  // so the hero card shows a number. Reorders once when the price batch lands.
+  const ordered = useMemo(
+    () => [...visible].sort((a, b) => (prices[b.id] ? 1 : 0) - (prices[a.id] ? 1 : 0)),
+    [visible, prices],
+  );
+
   // Lazy "from" price for the cards on screen — debounced + de-duped (mirrors ResultsList). Cached per
   // id, so switching category only fetches newly-shown hotels.
   const visibleSig = visible.map((h) => h.id).join(",");
@@ -114,10 +121,10 @@ export default function CityResults({
       </p>
 
       {view === "map" ? (
-        <MapResults hotels={visible} prices={prices} query={cardQuery} onClose={() => setView("list")} />
+        <MapResults hotels={ordered} prices={prices} query={cardQuery} onClose={() => setView("list")} />
       ) : (
         <div className="flex flex-col gap-3 sm:gap-4">
-          {visible.map((h, i) => (
+          {ordered.map((h, i) => (
             <HotelRow
               key={h.id}
               hotel={h}
