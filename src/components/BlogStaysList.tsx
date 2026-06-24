@@ -5,6 +5,7 @@ import Link from "next/link";
 import HotelRow from "@/components/HotelRow";
 import type { CardHotel } from "@/lib/hotels";
 import type { Price } from "@/lib/rates";
+import { fromDate } from "@/lib/fromDate";
 
 // Blog "stays" list — renders the REAL search-results card (HotelRow) so the blog inventory looks
 // exactly like /search, then fetches live "from" SSP from /api/prices client-side and shows it on
@@ -33,7 +34,7 @@ export default function BlogStaysList({
     fetch("/api/prices", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ hotelIds: ids, adults: 2 }),
+      body: JSON.stringify({ hotelIds: ids, adults: 2, ...fromDate() }),
     })
       .then((r) => r.json())
       .then((d: { prices?: Record<string, Price> }) => {

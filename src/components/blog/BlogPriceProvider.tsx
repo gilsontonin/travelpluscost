@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 import type { Price } from "@/lib/rates";
+import { fromDate } from "@/lib/fromDate";
 
 // One client-side batch fetch of live "from" SSP for every ::hotel card on the page, shared via context
 // so each BlogHotelCard shows a price without firing its own request. Near-term default dates (a "from"),
@@ -20,7 +21,7 @@ export default function BlogPriceProvider({ ids, children }: { ids: string[]; ch
     fetch("/api/prices", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ hotelIds: list, adults: 2 }),
+      body: JSON.stringify({ hotelIds: list, adults: 2, ...fromDate() }),
     })
       .then((r) => r.json())
       .then((d: { prices?: Record<string, Price> }) => {
