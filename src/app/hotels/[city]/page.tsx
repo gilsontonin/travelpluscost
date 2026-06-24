@@ -9,6 +9,7 @@ import { siblingCities } from "@/lib/geo";
 import { SITE_NAME, abs } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
 import CityResults from "@/components/CityResults";
+import HotelRail from "@/components/HotelRail";
 
 // Title-case a city slug for display when the directory has no row to read the real casing from.
 function cityFromSlug(slug: string): string {
@@ -130,6 +131,17 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
     return c;
   });
 
+  // Themed, crawlable hotel rails below the inventory — each is a distinct subset that targets a
+  // related query ("luxury/resorts/aparthotels in {city}") and links real hotels (the SEO-module
+  // pattern). Built from the rows we already fetched; only rails with a real set (≥4) render.
+  const pType = (h: DirectoryHotel) => (h.property_type ?? "").toLowerCase();
+  const themedRails = [
+    { title: `Luxury hotels in ${city}`, subtitle: "4-star and up", rows: ranked.filter((h) => (h.stars ?? 0) >= 4) },
+    { title: `Resorts in ${city}`, subtitle: "pools, dining and more on site", rows: ranked.filter((h) => pType(h) === "resort") },
+    { title: `Aparthotels in ${city}`, subtitle: "kitchens and extra space", rows: ranked.filter((h) => pType(h) === "aparthotel") },
+    { title: `Most-reviewed hotels in ${city}`, subtitle: "the most-booked, by review volume", rows: [...ranked].sort((a, b) => (b.review_count ?? 0) - (a.review_count ?? 0)) },
+  ].filter((t) => t.rows.length >= 4);
+
   return (
     <div className="mx-auto max-w-5xl px-4 py-6 pb-28">
       {/* breadcrumb */}
@@ -207,6 +219,17 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           <Link href={searchHref} className="font-medium text-accent hover:underline">Search all hotels in {city}</Link>.
         </p>
       )}
+
+      {/* themed, crawlable hotel rails — query-targeted SEO depth + internal links */}
+      {themedRails.map((t) => (
+        <HotelRail
+          key={t.title}
+          title={t.title}
+          subtitle={t.subtitle}
+          hotels={t.rows.slice(0, 10).map(directoryToCard)}
+          seeAllHref={searchHref}
+        />
+      ))}
 
       {/* price promise */}
       <section className="mt-12 rounded-xl bg-accent-tint/50 p-6">
