@@ -73,7 +73,9 @@ function loadBrief(slug, allowNewest) {
   return { name: file.split("/").pop(), lo: med, hi, work: Math.round(med * 1.15) };
 }
 
-const wc = (s) => s.replace(/!\[[^\]]*\]\([^)]*\)/g, " ").trim().split(/\s+/).filter(Boolean).length;
+// Strip image markup AND `::directive` lines (::hotel/::rail/::search/::areas/::details/…) — they're
+// widgets, not prose, so they must not count toward the length band (matches serp-optimize line ~150).
+const wc = (s) => s.replace(/!\[[^\]]*\]\([^)]*\)/g, " ").replace(/^[ \t]*::[^\n]*$/gm, " ").trim().split(/\s+/).filter(Boolean).length;
 
 const src = readFileSync(SRC, "utf8");
 const posts = [...src.matchAll(/slug:\s*"([^"]+)"[\s\S]*?body:\s*`([\s\S]*?)`,\s*\n\s*\},/g)]

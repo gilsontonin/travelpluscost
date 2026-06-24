@@ -9,6 +9,7 @@ import CtaWidget from "./CtaWidget";
 import BlogSearch from "./BlogSearch";
 import BlogMap from "./BlogMap";
 import BlogCompare from "./BlogCompare";
+import BlogAreas from "./BlogAreas";
 import HotelRail from "@/components/HotelRail";
 import { slugify, type Block } from "@/lib/blogBody";
 import type { DirectoryHotel } from "@/lib/directory";
@@ -56,10 +57,12 @@ export default function PostBody({
   blocks,
   hotels,
   rails,
+  areas,
 }: {
   blocks: Block[];
   hotels: Record<string, DirectoryHotel>;
   rails: Record<string, CardHotel[]>;
+  areas: Record<string, { city: string; count: number }[]>;
 }) {
   return (
     <div className="mt-7 space-y-4 text-[15.5px] leading-relaxed text-black/80">
@@ -81,6 +84,20 @@ export default function PostBody({
           ) : null;
         }
         if (b.type === "map") return <BlogMap key={i} dest={b.dest} hotels={rails[b.dest] ?? []} />;
+        if (b.type === "areas") return <BlogAreas key={i} dest={b.dest} areas={areas[b.dest] ?? []} />;
+        if (b.type === "details")
+          return (
+            <details key={i} className="group my-5 rounded-2xl border border-black/[0.08]">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-semibold text-black [&::-webkit-details-marker]:hidden">
+                <span>{b.summary}</span>
+                <span className="shrink-0 text-xs font-medium text-accent group-open:hidden">Read more +</span>
+                <span className="hidden shrink-0 text-xs font-medium text-accent group-open:inline">Show less −</span>
+              </summary>
+              <div className="space-y-3 px-4 pb-4 text-[15.5px] leading-relaxed text-black/80">
+                <ReactMarkdown remarkPlugins={[remarkGfm]} components={mdComponents}>{b.text}</ReactMarkdown>
+              </div>
+            </details>
+          );
         if (b.type === "compare") {
           const hs = b.ids.map((id) => hotels[id]).filter(Boolean) as DirectoryHotel[];
           return <BlogCompare key={i} hotels={hs} />;

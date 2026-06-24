@@ -149,6 +149,8 @@ The big decision is really just which coast, so start there before you ever look
 
 ::search Maui
 
+::areas Maui
+
 ![Cliff diver on Black Rock (Puu Kekaa) at Kaanapali Beach, Maui, with swimmers in the turquoise water below](https://images.unsplash.com/photo-1664486755049-a5f82a4a0ae0?fm=webp&fit=crop&w=1200&h=800&q=58)
 
 *Photo: [Justin Busa](https://unsplash.com/@justinbusa) on [Unsplash](https://unsplash.com)*
@@ -283,11 +285,15 @@ Upcountry rewards a wander — Makawao's paniolo main street, the lavender farm 
 
 It's not a vacation base, and nobody pretends otherwise. There's no beach worth the name, and the area is workaday rather than scenic — but for a late night arrival or a dawn departure, a night by the airport beats an hour's drive in the dark.
 
+::details More on central Maui
+
 Wailuku has quietly gotten more interesting — a revitalized Market Street with cafes and a monthly First Friday street party — and Iao Valley State Park, with its emerald pinnacle, is a ten minute drive inland. It's worth an hour of your trip, not a week of it.
 
 What central Maui is genuinely good for is provisions and a base camp night. Kahului has the island's Costco and the big grocery stores, so plenty of condo goers stop here first to stock the kitchen, and the Saturday Maui Swap Meet near the college is a cheap, cheerful morning. The food scene in Wailuku has grown a few real standouts too, if you're staying the night.
 
 Kahului, meanwhile, is pure function — the airport, the malls and the gas you'll want before a long drive. Neither town is a reason to visit Maui, but both quietly keep the rest of the trip running.
+
+::/details
 
 **Best for:** a first or last night by the airport, or the tightest budgets.
 

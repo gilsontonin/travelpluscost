@@ -37,19 +37,34 @@ export type Block =
   | { type: "search"; dest: string }
   | { type: "rail"; dest: string }
   | { type: "map"; dest: string }
-  | { type: "compare"; ids: string[] };
+  | { type: "compare"; ids: string[] }
+  | { type: "areas"; dest: string }
+  | { type: "details"; summary: string; text: string };
 
 /** Split the body into ordered blocks: Markdown prose, `::infographic <key>`, `::hotel <id>`. */
 export function parseBlocks(body: string): Block[] {
   const blocks: Block[] = [];
   let buf: string[] = [];
+  // `::details <summary>` … `::/details` wraps the lines between into a collapsible block.
+  let det: { summary: string; buf: string[] } | null = null;
   const flush = () => {
     const t = buf.join("\n").trim();
     if (t) blocks.push({ type: "md", text: t });
     buf = [];
   };
+  const closeDetails = () => {
+    if (det) blocks.push({ type: "details", summary: det.summary, text: det.buf.join("\n").trim() });
+    det = null;
+  };
   for (const line of body.split("\n")) {
     const t = line.trim();
+    if (det) {
+      if (/^::\/details\s*$/.test(t) || /^::end\s*$/.test(t)) closeDetails();
+      else det.buf.push(line);
+      continue;
+    }
+    const dm = /^::details\s+(.+?)\s*$/.exec(t);
+    if (dm) { flush(); det = { summary: dm[1], buf: [] }; continue; }
     const ig = /^::infographic\s+(\S+)\s*$/.exec(t);
     const ht = /^::hotel\s+(\S+)\s*$/.exec(t);
     if (ig) { flush(); blocks.push({ type: "infographic", key: ig[1] }); }
@@ -60,8 +75,10 @@ export function parseBlocks(body: string): Block[] {
     else if (/^::rail\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "rail", dest: /^::rail\s+(.+?)\s*$/.exec(t)![1].trim() }); }
     else if (/^::map\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "map", dest: /^::map\s+(.+?)\s*$/.exec(t)![1].trim() }); }
     else if (/^::compare\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "compare", ids: /^::compare\s+(.+?)\s*$/.exec(t)![1].trim().split(/\s+/) }); }
+    else if (/^::areas\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "areas", dest: /^::areas\s+(.+?)\s*$/.exec(t)![1].trim() }); }
     else buf.push(line);
   }
+  closeDetails(); // tolerate an unclosed ::details at end of body
   flush();
   return blocks;
 }
@@ -76,4 +93,9 @@ export function hotelIdsInBody(body: string): string[] {
 /** Destinations referenced by `::rail <dest>` / `::map <dest>` — the page pre-fetches their hotels. */
 export function railDestsInBody(body: string): string[] {
   return [...new Set([...body.matchAll(/^\s*::(?:rail|map)\s+(.+?)\s*$/gm)].map((m) => m[1].trim()))];
+}
+
+/** Destinations referenced by `::areas <dest>` — the page pre-fetches each area's live hotel count. */
+export function areasDestsInBody(body: string): string[] {
+  return [...new Set([...body.matchAll(/^\s*::areas\s+(.+?)\s*$/gm)].map((m) => m[1].trim()))];
 }

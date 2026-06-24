@@ -27,7 +27,10 @@
     "blog:paa": "node --env-file=.env.local scripts/blog/paa-suggest.mjs",
     "blog:freshness": "node --env-file=.env.local scripts/blog/freshness-audit.mjs",
     "blog:fable": "node --env-file=.env.local scripts/blog/fable-pass.mjs",
-    "blog:keywords": "node scripts/blog/keywords.mjs"
+    "blog:keywords": "node scripts/blog/keywords.mjs",
+    "blog:hotels": "node scripts/blog/hotels.mjs",
+    "blog:areas": "node --env-file=.env.local scripts/blog/areas.mjs",
+    "blog:scaffold": "node scripts/blog/scaffold.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.9",

@@ -4,8 +4,9 @@ import { notFound } from "next/navigation";
 import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
 import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
-import { parseBlocks, extractHeadings, hotelIdsInBody, railDestsInBody } from "@/lib/blogBody";
-import { getDirectoryHotel, searchDirectory, type DirectoryHotel } from "@/lib/directory";
+import { parseBlocks, extractHeadings, hotelIdsInBody, railDestsInBody, areasDestsInBody } from "@/lib/blogBody";
+import { getDirectoryHotel, searchDirectory, cityHotelCount, type DirectoryHotel } from "@/lib/directory";
+import { resolveRegion } from "@/lib/regions";
 import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
 
@@ -81,6 +82,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     railDestsInBody(post.body).map(async (d) => [d, await searchDirectory(d, 12)] as const),
   );
   const rails = Object.fromEntries(railEntries) as Record<string, CardHotel[]>;
+
+  // `::areas <dest>` — resolve the market to its cities and count each in the live directory.
+  const areaEntries = await Promise.all(
+    areasDestsInBody(post.body).map(async (d) => {
+      const cities = resolveRegion(d)?.cities ?? [];
+      const counted = await Promise.all(cities.map(async (city) => ({ city, count: await cityHotelCount(city) })));
+      return [d, counted.filter((c) => c.count > 0).sort((a, b) => b.count - a.count)] as const;
+    }),
+  );
+  const areas = Object.fromEntries(areaEntries) as Record<string, { city: string; count: number }[]>;
 
   const jsonLd = [
     {
@@ -200,7 +211,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       ) : null}
 
       {/* body */}
-      <PostBody blocks={blocks} hotels={hotels} rails={rails} />
+      <PostBody blocks={blocks} hotels={hotels} rails={rails} areas={areas} />
 
       {/* CTA */}
       {post.region ? (
