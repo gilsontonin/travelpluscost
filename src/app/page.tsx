@@ -10,6 +10,7 @@ import PopularDestinations from "@/components/PopularDestinations";
 import ViatorPackages from "@/components/ViatorPackages";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
+import { getPrices, defaultDates, type Price } from "@/lib/rates";
 import { REGIONS } from "@/lib/regions";
 
 export const metadata: Metadata = {
@@ -17,9 +18,12 @@ export const metadata: Metadata = {
   openGraph: { url: "/" },
 };
 
+// Live "from" prices on the home rails come from LiteAPI (cached); refresh hourly via ISR.
+export const revalidate = 3600;
+
 const search = (q: string) => `/search?destination=${encodeURIComponent(q)}&adults=2`;
 
-export default function Home() {
+export default async function Home() {
   const all = getAllHotels();
   const cards = all.map(toCard);
   // Review-weighted (Bayesian) sort so a 1-review perfect-10 can't outrank a well-reviewed favourite
@@ -36,6 +40,16 @@ export default function Home() {
   const beachfront = cards.filter((c) => c.amenities.includes("Beachfront")).slice(0, 12);
   const railAll = all.map(toRail);
 
+  // Live "from" SSP for the home rails (near-term default dates) — the public price, cached + ISR.
+  const { checkin, checkout } = defaultDates();
+  const priceIds = [...new Set([...topRated, ...beachfront].map((c) => c.id))];
+  let prices: Record<string, Price> = {};
+  try {
+    prices = await getPrices(priceIds, checkin, checkout, 2);
+  } catch {
+    prices = {};
+  }
+
   // markets we cover (the multi-region picker)
   const destinations = REGIONS.map((r) => {
     const hs = all.filter((h) => h.island.toLowerCase() === r.name.toLowerCase());
@@ -44,30 +58,27 @@ export default function Home() {
   }).filter((d) => d.count > 0);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-8 pb-16">
-      {/* hero (also the "how pricing works" anchor target for the nav) */}
+    <div className="mx-auto max-w-5xl px-4 pt-5 pb-16">
+      {/* hero — slim (also the "how pricing works" anchor target for the nav) */}
       <div id="how" className="scroll-mt-24 text-center max-w-2xl mx-auto">
-        <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">
-          One honest price.
-          <br />
-          The same for everyone.
+        <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">
+          One honest price — the same for everyone.
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-black/55">
-          What the hotel charges us, plus one small flat fee. Search from any phone, any city, any day — same
-          number. Never based on your data.
+        <p className="mt-2 text-sm text-black/55">
+          What the hotel charges us, plus one small flat fee. Never based on your data.
         </p>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-4">
         <SearchPanel />
         <VibePromptPill />
       </div>
 
-      {/* honest trust strip */}
-      <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-black/60">
+      {/* honest trust strip (compact) */}
+      <div className="mt-3 flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-[13px] text-black/55">
         {["Same price for everyone", "Never based on your data", "No fake discounts"].map((t) => (
           <span key={t} className="inline-flex items-center gap-1.5">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="text-accent">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="text-accent">
               <path d="M20 6 9 17l-5-5" />
             </svg>
             {t}
@@ -75,11 +86,17 @@ export default function Home() {
         ))}
       </div>
 
+      {/* Inventory first — real stays with an all-in price, the moment you land */}
+      <HotelRail
+        title="Top-rated stays"
+        subtitle="Guest favorites across our markets — one honest, all-in price"
+        hotels={topRated}
+        prices={prices}
+      />
+
       <RecentlyViewed all={railAll} />
 
       <NearbyRail />
-
-      <SeasonalRail />
 
       {/* destinations we cover */}
       <section className="mt-10">
@@ -100,8 +117,9 @@ export default function Home() {
         </div>
       </section>
 
-      <HotelRail title="Top-rated stays" subtitle="Guest favorites across our markets" hotels={topRated} />
-      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} />
+      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} prices={prices} />
+
+      <SeasonalRail />
 
       <ViatorPackages />
 
