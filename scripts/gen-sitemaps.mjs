@@ -5,13 +5,15 @@
 //   export $(grep -E '^(NEXT_PUBLIC_SUPABASE_URL|SUPABASE_SECRET_KEY|NEXT_PUBLIC_SITE_URL)=' .env.local | xargs)
 //   node scripts/gen-sitemaps.mjs
 //
-// Wired as `prebuild`, so Netlify regenerates these on every deploy. Output:
-//   public/sitemaps/hotels-{k}.xml   urlset shards (<= SHARD_SIZE URLs each)
-//   public/sitemap-hotels.xml        sitemapindex (current): core /sitemap.xml + every hotel shard
-//   public/sitemap-index.xml         legacy copy of the same index (back-compat)
+// Run by netlify.toml (npm run sitemaps && npm run build) on every deploy. Everything sits under one
+// version token (SITEMAP_VERSION) so the whole tree can be rotated to fresh URLs at once. Output:
+//   public/sitemaps/<v>/pages.xml      core: static pages + browse index + state hubs + blog
+//   public/sitemaps/<v>/cities.xml     city hubs (≥ MIN_HUB_HOTELS)
+//   public/sitemaps/<v>/hotels-{k}.xml hotel shards (≤ SHARD_SIZE URLs each)
+//   public/sitemap-<v>.xml             sitemapindex — the ONE URL to submit in GSC
 import { createClient } from "@supabase/supabase-js";
 import { mkdir, writeFile, rm } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 
 const SB_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SB_SECRET = process.env.SUPABASE_SECRET_KEY;
@@ -24,11 +26,31 @@ const SHARD_SIZE = 5000;
 // Thinner cities still render on demand, but a 1–2 hotel hub is near-duplicate of the hotel page
 // itself — keeping those out of the sitemap avoids a doorway-page footprint. ≥3 ⇒ ~3.7k hubs.
 const MIN_HUB_HOTELS = 3;
-// Versioned shard path. Google caches each child sitemap URL and is slow to re-read; bumping the
-// version (v2 → v3 → …) gives every child a fresh address Google has never read, so a content change
-// (e.g. shard size) is picked up immediately instead of serving a stale cached read of /sitemaps/.
-const SITEMAP_DIR = "sitemaps/v2";
+// Versioned sitemap tree. Google caches each sitemap URL — the index AND every child — and is slow to
+// re-read, so changing content under an existing URL can serve stale for days. Bumping SITEMAP_VERSION
+// rotates the WHOLE tree at once: the index filename (/sitemap-v3.xml) and every child path
+// (/sitemaps/v3/*) become brand-new URLs Google has never read → guaranteed fresh fetch. Old URLs are
+// wiped each build so they 404 and Google drops them. Bump v3 → v4 whenever you need a clean re-read.
+const SITEMAP_VERSION = "v3";
+const SITEMAP_DIR = `sitemaps/${SITEMAP_VERSION}`;
 const OUT_DIR = `public/${SITEMAP_DIR}`;
+const INDEX_FILE = `sitemap-${SITEMAP_VERSION}.xml`; // → /sitemap-v3.xml — this is the one to submit in GSC
+
+// State code → name (for the /destinations/<state> hub URLs in the core-pages child). Mirrors
+// src/lib/states.ts; this build script can't import the TS module.
+const STATE_NAMES = {
+  AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado",
+  CT: "Connecticut", DE: "Delaware", DC: "District of Columbia", FL: "Florida", GA: "Georgia",
+  HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky",
+  LA: "Louisiana", ME: "Maine", MD: "Maryland", MA: "Massachusetts", MI: "Michigan", MN: "Minnesota",
+  MS: "Mississippi", MO: "Missouri", MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire",
+  NJ: "New Jersey", NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota",
+  OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
+  SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia",
+  WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming",
+  PR: "Puerto Rico", VI: "U.S. Virgin Islands", GU: "Guam",
+};
+const stateSlug = (name) => name.toLowerCase().replace(/[^a-z0-9\s-]/g, "").trim().replace(/\s+/g, "-");
 
 if (!SB_URL || !SB_SECRET) {
   console.warn("[gen-sitemaps] Missing Supabase env — skipping hotel sitemaps (build continues).");
@@ -114,27 +136,8 @@ const cityXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://w
 await writeFile(`${OUT_DIR}/cities.xml`, cityXml);
 console.log(`[gen-sitemaps] wrote ${OUT_DIR}/cities.xml (${citySlugs.length} city hubs, ≥${MIN_HUB_HOTELS} hotels)`);
 
-// Master index: core (static pages + blog) sitemap, the city-hubs shard, then every hotel shard.
-const entries = [
-  `<sitemap><loc>${SITE}/sitemap.xml</loc><lastmod>${today}</lastmod></sitemap>`,
-  `<sitemap><loc>${SITE}/${SITEMAP_DIR}/cities.xml</loc><lastmod>${today}</lastmod></sitemap>`,
-  ...shardFiles.map((f) => `<sitemap><loc>${SITE}/${SITEMAP_DIR}/${f}</loc><lastmod>${today}</lastmod></sitemap>`),
-];
-const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</sitemapindex>\n`;
-// sitemap-main.xml is the CURRENT index (robots.txt advertises it + you submit it to GSC). A fresh URL
-// Google has never read, so it has no cached old read (the prior /sitemap-hotels.xml stayed stuck on a
-// stale 10k-shard read in GSC). sitemap-hotels.xml + sitemap-index.xml are kept (identical copies) so
-// any previously-submitted URL stays live & clean. Going forward this URL is stable — no more renames.
-for (const name of ["sitemap-main.xml", "sitemap-hotels.xml", "sitemap-index.xml"]) {
-  await writeFile(`public/${name}`, indexXml);
-}
-console.log(`[gen-sitemaps] wrote public/sitemap-main.xml (+ legacy hotels/index copies), ${entries.length} sitemaps each`);
-
-// ── Geo index (content/geo-index.json) ───────────────────────────────────────
-// Powers the /hotels browse index, the state hubs (/destinations/<state>) and the same-state
-// cross-links on city hubs. Built here because the whole directory is already in memory. Each city
-// slug is assigned to its PRIMARY state (the one with the most hotels), since the city-hub URL
-// (/hotels/<slug>) isn't state-scoped. Committed (not gitignored) so dev/build always has it.
+// ── Geo aggregation (states → cities) — feeds the core-pages child below AND content/geo-index.json.
+// Each city slug is filed under its PRIMARY state (most hotels), since /hotels/<slug> isn't state-scoped.
 const cityAgg = new Map(); // slug -> { name, byState: Map<code,count> }
 const stateHotels = new Map(); // code -> total hotels in state
 for (const h of rows) {
@@ -158,6 +161,38 @@ for (const code of Object.keys(statesObj)) {
   statesObj[code].cities.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
   geoCities += statesObj[code].cities.length;
 }
+
+// Core-pages child (pages.xml): static routes + browse index + every state hub + blog posts. Versioned
+// like the shards so the index references ZERO non-/v3 URLs — nothing Google has cached can leak in.
+let blogSlugs = [];
+try {
+  blogSlugs = [...readFileSync("src/lib/posts.ts", "utf8").matchAll(/slug:\s*"([^"]+)"/g)].map((m) => m[1]);
+} catch { /* posts file optional */ }
+const pagePaths = [
+  "/", "/search", "/blog", "/privacy", "/terms", "/disclosure", "/hotels",
+  ...Object.keys(statesObj)
+    .filter((c) => statesObj[c].hotels > 0 && STATE_NAMES[c])
+    .map((c) => `/destinations/${stateSlug(STATE_NAMES[c])}`),
+  ...blogSlugs.map((s) => `/blog/${s}`),
+];
+const pagesBody = pagePaths.map((p) => `<url><loc>${SITE}${p}</loc></url>`).join("\n");
+const pagesXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pagesBody}\n</urlset>\n`;
+await writeFile(`${OUT_DIR}/pages.xml`, pagesXml);
+console.log(`[gen-sitemaps] wrote ${OUT_DIR}/pages.xml (${pagePaths.length} core URLs)`);
+
+// Master index — every child is a fresh /${SITEMAP_DIR}/ URL (pages, cities, hotel shards). No
+// reference to /sitemap.xml or any non-versioned path, so nothing Google has cached can leak in.
+const entries = [
+  `<sitemap><loc>${SITE}/${SITEMAP_DIR}/pages.xml</loc><lastmod>${today}</lastmod></sitemap>`,
+  `<sitemap><loc>${SITE}/${SITEMAP_DIR}/cities.xml</loc><lastmod>${today}</lastmod></sitemap>`,
+  ...shardFiles.map((f) => `<sitemap><loc>${SITE}/${SITEMAP_DIR}/${f}</loc><lastmod>${today}</lastmod></sitemap>`),
+];
+const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</sitemapindex>\n`;
+await writeFile(`public/${INDEX_FILE}`, indexXml);
+console.log(`[gen-sitemaps] wrote public/${INDEX_FILE} (${entries.length} child sitemaps, all /${SITEMAP_DIR}/)`);
+
+// content/geo-index.json — powers the /hotels browse index, state hubs and city-hub cross-links
+// (aggregated above). Committed (not gitignored) so dev/build always has it.
 const geo = {
   generated: today,
   totals: { hotels: rows.length, cities: geoCities, states: Object.keys(statesObj).length },

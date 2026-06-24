@@ -45,11 +45,10 @@ next-env.d.ts
 # Local Netlify folder
 .netlify
 
-# generated at build (npm run sitemaps → scripts/gen-sitemaps.mjs); regenerated on every deploy
+# generated at build (npm run sitemaps → scripts/gen-sitemaps.mjs); regenerated on every deploy.
+# /public/sitemap-*.xml covers every versioned index (sitemap-v3.xml, sitemap-v4.xml, …).
 /public/sitemaps/
-/public/sitemap-main.xml
-/public/sitemap-hotels.xml
-/public/sitemap-index.xml
+/public/sitemap-*.xml
 
 # local data snapshots / one-off exports (sitemap CSV dumps, screenshots) — not part of the build
 /exports/
