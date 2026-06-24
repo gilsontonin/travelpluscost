@@ -6,6 +6,7 @@
     "dev": "next dev",
     "sitemaps": "node scripts/gen-sitemaps.mjs",
     "shoot": "node scripts/shoot.mjs",
+    "shoot:local": "SHOOT_BASE=http://localhost:3000 node scripts/shoot.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
