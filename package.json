@@ -32,6 +32,7 @@
     "blog:hotels": "node --env-file=.env.local scripts/blog/hotels.mjs",
     "blog:areas": "node --env-file=.env.local scripts/blog/areas.mjs",
     "blog:scaffold": "node --env-file=.env.local scripts/blog/scaffold.mjs",
+    "blog:next": "node --env-file=.env.local scripts/blog/next.mjs",
     "blog:opportunities": "node --env-file=.env.local scripts/blog/opportunities.mjs"
   },
   "dependencies": {
