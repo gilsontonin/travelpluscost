@@ -8,6 +8,7 @@ import { REGIONS } from "@/lib/regions";
 import { siblingCities } from "@/lib/geo";
 import { SITE_NAME, abs } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
+import { getPrices } from "@/lib/rates";
 import CityResults from "@/components/CityResults";
 import HotelRail from "@/components/HotelRail";
 import ViatorPackages from "@/components/ViatorPackages";
@@ -23,6 +24,7 @@ interface CityData {
   city: string;
   state: string | null;
   count: number;
+  fromPrice: number | null; // cheapest per-night among the top stays (tomorrow night) — H1 hook
 }
 
 // Deduped per request (generateMetadata + the page both load it). Resolve the slug back to a real
@@ -38,7 +40,26 @@ const load = cache(async (slug: string): Promise<CityData | null> => {
   const state = Object.entries(stateCounts).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
   const count = await cityHotelCount(name, "us", state ?? undefined);
   const ranked = rankHotels(rows).filter((h) => h.thumbnail);
-  return { rows, ranked, city, state, count };
+
+  // Indicative "from" price: cheapest per-night among the top stays for tomorrow night. Server-side +
+  // ISR-cached daily; the rates client caches too. Omitted if unavailable — never blocks the page.
+  let fromPrice: number | null = null;
+  try {
+    const d = new Date();
+    d.setDate(d.getDate() + 1);
+    const ci = d.toISOString().slice(0, 10);
+    d.setDate(d.getDate() + 1);
+    const co = d.toISOString().slice(0, 10);
+    const prices = await getPrices(ranked.slice(0, 12).map((h) => h.id), ci, co, 2);
+    const perNight = Object.values(prices)
+      .map((p) => Math.round((p.allIn ?? p.amount) / p.nights))
+      .filter((n) => n > 0);
+    if (perNight.length) fromPrice = Math.min(...perNight);
+  } catch {
+    /* rates optional */
+  }
+
+  return { rows, ranked, city, state, count, fromPrice };
 });
 
 export async function generateMetadata({ params }: { params: Promise<{ city: string }> }): Promise<Metadata> {
@@ -49,7 +70,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const year = new Date().getFullYear();
   const n = data.count >= 10 ? `${Math.floor(data.count / 10) * 10}+ ` : "";
   return {
-    title: { absolute: `Hotels in ${loc} | ${year} Prices, Photos & Reviews` },
+    title: { absolute: `Hotels in ${loc}${data.fromPrice ? ` from $${data.fromPrice}` : ""} | ${year} Prices, Photos & Reviews` },
     description: `Compare ${n}hotels in ${loc} on one honest price — the room rate plus one small flat fee, the same for everyone. No surveillance pricing, never based on your data.`,
     alternates: { canonical: `/hotels/${slugify(data.city)}` },
     openGraph: {
@@ -74,7 +95,7 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
   const { city: slug } = await params;
   const data = await load(slug);
   if (!data) notFound();
-  const { ranked, city, state, count } = data;
+  const { ranked, city, state, count, fromPrice } = data;
   const loc = [city, state].filter(Boolean).join(", ");
   const top = ranked.slice(0, 48);
   const searchHref = `/search?destination=${encodeURIComponent(city)}&adults=2`;
@@ -209,6 +230,11 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           <span>
             <strong className="text-black">{countLabel}</strong> hotels
           </span>
+          {fromPrice ? (
+            <span>
+              from <strong className="text-black">${fromPrice}</strong>/night
+            </span>
+          ) : null}
           {topRated?.rating ? (
             <span className="inline-flex items-center gap-1.5">
               <span className="rounded bg-[#2e7d46] px-1.5 py-0.5 text-xs font-semibold text-white">

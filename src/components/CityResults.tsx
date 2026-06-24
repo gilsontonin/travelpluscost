@@ -20,6 +20,32 @@ const pill = (active: boolean) =>
     active ? "bg-accent-tint text-accent border-accent/40 font-medium" : "border-black/20 text-black/75 hover:border-black/40"
   }`;
 
+// Quick date windows (Expedia "Check prices for these dates"). Default = tomorrow (1 night).
+const DATE_OPTS = [
+  { key: "tonight", label: "Tonight" },
+  { key: "tomorrow", label: "Tomorrow" },
+  { key: "weekend", label: "This weekend" },
+  { key: "next-weekend", label: "Next weekend" },
+];
+const iso = (offsetDays: number) => {
+  const d = new Date();
+  d.setDate(d.getDate() + offsetDays);
+  return d.toISOString().slice(0, 10);
+};
+function datesFor(key: string): { checkin: string; checkout: string } {
+  const toFri = (5 - new Date().getDay() + 7) % 7; // days to the upcoming Friday (0 if today is Friday)
+  switch (key) {
+    case "tonight":
+      return { checkin: iso(0), checkout: iso(1) };
+    case "weekend":
+      return { checkin: iso(toFri), checkout: iso(toFri + 2) };
+    case "next-weekend":
+      return { checkin: iso(toFri + 7), checkout: iso(toFri + 9) };
+    default: // tomorrow
+      return { checkin: iso(1), checkout: iso(2) };
+  }
+}
+
 export default function CityResults({
   cards,
   city,
@@ -33,20 +59,23 @@ export default function CityResults({
 }) {
   const [cat, setCat] = useState("top");
   const [view, setView] = useState<"list" | "map">("list");
+  const [dateKey, setDateKey] = useState("tomorrow");
   const [prices, setPrices] = useState<Record<string, Price>>({});
   const [done, setDone] = useState<Set<string>>(() => new Set());
   const inflight = useRef<Set<string>>(new Set());
 
-  // Indicative dates = tomorrow night, 1 night. One place to tune (e.g. push out 2 weeks for more
-  // availability / a lower "from" number). toISOString is UTC; close enough for an indicative rate.
-  const { checkin, checkout } = useMemo(() => {
-    const d = new Date();
-    d.setDate(d.getDate() + 1);
-    const ci = d.toISOString().slice(0, 10);
-    d.setDate(d.getDate() + 1);
-    return { checkin: ci, checkout: d.toISOString().slice(0, 10) };
-  }, []);
+  const { checkin, checkout } = useMemo(() => datesFor(dateKey), [dateKey]);
   const cardQuery = `checkin=${checkin}&checkout=${checkout}&adults=2`;
+
+  // New dates → clear cached prices so the cards re-fetch for them (render-time check, lint-safe).
+  const dsig = `${checkin}|${checkout}`;
+  const [prevDsig, setPrevDsig] = useState(dsig);
+  if (dsig !== prevDsig) {
+    setPrevDsig(dsig);
+    setPrices({});
+    setDone(new Set());
+    inflight.current = new Set();
+  }
 
   // Only surface a category chip when there's a real, non-trivial set behind it.
   const cats = useMemo<Category[]>(() => {
@@ -107,6 +136,16 @@ export default function CityResults({
 
   return (
     <div className="mt-5">
+      {/* date chips — drive the indicative price (Expedia "Check prices for these dates") */}
+      <p className="mb-1.5 text-xs font-medium text-black/45">Check prices for these dates</p>
+      <div className="mb-3 flex flex-nowrap items-center gap-2 -mx-4 px-4 sm:mx-0 sm:px-0 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        {DATE_OPTS.map((o) => (
+          <button key={o.key} type="button" onClick={() => setDateKey(o.key)} className={pill(o.key === dateKey)}>
+            {o.label}
+          </button>
+        ))}
+      </div>
+
       {/* one slidable category row (relevance, not fake filters) */}
       <div className="flex flex-nowrap items-center gap-2 -mx-4 px-4 sm:mx-0 sm:px-0 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         {cats.map((c) => (
