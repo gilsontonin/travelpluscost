@@ -27,24 +27,20 @@ export default function BlogSearch({ dest: initial }: { dest: string }) {
   };
 
   return (
-    <div className="my-6 rounded-2xl border border-black/10 bg-white p-4 shadow-sm sm:p-5">
-      <p className="mb-3 text-sm font-semibold text-black">Search {initial} stays</p>
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-stretch">
-        <div className="min-w-0 sm:flex-[1.3]">
-          <DestinationField value={dest} onChange={setDest} />
+    <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-lg sm:p-5">
+      <p className="mb-3 text-xl font-bold tracking-tight text-black">Search {initial} stays</p>
+      <div className="flex flex-col gap-2.5">
+        <DestinationField value={dest} onChange={setDest} />
+        <div className="rounded-xl border border-black/15 bg-white">
+          <DateField checkin={checkin} checkout={checkout} onChange={(ci, co) => { setCheckin(ci); setCheckout(co); }} />
         </div>
-        <div className="grid grid-cols-2 gap-2 sm:contents">
-          <div className="min-w-0 rounded-xl border border-black/15 bg-white sm:flex-1">
-            <DateField checkin={checkin} checkout={checkout} onChange={(ci, co) => { setCheckin(ci); setCheckout(co); }} />
-          </div>
-          <div className="min-w-0 rounded-xl border border-black/15 bg-white sm:flex-1">
-            <GuestField adults={adults} rooms={1} onChange={(a, r) => { setAdults(a); setRooms(r); }} />
-          </div>
+        <div className="rounded-xl border border-black/15 bg-white">
+          <GuestField adults={adults} rooms={1} onChange={(a, r) => { setAdults(a); setRooms(r); }} />
         </div>
         <button
           type="button"
           onClick={onSearch}
-          className="rounded-xl bg-accent px-7 py-3 text-[15px] font-semibold text-white transition hover:opacity-90"
+          className="w-full rounded-xl bg-accent px-7 py-3.5 text-[15px] font-semibold text-white transition hover:opacity-90"
         >
           Search
         </button>

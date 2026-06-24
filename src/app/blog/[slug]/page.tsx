@@ -166,8 +166,31 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         </p>
       </header>
 
-      {/* Inventory-intent: search → straight to inventory (OTA pattern), above the editorial chrome. */}
-      {post.region ? <BlogSearch dest={post.region.destination} /> : null}
+      {/* Inventory-intent: hero photo + search card overlay (OTA pattern), above the editorial chrome. */}
+      {post.region ? (
+        <div className="mt-4">
+          <div className="relative h-44 w-full overflow-hidden rounded-2xl bg-zinc-100 sm:h-60">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={post.cover.src} alt={post.cover.alt} className="h-full w-full object-cover" />
+          </div>
+          <div className="relative z-10 -mt-14 sm:-mt-16">
+            <BlogSearch dest={post.region.destination} />
+          </div>
+          {post.cover.credit ? (
+            <p className="mt-1.5 text-right text-xs text-black/40">
+              Photo:{" "}
+              {post.cover.credit.url ? (
+                <a href={post.cover.credit.url} target="_blank" rel="noopener noreferrer" className="underline">
+                  {post.cover.credit.name}
+                </a>
+              ) : (
+                post.cover.credit.name
+              )}
+              {post.cover.credit.url?.includes("unsplash.com") ? " on Unsplash" : ""}
+            </p>
+          ) : null}
+        </div>
+      ) : null}
       {post.region && heroRail.length ? (
         <BlogStaysList
           title={`Top-rated stays in ${post.region.name}`}
@@ -177,7 +200,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         />
       ) : null}
 
-      {/* cover */}
+      {/* cover — non-region posts only (region posts show it as the hero above the search) */}
+      {!post.region ? (
       <figure className="mt-5">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -201,6 +225,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           </figcaption>
         ) : null}
       </figure>
+      ) : null}
 
       {/* TL;DR quick-answer box */}
       {post.tldr ? (
