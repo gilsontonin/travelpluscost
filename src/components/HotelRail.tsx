@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { money, reviewLabel } from "@/lib/format";
+import { reviewLabel } from "@/lib/format";
 import { hotelHref } from "@/lib/hotelUrl";
-import type { Price } from "@/lib/rates";
 
 // A titled horizontal scroller of compact hotel cards (Expedia-style home rail).
 // Accepts any object with these fields (CardHotel and RailHotel both satisfy it).
@@ -21,13 +20,11 @@ export default function HotelRail({
   subtitle,
   hotels,
   seeAllHref,
-  prices,
 }: {
   title: string;
   subtitle?: string;
   hotels: RailHotelLike[];
   seeAllHref?: string;
-  prices?: Record<string, Price>;
 }) {
   const shown = hotels.filter((h) => h.image); // guard: directory cards may lack a photo
   if (!shown.length) return null;
@@ -50,7 +47,6 @@ export default function HotelRail({
       <div className="flex gap-4 overflow-x-auto -mx-4 sm:mx-0 snap-x scroll-pl-4 sm:scroll-pl-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         {shown.map((h, i) => {
           const rev = reviewLabel(h.rating ?? undefined);
-          const price = prices?.[h.id];
           const edge = `${i === 0 ? " ms-4 sm:ms-0" : ""}${i === shown.length - 1 ? " me-4 sm:me-0" : ""}`;
           return (
             <Link key={h.id} href={hotelHref(h)} className={`group shrink-0 w-52 snap-start${edge}`}>
@@ -74,15 +70,6 @@ export default function HotelRail({
                     {h.reviewCount ? ` · ${h.reviewCount.toLocaleString()}` : ""}
                   </span>
                 </div>
-              ) : null}
-              {price ? (
-                <p className="mt-1.5 leading-tight">
-                  <span className="text-xs text-black/45">from </span>
-                  <span className="text-[1.05rem] font-bold tracking-tight text-black">
-                    {money(Math.round((price.allIn ?? price.amount) / price.nights), price.currency)}
-                  </span>
-                  <span className="text-xs text-black/55">/night · all-in</span>
-                </p>
               ) : null}
             </Link>
           );

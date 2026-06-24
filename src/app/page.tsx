@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import VibePromptPill from "@/components/VibePromptPill";
-import PricedRail from "@/components/PricedRail";
+import HotelRail from "@/components/HotelRail";
 import NearbyRail from "@/components/NearbyRail";
 import SeasonalRail from "@/components/SeasonalRail";
 import PopularDestinations from "@/components/PopularDestinations";
@@ -44,27 +44,30 @@ export default function Home() {
   }).filter((d) => d.count > 0);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-5 pb-16">
-      {/* hero — slim (also the "how pricing works" anchor target for the nav) */}
+    <div className="mx-auto max-w-5xl px-4 pt-8 pb-16">
+      {/* hero (also the "how pricing works" anchor target for the nav) */}
       <div id="how" className="scroll-mt-24 text-center max-w-2xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">
-          One honest price — the same for everyone.
+        <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">
+          One honest price.
+          <br />
+          The same for everyone.
         </h1>
-        <p className="mt-2 text-sm text-black/55">
-          What the hotel charges us, plus one small flat fee. Never based on your data.
+        <p className="mt-4 text-base sm:text-lg text-black/55">
+          What the hotel charges us, plus one small flat fee. Search from any phone, any city, any day — same
+          number. Never based on your data.
         </p>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-8">
         <SearchPanel />
         <VibePromptPill />
       </div>
 
-      {/* honest trust strip (compact) */}
-      <div className="mt-3 flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-[13px] text-black/55">
+      {/* honest trust strip */}
+      <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-black/60">
         {["Same price for everyone", "Never based on your data", "No fake discounts"].map((t) => (
           <span key={t} className="inline-flex items-center gap-1.5">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="text-accent">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="text-accent">
               <path d="M20 6 9 17l-5-5" />
             </svg>
             {t}
@@ -72,16 +75,11 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Inventory first — real stays with an all-in price, the moment you land */}
-      <PricedRail
-        title="Top-rated stays"
-        subtitle="Guest favorites across our markets — one honest, all-in price"
-        hotels={topRated}
-      />
-
       <RecentlyViewed all={railAll} />
 
       <NearbyRail />
+
+      <SeasonalRail />
 
       {/* destinations we cover */}
       <section className="mt-10">
@@ -102,9 +100,8 @@ export default function Home() {
         </div>
       </section>
 
-      <PricedRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} />
-
-      <SeasonalRail />
+      <HotelRail title="Top-rated stays" subtitle="Guest favorites across our markets" hotels={topRated} />
+      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} />
 
       <ViatorPackages />
 
