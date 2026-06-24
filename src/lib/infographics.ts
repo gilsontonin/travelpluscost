@@ -49,6 +49,27 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "The price you see", detail: "All-in and shown up front. No surprises at the last screen." },
     ],
   },
+  "branson-by-numbers": {
+    kind: "stat",
+    title: "Branson by the numbers",
+    stats: [
+      { value: "16,500+", label: "hotel rooms in one small town" },
+      { value: "100+", label: "live shows on and off the Strip" },
+      { value: "800 mi", label: "of Table Rock Lake shoreline" },
+    ],
+  },
+  "branson-strip-vs-lake": {
+    kind: "compare",
+    title: "The Strip or the lake?",
+    left: "Highway 76 — the Strip",
+    right: "Table Rock Lake",
+    rows: [
+      { label: "The vibe", left: "Neon, theaters, go-karts, nonstop", right: "Docks, pontoons, pine trees, quiet" },
+      { label: "Best for", left: "First-timers, show marathons, kids", right: "Boating, families, couples who want calm" },
+      { label: "To the theaters", left: "Walk to a few minutes", right: "A 15–20 minute drive" },
+      { label: "You wake up to", left: "A parking lot and a billboard", right: "Open water and the odd bald eagle" },
+    ],
+  },
 };
 
 export function getInfographic(key: string): Infographic | null {

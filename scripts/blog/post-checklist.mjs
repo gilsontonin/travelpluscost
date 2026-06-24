@@ -132,7 +132,7 @@ eye("7.1", "Every monetizable intent routes to a real page; no fake-deal framing
 
 // ---- 8 · Schema/build (auto from the route) ----
 auto("8.2", "JSON-LD auto-emitted (BlogPosting+FAQPage+BreadcrumbList)", true, "guaranteed by src/app/blog/[slug]/page.tsx from the Post fields");
-auto("8.4", "Author is the brand", /author:\s*"The travelpluscost team"/.test(meta) || /author:\s*"[^"]*travelpluscost/i.test(meta), (meta.match(/author:\s*"([^"]*)"/) || [])[1] || "?");
+auto("8.4", "Author byline is a named person (E-E-A-T)", !!(meta.match(/author:\s*"([^"]*)"/) || [])[1] && !/author:\s*"the travelpluscost team"/i.test(meta), (meta.match(/author:\s*"([^"]*)"/) || [])[1] || "?");
 eye("8.1/8.3", "build clean + lint 0 errors + Lighthouse ≥95/100/100/100 — paste scores");
 eye("8.5", "1-3 internal backlinks IN from other posts · focused commit · hold for go-live");
 
