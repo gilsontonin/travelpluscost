@@ -88,7 +88,7 @@ export default function AboutPage() {
 
       {/* the anti-gimmick section */}
       <section className="mt-14">
-        <h2 className="text-xl font-semibold">No gimmicks. Here's what we removed — and why.</h2>
+        <h2 className="text-xl font-semibold">No gimmicks. Here’s what we removed — and why.</h2>
         <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-black/70">
           Most of online travel is theater. Each “feature” below exists for one reason: to make the price harder to
           compare and easier to inflate. Confusing <em>by design</em>. We took them all out.
@@ -108,8 +108,8 @@ export default function AboutPage() {
           ))}
         </div>
         <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-black/80">
-          Strip all of it away and what's left is simple: the hotel's rate, one flat fee, the same for everyone.{" "}
-          <strong>Simple is the point. Simple is how you know it's honest.</strong>
+          Strip all of it away and what’s left is simple: the hotel’s rate, one flat fee, the same for everyone.{" "}
+          <strong>Simple is the point. Simple is how you know it’s honest.</strong>
         </p>
       </section>
 
@@ -117,7 +117,7 @@ export default function AboutPage() {
       <section className="mt-14 rounded-xl bg-accent-tint/50 p-7">
         <h2 className="text-lg font-semibold">See it for yourself</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-black/70">
-          Search any city and you'll see one all-in price — and it's the same one we'd show anyone. Curious how we keep
+          Search any city and you’ll see one all-in price — and it’s the same one we’d show anyone. Curious how we keep
           the lights on without the tricks? We wrote that down too.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
