@@ -57,11 +57,13 @@ export default function PostBody({
   blocks,
   hotels,
   rails,
+  maps,
   areas,
 }: {
   blocks: Block[];
   hotels: Record<string, DirectoryHotel>;
   rails: Record<string, CardHotel[]>;
+  maps: Record<string, CardHotel[]>;
   areas: Record<string, { city: string; count: number }[]>;
 }) {
   return (
@@ -83,7 +85,7 @@ export default function PostBody({
             />
           ) : null;
         }
-        if (b.type === "map") return <BlogMap key={i} dest={b.dest} />;
+        if (b.type === "map") return <BlogMap key={i} dest={b.dest} hotels={maps[b.dest] ?? []} />;
         if (b.type === "areas") return <BlogAreas key={i} dest={b.dest} areas={areas[b.dest] ?? []} />;
         if (b.type === "details")
           return (

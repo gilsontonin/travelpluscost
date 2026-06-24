@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
 import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
-import { parseBlocks, extractHeadings, hotelIdsInBody, railDestsInBody, areasDestsInBody } from "@/lib/blogBody";
+import { parseBlocks, extractHeadings, hotelIdsInBody, railDestsInBody, mapDestsInBody, areasDestsInBody } from "@/lib/blogBody";
 import { getDirectoryHotel, searchDirectory, hotelsInArea, cityHotelCount, type DirectoryHotel } from "@/lib/directory";
 import { resolveRegion } from "@/lib/regions";
 import type { CardHotel } from "@/lib/hotels";
@@ -99,6 +99,20 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     ),
   );
   const rails = Object.fromEntries(railEntries) as Record<string, CardHotel[]>;
+
+  // `::map <dest>` — pre-fetch each map's hotels (more, for a fuller pin spread), city-scoped like rails.
+  const mapEntries = await Promise.all(
+    mapDestsInBody(post.body).map(
+      async (d) =>
+        [
+          d,
+          cityLc && d.trim().toLowerCase() !== cityLc
+            ? await hotelsInArea(post.region!.destination, d, 30)
+            : await searchDirectory(d, 30),
+        ] as const,
+    ),
+  );
+  const maps = Object.fromEntries(mapEntries) as Record<string, CardHotel[]>;
 
   // `::areas <dest>` — resolve the market to its cities and count each in the live directory.
   const areaEntries = await Promise.all(
@@ -285,7 +299,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
       {/* body */}
       <BlogPriceProvider ids={Object.keys(hotels)}>
-        <PostBody blocks={blocks} hotels={hotels} rails={rails} areas={areas} />
+        <PostBody blocks={blocks} hotels={hotels} rails={rails} maps={maps} areas={areas} />
       </BlogPriceProvider>
 
       {/* CTA */}

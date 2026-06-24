@@ -90,9 +90,14 @@ export function hotelIdsInBody(body: string): string[] {
   return [...new Set([...single, ...compared])];
 }
 
-/** Destinations referenced by `::rail <dest>` — the page pre-fetches their hotels. (`::map` is now a link.) */
+/** Destinations referenced by `::rail <dest>` — the page pre-fetches their hotels. */
 export function railDestsInBody(body: string): string[] {
   return [...new Set([...body.matchAll(/^\s*::rail\s+(.+?)\s*$/gm)].map((m) => m[1].trim()))];
+}
+
+/** Destinations referenced by `::map <dest>` — the page pre-fetches each one's hotels to plot as pins. */
+export function mapDestsInBody(body: string): string[] {
+  return [...new Set([...body.matchAll(/^\s*::map\s+(.+?)\s*$/gm)].map((m) => m[1].trim()))];
 }
 
 /** Destinations referenced by `::areas <dest>` — the page pre-fetches each area's live hotel count. */
