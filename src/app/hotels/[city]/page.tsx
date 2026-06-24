@@ -3,7 +3,7 @@ import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { hotelsByCity, cityHotelCount, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
-import { slugify } from "@/lib/hotelUrl";
+import { slugify, hotelHref } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
 import { siblingCities, popularCities } from "@/lib/geo";
 import { SITE_NAME, abs } from "@/lib/site";
@@ -329,6 +329,26 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           }),
         }}
       />
+
+      {/* "you may also like" — flat, crawlable hotel text-links (Trivago pattern). Dense internal
+          links to real hotel pages, distinct from the visual rails above. */}
+      {ranked.length > 6 ? (
+        <section className="mt-12">
+          <h2 className="text-lg font-semibold">More hotels in {city}</h2>
+          <p className="mt-1 text-sm text-black/55">Other top-rated stays you might like.</p>
+          <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5">
+            {ranked.slice(0, 30).map((h) => (
+              <Link
+                key={h.id}
+                href={hotelHref({ id: h.id, name: h.name, city: h.city ?? city })}
+                className="text-sm text-black/65 hover:text-accent hover:underline"
+              >
+                {h.name}
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {/* same-state cross-links — dense hub graph (city ⇄ sibling cities ⇄ state hub) */}
       {sib && sib.cities.length ? (
