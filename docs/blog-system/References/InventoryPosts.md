@@ -37,8 +37,16 @@ Every ranking "where to stay" page uses **keyword + (year) + "Best Areas" + "Hot
 - **Description** (≤160): `Where to stay in <City> in <year>: best areas — <a1>, <a2>, <a3> — with real hotels and honest rates, matched to your trip.`
 Google rewrites long-tail titles, but *from the ingredients you give it*; the **description is the snippet → the direct CTR lever**, so stack it with `hotels` / `rates` / `<year>` / area names.
 
-## 5. Photos — use our own inventory
-We hold a huge amount of real hotel imagery (directory thumbnails + ~30 images per ingested-region hotel, on `static.cupid.travel`). `::hotel` / `::rail` / the hero rail already render them with alt **"Name — hotel in City"** (keyword-rich, free, relevant — better than Unsplash for the hotels). Keep one curated cover (Unsplash) for the scene; lean on hotel photos for the inventory. *Next:* a `::photo <id>` directive for standalone in-body hotel images, and count hotel photos toward the visual-cadence gate.
+## 5. Photos — use our own inventory, and ALWAYS inspect
+We hold a huge amount of real hotel imagery (directory thumbnails + ~30 images per ingested-region hotel, on `static.cupid.travel`). The hero (now **`HotelList`** — big vertical cards, see §3) and `::hotel` / `::rail` render them with alt **"Name — hotel in City"**.
+
+**Cover photo rules (owner-mandated):**
+- **INSPECT every candidate before using it.** The `Read` tool can't open a URL, but it *can* view a local image — so `curl` each candidate to the scratchpad and `Read` it. Never pick a cover (or a card photo) blind. (This is how the dull gray Branson lake shot slipped through — don't repeat it.)
+- For a **"where to stay" cover, prefer a famous property's best photo** (e.g. Branson → *Chateau on the Lake*, 9.0/1,616) — pull thumbnails from the directory by review count / name and inspect them. A **cute, colourful town/destination shot is fine too** (e.g. Telluride's autumn box-canyon) — the bar is *colourful and alive*, never grey/hazy/dead-tree stock.
+- Pick a property that **isn't already the first hero card or a `::hotel` card** (avoid showing the same photo twice).
+- A property cover credits as `{ name: "<Property>, <City>" }` (no `url`) — the cover caption only appends "on Unsplash" when the credit url is an unsplash link.
+
+*Next:* a `::photo <id>` directive for standalone in-body hotel images, and count hotel photos toward the visual-cadence gate.
 
 ## 6. The long-tail pSEO program — "every city we can win"
 **Selective, quality-gated, measured** — never spray-and-pray (that trips Google's scaled-content-abuse, fatal on a new domain). Real data-backed pages (property pages, city hubs, researched guides) are legitimate and strong; thin templated editorial at scale is not.
