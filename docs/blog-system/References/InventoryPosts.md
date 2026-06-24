@@ -60,8 +60,9 @@ We hold a huge amount of real hotel imagery (directory thumbnails + ~30 images p
 1. `npm run blog:opportunities` — US cities ranked by real directory inventory (≥8 hotels ≈ 2,006 cities). Skip big-comp metros; target under-covered tourist towns.
 2. **Semrush-vet** candidates (vol + KD); aim KD ≤ ~30 + real demand. *Validated wins:* Branson KD 18/480, Telluride KD 21/480, Charleston KD 28/1,300.
 3. `npm run blog:hotels -- <city>` (directory mode, **rate-verified**) → rate-checks every candidate via `/api/prices` (a midweek night ~3 wk out) and returns **only hotels that come back with a live rate** + a name-spam guard, ranked, with paste-ready directives + each hotel's "from" price. This drops the junk that slipped the `kind=rental` purge: vacation-rentals mis-tagged `kind=hotel`, timeshares, direct-only resorts. **Only card hotels from this pool** (`--fast` skips the check). Set the post's `region: { name, destination }`; `::areas` skips for non-region cities — cover neighbourhoods in prose.
-4. Write a **dedicated, researched** post (real serp-optimize brief + real neighbourhoods), inventory-forward, looping the §2 gates.
-5. **Ship + measure** (GSC indexing + ranking, 4–8 weeks), then scale what works.
+4. `npm run blog:scaffold -- <city>` (directory mode) → a **paste-ready production skeleton**: CTR title + region block, at-a-glance area table, one section per discovered area (city-scoped `::rail` + the top rate-verified hotel's `::hotel` card per the card rule), a roundup of more bookable hotels, the pricing block + `::priceproof`, and an FAQ stub — **every id real + rate-verified, every area city-scoped**, with a footer listing the full verified pool. Paste into `src/lib/posts.ts`.
+5. Write the **dedicated, researched** prose into the `<!-- … -->` stubs (real serp-optimize brief + real neighbourhoods), inventory-forward, looping the §2 gates.
+6. **Ship + measure** (GSC indexing + ranking, 4–8 weeks), then scale what works.
 
 **Guardrails / lessons:**
 - **Inventory gate:** ≥ ~8 **rate-verified** hotels or skip (`blog:hotels` warns when the verified pool is under 8).
