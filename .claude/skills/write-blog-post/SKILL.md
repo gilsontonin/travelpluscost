@@ -9,11 +9,15 @@ description: >-
 
 # write-blog-post (travelpluscost)
 
-The authoritative standard is **`docs/blog-system/TheBible.md`** — read it first and follow every §2 gate.
+The **governing manual is `docs/blog-system/BLOG-PLAYBOOK.md`** (the owner's enforced write + QA/QC
+contract — §0 the six failure modes, §3 voice/funny-first, §4 the twelve corner-cuts, §5 the step-by-step
+process, §9 the pre-publish ritual), read alongside **`docs/blog-system/TheBible.md`** (the ported gate
+contract). **Read BOTH first and follow them top to bottom — do not free-write, do not skip steps.**
 This skill is the execution wrapper. The brand promise + hard limits live in `docs/POSITIONING.md` and
 `docs/blog-system/References/stats.md` (never publish the wholesale cost or the exact markup %).
 
 ## Before writing a sentence, read
+- `docs/blog-system/BLOG-PLAYBOOK.md` (**the governing manual** — how to write to a publishable standard + the full QA/QC; do not skip a step)
 - `docs/blog-system/TheBible.md` (the contract + gates)
 - `docs/blog-system/References/Semrush.md` (the live keyword-research wiring — Steps 1–2 run this)
 - `docs/blog-system/References/Voice.md` + `DanKennedyVoice.md` + `Humour.md` + `PassAISlopAndDetection.md`

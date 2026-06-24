@@ -21,6 +21,16 @@ eventual revenue.
 4. Claims must be **exactly true** (FTC/NY deception risk). Don't overclaim "lowest price" / "no dynamic
    pricing anywhere" — we control *our* fee, not the hotel's base rate.
 
+## Writing a blog post — MANDATORY
+When asked to write or edit ANY blog post, BEFORE writing a word:
+1. Read `docs/blog-system/BLOG-PLAYBOOK.md` and `docs/blog-system/TheBible.md` and follow them top to
+   bottom. (The playbook is the governing writing + QA/QC contract; do not free-write, do not skip steps.)
+2. Run the gates and PRINT them on screen: `npm run blog:serp`, `blog:slop`, `blog:stats`,
+   `blog:checklist`, `blog:lh`, `blog:freshness`, then `blog:qa`. Fix every red, re-run after every edit.
+3. Honor POSITIONING.md compliance in the copy (never reveal net cost / markup %; claims exactly true; no
+   fake scarcity).
+4. Never ship red. Commit, then HOLD the push until I say "go live."
+
 ## Tech stack
 Next.js 16 (App Router, SSR+ISR) · React 19 · Tailwind v4 · TypeScript. Planned scale infra (not yet
 wired): Supabase (Postgres), Typesense (search), Upstash Redis (rate cache). Data today: **LiteAPI**
