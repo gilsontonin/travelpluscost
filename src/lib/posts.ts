@@ -270,7 +270,7 @@ So weighing the town against Mountain Village is a fair comparison: no fake disc
 
 Below are the real hotels in each area, then the honest, area by area guide to where to stay in Branson, Missouri, as of 2026.
 
-Branson packs more than 16,500 hotel rooms into one small Ozarks town: big name hotels, lake resorts, condos, cabins, vacation rentals. Finding a room was never the hard part. The hard part is the base — because around here, "ten minutes away" is the gap between strolling to a show and speed walking in during the opening number.
+Branson packs more than 16,500 hotel rooms into one small Ozarks town: big name hotels, lake resorts, condos, cabins, vacation rentals. Finding a room was never the hard part. The hard part is deciding where to stay near the action — because around here, "ten minutes away" is the gap between strolling to a show and speed walking in during the opening number. Where you travel from each morning makes or breaks the trip.
 
 ## Branson Hotels by Area, at a Glance
 
@@ -306,13 +306,13 @@ The catch is the obvious one. In summer, Highway 76 traffic becomes its own attr
 
 ## Branson Landing: Lakefront Hotels and Walkable Dining
 
-**Branson Landing is the grown up end of town — the part that offers a waterfront instead of a wax museum.** It's a lakeside boardwalk along Lake Taneycomo with shopping, multiple dining options and a fountain and fire show, anchored by the Hilton hotels and a flagship Bass Pro Shops. Historic downtown sits right behind it, so you park once and walk to dinner, a show and a lake breeze.
+**Branson Landing is the grown up end of town — the part that offers a waterfront instead of a wax museum.** It's a lakeside boardwalk along Lake Taneycomo with a large shopping village, multiple dining options and a fountain and fire show, anchored by the Hilton hotels and a flagship Bass Pro Shops. Historic downtown Branson sits right behind it, so you park once and walk to dinner, a show and a lake breeze.
 
 Yes, that Ferris wheel is the one from Chicago's Navy Pier. Branson has a habit of collecting other towns' landmarks.
 
-### Hilton Promenade and the Branson Convention Center Hotels
+### The Hilton Promenade and Hilton Branson Convention Center Hotels
 
-The Landing's hotels skew upscale: the lakefront Hilton Promenade and the Hilton Convention Center anchor the boardwalk, with walkable dining and the water right outside the door.
+The Landing's hotels skew upscale: the lakefront Hilton Promenade and the Hilton Branson Convention Center Hotel anchor the boardwalk, with walkable dining and the water right outside the door. Choose the Promenade for the waterfront, the Convention Center for events.
 
 ::hotel lp39a68
 
@@ -326,9 +326,11 @@ You'll pay a little more to sit on the main waterfront, and the area leans coupl
 
 Indian Point, a wooded peninsula a few miles from the Strip and a short hop from Silver Dollar City, is the classic lake base; lake resorts like Still Waters sit right on the water.
 
+::rail Table Rock
+
 ### Chateau on the Lake Resort Spa and the Table Rock Resorts
 
-The marquee lake resort is the Chateau on the Lake, a grand hilltop hotel above the marina with lake views; around the shore sit dozens of condos and smaller lakeside resorts with docks and pools.
+The marquee lake resort is the Chateau on the Lake, a grand hilltop hotel above the marina with lake views; around the shore sit dozens of condos, lakefront cabins and smaller lakeside resorts with docks, pools, hot tubs and private balconies over the water.
 
 ::hotel lp205ae
 
@@ -340,11 +342,13 @@ The trade is the drive: most days it's fifteen to twenty minutes to the theaters
 
 ## Thousand Hills: Spacious Condos and Golf in the Middle
 
-**Thousand Hills is the spacious condo pocket dropped right in the center of everything.** It's minutes from the Strip but tucked into the trees around the Thousand Hills golf course, with condos that include full kitchens, laundry and enough room that nobody has to draw the short straw and take the pull out couch. You get the quiet of the woods and the location of the Strip — the rare Branson combination that doesn't make you pick one.
+**Thousand Hills is the spacious condo pocket dropped right in the center of everything.** It's minutes from the Strip but tucked into the trees around the Thousand Hills golf resort, with condos that include full kitchens, laundry and enough room that nobody has to draw the short straw and take the pull out couch. You get the quiet of the woods and the location of the Strip — the rare Branson combination that doesn't make you pick one.
+
+::rail Thousand Hills
 
 ### Thousand Hills Hotels and Condos
 
-The neighbourhood mixes vacation condos (you book those direct) with dependable hotels minutes from the golf course and the Strip. The Comfort Inn at Thousand Hills is the easy bookable pick — a pool, the quiet of the woods, and easy access to the golf course and the Strip without the Strip's noise.
+The neighbourhood mixes vacation condos (you book those direct) with dependable hotels minutes from the golf resort and the Strip. The Comfort Inn at Thousand Hills is the easy bookable pick — a pool, modern amenities, the quiet of the woods, and easy access to the golf course and the Strip without the Strip's noise.
 
 ::hotel lp1fae7
 
@@ -381,13 +385,13 @@ A boutique style hotel scoring a 9.4 that punches well above its star rating —
 
 ### The Stone Castle Hotel — for the kids
 
-It is a literal castle, so the kids will lobby hard for it. Thousands of families have caved, and the indoor and outdoor pools close the argument.
+It is a literal castle, so the kids will lobby hard for it. Thousands of families have caved, and the indoor pool plus a big outdoor pool close the argument.
 
 ::hotel lp2a316
 
 ### Comfort Inn & Suites Branson Meadows — families and suites
 
-Roomy suites scoring a 9.2, near the Branson Meadows shops and IMAX — an indoor pool, free breakfast, modern amenities and room to spread out, which is exactly what a family on a multi-night trip wants.
+Roomy suites scoring a 9.2, near the Branson Meadows shops and IMAX — an indoor pool, complimentary breakfast, free Wi-Fi and room for groups to spread out, which is exactly what a family on a multi-night trip wants.
 
 ::hotel lp30837
 
