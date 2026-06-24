@@ -56,6 +56,7 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { value: "16,500+", label: "hotel rooms in one small town" },
       { value: "100+", label: "live shows on and off the Strip" },
       { value: "800 mi", label: "of Table Rock Lake shoreline" },
+      { value: "9M+", label: "visitors a year" },
     ],
   },
   "branson-strip-vs-lake": {
