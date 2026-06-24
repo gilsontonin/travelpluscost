@@ -134,6 +134,8 @@ export default function HotelRow({
                 Same price for everyone
               </div>
             </>
+          ) : loading ? (
+            <span className="text-xs text-black/40">Checking price…</span>
           ) : awaitingDates ? (
             <div className="leading-tight">
               <span className="inline-flex items-center gap-1 whitespace-nowrap text-[0.98rem] font-semibold text-accent">
@@ -144,8 +146,6 @@ export default function HotelRow({
               </span>
               <div className="text-[0.68rem] text-black/45">All-in · same price for everyone</div>
             </div>
-          ) : loading ? (
-            <span className="text-xs text-black/40">Checking price…</span>
           ) : (
             <span className="text-xs text-black/40">Unavailable for these dates</span>
           )}

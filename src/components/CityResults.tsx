@@ -1,14 +1,18 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import HotelRow from "./HotelRow";
 import MapResults from "./MapResults";
 import type { CardHotel } from "@/lib/oahu";
+import type { Price } from "@/lib/rates";
 
 // City-hub inventory: the top stays in a city, sliceable by relevance (real directory fields only —
-// stars, guest rating, review count, property type) with a list⇄map toggle. No dates yet, so cards
-// invite the visitor to pick dates (awaitingDates) rather than show a price. "See all" → full search.
+// stars, guest rating, review count, property type) with a list⇄map toggle. No dates are chosen, so
+// we show an INDICATIVE "from" price for tomorrow night (1 night), fetched live + lazily for the cards
+// on screen — the same dates ride along in the card link, so clicking shows the very same price.
+const SHOWN = 18; // cards rendered here (rest → full search). Bounds live price calls per pageview.
+
 type Category = { key: string; label: string; test?: (h: CardHotel) => boolean; sort?: (a: CardHotel, b: CardHotel) => number };
 
 const pill = (active: boolean) =>
@@ -29,6 +33,20 @@ export default function CityResults({
 }) {
   const [cat, setCat] = useState("top");
   const [view, setView] = useState<"list" | "map">("list");
+  const [prices, setPrices] = useState<Record<string, Price>>({});
+  const [done, setDone] = useState<Set<string>>(() => new Set());
+  const inflight = useRef<Set<string>>(new Set());
+
+  // Indicative dates = tomorrow night, 1 night. One place to tune (e.g. push out 2 weeks for more
+  // availability / a lower "from" number). toISOString is UTC; close enough for an indicative rate.
+  const { checkin, checkout } = useMemo(() => {
+    const d = new Date();
+    d.setDate(d.getDate() + 1);
+    const ci = d.toISOString().slice(0, 10);
+    d.setDate(d.getDate() + 1);
+    return { checkin: ci, checkout: d.toISOString().slice(0, 10) };
+  }, []);
+  const cardQuery = `checkin=${checkin}&checkout=${checkout}&adults=2`;
 
   // Only surface a category chip when there's a real, non-trivial set behind it.
   const cats = useMemo<Category[]>(() => {
@@ -47,8 +65,38 @@ export default function CityResults({
   const active = cats.find((c) => c.key === cat) ?? cats[0];
   const visible = useMemo(() => {
     const filtered = active.test ? cards.filter(active.test) : cards;
-    return active.sort ? [...filtered].sort(active.sort) : filtered;
+    return (active.sort ? [...filtered].sort(active.sort) : filtered).slice(0, SHOWN);
   }, [cards, active]);
+
+  // Lazy "from" price for the cards on screen — debounced + de-duped (mirrors ResultsList). Cached per
+  // id, so switching category only fetches newly-shown hotels.
+  const visibleSig = visible.map((h) => h.id).join(",");
+  useEffect(() => {
+    const toFetch = visible.filter((h) => !done.has(h.id) && !inflight.current.has(h.id)).map((h) => h.id);
+    if (!toFetch.length) return;
+    const timer = setTimeout(() => {
+      toFetch.forEach((id) => inflight.current.add(id));
+      const settle = (got: Record<string, Price>) => {
+        if (Object.keys(got).length) setPrices((p) => ({ ...p, ...got }));
+        setDone((s) => {
+          const n = new Set(s);
+          toFetch.forEach((id) => n.add(id));
+          return n;
+        });
+        toFetch.forEach((id) => inflight.current.delete(id));
+      };
+      fetch("/api/prices", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ hotelIds: toFetch, checkin, checkout, adults: 2 }),
+      })
+        .then((r) => r.json())
+        .then((d) => settle((d.prices ?? {}) as Record<string, Price>))
+        .catch(() => settle({}));
+    }, 300);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visibleSig, checkin, checkout]);
 
   return (
     <div className="mt-5">
@@ -90,11 +138,19 @@ export default function CityResults({
       </div>
 
       {view === "map" ? (
-        <MapResults hotels={visible} prices={null} query="adults=2" onClose={() => setView("list")} />
+        <MapResults hotels={visible} prices={prices} query={cardQuery} onClose={() => setView("list")} />
       ) : (
         <div className="flex flex-col gap-3 sm:gap-4">
           {visible.map((h, i) => (
-            <HotelRow key={h.id} hotel={h} query="adults=2" awaitingDates priority={i < 2} />
+            <HotelRow
+              key={h.id}
+              hotel={h}
+              query={cardQuery}
+              price={prices[h.id] ?? null}
+              loading={!done.has(h.id)}
+              awaitingDates
+              priority={i < 2}
+            />
           ))}
         </div>
       )}
