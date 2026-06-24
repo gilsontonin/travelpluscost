@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import CardCarousel from "@/components/CardCarousel";
 import AmenityIcon from "@/components/AmenityIcon";
+import SaveHeart from "@/components/SaveHeart";
 import type { CardHotel } from "@/lib/oahu";
 import { hotelHref } from "@/lib/hotelUrl";
 import type { Price } from "@/lib/rates";
@@ -55,6 +56,7 @@ export default function HotelRow({
               </span>
             ) : null}
           </div>
+          <SaveHeart id={hotel.id} />
         </div>
         {(s1 || s2) ? (
           <div className="grid grid-cols-2 gap-1.5 shrink-0">
