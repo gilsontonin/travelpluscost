@@ -1,8 +1,14 @@
 {
+  "where-to-stay-in-maui": [
+    "where-to-stay-in-oahu",
+    "surveillance-pricing"
+  ],
   "surveillance-pricing": [
-    "where-to-stay-in-oahu"
+    "where-to-stay-in-oahu",
+    "where-to-stay-in-maui"
   ],
   "where-to-stay-in-oahu": [
+    "where-to-stay-in-maui",
     "surveillance-pricing"
   ]
 }

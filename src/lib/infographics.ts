@@ -28,6 +28,18 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { label: "Hidden fees at checkout?", left: "Often", right: "No — the all-in price up front" },
     ],
   },
+  "maui-west-vs-south": {
+    kind: "compare",
+    title: "West Maui or South Maui?",
+    left: "West Maui — Kāʻanapali & Kapalua",
+    right: "South Maui — Wailea & Kihei",
+    rows: [
+      { label: "The vibe", left: "Lively resort strip, beach bars, sunsets", right: "Sunny, dry, calmer and spread out" },
+      { label: "Best for", left: "First-timers, families, walkable beach days", right: "Sun-seekers, couples, snorkeling trips" },
+      { label: "Price", left: "Mid to high — Kapalua is the priciest", right: "Kihei affordable, Wailea luxury" },
+      { label: "The catch", left: "Winter rates climb; book early", right: "Wailea runs expensive; Kihei is busier" },
+    ],
+  },
   "how-pricing-works": {
     kind: "steps",
     title: "How your price is built",

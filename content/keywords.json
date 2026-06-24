@@ -33,5 +33,25 @@
     "researched": "2026-06-23",
     "status": "published",
     "history": []
+  },
+  "where-to-stay-in-maui": {
+    "primary": "where to stay in maui",
+    "secondary": [
+      "best place to stay in maui",
+      "best area to stay in maui",
+      "maui hotels",
+      "maui resorts",
+      "where to stay in maui for families",
+      "where to stay in maui for couples",
+      "where to stay in maui first time",
+      "kaanapali vs wailea"
+    ],
+    "volume": 2900,
+    "kd": 20,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-24",
+    "status": "published",
+    "history": []
   }
 }

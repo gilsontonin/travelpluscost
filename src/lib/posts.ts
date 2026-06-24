@@ -47,6 +47,315 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-maui",
+    title: "Where to Stay in Maui: An Area-by-Area Guide",
+    description:
+      "Where to stay in Maui by area — Kaanapali, Wailea, Kihei, Kapalua and beyond — matched to the kind of trip you're taking, updated for 2026.",
+    excerpt:
+      "West side or South side? A plain-English guide to picking the right Maui base — by area, by budget, and by the trip you're taking.",
+    tldr: {
+      answer:
+        "Pick your Maui coast first. The sunny South side (Wailea, Kihei) suits couples and budgets; the lively West side (Kaanapali, Kapalua) is the easy first-timer base; Hana, out east, is a remote night or two and never a home base. Choose the area, then the hotel.",
+      points: [
+        "**Kaanapali (West)** — the lively, walkable resort beach; the easiest first-timer default.",
+        "**Wailea (South)** — polished luxury and calm beaches; the splurge pick for couples.",
+        "**Kihei (South)** — sunny, casual and the best value; great for families and budgets.",
+        "**Kapalua (West)** — quiet, upscale and built for snorkeling and golf.",
+        "**West Maui is open and welcomes visitors** — Kaanapali and Kapalua are fully operating while Lahaina rebuilds.",
+      ],
+    },
+    date: "2026-06-24",
+    updated: "2026-06-24",
+    author: "The travelpluscost team",
+    category: "Destination guides",
+    cover: {
+      src: "https://images.unsplash.com/photo-1678157933167-0938f1ccfe3b?fm=webp&fit=crop&w=1200&h=675&q=80",
+      alt: "Resorts lining a sunny Maui beach, the kind of place to weigh when deciding where to stay in Maui",
+      credit: { name: "Luke Scarpino", url: "https://unsplash.com/@lrscarpino" },
+    },
+    region: { name: "Maui", destination: "Maui" },
+    faqs: [
+      {
+        q: "What is the best area to stay in Maui for first-timers?",
+        a: "Kaanapali on the West side or Kihei on the South side. Both put you on a swimmable beach with easy access to dining and day trips, and Kihei does it for a noticeably lower nightly rate. You won't go wrong starting with either.",
+      },
+      {
+        q: "Where should families stay in Maui?",
+        a: "Kaanapali for a walkable resort beach, or a Kihei condo if you want a kitchen and a friendlier price. Both have calm swimming areas, grocery stores nearby, and short drives to the island's family beaches. Wailea works too if the budget allows.",
+      },
+      {
+        q: "What is the best area in Maui for couples?",
+        a: "Wailea or Kapalua. Wailea is the polished, romantic luxury strip on the sunny South side; Kapalua is its quieter West-side counterpart, greener and built around calm bays and golf. Both trade nightlife for calm.",
+      },
+      {
+        q: "What is the cheapest area to stay in Maui?",
+        a: "Kihei, followed by the older condo communities of West Maui like Honokowai and Kahana. You give up manicured resort grounds, but you gain a kitchen, more space, and the sunniest, driest weather on the island for far less per night.",
+      },
+      {
+        q: "Is it worth staying overnight in Hana?",
+        a: "For one or two nights, yes — it lets you drive the Road to Hana without rushing back the same day and see the quiet east side at dawn. As a base for a whole trip, no: it's remote, the beaches are rugged, and you'd spend hours driving to everything else.",
+      },
+      {
+        q: "How many days do you need in Maui?",
+        a: "Five to seven is the sweet spot. That's enough to settle into one sunny base, take a full day for the Road to Hana, catch a Haleakala sunrise, and still have beach days. Shorter and you're rushing; much longer and one base starts to feel small.",
+      },
+    ],
+    body: `Where to stay in Maui comes down to one question first: **the West side or the South side?** Get the area right and the island feels easy. Get it wrong and you'll spend the trip in the car, narrating the drive.
+
+This guide covers every place worth basing yourself on Maui — Kaanapali, Wailea, Kihei, Kapalua, the West Maui condos, Hana and the quieter pockets — matched to the kind of trip you're taking, as of 2026. It's for first timers picking a base, returning visitors trying a new side, and anyone who wants the honest trade offs and the real options before they book. Most Maui guides bury the trade offs; this one leads with them.
+
+## Where to Stay in Maui, at a Glance
+
+**Maui's lodging clusters on two sunny coasts** — the West side around Kaanapali, and the South side around Kihei and Wailea. A few quieter bases — Hana, Paia, Upcountry and the central towns — round it out for specific kinds of trips.
+
+Across the island, most visitors end up considering the same handful of regions. It's worth a minute to learn how they differ, and to weigh all your options before booking.
+
+| Area | Side | Vibe | Best for | Car? |
+|---|---|---|---|---|
+| Kaanapali | West | Lively resort beach | First timers, families | Helpful |
+| Kapalua | West | Quiet and upscale | Couples, golf, calm | Yes |
+| Wailea | South | Polished luxury | Couples, splurges | Yes |
+| Kihei | South | Casual and affordable | Budgets, families | Yes |
+| West Maui condos | West | Midrange, local | Longer stays | Yes |
+| Hana | East | Remote and green | A night off grid | Essential |
+| Paia / Upcountry | North | Boho, cooler air | Surfers, road trips | Essential |
+
+A quick beach cheat sheet, since the sand is usually the reason you're here:
+
+| Area | Notable beaches | Good for |
+|---|---|---|
+| Kaanapali | Kaanapali Beach, Black Rock | Swimming, easy snorkel |
+| Kapalua | Kapalua Bay, Honolua Bay | Snorkeling, surf watching |
+| Wailea | Wailea, Ulua, Polo, Mokapu | Calm swimming, snorkel |
+| Kihei | Kamaole I, II and III | Families, beginner surf |
+| West Maui condos | Napili Bay, Kahekili | Turtles, snorkel |
+| Makena (south of Wailea) | Big Beach (Oneloa) | Wild and scenic |
+
+Prices track the vibe: Kihei is the value end, Kaanapali and Wailea sit in the middle to high range, and Kapalua tops it out. Weather barely changes the call — both sunny coasts stay warm year round, with winter bringing bigger surf to the west side and whales offshore all around.
+
+Here's how the areas stack up on price, in relative terms — rates are live, so search the current number rather than trusting a figure in a guide:
+
+| Area | Rough price level |
+|---|---|
+| Kihei | Value |
+| West Maui condos | Value to mid |
+| Kaanapali | Mid to high |
+| Wailea | High to top |
+| Kapalua | Top |
+
+The big decision is really just which coast, so start there before you ever look at a single hotel.
+
+::infographic maui-west-vs-south
+
+![Cliff diver on Black Rock (Puu Kekaa) at Kaanapali Beach, Maui, with swimmers in the turquoise water below](https://images.unsplash.com/photo-1664486755049-a5f82a4a0ae0?fm=webp&fit=crop&w=1200&h=800&q=58)
+
+*Photo: [Justin Busa](https://unsplash.com/@justinbusa) on [Unsplash](https://unsplash.com)*
+
+## Kaanapali (West Maui): The Easy Default
+
+**Kaanapali is the best all round base for a first trip to Maui.** It's a three mile stretch of golden beach lined with large, well known resorts, an oceanfront walking path that connects them, and a lava promontory called Black Rock that swimmers snorkel by day and watch the sunset cliff dive from at dusk.
+
+It's about 45 minutes to an hour from the Kahului airport, lively without tipping into chaos. Whalers Village puts shops and restaurants right on the sand, and the beach itself is wide, swimmable and genuinely good — not a consolation prize for the resort behind it. Most of the island's catamaran and snorkel trips are an easy reach.
+
+The trade off is that you pay for the location and the crowds. Kaanapali is busier and pricier than Kihei to the south, and in whale season the rates climb with the crowds. For most first timers, the walkable beach and the no fuss logistics are worth the premium — you came to be on the sand, and here you can step onto it without starting the car.
+
+The strip is built for staying put. Whalers Village drops open air restaurants, shopping and activities right on the sand, the resorts run oceanfront bars and a luau or two, and the paved beach path links it all for an easy sunset stroll.
+
+Black Rock, at the north end by the Sheraton, is the bonus. Wade in and you're snorkeling a healthy little reef within a few fin kicks, no boat required. It's also the launch point for the nightly cliff dive ceremony, which is exactly as touristy and as fun as it sounds.
+
+**Best for:** first timers, families, beach days without a long drive.
+
+::hotel lp19e33
+
+## Kapalua (West Maui): Quiet and Upscale
+
+**Kapalua is Kaanapali's calmer, pricier neighbor**, about 15 minutes further north where the coastline turns green and the resorts thin out to a handful. It's built around golf courses, quiet, and two of the best snorkeling bays on the island.
+
+Kapalua Bay is a sheltered, family-friendly crescent that's calm enough for beginners, while Honolua Bay just up the road is a marine reserve that draws snorkelers in summer and big wave surfers in winter. DT Fleming Beach rounds out the trio. The whole area feels like a deep exhale after the bustle to the south.
+
+The catch is distance and cost. You're further from the airport and from everyday dining, and Kapalua runs among the priciest pockets on Maui — the quiet has a price tag. Come here to slow all the way down, play a round, and snorkel calm water; don't come expecting nightlife or a bargain.
+
+Golf is the other draw. The Plantation Course hosts the PGA Tour's first event of the year each January, and even if you never swing a club, the cliffside path between Kapalua Bay and the resorts is a quiet morning walk most areas can't match.
+
+Dining is mostly inside the resorts and a small cluster at the Kapalua and Napili ends, so plan to drive for variety. That's the trade here: you give up a lively scene for a green, calm corner where the loudest thing is the winter surf pounding Honolua.
+
+**Best for:** couples, golfers, snorkelers, anyone who wants calm over convenience.
+
+::hotel lp3b0be
+
+## Wailea (South Maui): The Luxury Strip
+
+**Wailea is where Maui keeps its glossiest resorts.** On the sunny, dry South side about 30 to 40 minutes from the airport, it's a manicured run of beachfront hotels, a paved 1.3-mile coastal path, and a string of calm, swimmable beaches.
+
+The Grand Wailea, the Four Seasons, the Andaz and the Fairmont Kea Lani all sit along this stretch, and the beaches live up to the addresses. Wailea Beach and Mokapu are wide and gentle, Ulua is the local snorkeling favorite, and the Shops at Wailea handle the upscale dinner and shopping. It is, frankly, Maui at its most polished.
+
+The honest downside is the price. Wailea is the most expensive area to sleep on Maui, and the resorts know exactly what the view is worth. If you want the South side sun without the South side bill, Kihei is five minutes up the road with the same weather and a fraction of the rate.
+
+There's more range than the headline resorts suggest. The Fairmont Kea Lani and the Wailea Beach Resort Marriott sit along the same path, and condos at the back of the neighborhood let you borrow the address for less. Ulua Beach is the reliable morning snorkel, while Polo and Mokapu handle the swimming.
+
+The Wailea Beach Path ties it all together — a flat, paved 1.3-mile walk past every resort and beach, best at sunset when the coast goes gold. It is about as strenuous as Wailea gets, which is rather the point.
+
+**Best for:** couples, honeymoons, a no compromises splurge.
+
+::hotel lp223fb
+
+## Kihei (South Maui): Sunny and the Value Pick
+
+**Kihei is the smart money base, and the one I'd point most first timers to.** It's Wailea's laid back neighbor: a long, flat run of condos, smaller hotels and strip mall plate lunch spots fronting a chain of swimmable beaches, all under the driest, sunniest skies on the island, where the snorkeling off the rocky points is excellent.
+
+The Kamaole Beach Parks — known locally as Kam I, II and III — are the heart of it: easy sand, lifeguards, and calm water for families. Cove Park is where half the island learns to surf. Because so much of Kihei is condos, you can get a kitchen, a lanai and room to spread out for what a single resort room costs in Wailea.
+
+The trade off is that Kihei is more functional than pretty. Think traffic on South Kihei Road and 1980s low rises rather than manicured grounds, and a few too many ABC Stores. You trade polish for sun, space and a nightly rate that doesn't make you wince.
+
+The everyday stuff is easy here. Kihei offers grocery stores nearby, food trucks, farmers markets and surf schools at Cove Park, all without resort prices. From December to April you can often spot humpback whales from the sand, and Maalaea harbor nearby is where most whale watch and snorkel boats leave.
+
+The beaches are the real argument for Kihei. The three Kamaole parks — Kam I, II and III — line up in a row: Kam III has the lawn and lifeguards families want, Kam I has the best swimming, and all of them deliver the sunset.
+
+**Best for:** budgets, first timers, families who want a kitchen and a beach.
+
+::hotel lp20390
+
+## West Maui and Lahaina in 2026
+
+**Maui is open, and West Maui in particular wants visitors back.** In August 2023, a wildfire destroyed the historic town of Lahaina. As of 2026, the resort areas just north of it — Kaanapali and Kapalua, both under ten minutes away — are fully open and operating, and visitor spending is a direct part of the island's recovery.
+
+Lahaina town itself is still rebuilding. The harbor has partially reopened and some local restaurants and shops are serving again, but Front Street and the central burn zone remain closed behind construction fencing, and they are not a sightseeing stop. The respectful way to visit is to support the businesses that are open, book a harbor tour if one is running, and stay out of the closed and residential areas.
+
+Practically, a West Maui stay still works well as a base. The Kaanapali resorts, Whalers Village, the beaches and most snorkel and catamaran tours are running normally, and a number of operators now direct part of their proceeds toward recovery.
+
+None of this is about turning a tragedy into a photo stop. It's the opposite: the most useful thing someone visiting West Maui can do right now is to show up, spend locally, and tread lightly — the aloha and the local culture here are intact, and worth your respect.
+
+If you stay on the West side, you are not in the way — you are part of why the recovery can keep moving. Before you go, check the [County of Maui](https://www.mauicounty.gov/) for current closures and guidance, and follow what's posted on the ground.
+
+## Honokowai, Kahana and Napili — midrange West Maui
+
+**The condo strip between Kaanapali and Kapalua is West Maui's midrange sweet spot.** Honokowai, Kahana and Napili are low rise condo communities strung along the same coast — older and quieter than the Kaanapali resorts, and a good deal more affordable a few minutes north.
+
+Napili Bay is the standout: a small, protected crescent with calm water, resident green sea turtles, and a sunset that earns its crowd. Kahekili Beach, at the north end of Kaanapali, is an underrated snorkeling spot that the big resorts somehow don't dominate. These are kitchens and lanais places, not lobbies and concierge places.
+
+The trade off is age and simplicity. You're trading a resort's grounds and service for a condo's space and a fridge, and some of the buildings show their decades. For families and longer stays, that's usually the right trade — laundry and a kitchen beat a minibar by the third day.
+
+Each pocket has its own feel. Honokowai has a small beach park and a Saturday farmers market, Kahana sits a little higher with bigger units, and Napili is the prettiest and priciest of the three, anchored by that postcard bay. Napili Kai and a row of mid century complexes set the tone — unflashy, repeat visitor places.
+
+The math is the appeal. A one-bedroom condo here with a full kitchen and an ocean view often lands well under a single resort room ten minutes south, and the snorkeling off Kahekili and Napili Bay beats what fronts many of the big hotels.
+
+**Best for:** longer stays, families, self catering on the West side.
+
+::hotel lp33a03
+
+## Hana (East Maui): The Remote Escape
+
+**Hana is for spending a night at the end of the road, not for basing your whole trip.** Reaching it means driving the Road to Hana — roughly 64 miles and 600 curves of rainforest, waterfalls and one lane bridges, about two and a half to three hours each way from the airport.
+
+The town is tiny, impossibly green, and gloriously cut off from the rest of the island — this is the lush, rainy windward side, so pack for a passing shower. Waianapanapa State Park's black sand beach — a sacred Hawaiian site — sits just before town, Hana Bay anchors it, and Hamoa Beach down the coast is one of the prettiest on Maui. Staying overnight lets you have all of it in the soft early light, before the day trippers arrive.
+
+Here's the honest part: most people should not sleep in Hana for the whole trip. Stay one or two nights to slow down and skip the white knuckle round trip in a single day — then base the rest of your time on a sunny coast where the beaches are calmer and everything else is closer.
+
+The drive is the attraction, not just the obstacle. Twin Falls, the Waikamoi bamboo, Wailua Falls and the pools of Oheo at Kipahulu all line the route as classic stops worth exploring, and they're far calmer in the early morning before the day trip convoy arrives from the resorts. Black sand Waianapanapa now needs a reservation for day visitors, but people staying in Hana can have it at dawn.
+
+Hana town itself is barely a town — a store, a few food trucks, a famous bay and limited dining after dark — and that's the entire pitch. You stay to be unreachable for a night, not to be entertained.
+
+**Best for:** a one- or two night detour, not a home base.
+
+## Paia and Upcountry — North Shore boho and cool elevation
+
+**Paia and Upcountry suit road trippers and surfers more than beach loungers.** Paia is a small, artsy North Shore town beside Hookipa, the windsurfing and surf beach where the wind and waves draw pros, and green sea turtles haul out most afternoons. It's also the last real stop for fuel and food before the Road to Hana.
+
+Upcountry climbs the slopes of Haleakala into cooler, greener air — the paniolo town of Makawao, the ranches and lavender of Kula, and the road to the Haleakala summit for the famous sunrise above the clouds. It's central for driving the whole island and a few degrees cooler when the coast feels heavy.
+
+The catch is that you're not on a swimming beach, and you can expect more cloud and rain than the sunny resort coasts. Come here for the vibe, the road access and the volcano; don't come expecting to walk out your door onto the sand.
+
+Paia punches above its size for food. Mama's Fish House, just east of town, is one of the most booked restaurants in Hawaii, and Baldwin Beach is a local favorite stretch of sand a minute away. The town itself is a string of surf shops, taco spots and boutiques in old plantation storefronts, busy with tourists and locals alike though it never feels like a resort.
+
+Upcountry rewards a wander — Makawao's paniolo main street, the lavender farm and MauiWine out in Kula, and cool evenings that finally call for a layer. If the Haleakala sunrise is the plan, note that the summit needs a timed reservation booked well ahead, plus a genuinely cold predawn drive.
+
+**Best for:** surfers, road trippers, anyone chasing the Haleakala sunrise.
+
+## Wailuku and Kahului — practical and near the airport
+
+**Wailuku and Kahului are where you stay for logistics, not for a view.** This is central Maui and the island's commercial center: the airport, the big box stores and the most affordable everyday hotels, with Iao Valley's green spire a short drive inland from Wailuku.
+
+It's not a vacation base, and nobody pretends otherwise. There's no beach worth the name, and the area is workaday rather than scenic — but for a late night arrival or a dawn departure, a night by the airport beats an hour's drive in the dark.
+
+Wailuku has quietly gotten more interesting — a revitalized Market Street with cafes and a monthly First Friday street party — and Iao Valley State Park, with its emerald pinnacle, is a ten minute drive inland. It's worth an hour of your trip, not a week of it.
+
+What central Maui is genuinely good for is provisions and a base camp night. Kahului has the island's Costco and the big grocery stores, so plenty of condo goers stop here first to stock the kitchen, and the Saturday Maui Swap Meet near the college is a cheap, cheerful morning. The food scene in Wailuku has grown a few real standouts too, if you're staying the night.
+
+Kahului, meanwhile, is pure function — the airport, the malls and the gas you'll want before a long drive. Neither town is a reason to visit Maui, but both quietly keep the rest of the trip running.
+
+**Best for:** a first or last night by the airport, or the tightest budgets.
+
+## Hotels or a Vacation Rental?
+
+**On Maui, the choice between a resort and a vacation rental matters almost as much as the area.** Resorts cluster in Kaanapali and Wailea — major properties including pools, daily housekeeping, activities desks and resort amenities. Vacation rentals and condos — concentrated in Kihei and the West Maui condo strip — trade that polish for a kitchen, a washer, and far more room for the money — a mix of accommodations that usually includes a lanai.
+
+For couples on a short trip, the full resort experience usually wins. For families, longer stays, or travelers watching the budget, a condo or rental is often the smarter option — you cook a few meals, spread out, and skip a resort fee or two. Plenty of visitors split it: a few resort nights to be pampered, the rest in a rental to settle in.
+
+One more consideration is service. A resort handles housekeeping, towels and a front desk, while a rental leaves that to you — worth a lot for a short, relaxing break, less so for a budget minded week when the kitchen earns its keep.
+
+A few details are worth weighing as you decide. Hawaii has tightened the rules on short term rentals in recent years, so book a legitimate, licensed listing rather than a too good to be true one. Condos also vary a lot unit by unit — the same building can hold a dated studio and a renovated oceanfront two-bedroom — so read the specific listing, not just the complex's name.
+
+Whichever you choose, the booking math is the same with us — which is the part most travel sites would rather you didn't think about.
+
+## Match the area to your trip
+
+**If you're still deciding, start from the kind of trip you're taking** — it helps narrow Maui faster than any map.
+
+| Your trip | Stay in |
+|---|---|
+| First time on Maui | Kaanapali or Kihei |
+| Family with young kids | Kaanapali or a Kihei condo |
+| Couple or honeymoon | Wailea or Kapalua |
+| On a budget | Kihei |
+| Snorkeling focused | Kapalua or South Kihei |
+| Slowing all the way down | Hana, for a night or two |
+
+The pattern underneath the table is simple. Sun and savings push you South to Kihei; calm and polish pull you to Wailea or Kapalua; a first, do everything trip is happiest in Kaanapali, where you're central to the most without committing to a splurge.
+
+One more variable is how long you're staying. For a short three- or four night trip, pick one sunny base and don't move — packing up and re checking in eats a half day you don't have. For a week or more, splitting a few nights on the West side and the rest down South is a fine way to see both coasts without living in the car.
+
+Weigh the pros and cons, but don't overthink it. Whether you want sun, calm or value, every area here is a short drive from the island's main sights, and there's no truly wrong base on a sunny coast — only trade offs to weigh against your budget and your plans.
+
+If you only take one thing from this guide: pick the side first, the town second, and the hotel last. The island gets simple the moment the area is settled.
+
+## Do you need a car in Maui?
+
+**Yes — for nearly any Maui trip, rent a car.** Unlike Waikiki on Oahu, Maui's areas are strung along two coasts with no useful transit between them, and the best beaches, the Road to Hana and the Haleakala sunrise all need wheels. The only real exception is a short, all in resort stay where you never plan to leave the property.
+
+Here's roughly how far each base sits from the Kahului airport, so you can weigh the drive against the view.
+
+| From Kahului Airport (OGG) | Rough drive |
+|---|---|
+| Paia | ~15 minutes |
+| Kihei | ~30 minutes |
+| Wailea | ~35-40 minutes |
+| Kaanapali | ~45-60 minutes |
+| Kapalua | ~60 minutes |
+| Hana | ~2.5-3 hours |
+
+Two honest tips on the driving. Rideshare exists, but it's thin and pricey outside the airport and resort corridors, so don't plan to lean on it.
+
+Many resorts also charge for parking on top of the room, worth a check before you book. Gas runs dear, but the distances are short enough that it rarely adds up to much.
+
+A quick tip: book a base on the side where you'll spend the most time, and treat the far corners — Hana, the summit — as day trips or a single overnight, instead of a daily commute.
+
+Book the rental early, too. Maui's car supply is tighter than the mainland's, and prices spike when inventory runs low — the same looked twice dynamic that makes booking the room early pay off.
+
+## How we price the stays you find here
+
+**Whatever area you choose, the price you see from us is the rate plus one small, flat fee — the same for everyone, never shaped by your device, location or browsing history.** That's the opposite of [surveillance pricing](/blog/surveillance-pricing), where two people searching the same Wailea resort can be shown two different numbers.
+
+So comparing Kaanapali against Kihei is comparing like for like: no fake discounts, no "1 room left" pressure, no rate that quietly climbs because you looked twice. Just the honest, all in number, the same on every device.
+
+That matters most on a big ticket island like Maui, where a few nights at a Wailea resort is real money and a quiet markup would hide easily. We'd rather show you the same number we'd show anyone, and let the room win you over. That's the whole pitch for travelers tired of the guessing game: pick Maui, pick your coast, and trust the number you see.
+
+::infographic how-pricing-works
+
+You can check our work, which is the point. Open a Maui hotel on your laptop, then open it on your phone — same price. Once you've picked your side of the island, [search current Maui prices](/search?destination=Maui&adults=2) and sort by what actually matters to you.
+
+Planning the rest of the trip or comparing islands? Our guide to [where to stay in Oahu](/blog/where-to-stay-in-oahu) runs on the same honest pricing, and [why we built it this way](/about) explains the rest. Plenty of travelers love pairing the two islands, so read that one next for tips on the other side.`,
+  },
+  {
     slug: "surveillance-pricing",
     title: "Surveillance Pricing: What It Is, and Why We Refuse to Use It",
     seoTitle: "Surveillance Pricing: What It Is & Why We Refuse It",
@@ -326,7 +635,9 @@ When you search Oahu hotels with us, the number you see is the rate plus one sma
 
 ::infographic how-pricing-works
 
-If you only do one thing with this guide: pick the base that matches your trip, then [search Oahu stays](/search?destination=Oahu&adults=2) and sort by what actually matters to you.`,
+If you only do one thing with this guide: pick the base that matches your trip, then [search Oahu stays](/search?destination=Oahu&adults=2) and sort by what actually matters to you.
+
+Island-hopping or still deciding? Our guide to [where to stay in Maui](/blog/where-to-stay-in-maui) breaks down that island the same way.`,
   },
 ];
 
