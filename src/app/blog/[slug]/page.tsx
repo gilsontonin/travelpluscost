@@ -10,7 +10,7 @@ import { resolveRegion } from "@/lib/regions";
 import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
 import BlogSearch from "@/components/blog/BlogSearch";
-import HotelRail from "@/components/HotelRail";
+import HotelList from "@/components/HotelList";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -108,7 +108,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       image: post.cover.src,
       datePublished: post.date,
       dateModified: post.updated ?? post.date,
-      author: { "@type": "Organization", name: post.author },
+      author: { "@type": "Person", name: post.author, jobTitle: "Founder", worksFor: { "@type": "Organization", name: SITE_NAME } },
       publisher: { "@type": "Organization", name: SITE_NAME },
       mainEntityOfPage: { "@type": "WebPage", "@id": abs(url) },
     },
@@ -154,8 +154,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <header className="mt-4">
         <span className="text-xs font-semibold uppercase tracking-wide text-accent">{post.category}</span>
         <h1 className="mt-2 text-2xl sm:text-4xl font-bold leading-tight tracking-tight">{post.title}</h1>
-        <p className="mt-3 text-sm text-black/55">
-          By {post.author} · {fmtDate(post.date)}
+        <p className="mt-3 text-sm">
+          <span className="text-black/50">By </span>
+          <span className="font-semibold text-black/85">{post.author}</span>
+          <span className="text-black/55"> · Founder of {SITE_NAME}</span>
+        </p>
+        <p className="mt-0.5 text-xs text-black/45">
+          {fmtDate(post.date)}
           {post.updated && post.updated !== post.date ? ` · Updated ${fmtDate(post.updated)}` : ""} ·{" "}
           {readingMinutes(post.body)} min read
         </p>
@@ -164,7 +169,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       {/* Inventory-intent: search → straight to inventory (OTA pattern), above the editorial chrome. */}
       {post.region ? <BlogSearch dest={post.region.destination} /> : null}
       {post.region && heroRail.length ? (
-        <HotelRail
+        <HotelList
           title={`Top-rated stays in ${post.region.name}`}
           subtitle="One honest price — the rate plus one flat fee, the same for everyone"
           hotels={heroRail}
@@ -185,10 +190,14 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         {post.cover.credit ? (
           <figcaption className="mt-1.5 text-xs text-black/45">
             Photo:{" "}
-            <a href={post.cover.credit.url} target="_blank" rel="noopener noreferrer" className="underline">
-              {post.cover.credit.name}
-            </a>{" "}
-            on Unsplash
+            {post.cover.credit.url ? (
+              <a href={post.cover.credit.url} target="_blank" rel="noopener noreferrer" className="underline">
+                {post.cover.credit.name}
+              </a>
+            ) : (
+              <span>{post.cover.credit.name}</span>
+            )}
+            {post.cover.credit.url?.includes("unsplash.com") ? " on Unsplash" : ""}
           </figcaption>
         ) : null}
       </figure>

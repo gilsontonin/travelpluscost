@@ -10,7 +10,7 @@ export interface PostFaq {
 export interface PostImage {
   src: string;
   alt: string;
-  credit?: { name: string; url: string };
+  credit?: { name: string; url?: string };
 }
 
 export interface PostTldr {
@@ -66,7 +66,7 @@ export const POSTS: Post[] = [
     },
     date: "2026-06-24",
     updated: "2026-06-24",
-    author: "The travelpluscost team",
+    author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
       src: "https://images.unsplash.com/photo-1632440672308-e84787ecc86a?fm=webp&fit=crop&w=1200&h=675&q=80",
@@ -232,12 +232,12 @@ So weighing the town against Mountain Village is a fair comparison: no fake disc
     },
     date: "2026-06-24",
     updated: "2026-06-24",
-    author: "The travelpluscost team",
+    author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
-      src: "https://images.unsplash.com/photo-1586787828106-011fe6c1db9a?fm=webp&fit=crop&w=1200&h=675&q=80",
-      alt: "A bridge over Table Rock Lake in the Ozarks near Branson, Missouri, in autumn",
-      credit: { name: "K. Mitch Hodge", url: "https://unsplash.com/@kmitchhodge" },
+      src: "https://static.cupid.travel/hotels/84794180.jpg",
+      alt: "Chateau on the Lake Resort above Table Rock Lake in Branson, Missouri, with the marina below",
+      credit: { name: "Chateau on the Lake Resort Spa, Branson" },
     },
     region: { name: "Branson", destination: "Branson" },
     faqs: [
@@ -386,7 +386,7 @@ Once you've picked your side of town, [search current Branson prices](/search?de
     },
     date: "2026-06-24",
     updated: "2026-06-24",
-    author: "The travelpluscost team",
+    author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
       src: "https://images.unsplash.com/photo-1678157933167-0938f1ccfe3b?fm=webp&fit=crop&w=1200&h=675&q=80",
@@ -712,7 +712,7 @@ Planning the rest of the trip or comparing islands? Our guide to [where to stay 
     },
     date: "2026-06-23",
     updated: "2026-06-23",
-    author: "The travelpluscost team",
+    author: "Gilson Tonin, MBA",
     category: "Pricing & transparency",
     cover: {
       src: "https://images.unsplash.com/photo-1758598307153-f1c53d9db23e?fm=webp&fit=crop&w=1200&h=675&q=80",
@@ -887,7 +887,7 @@ And if you change one habit after reading this: before you book anything, check 
       ],
     },
     date: "2026-06-22",
-    author: "The travelpluscost team",
+    author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
       src: "https://images.unsplash.com/photo-1698094276348-c542aa9c5609?fm=webp&fit=crop&w=1200&h=675&q=80",

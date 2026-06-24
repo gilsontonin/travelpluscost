@@ -27,11 +27,8 @@ export default function BlogSearch({ dest: initial }: { dest: string }) {
   };
 
   return (
-    <div className="my-6 rounded-2xl border border-accent/20 bg-accent-tint/40 p-4 sm:p-5">
-      <p className="text-[11px] font-bold uppercase tracking-wide text-accent">Search {initial} stays</p>
-      <p className="mt-1 mb-3 text-sm text-black/70">
-        One honest price — the rate plus one small flat fee, the same for everyone, on any device.
-      </p>
+    <div className="my-6 rounded-2xl border border-black/10 bg-white p-4 shadow-sm sm:p-5">
+      <p className="mb-3 text-sm font-semibold text-black">Search {initial} stays</p>
       <div className="flex flex-col gap-2 sm:flex-row sm:items-stretch">
         <div className="min-w-0 sm:flex-[1.3]">
           <DestinationField value={dest} onChange={setDest} />
@@ -52,6 +49,12 @@ export default function BlogSearch({ dest: initial }: { dest: string }) {
           Search
         </button>
       </div>
+      <p className="mt-2.5 flex items-center gap-1.5 text-xs text-black/50">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0 text-accent">
+          <path d="M20 6 9 17l-5-5" />
+        </svg>
+        One honest price — the rate plus one small flat fee, the same for everyone, on any device.
+      </p>
     </div>
   );
 }
