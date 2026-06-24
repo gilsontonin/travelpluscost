@@ -29,6 +29,11 @@ create index if not exists hotels_country_idx on public.hotels (country);
 create index if not exists hotels_geo_idx     on public.hotels (lat, lng);          -- bounding-box geo
 create index if not exists hotels_slug_idx    on public.hotels (slug);
 
+-- Amenity flags for city-hub grouping ("pool/spa hotels in {city}"). Backfilled by
+-- scripts/enrich-amenities.mjs (one LiteAPI /data/hotel call per hotel). Run this once:
+alter table public.hotels add column if not exists amenities text[];
+create index if not exists hotels_amenities_idx on public.hotels using gin (amenities);
+
 -- ── Blog posts (SEO content wired to inventory) ─────────────────────────────
 create table if not exists public.posts (
   id               uuid primary key default gen_random_uuid(),
