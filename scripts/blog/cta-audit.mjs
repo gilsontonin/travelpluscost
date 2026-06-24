@@ -75,7 +75,8 @@ for (let i = 0; i < content.length; i++) {
   const sectionLeaks = [];
   // ::rail is city-scoped via hotelsInArea (name-seed within the post's city) — it can't leak, so it's exempt.
   for (const d of directives) if (["search", "map", "cta", "areas"].includes(d.kind) && d.arg && cityLc && !d.arg.toLowerCase().includes(cityLc)) sectionLeaks.push(`::${d.kind} ${d.arg} — not "${dest}"`);
-  for (const l of links) if (/^\/search/.test(l.url) && cityLc && !l.url.toLowerCase().includes(cityLc)) sectionLeaks.push(`link "${l.text}" → ${l.url}`);
+  // decodeURIComponent so multi-word cities (Wisconsin%20Dells) match cityLc ("wisconsin dells"), not a leak.
+  for (const l of links) if (/^\/search/.test(l.url) && cityLc && !decodeURIComponent(l.url).toLowerCase().includes(cityLc)) sectionLeaks.push(`link "${l.text}" → ${l.url}`);
 
   console.log(`${"#".repeat(s.level)} ${s.heading}`);
   console.log(`   CTA → ${ctas[i] || "(decide: what's the ONE action here?)"}`);
