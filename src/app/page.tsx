@@ -3,14 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import VibePromptPill from "@/components/VibePromptPill";
-import HotelRail from "@/components/HotelRail";
+import PricedRail from "@/components/PricedRail";
 import NearbyRail from "@/components/NearbyRail";
 import SeasonalRail from "@/components/SeasonalRail";
 import PopularDestinations from "@/components/PopularDestinations";
 import ViatorPackages from "@/components/ViatorPackages";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
-import { getPrices, defaultDates, type Price } from "@/lib/rates";
 import { REGIONS } from "@/lib/regions";
 
 export const metadata: Metadata = {
@@ -18,12 +17,9 @@ export const metadata: Metadata = {
   openGraph: { url: "/" },
 };
 
-// Live "from" prices on the home rails come from LiteAPI (cached); refresh hourly via ISR.
-export const revalidate = 3600;
-
 const search = (q: string) => `/search?destination=${encodeURIComponent(q)}&adults=2`;
 
-export default async function Home() {
+export default function Home() {
   const all = getAllHotels();
   const cards = all.map(toCard);
   // Review-weighted (Bayesian) sort so a 1-review perfect-10 can't outrank a well-reviewed favourite
@@ -39,16 +35,6 @@ export default async function Home() {
     .slice(0, 12);
   const beachfront = cards.filter((c) => c.amenities.includes("Beachfront")).slice(0, 12);
   const railAll = all.map(toRail);
-
-  // Live "from" SSP for the home rails (near-term default dates) — the public price, cached + ISR.
-  const { checkin, checkout } = defaultDates();
-  const priceIds = [...new Set([...topRated, ...beachfront].map((c) => c.id))];
-  let prices: Record<string, Price> = {};
-  try {
-    prices = await getPrices(priceIds, checkin, checkout, 2);
-  } catch {
-    prices = {};
-  }
 
   // markets we cover (the multi-region picker)
   const destinations = REGIONS.map((r) => {
@@ -87,11 +73,10 @@ export default async function Home() {
       </div>
 
       {/* Inventory first — real stays with an all-in price, the moment you land */}
-      <HotelRail
+      <PricedRail
         title="Top-rated stays"
         subtitle="Guest favorites across our markets — one honest, all-in price"
         hotels={topRated}
-        prices={prices}
       />
 
       <RecentlyViewed all={railAll} />
@@ -117,7 +102,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} prices={prices} />
+      <PricedRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} />
 
       <SeasonalRail />
 
