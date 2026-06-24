@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { hotelsByCity, cityHotelCount, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
 import { slugify } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
-import { siblingCities } from "@/lib/geo";
+import { siblingCities, popularCities } from "@/lib/geo";
 import { SITE_NAME, abs } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
 import { getPrices } from "@/lib/rates";
@@ -343,6 +343,31 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           </div>
         </section>
       ) : null}
+
+      {/* popular destinations — national interlink cluster + browse up-link (Expedia footer pattern) */}
+      <section className="mt-12">
+        <h2 className="text-lg font-semibold">Popular destinations</h2>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {popularCities(24)
+            .filter((c) => c.slug !== slugify(city))
+            .slice(0, 18)
+            .map((c) => (
+              <Link
+                key={c.slug}
+                href={`/hotels/${c.slug}`}
+                className="rounded-full border border-black/12 px-4 py-1.5 text-sm text-black/70 transition hover:border-black/30 hover:text-black"
+              >
+                Hotels in {c.name}
+              </Link>
+            ))}
+          <Link
+            href="/hotels"
+            className="rounded-full border border-accent/30 bg-accent-tint/40 px-4 py-1.5 text-sm font-semibold text-accent transition hover:bg-accent-tint/70"
+          >
+            Browse all U.S. destinations →
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

@@ -86,3 +86,14 @@ export function siblingCities(citySlug: string, limit = 12): { state: StateSumma
   if (!s) return null;
   return { state: summary(code, s), cities: s.cities.filter((c) => c.slug !== citySlug).slice(0, limit) };
 }
+
+// Highest-inventory cities nationwide — for the "Popular destinations" interlink cluster.
+let _popular: GeoCity[] | null = null;
+export function popularCities(limit = 24): GeoCity[] {
+  if (!_popular) {
+    const all: GeoCity[] = [];
+    for (const s of Object.values(GEO.states)) all.push(...s.cities);
+    _popular = all.sort((a, b) => b.count - a.count);
+  }
+  return _popular.slice(0, limit);
+}
