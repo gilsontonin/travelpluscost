@@ -278,15 +278,17 @@ Five areas, one deciding factor: how far you're willing to sit from the theaters
 
 | Area | The feel | Best for | To the shows |
 |---|---|---|---|
-| Highway 76 (the Strip) | Busy, neon, central | First timers, shows | Walk to a few minutes |
-| Branson Landing / downtown | Lakefront, walkable | Couples, dining | ~5–10 min |
-| Table Rock Lake / Indian Point | Quiet, scenic, on the water | Lake trips, families | ~15–20 min |
-| Thousand Hills | Wooded, spacious condos, golf | Families, longer stays | ~5–10 min |
-| Big Cedar Lodge (Ridgedale) | Luxury lake resort, remote | A splurge | ~25–30 min |
+| [Highway 76 (the Strip)](/search?destination=Branson&adults=2) | Busy, neon, central | First timers, shows | Walk to a few minutes |
+| [Branson Landing / downtown](/search?destination=Branson&adults=2) | Lakefront, walkable | Couples, dining | ~5–10 min |
+| [Table Rock Lake / Indian Point](/search?destination=Branson&adults=2) | Quiet, scenic, on the water | Lake trips, families | ~15–20 min |
+| [Thousand Hills](/search?destination=Branson&adults=2) | Wooded, spacious condos, golf | Families, longer stays | ~5–10 min |
+| [Big Cedar Lodge (Ridgedale)](/search?destination=Branson&adults=2) | Luxury lake resort, remote | A splurge | ~25–30 min |
 
 ::infographic branson-by-numbers
 
 ## Highway 76, the Strip — Branson's Neon Entertainment Spine
+
+::rail Branson
 
 **The Strip (Highway 76 Country Boulevard) is the easy first timer base — Branson's entertainment capital.** It's the neon main drag, lined end to end with theaters, live shows, attractions, mini golf and hotels. From your door you're within walking distance of most of what you came for.
 
@@ -304,6 +306,8 @@ The catch is the obvious one. In summer, Highway 76 traffic becomes its own attr
 
 ## Branson Landing: Lakefront Hotels and Walkable Dining
 
+::rail Branson
+
 **Branson Landing is the grown up end of town — the part that offers a waterfront instead of a wax museum.** It's a lakeside boardwalk along Lake Taneycomo with shopping, multiple dining options and a fountain and fire show, anchored by the Hilton hotels and a flagship Bass Pro Shops. Historic downtown sits right behind it, so you park once and walk to dinner, a show and a lake breeze.
 
 Yes, that Ferris wheel is the one from Chicago's Navy Pier. Branson has a habit of collecting other towns' landmarks.
@@ -320,6 +324,8 @@ You'll pay a little more to sit on the main waterfront, and the area leans coupl
 
 ## Table Rock Lake Resorts: Still Waters and Indian Point
 
+::rail Branson
+
 **Table Rock Lake is where Branson exhales.** It's the big, clear Ozarks lake, with some 800 miles of shoreline. Lakeside resorts and condos ring the shore — kitchens, docks, and the kind of natural beauty no theater can light.
 
 Indian Point, a wooded peninsula a few miles from the Strip and a short hop from Silver Dollar City, is the classic lake base; lake resorts like Still Waters sit right on the water.
@@ -328,13 +334,17 @@ Indian Point, a wooded peninsula a few miles from the Strip and a short hop from
 
 The marquee lake resort is the Chateau on the Lake, a grand hilltop hotel above the marina with lake views; around the shore sit dozens of condos and smaller lakeside resorts with docks and pools.
 
-::hotel lp205ae Marinas rent boats and jet skis, lake resort guests wake up to open water instead of a billboard, and the Showboat Branson Belle paddles out for dinner cruises. It's a quieter, more spacious Branson — pontoons and pine trees where the Strip keeps its pavement.
+::hotel lp205ae
+
+Marinas rent boats and jet skis, lake resort guests wake up to open water instead of a billboard, and the Showboat Branson Belle paddles out for dinner cruises. It's a quieter, more spacious Branson — pontoons and pine trees where the Strip keeps its pavement.
 
 The trade is the drive: most days it's fifteen to twenty minutes to the theaters. For a trip built around the water, or a family pairing the lake with Silver Dollar City, that drive buys you a much better morning.
 
 **Best for:** boating, Silver Dollar City families, couples who want still water and quiet.
 
 ## Thousand Hills: Spacious Condos and Golf in the Middle
+
+::rail Branson
 
 **Thousand Hills is the spacious condo pocket dropped right in the center of everything.** It's minutes from the Strip but tucked into the trees around the Thousand Hills golf course, with condos that include full kitchens, laundry and enough room that nobody has to draw the short straw and take the pull out couch. You get the quiet of the woods and the location of the Strip — the rare Branson combination that doesn't make you pick one.
 
