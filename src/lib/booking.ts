@@ -225,7 +225,10 @@ async function fetchOffers(input: PrebookInput, margin?: number): Promise<Offer[
   };
   if (margin && margin > 0) body.margin = margin; // margin lifts retailRate.total toward SSP
   const data = await call<RoomTypeLite[] | { roomTypes?: RoomTypeLite[] }[]>(`${API}/hotels/rates`, body);
-  const hotels = (data as { roomTypes?: RoomTypeLite[] }[]) ?? [];
+  // `call()` returns json.data when present, else the whole response — so a rates error/empty reply
+  // hands back a non-array object, and `?? []` (which only guards null/undefined) wouldn't catch it.
+  // Guard with Array.isArray so a bad reply yields no offers (→ honest "No availability") not a crash.
+  const hotels = Array.isArray(data) ? (data as { roomTypes?: RoomTypeLite[] }[]) : [];
   const out: Offer[] = [];
   const seen = new Set<string>();
   for (const rh of hotels) {
