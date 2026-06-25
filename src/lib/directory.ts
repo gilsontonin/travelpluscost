@@ -3,6 +3,7 @@
 // and live rates still come from LiteAPI on demand (the directory holds no prices). Server-only.
 import { supabaseAdmin } from "./supabase";
 import { resolveRegion } from "./regions";
+import { slugify } from "./hotelUrl";
 import type { CardHotel } from "./hotels";
 
 export interface DirectoryHotel {
@@ -62,6 +63,38 @@ export async function hotelsByCity(city: string, country = "us", limit = 60, sta
   const { data, error } = await q.order("review_count", ORDER_REVIEWS).limit(limit);
   if (error) throw new Error(error.message);
   return (data ?? []) as DirectoryHotel[];
+}
+
+// Fallback resolver for the city hub: the slug→name round-trip is LOSSY for punctuated names —
+// slugify("St. Augustine") = "st-augustine", but "st augustine" won't ilike-match "St. Augustine"
+// (the period is gone), so those hubs 404 even though they have inventory (and the links to them break).
+// Rebuild the slug as a wildcard pattern ("st-augustine" → "st%augustine", "lauderdale-by-the-sea" →
+// "lauderdale%by%the%sea") so the period/hyphen/apostrophe variants resolve. Only used when the exact
+// match returns nothing, so it never changes a city that already worked.
+export async function hotelsByCityFuzzy(slug: string, country = "us", limit = 60): Promise<DirectoryHotel[]> {
+  const run = async (pattern: string, cap: number): Promise<DirectoryHotel[]> => {
+    const { data, error } = await supabaseAdmin()
+      .from("hotels")
+      .select(COLS)
+      .eq("country", country.toLowerCase())
+      .ilike("city", pattern)
+      .eq("kind", "hotel")
+      .order("review_count", ORDER_REVIEWS)
+      .limit(cap);
+    if (error) throw new Error(error.message);
+    // Keep only rows whose city slugifies back to EXACTLY this slug — same slugify both directions, so
+    // it resolves the right city and never over-matches (e.g. "st-augustine" ≠ "st-augustine-beach").
+    return ((data ?? []) as DirectoryHotel[]).filter((h) => slugify(h.city ?? "") === slug);
+  };
+  // 1) dash→% pattern handles dropped punctuation that left a gap: "st-augustine" → "st%augustine"
+  //    matches "St. Augustine"; "lauderdale-by-the-sea" → "lauderdale%by%the%sea".
+  let rows = await run(slug.replace(/-/g, "%"), 200);
+  // 2) fallback for punctuation dropped WITHOUT a gap at a word boundary (Coeur d'Alene → "coeur-dalene"):
+  //    scan the first-token prefix and round-trip.
+  if (!rows.length) rows = await run(`${slug.split("-")[0]}%`, 500);
+  // 3) apostrophe after the first letter (O'Fallon → "ofallon", O'Neill → "oneill"): allow a gap there.
+  if (!rows.length && slug.length > 2) rows = await run(`${slug[0]}%${slug.slice(1)}`, 200);
+  return rows.slice(0, limit);
 }
 
 /** Count of real hotels in a named city — the "{n} hotels in {city}" line on the city hub. */

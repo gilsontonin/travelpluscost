@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { hotelsByCity, cityHotelCount, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
+import { hotelsByCity, hotelsByCityFuzzy, cityHotelCount, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
 import { slugify, hotelHref } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
 import { siblingCities, popularCities } from "@/lib/geo";
@@ -32,13 +32,14 @@ interface CityData {
 // then trust the data's own casing + most-common state for display/canonical.
 const load = cache(async (slug: string): Promise<CityData | null> => {
   const name = slug.replace(/-/g, " ");
-  const rows = await hotelsByCity(name, "us", 60);
+  let rows = await hotelsByCity(name, "us", 60);
+  if (!rows.length) rows = await hotelsByCityFuzzy(slug, "us", 60); // punctuated names: "st-augustine" → "St. Augustine"
   if (!rows.length) return null;
   const city = rows[0].city || cityFromSlug(slug);
   const stateCounts: Record<string, number> = {};
   for (const r of rows) if (r.state) stateCounts[r.state] = (stateCounts[r.state] ?? 0) + 1;
   const state = Object.entries(stateCounts).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
-  const count = await cityHotelCount(name, "us", state ?? undefined);
+  const count = await cityHotelCount(city, "us", state ?? undefined); // real city name, not the lossy slug
   const ranked = rankHotels(rows).filter((h) => h.thumbnail);
 
   // Indicative "from" price: cheapest per-night among the top stays for tomorrow night. Server-side +
