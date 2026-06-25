@@ -16,7 +16,11 @@ corner-cuts, §5 the process, §9 the pre-publish ritual), read alongside **`doc
 **Read both first — do not free-write, do not skip steps; the writing is the product.** The program +
 tools live in **`docs/blog-system/References/InventoryPosts.md`**; performance rules in
 **`References/Lighthouse.md`**; brand/compliance in **`docs/POSITIONING.md`** (never publish the wholesale
-cost or the exact markup %; claims exactly true; no fake scarcity).
+cost or the exact markup %; claims exactly true; no fake scarcity). **READ THE LESSONS LOG FIRST —
+`docs/blog-system/References/WritingLessons.md`** (the "where to stay" program section near the end): every
+gate gotcha we've already paid for (the `npm run check` deploy gate, the voice-gate decimal/bullet
+over-count, title–state pairing, recap-table cta false positives, the serp-ceiling taxonomy). After
+shipping, **append a one-line lesson** there for anything systemic you hit this run.
 
 ## Workflow — one call, end to end
 
@@ -66,6 +70,9 @@ QA note (post exists). Then work it top to bottom. If no city was given, pick on
    Cross-link the `/hotels/<city>` hub (don't cannibalise).
 6. **Commit, then HOLD the push until the owner says "go live."** Paste the keyword line (head + pairing +
    vol/KD), the serp/slop/cta/lh numbers, and the honest serp verdict (≥90, or the named ceiling + why).
+7. **Log the lesson.** If this run surfaced anything systemic (a new gate quirk, a SERP-shape call, a
+   compliance/claims trap), append a one-line, dated, post-tagged entry to
+   `docs/blog-system/References/WritingLessons.md` so the next post doesn't re-pay for it.
 
 ## Hard rules (never break)
 - **Real data only** — rate-verified hotels (the scaffold pool), live LiteAPI rates, real sentiment. No

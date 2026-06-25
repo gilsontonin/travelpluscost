@@ -44,6 +44,7 @@ if (exists) {
 console.log(`
 ${bar}
   THE PLAYBOOK — do these IN ORDER. Governing manual: docs/blog-system/BLOG-PLAYBOOK.md (read it first).
+  LESSONS LOG (read first, append after): docs/blog-system/References/WritingLessons.md (where-to-stay section).
   Bars to clear: serp ≥ 90 · 0 HARD slop · length in band · 0 leaks · a CTA every section · build green.
 ${bar}
 
