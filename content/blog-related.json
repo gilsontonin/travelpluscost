@@ -6,8 +6,8 @@
     "where-to-stay-in-branson",
     "where-to-stay-in-sedona",
     "where-to-stay-in-wisconsindells",
-    "where-to-stay-in-maui",
-    "where-to-stay-in-oahu"
+    "where-to-stay-in-asheville",
+    "where-to-stay-in-maui"
   ],
   "where-to-stay-in-branson": [
     "where-to-stay-in-wisconsindells",
@@ -16,8 +16,8 @@
     "where-to-stay-in-moab",
     "where-to-stay-in-sedona",
     "where-to-stay-in-bend",
-    "where-to-stay-in-oahu",
-    "where-to-stay-in-maui"
+    "where-to-stay-in-asheville",
+    "where-to-stay-in-oahu"
   ],
   "where-to-stay-in-wisconsindells": [
     "where-to-stay-in-branson",
@@ -25,39 +25,49 @@
     "where-to-stay-in-moab",
     "where-to-stay-in-estespark",
     "where-to-stay-in-telluride",
+    "where-to-stay-in-asheville",
     "where-to-stay-in-sedona",
-    "where-to-stay-in-oahu",
-    "where-to-stay-in-maui"
+    "where-to-stay-in-oahu"
   ],
   "where-to-stay-in-bend": [
     "where-to-stay-in-moab",
     "where-to-stay-in-wisconsindells",
+    "where-to-stay-in-asheville",
     "where-to-stay-in-estespark",
     "where-to-stay-in-sedona",
     "where-to-stay-in-telluride",
     "where-to-stay-in-maui",
-    "where-to-stay-in-branson",
-    "where-to-stay-in-oahu"
+    "where-to-stay-in-branson"
   ],
   "where-to-stay-in-sedona": [
     "where-to-stay-in-moab",
     "where-to-stay-in-bend",
     "where-to-stay-in-maui",
+    "where-to-stay-in-asheville",
     "where-to-stay-in-telluride",
     "where-to-stay-in-branson",
     "where-to-stay-in-estespark",
+    "where-to-stay-in-wisconsindells"
+  ],
+  "where-to-stay-in-asheville": [
+    "where-to-stay-in-bend",
+    "where-to-stay-in-estespark",
+    "where-to-stay-in-sedona",
+    "where-to-stay-in-moab",
     "where-to-stay-in-wisconsindells",
-    "where-to-stay-in-oahu"
+    "where-to-stay-in-maui",
+    "where-to-stay-in-branson",
+    "where-to-stay-in-telluride"
   ],
   "where-to-stay-in-estespark": [
     "where-to-stay-in-moab",
+    "where-to-stay-in-asheville",
     "where-to-stay-in-bend",
     "where-to-stay-in-wisconsindells",
     "where-to-stay-in-branson",
     "where-to-stay-in-telluride",
     "where-to-stay-in-sedona",
-    "where-to-stay-in-oahu",
-    "where-to-stay-in-maui"
+    "where-to-stay-in-oahu"
   ],
   "where-to-stay-in-moab": [
     "where-to-stay-in-estespark",
@@ -65,19 +75,19 @@
     "where-to-stay-in-sedona",
     "where-to-stay-in-wisconsindells",
     "where-to-stay-in-telluride",
+    "where-to-stay-in-asheville",
     "where-to-stay-in-maui",
-    "where-to-stay-in-branson",
-    "where-to-stay-in-oahu"
+    "where-to-stay-in-branson"
   ],
   "where-to-stay-in-maui": [
     "where-to-stay-in-oahu",
     "where-to-stay-in-sedona",
     "where-to-stay-in-moab",
     "where-to-stay-in-bend",
+    "where-to-stay-in-asheville",
     "where-to-stay-in-branson",
     "where-to-stay-in-wisconsindells",
-    "where-to-stay-in-estespark",
-    "where-to-stay-in-telluride"
+    "where-to-stay-in-estespark"
   ],
   "surveillance-pricing": [
     "where-to-stay-in-maui",
@@ -87,7 +97,7 @@
     "where-to-stay-in-wisconsindells",
     "where-to-stay-in-estespark",
     "where-to-stay-in-bend",
-    "where-to-stay-in-sedona"
+    "where-to-stay-in-asheville"
   ],
   "where-to-stay-in-oahu": [
     "where-to-stay-in-maui",
@@ -95,8 +105,8 @@
     "where-to-stay-in-moab",
     "where-to-stay-in-branson",
     "where-to-stay-in-estespark",
+    "where-to-stay-in-asheville",
     "where-to-stay-in-wisconsindells",
-    "where-to-stay-in-sedona",
-    "where-to-stay-in-telluride"
+    "where-to-stay-in-sedona"
   ]
 }

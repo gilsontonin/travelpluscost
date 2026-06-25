@@ -61,6 +61,16 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { label: "To the shops", left: "On foot", right: "About a 15-minute drive" },
     ],
   },
+  "asheville-by-numbers": {
+    kind: "stat",
+    title: "Asheville, NC by the numbers",
+    stats: [
+      { value: "~2 hr", label: "drive west of Charlotte (CLT)" },
+      { value: "AVL", label: "airport ~15 min south of downtown" },
+      { value: "30+", label: "breweries in town (\"Beer City\")" },
+      { value: "8,000", label: "acres at the Biltmore Estate" },
+    ],
+  },
   "sedona-by-numbers": {
     kind: "stat",
     title: "Sedona, Arizona by the numbers",
