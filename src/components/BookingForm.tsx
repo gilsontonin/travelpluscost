@@ -196,7 +196,10 @@ export default function BookingForm(props: Props) {
 
   const field =
     "w-full border border-black/15 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-accent";
-  const allIn = (Number(props.total) || 0) + (Number(props.feesAtProperty) || 0);
+  // The CTA must reflect what's charged NOW (online room + taxes). The at-property fee is paid at the
+  // hotel, not by us — putting the all-in on a "payment" button overstates the charge (every fee is
+  // still broken out in the summary + the "A $X fee is collected at the hotel — not now" note).
+  const payToday = Number(props.total) || 0;
 
   // Payment phase — guest captured, card widget mounts here.
   if (prebook) {
@@ -263,7 +266,7 @@ export default function BookingForm(props: Props) {
         disabled={busy}
         className="w-full bg-accent text-white font-semibold px-5 py-3.5 rounded-xl hover:opacity-90 transition disabled:opacity-60"
       >
-        {busy ? "Confirming the room…" : `Continue to payment · ${money(allIn, props.currency)}`}
+        {busy ? "Confirming the room…" : `Continue to payment · ${money(payToday, props.currency)}`}
       </button>
       <p className="text-xs text-black/40 text-center">
         {IS_SANDBOX
