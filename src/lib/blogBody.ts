@@ -39,7 +39,8 @@ export type Block =
   | { type: "map"; dest: string }
   | { type: "compare"; ids: string[] }
   | { type: "areas"; dest: string }
-  | { type: "details"; summary: string; text: string };
+  | { type: "details"; summary: string; text: string }
+  | { type: "showcase"; id: string; text: string };
 
 /** Split the body into ordered blocks: Markdown prose, `::infographic <key>`, `::hotel <id>`. */
 export function parseBlocks(body: string): Block[] {
@@ -47,6 +48,8 @@ export function parseBlocks(body: string): Block[] {
   let buf: string[] = [];
   // `::details <summary>` … `::/details` wraps the lines between into a collapsible block.
   let det: { summary: string; buf: string[] } | null = null;
+  // `::showcase <id>` … `::end` wraps the lines between as the faded prose under a big property card.
+  let show: { id: string; buf: string[] } | null = null;
   const flush = () => {
     const t = buf.join("\n").trim();
     if (t) blocks.push({ type: "md", text: t });
@@ -56,6 +59,10 @@ export function parseBlocks(body: string): Block[] {
     if (det) blocks.push({ type: "details", summary: det.summary, text: det.buf.join("\n").trim() });
     det = null;
   };
+  const closeShowcase = () => {
+    if (show) blocks.push({ type: "showcase", id: show.id, text: show.buf.join("\n").trim() });
+    show = null;
+  };
   for (const line of body.split("\n")) {
     const t = line.trim();
     if (det) {
@@ -63,8 +70,15 @@ export function parseBlocks(body: string): Block[] {
       else det.buf.push(line);
       continue;
     }
+    if (show) {
+      if (/^::\/showcase\s*$/.test(t) || /^::end\s*$/.test(t)) closeShowcase();
+      else show.buf.push(line);
+      continue;
+    }
     const dm = /^::details\s+(.+?)\s*$/.exec(t);
     if (dm) { flush(); det = { summary: dm[1], buf: [] }; continue; }
+    const sm = /^::showcase\s+(\S+)\s*$/.exec(t);
+    if (sm) { flush(); show = { id: sm[1], buf: [] }; continue; }
     const ig = /^::infographic\s+(\S+)\s*$/.exec(t);
     const ht = /^::hotel\s+(\S+)\s*$/.exec(t);
     if (ig) { flush(); blocks.push({ type: "infographic", key: ig[1] }); }
@@ -79,15 +93,22 @@ export function parseBlocks(body: string): Block[] {
     else buf.push(line);
   }
   closeDetails(); // tolerate an unclosed ::details at end of body
+  closeShowcase(); // tolerate an unclosed ::showcase at end of body
   flush();
   return blocks;
 }
 
-/** Hotel ids referenced by `::hotel <id>` and `::compare <id> <id> …` — the page pre-fetches these. */
+/** Hotel ids referenced by `::hotel`, `::showcase` and `::compare` — the page pre-fetches these. */
 export function hotelIdsInBody(body: string): string[] {
   const single = [...body.matchAll(/^\s*::hotel\s+(\S+)\s*$/gm)].map((m) => m[1]);
+  const showcased = [...body.matchAll(/^\s*::showcase\s+(\S+)\s*$/gm)].map((m) => m[1]);
   const compared = [...body.matchAll(/^\s*::compare\s+(.+?)\s*$/gm)].flatMap((m) => m[1].trim().split(/\s+/));
-  return [...new Set([...single, ...compared])];
+  return [...new Set([...single, ...showcased, ...compared])];
+}
+
+/** Hotel ids in `::showcase <id>` — the page fetches up to 6 photos each for the swipable gallery. */
+export function showcaseIdsInBody(body: string): string[] {
+  return [...new Set([...body.matchAll(/^\s*::showcase\s+(\S+)\s*$/gm)].map((m) => m[1]))];
 }
 
 /** Destinations referenced by `::rail <dest>` — the page pre-fetches their hotels. */

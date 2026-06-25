@@ -1095,9 +1095,9 @@ The trade is that Uptown is the busiest, priciest corner of town, and Highway 89
 
 ### El Portal Sedona Hotel — the Uptown splurge
 
+::showcase lp378b1
 A hacienda-style luxury inn beside the Tlaquepaque arts village, scoring a 9.7 across more than 500 reviews, with thick adobe walls, a quiet courtyard and some of the warmest service in town. It's pet-friendly and walkable to everything, and it earns that score by getting the details right.
-
-::hotel lp378b1
+::end
 
 ### L'Auberge De Sedona — creekside at the edge of Uptown
 

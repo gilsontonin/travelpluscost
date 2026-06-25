@@ -41,7 +41,7 @@ for (const l of body.split("\n")) {
 sections.push(cur);
 const content = sections.filter((s) => s.level >= 2);
 
-const DIRECTIVE = /^::(hotel|rail|search|map|compare|cta|areas|priceproof|infographic|details)\b\s*(.*)$/;
+const DIRECTIVE = /^::(hotel|showcase|rail|search|map|compare|cta|areas|priceproof|infographic|details)\b\s*(.*)$/;
 const LINK = /\[([^\]]+)\]\((\/[^)]+)\)/g;
 
 // Gemini: one CTA line per section.
@@ -69,9 +69,9 @@ for (let i = 0; i < content.length; i++) {
   const text = s.lines.join("\n");
   const directives = s.lines.map((l) => l.trim().match(DIRECTIVE)).filter(Boolean).map((m) => ({ kind: m[1], arg: m[2].trim() }));
   const links = [...text.matchAll(LINK)].map((m) => ({ text: m[1], url: m[2] }));
-  const carded = new Set(directives.filter((d) => d.kind === "hotel" || d.kind === "compare").flatMap((d) => d.arg.split(/\s+/).filter(Boolean)));
+  const carded = new Set(directives.filter((d) => d.kind === "hotel" || d.kind === "showcase" || d.kind === "compare").flatMap((d) => d.arg.split(/\s+/).filter(Boolean)));
   const mentioned = dirHotels.filter((h) => (s.heading + " " + text).toLowerCase().includes(h.name.toLowerCase()));
-  const hasCta = directives.some((d) => ["hotel", "rail", "search", "cta", "compare", "map"].includes(d.kind)) || links.some((l) => /^\/(search|hotels)/.test(l.url));
+  const hasCta = directives.some((d) => ["hotel", "showcase", "rail", "search", "cta", "compare", "map"].includes(d.kind)) || links.some((l) => /^\/(search|hotels)/.test(l.url));
   const sectionLeaks = [];
   // ::rail is city-scoped via hotelsInArea (name-seed within the post's city) — it can't leak, so it's exempt.
   for (const d of directives) if (["search", "map", "cta", "areas"].includes(d.kind) && d.arg && cityLc && !d.arg.toLowerCase().includes(cityLc)) sectionLeaks.push(`::${d.kind} ${d.arg} — not "${dest}"`);

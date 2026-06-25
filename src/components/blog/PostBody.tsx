@@ -4,6 +4,7 @@ import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Infographic from "./Infographic";
 import BlogHotelCard from "./BlogHotelCard";
+import ShowcaseHotel from "./ShowcaseHotel";
 import PriceProof from "./PriceProof";
 import CtaWidget from "./CtaWidget";
 import BlogSearch from "./BlogSearch";
@@ -59,12 +60,14 @@ export default function PostBody({
   rails,
   maps,
   areas,
+  showcaseImages = {},
 }: {
   blocks: Block[];
   hotels: Record<string, DirectoryHotel>;
   rails: Record<string, CardHotel[]>;
   maps: Record<string, CardHotel[]>;
   areas: Record<string, { city: string; count: number }[]>;
+  showcaseImages?: Record<string, string[]>;
 }) {
   return (
     <div className="mt-7 space-y-4 text-[15.5px] leading-relaxed text-black/80">
@@ -103,6 +106,14 @@ export default function PostBody({
         if (b.type === "compare") {
           const hs = b.ids.map((id) => hotels[id]).filter(Boolean) as DirectoryHotel[];
           return <BlogCompare key={i} hotels={hs} />;
+        }
+        if (b.type === "showcase") {
+          const h = hotels[b.id];
+          return h ? (
+            <ShowcaseHotel key={i} hotel={h} images={showcaseImages[b.id] ?? []}>
+              <ReactMarkdown remarkPlugins={[remarkGfm]} components={mdComponents}>{b.text}</ReactMarkdown>
+            </ShowcaseHotel>
+          ) : null;
         }
         if (b.type === "hotel") {
           const h = hotels[b.id];

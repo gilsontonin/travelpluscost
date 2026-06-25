@@ -39,6 +39,10 @@ create index if not exists hotels_amenities_idx on public.hotels using gin (amen
 -- pros). No index — selected for display, never filtered. Run this once:
 alter table public.hotels add column if not exists pros text[];
 
+-- `images`: up to 6 LiteAPI photos per hotel (hero first) for the blog SHOWCASE swipable gallery.
+-- Backfilled per-city by scripts/blog/backfill-images.mjs. No index — selected for display only. Run once:
+alter table public.hotels add column if not exists images text[];
+
 -- ── Blog posts (SEO content wired to inventory) ─────────────────────────────
 create table if not exists public.posts (
   id               uuid primary key default gen_random_uuid(),

@@ -5,8 +5,9 @@ import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
 import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
 import Image from "next/image";
-import { parseBlocks, extractHeadings, hotelIdsInBody, railDestsInBody, mapDestsInBody, areasDestsInBody } from "@/lib/blogBody";
+import { parseBlocks, extractHeadings, hotelIdsInBody, showcaseIdsInBody, railDestsInBody, mapDestsInBody, areasDestsInBody } from "@/lib/blogBody";
 import { getDirectoryHotel, searchDirectory, hotelsInArea, cityHotelCount, type DirectoryHotel } from "@/lib/directory";
+import { getHotelContent } from "@/lib/hotelContent";
 import { resolveRegion } from "@/lib/regions";
 import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
@@ -83,6 +84,20 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     [...new Set(hotelIdsInBody(post.body))].map(async (id) => [id, await getDirectoryHotel(id)] as const),
   );
   const hotels = Object.fromEntries(hotelEntries.filter(([, h]) => h)) as Record<string, DirectoryHotel>;
+
+  // `::showcase <id>` — up to 6 photos per showcased hotel for the swipable gallery. Prefer the directory
+  // `images` column once backfilled (npm run blog:images); until then fall back to a build-time LiteAPI
+  // fetch (server-side at build, no client JS), then to the single thumbnail. Cheap at a handful per post.
+  const showcaseEntries = await Promise.all(
+    [...new Set(showcaseIdsInBody(post.body))].map(async (id) => {
+      const col = (hotels[id] as (DirectoryHotel & { images?: string[] | null }) | undefined)?.images;
+      if (Array.isArray(col) && col.length) return [id, col.slice(0, 6)] as const;
+      const content = await getHotelContent(id).catch(() => null);
+      const imgs = content?.images?.slice(0, 6) ?? (hotels[id]?.thumbnail ? [hotels[id]!.thumbnail!] : []);
+      return [id, imgs] as const;
+    }),
+  );
+  const showcaseImages = Object.fromEntries(showcaseEntries) as Record<string, string[]>;
 
   // `::rail <dest>` — pre-fetch each rail's hotels (server-side, at build). When the rail names a
   // NEIGHBOURHOOD of the post's city (not the city itself), resolve it city-scoped via hotelsInArea so it
@@ -300,7 +315,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
       {/* body */}
       <BlogPriceProvider ids={Object.keys(hotels)}>
-        <PostBody blocks={blocks} hotels={hotels} rails={rails} maps={maps} areas={areas} />
+        <PostBody blocks={blocks} hotels={hotels} rails={rails} maps={maps} areas={areas} showcaseImages={showcaseImages} />
       </BlogPriceProvider>
 
       {/* CTA */}

@@ -34,6 +34,7 @@
     "blog:scaffold": "node --env-file=.env.local scripts/blog/scaffold.mjs",
     "blog:next": "node --env-file=.env.local scripts/blog/next.mjs",
     "blog:pros": "node --env-file=.env.local scripts/blog/backfill-pros.mjs",
+    "blog:images": "node --env-file=.env.local scripts/blog/backfill-images.mjs",
     "blog:opportunities": "node --env-file=.env.local scripts/blog/opportunities.mjs"
   },
   "dependencies": {
