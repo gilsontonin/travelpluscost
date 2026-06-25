@@ -20,7 +20,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/book", "/booking-complete", "/booking-confirmed", "/cancel", "/compare"],
+        // "/*_rsc=" stops Googlebot crawling the App Router's RSC prefetch payloads (the ?_rsc=<hash>
+        // duplicate of every <Link> target). GSC crawl stats showed those = 57% of all crawl requests
+        // (~113k/day) while Discovery sat at 13% — i.e. most of the crawl budget was being spent on RSC
+        // copies instead of finding our 65k hotel pages. Browsers ignore robots.txt, so real-user
+        // prefetch is unaffected; only bot crawl budget is freed.
+        disallow: ["/api/", "/book", "/booking-complete", "/booking-confirmed", "/cancel", "/compare", "/*_rsc="],
       },
       ...JUNK_BOTS.map((userAgent) => ({ userAgent, disallow: "/" })),
     ],
