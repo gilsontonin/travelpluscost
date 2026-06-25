@@ -9,7 +9,11 @@ import { createBrowserClient } from "@supabase/ssr";
 const URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
 const ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
 
-/** Client-side auth — sign-in + session (the browser client persists + refreshes the session in cookies). */
+/** Client-side auth — sign-in + session (the browser client persists + refreshes the session in cookies).
+ *  flowType "implicit": the magic link carries the token in the URL itself (not a PKCE code), so it works
+ *  cross-device / cross-browser (e.g. opening the email link in a mail app's in-app browser) WITHOUT any
+ *  email-template change — the default Supabase template works as-is. The landing is handled client-side
+ *  at /auth/callback (the browser auto-detects the session from the URL). */
 export function authBrowser() {
-  return createBrowserClient(URL, ANON);
+  return createBrowserClient(URL, ANON, { auth: { flowType: "implicit" } });
 }
