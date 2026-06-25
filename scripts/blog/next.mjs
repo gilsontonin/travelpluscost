@@ -49,8 +49,13 @@ ${bar}
 
   [ ] 0. DATA — backfill review social proof so the cards show "Guests loved …":
             npm run blog:pros -- ${city}
-  [ ] 1. KEYWORD — Semrush-vet "${kw}" (aim real demand + KD ≤ ~30). Log it in the ledger:
-            npm run blog:keywords
+  [ ] 1. KEYWORD RESEARCH (deep — do NOT skip; this is what you pair the head term with):
+            • Vet the head term "${kw}" + variants (Semrush phrase_fullsearch) — a "<city> <state>" variant
+              often carries its own volume at lower KD; if so, put it in the TITLE.
+            • Pull the most-asked QUESTIONS by volume (phrase_questions "${city}") → these become the FAQ + a
+              dedicated section (Denver-distance / elevation / "is it in the park" were the Estes Park gold).
+            • The pairings (for families / near <attraction> / on a budget / by season / cabins…) → secondary H2s.
+            Build the post to target the whole CLUSTER, not just the head term. Log it: npm run blog:keywords
   [ ] 2. SERP RESEARCH — pull the ACTUAL top rankers first (Semrush phrase_organic) + WebSearch "${kw}".
          Use the REAL ranking guide pages as the serp --urls (NOT long off-SERP listicles, or you'll chase
          the wrong word count). If the rankers are thin/incoherent — a ~270w page, Reddit, OTA listings,
