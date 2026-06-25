@@ -1690,6 +1690,7 @@ And if you change one habit after reading this: before you book anything, check 
       ],
     },
     date: "2026-06-22",
+    updated: "2026-06-24",
     author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
@@ -1724,23 +1725,31 @@ Waikiki is the dense strip of hotels along Honolulu's south shore, and it's wher
 
 The trade-off is that Waikiki is busy and built-up. If your picture of Hawaii is an empty beach at dawn, you'll find calmer water early, but you won't find solitude. For a first visit, the convenience usually wins.
 
+Waikiki has more range than its skyline suggests. The Diamond Head end, around Sans Souci and Kapiolani Park, is calmer and more local; the central stretch by the Royal Hawaiian and the Duke Kahanamoku statue is the busy heart; and the Ala Moana end leans toward shopping and a slightly lower nightly rate. The beach itself is a run of named sections — Kuhio, Queen's, Fort DeRussy — each with its own character, all walkable, all gentle enough for a first ocean swim. Snorkel gear, surf lessons and catamaran sails leave right off the sand.
+
 **Best for:** first-timers, no-car trips, nightlife and dining, shorter stays.
 
 ::hotel lp1e13c
 
 ## Ko Olina — calm lagoons for families
 
-About 40 minutes west of the airport, Ko Olina is a planned resort area built around four calm, man-made lagoons. The water is gentle and sheltered, which makes it the standout choice for families with small children. The resorts here are self-contained, so you can settle in and barely leave.
+About 40 minutes west of the airport, Ko Olina is a planned resort area built around four calm, man-made lagoons. The water is gentle and sheltered, which makes it the standout choice for families with small children. The resorts here are self-contained, so you can settle in and barely leave. The four lagoons — Kohola, Honu, Nai'a and Ulua — are calm, snorkelable and numbered for easy navigating with kids; Disney's Aulani and the Four Seasons anchor the accommodations, with a marina, a championship golf course and a weekly luau rounding out a stay you never really have to leave. Look here for the gentlest water on the island.
 
 The cost of that calm is distance. Ko Olina is far from Honolulu's restaurants, the North Shore and most of the island's sights, so you'll either rent a car or accept longer drives for day trips.
 
 **Best for:** families with young kids, resort-focused stays, travelers who want quiet over convenience.
+
+The marquee Ko Olina resorts — Disney's Aulani and the Four Seasons — book direct, but the Hampton Inn & Suites in Kapolei nearby is the rate-verified pick for a lagoon trip without the resort bill.
+
+::hotel lp96b5f
 
 ## The North Shore — surf and slow living
 
 The North Shore is the Oahu of postcards: long beaches, food trucks, sea turtles, and in winter, some of the biggest surf in the world. The pace is noticeably slower than Honolulu, and lodging leans toward vacation rentals and small inns rather than big hotels.
 
 You'll want a car here, and you should know that the famous winter waves mean strong currents — beautiful to watch, not always safe to swim. In summer the same beaches turn calm and swimmable.
+
+The North Shore is a string of legendary beaches over a few miles: Waimea Bay for the cliff jump and summer snorkel, Ehukai for the Banzai Pipeline, Sunset Beach for the winter giants, and Laniakea where green sea turtles haul out on the sand. Haleiwa town anchors it with shrimp trucks, shave ice and surf shops. Lodging is overwhelmingly vacation rentals and a few small inns — the one big resort, Turtle Bay, books direct — so plan to reserve a house or a condo, and to drive.
 
 **Best for:** surfers, couples wanting quiet, travelers who'll rent a car and don't need nightlife.
 
@@ -1750,13 +1759,83 @@ Over the mountains on the east side, Kailua and Lanikai have some of the island'
 
 It's a 30-minute drive to Waikiki, so a car is close to essential, but you trade convenience for beaches that many people consider the best on the island.
 
+Kailua Beach and neighboring Lanikai are the draw — soft sand, impossibly blue water, and the two Mokulua islets offshore that kayakers paddle to on calm mornings. The town has an easygoing strip of cafes, a Whole Foods and the obligatory shave ice, but no hotels to speak of: lodging here is almost entirely vacation rentals, so it suits travelers who'd rather book a house than a front desk.
+
 **Best for:** beach purists, return visitors, anyone renting a home rather than a hotel room.
 
 ## Downtown Honolulu and Ala Moana — city and shopping
 
-Just west of Waikiki, the Ala Moana and downtown areas put you next to the island's largest shopping center and a more local, business-district feel. It's a practical base if you're mixing a city trip with the beach, and it's typically a touch quieter than Waikiki proper while staying just as connected.
+Just west of Waikiki, the Ala Moana and downtown areas put you next to the island's largest shopping center and a more local, business-district feel. It's a practical base if you're mixing a city trip with the beach, and it's typically a touch quieter than Waikiki proper while staying just as connected. Ala Moana Center is the largest open-air mall anywhere and a destination in itself; historic Chinatown nearby has become the island's most interesting dinner-and-cocktail district; and you're near Pearl Harbor, the downtown museums and the new Skyline rail. It's a useful base for a longer or work-mixed travel week — the kind of practical tips return visitors use once they've done the Waikiki thing.
 
 **Best for:** shoppers, longer or work-mixed stays, travelers who want Waikiki's access with a bit more breathing room.
+
+## What to Do on Oahu: Pearl Harbor, Diamond Head and the Beaches
+
+**Where you stay on Oahu shapes how easily you reach what you came for.** From Waikiki you can walk up Diamond Head for the classic crater hike, snorkel Hanauma Bay a short drive east, and reach Pearl Harbor and the USS Arizona Memorial in under half an hour. The North Shore — Waimea Bay, the Banzai Pipeline, the turtles at Laniakea and the food trucks of Haleiwa — is about an hour up from town, and the Windward side's Kailua and Lanikai beaches sit just over the Pali. The island packs a national memorial, a volcanic crater, the best surf in the world and some of the country's best beaches into a space you can drive across in an afternoon.
+
+Waikiki Beach is the obvious first stop — calm, lifeguarded and lined with surf schools — but the snorkeling at Hanauma Bay, the lookout at the Nuuanu Pali, the Polynesian Cultural Center up the windward coast and the full circle-island drive are all day trips from a central base. Pearl Harbor's USS Arizona Memorial, the Punchbowl cemetery and the Bishop Museum cover the history; Diamond Head, Koko Head and the Manoa Falls trail cover the hikes. A little planning goes a long way, since you could fill a week without repeating a beach.
+
+## Getting Around Oahu: Do You Need a Car?
+
+**You can circle the whole island in a day — it takes about four to five hours to drive around Oahu with stops — which is why most people rent a car for at least part of a trip.** From a Waikiki base you genuinely don't need one: the beach, the dining, TheBus (which reaches most of the island) and the growing Skyline rail cover a first trip. But the North Shore, the Windward beaches and Ko Olina all reward a car, and a rental turns the island's far corners from a tour-bus day into your own. Just park it in Waikiki — parking there is tight and pricey — and pick it up the days you're exploring.
+
+## A Few More Oahu Hotels Worth Booking
+
+Beyond Waikiki's flagship, here are more real, rate-verified Oahu stays — guest scores as of 2026, and no stamped prices, because island rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| The Surfjack Hotel & Swim Club | Waikiki | 9.4 | A design-forward boutique |
+| Kaimana Beach Hotel | Waikiki, Diamond Head end | 9.4 | A quieter beachfront |
+| Halekulani | Waikiki | 9.3 | The legendary splurge |
+| The Kahala Hotel & Resort | Kahala | 9.2 | Luxury away from the strip |
+
+### The Surfjack Hotel & Swim Club — the design-forward boutique
+
+A 9.4 boutique a couple of blocks back from the sand, built around a pool with "wish you were here" tiled across the bottom — the stylish, walkable alternative to the big Waikiki towers.
+
+::hotel lp32652
+
+### Kaimana Beach Hotel — the quieter beachfront
+
+A 9.4 right on Sans Souci Beach at the calm Diamond Head end of Waikiki, away from the busiest stretch — a beachfront base for travelers who want the location without the crush.
+
+::hotel lp1b8d4
+
+### Halekulani — the legendary splurge
+
+Waikiki's grande dame, a 9.3 oceanfront landmark with the famous orchid pool and some of the best service in Hawaii. The splurge, and worth it for a special trip.
+
+::hotel lp2adc7
+
+### The Kahala Hotel & Resort — luxury away from the strip
+
+A 9.2 resort ten minutes east in the exclusive Kahala neighborhood, on its own quiet beach with a lagoon of dolphins — Oahu luxury without Waikiki's density.
+
+::hotel lp1dd71
+
+## Hotels or a Vacation Rental on Oahu?
+
+**On Oahu the choice between a hotel and a vacation rental tracks the map.** The hotels cluster in Waikiki and Ko Olina — a front desk, daily housekeeping, a pool and the walk-to-everything convenience that suits a first trip or a short one. The vacation rentals concentrate on the North Shore and the Windward side around Kailua, where there are barely any hotels at all: you book a house or a condo, get a kitchen and more room for the money, and trade the lobby for your own lanai. On a budget, or for a family that wants to cook a few meals, the rental options usually win; for a no-planning beach week, the Waikiki hotels do. The lone big North Shore resort, Turtle Bay Resort, books direct rather than through us, so plan to reserve a rental out that way — and since Hawaii has tightened its short-term-rental rules, book a licensed listing rather than a too-good-to-be-true one.
+
+## When to Visit Oahu
+
+**Oahu is a year-round island, but the season quietly changes where you'd want to stay.** From November to March the North Shore lights up with the famous winter swell — the surf contests, the giant Waimea and Pipeline waves — while the same months bring humpback whales offshore plus the island's peak rates and crowds. Summer flips it: the North Shore calms to glassy and swimmable, Waikiki Beach and the South shore stay reliably sunny, and the trade winds keep even August comfortable. Spring and fall are the value sweet spot — warm water, thinner crowds, lower rates. Whenever you come, book Waikiki and Ko Olina well ahead in winter and around the holidays.
+
+## Match Your Trip to an Oahu Base
+
+If you're still deciding, start from the trip rather than the map.
+
+| Your trip | Stay |
+|---|---|
+| First time on Oahu | Waikiki |
+| Family with young kids | Ko Olina |
+| Surf and the North Shore | A North Shore rental |
+| The best beaches | Kailua / Lanikai |
+| On a budget | Waikiki off the beach, or a rental |
+| No car, walk everywhere | Waikiki |
+
+Most first-timers do best with a Waikiki base and a rental car for two or three days of exploring — Pearl Harbor and Diamond Head one day, the North Shore and Kailua another. Return visitors and beach purists often skip Waikiki entirely for a Kailua or North Shore house. Either way, Oahu is small enough that no single base locks you out of the rest of the island.
 
 ## At a glance
 
