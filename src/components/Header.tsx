@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import VibeSearchCta from "@/components/VibeSearchCta";
+import AuthNav from "@/components/AuthNav";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -32,7 +33,8 @@ export default function Header() {
               ))}
             </nav>
 
-            <div className="flex items-center gap-2 shrink-0">
+            <div className="flex items-center gap-2.5 shrink-0">
+              <AuthNav />
               <VibeSearchCta />
               <button
                 onClick={() => setOpen(!open)}
