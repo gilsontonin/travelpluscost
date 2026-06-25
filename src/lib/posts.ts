@@ -1223,7 +1223,7 @@ Once you've picked your side of town, [check current Moab prices](/search?destin
         a: "Five to seven is the sweet spot. That's enough to settle into one sunny base, take a full day for the Road to Hana, catch a Haleakala sunrise, and still have beach days. Shorter and you're rushing; much longer and one base starts to feel small.",
       },
     ],
-    body: `Where to stay in Maui comes down to one question first: **the West side or the South side?** Below are the real places to stay — searchable at one honest price, the same on every device — then the full area by area guide, as of 2026.
+    body: `Where to stay in Maui comes down to one question first: **the West side or the South side?** Below are the real places to stay — searchable at one honest price, the same on every device — then the full area by area guide to this big, drive-heavy destination, as of 2026.
 
 ::areas Maui
 
@@ -1278,7 +1278,7 @@ The big decision is really just which coast, so start there before you ever look
 
 ## Kaanapali (West Maui): The Easy Default
 
-**Kaanapali is the best all round base for a first trip to Maui.** It's a three mile stretch of golden beach lined with large, well known resorts, an oceanfront walking path that connects them, and a lava promontory called Black Rock that swimmers snorkel by day and watch the sunset cliff dive from at dusk.
+**Kaanapali is the best all round base for a first trip to Maui.** It's a three mile stretch of golden beach lined with large, sprawling Maui resorts — the Hyatt Regency, the Sheraton and the Westin among them — an oceanfront walking path that connects them, and a lava promontory called Black Rock that swimmers snorkel by day and watch the sunset cliff dive from at dusk.
 
 ::details More on Kaanapali
 
@@ -1286,7 +1286,7 @@ It's about 45 minutes to an hour from the Kahului airport, lively without tippin
 
 The trade off is that you pay for the location and the crowds. Kaanapali is busier and pricier than Kihei to the south, and in whale season the rates climb with the crowds. For most first timers, the walkable beach and the no fuss logistics are worth the premium — you came to be on the sand, and here you can step onto it without starting the car.
 
-The strip is built for staying put. Whalers Village drops open air restaurants, shopping and activities right on the sand, the resorts run oceanfront bars and a luau or two, and the paved beach path links it all for an easy sunset stroll.
+The strip is built for staying put. Whalers Village drops open air restaurants, shopping and activities right on the sand, the resorts run oceanfront bars, big pools and a luau or two — with ocean-view rooms and suites steps from the sand — and the paved beach path links it all for an easy sunset stroll.
 
 Black Rock, at the north end by the Sheraton, is the bonus. Wade in and you're snorkeling a healthy little reef within a few fin kicks, no boat required. It's also the launch point for the nightly cliff dive ceremony, which is exactly as touristy and as fun as it sounds.
 
@@ -1318,9 +1318,9 @@ Dining is mostly inside the resorts and a small cluster at the Kapalua and Napil
 
 **Wailea is where Maui keeps its glossiest resorts.** On the sunny, dry South side about 30 to 40 minutes from the airport, it's a manicured run of beachfront hotels, a paved 1.3-mile coastal path, and a string of calm, swimmable beaches.
 
-The Grand Wailea, the Four Seasons, the Andaz and the Fairmont Kea Lani all sit along this stretch, and the beaches live up to the addresses. Wailea Beach and Mokapu are wide and gentle, Ulua is the local snorkeling favorite, and the Shops at Wailea handle the upscale dinner and shopping. It is, frankly, Maui at its most polished.
+The Grand Wailea, the Four Seasons, the Andaz Maui (a Hyatt) and the Fairmont Kea Lani all sit along this stretch, with private cabanas and pools and the beaches live up to the addresses. Wailea Beach and Mokapu are wide and gentle, Ulua is the local snorkeling favorite, and the Shops at Wailea handle the upscale dinner and shopping. It is, frankly, Maui at its most polished.
 
-The honest downside is the price. Wailea is the most expensive area to sleep on Maui, and the resorts know exactly what the view is worth. If you want the South side sun without the South side bill, Kihei is five minutes up the road with the same weather and a fraction of the rate.
+The honest downside is the price. Wailea is the most expensive area to sleep on Maui, with multiple distinct resorts that each know exactly what the ocean views are worth. If you want the South side sun without the South side bill, Kihei is five minutes up the road with the same weather and a fraction of the rate.
 
 There's more range than the headline resorts suggest. The Fairmont Kea Lani and the Wailea Beach Resort Marriott sit along the same path, and condos at the back of the neighborhood let you borrow the address for less. Ulua Beach is the reliable morning snorkel, while Polo and Mokapu handle the swimming.
 
@@ -1334,7 +1334,7 @@ The Wailea Beach Path ties it all together — a flat, paved 1.3-mile walk past 
 
 ## Kihei (South Maui): Sunny and the Value Pick
 
-**Kihei is the smart money base, and the one I'd point most first timers to.** It's Wailea's laid back neighbor: a long, flat run of condos, smaller hotels and strip mall plate lunch spots fronting a chain of swimmable beaches, all under the driest, sunniest skies on the island, where the snorkeling off the rocky points is excellent.
+**Kihei is the smart money base, and the one I'd point most first timers to.** It's Wailea's laid back neighbor: a long, flat run of condos, smaller hotels and strip mall plate lunch spots fronting a chain of swimmable beaches, all under the driest, sunniest skies on the island — drier even than the West side — where the snorkeling off the rocky points is excellent.
 
 The Kamaole Beach Parks — known locally as Kam I, II and III — are the heart of it: easy sand, lifeguards, and calm water for families. Cove Park is where half the island learns to surf. Because so much of Kihei is condos, you can get a kitchen, a lanai and room to spread out for what a single resort room costs in Wailea.
 
@@ -1392,7 +1392,7 @@ Hana town itself is barely a town — a store, a few food trucks, a famous bay a
 
 ## Paia and Upcountry — North Shore boho and cool elevation
 
-**Paia and Upcountry suit road trippers and surfers more than beach loungers.** Paia is a small, artsy North Shore town beside Hookipa, the windsurfing and surf beach where the wind and waves draw pros, and green sea turtles haul out most afternoons. It's also the last real stop for fuel and food before the Road to Hana.
+**Paia and Upcountry suit road trippers and surfers more than beach loungers.** Paia is a small, artsy North Shore town beside Hookipa, the windsurfing and surf beach where the wind and waves draw pros, and green sea turtles haul out most afternoons. It keeps a handful of boutique hotels and inns, and it's the last real stop for fuel and food before the Road to Hana.
 
 Upcountry climbs the slopes of Haleakala into cooler, greener air — the paniolo town of Makawao, the ranches and lavender of Kula, and the road to the Haleakala summit for the famous sunrise above the clouds. It's central for driving the whole island and a few degrees cooler when the coast feels heavy.
 
@@ -1424,7 +1424,7 @@ Kahului, meanwhile, is pure function — the airport, the malls and the gas you'
 
 ## Hotels or a Vacation Rental?
 
-**On Maui, the choice between a resort and a vacation rental matters almost as much as the area.** Resorts cluster in Kaanapali and Wailea — major properties including pools, daily housekeeping, activities desks and resort amenities. Vacation rentals and condos — concentrated in Kihei and the West Maui condo strip — trade that polish for a kitchen, a washer, and far more room for the money — a mix of accommodations that usually includes a lanai.
+**On Maui, the choice between a resort and a vacation rental matters almost as much as the area.** Resorts cluster in Kaanapali and Wailea — a Maui resort gets you a pool, daily housekeeping, an activities desk and the amenities guests expect. Vacation rentals and condos — concentrated in Kihei and the West Maui condo strip — trade that polish for a kitchen, a washer, and far more room for the money — a mix of accommodations that usually includes a lanai.
 
 For couples on a short trip, the full resort experience usually wins. For families, longer stays, or travelers watching the budget, a condo or rental is often the smarter option — you cook a few meals, spread out, and skip a resort fee or two. Plenty of visitors split it: a few resort nights to be pampered, the rest in a rental to settle in.
 
