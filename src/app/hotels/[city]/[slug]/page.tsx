@@ -76,7 +76,10 @@ export async function generateMetadata({
     description = `Compare ${hotel.name}${loc ? ` in ${loc}` : ""} — the room rate plus one small flat fee, the same price for everyone. No surveillance pricing.`;
   }
   description = description.length > 160 ? `${description.slice(0, 157).replace(/\s+\S*$/, "")}…` : description;
-  const url = hotelHref({ id, name: hotel.name, city: hotel.city });
+  // Canonical from the DIRECTORY name/city — the stable slug the sitemap and every internal link use.
+  // The live LiteAPI name drifts (rentals get retitled), which made the page canonicalize away from the
+  // sitemap URL ("non-canonical URL in sitemap"). The id resolves either slug; this keeps them in sync.
+  const url = hotelHref({ id, name: dir?.name ?? hotel.name, city: dir?.city ?? hotel.city });
   return {
     title: { absolute: `${titleCore} | ${year} Rates, Photos & Reviews` },
     description,
@@ -110,6 +113,9 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
   const hotel = await getHotel(id);
   if (!hotel) notFound();
   const dir = await getDir(id);
+  // Self URL from the DIRECTORY name — matches the canonical + sitemap + internal links (the live
+  // LiteAPI name drifts as listings get retitled, which would make these self-refs non-canonical).
+  const selfHref = hotelHref({ id, name: dir?.name ?? hotel.name, city: dir?.city ?? hotel.city });
   // Landmarks / "nearby" only exist for our curated markets; non-curated hotels degrade gracefully.
   const region = REGIONS.find((r) => r.name.toLowerCase() === (hotel.island || "").toLowerCase());
   const landmarks = region?.landmarks ?? [];
@@ -148,7 +154,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
             itemListElement: [
               { name: "Home", path: "/" },
               { name: cityLabel, path: cityHubHref },
-              { name: hotel.name, path: hotelHref({ id: hotel.id, name: hotel.name, city: hotel.city }) },
+              { name: hotel.name, path: selfHref },
             ].map((c, i) => ({
               "@type": "ListItem",
               position: i + 1,
@@ -165,7 +171,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
             "@context": "https://schema.org",
             "@type": "Hotel",
             name: hotel.name,
-            url: `${SITE_URL}${hotelHref({ id: hotel.id, name: hotel.name, city: hotel.city })}`,
+            url: `${SITE_URL}${selfHref}`,
             ...(hotel.images?.length ? { image: hotel.images.slice(0, 6) } : hotel.image ? { image: hotel.image } : {}),
             ...(hotel.address || hotel.city
               ? {
