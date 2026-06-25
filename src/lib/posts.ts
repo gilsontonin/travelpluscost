@@ -1003,6 +1003,287 @@ Comparing Bend with somewhere else? See our other [where to stay guides](/blog),
 Once you've picked your side of town, [search current Bend prices](/search?destination=Bend&adults=2) and sort by what matters to you.`,
   },
   {
+    slug: "where-to-stay-in-sedona",
+    title: "Where to Stay in Sedona, Arizona: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Sedona, Arizona in 2026: the best areas (Uptown, West Sedona, the Village of Oak Creek, Oak Creek Canyon) with real hotels and honest rates.",
+    excerpt:
+      "Walkable Uptown, value in West Sedona, a quieter base in the Village of Oak Creek, or a creekside cabin in Oak Creek Canyon? A plain-English guide to picking your Sedona hotel — by area, budget and red-rock view.",
+    tldr: {
+      answer:
+        "Sedona is a red-rock town about two hours north of Phoenix, at 4,350 feet. Base in Uptown to walk to the shops and trailheads; West Sedona for value and the best hiking access; the quieter Village of Oak Creek for a cheaper stay near Bell Rock; or Oak Creek Canyon for a creekside cabin under the pines.",
+      points: [
+        "**Uptown Sedona** — walkable shops, restaurants and red-rock views; first-timers, no car.",
+        "**West Sedona** — value, residential, closest to the trailheads; hikers, longer stays.",
+        "**The Village of Oak Creek** — quieter and often cheaper, by Bell Rock; couples, budgets.",
+        "**Oak Creek Canyon** — creekside cabins under the pines; nature and romance.",
+        "**It's ~2 hours north of Phoenix (PHX)** at 4,350 ft — fly into Phoenix and drive; spring and fall are the sweet spots.",
+      ],
+    },
+    date: "2026-06-24",
+    updated: "2026-06-24",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/178922908.jpg",
+      alt: "Adobe casitas of Enchantment Resort glowing at dusk beneath the red rock cliffs of Boynton Canyon in Sedona, Arizona",
+      credit: { name: "Enchantment Resort, Sedona" },
+    },
+    region: { name: "Sedona", destination: "Sedona" },
+    faqs: [
+      {
+        q: "How far is Sedona from Phoenix?",
+        a: "About 116 miles and a two-hour drive south via I-17 — Phoenix Sky Harbor (PHX) is the airport nearly everyone flies into, and the climb up through the high desert into the red rocks is part of the trip. Flagstaff is closer, about 45 minutes north, but has a much smaller airport.",
+      },
+      {
+        q: "What is the closest airport to Sedona?",
+        a: "Practically speaking, Phoenix Sky Harbor (PHX), about two hours south, is the one to fly into — it has the flights and the rental cars. Flagstaff (FLG), roughly 45 minutes north, is a small commercial airport. Sedona's own airport (SEZ) up on Airport Mesa is for scenic flights and private planes, not commercial service, so plan to drive in.",
+      },
+      {
+        q: "How far is the Grand Canyon from Sedona?",
+        a: "About 110 miles and a little over two hours to the South Rim, which makes the Grand Canyon a long but very doable day trip from Sedona — most people loop up through Oak Creek Canyon and Flagstaff. If your schedule allows, an overnight beats a rushed there-and-back.",
+      },
+      {
+        q: "What is the elevation of Sedona?",
+        a: "Sedona sits at about 4,350 feet — high desert, not high altitude, so most people don't feel it. The air is dry and the sun is strong, though, so carry more water than you think you need on the trails.",
+      },
+      {
+        q: "Does it snow in Sedona, Arizona?",
+        a: "Occasionally. Winters are mild and sunny, but a few times each year a dusting of snow settles on the red rocks — genuinely one of the most beautiful things you'll see here — and it usually melts within a day or two. Summers are hot but noticeably cooler than Phoenix.",
+      },
+      {
+        q: "When is the best time to visit Sedona?",
+        a: "Spring (March to May) and fall (September to November) are the sweet spots — warm days, cool nights, ideal hiking weather, with the crowds and rates to match. Summer is hot but cheaper and still well below Phoenix's heat; winter is quiet, mild and the best value.",
+      },
+      {
+        q: "What is the best area to stay in Sedona for first-timers?",
+        a: "Uptown Sedona. You can walk to the shops, the restaurants and the Tlaquepaque arts village, you're ringed by red-rock views, and you're central to the trailheads and the Pink Jeep tours. It's the easiest, most walkable base for a first trip.",
+      },
+      {
+        q: "What is Sedona known for?",
+        a: "Its red-rock formations — Cathedral Rock, Bell Rock, Devil's Bridge — plus the energy 'vortexes,' a thriving art and gallery scene, spa-and-wellness resorts, Pink Jeep off-road tours, and some of the best hiking in the Southwest. It's a small town that punches far above its size on scenery.",
+      },
+    ],
+    body: `Where to stay in Sedona, Arizona really comes down to four areas: **Uptown, West Sedona, the Village of Oak Creek, and Oak Creek Canyon.** Pick by what you want out the window — the walkable shops, the trailheads, a quieter red-rock view, or a creek under the pines.
+
+None of them is far from the good stuff. Sedona is small and the red rocks are visible from nearly everywhere, so the "wrong" base is still about ten minutes from the right trailhead.
+
+Below are the real, bookable hotels in each area, then the honest, area-by-area guide to where to stay in Sedona, as of 2026.
+
+Sedona is a high-desert town of about 10,000 people wrapped in some of the most photographed red-rock scenery in the country — roughly two hours north of Phoenix, at 4,350 feet, where the saguaro gives way to junipers and sandstone. It's known for its hiking, its art galleries, its spas, and the energy "vortexes" that draw a particular kind of crowd. The decision isn't whether you'll have a view; it's which red rocks you want, and how much you'll pay for them.
+
+::infographic sedona-by-numbers
+
+## Where to Stay in Sedona Arizona: Hotels by Area at a Glance
+
+**Four areas, all ringed by red rock.** One deciding factor: whether you'd rather walk to dinner, or wake up at a trailhead.
+
+| Area | The feel | Best for | What's nearby |
+|---|---|---|---|
+| [Uptown Sedona](/search?destination=Sedona&adults=2) | Walkable shops + red-rock views | First-timers, no car | Tlaquepaque, the trolley, trailheads |
+| [West Sedona](/search?destination=Sedona&adults=2) | Residential, value, trailheads | Hikers, longer stays | Cathedral Rock, Airport Mesa |
+| [Village of Oak Creek](/search?destination=Sedona&adults=2) | Quieter, value, golf | Couples, budgets | Bell Rock, Courthouse Butte |
+| [Oak Creek Canyon](/search?destination=Sedona&adults=2) | Creekside cabins under pines | Nature, romance | Slide Rock, the canyon drive |
+
+::infographic sedona-uptown-vs-village
+
+## Uptown Sedona, Arizona: Walk to the Shops and the Views
+
+**Uptown is the walkable first-timer base — the shops, the restaurants, the trolley and the famous red-rock views all on foot.** This is the tourist heart of Sedona: the Tlaquepaque arts village, the Pink Jeep depot, galleries and patios, with Oak Creek running just below it. You can leave the car parked, and most of the marquee trailheads are a few minutes' drive.
+
+The trade is that Uptown is the busiest, priciest corner of town, and Highway 89A through it crawls on a summer afternoon. For a first trip — or any trip where walking to dinner matters — it's still the spot.
+
+### El Portal Sedona Hotel — the Uptown splurge
+
+A hacienda-style luxury inn beside the Tlaquepaque arts village, scoring a 9.7 across more than 500 reviews, with thick adobe walls, a quiet courtyard and some of the warmest service in town. It's pet-friendly and walkable to everything, and it earns that score by getting the details right.
+
+::hotel lp378b1
+
+### L'Auberge De Sedona — creekside at the edge of Uptown
+
+A 9.0-rated cottage resort right on Oak Creek at the foot of Uptown, with creekside rooms, a well-known restaurant and the sound of the water doing most of the work. It ranks on its own for where to stay in Sedona, and a creekside cabin here is about as romantic as the town gets.
+
+::hotel lp2c494
+
+### Matterhorn Inn — the walkable value pick
+
+A 9.0 in the heart of Uptown with private balconies that look straight at the red rocks, a small pool and a rate that leaves money for the Pink Jeep. For walkability per dollar, it's hard to beat.
+
+::hotel lpd3a0f
+
+### Mountain Modern Sedona — modern value in Uptown
+
+A 9.0 boutique hotel a short walk from Uptown's restaurants, with modern rooms, a pool deck and easy access to the trailheads. It's a stylish, mid-priced base that doesn't feel like a chain.
+
+::hotel lp1f646
+
+### Amara Resort Spa — the boutique that books direct
+
+Amara Resort Spa is the Hyatt-run boutique hotel perched above Oak Creek in Uptown, with an infinity pool over the water, a full spa and a design-forward look. It books direct on its own site rather than through us, so we can't show an honest all-in price — but it's the Uptown property worth knowing about if a spa stay is the point.
+
+**Best for:** first-timers, couples, anyone who'd rather walk than drive to dinner.
+
+If Uptown's rates raise an eyebrow, the good news is the natural beauty is free from everywhere — [search Uptown Sedona dates](/search?destination=Sedona&adults=2) and sort by price.
+
+## West Sedona: Value and the Trailheads
+
+**West Sedona is the residential, better-value side — spread along 89A, closest to the big trailheads and the everyday restaurants locals actually use.** It's less polished than Uptown and a short drive from the shops, but you're nearer to Cathedral Rock, the Airport Mesa overlook and a string of grocery-and-taco normal life. The Soldier Pass and Devil's Bridge trailheads are out this way too, and the everyday restaurants — taco shops, a brewery, a good Thai place — undercut Uptown on price. For hikers and longer stays, this is the sensible base.
+
+### Casa Sedona Inn — the West-side bed-and-breakfast
+
+A 9.6-scoring adobe bed-and-breakfast tucked into West Sedona, with red-rock views from the patios, a full breakfast and the kind of quiet that Uptown can't offer. It's a romantic, grown-up base a few minutes from the trails.
+
+::hotel lp36407
+
+### Sky Ranch Lodge — the view, on Airport Mesa
+
+Perched on Airport Mesa between Uptown and the West side, with panoramic red-rock views and more than 3,400 guest reviews behind its 9.1, plus gardens and a pool. You're paying for one of the best views in town at a mid-range rate.
+
+::hotel lp4f5c8
+
+### Residence Inn by Marriott Sedona — kitchens and longer stays
+
+A 9.0 all-suite Residence Inn on the West side — kitchens, free breakfast and room to spread out, which makes it the easy pick for families or a stay of several nights.
+
+::hotel lp6556d98b
+
+### The Wilde Resort Spa — retro-cool on the West side
+
+A 9.2 retro-cool resort out west, with a lively pool scene, a full spa and an easy-access location near the Cathedral Rock and Airport Mesa trailheads. It's the design-forward, social option away from the Uptown crush.
+
+::hotel lp37d8e
+
+### Villas of Sedona — suites for a longer stay
+
+A 9.0 all-villa property on the West side, with roomy one- and two-bedroom suites and a pool — a residential, good-value base for a longer stay or a small group.
+
+::hotel lp9cc13
+
+**Best for:** hikers, families, and anyone basing their trip around the trails.
+
+## The Village of Oak Creek: Quieter, and Often Cheaper
+
+**The Village of Oak Creek is the quieter, more affordable base — about fifteen minutes south, right under Bell Rock and Courthouse Butte, with golf and the same red rocks for less.** "The Village," as locals call it, trades walkable Uptown for elbow room and value, and it's a short drive into town when you want the shops. Two golf courses, the easy Bell Rock Pathway and a cluster of outlet shops are right here, and the trailhead crowds are thinner than in town. For couples, golfers and budget-minded trips, it's the smart play.
+
+### Red Agave Resort — value with a Bell Rock view
+
+A 9.7-scoring value standout in the Village, with kitchen suites, a pool and Bell Rock filling the windows. For the score and the views at this rate, it's one of the genuine bargains in the area.
+
+::hotel lp4b903
+
+### Las Posadas of Sedona — all-suite, southwestern
+
+A 9.2 all-suite inn in the Village, with big southwestern suites, fireplaces and full breakfasts. It's a roomy, comfortable base that feels more private than a standard hotel.
+
+::hotel lp3b764
+
+**Best for:** couples, budgets, golfers, and anyone happy to drive ten minutes for the shops.
+
+Torn between the walkable Uptown splurge and the value-and-a-view down in the Village? Here's El Portal against Red Agave, side by side.
+
+::compare lp378b1 lp4b903
+
+## Oak Creek Canyon and the Splurge Resorts
+
+**For nature or a once-in-a-while splurge, head into the canyon and the destination resorts — creekside cabins under the pines, or adobe casitas under the cliffs.** Oak Creek Canyon climbs north of town along 89A, cooler and greener than the desert floor, and the resort enclaves out west sit in their own pockets of red rock. The canyon drive is one of the prettiest in the state — the West Fork trail and Slide Rock are along the way, and it's the scenic route up to Flagstaff and the Grand Canyon.
+
+### Junipine Resort — creekhouse cabins in the canyon
+
+A 9.2-rated cluster of creekhouse cabins up in Oak Creek Canyon, under the pines and beside the water, a short drive from Slide Rock. It's the pick when you want the creek and the trees more than the town.
+
+::hotel lp28369
+
+### Enchantment — the Boynton Canyon resort
+
+A 9.2-rated luxury resort spread across Boynton Canyon, with adobe casitas under the cliffs, multiple restaurants and the celebrated Mii amo spa next door. It's a splurge, and it's the cover of this guide for a reason.
+
+::hotel lpd71a3
+
+### Adobe Grand Villas — the over-the-top splurge
+
+A near-perfect 9.8, with themed villas, fireplaces, two-person tubs and breakfast delivered to the door — the kind of romantic, all-out stay people book for an anniversary. It is not cheap, and it is not trying to be.
+
+::hotel lp375b4
+
+### Lantern Light Inn — a romantic adults' getaway
+
+A 9.2 adults-only bed-and-breakfast built for romance, with fireplaces, two-person tubs and a quiet setting — the kind of small property couples book for an anniversary or a proposal.
+
+::hotel lpb15e5
+
+**Best for:** honeymoons, anniversaries, and anyone whose trip is about the resort as much as the town.
+
+## How Many Days in Sedona, and When to Go
+
+**Two to three days is the sweet spot for a first visit** — enough for a couple of marquee hikes, a Pink Jeep tour, the Chapel and a slow afternoon in Uptown, with a fourth day if you want the Grand Canyon. Spring and fall are ideal: warm days, cool nights and the best light on the rocks, though they bring the crowds and the higher rates.
+
+Summer is hot but runs cooler than Phoenix and stays cheaper, so early-morning hikes and afternoon pool time is the move. Winter is the quiet, mild, best-value season, and a rare dusting of snow on the red rocks is worth the gamble.
+
+## What to Do in Sedona, Arizona
+
+**Almost everything worth doing in Sedona is outdoors — and a short drive from any of the four areas.** Pick the base closest to the experience you came for, and the rest of the trip gets easier.
+
+### The red-rock hikes and the vortexes
+
+The headline hikes are Cathedral Rock — a short, steep scramble to the saddle on every Sedona postcard — Devil's Bridge with its natural sandstone arch, Bell Rock and Courthouse Butte down by the Village, and Boynton Canyon out west. The Airport Mesa loop is the easy sunset spot, the whole town glowing red below you. Four of these locations — Airport Mesa, Bell Rock, Cathedral Rock and Boynton Canyon — are the famous energy "vortexes"; whether you feel the energy or just a remarkable view, they are genuinely beautiful, and they fill up early.
+
+### Jeeps, the chapel, and the art
+
+Beyond the trails, the Pink Jeep tours bounce you up slickrock you can't drive yourself — an outdoor experience worth the splurge for the access alone. The Chapel of the Holy Cross is built straight into the red rock and free to visit, and the Tlaquepaque arts village in Uptown is the place to wander between galleries, courtyards and a long lunch. In summer, Slide Rock State Park up Oak Creek Canyon is the natural water park locals grew up on, a cold slide over smooth sandstone.
+
+### Day trips from Sedona
+
+For bigger days out, Grand Canyon National Park's South Rim is a little over two hours north, usually reached by the gorgeous drive up Oak Creek Canyon through Flagstaff, which is about 45 minutes away. Antelope Canyon, Montezuma Castle and the old copper-mining town of Jerome spread out from there, an easy add for guests with a few days to explore. Wherever you base yourself, [search current Sedona hotel prices](/search?destination=Sedona&adults=2) for your dates and pick the spot closest to whatever you came to do.
+
+## Getting Around Sedona, and the Red Rock Pass
+
+**You'll want a car, plus a Red Rock Pass for the trailheads.** Sedona is small, but a car makes everything easier — the areas, the trailheads and the day trips are spread along Highway 89A and I-17, and parking in Uptown fills early on a busy afternoon.
+
+Most of the popular trailheads sit on national-forest land and need a **Red Rock Pass** (a few dollars a day, sold at the visitor center and self-serve kiosks) or a federal parks pass on the windshield. In the busy seasons the free Sedona Shuttle runs to the most-crowded trailheads — Cathedral Rock, Soldier Pass, Dry Creek — so you can skip the parking scramble and travel straight to the trail.
+
+## The Sedona, Arizona Hotels in This Guide, Side by Side
+
+All the rate-verified picks above in one place, by area and guest score — so you can compare without scrolling back through four neighborhoods:
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Adobe Grand Villas | West Sedona | 9.8 | An over-the-top splurge |
+| El Portal Sedona Hotel | Uptown | 9.7 | Walkable luxury |
+| Red Agave Resort | Village of Oak Creek | 9.7 | Value with a view |
+| Casa Sedona Inn | West Sedona | 9.6 | A quiet B&B base |
+| Enchantment | Boynton Canyon | 9.2 | A resort splurge |
+| Lantern Light Inn | West Sedona | 9.2 | Adults-only romance |
+| The Wilde Resort Spa | West Sedona | 9.2 | Retro-cool pool and spa |
+| Las Posadas of Sedona | Village of Oak Creek | 9.2 | Roomy all-suite |
+| Junipine Resort | Oak Creek Canyon | 9.2 | Creekside cabins |
+| Sky Ranch Lodge | Airport Mesa | 9.1 | The big view |
+| Matterhorn Inn | Uptown | 9.0 | Walkable value |
+| L'Auberge De Sedona | Uptown | 9.0 | Creekside romance |
+| Mountain Modern Sedona | Uptown | 9.0 | Modern value |
+| Villas of Sedona | West Sedona | 9.0 | Villa suites for groups |
+| Residence Inn by Marriott Sedona | West Sedona | 9.0 | Kitchens, longer stays |
+
+## A Note on the Resorts That Book Direct
+
+A couple of famous names you'll see and can't book here: **Mii amo**, the all-inclusive destination spa inside Boynton Canyon, and **Amara Resort**, the Hyatt-run boutique above Oak Creek in Uptown. Both book direct on their own sites rather than through us, so we can't show you an honest all-in price — but they're worth knowing about if a spa retreat or a particular resort is the whole point of the trip. If you'd rather see rooms with a real, all-in price now, [browse the Sedona hotels we can price](/search?destination=Sedona&adults=2).
+
+## How We Price the Stays You Find Here
+
+**Every price here is the hotel's rate plus one small flat fee — the same for everyone, never based on your device, your history or how many times you've looked.** That's the whole model. Read [why surveillance pricing is a scam](/blog/surveillance-pricing) and [how our pricing actually works](/#how).
+
+::infographic how-pricing-works
+
+Comparing Sedona with somewhere else? See our other [where to stay guides](/blog), like [Moab](/blog/where-to-stay-in-moab) or [Bend](/blog/where-to-stay-in-bend).
+
+::priceproof
+
+## Sedona on the Map
+
+::map Sedona
+
+Once you've picked your side of the red rocks, [search current Sedona prices](/search?destination=Sedona&adults=2) and sort by what matters to you.`,
+  },
+  {
     slug: "where-to-stay-in-estespark",
     title: "Where to Stay in Estes Park, Colorado: Best Areas & Hotels (2026)",
     description:

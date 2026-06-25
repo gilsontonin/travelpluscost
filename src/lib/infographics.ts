@@ -49,6 +49,28 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "The price you see", detail: "All-in and shown up front. No surprises at the last screen." },
     ],
   },
+  "sedona-uptown-vs-village": {
+    kind: "compare",
+    title: "Uptown or the Village of Oak Creek?",
+    left: "Uptown Sedona",
+    right: "Village of Oak Creek",
+    rows: [
+      { label: "The feel", left: "Walkable, lively, central", right: "Quieter, spread out, residential" },
+      { label: "Best for", left: "First-timers, no car", right: "Couples, golfers, budgets" },
+      { label: "Price", left: "The priciest in town", right: "Better value for the same red rocks" },
+      { label: "To the shops", left: "On foot", right: "About a 15-minute drive" },
+    ],
+  },
+  "sedona-by-numbers": {
+    kind: "stat",
+    title: "Sedona, Arizona by the numbers",
+    stats: [
+      { value: "~4,350 ft", label: "high-desert elevation" },
+      { value: "~2 hr", label: "north of Phoenix Sky Harbor (PHX)" },
+      { value: "~2 hr", label: "to the Grand Canyon's South Rim" },
+      { value: "4", label: "areas to base in — all with red-rock views" },
+    ],
+  },
   "bend-by-numbers": {
     kind: "stat",
     title: "Bend, Oregon by the numbers",
