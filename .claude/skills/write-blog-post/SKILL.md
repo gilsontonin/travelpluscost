@@ -57,7 +57,10 @@ QA note (post exists). Then work it top to bottom. If no city was given, pick on
      `npm run blog:slop -- <slug>` (0 HARD) · `npm run blog:stats -- <slug>` (in band) · `npm run blog:voice`
      `npm run blog:cta -- <slug>` — **0 leaks**, a CTA every section, every mentioned hotel carded/linked.
      `npm run blog:qa -- <slug>` (the aggregate).
-5. **Build + Lighthouse:** `npm run typecheck && npm run lint && npm run build` (0 errors), then
+5. **Build + Lighthouse:** `npm run typecheck && npm run lint && npm run build && npm run check` (0 errors).
+   **`npm run check` is the Netlify DEPLOY GATE** (claims-integrity + ai-slop, per netlify.toml) — a RED
+   check fails the WHOLE deploy, so a new post silently 404s on prod and stale content stays live. It
+   flags unverifiable superlatives (e.g. "most-reviewed"); rephrase to verifiable wording. Then
    `npm run blog:lh -- /blog/<slug>` against a running server (`npm run build && npm start`; perf ≥ 90,
    a11y/BP/SEO = 100 — `References/Lighthouse.md`: every image via `next/image`, cover = `priority`).
    Cross-link the `/hotels/<city>` hub (don't cannibalise).
