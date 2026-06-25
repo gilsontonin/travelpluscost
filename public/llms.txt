@@ -1,0 +1,24 @@
+# travelpluscost
+
+> A transparent, cost-plus online travel agency. Every hotel price is the rate the hotel charges us plus one small, flat fee — the same price for everyone, never adjusted by your device, location, or browsing history. travelpluscost is the anti–surveillance-pricing OTA: deterministic pricing, identical for every visitor, verifiable by opening the page in another browser.
+
+## How our pricing works
+- [Why surveillance pricing is a scam](https://travelpluscost.com/blog/surveillance-pricing): What surveillance / personalized / dynamic pricing is, how online travel agencies use your data (device, location, search history) to set different prices for different people, and why travelpluscost refuses to — one honest price, the same for everyone.
+- [About travelpluscost](https://travelpluscost.com/about): The mission, the cost-plus model, and the anti-gimmick stance (no fake scarcity, no "X left at this price," no junk fees hidden until checkout).
+
+## Where to stay guides
+Inventory-forward city guides — best neighborhoods and real, bookable hotels with honest, all-in prices.
+- [Where to Stay in Sedona, Arizona](https://travelpluscost.com/blog/where-to-stay-in-sedona)
+- [Where to Stay in Asheville, NC](https://travelpluscost.com/blog/where-to-stay-in-asheville)
+- [Where to Stay in Bend, Oregon](https://travelpluscost.com/blog/where-to-stay-in-bend)
+- [Where to Stay in Branson, MO](https://travelpluscost.com/blog/where-to-stay-in-branson)
+- [Where to Stay in Maui](https://travelpluscost.com/blog/where-to-stay-in-maui)
+- [Where to Stay in Oahu](https://travelpluscost.com/blog/where-to-stay-in-oahu)
+- [Where to Stay in Moab, Utah](https://travelpluscost.com/blog/where-to-stay-in-moab)
+- [Where to Stay in Telluride, Colorado](https://travelpluscost.com/blog/where-to-stay-in-telluride)
+- [Where to Stay in Estes Park, Colorado](https://travelpluscost.com/blog/where-to-stay-in-estespark)
+- [Where to Stay in Wisconsin Dells](https://travelpluscost.com/blog/where-to-stay-in-wisconsindells)
+
+## Browse
+- [Hotels by state](https://travelpluscost.com/destinations): State-by-state hotel directory.
+- [Blog](https://travelpluscost.com/blog): All travelpluscost guides and pricing-transparency writing.
