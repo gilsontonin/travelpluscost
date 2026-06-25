@@ -136,7 +136,7 @@ For a bookable pick in the heart of town, Camel's Garden is the call — a conte
 
 ### The Hotel Telluride and the New Sheridan Hotel
 
-The Hotel Telluride is the town's most-reviewed full hotel — a 9.0 with a spa, a lobby fireplace and an easy walk to main street, the dependable town base when you want a front desk over a condo. The historic New Sheridan Hotel, main street's landmark since 1895, is the grande dame of town; it books direct rather than through us, but it's the name everyone asks about.
+The Hotel Telluride is the town's busiest full hotel — a 9.0 across more than 500 reviews, with a spa, a lobby fireplace and an easy walk to main street, the dependable town base when you want a front desk over a condo. The historic New Sheridan Hotel, main street's landmark since 1895, is the grande dame of town; it books direct rather than through us, but it's the name everyone asks about.
 
 ::hotel lp2ff71
 
@@ -1103,7 +1103,7 @@ Once you've picked your side of town, here are more real, well-reviewed Moab sta
 | Slackline Moab | Downtown | 9.2 | Modern, the cover hotel |
 | Hyatt Place Moab | Downtown | 9.0 | A reliable brand |
 | Gravity Haus Moab | Downtown | 9.0 | The adventure crowd |
-| Aarchway Inn | North end | 8.9 | Value, most-reviewed |
+| Aarchway Inn | North end | 8.9 | Value, big reviews |
 | Sleep Inn & Suites near Arches | North end | 9.2 | The budget pick |
 | Hoodoo Moab, Curio Collection | Downtown | 9.1 | A step up, by Hilton |
 
@@ -1125,9 +1125,9 @@ The outdoorsy lifestyle hotel for the bike-and-climb crowd — gear-friendly, so
 
 ::hotel lp6557454b
 
-### Aarchway Inn — value, and the most reviewed in town
+### Aarchway Inn — value, and a Moab favorite
 
-The most-reviewed hotel in Moab for a reason — a well-kept independent on the north end with a pool, a hot tub and big rooms, at about the best rate-verified rate in town. Value without feeling like a compromise.
+A Moab favorite for a reason — a well-kept independent on the north end with a pool, a hot tub and big rooms, at about the best rate-verified rate in town, with thousands of guest reviews behind it. Value without feeling like a compromise.
 
 ::hotel lp83862
 
