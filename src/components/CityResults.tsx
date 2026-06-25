@@ -61,6 +61,12 @@ const TYPE_CHIPS: { type: string; label: string }[] = [
   { type: "Guesthouse", label: "Guesthouses" },
 ];
 
+// Amenity chips — only the high-demand, *differentiating* amenities (the ones people actively filter FOR
+// that genuinely narrow a city's set). Deliberately NOT the near-universal ones — Parking (92% of hotels),
+// Free WiFi (54%), Gym (50%), Restaurant, Breakfast — those would surface in every city and narrow nothing.
+// A chip still only appears when ≥4 hotels have it AND it's ≤90% of the set (a second backstop vs noise).
+const AMENITY_CHIPS = ["Pool", "Beachfront", "Pet-friendly", "Spa", "Hot tub"];
+
 export default function CityResults({
   cards,
   city,
@@ -107,6 +113,12 @@ export default function CityResults({
     for (const { type, label } of TYPE_CHIPS) {
       if (cards.filter((h) => h.propertyType === type).length >= 2)
         out.push({ key: `type:${type}`, label, test: (h) => h.propertyType === type });
+    }
+    const amenCap = Math.floor(cards.length * 0.9);
+    for (const a of AMENITY_CHIPS) {
+      const cnt = cards.filter((h) => h.amenities?.includes(a)).length;
+      if (cnt >= 4 && cnt <= amenCap)
+        out.push({ key: `amen:${a}`, label: a, test: (h) => !!h.amenities?.includes(a) });
     }
     return out;
   }, [cards]);

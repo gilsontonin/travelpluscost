@@ -35,9 +35,10 @@ const country = countries[0] || "us";
 
 // High-value, query-worthy amenities → detected from the facilities text (mirrors lib/hotels.ts).
 const MATCHERS = [
-  ["Pool", /pool|swimming/i], ["Spa", /\bspa\b|sauna|massage/i], ["Gym", /gym|fitness/i],
+  ["Pool", /\bpool\b(?! ?table)|swimming/i], ["Spa", /\bspa\b|sauna|massage/i], ["Gym", /gym|fitness/i],
   ["Free WiFi", /free wi-?fi/i], ["Parking", /parking/i], ["Breakfast", /breakfast/i],
-  ["Restaurant", /restaurant|dining/i], ["Bar", /\bbar\b|lounge/i], ["Beachfront", /beach|oceanfront/i],
+  ["Restaurant", /restaurant|dining/i], ["Bar", /\bbar\b|lounge/i],
+  ["Beachfront", /beachfront|oceanfront|on (a |the )?private beach\b|direct access to[\w' -]*\bbeach\b|private beach area/i],
   ["Hot tub", /hot tub|jacuzzi|whirlpool/i], ["Pet-friendly", /\bpets?\b/i], ["Air conditioning", /air ?conditioning|\ba\/c\b/i],
   ["Airport shuttle", /shuttle|airport transfer/i], ["Kitchen", /kitchen/i], ["EV charging", /(electric|ev).{0,12}charg/i],
   ["Accessible", /accessible|wheelchair/i],

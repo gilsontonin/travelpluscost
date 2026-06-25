@@ -22,9 +22,10 @@ export interface DirectoryHotel {
   kind: string | null; // 'hotel' | 'rental'
   property_type: string | null; // 'Hotel','Resort','Villa',…
   pros?: string[] | null; // LiteAPI AI-sentiment highlights ("Friendly staff"…), backfilled by blog:pros
+  amenities?: string[] | null; // canonical amenity flags ("Pool","Free WiFi"…), backfilled by enrich-amenities-bulk
 }
 
-const COLS = "id,name,slug,city,state,country,lat,lng,stars,rating,review_count,thumbnail,kind,property_type,pros";
+const COLS = "id,name,slug,city,state,country,lat,lng,stars,rating,review_count,thumbnail,kind,property_type,pros,amenities";
 
 // Lead with hotels (kind 'hotel' sorts before 'rental'), then best-rated first.
 // Candidate fetch order: most-reviewed first (surfaces established places into the result set);
@@ -179,7 +180,7 @@ export function directoryToCard(h: DirectoryHotel): CardHotel {
     stars: h.stars,
     rating: h.rating,
     reviewCount: h.review_count,
-    amenities: [], // directory holds no amenity data (fetched live on the property page)
+    amenities: h.amenities ?? [], // canonical amenity flags backfilled into the directory (enrich-amenities-bulk)
     lat: h.lat,
     lng: h.lng,
     nearby: null,

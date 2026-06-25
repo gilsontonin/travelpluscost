@@ -126,9 +126,10 @@ export type CardHotel = Pick<
 // Ordered by "card-worthiness" — detectAmenities returns matches in this order,
 // so the first few shown on a result card are the ones guests actually filter on.
 const AMENITY_MATCHERS: [string, RegExp][] = [
-  ["Pool", /pool|swimming/i],
+  ["Pool", /\bpool\b(?! ?table)|swimming/i],
   ["Free WiFi", /wi-?fi|internet/i],
-  ["Beachfront", /beach|oceanfront/i],
+  // True beachfront only — /beach/ alone mis-matched "beach towels/shuttle/club nearby" (see enrich-amenities-bulk.mjs).
+  ["Beachfront", /beachfront|oceanfront|on (a |the )?private beach\b|direct access to[\w' -]*\bbeach\b|private beach area/i],
   ["Parking", /parking/i],
   ["Breakfast", /breakfast/i],
   ["Spa", /\bspa\b/i],
