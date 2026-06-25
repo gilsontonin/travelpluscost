@@ -5,9 +5,10 @@ import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
 import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
 import Image from "next/image";
-import { parseBlocks, extractHeadings, hotelIdsInBody, showcaseIdsInBody, railDestsInBody, mapDestsInBody, areasDestsInBody } from "@/lib/blogBody";
+import { parseBlocks, extractHeadings, slugify, hotelIdsInBody, showcaseIdsInBody, railDestsInBody, mapDestsInBody, areasDestsInBody } from "@/lib/blogBody";
 import { getDirectoryHotel, searchDirectory, hotelsInArea, cityHotelCount, type DirectoryHotel } from "@/lib/directory";
 import { getHotelContent } from "@/lib/hotelContent";
+import { stateName, stateSlugFromCode } from "@/lib/states";
 import { resolveRegion } from "@/lib/regions";
 import type { CardHotel } from "@/lib/hotels";
 import PostBody from "@/components/blog/PostBody";
@@ -145,6 +146,17 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const heroRail: CardHotel[] = post.region ? await searchDirectory(post.region.destination, 10) : [];
   const hotelCount: number = post.region ? await cityHotelCount(post.region.destination) : 0;
   const ratedHero = heroRail.filter((h) => h.rating != null);
+
+  // Entity auto-link targets, existence-checked so they never 404: the city hub only if the directory
+  // actually has that city (hotelCount > 0 — excludes island/region posts like Maui where /hotels/maui
+  // doesn't exist), and the state hub from the hotels' 2-letter code (every US state has a page).
+  const cityLink = post.region && hotelCount > 0
+    ? { name: post.region.destination, href: `/hotels/${slugify(post.region.destination)}` }
+    : null;
+  const stCode = Object.values(hotels).find((h) => h.state)?.state ?? null;
+  const stSlug = stCode ? stateSlugFromCode(stCode) : null;
+  const stNm = stCode ? stateName(stCode) : null;
+  const stateLink = stNm && stSlug ? { name: stNm, href: `/destinations/${stSlug}` } : null;
   const avgRating: number | null = ratedHero.length
     ? Math.round((ratedHero.reduce((s, h) => s + (h.rating as number), 0) / ratedHero.length) * 10) / 10
     : null;
@@ -315,7 +327,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
       {/* body */}
       <BlogPriceProvider ids={Object.keys(hotels)}>
-        <PostBody blocks={blocks} hotels={hotels} rails={rails} maps={maps} areas={areas} showcaseImages={showcaseImages} />
+        <PostBody blocks={blocks} hotels={hotels} rails={rails} maps={maps} areas={areas} showcaseImages={showcaseImages} cityLink={cityLink} stateLink={stateLink} />
       </BlogPriceProvider>
 
       {/* CTA */}

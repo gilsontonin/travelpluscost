@@ -13,6 +13,8 @@ import BlogCompare from "./BlogCompare";
 import BlogAreas from "./BlogAreas";
 import HotelRail from "@/components/HotelRail";
 import { slugify, type Block } from "@/lib/blogBody";
+import { hotelHref } from "@/lib/hotelUrl";
+import { autolinkMarkdown, type LinkEntity } from "@/lib/autolink";
 import type { DirectoryHotel } from "@/lib/directory";
 import type { CardHotel } from "@/lib/hotels";
 
@@ -61,6 +63,8 @@ export default function PostBody({
   maps,
   areas,
   showcaseImages = {},
+  cityLink = null,
+  stateLink = null,
 }: {
   blocks: Block[];
   hotels: Record<string, DirectoryHotel>;
@@ -68,7 +72,23 @@ export default function PostBody({
   maps: Record<string, CardHotel[]>;
   areas: Record<string, { city: string; count: number }[]>;
   showcaseImages?: Record<string, string[]>;
+  cityLink?: { name: string; href: string } | null;
+  stateLink?: { name: string; href: string } | null;
 }) {
+  // Entity auto-linking: the first in-prose mention of each property/city/state links to its static
+  // page. Properties come from the hotels we have cards for (always have a page); the city/state targets
+  // are resolved + existence-checked by the PAGE (so an island like Maui with no /hotels/maui hub passes
+  // null and is never linked). `linked` is threaded across blocks in document order = first mention only.
+  const entities: LinkEntity[] = [
+    ...Object.values(hotels)
+      .filter((h) => h.name && h.name.length >= 7)
+      .map((h) => ({ key: h.id, name: h.name, href: hotelHref(h) }))
+      .sort((a, b) => b.name.length - a.name.length),
+    ...(cityLink ? [{ key: "city", name: cityLink.name, href: cityLink.href }] : []),
+    ...(stateLink ? [{ key: "state", name: stateLink.name, href: stateLink.href }] : []),
+  ];
+  const linked = new Set<string>();
+  const link = (text: string) => autolinkMarkdown(text, entities, linked);
   return (
     <div className="mt-7 space-y-4 text-[15.5px] leading-relaxed text-black/80">
       {blocks.map((b, i) => {
@@ -111,7 +131,7 @@ export default function PostBody({
           const h = hotels[b.id];
           return h ? (
             <ShowcaseHotel key={i} hotel={h} images={showcaseImages[b.id] ?? []}>
-              <ReactMarkdown remarkPlugins={[remarkGfm]} components={mdComponents}>{b.text}</ReactMarkdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]} components={mdComponents}>{link(b.text)}</ReactMarkdown>
             </ShowcaseHotel>
           ) : null;
         }
@@ -121,7 +141,7 @@ export default function PostBody({
         }
         return (
           <ReactMarkdown key={i} remarkPlugins={[remarkGfm]} components={mdComponents}>
-            {b.text}
+            {link(b.text)}
           </ReactMarkdown>
         );
       })}
