@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import { SITE_URL, SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION } from "@/lib/site";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -77,6 +78,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main className="flex-1">{children}</main>
         <Footer />
         {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
+        {/* LiteAPI Booking Assistant — public (publishable) key, browser-safe to commit. lazyOnload loads
+            the third-party widget on idle, off the critical path, so it can't regress LCP / Core Web Vitals. */}
+        <Script
+          src="https://components.liteapi.travel/chatbot/v1.js?liteApiKey=prod_public_f27848bb-47d8-46ec-915c-ff9e8070fdbc"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
