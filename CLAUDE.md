@@ -27,6 +27,9 @@ When asked to write or edit ANY blog post, BEFORE writing a word:
    bottom. (The playbook is the governing writing + QA/QC contract; do not free-write, do not skip steps.)
 2. Run the gates and PRINT them on screen: `npm run blog:serp`, `blog:slop`, `blog:stats`,
    `blog:checklist`, `blog:lh`, `blog:freshness`, then `blog:qa`. Fix every red, re-run after every edit.
+   (`blog:lh` = Lighthouse budget perf ≥ 90 / a11y, BP, SEO = 100; needs a running server — see
+   `docs/blog-system/References/Lighthouse.md`. **Every image goes through `next/image`, never a raw
+   `<img>`; the hero cover uses `priority`** — a raw cover was the LCP-77 bug.)
 3. Honor POSITIONING.md compliance in the copy (never reveal net cost / markup %; claims exactly true; no
    fake scarcity).
 4. Never ship red. Commit, then HOLD the push until I say "go live."

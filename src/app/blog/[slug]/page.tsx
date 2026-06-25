@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
 import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
+import Image from "next/image";
 import { parseBlocks, extractHeadings, hotelIdsInBody, railDestsInBody, mapDestsInBody, areasDestsInBody } from "@/lib/blogBody";
 import { getDirectoryHotel, searchDirectory, hotelsInArea, cityHotelCount, type DirectoryHotel } from "@/lib/directory";
 import { resolveRegion } from "@/lib/regions";
@@ -204,8 +205,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       {post.region ? (
         <div className="mt-4">
           <div className="relative h-44 w-full overflow-hidden rounded-2xl bg-zinc-100 sm:h-60">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={post.cover.src} alt={post.cover.alt} className="h-full w-full object-cover" />
+            <Image src={post.cover.src} alt={post.cover.alt} fill priority sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
           </div>
           <div className="relative z-10 -mt-14 sm:-mt-16">
             <BlogSearch dest={post.region.destination} />
@@ -239,12 +239,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       {/* cover — non-region posts only (region posts show it as the hero above the search) */}
       {!post.region ? (
       <figure className="mt-5">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={post.cover.src}
           alt={post.cover.alt}
           width={1200}
           height={675}
+          priority
+          sizes="(max-width: 768px) 100vw, 768px"
           className="w-full rounded-2xl object-cover"
         />
         {post.cover.credit ? (
