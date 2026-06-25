@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SearchPanel from "@/components/SearchPanel";
 import ResultsList from "@/components/ResultsList";
@@ -6,6 +7,23 @@ import { searchDirectory } from "@/lib/directory";
 import { REGIONS } from "@/lib/regions";
 
 export const dynamic = "force-dynamic";
+
+// `/search` is an interactive results tool that mirrors the indexable `/hotels/<city>` hubs, so every
+// `?destination=` variant shared one generic title (a duplicate-title-tag flood in audits) and competed
+// with the real city pages. NOINDEX it (follow, to pass equity to the hubs) and give it a unique,
+// destination-aware title so it's clean either way.
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | undefined>>;
+}): Promise<Metadata> {
+  const sp = await searchParams;
+  const dest = (sp.destination ?? "").trim();
+  return {
+    title: { absolute: dest ? `Search hotels in ${dest} | travelpluscost` : "Search hotels | travelpluscost" },
+    robots: { index: false, follow: true },
+  };
+}
 
 export default async function SearchPage({
   searchParams,
