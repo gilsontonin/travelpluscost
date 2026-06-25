@@ -1,94 +1,46 @@
-"use client";
+import type { Metadata } from "next";
+import SearchPanel from "@/components/SearchPanel";
+import VibePromptPill from "@/components/VibePromptPill";
+import HotelRail from "@/components/HotelRail";
+import NearbyRail from "@/components/NearbyRail";
+import SeasonalRail from "@/components/SeasonalRail";
+import RecentlyViewed from "@/components/RecentlyViewed";
+import PopularDestinations from "@/components/PopularDestinations";
+import MemberWelcome from "@/components/MemberWelcome";
+import { getAllHotels, toCard, toRail } from "@/lib/hotels";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { authBrowser } from "@/lib/auth";
-
-interface Profile {
-  email: string | null;
-  founding_member: boolean;
-  member_no: number | null;
-  membership_status: string;
-}
-
-const PERKS = [
-  { icon: "💰", title: "The member price", body: "Book at what the hotel charges us plus one small fee — typically 20–35% below the public rate, the same for everyone." },
-  { icon: "🔒", title: "Founding rate, locked", body: "You keep the lowest membership rate we ever offer. Free now; it stays your rate when paid plans begin." },
-  { icon: "🛡️", title: "No surveillance pricing", body: "Your price is never set from your device, location, or history. One honest number, every fee shown up front." },
-];
+// Member home — inventory-forward (mirrors the homepage layout), with a compact member welcome on top.
+// Lowest-resistance path: land → search/browse immediately. Member-only, so kept out of the index.
+export const metadata: Metadata = { robots: { index: false } };
 
 export default function AccountPage() {
-  const router = useRouter();
-  const [loading, setLoading] = useState(true);
-  const [email, setEmail] = useState<string | null>(null);
-  const [profile, setProfile] = useState<Profile | null>(null);
-
-  useEffect(() => {
-    const sb = authBrowser();
-    (async () => {
-      const { data } = await sb.auth.getUser();
-      if (!data.user) {
-        router.replace("/join");
-        return;
-      }
-      setEmail(data.user.email ?? null);
-      const { data: p } = await sb.from("profiles").select("email,founding_member,member_no,membership_status").eq("id", data.user.id).maybeSingle();
-      setProfile((p as Profile) ?? null);
-      setLoading(false);
-    })();
-  }, [router]);
-
-  async function signOut() {
-    await authBrowser().auth.signOut();
-    router.replace("/");
-  }
-
-  if (loading) return <div className="mx-auto max-w-2xl px-4 py-16 text-black/50">Loading…</div>;
+  const all = getAllHotels();
+  const cards = all.map(toCard);
+  // Review-weighted (Bayesian) sort — same as the homepage so a 1-review 10 can't top a well-reviewed stay.
+  const weighted = (c: (typeof cards)[number]) => {
+    const v = c.reviewCount ?? 0;
+    const R = c.rating ?? 0;
+    return (v * R + 25 * 8) / (v + 25);
+  };
+  const topRated = [...cards].filter((c) => c.rating != null).sort((a, b) => weighted(b) - weighted(a)).slice(0, 12);
+  const beachfront = cards.filter((c) => c.amenities.includes("Beachfront")).slice(0, 12);
+  const railAll = all.map(toRail);
 
   return (
-    <div className="mx-auto max-w-2xl px-4 py-12">
-      <h1 className="text-3xl font-bold tracking-tight">Your membership</h1>
+    <div className="mx-auto max-w-5xl px-4 pt-6 pb-16">
+      <MemberWelcome />
 
-      {/* Status card */}
-      <div className="mt-6 rounded-2xl border border-accent/30 bg-accent-tint p-5">
-        <p className="font-semibold text-accent">
-          {profile?.founding_member ? "✓ Founding member" : "Member"}
-          {profile?.member_no ? ` · #${profile.member_no}` : ""}
-        </p>
-        <p className="mt-1 text-sm text-black/60">{email}</p>
-        <p className="mt-3 text-sm text-black/80">
-          You&apos;re in early — among the first to lock in the founding rate. Free until booking launches.
-        </p>
+      <div className="mt-5">
+        <SearchPanel />
+        <VibePromptPill />
       </div>
 
-      {/* Perks */}
-      <h2 className="mt-10 text-lg font-semibold">What your membership unlocks</h2>
-      <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        {PERKS.map((p) => (
-          <div key={p.title} className="rounded-2xl border border-black/10 p-4">
-            <div className="text-xl">{p.icon}</div>
-            <p className="mt-2 font-medium text-sm">{p.title}</p>
-            <p className="mt-1 text-xs text-black/60 leading-relaxed">{p.body}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* What's next */}
-      <div className="mt-8 rounded-2xl border border-black/10 bg-black/[0.02] p-5">
-        <p className="font-medium text-sm">What&apos;s next</p>
-        <p className="mt-1 text-sm text-black/70">
-          Booking opens soon. We&apos;ll email you the moment members can book at the member price — your founding
-          rate is already locked in. Until then, browse and save the stays you like.
-        </p>
-        <Link href="/hotels/honolulu" className="mt-3 inline-block text-accent font-medium text-sm hover:underline">
-          Browse hotels →
-        </Link>
-      </div>
-
-      <button onClick={signOut} className="mt-8 text-sm text-black/45 hover:text-black/80">
-        Sign out
-      </button>
+      <RecentlyViewed all={railAll} />
+      <NearbyRail />
+      <SeasonalRail />
+      <HotelRail title="Top-rated stays" subtitle="Guest favorites across our markets" hotels={topRated} />
+      <HotelRail title="Beachfront stays" subtitle="Steps from the sand" hotels={beachfront} />
+      <PopularDestinations />
     </div>
   );
 }
