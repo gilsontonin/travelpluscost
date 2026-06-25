@@ -51,7 +51,13 @@ const load = cache(async (slug: string): Promise<CityData | null> => {
     const ci = d.toISOString().slice(0, 10);
     d.setDate(d.getDate() + 1);
     const co = d.toISOString().slice(0, 10);
-    const prices = await getPrices(ranked.slice(0, 12).map((h) => h.id), ci, co, 2);
+    // Cap the live rate fetch: a slow LiteAPI response must NEVER make the hub uncrawlable (Semrush /
+    // Googlebot time out around 3-5s, and this call can take 4-6s). On timeout we skip the indicative
+    // "from" price — it's already optional — so the page always renders fast.
+    const prices = await Promise.race([
+      getPrices(ranked.slice(0, 12).map((h) => h.id), ci, co, 2),
+      new Promise<Awaited<ReturnType<typeof getPrices>>>((resolve) => setTimeout(() => resolve({}), 1500)),
+    ]);
     const perNight = Object.values(prices)
       .map((p) => Math.round((p.allIn ?? p.amount) / p.nights))
       .filter((n) => n > 0);
