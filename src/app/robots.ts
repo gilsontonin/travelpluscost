@@ -6,13 +6,24 @@ import { abs, SITE_URL } from "@/lib/site";
 // versioned /sitemaps/<version>/ children (core pages, city hubs, hotel shards). Bumping the version in
 // gen-sitemaps rotates the whole tree to fresh URLs at once — see that file for why (Google caches each
 // sitemap URL and is slow to re-read). Keep this in sync with INDEX_FILE there.
+
+// Junk-tier SEO/scraper crawlers: they re-crawl all ~65k pages for zero benefit (we don't use Moz/Ahrefs/
+// Majestic) and were a real slice of the bandwidth bill. Full disallow. We deliberately KEEP the open "*"
+// rule for the crawlers we want: Googlebot + Bingbot (indexing), SemrushBot (our own audits), and the AI
+// assistants GPTBot/ClaudeBot/PerplexityBot (the audience /llms.txt targets). NOTE: robots.txt only stops
+// *polite* bots; edge-blocking the rude ones is a later Cloudflare job.
+const JUNK_BOTS = ["AhrefsBot", "MJ12bot", "DotBot", "BLEXBot", "Bytespider", "DataForSeoBot", "PetalBot"];
+
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: ["/api/", "/book", "/booking-complete", "/booking-confirmed", "/cancel", "/compare"],
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/", "/book", "/booking-complete", "/booking-confirmed", "/cancel", "/compare"],
+      },
+      ...JUNK_BOTS.map((userAgent) => ({ userAgent, disallow: "/" })),
+    ],
     sitemap: [abs("/sitemap-v3.xml")],
     host: SITE_URL,
   };
