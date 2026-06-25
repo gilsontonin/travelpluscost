@@ -776,6 +776,233 @@ Comparing the Dells with somewhere else? See our other [where to stay guides](/b
 Once you've picked your side of town, [search current Wisconsin Dells prices](/search?destination=Wisconsin%20Dells&adults=2) and sort by what matters to you.`,
   },
   {
+    slug: "where-to-stay-in-bend",
+    title: "Where to Stay in Bend, Oregon: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Bend, Oregon in 2026: the best areas (Downtown, the Old Mill District, the Westside near Mount Bachelor) with real hotels and honest rates.",
+    excerpt:
+      "Walk to the breweries downtown, sleep by the river in the Old Mill District, or base on the Westside for Mount Bachelor? A plain-English guide to picking your Bend hotel — by area, budget and what you came to do.",
+    tldr: {
+      answer:
+        "Bend is a high-desert town on the Deschutes River, about 3,600 feet up and roughly 3.5 hours from Portland. Stay Downtown to walk to the breweries; the Old Mill District to sleep by the river; the Westside to be closest to Mount Bachelor; or along Highway 97 for the best value.",
+      points: [
+        "**Downtown Bend** — walk to the breweries, dining and the Oxford; first-timers, no car.",
+        "**The Old Mill District** — riverside shops, dining and the summer float take-out; families.",
+        "**The Westside / toward Mount Bachelor** — golf, trails and the quickest ski access; Tetherow.",
+        "**Along Highway 97** — the reliable-brand value strip; road-trippers and longer stays.",
+        "**It sits at ~3,600 ft in the high desert** — sunny and dry, but it does snow; Redmond (RDM) airport is about 20 minutes north.",
+      ],
+    },
+    date: "2026-06-24",
+    updated: "2026-06-24",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/29548854.jpg",
+      alt: "Pink and white petunias spilling from a hanging basket beside the vertical 'the Oxford hotel' sign on a brick building in downtown Bend, Oregon",
+      credit: { name: "The Oxford Hotel, Bend" },
+    },
+    region: { name: "Bend", destination: "Bend" },
+    faqs: [
+      {
+        q: "How far is Bend from Portland?",
+        a: "About 160 miles, and realistically three to three and a half hours by car over the Cascades — usually US-26 over Mount Hood, or US-20 over Santiam Pass from the I-5 side. It's a beautiful drive and an icy one in winter, so check the passes before you go. If you'd rather skip it, Redmond (RDM) is the close airport, about 20 minutes north of Bend.",
+      },
+      {
+        q: "What is the elevation of Bend, Oregon?",
+        a: "Bend sits at about 3,623 feet — high desert, not high altitude. You probably won't feel it the way you would in the Rockies, but the air is dry and the sun is strong up there, so drink more water than you think you need, especially if you're hiking, biking or floating the river all afternoon.",
+      },
+      {
+        q: "Does it snow in Bend, Oregon?",
+        a: "Yes. Bend gets a real winter despite its roughly 300 days of sunshine — snow in town from about November into March, and a lot more up at Mount Bachelor, where the ski season often runs from late November well into May. Summers are warm, sunny and dry; the shoulder seasons are quiet and gorgeous.",
+      },
+      {
+        q: "What is the closest airport to Bend?",
+        a: "Redmond Municipal Airport (RDM), about 16 miles and 20 minutes north of Bend, is the closest, with nonstop flights to several western cities. Portland (PDX) is the big-airport alternative, but that's a three-plus-hour drive over the mountains, so most visitors who can fly into Redmond do.",
+      },
+      {
+        q: "What is the best area to stay in Bend for families?",
+        a: "The Old Mill District. You're on the Deschutes River, the riverfront path and shops are walkable, the summer float trip ends right there, and it's an easy base for the kid-friendly stuff. Downtown works too if you want to walk everywhere; the Westside resorts are the pick if your family's idea of fun is golf, trails or the mountain.",
+      },
+      {
+        q: "What is the cheapest area to stay in Bend?",
+        a: "Along Highway 97, north and south of the core, where the dependable national-brand hotels cluster — usually for less than a downtown or riverside room, and still about ten minutes from everything. It's the value play, especially for a road trip or a longer stay.",
+      },
+      {
+        q: "Is Bend, Oregon safe?",
+        a: "Bend is a small, prosperous mountain town and is generally very safe for visitors; the usual common-sense habits (lock the car, don't leave the ski gear or paddleboard visible) are about the extent of it. The bigger hazards here are the outdoor kind — cold rivers, hot afternoons and strong high-desert sun — so respect those more than the town.",
+      },
+    ],
+    body: `Where to stay in Bend, Oregon really comes down to three areas: **Downtown, the Old Mill District, and the Westside.** Pick by what you're chasing — a brewery crawl, a lazy float down the river, or the shortest drive to the chairlift.
+
+None of these is a bad answer. Bend is small enough that the "wrong" base is still fifteen minutes from the right one, so this is really a question of how close you want to be to the water, the trailhead, or the next pint.
+
+Below are the real, bookable hotels in each area, then the honest, area-by-area guide to where to stay in Bend, Oregon, as of 2026.
+
+Bend is a high-desert town on the Deschutes River, sitting at about 3,600 feet on the dry side of the Cascades — roughly three and a half hours southeast of Portland. It's known for two things that pair better than they should: an absurd number of breweries and immediate access to mountains, rivers and lava.
+
+It gets something like 300 days of sun a year and still has a real ski season. The town sprawls a little, so the decision isn't whether you'll find a room — it's which version of Bend you want to wake up in.
+
+::infographic bend-by-numbers
+
+## Where to Stay in Bend Oregon: Hotels by Area at a Glance
+
+One deciding factor: what you'll be driving to most — downtown, the river, or the mountain. These are the areas, and the kind of visit each one is built for.
+
+| Area | The feel | Best for | What's nearby |
+|---|---|---|---|
+| [Downtown Bend](/search?destination=Bend&adults=2) | Walkable, breweries, dining | First-timers, no car | The Ale Trail, Drake Park |
+| [The Old Mill District](/search?destination=Bend&adults=2) | Riverside shops + the float | Families, couples | Deschutes River, the amphitheater |
+| [The Westside](/search?destination=Bend&adults=2) | Golf, trails, ski access | Skiers, golfers, splurgers | Mount Bachelor, Cascade Lakes |
+| [Along Highway 97](/search?destination=Bend&adults=2) | Reliable-brand value | Road trips, longer stays | Quick highway access |
+
+## Downtown Bend, Oregon: Breweries, Food Carts and Walkable Dining
+
+**Downtown is the easy first-time base — walkable, lively, and built for people who'd rather not drive after a beer.** This is the densest stretch of the Bend Ale Trail, the run of breweries and taprooms that is, fairly or not, the thing Bend is most famous for. Restaurants, coffee, bookshops, food carts and the riverside Drake Park are all within a few blocks.
+
+The car can stay parked for whole days, and on a summer evening the whole place spills onto the sidewalks. It's the most fun base if walking to dinner — and back — is the plan.
+
+The trade is that downtown rooms run higher and the area is small, so it books up first in summer. For a first trip, or any weekend built around the food and the craft beer, it's still the spot.
+
+A famous downtown option you'll see is the **McMenamins Old St. Francis School**, a 1936 Catholic school turned hotel with its own soaking pool, movie theater and bars; it books direct on its own site rather than through us, so we can't show you an honest all-in price, but it's worth knowing about.
+
+### Oxford Hotel Bend — the downtown splurge
+
+A locally rooted boutique hotel scoring a rare 9.8, right in the heart of downtown, with oversized rooms, an underground spa and pool, and a genuinely good restaurant and cocktail bar downstairs. It leans eco-minded without being precious about it — the priciest room in town for a reason, and the kind of place that earns that score by getting the quiet things right.
+
+::hotel lp5163a
+
+**Best for:** couples, special trips, anyone who wants to walk out the door into the best of downtown.
+
+If the Oxford's rate raises an eyebrow, the good news is downtown has a brewery for every budget and plenty of hotels a few blocks out — [search downtown Bend dates](/search?destination=Bend&adults=2) and sort by price.
+
+## The Old Mill District: On the Deschutes River in Bend, Oregon
+
+**The Old Mill is the riverside base — old lumber-mill smokestacks reborn as shops, restaurants and an open-air amphitheater, with the Deschutes River curling right through.** This is the family pick. The riverfront path is flat and walkable, the shops and dining are right there, the summer float trip down the Deschutes ends in this district, and concerts at the Les Schwab Amphitheater are a short stroll from a riverside room.
+
+It's calmer than downtown but still has plenty to walk to, which is exactly why it tops a lot of where-to-stay lists for first-time visitors with kids.
+
+### Pine Ridge Inn — the value-and-a-view pick
+
+An all-suite inn perched on the river bluff near the Old Mill, scoring a 9.2 across nearly a thousand reviews — big suites, fireplaces, a generous breakfast, and views down to the Deschutes. For how nice it is, it's one of the genuine bargains in town, and it's a real local favorite: it ranks on its own for where to stay in Bend.
+
+::hotel lp4f8e3
+
+### SpringHill Suites by Marriott Bend — reliable and roomy
+
+A 9.4 with suites that give a family room to spread out, near the Old Mill and the river path. No surprises, in the good way — the dependable, comfortable middle of the market, with a pool and free breakfast and an easy walk to the riverfront.
+
+::hotel lpa7fd8
+
+### Riverhouse Lodge — actually on the Deschutes
+
+An 8.8-rated lodge that sits right on the river, with riverfront rooms, a pool, an on-site restaurant called Currents over the water, and an easy hop to both downtown and the Old Mill.
+
+It's about a 30-minute drive to Mount Bachelor and 12 minutes to the Cascade Lakes, so it doubles as an adventure base. If "I want to hear the river" is on your list, this is the literal answer.
+
+::hotel lp21651
+
+**Best for:** families and couples who want the river, the path and the float without a downtown parking hunt.
+
+Can't decide between the downtown splurge and the riverside value? Here's the Oxford against Pine Ridge, side by side.
+
+::compare lp5163a lp4f8e3
+
+## The Westside of Bend, Oregon: Closest to Mount Bachelor
+
+**The Westside is where Bend tips into the forest — the launch pad for Mount Bachelor, the Cascade Lakes and the best of the hiking and biking trails.** Century Drive runs from here straight up to the mountain, so this is the side for skiers, mountain bikers and golfers who want the shortest morning drive to the outdoor adventures. It's quieter and more spread out than downtown, more about the views and the trees than the sidewalks.
+
+A budget option located out this way is **LOGE Bend**, the old Entrada Lodge reborn as an outdoorsy, gear-friendly lodge by the LOGE Camps crew. It books direct, so we can't price it, but it's handy to know if you're chasing the trailheads on a budget.
+
+### Tetherow Resort — golf, trails and the mountain road
+
+A 9.4-rated high-desert resort on the Westside, built around a well-known golf course, with fireplaces, big windows onto the junipers, a couple of good restaurants and the shortest drive in town to the Mount Bachelor turnoff. It's a splurge, but it's the one that puts the mountain, the golf and the hiking trails all within reach without moving the car much.
+
+::hotel lp7691d
+
+**Best for:** skiers, golfers and anyone whose trip revolves around the mountain.
+
+## Along Highway 97: The Value Strip
+
+**The dependable national brands cluster north and south along Highway 97 and 3rd Street — usually for less, and still about ten minutes from everything.** This is the value belt, where the chain accommodations are located within an easy drive of downtown and the river. The amenities are the practical kind: easy parking, free breakfast, a pool, quick highway access, and rooms that cost less than a downtown or riverside stay.
+
+For a road trip, a longer stay, or a base you'll mostly use for sleeping between adventures, these options are the sensible pick.
+
+### Holiday Inn Express & Suites Bend South — easy, predictable value
+
+A 9.1 on the south end with the things that actually matter on a busy trip: free breakfast, a pool, easy on-and-off the highway, and a rate that leaves money for the brewery. Nothing flashy, nothing wrong.
+
+::hotel lp6554c401
+
+### Element by Marriott Bend — modern, kitchens, longer stays
+
+A 9.2 with studios and suites built around kitchens and natural light — good for a few nights and great for a few weeks. The pick if you're cooking some meals, staying a while, or just like a more modern room for the money.
+
+::hotel lp6556631a
+
+### Hampton Inn & Suites Bend — the safe bet
+
+A 9.0 across more than 600 reviews — the no-drama brand standby, with the pool, the breakfast and the consistency you already know, at a fair rate. When you just want a known quantity, this is it.
+
+::hotel lp72e35
+
+### Campfire Hotel — the fun, retro one
+
+A reborn 1960s roadside motel turned design hotel — a heated pool club, fire pits and a built-in bar — with more than 2,500 guest reviews and an 8.6. It's the most personality per dollar in town, parked along 3rd Street between downtown and the highway, and a genuinely good time if you like a little character with your value.
+
+::hotel lp33281
+
+**Best for:** road-trippers, longer stays and anyone who'd rather not pay downtown prices to sleep.
+
+## What to Do in Bend, Oregon (When You're Not in the Room)
+
+Bend is the rare town where what to do is the whole reason where you stay matters, so it pays to base near the outdoor adventures and attractions you actually came for.
+
+In summer, the float down the Deschutes from the Old Mill District to Drake Park is the quintessential Bend afternoon — tube, paddleboard, repeat, with a shuttle back. Base in the Old Mill and it's a short walk to the put-in. Downtown, meanwhile, anchors the Bend Ale Trail and its 20-plus breweries, the most walkable stretch of craft beer in town.
+
+For bigger days out, Mount Bachelor is about 25 minutes up Century Drive from the Westside, with a long ski season and lift-served mountain biking once the snow melts. Smith Rock State Park, famous for its rock climbing, is roughly 30 minutes north and one of the best hikes near Bend. The Cascade Lakes Scenic Byway heads west for alpine lakes and more trails.
+
+Wherever you land, [search current Bend hotel prices](/search?destination=Bend&adults=2) for your dates and pick the base closest to whatever you came to do.
+
+## The Bend, Oregon Hotels in This Guide, Side by Side
+
+All the rate-verified picks above in one place, by area and guest score — because nobody wants to scroll up nine times to remember which one was on the river:
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Oxford Hotel Bend | Downtown | 9.8 | A downtown splurge |
+| SpringHill Suites by Marriott | Old Mill | 9.4 | Roomy and reliable |
+| Pine Ridge Inn | Old Mill / river bluff | 9.2 | Value with a view |
+| Riverhouse Lodge | On the Deschutes | 8.8 | Waking up on the river |
+| Tetherow Resort | Westside | 9.4 | Golf and Mount Bachelor |
+| Element by Marriott Bend | Highway 97 | 9.2 | Kitchens, longer stays |
+| Holiday Inn Express Bend South | Highway 97 | 9.1 | Easy, predictable value |
+| Hampton Inn & Suites Bend | Highway 97 | 9.0 | The no-drama safe bet |
+| Campfire Hotel | 3rd Street | 8.6 | Retro character on a budget |
+
+## A Note on the Famous Resorts That Book Direct
+
+Two names you'll see and can't book here: **Sunriver Resort**, the big family resort about twenty minutes south, and **Mount Bachelor Village**, the condo-style lodging on the Westside.
+
+Both book direct on their own sites rather than through us, so we can't show you an honest all-in price — but they're worth knowing about if a full resort or a condo is what you're after. If you'd rather see rooms with a real, all-in price now, [browse the Bend hotels we can price](/search?destination=Bend&adults=2).
+
+## How We Price the Stays You Find Here
+
+**Every price here is the hotel's rate plus one small flat fee — the same for everyone, never based on your device, your history or how many times you've looked.** That's the whole model. Read [why surveillance pricing is a scam](/blog/surveillance-pricing) and [how our pricing actually works](/#how).
+
+::infographic how-pricing-works
+
+Comparing Bend with somewhere else? See our other [where to stay guides](/blog), like [Maui](/blog/where-to-stay-in-maui) or [Moab](/blog/where-to-stay-in-moab).
+
+::priceproof
+
+## Bend on the Map
+
+::map Bend
+
+Once you've picked your side of town, [search current Bend prices](/search?destination=Bend&adults=2) and sort by what matters to you.`,
+  },
+  {
     slug: "where-to-stay-in-estespark",
     title: "Where to Stay in Estes Park, Colorado: Best Areas & Hotels (2026)",
     description:

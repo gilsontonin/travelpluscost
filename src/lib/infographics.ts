@@ -49,6 +49,16 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "The price you see", detail: "All-in and shown up front. No surprises at the last screen." },
     ],
   },
+  "bend-by-numbers": {
+    kind: "stat",
+    title: "Bend, Oregon by the numbers",
+    stats: [
+      { value: "~3,623 ft", label: "high-desert elevation" },
+      { value: "~300", label: "sunny days a year" },
+      { value: "20+", label: "breweries on the Bend Ale Trail" },
+      { value: "~3.5 hr", label: "drive from Portland (RDM airport 20 min)" },
+    ],
+  },
   "branson-by-numbers": {
     kind: "stat",
     title: "Branson by the numbers",
