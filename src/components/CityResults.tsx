@@ -46,6 +46,21 @@ function datesFor(key: string): { checkin: string; checkout: string } {
   }
 }
 
+// Property-type chips — each surfaces only when the city has a real set of that type (raw directory
+// `property_type`, e.g. "Resort"/"Motel"/"B&B"). "Hotel" is the default majority so it's omitted; these
+// let people slice a city's inventory by stay type, same "only show a chip with a real set behind it"
+// rule as the rating/stars chips.
+const TYPE_CHIPS: { type: string; label: string }[] = [
+  { type: "Resort", label: "Resorts" },
+  { type: "Aparthotel", label: "Aparthotels" },
+  { type: "B&B", label: "B&Bs" },
+  { type: "Inn", label: "Inns" },
+  { type: "Lodge", label: "Lodges" },
+  { type: "Motel", label: "Motels" },
+  { type: "Hostel", label: "Hostels" },
+  { type: "Guesthouse", label: "Guesthouses" },
+];
+
 export default function CityResults({
   cards,
   city,
@@ -89,8 +104,10 @@ export default function CityResults({
       out.push({ key: "exceptional", label: "Exceptional 9+", test: (h) => (h.rating ?? 0) >= 9 });
     if (cards.filter((h) => (h.stars ?? 0) >= 4).length >= 3)
       out.push({ key: "lux", label: "4★ & up", test: (h) => (h.stars ?? 0) >= 4 });
-    if (cards.filter((h) => h.propertyType === "Resort").length >= 2)
-      out.push({ key: "resort", label: "Resorts", test: (h) => h.propertyType === "Resort" });
+    for (const { type, label } of TYPE_CHIPS) {
+      if (cards.filter((h) => h.propertyType === type).length >= 2)
+        out.push({ key: `type:${type}`, label, test: (h) => h.propertyType === type });
+    }
     return out;
   }, [cards]);
 
