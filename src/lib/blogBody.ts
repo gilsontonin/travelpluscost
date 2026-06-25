@@ -40,7 +40,8 @@ export type Block =
   | { type: "compare"; ids: string[] }
   | { type: "areas"; dest: string }
   | { type: "details"; summary: string; text: string }
-  | { type: "showcase"; id: string; text: string };
+  | { type: "showcase"; id: string; text: string }
+  | { type: "activities"; dest: string };
 
 /** Split the body into ordered blocks: Markdown prose, `::infographic <key>`, `::hotel <id>`. */
 export function parseBlocks(body: string): Block[] {
@@ -90,6 +91,7 @@ export function parseBlocks(body: string): Block[] {
     else if (/^::map\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "map", dest: /^::map\s+(.+?)\s*$/.exec(t)![1].trim() }); }
     else if (/^::compare\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "compare", ids: /^::compare\s+(.+?)\s*$/.exec(t)![1].trim().split(/\s+/) }); }
     else if (/^::areas\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "areas", dest: /^::areas\s+(.+?)\s*$/.exec(t)![1].trim() }); }
+    else if (/^::activities\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "activities", dest: /^::activities\s+(.+?)\s*$/.exec(t)![1].trim() }); }
     else buf.push(line);
   }
   closeDetails(); // tolerate an unclosed ::details at end of body
@@ -124,4 +126,9 @@ export function mapDestsInBody(body: string): string[] {
 /** Destinations referenced by `::areas <dest>` — the page pre-fetches each area's live hotel count. */
 export function areasDestsInBody(body: string): string[] {
   return [...new Set([...body.matchAll(/^\s*::areas\s+(.+?)\s*$/gm)].map((m) => m[1].trim()))];
+}
+
+/** Destinations referenced by `::activities <dest>` — the page resolves a center lat/lng for the Viator rail. */
+export function activitiesDestsInBody(body: string): string[] {
+  return [...new Set([...body.matchAll(/^\s*::activities\s+(.+?)\s*$/gm)].map((m) => m[1].trim()))];
 }

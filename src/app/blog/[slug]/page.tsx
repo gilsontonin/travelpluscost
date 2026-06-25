@@ -5,7 +5,7 @@ import { getAllSlugs, getPostBySlug, readingMinutes } from "@/lib/posts";
 import { relatedSlugs } from "@/lib/relatedPosts";
 import { SITE_NAME, abs } from "@/lib/site";
 import Image from "next/image";
-import { parseBlocks, extractHeadings, slugify, hotelIdsInBody, showcaseIdsInBody, railDestsInBody, mapDestsInBody, areasDestsInBody } from "@/lib/blogBody";
+import { parseBlocks, extractHeadings, slugify, hotelIdsInBody, showcaseIdsInBody, railDestsInBody, mapDestsInBody, areasDestsInBody, activitiesDestsInBody } from "@/lib/blogBody";
 import { getDirectoryHotel, searchDirectory, hotelsInArea, cityHotelCount, type DirectoryHotel } from "@/lib/directory";
 import { getHotelContent } from "@/lib/hotelContent";
 import { stateName, stateSlugFromCode } from "@/lib/states";
@@ -130,6 +130,20 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     ),
   );
   const maps = Object.fromEntries(mapEntries) as Record<string, CardHotel[]>;
+
+  // `::activities <dest>` — a center lat/lng (the mean of the dest's hotels) for the Viator "things to do"
+  // rail. Skips a dest with no geo so the client component simply self-hides.
+  const activityEntries = await Promise.all(
+    activitiesDestsInBody(post.body).map(async (d) => {
+      const hs = cityLc && d.trim().toLowerCase() !== cityLc
+        ? await hotelsInArea(post.region!.destination, d, 20)
+        : await searchDirectory(d, 20);
+      const pts = hs.filter((h) => h.lat != null && h.lng != null);
+      if (!pts.length) return [d, null] as const;
+      return [d, { lat: pts.reduce((s, h) => s + h.lat!, 0) / pts.length, lng: pts.reduce((s, h) => s + h.lng!, 0) / pts.length }] as const;
+    }),
+  );
+  const activitiesCoords = Object.fromEntries(activityEntries.filter(([, c]) => c)) as Record<string, { lat: number; lng: number }>;
 
   // `::areas <dest>` — resolve the market to its cities and count each in the live directory.
   const areaEntries = await Promise.all(
@@ -327,7 +341,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
       {/* body */}
       <BlogPriceProvider ids={Object.keys(hotels)}>
-        <PostBody blocks={blocks} hotels={hotels} rails={rails} maps={maps} areas={areas} showcaseImages={showcaseImages} cityLink={cityLink} stateLink={stateLink} />
+        <PostBody blocks={blocks} hotels={hotels} rails={rails} maps={maps} areas={areas} showcaseImages={showcaseImages} activitiesCoords={activitiesCoords} cityLink={cityLink} stateLink={stateLink} />
       </BlogPriceProvider>
 
       {/* CTA */}

@@ -1235,6 +1235,8 @@ Beyond the trails, the Pink Jeep tours bounce you up slickrock you can't drive y
 
 For bigger days out, Grand Canyon National Park's South Rim is a little over two hours north, usually reached by the gorgeous drive up Oak Creek Canyon through Flagstaff, which is about 45 minutes away. Antelope Canyon, Montezuma Castle and the old copper-mining town of Jerome spread out from there, an easy add for guests with a few days to explore. Wherever you base yourself, [search current Sedona hotel prices](/search?destination=Sedona&adults=2) for your dates and pick the spot closest to whatever you came to do.
 
+::activities Sedona
+
 ## Getting Around Sedona, and the Red Rock Pass
 
 **You'll want a car, plus a Red Rock Pass for the trailheads.** Sedona is small, but a car makes everything easier — the areas, the trailheads and the day trips are spread along Highway 89A and I-17, and parking in Uptown fills early on a busy afternoon.

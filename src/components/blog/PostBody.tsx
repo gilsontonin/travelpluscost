@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import Infographic from "./Infographic";
 import BlogHotelCard from "./BlogHotelCard";
 import ShowcaseHotel from "./ShowcaseHotel";
+import ViatorPackages from "@/components/ViatorPackages";
 import PriceProof from "./PriceProof";
 import CtaWidget from "./CtaWidget";
 import BlogSearch from "./BlogSearch";
@@ -63,6 +64,7 @@ export default function PostBody({
   maps,
   areas,
   showcaseImages = {},
+  activitiesCoords = {},
   cityLink = null,
   stateLink = null,
 }: {
@@ -72,6 +74,7 @@ export default function PostBody({
   maps: Record<string, CardHotel[]>;
   areas: Record<string, { city: string; count: number }[]>;
   showcaseImages?: Record<string, string[]>;
+  activitiesCoords?: Record<string, { lat: number; lng: number }>;
   cityLink?: { name: string; href: string } | null;
   stateLink?: { name: string; href: string } | null;
 }) {
@@ -110,6 +113,10 @@ export default function PostBody({
         }
         if (b.type === "map") return <BlogMap key={i} dest={b.dest} hotels={maps[b.dest] ?? []} />;
         if (b.type === "areas") return <BlogAreas key={i} dest={b.dest} areas={areas[b.dest] ?? []} />;
+        if (b.type === "activities") {
+          const c = activitiesCoords[b.dest];
+          return <ViatorPackages key={i} lat={c?.lat} lng={c?.lng} />;
+        }
         if (b.type === "details")
           return (
             <details key={i} className="group my-5 rounded-2xl border border-black/[0.08]">
