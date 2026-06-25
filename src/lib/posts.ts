@@ -1032,7 +1032,7 @@ One deciding factor: central and walkable, or scenic and out on the river.
 
 **Downtown is the easy basecamp — walkable to the restaurants and breweries, central to both parks, and minutes from the Arches gate.** Main Street (US-191) runs the length of town, lined with outfitters, bike shops, taco joints, bars and the kind of brewery that exists specifically to rehydrate the sunburned. You can leave the car parked between drives into the parks, with easy access to the bike shuttles and trailheads, and a friendly, world-away-from-the-office energy after dark.
 
-It's the best base for a first trip, for bikers who want the Slickrock trails minutes away, and for anyone who'd rather walk to dinner than drive back into town. There's a traditional rhythm to a downtown stay: ride or hike at dawn, retreat to the pool through the worst of the heat, then walk out for tacos and a bar crawl that never gets more ambitious than three stops. You won't need the car, and you won't miss a house rental's chores.
+It's the best base for a first trip, for bikers who want the Slickrock trails minutes away, and for anyone who'd rather walk to dinner than drive back into town. There's a traditional rhythm to a downtown stay: ride or hike at dawn, retreat to the pool through the worst of the heat, then walk out for tacos and a bar crawl that never gets more ambitious than three stops. You won't need the car — Main Street is within walking distance — and a traditional hotel here means you skip both a house rental's chores and the drive.
 
 ### The Gonzo Inn — the downtown original
 
@@ -1068,13 +1068,17 @@ The Hampton you know, near the north-end gate with an outdoor pool and free brea
 
 **For scenery over walkability, head out State Route 128 along the Colorado River, where the ranch resorts sit right under the red cliffs.** This is the postcard Moab — the river on one side, thousand-foot walls on the other, dark skies overhead and not a strip mall in sight. You'll drive fifteen to twenty minutes into town for dinner and the parks, which is the trade for waking up somewhere this beautiful.
 
-### Red Cliffs Lodge — the river ranch
+### Red Cliffs Lodge Moab — the river ranch
 
-The classic Moab river ranch, a 9.0 on the banks of the Colorado about fifteen miles out 128, with a winery, a movie museum (this stretch of canyon has stood in for the Old West in a hundred films), horseback riding and rooms that open onto the water and the walls. The splurge for a scenic, do-it-all base.
+The classic Moab river ranch — a working ranch with a winery and a movie museum (this stretch of canyon has stood in for the Old West in a hundred films) — a 9.0 on the banks of the Colorado about fifteen miles out 128, with horseback riding and rooms that open onto the water and the walls. The splurge for a scenic, do-it-all base.
 
 ::hotel lp9b8a9
 
 **Best for:** scenery, families who want activities on site, anyone trading town for the river.
+
+### Castle Valley and the Castle Valley Inn
+
+Twenty minutes further up 128, Castle Valley opens into a wide red-rock basin under Castle Rock — the spire you've seen in a dozen car commercials. The Castle Valley Inn and a handful of B&Bs and rentals out here trade every convenience for total quiet and 360-degree views; they book direct, so reserve on their own sites if the goal is simply to disappear.
 
 ## Moab Vacation Rentals, Glamping and the Ranch Resorts
 
@@ -1088,7 +1092,7 @@ The glamping is the headline. Under Canvas Moab and a few others pitch luxury sa
 
 For space, the vacation rentals fill in around town. Moab Springs Ranch is a well-known cluster of townhomes and casitas with a pool a mile north of Main Street; nearby you'll find private homes, cabins and condos with kitchens, hot tubs and red-rock views that make sense for families and groups. Most of these vacation rentals book direct, so you'll reserve them on their own sites.
 
-For the splurge, the ranch resorts up the road on State Route 128 — Sorrel River Ranch, out toward Castle Valley — sit on the Colorado River under the cliffs with horseback riding, spas and dinners on site, the highly rated retreat option. Beautiful, remote, and booked direct. If you'd rather book a hotel near all of it at one honest price, the downtown and north-end options here are the move.
+For the splurge, the ranch resorts up the road on State Route 128 — Sorrel River Ranch and the Castle Valley Inn, out toward Castle Valley — sit on the Colorado River under the cliffs with horseback riding, spas and dinners on site, the highly rated retreat option. Beautiful, remote, and booked direct. If you'd rather book a hotel near all of it at one honest price, the downtown and north-end options here are the move.
 
 ## A Few More Moab Hotels Worth Booking
 
@@ -1135,13 +1139,13 @@ About the cheapest rate-verified room near the gate, a 9.2 with an indoor pool a
 
 ### Hoodoo Moab, Curio Collection — a step up by Hilton
 
-The upscale downtown option, a Curio Collection hotel with a rooftop pool, a restaurant and design-forward rooms — the polished end of Moab's lineup, walkable to Main Street.
+The closest thing to a luxury hotel downtown, a Curio Collection property with a rooftop pool, a restaurant and design-forward rooms — the polished end of Moab's lineup, an easy base camp walkable to Main Street.
 
 ::hotel lp6576dc25
 
 ## What to Do from Your Moab Base
 
-**Where you stay in Moab is really a question of what you're here to do.** Arches National Park, with Delicate Arch and the Windows, is five minutes north — close enough for a sunrise hike before breakfast. Canyonlands National Park's Island in the Sky, all canyon-rim overlooks, is about forty minutes out, with Dead Horse Point State Park on the way — and the quieter Needles district of Canyonlands National Park further south for a longer day. The Slickrock Trail and the Moab Brand Trails put the mountain biking that made Moab famous minutes from town, and the Colorado River runs rafting trips from gentle float to real whitewater. Add the 4x4 routes near Moab, the dark-sky stargazing and the Hollywood-Western scenery — and the bigger road trips to Monument Valley and the rest of southern Utah's parks — and the only real planning question is how early you'll start to beat the heat. A central base keeps all of it within a short drive.
+**Where you stay in Moab is really a question of what you're here to do.** Arches National Park, with Delicate Arch and the Windows, is five minutes north — close enough for a sunrise hike before breakfast. Canyonlands National Park's Island in the Sky, all canyon-rim overlooks and 360-degree views, is about forty minutes out, with Dead Horse Point State Park on the way — and the quieter Needles district of Canyonlands National Park further south for a longer day of hiking, cycling and four-wheeling. The Slickrock Trail and the Moab Brand Trails put the mountain biking that made Moab famous minutes from town, and the Colorado River runs rafting trips from gentle float to real whitewater. Add the 4x4 routes near Moab, the dark-sky stargazing and the Hollywood-Western scenery — and the bigger road trips to Monument Valley and the rest of southern Utah's parks — and the only real planning question is how early you'll start to beat the heat. A central base keeps all of it — both nearby national parks, the trails and the river — within a short drive, the whole Utah desert at your door and some of the darkest skies in the developed world overhead.
 
 ## Getting to Moab, and When to Go
 
