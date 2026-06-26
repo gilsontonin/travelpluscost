@@ -19,14 +19,18 @@ const arg = (k, d) => {
   return i > -1 && process.argv[i + 1] && !process.argv[i + 1].startsWith("--") ? process.argv[i + 1] : d;
 };
 const BASE = arg("base", "https://travelpluscost.com").replace(/\/$/, "");
-const CONCURRENCY = Number(arg("concurrency", 10));
+const CONCURRENCY = Number(arg("concurrency", 5)); // polite: 10 over a full shard trips Netlify bot-protection (false 403s)
+const LIMIT = Number(arg("limit", 0)); // cap URLs in a shard scan (test runs)
 const N_CITIES = Number(arg("cities", 50));
 const N_PROPERTIES = Number(arg("properties", 40));
 const MAX_LINKCHECK = Number(arg("links", 500));
 const MAX_IMAGES = Number(arg("images", 100));
 const ROTATE = process.argv.includes("--rotate");
 const FORCE_SHARD = arg("shard", null);
-const UA = "travelpluscost-health-scan/1.0";
+// Browser-ish UA + retry-on-throttle: a bot UA hammering 5k URLs gets 403'd by Netlify's protection,
+// which is throttling, not a broken page. Distinguish the two with backoff retries.
+const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) travelpluscost-health-scan";
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const C = { red: "\x1b[31m", yellow: "\x1b[33m", green: "\x1b[32m", dim: "\x1b[2m", b: "\x1b[1m", x: "\x1b[0m", cyan: "\x1b[36m" };
 async function pool(items, n, fn) {
@@ -60,16 +64,23 @@ const metas = (html) => [...html.matchAll(/<meta\s+[^>]*>/gi)].map((m) => attrs(
 const metaBy = (ms, key, val) => ms.find((a) => (a.name || a.property) === val)?.content ?? null;
 const locs = (xml) => [...(xml || "").matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
 
-async function fetchPage(url, method = "GET") {
+async function fetchPage(url, method = "GET", attempt = 0) {
   const t0 = Date.now();
   try {
     const res = await fetch(url, { method, redirect: "follow", headers: { "user-agent": UA } });
+    // 403/429 from a high-rate bot scan = throttling, not a broken page → back off and retry; only a
+    // persistent block after retries counts as an error.
+    if ((res.status === 403 || res.status === 429) && attempt < 2) {
+      await sleep(700 * (attempt + 1) + Math.random() * 500);
+      return fetchPage(url, method, attempt + 1);
+    }
     const ttfb = Date.now() - t0;
     const ct = res.headers.get("content-type") || "";
     // Read the body for HTML pages AND XML (sitemaps) — but not images/binaries (status only).
     const html = method === "GET" && (ct.includes("text/html") || ct.includes("xml")) ? await res.text() : "";
     return { url, status: res.status, finalUrl: res.url, redirected: res.redirected, ttfb, ct, html };
   } catch (e) {
+    if (attempt < 2) { await sleep(700 * (attempt + 1) + Math.random() * 500); return fetchPage(url, method, attempt + 1); }
     return { url, status: 0, err: String(e?.message || e), ttfb: Date.now() - t0 };
   }
 }
@@ -176,7 +187,7 @@ if (ROTATE || FORCE_SHARD) {
 
   console.log(`${C.dim}Rotation · cycle ${state.cycle} · shard ${C.x}${C.b}${shardName}${C.x}${C.dim} · ${state.done.length}/${children.length} shards already done this cycle${C.x}\n`);
   const shard = await fetchPage(target);
-  const urls = locs(shard.html);
+  const urls = LIMIT ? locs(shard.html).slice(0, LIMIT) : locs(shard.html);
   console.log(`${C.dim}Scanning ${urls.length} URLs @ concurrency ${CONCURRENCY}…${C.x}`);
   const t0 = Date.now();
   // Stream: fetch → analyze → keep only the small result, drop the HTML body so it's GC'd. Holding all
