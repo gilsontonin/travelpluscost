@@ -47,6 +47,243 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-charleston",
+    title: "Where to Stay in Charleston, SC: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Charleston, SC in 2026: best areas — the French Quarter, King Street, Mount Pleasant and the beaches — with real hotels and honest rates.",
+    excerpt:
+      "Walk the historic peninsula or wake up near the beach? A plain-English guide to picking the right Charleston base — by area, budget, food, and the trip you're taking.",
+    tldr: {
+      answer:
+        "Charleston splits between the peninsula and the water. Downtown holds the historic French Quarter, South of Broad and King Street — walkable, full of history and food; Mount Pleasant suits families near Shem Creek and the bridge; the beaches at Isle of Palms, Sullivan's Island and Folly are 20 minutes out; and North Charleston runs cheapest near the airport.",
+      points: [
+        "**Downtown / the peninsula** — the French Quarter, the Battery and King Street; the walkable first-timer pick.",
+        "**Mount Pleasant** — family-friendly, near Shem Creek, the bridge and the beaches.",
+        "**The beaches** — Isle of Palms, Sullivan's Island and Folly Beach, about 20 minutes out.",
+        "**North Charleston / the airport** — the cheapest beds, near CHS and the convention center.",
+        "**For a first trip** — stay Downtown; it's the heart of everything Charleston.",
+      ],
+    },
+    date: "2026-06-25",
+    updated: "2026-06-25",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/345861959.jpg",
+      alt: "A classic downtown Charleston street lined with brick buildings, iron balconies and palmetto trees under a blue sky in Charleston, South Carolina",
+      credit: { name: "The Charleston Place, Charleston" },
+    },
+    region: { name: "Charleston", destination: "Charleston" },
+    faqs: [
+      {
+        q: "What is the best area to stay in Charleston for first-timers?",
+        a: "Downtown, on the historic peninsula — ideally the French Quarter or near King Street. It puts the Battery, Rainbow Row, the City Market, the best restaurants and the historic inns all within a flat, walkable few blocks, so you spend your time exploring rather than driving and parking. It costs more than the suburbs, but for a first trip it's worth it.",
+      },
+      {
+        q: "Is Charleston walkable?",
+        a: "Downtown is very walkable — the peninsula is flat and compact, and the Battery, King Street, the market and most restaurants are all on foot, with a free DASH trolley for longer hops. You'll want a car for Mount Pleasant, the beaches and the plantations, and downtown parking is tight, which is the main reason to base where you can walk.",
+      },
+      {
+        q: "Where should families stay in Charleston?",
+        a: "Mount Pleasant or one of the beach islands. Mount Pleasant has family-friendly hotels, easy parking, Shem Creek's seafood and Patriots Point, with downtown and Isle of Palms both a short drive away. For a beach-focused trip, Isle of Palms itself is the developed, family beach. Both run friendlier rates than the downtown inns.",
+      },
+      {
+        q: "How far is Charleston from the beaches?",
+        a: "About 20 minutes. Isle of Palms and Sullivan's Island sit just past Mount Pleasant, roughly 12 miles northeast of downtown, and Folly Beach is a similar drive south. None are on the downtown peninsula, so a beach day means a short drive — easy as a day trip, or stay on the islands if the beach is the priority.",
+      },
+      {
+        q: "How far is the Charleston airport from downtown?",
+        a: "Charleston International (CHS) is in North Charleston, about 12 miles and a 20-minute drive from the downtown historic district. There's no rail link, so plan on a rental car, rideshare or shuttle. The cluster of value hotels around the airport is the cheapest place to stay if you have an early flight.",
+      },
+      {
+        q: "What is Charleston known for?",
+        a: "Its preserved history and its food. Founded in 1670, the \"Holy City\" is famous for Rainbow Row, the Battery, a skyline of church steeples, cobblestone streets and antebellum mansions — plus Fort Sumter, where the Civil War began, the Lowcountry plantations, the barrier-island beaches, and a celebrated restaurant scene built on shrimp and grits and Gullah cooking.",
+      },
+    ],
+    body: `**Where to stay in Charleston comes down to Downtown** if you want to walk the historic peninsula, or Mount Pleasant and the beaches if you came for the water. Founded in 1670, the Holy City wears its history on cobblestone streets — Rainbow Row, the Battery, a skyline of church steeples and a food scene people fly in for — with wide Atlantic beaches a 20-minute drive away.
+
+Below are the real, bookable hotels in each area, then the honest neighborhood guide to where to stay in Charleston, South Carolina, as of 2026.
+
+Charleston spreads from a dense, walkable downtown peninsula across the rivers to Mount Pleasant and the barrier-island beaches, so picking a base is mostly about whether you want to walk to dinner among the history, or wake up near the sand.
+
+## Best Areas to Stay in Charleston, at a Glance
+
+Five areas, one deciding factor: the walkable history of the peninsula, or the space and beaches across the bridge. Choose the area by your trip, then the hotel — here's the whole Lowcountry on one screen.
+
+| Area | The feel | Best for | The rate |
+|---|---|---|---|
+| [Downtown / the peninsula](/search?destination=Charleston&adults=2) | Historic, walkable, food, King Street | First-timers, history, no car | High |
+| [Mount Pleasant](/search?destination=Charleston&adults=2) | Suburban, Shem Creek, near the beach | Families, value, the beaches | Mid |
+| [The beaches](/search?destination=Charleston&adults=2) | Surf, sand, low-key island life | Beach days, families | Mid to high |
+| [North Charleston / airport](/search?destination=Charleston&adults=2) | Chains, convention center, value | Budgets, one-nighters | Low |
+
+::infographic charleston-by-numbers
+
+[See every Charleston hotel and its live nightly price](/search?destination=Charleston&adults=2)
+
+## Downtown Charleston: the Historic District
+
+**Downtown is where to stay in Charleston for a first trip — the walkable historic peninsula where the French Quarter, South of Broad and King Street pack centuries of history, the best restaurants and the grandest hotels into a few flat, cobblestoned blocks.** This is the postcard Charleston: Rainbow Row's pastel houses, the oak-lined Battery promenade, horse carriages and church steeples, all on foot from a downtown room.
+
+It's the most in-demand square mile in the Lowcountry, so the historic inns and luxury hotels here carry the city's highest rates. But for walkable history and food, nothing else compares — and the grand Charleston Place anchors the heart of it if you want the marquee splurge.
+
+::infographic charleston-downtown-vs-mtpleasant
+
+### The French Quarter and South of Broad
+
+The French Quarter and South of Broad are Charleston at its most elegant — Rainbow Row, the art galleries, the Battery and grand antebellum mansions, all steps from the water. The boutique inns here are the city's finest: the French Quarter Inn delivers polished luxury off the market, The Spectator brings 1920s-glamour butler service, and the Harbourview Inn looks out over the harbor and the Pineapple Fountain.
+
+::hotel lp3f7cc
+
+::hotel lp748fb
+
+::hotel lp23474
+
+### Historic Hotels off the Market
+
+A cluster of historic full-service hotels sits a block or two inland. The Mills House is a restored landmark with a rooftop pool, and The Ryder brings a fresh, design-forward take with a courtyard and pool near Marion Square — both an easy walk to everything downtown.
+
+::hotel lp1a7d7
+
+::hotel lp2f301
+
+### The Quieter Downtown Neighborhoods
+
+Beyond the marquee blocks, the peninsula's residential neighborhoods make a charming, more local base. Harleston Village is a leafy College-of-Charleston neighborhood near Colonial Lake; Ansonborough sits quiet between the City Market and the harbor; and Cannonborough-Elliottborough is the foodie neighborhood of bed-and-breakfasts and buzzy restaurants. Each of these neighborhoods keeps you within walking distance of the historic district at friendlier rates than the grand hotels.
+
+**The move:** book Downtown for a walkable first trip · **Best for:** history, food, romance · **Watch:** it carries the highest rates in the city.
+
+## King Street and Upper King: Shopping, Dining and Nightlife
+
+**King Street is where to stay in Charleston for shopping, restaurants and nightlife — the spine of the peninsula, with antiques on Lower King, fashion in the middle, and the dining and bars of Upper King up top.** Upper King is the city's buzziest stretch, where the luxury Hotel Bennett overlooks Marion Square (it books direct) and the rooftops run late. Stay on or near it and you can walk to the City Market, Marion Square and a hundred of Charleston's celebrated restaurants and rooftop bars.
+
+It runs livelier and a little louder than South of Broad, which suits travelers who want to be in the middle of the action. The Market Pavilion, with its famous rooftop bar and pool, and the cozy Andrew Pinckney Inn put you right in it.
+
+::hotel lp35436
+
+::hotel lp3f7cb
+
+**The move:** book King Street for food and nightlife · **Best for:** foodies, couples, shopping · **Watch:** upper King can be noisy on weekend nights.
+
+## Mount Pleasant: Families, Shem Creek and the Bridge
+
+**Mount Pleasant is where to stay in Charleston for families and value — the leafy suburb just across the Arthur Ravenel Jr. Bridge, close to Shem Creek's seafood, Patriots Point and the beaches.** You trade the walkable peninsula for a residential neighborhood of porches, oak trees and easier parking, with downtown a 10-to-15-minute drive and the Isle of Palms beach even nearer.
+
+It's the practical, friendlier-priced base for a family or a longer stay, with chain hotels and easy access to Boone Hall and the islands. The Cambria sits near the waterfront and the bridge, and the Hampton Inn at Patriots Point puts the USS Yorktown and the harbor views at your door.
+
+::hotel lpdefa2
+
+::hotel lp5563e
+
+**The move:** base in Mount Pleasant for families and the beach · **Best for:** families, value, Shem Creek seafood · **Watch:** you'll drive into downtown.
+
+## The Beaches: Isle of Palms, Sullivan's Island and Folly Beach
+
+**Charleston's beaches sit on the barrier islands about 20 minutes from downtown, and each has its own personality.** Isle of Palms is the developed, family-friendly one, with shops and dining on Palm Boulevard and the Wild Dunes Resort and its golf courses anchoring the north end (it books direct). Sullivan's Island is the quieter, upscale neighborhood next door, with a historic lighthouse and a handful of great restaurants; and Folly Beach, "the Edge of America," is the laid-back surf town south of the city, known for its waves and its pier.
+
+Staying on the islands trades downtown's history for sand and surf, and you'll want a car for both the beach and the city. For a beach-first Charleston trip with the history as a day trip, it's the call.
+
+::hotel lp29468
+
+**The move:** book the islands for a beach-first trip · **Best for:** beach days, families, surfers · **Watch:** a car is a must, and summer rates climb.
+
+## North Charleston, West Ashley and the Airport: Value
+
+**North Charleston and West Ashley are where to stay in Charleston for the lowest rates — the chain-hotel districts near the airport (CHS) and the convention center, a short drive up from the peninsula.** The rooms here run cheapest in the region, with easy interstate access and parking, about 15 to 20 minutes from downtown.
+
+You give up the walkable history, but for a budget trip, an early flight or a convention, it's the sensible base. West Ashley sits a little closer to downtown across the Ashley River, with its own growing food scene.
+
+::hotel lp6555d27f
+
+::hotel lp6556c275
+
+For more value near the airport, the Sleep Inn and the Hampton Inn cover the dependable, low-rate end with free breakfast and parking.
+
+::hotel lp1dc84
+
+::hotel lp3a1bd
+
+**The move:** book North Charleston to sleep cheap and drive · **Best for:** budgets, flights, conventions · **Watch:** it's interstate, not scenery.
+
+## Things to Do in Charleston
+
+**Most of Charleston's attractions cluster on the downtown peninsula, another reason first-timers base there.** The Battery and White Point Garden anchor the southern tip, Rainbow Row and the French Quarter galleries fill the blocks above, and the Charleston City Market — where Gullah artisans weave sweetgrass baskets — runs through the center, and the Pineapple Fountain at Waterfront Park looks out over Charleston Harbor.
+
+Out in the harbor, Fort Sumter marks where the Civil War began, reached by ferry from Liberty Square or Patriots Point. The Lowcountry plantations and house museums — Boone Hall, Magnolia and Middleton Place — spread out along the Ashley River, an easy drive from any base, and a horse-carriage tour through the historic district is the classic first-afternoon move. The Gibbes Museum of Art and the Charleston Museum, the country's oldest, round out a rainy day downtown.
+
+[Search Charleston hotels near the historic district](/search?destination=Charleston&adults=2)
+
+## Charleston's Food Scene
+
+**Charleston is a celebrated food city, and that shapes where a lot of people choose to stay.** The peninsula is the heart of it — King Street and the French Quarter hold the award-winning restaurants, the rooftop bars and the classic Lowcountry kitchens serving shrimp and grits, she-crab soup and Gullah-rooted cooking.
+
+Across the bridge, Shem Creek in Mount Pleasant is known for fresh seafood with a marsh view and the boats coming in at sunset, and the beach neighborhoods add their own casual fish shacks. Stay downtown if dinner reservations are the point of the trip; stay in Mount Pleasant if you'd rather eat shrimp off the boat.
+
+**The move:** base downtown for the restaurant scene · **Best for:** foodies · **Watch:** the best tables book up weeks ahead.
+
+## Is Charleston Walkable? Getting Around
+
+**Downtown Charleston is famously walkable, but the rest of the area needs a car.** The peninsula is flat and compact — the Battery, King Street, the market and most restaurants are all on foot, and the free DASH trolley loops the main routes if your feet give out.
+
+The catch is parking: downtown garages fill and street spots are scarce, so a downtown base you can walk from is worth more than a cheaper room you'll drive in from. Mount Pleasant, the beaches and the plantations all need a car, 15 to 30 minutes out.
+
+::infographic charleston-getting-there
+
+**The move:** base where you can walk, drive for the rest · **Best for:** everyone planning the trip · **Watch:** downtown parking is the real headache.
+
+## The Best Time to Visit Charleston
+
+**Spring and fall are the best times to visit Charleston — mild, blooming and made for walking.** March through May brings azaleas, garden season and the Spoleto arts festival; September through November cools off after the summer heat. Both are peak, so book early.
+
+Summer is hot, humid and busy with beach crowds, while winter is mild, quiet and the best value outside the holidays. Whenever you come, weekdays are calmer and cheaper than Charleston's busy wedding-and-tourism weekends.
+
+## A Quick History: the Holy City
+
+**To understand Charleston is to understand 350 years of carefully kept history.** Founded in 1670, it grew rich and grand before the Civil War — which began in its harbor when Confederate guns fired on Fort Sumter in 1861 — and an 1886 earthquake and a string of hurricanes left their mark on the old houses. What saved the city was preservation: Charleston pioneered the country's first historic-district zoning in 1931, which is why the peninsula still looks the way it does. The "Holy City" nickname comes from the skyline of church steeples that has welcomed many faiths since colonial days, and it's a big part of why the historic district rewards staying right in the middle of it.
+
+## Charleston for Couples and Weddings
+
+**Charleston is one of the country's favorite places to get married, and it makes a romantic base.** The historic-district inns — the French Quarter Inn, The Spectator, the Harbourview — are built for couples, with the carriage rides, the Battery sunsets and the celebrated restaurants all within a walk. Spring's garden season and the soft fall light draw the wedding crowds, so book early if you're visiting then. For a quieter romantic trip, a Cannonborough-Elliottborough bed-and-breakfast or a Sullivan's Island beach stay trades the bustle for calm.
+
+[Search romantic Charleston stays downtown](/search?destination=Charleston&adults=2)
+
+## What a Night in Charleston Actually Costs
+
+**Charleston runs from splurge to budget, and the gap is mostly geography.** The downtown historic inns and luxury hotels sit at the top — this is a premier, in-demand destination — while Mount Pleasant and the beaches fall in the middle and North Charleston runs cheapest near the airport.
+
+Spring and fall peak season and big festival weekends push rates highest; midweek and the quieter winter months bring the best value. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live Charleston prices](/search?destination=Charleston&adults=2)
+
+## Which Charleston Area Should You Choose?
+
+**For a first trip, choose Downtown and don't overthink it.** The French Quarter, the Battery, King Street and the food are the heart of what makes Charleston one of America's favorite cities, and you can do most of it on foot. Pick Mount Pleasant for a family trip with easy beach access and friendlier rates, the islands for a beach-first visit, and North Charleston when the nightly rate matters most.
+
+Once you've matched an area to your trip, here are real, well-reviewed Charleston hotels across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| The Spectator | French Quarter | 10.0 | Boutique luxury |
+| French Quarter Inn | French Quarter | 9.8 | Walkable elegance |
+| Harbourview Inn | Waterfront | 9.6 | Harbor views |
+| Mills House | Downtown | 9.4 | Historic, rooftop pool |
+| The Charleston Place | Downtown | 9.4 | The grand splurge |
+| The Ryder | Upper King | 9.4 | Design, pool |
+| Cambria | Mount Pleasant | 9.2 | Families, value |
+| Comfort Suites | Isle of Palms | 9.0 | Near the beach |
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+
+::cta Charleston
+`,
+  },
+  {
     slug: "where-to-stay-in-staugustine",
     title: "Where to Stay in Saint Augustine, FL: Best Areas & Hotels (2026)",
     description:
@@ -284,7 +521,7 @@ Summer is hot, humid and peak beach season, with afternoon thunderstorms and the
 
 **Saint Augustine makes an ideal base for exploring the northeast Florida coast.** Jacksonville and its beaches sit about 40 miles north, with a big-city dining and museum scene; charming Amelia Island and historic Fernandina Beach lie a little beyond, an hour and change up A1A past the marshes.
 
-South, Daytona Beach is roughly an hour down the coast, and the Kennedy Space Center about two and a half hours toward Orlando. Even without leaving St. Johns County, the beaches, the state park, the fishing and the nature trails give a car-equipped traveler plenty to explore — one more reason a central location with easy highway access earns its keep.
+South, Daytona Beach is roughly an hour down the coast, and the Kennedy Space Center about two and a half hours toward Orlando. Even without leaving St. Johns County, the beaches, the state park, the fishing and the nature trails give a car-equipped traveler plenty to explore — one more reason a central location with easy highway access earns its keep. Farther up the coast, [Charleston](/blog/where-to-stay-in-charleston) is about two hours north — a classic Lowcountry road-trip pairing.
 
 | Day trip | Direction | Drive |
 |---|---|---|

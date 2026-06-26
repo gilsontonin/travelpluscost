@@ -1,13 +1,23 @@
 {
+  "where-to-stay-in-charleston": [
+    "where-to-stay-in-staugustine",
+    "where-to-stay-in-santabarbara",
+    "where-to-stay-in-galveston",
+    "where-to-stay-in-keywest",
+    "where-to-stay-in-asheville",
+    "where-to-stay-in-maui",
+    "where-to-stay-in-oahu",
+    "where-to-stay-in-albuquerque"
+  ],
   "where-to-stay-in-staugustine": [
+    "where-to-stay-in-charleston",
     "where-to-stay-in-santabarbara",
     "where-to-stay-in-keywest",
     "where-to-stay-in-galveston",
     "where-to-stay-in-asheville",
-    "where-to-stay-in-oahu",
     "where-to-stay-in-flagstaff",
     "where-to-stay-in-albuquerque",
-    "where-to-stay-in-tucson"
+    "where-to-stay-in-moab"
   ],
   "where-to-stay-in-albuquerque": [
     "where-to-stay-in-tucson",
@@ -17,17 +27,17 @@
     "where-to-stay-in-santabarbara",
     "where-to-stay-in-sedona",
     "where-to-stay-in-moab",
-    "where-to-stay-in-telluride"
+    "where-to-stay-in-charleston"
   ],
   "where-to-stay-in-galveston": [
+    "where-to-stay-in-charleston",
     "where-to-stay-in-keywest",
     "where-to-stay-in-staugustine",
     "where-to-stay-in-oahu",
     "where-to-stay-in-santabarbara",
     "where-to-stay-in-branson",
     "where-to-stay-in-wisconsindells",
-    "where-to-stay-in-moab",
-    "where-to-stay-in-albuquerque"
+    "where-to-stay-in-moab"
   ],
   "where-to-stay-in-tucson": [
     "where-to-stay-in-flagstaff",
@@ -37,7 +47,7 @@
     "where-to-stay-in-santabarbara",
     "where-to-stay-in-moab",
     "where-to-stay-in-bend",
-    "where-to-stay-in-keywest"
+    "where-to-stay-in-charleston"
   ],
   "where-to-stay-in-flagstaff": [
     "where-to-stay-in-tucson",
@@ -51,23 +61,23 @@
   ],
   "where-to-stay-in-santabarbara": [
     "where-to-stay-in-staugustine",
+    "where-to-stay-in-charleston",
     "where-to-stay-in-moab",
     "where-to-stay-in-tucson",
     "where-to-stay-in-maui",
     "where-to-stay-in-keywest",
     "where-to-stay-in-bend",
-    "where-to-stay-in-asheville",
-    "where-to-stay-in-galveston"
+    "where-to-stay-in-asheville"
   ],
   "where-to-stay-in-keywest": [
     "where-to-stay-in-staugustine",
+    "where-to-stay-in-charleston",
     "where-to-stay-in-galveston",
     "where-to-stay-in-maui",
     "where-to-stay-in-santabarbara",
     "where-to-stay-in-oahu",
     "where-to-stay-in-moab",
-    "where-to-stay-in-tucson",
-    "where-to-stay-in-asheville"
+    "where-to-stay-in-tucson"
   ],
   "where-to-stay-in-telluride": [
     "where-to-stay-in-moab",
@@ -87,7 +97,7 @@
     "where-to-stay-in-moab",
     "where-to-stay-in-sedona",
     "where-to-stay-in-bend",
-    "where-to-stay-in-galveston"
+    "where-to-stay-in-asheville"
   ],
   "where-to-stay-in-wisconsindells": [
     "where-to-stay-in-branson",
@@ -125,9 +135,9 @@
     "where-to-stay-in-bend",
     "where-to-stay-in-estespark",
     "where-to-stay-in-albuquerque",
+    "where-to-stay-in-charleston",
     "where-to-stay-in-sedona",
-    "where-to-stay-in-santabarbara",
-    "where-to-stay-in-moab"
+    "where-to-stay-in-santabarbara"
   ],
   "where-to-stay-in-estespark": [
     "where-to-stay-in-moab",
@@ -154,10 +164,10 @@
     "where-to-stay-in-santabarbara",
     "where-to-stay-in-keywest",
     "where-to-stay-in-sedona",
+    "where-to-stay-in-charleston",
     "where-to-stay-in-moab",
     "where-to-stay-in-bend",
-    "where-to-stay-in-asheville",
-    "where-to-stay-in-flagstaff"
+    "where-to-stay-in-asheville"
   ],
   "surveillance-pricing": [
     "where-to-stay-in-maui",
@@ -166,17 +176,17 @@
     "where-to-stay-in-moab",
     "where-to-stay-in-flagstaff",
     "where-to-stay-in-santabarbara",
-    "where-to-stay-in-galveston",
-    "where-to-stay-in-wisconsindells"
+    "where-to-stay-in-charleston",
+    "where-to-stay-in-galveston"
   ],
   "where-to-stay-in-oahu": [
     "where-to-stay-in-maui",
-    "where-to-stay-in-galveston",
     "where-to-stay-in-keywest",
+    "where-to-stay-in-galveston",
+    "where-to-stay-in-charleston",
     "where-to-stay-in-santabarbara",
-    "where-to-stay-in-staugustine",
     "where-to-stay-in-bend",
-    "where-to-stay-in-albuquerque",
-    "where-to-stay-in-moab"
+    "where-to-stay-in-staugustine",
+    "where-to-stay-in-albuquerque"
   ]
 }

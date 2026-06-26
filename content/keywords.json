@@ -1,4 +1,23 @@
 {
+  "where-to-stay-in-charleston": {
+    "primary": "where to stay in charleston",
+    "secondary": [
+      "where to stay in charleston sc",
+      "where to stay in charleston south carolina",
+      "where to stay in charleston historic district",
+      "where to stay in charleston king street",
+      "where to stay in charleston for families",
+      "best area to stay in charleston"
+    ],
+    "volume": 2900,
+    "kd": 27,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": [],
+    "note": "Charleston SC (not WV) — directory pool is SC-dominant; cards verified state=SC. serp 91 (comprehensive ~2380w)."
+  },
   "where-to-stay-in-staugustine": {
     "primary": "where to stay in st augustine",
     "secondary": [

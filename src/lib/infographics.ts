@@ -266,6 +266,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Ride the trolley", detail: "Hop-on Old Town Trolleys loop the historic sights, and free park-and-ride shuttles run during the busy Nights of Lights season." },
     ],
   },
+  "charleston-by-numbers": {
+    kind: "stat",
+    title: "Charleston by the numbers",
+    stats: [
+      { value: "1670", label: "founded — the heart of the Lowcountry" },
+      { value: "~12 mi", label: "from downtown to the Isle of Palms and Folly beaches" },
+      { value: "~15 min", label: "over the Ravenel Bridge to Mount Pleasant" },
+      { value: "Holy City", label: "nicknamed for its skyline of historic church steeples" },
+    ],
+  },
+  "charleston-downtown-vs-mtpleasant": {
+    kind: "compare",
+    title: "Downtown or Mount Pleasant?",
+    left: "Downtown (the peninsula)",
+    right: "Mount Pleasant & the beaches",
+    rows: [
+      { label: "The vibe", left: "Cobblestones, King Street, walk everywhere", right: "Suburban porches, Shem Creek, the surf" },
+      { label: "Best for", left: "First-timers, history, food, no car", right: "Families, beach days, lower rates" },
+      { label: "To the sights", left: "On foot", right: "A 10–15 minute drive over the bridge" },
+      { label: "You wake up to", left: "Church steeples and brick", right: "Oak trees, marsh and the beaches nearby" },
+    ],
+  },
+  "charleston-getting-there": {
+    kind: "steps",
+    title: "Getting to Charleston",
+    steps: [
+      { title: "Fly into CHS", detail: "Charleston International (CHS) sits in North Charleston, about 12 miles and 20 minutes from downtown." },
+      { title: "Park downtown, then walk", detail: "The historic peninsula is flat and walkable; parking is tight, so base downtown and leave the car, or use the free DASH trolley." },
+      { title: "Drive for the beaches", detail: "Mount Pleasant, Isle of Palms, Sullivan's Island and Folly Beach all need a car, 15 to 30 minutes out." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",
