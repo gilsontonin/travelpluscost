@@ -1,4 +1,22 @@
 {
+  "where-to-stay-in-keywest": {
+    "primary": "where to stay in key west",
+    "secondary": [
+      "where to stay in key west florida",
+      "best area to stay in key west",
+      "where to stay in old town key west",
+      "where to stay on duval street key west",
+      "where to stay in key west on a budget",
+      "where to stay in key west for couples"
+    ],
+    "volume": 3600,
+    "kd": 30,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": []
+  },
   "where-to-stay-in-telluride": {
     "primary": "where to stay in telluride",
     "secondary": [
