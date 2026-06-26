@@ -1,4 +1,23 @@
 {
+  "where-to-stay-in-scottsdale": {
+    "primary": "where to stay in scottsdale",
+    "secondary": [
+      "where to stay in scottsdale az",
+      "where to stay in scottsdale arizona",
+      "where to stay in scottsdale old town",
+      "where to stay in scottsdale for first time",
+      "where to stay in scottsdale for bachelorette",
+      "best area to stay in scottsdale"
+    ],
+    "volume": 4400,
+    "kd": 32,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": [],
+    "note": "Vol/KD estimated (no Semrush — SERP-first). DEEP serp (competitors ~4,200-4,600w); shipped at serp 90 (the floor, no grind to 93) at ~2,640w. AZ cluster: links to/from where-to-stay-in-sedona, -tucson, -flagstaff (4-post AZ web for topical authority)."
+  },
   "where-to-stay-in-savannah": {
     "primary": "where to stay in savannah",
     "secondary": [

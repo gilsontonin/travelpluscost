@@ -328,6 +328,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Drive to Tybee", detail: "Tybee Island, Savannah's beach, is about 18 miles and 30 minutes east — a car or a day-trip tour gets you there." },
     ],
   },
+  "scottsdale-by-numbers": {
+    kind: "stat",
+    title: "Scottsdale by the numbers",
+    stats: [
+      { value: "330+", label: "days of sunshine a year in the Sonoran Desert" },
+      { value: "~15 min", label: "from Old Town to Phoenix Sky Harbor (PHX)" },
+      { value: "Golf country", label: "Troon North, TPC Scottsdale and dozens more courses" },
+      { value: "Old Town", label: "the walkable heart — bars, galleries and shopping" },
+    ],
+  },
+  "scottsdale-oldtown-vs-north": {
+    kind: "compare",
+    title: "Old Town or North Scottsdale?",
+    left: "Old Town Scottsdale",
+    right: "North Scottsdale",
+    rows: [
+      { label: "The vibe", left: "Walkable bars, galleries, nightlife", right: "Desert views, golf, quiet luxury" },
+      { label: "Best for", left: "First-timers, nightlife, no car", right: "Golfers, spa-goers, calm" },
+      { label: "Getting around", left: "Walk everywhere", right: "You'll want a car" },
+      { label: "The rate", left: "Mid to high", right: "Resort high" },
+    ],
+  },
+  "scottsdale-getting-there": {
+    kind: "steps",
+    title: "Getting to Scottsdale",
+    steps: [
+      { title: "Fly into PHX", detail: "Phoenix Sky Harbor (PHX) is about 12 miles and 15–20 minutes from Old Town Scottsdale — the closest major airport." },
+      { title: "Rent a car for most areas", detail: "Old Town is walkable, but North Scottsdale, the golf resorts and the trailheads are spread out — you'll want a car everywhere but Old Town." },
+      { title: "Beat the summer heat", detail: "Scottsdale sees 100°F-plus summers; fall through spring is prime, and resorts drop their rates in the summer." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",

@@ -47,6 +47,229 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-scottsdale",
+    title: "Where to Stay in Scottsdale, AZ: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Scottsdale, AZ in 2026: best areas — Old Town, Camelback/Paradise Valley, North Scottsdale and beyond — with real hotels and honest rates.",
+    excerpt:
+      "Walk to the bars in Old Town or wake up at a desert golf resort? A plain-English guide to picking the right Scottsdale base — by area, budget, golf, and the trip you're taking.",
+    tldr: {
+      answer:
+        "Scottsdale splits between walkable Old Town and the spread-out resorts. Old Town is the lively, walkable heart — best for first-timers, nightlife and no car; Paradise Valley and Camelback hold the iconic spa resorts; North Scottsdale is golf, desert views and quiet luxury; and the Salt River and airport side run cheapest, a short drive out.",
+      points: [
+        "**Old Town Scottsdale** — walkable bars, galleries and shopping; the first-timer pick.",
+        "**Paradise Valley / Camelback** — the iconic desert-resort and spa splurge.",
+        "**North Scottsdale** — golf, hiking and quiet luxury; you'll want a car.",
+        "**Salt River / SkySong / airport** — the cheapest beds, a short drive out.",
+        "**For a first trip** — stay in Old Town; it's the only part you can walk.",
+      ],
+    },
+    date: "2026-06-25",
+    updated: "2026-06-25",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/194549287.jpg",
+      alt: "A modern desert resort glowing under a pink and purple sunset with Camelback Mountain rising behind it in Scottsdale, Arizona",
+      credit: { name: "Mountain Shadows Resort, Scottsdale" },
+    },
+    region: { name: "Scottsdale", destination: "Scottsdale" },
+    faqs: [
+      {
+        q: "What is the best area to stay in Scottsdale for first-timers?",
+        a: "Old Town Scottsdale. It's the walkable heart of the city — the bars, galleries, restaurants, rooftop patios and Fashion Square shopping are all within a few blocks, with a free trolley for the rest, so you can leave the car. It costs more than the airport-side chains and books up fastest, but for a first trip it puts you in the middle of everything.",
+      },
+      {
+        q: "Is Scottsdale walkable?",
+        a: "Only Old Town. Within Old Town the bars, restaurants, galleries and the mall are all on foot, with a free trolley looping the area. Everywhere else — the resorts, the golf courses, the trailheads and the airport — is a drive across a spread-out desert city, so unless you're basing in Old Town for a walkable trip, plan on a rental car.",
+      },
+      {
+        q: "Old Town or North Scottsdale — which is better?",
+        a: "It depends on your trip. Old Town is walkable, lively and central, the best base for first-timers, nightlife and anyone without a car. North Scottsdale trades sidewalks for desert views, championship golf at Troon North and TPC, hiking trails and a quieter brand of resort luxury — better for golfers, hikers and travelers who want calm. You'll need a car up north.",
+      },
+      {
+        q: "When is the best time to visit Scottsdale?",
+        a: "November through April — warm, sunny days and cool nights, the desert at its best. It peaks in February and March around spring-training baseball and the WM Phoenix Open, when rates and crowds run highest, so book ahead. Summer tops 100°F for weeks, but the resorts cut their rates hard, making a summer pool trip the best value of the year if you can take the heat.",
+      },
+      {
+        q: "How far is Scottsdale from the Phoenix airport?",
+        a: "Phoenix Sky Harbor (PHX) is about 12 miles and a 15-to-20-minute drive from Old Town Scottsdale — the closest major airport and an easy place to grab a rental car. North Scottsdale and the far resorts are 30 to 45 minutes out, so factor the drive in when you pick a base.",
+      },
+      {
+        q: "Can you do a day trip to Sedona from Scottsdale?",
+        a: "Yes — Sedona's red rocks are about two hours north, an easy and popular day trip or overnight, and the Grand Canyon is roughly three and a half hours. Scottsdale makes a comfortable base for exploring the rest of Arizona; if you'd rather stay up there, here's our guide to where to stay in Sedona.",
+      },
+    ],
+    body: `**Where to stay in Scottsdale comes down to Old Town** if you want to walk to the bars, galleries and restaurants, or a desert resort if you came for the golf, the spa and the Camelback Mountain views. With 330-plus days of sunshine in the Sonoran Desert, "the West's Most Western Town" is really two trips — a walkable downtown and a spread-out world of resorts — and where you sleep decides which one you get.
+
+Below are the real, bookable hotels in each area, then the honest neighborhood guide to where to stay in Scottsdale, Arizona, as of 2026.
+
+Scottsdale runs north from the compact, walkable Old Town up through the resort corridor and Paradise Valley to the golf country and desert preserves of North Scottsdale, so picking a base is mostly about whether you want to walk to dinner or drive to a tee time.
+
+## Best Areas to Stay in Scottsdale, at a Glance
+
+Four areas, one deciding factor: the walkable energy of Old Town, or the space, golf and quiet of the resorts. Choose the area by your trip, then the hotel — here's the whole Sonoran playground on one screen.
+
+| Area | The feel | Best for | The rate |
+|---|---|---|---|
+| [Old Town Scottsdale](/search?destination=Scottsdale&adults=2) | Walkable bars, galleries, shopping | First-timers, nightlife, no car | Mid to high |
+| [Paradise Valley / Camelback](/search?destination=Scottsdale&adults=2) | Iconic resorts, spas, mountain views | Splurge, romance, spa trips | Resort high |
+| [North Scottsdale](/search?destination=Scottsdale&adults=2) | Desert, golf, quiet luxury | Golfers, hikers, calm | High |
+| [Salt River / SkySong / airport](/search?destination=Scottsdale&adults=2) | Newer chains, easy access, value | Budgets, families, the casino | Low to mid |
+
+::infographic scottsdale-by-numbers
+
+[See every Scottsdale hotel and its live nightly price](/search?destination=Scottsdale&adults=2)
+
+## Old Town Scottsdale: the Walkable Heart
+
+**Old Town Scottsdale is where to stay in Scottsdale for a first trip — the walkable heart of the city, where the bars, galleries, restaurants and shops pack into a few sunny, strollable blocks.** It's the rare corner of the desert sprawl where you can leave the car: the Entertainment District's rooftop bars and clubs, the Arts District's galleries and Thursday ArtWalk, Fashion Square's luxury mall and 5th Avenue's boutiques are all on foot, with a free trolley for the rest.
+
+It's the liveliest, most convenient base, which is why first-timers and groups land here — and why rooms book up fastest. The mid-century Hotel Valley Ho is the iconic Old Town stay, the Canopy by Hilton drops you right in the Entertainment District, the boutique Bespoke Inn adds a quiet, upscale alternative, and the Courtyard covers the dependable mid-range.
+
+::infographic scottsdale-oldtown-vs-north
+
+### Old Town Scottsdale Hotels: from Hotel Valley Ho to the Canopy
+
+Old Town Scottsdale's hotels range from the mid-century modern Hotel Valley Ho to dependable modern chains, and the rooms here are smaller and more walkable than the resort rooms up north — ideal if you plan to be out exploring. These old town hotels put more travelers within walking distance of the bars and restaurants than anywhere else in the city. Pick the one whose style and price fit, and you're a short walk from the bars, galleries and restaurants.
+
+::hotel lp19b9f
+
+::hotel lp65567285
+
+::hotel lp69ec5
+
+::hotel lp24fca
+
+**The move:** book Old Town for a walkable first trip · **Best for:** first-timers, nightlife, no car · **Watch:** the Entertainment District is loud on weekend nights.
+
+## Paradise Valley and Camelback: the Resort Splurge
+
+**Paradise Valley and the Camelback Mountain corridor are where to stay in Scottsdale for the iconic desert-resort splurge — the spas, the infinity pools and the mountain views that put Scottsdale on the map.** This affluent stretch between Scottsdale and Phoenix is home to the marquee resorts, a short drive from Old Town but a world away in calm.
+
+Our cover photo is Mountain Shadows, set right under Camelback; nearby, the Sanctuary on Camelback Mountain is the celebrated spa-and-views retreat, the Omni Montelucia brings Andalusian-style grandeur, and the Andaz Scottsdale spreads low desert bungalows around a palm-shaded pool.
+
+::hotel lp2ce2c
+
+::hotel lp1c430
+
+::hotel lp946f6
+
+**The move:** book Paradise Valley for a spa-and-pool splurge · **Best for:** couples, spa-goers, mountain views · **Watch:** you'll drive to Old Town, and resort fees add up.
+
+## North Scottsdale: Golf, Desert and Quiet Luxury
+
+**North Scottsdale is where to stay in Scottsdale for golf, desert views and a quieter brand of luxury.** Up here the sprawl gives way to saguaro-studded foothills, championship courses like Troon North and TPC Scottsdale, and the trailheads of the McDowell Sonoran Preserve — the base for golfers, hikers and anyone who wants the desert at the door instead of the bar.
+
+The Four Seasons at Troon North is the marquee desert retreat among the boulders, the Westin Kierland pairs a big resort with its own golf and a lazy river, and the Hilton at Cavasson covers the newer, more affordable end of the north-side resorts.
+
+::hotel lp2a20b
+
+::hotel lp1d5ed
+
+::hotel lp65584a7a
+
+**The move:** book North Scottsdale for golf and desert calm · **Best for:** golfers, hikers, quiet · **Watch:** everything is a drive — you'll need a car.
+
+## Value: Salt River, SkySong and the Airport Side
+
+**For the lowest rates, the newer chain hotels along the Salt River and the SkySong/airport side are where to stay in Scottsdale on a budget.** These districts on the southern and eastern edges sit near the 101 freeway, Talking Stick and Phoenix Sky Harbor, a short drive from Old Town, with easy parking and friendlier prices.
+
+The Courtyard and Residence Inn out by the Salt River and Talking Stick post some of the highest guest scores in the whole pool, and the Element at SkySong pairs suites with quick freeway access — practical bases for families, longer stays or a budget trip.
+
+::hotel lp60ffb
+
+::hotel lp236034
+
+::hotel lp1f66a5
+
+**The move:** stay on the edges to sleep cheap and drive in · **Best for:** budgets, families, the casino · **Watch:** you're near the freeway, not the action.
+
+## Things to Do in Scottsdale
+
+**Scottsdale is built for two things — the outdoors and the good life, and Old Town Scottsdale is where the good life starts.** It packs the nightlife, the Thursday ArtWalk, the Western heritage and many of the city's best dining and rooftop bars; Scottsdale Fashion Square and 5th Avenue's boutique shops anchor the shopping. The Arts District's art galleries and the city's Native American heritage — from the historic Western town to the nearby Salt River Pima-Maricopa community and the Heard Museum in Phoenix — give first-time visitors and culture lovers plenty of attractions beyond the pool, with the Arts District and its galleries at the center. It's the easy first-night base.
+
+The rest is outdoor desert play. Golfers have Troon North, TPC Scottsdale and dozens of courses; hikers have Camelback Mountain, Pinnacle Peak and the McDowell Sonoran Preserve; and Frank Lloyd Wright's Taliesin West — his modern desert house and studio — and the famous spas round out the calmer days. In late winter, the WM Phoenix Open and Cactus League spring training pack the town.
+
+[Search Scottsdale hotels near Old Town](/search?destination=Scottsdale&adults=2)
+
+## Scottsdale Dining and Nightlife
+
+**Scottsdale's dining and nightlife are concentrated in Old Town Scottsdale, which is another reason to base there.** The Entertainment District is the after-dark heart — rooftop bars, clubs and late-night patios that give Old Town its party-town vibe — while the wider downtown along 5th Avenue and the resorts offer everything from a celebrated chef-driven restaurant to casual desert-patio dining, and most resorts run a signature restaurant of their own. Thursday's ArtWalk pairs the Arts District's art galleries with a stroll, and the big resorts add their own destination dining for nights you'd rather not drive. Whatever your style, the best dining is an easy walk or a short ride from an Old Town base.
+
+## Choosing Your Scottsdale Hotel
+
+**Once you've picked an area, a few things separate the Scottsdale hotels worth booking.** The resorts trade on space and style — expect spacious rooms, an outdoor pool (often several), a spa, on-site dining and resort amenities, with resort fees and paid parking layered on top, so check the all-in number. Old Town hotels are smaller and more walkable; a boutique or a well-kept mid-range room there can beat a far-flung resort if you plan to be out exploring.
+
+Other things to weigh: how close the hotel is to what you came for — golf, the bars, the trailheads — whether breakfast or parking is included, and how the guest scores read. Many of the resorts are strikingly modern, and each offers a different mix of rooms, pools and dining. The hotels here are all real, well-reviewed Scottsdale properties, so book the area first, then the room whose style and price fit your trip — there's a room and a rate for most travelers, whatever their style.
+
+## Day Trips from Scottsdale
+
+**Scottsdale is the gateway to Arizona, and a few of the state's best trips are an easy drive.** [Sedona](/blog/where-to-stay-in-sedona)'s red rocks are about two hours north and the Grand Canyon roughly three and a half — classic day trips or overnights. Closer in, the Heard Museum and downtown Phoenix are 20 minutes southwest, and the mountain town of [Flagstaff](/blog/where-to-stay-in-flagstaff) and the saguaro country around [Tucson](/blog/where-to-stay-in-tucson) round out a longer Arizona road trip. Many visitors base in Scottsdale for the comfort and travel out from there, which is one more reason a central, well-connected hotel earns its keep.
+
+[Search Scottsdale hotels for your base](/search?destination=Scottsdale&adults=2)
+
+## Is Scottsdale Walkable? Getting Around
+
+**Old Town is genuinely walkable — but the rest of Scottsdale is not.** Within Old Town the bars, galleries, restaurants and Fashion Square are all on foot, and a free trolley loops the area, so a downtown base means you can park the car for a night out. Everywhere else — the resorts, the golf courses, the trailheads, the airport — is a drive across a spread-out desert city.
+
+So the rule is simple: if you want to walk, base in Old Town Scottsdale; if you came for golf, spa or quiet, take a resort and plan to drive. Scottsdale is known for its sprawl as much as its sunshine. Phoenix Sky Harbor is only 15 to 20 minutes from Old Town, which makes a rental car easy to grab on arrival.
+
+::infographic scottsdale-getting-there
+
+**The move:** walk Old Town, drive for everything else · **Best for:** everyone planning the trip · **Watch:** rideshares between far-flung resorts add up.
+
+## The Best Time to Visit Scottsdale
+
+**Fall through spring is the best time to visit Scottsdale — warm, sunny days and cool nights, exactly what the desert is famous for.** November to April is prime, peaking around the spring-training and WM Phoenix Open crowds of February and March, when rates and demand run highest. Book well ahead for those weeks.
+
+Summer is the flip side: temperatures top 100°F for weeks, but the resorts cut their rates hard, so a summer pool trip is the best value of the year if you can take the heat. Whatever month you're visiting, the sunshine is close to a sure thing — one reason culture and golf lovers keep coming back.
+
+## Scottsdale for Groups, Couples and Bachelorette Trips
+
+**Scottsdale is one of the country's go-to spots for bachelorette parties, group getaways and couples' escapes, and the area you pick should match the trip.** For a bachelorette or a group weekend, base in an Old Town hotel — you'll walk to the bars, brunch spots and Scottsdale Fashion Square, and many hotels offer suites or blocks of rooms and a private, lively pool scene made for groups and the local nightlife. Couples tend to prefer a Paradise Valley or Camelback resort, where the spa, the service and the mountain views set a quieter mood. Golfers should think North Scottsdale, close to the links. Whatever the occasion, use the area guide above to match the vibe to your group, then book the rooms early — the popular weekends sell out.
+
+## How Many Days in Scottsdale
+
+**Three to four days is the sweet spot.** A long weekend covers Old Town's bars and restaurants, a round of golf or a Camelback hike, a spa afternoon and a pool day, with time for a Sedona day trip if you add a fourth. Travelers who come for the golf or the spa often stay a week and barely leave the resort. Because the areas are spread out, think about what you came for before you book — a central Old Town room for walkers, a resort for loungers — and use the distances above to plan your travel and your days.
+
+## What a Night in Scottsdale Actually Costs
+
+**Scottsdale runs from budget chains to some of the priciest resorts in the Southwest, and the gap is mostly geography and season.** Old Town sits mid-to-high, the Paradise Valley and North Scottsdale resorts sit at the top — especially in peak season — and the Salt River and airport-side chains run cheapest.
+
+Winter and spring, spring training and the WM Phoenix Open push rates highest; the summer heat brings them down to their best value of the year. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog. Watch for resort fees, too, which the big resorts add on top.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live Scottsdale prices](/search?destination=Scottsdale&adults=2)
+
+## Which Scottsdale Area Should You Choose?
+
+**For a first trip, choose Old Town Scottsdale and don't overthink it.** The walkable bars, galleries, restaurants and shopping are the heart of what makes Scottsdale fun, and you can do most of it without a car. Pick Paradise Valley or Camelback for a spa-and-pool splurge with mountain views, North Scottsdale for golf and desert calm, and the Salt River or airport side when the nightly rate matters most.
+
+Once you've matched an area to your trip, here are real, well-reviewed Scottsdale hotels across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Courtyard Salt River | Salt River | 10.0 | Value, high scores |
+| Mountain Shadows | Paradise Valley | 9.6 | Camelback views |
+| Sanctuary | Camelback Mountain | 9.4 | Spa, romance |
+| Bespoke Inn | Old Town | 9.4 | Boutique, walkable |
+| Hotel Valley Ho | Old Town | 9.4 | Iconic mid-century |
+| Four Seasons Troon North | North Scottsdale | 9.3 | Desert luxury, golf |
+| Westin Kierland | North Scottsdale | 9.2 | Resort, golf, families |
+| Canopy by Hilton | Old Town | 9.2 | Heart of the action |
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+
+::cta Scottsdale
+`,
+  },
+  {
     slug: "where-to-stay-in-savannah",
     title: "Where to Stay in Savannah, GA: Best Areas & Hotels (2026)",
     description:
@@ -1279,7 +1502,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
     faqs: [
       {
         q: "How far is Tucson from Phoenix?",
-        a: "About 110 miles, roughly a two-hour drive south on Interstate 10. Many visitors fly into Phoenix Sky Harbor (the bigger airport) and drive down, though Tucson International (TUS) sits just 15 minutes south of downtown and handles plenty of direct flights of its own.",
+        a: "About 110 miles, roughly a two-hour drive south on Interstate 10. Many visitors fly into Phoenix Sky Harbor (the bigger airport) and drive down — [Scottsdale](/blog/where-to-stay-in-scottsdale) makes a comfortable first or last night up there — though Tucson International (TUS) sits just 15 minutes south of downtown and handles plenty of direct flights of its own.",
       },
       {
         q: "Is Tucson safe?",
@@ -3043,7 +3266,7 @@ Once you've picked your side of town, [search current Bend prices](/search?desti
       },
       {
         q: "What is the closest airport to Sedona?",
-        a: "Practically speaking, Phoenix Sky Harbor (PHX), about two hours south, is the one to fly into — it has the flights and the rental cars. Flagstaff (FLG), roughly 45 minutes north, is a small commercial airport. Sedona's own airport (SEZ) up on Airport Mesa is for scenic flights and private planes, not commercial service, so plan to drive in.",
+        a: "Practically speaking, Phoenix Sky Harbor (PHX), about two hours south, is the one to fly into — it has the flights and the rental cars. Flagstaff (FLG), roughly 45 minutes north, is a small commercial airport. Sedona's own airport (SEZ) up on Airport Mesa is for scenic flights and private planes, not commercial service, so plan to drive in. If you want a night near the airport on either end, [Scottsdale](/blog/where-to-stay-in-scottsdale) is the easy choice.",
       },
       {
         q: "How far is the Grand Canyon from Sedona?",
@@ -3076,7 +3299,7 @@ None of them is far from the good stuff. Sedona is small and the red rocks are v
 
 Below are the real, bookable hotels in each area, then the honest, area-by-area guide to where to stay in Sedona, as of 2026.
 
-Sedona is a high-desert town of about 10,000 people wrapped in some of the most photographed red-rock scenery in the country — roughly two hours north of Phoenix, at 4,350 feet, where the saguaro gives way to junipers and sandstone. It's known for its hiking, its art galleries, its spas, and the energy "vortexes" that draw a particular kind of crowd. The decision isn't whether you'll have a view; it's which red rocks you want, and how much you'll pay for them.
+Sedona is a high-desert town of about 10,000 people wrapped in some of the most photographed red-rock scenery in the country — roughly two hours north of Phoenix, at 4,350 feet, where the saguaro gives way to junipers and sandstone. It's known for its hiking, its art galleries, its spas, and the energy "vortexes" that draw a particular kind of crowd. The decision isn't whether you'll have a view; it's which red rocks you want, and how much you'll pay for them. Many visitors fly into Phoenix and spend a night in [Scottsdale](/blog/where-to-stay-in-scottsdale) on the way up or back.
 
 ::infographic sedona-by-numbers
 
