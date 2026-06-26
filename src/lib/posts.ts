@@ -922,7 +922,7 @@ The Eagle Inn turns a 1920s Spanish-Revival building near West Beach into a quie
 
 ::hotel lp3de5b
 
-For the most-reviewed beach base, La Playa Inn sits steps from the harbor and West Beach, with thousands of guest reviews and a pool to come back to after a day on the sand.
+For a beach base with thousands of guest reviews behind it, La Playa Inn sits steps from the harbor and West Beach, with a pool to come back to after a day on the sand.
 
 ::hotel lp6554ad75
 
