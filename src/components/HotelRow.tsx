@@ -3,6 +3,7 @@ import Image from "next/image";
 import CardCarousel from "@/components/CardCarousel";
 import AmenityIcon from "@/components/AmenityIcon";
 import SaveHeart from "@/components/SaveHeart";
+import MemberNudge from "@/components/MemberNudge";
 import type { CardHotel } from "@/lib/oahu";
 import { hotelHref } from "@/lib/hotelUrl";
 import type { Price } from "@/lib/rates";
@@ -175,6 +176,7 @@ export default function HotelRow({
                   </svg>
                   Same price for everyone
                 </div>
+                <MemberNudge />
               </>
             )
           ) : loading ? (
