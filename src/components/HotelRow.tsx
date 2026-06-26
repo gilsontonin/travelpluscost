@@ -37,13 +37,17 @@ export default function HotelRow({
   // Member discount — only present when the API sent `member` (logged-in users). Shows the public price +
   // the member price + savings; NEVER the net or the fee % (POSITIONING §1). Property fees are identical
   // for everyone, so they cancel out of the savings figure.
+  // Only a "member deal" when the saving is meaningful (≥1% off). Otherwise net×1.15 landed at/within
+  // rounding of SSP → show the normal "same price for everyone" block, never a "save $0 (0%)" badge.
+  const memberSave = price?.member != null ? price.amount - price.member : 0;
+  const memberPublic = price?.allIn ?? price?.amount ?? 0;
   const memberDeal =
-    price?.member != null && price.member < price.amount
+    price?.member != null && memberPublic > 0 && memberSave / memberPublic >= 0.01
       ? {
           publicAllIn: price.allIn ?? price.amount,
           memberAllIn: price.member + (price.feesAtProperty ?? 0),
-          save: price.amount - price.member,
-          pct: Math.round((100 * (price.amount - price.member)) / (price.allIn ?? price.amount)),
+          save: memberSave,
+          pct: Math.round((100 * memberSave) / memberPublic),
         }
       : null;
 
