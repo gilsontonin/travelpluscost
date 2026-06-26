@@ -1,4 +1,22 @@
 {
+  "where-to-stay-in-santabarbara": {
+    "primary": "where to stay in santa barbara",
+    "secondary": [
+      "where to stay in santa barbara ca",
+      "best area to stay in santa barbara",
+      "where to stay in downtown santa barbara",
+      "where to stay in santa barbara on the beach",
+      "where to stay in santa barbara on a budget",
+      "santa barbara wine country where to stay"
+    ],
+    "volume": 1000,
+    "kd": 33,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": []
+  },
   "where-to-stay-in-keywest": {
     "primary": "where to stay in key west",
     "secondary": [

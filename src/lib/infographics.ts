@@ -80,6 +80,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Then skip the car", detail: "Old Town crosses end to end in a 20-minute walk. Bikes and scooters cover the rest, and parking is the island's real headache." },
     ],
   },
+  "santabarbara-by-numbers": {
+    kind: "stat",
+    title: "Santa Barbara by the numbers",
+    stats: [
+      { value: "~95 mi", label: "up US-101 from Los Angeles, about 2 hours" },
+      { value: "1925", label: "earthquake that set the red-tile Spanish look" },
+      { value: "1872", label: "Stearns Wharf — California's oldest working wharf" },
+      { value: "~45 min", label: "north to Santa Ynez wine country" },
+    ],
+  },
+  "santabarbara-waterfront-vs-downtown": {
+    kind: "compare",
+    title: "The Waterfront or Downtown?",
+    left: "The Waterfront",
+    right: "Downtown / State Street",
+    rows: [
+      { label: "The vibe", left: "Beach inns, the harbor, Stearns Wharf, bike paths", right: "Spanish plazas, shops, restaurants, wine-tasting" },
+      { label: "Best for", left: "Beach days, families, sunset walks", right: "Walkers, foodies, no-car trips" },
+      { label: "To the sand", left: "You're on it", right: "A 10–15 minute walk or a quick bus" },
+      { label: "You wake up to", left: "Palms and the Pacific", right: "Red-tile roofs and the mountains" },
+    ],
+  },
+  "santabarbara-getting-there": {
+    kind: "steps",
+    title: "Getting to Santa Barbara",
+    steps: [
+      { title: "Drive", detail: "US-101 from Los Angeles is ~95 miles and about 2 hours up the coast; from San Francisco it's ~5–6 hours down." },
+      { title: "Take the train", detail: "Amtrak's Pacific Surfliner drops you right downtown — one of the prettiest coastal rail rides in the country, and no parking to hunt for." },
+      { title: "Fly", detail: "Santa Barbara Airport (SBA) sits in Goleta, about 15 minutes from downtown, with regional connections." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",
