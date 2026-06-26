@@ -179,8 +179,13 @@ if (ROTATE || FORCE_SHARD) {
   const urls = locs(shard.html);
   console.log(`${C.dim}Scanning ${urls.length} URLs @ concurrency ${CONCURRENCY}…${C.x}`);
   const t0 = Date.now();
-  const recs = await pool(urls, CONCURRENCY, (u) => fetchPage(u));
-  const pages = recs.map((r) => ({ ...r, ...analyze(r) }));
+  // Stream: fetch → analyze → keep only the small result, drop the HTML body so it's GC'd. Holding all
+  // ~5k full pages in memory OOMs the heap; the lean record is a few fields per page.
+  const pages = await pool(urls, CONCURRENCY, async (u) => {
+    const r = await fetchPage(u);
+    const a = analyze(r);
+    return { path: new URL(r.url).pathname, status: r.status, title: a.title ?? null, desc: a.desc ?? null, canon: a.canon ?? null, issues: a.issues };
+  });
   const issues = [...pages.flatMap((p) => p.issues || []), ...dupIssues(pages, "title", "duplicate title"), ...dupIssues(pages, "desc", "duplicate description")];
   const { nE, nW } = report(issues, `Shard ${shardName}: ${urls.length} URLs in ${((Date.now() - t0) / 1000 / 60).toFixed(1)} min`);
 

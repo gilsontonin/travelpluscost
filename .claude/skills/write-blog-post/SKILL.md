@@ -12,8 +12,11 @@ description: >-
 # write-blog-post (travelpluscost)
 
 The **governing manual is `docs/blog-system/BLOG-PLAYBOOK.md`** (§3 funny-first voice, §4 the twelve
-corner-cuts, §5 the process, §9 the pre-publish ritual), read alongside **`docs/blog-system/TheBible.md`**.
-**Read both first — do not free-write, do not skip steps; the writing is the product.** The program +
+corner-cuts, §5 the process, §9 the pre-publish ritual), read alongside **`docs/blog-system/TheBible.md`**
+and **`docs/blog-system/FablePlaybook.md`** (the judgment calls the checklists can't enforce: the
+corner-cutting catalogue, the engagement layer — *one engaged reader beats ten who bounce* — and the
+`blog:fable` pass; travelpluscost-native, exemplars Charleston/Savannah/Scottsdale).
+**Read all three first — do not free-write, do not skip steps; the writing is the product.** The program +
 tools live in **`docs/blog-system/References/InventoryPosts.md`**; performance rules in
 **`References/Lighthouse.md`**; brand/compliance in **`docs/POSITIONING.md`** (never publish the wholesale
 cost or the exact markup %; claims exactly true; no fake scarcity). **READ THE LESSONS LOG FIRST —
