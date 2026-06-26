@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { hotelsByCity, hotelsByCityFuzzy, cityHotelCount, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
+import { hotelsByCity, hotelsByCityFuzzy, cityHotelCount, cityHotelIndex, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
 import { slugify, hotelHref } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
 import { siblingCities, popularCities, cityBySlug } from "@/lib/geo";
@@ -110,6 +110,17 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
   const data = await load(slug);
   if (!data) notFound();
   const { ranked, city, state, count, fromPrice } = data;
+  // Full hotel index for the city — links EVERY property from its hub so none is orphaned (owner: max
+  // coverage). Cheap id+name query, ISR-cached with the page. Deduped by name so the same property
+  // listed under two supplier ids isn't linked twice.
+  const indexRaw = await cityHotelIndex(city, "us", state ?? undefined);
+  const seenNames = new Set<string>();
+  const allHotels = indexRaw.filter((h) => {
+    const k = slugify(h.name);
+    if (seenNames.has(k)) return false;
+    seenNames.add(k);
+    return true;
+  });
   const loc = [city, state].filter(Boolean).join(", ");
   const top = ranked.slice(0, 48);
   const searchHref = `/search?destination=${encodeURIComponent(city)}&adults=2`;
@@ -344,18 +355,20 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
         }}
       />
 
-      {/* "you may also like" — flat, crawlable hotel text-links (Trivago pattern). Dense internal
-          links to real hotel pages, distinct from the visual rails above. */}
-      {ranked.length > 6 ? (
+      {/* Complete city index — a flat, crawlable text-link to EVERY hotel in the city, so no property
+          page is orphaned (owner: max coverage). Distinct from the visual rails/cards above. */}
+      {allHotels.length > 1 ? (
         <section className="mt-12">
-          <h2 className="text-lg font-semibold">More hotels in {city}</h2>
-          <p className="mt-1 text-sm text-black/55">Other top-rated stays you might like.</p>
-          <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5">
-            {ranked.slice(0, 30).map((h) => (
+          <h2 className="text-lg font-semibold">
+            All {allHotels.length.toLocaleString()} hotels in {city}
+          </h2>
+          <p className="mt-1 text-sm text-black/55">Every stay we cover here — pick any to see live prices.</p>
+          <div className="mt-3 columns-2 gap-6 sm:columns-3 lg:columns-4">
+            {allHotels.map((h) => (
               <Link
                 key={h.id}
                 href={hotelHref({ id: h.id, name: h.name, city: h.city ?? city })}
-                className="text-sm text-black/65 hover:text-accent hover:underline"
+                className="block break-inside-avoid py-1 text-sm text-black/65 hover:text-accent hover:underline"
               >
                 {h.name}
               </Link>

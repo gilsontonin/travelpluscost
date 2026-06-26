@@ -22,10 +22,11 @@ const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://travelpluscost.com").
 // fetcher → "Couldn't fetch" in GSC. 5k URLs ≈ 500KB raw / ~90KB gzipped → fetches near-instantly,
 // zero timeout risk. (66k hotels ⇒ ~14 shards.) See docs/HANDOFF.md.
 const SHARD_SIZE = 5000;
-// City hubs (/hotels/<city>): only list a hub once the city has at least this many real hotels.
-// Thinner cities still render on demand, but a 1–2 hotel hub is near-duplicate of the hotel page
-// itself — keeping those out of the sitemap avoids a doorway-page footprint. ≥3 ⇒ ~3.7k hubs.
-const MIN_HUB_HOTELS = 3;
+// City hubs (/hotels/<city>): list a hub once the city has at least this many real hotels.
+// Owner directive (2026-06): MAX COVERAGE — every US city with ≥1 hotel gets a listed hub (no pruning,
+// thin cities included). Each hub carries unique city FAQs + same-state/sibling links + a full hotel
+// index, so a 1-hotel hub still adds context over the bare property page. ≥1 ⇒ ~6.7k hubs.
+const MIN_HUB_HOTELS = 1;
 // Versioned sitemap tree. Google caches each sitemap URL — the index AND every child — and is slow to
 // re-read, so changing content under an existing URL can serve stale for days. Bumping SITEMAP_VERSION
 // rotates the WHOLE tree at once: the index filename (/sitemap-v3.xml) and every child path

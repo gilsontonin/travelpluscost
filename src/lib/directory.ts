@@ -98,6 +98,27 @@ export async function hotelsByCityFuzzy(slug: string, country = "us", limit = 60
   return rows.slice(0, limit);
 }
 
+/** Lightweight id+name for EVERY hotel in a city — powers the full "all hotels in <city>" link index on
+ * the hub so no property page is orphaned (each is linked from its city hub). Owner directive: max
+ * coverage. `cap` guards the rare mega-city; the long tail there stays reachable via similar/nearby. */
+export async function cityHotelIndex(
+  city: string,
+  country = "us",
+  state?: string,
+  cap = 1200,
+): Promise<{ id: string; name: string; city: string | null }[]> {
+  let q = supabaseAdmin()
+    .from("hotels")
+    .select("id,name,city")
+    .eq("country", country.toLowerCase())
+    .ilike("city", city)
+    .eq("kind", "hotel");
+  if (state) q = q.eq("state", state.toUpperCase());
+  const { data, error } = await q.order("review_count", ORDER_REVIEWS).limit(cap);
+  if (error) throw new Error(error.message);
+  return (data ?? []) as { id: string; name: string; city: string | null }[];
+}
+
 /** Count of real hotels in a named city — the "{n} hotels in {city}" line on the city hub. */
 export async function cityHotelCount(city: string, country = "us", state?: string): Promise<number> {
   let q = supabaseAdmin()
