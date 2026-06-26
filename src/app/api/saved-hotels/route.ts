@@ -7,12 +7,27 @@ import { supabaseAdmin } from "@/lib/supabase";
 // so a member can only ever touch their own saves. Best-effort: if the table doesn't exist yet, GET returns
 // an empty list and POST is a no-op (non-fatal) — safe to deploy before the DDL is run.
 
-export async function GET() {
+export async function GET(req: Request) {
   const { data: auth } = await (await authServer()).auth.getUser();
   if (!auth.user) return NextResponse.json({ ids: [] }, { status: 401 });
   try {
-    const { data } = await supabaseAdmin().from("saved_hotels").select("hotel_id").eq("user_id", auth.user.id);
-    return NextResponse.json({ ids: (data ?? []).map((r) => r.hotel_id) });
+    const sb = supabaseAdmin();
+    const { data } = await sb
+      .from("saved_hotels")
+      .select("hotel_id")
+      .eq("user_id", auth.user.id)
+      .order("created_at", { ascending: false });
+    const ids = (data ?? []).map((r) => r.hotel_id);
+    // ?details=1 → also return the hotel cards (for the /account "Saved" rail). Plain GET → ids only (cheap,
+    // used by every SaveHeart to show the filled state).
+    if (!new URL(req.url).searchParams.get("details") || !ids.length) return NextResponse.json({ ids });
+    const { data: hotels } = await sb
+      .from("hotels")
+      .select("id,name,slug,city,state,thumbnail,stars,rating,review_count")
+      .in("id", ids.slice(0, 100));
+    const byId = new Map((hotels ?? []).map((h) => [h.id, h]));
+    const ordered = ids.map((id) => byId.get(id)).filter(Boolean); // preserve most-recently-saved order
+    return NextResponse.json({ ids, hotels: ordered });
   } catch {
     return NextResponse.json({ ids: [] });
   }

@@ -7,6 +7,7 @@ import SeasonalRail from "@/components/SeasonalRail";
 import RecentlyViewed from "@/components/RecentlyViewed";
 import PopularDestinations from "@/components/PopularDestinations";
 import MemberWelcome from "@/components/MemberWelcome";
+import SavedRail from "@/components/SavedRail";
 import { getAllHotels, toCard, toRail } from "@/lib/hotels";
 
 // Member home — inventory-forward (mirrors the homepage layout), with a compact member welcome on top.
@@ -35,6 +36,7 @@ export default function AccountPage() {
         <VibePromptPill />
       </div>
 
+      <SavedRail />
       <RecentlyViewed all={railAll} />
       <NearbyRail />
       <SeasonalRail />
