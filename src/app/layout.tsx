@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import MemberPitch from "@/components/MemberPitch";
 import Footer from "@/components/Footer";
-import HideOnPreview from "@/components/SiteChrome";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import { SITE_URL, SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION } from "@/lib/site";
@@ -78,14 +77,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`${inter.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#f4f4f6] text-foreground">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ENTITY_LD) }} />
-        <HideOnPreview>
-          <Header />
-          <MemberPitch />
-        </HideOnPreview>
+        <Header />
+        <MemberPitch />
         <main className="flex-1">{children}</main>
-        <HideOnPreview>
-          <Footer />
-        </HideOnPreview>
+        <Footer />
         {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
         {/* LiteAPI Booking Assistant — public (publishable) key, browser-safe to commit. lazyOnload loads
             the third-party widget on idle, off the critical path, so it can't regress LCP / Core Web Vitals. */}
