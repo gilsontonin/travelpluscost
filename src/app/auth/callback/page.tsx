@@ -22,7 +22,9 @@ export default function AuthCallback() {
       } catch {
         /* non-fatal — auth still succeeded */
       }
-      router.replace("/account");
+      // Honor ?next= (internal paths only) so e.g. owner sign-in lands back on /owner.
+      const next = new URLSearchParams(window.location.search).get("next");
+      router.replace(next && next.startsWith("/") ? next : "/account");
     };
     sb.auth.getSession().then(({ data }) => go(data.session));
     const { data: sub } = sb.auth.onAuthStateChange((_e, session) => go(session));

@@ -338,6 +338,46 @@ export async function getPrices(
   return out;
 }
 
+export interface OwnerRate {
+  net: number; // OWNER-ONLY wholesale cost — never returned by any non-owner endpoint.
+  ssp: number;
+  member: number;
+  atProperty: number;
+  refundable: boolean;
+}
+
+/** Full price breakdown per hotel for the OWNER dashboard (includes NET + margins). ONLY the owner-gated
+ *  API may call this — net must never reach a non-owner. */
+export async function getOwnerRates(ids: string[], ci: string, co: string, adults: number): Promise<Record<string, OwnerRate>> {
+  if (!ids.length) return {};
+  const chunks: string[][] = [];
+  for (let i = 0; i < ids.length; i += 20) chunks.push(ids.slice(i, i + 20));
+  const results = await Promise.all(chunks.map((c) => fetchRates(c, ci, co, adults, false, 10)));
+  const out: Record<string, OwnerRate> = {};
+  for (const data of results) {
+    for (const rh of data) {
+      let best: { net: number; ssp: number; rate: RateObj } | undefined;
+      for (const rt of rh.roomTypes ?? []) {
+        for (const r of rt.rates ?? []) {
+          const ssp = r.retailRate?.suggestedSellingPrice?.[0]?.amount;
+          const net = r.retailRate?.total?.[0]?.amount;
+          if (typeof ssp === "number" && typeof net === "number" && (!best || ssp < best.ssp)) best = { net, ssp, rate: r };
+        }
+      }
+      if (best) {
+        out[rh.hotelId] = {
+          net: best.net,
+          ssp: best.ssp,
+          member: memberPrice(best.net, best.ssp) ?? best.ssp,
+          atProperty: propertyFeesTotal(best.rate),
+          refundable: best.rate.cancellationPolicies?.refundableTag === "RFN",
+        };
+      }
+    }
+  }
+  return out;
+}
+
 /** Room offers for one hotel (for the property page). */
 export async function getRooms(
   id: string,

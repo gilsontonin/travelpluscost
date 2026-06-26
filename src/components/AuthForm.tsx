@@ -5,20 +5,18 @@ import { authBrowser } from "@/lib/auth";
 
 // Passwordless magic-link sign-in / founding-member signup. One email field → Supabase emails a one-time
 // link → /auth/callback. No passwords (on-brand: minimal data, nothing to breach).
-export default function AuthForm() {
+export default function AuthForm({ next = "/account" }: { next?: string }) {
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const redirectTo = `${typeof window !== "undefined" ? window.location.origin : ""}/auth/callback?next=${encodeURIComponent(next)}`;
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     setBusy(true);
     setError("");
-    const { error } = await authBrowser().auth.signInWithOtp({
-      email,
-      options: { emailRedirectTo: `${window.location.origin}/auth/callback` },
-    });
+    const { error } = await authBrowser().auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo } });
     setBusy(false);
     if (error) setError(error.message);
     else setSent(true);
@@ -26,10 +24,7 @@ export default function AuthForm() {
 
   async function google() {
     setError("");
-    const { error } = await authBrowser().auth.signInWithOAuth({
-      provider: "google",
-      options: { redirectTo: `${window.location.origin}/auth/callback` },
-    });
+    const { error } = await authBrowser().auth.signInWithOAuth({ provider: "google", options: { redirectTo } });
     if (error) setError(error.message);
   }
 
