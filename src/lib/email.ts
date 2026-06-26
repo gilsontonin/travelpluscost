@@ -49,7 +49,7 @@ function buildHtml(d: BookingEmailData): string {
 
   return `<!doctype html><html><body style="margin:0;background:#f4f4f6;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111;">
   <div style="max-width:560px;margin:0 auto;padding:24px 16px;">
-    <div style="font-size:20px;font-weight:700;margin-bottom:16px;"><span style="color:#ff3d8b;">travel</span>pluscost</div>
+    <div style="font-size:20px;font-weight:700;margin-bottom:16px;"><span style="color:#0066cc;">travel</span>pluscost</div>
     <div style="background:#fff;border:1px solid #eee;border-radius:16px;padding:28px;">
       ${
         d.sandbox
@@ -83,18 +83,18 @@ function buildHtml(d: BookingEmailData): string {
       </div>
 
       <div style="margin-top:24px;">
-        <a href="${d.directionsUrl}" style="display:inline-block;background:#ff3d8b;color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:11px 20px;border-radius:10px;">Get directions to the hotel</a>
+        <a href="${d.directionsUrl}" style="display:inline-block;background:#0066cc;color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:11px 20px;border-radius:10px;">Get directions to the hotel</a>
       </div>
 
       <div style="border-top:1px solid #eee;margin-top:24px;padding-top:18px;">
         <h2 style="font-size:15px;margin:0 0 6px;">Cancellation &amp; refunds</h2>
         <p style="margin:0 0 10px;color:#6b7280;font-size:14px;">${d.cancelLabel}. To view or cancel this reservation, use Manage your booking and enter your email and booking ID — any refund follows the room's policy above.</p>
-        <a href="${d.manageUrl}" style="color:#ff3d8b;font-size:14px;font-weight:600;text-decoration:none;">Manage your booking →</a>
+        <a href="${d.manageUrl}" style="color:#0066cc;font-size:14px;font-weight:600;text-decoration:none;">Manage your booking →</a>
       </div>
 
       <div style="border-top:1px solid #eee;margin-top:18px;padding-top:18px;">
         <h2 style="font-size:15px;margin:0 0 6px;">Need help?</h2>
-        <p style="margin:0;color:#6b7280;font-size:14px;">Reply to this email or contact us at <a href="mailto:hello@travelpluscost.com" style="color:#ff3d8b;text-decoration:none;">hello@travelpluscost.com</a>. The price you paid is the same price everyone sees — never based on your data.</p>
+        <p style="margin:0;color:#6b7280;font-size:14px;">Reply to this email or contact us at <a href="mailto:hello@travelpluscost.com" style="color:#0066cc;text-decoration:none;">hello@travelpluscost.com</a>. The price you paid is the same price everyone sees — never based on your data.</p>
       </div>
     </div>
     <p style="text-align:center;color:#9ca3af;font-size:12px;margin-top:16px;">${

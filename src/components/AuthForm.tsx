@@ -68,7 +68,7 @@ export default function AuthForm({ next = "/account" }: { next?: string }) {
         <button
           type="submit"
           disabled={busy}
-          className="w-full bg-accent text-white font-semibold px-5 py-3 rounded-xl hover:opacity-90 transition disabled:opacity-60"
+          className="w-full bg-accent text-white font-semibold px-5 py-3 rounded-full hover:opacity-90 transition disabled:opacity-60"
         >
           {busy ? "Sending…" : "Email me a sign-in link"}
         </button>

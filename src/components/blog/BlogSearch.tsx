@@ -40,7 +40,7 @@ export default function BlogSearch({ dest: initial }: { dest: string }) {
         <button
           type="button"
           onClick={onSearch}
-          className="w-full rounded-xl bg-accent px-7 py-3.5 text-[15px] font-semibold text-white transition hover:opacity-90"
+          className="w-full rounded-full bg-accent px-7 py-3.5 text-[15px] font-semibold text-white transition hover:opacity-90"
         >
           Search
         </button>

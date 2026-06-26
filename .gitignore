@@ -65,3 +65,7 @@ next-env.d.ts
 /scripts/blog/serp-brief-*.md
 # local Claude settings (never commit personal/agent settings)
 /.claude/settings.local.json
+
+# Local working artifacts (GSC/crawl exports, design refs) — not for the repo
+Designs/
+.mcp.json

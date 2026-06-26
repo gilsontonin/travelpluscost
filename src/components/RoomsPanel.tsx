@@ -196,7 +196,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
           </div>
           <a
             href={href}
-            className="bg-accent text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:opacity-90 transition whitespace-nowrap"
+            className="bg-accent text-white text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-90 transition whitespace-nowrap"
           >
             Reserve
           </a>
@@ -374,7 +374,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
             </div>
           ) : null}
         </div>
-        <a href="#rooms" className="bg-accent text-white font-medium px-6 py-3 rounded-lg whitespace-nowrap shrink-0">
+        <a href="#rooms" className="bg-accent text-white font-medium px-6 py-3 rounded-full whitespace-nowrap shrink-0">
           Select a room
         </a>
       </div>

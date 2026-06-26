@@ -27,7 +27,7 @@ export default function OpengraphImage() {
               width: 96,
               height: 96,
               borderRadius: 24,
-              background: "#ff385c",
+              background: "#0066cc",
               alignItems: "center",
               justifyContent: "center",
               color: "#ffffff",
@@ -38,7 +38,7 @@ export default function OpengraphImage() {
             +
           </div>
           <div style={{ display: "flex", fontSize: 66, fontWeight: 800 }}>
-            <span style={{ color: "#ff385c" }}>travel</span>
+            <span style={{ color: "#0066cc" }}>travel</span>
             <span style={{ color: "#15151a" }}>pluscost</span>
           </div>
         </div>

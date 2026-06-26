@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import MemberPitch from "@/components/MemberPitch";
@@ -9,7 +9,9 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import { SITE_URL, SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION } from "@/lib/site";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+// Inter is the spec's SF Pro substitute for non-Apple platforms; the CSS stack resolves to real SF Pro
+// first on macOS/iOS (see globals.css --font-sans).
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 // Set on Netlify when ready: NEXT_PUBLIC_GA_ID (GA4 "G-…") + NEXT_PUBLIC_GSC_VERIFICATION (Search
@@ -73,7 +75,7 @@ const ENTITY_LD = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#f4f4f6] text-foreground">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ENTITY_LD) }} />
         <HideOnPreview>

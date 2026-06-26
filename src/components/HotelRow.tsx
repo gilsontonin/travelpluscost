@@ -64,7 +64,7 @@ export default function HotelRow({
           <CardCarousel images={hotel.images} alt={hotel.name} arrows={false} priority={priority} sizes="(max-width: 640px) 42vw, 320px" />
           <div className="absolute top-2 left-2 z-10 flex flex-col items-start gap-1">
             {hotel.popular ? (
-              <span className="bg-accent text-white text-[0.65rem] font-semibold px-2 py-0.5 rounded-md shadow-sm">
+              <span className="bg-accent text-white text-[0.65rem] font-semibold px-2 py-0.5 rounded-full shadow-sm">
                 Popular
               </span>
             ) : null}

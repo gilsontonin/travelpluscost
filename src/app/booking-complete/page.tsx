@@ -62,7 +62,7 @@ export default async function BookingCompletePage({
       <p className="mt-2 text-xs text-black/45">
         If your card was charged in the test flow, no live charge was made (sandbox). Please try again.
       </p>
-      <Link href="/" className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-xl">
+      <Link href="/" className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-full">
         Back to home
       </Link>
     </div>

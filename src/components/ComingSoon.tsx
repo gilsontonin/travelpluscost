@@ -20,7 +20,7 @@ export default function ComingSoon({ id }: { id: Vertical }) {
       </div>
       <Link
         href="/search?destination=Oahu&adults=2"
-        className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition"
+        className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-full hover:opacity-90 transition"
       >
         Search hotels (live now)
       </Link>

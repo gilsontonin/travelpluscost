@@ -106,7 +106,7 @@ export default function CompareClient() {
           <span className="block text-black/50 text-xs mb-1">Check-out</span>
           <input type="date" value={checkout} onChange={(e) => setCheckout(e.target.value)} className="border border-black/15 rounded-lg px-3 py-2 text-sm" />
         </label>
-        <button onClick={load} className="bg-accent text-white text-sm font-semibold px-5 py-2 rounded-lg">
+        <button onClick={load} className="bg-accent text-white text-sm font-semibold px-5 py-2 rounded-full">
           Load rates
         </button>
         <span className="text-sm text-black/55">{status}</span>

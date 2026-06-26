@@ -452,7 +452,7 @@ function FilterSheet({
         </button>
         <button
           onClick={() => onApply(draft)}
-          className="bg-accent text-white font-medium px-6 py-3 rounded-lg flex-1 max-w-xs"
+          className="bg-accent text-white font-medium px-6 py-3 rounded-full flex-1 max-w-xs"
         >
           Show {live} {live === 1 ? "stay" : "stays"}
         </button>

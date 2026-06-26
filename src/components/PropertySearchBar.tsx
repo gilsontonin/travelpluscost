@@ -72,7 +72,7 @@ export default function PropertySearchBar({ hotelName }: { hotelName: string }) 
         <button
           type="button"
           onClick={onSearch}
-          className="rounded-xl bg-accent px-7 py-3 text-[15px] font-semibold text-white transition hover:opacity-90"
+          className="rounded-full bg-accent px-7 py-3 text-[15px] font-semibold text-white transition hover:opacity-90"
         >
           Search
         </button>

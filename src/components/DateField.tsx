@@ -117,7 +117,7 @@ export default function DateField({
                   type="button"
                   disabled={past}
                   onClick={() => pick(dd)}
-                  className={`h-9 rounded-md text-sm ${
+                  className={`h-9 rounded-full text-sm ${
                     past ? "text-black/25" : isEdge ? "bg-accent text-white" : inRange ? "bg-accent-tint text-accent" : "hover:bg-black/5"
                   }`}
                 >

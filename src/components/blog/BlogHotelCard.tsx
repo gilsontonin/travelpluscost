@@ -27,7 +27,7 @@ export default function BlogHotelCard({ hotel }: { hotel: DirectoryHotel }) {
         ) : null}
         {hotel.rating != null ? (
           <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-lg bg-white/95 px-2 py-1 shadow-sm">
-            <span className="rounded bg-accent px-1.5 py-0.5 text-xs font-bold text-white">{hotel.rating.toFixed(1)}</span>
+            <span className="rounded-full bg-accent px-1.5 py-0.5 text-xs font-bold text-white">{hotel.rating.toFixed(1)}</span>
             {rev ? <span className="text-xs font-semibold text-black">{rev.label}</span> : null}
           </div>
         ) : null}

@@ -78,7 +78,7 @@ export default function GuestField({
           <button
             type="button"
             onClick={() => setOpen(false)}
-            className="mt-2 w-full bg-accent text-white text-sm font-medium py-2 rounded-md"
+            className="mt-2 w-full bg-accent text-white text-sm font-medium py-2 rounded-full"
           >
             Done
           </button>

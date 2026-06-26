@@ -137,7 +137,7 @@ export default async function ConfirmedPage({
           </p>
         </div>
 
-        <Link href="/" className="mt-4 inline-block bg-accent text-white font-medium px-6 py-3 rounded-xl hover:opacity-90 transition">
+        <Link href="/" className="mt-4 inline-block bg-accent text-white font-medium px-6 py-3 rounded-full hover:opacity-90 transition">
           Back to home
         </Link>
       </div>

@@ -309,7 +309,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
           </div>
           <a
             href="#rooms"
-            className="mt-4 block text-center bg-accent text-white font-medium px-5 py-3 rounded-lg hover:opacity-90 transition"
+            className="mt-4 block text-center bg-accent text-white font-medium px-5 py-3 rounded-full hover:opacity-90 transition"
           >
             Choose a room
           </a>

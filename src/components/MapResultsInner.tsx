@@ -11,9 +11,9 @@ import type { Price } from "@/lib/rates";
 const OAHU_CENTER: [number, number] = [21.34, -157.9];
 
 function priceIcon(label: string, active: boolean) {
-  const bg = active ? "#ff385c" : "#ffffff";
+  const bg = active ? "#0066cc" : "#ffffff";
   const fg = active ? "#ffffff" : "#1a1a1a";
-  const border = active ? "#ff385c" : "rgba(0,0,0,0.18)";
+  const border = active ? "#0066cc" : "rgba(0,0,0,0.18)";
   return L.divIcon({
     className: "tpc-price-pin",
     html: `<div style="background:${bg};color:${fg};border:1px solid ${border};font-weight:700;font-size:12px;line-height:1;padding:5px 9px;border-radius:14px;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.28);transform:scale(${active ? 1.14 : 1});transition:transform .15s">${label}</div>`,

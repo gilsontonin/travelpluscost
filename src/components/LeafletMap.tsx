@@ -38,7 +38,7 @@ export default function LeafletMap({
             position={[m.lat, m.lng]}
             icon={L.divIcon({
               className: "tpc-pin",
-              html: `<div style="background:#ff385c;color:#fff;font-weight:600;font-size:12px;padding:3px 8px;border-radius:8px;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.35)">${m.label}</div>`,
+              html: `<div style="background:#0066cc;color:#fff;font-weight:600;font-size:12px;padding:3px 8px;border-radius:8px;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.35)">${m.label}</div>`,
               iconSize: [44, 22],
               iconAnchor: [22, 11],
             })}
@@ -51,7 +51,7 @@ export default function LeafletMap({
             key={m.id ?? i}
             center={[m.lat, m.lng]}
             radius={10}
-            pathOptions={{ color: "#ff385c", fillColor: "#ff385c", fillOpacity: 0.85, weight: 2 }}
+            pathOptions={{ color: "#0066cc", fillColor: "#0066cc", fillOpacity: 0.85, weight: 2 }}
           />
         ),
       )}

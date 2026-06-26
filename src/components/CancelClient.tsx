@@ -107,7 +107,7 @@ export default function CancelClient({ initialBookingId = "" }: { initialBooking
             </p>
           </div>
         )}
-        <Link href="/" className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-xl hover:opacity-90 transition">
+        <Link href="/" className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-full hover:opacity-90 transition">
           Back to home
         </Link>
       </div>
@@ -169,7 +169,7 @@ export default function CancelClient({ initialBookingId = "" }: { initialBooking
       <input className={field} placeholder="Booking ID" value={bookingId} onChange={(e) => setBookingId(e.target.value)} required />
       <input className={field} type="email" placeholder="Email address" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
       {error ? <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-3 py-2.5">{error}</p> : null}
-      <button type="submit" disabled={busy} className="w-full bg-accent text-white font-semibold py-3 rounded-xl hover:opacity-90 transition disabled:opacity-60">
+      <button type="submit" disabled={busy} className="w-full bg-accent text-white font-semibold py-3 rounded-full hover:opacity-90 transition disabled:opacity-60">
         {busy ? "Finding your booking…" : "Find my booking"}
       </button>
     </form>

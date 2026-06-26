@@ -264,7 +264,7 @@ export default function BookingForm(props: Props) {
       <button
         type="submit"
         disabled={busy}
-        className="w-full bg-accent text-white font-semibold px-5 py-3.5 rounded-xl hover:opacity-90 transition disabled:opacity-60"
+        className="w-full bg-accent text-white font-semibold px-5 py-3.5 rounded-full hover:opacity-90 transition disabled:opacity-60"
       >
         {busy ? "Confirming the room…" : `Continue to payment · ${money(payToday, props.currency)}`}
       </button>

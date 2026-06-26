@@ -2,9 +2,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a1a;
-  --accent: #ff385c;      /* Airbnb coral */
-  --accent-tint: #ffe8ee; /* light coral for active states */
+  --foreground: #1d1d1f;  /* Apple near-black ink */
+  --accent: #0066cc;      /* Apple Action Blue — the one interactive color */
+  --accent-tint: #e8f1fb; /* light blue for active/selected states */
 }
 
 @theme inline {
@@ -12,7 +12,9 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-accent-tint: var(--accent-tint);
-  --font-sans: var(--font-geist-sans);
+  /* Apple type stack: real SF Pro on macOS/iOS, Inter elsewhere. */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, var(--font-inter),
+    "Helvetica Neue", Arial, sans-serif;
   --font-mono: var(--font-geist-mono);
 
   /* Tighter corners — max 10px on rectangles (owner preference: no roundy corners).

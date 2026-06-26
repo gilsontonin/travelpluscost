@@ -97,7 +97,7 @@ export default function OwnerDashboard() {
           Check-out
           <input type="date" value={checkout} onChange={(e) => setCheckout(e.target.value)} className={field} />
         </label>
-        <button disabled={busy} className="bg-accent text-white font-semibold px-5 py-2.5 rounded-lg transition hover:opacity-90 disabled:opacity-60">
+        <button disabled={busy} className="bg-accent text-white font-semibold px-5 py-2.5 rounded-full transition hover:opacity-90 disabled:opacity-60">
           {busy ? "Scanning…" : "Scan"}
         </button>
       </form>
