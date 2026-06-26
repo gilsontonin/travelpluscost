@@ -22,7 +22,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: `${SITE_NAME} — ${SITE_TAGLINE}`,
-    template: `%s · ${SITE_NAME}`,
+    // No "· travelpluscost" suffix — it overflowed the title budget (blog titles hit 78-80 chars and
+    // truncated in Google). Google appends the site name itself from the Organization entity.
+    template: "%s",
   },
   description: SITE_DESCRIPTION,
   // NOTE: no `alternates.canonical` here on purpose — a canonical set in the root layout cascades to

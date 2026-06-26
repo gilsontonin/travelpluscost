@@ -11,3 +11,9 @@ export const SITE_DESCRIPTION =
 export const SITEMAP_SHARD = 50000;
 
 export const abs = (path: string) => `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
+
+// Clamp a meta description to Google's ~160-char display limit (truncate on a word boundary). Generated
+// descriptions interpolate variable-length city/state names, so clamp as a safety net even when the
+// template is short.
+export const clampDesc = (s: string, n = 160) =>
+  s.length > n ? `${s.slice(0, n - 1).replace(/\s+\S*$/, "")}…` : s;

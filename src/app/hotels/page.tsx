@@ -6,7 +6,7 @@ import { SITE_NAME, abs } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Find Hotels Across the United States | One Honest Price" },
   description:
-    "Browse hotels in every U.S. state and city on one honest price — the room rate plus one small flat fee, the same for everyone, never based on your data.",
+    "Browse hotels in every U.S. state and city on one honest price — the rate plus one small flat fee, the same for everyone, never based on your data.",
   alternates: { canonical: "/hotels" },
 };
 

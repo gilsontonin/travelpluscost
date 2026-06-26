@@ -7,7 +7,7 @@ import { slugify, hotelHref } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
 import { siblingCities, popularCities, cityBySlug } from "@/lib/geo";
 import { regionPostForCity } from "@/lib/posts";
-import { SITE_NAME, abs } from "@/lib/site";
+import { SITE_NAME, abs, clampDesc } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
 import { getPrices } from "@/lib/rates";
 import CityResults from "@/components/CityResults";
@@ -85,8 +85,8 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const year = new Date().getFullYear();
   const n = data.count >= 10 ? `${Math.floor(data.count / 10) * 10}+ ` : "";
   return {
-    title: { absolute: `Hotels in ${loc}${data.fromPrice ? ` from $${data.fromPrice}` : ""} | ${year} Prices, Photos & Reviews` },
-    description: `Compare ${n}hotels in ${loc} on one honest price — the room rate plus one small flat fee, the same for everyone. No surveillance pricing, never based on your data.`,
+    title: { absolute: `Hotels in ${loc}${data.fromPrice ? ` from $${data.fromPrice}` : ""} | ${year} Rates & Reviews` },
+    description: clampDesc(`Compare ${n}hotels in ${loc} — one honest price: the room rate plus one small flat fee, the same for everyone. Never based on your data.`),
     alternates: { canonical: `/hotels/${slugify(data.city)}` },
     openGraph: {
       type: "website",

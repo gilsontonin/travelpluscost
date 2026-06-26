@@ -5,7 +5,7 @@ import { SITE_NAME, abs } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: `About ${SITE_NAME} — one honest price, no gimmicks` },
   description:
-    "Why you pay what you pay on travelpluscost: the hotel's rate plus one small flat fee, the same for everyone. No fake discounts, no vanity points, no VIP tiers — none of the gimmicks built to hide the real price.",
+    "Why you pay what you pay on travelpluscost: the hotel's rate plus one small flat fee, the same for everyone. No fake discounts, no points, no gimmicks.",
   alternates: { canonical: "/about" },
   openGraph: { type: "website", title: `About ${SITE_NAME}`, url: "/about" },
 };

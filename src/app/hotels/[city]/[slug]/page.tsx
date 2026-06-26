@@ -83,7 +83,7 @@ export async function generateMetadata({
   // sitemap URL ("non-canonical URL in sitemap"). The id resolves either slug; this keeps them in sync.
   const url = hotelHref({ id, name: dir?.name ?? hotel.name, city: dir?.city ?? hotel.city });
   return {
-    title: { absolute: `${titleCore} | ${year} Rates, Photos & Reviews` },
+    title: { absolute: `${titleCore} | ${year} Rates & Reviews` },
     description,
     alternates: { canonical: url },
     openGraph: {

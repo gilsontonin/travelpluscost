@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { stateBySlug, allStateSlugs } from "@/lib/geo";
 import { hotelsByStates, rankHotels, directoryToCard } from "@/lib/directory";
-import { SITE_NAME, abs } from "@/lib/site";
+import { SITE_NAME, abs, clampDesc } from "@/lib/site";
 import HotelRow from "@/components/HotelRow";
 
 const getState = cache((slug: string) => stateBySlug(slug));
@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: { params: Promise<{ state: st
   const year = new Date().getFullYear();
   const top = st.cities.slice(0, 3).map((c) => c.name).join(", ");
   return {
-    title: { absolute: `Hotels in ${st.name} | ${year} Prices, Photos & Reviews` },
-    description: `Compare ${st.hotels.toLocaleString()} hotels across ${st.cityCount} ${st.name} cities${
-      top ? ` including ${top}` : ""
-    } — one honest price, the room rate plus one small flat fee, the same for everyone.`,
+    title: { absolute: `Hotels in ${st.name} | ${year} Rates & Reviews` },
+    description: clampDesc(
+      `Compare ${st.hotels.toLocaleString()} hotels across ${st.cityCount} ${st.name} cities — one honest price: the rate plus one small flat fee, the same for everyone.`,
+    ),
     alternates: { canonical: `/destinations/${st.slug}` },
     openGraph: { type: "website", title: `Hotels in ${st.name} · ${SITE_NAME}`, url: `/destinations/${st.slug}` },
   };
