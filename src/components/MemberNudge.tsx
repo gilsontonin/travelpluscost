@@ -9,8 +9,8 @@ import { authBrowser } from "@/lib/auth";
 let cachedLoggedIn: boolean | undefined;
 let pending: Promise<boolean> | undefined;
 
-// Logged-OUT only: a subtle, honest "members pay less — sign in free" nudge under the public price. Uses the
-// AGGREGATE range (no per-hotel number, no strike-through, no net) → compliant + on-brand (not the "secret
+// Logged-OUT only: a subtle, honest "members pay less — sign up free" nudge under the public price. No
+// per-hotel number, no strike-through, no net → compliant + on-brand (not the "secret
 // price" gimmick). Renders nothing for members (they already see the member price) and nothing while loading
 // (no flash). Turns every browse into a sign-up prompt without a single fake discount.
 export default function MemberNudge() {
@@ -45,7 +45,7 @@ export default function MemberNudge() {
         <rect x="3" y="11" width="18" height="11" rx="2" />
         <path d="M7 11V7a5 5 0 0 1 10 0v4" />
       </svg>
-      Members pay less — save 20–35% · Sign in free
+      Members pay less — sign up free
       <span aria-hidden>→</span>
     </Link>
   );

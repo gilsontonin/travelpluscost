@@ -34,14 +34,13 @@ export default function MemberWelcome() {
   return (
     <div className="rounded-2xl border border-accent/30 bg-accent-tint px-4 py-3 sm:px-5 sm:py-4">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <p className="font-semibold text-accent text-sm">✓ Founding member{no ? ` · #${no}` : ""}</p>
+        <p className="font-semibold text-accent text-sm">✓ Member{no ? ` · #${no}` : ""}</p>
         <button onClick={signOut} className="text-xs text-black/45 hover:text-black/80">
           Sign out
         </button>
       </div>
       <p className="mt-0.5 text-xs sm:text-sm text-black/70">
-        Welcome back — search or browse anything below. At launch you book these at member prices, typically{" "}
-        <b>20–35% below the public rate</b>.
+        Welcome back — you&apos;re seeing <b>member prices</b>, below the public rate. Search or browse anything below.
       </p>
     </div>
   );

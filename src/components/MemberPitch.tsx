@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { authBrowser } from "@/lib/auth";
 
-// Members-only savings pitch — a thin bar on inventory pages, for logged-in (founding) members only.
-// Phase 1 shows the AGGREGATE savings, never an exact below-SSP price (parity + net-derivation guardrails in
-// POSITIONING.md). The real per-room member price unlocks with paid membership + live bookings (Phase 2).
+// Members-only price bar on inventory pages, for logged-in members. Shows the principle (our cost plus one
+// flat fee, below the public rate), never an exact net cost or markup % (POSITIONING.md). The per-room
+// member price renders on the cards/rooms themselves.
 export default function MemberPitch() {
   const pathname = usePathname();
   const [authed, setAuthed] = useState(false);
@@ -24,8 +24,7 @@ export default function MemberPitch() {
   return (
     <div className="bg-accent-tint border-y border-accent/20">
       <p className="mx-auto max-w-7xl px-4 py-2 text-xs sm:text-sm text-accent text-center">
-        ✓ <b>Founding member</b> — at launch you&apos;ll book these at our cost plus one small fee, typically{" "}
-        <b>20–35% below the public rate</b>.
+        ✓ <b>Member price</b> — you&apos;re seeing our cost plus one small flat fee, below the public rate.
       </p>
     </div>
   );

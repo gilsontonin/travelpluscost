@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { authBrowser } from "@/lib/auth";
 
-// Passwordless magic-link sign-in / founding-member signup. One email field → Supabase emails a one-time
+// Passwordless magic-link sign-in / free signup. One email field → Supabase emails a one-time
 // link → /auth/callback. No passwords (on-brand: minimal data, nothing to breach).
 export default function AuthForm({ next = "/account" }: { next?: string }) {
   const [email, setEmail] = useState("");

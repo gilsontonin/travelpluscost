@@ -2,26 +2,26 @@ import type { Metadata } from "next";
 import AuthForm from "@/components/AuthForm";
 
 export const metadata: Metadata = {
-  title: "Become a founding member",
+  title: "Sign up free",
   description:
-    "Founding members lock in our lowest membership rate. Members book hotels at our cost plus one small fee — the same price for everyone, never based on your data.",
+    "Create a free account to see member prices — hotels at what they charge us plus one small flat fee, the same price for everyone, never based on your data.",
 };
 
-// Founding-member funnel. Free to join now (builds the launch list + proves the funnel); paid membership +
-// the unlocked member price go live when bookings do. No real charge here — just the account + the pitch.
+// Free signup funnel — passwordless. The account unlocks member prices (below the public rate, a permitted
+// logged-in group). No paid tier, no card, no catch.
 export default function JoinPage() {
   return (
     <div className="mx-auto max-w-xl px-4 py-12">
-      <h1 className="text-3xl font-bold tracking-tight">Become a founding member</h1>
+      <h1 className="text-3xl font-bold tracking-tight">Sign up free</h1>
       <p className="mt-3 text-black/70">
-        Members book hotels at <b>what the hotel charges us, plus one small fee</b> — typically{" "}
-        <b>20–35% below the public rate</b>, the same price for everyone, never based on your data.
+        See <b>member prices</b> — what the hotel charges us, plus one small flat fee — the same price for
+        everyone, never based on your data.
       </p>
 
       <ul className="mt-6 space-y-2 text-sm text-black/80">
-        <li>✓ Lock in the <b>founding rate</b> — $19/mo (or $79/yr) when we launch. Free until then.</li>
-        <li>✓ The member price is our cost + a small fee — save more than the membership or it&apos;s refunded.</li>
-        <li>✓ No surveillance pricing, no fake discounts, no junk fees. Every number shown up front.</li>
+        <li>✓ <b>Free, always</b> — no card, no subscription, no catch.</li>
+        <li>✓ Member prices the moment you sign in — our cost plus one small flat fee, never above the public rate.</li>
+        <li>✓ Save your favorite stays, no surveillance pricing, no fake discounts — every number shown up front.</li>
       </ul>
 
       <div className="mt-8">
@@ -29,8 +29,8 @@ export default function JoinPage() {
       </div>
 
       <p className="mt-6 text-xs text-black/40">
-        Founding membership is free today. Paid billing and the unlocked member price begin when booking
-        launches — you&apos;ll keep the founding rate.
+        Free forever. We only ever make our one small flat fee when you book — the same fee for everyone, never
+        based on who you are.
       </p>
     </div>
   );
