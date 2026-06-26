@@ -1,4 +1,22 @@
 {
+  "where-to-stay-in-flagstaff": {
+    "primary": "where to stay in flagstaff",
+    "secondary": [
+      "where to stay in flagstaff az",
+      "where to stay in flagstaff arizona",
+      "where to stay in downtown flagstaff",
+      "where to stay flagstaff or sedona",
+      "where to stay in flagstaff for snow",
+      "best area to stay in flagstaff"
+    ],
+    "volume": 390,
+    "kd": 23,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": []
+  },
   "where-to-stay-in-santabarbara": {
     "primary": "where to stay in santa barbara",
     "secondary": [

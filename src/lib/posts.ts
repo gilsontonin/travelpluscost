@@ -47,6 +47,187 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-flagstaff",
+    title: "Where to Stay in Flagstaff, AZ: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Flagstaff, AZ in 2026: best areas — Downtown/Route 66, the highway strip, Little America and the pines — with real hotels and honest rates.",
+    excerpt:
+      "Walk to the breweries or sleep cheap before the Grand Canyon? A plain-English guide to picking the right Flagstaff base — by area, budget, and your basecamp plans.",
+    tldr: {
+      answer:
+        "Flagstaff splits into a few simple zones. Downtown and Historic Route 66 keep the breweries, the train depot and the best restaurants on foot; the I-40 strip is wall-to-wall budget chains; Little America and the pines offer a quieter, woodsier stay; and the whole town is the affordable basecamp for the Grand Canyon and Sedona.",
+      points: [
+        "**Downtown / Historic Route 66** — walkable breweries, the train, the best food; the easy pick.",
+        "**The highway strip** — I-40 and Route 66 chains; cheap and handy for an early Canyon start.",
+        "**Little America & the pines** — a woodsier, quieter stay in the ponderosas.",
+        "**Basecamp** — about 1.5 hours to the Grand Canyon, 45 minutes to Sedona, 14 miles to Snowbowl.",
+        "**Pack layers** — at 7,000 feet, summer nights are cool and winter brings real snow.",
+      ],
+    },
+    date: "2026-06-25",
+    updated: "2026-06-25",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/494935893.jpg",
+      alt: "The retro neon sign of a restored Route 66 motor hotel glowing against a pink sunset sky in Flagstaff, Arizona",
+      credit: { name: "Americana Motor Hotel, Flagstaff" },
+    },
+    region: { name: "Flagstaff", destination: "Flagstaff" },
+    faqs: [
+      {
+        q: "How far is Flagstaff from the Grand Canyon?",
+        a: "The Grand Canyon's South Rim is about 80 miles north of Flagstaff, roughly a 1.5-hour drive up US-180 through the pines. That's why so many visitors sleep in Flagstaff: rooms here run far cheaper than the in-park lodges, and you can still be at the rim by mid-morning.",
+      },
+      {
+        q: "How far is Flagstaff from Sedona?",
+        a: "About 30 miles, or a 45-minute drive south down Oak Creek Canyon on US-89A — one of the prettiest stretches of road in Arizona. Many people base in Flagstaff for the lower rates and day-trip to Sedona's red rocks, or split a trip between the two.",
+      },
+      {
+        q: "How far is Flagstaff from Phoenix?",
+        a: "Roughly 145 miles, about a 2 to 2.5-hour drive south on Interstate 17. The drive climbs from desert into pine forest and gains a few thousand feet, so Flagstaff often sits 25–30°F cooler than Phoenix — which is exactly why Phoenicians flee here all summer.",
+      },
+      {
+        q: "Does it snow in Flagstaff?",
+        a: "Yes, a lot — Flagstaff sits at about 7,000 feet and averages 80–100+ inches of snow a year, with Arizona Snowbowl running lifts just north of town. Winter here means real cold and plowed streets, so pack accordingly and check road conditions before a Grand Canyon day trip.",
+      },
+      {
+        q: "Should you stay in Flagstaff or Sedona?",
+        a: "Base in Flagstaff for lower rates, a walkable downtown, snow and the shortest drive to the Grand Canyon; base in Sedona for the red-rock scenery, resorts and spas, and warmer desert weather. For a Canyon-focused or budget trip, Flagstaff wins; for a romantic or hiking trip built around the rocks, Sedona does. They're only 45 minutes apart, so plenty of people do both.",
+      },
+      {
+        q: "What is Flagstaff known for?",
+        a: "Historic Route 66 and the railroad, the cool 7,000-foot pine-forest setting, and its role as the basecamp for the Grand Canyon and Sedona. It's also a craft-beer and college town (Northern Arizona University), home to Lowell Observatory — where Pluto was discovered — and the world's first International Dark Sky City.",
+      },
+    ],
+    body: `**Where to stay in Flagstaff comes down to Downtown** if you came to walk to the breweries and Route 66, or the highway chains if you're really just sleeping before the Grand Canyon. At 7,000 feet in the pines, this old railroad town is the high-country basecamp for the Canyon, Sedona and Arizona Snowbowl — a place where you can stand in the snow in the morning and red-rock desert by lunch.
+
+Below are the real, bookable hotels in each area, then the honest guide to where to stay in Flagstaff, Arizona, as of 2026.
+
+Flagstaff is compact and built around Historic Route 66 and the train tracks, so picking a base is less about the neighborhood and more about whether you want to walk to dinner or park by the freeway for an early start north.
+
+## Flagstaff Hotels by Area, at a Glance
+
+Four zones, one deciding factor: how much you'll pay to walk to a brewery instead of the parking lot. Choose the area by your trip, then the hotel — here's the whole town on one screen.
+
+| Area | The feel | Best for | The rate |
+|---|---|---|---|
+| [Downtown / Historic Route 66](/search?destination=Flagstaff&adults=2) | Walkable, breweries, historic | Food, walkers, first-timers | Mid to high |
+| [The I-40 / Route 66 strip](/search?destination=Flagstaff&adults=2) | Chains, parking, convenient | Budgets, early Canyon starts | Low |
+| [Little America & the pines](/search?destination=Flagstaff&adults=2) | Woodsy, quiet, resort-ish | A calmer, greener stay | Mid to high |
+| [Near NAU & south](/search?destination=Flagstaff&adults=2) | University, spread out | Budgets, longer stays | Low |
+
+::infographic flagstaff-by-numbers
+
+[See every Flagstaff hotel and its live nightly price](/search?destination=Flagstaff&adults=2)
+
+## Downtown and Historic Route 66: the Walkable Heart
+
+**Downtown Flagstaff is where to stay if you want to walk to dinner — a compact, historic grid where Route 66, the train depot and a dozen breweries sit within a few blocks.** This is the old railroad heart of town, all brick storefronts and neon, with the best restaurants, coffee and local craft beer in northern Arizona on foot from your door.
+
+The trade is the obvious one: the walkable historic blocks carry the highest rates in town, and the trains roll through all night, so a light sleeper wants earplugs. But for a first trip, or any trip where dinner and a pint matter more than a parking space, nothing else in Flagstaff comes close.
+
+### Bespoke Inn and the Boutique Stays
+
+The downtown picks lean boutique and historic. Bespoke Inn is the polished one — a small, high-scoring inn with a well-regarded restaurant a short walk from the Route 66 action; Aiden by Best Western brings a stylish, mid-range room a little off the core for a friendlier rate.
+
+::hotel lp6556aefb
+
+::hotel lp1ac2f
+
+### High Country Motor Lodge — the Retro Pick
+
+The High Country Motor Lodge reworks a classic Flagstaff motor lodge into a design-forward stay near downtown and Northern Arizona University (NAU), with a Nordic spa and fire pits — Route 66 nostalgia without the Route 66 mattress.
+
+::hotel lp1dba9
+
+**The move:** book Downtown for a walkable first trip · **Best for:** food, breweries, walkers · **Watch:** the trains run all night.
+
+## The Highways and Route 66 Strip: Chains and Budget Value
+
+**The I-40 and East Route 66 corridor is where to stay in Flagstaff for the lowest rates and the easiest early start north.** This is the strip of dependable chains and old motels along the freeway and the Mother Road, close to gas, fast food and the on-ramp — less charming than downtown, but a fraction of the price and built for travelers and road-trippers passing through.
+
+For a night before the Grand Canyon or a long road trip, this is the practical call. You give up the walkable dinner, but you gain free parking, free breakfast and a quick exit.
+
+### Drury Inn and the Reliable Chains
+
+The chains here compete on the amenities road-trippers actually use — free hot breakfast, an on-site evening bite, a pool and easy parking. Drury Inn & Suites is the consistently top-rated pick, with the Hampton, Country and Fairfield Inns close behind.
+
+::hotel lp4f082
+
+### Comfort Inn and Highland Country Inn — the Budget Picks
+
+For the lowest rates, the Comfort Inn south of town and the old-school Highland Country Inn near downtown both score well above their price, the kind of clean, cheap rooms that leave more budget for the Canyon.
+
+::hotel lp1f19d
+
+::hotel lp3635e
+
+**The move:** book the strip to sleep cheap before the Canyon · **Best for:** budgets, road trips, early starts · **Watch:** it's freeway, not scenery.
+
+## Little America and the Pine-Forest Stays
+
+**Little America is where to stay in Flagstaff for a quieter night in the ponderosas — a sprawling, wooded property set in its own ponderosa pine forest at the edge of the Coconino National Forest.** It trades the walkable downtown for trees, trails and a calmer, family-friendly stay, the closest thing Flagstaff has to a mountain resort while still being five minutes from the freeway.
+
+A little farther east, Twin Arrows Navajo Casino Resort offers a full casino, pools and big rooms out on the high desert plateau — a different kind of basecamp for travelers who want the games and the space.
+
+::hotel lp1ad69
+
+::hotel lp69bed
+
+**The move:** pick the pines for a calmer, greener stay · **Best for:** quiet, families, a touch of resort · **Watch:** you'll drive into town for dinner.
+
+## Flagstaff as a Basecamp: the Grand Canyon, Sedona and the Snow
+
+**The real reason to stay in Flagstaff is everything within a short drive — it's the affordable high-country basecamp for the Grand Canyon, Sedona and the snow.** The Grand Canyon National Park's South Rim sits about 80 miles and 1.5 hours north, and a Flagstaff room costs a fraction of the national park lodges, so most Canyon visitors sleep here and drive up.
+
+Sedona's red rocks are about 45 minutes south down Oak Creek Canyon, close enough for a day trip or to split a getaway between the pines and the desert. And in winter, Arizona Snowbowl runs lifts just 14 miles north — Flagstaff is one of the few places in the Southwest where the trip can include real snow. The town is a genuine outdoor base in its own right, too: trails up the San Francisco Peaks and the national monuments at Walnut Canyon and Sunset Crater, plus stargazing at Lowell Observatory, all sit within a short drive.
+
+::infographic flagstaff-vs-sedona
+
+If you're torn between bases, the short version: Flagstaff is the cheaper, snowier, Canyon-closer pick; [Sedona](/blog/where-to-stay-in-sedona) is the red-rock splurge. Either way, the drives are short enough that you can sleep in one and play in the other.
+
+::infographic flagstaff-basecamp
+
+**The move:** base in Flagstaff, day-trip the rest · **Best for:** Grand Canyon trips, budgets, winter · **Watch:** check road and snow conditions in winter.
+
+## What a Night in Flagstaff Actually Costs
+
+**Flagstaff is a genuinely affordable basecamp, and that's the whole point.** A clean chain on the highway strip generally runs toward the lower end, while the walkable downtown inns and the pine-forest stays sit higher — but even the nicer rooms here cost less than Sedona's resorts or the Grand Canyon National Park's lodges.
+
+Summer and the Grand Canyon season are the busy, pricier months, and winter holidays draw the snow crowd; spring and late fall bring the best rates. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live Flagstaff prices](/search?destination=Flagstaff&adults=2)
+
+## Which Flagstaff Area Should You Choose?
+
+**For a first trip, choose Downtown and don't overthink it.** The walkable breweries, restaurants and Route 66 history are the best of what makes Flagstaff its own place rather than just a Grand Canyon parking lot — worth the higher rate for a night or two. Book the highway strip instead when the trip is really about an early Canyon start and a cheap, clean bed.
+
+Save Little America and the pines for a quieter, greener stay, and remember that whichever zone you pick, you're never far from the Canyon, Sedona or the snow. Once you've matched an area to your trip, here are real, well-reviewed Flagstaff hotels across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Americana Motor Hotel | Downtown / Route 66 | 9.8 | Retro value |
+| Bespoke Inn | Downtown | 9.6 | Boutique, dining |
+| Little America | The pines | 9.3 | Quiet, woodsy |
+| Comfort Inn (I-17) | South | 9.4 | Budget |
+| Residence Inn | East / I-40 | 9.3 | Suites, families |
+| Drury Inn & Suites | I-40 strip | 9.1 | Free breakfast |
+| Highland Country Inn | Near downtown | 9.2 | Cheapest clean room |
+| Twin Arrows Casino | East plateau | 9.2 | Casino, space |
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+
+::cta Flagstaff
+`,
+  },
+  {
     slug: "where-to-stay-in-santabarbara",
     title: "Where to Stay in Santa Barbara, CA: Best Areas & Hotels (2026)",
     description:
@@ -1667,7 +1848,7 @@ Beyond the trails, the Pink Jeep tours bounce you up slickrock you can't drive y
 
 ### Day trips from Sedona
 
-For bigger days out, Grand Canyon National Park's South Rim is a little over two hours north, usually reached by the gorgeous drive up Oak Creek Canyon through Flagstaff, which is about 45 minutes away. Antelope Canyon, Montezuma Castle and the old copper-mining town of Jerome spread out from there, an easy add for guests with a few days to explore. Wherever you base yourself, [search current Sedona hotel prices](/search?destination=Sedona&adults=2) for your dates and pick the spot closest to whatever you came to do.
+For bigger days out, Grand Canyon National Park's South Rim is a little over two hours north, usually reached by the gorgeous drive up Oak Creek Canyon through [Flagstaff](/blog/where-to-stay-in-flagstaff), which is about 45 minutes away and a cheaper, higher base if you build the trip around the Canyon. Antelope Canyon, Montezuma Castle and the old copper-mining town of Jerome spread out from there, an easy add for guests with a few days to explore. Wherever you base yourself, [search current Sedona hotel prices](/search?destination=Sedona&adults=2) for your dates and pick the spot closest to whatever you came to do.
 
 ::activities Sedona
 

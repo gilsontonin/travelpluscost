@@ -111,6 +111,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Fly", detail: "Santa Barbara Airport (SBA) sits in Goleta, about 15 minutes from downtown, with regional connections." },
     ],
   },
+  "flagstaff-by-numbers": {
+    kind: "stat",
+    title: "Flagstaff by the numbers",
+    stats: [
+      { value: "~7,000 ft", label: "elevation — cool pines and real winters" },
+      { value: "~80 mi", label: "north to the Grand Canyon's South Rim" },
+      { value: "~45 min", label: "south to Sedona's red rocks" },
+      { value: "Route 66", label: "the Mother Road runs through downtown" },
+    ],
+  },
+  "flagstaff-vs-sedona": {
+    kind: "compare",
+    title: "Base in Flagstaff or Sedona?",
+    left: "Base in Flagstaff",
+    right: "Base in Sedona",
+    rows: [
+      { label: "The vibe", left: "Pine forest, Route 66, a college town, real snow", right: "Red rocks, resorts, spas, desert warmth" },
+      { label: "Best for", left: "Grand Canyon trips, budgets, winter", right: "Hiking the rocks, couples, a splurge" },
+      { label: "Nightly rate", left: "Lower — motels and chains", right: "Higher — it's a resort town" },
+      { label: "To the Grand Canyon", left: "~1.5 hours north", right: "~2.5 hours" },
+    ],
+  },
+  "flagstaff-basecamp": {
+    kind: "steps",
+    title: "Flagstaff as a basecamp",
+    steps: [
+      { title: "The Grand Canyon", detail: "The South Rim is ~80 miles north, about 1.5 hours — Flagstaff is the affordable place to sleep before a Canyon day." },
+      { title: "Sedona", detail: "~45 minutes south down Oak Creek Canyon, one of Arizona's prettiest drives." },
+      { title: "Snow and the Peaks", detail: "Arizona Snowbowl's slopes sit ~14 miles north; in summer the same lift runs for high-country views." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",
