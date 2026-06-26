@@ -13,6 +13,9 @@ export interface Price {
   refundable?: boolean;
   feesAtProperty?: number; // mandatory fees collected at check-in (stay total)
   allIn?: number; // amount + feesAtProperty — the true out-the-door price
+  member?: number; // member online price = min(net × markup, SSP). Computed SERVER-side; NET is NEVER put
+  // on this object / sent to the client (only this final member price + the SSP `amount` ever reach the
+  // browser). Only returned to logged-in users (the /api/prices route strips it otherwise).
 }
 export interface PropertyFee {
   label: string;
@@ -277,6 +280,10 @@ async function fetchRates(
   return res?.data ?? [];
 }
 
+// Member markup over net (cost + our flat fee, PRICING.md §4c). INTERNAL ONLY — never render this number,
+// nor the net it's applied to (POSITIONING §1: final price + exact % = derivable net = parity breach).
+const MEMBER_MARKUP = 1.15;
+
 /** Cheapest SSP price per hotel (for result cards). */
 export async function getPrices(
   ids: string[],
@@ -313,7 +320,12 @@ export async function getPrices(
       }
       if (best) {
         const fees = bestRate ? propertyFeesTotal(bestRate) : 0;
-        out[rh.hotelId] = { ...priced(best, n, fees), refundable: bestRefundable };
+        // Member price = cost + our flat fee, capped at SSP (a member never pays above the public price).
+        // Computed here from net; `net` itself NEVER leaves the server — only `member` (the final price) does.
+        const net = bestRate?.retailRate?.total?.[0]?.amount;
+        const member =
+          typeof net === "number" ? Math.min(Math.round(net * MEMBER_MARKUP), Math.round(best.amount)) : undefined;
+        out[rh.hotelId] = { ...priced(best, n, fees), refundable: bestRefundable, member };
       }
     }
   }

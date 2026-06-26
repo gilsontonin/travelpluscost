@@ -120,6 +120,31 @@ Consequences this locks in:
   build is the **membership/auth gate**; until then public = SSP (parity-safe).
 - **MoR ≠ Seller-of-Travel exemption** — see §6. Confirm both before real money; sandbox until then.
 
+### 4c. THE MODEL — DECIDED 2026-06-25: free sign-up + `min(net×1.15, SSP)`, the fee IS the revenue
+**This supersedes §4 / §4b** (the paid subscription + net+5% break-even). The subscription is dropped: paying
+"for the privilege to sign up" is friction with no track record to justify it. The new model is simpler,
+fairer, understandable, and **bookable both inside and outside the gate**.
+
+- **Free sign-up.** No subscription, no paywall friction. The account is the marketing asset (audience +
+  targeting data) AND the compliant gate for below-SSP pricing.
+- **Member price = `min(net × 1.15, SSP)`.** The 15% (cost + our flat fee) **IS** the revenue — covers the
+  card fee + LiteAPI + margin in one number; no subscription needed. Capped at SSP so a member **never pays
+  more than the public price** (thin-spread hotels just don't save — "match, don't beat", never a penalty).
+- **Public / logged-out = SSP** (parity). **Logged-in = the member price.** Both are bookable — no forced
+  account to book at SSP; the login only *unlocks* the lower number.
+- **Card fee:** if LiteAPI's MoR flow passes Stripe's fee through (OPEN — confirm, §4b/§6), bake it into the
+  floor: `min(net + card_fee + 15%, SSP)`. If they absorb it, plain `net×1.15` stands. One-line change.
+- **Compliance — logged-in-only IS allowed.** LiteAPI explicitly permits "discounts to logged-in users
+  only," so a *free* login is a valid closed user group for below-SSP (confirm in writing). BUT the parity
+  hard-rule still binds the DISPLAY (POSITIONING §1): **never show net cost or the precise 15% on any card or
+  page** — final price + exact % = derivable net = supply cut. Show the *outcome* only: ~~SSP~~ → member
+  price → "you save $X". State the principle ("cost + one flat fee, same for everyone"), never the number.
+  Keep "15%" internal to this doc.
+- **Margin reality (real Aug-2026 rates):** spread ≥ ~15% → member saves ~20–25%, we net the 15% less card;
+  spread < ~15% → capped at SSP, member saves $0 but we still capture the SSP−net spread (only ~0%-spread
+  hotels can run slightly negative — rare, covered by the fat ones).
+- **Future lever:** direct hotel contracts via LiteAPI → bigger spreads → more member savings on the same fee.
+
 ---
 
 ## 5. The "subscribe → book → cancel" worry, and how it's handled

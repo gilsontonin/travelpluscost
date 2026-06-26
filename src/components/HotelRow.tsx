@@ -33,6 +33,19 @@ export default function HotelRow({
   const amenities = hotel.amenities.slice(0, 2);
   const [s1, s2] = hotel.images.slice(1, 3);
 
+  // Member discount — only present when the API sent `member` (logged-in users). Shows the public price +
+  // the member price + savings; NEVER the net or the fee % (POSITIONING §1). Property fees are identical
+  // for everyone, so they cancel out of the savings figure.
+  const memberDeal =
+    price?.member != null && price.member < price.amount
+      ? {
+          publicAllIn: price.allIn ?? price.amount,
+          memberAllIn: price.member + (price.feesAtProperty ?? 0),
+          save: price.amount - price.member,
+          pct: Math.round((100 * (price.amount - price.member)) / (price.allIn ?? price.amount)),
+        }
+      : null;
+
   return (
     <Link
       href={href}
@@ -124,25 +137,46 @@ export default function HotelRow({
 
         <div className="mt-auto pt-2.5 text-right">
           {price ? (
-            <>
-              <div className="leading-tight">
-                <span className="font-bold tracking-tight text-[1.5rem] text-black">
-                  {money(Math.round((price.allIn ?? price.amount) / price.nights), price.currency)}
-                </span>
-                <span className="text-[0.84rem] text-black/70">/night</span>
-              </div>
-              <div className="text-[0.84rem] text-black/80">{money(price.allIn ?? price.amount, price.currency)} total</div>
-              <div className="text-[0.68rem] text-black/45">
-                All-in · taxes &amp; fees included
-                {price.feesAtProperty ? ` (incl. ${money(price.feesAtProperty, price.currency)} property fees)` : ""}
-              </div>
-              <div className="mt-0.5 inline-flex items-center gap-1 text-[0.68rem] font-medium text-accent">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                  <path d="M20 6 9 17l-5-5" />
-                </svg>
-                Same price for everyone
-              </div>
-            </>
+            memberDeal ? (
+              <>
+                <div className="text-[0.78rem] text-black/40">
+                  <span className="line-through">{money(memberDeal.publicAllIn, price.currency)}</span> public
+                </div>
+                <div className="leading-tight">
+                  <span className="font-bold tracking-tight text-[1.5rem] text-accent">
+                    {money(Math.round(memberDeal.memberAllIn / price.nights), price.currency)}
+                  </span>
+                  <span className="text-[0.84rem] text-black/70">/night</span>
+                </div>
+                <div className="text-[0.84rem] text-black/80">{money(memberDeal.memberAllIn, price.currency)} total · all-in</div>
+                <div className="mt-0.5 inline-flex items-center gap-1 text-[0.72rem] font-semibold text-accent">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                  Member price · save {money(memberDeal.save, price.currency)} ({memberDeal.pct}%)
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="leading-tight">
+                  <span className="font-bold tracking-tight text-[1.5rem] text-black">
+                    {money(Math.round((price.allIn ?? price.amount) / price.nights), price.currency)}
+                  </span>
+                  <span className="text-[0.84rem] text-black/70">/night</span>
+                </div>
+                <div className="text-[0.84rem] text-black/80">{money(price.allIn ?? price.amount, price.currency)} total</div>
+                <div className="text-[0.68rem] text-black/45">
+                  All-in · taxes &amp; fees included
+                  {price.feesAtProperty ? ` (incl. ${money(price.feesAtProperty, price.currency)} property fees)` : ""}
+                </div>
+                <div className="mt-0.5 inline-flex items-center gap-1 text-[0.68rem] font-medium text-accent">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                  Same price for everyone
+                </div>
+              </>
+            )
           ) : loading ? (
             <span className="text-xs text-black/40">Checking price…</span>
           ) : awaitingDates ? (
