@@ -29,6 +29,8 @@ import TrackView from "@/components/TrackView";
 import CityHotels from "@/components/CityHotels";
 import { nearbyLabel } from "@/lib/distance";
 import { REGIONS } from "@/lib/regions";
+import { stateName, stateSlugFromCode } from "@/lib/states";
+import { siblingCities } from "@/lib/geo";
 import { SITE_NAME } from "@/lib/site";
 import { categorizeProperty, categorizeRoom } from "@/lib/amenityGroups";
 
@@ -123,6 +125,13 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
   const searchHref = `/search?destination=${encodeURIComponent(hotel.city || "")}&adults=2`;
   // Breadcrumb up-links to the city hub (an indexable landing page), not the dynamic search page.
   const cityHubHref = hotel.city ? `/hotels/${slugify(hotel.city)}` : searchHref;
+  // Full up-chain (property → city → STATE → /hotels) + lateral nearby-city links — a robust hub graph,
+  // not a dead-end leaf. The state was the missing rung.
+  const stateCode = dir?.state ?? null;
+  const stateNm = stateCode ? stateName(stateCode) : null;
+  const stateSlug = stateCode ? stateSlugFromCode(stateCode) : null;
+  const stateHref = stateNm && stateSlug ? `/destinations/${stateSlug}` : null;
+  const sib = hotel.city ? siblingCities(slugify(hotel.city), 10) : null;
   const propertyGroups = categorizeProperty(hotel.facilities ?? []);
   const roomGroups = categorizeRoom(Array.from(new Set((hotel.rooms ?? []).flatMap((r) => r.amenities ?? []))));
 
@@ -137,11 +146,23 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
             Home
           </Link>
           <span aria-hidden>›</span>
+          <Link href="/hotels" className="hover:text-black">
+            Hotels
+          </Link>
+          {stateHref && stateNm ? (
+            <>
+              <span aria-hidden>›</span>
+              <Link href={stateHref} className="hover:text-black">
+                {stateNm}
+              </Link>
+            </>
+          ) : null}
+          <span aria-hidden>›</span>
           <Link href={cityHubHref} className="hover:text-black">
             {cityLabel}
           </Link>
           <span aria-hidden>›</span>
-          <span className="text-black/70 truncate max-w-[60%]">{hotel.name}</span>
+          <span className="text-black/70 truncate max-w-[45%]">{hotel.name}</span>
         </nav>
         <ShareSaveButtons id={hotel.id} name={hotel.name} />
       </div>
@@ -153,6 +174,8 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
             "@type": "BreadcrumbList",
             itemListElement: [
               { name: "Home", path: "/" },
+              { name: "Hotels", path: "/hotels" },
+              ...(stateHref && stateNm ? [{ name: `Hotels in ${stateNm}`, path: stateHref }] : []),
               { name: cityLabel, path: cityHubHref },
               { name: hotel.name, path: selfHref },
             ].map((c, i) => ({
@@ -349,6 +372,44 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
       <PoliciesInfo policies={hotel.policies} importantInfo={hotel.importantInfo} name={hotel.name} />
 
       <CityHotels city={hotel.city || ""} state={dir?.state} excludeId={hotel.id} />
+
+      {/* Explore the area — lateral links out of the leaf: the city hub, nearby same-state cities, and
+          the state hub. Keeps a property from being a dead end and feeds the hub graph both ways. */}
+      {(sib && sib.cities.length) || stateHref ? (
+        <section className="mt-12">
+          <h2 className="text-lg font-semibold">
+            Explore {hotel.city ? `${hotel.city}, ` : ""}
+            {stateNm ?? "the area"}
+          </h2>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {hotel.city ? (
+              <Link
+                href={cityHubHref}
+                className="rounded-full border border-accent/30 bg-accent-tint/40 px-4 py-1.5 text-sm font-semibold text-accent transition hover:bg-accent-tint/70"
+              >
+                All hotels in {hotel.city} →
+              </Link>
+            ) : null}
+            {sib?.cities.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/hotels/${c.slug}`}
+                className="rounded-full border border-black/12 px-4 py-1.5 text-sm text-black/70 transition hover:border-black/30 hover:text-black"
+              >
+                Hotels in {c.name}
+              </Link>
+            ))}
+            {stateHref && stateNm ? (
+              <Link
+                href={stateHref}
+                className="rounded-full border border-black/12 px-4 py-1.5 text-sm text-black/70 transition hover:border-black/30 hover:text-black"
+              >
+                All {stateNm} hotels →
+              </Link>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
     </div>
   );
 }

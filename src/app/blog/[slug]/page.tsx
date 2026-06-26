@@ -273,7 +273,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           title={`Top-rated stays in ${post.region.name}`}
           subtitle="One honest price — the rate plus one flat fee, the same for everyone"
           hotels={heroRail}
-          seeAllHref={`/search?destination=${encodeURIComponent(post.region.destination)}&adults=2`}
+          seeAllHref={cityLink?.href ?? `/search?destination=${encodeURIComponent(post.region.destination)}&adults=2`}
         />
       ) : null}
 

@@ -1,5 +1,6 @@
 import HotelRail from "@/components/HotelRail";
 import { hotelsByCity } from "@/lib/directory";
+import { slugify } from "@/lib/hotelUrl";
 
 // Bottom-of-page "More hotels in {city}" rail — other properties in the same city, with a See-all
 // link into the city search. Server-fetched + cached with the page (ISR).
@@ -37,7 +38,7 @@ export default async function CityHotels({
     <HotelRail
       title={`More hotels in ${city}`}
       hotels={hotels}
-      seeAllHref={`/search?destination=${encodeURIComponent(city)}&adults=2`}
+      seeAllHref={`/hotels/${slugify(city)}`}
     />
   );
 }

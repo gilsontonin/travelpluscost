@@ -6,6 +6,7 @@ import { hotelsByCity, hotelsByCityFuzzy, cityHotelCount, cityHotelIndex, rankHo
 import { slugify, hotelHref } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
 import { siblingCities, popularCities, cityBySlug } from "@/lib/geo";
+import { regionPostForCity } from "@/lib/posts";
 import { SITE_NAME, abs } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
 import { getPrices } from "@/lib/rates";
@@ -168,6 +169,8 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
   // Same-state cross-links + the state hub — builds a dense hub graph (state ⇄ city) so every hub is
   // crawlable, not orphaned. Falls back to nothing for the rare city we can't place in a state.
   const sib = siblingCities(slugify(city), 12);
+  // Hub ⇄ blog: if we've written a "where to stay in <city>" guide, surface it (and the guide links back).
+  const guide = regionPostForCity(slugify(city));
 
   // Search-page card model: directory rows -> CardHotel. Enrich with the distance-to-anchor line
   // for curated markets (so cards read "0.4 mi from Waikiki Beach", not just the city name again).
@@ -281,6 +284,21 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           {anchor ? <span>Near {anchor}</span> : null}
         </div>
       </header>
+
+      {guide ? (
+        <Link
+          href={`/blog/${guide.slug}`}
+          className="mt-4 flex items-center gap-2.5 rounded-lg border border-accent/25 bg-accent-tint/30 px-4 py-3 text-sm font-medium text-accent transition hover:bg-accent-tint/60"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+          </svg>
+          <span className="flex-1">
+            Read our neighborhood guide: <strong>where to stay in {city}</strong>
+          </span>
+          <span aria-hidden>→</span>
+        </Link>
+      ) : null}
 
       {cards.length ? (
         <CityResults cards={cards} city={city} countLabel={countLabel} searchHref={searchHref} />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { popularCities, statesSorted } from "@/lib/geo";
 
 // Links with an href are live; those without aren't built yet and render as muted text
 // (so the footer never has dead "#" links).
@@ -35,8 +36,35 @@ const COLS: { title: string; links: FLink[] }[] = [
 ];
 
 export default function Footer() {
+  const cities = popularCities(30);
+  const states = statesSorted().slice(0, 16);
   return (
     <footer className="bg-[#15151a] text-white/70 mt-16">
+      {/* Site-wide destination links — every page distributes equity to the top city + state hubs
+          (the OTA footer pattern). Static, from content/geo-index.json (no DB call). */}
+      <div className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-10">
+          <p className="text-white font-medium text-sm mb-4">Popular destinations</p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {cities.map((c) => (
+              <Link key={c.slug} href={`/hotels/${c.slug}`} className="hover:text-white transition">
+                {c.name}
+              </Link>
+            ))}
+          </div>
+          <p className="text-white font-medium text-sm mb-4 mt-8">Hotels by state</p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {states.map((s) => (
+              <Link key={s.code} href={`/destinations/${s.slug}`} className="hover:text-white transition">
+                {s.name}
+              </Link>
+            ))}
+            <Link href="/hotels" className="text-accent hover:text-white transition">
+              Browse all U.S. destinations →
+            </Link>
+          </div>
+        </div>
+      </div>
       <div className="mx-auto max-w-7xl px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div id="about" className="scroll-mt-24 col-span-2 md:col-span-1">
           <div className="font-bold text-lg text-white">

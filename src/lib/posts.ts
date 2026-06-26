@@ -2,6 +2,8 @@
 // Bodies are Markdown (rendered with react-markdown + remark-gfm). Add new posts to the TOP
 // of POSTS (newest first); the index renders in array order.
 
+import { slugify } from "./hotelUrl";
+
 export interface PostFaq {
   q: string;
   a: string;
@@ -4874,4 +4876,20 @@ export function getAllSlugs(): string[] {
 export function readingMinutes(body: string): number {
   const words = body.replace(/[#>*_`|-]/g, " ").split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 200));
+}
+
+// City slug → its "where to stay" neighborhood guide (a region post), for hub ⇄ blog interlinking.
+// Built once. Lets a city hub surface its guide, and the guide link back to the hub — consolidating
+// each city's topical authority instead of leaking it to /search.
+let _cityPost: Map<string, Post> | null = null;
+export function regionPostForCity(citySlug: string): Post | null {
+  if (!_cityPost) {
+    _cityPost = new Map();
+    for (const p of POSTS) {
+      if (!p.region) continue;
+      const k = slugify(p.region.destination);
+      if (k && !_cityPost.has(k)) _cityPost.set(k, p);
+    }
+  }
+  return _cityPost.get(citySlug) ?? null;
 }
