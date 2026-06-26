@@ -142,6 +142,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Snow and the Peaks", detail: "Arizona Snowbowl's slopes sit ~14 miles north; in summer the same lift runs for high-country views." },
     ],
   },
+  "tucson-by-numbers": {
+    kind: "stat",
+    title: "Tucson by the numbers",
+    stats: [
+      { value: "~110 mi", label: "south of Phoenix on I-10, about 2 hours" },
+      { value: "2 districts", label: "of Saguaro National Park flank the city" },
+      { value: "9,157 ft", label: "atop Mount Lemmon — ski runs above the desert" },
+      { value: "2015", label: "named the first UNESCO City of Gastronomy in the US" },
+    ],
+  },
+  "tucson-downtown-vs-foothills": {
+    kind: "compare",
+    title: "Downtown or the Catalina Foothills?",
+    left: "Downtown & 4th Ave",
+    right: "The Catalina Foothills",
+    rows: [
+      { label: "The vibe", left: "Historic, walkable, arts, breweries, the streetcar", right: "Desert resorts, mountain views, pools, quiet" },
+      { label: "Best for", left: "Walkers, foodies, no-car trips", right: "Resort days, golf, Sabino Canyon hikes" },
+      { label: "Nightly rate", left: "Mid — boutique and chains", right: "Higher — it's resort country" },
+      { label: "You wake up to", left: "Brick storefronts and a mural", right: "Saguaros and the Santa Catalinas" },
+    ],
+  },
+  "tucson-when-to-go": {
+    kind: "steps",
+    title: "When to go to Tucson",
+    steps: [
+      { title: "Fly or drive in", detail: "Tucson International (TUS) sits ~15 minutes south of downtown; or drive ~2 hours down I-10 from Phoenix." },
+      { title: "Come October–April", detail: "Warm days, cool nights and snowbird season — the resorts fill and rates climb, but the desert is at its best." },
+      { title: "Brave summer for a deal", detail: "June–September runs 100°F+, but rates crater and the top of Mount Lemmon stays ~20°F cooler." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",

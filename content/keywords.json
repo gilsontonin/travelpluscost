@@ -1,4 +1,22 @@
 {
+  "where-to-stay-in-tucson": {
+    "primary": "where to stay in tucson",
+    "secondary": [
+      "where to stay in tucson az",
+      "where to stay in tucson arizona",
+      "where to stay in downtown tucson",
+      "where to stay in tucson for hiking",
+      "best area to stay in tucson",
+      "where to stay for tucson gem show"
+    ],
+    "volume": 590,
+    "kd": 17,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": []
+  },
   "where-to-stay-in-flagstaff": {
     "primary": "where to stay in flagstaff",
     "secondary": [

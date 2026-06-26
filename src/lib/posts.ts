@@ -47,6 +47,195 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-tucson",
+    title: "Where to Stay in Tucson, AZ: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Tucson, AZ in 2026: best areas — Downtown, the Catalina Foothills, the University and the airport — with real hotels and honest rates.",
+    excerpt:
+      "Walkable tacos and breweries, or a desert resort under the mountains? A plain-English guide to picking the right Tucson base — by area, budget, and the trip you're taking.",
+    tldr: {
+      answer:
+        "Tucson splits into a few clear zones. Downtown and 4th Avenue keep the tacos, breweries and the streetcar on foot; the Catalina Foothills hold the desert resorts and mountain views; midtown sits near the University of Arizona; and the airport and south side run cheapest, close to the freeway and the national park.",
+      points: [
+        "**Downtown / 4th Avenue** — walkable tacos, breweries and the streetcar; the easy pick.",
+        "**The Catalina Foothills** — desert resorts, pools and mountain views; the splurge.",
+        "**Midtown / University of Arizona** — central, near the UA and the historic Arizona Inn.",
+        "**Airport & south side** — the cheapest beds, near I-10, the missions and Saguaro West.",
+        "**Time it right** — October–April is desert-perfect; summer is 100°F-plus and cheap.",
+      ],
+    },
+    date: "2026-06-25",
+    updated: "2026-06-25",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/224932769.jpg",
+      alt: "A colorful art-motel with a rainbow 'Tucson is Magic' mural arch, a vintage car, palms and a saguaro cactus under a blue Tucson sky",
+      credit: { name: "Hotel McCoy, Tucson" },
+    },
+    region: { name: "Tucson", destination: "Tucson" },
+    faqs: [
+      {
+        q: "How far is Tucson from Phoenix?",
+        a: "About 110 miles, roughly a two-hour drive south on Interstate 10. Many visitors fly into Phoenix Sky Harbor (the bigger airport) and drive down, though Tucson International (TUS) sits just 15 minutes south of downtown and handles plenty of direct flights of its own.",
+      },
+      {
+        q: "Is Tucson safe?",
+        a: "The areas most visitors stay in — Downtown, 4th Avenue, the University district and the Catalina Foothills — are well-traveled and fine to walk by day, with normal city caution after dark. Like anywhere, some stretches of the south and the far west side are rougher, so book by neighborhood (the areas below) rather than chasing the very cheapest room on the map.",
+      },
+      {
+        q: "What is the best time to visit Tucson?",
+        a: "October through April is the sweet spot: warm, sunny days, cool nights and the desert at its best — which is also snowbird season, so the resorts fill and rates climb, especially around the February Gem Show. June through September is genuinely hot (100°F and up), but room rates crater and the top of Mount Lemmon stays about 20°F cooler.",
+      },
+      {
+        q: "What is Tucson known for?",
+        a: "The Sonoran Desert and its giant saguaro cactus — Saguaro National Park flanks the city on two sides — plus the Arizona-Sonora Desert Museum, the University of Arizona, Mission San Xavier del Bac, and some of the best Mexican food in the country (it was named the first UNESCO City of Gastronomy in the US). Mount Lemmon, the world's largest gem show and dark desert skies round it out.",
+      },
+      {
+        q: "What is the best area to stay in Tucson for first-timers?",
+        a: "Downtown and 4th Avenue for walkable food, breweries and the streetcar, or the Catalina Foothills for a desert resort with mountain views and a pool. Downtown puts you closest to the restaurants and the airport; the Foothills put you closest to Sabino Canyon and the hiking. Both are easy, safe first-trip bases.",
+      },
+      {
+        q: "How far is Tucson from the Mexican border?",
+        a: "About 60 miles south to Nogales, roughly an hour down I-19 — close enough for a day trip, and the reason the region's food, missions and history are so deeply Sonoran. The historic mission town of Tubac and the wine country of the Santa Cruz Valley sit along the same drive.",
+      },
+    ],
+    body: `**Where to stay in Tucson comes down to Downtown** if you want to walk to tacos and breweries, or the Catalina Foothills if you came for a desert resort under the mountains. This is the Old Pueblo — a Sonoran Desert city ringed by saguaro forests and sky-island peaks, about two hours south of Phoenix, where a January afternoon is shirtsleeve weather and the food is good enough that UNESCO made it official.
+
+Below are the real, bookable hotels in each area, then the honest neighborhood guide to where to stay in Tucson, Arizona, as of 2026.
+
+Tucson sprawls across a wide desert valley, so picking a base is less about one downtown and more about whether you want walkable city, a resort against the mountains, or a cheap, convenient bed near the freeway and the parks.
+
+## Tucson Hotels by Area, at a Glance
+
+Four zones, one deciding factor: how much you'll trade walkable tacos for a pool and a mountain view. Choose the area by your trip, then the hotel — here's the whole valley on one screen.
+
+| Area | The feel | Best for | The rate |
+|---|---|---|---|
+| [Downtown / 4th Avenue](/search?destination=Tucson&adults=2) | Historic, walkable, arts, food | Walkers, foodies, first-timers | Mid |
+| [The Catalina Foothills](/search?destination=Tucson&adults=2) | Desert resorts, mountain views | Resort days, hiking, golf | Higher |
+| [Midtown / University of Arizona](/search?destination=Tucson&adults=2) | Central, leafy, college town | UA visits, a central base | Mid |
+| [Airport & south side](/search?destination=Tucson&adults=2) | Chains, casinos, near I-10 | Budgets, the parks, the missions | Low |
+
+::infographic tucson-by-numbers
+
+[See every Tucson hotel and its live nightly price](/search?destination=Tucson&adults=2)
+
+## Downtown and 4th Avenue: the Walkable Heart
+
+**Downtown Tucson is where to stay if you want to walk to dinner — a compact, historic core where 4th Avenue's tacos, breweries, live music and galleries sit a streetcar ride from the University.** The free Sun Link streetcar threads downtown, the 4th Avenue strip and the UA together, so this is the one part of sprawling Tucson where you can park the car and leave it.
+
+This is also the food heart of a UNESCO City of Gastronomy — Sonoran hot dogs, century-old Mexican kitchens and a wall-to-wall craft-beer scene — plus a downtown thick with restaurants, bars and boutique hotels, the historic adobe district and, every February, the giant Gem Show. For a first trip, it's the easy call.
+
+### The DoubleTree, the Tuxon and the Art Motels
+
+Downtown leans historic and design-forward. The DoubleTree Tucson Downtown is the reliable full-service pick by the convention center; voco The Tuxon brings a stylish, mid-century-modern desert vibe a little south, the kind of place built around a pool and a fire pit.
+
+::hotel lp6556d9c7
+
+::hotel lp6e3af
+
+Tucson also does a great cheap-and-cheerful art motel — the cover of this guide is one of them, all murals and a courtyard pool, the kind of spot that does Tucson personality on a budget — a fun, walkable-ish base for travelers who want personality over a lobby chandelier.
+
+**The move:** book Downtown for a walkable first trip · **Best for:** food, breweries, the streetcar · **Watch:** it's quieter on weeknights than you'd expect.
+
+## Midtown and the University of Arizona
+
+**Midtown is where to stay in Tucson for a central, leafy base near the University of Arizona — a short hop from both Downtown and the Foothills.** It's the broad middle of the city, handy for a UA game or graduation and generally a notch cheaper than the resorts, with quick access to the whole valley.
+
+The standout here is the Arizona Inn, the salmon-pink 1930 landmark with private casitas and flowering gardens that has hosted Tucson's guests for nearly a century — a genuine piece of history rather than a themed lobby. Nearer campus, the Graduate hotel plays the college-town card with a smart, playful design.
+
+::hotel lp23c10
+
+::hotel lp65564862
+
+**The move:** base midtown for central and historic · **Best for:** UA visits, a central base, a classic stay · **Watch:** you'll drive to most things.
+
+## The Catalina Foothills: Desert Resorts and Mountain Views
+
+**The Catalina Foothills are where to stay in Tucson for the desert-resort experience — pools, spas and golf set against the Santa Catalina Mountains on the north edge of town.** This is resort country: low adobe lodges and quiet casitas tucked into the saguaros, with Sabino Canyon's trails and the Mount Lemmon road right there for the hiking.
+
+The Hacienda del Sol Guest Ranch Resort is the storied pick you can book with us — a 1929 former ranch school turned desert hideaway, with Spanish-Colonial casitas, a spa, a celebrated restaurant and gardens framed by the Santa Catalinas. The valley's bigger destination resorts and spas cluster up here too, most of them booking direct.
+
+::hotel lp5a080
+
+You'll drive into Downtown for dinner, and the rates run highest here in winter. But for a trip built around a pool, a sunset over the desert and a morning hike, no other area delivers it like the Foothills.
+
+**The move:** pick the Foothills for a resort and the mountains · **Best for:** resort days, hiking, golf, couples · **Watch:** a car is a must, and winter rates climb.
+
+## The Airport, the South Side and the Casinos: Value Bases
+
+**The airport and south side are where to stay in Tucson for the lowest rates and the quickest access to I-10, the missions and Saguaro National Park West.** Tucson International sits just 15 minutes from downtown, and the band of hotels and casino resorts around it runs noticeably cheaper than the Foothills, with easy highway access in every direction.
+
+The rooms here are clean and convenient, and the tribal casino resorts add pools, a spa, restaurants, live music and entertainment at value prices. For a road trip, an early flight or a budget-minded desert week, it's the practical base.
+
+::hotel lp65781207
+
+::hotel lp1f8bb
+
+For the cheapest clean room in town, the Red Roof Inn south of the airport scores far above its rate — a no-frills bed that leaves more budget for the desert.
+
+::hotel lp1b6ee
+
+**The move:** book the south side to sleep cheap and drive · **Best for:** budgets, road trips, the parks · **Watch:** it's freeway and strip, not scenery.
+
+## Tucson's Desert: Saguaro National Park, the Desert Museum and Mount Lemmon
+
+**Wherever you stay in Tucson, the desert is the main event — and it shapes which base makes sense.** Saguaro National Park flanks the city in two districts: the Rincon Mountain (east) side near the Foothills, and the Tucson Mountain (west) side near the Arizona-Sonora Desert Museum and Old Tucson. The Arizona-Sonora Desert Museum — a zoo, botanical garden and natural-history museum rolled into one — is the single best introduction to the Sonoran Desert, and worth staying near on the west side.
+
+Up north, the Mount Lemmon highway climbs from cactus to pine forest in an hour, topping out at ski runs nearly 9,200 feet up — a cool escape on a hot day. Closer in, Sabino Canyon and Ventana Canyon cut into the Catalinas for easy desert hikes and walks, and the Pima Canyon trail leaves right from the Foothills. South, Mission San Xavier del Bac and the border town of Nogales make easy day trips, and the whole region rewards a base you can drive out of in any direction.
+
+::infographic tucson-downtown-vs-foothills
+
+::infographic tucson-when-to-go
+
+**The move:** match your base to the desert you came for · **Best for:** hikers, families, road-trippers · **Watch:** carry water, and check Mount Lemmon's road in winter.
+
+## Hotels or a Vacation Rental in Tucson?
+
+**For most Tucson trips, a hotel beats a vacation rental on location and value.** The walkable Downtown and 4th Avenue blocks and the Foothills resorts are mostly hotels, while rentals tend to sit in spread-out residential neighborhoods that need a car for everything anyway.
+
+A private vacation rental earns its keep for a snowbird month, a family reunion or a hiking group that wants a kitchen and a casita with a mountain view. For a few nights built around the food, the desert and the museums, the hotels here keep you closer to it all — and the price you see is the real one, the same for every guest.
+
+[Compare Tucson hotels by area](/search?destination=Tucson&adults=2)
+
+## What a Night in Tucson Actually Costs
+
+**Tucson is one of the better-value desert cities, and that's part of the appeal.** Downtown boutiques and midtown chains generally run mid-range, the airport and south-side hotels run cheapest, and only the Catalina Foothills resorts climb toward Scottsdale money — and even then, usually for less than Phoenix's big resorts.
+
+The catch is the calendar: winter and the February Gem Show are the peak, priciest time, while the summer heat brings the year's lowest rates. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live Tucson prices](/search?destination=Tucson&adults=2)
+
+## Which Tucson Area Should You Choose?
+
+**For a first trip, choose Downtown and 4th Avenue and don't overthink it.** The walkable food, breweries and streetcar are the best of what makes Tucson its own place, and you're still a short drive from the desert and the mountains. Pick the Catalina Foothills instead when the trip is really about a resort, a pool and the hiking.
+
+Save midtown for a central, value-minded base near the University, and the airport and south side for the cheapest beds and the quickest park access. Once you've weighed your options and matched an area to your trip, here are real, well-reviewed Tucson hotels across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Hotel McCoy | Downtown / south | 8.9 | Art-motel value |
+| Arizona Inn | Midtown | 9.3 | Historic landmark |
+| Hacienda del Sol | The Foothills | 9.2 | Desert resort |
+| DoubleTree Downtown | Downtown | 9.4 | Full-service, central |
+| Graduate by Hilton | University | 9.0 | College-town design |
+| Casino del Sol | South / west | 9.0 | Casino resort, value |
+| Wyndham Tucson Airport | Airport | 10.0 | Convenient, cheap |
+| Red Roof Inn South | Airport | 9.6 | Cheapest clean room |
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+
+::cta Tucson
+`,
+  },
+  {
     slug: "where-to-stay-in-flagstaff",
     title: "Where to Stay in Flagstaff, AZ: Best Areas & Hotels (2026)",
     description:
@@ -195,7 +384,7 @@ If you're torn between bases, the short version: Flagstaff is the cheaper, snowi
 
 **Flagstaff is a genuinely affordable basecamp, and that's the whole point.** A clean chain on the highway strip generally runs toward the lower end, while the walkable downtown inns and the pine-forest stays sit higher — but even the nicer rooms here cost less than Sedona's resorts or the Grand Canyon National Park's lodges.
 
-Summer and the Grand Canyon season are the busy, pricier months, and winter holidays draw the snow crowd; spring and late fall bring the best rates. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+Summer and the Grand Canyon season are the busy, pricier months, and winter holidays draw the snow crowd; spring and late fall bring the best rates. Chasing warm winter sun instead of snow? Southern Arizona's desert city is [where to stay in Tucson](/blog/where-to-stay-in-tucson). Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
 
 ::infographic how-pricing-works
 
