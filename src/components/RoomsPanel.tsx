@@ -48,6 +48,17 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
     .filter(Boolean)
     .join(" · ");
 
+  // ONE displayed price for the whole card — the member price when it's a real (≥1%) saving, else SSP, so
+  // it matches the card the user clicked and the /book page. Public (SSP) kept only for the strikethrough +
+  // savings. Never net / the 15% (POSITIONING §1). For members the API sends `member`; otherwise it's absent.
+  const pubAllIn = o.price.allIn ?? o.price.amount;
+  const memberAllIn = o.price.member != null ? o.price.member + (o.price.feesAtProperty ?? 0) : null;
+  const deal = memberAllIn != null && (pubAllIn - memberAllIn) / pubAllIn >= 0.01;
+  const showAllIn = deal ? (memberAllIn as number) : pubAllIn;
+  const showOnline = deal ? (o.price.member as number) : o.price.amount;
+  const save = Math.round(pubAllIn - showAllIn);
+  const savePct = Math.round((100 * (pubAllIn - showAllIn)) / pubAllIn);
+
   return (
     <div className="flex flex-col sm:flex-row bg-white border border-black/[0.07] rounded-lg overflow-hidden">
       {o.photos?.length ? (
@@ -108,7 +119,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
             <div className="mt-3 rounded-lg bg-black/[0.03] p-3 text-sm max-w-sm">
               <div className="flex justify-between gap-4">
                 <span className="text-black/60">Room &amp; taxes ({o.price.nights} night{o.price.nights > 1 ? "s" : ""})</span>
-                <span className="tabular-nums">{money(o.price.amount, o.price.currency)}</span>
+                <span className="tabular-nums">{money(showOnline, o.price.currency)}</span>
               </div>
               {o.propertyFees.map((f) => (
                 <div key={f.label} className="flex justify-between gap-4 mt-1">
@@ -120,8 +131,14 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
               ))}
               <div className="flex justify-between gap-4 font-semibold border-t border-black/10 mt-2 pt-2">
                 <span>Total (all-in)</span>
-                <span className="tabular-nums">{money(o.price.allIn ?? o.price.amount, o.price.currency)}</span>
+                <span className="tabular-nums">{money(showAllIn, o.price.currency)}</span>
               </div>
+              {deal ? (
+                <div className="flex justify-between gap-4 mt-1 text-accent font-semibold">
+                  <span>Member savings vs public</span>
+                  <span className="tabular-nums">−{money(save, o.price.currency)}</span>
+                </div>
+              ) : null}
             </div>
           ) : (
             <p className="mt-2 text-xs text-black/60">Taxes &amp; fees included — no fees at check-in.</p>
@@ -163,13 +180,19 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
 
         <div className="shrink-0 sm:text-right flex sm:flex-col items-end justify-between sm:justify-start gap-2 border-t sm:border-t-0 border-black/[0.06] pt-3 sm:pt-0">
           <div>
-            <div className="font-bold text-lg">
-              {money(Math.round((o.price.allIn ?? o.price.amount) / o.price.nights), o.price.currency)}
+            {deal ? <div className="text-xs text-black/40 line-through">{money(pubAllIn, o.price.currency)}</div> : null}
+            <div className={`font-bold text-lg ${deal ? "text-accent" : ""}`}>
+              {money(Math.round(showAllIn / o.price.nights), o.price.currency)}
               <span className="text-black/60 font-normal text-sm">/night</span>
             </div>
             <div className="text-xs text-black/55">
-              {money(o.price.allIn ?? o.price.amount, o.price.currency)} all-in · {o.price.nights} night{o.price.nights > 1 ? "s" : ""}
+              {money(showAllIn, o.price.currency)} all-in · {o.price.nights} night{o.price.nights > 1 ? "s" : ""}
             </div>
+            {deal ? (
+              <div className="mt-0.5 text-xs font-semibold text-accent">
+                Member price · save {money(save, o.price.currency)} ({savePct}%)
+              </div>
+            ) : null}
           </div>
           <a
             href={href}
@@ -224,7 +247,8 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
       hotelId,
       room: o.roomName,
       board: o.boardName ?? "",
-      total: String(o.price.amount), // online portion (room + online taxes)
+      total: String(o.price.member ?? o.price.amount), // member price when present, else public SSP — the ONE price
+      public: String(o.price.amount), // SSP — lets /book strike it through + show "you save"
       feesAtProperty: String(o.price.feesAtProperty ?? 0),
       currency: o.price.currency,
       nights: String(o.price.nights),

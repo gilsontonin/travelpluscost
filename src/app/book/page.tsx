@@ -14,9 +14,11 @@ export default async function BookPage({
   const sp = await searchParams;
   const hotelId = sp.hotelId ?? "";
   const room = sp.room ?? "Room";
-  const online = Number(sp.total ?? 0); // room + online taxes (SSP)
+  const online = Number(sp.total ?? 0); // what you pay online — member price for members, else SSP
+  const publicOnline = Number(sp.public ?? sp.total ?? 0); // SSP — for the member strikethrough + savings
   const feesAtProperty = Number(sp.feesAtProperty ?? 0); // mandatory fees collected at check-in
   const allIn = online + feesAtProperty; // the one honest number, same as the property page
+  const memberSave = Math.max(0, Math.round(publicOnline - online)); // ≥1 → a real member discount
   const currency = sp.currency ?? "USD";
   const nights = Number(sp.nights ?? 1);
   const checkin = sp.checkin ?? "";
@@ -81,9 +83,24 @@ export default async function BookPage({
 
           <div className="mt-4 border-t border-black/5 pt-4 text-sm space-y-1.5">
             <h3 className="font-semibold mb-1">Price details</h3>
-            <Row label={`Room & taxes (${nights} night${nights > 1 ? "s" : ""})`} value={money(online, currency)} />
+            {memberSave >= 1 ? (
+              <div className="flex justify-between text-black/45">
+                <span>Public price</span>
+                <span className="line-through">{money(publicOnline, currency)}</span>
+              </div>
+            ) : null}
+            <Row
+              label={`${memberSave >= 1 ? "Member price · room & taxes" : "Room & taxes"} (${nights} night${nights > 1 ? "s" : ""})`}
+              value={money(online, currency)}
+            />
             {feesAtProperty > 0 ? (
               <Row label="Fees · paid at property" value={money(feesAtProperty, currency)} />
+            ) : null}
+            {memberSave >= 1 ? (
+              <div className="flex justify-between font-semibold text-accent">
+                <span>You save</span>
+                <span>−{money(memberSave, currency)}</span>
+              </div>
             ) : null}
           </div>
           <div className="mt-3 border-t border-black/5 pt-3 flex justify-between font-semibold text-base">
@@ -102,8 +119,10 @@ export default async function BookPage({
           ) : null}
 
           <p className="mt-4 rounded-xl bg-accent-tint/60 p-3 text-xs text-black/70">
-            <span className="font-medium text-accent">One honest price.</span> The same for everyone, never
-            based on your data. Every fee shown up front — no hidden markup, no fake discounts.
+            <span className="font-medium text-accent">{memberSave >= 1 ? "Member price." : "One honest price."}</span>{" "}
+            {memberSave >= 1
+              ? `What the hotel charges us plus our flat fee — ${money(memberSave, currency)} below the public rate, the same for every member.`
+              : "The same for everyone, never based on your data. Every fee shown up front — no hidden markup, no fake discounts."}
           </p>
         </aside>
       </div>

@@ -64,6 +64,7 @@ export interface PrebookInput {
   checkin: string;
   checkout: string;
   adults: number;
+  member?: boolean; // logged-in → charge the member price (below SSP); set by the /api/prebook route
 }
 export interface PrebookResult {
   prebookId: string;
@@ -254,10 +255,13 @@ async function fetchOffers(input: PrebookInput, margin?: number): Promise<Offer[
   return out;
 }
 
+// Member markup % over net (cost + our flat fee). Keep in sync with MEMBER_MARKUP=1.15 in rates.ts — the
+// member CHARGE must equal the member price shown on the cards/rooms/book page. INTERNAL — never display.
+const MEMBER_MARGIN_PCT = 15;
+
 // Smallest 2-decimal margin% that lifts net to >= SSP (decimals are supported per LiteAPI docs).
-// LiteAPI rule: never sell BELOW the suggested selling price on a public site — so we price at SSP,
-// not at raw wholesale. (Below-SSP "cost + small fee" is reserved for the future logged-in member
-// tier — a permitted "closed user group".)
+// LiteAPI rule: never sell BELOW the suggested selling price on a public site — so PUBLIC bookings price at
+// SSP, not raw wholesale. MEMBER bookings (a permitted "closed user group") price at min(net×1.15, SSP).
 function marginToSSP(net: number, ssp: number): number {
   if (!(net > 0) || !(ssp > net)) return 0;
   return Math.ceil((ssp / net - 1) * 10000) / 100;
@@ -280,9 +284,13 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
     if (cur == null || o.ssp < cur) sspByKey.set(o.key, o.ssp);
   }
 
-  // One margin tuned to the chosen (matched, else cheapest) room, so its charge lands at SSP.
+  // One margin tuned to the chosen (matched, else cheapest) room. Members charge at the member price
+  // (cost + flat fee, capped at SSP → the smaller of the member markup and the SSP margin); public at SSP.
+  // Same number the cards/rooms/book page already showed (PRICING.md §4c).
   base.sort((a, b) => Number(b.key === want) - Number(a.key === want) || a.ssp - b.ssp);
-  const margin = marginToSSP(base[0].net, base[0].ssp);
+  const margin = input.member
+    ? Math.min(MEMBER_MARGIN_PCT, marginToSSP(base[0].net, base[0].ssp))
+    : marginToSSP(base[0].net, base[0].ssp);
   const priced = margin > 0 ? await fetchOffers(input, margin) : base;
   // Try the matched room first, then by ascending charge.
   priced.sort((a, b) => Number(b.key === want) - Number(a.key === want) || a.net - b.net);
@@ -291,7 +299,7 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
   let attempts = 0;
   for (const offer of priced) {
     const floor = sspByKey.get(offer.key);
-    if (floor != null && offer.net < floor - 0.5) continue; // never sell below SSP
+    if (!input.member && floor != null && offer.net < floor - 0.5) continue; // public: never below SSP (members may)
     if (attempts >= MAX_PREBOOK_ATTEMPTS) break;
     attempts++;
     try {

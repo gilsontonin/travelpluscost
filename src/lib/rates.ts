@@ -284,6 +284,13 @@ async function fetchRates(
 // nor the net it's applied to (POSITIONING §1: final price + exact % = derivable net = parity breach).
 const MEMBER_MARKUP = 1.15;
 
+/** The ONE member price, used everywhere (cards, rooms, prebook) so discovery→pay stays consistent: cost +
+ *  flat fee, capped at SSP (a member never pays above public). Returns the final price only — computed from
+ *  `net` but `net` is never returned, so it never reaches the client. */
+export function memberPrice(net: number | undefined, ssp: number): number | undefined {
+  return typeof net === "number" ? Math.min(Math.round(net * MEMBER_MARKUP), Math.round(ssp)) : undefined;
+}
+
 /** Cheapest SSP price per hotel (for result cards). */
 export async function getPrices(
   ids: string[],
@@ -321,10 +328,8 @@ export async function getPrices(
       if (best) {
         const fees = bestRate ? propertyFeesTotal(bestRate) : 0;
         // Member price = cost + our flat fee, capped at SSP (a member never pays above the public price).
-        // Computed here from net; `net` itself NEVER leaves the server — only `member` (the final price) does.
-        const net = bestRate?.retailRate?.total?.[0]?.amount;
-        const member =
-          typeof net === "number" ? Math.min(Math.round(net * MEMBER_MARKUP), Math.round(best.amount)) : undefined;
+        // Computed from net; `net` NEVER leaves the server — only `member` (the final price) does.
+        const member = memberPrice(bestRate?.retailRate?.total?.[0]?.amount, best.amount);
         out[rh.hotelId] = { ...priced(best, n, fees), refundable: bestRefundable, member };
       }
     }
@@ -383,7 +388,9 @@ export async function getRooms(
         features: cr?.features?.length ? cr.features : undefined,
         photos: cr?.photos?.length ? cr.photos : hotelPhotos.slice(0, 3),
         propertyFees: fees.length ? fees : undefined,
-        price: priced(sp, n, feesTotal),
+        // Same member price as the cards (net never leaves the server). The /api/rooms route strips it for
+        // non-members, so the property page shows the SAME number the card did.
+        price: { ...priced(sp, n, feesTotal), member: memberPrice(r.retailRate?.total?.[0]?.amount, sp.amount) },
       });
     }
   }
