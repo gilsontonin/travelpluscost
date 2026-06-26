@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { popularCities, statesSorted } from "@/lib/geo";
+import Logo from "@/components/Logo";
 
 // Links with an href are live; those without aren't built yet and render as muted text
 // (so the footer never has dead "#" links).
@@ -67,8 +68,8 @@ export default function Footer() {
       </div>
       <div className="mx-auto max-w-7xl px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div id="about" className="scroll-mt-24 col-span-2 md:col-span-1">
-          <div className="font-bold text-lg text-foreground">
-            <span className="text-accent">travel</span>pluscost
+          <div className="text-lg text-foreground">
+            <Logo />
           </div>
           <p className="mt-3 text-sm max-w-xs">
             One honest price. The same for everyone — what the hotel charges us, plus one small flat

@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Allow the LAN IP to load dev resources (HMR + client JS chunks) when previewing on a phone. Without
+  // this, Next 16 blocks cross-origin dev requests, so the page renders but never HYDRATES — meaning
+  // <button> handlers (e.g. the mobile menu) are dead. Dev-only; ignored in production builds.
+  allowedDevOrigins: ["192.168.86.78"],
   images: {
     // LiteAPI photos are served full-res (~680 KB each) from this host with no resize
     // params. Routing them through next/image (Netlify Image CDN in prod) resizes +

@@ -4,12 +4,15 @@ import Link from "next/link";
 import { useState } from "react";
 import VibeSearchCta from "@/components/VibeSearchCta";
 import AuthNav from "@/components/AuthNav";
+import Logo from "@/components/Logo";
 
+// Short, single-word nav labels — the logo is the Home link, so there's no "Home" item, and the
+// pricing explainer is just "Pricing" (was "How pricing works"). The brand promise lives on the
+// homepage hero / About, not as a persistent header tagline (valuable real estate = inventory, not chrome).
 const NAV = [
-  { href: "/", label: "Home" },
   { href: "/search", label: "Hotels" },
   { href: "/blog", label: "Guides" },
-  { href: "/#how", label: "How pricing works" },
+  { href: "/#how", label: "Pricing" },
   { href: "/about", label: "About" },
 ];
 
@@ -18,27 +21,31 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-30">
       <div className="mx-auto max-w-7xl px-4 pt-4">
-        <div className="bg-white/75 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70 rounded-2xl shadow-card border border-black/[0.06] px-4 sm:px-6 py-2.5">
-          <div className="flex items-center justify-between gap-3">
-            <Link href="/" className="flex items-baseline gap-0.5 font-bold text-lg shrink-0">
-              <span className="text-accent">travel</span>
-              <span>pluscost</span>
+        {/* one clean frosted-glass row, fixed height — no tagline strip */}
+        <div className="bg-white/75 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70 rounded-2xl shadow-card border border-black/[0.06] px-4 sm:px-5">
+          <div className="flex h-14 items-center justify-between gap-3">
+            <Link href="/" aria-label="travelplus — home" className="shrink-0">
+              <Logo className="text-[1.15rem]" />
             </Link>
 
-            <nav className="hidden md:flex items-center gap-7 text-sm text-black/70">
+            <nav className="hidden md:flex items-center gap-8 text-[0.9rem] font-medium text-black/65">
               {NAV.map((n) => (
-                <Link key={n.label} href={n.href} className="hover:text-black transition">
+                <Link key={n.label} href={n.href} className="hover:text-foreground transition-colors">
                   {n.label}
                 </Link>
               ))}
             </nav>
 
-            <div className="flex items-center gap-2.5 shrink-0">
+            <div className="flex items-center gap-3 shrink-0">
               <AuthNav />
-              <VibeSearchCta />
+              {/* The wide "Search by vibe" pill is desktop-only in the top bar — on mobile it lives in
+                  the dropdown menu below, so it doesn't crowd the hamburger off the right edge. */}
+              <span className="hidden md:inline-flex">
+                <VibeSearchCta />
+              </span>
               <button
                 onClick={() => setOpen(!open)}
-                className="md:hidden p-2 -mr-1 text-black/70"
+                className="md:hidden -mr-1 p-2 text-black/80"
                 aria-label="Menu"
               >
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -47,16 +54,6 @@ export default function Header() {
               </button>
             </div>
           </div>
-
-          {/* always-visible philosophy quick-read — snappy lead + the promise */}
-          <p className="mt-1.5 flex items-start gap-1.5 text-[11px] sm:text-xs text-black/55">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="text-accent shrink-0 mt-0.5">
-              <path d="M20 6 9 17l-5-5" />
-            </svg>
-            <span>
-              <b className="text-black/80">Hotels at cost + one flat fee.</b> No surveillance pricing. Ever.
-            </span>
-          </p>
         </div>
 
         {open && (
@@ -66,12 +63,12 @@ export default function Header() {
                 key={n.label}
                 href={n.href}
                 onClick={() => setOpen(false)}
-                className="px-3 py-2 rounded-lg hover:bg-black/5 text-sm"
+                className="px-3 py-2.5 rounded-xl text-[0.95rem] font-medium hover:bg-black/[0.04]"
               >
                 {n.label}
               </Link>
             ))}
-            <VibeSearchCta className="mt-1 self-center" />
+            <VibeSearchCta className="mt-2 self-center" />
           </div>
         )}
       </div>
