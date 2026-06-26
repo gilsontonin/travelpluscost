@@ -69,3 +69,6 @@ next-env.d.ts
 # Local working artifacts (GSC/crawl exports, design refs) — not for the repo
 Designs/
 .mcp.json
+
+# Health-scan rotation state + per-shard logs (local working data)
+scripts/health/
