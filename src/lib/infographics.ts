@@ -235,6 +235,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Ride the tram, pack layers", detail: "The Sandia Peak Tramway climbs above 10,000 feet for the view, and the city itself sits a mile high, so evenings cool off fast." },
     ],
   },
+  "staugustine-by-numbers": {
+    kind: "stat",
+    title: "St. Augustine by the numbers",
+    stats: [
+      { value: "1565", label: "founded — the oldest city in the United States" },
+      { value: "~40 mi", label: "south of Jacksonville, about 45 minutes" },
+      { value: "~6 mi", label: "from Old Town to the Atlantic beaches" },
+      { value: "3M+", label: "lights in the historic district each winter" },
+    ],
+  },
+  "staugustine-historic-vs-beach": {
+    kind: "compare",
+    title: "The Historic District or the beach?",
+    left: "The Historic District",
+    right: "The beaches (Anastasia / Vilano)",
+    rows: [
+      { label: "The vibe", left: "Cobblestones, the fort, walk to dinner", right: "Sand, surf, low-key, drive in" },
+      { label: "Best for", left: "First-timers, history, no-car trips", right: "Beach days, families, quiet" },
+      { label: "To the sand", left: "A 10–15 minute drive", right: "You're on it" },
+      { label: "You wake up to", left: "Spanish-colonial streets", right: "The Atlantic and the dunes" },
+    ],
+  },
+  "staugustine-getting-there": {
+    kind: "steps",
+    title: "Getting to St. Augustine",
+    steps: [
+      { title: "Fly into Jacksonville", detail: "St. Augustine has no commercial airport; Jacksonville (JAX) is ~40 miles and 45 minutes north, Orlando ~2 hours south." },
+      { title: "Park once, then walk", detail: "The historic district is tight and parking is scarce — base downtown and you can leave the car for days; the beaches need it." },
+      { title: "Ride the trolley", detail: "Hop-on Old Town Trolleys loop the historic sights, and free park-and-ride shuttles run during the busy Nights of Lights season." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",

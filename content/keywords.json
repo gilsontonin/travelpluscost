@@ -1,4 +1,23 @@
 {
+  "where-to-stay-in-staugustine": {
+    "primary": "where to stay in st augustine",
+    "secondary": [
+      "where to stay in st augustine florida",
+      "where to stay in st augustine fl",
+      "where to stay in st augustine historic district",
+      "where to stay in st augustine beach",
+      "where to stay for nights of lights",
+      "best area to stay in st augustine"
+    ],
+    "volume": 720,
+    "kd": 38,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": [],
+    "note": "vol/KD from earlier-session Semrush vet; new process is SERP-first (no Semrush). SERP is deep (mega-guides ~4000w) — serp score is a diagnostic, written helpful-first."
+  },
   "where-to-stay-in-albuquerque": {
     "primary": "where to stay in albuquerque",
     "secondary": [
