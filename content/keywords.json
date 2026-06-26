@@ -1,4 +1,23 @@
 {
+  "where-to-stay-in-savannah": {
+    "primary": "where to stay in savannah",
+    "secondary": [
+      "where to stay in savannah ga",
+      "where to stay in savannah georgia",
+      "where to stay in savannah historic district",
+      "where to stay in savannah for first time",
+      "where to stay in savannah for families",
+      "best area to stay in savannah"
+    ],
+    "volume": 3600,
+    "kd": 30,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": [],
+    "note": "Vol/KD estimated (no Semrush — SERP-first via WebSearch). DEEP serp: competitors ~4,500-5,200w; built to serp 93 at ~3,260w comprehensive (89->93 squeeze). Sister-city cross-links to/from where-to-stay-in-charleston."
+  },
   "where-to-stay-in-charleston": {
     "primary": "where to stay in charleston",
     "secondary": [

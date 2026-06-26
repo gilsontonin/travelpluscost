@@ -47,6 +47,278 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-savannah",
+    title: "Where to Stay in Savannah, GA: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Savannah, GA in 2026: best areas — the Historic District, River Street, Plant Riverside and Midtown — with real hotels and honest rates.",
+    excerpt:
+      "Walk the oak-shaded squares or wake up on the riverfront? A plain-English guide to picking the right Savannah base — by area, budget, romance, and the trip you're taking.",
+    tldr: {
+      answer:
+        "Savannah is really one big walkable Historic District. The north end, by River Street and City Market, is lively and best for first-timers and families; the south end, around Forsyth Park, is quiet and romantic; Plant Riverside and the waterfront are the trendy splurge; and Midtown and the Southside near the airport run cheapest, a short drive out.",
+      points: [
+        "**North Historic District** — River Street, City Market; the lively first-timer pick.",
+        "**South Historic District** — Forsyth Park and the quiet squares; the romantic choice.",
+        "**Plant Riverside / waterfront** — the trendy, design-forward splurge on the river.",
+        "**Midtown / Southside / airport** — the cheapest beds, a 10–20 minute drive out.",
+        "**For a first trip** — stay in the Historic District; it's the heart of everything Savannah.",
+      ],
+    },
+    date: "2026-06-25",
+    updated: "2026-06-25",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/81189305.jpg",
+      alt: "Historic brick and Victorian row houses draped in live oak branches with pink azaleas blooming in the foreground in Savannah, Georgia's historic district",
+      credit: { name: "Foley House Inn, Savannah" },
+    },
+    region: { name: "Savannah", destination: "Savannah" },
+    faqs: [
+      {
+        q: "What is the best area to stay in Savannah for first-timers?",
+        a: "The Historic District — ideally the north end, near River Street and the squares. It puts the cobblestones, City Market, the mansions, the best restaurants and the riverfront all within a flat, walkable few blocks, with a free shuttle for longer hops. It costs more than the Southside chains, but for a first trip you'll walk to almost everything and never touch the car.",
+      },
+      {
+        q: "Is Savannah walkable?",
+        a: "The Historic District is very walkable — it's flat and compact, and the squares, River Street, Forsyth Park and most restaurants are all on foot, with a free DOT shuttle and the Belles Ferry looping the district at no charge. You'll want a car for Tybee Island, Bonaventure Cemetery and the Southside hotels, and downtown parking is tight, which is the main reason to base where you can walk.",
+      },
+      {
+        q: "Where should families stay in Savannah?",
+        a: "The north Historic District or one of the all-suite hotels there. The north end keeps River Street, City Market and the river steps away, and the Embassy Suites and Homewood Suites add separate living space, a kitchenette and free breakfast within walking distance of the squares. For a beach trip, Tybee Island, 30 minutes east, is the family beach.",
+      },
+      {
+        q: "How far is Tybee Island from Savannah?",
+        a: "About 18 miles and a 30-minute drive east, where the Savannah River meets the Atlantic. Tybee is the city's beach — wide sand, a fishing pier, a historic lighthouse and dolphin tours. It's an easy day trip from a downtown base, and most stays out there are vacation rentals and small beachfront motels rather than the big hotel brands.",
+      },
+      {
+        q: "How far is the Savannah airport from downtown?",
+        a: "Savannah/Hilton Head International (SAV) is about 13 miles and a 20-minute drive northwest of the historic district. There's no rail link, so plan on a rental car, rideshare or shuttle. The cluster of value hotels near the airport and the Southside is the cheapest place to stay if you have an early flight.",
+      },
+      {
+        q: "When is the best time to visit Savannah?",
+        a: "Spring (March–April) for the azaleas and garden season, and fall (October–November) once the summer heat breaks — both are mild and made for walking, and both are peak, so book early. One date to plan around: Savannah throws one of the country's largest St. Patrick's Day celebrations in mid-March, when rooms sell out months ahead.",
+      },
+      {
+        q: "What is Savannah known for?",
+        a: "Its planned grid of 22 oak-shaded squares, Spanish moss and antebellum mansions — one of the country's great preserved historic districts. Founded in 1733, the \"Hostess City of the South\" is famous for River Street, Forsyth Park, Southern food, ghost tours, the Victorian Bonaventure Cemetery (of Midnight in the Garden of Good and Evil), and a huge St. Patrick's Day.",
+      },
+    ],
+    body: `**Where to stay in Savannah comes down to the Historic District** if you want to walk the oak-shaded squares, or the riverfront — River Street and Plant Riverside — if you came for the cobblestones and the buzz. Founded in 1733, Georgia's oldest city laid out 22 squares draped in Spanish moss, and most of what you came to see sits within a flat, walkable mile of them.
+
+Below are the real, bookable hotels in each area, then the honest neighborhood guide to where to stay in Savannah, Georgia, as of 2026.
+
+Savannah's whole historic district is the draw, so picking a base is mostly about which corner of it you want — the lively north end by the river, the romantic south end by Forsyth Park, or a cheaper room out by the airport that you'll drive in from.
+
+## Best Areas to Stay in Savannah, at a Glance
+
+Five areas, one deciding factor: the walkable squares of the historic district, or value and space a short drive out. Choose the area by your trip, then the hotel — here's the whole Hostess City on one screen.
+
+| Area | The feel | Best for | The rate |
+|---|---|---|---|
+| [North Historic District](/search?destination=Savannah&adults=2) | River Street, City Market, the buzz | First-timers, nightlife, families | High |
+| [South Historic District](/search?destination=Savannah&adults=2) | Forsyth Park, quiet squares, romance | Couples, calm, walking | Mid to high |
+| [Plant Riverside / waterfront](/search?destination=Savannah&adults=2) | Trendy, riverfront, music and dining | Splurge, design, the buzz | High |
+| [Midtown / Southside / airport](/search?destination=Savannah&adults=2) | Chains, easy parking, value | Budgets, families, one-nighters | Low |
+
+::infographic savannah-by-numbers
+
+Compare the areas, the attractions nearby and the hotels all in one place.
+
+[See every Savannah hotel and its live nightly price](/search?destination=Savannah&adults=2)
+
+## The Savannah Historic District: the Walkable Heart
+
+**The Savannah Historic District is where to stay in Savannah for a first trip — one of the country's great preserved historic districts, a flat, walkable grid of 22 oak-shaded squares where the mansions, the inns, the restaurants and the river are all on foot.** This is the Savannah of the postcards: Spanish moss, gas lanterns, fountains and cobblestones, with a free DOT shuttle looping the district if your feet give out.
+
+Almost everyone's first instinct is right here, and the area splits into two moods — the lively north end down by River Street, and the quieter, romantic south end around Forsyth Park. Both are walkable; the question is whether you want the buzz or the calm.
+
+::infographic savannah-north-vs-south
+
+Two reliable, central historic-district hotels to anchor the search: the boutique Andaz sits right on Ellis Square in the middle of everything, and the Hampton Inn and Hilton Garden Inn cover the dependable, well-located mid-range a short walk from the river.
+
+::hotel lp4262f
+
+::hotel lp22124
+
+::hotel lp384ad
+
+### Where to Stay in Savannah for the First Time
+
+If it's your first time in Savannah, keep it simple: stay in the Savannah Historic District, ideally the north end near the squares and River Street. First-time visitors almost always want to be within walking distance of the cobblestones, the restaurants, bars and shops, and the waterfront, and the Savannah Historic District delivers all of it without a car. The hotels here run from boutique to dependable mid-range chains, all a short stroll from the main sights — pick the one whose location and price fit your first time in town, and you really can't go wrong.
+
+### The North Historic District: River Street and City Market
+
+The north end is Savannah at its liveliest — River Street's cobblestones and converted cotton warehouses, City Market's open-air bars and galleries, and the cargo ships sliding past on the river. It's the best base for first-timers and families who want the action steps away. The River Street Inn occupies a historic cotton warehouse right on the water, the Hyatt Regency anchors the riverfront at Bay Street, and The Bluff looks out over the river from the bluff above it.
+
+::hotel lp215b0
+
+::hotel lp19e68
+
+::hotel lp31bdb
+
+**The move:** book the north end for the riverfront and the buzz · **Best for:** first-timers, nightlife, families · **Watch:** River Street can be loud and busy on weekends.
+
+### The South Historic District: Forsyth Park and the Squares
+
+The south end is the romantic Savannah — quiet, tree-lined squares, gas-lit lanes and the famous white fountain at Forsyth Park. It's calmer and more residential, a short walk from the river but a world away in feel, which is why couples and honeymooners gravitate here. The historic East Bay Inn captures the period charm, and the celebrated Foley House Inn — our cover photo — is the marquee bed-and-breakfast on Chippewa Square (it books direct).
+
+::hotel lp3f6fc
+
+**The move:** book the south end for romance and calm · **Best for:** couples, quiet, tree-lined walks · **Watch:** it's a longer stroll to the late-night bars.
+
+## Plant Riverside District and the Waterfront: the Trendiest Stay
+
+**The Plant Riverside District is where to stay in Savannah for a design-forward splurge — a 1912 power plant on the west end of River Street, reborn as a riverside district of restaurants, live music and upscale hotels.** It's the city's newest and trendiest waterfront stretch, with the river on one side and the historic district at your back, and it offers a very different mood from the old squares.
+
+The JW Marriott anchors the whole Plant Riverside District, and a little east along the water, the Thompson Savannah brings sleek, modern luxury to the Eastern Wharf — both for travelers who want polish and a river view over period charm.
+
+::hotel lp270768
+
+::hotel lp6556f30c
+
+**The move:** book the waterfront for a modern splurge · **Best for:** design lovers, river views, the buzz · **Watch:** these are the top of the rate range.
+
+## Beyond Downtown: Savannah's Other Neighborhoods
+
+**Beyond the squares, a few residential Savannah neighborhoods offer a more local, off-the-tourist-trail base.** The Starland District, just south of Forsyth Park, is the city's hippest pocket — muraled streets, indie coffee, breweries and some of the best new restaurants, with a charming, creative atmosphere. The Victorian District next to it is a leafy stretch of colorful, gingerbread-trimmed Victorian homes, and Thomas Square and Ardsley Park add quiet, tree-lined options a little farther out.
+
+These neighborhoods lean toward vacation-rental accommodation and small inns rather than big hotels, so they offer a longer-stay or return-visit base once you already know the squares. They're a 10-to-20-minute walk or a short ride from downtown, and they're where a lot of locals actually eat and drink.
+
+## Suites for Families and Longer Stays
+
+**For families and longer stays, Savannah's all-suite Savannah Historic District hotels are the practical pick** — separate living space, a kitchenette and free breakfast, still within walking distance of the squares. The Embassy Suites sits in the heart of the historic district with its included cooked breakfast, and the Homewood Suites pairs suites with a location near the riverfront and the action.
+
+::hotel lp69e09
+
+::hotel lp74830
+
+**The move:** book a suite for room to spread out · **Best for:** families, longer stays, breakfast included · **Watch:** book early in spring — they fill.
+
+## Midtown, the Southside and the Airport: Value
+
+**Midtown, the Southside and the airport area are where to stay in Savannah for the lowest rates — the chain-hotel districts a 10-to-20-minute drive from the squares, near the interstate and the airport (SAV).** You give up walking to dinner, but for a budget trip, a family on a longer stay or an early flight, the math is friendly, parking is easy and the Southern hospitality is the same. These are the best-known value hotels in the area.
+
+The avid hotel out by the Gateway and Southside exits covers the dependable budget end, and the Embassy Suites by the airport pairs suites and breakfast with quick interstate access.
+
+::hotel lp6556c2ee
+
+::hotel lp52750
+
+**The move:** stay out here to sleep cheap and drive in · **Best for:** budgets, families, flights · **Watch:** you'll need a car for downtown.
+
+## Tybee Island: Savannah's Beach
+
+**Tybee Island is Savannah's beach — about 18 miles and 30 minutes east, where the Savannah River meets the Atlantic.** It's a laid-back barrier-island town with wide sandy beaches, a fishing pier, the historic Tybee Island Light Station and dolphin tours offshore. Most stays here are vacation rentals and small beachfront motels rather than the big hotel brands, so it's the call for a beach-first trip with the city as a day trip — or simply an easy day trip from a downtown base.
+
+[Search Savannah hotels near the historic district](/search?destination=Savannah&adults=2)
+
+## Things to Do in Savannah
+
+**Most of Savannah's attractions are the Savannah Historic District itself — which is exactly why first-timers base there.** Forsyth Park and its 1858 fountain anchor the south end, the 22 squares string north toward the river, and River Street's cobblestones and the City Market fill the waterfront, along the river at the edge of the city center, with shops, restaurants and live music. A trolley tour or a walking ghost tour is the classic first-afternoon move in this famously haunted city, and a riverboat cruise on the Savannah River is the easy way to see it from the water.
+
+The squares each have their own character and history — Chippewa Square (the Forrest Gump bench), Madison, Monterey and Lafayette among the prettiest — and the grand house museums are worth a tour: the Mercer-Williams House (of Midnight in the Garden of Good and Evil), the Owens-Thomas House, and the Telfair and Jepson art museums. The Gothic Cathedral of St. John the Baptist is one of the most-photographed churches in the country, and Broughton Street is the main strip for shopping — art galleries, boutiques and shops — while the City Market offers still more art, crafts and waterfront shopping.
+
+Just outside the center, Bonaventure Cemetery — the Victorian, moss-draped resting place made famous by that same book — is worth the short drive, as is the live-oak avenue at Wormsloe Historic Site. And the Savannah College of Art and Design (SCAD), woven through the historic buildings, is why so many are beautifully restored and the city feels so creative, with public art around every corner. Tybee Island and its lighthouse round out the options for a day trip.
+
+[Search Savannah hotels near Forsyth Park](/search?destination=Savannah&adults=2)
+
+## Savannah's Food Scene
+
+**Savannah is a serious classic Southern food town, and the historic district is the heart of it.** The Lowcountry and soul-food classics are the draw — shrimp and grits, fried chicken, biscuits and she-crab soup — from the communal tables at Mrs. Wilkes' Dining Room to the James Beard-honored cooking at The Grey and the old-Savannah grandeur of The Olde Pink House. For a sweet finish, Leopold's Ice Cream has been a local institution since 1919.
+
+River Street and City Market add the casual, lively end — seafood, restaurants and bars with a waterfront atmosphere — and because the historic district allows a to-go cup, you can wander the squares with a drink in hand. The food is one of the main reasons to stay downtown: you'll walk to most of it, and the best-known tables are all within the squares.
+
+**The move:** base in the historic district for the food · **Best for:** foodies · **Watch:** the famous tables book up well ahead.
+
+## Is Savannah Walkable? Getting Around
+
+**The Savannah Historic District is very walkable — one of the flattest, most strollable old towns in the South.** The squares, River Street, Forsyth Park and most restaurants are all on foot, and the free DOT shuttle and the Savannah Belles Ferry loop the district and the river at no charge, so a downtown base means you can park once and leave the car.
+
+The catch is the parking: downtown garages and metered spots fill up, so a walkable base is worth more than a cheaper room you'll drive in from. Tybee Island, Bonaventure and the Southside hotels all need a car, 15 to 30 minutes out.
+
+::infographic savannah-getting-there
+
+Here's how far the beaches, the airport and the main day trips sit from a downtown base:
+
+| From the historic district | Distance | Drive |
+|---|---|---|
+| Savannah airport (SAV) | ~13 mi | ~20 min |
+| Bonaventure Cemetery | ~4 mi | ~10 min |
+| Tybee Island beach | ~18 mi | ~30 min |
+| Charleston, SC | ~110 mi | ~2 hr |
+
+**The move:** base where you can walk, drive for the rest · **Best for:** everyone planning the trip · **Watch:** downtown parking is the real headache.
+
+## The Best Time to Visit Savannah
+
+**Spring and fall are the best times to visit Savannah — mild, blooming and made for walking the squares.** March and April bring the azaleas and the famous garden season; October and November cool off after the summer heat. Both are peak, so book early.
+
+One date to plan around: Savannah throws one of the country's largest St. Patrick's Day celebrations in mid-March, when the city fills and rooms sell out months ahead. Summer is hot and humid, and winter is mild, quiet and the best value outside the holidays.
+
+## A Quick History: the Hostess City
+
+**Savannah was one of America's first planned cities.** General James Oglethorpe laid it out in 1733 around a grid of squares — public greens that still organize the historic district almost three centuries later. It grew wealthy on cotton, shipped from the warehouses that now line River Street, and was famously spared in the Civil War when General Sherman, ending his March to the Sea, presented the city to President Lincoln as a Christmas gift in 1864 rather than burning it.
+
+That stroke of Southern history is why so much antebellum architecture survives, and a 1950s preservation movement — sparked when residents fought to save the old houses from demolition — is why the squares and mansions still stand. The result is the walkable, oak-shaded "Hostess City of the South" you came to see.
+
+## Savannah for Couples and Weddings
+
+**Savannah is one of the South's favorite places for a romantic getaway or a wedding, and the south Historic District is built for it.** The quiet squares, gas-lit lanes and the Forsyth Park fountain make for an unhurried, atmospheric experience, and the historic bed-and-breakfasts — the Foley House Inn and the inns around Chippewa and Lafayette squares — offer the kind of period charm couples come for. Spring's azaleas and the soft fall light are especially popular for weddings, so book well ahead if you're visiting then. For a quieter romantic trip, base near Forsyth Park and you'll have the prettiest part of the city on your doorstep.
+
+[Search romantic Savannah stays near Forsyth Park](/search?destination=Savannah&adults=2)
+
+## Choosing Your Savannah Hotel
+
+**Once you've settled on an area, a few practical things separate the Savannah hotels worth booking.** Parking is the big one — many historic-district hotels charge for it or use valet, so if you're driving, check the fee or prefer a hotel with included parking. Decide whether you want a historic inn (charming, but often smaller rooms and fewer amenities) or a full-service hotel with a pool, gym and on-site dining; families usually prefer the all-suite options for the space and the free breakfast.
+
+Other things to weigh: how walkable the hotel is to the squares and River Street, whether the rate includes breakfast, and how the guest scores read on the things you care about. The hotels below are all real, well-reviewed Savannah, Georgia properties — book the area first, then the hotel whose amenities and price fit your trip. Travelers who might be watching the budget can prefer the Southside and airport hotels, which offer the most affordable rates among the areas here. These hotels are known for clean, no-frills accommodation, and each offers free parking and family amenities.
+
+## Savannah on a Budget
+
+**You don't have to splurge to enjoy Savannah — it's one of the more affordable historic destinations in the South.** Savannah is known for how much costs nothing: many of the main attractions are free — walking the 22 squares, strolling River Street, picnicking in Forsyth Park and driving through Bonaventure Cemetery cost nothing. For cheaper hotels, look to the Midtown and Southside areas, or travel midweek and outside the spring peak, when rates drop across the city center. A central historic-district base still pays off, though — when everything is walkable, you save on parking and rideshares, which offsets a higher room rate.
+
+## What a Night in Savannah Actually Costs
+
+**Savannah runs from splurge to budget, and the gap is mostly geography.** The historic-district inns and the riverfront hotels sit at the top — this is an in-demand, year-round destination — while the Midtown and Southside chains near the airport run cheapest, a short drive out.
+
+Spring's azalea season, fall and St. Patrick's Day push rates highest; midweek and the quieter winter months bring the best value. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live Savannah prices](/search?destination=Savannah&adults=2)
+
+## How Long to Stay in Savannah
+
+**Two to three days is the sweet spot for a first time in Savannah.** A long weekend is enough to walk the squares, stroll River Street, see Forsyth Park, take a trolley or ghost tour and eat well, with time left for a half-day at Bonaventure Cemetery or Tybee Island. Add a fourth day if you want a full beach day on Tybee or a slower pace. Because the Savannah Historic District is so walkable, you can pack a lot into a short visit without a car — one more reason a central base earns its keep, especially on a first trip. With more time, Tybee Island makes an easy beach day, and Charleston is about two hours up the coast — here's [where to stay in Charleston](/blog/where-to-stay-in-charleston).
+
+## Which Savannah Area Should You Choose?
+
+**For a first trip, choose the Historic District and don't overthink it.** The squares, River Street, Forsyth Park and the food are the heart of what makes Savannah one of the South's favorite cities, and you can do most of it on foot — pick the north end for the buzz, the south end for romance. Choose Plant Riverside for a modern waterfront splurge, the suites for a family, and the Southside when the nightly rate matters most.
+
+Once you've matched an area to your trip, here are real, well-reviewed Savannah hotels across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Homewood Suites Historic District | North / riverfront | 9.4 | Suites, families |
+| River Street Inn | River Street | 9.2 | Historic, on the water |
+| Thompson Savannah | Eastern Wharf | 9.2 | Modern luxury |
+| East Bay Inn | Historic District | 9.2 | Period charm |
+| Foley House Inn | South Historic | 9.0 | Romantic B&B |
+| JW Marriott Plant Riverside | Waterfront | 9.0 | The splurge |
+| Andaz Savannah | Ellis Square | 9.0 | Central boutique |
+| Embassy Suites Historic District | Historic District | 9.0 | Family suites |
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+
+::cta Savannah
+`,
+  },
+  {
     slug: "where-to-stay-in-charleston",
     title: "Where to Stay in Charleston, SC: Best Areas & Hotels (2026)",
     description:
@@ -209,7 +481,7 @@ For more value near the airport, the Sleep Inn and the Hampton Inn cover the dep
 
 **Most of Charleston's attractions cluster on the downtown peninsula, another reason first-timers base there.** The Battery and White Point Garden anchor the southern tip, Rainbow Row and the French Quarter galleries fill the blocks above, and the Charleston City Market — where Gullah artisans weave sweetgrass baskets — runs through the center, and the Pineapple Fountain at Waterfront Park looks out over Charleston Harbor.
 
-Out in the harbor, Fort Sumter marks where the Civil War began, reached by ferry from Liberty Square or Patriots Point. The Lowcountry plantations and house museums — Boone Hall, Magnolia and Middleton Place — spread out along the Ashley River, an easy drive from any base, and a horse-carriage tour through the historic district is the classic first-afternoon move. The Gibbes Museum of Art and the Charleston Museum, the country's oldest, round out a rainy day downtown.
+Out in the harbor, Fort Sumter marks where the Civil War began, reached by ferry from Liberty Square or Patriots Point. The Lowcountry plantations and house museums — Boone Hall, Magnolia and Middleton Place — spread out along the Ashley River, an easy drive from any base, and a horse-carriage tour through the historic district is the classic first-afternoon move. The Gibbes Museum of Art and the Charleston Museum, the country's oldest, round out a rainy day downtown. And for a two-city Lowcountry trip, Savannah is about two hours south — see [where to stay in Savannah](/blog/where-to-stay-in-savannah).
 
 [Search Charleston hotels near the historic district](/search?destination=Charleston&adults=2)
 

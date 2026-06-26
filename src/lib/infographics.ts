@@ -297,6 +297,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Drive for the beaches", detail: "Mount Pleasant, Isle of Palms, Sullivan's Island and Folly Beach all need a car, 15 to 30 minutes out." },
     ],
   },
+  "savannah-by-numbers": {
+    kind: "stat",
+    title: "Savannah by the numbers",
+    stats: [
+      { value: "1733", label: "founded — Georgia's oldest city" },
+      { value: "22", label: "historic squares shaded by live oaks" },
+      { value: "~18 mi", label: "from downtown to the Tybee Island beach" },
+      { value: "~20 min", label: "from the airport (SAV) to the historic district" },
+    ],
+  },
+  "savannah-north-vs-south": {
+    kind: "compare",
+    title: "North or South Historic District?",
+    left: "North Historic District",
+    right: "South Historic District",
+    rows: [
+      { label: "The vibe", left: "River Street, City Market, the buzz", right: "Forsyth Park, quiet squares, romance" },
+      { label: "Best for", left: "First-timers, nightlife, families", right: "Couples, calm, tree-lined walks" },
+      { label: "You're near", left: "The waterfront and the bars", right: "The park and the gas-lit lanes" },
+      { label: "At night", left: "Lively and walkable", right: "Peaceful and dim" },
+    ],
+  },
+  "savannah-getting-there": {
+    kind: "steps",
+    title: "Getting to Savannah",
+    steps: [
+      { title: "Fly into SAV", detail: "Savannah/Hilton Head International (SAV) is about 13 miles and 20 minutes west of the historic district." },
+      { title: "Park once, then walk", detail: "The historic district is flat and made for walking; parking is tight, so base downtown and leave the car, or ride the free DOT shuttle and ferry." },
+      { title: "Drive to Tybee", detail: "Tybee Island, Savannah's beach, is about 18 miles and 30 minutes east — a car or a day-trip tour gets you there." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",
