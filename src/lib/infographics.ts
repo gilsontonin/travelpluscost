@@ -49,6 +49,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "The price you see", detail: "All-in and shown up front. No surprises at the last screen." },
     ],
   },
+  "keywest-by-numbers": {
+    kind: "stat",
+    title: "Key West by the numbers",
+    stats: [
+      { value: "~165 mi", label: "Miami to Key West by car, all on US-1" },
+      { value: "42", label: "bridges link the island chain to the mainland" },
+      { value: "90 mi", label: "from the Southernmost Point to Cuba" },
+      { value: "~4 sq mi", label: "of walkable island — you rarely need a car" },
+    ],
+  },
+  "keywest-oldtown-vs-newtown": {
+    kind: "compare",
+    title: "Old Town or New Town?",
+    left: "Old Town",
+    right: "New Town & the beaches",
+    rows: [
+      { label: "The vibe", left: "Historic inns, gas lamps, Duval, walk everywhere", right: "Bigger hotels, pools, Smathers Beach, parking" },
+      { label: "Best for", left: "First-timers, couples, no-car trips", right: "Beach days, families, a lower nightly rate" },
+      { label: "To Duval Street", left: "You're on it, or a few blocks off", right: "A 10-minute bike, bus, or scooter" },
+      { label: "You wake up to", left: "A tin-roof porch and a loud rooster", right: "A bigger room and a pool deck" },
+    ],
+  },
+  "keywest-getting-there": {
+    kind: "steps",
+    title: "Getting to Key West",
+    steps: [
+      { title: "Fly", detail: "Key West International (EYW) sits about 10 minutes from Old Town; most flights connect through Miami or Fort Lauderdale." },
+      { title: "Drive", detail: "US-1 from Miami runs ~165 miles and 3.5–4 hours over 42 bridges — the Overseas Highway, one of the great American road trips." },
+      { title: "Then skip the car", detail: "Old Town crosses end to end in a 20-minute walk. Bikes and scooters cover the rest, and parking is the island's real headache." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",

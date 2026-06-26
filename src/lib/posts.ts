@@ -47,6 +47,216 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-keywest",
+    title: "Where to Stay in Key West, FL: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Key West, FL in 2026: best areas — Old Town, Duval Street, Truman Annex, New Town, Stock Island — with real hotels and honest, flat-fee rates.",
+    excerpt:
+      "Old Town or a quieter beach base? A plain-English guide to picking the right Key West neighborhood — by area, budget, and how close to Duval you want to wake up.",
+    tldr: {
+      answer:
+        "Key West splits into five areas, and the right base comes down to noise and beaches. Old Town keeps Duval and the sunset on foot; Truman Annex stays quiet by Fort Zachary Taylor's beach; New Town and Stock Island swap the stroll for bigger rooms and lower rates.",
+      points: [
+        "**Old Town** — the walkable historic heart; the easy first-timer and no-car base.",
+        "**Duval Street** — stay a block off it for the nightlife without the 2 a.m. soundtrack.",
+        "**Truman Annex / Fort Zachary Taylor** — quiet lanes and the island's best beach.",
+        "**New Town & Smathers Beach** — more room and lower rates, a short bike from Duval.",
+        "**Stock Island** — just off-island, marina-cool, a little cheaper.",
+      ],
+    },
+    date: "2026-06-25",
+    updated: "2026-06-25",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/602786592.jpg",
+      alt: "A historic white conch-house inn framed by palms and a yellow garden wall on a quiet Old Town street in Key West, Florida",
+      credit: { name: "The Gardens Hotel, Key West" },
+    },
+    region: { name: "Key West", destination: "Key West" },
+    faqs: [
+      {
+        q: "How far is Key West from Miami?",
+        a: "About 165 miles by road, or a 3.5 to 4-hour drive down US-1, the Overseas Highway — the only road in, crossing 42 bridges including the Seven Mile Bridge. You can also fly straight into Key West International (EYW), usually connecting through Miami or Fort Lauderdale, which lands you 10 minutes from Old Town.",
+      },
+      {
+        q: "Can you drive to Key West?",
+        a: "Yes. US-1 connects Key West to the Florida mainland the whole way, so you can drive in from Miami in under four hours. The catch is the other end: parking in Old Town is tight and many guesthouses charge for it, so plenty of visitors drive down and then barely touch the car.",
+      },
+      {
+        q: "Do you need a car in Key West?",
+        a: "Not if you stay in Old Town. The island is about four square miles and the historic core walks end to end in roughly 20 minutes; bikes and scooters cover the rest. You'll want wheels if you base in New Town or on Stock Island, or if you plan day trips back up the Keys.",
+      },
+      {
+        q: "Where should you not stay in Key West?",
+        a: "Skip a room directly above Duval Street unless you plan to be part of the noise until last call — the bars run late and the sound carries. And avoid the far east end of New Town with no bike or scooter, or you'll spend the trip in a taxi line instead of on the water.",
+      },
+      {
+        q: "When is the cheapest time to visit Key West?",
+        a: "Late summer and fall, roughly September through early November, are the quietest and lowest-rate months — that's hurricane season, so rates drop. Winter and spring (December to April) are peak, when snowbirds and festivals fill the inns. Search current prices for your exact dates, since the rate moves daily.",
+      },
+      {
+        q: "Can you see Cuba from Key West?",
+        a: "No. Cuba is about 90 miles south — the famous buoy at the Southernmost Point marks the distance — and the curve of the earth hides it well below the horizon. On a clear night you're seeing stars and the odd cruise ship, not Havana.",
+      },
+      {
+        q: "How many days do you need in Key West?",
+        a: "Three nights is the sweet spot: one for Duval and the sunset at Mallory Square, one for the beach at Fort Zachary Taylor, and one for the water or a slow bike around Old Town. Add a night if you're driving the Overseas Highway down and want to stop in the Keys along the way.",
+      },
+    ],
+    body: `**The short answer to where to stay in Key West is Old Town.** It's the historic west end where Duval Street, the sunset crowds at Mallory Square, and most of the island's guesthouses sit within a 20-minute walk — book here and the rental car keys can stay in a drawer for three days.
+
+Below are the real, bookable hotels by area, then the honest guide to where to stay in Key West, Florida, as of 2026.
+
+Key West is small — about four square miles at the end of US-1, the southernmost city in the continental United States. Picking a base is less about distance than about noise, beaches, and how close to Duval Street's last call you want to wake up.
+
+## Key West Hotels by Area, at a Glance
+
+Five areas, one deciding factor: how much you'll pay in noise and rate to walk out your door onto Duval Street. Choose your area by travel style, then the hotel — here's the whole island on one screen.
+
+| Area | The feel | Best for | To Duval Street |
+|---|---|---|---|
+| [Old Town](/search?destination=Key%20West&adults=2) | Historic, walkable, lively | First-timers, couples, no car | On it, or a few blocks |
+| [Duval Street](/search?destination=Key%20West&adults=2) | Bars, shops, late nights | Nightlife, groups | You're on it |
+| [Truman Annex / Fort Zachary Taylor](/search?destination=Key%20West&adults=2) | Quiet, leafy, the best beach | Couples, calm, beach days | ~10-minute walk |
+| [New Town / Smathers Beach](/search?destination=Key%20West&adults=2) | Bigger hotels, pools, parking | Families, value, beach | ~10-minute bike |
+| [Stock Island](/search?destination=Key%20West&adults=2) | Marina, working waterfront | A quieter, cheaper base | A short drive |
+
+::infographic keywest-by-numbers
+
+[See every Key West hotel and its live nightly price](/search?destination=Key%20West&adults=2)
+
+## Old Town: the Walkable Heart of Key West
+
+**Old Town is where most people should stay in Key West — the historic, walkable west end where you can leave the car parked and forget it.** This is downtown Key West: gas-lamp lanes, tin-roofed conch houses and one-way streets packing Duval, Mallory Square and the island's headline attractions — the Hemingway House, the Truman Little White House, the Southernmost Point buoy — into a grid you can cross on foot.
+
+The trade is the obvious one: you're paying for the most in-demand square mile in the Keys, and the historic properties here lean boutique, not budget. You also share the sidewalks with the town's famous wild roosters, who keep their own hours and answer to no one.
+
+::infographic keywest-oldtown-vs-newtown
+
+### The Marquesa Hotel and Simonton Court
+
+The Old Town guesthouses are the soul of Key West lodging — restored 19th-century homes with plunge pools, porches and double-digit guest scores. The Marquesa, a four-house compound off Duval, is the polished pick; Simonton Court turns a cluster of cottages and a former cigar factory into the value play, with rooms a couple of blocks from the action.
+
+::hotel lp7d49a
+
+::hotel lp27a0d4
+
+### Eden House and The Mermaid & The Alligator
+
+Eden House brings an Art Deco, hammocks-and-a-saltwater-pool vibe at a friendlier nightly rate, while The Mermaid & The Alligator hides a green tropical garden behind a classic Old Town facade. Any of these properties puts the sunset, the bars and the restaurants within flat, shaded walking distance.
+
+::hotel lp3ee56
+
+::hotel lp65561a96
+
+**The move:** stay Old Town for a first trip · **Best for:** walkers, couples, no-car visitors · **Watch:** historic inns book up fast in winter.
+
+## Duval Street: Stay Near It, Not On It
+
+**Duval Street is the mile-and-a-quarter spine of Key West nightlife — and the one block where you should think hard before booking a room directly above the bars.** Open-air saloons, a live-music bar on every block and the famous Duval Crawl run late and loud, with no respect for your 7 a.m. flight.
+
+The fix is simple: book a block or two off Duval. You get the walk-home convenience without the soundtrack, and "a few blocks back" is still five minutes from the bars, the shops and the restaurants.
+
+### The Key West Hotel and Santa Maria Suites
+
+For staying right in the thick of it, The Key West Hotel sits on Duval itself, steps from the shops and the bars, with a pool to retreat to when the street gets to be a lot. Toward the quieter south end, the Santa Maria Suites Resort trades the conch-house look for sleek modern suites, ocean-leaning views and a big pool deck near the beach.
+
+::hotel lp71ac6
+
+::hotel lp33a52
+
+**The move:** book one block off Duval · **Best for:** nightlife, groups, walk-everywhere trips · **Watch:** the noise is the price of the location.
+
+## Truman Annex and Fort Zachary Taylor: Quiet Streets, the Best Beach
+
+**Truman Annex is the calm, leafy pocket on Old Town's southwest edge — where to stay in Key West when you want the location without the volume.** This former naval annex turned upscale enclave holds the Truman Little White House and sits a short walk from Fort Zachary Taylor State Park.
+
+That fort is the headline: Fort Zach has the best swimming beach in Key West, with shade trees, clear water and a sunset locals rate over the Mallory Square circus. Just east, the beachfront resort district runs toward the landmark Casa Marina, the grand 1920s resort on Key West's south shore. You're a 10-minute stroll from Duval but a world away from its noise.
+
+[See Key West stays near the Annex](/search?destination=Key%20West&adults=2)
+
+## New Town, Smathers Beach and Stock Island: More Room, Lower Rates
+
+**New Town and neighboring Stock Island are where to stay in Key West for a bigger room, a real pool and a lower nightly rate — if you don't mind a bike or a short drive to Duval.** New Town is the east half of the island, home to the chains, the resorts, Smathers Beach (the long public one), the airport and most of the island's parking. Stock Island, one bridge northeast, is the working waterfront — boat slips, galleries and a couple of design-forward properties without the Old Town crowds.
+
+You give up the walk-to-Duval magic; you get more space for the money, beachfront mornings and, in places, real ocean views. Rent a bike or scooter and the 10-minute ride into Old Town stops feeling like a commute and starts feeling like the best part of the day.
+
+### Margaritaville Beach House and Havana Cabana
+
+Margaritaville Beach House sits right on the water near Smathers Beach with ocean views and a pool deck built for doing very little, while Havana Cabana leans into a retro Cuban-roadhouse look with a vintage car out front and a pool that photographs better than most people's vacations. Both are an easy ride from the action.
+
+::hotel lp205dd
+
+::hotel lp1a117
+
+### The Perry Hotel on Stock Island
+
+The Perry Hotel anchors Stock Island as a genuine resort marina, with a spa, a dockside restaurant, water views and a free shuttle into Old Town. You'll want a car or the shuttle, but you wake up to fishing boats instead of a bachelorette party.
+
+::hotel lpa361d
+
+## Best for Couples: Key West's Adults-Only Inns
+
+**Key West runs one of the deepest benches of adults-only properties in the country, which makes it an easy choice for couples and a hard one for the family minivan.** Many small Old Town inns are 16-plus or 21-plus, trading kids' clubs for sundecks, quiet pools and a cocktail at check-in; more than one is a sister property run by the same local innkeepers.
+
+The Almond Tree Inn and the Orchid Key Inn are two of the highest-scored adults-only options on the island, both a short walk from Duval and both built around a pool you'll actually use. Couples who prefer quiet over a kids' pool book the grown-up inn and walk to dinner.
+
+::hotel lp30877
+
+::hotel lp30876
+
+**The move:** book an adults-only inn for a couples' trip · **Best for:** couples, honeymoons, quiet · **Watch:** check the age policy if you're traveling with kids.
+
+## What a Night in Key West Actually Costs
+
+**Key West is not a budget town, and it's honest to say so up front.** It's an island at the end of a 113-mile highway, so the room, the cortadito and the nearby parking carry a small "we floated it here" premium — winter especially, the busiest time to visit, when the snowbirds arrive and rates climb.
+
+A well-reviewed Old Town guesthouse generally runs toward the higher end in peak season, while New Town and Stock Island resorts sit easier on the wallet. The guest reviews and the live rate are the only honest guides, so search your exact dates rather than trusting a stamped price from a blog.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live Key West prices](/search?destination=Key%20West&adults=2)
+
+## Getting There and Getting Around: Does Your Hotel Even Need a Car?
+
+**Where you stay in Key West should be decided partly by how you arrive — because the southernmost city rewards leaving the car behind.** Fly into Key West International (EYW) and you're 10 minutes from Old Town; drive US-1 from Miami and it's roughly 165 miles and 3.5 to 4 hours over the Overseas Highway's 42 bridges.
+
+Either way, the question once you land is the same: fight Old Town's tight, paid parking, or stay somewhere walkable and forget the car exists? Base in Old Town or Truman Annex and you'll walk or bike to the restaurants, the bars and the sunset-cruise docks. Base in New Town or on Stock Island and a car or scooter earns its keep.
+
+::infographic keywest-getting-there
+
+**The move:** match your area to your wheels · **Best for:** everyone — read this before you book parking · **Watch:** Old Town parking is the island's quiet budget-killer.
+
+[Compare Key West hotels by area](/search?destination=Key%20West&adults=2)
+
+## Which Key West Area Should You Choose?
+
+**For a first or short trip, choose Old Town and don't overthink it.** The walkability is the entire point of Key West — worth more than a bigger room or a pool you won't use, because the best of the island is busy right outside your door. Pick a property a block or two off Duval and you split the difference between the action and a night's sleep.
+
+Save the New Town or Stock Island rate for a longer, slower trip, or a family that needs the space and parking. For a couples' escape, the adults-only inns are doing exactly what you came for. Once you've matched an area to your travel style, here are real, well-reviewed Key West recommendations across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| The Gardens Hotel | Old Town | 9.8 | A garden splurge |
+| Almond Tree Inn | Old Town | 9.8 | Adults-only |
+| Orchid Key Inn | Old Town | 9.8 | Adults-only, pool |
+| The Marquesa Hotel | Old Town | 9.6 | Couples, polish |
+| The Mermaid & The Alligator | Old Town | 9.5 | Garden hideaway |
+| Simonton Court | Old Town | 9.2 | Value cottages |
+| Margaritaville Beach House | New Town | 9.2 | Beachfront, ocean views |
+| The Perry Hotel | Stock Island | 9.0 | Resort and marina |
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+
+::cta Key West
+`,
+  },
+  {
     slug: "where-to-stay-in-telluride",
     title: "Where to Stay in Telluride, Colorado: Best Areas & Hotels (2026)",
     description:
@@ -2225,7 +2435,7 @@ If you only take one thing from this guide: pick the side first, the town second
 
 ## Do you need a car in Maui?
 
-**Yes — for nearly any Maui trip, rent a car.** Unlike Waikiki on Oahu, Maui's areas are strung along two coasts with no useful transit between them, and the best beaches, the Road to Hana and the Haleakala sunrise all need wheels. The only real exception is a short, all in resort stay where you never plan to leave the property.
+**Yes — for nearly any Maui trip, rent a car.** Unlike Waikiki on Oahu, Maui's areas are strung along two coasts with no useful transit between them, and the best beaches, the Road to Hana and the Haleakala sunrise all need wheels. The only real exception is a short, all in resort stay where you never plan to leave the property. (Craving the opposite — a place you can walk end to end and skip the rental entirely? That's [where to stay in Key West](/blog/where-to-stay-in-keywest).)
 
 Here's roughly how far each base sits from the Kahului airport, so you can weigh the drive against the view.
 
