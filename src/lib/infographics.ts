@@ -204,6 +204,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Get around", detail: "A car helps, but the Seawall, the Strand and Pleasure Pier are each walkable, with a historic trolley linking downtown." },
     ],
   },
+  "albuquerque-by-numbers": {
+    kind: "stat",
+    title: "Albuquerque by the numbers",
+    stats: [
+      { value: "~5,300 ft", label: "high-desert elevation — a mile up, and then some" },
+      { value: "~1 hr", label: "south of Santa Fe up I-25" },
+      { value: "500+", label: "balloons at October's Fiesta, the world's largest" },
+      { value: "Route 66", label: "runs straight down Central Avenue" },
+    ],
+  },
+  "albuquerque-oldtown-vs-uptown": {
+    kind: "compare",
+    title: "Old Town or Uptown?",
+    left: "Old Town & Downtown",
+    right: "Uptown & the Heights",
+    rows: [
+      { label: "The vibe", left: "Historic adobe plaza, museums, Route 66", right: "Malls, reliable chains, near the Sandias" },
+      { label: "Best for", left: "First-timers, history, walkers", right: "Shopping, the tram, a quieter base" },
+      { label: "Nightly rate", left: "Mid — boutique and Heritage hotels", right: "Lower — dependable chains" },
+      { label: "You wake up to", left: "Adobe walls and the old plaza", right: "The Sandias turning watermelon-pink" },
+    ],
+  },
+  "albuquerque-getting-there": {
+    kind: "steps",
+    title: "Getting to Albuquerque",
+    steps: [
+      { title: "Fly in", detail: "The Albuquerque Sunport (ABQ) sits about 10 minutes from downtown — small, easy and central to the whole city." },
+      { title: "Day-trip Santa Fe", detail: "Santa Fe is ~60 miles and an hour north up I-25, or a scenic ride on the Rail Runner train; many split a New Mexico trip between the two." },
+      { title: "Ride the tram, pack layers", detail: "The Sandia Peak Tramway climbs above 10,000 feet for the view, and the city itself sits a mile high, so evenings cool off fast." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",

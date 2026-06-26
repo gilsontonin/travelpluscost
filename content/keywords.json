@@ -1,4 +1,22 @@
 {
+  "where-to-stay-in-albuquerque": {
+    "primary": "where to stay in albuquerque",
+    "secondary": [
+      "where to stay in albuquerque nm",
+      "where to stay in albuquerque new mexico",
+      "where to stay in albuquerque old town",
+      "is albuquerque safe",
+      "where to stay for balloon fiesta",
+      "best area to stay in albuquerque"
+    ],
+    "volume": 590,
+    "kd": 30,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": []
+  },
   "where-to-stay-in-galveston": {
     "primary": "where to stay in galveston",
     "secondary": [

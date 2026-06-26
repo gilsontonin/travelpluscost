@@ -47,6 +47,229 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-albuquerque",
+    title: "Where to Stay in Albuquerque, NM: Best Areas & Hotels (2026)",
+    description:
+      "Where to stay in Albuquerque, NM in 2026: best areas — Old Town, Nob Hill/Route 66, Uptown and the Sandias — with real hotels, safety tips and honest rates.",
+    excerpt:
+      "Old Town adobe or Route 66 neon — and is it safe? A plain-English guide to picking the right Albuquerque base, by area, budget, and the Balloon Fiesta.",
+    tldr: {
+      answer:
+        "Albuquerque splits into a few clear zones. Old Town and downtown hold the adobe history and the museums; Nob Hill and Route 66 bring the neon, the university and the food; Uptown and the Northeast Heights sit quiet near the Sandia Mountains; and the airport runs cheapest. Stay in those visitor areas and the city is easy.",
+      points: [
+        "**Old Town / downtown** — historic adobe, museums and the plaza; the easy first-timer base.",
+        "**Nob Hill / Route 66** — neon motels, the university and the best food on Central Avenue.",
+        "**Uptown / the Heights** — quiet chains near the Sandia Mountains and the tram.",
+        "**Balloon Fiesta?** — book up to a year ahead; rooms vanish and prices spike each October.",
+        "**Safety** — the visitor areas above are fine; just skip the rougher stretches east of downtown.",
+      ],
+    },
+    date: "2026-06-25",
+    updated: "2026-06-25",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/275348712.jpg",
+      alt: "The tan adobe tower and ivy-covered walls of a Spanish-Pueblo Heritage hotel beside Old Town in Albuquerque, New Mexico, under a clear blue sky",
+      credit: { name: "Hotel Albuquerque at Old Town" },
+    },
+    region: { name: "Albuquerque", destination: "Albuquerque" },
+    faqs: [
+      {
+        q: "Is Albuquerque safe for tourists?",
+        a: "The areas visitors actually stay in — Old Town, downtown's core, Nob Hill, Uptown, the Northeast Heights and the Sandia foothills — are well-traveled and fine with normal city sense: lock the car and don't leave bags in it. Albuquerque does have a real property-crime reputation, but it's concentrated in areas away from the tourist neighborhoods. Book by the neighborhood rather than the cheapest room on the map and you'll be fine.",
+      },
+      {
+        q: "How far is Santa Fe from Albuquerque?",
+        a: "About 60 miles, an hour's drive north up Interstate 25, or a scenic ride on the Rail Runner commuter train. Many visitors base in Albuquerque, where rooms run cheaper, and day-trip to Santa Fe, or split a New Mexico trip between the two high-desert cities.",
+      },
+      {
+        q: "When is the Albuquerque Balloon Fiesta?",
+        a: "Early October, over about nine days — the Albuquerque International Balloon Fiesta is the largest hot-air balloon event in the world, with hundreds of balloons launching at dawn. It fills every hotel in the metro and pushes rates to their yearly peak, so book up to a year ahead if you're coming for it.",
+      },
+      {
+        q: "What is the elevation of Albuquerque?",
+        a: "About 5,300 feet downtown — higher than Denver — climbing toward 6,500 feet in the foothills, and over 10,000 feet at the top of the Sandia Peak Tramway. The altitude means strong sun, cool evenings and thinner air, so pack layers, drink water and ease into the hiking your first day.",
+      },
+      {
+        q: "Does it snow in Albuquerque?",
+        a: "A little — the high desert gets occasional light snow in winter that usually melts fast, while the Sandia Mountains above town hold real snow and even a small ski area. Winters are mild and sunny by day and cold at night; most of the year is dry, sunny and warm.",
+      },
+    ],
+    body: `**Where to stay in Albuquerque comes down to Old Town** if you want history and adobe, or Nob Hill if you want Route 66 neon and the best green chile in town. This high-desert Duke City sits a mile above sea level with the Sandia Mountains on one side and three centuries of New Mexican history on the other — a place where the sunset turns the whole range watermelon-pink and somebody will ask whether you want red or green.
+
+Below are the real, bookable hotels in each area, then the honest neighborhood guide to where to stay in Albuquerque, New Mexico, as of 2026 — including the question everyone asks first: which parts are safe.
+
+Albuquerque is big and spread out along Route 66 and the Rio Grande, so picking a base is less about a single downtown and more about whether you want history, neon, the mountains, or a quiet, convenient chain.
+
+## Albuquerque Hotels by Area, at a Glance
+
+Five zones, one deciding factor: history, neon, mountains, or a cheap convenient bed. Choose the area by your trip, then the hotel — here's the whole city on one screen.
+
+| Area | The feel | Best for | The rate |
+|---|---|---|---|
+| [Old Town / Downtown](/search?destination=Albuquerque&adults=2) | Historic adobe, museums, plaza | First-timers, history, walkers | Mid |
+| [Nob Hill / Route 66](/search?destination=Albuquerque&adults=2) | Neon, the university, the food | Foodies, nightlife, character | Mid |
+| [Uptown / the Heights](/search?destination=Albuquerque&adults=2) | Malls, chains, near the Sandias | Shopping, the tram, quiet | Low to mid |
+| [Airport / I-25](/search?destination=Albuquerque&adults=2) | Convenient chains, value | Budgets, one-nighters | Low |
+
+::infographic albuquerque-by-numbers
+
+[See every Albuquerque hotel and its live nightly price](/search?destination=Albuquerque&adults=2)
+
+## Old Town and Downtown: the Historic Heart
+
+**Old Town is where to stay in Albuquerque for the history — the 1706 Spanish plaza of adobe walls, the San Felipe de Neri church and the city's best museums — the Albuquerque Museum and the New Mexico Museum of Natural History — all walkable.** This is the postcard Albuquerque: shaded courtyards, turquoise vendors under the portales, and the BioPark and downtown's restaurants a short hop away. For a first trip, it's the easy, atmospheric call.
+
+The trade is that downtown proper quiets down at night and the historic inns carry mid-range rates. But for adobe charm and a walk to three centuries of history, nothing else in the city comes close.
+
+::infographic albuquerque-oldtown-vs-uptown
+
+### Hotel Chaco and Casas de Sueños
+
+The Old Town hotels range from modern-Pueblo design to historic adobe inns. Hotel Chaco is the standout — a striking modern lodge inspired by Chaco Canyon, with a rooftop bar, an outdoor pool and a Sawmill District address steps from Old Town Albuquerque; Casas de Sueños turns a cluster of 1930s adobe casitas into a romantic garden inn, a quietly luxury stay right on the plaza's edge with rooms around the courtyard.
+
+::hotel lpbbb7f
+
+::hotel lp378ad
+
+For a budget bed within walking distance of the plaza, the Sandia Peak Inn is the dependable cheap pick in Old Town.
+
+::hotel lp6e0a9
+
+**The move:** book Old Town for a historic first trip · **Best for:** history, museums, walkers · **Watch:** downtown is quiet after dark.
+
+## Nob Hill and Route 66: Neon, the University and the Food
+
+**Nob Hill is where to stay in Albuquerque for Route 66 character and the best food and nightlife — the neon-lit stretch of Central Avenue by the University of New Mexico.** This is the city's coolest district: restored mid-century motels, craft breweries, indie shops and some of the best New Mexican kitchens in town — local green chile, local everything — all along the Mother Road.
+
+You trade Old Town's history for energy and great green chile, and it's an easy drive or bus to the rest of the city. For travelers who want personality over a chain lobby, this is the pick.
+
+### El Vado and the Restored Route 66 Motels
+
+Route 66 runs straight through here, and its restored motels are a draw in their own right. El Vado is the showpiece — a 1937 motor court reborn as a boutique motel with a plaza, food hall and pool; The Monterey is another classic neon motel done up for modern travelers a little west toward downtown.
+
+::hotel lpf8c5e
+
+::hotel lp71cd0
+
+For a boutique room a step up from the motels, Hotel ZAZZ brings a colorful, modern stay near the same Central Avenue strip.
+
+::hotel lp65571bb3
+
+**The move:** book Nob Hill for food and Route 66 character · **Best for:** foodies, nightlife, the university · **Watch:** a car helps for the rest of town.
+
+## Uptown, the Heights and the Sandias
+
+**Uptown and the Northeast Heights are where to stay in Albuquerque for a quieter, modern base near the Sandia Mountains.** This is the shopping side of town — the ABQ Uptown and Coronado malls, dependable chain hotels with outdoor pools and quick access to the Sandia Peak Tramway and the foothill trails, with the mountains glowing pink at sunset right outside.
+
+It's less atmospheric than Old Town, but you get newer rooms, easy parking and friendlier rates, plus the shortest drive to the tram and the Balloon Fiesta park.
+
+::hotel lp97ed5
+
+::hotel lp32d29
+
+Out toward the foothills, the Sandia Resort and Casino adds a full resort, golf and mountain views, while the reliable chains around Uptown and the I-25 north corridor cover the value end.
+
+**The move:** base Uptown for the mountains and value · **Best for:** shopping, the tram, quiet, the Fiesta · **Watch:** you'll drive into Old Town and Nob Hill.
+
+## The Airport and I-25: Value Bases
+
+**The airport and the I-25 corridor are where to stay in Albuquerque for the lowest rates and the easiest in-and-out.** The Albuquerque Sunport sits just 10 minutes from downtown, and the band of chain hotels around it and up the interstate runs cheapest in the city, with quick highway access in every direction.
+
+The rooms here are clean and convenient rather than scenic, most with an indoor pool and free breakfast — the practical base for an early flight, a road-trip overnight or a budget-minded trip where you're out exploring all day.
+
+::hotel lp65563cb7
+
+::hotel lp1ce25
+
+The Hampton Inn by the Sunport is the dependable mid-tier airport pick, with an indoor pool and a free shuttle.
+
+::hotel lp87d66
+
+**The move:** book the airport to sleep cheap and central · **Best for:** budgets, early flights, road trips · **Watch:** it's interstate, not character.
+
+## Is Albuquerque Safe? How to Pick a Neighborhood
+
+**This is the question we get most, and the honest answer is that the areas visitors actually stay in are fine — you just pick by neighborhood.** Albuquerque has a real property-crime reputation, but it's concentrated well away from where a traveler books. Old Town, downtown's core, Nob Hill, Uptown, the Northeast Heights and the Sandia foothills are all well-traveled and fine with normal city sense: lock the car, don't leave bags in it overnight.
+
+The stretches to skip for a hotel are the International District along Central Avenue well east of downtown, parts of the Southeast, and the blocks right around the bus and train depot after dark. None of the areas in this guide fall in them. Book by the neighborhood rather than the rock-bottom rate on the map, and Albuquerque is an easy, friendly place to visit.
+
+[Compare Albuquerque hotels by area](/search?destination=Albuquerque&adults=2)
+
+## Staying for the Balloon Fiesta
+
+**If you're coming for the Albuquerque International Balloon Fiesta, book as early as you possibly can — ideally close to a year out.** The nine-day October event is the largest hot-air balloon gathering on earth, and it fills every hotel in the metro and sends rates to their yearly peak; the rooms closest to Balloon Fiesta Park on the north side go first.
+
+Anywhere in this guide works for the Fiesta as long as you've got a car and an early alarm, since the mass ascensions launch at dawn. If the in-town hotels are gone, the north-side and Sandia casino-resorts are the next ring out. Travel guides will tell you to book early; take it from us, book a year out and lock it in months ahead and expect the highest prices of the year.
+
+::infographic albuquerque-getting-there
+
+**The move:** book a year out for the Fiesta · **Best for:** the October balloon crowd · **Watch:** every area spikes in price that week.
+
+## Things to Do in Albuquerque, and Where to Base for It
+
+**Most of Albuquerque's headline attractions cluster near Old Town and downtown, which is another reason first-timers base there.**
+
+### Old Town, the Museums and the ABQ BioPark
+
+The Old Town Albuquerque plaza puts the Albuquerque Museum and the New Mexico Museum of Natural History and Science within a few blocks, and the ABQ BioPark zoo — a combined zoo, aquarium and botanic garden — sits just south along the Rio Grande. It's the most walkable cluster of attractions in the city, so museum-and-zoo trips base in Old Town.
+
+### The Sandia Peak Tramway and the Foothills
+
+The Sandia Peak Tramway and the foothill trails are a 20-minute drive northeast of downtown, climbing above 10,000 feet for a view that runs to Arizona; stay in Uptown or the Heights to cut the drive and wake up under the mountains.
+
+### Petroglyphs, the Pueblos and Breaking Bad
+
+Petroglyph National Monument and its volcanoes sit out on the West Mesa, while the Indian Pueblo Cultural Center, just north of downtown Albuquerque, is the best primer on the Native American Pueblos whose land this is. Fans of Breaking Bad and Better Call Saul can tick off filming locations all over town; for any of these, anywhere central works.
+
+[Search Albuquerque hotels near Old Town](/search?destination=Albuquerque&adults=2)
+
+## Hotels or a Vacation Rental in Albuquerque?
+
+**For most Albuquerque trips a hotel wins on location, but a vacation rental can make sense for the Balloon Fiesta or a longer stay.** The walkable areas near Old Town and Nob Hill are mostly hotels and historic inns; rentals tend to sit in residential neighborhoods that need a car anyway.
+
+A rental earns its keep for a family, a group splitting the Fiesta crowds, or a week with a kitchen and an outdoor space. For a few nights built around Old Town, the food and the museums, the hotels here keep you central — and the price you see is the real one, the same for every guest.
+
+[Compare Albuquerque hotels by area](/search?destination=Albuquerque&adults=2)
+
+## What a Night in Albuquerque Actually Costs
+
+**Albuquerque is one of the better-value cities in the Southwest, with one big exception: Balloon Fiesta week.** Old Town's boutique and Heritage hotels and Nob Hill's restored motels run mid-range, the Uptown and airport chains run cheaper, and only the Fiesta and big events push rates to a real premium.
+
+The rest of the year is genuinely affordable, with the lowest rates in the cold, quiet winter outside the holidays. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live Albuquerque prices](/search?destination=Albuquerque&adults=2)
+
+## Which Albuquerque Area Should You Choose?
+
+**For a first trip, choose Old Town and don't overthink it.** The adobe plaza, the museums and three centuries of history are the heart of what makes Albuquerque its own place, and you're a short drive from everything else. Pick Nob Hill instead if you came for the food, the neon and Route 66, and Uptown or the airport when value and an easy base matter more than character.
+
+Wherever you land, you're an hour from Santa Fe, a tram ride from 10,000 feet, and a sunset away from the mountains turning pink. Once you've matched an area to your trip, here are real, well-reviewed Albuquerque hotels across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Hotel Chaco | Old Town / Sawmill | 9.3 | Modern-Pueblo design |
+| Sandia Resort & Casino | The Sandias | 9.3 | Resort, golf, views |
+| El Vado Motel | Route 66 | 9.2 | Restored Route 66 |
+| Casas de Sueños | Old Town | 9.1 | Adobe garden inn |
+| Hotel Albuquerque | Old Town | 9.0 | Old Town landmark |
+| The Monterey Motel | Route 66 | 9.0 | Neon, value |
+| Drury Inn North | Uptown / I-25 | 9.0 | Free breakfast |
+| Comfort Suites Airport | Airport | 9.2 | Convenient, cheap |
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+
+::cta Albuquerque
+`,
+  },
+  {
     slug: "where-to-stay-in-galveston",
     title: "Where to Stay in Galveston, TX: Best Areas & Hotels (2026)",
     description:
@@ -499,7 +722,7 @@ Four zones, one deciding factor: how much you'll pay to walk to a brewery instea
 
 **Downtown Flagstaff is where to stay if you want to walk to dinner — a compact, historic grid where Route 66, the train depot and a dozen breweries sit within a few blocks.** This is the old railroad heart of town, all brick storefronts and neon, with the best restaurants, coffee and local craft beer in northern Arizona on foot from your door.
 
-The trade is the obvious one: the walkable historic blocks carry the highest rates in town, and the trains roll through all night, so a light sleeper wants earplugs. But for a first trip, or any trip where dinner and a pint matter more than a parking space, nothing else in Flagstaff comes close.
+The trade is the obvious one: the walkable historic blocks carry the highest rates in town, and the trains roll through all night, so a light sleeper wants earplugs. But for a first trip, or any trip where dinner and a pint matter more than a parking space, nothing else in Flagstaff comes close. (Driving Route 66 east? [Albuquerque](/blog/where-to-stay-in-albuquerque) is the next great Mother Road city, about five hours on.)
 
 ### Bespoke Inn and the Boutique Stays
 
