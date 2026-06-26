@@ -44,15 +44,15 @@ export default function Home() {
   }).filter((d) => d.count > 0);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 pt-8 pb-16">
+    <div className="mx-auto max-w-5xl px-4 pt-10 sm:pt-14 pb-20">
       {/* hero (also the "how pricing works" anchor target for the nav) */}
       <div id="how" className="scroll-mt-24 text-center max-w-2xl mx-auto">
-        <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">
+        <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05]">
           One honest price.
           <br />
           The same for everyone.
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-black/55">
+        <p className="mt-5 text-lg sm:text-xl text-muted leading-snug">
           What the hotel charges us, plus one small flat fee. Search from any phone, any city, any day — same
           number. Never based on your data.
         </p>
@@ -64,7 +64,7 @@ export default function Home() {
       </div>
 
       {/* honest trust strip */}
-      <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-black/60">
+      <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted">
         {["Same price for everyone", "Never based on your data", "No fake discounts"].map((t) => (
           <span key={t} className="inline-flex items-center gap-1.5">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" className="text-accent">
@@ -83,12 +83,12 @@ export default function Home() {
 
       {/* destinations we cover */}
       <section className="mt-10">
-        <h2 className="text-xl font-semibold mb-3">Where to?</h2>
+        <h2 className="text-2xl font-semibold tracking-tight mb-4">Where to?</h2>
         <div className="flex gap-4 overflow-x-auto -mx-4 sm:mx-0 snap-x scroll-pl-4 sm:scroll-pl-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           {destinations.map(({ region, image, count }, i) => (
-            <Link key={region.slug} href={search(region.name)} className={`group relative shrink-0 w-56 h-36 rounded-lg overflow-hidden snap-start${i === 0 ? " ms-4 sm:ms-0" : ""}${i === destinations.length - 1 ? " me-4 sm:me-0" : ""}`}>
+            <Link key={region.slug} href={search(region.name)} className={`group relative shrink-0 w-60 h-40 rounded-2xl overflow-hidden snap-start${i === 0 ? " ms-4 sm:ms-0" : ""}${i === destinations.length - 1 ? " me-4 sm:me-0" : ""}`}>
               {image ? (
-                <Image src={image} alt={region.label} fill sizes="224px" className="object-cover transition-transform group-hover:scale-105" />
+                <Image src={image} alt={region.label} fill sizes="240px" className="object-cover transition-transform duration-500 group-hover:scale-105" />
               ) : null}
               <span className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
               <span className="absolute bottom-3 left-3 right-3 text-white">

@@ -81,7 +81,7 @@ export default function FilterChip({
         <div
           ref={panelRef}
           style={{ position: "fixed", top: pos.top, left: pos.left }}
-          className="z-50 w-72 max-w-[calc(100vw-16px)] max-h-[70vh] overflow-y-auto bg-white border border-black/10 rounded-lg shadow-xl p-4"
+          className="z-50 w-72 max-w-[calc(100vw-16px)] max-h-[70vh] overflow-y-auto bg-white border border-black/[0.08] rounded-2xl shadow-pop p-4"
         >
           {children}
         </div>

@@ -227,7 +227,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
 
       {/* slim header above the photo: name + rating only (the rest moves below the gallery) */}
       <div className="mt-4">
-        <h1 className="text-2xl font-semibold">{hotel.name}</h1>
+        <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">{hotel.name}</h1>
         {hotel.rating ? (
           <div className="mt-1.5 flex items-center gap-1.5 text-sm">
             <span className="bg-[#1a7a4c] text-white text-xs font-semibold px-1.5 py-0.5 rounded-md">
@@ -325,8 +325,8 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
           ) : null}
         </div>
 
-        <aside className="lg:sticky lg:top-24 h-fit bg-white border border-black/5 rounded-lg p-5">
-          <div className="rounded-md bg-accent-tint/60 p-3 text-sm text-black/70">
+        <aside className="lg:sticky lg:top-24 h-fit bg-card border border-black/[0.07] rounded-2xl shadow-card p-5">
+          <div className="rounded-xl bg-accent-tint/60 p-3 text-sm text-black/70">
             <span className="font-medium text-accent">One honest price.</span> What the hotel charges us, plus one
             small flat fee — the same for everyone, never based on your data.
           </div>

@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-30">
       <div className="mx-auto max-w-7xl px-4 pt-4">
-        <div className="bg-white rounded-2xl shadow-sm border border-black/5 px-4 sm:px-6 py-2.5">
+        <div className="bg-white/75 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70 rounded-2xl shadow-card border border-black/[0.06] px-4 sm:px-6 py-2.5">
           <div className="flex items-center justify-between gap-3">
             <Link href="/" className="flex items-baseline gap-0.5 font-bold text-lg shrink-0">
               <span className="text-accent">travel</span>
@@ -60,7 +60,7 @@ export default function Header() {
         </div>
 
         {open && (
-          <div className="md:hidden bg-white rounded-2xl shadow-sm border border-black/5 mt-2 p-3 flex flex-col gap-1">
+          <div className="md:hidden bg-white/90 backdrop-blur-xl rounded-2xl shadow-card border border-black/[0.06] mt-2 p-3 flex flex-col gap-1">
             {NAV.map((n) => (
               <Link
                 key={n.label}

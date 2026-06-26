@@ -54,7 +54,7 @@ export default function HotelRow({
   return (
     <Link
       href={href}
-      className={`group flex overflow-hidden rounded-[10px] border border-black/[0.1] bg-white transition-colors hover:border-black/30 ${
+      className={`group flex overflow-hidden rounded-2xl border border-black/[0.07] bg-card shadow-card transition-all hover:shadow-pop hover:border-black/[0.12] ${
         compact ? "min-h-[11.5rem]" : "min-h-[14rem]"
       }`}
     >

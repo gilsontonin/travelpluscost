@@ -32,8 +32,8 @@ export default function HotelRail({
     <section className="mt-10">
       <div className="flex items-end justify-between gap-3 mb-3">
         <div>
-          <h2 className="text-xl font-semibold">{title}</h2>
-          {subtitle ? <p className="text-sm text-black/55 mt-0.5">{subtitle}</p> : null}
+          <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
+          {subtitle ? <p className="text-sm text-muted mt-0.5">{subtitle}</p> : null}
         </div>
         {seeAllHref ? (
           <Link href={seeAllHref} className="text-sm font-medium text-accent shrink-0 hover:underline">
@@ -50,7 +50,7 @@ export default function HotelRail({
           const edge = `${i === 0 ? " ms-4 sm:ms-0" : ""}${i === shown.length - 1 ? " me-4 sm:me-0" : ""}`;
           return (
             <Link key={h.id} href={hotelHref(h)} className={`group shrink-0 w-52 snap-start${edge}`}>
-              <div className="relative h-40 rounded-lg overflow-hidden bg-zinc-100">
+              <div className="relative h-40 rounded-2xl overflow-hidden bg-zinc-100">
                 <Image src={h.image} alt={h.city ? `${h.name} — hotel in ${h.city}` : h.name} fill sizes="208px" className="object-cover" />
                 {h.propertyType && h.propertyType !== "Hotel" ? (
                   <span className="absolute top-2 left-2 bg-white/95 text-black/80 text-[0.65rem] font-semibold px-2 py-0.5 rounded-md shadow-sm">
