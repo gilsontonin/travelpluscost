@@ -78,6 +78,21 @@ function cityStateMap(): Map<string, string> {
   return _cityState;
 }
 
+// city slug -> { exact directory name, state code }. The lossless reverse of the slug, so the city hub
+// resolves to the real punctuated name + state and does ONE fast indexed lookup instead of the slow
+// fuzzy ilike scans (which timed out under crawl load -> hub 502/404 on St. Augustine, Coeur d'Alene,
+// Astoria, Land O' Lakes, Bala-Cynwyd, …).
+let _citySlug: Map<string, { name: string; state: string }> | null = null;
+export function cityBySlug(slug: string): { name: string; state: string } | null {
+  if (!_citySlug) {
+    _citySlug = new Map();
+    for (const [code, s] of Object.entries(GEO.states)) {
+      for (const c of s.cities) if (!_citySlug.has(c.slug)) _citySlug.set(c.slug, { name: c.name, state: code });
+    }
+  }
+  return _citySlug.get(slug) ?? null;
+}
+
 /** A city's home state + its sibling cities in that state — for same-state cross-links on a city hub. */
 export function siblingCities(citySlug: string, limit = 12): { state: StateSummary; cities: GeoCity[] } | null {
   const code = cityStateMap().get(citySlug);

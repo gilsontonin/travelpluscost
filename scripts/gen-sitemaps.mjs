@@ -85,7 +85,7 @@ async function fetchAll() {
     // kind='hotel' only — never list rentals (apartments/vacation homes/condos/B&Bs…). They have no
     // availability and were SEO junk (208k of 274k rows). Belt-and-suspenders even though the cleanup
     // deleted them: a future re-ingest can't leak them back into the sitemap.
-    let q = sb.from("hotels").select("id,name,city,state").eq("country", "us").eq("kind", "hotel").order("id", { ascending: true }).limit(1000);
+    let q = sb.from("hotels").select("id,name,city,state,lat,lng,review_count").eq("country", "us").eq("kind", "hotel").order("id", { ascending: true }).limit(1000);
     if (cursor) q = q.gt("id", cursor);
     const { data, error } = await q;
     if (error) throw new Error(error.message);
@@ -103,15 +103,33 @@ console.log("[gen-sitemaps] fetching directory…");
 const rows = await fetchAll();
 console.log(`[gen-sitemaps] ${rows.length} hotels in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 
+// Collapse TRUE duplicates — the same property ingested under two supplier ids (same name + city +
+// state AND ~the same coordinates). These rendered identical titles ("duplicate title tag" in the
+// crawl) and split link equity. Keep the better-reviewed id. Different-location same-name hotels are
+// distinct properties (different coords) and are NOT merged.
+const dedupeKey = (h) => {
+  const lat = h.lat != null ? Math.round(h.lat * 100) / 100 : "?";
+  const lng = h.lng != null ? Math.round(h.lng * 100) / 100 : "?";
+  return `${slugify(h.name)}|${slugify(h.city)}|${(h.state || "").toLowerCase()}|${lat}|${lng}`;
+};
+const _best = new Map();
+for (const h of rows) {
+  const k = dedupeKey(h);
+  const cur = _best.get(k);
+  if (!cur || (h.review_count ?? 0) > (cur.review_count ?? 0)) _best.set(k, h);
+}
+const deduped = [..._best.values()];
+console.log(`[gen-sitemaps] collapsed ${rows.length - deduped.length} duplicate listings → ${deduped.length} unique`);
+
 // Wipe the whole sitemaps/ tree (old version dirs included) so stale child URLs 404 and Google drops them.
 if (existsSync("public/sitemaps")) await rm("public/sitemaps", { recursive: true, force: true });
 await mkdir(OUT_DIR, { recursive: true });
 
 const today = new Date().toISOString().slice(0, 10);
-const shardCount = Math.max(1, Math.ceil(rows.length / SHARD_SIZE));
+const shardCount = Math.max(1, Math.ceil(deduped.length / SHARD_SIZE));
 const shardFiles = [];
 for (let k = 0; k < shardCount; k++) {
-  const slice = rows.slice(k * SHARD_SIZE, (k + 1) * SHARD_SIZE);
+  const slice = deduped.slice(k * SHARD_SIZE, (k + 1) * SHARD_SIZE);
   const body = slice.map((h) => `<url><loc>${SITE}${hotelHref(h)}</loc></url>`).join("\n");
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
   const file = `hotels-${k}.xml`;
@@ -123,7 +141,7 @@ console.log(`[gen-sitemaps] wrote ${shardCount} shard file(s) to ${OUT_DIR}/`);
 // City hubs (/hotels/<city>): one entry per city with ≥ MIN_HUB_HOTELS real hotels. Group by the
 // SAME slug the route uses, so the URL here resolves to a real, non-thin hub page.
 const cityCounts = new Map();
-for (const h of rows) {
+for (const h of deduped) {
   const slug = slugify(h.city);
   if (slug) cityCounts.set(slug, (cityCounts.get(slug) || 0) + 1);
 }
@@ -140,7 +158,7 @@ console.log(`[gen-sitemaps] wrote ${OUT_DIR}/cities.xml (${citySlugs.length} cit
 // Each city slug is filed under its PRIMARY state (most hotels), since /hotels/<slug> isn't state-scoped.
 const cityAgg = new Map(); // slug -> { name, byState: Map<code,count> }
 const stateHotels = new Map(); // code -> total hotels in state
-for (const h of rows) {
+for (const h of deduped) {
   const code = (h.state || "").toUpperCase();
   if (code) stateHotels.set(code, (stateHotels.get(code) || 0) + 1);
   const slug = slugify(h.city);

@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { hotelsByCity, hotelsByCityFuzzy, cityHotelCount, rankHotels, directoryToCard, type DirectoryHotel } from "@/lib/directory";
 import { slugify, hotelHref } from "@/lib/hotelUrl";
 import { REGIONS } from "@/lib/regions";
-import { siblingCities, popularCities } from "@/lib/geo";
+import { siblingCities, popularCities, cityBySlug } from "@/lib/geo";
 import { SITE_NAME, abs } from "@/lib/site";
 import { nearbyLabel } from "@/lib/distance";
 import { getPrices } from "@/lib/rates";
@@ -31,14 +31,21 @@ interface CityData {
 // city name via the directory: query with dashes-as-spaces (matches "las vegas" -> "Las Vegas"),
 // then trust the data's own casing + most-common state for display/canonical.
 const load = cache(async (slug: string): Promise<CityData | null> => {
-  const name = slug.replace(/-/g, " ");
-  let rows = await hotelsByCity(name, "us", 60);
-  if (!rows.length) rows = await hotelsByCityFuzzy(slug, "us", 60); // punctuated names: "st-augustine" → "St. Augustine"
+  // Resolve the slug to its exact directory city via the geo-index (lossless) → ONE fast indexed query.
+  // This replaces the slow fuzzy-ilike scans that were timing out under crawl load (hub 502s) and
+  // intermittently 404ing punctuated-city hubs (St. Augustine, Coeur d'Alene, Astoria, Land O' Lakes …).
+  // The exact-name + fuzzy path stays as the fallback for any slug not in the index.
+  const geo = cityBySlug(slug);
+  let rows = geo ? await hotelsByCity(geo.name, "us", 60, geo.state) : [];
+  if (!rows.length) {
+    rows = await hotelsByCity(slug.replace(/-/g, " "), "us", 60);
+    if (!rows.length) rows = await hotelsByCityFuzzy(slug, "us", 60); // punctuated names: "st-augustine" → "St. Augustine"
+  }
   if (!rows.length) return null;
-  const city = rows[0].city || cityFromSlug(slug);
+  const city = geo?.name || rows[0].city || cityFromSlug(slug);
   const stateCounts: Record<string, number> = {};
   for (const r of rows) if (r.state) stateCounts[r.state] = (stateCounts[r.state] ?? 0) + 1;
-  const state = Object.entries(stateCounts).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
+  const state = geo?.state ?? Object.entries(stateCounts).sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
   const count = await cityHotelCount(city, "us", state ?? undefined); // real city name, not the lossy slug
   const ranked = rankHotels(rows).filter((h) => h.thumbnail);
 
