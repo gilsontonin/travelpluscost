@@ -39,13 +39,14 @@ export default function MemberNudge() {
   return (
     <Link
       href="/join"
-      className="mt-0.5 inline-flex items-center gap-1 text-[0.68rem] font-medium text-accent hover:underline"
+      className="mt-1 inline-flex items-center gap-1 rounded-full bg-accent-tint px-2 py-1 text-[0.7rem] font-semibold text-accent underline decoration-accent/40 underline-offset-2 transition hover:decoration-accent active:scale-95"
     >
       <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="3" y="11" width="18" height="11" rx="2" />
         <path d="M7 11V7a5 5 0 0 1 10 0v4" />
       </svg>
-      Members pay less here — save 20–35% · Sign in free
+      Members pay less — save 20–35% · Sign in free
+      <span aria-hidden>→</span>
     </Link>
   );
 }

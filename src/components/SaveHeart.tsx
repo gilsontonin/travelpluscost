@@ -1,36 +1,73 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { authBrowser } from "@/lib/auth";
 
-const SAVED_KEY = "tpc:saved"; // same per-browser wishlist as ShareSaveButtons
+// Heart on a result card. Logged OUT → tapping it sends you to sign in (save needs an account). Member →
+// toggles a persistent wishlist (saved_hotels) via /api/saved-hotels. The card root is a <Link>, so the
+// click is intercepted (preventDefault + stopPropagation) so it never navigates to the property.
+//
+// Shared per page: ONE getSession + ONE saved-list fetch, reused by every heart on screen.
+let loggedIn: boolean | undefined;
+let savedSet: Set<string> | undefined;
+let initPromise: Promise<void> | undefined;
 
-// Heart that lives on a result card. The card root is a <Link>, so the click is intercepted
-// (preventDefault + stopPropagation) to toggle the save without navigating to the property.
+function ensureInit(): Promise<void> {
+  if (!initPromise) {
+    initPromise = (async () => {
+      const { data } = await authBrowser().auth.getSession();
+      loggedIn = !!data.session;
+      if (loggedIn) {
+        try {
+          const r = await fetch("/api/saved-hotels");
+          const j = await r.json();
+          savedSet = new Set<string>(Array.isArray(j.ids) ? j.ids : []);
+        } catch {
+          savedSet = new Set();
+        }
+      } else {
+        savedSet = new Set();
+      }
+    })();
+  }
+  return initPromise;
+}
+
 export default function SaveHeart({ id }: { id: string }) {
+  const router = useRouter();
   const [saved, setSaved] = useState(false);
 
   useEffect(() => {
-    queueMicrotask(() => {
-      try {
-        const list = JSON.parse(localStorage.getItem(SAVED_KEY) || "[]");
-        setSaved(Array.isArray(list) && list.includes(id));
-      } catch {
-        /* ignore */
-      }
+    let active = true;
+    ensureInit().then(() => {
+      if (active) setSaved(!!savedSet?.has(id));
     });
+    return () => {
+      active = false;
+    };
   }, [id]);
 
-  const toggle = (e: React.MouseEvent) => {
+  const toggle = async (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
+    await ensureInit();
+    if (!loggedIn) {
+      router.push("/join"); // sign in to save
+      return;
+    }
+    const next = !saved;
+    setSaved(next); // optimistic
+    if (next) savedSet?.add(id);
+    else savedSet?.delete(id);
     try {
-      const raw = JSON.parse(localStorage.getItem(SAVED_KEY) || "[]");
-      const list: string[] = Array.isArray(raw) ? raw : [];
-      const next = list.includes(id) ? list.filter((x) => x !== id) : [...list, id];
-      localStorage.setItem(SAVED_KEY, JSON.stringify(next));
-      setSaved(next.includes(id));
+      await fetch("/api/saved-hotels", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ hotelId: id, save: next }),
+      });
     } catch {
-      /* ignore */
+      /* best-effort — the optimistic state already updated */
     }
   };
 

@@ -336,7 +336,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
       </section>
 
       <div
-        className={`lg:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-black/10 px-4 py-3 flex items-center justify-between gap-3 shadow-[0_-2px_10px_rgba(0,0,0,0.06)] transition-transform duration-200 ${
+        className={`lg:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-black/10 pl-4 pr-[5.5rem] py-3 flex items-center justify-between gap-3 shadow-[0_-2px_10px_rgba(0,0,0,0.06)] transition-transform duration-200 ${
           scrolled && cheapest ? "translate-y-0" : "translate-y-full"
         }`}
       >
