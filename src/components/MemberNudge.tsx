@@ -17,12 +17,21 @@ export default function MemberNudge() {
   const [loggedIn, setLoggedIn] = useState<boolean | undefined>(cachedLoggedIn);
 
   useEffect(() => {
-    if (cachedLoggedIn !== undefined) {
-      setLoggedIn(cachedLoggedIn);
-      return;
+    let active = true;
+    if (!pending) {
+      pending = authBrowser()
+        .auth.getSession()
+        .then(({ data }) => {
+          cachedLoggedIn = !!data.session;
+          return cachedLoggedIn;
+        });
     }
-    if (!pending) pending = authBrowser().auth.getSession().then(({ data }) => (cachedLoggedIn = !!data.session));
-    pending.then(setLoggedIn);
+    pending.then((v) => {
+      if (active) setLoggedIn(v);
+    });
+    return () => {
+      active = false;
+    };
   }, []);
 
   if (loggedIn !== false) return null; // loading (undefined) or member (true) → render nothing
