@@ -1,4 +1,22 @@
 {
+  "where-to-stay-in-galveston": {
+    "primary": "where to stay in galveston",
+    "secondary": [
+      "where to stay in galveston texas",
+      "where to stay in galveston tx",
+      "where to stay in galveston before a cruise",
+      "where to stay on galveston island",
+      "where to stay in galveston on the beach",
+      "best area to stay in galveston"
+    ],
+    "volume": 390,
+    "kd": 25,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-25",
+    "status": "published",
+    "history": []
+  },
   "where-to-stay-in-tucson": {
     "primary": "where to stay in tucson",
     "secondary": [

@@ -173,6 +173,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Brave summer for a deal", detail: "June–September runs 100°F+, but rates crater and the top of Mount Lemmon stays ~20°F cooler." },
     ],
   },
+  "galveston-by-numbers": {
+    kind: "stat",
+    title: "Galveston by the numbers",
+    stats: [
+      { value: "~50 mi", label: "southeast of Houston, about an hour down I-45" },
+      { value: "10 mi", label: "of Seawall — one of the longest sidewalks in the US" },
+      { value: "4th", label: "busiest cruise port in the United States" },
+      { value: "1900", label: "the hurricane that built the Seawall and raised the city" },
+    ],
+  },
+  "galveston-seawall-vs-strand": {
+    kind: "compare",
+    title: "The Seawall or the Strand?",
+    left: "The Seawall",
+    right: "The Strand & Downtown",
+    rows: [
+      { label: "The vibe", left: "Beachfront hotels, Pleasure Pier, the Gulf", right: "Victorian district, the harbor, the cruise port" },
+      { label: "Best for", left: "Beach days, families, sunsets", right: "History, walking, cruisers" },
+      { label: "To the sand", left: "You're on it", right: "A 10-minute drive or the trolley" },
+      { label: "You wake up to", left: "Surf and the Seawall", right: "Iron-front buildings and ships" },
+    ],
+  },
+  "galveston-getting-there": {
+    kind: "steps",
+    title: "Getting to Galveston",
+    steps: [
+      { title: "Drive from Houston", detail: "Galveston is ~50 miles southeast of Houston, about an hour down I-45 — the island has no major airport, so most visitors fly into Houston (Hobby or Bush) and drive." },
+      { title: "Sailing out?", detail: "The cruise terminal sits downtown by the Strand; many cruisers book a nearby hotel with a park-and-cruise package." },
+      { title: "Get around", detail: "A car helps, but the Seawall, the Strand and Pleasure Pier are each walkable, with a historic trolley linking downtown." },
+    ],
+  },
   "sedona-uptown-vs-village": {
     kind: "compare",
     title: "Uptown or the Village of Oak Creek?",
