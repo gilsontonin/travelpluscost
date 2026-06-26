@@ -25,7 +25,7 @@ export default function robots(): MetadataRoute.Robots {
         // (~113k/day) while Discovery sat at 13% — i.e. most of the crawl budget was being spent on RSC
         // copies instead of finding our 65k hotel pages. Browsers ignore robots.txt, so real-user
         // prefetch is unaffected; only bot crawl budget is freed.
-        disallow: ["/api/", "/book", "/booking-complete", "/booking-confirmed", "/cancel", "/compare", "/*_rsc="],
+        disallow: ["/api/", "/owner", "/account", "/auth/", "/book", "/booking-complete", "/booking-confirmed", "/cancel", "/compare", "/*_rsc="],
       },
       ...JUNK_BOTS.map((userAgent) => ({ userAgent, disallow: "/" })),
     ],
