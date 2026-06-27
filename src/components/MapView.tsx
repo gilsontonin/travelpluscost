@@ -16,7 +16,7 @@ export default function MapView(props: {
   height?: number;
 }) {
   return (
-    <div className="rounded-lg overflow-hidden border border-black/10">
+    <div className="relative z-0 isolate overflow-hidden rounded-2xl border border-black/10">
       <LeafletMap {...props} />
     </div>
   );

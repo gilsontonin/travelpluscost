@@ -69,7 +69,7 @@ export default function DateQuickPicks({ compact = false, className = "" }: { co
   }
 
   return (
-    <div className={`flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${className}`}>
+    <div className={`flex flex-wrap gap-2 ${className}`}>
       {ranges.map((r) => {
         const active = checkin === r.checkin && checkout === r.checkout;
         return (

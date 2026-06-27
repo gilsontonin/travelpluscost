@@ -46,17 +46,19 @@ function highlightsFor(h: OahuHotel): { title: string; desc: string; icon: strin
   if (am.includes("Pool")) out.push({ title: "Pool on site", desc: "Cool off without leaving.", icon: "pool" });
 
   const pro = h.sentiment?.pros?.[0];
-  if (pro && out.length < 3) out.push({ title: "Guests loved it", desc: pro, icon: "star" });
-  if (out.length < 2 && (h.reviewCount ?? 0) > 500)
+  if (pro) out.push({ title: "Guests loved it", desc: pro, icon: "star" });
+  if ((h.reviewCount ?? 0) > 500)
     out.push({ title: "Well reviewed", desc: `${(h.reviewCount ?? 0).toLocaleString()} guest reviews.`, icon: "star" });
-  return out.slice(0, 3);
+  return out;
 }
 
 export default function Highlights({ hotel }: { hotel: OahuHotel }) {
-  const items = highlightsFor(hotel);
-  if (!items.length) return null;
+  const all = highlightsFor(hotel);
+  // Even count only — 4 if we have them, otherwise 2 — so the 2-col grid never leaves an orphaned empty cell.
+  const items = all.length >= 4 ? all.slice(0, 4) : all.slice(0, 2);
+  if (items.length < 2) return null;
   return (
-    <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 border-y border-black/[0.07] py-4">
+    <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-black/[0.07] py-4">
       {items.map((it) => (
         <div key={it.title} className="flex gap-3">
           <span className="shrink-0 w-9 h-9 rounded-full bg-accent-tint grid place-items-center text-accent">

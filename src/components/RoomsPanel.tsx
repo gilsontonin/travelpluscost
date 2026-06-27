@@ -9,13 +9,7 @@ import DateQuickPicks from "@/components/DateQuickPicks";
 import { money } from "@/lib/format";
 import type { RoomOffer } from "@/lib/rates";
 
-const ROOM_SORTS = {
-  price_asc: "Lead-in price",
-  price_desc: "Price: high to low",
-  sleeps: "Sleeps: most",
-  size: "Largest room",
-} as const;
-type RoomSortKey = keyof typeof ROOM_SORTS;
+type RoomSortKey = "price_asc" | "price_desc" | "sleeps" | "size";
 
 function sortOffers(offers: RoomOffer[], key: RoomSortKey): RoomOffer[] {
   const arr = [...offers];
@@ -212,7 +206,6 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
   const checkout = sp.get("checkout") ?? "";
   const adults = sp.get("adults") ?? "2";
   const [data, setData] = useState<RoomsData | null>(null);
-  const [sort, setSort] = useState<RoomSortKey>("price_asc");
   const [beds, setBeds] = useState<"all" | "1" | "2" | "3">("all");
   const [scrolled, setScrolled] = useState(false);
 
@@ -266,26 +259,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
   return (
     <>
       <section id="rooms" className="mt-10 scroll-mt-32">
-        <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
-          <h2 className="text-xl font-semibold">{name ? `Choose your room at ${name}` : "Choose your room"}</h2>
-          {data && data.offers.length > 1 ? (
-            <label className="text-sm flex items-center gap-2 text-black/70">
-              <span className="hidden sm:inline">Sort</span>
-              <select
-                value={sort}
-                onChange={(e) => setSort(e.target.value as RoomSortKey)}
-                aria-label="Sort rooms"
-                className="rounded-full border border-black/15 bg-white px-3 py-1.5 text-sm"
-              >
-                {(Object.keys(ROOM_SORTS) as RoomSortKey[]).map((k) => (
-                  <option key={k} value={k}>
-                    {ROOM_SORTS[k]}
-                  </option>
-                ))}
-              </select>
-            </label>
-          ) : null}
-        </div>
+        <h2 className="mb-4 text-xl font-semibold">{name ? `Choose your room at ${name}` : "Choose your room"}</h2>
 
         <RoomDateBar />
         <DateQuickPicks className="mt-2.5 mb-5" />
@@ -302,7 +276,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
           (() => {
             const lowestId = [...data.offers].sort((a, b) => a.price.amount - b.price.amount)[0]?.offerId;
             const hasBedData = data.offers.some((o) => bedCount(o) > 0);
-            const sorted = sortOffers(data.offers, sort);
+            const sorted = sortOffers(data.offers, "price_asc");
             const shown =
               beds === "all"
                 ? sorted
