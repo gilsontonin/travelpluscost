@@ -196,7 +196,7 @@ export default function HotelRow({
               <div className="text-[0.68rem] text-black/45">All-in · same price for everyone</div>
             </div>
           ) : (
-            <span className="text-xs text-black/40">Unavailable for these dates</span>
+            <span className="text-xs text-black/55">Select dates to see prices</span>
           )}
         </div>
       </div>

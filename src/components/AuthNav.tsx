@@ -29,7 +29,7 @@ export default function AuthNav() {
       href="/join"
       className="text-sm font-semibold text-accent hover:opacity-80 whitespace-nowrap"
     >
-      Join free
+      Member prices
     </Link>
   );
 }

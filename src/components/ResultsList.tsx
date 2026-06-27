@@ -117,7 +117,10 @@ export default function ResultsList({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pagedSig, checkin, checkout, adults]);
 
-  const sentinel = useRef<HTMLDivElement>(null);
+  const sentinel = useRef<HTMLButtonElement>(null);
+  // Re-create the observer whenever `shown` changes too: a fresh observe() immediately re-fires if the
+  // sentinel is still in view, so it keeps loading until the sentinel scrolls past — fixing the classic
+  // "stuck on Loading more" bug where IntersectionObserver only fires once on enter.
   useEffect(() => {
     const el = sentinel.current;
     if (!el) return;
@@ -129,7 +132,7 @@ export default function ResultsList({
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [visible.length]);
+  }, [visible.length, shown]);
 
   // Immediate-apply handlers for the inline chips (they share `filters` with the full sheet).
   const { maxPrice, minRating, stars, amenities, kind } = filters;
@@ -317,9 +320,14 @@ export default function ResultsList({
             ))}
           </div>
           {hasMore ? (
-            <div ref={sentinel} className="py-8 text-center text-sm text-black/40">
-              Loading more stays…
-            </div>
+            <button
+              ref={sentinel}
+              type="button"
+              onClick={() => setShown((c) => Math.min(c + PAGE, visible.length))}
+              className="mt-2 w-full rounded-full border border-black/15 py-3.5 text-center text-sm font-medium text-black/70 transition hover:border-black/35 hover:text-black"
+            >
+              Show more stays
+            </button>
           ) : (
             <p className="py-8 text-center text-sm text-black/35">That&apos;s all {visible.length} stays.</p>
           )}
