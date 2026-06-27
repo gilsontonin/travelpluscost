@@ -21,7 +21,7 @@ export default function PriceTransparency({ name }: { name?: string }) {
       <h2 className="text-xl font-semibold mb-3">How {name ? `${name}'s` : "our"} price works</h2>
       <div className="grid gap-3 sm:grid-cols-3">
         {points.map((p) => (
-          <div key={p.t} className="rounded-lg border border-black/[0.07] bg-white p-4">
+          <div key={p.t} className="rounded-2xl border border-black/[0.07] bg-card p-4 shadow-card">
             <p className="font-medium text-black">{p.t}</p>
             <p className="mt-1 text-sm leading-relaxed text-black/65">{p.d}</p>
           </div>

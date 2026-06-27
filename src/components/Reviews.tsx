@@ -85,7 +85,7 @@ export default function Reviews({ hotel }: { hotel: OahuHotel }) {
           <h3 className="font-semibold mb-3">What guests said</h3>
           <div className="grid sm:grid-cols-2 gap-4">
             {reviews.slice(0, 6).map((r, i) => (
-              <article key={i} className="rounded-lg border border-black/[0.07] bg-white p-4">
+              <article key={i} className="rounded-2xl border border-black/[0.07] bg-card p-4 shadow-card">
                 <div className="flex items-center gap-2 mb-2">
                   {r.score != null ? (
                     <span className="bg-[#1a7a4c] text-white text-xs font-semibold px-1.5 py-0.5 rounded-md">

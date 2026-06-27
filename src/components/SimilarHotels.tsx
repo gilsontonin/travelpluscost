@@ -20,7 +20,7 @@ export default function SimilarHotels({ id, name }: { id: string; name?: string 
           const edge = `${i === 0 ? " ms-4 sm:ms-0" : ""}${i === nearby.length - 1 ? " me-4 sm:me-0" : ""}`;
           return (
             <Link key={hotel.id} href={hotelHref(hotel)} className={`group shrink-0 w-52 snap-start${edge}`}>
-              <div className="relative h-36 rounded-lg overflow-hidden bg-zinc-100">
+              <div className="relative h-36 rounded-2xl overflow-hidden bg-zinc-100">
                 <Image src={hotel.image} alt={hotel.name} fill sizes="208px" className="object-cover" />
               </div>
               <p className="mt-2 font-medium text-sm leading-snug line-clamp-2 group-hover:text-accent transition-colors">
