@@ -307,6 +307,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { value: "~25 min", label: "from a downtown base to either theme park" },
     ],
   },
+  "kauai-by-numbers": {
+    kind: "stat",
+    title: "Kauai by the numbers",
+    stats: [
+      { value: "Poipu", label: "the sunny south shore — the easy first-timer base" },
+      { value: "Na Pali", label: "the roadless cliffs — seen by boat, helicopter or foot" },
+      { value: "Waimea", label: "Canyon — the 'Grand Canyon of the Pacific'" },
+      { value: "No loop", label: "one main road; you drive out and back, not around" },
+    ],
+  },
+  "kauai-north-vs-south": {
+    kind: "compare",
+    title: "North Shore or South Shore?",
+    left: "South Shore (Poipu)",
+    right: "North Shore (Princeville / Hanalei)",
+    rows: [
+      { label: "The weather", left: "Sunnier and drier year-round", right: "Lush and green — and rainier, especially in winter" },
+      { label: "Best for", left: "First-timers, families, calm swimming", right: "Scenery, hiking, the Na Pali coast" },
+      { label: "The feel", left: "Resorts, restaurants, convenient", right: "Laid-back, rugged, fewer big hotels" },
+      { label: "The catch", left: "More built-up; a long drive to the north", right: "Rain, and a long drive to everything else" },
+    ],
+  },
+  "kauai-getting-there": {
+    kind: "steps",
+    title: "Getting to (and around) Kauai",
+    steps: [
+      { title: "Fly into Lihue (LIH)", detail: "Kauai's only airport is on the east side by Lihue — most trips connect through Honolulu, with some direct West Coast flights." },
+      { title: "Rent a car — you'll need it", detail: "One main highway, no loop road (the Na Pali cliffs block the circle), so you drive out and back. Public transit is minimal." },
+      { title: "Pick a side, or split", detail: "Base on the sunny South Shore for a first trip, the North Shore for scenery; for a week, split between Poipu and Princeville." },
+    ],
+  },
   "staugustine-by-numbers": {
     kind: "stat",
     title: "St. Augustine by the numbers",
