@@ -247,6 +247,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { label: "Getting there", left: "The closer airport, the Sunport", right: "About an hour north up I-25" },
     ],
   },
+  "sanantonio-by-numbers": {
+    kind: "stat",
+    title: "San Antonio by the numbers",
+    stats: [
+      { value: "1718", label: "the Alamo was founded as a Spanish mission" },
+      { value: "5 missions", label: "a UNESCO World Heritage Site, the Alamo among them" },
+      { value: "~15 mi", label: "of paved River Walk along the San Antonio River" },
+      { value: "~80 mi", label: "south of Austin — about 90 minutes up I-35" },
+    ],
+  },
+  "sanantonio-downtown-vs-suburbs": {
+    kind: "compare",
+    title: "River Walk or the suburbs?",
+    left: "Downtown & the River Walk",
+    right: "Stone Oak, Medical Center & the airport",
+    rows: [
+      { label: "The vibe", left: "Walk to the Alamo, river cafes, no car needed", right: "Newer chains, quiet, you drive in" },
+      { label: "Best for", left: "First-timers, couples, no-car trips", right: "Value, business, families with a car" },
+      { label: "Nightly rate", left: "Higher — historic and boutique", right: "Lower — dependable chains" },
+      { label: "You wake up to", left: "The river and the cypress trees", right: "A pool deck and easy parking" },
+    ],
+  },
+  "sanantonio-getting-there": {
+    kind: "steps",
+    title: "Getting to San Antonio",
+    steps: [
+      { title: "Fly in", detail: "San Antonio International (SAT) sits about 8 miles north of downtown, roughly 15 minutes — small, easy and close to the center." },
+      { title: "Skip the car downtown", detail: "The River Walk and the Alamo are walkable, and the VIA buses cover the core; you only need a car for SeaWorld, Six Flags or the outer missions." },
+      { title: "Day-trip the Hill Country", detail: "Austin is ~80 miles north up I-35, and the Hill Country (Fredericksburg, New Braunfels) is an hour out for wineries and the river." },
+    ],
+  },
   "staugustine-by-numbers": {
     kind: "stat",
     title: "St. Augustine by the numbers",
