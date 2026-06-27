@@ -120,6 +120,7 @@ export type CardHotel = Pick<
   propertyType: string;
   category: StayCategory;
   region: string; // region slug (for distance sort etc.)
+  state: string | null; // full state name, e.g. "Hawaii" — for "City, State" on cards
   popular?: boolean; // top by review volume in its city — drives the "Popular" card badge
 };
 
@@ -161,6 +162,7 @@ export interface RailHotel {
   name: string;
   image: string;
   city: string;
+  state: string | null;
   rating: number | null;
   reviewCount: number | null;
   propertyType: string;
@@ -172,10 +174,17 @@ export function toRail(h: Hotel): RailHotel {
     name: h.name,
     image: h.image,
     city: h.city,
+    state: stateOf(regionForIsland(h.island).label),
     rating: h.rating,
     reviewCount: h.reviewCount,
     propertyType: classifyType(h.hotelType).label,
   };
+}
+
+// Full state name (e.g. "Hawaii") from a region label ("Oahu, Hawaii"). Drives "City, State" on cards.
+function stateOf(label: string): string | null {
+  const s = label.split(",").slice(1).join(",").trim();
+  return s || null;
 }
 
 export function toCard(h: Hotel): CardHotel {
@@ -197,6 +206,7 @@ export function toCard(h: Hotel): CardHotel {
     propertyType: classifyType(h.hotelType).label,
     category: classifyType(h.hotelType).category,
     region: region.slug,
+    state: stateOf(region.label),
   };
 }
 

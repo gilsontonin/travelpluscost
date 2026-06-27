@@ -339,7 +339,7 @@ export default function ResultsList({
         <button
           onClick={() => setView("map")}
           aria-label="View results on map"
-          className="fixed left-4 z-40 bottom-[calc(env(safe-area-inset-bottom,0px)+1.5rem)] inline-flex items-center gap-2 bg-accent text-white font-semibold text-sm px-5 py-3 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.28)] hover:opacity-90 active:scale-95 transition"
+          className="fixed left-1/2 -translate-x-1/2 z-40 bottom-[calc(env(safe-area-inset-bottom,0px)+1.5rem)] inline-flex items-center gap-2 bg-accent text-white font-semibold text-sm px-5 py-3 rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.28)] hover:opacity-90 active:scale-95 transition"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M9 18 3 21V6l6-3 6 3 6-3v15l-6 3-6-3Z" />

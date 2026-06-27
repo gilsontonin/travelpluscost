@@ -5,6 +5,7 @@ import { supabaseAdmin } from "./supabase";
 import { resolveRegion } from "./regions";
 import { slugify } from "./hotelUrl";
 import type { CardHotel } from "./hotels";
+import { stateName } from "./states";
 
 export interface DirectoryHotel {
   id: string;
@@ -195,6 +196,7 @@ export function directoryToCard(h: DirectoryHotel): CardHotel {
     id: h.id,
     name: h.name,
     city: h.city ?? "",
+    state: stateName(h.state),
     address: "",
     image: h.thumbnail ?? "",
     images: h.thumbnail ? [h.thumbnail] : [],

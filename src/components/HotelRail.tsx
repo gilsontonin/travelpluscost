@@ -10,6 +10,7 @@ interface RailHotelLike {
   name: string;
   image: string;
   city: string;
+  state?: string | null;
   rating: number | null;
   reviewCount: number | null;
   propertyType: string;
@@ -61,7 +62,7 @@ export default function HotelRail({
               <p className="mt-2 font-medium text-sm leading-snug line-clamp-2 group-hover:text-accent transition-colors">
                 {h.name}
               </p>
-              {h.city ? <p className="text-xs text-black/50 mt-0.5">{h.city}</p> : null}
+              {h.city ? <p className="mt-0.5 truncate text-xs text-black/50">{[h.city, h.state].filter(Boolean).join(", ")}</p> : null}
               {rev ? (
                 <div className="mt-1 flex items-center gap-1.5">
                   <span className="bg-[#2e7d46] text-white text-xs font-semibold px-1.5 py-0.5 rounded-md">{rev.score}</span>

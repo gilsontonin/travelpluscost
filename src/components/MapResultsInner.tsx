@@ -176,7 +176,13 @@ export default function MapResultsInner({
     };
   }, []);
 
-  const geo = useMemo(() => hotels.filter((h) => h.lat != null && h.lng != null), [hotels]);
+  // Mappable hotels — and once prices have loaded, hide any with no price for the selected dates (a bare
+  // dot with no price just clutters the map). While prices are still loading, show everything.
+  const geo = useMemo(() => {
+    const mappable = hotels.filter((h) => h.lat != null && h.lng != null);
+    const havePrices = prices && Object.keys(prices).length > 0;
+    return havePrices ? mappable.filter((h) => prices[h.id] != null) : mappable;
+  }, [hotels, prices]);
   const [bounds, setBounds] = useState<LatLngBounds | null>(null);
   const shown = useMemo(
     () => (bounds ? geo.filter((h) => bounds.contains([h.lat as number, h.lng as number])) : geo),
