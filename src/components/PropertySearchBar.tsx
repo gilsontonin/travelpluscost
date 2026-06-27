@@ -44,9 +44,9 @@ export default function PropertySearchBar({ hotelName }: { hotelName: string }) 
   };
 
   return (
-    <div className="space-y-2">
-      {/* one compact row: label + quick-pick chips (keeps the gallery higher) */}
-      <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3 sm:gap-y-1.5">
+    <div className="rounded-2xl border border-black/[0.06] bg-card p-3 shadow-card sm:p-3.5">
+      {/* label + quick-pick chips — inside the card so the fields read as one search widget, not loose boxes */}
+      <div className="mb-2.5 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3 sm:gap-y-1.5">
         <span className="text-sm font-semibold text-black">Choose dates to view prices</span>
         <DateQuickPicks compact />
       </div>

@@ -275,7 +275,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
                 value={sort}
                 onChange={(e) => setSort(e.target.value as RoomSortKey)}
                 aria-label="Sort rooms"
-                className="border border-black/15 rounded-lg px-2 py-1.5 text-sm bg-white"
+                className="rounded-full border border-black/15 bg-white px-3 py-1.5 text-sm"
               >
                 {(Object.keys(ROOM_SORTS) as RoomSortKey[]).map((k) => (
                   <option key={k} value={k}>
@@ -288,7 +288,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
         </div>
 
         <RoomDateBar />
-        <DateQuickPicks className="-mt-1 mb-4" />
+        <DateQuickPicks className="mt-2.5 mb-5" />
 
         {data === null ? (
           <div className="space-y-4">
@@ -325,8 +325,8 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
                         onClick={() => setBeds(v)}
                         className={`text-sm px-3.5 py-1.5 rounded-full border transition ${
                           beds === v
-                            ? "bg-accent-tint text-accent border-accent/40 font-medium"
-                            : "border-black/20 text-black/70 hover:border-black/40"
+                            ? "border-accent/50 bg-accent-tint text-accent font-medium"
+                            : "border-black/15 text-black/70 hover:border-black/35"
                         }`}
                       >
                         {label}

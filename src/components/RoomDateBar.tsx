@@ -26,11 +26,11 @@ export default function RoomDateBar() {
   };
 
   return (
-    <div className="flex flex-wrap items-stretch gap-2 bg-[#efeff3] rounded-lg p-2 mb-4 max-w-2xl">
-      <div className="flex-1 min-w-[150px] bg-white rounded-md border border-black/[0.06]">
+    <div className="flex flex-wrap items-stretch gap-2 max-w-2xl rounded-2xl border border-black/[0.08] bg-card p-2 shadow-card">
+      <div className="flex-1 min-w-[150px] bg-white rounded-xl border border-black/[0.08]">
         <DateField checkin={checkin} checkout={checkout} onChange={(ci, co) => update({ checkin: ci, checkout: co })} />
       </div>
-      <div className="flex-1 min-w-[150px] bg-white rounded-md border border-black/[0.06]">
+      <div className="flex-1 min-w-[150px] bg-white rounded-xl border border-black/[0.08]">
         <GuestField
           adults={adults}
           rooms={rooms}

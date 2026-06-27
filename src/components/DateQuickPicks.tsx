@@ -69,7 +69,7 @@ export default function DateQuickPicks({ compact = false, className = "" }: { co
   }
 
   return (
-    <div className={`grid grid-cols-2 gap-2 sm:grid-cols-4 ${className}`}>
+    <div className={`flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden ${className}`}>
       {ranges.map((r) => {
         const active = checkin === r.checkin && checkout === r.checkout;
         return (
@@ -77,13 +77,13 @@ export default function DateQuickPicks({ compact = false, className = "" }: { co
             key={r.label}
             type="button"
             onClick={() => pick(r.checkin, r.checkout)}
-            className={`rounded-xl border px-4 py-2.5 text-center transition ${
-              active ? "border-accent bg-accent-tint" : "border-black/15 hover:border-black/35"
+            className={`shrink-0 inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3.5 py-2 text-sm transition ${
+              active ? "border-accent/50 bg-accent-tint text-accent font-medium" : "border-black/15 text-black/70 hover:border-black/35"
             }`}
           >
-            <span className="block text-sm font-semibold text-black">{r.label}</span>
-            <span className="block text-xs text-accent">
-              {fmtShort(r.checkin)} - {fmtShort(r.checkout)}
+            <span className="font-semibold">{r.label}</span>
+            <span className={`text-xs ${active ? "text-accent/80" : "text-black/45"}`}>
+              {fmtShort(r.checkin)} – {fmtShort(r.checkout)}
             </span>
           </button>
         );

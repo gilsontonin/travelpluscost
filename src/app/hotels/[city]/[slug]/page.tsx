@@ -225,8 +225,11 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
         }}
       />
 
-      {/* slim header above the photo: name + rating only (the rest moves below the gallery) */}
-      <div className="mt-4">
+      {/* gallery — the hero (Expedia/Booking pattern): photo first, the name/rating/dates sit below it */}
+      <PhotoGallery images={hotel.images} name={hotel.name} backHref={searchHref} />
+
+      {/* name + rating, directly under the photo */}
+      <div className="mt-5">
         <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight">{hotel.name}</h1>
         {hotel.rating ? (
           <div className="mt-1.5 flex items-center gap-1.5 text-sm">
@@ -240,15 +243,12 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
         ) : null}
       </div>
 
-      {/* Choose dates → prices update in the rooms section. Above the gallery, Expedia-style. */}
+      {/* Choose dates → prices update in the rooms section. */}
       <div className="mt-4">
         <Suspense fallback={<div className="h-24 rounded-xl bg-black/[0.04] animate-pulse" />}>
           <PropertySearchBar hotelName={hotel.name} />
         </Suspense>
       </div>
-
-      {/* gallery */}
-      <PhotoGallery images={hotel.images} name={hotel.name} backHref={searchHref} />
 
       {/* property details (under the photo): stars, type, address, distance */}
       <div className="mt-4">
