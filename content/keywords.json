@@ -101,6 +101,32 @@
       }
     ]
   },
+  "where-to-stay-in-sanantonio": {
+    "primary": "where to stay in san antonio",
+    "secondary": [
+      "where to stay in san antonio texas",
+      "where to stay in san antonio tx",
+      "where to stay in san antonio first time",
+      "where to stay in san antonio riverwalk",
+      "best area to stay in san antonio",
+      "where to stay in san antonio with family"
+    ],
+    "volume": 2400,
+    "kd": 38,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-27",
+    "status": "published",
+    "history": [
+      {
+        "date": "2026-06-27",
+        "action": "new post",
+        "serp_before": 42,
+        "serp_after": 84,
+        "note": "Deepest SERP yet (band ~4,788-5,257w; competitors repeat 'San Antonio' 89x / 'hotel' 38x). Built around REAL visitor areas (directory mines suburban clusters, so River Walk/downtown inventory mapped by hand): River Walk/downtown, Pearl, Southtown, near SeaWorld, Medical Center, Stone Oak, airport. Heading 100%, in band, 0 slop, 0 leaks, checklist 24/25. serp 84 = deep-SERP exec-decision (90 needs keyword-stuffing, forbidden); owner approved ship-at-84-flagged. TX cluster: links to Galveston."
+      }
+    ]
+  },
   "where-to-stay-in-galveston": {
     "primary": "where to stay in galveston",
     "secondary": [

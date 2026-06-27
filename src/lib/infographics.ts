@@ -278,6 +278,35 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Day-trip the Hill Country", detail: "Austin is ~80 miles north up I-35, and the Hill Country (Fredericksburg, New Braunfels) is an hour out for wineries and the river." },
     ],
   },
+  "sanantonio-fiesta": {
+    kind: "stat",
+    title: "Fiesta San Antonio",
+    stats: [
+      { value: "11 days", label: "the city's biggest party, every late April" },
+      { value: "1891", label: "it began as the Battle of Flowers parade" },
+      { value: "River parade", label: "floats on the water down the River Walk" },
+      { value: "Book ahead", label: "downtown sells out and rates climb for it" },
+    ],
+  },
+  "sanantonio-riverwalk-tips": {
+    kind: "steps",
+    title: "Doing the River Walk right",
+    steps: [
+      { title: "Take the barge first", detail: "The narrated river barge is the fastest way to get your bearings — do it your first night." },
+      { title: "Eat a block off the water", detail: "Riverside tables are convenient; the better food is a short walk up at the Pearl or in Southtown." },
+      { title: "Walk it early", detail: "A weekday-morning stroll before the crowds is when the River Walk is genuinely at its best." },
+    ],
+  },
+  "sanantonio-with-kids": {
+    kind: "stat",
+    title: "San Antonio with kids",
+    stats: [
+      { value: "SeaWorld", label: "plus the Aquatica water park, on the west side" },
+      { value: "Six Flags", label: "Fiesta Texas, built into an old limestone quarry" },
+      { value: "The zoo", label: "plus the DoSeum and the Japanese Tea Garden" },
+      { value: "~25 min", label: "from a downtown base to either theme park" },
+    ],
+  },
   "staugustine-by-numbers": {
     kind: "stat",
     title: "St. Augustine by the numbers",

@@ -1500,6 +1500,8 @@ A block off the river, the Plaza San Antonio (an Autograph Collection hotel) sit
 
 The River Walk is as much a place to eat as to sleep. Riverside tables run from tourist-priced Tex-Mex to a genuinely good restaurant or two, the bars pour margaritas by the pitcher, and the narrated barge tour is the easy first-night move — a little cheesy, a lot of fun, and the fastest way to get your bearings on the water. Try a weekday-morning walk before the crowds, grab a coffee on the river, and you will see why people love it down there. The Esquire Tavern, on the river since 1933, is the classic spot for a drink at a long wooden bar, and the La Villita Historic Arts Village next door is a charming block of adobe shops and a cafe or two. It is touristy, yes, and it is also genuinely lovely.
 
+::infographic sanantonio-riverwalk-tips
+
 **The move:** book the River Walk for a walkable first trip · **Best for:** first-timers, couples, no car · **Watch:** the central rooms cost more and sell out — book ahead, and ask which side faces the river.
 
 ## The Pearl and Broadway: San Antonio's Food District
@@ -1541,6 +1543,8 @@ SeaWorld San Antonio and the Aquatica water park sit on the far west side, and S
 Beyond the parks, the northwest side has its own attractions: La Cantera and the Rim are big open-air shopping-and-restaurant complexes, the Natural Bridge Caverns and a drive-through wildlife ranch sit a short way north, and the family fun runs from mini-golf to the water parks. It is all car-based and located well out from the river, but for a family chasing rides and pools, that is exactly the trade you want. A luxury splurge is on the table too — the resort up at La Cantera is the high end of this side of town.
 
 The accommodation out here is value chains and the resort-style end up at La Cantera, with comfortable rooms, on-site breakfast and a pool. The Home2 Suites by Hilton near Lackland gives families room to spread out, and offers a budget base for a no-fuss park trip.
+
+::infographic sanantonio-with-kids
 
 ::hotel lp22eaaf
 
@@ -1637,6 +1641,8 @@ Stay on the River Walk, near the Pearl or in Southtown and you can walk to most 
 ## When to Visit San Antonio and How Long to Stay
 
 **Spring and fall are the best times to visit San Antonio — mild, sunny and built for the river, before and after the brutal summer heat.** Late spring brings Fiesta, the city's 11-day April party, which is the liveliest and prettiest time to come and also the busiest and priciest, so book ahead for it. Fall cools off and quiets down, the best blend of weather and value.
+
+::infographic sanantonio-fiesta
 
 Summer is hot and humid, with afternoons in the high 90s, though the shaded river and the water parks make it bearable and the rates soften midweek. Winter is mild and the quietest, with the occasional cool snap and the River Walk lights through the holidays. A few travel tips: book downtown well ahead for Fiesta in April and for big convention weekends, plan the outdoor sights for the morning before the afternoon heat, and check the events calendar — a Spurs game or a convention can swing both the rates and the dinner wait.
 
@@ -1900,7 +1906,7 @@ Once you've weighed your options and matched an area to your trip, here are real
 | Moody Gardens Hotel | West End | 8.6 | Families, attractions |
 | Best Western Plus Suites | Seawall / value | 8.6 | Value, suites |
 
-Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end. If you're touring Texas, our guide to [where to stay in San Antonio](/blog/where-to-stay-in-sanantonio) covers the River Walk and the Alamo an hour inland.
 
 ::cta Galveston
 `,
