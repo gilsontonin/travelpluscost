@@ -49,6 +49,281 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-neworleans",
+    title: "Where to Stay in New Orleans, LA: Best Hotels (2026)",
+    description:
+      "Where to stay in New Orleans in 2026: best areas — French Quarter, CBD, Warehouse District, Marigny, Garden District — with real hotels and honest rates.",
+    excerpt:
+      "First trip or fifth? A plain-English guide to picking the right New Orleans neighborhood — by atmosphere, noise, safety, and the trip you're taking — as of 2026.",
+    tldr: {
+      answer:
+        "New Orleans splits into a handful of distinct neighborhoods. First-timers want the French Quarter for its walkable, all-in atmosphere; the CBD next door trades charm for value and quiet; the Warehouse District is for museums; the Marigny is for live music; and the Garden District is the leafy, streetcar-served escape from the noise.",
+      points: [
+        "**French Quarter** — historic, walkable, the center of it all; the first-timer base.",
+        "**CBD / Warehouse District** — modern hotels, quieter, better value, a short walk over.",
+        "**Faubourg Marigny** — Frenchmen Street's live music, local and low-key.",
+        "**Garden District / Uptown** — leafy mansions and the St. Charles streetcar.",
+        "**Skip the car** — the Quarter is walkable and parking is pricey; streetcars and rideshares cover the rest.",
+      ],
+    },
+    date: "2026-06-27",
+    updated: "2026-06-27",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/76839555.jpg",
+      alt: "The white French Quarter facade of a historic New Orleans hotel with wrought-iron balconies and flags, a horse-drawn carriage out front under a blue sky",
+      credit: { name: "Bourbon Orleans Hotel, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "What is the best area to stay in New Orleans for first-time visitors?",
+        a: "The French Quarter. It's the walkable, historic center of the city — you're steps from Jackson Square, St. Louis Cathedral, Royal Street's antiques, the best restaurants and the music, and you can leave the car behind entirely. The Central Business District next door is the quieter, better-value alternative for a first trip, still within an easy walk of everything.",
+      },
+      {
+        q: "Is the French Quarter a good place to stay, and is it noisy?",
+        a: "It's the best base for a first visit, but the noise depends entirely on the block. Bourbon Street and the few streets around it run loud and late every night; two or three blocks toward Esplanade or the river — the lower Quarter — is historic, residential and quiet. If you want the atmosphere but plan to sleep, book away from Bourbon and toward Royal, Chartres or Esplanade.",
+      },
+      {
+        q: "Where should you avoid staying in New Orleans?",
+        a: "Most visitors are happiest keeping their hotel within the tourist corridor — the French Quarter, CBD, Warehouse District, Marigny and the Garden District. Areas like parts of Central City, Tremé and the edges of Mid-City have higher crime and aren't set up for visitors, so they're not where you want a hotel. As anywhere, the bigger rule is to take a rideshare rather than walk unfamiliar blocks late at night.",
+      },
+      {
+        q: "Do you need a car in New Orleans?",
+        a: "No — and a car is more hassle than help. The French Quarter and CBD are walkable, the historic streetcars run to the Garden District and Uptown, and rideshares are cheap and quick for everything else. Hotel parking is pricey and the narrow one-way streets are a chore. Rent a car only for day trips out to the swamps or the plantations.",
+      },
+      {
+        q: "What's the best area to stay in New Orleans on a budget?",
+        a: "The Central Business District and the edges of the French Quarter have the most well-located rooms under about $130 a night, and the value climbs further if you base in Mid-City or Uptown and ride the streetcar in. Rates swing hard with the calendar, though — a cheap weekend can triple over Mardi Gras or Jazz Fest, so search your exact dates.",
+      },
+      {
+        q: "Which is better, the French Quarter or the Garden District?",
+        a: "It depends on the trip. The French Quarter puts you in the middle of the action — the music, the food, the history — at the cost of noise and crowds. The Garden District is the opposite: leafy, residential, lined with mansions and Magazine Street's shops, calm at night, but a 15-minute streetcar ride from the Quarter. First-timers usually want the Quarter; repeat visitors often prefer the Garden District.",
+      },
+      {
+        q: "When is the best time to visit New Orleans?",
+        a: "Spring and fall — roughly February through May and October through early December — bring the best weather and the festival calendar (Mardi Gras, French Quarter Fest, Jazz Fest), though the marquee events spike prices and crowds. Summer is hot, humid and stormy, with the lowest rates, and hurricane season runs June through November. For mild weather without a major event, aim for late October or November.",
+      },
+      {
+        q: "How many days do you need in New Orleans?",
+        a: "Three to four days is the sweet spot: enough for the French Quarter, a music night on Frenchmen Street, the Garden District and the WWII Museum, plus a swamp tour or a long lunch without rushing. Two nights covers the headline food and the Quarter; a longer stay lets you add the plantations, City Park or a second-line Sunday.",
+      },
+    ],
+    body: `**Where to stay in New Orleans comes down to the French Quarter if it's your first trip** — the walkable, historic heart of the city, where the food, the music and the centuries-old architecture are all a short stroll from your door. New Orleans is a city of distinct neighborhoods, and each one is a different version of the trip: the nonstop Quarter, the quieter business district beside it, the museum-and-gallery Warehouse District, the live-music Marigny, and the leafy, mansion-lined Garden District a streetcar ride away.
+
+Below are the real, bookable hotels in each area, then the honest guide to where to stay in New Orleans, Louisiana, as of 2026.
+
+One thing to know up front: you don't want a car here. The Quarter is walkable, parking is pricey and scarce, and the historic streetcars and rideshares handle the rest. Pick a central base and you'll spend your time eating and listening, not circling the block for a spot.
+
+## New Orleans Hotels by Area, at a Glance
+
+The deciding factor is how much music and chaos you want at your doorstep versus how much calm — and, in the Quarter especially, which exact block you book. These are the areas most visitors stay in, each a different kind of trip in one of the oldest cities in the United States. Compare your options below, then pick the hotel — they're all fairly central in the Crescent City, so the real choice is feel, not distance.
+
+::areas New Orleans
+
+| Area | The feel | Best for | The rate |
+|---|---|---|---|
+| [French Quarter](/search?destination=New%20Orleans&adults=2) | Historic, lively, walkable | First-timers, atmosphere, food | Mid to high |
+| [Central Business District](/search?destination=New%20Orleans&adults=2) | Modern, central, quieter | Value, conventions, easy walking | Low to high |
+| [Warehouse / Arts District](/search?destination=New%20Orleans&adults=2) | Galleries, museums, lofts | Museum-goers, couples, art | Mid to high |
+| [Faubourg Marigny](/search?destination=New%20Orleans&adults=2) | Bohemian, live music, local | Music lovers, a non-touristy stay | Low to mid |
+| [Garden District / Uptown](/search?destination=New%20Orleans&adults=2) | Leafy, mansions, the streetcar | Calm, couples, repeat visitors | Mid |
+
+::infographic nola-by-numbers
+
+[See every New Orleans hotel and its live nightly price](/search?destination=New%20Orleans&adults=2)
+
+## The French Quarter: Where to Stay in New Orleans for a First Time Visit
+
+**The French Quarter is where to stay in New Orleans for a first visit — the walkable, 300-year-old heart of the city, steps from Jackson Square, the best restaurants, Royal Street's galleries and all the music.** It's the postcard you came for, and you can leave the car behind the moment you arrive.
+
+This is the easy, all-in base for first-timers who want the city at their door. Jackson Square and St. Louis Cathedral anchor it, Royal Street handles the antiques and the art, and the restaurants run from po-boy counters to white-tablecloth institutions. Almost everything is within walking distance — you can eat beignets at Cafe du Monde, browse the galleries, and catch live music without ever starting a car. The honest trade-off is noise: Bourbon Street runs loud and late every night of the week, so the exact block matters — book toward Royal, Chartres or Esplanade if you intend to sleep.
+
+The Quarter also has the city's deepest run of historic boutique hotels — courtyard properties and old Creole townhouses where the building is half the experience — so it's as much about the address as the room.
+
+::rail French Quarter
+
+[See French Quarter hotels and live rates](/search?destination=New%20Orleans&adults=2)
+
+### Hotel Monteleone, the Royal Sonesta and the Quarter Classics
+
+The Hotel Monteleone is the grande dame of the Quarter, a literary landmark with the slowly revolving Carousel Bar and a rooftop pool. The Royal Sonesta sits right on Bourbon Street with a courtyard that hides from the noise, and the Omni Royal Orleans is the classic corner of Royal and St. Louis, with a rooftop pool and a serious restaurant. For charm at a gentler rate, the French Market Inn is a tucked-away courtyard hotel in the quieter lower Quarter.
+
+::hotel lp6583c58d
+
+::hotel lp1c186
+
+::hotel lp1c54f
+
+::hotel lp1da18
+
+**The move:** book the French Quarter for your first trip, walkability and atmosphere · **Best for:** first-timers, food, music, no-car trips · **Watch:** the Bourbon Street blocks are loud — book toward Royal, Chartres or Esplanade to sleep.
+
+## The Central Business District: Quieter, Central and Better Value
+
+**The Central Business District is where to stay in New Orleans for a quieter, better-value base a short walk from the Quarter — the city's downtown, lined with modern full-service hotels and crossed by the Canal Street streetcars.** It knocks on the door of the French Quarter while giving you calm at night and rooms that tend to run a notch cheaper.
+
+This is the practical pick for value, conventions, and anyone who wants a newer room with the action a few blocks away. Canal Street separates it from the Quarter, the streetcar lines all meet here for easy access to the rest of the city, and the Caesars casino, the aquarium and the riverfront are right there. The trade is character — the CBD is more big-city than storybook — but you're never more than a ten-minute walk from the history.
+
+[Browse CBD and downtown hotels](/search?destination=New%20Orleans&adults=2)
+
+### NOPSI, the Roosevelt and the Downtown Hotels
+
+The NOPSI Hotel, in a beautifully restored 1920s power-company building, is the standout here, with a rooftop pool and bar over downtown. The Roosevelt New Orleans, a Waldorf Astoria, is the grand old marble landmark with the famous Sazerac Bar, and the Drury Plaza is the well-reviewed value pick with free evening drinks and a rooftop pool.
+
+::hotel lpa440f
+
+::hotel lp4c753
+
+::hotel lp29527
+
+::infographic nola-fq-vs-cbd
+
+**The move:** book the CBD for value, calm and a modern room · **Best for:** value, conventions, walkers · **Watch:** it's more business district than storybook — you walk to the charm.
+
+## The Warehouse and Arts District: Museums, Galleries and Lofts
+
+**The Warehouse and Arts District is where to stay in New Orleans for museums, art galleries and a more grown-up downtown stay — a walkable stretch of converted warehouses just upriver from the CBD.** It's home to the National WWII Museum and a row of contemporary galleries along Julia Street, and it's within walking distance of both the Quarter and the convention center.
+
+This is the pick for museum-goers, couples and art lovers who want culture over chaos. The galleries, the Ogden and Contemporary Arts Center, and some of the city's best newer restaurants are all here, and the loft-style hotels match the neighborhood's industrial-chic feel. The trade-off is that it's quieter at night — a feature if you came for the museums, a miss if you came for the bars.
+
+[Search Warehouse and Arts District stays](/search?destination=New%20Orleans&adults=2)
+
+### Cambria Warehouse District and the Loft Hotels
+
+The Cambria Hotel New Orleans Downtown Warehouse District is the well-reviewed, modern base in the thick of the galleries, walkable to the WWII Museum. Roami at Factors Row offers apartment-style suites in a converted Warehouse District building — a good fit for families or longer stays that want a kitchen and more space.
+
+::hotel lpaf047
+
+::hotel lp9e46d
+
+**The move:** base in the Warehouse District for museums, galleries and calm · **Best for:** museum-goers, couples, longer stays · **Watch:** it's quiet after dark — the music is a short walk or ride away.
+
+## Faubourg Marigny and Frenchmen Street: the Local Music Scene
+
+**Faubourg Marigny is where to stay in New Orleans for live music and a local, non-touristy feel — the bohemian neighborhood just downriver of the Quarter, built around Frenchmen Street's row of jazz clubs.** It's where New Orleanians go to hear music, and it's a short walk from the French Quarter without the Bourbon Street circus.
+
+This is the pick for music lovers and repeat visitors who want the real thing over the souvenir version. Frenchmen Street's clubs run live jazz and brass every night — the Spotted Cat, Snug Harbor and d.b.a. among them — and a late-night art market sets up along the sidewalk. The Creole cottages are postcard-pretty, and the whole area feels like a neighborhood rather than an attraction. Hotels are few here — it leans to guesthouses and B&Bs — so the Hotel Provincial, on the quiet Esplanade edge of the Quarter, is the practical base within a few minutes' walk of Frenchmen.
+
+::hotel lp27f5e
+
+[Search Marigny and lower Quarter stays](/search?destination=New%20Orleans&adults=2)
+
+**The move:** base near the Marigny for live music and a local feel · **Best for:** music lovers, repeat visitors, walkers · **Watch:** few hotels — book the lower Quarter edge and walk to Frenchmen Street.
+
+## The Garden District and Uptown: Mansions, Magazine Street and the Streetcar
+
+**The Garden District is where to stay in New Orleans for a calm, leafy escape — the elegant, residential neighborhood of antebellum mansions, lush gardens and oak-lined streets, reached by the historic St. Charles streetcar.** It trades the Quarter's noise for quiet, with Magazine Street's shops and restaurants a few blocks over.
+
+This is the pick for couples, repeat visitors and anyone who wants to sleep. The St. Charles Avenue streetcar — running since the 1830s — rolls past the mansions to the Quarter in about 15 minutes, Magazine Street runs six miles of boutiques, coffee and po-boys, and Audubon Park and the universities sit further Uptown. Commander's Palace, the city's grande-dame restaurant, and Lafayette Cemetery's above-ground tombs are the landmarks here. The trade-off is distance: you're a streetcar ride from the action, which is exactly the point for some travelers and a dealbreaker for others.
+
+[See Garden District and Uptown stays](/search?destination=New%20Orleans&adults=2)
+
+### Alder Hotel Uptown and the St. Charles Stays
+
+The Alder Hotel, Uptown near the universities and the streetcar, is the well-reviewed, value-friendly base for a quieter stay. Closer in, the St. Charles Coach House sits right on the streetcar line in the Lower Garden District, an easy roll to both the mansions and downtown.
+
+::hotel lpaf414
+
+::hotel lp21a0c
+
+**The move:** base in the Garden District for calm, mansions and the streetcar · **Best for:** couples, repeat visitors, a quiet stay · **Watch:** you're a 15-minute streetcar ride from the Quarter — calm by design.
+
+## Bayou St. John, City Park and Mid-City
+
+**Bayou St. John and Mid-City are where to stay in New Orleans for a quiet, local base near City Park — a leafy, residential pocket a streetcar or rideshare from the Quarter.** Hotels are few out here, so it's a pick for repeat visitors and longer stays rather than a first trip, but the trade is real local life and lower rates.
+
+City Park is the draw — larger than Central Park, with ancient live oaks, the sculpture gardens, and the New Orleans Museum of Art at its edge. The Canal Street streetcar runs out from downtown, the bayou itself is a calm spot for a paddle or a jog, and the Mid-City restaurants are where locals eat. The honest catch is distance and easy access: you're a ride from the Quarter's music and the CBD's hotels, so weigh the calm against the commute.
+
+[Search Mid-City and City Park stays](/search?destination=New%20Orleans&adults=2)
+
+## Where Not to Stay in New Orleans, and Staying Safe
+
+**The honest answer is to keep your hotel inside the tourist corridor — the French Quarter, CBD, Warehouse District, Marigny and the Garden District — and treat the rest as places to visit by day, not sleep.** Parts of Central City, Tremé and the edges of Mid-City have higher crime and aren't set up for visitors, so a too-cheap room outside the corridor is usually cheap for a reason.
+
+This isn't about fear — the tourist neighborhoods are well-trafficked and fine with normal city sense. But New Orleans is a real city with real crime away from the corridor, the difference can be a few blocks, and even in the Quarter the smart move after a late night is a rideshare, not a long walk. Pin the exact address before you book, and when a downtown rate looks too good to be true, check the cross streets first.
+
+[Search central New Orleans hotels by exact location](/search?destination=New%20Orleans&adults=2)
+
+## The Best Area for Your Trip
+
+**For a first trip, choose the French Quarter and don't overthink it — it's the walkable heart of the city, with the food, the music and the history at your door.** Pick the CBD for value and quiet, the Warehouse District for museums, the Marigny for live music, and the Garden District for a calm, leafy base.
+
+| Your trip | Best area | Why |
+|---|---|---|
+| First visit, atmosphere | French Quarter | Walkable, historic, the center of it all |
+| Value and a quiet night | CBD | Modern rooms, a short walk to the Quarter |
+| Museums and galleries | Warehouse / Arts | The WWII Museum and Julia Street |
+| Live music, local feel | Faubourg Marigny | Frenchmen Street's jazz clubs |
+| Calm, couples, repeat trip | Garden District | Mansions, Magazine Street, the streetcar |
+
+Once you've matched an area to your trip, here are real, well-reviewed New Orleans hotels across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Chateau Hotel | French Quarter | 9.6 | Courtyard value |
+| Alder Hotel | Uptown | 9.4 | A quiet, leafy base |
+| Cambria Warehouse District | Warehouse | 9.4 | Museums and galleries |
+| NOPSI Hotel | CBD | 9.2 | A rooftop-pool landmark |
+| Hotel Monteleone | French Quarter | 9.2 | The historic grande dame |
+| Drury Plaza | CBD | 9.2 | Central value |
+| The Royal Sonesta | French Quarter | 9.0 | Right on Bourbon Street |
+
+[Compare every New Orleans hotel by area and price](/search?destination=New%20Orleans&adults=2)
+
+## How Many Days, and a First-Timer's New Orleans
+
+**Give New Orleans three to four days — enough for the French Quarter, a music night, the Garden District and a museum, plus the food, which is the real reason to come.** Two nights covers the headline sights and a couple of great meals; a longer stay adds a swamp tour, the plantations, or a lazy second-line Sunday.
+
+Here's the first-timer template: spend day one in the French Quarter — beignets at Cafe du Monde, Jackson Square, lunch at a classic like Galatoire's or a corner po-boy counter, and the evening on Frenchmen Street for live jazz. Give day two to the Garden District by streetcar — the mansions, Magazine Street, and dinner at Commander's Palace — then the WWII Museum back in the Warehouse District. Keep day three for whatever you love most: a swamp tour, the City Park sculpture garden, a cemetery tour, or simply more eating, which is a legitimate itinerary here.
+
+The local tip: pace the food and the heat. Lunch is the smart move for the famous restaurants — cheaper, and easier to get a table — the hot afternoon is for a break indoors, and the city comes alive again after dark, so plan to nap like you mean it.
+
+[Find a central base for your New Orleans trip](/search?destination=New%20Orleans&adults=2)
+
+## When to Visit New Orleans
+
+**The best time to visit New Orleans is spring and fall — roughly February through May and October into December — when the weather is mild and the festival calendar is full.** Just know that the marquee events come with marquee prices.
+
+Mardi Gras (the weeks before Lent), French Quarter Fest in April and Jazz Fest in late April and early May are the headline parties, and hotels around them book out months ahead and charge accordingly. Mardi Gras itself isn't one day but a two-week parade season that ends on Fat Tuesday, and the date shifts with Easter, so check the calendar before you book.
+
+The free French Quarter Fest is the locals' favorite, and Halloween and the December Reveillon dinners are quieter, festive alternatives. Summer, June through August, is hot, wet and stormy — genuinely tropical heat and humidity — but it brings the lowest rates if you can take the weather, and hurricane season runs June through November. For the best balance of mild days, real local life and no event surge, aim for late October or November.
+
+[Search New Orleans hotels for your travel dates](/search?destination=New%20Orleans&adults=2)
+
+## Getting Around New Orleans
+
+**New Orleans is a walking-and-streetcar city, so skip the rental car — the French Quarter is walkable, the historic streetcars cover the Garden District, and rideshares handle the late nights.** Louis Armstrong airport (MSY) is about 30 minutes from downtown by rideshare or the airport shuttle, and you won't need a car once you're in.
+
+A central base is the whole game, because it keeps the music and the food within a stroll. The St. Charles streetcar rolls to the Garden District and Uptown, the Canal and Riverfront lines cover downtown and the river, and rideshares are cheap and quick for anything the rails miss.
+
+The St. Charles line, running since 1835, is the oldest continuously operating streetcar in the United States and a sightseeing ride in its own right — and yes, the to-go cup is legal here, so a drink can ride along. A short ferry also crosses the river to Algiers Point for a free skyline view. Walking the Quarter is the point, but watch the uneven sidewalks, and after a late night on Frenchmen or Bourbon, take a rideshare back rather than a long walk. Rent a car only for a day trip out to the swamps, the plantations or the Northshore.
+
+::infographic nola-getting-around
+
+[Find a central New Orleans base near the streetcar](/search?destination=New%20Orleans&adults=2)
+
+## What a Night in New Orleans Costs
+
+**New Orleans is a mid-priced hotel city most of the year — a solid central room often runs in the $120-200 range — but the calendar is everything, and a Mardi Gras or Jazz Fest weekend can double or triple it.** Outside the big events, rates are reasonable for a major destination, and the CBD and the Quarter's edges are where the central value sits.
+
+Weekdays and the quieter summer weeks bring the best value, and the festival weekends bring the worst — book those months ahead or skip them. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live New Orleans prices](/search?destination=New%20Orleans&adults=2)
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end. Browse the full [New Orleans hotels hub](/hotels/new-orleans) for every property, and if the South has you planning more, our guide to [where to stay in Savannah](/blog/where-to-stay-in-savannah) is a fine next stop east.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "where-to-stay-in-sanfrancisco",
     title: "Where to Stay in San Francisco, CA: Best Hotels (2026)",
     description:
@@ -860,7 +1135,7 @@ Once you've matched an area to your trip, here are real, well-reviewed Savannah 
 | Andaz Savannah | Ellis Square | 9.0 | Central boutique |
 | Embassy Suites Historic District | Historic District | 9.0 | Family suites |
 
-Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end. Planning more of the South? Our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) breaks down the Big Easy the same way.
 
 ::cta Savannah
 `,

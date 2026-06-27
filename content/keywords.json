@@ -1,4 +1,32 @@
 {
+  "where-to-stay-in-neworleans": {
+    "primary": "where to stay in new orleans",
+    "secondary": [
+      "where to stay in new orleans first time",
+      "where to stay in new orleans french quarter",
+      "where not to stay in new orleans",
+      "where to stay in new orleans on a budget",
+      "where to stay in new orleans with family",
+      "best area to stay in new orleans",
+      "where to stay in new orleans garden district",
+      "where to stay in new orleans for mardi gras"
+    ],
+    "volume": 3600,
+    "kd": 32,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-27",
+    "status": "published",
+    "history": [
+      {
+        "date": "2026-06-27",
+        "action": "new post",
+        "serp_before": 82,
+        "serp_after": 90,
+        "note": "Tractable band (3,332-4,417w; competitors are normal 2.2-5.1k neighborhood guides, not SF-style mega-guides) so it genuinely CLEARED 90 (not an exec-decision). Heading lever to 100% via the 'first time' heading fix + per-area H3s; body lifted with real specifics (Frenchmen St clubs, the festival calendar, the 1835 St. Charles streetcar, City Park/NOMA, the food/itinerary section). Areas: French Quarter / CBD / Warehouse-Arts / Faubourg Marigny / Garden District-Uptown / Bayou St. John-City Park, + the honest where-NOT-to-stay (Central City/Treme/Mid-City edges, Bourbon at night). 12 rate-verified cards, 4 infographics. Cover = Bourbon Orleans French Quarter facade. Score plateaued at 90 (body length-capped) at ~3,130w. SOUTH cluster: links to/from Savannah."
+      }
+    ]
+  },
   "where-to-stay-in-sanfrancisco": {
     "primary": "where to stay in san francisco",
     "secondary": [

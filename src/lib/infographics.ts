@@ -369,6 +369,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { label: "The trade", left: "Some blocks fray toward the Tenderloin edge", right: "Pricey and crowded, and quiet after dark" },
     ],
   },
+  "nola-by-numbers": {
+    kind: "stat",
+    title: "New Orleans by the numbers",
+    stats: [
+      { value: "1718", label: "founded — the French Quarter is the original city" },
+      { value: "French Quarter", label: "the central, walkable base for a first trip" },
+      { value: "Streetcars", label: "the St. Charles line runs to the Garden District" },
+      { value: "Mardi Gras", label: "and Jazz Fest — book months ahead and pay up" },
+    ],
+  },
+  "nola-fq-vs-cbd": {
+    kind: "compare",
+    title: "French Quarter or the CBD?",
+    left: "French Quarter",
+    right: "Central Business District",
+    rows: [
+      { label: "Best for", left: "First-timers, atmosphere, walking", right: "Quiet, value, conventions" },
+      { label: "The feel", left: "Historic, lively, loud", right: "Modern hotels, calm, central" },
+      { label: "At night", left: "Bourbon Street never sleeps", right: "Quiet — a few blocks from the action" },
+      { label: "The trade", left: "Pricey and noisy on the wrong block", right: "Less charm, a short walk to it" },
+    ],
+  },
+  "nola-getting-around": {
+    kind: "steps",
+    title: "Getting to (and around) New Orleans",
+    steps: [
+      { title: "Fly into MSY", detail: "Louis Armstrong airport is about 30 minutes from downtown by rideshare or airport shuttle — no rental car needed for a city trip." },
+      { title: "Skip the car", detail: "The French Quarter is walkable and parking is pricey and scarce; a car is a liability on the narrow one-way streets. Rent only for swamp tours or plantations." },
+      { title: "Streetcars and rideshare", detail: "The historic St. Charles line runs to the Garden District and Uptown; the Canal and Riverfront lines cover downtown; rideshares fill the late-night gaps." },
+    ],
+  },
   "staugustine-by-numbers": {
     kind: "stat",
     title: "St. Augustine by the numbers",
