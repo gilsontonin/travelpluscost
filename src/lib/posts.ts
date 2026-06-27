@@ -50,7 +50,7 @@ export interface Post {
 export const POSTS: Post[] = [
   {
     slug: "where-to-stay-in-scottsdale",
-    title: "Where to Stay in Scottsdale, AZ: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Scottsdale, AZ: Best Hotels (2026)",
     description:
       "Where to stay in Scottsdale, AZ in 2026: best areas — Old Town, Camelback/Paradise Valley, North Scottsdale and beyond — with real hotels and honest rates.",
     excerpt:
@@ -273,7 +273,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-savannah",
-    title: "Where to Stay in Savannah, GA: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Savannah, GA: Best Hotels (2026)",
     description:
       "Where to stay in Savannah, GA in 2026: best areas — the Historic District, River Street, Plant Riverside and Midtown — with real hotels and honest rates.",
     excerpt:
@@ -545,7 +545,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-charleston",
-    title: "Where to Stay in Charleston, SC: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Charleston, SC: Best Hotels (2026)",
     description:
       "Where to stay in Charleston, SC in 2026: best areas — the French Quarter, King Street, Mount Pleasant and the beaches — with real hotels and honest rates.",
     excerpt:
@@ -782,7 +782,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-staugustine",
-    title: "Where to Stay in Saint Augustine, FL: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Saint Augustine, FL: Best Hotels (2026)",
     description:
       "Where to stay in Saint Augustine, FL in 2026: best areas — Historic District, Anastasia Island, Vilano Beach — plus Nights of Lights tips and honest rates.",
     excerpt:
@@ -1067,7 +1067,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-albuquerque",
-    title: "Where to Stay in Albuquerque, NM: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Albuquerque, NM: Best Hotels (2026)",
     description:
       "Where to stay in Albuquerque, NM in 2026: best areas — Old Town, Downtown, Nob Hill, Uptown and near the Balloon Fiesta — with real hotels and honest rates.",
     excerpt:
@@ -1385,7 +1385,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-kauai",
-    title: "Where to Stay in Kauai, Hawaii: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Kauai, Hawaii: Best Hotels (2026)",
     description:
       "Where to stay in Kauai in 2026: the best areas — sunny Poipu, the green North Shore, the central East Side and Lihue — with real hotels and honest rates.",
     excerpt:
@@ -1729,7 +1729,7 @@ Whichever side wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-sanantonio",
-    title: "Where to Stay in San Antonio, TX: Best Areas & Hotels (2026)",
+    title: "Where to Stay in San Antonio, TX: Best Hotels (2026)",
     description:
       "Where to stay in San Antonio, TX in 2026: best areas — the River Walk, the Pearl, Southtown, near SeaWorld and Stone Oak — with real hotels and honest rates.",
     excerpt:
@@ -2072,7 +2072,7 @@ Whichever of the neighborhoods mentioned here wins, the price you book on any Sa
   },
   {
     slug: "where-to-stay-in-galveston",
-    title: "Where to Stay in Galveston, TX: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Galveston, TX: Best Hotels (2026)",
     description:
       "Where to stay in Galveston, TX in 2026: best areas — the Seawall, the Strand, Moody Gardens and the cruise port — with real hotels and honest rates.",
     excerpt:
@@ -2257,7 +2257,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-tucson",
-    title: "Where to Stay in Tucson, AZ: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Tucson, AZ: Best Hotels (2026)",
     description:
       "Where to stay in Tucson, AZ in 2026: best areas — Downtown, the Catalina Foothills, the University and the airport — with real hotels and honest rates.",
     excerpt:
@@ -2446,7 +2446,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-flagstaff",
-    title: "Where to Stay in Flagstaff, AZ: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Flagstaff, AZ: Best Hotels (2026)",
     description:
       "Where to stay in Flagstaff, AZ in 2026: best areas — Downtown/Route 66, the highway strip, Little America and the pines — with real hotels and honest rates.",
     excerpt:
@@ -2627,7 +2627,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-santabarbara",
-    title: "Where to Stay in Santa Barbara, CA: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Santa Barbara, CA: Best Hotels (2026)",
     description:
       "Where to stay in Santa Barbara, CA in 2026: best areas — Waterfront, Downtown/State Street, the Riviera, Montecito, Goleta — with real hotels and honest rates.",
     excerpt:
@@ -2849,7 +2849,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-keywest",
-    title: "Where to Stay in Key West, FL: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Key West, FL: Best Hotels (2026)",
     description:
       "Where to stay in Key West, FL in 2026: best areas — Old Town, Duval Street, Truman Annex, New Town, Stock Island — with real hotels and honest, flat-fee rates.",
     excerpt:
@@ -3061,7 +3061,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
   },
   {
     slug: "where-to-stay-in-telluride",
-    title: "Where to Stay in Telluride, Colorado: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Telluride, Colorado: Best Hotels (2026)",
     description:
       "Where to stay in Telluride in 2026: best areas — historic town vs ski-in/ski-out Mountain Village, with real hotels and honest rates.",
     excerpt:
@@ -3287,7 +3287,7 @@ So weighing the town against Mountain Village is a fair comparison: no fake disc
   },
   {
     slug: "where-to-stay-in-branson",
-    title: "Where to Stay in Branson, MO: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Branson, MO: Best Hotels (2026)",
     description:
       "Where to stay in Branson, MO in 2026: best areas — Highway 76, Branson Landing, Table Rock Lake, Thousand Hills — with real hotels and honest rates.",
     excerpt:
@@ -3544,7 +3544,7 @@ Once you've picked your side of town, [search current Branson prices](/search?de
   },
   {
     slug: "where-to-stay-in-wisconsindells",
-    title: "Where to Stay in Wisconsin Dells, WI: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Wisconsin Dells, WI: Best Hotels (2026)",
     description:
       "Where to stay in Wisconsin Dells, WI in 2026: best areas — downtown, Lake Delton and near the waterparks — with real hotels and honest, all-in rates.",
     excerpt:
@@ -3790,7 +3790,7 @@ Once you've picked your side of town, [search current Wisconsin Dells prices](/s
   },
   {
     slug: "where-to-stay-in-bend",
-    title: "Where to Stay in Bend, Oregon: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Bend, Oregon: Best Hotels (2026)",
     description:
       "Where to stay in Bend, Oregon in 2026: the best areas (Downtown, the Old Mill District, the Westside near Mount Bachelor) with real hotels and honest rates.",
     excerpt:
@@ -4017,7 +4017,7 @@ Once you've picked your side of town, [search current Bend prices](/search?desti
   },
   {
     slug: "where-to-stay-in-sedona",
-    title: "Where to Stay in Sedona, Arizona: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Sedona, Arizona: Best Hotels (2026)",
     description:
       "Where to stay in Sedona, Arizona in 2026: the best areas (Uptown, West Sedona, the Village of Oak Creek, Oak Creek Canyon) with real hotels and honest rates.",
     excerpt:
@@ -4300,7 +4300,7 @@ Once you've picked your side of the red rocks, [search current Sedona prices](/s
   },
   {
     slug: "where-to-stay-in-asheville",
-    title: "Where to Stay in Asheville, NC: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Asheville, NC: Best Hotels (2026)",
     description:
       "Where to stay in Asheville, NC in 2026: the best areas (Downtown, Biltmore Village, the Blue Ridge Parkway side) with real hotels and honest rates.",
     excerpt:
@@ -4556,9 +4556,9 @@ Once you've picked your side of town, [search current Asheville prices](/search?
   },
   {
     slug: "where-to-stay-in-estespark",
-    title: "Where to Stay in Estes Park, Colorado: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Estes Park, Colorado: Best Hotels (2026)",
     description:
-      "Where to stay in Estes Park, Colorado in 2026: best areas — downtown, Fall River and near Rocky Mountain National Park — with real hotels and honest, all-in rates.",
+      "Where to stay in Estes Park, Colorado in 2026: best areas — downtown, Fall River and near Rocky Mountain National Park — with real hotels and honest rates.",
     excerpt:
       "The walkable downtown or the park gateway? A plain-English guide to picking your Estes Park base — by area, budget and how close you want to be to Rocky Mountain National Park.",
     tldr: {
@@ -4739,7 +4739,7 @@ Once you've picked your side of town, [check current Estes Park prices](/search?
   },
   {
     slug: "where-to-stay-in-moab",
-    title: "Where to Stay in Moab, Utah: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Moab, Utah: Best Hotels (2026)",
     description:
       "Where to stay in Moab, Utah in 2026: best areas — downtown, near Arches, and the Colorado River resorts — with real hotels and honest, all-in rates.",
     excerpt:
@@ -5453,7 +5453,7 @@ And if you change one habit after reading this: before you book anything, check 
   },
   {
     slug: "where-to-stay-in-oahu",
-    title: "Where to Stay in Oahu: Best Areas & Hotels (2026)",
+    title: "Where to Stay in Oahu: Best Hotels (2026)",
     description:
       "Where to stay in Oahu in 2026: best areas — Waikiki, Ko Olina, North Shore, Kailua — with real hotels and honest rates, matched to your trip.",
     excerpt:
