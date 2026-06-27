@@ -1,33 +1,22 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import DestinationField from "@/components/DestinationField";
 import DateField from "@/components/DateField";
 import GuestField from "@/components/GuestField";
 import DateQuickPicks from "@/components/DateQuickPicks";
+import { useStay } from "@/lib/useStay";
 
 // Property-page search bar (Expedia-style): Where to (prefilled with THIS hotel) · Dates · Travelers · Search.
 // Date/guest edits update the URL params live, so RoomsPanel re-prices instantly. Search jumps to the rooms
 // when the destination is unchanged, or runs a fresh search if the guest typed a different place.
 export default function PropertySearchBar({ hotelName }: { hotelName: string }) {
   const router = useRouter();
-  const pathname = usePathname();
-  const sp = useSearchParams();
-  const checkin = sp.get("checkin") ?? "";
-  const checkout = sp.get("checkout") ?? "";
-  const adults = parseInt(sp.get("adults") ?? "2", 10);
+  const { checkin, checkout, adults: adultsStr, update } = useStay();
+  const adults = parseInt(adultsStr || "2", 10);
   const [dest, setDest] = useState(hotelName);
   const [rooms, setRooms] = useState(1);
-
-  const update = (patch: Record<string, string>) => {
-    const q = new URLSearchParams(sp.toString());
-    for (const [k, v] of Object.entries(patch)) {
-      if (v) q.set(k, v);
-      else q.delete(k);
-    }
-    router.replace(`${pathname}?${q.toString()}`, { scroll: false });
-  };
 
   const onSearch = () => {
     const d = dest.trim();

@@ -1,29 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import DateField from "@/components/DateField";
 import GuestField from "@/components/GuestField";
+import { useStay } from "@/lib/useStay";
 
-// Lets the guest change dates/occupancy on the property page (updates the URL query →
-// RoomsPanel reads it via useSearchParams and re-fetches rates). No trip back to search.
+// Lets the guest change dates/occupancy on the property page. Writes via useStay (history.replaceState,
+// not router navigation) → RoomsPanel re-prices instantly with no scroll-jump back to the top.
 export default function RoomDateBar() {
-  const router = useRouter();
-  const pathname = usePathname();
-  const sp = useSearchParams();
-  const checkin = sp.get("checkin") ?? "";
-  const checkout = sp.get("checkout") ?? "";
-  const adults = parseInt(sp.get("adults") ?? "2", 10);
+  const { checkin, checkout, adults: adultsStr, update } = useStay();
+  const adults = parseInt(adultsStr || "2", 10);
   const [rooms, setRooms] = useState(1);
-
-  const update = (patch: Record<string, string>) => {
-    const q = new URLSearchParams(sp.toString());
-    for (const [k, v] of Object.entries(patch)) {
-      if (v) q.set(k, v);
-      else q.delete(k);
-    }
-    router.replace(`${pathname}?${q.toString()}`, { scroll: false });
-  };
 
   return (
     <div className="flex flex-wrap items-stretch gap-2 max-w-2xl rounded-2xl border border-black/[0.08] bg-card p-2 shadow-card">

@@ -1,23 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { money } from "@/lib/format";
+import { useStay } from "@/lib/useStay";
 
 // Compact price + booking CTA high on the page (fills the valuable top space, esp. on mobile where
 // there's no sticky desktop sidebar yet). Fetches the cheapest live rate; scrolls to the rooms.
 export default function PriceCta({ hotelId }: { hotelId: string }) {
-  const sp = useSearchParams();
+  const { checkin, checkout, adults } = useStay();
   const [p, setP] = useState<{ perNight: number; allIn: number; currency: string } | null>(null);
   const [done, setDone] = useState(false);
 
   useEffect(() => {
     let on = true;
-    const q = new URLSearchParams({ hotelId, adults: sp.get("adults") ?? "2" });
-    const ci = sp.get("checkin");
-    const co = sp.get("checkout");
-    if (ci) q.set("checkin", ci);
-    if (co) q.set("checkout", co);
+    const q = new URLSearchParams({ hotelId, adults: adults || "2" });
+    if (checkin) q.set("checkin", checkin);
+    if (checkout) q.set("checkout", checkout);
     fetch(`/api/rooms?${q.toString()}`)
       .then((r) => r.json())
       .then((d) => {
@@ -33,7 +31,7 @@ export default function PriceCta({ hotelId }: { hotelId: string }) {
     return () => {
       on = false;
     };
-  }, [hotelId, sp]);
+  }, [hotelId, checkin, checkout, adults]);
 
   return (
     <div className="mt-5 flex items-center justify-between gap-3 rounded-xl border border-accent/20 bg-accent-tint/40 p-4">

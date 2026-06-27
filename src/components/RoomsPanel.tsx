@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import CardCarousel from "@/components/CardCarousel";
 import AmenityIcon from "@/components/AmenityIcon";
 import RoomDateBar from "@/components/RoomDateBar";
 import DateQuickPicks from "@/components/DateQuickPicks";
 import { money } from "@/lib/format";
+import { useStay } from "@/lib/useStay";
 import type { RoomOffer } from "@/lib/rates";
 
 type RoomSortKey = "price_asc" | "price_desc" | "sleeps" | "size";
@@ -201,13 +201,15 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
 }
 
 export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: string }) {
-  const sp = useSearchParams();
-  const checkin = sp.get("checkin") ?? "";
-  const checkout = sp.get("checkout") ?? "";
-  const adults = sp.get("adults") ?? "2";
+  const { checkin, checkout, adults } = useStay();
   const [data, setData] = useState<RoomsData | null>(null);
   const [beds, setBeds] = useState<"all" | "1" | "2" | "3">("all");
   const [scrolled, setScrolled] = useState(false);
+  // Derived loading flag: we're "loading" whenever the rooms we last loaded don't match the params we want
+  // now. No setState-in-effect, and it flips to true on the SAME render the dates change → instant feedback.
+  const reqSig = `${hotelId}|${checkin}|${checkout}|${adults}`;
+  const [loadedSig, setLoadedSig] = useState<string | null>(null);
+  const loading = loadedSig !== reqSig;
 
   // Sticky CTA appears once you scroll past the hero (Expedia pattern).
   useEffect(() => {
@@ -219,16 +221,23 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
 
   useEffect(() => {
     let on = true;
+    const loadSig = `${hotelId}|${checkin}|${checkout}|${adults}`;
     const q = new URLSearchParams({ hotelId, adults });
     if (checkin) q.set("checkin", checkin);
     if (checkout) q.set("checkout", checkout);
     fetch(`/api/rooms?${q.toString()}`)
       .then((r) => r.json())
       .then((d) => {
-        if (on) setData(d);
+        if (on) {
+          setData(d);
+          setLoadedSig(loadSig);
+        }
       })
       .catch(() => {
-        if (on) setData({ offers: [], nights: 1, checkin: "", checkout: "" });
+        if (on) {
+          setData({ offers: [], nights: 1, checkin: "", checkout: "" });
+          setLoadedSig(loadSig);
+        }
       });
     return () => {
       on = false;
@@ -309,8 +318,15 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
                   </div>
                 ) : null}
 
-                <p className="text-sm text-black/55 mb-3">
-                  Showing {shown.length} of {data.offers.length} room{data.offers.length === 1 ? "" : "s"}
+                <p className="mb-3 flex items-center gap-2 text-sm text-black/55">
+                  {loading ? (
+                    <>
+                      <span className="inline-block h-3.5 w-3.5 animate-spin rounded-full border-2 border-accent/30 border-t-accent" />
+                      Updating prices…
+                    </>
+                  ) : (
+                    `Showing ${shown.length} of ${data.offers.length} room${data.offers.length === 1 ? "" : "s"}`
+                  )}
                 </p>
 
                 {shown.length === 0 ? (
@@ -334,7 +350,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
       </section>
 
       <div
-        className={`lg:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-black/10 pl-4 pr-[5.5rem] py-3 flex items-center justify-between gap-3 shadow-[0_-2px_10px_rgba(0,0,0,0.06)] transition-transform duration-200 ${
+        className={`lg:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-black/10 px-4 py-3 flex items-center justify-between gap-3 shadow-[0_-2px_10px_rgba(0,0,0,0.06)] transition-transform duration-200 ${
           scrolled && cheapest ? "translate-y-0" : "translate-y-full"
         }`}
       >

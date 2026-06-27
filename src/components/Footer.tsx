@@ -98,8 +98,9 @@ export default function Footer() {
         ))}
       </div>
       <div className="border-t border-black/[0.08]">
-        <div className="mx-auto max-w-7xl px-6 py-5 text-xs text-black/40">
-          © {new Date().getFullYear()} travelpluscost · prototype
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-6 py-5 text-xs text-black/45">
+          <span>© {new Date().getFullYear()} travelpluscost</span>
+          <span>One honest price. The same for everyone.</span>
         </div>
       </div>
     </footer>

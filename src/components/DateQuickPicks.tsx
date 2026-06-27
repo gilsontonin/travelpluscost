@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useStay } from "@/lib/useStay";
 
 function ymd(d: Date) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -27,22 +27,13 @@ function quickRanges(): { label: string; checkin: string; checkout: string }[] {
   ];
 }
 
-// Reusable date quick-pick chips. Writes checkin/checkout to the URL so RoomsPanel re-prices.
-// `compact` = small label-only chips for the top bar; default = full pills showing the date range
-// inside (Expedia rooms-section style).
+// Reusable date quick-pick chips. Writes checkin/checkout via useStay so the rooms re-price instantly with
+// no scroll-jump. `compact` = small label-only chips for the top bar; default = a clean 2-column grid of
+// stacked label/date cells (the rooms section).
 export default function DateQuickPicks({ compact = false, className = "" }: { compact?: boolean; className?: string }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const sp = useSearchParams();
-  const checkin = sp.get("checkin") ?? "";
-  const checkout = sp.get("checkout") ?? "";
+  const { checkin, checkout, update } = useStay();
   const ranges = quickRanges();
-  const pick = (ci: string, co: string) => {
-    const q = new URLSearchParams(sp.toString());
-    q.set("checkin", ci);
-    q.set("checkout", co);
-    router.replace(`${pathname}?${q.toString()}`, { scroll: false });
-  };
+  const pick = (ci: string, co: string) => update({ checkin: ci, checkout: co });
 
   if (compact) {
     return (
@@ -69,7 +60,7 @@ export default function DateQuickPicks({ compact = false, className = "" }: { co
   }
 
   return (
-    <div className={`flex flex-wrap gap-2 ${className}`}>
+    <div className={`grid grid-cols-2 gap-2 ${className}`}>
       {ranges.map((r) => {
         const active = checkin === r.checkin && checkout === r.checkout;
         return (
@@ -77,12 +68,12 @@ export default function DateQuickPicks({ compact = false, className = "" }: { co
             key={r.label}
             type="button"
             onClick={() => pick(r.checkin, r.checkout)}
-            className={`shrink-0 inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3.5 py-2 text-sm transition ${
-              active ? "border-accent/50 bg-accent-tint text-accent font-medium" : "border-black/15 text-black/70 hover:border-black/35"
+            className={`flex w-full flex-col items-center rounded-2xl border px-3 py-2.5 text-center transition ${
+              active ? "border-accent/60 bg-accent-tint" : "border-black/15 hover:border-black/35"
             }`}
           >
-            <span className="font-semibold">{r.label}</span>
-            <span className={`text-xs ${active ? "text-accent/80" : "text-black/45"}`}>
+            <span className="text-sm font-semibold text-black">{r.label}</span>
+            <span className={`text-xs ${active ? "text-accent" : "text-black/50"}`}>
               {fmtShort(r.checkin)} – {fmtShort(r.checkout)}
             </span>
           </button>

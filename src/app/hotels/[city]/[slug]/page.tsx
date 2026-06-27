@@ -381,33 +381,40 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
             Explore {hotel.city ? `${hotel.city}, ` : ""}
             {stateNm ?? "the area"}
           </h2>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {hotel.city ? (
-              <Link
-                href={cityHubHref}
-                className="rounded-full border border-accent/30 bg-accent-tint/40 px-4 py-1.5 text-sm font-semibold text-accent transition hover:bg-accent-tint/70"
-              >
-                All hotels in {hotel.city} →
-              </Link>
-            ) : null}
-            {sib?.cities.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/hotels/${c.slug}`}
-                className="rounded-full border border-black/12 px-4 py-1.5 text-sm text-black/70 transition hover:border-black/30 hover:text-black"
-              >
-                Hotels in {c.name}
-              </Link>
-            ))}
-            {stateHref && stateNm ? (
-              <Link
-                href={stateHref}
-                className="rounded-full border border-black/12 px-4 py-1.5 text-sm text-black/70 transition hover:border-black/30 hover:text-black"
-              >
-                All {stateNm} hotels →
-              </Link>
-            ) : null}
-          </div>
+          {hotel.city ? (
+            <Link
+              href={cityHubHref}
+              className="mt-3 inline-flex items-center gap-1 rounded-full border border-accent/30 bg-accent-tint/40 px-4 py-2 text-sm font-semibold text-accent transition hover:bg-accent-tint/70"
+            >
+              See all hotels in {hotel.city} →
+            </Link>
+          ) : null}
+          {(sib && sib.cities.length) || (stateHref && stateNm) ? (
+            <div className="mt-5">
+              <p className="text-xs font-semibold uppercase tracking-wide text-black/40">
+                More destinations in {stateNm ?? "the area"}
+              </p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {sib?.cities.map((c) => (
+                  <Link
+                    key={c.slug}
+                    href={`/hotels/${c.slug}`}
+                    className="rounded-full border border-black/12 px-4 py-1.5 text-sm text-black/70 transition hover:border-black/30 hover:text-black"
+                  >
+                    {c.name}
+                  </Link>
+                ))}
+                {stateHref && stateNm ? (
+                  <Link
+                    href={stateHref}
+                    className="rounded-full border border-accent/25 px-4 py-1.5 text-sm font-medium text-accent transition hover:border-accent/50"
+                  >
+                    All {stateNm} hotels →
+                  </Link>
+                ) : null}
+              </div>
+            </div>
+          ) : null}
         </section>
       ) : null}
     </div>
