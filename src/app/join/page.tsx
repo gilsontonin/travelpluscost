@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AuthForm from "@/components/AuthForm";
 
 export const metadata: Metadata = {
-  title: "Sign up free",
+  title: "See member prices",
   description:
     "Create a free account to see member prices — hotels at what they charge us plus one small flat fee, the same price for everyone, never based on your data.",
 };
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function JoinPage() {
   return (
     <div className="mx-auto max-w-xl px-4 py-12">
-      <h1 className="text-3xl font-bold tracking-tight">Sign up free</h1>
+      <h1 className="text-3xl font-bold tracking-tight">See member prices</h1>
       <p className="mt-3 text-black/70">
         See <b>member prices</b> — what the hotel charges us, plus one small flat fee — the same price for
         everyone, never based on your data.

@@ -365,7 +365,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
           ) : null}
         </div>
         <a href="#rooms" className="bg-accent text-white font-medium px-6 py-3 rounded-full whitespace-nowrap shrink-0">
-          Select a room
+          See rooms &amp; prices
         </a>
       </div>
     </>

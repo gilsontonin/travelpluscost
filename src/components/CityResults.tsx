@@ -211,7 +211,7 @@ export default function CityResults({
 
       {/* sticky CTA bar pinned to the bottom of the page — persistent map access */}
       {view === "list" && visible.length > 0 ? (
-        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-black/10 bg-white/95 pl-4 pr-[5.5rem] py-3 pb-[calc(env(safe-area-inset-bottom,0px)+0.75rem)] backdrop-blur">
+        <div className="fixed inset-x-0 bottom-0 z-40 border-t border-black/10 bg-white/95 flex justify-center px-4 py-3 pb-[calc(env(safe-area-inset-bottom,0px)+0.75rem)] backdrop-blur">
           <button
             type="button"
             onClick={() => setView("map")}

@@ -58,7 +58,7 @@ export default function PriceCta({ hotelId }: { hotelId: string }) {
         href="#rooms"
         className="shrink-0 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
       >
-        Select a room
+        See rooms &amp; prices
       </a>
     </div>
   );
