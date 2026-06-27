@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import SearchPanel from "@/components/SearchPanel";
 import VibePromptPill from "@/components/VibePromptPill";
 import HotelRail from "@/components/HotelRail";
@@ -107,6 +108,13 @@ export default function Home() {
       <ViatorPackages />
 
       <PopularDestinations />
+
+      {/* LiteAPI Booking Assistant — homepage only (it's hidden off-home anyway), public key, browser-safe.
+          lazyOnload keeps the third-party widget off the critical path so it can't regress LCP / CWV. */}
+      <Script
+        src="https://components.liteapi.travel/chatbot/v1.js?liteApiKey=prod_public_f27848bb-47d8-46ec-915c-ff9e8070fdbc"
+        strategy="lazyOnload"
+      />
     </div>
   );
 }
