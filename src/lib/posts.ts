@@ -49,6 +49,328 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "where-to-stay-in-sanfrancisco",
+    title: "Where to Stay in San Francisco, CA: Best Hotels (2026)",
+    description:
+      "Where to stay in San Francisco in 2026: best areas — Union Square, Nob Hill, the Wharf, the Marina — plus where to avoid, with real hotels and honest rates.",
+    excerpt:
+      "First trip or fifth? A plain-English guide to picking the right San Francisco neighborhood — by walkability, safety, the fog, and the trip you're taking — as of 2026.",
+    tldr: {
+      answer:
+        "San Francisco squeezes a dozen neighborhoods into seven square miles. For a first visit, base at Union Square for convenience and transit; choose Nob Hill for views and quiet, Fisherman's Wharf for families, or the Marina for a calm, residential feel — and steer clear of the Tenderloin and mid-Market. You won't need a car for it.",
+      points: [
+        "**Union Square** — central, walkable, transit hub; the easy first-timer base.",
+        "**Nob Hill** — cable cars, views and classic hotels, a short climb up.",
+        "**Fisherman's Wharf** — the waterfront, families, Alcatraz trips.",
+        "**The Marina / Cow Hollow** — trendy, residential, Golden Gate views.",
+        "**Skip the car** — the city is 7×7 miles, walkable, with parking at $50–75 a night.",
+      ],
+    },
+    date: "2026-06-26",
+    updated: "2026-06-26",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/115989321.jpg",
+      alt: "The historic red-brick Argonaut Hotel on the San Francisco waterfront at Fisherman's Wharf, with the Golden Gate Bridge and the bay beyond under a blue sky",
+      credit: { name: "Argonaut Hotel, San Francisco" },
+    },
+    region: { name: "San Francisco", destination: "San Francisco" },
+    faqs: [
+      {
+        q: "What is the best area to stay in San Francisco for first-time visitors?",
+        a: "Union Square. It's the most central neighborhood, packed with hotels at every price, and it's the city's transit hub — cable cars, Muni and BART all meet here, so you can reach Fisherman's Wharf, the Mission and the Golden Gate Bridge without a car. Nob Hill, just uphill, is the slightly quieter, classier alternative for a first trip.",
+      },
+      {
+        q: "What are the safest areas to stay in San Francisco?",
+        a: "Nob Hill, the Marina and Cow Hollow, North Beach, and Fisherman's Wharf are among the more comfortable, residential-feeling areas to base in, day or night. Union Square is central and busy but frays toward its western and southern edges near the Tenderloin, so check exactly which block a hotel sits on. As in any big city, stay aware after dark and don't leave anything in a parked car.",
+      },
+      {
+        q: "Where should you avoid staying in San Francisco?",
+        a: "The Tenderloin, and the mid-Market stretch and parts of SoMa around 6th Street, are the areas most visitors are happiest avoiding for a hotel — they have the most visible homelessness and street issues in the city. The blocks can change corner to corner, so it's less about a whole district and more about the exact address; if a downtown rate looks too cheap, check the cross streets before you book.",
+      },
+      {
+        q: "Do you need a car in San Francisco?",
+        a: "No — and most visitors are better off without one. The city is only seven miles across, walkable, and well covered by cable cars, Muni and BART, while hotel parking runs roughly $50–75 a night and the hills and one-way streets are a hassle. BART connects SFO to downtown in about 30 minutes. Rent a car only if you're heading out to wine country, the coast or the redwoods.",
+      },
+      {
+        q: "What's the best area to stay in San Francisco on a budget?",
+        a: "The edges of Union Square, the Financial District, and Lower Nob Hill have the most rooms under about $200 a night with good transit access, and there are well-run hostels downtown for less. A few value motor inns sit out toward the Marina and the Richmond. Rates move daily, so search your exact dates rather than trusting a stamped figure.",
+      },
+      {
+        q: "Is Fisherman's Wharf a good place to stay?",
+        a: "For families and first-timers who want the waterfront, yes. You're walking distance from Pier 39's sea lions, the ferries to Alcatraz, and the cable-car turnaround, and the area feels safe and self-contained. The trade-offs are that it's touristy, pricier for what you get, and quiet at night — locals eat elsewhere, so plan to ride a cable car or bus into the rest of the city for dinner.",
+      },
+      {
+        q: "How many days do you need in San Francisco?",
+        a: "Three to four days is the sweet spot: enough for the Golden Gate Bridge, Alcatraz, the cable cars, a neighborhood or two (the Mission, North Beach, the Castro) and a day trip to Muir Woods or Sausalito. Two nights covers the headline sights if you're tight; a full week lets you add wine country or the coast without rushing.",
+      },
+      {
+        q: "When is the best time to visit San Francisco?",
+        a: "September and October — the city's real summer. The famous fog (locals call it Karl) burns off, the days are warm and clear, and the crowds thin after Labor Day. Actual summer, June through August, is often grey and cold, which surprises first-timers in shorts. Spring is pleasant and green; winter is mild but the rainiest stretch. Whenever you come, pack layers.",
+      },
+    ],
+    body: `**Where to stay in San Francisco comes down to Union Square if it's your first trip** — the most central, most walkable, best-connected base in a city that rewards staying in the middle of it. San Francisco is famously a city of neighborhoods, all crammed into seven square miles, and each one is a genuinely different trip: the touristy waterfront, the hill of classic hotels, the trendy bayfront blocks, and a couple of corners you'll want to know to avoid.
+
+Below are the real, bookable hotels in each area, then the honest guide to where to stay in San Francisco, California, as of 2026.
+
+One thing to know up front: you almost certainly don't need a car here. The city is small and walkable, the cable cars and BART do the hills and the distance, and parking is a $50-a-night afterthought. Pick a central base and you'll spend your time in the city, not commuting to it.
+
+## San Francisco Hotels by Area, at a Glance
+
+The deciding factor is how central and how lively you want to be versus how calm and residential — and, this being San Francisco, which exact block you're on. These are the areas most visitors stay in, each a different kind of trip. They're all centrally located in a compact city, so your options come down to feel, not distance — and unlike most of the Bay Area, you won't need a car for any of them. Choose the area first, then the hotel.
+
+::areas San Francisco
+
+| Area | The feel | Best for | The rate |
+|---|---|---|---|
+| [Union Square](/search?destination=San%20Francisco&adults=2) | Central, busy, transit hub | First-timers, walkability, shopping | Mid to high |
+| [Nob Hill](/search?destination=San%20Francisco&adults=2) | Classic, hilly, hotel grandeur | Views, couples, a quieter base | Mid to high |
+| [Fisherman's Wharf](/search?destination=San%20Francisco&adults=2) | Touristy waterfront | Families, the bay, Alcatraz | Mid to high |
+| [North Beach](/search?destination=San%20Francisco&adults=2) | Little Italy, cafes, nightlife | Foodies, walkers, atmosphere | Mid |
+| [The Marina / Cow Hollow](/search?destination=San%20Francisco&adults=2) | Trendy, residential, bayfront | Couples, calm, Golden Gate views | Mid |
+| [SoMa / Embarcadero](/search?destination=San%20Francisco&adults=2) | Modern, central, business | Conventions, ballgames, walkers | Low to high |
+
+::infographic sf-by-numbers
+
+[See every San Francisco hotel and its live nightly price](/search?destination=San%20Francisco&adults=2)
+
+## Union Square: Where to Stay in San Francisco for a First Trip
+
+**Union Square is where to stay in San Francisco for a first visit — the central, walkable heart of downtown, where the hotels, the shopping and the public transportation all converge.** Cable cars, Muni and BART meet within a couple of blocks, so you can reach Fisherman's Wharf, the Mission or the Golden Gate Bridge without ever touching a car.
+
+This is the easy, low-stress base for first-timers and anyone who wants everything within reach. The area is packed with theaters, department stores and restaurants, and it has the deepest hotel lineup in the city at every price. The honest trade-off: it's busy and a little corporate, and the blocks soften toward the west and south as you near the Tenderloin, so the exact address matters more here than almost anywhere.
+
+::rail Union Square
+
+### Beacon Grand and the Union Square Classics
+
+The Beacon Grand (the grand old Sir Francis Drake, beautifully redone) is the marquee address right on the square, with the famous Beefeater-uniformed doormen and a rooftop bar. Hotel Emblem is the small, design-forward boutique a block off the square with a standout guest score; the Chancellor Hotel on Union Square is the long-running value pick — plain, central, and a perennial favorite with thousands of guest reviews; and the Petite Auberge is a cozy French-style bed-and-breakfast on nearby Bush Street for travelers who want charm over a chain.
+
+::hotel lp1c086
+
+::hotel lp225d7
+
+::hotel lp28125
+
+::hotel lp32ca9
+
+**The move:** book Union Square for your first trip, walkability and transit · **Best for:** first-timers, shoppers, no-car trips · **Watch:** check the cross streets — the western edge runs into the Tenderloin.
+
+## Nob Hill: Cable Cars, Views and Classic Hotels
+
+**Nob Hill is where to stay in San Francisco for grandeur and a quieter perch — the steep hill just above Union Square, lined with the city's classic hotels and crossed by two cable-car lines.** It trades the bustle of downtown for marble lobbies, big views and a calmer evening, while still being a short (if vertical) walk from everything.
+
+This is the pick for couples and repeat visitors who want a little polish. The InterContinental Mark Hopkins crowns the hill with its Top of the Mark sky lounge; Grace Cathedral and the cable cars are at the door; and the climb back up after dinner is the city's free stairmaster. The catch is the price and the hills — pack shoes with grip, and know that "a short walk downhill" is never short coming back.
+
+[See Nob Hill hotels and live rates](/search?destination=San%20Francisco&adults=2)
+
+### The Mark Hopkins, Stanford Court and the Hilltop Hotels
+
+The InterContinental Mark Hopkins is the iconic Nob Hill stay, as much for the rooftop bar and the views as the rooms. The Stanford Court sits right beside it on the cable-car line — a polished, well-reviewed base with a strong sense of place and an easier rate than the marquee names around it.
+
+::hotel lp19efc
+
+::hotel lp6a8d3
+
+**The move:** base on Nob Hill for views, calm and the cable cars · **Best for:** couples, repeat visitors, a quieter base · **Watch:** it's a real climb — those postcard hills are also your commute.
+
+## Fisherman's Wharf: the Waterfront and the Family Pick
+
+**Fisherman's Wharf is where to stay in San Francisco for the waterfront and a family trip — the touristy, self-contained stretch of bay where the Alcatraz ferries, Pier 39's sea lions and the cable-car turnaround all sit within a walk.** It feels safe and easy, and for travelers with kids the convenience is hard to beat.
+
+This is the call for families, cruise passengers and first-timers who want the bay at their door. You can walk to the sea lions, the historic ships at Hyde Street Pier, and the boats out to Alcatraz, and the cable car hauls you over the hill to the rest of the city. The trade-off is that it's the most touristy part of San Francisco — pricier for what you get, crowded by day, and quiet at night, since locals eat elsewhere.
+
+::rail Fisherman S Wharf
+
+### The Argonaut, Hotel Zoe and the Wharf Stays
+
+The Argonaut Hotel, in a restored 1907 warehouse right on the water by Hyde Street Pier, is the marquee Wharf address — nautical, full-service, and as close to the bay as a hotel gets. Hotel Zoe is the smaller, design-led boutique a block in, a calmer and more grown-up feel than the souvenir blocks around it. For value, the Riu Plaza Fisherman's Wharf is the big, modern, heavily-reviewed option a short walk from the boats.
+
+::hotel lp657473ef
+
+::hotel lp27fa6
+
+::hotel lp657774a0
+
+::infographic sf-union-vs-wharf
+
+**The move:** book the Wharf for families and the waterfront · **Best for:** kids, Alcatraz, cruise nights · **Watch:** it's touristy and quiet after dark — plan to head into town for dinner.
+
+## North Beach: Little Italy, Cafes and Nightlife
+
+**North Beach is where to stay in San Francisco for atmosphere and food — the city's Little Italy, a walkable wedge of espresso bars, old bookstores and late-night spots between the Wharf and downtown.** It's one of the most characterful, genuinely local-feeling places to base, and it's an easy walk to both the waterfront and Chinatown.
+
+This is the pick for foodies and night owls who'd rather wander than ride. Washington Square anchors it, City Lights bookstore and Coit Tower are the landmarks, and dinner is a stroll rather than a plan. The Italian places run from old-school red-sauce to the cioppino that was invented here; Caffe Trieste pours the espresso the Beat writers ran on; and Coit Tower's murals and view are a steep walk straight up Telegraph Hill. There are only a handful of hotels here — the charm is the lack of them — and the Columbus Inn is the reliable, well-reviewed base right on the main drag.
+
+::hotel lp89ce9
+
+[Search North Beach and downtown stays](/search?destination=San%20Francisco&adults=2)
+
+**The move:** base in North Beach for food, walkability and character · **Best for:** foodies, couples, walkers · **Watch:** few hotels and street parking is brutal — another reason to skip the car.
+
+## The Marina and Cow Hollow: Trendy, Residential, Golden Gate Views
+
+**The Marina and neighboring Cow Hollow are where to stay in San Francisco for a calm, residential base with Golden Gate Bridge views — trendy, low-rise blocks of boutiques and brunch spots along the northern bayfront.** It's one of the more comfortable areas to settle into, and it feels a world away from downtown's bustle.
+
+This is the smart pick for couples and travelers who want a neighborhood, not a hotel district. The bayfront Marina Green and Crissy Field run right to the foot of the Golden Gate Bridge, Chestnut and Union Streets handle the shopping and dining, and the pace is slow. The trade-off is location: you're a bus or rideshare from downtown and the big sights, so you swap some central convenience for calm and fresh air.
+
+[Browse Marina and Cow Hollow stays](/search?destination=San%20Francisco&adults=2)
+
+### Cow Hollow Inn and the Marina Stays
+
+Lodging up here leans to inns and small hotels rather than towers. The Cow Hollow Inn and Suites is the well-reviewed value base on Lombard Street, walkable to the Marina's shops and an easy hop to the bridge — a practical, lower-key alternative to a downtown high-rise. A few of the small inns nearby even offer free parking, a genuine rarity in this city, and you're located a short bus ride from both the bridge and downtown.
+
+::hotel lp71231
+
+**The move:** base in the Marina for calm, brunch and bridge views · **Best for:** couples, repeat visitors, fresh air · **Watch:** you're off the transit spine — budget for buses or rideshares downtown.
+
+## SoMa, the Financial District and the Embarcadero: Modern and Central
+
+**SoMa, the Financial District and the Embarcadero are where to stay in San Francisco for modern hotels and a central, walkable base near the ballpark and the bay.** South of Market holds the convention center, the museums and Oracle Park; the Financial District is the business core just north; and the Embarcadero curves along the waterfront past the Ferry Building — all within walking distance of downtown and the public transit lines.
+
+This is the practical pick for conventions, a Giants game, or anyone who wants a newer room with easy access to BART. The Embarcadero is the nicer half — the Ferry Building's food hall, the bay walk and the historic F-line streetcars are right there. The honest caveat is that SoMa is large and uneven: the Embarcadero and the ballpark end are lively, but the mid-Market and 6th Street edges have the city's roughest blocks, so the exact location matters.
+
+[Search SoMa and Embarcadero hotels](/search?destination=San%20Francisco&adults=2)
+
+### The Hyatt Regency SOMA and the Club Quarters Embarcadero
+
+The Hyatt Regency San Francisco Downtown SOMA is the big, modern, full-service base near Moscone and the ballpark. On the water, the Club Quarters Hotel Embarcadero is the well-located value pick steps from the Ferry Building and the California Street cable car.
+
+::hotel lp1be2b
+
+::hotel lp33700
+
+### The Financial District: the Omni and the Business Core
+
+The Financial District is a central, safe-feeling base for walkers, with one catch — it empties out after 6pm and on weekends, a business district that goes quiet when the offices close. The Omni San Francisco is the classic-luxury anchor here, a grand hotel on the California Street cable-car line, a short walk to Chinatown and the Ferry Building.
+
+::hotel lp2f817
+
+**The move:** book SoMa or the Embarcadero for a modern, central room · **Best for:** conventions, ballgames, walkers · **Watch:** SoMa is uneven — favor the Embarcadero/ballpark end over mid-Market, and know the FiDi sleeps early.
+
+## Hayes Valley and Civic Center: Local Boutique, With a Caveat
+
+**Hayes Valley is where to stay in San Francisco for a hip, local boutique base — a small, walkable strip of design shops, wine bars and good restaurants near the opera and symphony.** It's a genuinely charming, neighborhood-y pick, with the catch that it sits right beside Civic Center and the Tenderloin, so the surrounding blocks change fast.
+
+This is the area for return visitors who want to feel like a local rather than a tourist. Hayes Valley proper is lovely and central — walkable to the Painted Ladies at Alamo Square and a quick Muni ride from downtown. But the adjacent Civic Center plaza and the Tenderloin to its east are the city's hardest blocks, so this is the clearest case of "check the exact address," not the area name. Hayes Street itself is a tight, leafy run of wine bars, good restaurants and design shops, with the Muni Metro a block away and the Painted Ladies a ten-minute walk up to Alamo Square — genuinely lovely, and central without feeling like downtown.
+
+::rail Hayes Valley
+
+[Compare Hayes Valley and central stays](/search?destination=San%20Francisco&adults=2)
+
+**The move:** base in Hayes Valley for a local, boutique feel · **Best for:** repeat visitors, food and wine, a non-touristy stay · **Watch:** Civic Center and the Tenderloin are right there — pin the map before you book.
+
+## Other San Francisco Neighborhoods Worth Knowing
+
+**Beyond the main hotel areas, a handful of San Francisco neighborhoods are worth knowing — some as a base, most as a day's wander.** Hotels thin out in these, so most tourists stay central and visit, but the right vibe might be worth basing here.
+
+Chinatown — the oldest in the country — sits right between Union Square, Nob Hill and North Beach, so you walk through it from most central hotels anyway; it's a stop, not really a base. The Mission is the city's sunniest, liveliest neighborhood, packed with the best taquerias, murals and bars, and it's a genuine option for a younger, food-first trip, though it's a BART ride from the headline sights. The Castro, the historic heart of LGBTQ+ San Francisco since the 1970s, is friendly, walkable and well-located, with a few small inns for travelers who want that community at the door.
+
+For a calmer, upscale stay, Pacific Heights and adjacent Japantown offer leafy streets, grand Victorians and easy access to the Marina and the bridge — pretty and residential, if light on hotels. And if you came for the beach and Golden Gate Park, the Richmond and Sunset districts out west put you near Ocean Beach and the park's museums, with the major trade-off that they're foggy, far from downtown, and the longest commute in the Bay Area's most spread-out corner of the city. Most visitors who want the park and the beach base centrally and ride out for the day.
+
+[Search San Francisco stays near the neighborhoods you want](/search?destination=San%20Francisco&adults=2)
+
+## Where Not to Stay in San Francisco
+
+**The honest answer to where not to stay in San Francisco is the Tenderloin, the mid-Market stretch around it, and parts of SoMa near 6th Street — the blocks with the city's most visible homelessness, open drug use and street issues.** These areas sit right next to the prime downtown hotels, which is exactly why bargain rooms turn up there, so it's worth knowing before a cheap rate tempts you.
+
+This isn't about fear — San Francisco is, by the numbers, a safe city for visitors who use normal big-city sense, and most of these blocks are more grim than dangerous. By day they're busy and fine to pass through; it's the late-night walk back with luggage, and the quiet corners after dark, that you're avoiding. The difference can be a single street: a hotel on the good side of Geary or Mason is fine, one a few blocks southwest is not. Mid-Market has been slowly turning over for years — new towers beside old problems — so it really is block by block rather than a line on a map. The fix is simple — pin the exact address before you book, check the cross streets, and when a downtown rate looks too good to be true, that's usually why.
+
+[Search central San Francisco hotels by exact location](/search?destination=San%20Francisco&adults=2)
+
+## The Best Area for Your Trip
+
+**For a first trip, choose Union Square and don't overthink it — it's the most central, walkable and connected base, with everything else a cable car away.** Pick Nob Hill for views and calm, Fisherman's Wharf for families, the Marina for a residential feel, and SoMa or the Embarcadero for a modern room near the ballpark. To help narrow the options, here's each kind of trip matched to its area.
+
+| Your trip | Best area | Why |
+|---|---|---|
+| First visit, no car | Union Square | Central, walkable, every transit line |
+| Couples, views, quiet | Nob Hill | Cable cars, grand hotels, big views |
+| Families with kids | Fisherman's Wharf | The waterfront, Alcatraz, sea lions |
+| Food and nightlife | North Beach | Little Italy, walkable, characterful |
+| A residential base | Marina / Cow Hollow | Trendy, calm, Golden Gate views |
+| Conventions or a Giants game | SoMa / Embarcadero | Modern rooms, walk to Moscone and the park |
+
+Once you've matched an area to your trip, here are real, well-reviewed San Francisco hotels across the price range — guest scores as of 2026, no stamped prices, because the rates move daily.
+
+| Hotel | Area | Guest score | Best for |
+|---|---|---|---|
+| Hotel Emblem | Union Square | 9.6 | A design boutique |
+| Omni San Francisco | Financial District | 9.4 | Classic luxury |
+| Beacon Grand | Union Square | 9.2 | The historic marquee |
+| Stanford Court | Nob Hill | 9.0 | Views and the cable car |
+| Chancellor Hotel | Union Square | 9.0 | Central value |
+| Hyatt Regency SOMA | SoMa | 8.8 | A modern full-service base |
+| Argonaut Hotel | Fisherman's Wharf | 8.6 | The waterfront pick |
+
+[Compare every San Francisco hotel by area and price](/search?destination=San%20Francisco&adults=2)
+
+## How Many Days in San Francisco, and a First-Timer's Plan
+
+**Give San Francisco three to four days — enough for the headline sights, a neighborhood or two, and a day trip across the bay without rushing.** From a central base you can do most of it on foot and by cable car, which is half the experience. Even one night works if you stay downtown and keep it tight.
+
+Here's the first-timer template we'd run: spend day one downtown and on the water — the cable car over Nob Hill to Fisherman's Wharf, Pier 39's sea lions, and the boats out to Alcatraz, which you book well ahead. Give day two to the Golden Gate Bridge and the Marina, walking or biking Crissy Field to the bridge, then Golden Gate Park and its museums if the fog cooperates. Keep day three for the neighborhoods that make the city — the Mission for tacos and murals, North Beach for an Italian dinner, the Castro and the Haight for the history. With a fourth day, add Muir Woods and Sausalito across the bridge, or a run out to wine country.
+
+The local tip for first-time visitors: don't over-schedule across the map. The city is small, but the hills and the transit add up, so cluster each day by area and leave room to wander — the best San Francisco moments tend to land between the landmarks.
+
+[Find a central base for your San Francisco itinerary](/search?destination=San%20Francisco&adults=2)
+
+## Getting Around San Francisco
+
+**San Francisco is a walking-and-transit city, so skip the rental car — you'll cover the 7×7 miles on foot, by cable car, and on Muni and BART, and parking will only cost and frustrate you.** BART runs from SFO straight to the Powell Street stop by Union Square in about half an hour, which is the cheapest, fastest way in from the airport.
+
+A central base is the whole game here, because it turns transit from a chore into a backup. The three cable-car lines are a slow, lovely, genuinely useful way up the hills (and a tourist ride in their own right); Muni buses and the Metro fill the gaps; and BART handles downtown, the Mission and the trip across the bay. Rideshares are easy but the hills and traffic make them slower than they look. Rent a car only for a day trip out to Muir Woods, the coast or wine country — and if you do, expect to pay $50-75 a night to park it, and never leave anything visible inside. Almost everything you'll want is located within a short walk or transit ride of a central hotel, with the bigger trips waiting whenever you decide to travel outside the city.
+
+::infographic sf-getting-around
+
+| Mode | Best for |
+|---|---|
+| Walking | Most of downtown, North Beach and the waterfront |
+| Cable car | The hills — Nob Hill, and Union Square to the Wharf |
+| Muni bus and Metro | Crosstown trips and the outer neighborhoods |
+| BART | The airport, downtown, the Mission and across the bay |
+
+[Find a central San Francisco base near transit](/search?destination=San%20Francisco&adults=2)
+
+## When to Visit San Francisco
+
+**The best time to visit San Francisco is September and October — the city's real summer, when the fog burns off, the days turn warm and clear, and the crowds thin after Labor Day.** If there's one thing to know about San Francisco weather, it's that it ignores the calendar.
+
+Actual summer, June through August, is often grey, windy and cold — the fog the locals named Karl rolls in off the Pacific and parks over the western half of the city, which is why visitors in shorts, especially the first time, look so betrayed. Spring is green and pleasant with a chance of rain, and winter is mild but the wettest stretch. The microclimates are real, too: the Marina and the Mission can be sunny while the Sunset is socked in. Whenever you come, dress in layers and bring a jacket, because the temperature swing from a sunny afternoon to a foggy evening is its own kind of weather.
+
+[Search San Francisco hotels for your travel dates](/search?destination=San%20Francisco&adults=2)
+
+## What a Night in San Francisco Costs
+
+**San Francisco is one of the pricier U.S. cities to sleep in, but it's softer than it was — a solid central hotel often runs in the low-to-mid $200s a night, with value rooms downtown under $200 and the marquee names well above.** Rates climb with conventions, big events and the fall sweet spot, and dip in the rainy winter weeks.
+
+Midweek stays and the quieter winter months bring the best value, and the edges of Union Square and Lower Nob Hill are where the central bargains hide. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+
+::infographic how-pricing-works
+
+Here's our part of the bill, in plain English: you pay what the hotel charges us, plus one small flat fee — the same fee for everyone, never set from your device or your search history. The price you see is all-in and shown up front, with nothing waiting to pounce on the last screen.
+
+::priceproof
+
+[Search live San Francisco prices](/search?destination=San%20Francisco&adults=2)
+
+## San Francisco Hotels: Quick Answers
+
+**The cheapest central areas are the edges of Union Square, the Financial District and Lower Nob Hill**, where rooms under about $200 sit on top of the transit lines; there are well-run hostels downtown for less, like the HI San Francisco Downtown, and a few value motor inns out toward the Marina and the Richmond.
+
+::hotel lp224881
+
+**The most family-friendly base is Fisherman's Wharf**, for the waterfront, the sea lions, the Alcatraz ferries and the self-contained, walkable feel — with Union Square a close second for the central location and the room to spread out across price.
+
+**The Golden Gate Bridge is about three miles from downtown**, an easy bus, bike or rideshare from the Marina (closest), Fisherman's Wharf, or Union Square — no neighborhood puts you at its foot, but the Marina gets you nearest.
+
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end. Browse the full [San Francisco hotels hub](/hotels/sanfrancisco) for every property, and if California has you planning more, our guide to [where to stay in Santa Barbara](/blog/where-to-stay-in-santabarbara) is the next stop down the coast.
+
+::cta San Francisco
+`,
+  },
+  {
     slug: "where-to-stay-in-scottsdale",
     title: "Where to Stay in Scottsdale, AZ: Best Hotels (2026)",
     description:
@@ -2842,7 +3164,7 @@ Save the Riviera and Montecito for a celebration or a return trip, and Goleta fo
 | The Upham Hotel | Downtown | 9.0 | Historic, walkable |
 | Residence Inn | Goleta | 8.9 | Value, suites |
 
-Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end.
+Whichever area wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end. Heading up the coast to the city? Our guide to [where to stay in San Francisco](/blog/where-to-stay-in-sanfrancisco) breaks down its neighborhoods the same way.
 
 ::cta Santa Barbara
 `,

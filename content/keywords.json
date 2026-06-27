@@ -1,4 +1,33 @@
 {
+  "where-to-stay-in-sanfrancisco": {
+    "primary": "where to stay in san francisco",
+    "secondary": [
+      "where to stay in san francisco bay area",
+      "where to stay in san francisco without a car",
+      "where to stay in san francisco with family",
+      "where not to stay in san francisco",
+      "where to stay in nob hill san francisco",
+      "where to stay in union square san francisco",
+      "where to stay in downtown san francisco",
+      "where to stay in san francisco first time",
+      "where to stay in san francisco on a budget"
+    ],
+    "volume": 3600,
+    "kd": 27,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-26",
+    "status": "published",
+    "history": [
+      {
+        "date": "2026-06-26",
+        "action": "new post",
+        "serp_before": 64,
+        "serp_after": 83,
+        "note": "DEEPEST band yet (8,109-9,906w; competitors are 8-13k-word SF mega-guides). serp 64→83 = comprehensive-competitor EXEC-DECISION: heading lever maxed (100%), all real neighborhoods covered (Union Square/Nob Hill/Wharf/North Beach/Marina-Cow Hollow/SoMa-FiDi-Embarcadero/Hayes Valley + Chinatown/Mission/Castro/Pac Heights/Richmond-Sunset), the where-NOT-to-stay section (Tenderloin/mid-Market) as the differentiator, an itinerary, getting-around, when-to-visit, 8 FAQs, 12 rate-verified cards, 4 infographics + a transit table. 90 needs ~doubling to 8k+ = padding (all genuine content is covered), so shipped at 83 flagged (same family as Sedona 75, San Antonio 84). Cover = Argonaut Hotel with the Golden Gate Bridge. CA cluster: links to/from Santa Barbara."
+      }
+    ]
+  },
   "where-to-stay-in-scottsdale": {
     "primary": "where to stay in scottsdale",
     "secondary": [

@@ -338,6 +338,37 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Pick a side, or split", detail: "Base on the sunny South Shore for a first trip, the North Shore for scenery; for a week, split between Poipu and Princeville." },
     ],
   },
+  "sf-by-numbers": {
+    kind: "stat",
+    title: "San Francisco by the numbers",
+    stats: [
+      { value: "7×7", label: "square miles — the whole city is small and walkable" },
+      { value: "Union Square", label: "the central, transit-hub base for a first trip" },
+      { value: "Karl", label: "the summer fog; it's cold and grey, so pack layers" },
+      { value: "Sept–Oct", label: "the warmest, clearest months to visit" },
+    ],
+  },
+  "sf-getting-around": {
+    kind: "steps",
+    title: "Getting to (and around) San Francisco",
+    steps: [
+      { title: "Fly into SFO (or Oakland)", detail: "BART runs from SFO straight downtown to the Powell Street / Union Square stop in about 30 minutes — no car required." },
+      { title: "Skip the rental car", detail: "Hotel parking runs roughly $50–75 a night, the hills and one-way streets are a chore, and smash-and-grabs are real. Rent only if you're leaving the city." },
+      { title: "Walk first, then ride", detail: "It's a 7×7-mile city, so you'll walk most of it; cable cars, Muni and BART cover the rest. A central base means less commuting." },
+    ],
+  },
+  "sf-union-vs-wharf": {
+    kind: "compare",
+    title: "Union Square or Fisherman's Wharf?",
+    left: "Union Square",
+    right: "Fisherman's Wharf",
+    rows: [
+      { label: "Best for", left: "First-timers, walkability, transit", right: "Families, the waterfront, Alcatraz trips" },
+      { label: "The feel", left: "Central, busy — shops and theaters", right: "Touristy, salty air, sea lions" },
+      { label: "Getting around", left: "Cable cars, BART and Muni at the door", right: "A cable-car or bus ride from downtown" },
+      { label: "The trade", left: "Some blocks fray toward the Tenderloin edge", right: "Pricey and crowded, and quiet after dark" },
+    ],
+  },
   "staugustine-by-numbers": {
     kind: "stat",
     title: "St. Augustine by the numbers",
