@@ -21,6 +21,9 @@ export async function generateMetadata({
   const dest = (sp.destination ?? "").trim();
   return {
     title: { absolute: dest ? `Search hotels in ${dest} | travelpluscost` : "Search hotels | travelpluscost" },
+    description: dest
+      ? `Search live hotel prices in ${dest} — one honest all-in price, the same for everyone, never based on your data.`
+      : "Search hotels by city — one honest all-in price: the rate plus one small flat fee, the same for everyone.",
     robots: { index: false, follow: true },
   };
 }
@@ -50,6 +53,10 @@ export default async function SearchPage({
         startVibe={vibeMode}
         initial={{ destination, vibe, checkin, checkout, adults: String(adults) }}
       />
+
+      <h1 className={destination && !vibe ? "mt-4 text-lg font-semibold tracking-tight" : "sr-only"}>
+        {destination && !vibe ? `Hotels in ${destination}` : "Search hotels"}
+      </h1>
 
       {vibe ? (
         <div className="mt-3">
