@@ -52,14 +52,14 @@ export default function AboutPage() {
 
       {/* mission + vision */}
       <section className="mt-12 grid gap-5 sm:grid-cols-2">
-        <div className="rounded-xl border border-black/[0.08] bg-white p-6">
+        <div className="rounded-2xl border border-black/[0.07] bg-card p-6 shadow-card">
           <h2 className="text-xs font-semibold uppercase tracking-wide text-accent">Mission</h2>
           <p className="mt-2 text-[15px] leading-relaxed text-black/75">
             Give every traveler one honest price — the real cost plus one transparent fee — and make the manipulative
             parts of online travel obsolete.
           </p>
         </div>
-        <div className="rounded-xl border border-black/[0.08] bg-white p-6">
+        <div className="rounded-2xl border border-black/[0.07] bg-card p-6 shadow-card">
           <h2 className="text-xs font-semibold uppercase tracking-wide text-accent">Vision</h2>
           <p className="mt-2 text-[15px] leading-relaxed text-black/75">
             A travel industry where the price you see is the price everyone sees — where trust is the default, not a
@@ -114,7 +114,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="mt-14 rounded-xl bg-accent-tint/50 p-7">
+      <section className="mt-14 rounded-2xl bg-accent-tint/50 p-7">
         <h2 className="text-lg font-semibold">See it for yourself</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-black/70">
           Search any city and you’ll see one all-in price — and it’s the same one we’d show anyone. Curious how we keep
