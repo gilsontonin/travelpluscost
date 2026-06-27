@@ -6,14 +6,16 @@ import VibeSearchCta from "@/components/VibeSearchCta";
 import AuthNav from "@/components/AuthNav";
 import Logo from "@/components/Logo";
 
-// Short, single-word nav labels — the logo is the Home link, so there's no "Home" item, and the
-// pricing explainer is just "Pricing" (was "How pricing works"). The brand promise lives on the
-// homepage hero / About, not as a persistent header tagline (valuable real estate = inventory, not chrome).
+// The menu's most valuable, sensible links — the logo is the Home link (no "Home" item).
+// - Hotels → /hotels: the real browse index (every U.S. state + top cities), NOT the empty /search tool.
+// - Guides → /blog: the travel guides.
+// - How it works → /about: the "Why you pay what you pay" pricing + brand story. (This absorbs the old
+//   "Pricing → /#how" item, which just bounced you to the homepage, and the duplicate "About" — both
+//   were really this one page.)
 const NAV = [
-  { href: "/search", label: "Hotels" },
+  { href: "/hotels", label: "Hotels" },
   { href: "/blog", label: "Guides" },
-  { href: "/#how", label: "Pricing" },
-  { href: "/about", label: "About" },
+  { href: "/about", label: "How it works" },
 ];
 
 export default function Header() {
