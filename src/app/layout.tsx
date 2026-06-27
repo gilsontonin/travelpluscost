@@ -14,9 +14,10 @@ import { SITE_URL, SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION } from "@/lib/site"
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-// Set on Netlify when ready: NEXT_PUBLIC_GA_ID (GA4 "G-…") + NEXT_PUBLIC_GSC_VERIFICATION (Search
-// Console HTML-tag token). Both are no-ops when unset, so local dev never loads analytics.
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+// GA4 + Search Console. The Netlify env var wins (so you can override without a code change); otherwise
+// the wired-in GA4 Measurement ID (public, not a secret) loads in PRODUCTION builds only — undefined in
+// dev, so local dev never pollutes the analytics. GSC stays env-only (no-op when unset).
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? (process.env.NODE_ENV === "production" ? "G-EFH08JNJS3" : undefined);
 const GSC = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 
 export const metadata: Metadata = {
