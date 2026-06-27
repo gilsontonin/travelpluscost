@@ -235,6 +235,18 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Ride the tram, pack layers", detail: "The Sandia Peak Tramway climbs above 10,000 feet for the view, and the city itself sits a mile high, so evenings cool off fast." },
     ],
   },
+  "albuquerque-vs-santafe": {
+    kind: "compare",
+    title: "Albuquerque or Santa Fe?",
+    left: "Albuquerque",
+    right: "Santa Fe",
+    rows: [
+      { label: "The draw", left: "Bigger city, Route 66, the Balloon Fiesta", right: "Art galleries, the adobe plaza, higher-end" },
+      { label: "Hotels", left: "More choice, more affordable", right: "Pricier, more boutique" },
+      { label: "Food", left: "Green-chile everything", right: "Refined New Mexican" },
+      { label: "Getting there", left: "The closer airport, the Sunport", right: "About an hour north up I-25" },
+    ],
+  },
   "staugustine-by-numbers": {
     kind: "stat",
     title: "St. Augustine by the numbers",
