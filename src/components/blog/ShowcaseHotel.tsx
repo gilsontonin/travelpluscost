@@ -33,7 +33,7 @@ export default function ShowcaseHotel({
       {/* BIG card — swipable gallery + details, the whole card links to the property page */}
       <Link
         href={href}
-        className="group block overflow-hidden rounded-2xl border border-black/[0.1] bg-white transition hover:border-black/30 hover:shadow-sm"
+        className="group block overflow-hidden rounded-2xl border border-black/[0.08] bg-card shadow-card transition hover:shadow-pop"
       >
         <div className="relative aspect-[16/10] bg-zinc-100">
           <CardCarousel
