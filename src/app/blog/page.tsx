@@ -20,7 +20,6 @@ const fmtDate = (d: string) =>
 
 export default function BlogIndexPage() {
   const posts = getAllPosts();
-  const [lead, ...rest] = posts;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10">
@@ -32,60 +31,32 @@ export default function BlogIndexPage() {
         </p>
       </header>
 
-      {lead ? (
-        <Link
-          href={`/blog/${lead.slug}`}
-          className="group block overflow-hidden rounded-2xl border border-black/[0.08] bg-white transition-colors hover:border-black/25 sm:grid sm:grid-cols-2"
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={lead.cover.src}
-            alt={lead.cover.alt}
-            width={1200}
-            height={675}
-            className="h-56 w-full object-cover sm:h-full"
-          />
-          <div className="flex flex-col justify-center p-6 sm:p-8">
-            <span className="text-xs font-semibold uppercase tracking-wide text-accent">{lead.category}</span>
-            <h2 className="mt-2 text-xl sm:text-2xl font-bold leading-snug group-hover:text-accent">
-              {lead.title}
-            </h2>
-            <p className="mt-2 text-sm text-black/70">{lead.excerpt}</p>
-            <p className="mt-4 text-xs text-black/50">
-              {fmtDate(lead.date)} · {readingMinutes(lead.body)} min read
-            </p>
-          </div>
-        </Link>
-      ) : null}
-
-      {rest.length ? (
-        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {rest.map((p) => (
-            <Link
-              key={p.slug}
-              href={`/blog/${p.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-black/[0.08] bg-white transition-colors hover:border-black/25"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={p.cover.src}
-                alt={p.cover.alt}
-                width={1200}
-                height={675}
-                className="h-44 w-full object-cover"
-              />
-              <div className="flex flex-1 flex-col p-5">
-                <span className="text-xs font-semibold uppercase tracking-wide text-accent">{p.category}</span>
-                <h2 className="mt-1.5 text-base font-bold leading-snug group-hover:text-accent">{p.title}</h2>
-                <p className="mt-1.5 flex-1 text-sm text-black/65">{p.excerpt}</p>
-                <p className="mt-3 text-xs text-black/50">
-                  {fmtDate(p.date)} · {readingMinutes(p.body)} min read
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      ) : null}
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((p) => (
+          <Link
+            key={p.slug}
+            href={`/blog/${p.slug}`}
+            className="group flex flex-col overflow-hidden rounded-2xl border border-black/[0.08] bg-card shadow-card transition hover:shadow-pop"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={p.cover.src}
+              alt={p.cover.alt}
+              width={1200}
+              height={675}
+              className="h-44 w-full object-cover"
+            />
+            <div className="flex flex-1 flex-col p-5">
+              <span className="text-xs font-semibold uppercase tracking-wide text-accent">{p.category}</span>
+              <h2 className="mt-1.5 text-base font-bold leading-snug group-hover:text-accent">{p.title}</h2>
+              <p className="mt-1.5 flex-1 text-sm text-black/65">{p.excerpt}</p>
+              <p className="mt-3 text-xs text-black/50">
+                {fmtDate(p.date)} · {readingMinutes(p.body)} min read
+              </p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
