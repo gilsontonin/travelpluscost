@@ -25,9 +25,10 @@
 1. ✅ **Is New Orleans Safe? (+ which areas to avoid)** — `is new orleans safe` (4,400/**KD15**). 2nd: is it
    safe in new orleans, is new orleans dangerous, safest/areas to avoid. Intent: info. [money — "book in the
    corridor" → hub]. DONE (`is-new-orleans-safe`, serp 90, 2,231w). *Easiest win on the board.*
-2. ⬜ **Things to Do in New Orleans** — `things to do in new orleans` (**49,500**/KD31). 2nd: what to do
+2. ✅ **Things to Do in New Orleans** — `things to do in new orleans` (**49,500**/KD31). 2nd: what to do
    (9,900/26), best things to do (3,600/19), fun things (3,600/23), top things (32), things to see (34),
    must do (25), this weekend/today. Intent: info. [authority — the master spoke; link-hub for the cluster].
+   DONE (`things-to-do-in-new-orleans`, serp 94, 3,063w, first Viator `::activities` post).
 3. ⬜ **Things to Do in New Orleans With Kids** — `things to do in new orleans with kids` (2,400/**KD7**).
    2nd: children's activities (1,300/16), family-friendly, with toddlers. [authority/family].
 4. ⬜ **Free Things to Do in New Orleans** — `free things to do in new orleans` (1,600/**KD20**). [authority].

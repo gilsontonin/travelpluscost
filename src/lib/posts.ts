@@ -49,6 +49,303 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "things-to-do-in-new-orleans",
+    title: "16 Best Things to Do in New Orleans (2026)",
+    description:
+      "Best things to do in New Orleans in 2026: Frenchmen Street jazz, beignets, the WWII Museum, swamp tours, the streetcar, and free French Quarter wandering.",
+    excerpt:
+      "The honest, local-grade list of the best things to do in New Orleans — from the free Quarter wandering to the tours genuinely worth booking. Music, food, history, swamps and ghosts, as of 2026.",
+    tldr: {
+      answer:
+        "Wander the free French Quarter, catch live jazz on Frenchmen Street, and eat beignets at Café du Monde — then spend on the ticketed greats: the National WWII Museum, a swamp tour, a Steamboat Natchez jazz cruise, and a cemetery tour. Three to four days covers it comfortably.",
+      points: [
+        "**Free & essential** — Jackson Square, Frenchmen Street music, the French Market, the riverfront.",
+        "**Worth a ticket** — the WWII Museum, a swamp tour, the Steamboat Natchez, a cemetery tour.",
+        "**Best night out** — live jazz on Frenchmen Street, not Bourbon.",
+        "**With kids** — the Audubon Aquarium and Zoo, City Park.",
+        "**Time it** — for Mardi Gras or a festival, and book your room months ahead.",
+      ],
+    },
+    date: "2026-06-27",
+    updated: "2026-06-27",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/588077961.jpg",
+      alt: "A New Orleans French Quarter corner — wrought-iron galleries, red café umbrellas and warm evening light",
+      credit: { name: "French Quarter, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "What is the number one thing to do in New Orleans?",
+        a: "Wander the French Quarter and catch live jazz on Frenchmen Street at night — it's free, walkable, and the most quintessentially New Orleans experience there is. If you only do one ticketed thing, make it the National WWII Museum or a swamp tour.",
+      },
+      {
+        q: "What is New Orleans best known for?",
+        a: "Jazz (it's the birthplace), Creole and Cajun food (gumbo, beignets, po-boys), Mardi Gras, the French Quarter's wrought-iron architecture, and a round-the-clock party reputation. It's also famous for its above-ground cemeteries and its festival calendar, which runs basically year-round.",
+      },
+      {
+        q: "How many days do you need in New Orleans?",
+        a: "Three to four days is the sweet spot — enough for the French Quarter, a Garden District streetcar ride, the WWII Museum, a swamp tour or steamboat cruise, and a couple of great meals, without burning out. A long weekend covers the highlights; four days lets you slow down and add a day trip.",
+      },
+      {
+        q: "What can you do for free in New Orleans?",
+        a: "A lot. Jackson Square, the St. Louis Cathedral, the French Market, the Mississippi riverfront, street performers, the Besthoff Sculpture Garden in City Park, and window-shopping Royal and Magazine Streets all cost nothing. Live music on Frenchmen Street usually has no cover, too.",
+      },
+      {
+        q: "What is there to do in New Orleans at night?",
+        a: "Live jazz on Frenchmen Street is the headliner. Beyond that: an evening steamboat jazz cruise, a ghost or cemetery tour, Preservation Hall, the famous cocktails (a Sazerac or a spin on the Carousel Bar), and — once — the spectacle of Bourbon Street.",
+      },
+      {
+        q: "Is New Orleans good for kids and families?",
+        a: "Yes — the Audubon Aquarium on the riverfront, the Audubon Zoo Uptown, City Park with its storybook playground, and the streetcar are all family hits. The one adjustment is Bourbon Street after dark, which becomes an adult party, so families do the Quarter by day.",
+      },
+    ],
+    body: `Looking for the best **things to do in New Orleans**? You've picked a city that treats doing nothing as a competitive sport and still hands you more to do than a week can hold. Music, food, history, ghosts, swamps, and a street where the party never quite ends — the only real challenge is pacing yourself.
+
+This is the honest, local-grade list, updated for 2026, of what's actually worth your time. Some of it costs nothing, some of it needs a ticket, and all of it earns its spot.
+
+One rule before we start: do the free, walkable stuff by day and save your budget for the handful of tours that genuinely need one. We've roughly sorted these by what most **people** do first, but treat it as a menu, not a march — half the fun is what you stumble into between stops. Locals just call it **NOLA**, and by day two, so will you.
+
+::infographic nola-things-by-numbers
+
+## Wander the Historic French Quarter
+
+The Quarter is the reason you came, and you can fill a whole day in its **historic** streets without spending a dollar. This is the oldest neighborhood in New Orleans — a thirteen-block grid of wrought-iron galleries, hidden courtyards, and **architecture** that reads more Caribbean than American.
+
+The move is to **stroll** with no particular plan: down to Decatur for the Mississippi River, over to the quiet residential blocks near Esplanade. The Quarter rewards aimlessness, and the best things you'll find here won't be on anyone's list.
+
+Mornings are the magic window, before the heat and the crowds arrive — the light is soft, the **vibe** is calm, and you'll have the prettiest streets nearly to yourself. It's also the smartest place to base yourself, which we'll get to.
+
+## Watch the Street Performers in Jackson Square
+
+**Jackson Square** is the postcard heart of New Orleans — a tidy park ringed by the cathedral, the Pontalba row houses, and a permanent open-air fence-gallery of **local artists**. By day it fills with **street performers**: brass bands, tap dancers, tarot readers, and the occasional silver-painted living statue.
+
+Grab a bench, watch the show, and tip whoever earns it. It's free, it's the best people-watching in the city, and it basically never stops.
+
+Come back at golden hour, when the cathedral lights up and the **musicians** really hit their stride. It's the prettiest free show in town, and it doesn't cost a cent.
+
+## See the St. Louis Cathedral
+
+Towering over the Square, the **St. Louis Cathedral** is the oldest continuously active cathedral in the country and the most-photographed building in New Orleans. Step inside — it's free and quietly grand — then walk around the back.
+
+Behind it you'll find **Pirate's Alley**, a tiny flagstone lane of pure Old World atmosphere and one of the Quarter's best photos. William Faulkner wrote his first novel in the house halfway down it.
+
+Time your **visit** for late afternoon, when the light hits the white facade and the Square's painters are still out front. Ten minutes inside costs nothing and is worth the detour.
+
+## Stroll Royal Street
+
+For the Quarter at its most elegant, **stroll Royal Street** — the genteel cousin of Bourbon, lined with art galleries, antique shops, and balconies dripping with ferns. Street musicians set up on the pedestrian blocks by day, so there's almost always **live music** drifting down it.
+
+Look up as you go, because the cast-iron galleries and hanging plants are half the reason to be here. Many shops close by early evening, so make Royal a daytime walk.
+
+It's where to go when Bourbon Street gets to be too much, which is usually right around lunch.
+
+::infographic nola-by-interest
+
+## Catch Live Jazz on Frenchmen Street
+
+If Bourbon Street is where tourists go, **Frenchmen Street** is where the **live music** actually lives. Three blocks of clubs — the Spotted Cat, the Maison, the corner rooms — put the city's best brass and jazz a few feet from your table, usually with no cover charge.
+
+Go later in the evening, wander between the bars, and tip the band. It's the single most **NOLA** night you can have, and it ruins Bourbon Street for you forever.
+
+There's a nightly outdoor art market at the corner, too, so you can browse **local** work between sets. Skip the cover-charge traps on Bourbon and spend the night here instead — your ears will thank you.
+
+## Hear Traditional Jazz at Preservation Hall
+
+For the real, reverent thing, line up for **Preservation Hall** — a tiny, no-frills room in the Quarter that has honored traditional New Orleans jazz since 1961. No drinks, no photos, and no air conditioning to speak of, just a master band a few feet away.
+
+Sets are short and the seating is mostly the floor, so come early. You can queue for the cheaper walk-up line or pay a little more online to reserve, which is worth it on a hot, busy night.
+
+Whatever you do, don't **miss** it — this is the room where the tradition is deliberately kept alive.
+
+## Eat Beignets at Café du Monde
+
+You are, legally and morally, required to eat **beignets at Café du Monde**, the open-air institution that's been dusting tourists in powdered sugar since 1862. Order three and a café au lait, and accept that you will be wearing some of it home.
+
+It's open around the clock, so beat the line at dawn or after midnight. The beignets are the same at three in the morning, and so, somehow, is the crowd.
+
+If the main stand's line looks brutal, the City Park location is calmer and serves the same powdered-sugar idea. Order extra napkins either way, because **every** visitor underestimates the sugar.
+
+## Ride the Algiers Ferry Across the River
+
+For a couple of dollars, the **Algiers ferry** carries you across the **Mississippi River** from the foot of Canal Street to the old neighborhood of Algiers Point. The ride is short, breezy, and serves up the one skyline view of the Quarter from the water that doesn't require a cruise ticket.
+
+Wander Algiers Point's quiet, pastel streets for an hour, then ride back. It's one of the great cheap thrills in New Orleans.
+
+## Catch a Free Second Line Parade
+
+If you happen to **visit** on a Sunday in season, track down a **second line** — the rolling, brass-band street parades that are New Orleans at its most joyful and genuine. Anyone can fall in behind the band and dance the route.
+
+Check the local listings (the station WWOZ keeps a calendar) for where one's rolling. It's free, it's pure **local** culture, and it's the kind of thing you stumble into and never forget.
+
+## Ride the St. Charles Streetcar
+
+The St. Charles Avenue **streetcar** is a moving attraction and a genuine bargain — a century-old olive-green car that rattles past the oak-lined mansions of the **Garden District** for the price of a coffee. There are three lines in all: St. Charles for the mansions, the red Canal Street cars, and the Riverfront line along the **Mississippi River**.
+
+A day pass costs only a few dollars and turns the **streetcars** themselves into a slow, breezy city tour. Grab a window seat, let the breeze do the work the air conditioning won't, and watch the city roll by.
+
+It's the most relaxing hour in town, and a genuinely **fun** way to get your bearings on day one.
+
+## Explore the Garden District
+
+Hop off the streetcar around Washington Avenue and you land in the **Garden District**, the leafy, genteel counterpoint to the Quarter. This is where you **stroll** past antebellum mansions, cornstalk-shaped iron fences, and the kind of **architecture** that makes everyone stop and point.
+
+Peek through the gates of **Lafayette Cemetery No. 1**, then drift down to Magazine Street for lunch. A guided walking tour adds the gossip — which actor owns which mansion — but it's a lovely free wander on your own, too.
+
+Give it a half-day, and pair it with the streetcar ride out and back.
+
+::infographic nola-first-day
+
+## Tour the National WWII Museum
+
+Routinely ranked among the country's finest, the **National WWII Museum** is a half-day experience even if you don't consider yourself a museum person. Personal stories, restored aircraft, and a walk-through theater make the **history** land in a way a textbook never did.
+
+Buy timed tickets ahead and wear comfortable shoes, then budget more time than you think you need — because everyone does. The on-site restaurant and the rooftop bar make it easy to stay right through lunch.
+
+If you only **visit** one museum in New Orleans, make it this one.
+
+## Take a Swamp Tour in the Bayou
+
+Twenty minutes outside the city, the **swamp** is another world — cypress, Spanish moss, and alligators that drift up to the boat like they pay the mortgage. An airboat ride is the loud, fast version; a covered-boat tour is the calmer one that's better for photos.
+
+Most tours include hotel pickup, so it's an easy half-day, and they run year-round — though spring and fall are the most active for wildlife.
+
+Bring sunscreen and a hat, because the bayou offers no shade and the gators have zero sympathy for a sunburn. It's the excursion everyone's quietly glad they did.
+
+## Cruise the Mississippi on the Steamboat Natchez
+
+The **Steamboat Natchez** is the last authentic steamboat on the **Mississippi River**, and a jazz cruise aboard it is exactly as charming as it sounds — a calliope, a brass band, and the big river rolling by.
+
+Do the evening cruise for the sunset, or the daytime one for the harbor in full light. Book ahead in peak season, and arrive early to claim a spot on the open top deck.
+
+The river traffic — tankers, tugs, the odd ocean-going ship — is its own slow-motion show.
+
+## Take a Cemetery, Voodoo, or Ghost Tour
+
+New Orleans **buries its dead above ground** — the water table votes no on the alternative — and the result is the eerie, beautiful "cities of the dead." St. Louis Cemetery No. 1 now requires a guided tour to enter, which is just as well, because the stories are the whole point.
+
+It holds the reputed tomb of voodoo queen Marie Laveau, and the Garden District's Lafayette Cemetery is the other classic. After dark, the city's ghost and voodoo tours lean hard into the spooky.
+
+There's a surprising amount of real **history** under the theatrics, and the guide is genuinely the reason you came.
+
+::infographic nola-things-callout
+
+Many of the best experiences here — swamp tours, the steamboat, cemetery and ghost walks, cooking classes — are bookable in advance, which saves you the line in peak season. A few top-rated options:
+
+::activities New Orleans
+
+## Brave Bourbon Street, Once
+
+Love it or roll your eyes at it, **Bourbon Street** is a rite of passage — a neon, brass, hand-grenade-cocktail fever dream you should **see** at least once. Go in the early evening for the spectacle, before it gets genuinely sticky.
+
+Then escape to Frenchmen for the actual music. If you do drink your way down it, the **bars** here pour strong and to-go cups are legal, so pace yourself.
+
+One slow pass through Bourbon is plenty; a second is a decision you make about yourself. For the lay of the land, our guide on whether [New Orleans is safe](/blog/is-new-orleans-safe) covers the corridor.
+
+## Sip a Sazerac at a Historic Bar
+
+New Orleans practically **invented** the American cocktail, so drink like it. The **Sazerac** — rye, bitters, a whisper of absinthe — is the official one, and the Carousel Bar at the Monteleone slowly rotates whether or not you've earned it.
+
+For the tourist classics, a Hurricane at Pat O'Brien's and a frozen daiquiri on Bourbon both count. Treat the **bars** here as an attraction in their own right, not just a stop between sights.
+
+It's a cocktail list you can tour like a museum — ideally, a little responsibly.
+
+## Eat Your Way Through New Orleans
+
+You don't really **visit** New Orleans so much as eat your way across it. The **restaurants** here run from corner po-boy shops to white-tablecloth institutions, and you'll want to hit both ends.
+
+Beyond beignets, the must-eats are a **po-boy** (get a shrimp one, dressed), a bowl of gumbo, and a plate of char-grilled oysters. For the splurge, the grand Creole **restaurants** — Commander's Palace, Antoine's, Galatoire's — are an experience as much as a meal.
+
+Don't **miss** a jazz brunch, which is the most New Orleans way to eat eggs there is. Come hungry **every** single day, and walk between meals to make room.
+
+## Browse the French Market and Magazine Street
+
+For shopping with a pulse, hit the **French Market** — part farmers' market, part flea market, part praline stand — at the downriver end of the Quarter. For boutiques and **local** design, **Magazine Street** runs six miles of shops and cafés through Uptown.
+
+The French Market has a small food court for a quick bite, and Magazine Street is dotted with cafés for when your feet give out. Both are walkable, browsable, and a great rainy-day plan precisely because they're half indoors.
+
+Bring a tote and a little restraint.
+
+## See the Audubon Aquarium and Zoo
+
+Traveling with kids, or just want a break from the Quarter? The **Audubon Aquarium** on the riverfront and the **Audubon Zoo** Uptown are both genuinely good, with a combo ticket if you tackle both.
+
+They're easy, shaded, and a welcome change of pace from cobblestones. The zoo's Louisiana Swamp exhibit is a gentle preview of the real thing.
+
+Both sit on the riverfront streetcar and ferry loop, so you can do them without a car — the easiest **fun** the city hands families.
+
+## Escape to City Park and the Sculpture Garden
+
+Bigger than Central Park, **City Park** is a moss-draped, lagoon-laced retreat with the free **Besthoff Sculpture Garden**, the New Orleans Museum of Art, and a Morning Call stand for — you guessed it — more beignets.
+
+It's the city's exhale. Rent a bike, paddle a boat, or just sit under an oak that was old when the French showed up.
+
+**Every** local has a soft spot for City Park, and after a few days of cobblestones, so will you.
+
+## Take a Cajun or Creole Cooking Class
+
+The food is half the reason to come, so learn to make some of it. A **cooking class** — gumbo, jambalaya, a proper roux — turns a great meal into a souvenir you can actually use at home.
+
+Most run a couple of hours and feed you what you cook, which is the best kind of homework. Several run right in the Quarter, so it's an easy midday plan between sights.
+
+**Check** whether yours includes a market tour — the good ones do, and you'll leave knowing why everything down here starts with the holy trinity.
+
+## Take a Day Trip into Plantation Country
+
+With an extra day, head up the **Mississippi River** to River Road, where the old plantations tell the harder **history** of the region — Oak Alley's quarter-mile oak canopy is the famous one. It's about an hour from the city.
+
+Pair it with a swamp stop and you've got a full day out of New Orleans without needing a car, since most tours include pickup.
+
+It's the easiest way to **see** beyond the city limits and put the place in context.
+
+## Time Your Trip for Mardi Gras or a Festival
+
+If you can swing it, aim for a **festival** — the city basically runs on them. Mardi Gras is the headliner, but Jazz Fest, French Quarter Fest, and Essence each take over the city with music, food, and crowds.
+
+There's something on almost **every** month, so whenever you visit, check the calendar before you book. Book your room months ahead for Mardi Gras and Jazz Fest, though, because rates and availability vanish fast.
+
+Off a festival, you'll trade the spectacle for shorter lines and a calmer city.
+
+## Geek Out at the Offbeat Museums
+
+For a rainy hour or a weird streak, the Quarter hides gems: the **Pharmacy Museum** (America's first licensed apothecary, leeches and all), the Jazz Museum in the old Mint, and **Mardi Gras World**, where the giant parade floats are built and stored.
+
+They're cheap, quick, and exactly the right kind of strange for this city. Each one is a fast, cheap way to dodge an afternoon rain shower.
+
+The Pharmacy Museum alone will make you grateful for modern medicine.
+
+::infographic nola-free-vs-ticketed
+
+## The Best Things to Do When You Visit New Orleans
+
+These are the best **things to do in New Orleans**, but the list is really a starting point — every neighborhood here feels a little **different**, and the magic is that the **people**, the food, and the music do most of the work. Which **means** you mostly show up and **keep** your schedule loose.
+
+A good rhythm is free wandering and street **vibe** by day, a great meal at dusk, and **live music** by night. For a first **visit**, three or four days covers this list without rushing.
+
+::infographic nola-3-days
+
+If you're still sorting the **travel** logistics, our other New Orleans **guides** — from [where to stay](/blog/where-to-stay-in-neworleans) to [whether it's safe](/blog/is-new-orleans-safe) — pick up where this one leaves off, so you know what to read **next**. Every block down here has its own **story** and a slightly **different** mood, so slow down and let the city tell you.
+
+## Where to Stay Between Adventures
+
+All of this is walkable if you base in or near the **French Quarter**, which keeps you steps from the music, the beignets, and the river. Staying central means you can drop your bags, walk to dinner, and wander home from the music without ever needing a car. The **Hotel Monteleone** is the grand Quarter classic, home to the slowly rotating Carousel Bar.
+
+::hotel lp6583c58d
+
+A few blocks over, the **NOPSI Hotel** anchors the CBD with a rooftop pool and an easy walk to everything.
+
+::hotel lpa440f
+
+For the full area-by-area breakdown, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans), or browse the [New Orleans hotels hub](/hotels/new-orleans).
+
+However you fill your days, the price you book your room at here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee sprung on the last screen. Pick your base, lock the rate, and let **NOLA** do the rest.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "is-new-orleans-safe",
     title: "Is New Orleans Safe? Areas to Avoid + Tips (2026)",
     description:

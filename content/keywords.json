@@ -1,4 +1,25 @@
 {
+  "things-to-do-in-new-orleans": {
+    "primary": "things to do in new orleans",
+    "secondary": [
+      "what to do in new orleans",
+      "best things to do in new orleans",
+      "fun things to do in new orleans",
+      "top things to do in new orleans",
+      "things to see in new orleans",
+      "new orleans attractions",
+      "must do in new orleans",
+      "new orleans activities"
+    ],
+    "volume": 49500,
+    "kd": 31,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-27",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
+  },
   "is-new-orleans-safe": {
     "primary": "is new orleans safe",
     "secondary": [

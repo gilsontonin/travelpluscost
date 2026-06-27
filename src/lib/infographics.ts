@@ -369,6 +369,61 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { label: "The trade", left: "Some blocks fray toward the Tenderloin edge", right: "Pricey and crowded, and quiet after dark" },
     ],
   },
+  "nola-by-interest": {
+    kind: "stat",
+    title: "Pick your New Orleans by interest",
+    stats: [
+      { value: "Music", label: "Frenchmen Street, Preservation Hall, a jazz brunch" },
+      { value: "History", label: "the WWII Museum, the cemeteries, a plantation day trip" },
+      { value: "Food", label: "beignets, po-boys, gumbo, the grand Creole rooms" },
+      { value: "Family", label: "the Audubon Aquarium and Zoo, City Park, the streetcar" },
+    ],
+  },
+  "nola-3-days": {
+    kind: "steps",
+    title: "Three days in New Orleans",
+    steps: [
+      { title: "Day 1 — the Quarter", detail: "Jackson Square, Royal Street, beignets, Frenchmen Street jazz at night." },
+      { title: "Day 2 — history & garden", detail: "The WWII Museum, then the streetcar through the Garden District." },
+      { title: "Day 3 — the wild side", detail: "A swamp tour or steamboat cruise, a cooking class, a cemetery walk." },
+    ],
+  },
+  "nola-things-by-numbers": {
+    kind: "stat",
+    title: "New Orleans, at a glance",
+    stats: [
+      { value: "1718", label: "the year it was founded — the French Quarter is its oldest heart" },
+      { value: "Nightly", label: "live jazz on Frenchmen Street and at Preservation Hall" },
+      { value: "Free", label: "Jackson Square, the French Market and the riverfront cost nothing" },
+      { value: "Year-round", label: "festivals from Mardi Gras to Jazz Fest to French Quarter Fest" },
+    ],
+  },
+  "nola-first-day": {
+    kind: "steps",
+    title: "A perfect first day in the Quarter",
+    steps: [
+      { title: "Morning", detail: "Beignets and chicory coffee at Café du Monde, then Jackson Square and the cathedral." },
+      { title: "Midday", detail: "Browse the French Market and Royal Street; lunch on a po-boy or gumbo." },
+      { title: "Afternoon", detail: "Ride the St. Charles streetcar through the Garden District." },
+      { title: "Evening", detail: "Live jazz on Frenchmen Street — the locals' Bourbon Street." },
+    ],
+  },
+  "nola-free-vs-ticketed": {
+    kind: "compare",
+    title: "Free vs worth-the-ticket",
+    left: "Free",
+    right: "Worth a ticket",
+    rows: [
+      { label: "Do", left: "Jackson Square, French Market, riverfront, street jazz", right: "WWII Museum, swamp tour, steamboat cruise, cemetery tour" },
+      { label: "Best for", left: "Wandering, people-watching, photos", right: "History, the bayou, the Mississippi, the cemeteries" },
+      { label: "Tip", left: "Most of the Quarter costs nothing", right: "Book guided tours ahead in peak season" },
+    ],
+  },
+  "nola-things-callout": {
+    kind: "callout",
+    title: "The move: free by day, tours by night",
+    body: "The Quarter's best hits — Jackson Square, the cathedral, the river, the street music — are free and walkable. Save the budget for what genuinely needs a ticket: the WWII Museum, a swamp tour, a steamboat jazz cruise, or a cemetery tour you can't do solo.",
+  },
   "nola-safety-by-numbers": {
     kind: "stat",
     title: "New Orleans safety, at a glance",
