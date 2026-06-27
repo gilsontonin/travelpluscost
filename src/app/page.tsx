@@ -53,8 +53,7 @@ export default function Home() {
           The same for everyone.
         </h1>
         <p className="mt-5 text-lg sm:text-xl text-muted leading-snug">
-          What the hotel charges us, plus one small flat fee. Search from any phone, any city, any day — same
-          number. Never based on your data.
+          What the hotel charges us, plus one small flat fee — never based on your data.
         </p>
       </div>
 
