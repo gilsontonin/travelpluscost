@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { money } from "@/lib/format";
 import { useStay } from "@/lib/useStay";
 import { getCachedPrice, setCachedPrice } from "@/lib/priceCache";
+import { analytics } from "@/lib/analytics";
 
 // Compact price + booking CTA high on the page (fills the valuable top space, esp. on mobile where
 // there's no sticky desktop sidebar yet). Fetches the cheapest live rate; scrolls to the rooms.
@@ -70,6 +71,7 @@ export default function PriceCta({ hotelId }: { hotelId: string }) {
       </div>
       <a
         href="#rooms"
+        onClick={() => analytics.viewRooms({ hotelId })}
         className="shrink-0 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
       >
         See rooms &amp; prices

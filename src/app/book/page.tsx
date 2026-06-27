@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getOahuHotel } from "@/lib/oahu";
 import BookingForm from "@/components/BookingForm";
+import TrackEvent from "@/components/TrackEvent";
 import { money } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -37,6 +38,14 @@ export default async function BookPage({
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
+      <TrackEvent
+        event="begin_checkout"
+        params={{
+          value: allIn,
+          currency,
+          items: hotelId ? [{ item_id: hotelId, item_name: hotel?.name, item_category: "hotel" }] : undefined,
+        }}
+      />
       <Link
         href={hotelId ? `/hotel/${hotelId}?checkin=${checkin}&checkout=${checkout}&adults=${adults}` : "/"}
         className="text-sm text-black/50 hover:text-black"

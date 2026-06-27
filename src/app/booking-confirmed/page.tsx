@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getDirectoryHotel } from "@/lib/directory";
 import { money } from "@/lib/format";
+import TrackEvent from "@/components/TrackEvent";
 
 export const dynamic = "force-dynamic";
 
@@ -44,6 +45,16 @@ export default async function ConfirmedPage({
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-12">
+      <TrackEvent
+        event="purchase"
+        params={{
+          transaction_id: ref,
+          value: total,
+          currency,
+          payment_env: process.env.NEXT_PUBLIC_PAYMENT_ENV === "live" ? "live" : "sandbox",
+          items: hotelId ? [{ item_id: hotelId, item_name: hotel?.name ?? room, item_category: "hotel" }] : undefined,
+        }}
+      />
       <div className="bg-card border border-black/[0.07] rounded-2xl p-8 text-center shadow-card">
         <div className="mx-auto w-14 h-14 rounded-full bg-accent-tint grid place-items-center text-accent">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

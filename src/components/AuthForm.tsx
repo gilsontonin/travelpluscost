@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { authBrowser } from "@/lib/auth";
+import { analytics } from "@/lib/analytics";
 
 // Passwordless magic-link sign-in / free signup. One email field → Supabase emails a one-time
 // link → /auth/callback. No passwords (on-brand: minimal data, nothing to breach).
@@ -19,11 +20,15 @@ export default function AuthForm({ next = "/account" }: { next?: string }) {
     const { error } = await authBrowser().auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo } });
     setBusy(false);
     if (error) setError(error.message);
-    else setSent(true);
+    else {
+      setSent(true);
+      analytics.signUp({ method: "email" });
+    }
   }
 
   async function google() {
     setError("");
+    analytics.signUp({ method: "google" });
     const { error } = await authBrowser().auth.signInWithOAuth({ provider: "google", options: { redirectTo } });
     if (error) setError(error.message);
   }

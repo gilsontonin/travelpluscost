@@ -9,6 +9,7 @@ import DateField from "@/components/DateField";
 import GuestField from "@/components/GuestField";
 import DestinationField from "@/components/DestinationField";
 import AiSparkle from "@/components/AiSparkle";
+import { analytics } from "@/lib/analytics";
 
 type Initial = { destination?: string; vibe?: string; checkin?: string; checkout?: string; adults?: string };
 
@@ -73,6 +74,13 @@ export default function SearchPanel({
     if (checkin) q.set("checkin", checkin);
     if (checkout) q.set("checkout", checkout);
     q.set("adults", String(adults));
+    analytics.search({
+      destination: mode === "city" ? destination : undefined,
+      vibe: mode === "vibe" ? vibe.trim() : undefined,
+      checkin,
+      checkout,
+      adults,
+    });
     router.push(`/search?${q.toString()}`);
     if (compact) setOpen(false);
   }

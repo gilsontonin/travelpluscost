@@ -11,6 +11,7 @@ import PropertyNav from "@/components/PropertyNav";
 import PropertySearchBar from "@/components/PropertySearchBar";
 import ShareSaveButtons from "@/components/ShareSaveButtons";
 import PriceCta from "@/components/PriceCta";
+import TrackEvent from "@/components/TrackEvent";
 import PhotoGallery from "@/components/PhotoGallery";
 import ViatorPackages from "@/components/ViatorPackages";
 import Highlights from "@/components/Highlights";
@@ -166,6 +167,13 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
         </nav>
         <ShareSaveButtons id={hotel.id} name={hotel.name} />
       </div>
+      <TrackEvent
+        event="view_item"
+        params={{
+          items: [{ item_id: hotel.id, item_name: hotel.name, item_category: "hotel" }],
+          city: hotel.city,
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

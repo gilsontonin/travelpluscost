@@ -7,6 +7,7 @@ import DateField from "@/components/DateField";
 import GuestField from "@/components/GuestField";
 import DateQuickPicks from "@/components/DateQuickPicks";
 import { useStay } from "@/lib/useStay";
+import { analytics } from "@/lib/analytics";
 
 // Property-page search bar (Expedia-style): Where to (prefilled with THIS hotel) · Dates · Travelers · Search.
 // Date/guest edits update the URL params live, so RoomsPanel re-prices instantly. Search jumps to the rooms
@@ -26,6 +27,7 @@ export default function PropertySearchBar({ hotelName }: { hotelName: string }) 
       if (checkout) q.set("checkout", checkout);
       q.set("adults", String(adults));
       q.set("destination", d);
+      analytics.search({ destination: d, checkin, checkout, adults });
       router.push(`/search?${q.toString()}`);
     } else {
       document.getElementById("rooms")?.scrollIntoView({ behavior: "smooth" });
