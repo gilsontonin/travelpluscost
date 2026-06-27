@@ -29,12 +29,27 @@ function textOf(c: ReactNode): string {
 
 const mdComponents: Components = {
   h2: ({ children }) => (
-    <h2 id={slugify(textOf(children))} className="mt-9 mb-1 scroll-mt-24 text-xl font-bold text-black">{children}</h2>
+    <h2
+      id={slugify(textOf(children))}
+      className="mt-10 mb-2 scroll-mt-24 border-t border-black/10 pt-7 text-xl font-bold text-black [counter-increment:section] before:mr-2 before:font-extrabold before:text-accent/70 before:[content:counter(section)_'.']"
+    >
+      {children}
+    </h2>
   ),
   h3: ({ children }) => (
     <h3 id={slugify(textOf(children))} className="mt-6 mb-1 scroll-mt-24 text-lg font-semibold text-black">{children}</h3>
   ),
-  p: ({ children }) => <p>{children}</p>,
+  p: ({ children }) => {
+    // The per-section quick-facts strip ("The move: … · Best for: … · Watch: …") renders as a
+    // designed callout box, not a dense bold paragraph (owner layout rule, 2026-06-27).
+    if (textOf(children).trimStart().startsWith("The move:"))
+      return (
+        <div className="my-5 rounded-xl border-l-4 border-accent bg-accent-tint/40 px-4 py-3 text-sm leading-relaxed text-black/80 [&_strong]:text-black">
+          {children}
+        </div>
+      );
+    return <p>{children}</p>;
+  },
   ul: ({ children }) => <ul className="list-disc space-y-1.5 pl-5">{children}</ul>,
   ol: ({ children }) => <ol className="list-decimal space-y-1.5 pl-5">{children}</ol>,
   strong: ({ children }) => <strong className="font-semibold text-black">{children}</strong>,
@@ -93,7 +108,7 @@ export default function PostBody({
   const linked = new Set<string>();
   const link = (text: string) => autolinkMarkdown(text, entities, linked);
   return (
-    <div className="mt-7 space-y-4 text-[15.5px] leading-relaxed text-black/80">
+    <div className="mt-7 space-y-4 text-[16.5px] leading-relaxed text-black/80 [counter-reset:section]">
       {blocks.map((b, i) => {
         if (b.type === "infographic") return <Infographic key={i} id={b.key} />;
         if (b.type === "priceproof") return <PriceProof key={i} />;
@@ -125,7 +140,7 @@ export default function PostBody({
                 <span className="shrink-0 text-xs font-medium text-accent group-open:hidden">Read more +</span>
                 <span className="hidden shrink-0 text-xs font-medium text-accent group-open:inline">Show less −</span>
               </summary>
-              <div className="space-y-3 px-4 pb-4 text-[15.5px] leading-relaxed text-black/80">
+              <div className="space-y-3 px-4 pb-4 text-[16.5px] leading-relaxed text-black/80">
                 <ReactMarkdown remarkPlugins={[remarkGfm]} components={mdComponents}>{b.text}</ReactMarkdown>
               </div>
             </details>
