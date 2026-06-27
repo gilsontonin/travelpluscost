@@ -127,6 +127,35 @@
       }
     ]
   },
+  "where-to-stay-in-kauai": {
+    "primary": "where to stay in kauai",
+    "secondary": [
+      "where to stay in kauai hawaii",
+      "best place to stay in kauai",
+      "where to stay in kauai on a budget",
+      "where to stay in poipu kauai",
+      "where to stay in princeville kauai",
+      "where to stay in hanalei kauai",
+      "where to stay in kauai south shore",
+      "where to stay in kauai with family",
+      "where not to stay in kauai"
+    ],
+    "volume": 2900,
+    "kd": 19,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-26",
+    "status": "published",
+    "history": [
+      {
+        "date": "2026-06-26",
+        "action": "new post",
+        "serp_before": 32,
+        "serp_after": 94,
+        "note": "Low KD (19) but the DEEPEST on-page SERP yet (genuine band 4,736-6,305w; competitors are giant Hawaii mega-guides) — KD is the rank difficulty, not the density target. Rewrote the first draft (was serp 39 / 2,640w) to serp 94 / 4,600w with real depth: per-area things-to-do, a West Side section, a types-of-stay table, an itinerary, best-beaches + more-rain Q-sections. CARD FIX: 6 of the 9 original cards (Whalers Cove, Hanalei Bay Resort, Hanalei Colony, Fern Grotto Inn, Pono Kai, Timbers) returned NO live rate on /api/prices (peak AND shoulder) — swapped for the verified marquees the SERP wanted anyway (Grand Hyatt, Sheraton, 1 Hotel Hanalei Bay, Hilton Garden Inn, Kauai Shores). Heading 100%, slop 0 HARD, checklist 24/24, check 2/2. Lighthouse perf 86 / a11y 97 = the site-wide baseline (live Maui post scores 89/97 identically — external on-demand cover LCP + shared card muted-text contrast, not a content defect). HI cluster: links to/from Maui + Oahu."
+      }
+    ]
+  },
   "where-to-stay-in-galveston": {
     "primary": "where to stay in galveston",
     "secondary": [

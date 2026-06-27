@@ -49,6 +49,16 @@
     "where-to-stay-in-santabarbara",
     "where-to-stay-in-sedona"
   ],
+  "where-to-stay-in-kauai": [
+    "where-to-stay-in-maui",
+    "where-to-stay-in-oahu",
+    "where-to-stay-in-savannah",
+    "where-to-stay-in-keywest",
+    "where-to-stay-in-santabarbara",
+    "where-to-stay-in-charleston",
+    "where-to-stay-in-scottsdale",
+    "where-to-stay-in-moab"
+  ],
   "where-to-stay-in-sanantonio": [
     "where-to-stay-in-albuquerque",
     "where-to-stay-in-savannah",
@@ -190,14 +200,14 @@
     "where-to-stay-in-scottsdale"
   ],
   "where-to-stay-in-maui": [
+    "where-to-stay-in-kauai",
     "where-to-stay-in-oahu",
     "where-to-stay-in-santabarbara",
     "where-to-stay-in-keywest",
     "where-to-stay-in-sedona",
     "where-to-stay-in-scottsdale",
     "where-to-stay-in-charleston",
-    "where-to-stay-in-moab",
-    "where-to-stay-in-bend"
+    "where-to-stay-in-moab"
   ],
   "surveillance-pricing": [
     "where-to-stay-in-maui",
@@ -210,13 +220,13 @@
     "where-to-stay-in-galveston"
   ],
   "where-to-stay-in-oahu": [
+    "where-to-stay-in-kauai",
     "where-to-stay-in-maui",
     "where-to-stay-in-keywest",
     "where-to-stay-in-galveston",
     "where-to-stay-in-charleston",
     "where-to-stay-in-scottsdale",
     "where-to-stay-in-santabarbara",
-    "where-to-stay-in-sanantonio",
-    "where-to-stay-in-bend"
+    "where-to-stay-in-sanantonio"
   ]
 }

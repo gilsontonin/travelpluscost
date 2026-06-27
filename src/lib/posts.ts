@@ -1387,7 +1387,7 @@ Whichever area wins, the price you book here is the same one everyone else sees 
     slug: "where-to-stay-in-kauai",
     title: "Where to Stay in Kauai, Hawaii: Best Areas & Hotels (2026)",
     description:
-      "Where to stay in Kauai in 2026: best areas — Poipu and the South Shore, Princeville and Hanalei on the North Shore, the East Side and Lihue — with real hotels and honest rates.",
+      "Where to stay in Kauai in 2026: the best areas — sunny Poipu, the green North Shore, the central East Side and Lihue — with real hotels and honest rates.",
     excerpt:
       "Sunny South Shore or lush North Shore? A plain-English guide to picking the right Kauai base — by area, budget, the weather, and the trip you're taking.",
     tldr: {
@@ -1436,16 +1436,24 @@ Whichever area wins, the price you book here is the same one everyone else sees 
         q: "How many days do you need in Kauai?",
         a: "Four to five days is a good minimum to see the South Shore, Waimea Canyon and the North Shore without rushing. A week lets you do it properly — and the smart move for a longer trip is a split stay, a few nights in Poipu and a few in Princeville, so you're not driving across the island every day.",
       },
+      {
+        q: "What is the most affordable area to stay in Kauai?",
+        a: "The East Side — Kapaa and Wailua — and Lihue are the best-value bases, with lower rates than Poipu or Princeville and a central location. The bigger savings, though, come from the format: a condo or vacation rental with a kitchen cuts the food bill on an island where dinner adds up, and value hotels like Kauai Shores in Kapaa or the Kauai Inn near Lihue generally start lower than the resorts. Prices move daily, so search your exact dates for the real number.",
+      },
+      {
+        q: "What types of places can you stay in on Kauai?",
+        a: "Four broad types: full-service resorts (the Grand Hyatt and Sheraton at Poipu, 1 Hotel Hanalei Bay up north), condos and vacation rentals with kitchens (the island's quiet majority and the value pick for families and longer trips), beachfront and value hotels, and a small number of budget hotels. Resorts cluster on the South Shore and in Princeville; condos and rentals are everywhere, especially the East Side; and there's very little inventory of any kind on the remote West Side.",
+      },
     ],
-    body: `**Where to stay in Kauai comes down to the sunny South Shore around Poipu** if it's your first trip, the lush North Shore around Princeville and Hanalei if you came for the scenery, or the East Side if you want a central, better-value base. The oldest and greenest of the main Hawaiian islands wears its nickname — the Garden Isle — honestly, and picking a base is mostly about how much sun, scenery or value you want to wake up to.
+    body: `**Where to stay in Kauai comes down to the sunny South Shore around Poipu** if it's your first trip, the rain-fed, jungle-green North Shore around Princeville and Hanalei if you came for the scenery, or the East Side if you want a central, better-value base. The oldest and greenest of the main Hawaiian islands wears its nickname — the Garden Isle — honestly, and picking a base is mostly about how much sun, scenery or value you want to wake up to.
 
-Below are the real, bookable hotels in each area, then the honest guide to where to stay in Kauai, Hawaii, as of 2026.
+Below are the real, bookable hotels in each area, then the honest travel guide to where to stay in Kauai, Hawaii, as of 2026.
 
 One thing to know up front: Kauai has a single main road and no loop, because the Na Pali cliffs block the northwest corner. You drive out and back, not around — so where you base really does shape the trip.
 
 ## Kauai Areas, at a Glance
 
-The deciding factor is the weather and the drive: the dry, convenient South Shore, the beautiful but rainier North Shore, or the central East Side in between. These are the areas most visitors stay in, and each one is a different kind of trip. Choose the area by your trip, then the hotel — here's the whole Garden Isle on one screen.
+The deciding factor is the weather and the drive: the dry, convenient South Shore, the beautiful but rainier North Shore, the central East Side in between, or the wild, barely-developed West Side. These are the areas most visitors stay in, and each one is a different kind of trip. Choose the area by your trip, then the hotel — here's the whole Garden Isle on one screen.
 
 ::areas Kauai
 
@@ -1455,6 +1463,9 @@ The deciding factor is the weather and the drive: the dry, convenient South Shor
 | [Princeville & Hanalei / North Shore](/search?destination=Kauai&adults=2) | Lush, dramatic, laid-back | Scenery, hiking, couples | Mid to high |
 | [Kapaa & Wailua / East Side](/search?destination=Kauai&adults=2) | Central, town-and-beach | Value, families, a home base | Low to mid |
 | [Lihue](/search?destination=Kauai&adults=2) | The airport town, convenient | Value, short trips, golf | Low to mid |
+| [Waimea / West Side](/search?destination=Kauai&adults=2) | Remote, rural, frontier-quiet | Waimea Canyon, solitude, sunsets | Low, few options |
+
+There's no wrong base, only trade-offs — sun versus scenery, convenience versus quiet, resort polish versus a kitchen and a lower bill. The sections below walk each area, the real hotels in it, and the kind of traveler it suits.
 
 ::infographic kauai-by-numbers
 
@@ -1466,15 +1477,33 @@ The deciding factor is the weather and the drive: the dry, convenient South Shor
 
 This is the call for first-timers, families and anyone who wants reliable sun over dramatic scenery. Poipu Beach is a protected, kid-friendly crescent, the Spouting Horn blowhole and the old plantation town of Koloa sit right there, and the resorts run from full-service to condo. The trade is that Poipu is the most built-up part of Kauai, and the North Shore is a real drive away.
 
-### Koloa Landing, Ko'a Kea and the Poipu Resorts
+[See all South Shore hotels and live rates](/search?destination=Kauai&adults=2)
 
-The South Shore holds the island's best resort lineup. The Koloa Landing Resort at Poipu (an Autograph Collection hotel) is the big family pick, with a lagoon pool complex; Ko'a Kea is the smaller, adults-leaning boutique right on Poipu Beach; and Whalers Cove is the oceanfront-condo option for more space and a kitchen.
+### The Poipu Resorts: Grand Hyatt, Sheraton, Koloa Landing and Ko'a Kea
+
+The South Shore holds the island's biggest cluster of resorts, and the marquee is the Grand Hyatt Kauai Resort & Spa — a sprawling oceanfront grande dame above Shipwreck Beach, with a saltwater lagoon, a river pool and the kind of grounds guests return to for decades. The Sheraton Kauai Resort Villas sit right on Poipu Beach for the same beachfront access in a roomier, villa-style layout. For a full-service family base, the Koloa Landing Resort at Poipu (an Autograph Collection hotel) is the big pick, built around a lagoon pool complex; and Ko'a Kea is the smaller, adults-leaning boutique a few steps from the sand.
+
+::hotel lp1ddad
+
+::hotel lp19d43
 
 ::hotel lp57027
 
 ::hotel lp4160b
 
-::hotel lp657831e2
+### Poipu Condos and Vacation Rentals
+
+Beyond the resorts, the South Shore has the island's deepest run of condos and vacation rentals — the local move for families and longer stays, because a kitchen quietly cuts the food bill on an island where dinner adds up. Aston at Poipu Kai spreads low-rise condo units across landscaped grounds a short walk from the beach, and the well-known Kiahuna Plantation condos sit on a 35-acre oceanfront lawn nearby. You give up daily resort service; you get more space, a washer, and an easy walk to the sand.
+
+::hotel lp309b0
+
+[See every Poipu and South Shore stay](/search?destination=Kauai&adults=2)
+
+### Things to Do on the South Shore
+
+Poipu Beach is the anchor — a protected, kid-friendly crescent that's free to use and one of the best swimming and snorkeling spots on the island, with a resident monk seal or two hauled out on the sand most afternoons. A few minutes west, the Spouting Horn blowhole shoots seawater through a lava tube, and the charming town of Koloa is the place for casual shopping, shave ice and a coffee — most of it within walking distance once you park. For a quick adventure, the Mahaulepu Heritage Trail runs along wild, undeveloped sea cliffs east of the resorts — an easy clifftop walk with sweeping ocean views and almost no crowds.
+
+[Search hotels near Poipu Beach](/search?destination=Kauai&adults=2)
 
 **The move:** book Poipu for sun, calm swimming and a first trip · **Best for:** first-timers, families, resorts · **Watch:** it's the busiest, most resort-y side — and a 90-minute drive from the North Shore.
 
@@ -1484,13 +1513,29 @@ The South Shore holds the island's best resort lineup. The Koloa Landing Resort 
 
 This is the pick for couples, hikers and anyone chasing the postcard. Princeville sits up on a bluff with the bigger hotels and golf; Hanalei town below is a single laid-back street of surf shops and food trucks; and the road dead-ends a few miles west at Ke'e Beach, where the Na Pali coast and the Kalalau Trail begin. The catch is the weather: the North Shore is the wettest part of Kauai, especially in winter, and it's a long drive from everything south.
 
-### Hanalei Bay Resort and the North Shore Stays
+[See all North Shore hotels and live rates](/search?destination=Kauai&adults=2)
 
-There are only a handful of true hotels up here — the charm is the lack of them. The Hanalei Bay Resort sits on the Princeville bluff with bay views, and the Hanalei Colony Resort is the only oceanfront resort past Hanalei town, a genuinely remote, no-TV kind of place out toward the end of the road.
+### 1 Hotel Hanalei Bay and the Princeville Resorts
 
-::hotel lp3f633
+There are only a handful of true hotels up here — the charm is the lack of them. The marquee is 1 Hotel Hanalei Bay, the island's newest five-star resort (it opened in 2022), terraced into the bluff above the bay with a wellness-and-sustainability bent; it's a genuine splurge and the photo at the top of this guide. For the same Princeville bluff at a more down-to-earth rate, The Cliffs at Princeville is a low-key condo resort with ocean-view units, a pool and easy access to the clifftop trails. Most other North Shore stays are vacation rentals and condos rather than big hotels — that's the trade you make for the scenery.
 
-::hotel lp3b9f5
+::hotel lp22786
+
+::hotel lp5587f
+
+[Search North Shore stays in Princeville and Hanalei](/search?destination=Kauai&adults=2)
+
+### What Towns to Stay in on the North Shore
+
+Three names cover it. Princeville is the planned resort community up on the bluff — the bigger hotels and condos, a golf course, grocery and the easiest base if you want a little infrastructure with your scenery. Hanalei town sits below it: a single laid-back street of surf shops and food trucks wrapped around the bay, mostly vacation rentals and a quick 10-minute drive from Princeville but a world away in feel. And the smaller communities east — Kilauea, with its lighthouse and bird refuge, and the reef-calmed cove at Anini Beach — are where you go for a quiet beach house or condo rental away from any resort at all.
+
+[Browse Princeville and Hanalei stays](/search?destination=Kauai&adults=2)
+
+### Things to Do on the North Shore
+
+This is the postcard side. Hanalei Bay is the perfect two-mile crescent you've seen in a dozen movies; Tunnels (Makua) and Ke'e are the snorkel-and-sunset beaches near the end of the road; and Ke'e is where the pavement stops and the roadless Na Pali Coast — also spelled Napali Coast — begins. You see those cliffs three ways: a Napali catamaran boat tour out of the harbor, a helicopter tour for the full sweep, or on foot via the strenuous Kalalau Trail. Closer in, the Limahuli Garden tucks a native-plant preserve into a green valley, and the one-lane bridges along the way are half the fun (and a built-in speed limit).
+
+[Find a North Shore base near the Na Pali coast](/search?destination=Kauai&adults=2)
 
 **The move:** base north for scenery, hiking and a slower pace · **Best for:** couples, nature, the Na Pali coast · **Watch:** winter rain is real here, and you'll drive a long way for the canyon and the sun.
 
@@ -1500,13 +1545,27 @@ There are only a handful of true hotels up here — the charm is the lack of the
 
 This is the smart pick for families, longer stays and budget-minded travelers who want a home base over a resort. Rates run lower than Poipu or Princeville, the bike-and-walk coastal path runs for miles along the shore, and the Wailua River leads up to Opaekaa Falls and the Fern Grotto. It trades beachfront-resort polish for convenience and value, and the beaches here are better for strolling than for swimming.
 
-### Fern Grotto Inn and the Kapaa-Wailua Stays
+[See all East Side hotels and live rates](/search?destination=Kauai&adults=2)
 
-The East Side leans to condos, inns and value hotels rather than big resorts. The Fern Grotto Inn is a charming, well-reviewed cottage stay up the Wailua River, and the Pono Kai Resort is an oceanfront condo complex right in Kapaa town, walkable to the shops and the coastal path.
+### Kauai Shores, the Sheraton Coconut Beach and the East Side Hotels
 
-::hotel lp43d91
+The East Side leans to value hotels, beachfront condos and a couple of real resorts rather than the big-ticket names. Kauai Shores Hotel is the standout-value pick — a colorful, low-key hotel right on the Kapaa sand, a longtime favorite with thousands of guest reviews. The Sheraton Kauai Coconut Beach Resort sits on a ten-acre former coconut grove directly on the ocean, the area's main full-service resort. For a reliable brand on Wailua Bay there's the Hilton Garden Inn Kauai Wailua Bay, and the Aston Islander on the Beach is a tidy beachfront-value option a short walk from town.
 
-::hotel lp656e12bc
+::hotel lp1ebd9
+
+::hotel lp207c8
+
+::hotel lp24778
+
+::hotel lp1c5ae
+
+[See every East Side and Coconut Coast stay](/search?destination=Kauai&adults=2)
+
+### Things to Do on the East Side
+
+The East Side is built for a home base. The Wailua River — the only navigable river in Hawaii — leads up to Opaekaa Falls and the Fern Grotto, reached by kayak or the old riverboat. The Sleeping Giant (Nounou) trail is the local half-day hike, the multi-use coastal path runs for miles along the shore for an easy walk or bike ride, and the Coconut Marketplace handles casual shopping and a farmers' market. The beaches here are better for strolling and sunset than swimming, which is the honest trade for the central location and the lower rates.
+
+[Search Coconut Coast and Kapaa stays](/search?destination=Kauai&adults=2)
 
 **The move:** base east for value and a central location · **Best for:** families, budgets, longer stays · **Watch:** the beaches are for walking, not swimming — you'll drive to Poipu or the north for the best water.
 
@@ -1514,55 +1573,101 @@ The East Side leans to condos, inns and value hotels rather than big resorts. Th
 
 **Lihue is where to stay in Kauai for convenience and value near the airport — the island's small commercial center on the east side, a few minutes from the only airport (LIH) and the cruise harbor.** It trades scenery for practicality: it's the cheapest, most central place to land, with a couple of real resorts, golf and the big-box stores.
 
-This is the sensible base for a short trip, an early flight, or a first and last night that bookends a stay elsewhere. Kalapaki Beach by the harbor is a calm, protected bay good for a swim, the Marriott's Kauai Lagoons golf and resort grounds are right there, and Wailua Falls is a short drive up the hill. Most visitors don't come to Kauai to stay in Lihue, but for value and an easy base it does the job.
+This is the sensible base for a short trip, an early flight, or a first and last night that bookends a stay elsewhere. Kalapaki Beach by the harbor is a calm, protected bay good for a swim, and Wailua Falls is a short drive up the hill. The Marriott's Kauai Lagoons sits on the golf-and-resort grounds above the harbor; the oceanfront Royal Sonesta Kaua'i Resort fronts Kalapaki Beach itself; and for a genuinely affordable, well-reviewed base the Kauai Inn is a quiet small hotel just outside the center. Most visitors don't come to Kauai to stay in Lihue, but for value and an easy landing it does the job.
 
 ::hotel lp6346d
 
-::hotel lpbdaea
+::hotel lp1bf91
+
+::hotel lp4b82b
+
+[Search Lihue hotels near the airport](/search?destination=Kauai&adults=2)
 
 **The move:** book Lihue for value, golf and airport convenience · **Best for:** short trips, early flights, value · **Watch:** it's the practical town, not the scenery — you'll drive out for the best of the island.
+
+## The West Side: Waimea, Kokee and the Quiet End of Kauai
+
+**The West Side — Waimea, Kekaha and the road up to Kokee — is where to stay in Kauai if you want frontier-quiet and the canyon at your door, but it's the least-developed corner, with almost no hotels.** This is the dry, rural, sun-baked side: the gateway to Waimea Canyon and Kokee State Park, the launch point for Na Pali boat tours out of Port Allen, and the long, empty sands of Polihale, where the pavement and the island both run out.
+
+Almost no one bases here, and the inventory shows it — the historic Waimea Plantation Cottages (restored sugar-era cottages on a coconut grove) is the one notable place to actually stay, and it books direct, so you won't find a live rate for it here. What the West Side is really for is the daytime: drive up as early as possible for Waimea Canyon and the Kokee lookout sites before the clouds close in, then time your way back for sunset, because the west-facing beaches get the best ones on the island. Most visitors do all of that as a day trip from Poipu, 30 to 45 minutes east, and sleep where the resorts are.
+
+[Compare South Shore stays near the West Side](/search?destination=Kauai&adults=2)
+
+**The move:** day-trip the West Side from Poipu; only base here for deep quiet · **Best for:** Waimea Canyon, solitude, sunsets · **Watch:** few places to stay, little to eat after dark, and a long way from the North Shore.
+
+## Types of Places to Stay on Kauai: Resorts, Condos and Vacation Rentals
+
+**Once you've picked a side, the other choice is what kind of roof you want over it — a full-service resort, a condo with a kitchen, a vacation rental, or a budget hotel.** Kauai runs the full range, and the format you choose shapes the trip (and the bill) as much as the area does.
+
+| Type | What you get | The trade | Best for |
+|---|---|---|---|
+| Luxury resort | Pools, restaurants, daily service, beachfront | The highest rates on the island | A splurge, a special trip |
+| Condo / vacation rental | A kitchen, a washer, more room | No daily service | Families, longer stays, value |
+| Budget hotel | Plain, well-run, often free parking and Wi-Fi | No frills, rarely beachfront | Tight budgets, short stays |
+
+**Luxury resorts** cluster on the South Shore and in Princeville — the Grand Hyatt and the Sheraton at Poipu, 1 Hotel Hanalei Bay up north, the Marriott at Lihue. They buy you pools, restaurants, daily service, beachfront and the full resort experience, and in season the marquees run well north of $600 a night including taxes.
+
+**Condos and vacation rentals** are the island's quiet majority and the local move for families and longer trips — Aston at Poipu Kai, The Cliffs at Princeville, the Kapaa condos — because a kitchen and a washer turn a week from a splurge into a value, with beachfront condos within walking distance of the sand commonly in the $300–500 range.
+
+**Budget hotels** do exist if you know where to look: Kauai Shores in Kapaa, the Kauai Inn near Lihue, and a handful of plain, well-run small hotels generally start around $250–300 a night — high for the mainland, low for Hawaii, and many include free parking and Wi-Fi that the resorts often charge for. Whatever the format, search your exact dates, because the live price is the only honest one.
+
+[Compare resorts, condos and value stays on Kauai](/search?destination=Kauai&adults=2)
 
 ## North Shore or South Shore: Which Side of Kauai?
 
 **For a first trip, choose the South Shore and don't overthink it — Poipu's reliable sun and calm beaches make the easiest base, with the North Shore a day trip away.** The single biggest decision on Kauai is which side to sleep on, and it comes down to sun versus scenery.
 
-The South Shore wins on weather and convenience: it's dry and sunny year-round, the swimming is gentle, and the resorts and restaurants are clustered close. The North Shore wins on beauty: Hanalei Bay, the waterfalls and the Na Pali coast are the images you came for, but it's lush because it rains, and it's a long way from the canyon and the west side. The East Side splits the difference for value and a central base.
+The South Shore wins on weather and convenience: it's dry and sunny year-round, the swimming is gentle, and the resorts and restaurants are clustered close. The North Shore wins on beauty: Hanalei Bay, the waterfalls and the Na Pali coast are the images you came for, but it's green because it rains, and it's a long way from the canyon and the west side. The East Side splits the difference for value and a central base.
+
+[Compare South Shore and North Shore hotels](/search?destination=Kauai&adults=2)
 
 ::infographic kauai-north-vs-south
+
+### Which Side of Kauai Has the Best Beaches?
+
+It depends on the season, which trips up a lot of first-timers. In summer (roughly April to October) the North Shore wins — Hanalei Bay, Tunnels and Ke'e are calm, clear and about as beautiful as beaches get. In winter that same coast takes big, dangerous surf with strong currents, and the safe, swimmable water shifts to the South Shore, where Poipu Beach stays gentle year-round. So if you came to swim and snorkel and you're traveling in winter, the South Shore has the best beaches; in summer, it's a genuine toss-up and the North Shore edges it on looks.
+
+[Search stays near Kauai's best beaches](/search?destination=Kauai&adults=2)
+
+### Which Side of Kauai Gets More Rain?
+
+The North Shore, by a wide margin — that's why it's so green. Climate data puts Hanalei at roughly nine inches of rain in December against about five in Poipu, and the island's interior peak, Mount Waialeale, is one of the wettest places on Earth. The rain tends to come in fast passing showers rather than all-day gloom, but in a wet North Shore winter it really can settle in for days. The South Shore stays reliably drier and sunnier every month of the year, which is the whole case for basing there on a first trip.
 
 The honest answer for a week or more: don't choose. Split your stay — a few nights in Poipu for the sun and a few in Princeville for the scenery — so you wake up in both Kauais and skip the daily cross-island drive.
 
 [Search Kauai hotels on both shores](/search?destination=Kauai&adults=2)
 
-## Things to Do in Kauai
+## How Many Days in Kauai, and a Sample Itinerary
 
-**Kauai's draws are almost all outdoors and spread across the island, which is why where you base matters so much.** For an island you can drive across in a couple of hours, the variety is absurd — a canyon, a roadless coast, waterfalls, rivers and some of the best beaches in Hawaii.
+**Give Kauai four to five days minimum, a week if you can — and on a longer trip, split your stay so you're not driving across the island every day.** The big sights are spread from Waimea Canyon in the west to the Na Pali trailhead in the north, so a Kauai itinerary is really a question of where you sleep on which night.
 
-### Waimea Canyon and the West Side
+Here are a few tips and a first-timer template to help you shape five to seven days:
 
-The signature inland outing is Waimea Canyon, the "Grand Canyon of the Pacific," a 3,000-foot-deep gorge of red and green on the west side, with lookouts right off the road and trails down into it. The same drive climbs to the Kalalau Lookout over the Na Pali coast — go early, before the clouds roll in and turn the view into a wall of mist.
+- **Days 1–3, South Shore (Poipu).** Settle in for sun and calm swimming. Spend a day on Poipu Beach and the Mahaulepu coast, give a full morning to Waimea Canyon and the Kokee lookouts (go early, before the clouds), and keep an afternoon for the Spouting Horn and Old Koloa Town.
+- **Days 4–5, North Shore (Princeville/Hanalei).** Move north for the scenery. Hanalei Bay, a Na Pali boat or helicopter tour, the beaches at Tunnels and Ke'e, and a slow dinner in Hanalei town. If you only get one splurge meal or one tour, spend it up here.
+- **A central alternative.** Short on time, or want to unpack once? Base on the East Side instead and day-trip both ends — you'll add some driving but skip the mid-trip move.
 
-### The Na Pali Coast and Hanalei Bay
+Whatever you do, build in a buffer day for weather: if the North Shore is socked in, flip the plan and chase the sun south. Two local notes you'll learn fast — the island's feral roosters are everywhere and do not respect your alarm clock, and the best cheap eats are the food trucks and plate-lunch spots the locals love, so try the one with the longest line.
 
-The Na Pali coast — the roadless cliffs of the northwest — is the island's headline, seen by boat tour, helicopter, or on foot via the strenuous Kalalau Trail from Ke'e Beach. On the North Shore, Hanalei Bay is the perfect crescent you've seen in a dozen movies, and the waterfalls and one-lane bridges along the way are half the fun.
-
-### Beaches, Rivers and the Coconut Coast
-
-Poipu Beach anchors the south for easy swimming and snorkeling, the Wailua River on the east is the one navigable river in Hawaii (kayaks and the Fern Grotto boat), and Tunnels and Ke'e on the north are the snorkel-and-sunset beaches. A note you'll learn fast: the feral roosters are everywhere, and they do not respect your alarm clock.
-
-[Search Kauai hotels near the beaches](/search?destination=Kauai&adults=2)
+[Find a Kauai base for your itinerary](/search?destination=Kauai&adults=2)
 
 ## When to Visit Kauai
 
-**Kauai is a year-round island, but the weather splits by shore: the South Shore stays sunny while the North Shore is wettest from about November to March.** If reliable sun is the point, the South Shore delivers any month; if the North Shore is the plan, aim for the drier summer.
+**Kauai is a year-round island, but the weather splits by shore: the South Shore stays sunny while the North Shore is wettest from about November to March.** If reliable sun is the point, the South Shore delivers any month; if staying on the North Shore is the plan, aim for the drier summer if possible.
 
-Summer (roughly April to October) is the driest stretch, the best for the North Shore and the ocean, and also the busiest and priciest. Winter brings bigger surf to the north, the chance of days-long rain up there, and whale watching offshore. The spring and fall shoulders — late April to early June, September into October — tend to bring the best mix of decent weather and softer rates. Whenever you come, mornings are clearer than afternoons, so do the canyon and the lookouts early.
+Summer (roughly April to October) is the driest stretch, the best for the North Shore and the ocean, and also the busiest and priciest. Winter brings bigger surf to the north, the chance of days-long rain up there, and the whale-watching season offshore. The spring and fall shoulders — late April to early June, September into October — tend to bring the best mix of decent weather and softer rates, and you might find the island a little quieter, too. Whenever you come, mornings are clearer than afternoons, so try to do the canyon and the lookouts as early as possible.
+
+By month, the sweet spots are usually May, early June, September and October — warm water, smaller crowds and softer rates in the gaps between spring break, the summer peak and the winter holidays. Whale season runs roughly December through April and is best watched from the south and west shores. Pack light layers and a rain shell whatever the forecast says: a passing shower is part of the deal on the Garden Isle, and a bright North Shore morning can turn green-and-grey within the hour.
+
+[Search Kauai stays for your exact dates](/search?destination=Kauai&adults=2)
 
 ## Getting Around Kauai
 
 **Kauai is a driving island, so a rental car is essentially required — there's one main highway and no loop, so you drive out and back.** The Na Pali cliffs seal off the northwest corner, which means the road from Lihue runs north to Ke'e Beach one way and west to Waimea Canyon the other, with no way to connect them around the top.
 
-That geography is the whole reason your base matters. From a central East Side base you're closest to both ends; from Poipu or Princeville you've committed to one side. Traffic through Kapaa can crawl at rush hour, gas and groceries are cheapest in Lihue and Kapaa, and the public bus exists but won't get you to the trailheads or the best beaches on any useful schedule. Rent the car, fill it up, and plan your days by shore rather than zig-zagging across the island.
+That geography is the whole reason your base matters. From a central East Side base you're closest to both ends; from Poipu or Princeville you've committed to one side, though that's fine if you're mostly staying put. Traffic through Kapaa can crawl at rush hour, gas and groceries are cheapest in Lihue and Kapaa, and the public bus exists but won't get you to the trailheads or the best beaches on any useful schedule. Rent the car as early as possible, fill it up, and plan your days by shore rather than zig-zagging across the island.
+
+[Find a base close to where you'll drive most](/search?destination=Kauai&adults=2)
 
 ::infographic kauai-getting-there
 
@@ -1579,9 +1684,9 @@ Here's how far the main areas and sights sit from a central East Side base:
 
 ## What a Night in Kauai Costs
 
-**Kauai is one of the pricier Hawaiian islands to sleep on — it's small, remote and resort-heavy, with little budget inventory.** The North Shore and the Poipu resorts sit at the top, the East Side runs more affordable, and Lihue and the condos are where the value is. Rates climb in the dry summer and over the holidays and dip in the wetter, quieter shoulders.
+**Kauai is one of the pricier Hawaiian islands to sleep on — it's small, remote and resort-heavy, with little budget inventory.** Expect to pay more here than on Oahu for a comparable room, including taxes and the resort fees many properties add, and the cost climbs the closer you get to the sand. The North Shore and the Poipu resorts sit at the top, the East Side runs less expensive, and Lihue and the condos are where the value is. Rates rise in the dry summer and over the holidays and dip in the wetter, quieter shoulders.
 
-Outside of peak summer and the holidays, the spring and fall shoulders and a midweek stay bring the best value, and a condo with a kitchen on the East Side cuts the food bill on an island where dinner adds up. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a blog.
+Outside of peak summer and the holidays, the spring and fall shoulders and a midweek stay bring the best value, and a condo with a kitchen on the East Side cuts the food bill on an island where dinner adds up. Prices move daily, so the only honest number is the live one — search your exact dates rather than trusting a stamped figure from a travel site.
 
 ::infographic how-pricing-works
 
@@ -1593,7 +1698,7 @@ Here's our part of the bill, in plain English: you pay what the hotel charges us
 
 ## Which Kauai Area Should You Choose?
 
-**For a first trip, choose Poipu and the South Shore — the sun, the calm beaches and the resorts make the easiest base, with the rest of the island a drive away.** Pick the North Shore for scenery and a slower pace, the East Side for value and a central location, and Lihue for a short, convenient or budget trip.
+**For a first trip, choose Poipu and the South Shore — the sun, the calm beaches and the resorts make the easiest base, with the rest of the island a drive away.** Pick the North Shore for scenery and a slower pace, the East Side for value and a central location, and Lihue for a short, convenient or budget trip. To help you decide, here's the whole island matched to the kind of trip you might be taking.
 
 | Your trip | Best area | Why |
 |---|---|---|
@@ -1607,13 +1712,15 @@ Once you've matched an area to your trip, here are real, well-reviewed Kauai hot
 
 | Hotel | Area | Guest score | Best for |
 |---|---|---|---|
-| Whalers Cove | Poipu / South | 10 | Oceanfront condos |
-| Fern Grotto Inn | Wailua / East | 9.8 | A charming home base |
 | Koloa Landing, Autograph | Poipu / South | 9.4 | Family resort |
 | Ko'a Kea | Poipu Beach | 9.4 | Adults, boutique |
-| Marriott's Kauai Lagoons | Lihue | 9.4 | Golf, value, convenient |
-| Hanalei Colony Resort | North Shore | 9.0 | Remote, oceanfront |
-| Hanalei Bay Resort | Princeville | 8.5 | North Shore bay views |
+| Marriott's Kauai Lagoons | Lihue | 9.4 | Golf, convenient |
+| Sheraton Kauai Resort Villas | Poipu / South | 9.2 | Beachfront villas |
+| The Kauai Inn | Lihue | 9.2 | Value home base |
+| 1 Hotel Hanalei Bay | Princeville / North | 9.1 | Five-star splurge |
+| Grand Hyatt Kauai | Poipu / South | 9.0 | The grande dame |
+| Kauai Shores | Kapaa / East | 9.0 | Value, beachfront |
+| Sheraton Coconut Beach | Kapaa / East | 8.6 | East-side resort |
 
 Whichever side wins, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting at the end. If the islands have you planning more, our guide to [where to stay in Maui](/blog/where-to-stay-in-maui) is the next stop across the channel.
 
@@ -5164,7 +5271,7 @@ That matters most on a big ticket island like Maui, where a few nights at a Wail
 
 You can check our work, which is the point. Open a Maui hotel on your laptop, then open it on your phone — same price. Once you've picked your side of the island, [search current Maui prices](/search?destination=Maui&adults=2) and sort by what actually matters to you.
 
-Planning the rest of the trip or comparing islands? Our guide to [where to stay in Oahu](/blog/where-to-stay-in-oahu) runs on the same honest pricing, and [why we built it this way](/about) explains the rest. Plenty of travelers love pairing the two islands, so read that one next for tips on the other side.`,
+Planning the rest of the trip or comparing islands? Our guides to [where to stay in Oahu](/blog/where-to-stay-in-oahu) and [where to stay in Kauai](/blog/where-to-stay-in-kauai) run on the same honest pricing, and [why we built it this way](/about) explains the rest. Plenty of travelers love pairing two islands, so read one of those next for tips on the other side.`,
   },
   {
     slug: "surveillance-pricing",
