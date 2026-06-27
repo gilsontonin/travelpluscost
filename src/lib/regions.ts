@@ -58,6 +58,25 @@ export const MAUI: Region = {
   ],
 };
 
+export const KAUAI: Region = {
+  slug: "kauai",
+  name: "Kauai",
+  label: "Kauai, Hawaii",
+  terms: ["kauai", "lihue", "poipu", "koloa", "kapaa", "princeville", "hanalei", "wailua"],
+  cities: ["Lihue", "Koloa", "Kapaa", "Princeville", "Hanalei"],
+  center: [22.05, -159.5],
+  anchor: "Poipu Beach",
+  landmarks: [
+    { name: "Poipu Beach", lat: 21.8744, lng: -159.4558 },
+    { name: "Lihue airport (LIH)", lat: 21.976, lng: -159.339, airport: true },
+    { name: "Hanalei Bay", lat: 22.2061, lng: -159.5022 },
+    { name: "Princeville", lat: 22.2227, lng: -159.4839 },
+    { name: "Wailua Falls", lat: 22.0383, lng: -159.378 },
+    { name: "Waimea Canyon", lat: 22.0699, lng: -159.6618 },
+    { name: "Na Pali Coast", lat: 22.1741, lng: -159.6427 },
+  ],
+};
+
 export const LAS_VEGAS: Region = {
   slug: "lasvegas",
   name: "Las Vegas",
@@ -115,7 +134,7 @@ export const SAN_DIEGO: Region = {
   ],
 };
 
-export const REGIONS: Region[] = [OAHU, MAUI, LAS_VEGAS, SEATTLE, SAN_DIEGO];
+export const REGIONS: Region[] = [OAHU, MAUI, KAUAI, LAS_VEGAS, SEATTLE, SAN_DIEGO];
 
 export const PRIMARY_REGION = REGIONS[0];
 

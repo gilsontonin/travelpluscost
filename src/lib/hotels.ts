@@ -4,6 +4,7 @@
 // docs/ARCHITECTURE.md — once a single JSON gets too big.)
 import oahuData from "../../content/oahu.json";
 import mauiData from "../../content/maui.json";
+import kauaiData from "../../content/kauai.json";
 import lasVegasData from "../../content/lasvegas.json";
 import seattleData from "../../content/seattle.json";
 import sanDiegoData from "../../content/sandiego.json";
@@ -14,6 +15,7 @@ import { regionForIsland, resolveRegion, type Region } from "./regions";
 const DATASETS: Hotel[][] = [
   oahuData as Hotel[],
   mauiData as Hotel[],
+  kauaiData as Hotel[],
   lasVegasData as Hotel[],
   seattleData as Hotel[],
   sanDiegoData as Hotel[],

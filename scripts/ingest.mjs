@@ -28,6 +28,17 @@ const REGIONS = {
       { city: "Wailea", limit: 10 },
     ],
   },
+  kauai: {
+    island: "Kauai",
+    countryCode: "US",
+    cities: [
+      { city: "Lihue", limit: 20 },
+      { city: "Koloa", limit: 20 },
+      { city: "Kapaa", limit: 18 },
+      { city: "Princeville", limit: 14 },
+      { city: "Hanalei", limit: 8 },
+    ],
+  },
   lasvegas: {
     island: "Las Vegas",
     countryCode: "US",
