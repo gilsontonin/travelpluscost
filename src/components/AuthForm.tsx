@@ -62,7 +62,7 @@ export default function AuthForm({ next = "/account" }: { next?: string }) {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="you@email.com"
+          placeholder="happytraveler@email.com"
           className="w-full border border-black/15 rounded-xl px-3.5 py-3 text-sm outline-none focus:border-accent"
         />
         <button

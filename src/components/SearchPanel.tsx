@@ -8,6 +8,7 @@ import type { Vertical } from "@/lib/verticals";
 import DateField from "@/components/DateField";
 import GuestField from "@/components/GuestField";
 import DestinationField from "@/components/DestinationField";
+import AiSparkle from "@/components/AiSparkle";
 
 type Initial = { destination?: string; vibe?: string; checkin?: string; checkout?: string; adults?: string };
 
@@ -102,7 +103,7 @@ export default function SearchPanel({
           aria-label="Search by vibe"
           className="inline-flex shrink-0 items-center gap-1 rounded-full border border-accent/30 px-2.5 py-1.5 text-sm font-medium text-accent transition hover:border-accent/60"
         >
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 1.9 5.8L19.5 9l-4.6 3.8L16.4 19 12 15.5 7.6 19l1.5-6.2L4.5 9l5.6-1.2z" /></svg>
+          <AiSparkle size={13} />
           Vibe
         </button>
       </div>
@@ -169,14 +170,14 @@ export default function SearchPanel({
             onClick={() => setMode("vibe")}
             className={`flex flex-1 items-center justify-center gap-1.5 rounded-lg py-2 text-sm font-medium transition ${mode === "vibe" ? "bg-white text-accent shadow-sm" : "text-black/55 hover:text-black"}`}
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 1.9 5.8L19.5 9l-4.6 3.8L16.4 19 12 15.5 7.6 19l1.5-6.2L4.5 9l5.6-1.2z" /></svg>
+            <AiSparkle size={14} />
             Search by vibe
           </button>
         </div>
 
         {mode === "vibe" ? (
           <label className="flex w-full items-start gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 transition hover:border-black/30 focus-within:border-accent">
-            <svg className="mt-1.5 shrink-0 text-accent" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 1.9 5.8L19.5 9l-4.6 3.8L16.4 19 12 15.5 7.6 19l1.5-6.2L4.5 9l5.6-1.2z" /></svg>
+            <AiSparkle size={20} className="mt-1.5 shrink-0 text-accent" />
             <span className="min-w-0 flex-1">
               <span className="block text-xs text-black/45">Describe your perfect trip</span>
               <input

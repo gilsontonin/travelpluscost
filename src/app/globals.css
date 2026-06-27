@@ -107,3 +107,13 @@ body {
   font-size: 0.85rem;
   text-align: center;
 }
+
+/* LiteAPI booking-assistant chatbot — home page only. Its floating bubble overlaps CTA buttons on the
+   property/search pages, so hide it everywhere by default and only reveal it on the home route (flagged
+   on <html data-home="true"> by RouteFlag). */
+#liteapi-chatbot-host {
+  display: none;
+}
+html[data-home="true"] #liteapi-chatbot-host {
+  display: block;
+}

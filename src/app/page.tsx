@@ -47,12 +47,14 @@ export default function Home() {
     <div className="mx-auto max-w-5xl px-4 pt-10 sm:pt-14 pb-20">
       {/* hero (also the "how pricing works" anchor target for the nav) */}
       <div id="how" className="scroll-mt-24 text-center max-w-2xl mx-auto">
-        <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05]">
-          One honest price.
+        <h1 className="text-balance text-4xl sm:text-6xl font-semibold tracking-tight leading-[1.05]">
+          <span className="bg-gradient-to-r from-[#0066cc] to-[#3b9eff] bg-clip-text text-transparent">
+            One honest price.
+          </span>
           <br />
           The same for everyone.
         </h1>
-        <p className="mt-5 text-lg sm:text-xl text-muted leading-snug">
+        <p className="mx-auto mt-5 max-w-xl text-pretty text-lg sm:text-xl text-muted leading-snug">
           What the hotel charges us, plus one small flat fee — never based on your data.
         </p>
       </div>

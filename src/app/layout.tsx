@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import MemberPitch from "@/components/MemberPitch";
 import Footer from "@/components/Footer";
+import RouteFlag from "@/components/RouteFlag";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import { SITE_URL, SITE_NAME, SITE_TAGLINE, SITE_DESCRIPTION } from "@/lib/site";
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="min-h-full flex flex-col bg-[#f4f4f6] text-foreground">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ENTITY_LD) }} />
         <Header />
+        <RouteFlag />
         <MemberPitch />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -149,7 +149,7 @@ export default function DestinationField({
           <input
             value={value}
             onChange={(e) => { onChange(e.target.value); setOpen(true); setActive(-1); }}
-            onFocus={() => setOpen(true)}
+            onFocus={(e) => { setOpen(true); e.currentTarget.select(); }}
             onBlur={() => window.setTimeout(() => setOpen(false), 120)}
             onKeyDown={onKeyDown}
             required
@@ -161,6 +161,17 @@ export default function DestinationField({
             className="w-full bg-transparent outline-none text-[15px] font-medium mt-0.5 placeholder:font-normal placeholder:text-black/40"
           />
         </span>
+        {value ? (
+          <button
+            type="button"
+            onMouseDown={(e) => e.preventDefault()}
+            onClick={() => { onChange(""); setOpen(true); }}
+            aria-label="Clear destination"
+            className="shrink-0 self-center rounded-full p-1 text-black/35 transition hover:bg-black/[0.06] hover:text-black/70"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12" /></svg>
+          </button>
+        ) : null}
       </label>
 
       {open ? (
