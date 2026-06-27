@@ -7,6 +7,7 @@ import FilterChip from "@/components/FilterChip";
 import { ALL_AMENITIES } from "@/lib/oahu";
 import type { CardHotel } from "@/lib/oahu";
 import type { Price } from "@/lib/rates";
+import { getCachedPrice, setCachedPrice } from "@/lib/priceCache";
 import {
   EMPTY_FILTERS,
   activeFilterCount,
@@ -89,14 +90,38 @@ export default function ResultsList({
   // ~500 up front), so big-city result sets stay fast. Each scroll step fetches just the new ids.
   const pagedSig = paged.map((h) => h.id).join(",");
   useEffect(() => {
-    const toFetch = paged.filter((h) => !done.has(h.id) && !inflight.current.has(h.id)).map((h) => h.id);
+    // Apply any cached browse prices instantly (back/forward navigation); only fetch the uncached.
+    const cachedGot: Record<string, Price> = {};
+    const toFetch: string[] = [];
+    for (const h of paged) {
+      if (done.has(h.id) || inflight.current.has(h.id)) continue;
+      const cached = getCachedPrice<Price>(`price:${h.id}:${checkin}:${checkout}:${adults}`);
+      if (cached) cachedGot[h.id] = cached;
+      else toFetch.push(h.id);
+    }
+    const cachedIds = Object.keys(cachedGot);
+    if (cachedIds.length) {
+      Promise.resolve().then(() => {
+        setPrices((p) => ({ ...p, ...cachedGot }));
+        setDone((s) => {
+          const n = new Set(s);
+          cachedIds.forEach((id) => n.add(id));
+          return n;
+        });
+      });
+    }
     if (!toFetch.length) return;
     // Debounce: fast-scrolling fires this on every page step, which spews a burst of rate calls that
     // time each other out. Wait for the scroll to settle, then fetch the revealed cards in one batch.
     const timer = setTimeout(() => {
       toFetch.forEach((id) => inflight.current.add(id));
       const settle = (got: Record<string, Price>) => {
-        if (Object.keys(got).length) setPrices((p) => ({ ...p, ...got }));
+        if (Object.keys(got).length) {
+          setPrices((p) => ({ ...p, ...got }));
+          for (const [id, price] of Object.entries(got)) {
+            setCachedPrice(`price:${id}:${checkin}:${checkout}:${adults}`, price);
+          }
+        }
         setDone((s) => {
           const n = new Set(s);
           toFetch.forEach((id) => n.add(id));

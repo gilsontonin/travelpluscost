@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { money } from "@/lib/format";
 import { useStay } from "@/lib/useStay";
+import { getCachedPrice, setCachedPrice } from "@/lib/priceCache";
 
 // Compact price + booking CTA high on the page (fills the valuable top space, esp. on mobile where
 // there's no sticky desktop sidebar yet). Fetches the cheapest live rate; scrolls to the rooms.
@@ -13,19 +14,32 @@ export default function PriceCta({ hotelId }: { hotelId: string }) {
 
   useEffect(() => {
     let on = true;
+    const cacheKey = `rooms:${hotelId}|${checkin}|${checkout}|${adults}`; // shared with RoomsPanel
+    type Offer = { price: { amount: number; allIn?: number; nights: number; currency: string } };
+    const apply = (d: { offers?: Offer[] }) => {
+      if (!on) return;
+      const c = (d.offers ?? []).slice().sort((a, b) => a.price.amount - b.price.amount)[0];
+      if (c) {
+        const allIn = c.price.allIn ?? c.price.amount;
+        setP({ perNight: Math.round(allIn / c.price.nights), allIn, currency: c.price.currency });
+      }
+      setDone(true);
+    };
+    const cached = getCachedPrice<{ offers?: Offer[] }>(cacheKey);
+    if (cached) {
+      Promise.resolve().then(() => apply(cached));
+      return () => {
+        on = false;
+      };
+    }
     const q = new URLSearchParams({ hotelId, adults: adults || "2" });
     if (checkin) q.set("checkin", checkin);
     if (checkout) q.set("checkout", checkout);
     fetch(`/api/rooms?${q.toString()}`)
       .then((r) => r.json())
       .then((d) => {
-        if (!on) return;
-        const c = (d.offers ?? []).slice().sort((a: { price: { amount: number } }, b: { price: { amount: number } }) => a.price.amount - b.price.amount)[0];
-        if (c) {
-          const allIn = c.price.allIn ?? c.price.amount;
-          setP({ perNight: Math.round(allIn / c.price.nights), allIn, currency: c.price.currency });
-        }
-        setDone(true);
+        apply(d);
+        if (on) setCachedPrice(cacheKey, d);
       })
       .catch(() => on && setDone(true));
     return () => {

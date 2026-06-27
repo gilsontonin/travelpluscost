@@ -7,6 +7,7 @@ import RoomDateBar from "@/components/RoomDateBar";
 import DateQuickPicks from "@/components/DateQuickPicks";
 import { money } from "@/lib/format";
 import { useStay } from "@/lib/useStay";
+import { getCachedPrice, setCachedPrice } from "@/lib/priceCache";
 import type { RoomOffer } from "@/lib/rates";
 
 type RoomSortKey = "price_asc" | "price_desc" | "sleeps" | "size";
@@ -222,6 +223,20 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
   useEffect(() => {
     let on = true;
     const loadSig = `${hotelId}|${checkin}|${checkout}|${adults}`;
+    const cacheKey = `rooms:${loadSig}`;
+    // Serve instantly from the browse cache on back/forward (microtask avoids sync setState-in-effect).
+    const cached = getCachedPrice<RoomsData>(cacheKey);
+    if (cached) {
+      Promise.resolve().then(() => {
+        if (on) {
+          setData(cached);
+          setLoadedSig(loadSig);
+        }
+      });
+      return () => {
+        on = false;
+      };
+    }
     const q = new URLSearchParams({ hotelId, adults });
     if (checkin) q.set("checkin", checkin);
     if (checkout) q.set("checkout", checkout);
@@ -231,6 +246,7 @@ export default function RoomsPanel({ hotelId, name }: { hotelId: string; name?: 
         if (on) {
           setData(d);
           setLoadedSig(loadSig);
+          setCachedPrice(cacheKey, d);
         }
       })
       .catch(() => {
