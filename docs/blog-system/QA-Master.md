@@ -109,7 +109,8 @@ _(Add a row when a new rule introduces a new tension. This table + the Change-lo
 | Check | Bar | Tool |
 |---|---|---|
 | Answer first, no tease + dry hook in first 50w | — | 👁 post-checklist 2.1/2.4 |
-| Bold the answer PHRASE (intro) + key phrases through body (≥1/H2) | — | post-checklist 2.2/2.2b |
+| Bold a few KEY WORDS through the body (≥1/H2) — **NOT a whole sentence/phrase** (2026-06-27 owner rule; whole-sentence bolds banned) | phrase not sentence | post-checklist 2.2/2.2b + 👁 |
+| Property cards distributed INLINE (one per hotel, in the prose), never piled; skip stock photos (cards are the visuals) | inline, not stacked | 👁 (2026-06-27) |
 | Keyword in first 100w + H1 + title | — | post-checklist 2.3 |
 | #8 TL;DR set, ≠ first paragraph, ≠ excerpt | 40–55w answer + 3–5 bold bullets | AUTO 3.3a-e |
 | Snippet format matched (para/list/table) | — | 👁 3.2 |
@@ -195,4 +196,14 @@ _(Add a row when a new rule introduces a new tension. This table + the Change-lo
 - **2026-06-20 — ADDED Block 4 (Humour) teeth.** Humour beat now requires LISTED evidence per content section (was a silent 👁 row); `voice-scorecard.mjs` flags zero-wit sections. Trigger: "concise" silently killed the humour twice ([[conversion-style-suppressed-humour]]).
 - **2026-06-20 — ADDED Block 3 metering for #2 RFT + #3 active voice.** Both were teeth-less judgment rows that could drift like humour did; `voice-scorecard.mjs` now meters passive-voice + avoidance-framing as hints.
 - **2026-06-20 — ADDED Block 13 (Regression watch)** as a required loop-back step.
+- **2026-06-27 — STYLE-BAR RESET (owner).** The where-to-stay posts (SF, NOLA) ranked but read DRY. New
+  canonical workflow = `docs/blog-system/BLOG-PROMPT.md` (copy-paste prompt); print `PRINT-CHECKLIST.md` in
+  full every run. Hard rules added/sharpened: **funny is mandatory** (Block 4 — a beat every ~200–250w,
+  written into the fact); **bold a few KEY WORDS, NOT a whole sentence** (Block 6 — whole-sentence answer
+  bolds banned); **paragraphs 3 sentences / 1 for punchlines / never 4+** (Block 3 #1); **property cards
+  distributed INLINE, never piled, no stock photos** (Block 8). Layout shipped in `PostBody.tsx`: `The move:`
+  → callout box; H2s get a counter number + divider rule; body font 16.5px. Demo: the NOLA rewrite (commit
+  02448b0). See [[blog-craft-rules]] + WritingLessons "readability rewrite" lesson. Calibration tension
+  confirmed: the readability rewrite first dropped serp 90→79 (lost per-hotel H3 headings + whole-sentence
+  exact-phrase) — restore by moving phrases to area H2s + natural keyword mentions, never reverting the read.
 - _(Add new rows here when we calibrate / retire / add a rule. Date + what changed + why.)_

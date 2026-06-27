@@ -11,6 +11,28 @@
 
 ---
 
+## ⭐ 2026-06-27 — THE STYLE BAR (read this first, it overrides older wording below)
+
+The recent posts passed SEO but read **dry, dense, and spec-sheet-like**. The owner reset the bar to the
+Hawaii-Picnics posts. **The canonical, copy-paste workflow is now `docs/blog-system/BLOG-PROMPT.md`;** the
+final QA you must PRINT every run is `docs/blog-system/PRINT-CHECKLIST.md`. The non-negotiables:
+
+1. **WRITE IT FUNNY — mandatory.** A dry beat every ~200–250 words, the joke written INTO the fact (nose-
+   exhale test). Deadpan, no `!`/emoji, safe targets only. See `Humour.md`.
+2. **Bold a few KEY WORDS — never a whole sentence.** (This OVERRIDES "bold the answer phrase" everywhere
+   below — bolding the full answer sentence under an H2 is banned.)
+3. **Paragraphs: 3 sentences is the workhorse, 1 sentence for punchlines, never 4+.** Mix for white space.
+4. **Active voice, instructional.** What to do / what to avoid.
+5. **Property cards ARE the visuals — distribute them INLINE (one per hotel, where it's discussed), never
+   pile them; skip stock photos** unless genuinely illustrative.
+6. **≥1 well-designed infographic / ~500w** (native `::infographic` stat/compare/steps/callout, not a bare
+   table). Cards + infographics both count.
+7. **Layout (in the components):** the `The move:` strip renders as a coral callout; every H2 gets a number
+   + a divider rule; body font 16.5px; keep the top search bar + 8-hotel rail before the body.
+8. **PRINT the full checklist every run; never ship dry or red — circle back until green.**
+
+---
+
 ## 0. The prime directive + the 6 ways agents wreck a post
 
 **Prime directive:** write the genuinely most useful, most honest, best-researched page on the internet
@@ -210,7 +232,7 @@ This list exists because these are the exact shortcuts that ship bad posts. Name
 - **FAQ** (4–8 Qs): *leftover* questions only, each answer 2–4 sentences opening with a **bold phrase**.
 - **One opinion** (number-backed) and **at most one story** (true, adapted — omit if none fits). **Never
   invent a customer, a number, or an event.**
-- Keep paragraphs ≤3 sentences. Bold the answer phrase in **every** section (eye-direction for skimmers).
+- Keep paragraphs to 3 sentences (1 for a punchline; never 4+). **Bold a few KEY WORDS for skimmers — NOT the whole answer sentence** (see the Style Bar above; whole-sentence bolds are banned).
 
 ### 5.5 Visuals (retention + skimmability)
 - **≥ 1 native infographic per ~500 words (HARD count)** — comparison cards, a stat panel, a steps

@@ -12,6 +12,16 @@
 
 ---
 
+## ⭐ 2026-06-27 — STYLE BAR + the print rule (read first)
+The recent posts ranked but read dry. The copy-paste workflow is now **`docs/blog-system/BLOG-PROMPT.md`**,
+and you must **PRINT `docs/blog-system/PRINT-CHECKLIST.md` in full at the end of every post** (status column
+✅/❌/👁, a beat listed per section). Never ship dry or red — circle back until green. Hard craft rules:
+**(1) funny is mandatory** (a beat every ~200–250w, written into the fact); **(2) bold a few KEY WORDS, never
+a whole sentence**; **(3) paragraphs = 3 sentences, 1 for punchlines, never 4+**; **(4) active voice**;
+**(5) property cards ARE the visuals — distribute them INLINE, never pile; skip stock photos**; **(6) ≥1
+designed infographic / ~500w**. The `The move:` strip renders as a callout, H2s get a number + divider, font
+is 16.5px, and the top search bar + 8-hotel rail stay above the body. SEO is necessary but NOT sufficient.
+
 ## 0. House style — write to CONVERT (see `References/Voice.md`, applied from the first keystroke)
 1. **Short paragraphs (max 3 sentences).** One idea each.
 2. **Active voice, subject first.** "Your phone changes the price," not "the price is changed…".

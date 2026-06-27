@@ -11,6 +11,15 @@ description: >-
 
 # write-blog-post (travelpluscost)
 
+> ⭐ **2026-06-27 — START HERE: `docs/blog-system/BLOG-PROMPT.md`** is the canonical, copy-paste workflow +
+> the non-negotiable craft/layout rules + the full checklist to PRINT at the end. The owner reset the bar to
+> the Hawaii-Picnics posts (the old posts ranked but read DRY). The hard rules: **funny is mandatory** (a
+> beat every ~200–250w, written into the fact); **bold a few KEY WORDS, never a whole sentence**;
+> **paragraphs = 3 sentences, 1 for punchlines, never 4+**; **active voice**; **property cards ARE the
+> visuals — distribute them INLINE, never pile; skip stock photos**; **≥1 designed infographic / ~500w**.
+> **PRINT `docs/blog-system/PRINT-CHECKLIST.md` in full at the end** (✅/❌/👁 + a beat per section). Never
+> ship dry or red — circle back until green. SEO is necessary but NOT sufficient.
+
 The **governing manual is `docs/blog-system/BLOG-PLAYBOOK.md`** (§3 funny-first voice, §4 the twelve
 corner-cuts, §5 the process, §9 the pre-publish ritual), read alongside **`docs/blog-system/TheBible.md`**
 and **`docs/blog-system/FablePlaybook.md`** (the judgment calls the checklists can't enforce: the

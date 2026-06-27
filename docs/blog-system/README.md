@@ -7,6 +7,10 @@ research left behind on purpose.
 ---
 
 ## Start here (read in this order)
+0. **`BLOG-PROMPT.md`** ⭐ (2026-06-27) — the canonical copy-paste prompt: the workflow + the non-negotiable
+   craft/layout rules + the full checklist to PRINT at the end. Paste this to write a post. **`PRINT-CHECKLIST.md`**
+   is the table you fill/print every run. The owner reset the bar to the Hawaii-Picnics posts — funny is
+   mandatory, bold a few key words (never whole sentences), 3-sentence paragraphs, cards distributed inline.
 1. **`TheBible.md`** — the master operating contract. The one file to paste when you say "write the next
    blog post." Repointed to travelpluscost (`src/lib/posts.ts`, the `scripts/blog/` robots, our facts).
 2. **`References/Voice.md`** + **`DanKennedyVoice.md`** + **`Humour.md`** — how we sound.
