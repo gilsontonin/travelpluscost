@@ -158,6 +158,7 @@ export default function DestinationField({
             role="combobox"
             aria-autocomplete="list"
             aria-expanded={open}
+            aria-controls="tpc-dest-list"
             className="w-full bg-transparent outline-none text-[15px] font-medium mt-0.5 placeholder:font-normal placeholder:text-black/40"
           />
         </span>
@@ -179,7 +180,7 @@ export default function DestinationField({
           {header ? (
             <p className="px-4 pt-3 pb-1.5 text-[11px] font-semibold uppercase tracking-wide text-black/40">{header}</p>
           ) : null}
-          <ul className="py-1">
+          <ul id="tpc-dest-list" role="listbox" className="py-1">
             {list.map((s, i) => (
               <li key={s.id}>
                 <button

@@ -423,7 +423,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
 
 function Fact({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border border-black/[0.07] bg-white p-3">
+    <div className="rounded-xl border border-black/[0.07] bg-card p-3">
       <p className="text-xs text-black/60">{label}</p>
       <p className="text-sm font-medium mt-0.5">{value}</p>
     </div>

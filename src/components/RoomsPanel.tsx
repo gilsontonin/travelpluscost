@@ -54,7 +54,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
   const savePct = Math.round((100 * (pubAllIn - showAllIn)) / pubAllIn);
 
   return (
-    <div className="flex flex-col sm:flex-row bg-white border border-black/[0.07] rounded-lg overflow-hidden">
+    <div className="flex flex-col sm:flex-row bg-card border border-black/[0.07] rounded-2xl overflow-hidden shadow-card">
       {o.photos?.length ? (
         <div className="relative w-full sm:w-60 h-52 sm:h-auto shrink-0 bg-zinc-100">
           <CardCarousel images={o.photos} alt={o.roomName} sizes="(max-width: 640px) 100vw, 240px" />
