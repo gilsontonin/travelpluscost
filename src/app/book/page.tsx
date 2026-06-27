@@ -68,7 +68,7 @@ export default async function BookPage({
         />
 
         {/* right: price details */}
-        <aside className="bg-white border border-black/5 rounded-2xl p-5 h-fit lg:sticky lg:top-24">
+        <aside className="bg-card border border-black/[0.07] rounded-2xl p-5 h-fit shadow-card lg:sticky lg:top-24">
           {image ? (
             <div className="relative w-full h-36 rounded-xl overflow-hidden mb-3">
               <Image src={image} alt={hotel?.name ?? ""} fill sizes="360px" className="object-cover" />

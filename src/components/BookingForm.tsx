@@ -205,7 +205,7 @@ export default function BookingForm(props: Props) {
   if (prebook) {
     return (
       <div className="space-y-5">
-        <section className="bg-white border border-black/5 rounded-2xl p-5">
+        <section className="bg-card border border-black/[0.07] rounded-2xl p-5 shadow-card">
           <h2 className="font-semibold mb-1">Payment</h2>
           <p className="text-sm text-black/55 mb-4">
             Paying <b>{money(prebook.price, prebook.currency)}</b> now for {firstName} {lastName}.
@@ -238,7 +238,7 @@ export default function BookingForm(props: Props) {
   // Guest phase.
   return (
     <form onSubmit={startPayment} className="space-y-5">
-      <section className="bg-white border border-black/5 rounded-2xl p-5 space-y-3">
+      <section className="bg-card border border-black/[0.07] rounded-2xl p-5 space-y-3 shadow-card">
         <h2 className="font-semibold">Who&apos;s checking in?</h2>
         <div className="grid grid-cols-2 gap-3">
           <input className={field} placeholder="First name" autoComplete="given-name" name="given-name"

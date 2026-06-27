@@ -44,7 +44,7 @@ export default async function ConfirmedPage({
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-12">
-      <div className="bg-white border border-black/5 rounded-2xl p-8 text-center">
+      <div className="bg-card border border-black/[0.07] rounded-2xl p-8 text-center shadow-card">
         <div className="mx-auto w-14 h-14 rounded-full bg-accent-tint grid place-items-center text-accent">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M20 6 9 17l-5-5" />
