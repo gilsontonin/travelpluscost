@@ -311,9 +311,9 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
         currency?: string;
       }>(`${BOOK}/rates/prebook`, { offerId: offer.offerId, usePaymentSdk: true });
       if (pre.prebookId && pre.secretKey && pre.transactionId && typeof pre.price === "number") {
-        if (floor != null && pre.price < floor - 0.5) {
+        if (!input.member && floor != null && pre.price < floor - 0.5) {
           lastError = "Confirmed price was below SSP.";
-          continue; // compliance: never charge below SSP
+          continue; // compliance: never charge below SSP on PUBLIC bookings (members may — closed user group)
         }
         const feeSum = Math.round(offer.fees.reduce((s, f) => s + f.amount, 0) * 100) / 100;
         return {
