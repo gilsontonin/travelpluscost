@@ -39,6 +39,11 @@ people enjoy and skim easily converts better than one that ranks and bounces.
    hotel, placed right where that hotel is discussed (intro the hotel in 1–2 sentences with a beat → its
    card → next hotel → its card). No 4-card stack then a wall of card-less text. **Skip stock photos** —
    the card carries the image; add a photo only if it's genuinely illustrative of something a card can't show.
+   **VIATOR (just-in-time):** hotels are the main focus, but on any post about **tours / activities /
+   experiences** (things to do, swamp tours, ghost & cemetery tours, day trips, plantations, music/food
+   tours), drop a `::activities <City>` block where it fits — it renders ready-to-book Viator cards with our
+   affiliate tracking (~7–8% commission), and self-hides if there's nothing. Scan every post for the
+   opportunity; never force it on a pure-lodging/planning post (e.g. "is it safe", "best time to visit").
 6. **EVERY infographic ≥1 per ~500 words, and well-designed** (the native `::infographic` kinds: stat panel
    / compare / steps / callout — NOT a bare markdown table). Cards + infographics both count toward cadence.
 7. **LAYOUT (already in the components — use them):** the `The move: … · Best for: … · Watch: …` quick-facts

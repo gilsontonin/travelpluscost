@@ -73,6 +73,7 @@
 |H2|Every named hotel → its card or a link (0 real gaps)|0 gaps|blog:cta|
 |H3|A CTA in every section; 0 relational leaks|0 leaks|blog:cta|
 |H4|/hotels/<city> hub cross-linked|present|manual|
+|H5|Viator `::activities` block added IF the post covers tours/activities (else N/A)|just-in-time|judgment|
 
 ## I · Links & De-orphan
 | # | Check | Bar | Verified by |
