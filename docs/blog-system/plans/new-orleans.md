@@ -22,9 +22,9 @@
 ## The queue (ordered: quick wins first to build the web fast, then high-value, then events/attractions)
 
 ### Tier 1 — easy wins + the content anchors (do first)
-1. ⬜ **Is New Orleans Safe? (+ which areas to avoid)** — `is new orleans safe` (4,400/**KD15**). 2nd: is it
+1. ✅ **Is New Orleans Safe? (+ which areas to avoid)** — `is new orleans safe` (4,400/**KD15**). 2nd: is it
    safe in new orleans, is new orleans dangerous, safest/areas to avoid. Intent: info. [money — "book in the
-   corridor" → hub]. *Easiest win on the board.*
+   corridor" → hub]. DONE (`is-new-orleans-safe`, serp 90, 2,231w). *Easiest win on the board.*
 2. ⬜ **Things to Do in New Orleans** — `things to do in new orleans` (**49,500**/KD31). 2nd: what to do
    (9,900/26), best things to do (3,600/19), fun things (3,600/23), top things (32), things to see (34),
    must do (25), this weekend/today. Intent: info. [authority — the master spoke; link-hub for the cluster].

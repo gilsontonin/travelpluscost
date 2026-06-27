@@ -1,4 +1,25 @@
 {
+  "is-new-orleans-safe": {
+    "primary": "is new orleans safe",
+    "secondary": [
+      "is it safe in new orleans",
+      "is new orleans dangerous",
+      "new orleans areas to avoid",
+      "is the french quarter safe",
+      "is bourbon street safe",
+      "is new orleans safe at night",
+      "is new orleans safe for solo female travelers",
+      "is new orleans safe for families"
+    ],
+    "volume": 4400,
+    "kd": 15,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-27",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
+  },
   "where-to-stay-in-neworleans": {
     "primary": "where to stay in new orleans",
     "secondary": [

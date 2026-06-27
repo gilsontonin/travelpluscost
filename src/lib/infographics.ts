@@ -369,6 +369,43 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { label: "The trade", left: "Some blocks fray toward the Tenderloin edge", right: "Pricey and crowded, and quiet after dark" },
     ],
   },
+  "nola-safety-by-numbers": {
+    kind: "stat",
+    title: "New Orleans safety, at a glance",
+    stats: [
+      { value: "Falling", label: "violent crime has dropped sharply since 2023" },
+      { value: "French Quarter", label: "the most-policed, safest base for visitors" },
+      { value: "Pickpockets", label: "petty crime, not violence, is the real tourist risk" },
+      { value: "Rideshare", label: "the smart way home after a late night" },
+    ],
+  },
+  "nola-safe-vs-avoid": {
+    kind: "compare",
+    title: "Where to base vs where to skip",
+    left: "Safe to base in",
+    right: "Skip (especially after dark)",
+    rows: [
+      { label: "Areas", left: "French Quarter, Garden District, CBD, Marigny, Bywater", right: "Central City, Desire, Upper Ninth Ward, Hollygrove" },
+      { label: "Why", left: "Heavily policed, well-lit, full of people", right: "Higher crime, few attractions, not set up for visitors" },
+      { label: "The move", left: "Book here, walk the main streets", right: "Don't chase a too-cheap room to save $20" },
+    ],
+  },
+  "nola-stay-safe-steps": {
+    kind: "steps",
+    title: "The whole New Orleans safety playbook",
+    steps: [
+      { title: "Base in the corridor", detail: "French Quarter, Garden District, CBD, Marigny or Bywater." },
+      { title: "Rideshare after dark", detail: "Skip the long late walk — it's cheap and quick." },
+      { title: "Valuables in a front pocket", detail: "Don't flash cash or a phone in a crowd." },
+      { title: "Mind your drink", detail: "Don't set it down and walk away on Bourbon Street." },
+      { title: "Trust your gut", detail: "Treat any unprompted approach as a sales pitch." },
+    ],
+  },
+  "nola-safety-callout": {
+    kind: "callout",
+    title: "The mindset that keeps you safe",
+    body: "Treat New Orleans like the major city it is — not a theme park, not a war zone. Stay central, keep your wits, and the worst surprise you'll get is how much you spent on oysters.",
+  },
   "nola-by-numbers": {
     kind: "stat",
     title: "New Orleans by the numbers",

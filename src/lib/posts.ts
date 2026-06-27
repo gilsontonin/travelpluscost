@@ -49,6 +49,195 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "is-new-orleans-safe",
+    title: "Is New Orleans Safe? Areas to Avoid + Tips (2026)",
+    description:
+      "Is New Orleans safe in 2026? Yes, in the tourist corridor. The safest neighborhoods, the areas to avoid, the French Quarter at night, and the common scams.",
+    excerpt:
+      "Is New Orleans safe? Mostly yes — a local-grade guide to the safe neighborhoods, the blocks to skip, the French Quarter at night, the scams, and how not to be the easy target, as of 2026.",
+    tldr: {
+      answer:
+        "Yes — New Orleans is broadly safe for visitors, especially in the tourist corridor (the French Quarter, Garden District, CBD, Marigny and Bywater). Violent crime has fallen sharply since 2023, and most of it never touches tourists. Your real risks are pickpockets, a few classic scams, and a handful of blocks to avoid after dark.",
+      points: [
+        "**Safest base** — the French Quarter is the most-policed, safest neighborhood, day or night.",
+        "**Avoid** — Central City, Desire, the Upper Ninth Ward and Hollygrove, especially after dark.",
+        "**The real risk** — pickpockets and scams, not violence; keep your wallet in a front pocket.",
+        "**Night move** — take a rideshare back, stay on lit main streets, skip empty side blocks.",
+        "**Worth it** — emphatically yes; don't let headlines talk you out of a great city.",
+      ],
+    },
+    date: "2026-06-27",
+    updated: "2026-06-27",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/569060855.jpg",
+      alt: "A sunlit, lively French Quarter street in New Orleans — colorful balconied buildings, shops and people walking — the safe, busy heart of the tourist area",
+      credit: { name: "French Quarter, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "Is New Orleans safe for solo female travelers?",
+        a: "Yes, with normal big-city precautions. Solo women visit New Orleans without trouble all the time — stay in the tourist corridor, take rideshares at night instead of walking alone, keep an eye on your drink on Bourbon Street, and trust your instincts about any unprompted approach. The same awareness you'd use in any major city is enough here.",
+      },
+      {
+        q: "Is New Orleans safe for families?",
+        a: "Yes. The French Quarter by day, the Garden District, the aquarium, City Park and the riverfront are all family-friendly and well-trafficked. The only adjustment is Bourbon Street after dark, which turns into an adult party — families usually do the Quarter in daylight and base a couple of blocks off it for a quieter night.",
+      },
+      {
+        q: "Is Uber and Lyft safe in New Orleans?",
+        a: "Yes, and rideshares are the recommended way to get around at night — cheaper and safer than a long walk back from Frenchmen or Bourbon. Confirm the license plate and the driver's name before you get in, as you would anywhere, and you're set. A rideshare home is the single best safety habit in this city.",
+      },
+      {
+        q: "Is New Orleans LGBTQ+ friendly?",
+        a: "Very. New Orleans has one of the oldest and most welcoming LGBTQ+ scenes in the South, centered on the lower French Quarter around the Bourbon and St. Ann area and into the Marigny. It's an openly inclusive city with major Pride events, and same-sex couples travel here comfortably.",
+      },
+      {
+        q: "Is it safe to walk in New Orleans at night?",
+        a: "On the busy, well-lit main streets of the tourist corridor, yes. Avoid empty side streets, alleys and the lower Quarter's quiet residential blocks late at night, and don't walk into the neighborhoods outside the corridor after dark. For anything beyond a few well-populated blocks, take a rideshare — it's cheap and quick.",
+      },
+      {
+        q: "Is New Orleans a dangerous city?",
+        a: "It has a high crime rate by the numbers, but that crime is concentrated in specific residential neighborhoods and rarely involves visitors. Violent crime has also dropped sharply since 2023. For a tourist staying in the corridor and using normal city sense, the practical risk is petty crime, not violence — which is true of most big American cities.",
+      },
+      {
+        q: "What are the most common scams in New Orleans?",
+        a: "The classic is the 'I bet I know where you got your shoes' hustle (the answer — on your feet, on this street — costs you a tip). You'll also see fortune tellers, three-card-monte tables, and 'free' offers that aren't. None are dangerous; they target distracted tourists, so the defense is simply to keep moving and treat any unprompted approach as a sales pitch.",
+      },
+    ],
+    body: `Is New Orleans safe? **Yes, broadly** — and safer every year — as long as you keep your wits about you and your wallet in a front pocket. The city you've seen in scary headlines and the city a visitor actually experiences are two different places, and the gap between them is mostly a few neighborhoods you were never going to visit anyway.
+
+Here's the honest, local-grade safety guide, updated for 2026, covering the safe areas, the blocks to skip, the French Quarter after dark, the scams, and how not to be the easy target. Yes, New Orleans is generally safe for a visitor who uses a little common sense; on average, the worst thing the typical traveler takes home is a hangover and a beignet habit.
+
+The short version: most crime here doesn't involve tourists, the tourist corridor is heavily policed, and your biggest real risk is a pickpocket or a daiquiri you don't remember ordering.
+
+## Is New Orleans Safe? The Honest Answer
+
+New Orleans has a rough crime reputation, and the statistics that earn it are real — but they're almost entirely about residents and disputes in neighborhoods far from Bourbon Street. **For a visitor who sticks to the tourist corridor, it's normal big-city-safe.**
+
+The trend is also pointing the right way. Violent crime has fallen sharply since 2023, and the police presence in the Quarter and downtown was stepped up further after a January 2025 incident, so the most-visited blocks are more patrolled than ever.
+
+None of that means you switch your brain off. It means you use the same approach you'd use in any big city: know which blocks are which, don't flash valuables, and take a rideshare instead of a long walk at 2 a.m. Do that, and the scariest thing you'll meet is the dinner bill at Commander's Palace.
+
+A lot of the city's fearsome reputation is also a hangover from the chaos that followed Hurricane Katrina back in 2005. Two decades on, the New Orleans a visitor actually meets is a very different — and much safer — place than the one that moment froze in the national memory.
+
+::infographic nola-safety-by-numbers
+
+## Crime in New Orleans, in Context
+
+**New Orleans does carry a high crime rate by the numbers — but those crime rates are concentrated in residential neighborhoods, not the tourist areas.** Like a lot of cities in the United States, it has a real divide between the blocks visitors see and the ones they never will.
+
+The two crimes a tourist might actually brush up against are petty theft — pickpocketing in a crowd — and the rare opportunistic robbery on a quiet, dark street late at night. Violent crime against visitors inside the corridor is uncommon, and the trend since 2023 has been firmly down.
+
+So read the crime stats as a map of where the locals' problems are, not a forecast of your weekend. Stay aware of your surroundings, exercise the normal caution you would in any big city — particularly after dark — keep an eye on the busy areas, and the numbers stop being about you.
+
+## The Safest Neighborhoods: French Quarter, Garden District and the CBD
+
+**The safest place to be in New Orleans is, conveniently, right where you'll want to stay anyway** — the tourist areas of the French Quarter, the CBD, the Garden District, and the Marigny and Bywater. These areas are well-lit, busy at most hours, and carry the heaviest police presence in the city.
+
+The **French Quarter** is, a little ironically, the single safest neighborhood — there are simply too many people and too many officers for much to happen. The **Garden District** and Uptown are quiet, leafy and residential, while the **CBD** is downtown-safe with modern hotels a short walk from the action.
+
+The **Marigny and Bywater**, just downriver, are where locals go for the nightlife and live music — bohemian, walkable and generally safe, with the usual note to stick to the busier streets after dark. Wherever you land in this corridor, you're choosing a vibe, not trading away safety.
+
+Booking inside this corridor is basically the entire safety strategy, so it's worth doing on purpose. A few well-placed bases:
+
+The **Hotel Monteleone** drops you in the heart of the French Quarter, with a doorman and the busiest, best-lit blocks at your feet.
+
+::hotel lp6583c58d
+
+The **NOPSI Hotel** anchors the CBD — modern, central, and a calm, well-policed walk from the Quarter.
+
+::hotel lpa440f
+
+For the leafy quiet of Uptown, the **Alder Hotel** sits among the universities, about as low-key as New Orleans gets.
+
+::hotel lpaf414
+
+For the full breakdown by area and budget, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans).
+
+Staying inside this corridor puts you within walking distance of the city's best food, music and culture, which is the whole point of coming. It also keeps you in the relatively worry-free part of town, so getting around — particularly at night — is a short, well-lit walk or a two-minute rideshare rather than a gamble. The corridor's hotels and streetcars offer easy access to almost everything worth seeing, and you can always get home safely.
+
+::infographic nola-safe-vs-avoid
+
+## Areas to Avoid: Central City, Desire and the Upper Ninth
+
+**The areas to avoid — Central City, the Desire area, the Upper Ninth Ward and Hollygrove — sit well outside the tourist corridor and aren't set up for visitors.** They carry the bulk of the city's violent crime, have few attractions, and are simply not where you want a hotel.
+
+The catch for travelers is that some of them border the nice parts, so a suspiciously cheap downtown rate can quietly sit on the wrong side of a line. **Pin the exact address before you book, and check the cross streets** — a hotel a few blocks the wrong way from Canal Street is a different trip than one on it.
+
+None of these are no-go zones to fear, and plenty are ordinary residential streets going about their day. But they aren't tourist areas, there's nothing in them for a visitor, and they aren't worth walking alone through to save twenty dollars on a room. When a downtown rate looks too good to be true, the cross streets are usually why.
+
+[Search central New Orleans hotels by exact location](/search?destination=New%20Orleans&adults=2)
+
+## Is the French Quarter Safe — At Night, Too?
+
+**The French Quarter is the safest neighborhood in New Orleans, day or night — though "safest" still means a city, not a cruise ship.** By day it's about as benign as a theme park with much better food, anchored by the busy tourist beats including Jackson Square, the French Market, Royal Street's galleries and the Decatur Street cafés.
+
+Those crowds are exactly why it's safe — there are too many people and too many officers around for much to happen on the main drags. The mounted police, foot patrols and sheer foot traffic make the central Quarter one of the most watched-over patches of the city.
+
+After dark it stays busy and patrolled, especially around the main streets and the Square. The move is simple: stay on the well-lit, populated blocks and skip the empty side streets and alleys, which exist even here.
+
+The lower Quarter toward Esplanade goes quiet and residential late, so if you're walking back, keep to Royal or Chartres rather than a dark cross street. Use the awareness you would anywhere — glance up from your phone, know roughly where you're headed — and you'll be part of the crowd rather than the easy mark.
+
+## Is Bourbon Street Safe?
+
+**Bourbon Street is safe in the sense that you are never, ever alone on it — which is also the catch.** The same crowds that make it a spectacle are a pickpocket's natural habitat, and the open-container, hand-grenade-cocktail energy means the biggest risk is usually your own judgment.
+
+Keep your phone and wallet in a front pocket, don't set a drink down and walk away from it, and don't follow a "deal" or a stranger off the main drag. Treat the street as a show to enjoy with one hand on your stuff, not a place to lose your group at 1 a.m.
+
+The specific moves to watch are the spilled-drink distraction — someone bumps you, apologizes, and lifts your wallet in the fuss — and the side-street "after-party" invite that leads somewhere you'd rather not be. Stay on Bourbon proper and keep your group together, and the chaos stays a spectacle instead of a story for your bank.
+
+## Common Scams and Petty Crime
+
+**Petty crime — pickpocketing and a few classic hustles — is what actually trips up visitors, not violence.** The most famous is the "I bet I know where you got your shoes" line, which ends with a stranger explaining that the answer (on your feet, on this street) has earned him a tip.
+
+You'll also meet fortune tellers, three-card-monte tables, and "free" anything that isn't. None of it is dangerous, but all of it is built for a distracted tourist.
+
+A few more to file away: unofficial "guides" who attach themselves to you near Jackson Square and expect cash, bars with no posted prices that produce an eye-watering tab, and the standing advice to use ATMs inside a bank or hotel rather than the standalone ones on Bourbon. The defense for all of it is just attention — keep moving, keep a hand on your bag, and be a little wary of overly-friendly strangers. Treat the extra few dollars for a rideshare or a guided tour as the small price of enjoying the city's street life without becoming part of someone's hustle.
+
+::infographic nola-safety-callout
+
+## Is New Orleans Safe for Solo Female Travelers and Families?
+
+**Both, with small adjustments.** Solo travelers — women included — visit New Orleans without trouble all the time, and the city's walkability and friendliness make it an easy place to wander alone by day.
+
+The same precautions that work anywhere work here: keep someone posted on your plans, avoid walking alone on empty streets late, and trust your read on a situation. At night the solo move is everyone's move — rideshare back, stay on lit streets, mind your drink.
+
+Families have an even simpler trip, since the Quarter by day, the aquarium, City Park and the riverfront are all well-trafficked and kid-friendly. The only adjustment is Bourbon Street after dark, which becomes a grown-up party — do the Quarter in daylight, base a couple of blocks off it, and everyone sleeps.
+
+## New Orleans Safety Tips: How to Stay Safe
+
+**The whole safety playbook fits into a handful of habits, and none of them will dent your trip.** Take a rideshare back after a late night instead of a long walk — it's cheap, quick, and the single best safety habit in this city.
+
+Keep your valuables in a front pocket, don't flash cash or a phone on a crowded street, and pin your hotel's exact address before you book. Visit the famous above-ground cemeteries on a guided tour rather than wandering them solo, and mind your drink on Bourbon Street.
+
+A couple of local tips round out the list: keep your group together in a parade crowd, where it's easy to get separated, and carry a little cash for the cash-only spots and for tipping the brass band. These are small habits, not a security detail — the city rewards a relaxed visitor, just not an oblivious one.
+
+Trust the same instincts you'd use in any big city, and you've covered it. That's genuinely the list.
+
+::infographic nola-stay-safe-steps
+
+## Do You Need Travel Insurance for New Orleans?
+
+**You don't need travel insurance to stay safe in New Orleans — but for a bigger trip it's worth a thought, and it has nothing to do with crime.** Travel insurance here is about the prepaid stuff: a cancelled flight, a hurricane that scrubs your weekend, or a medical bill if you take a tumble on a wet Bourbon Street.
+
+For a cheap two-night weekend, skip it. For a longer trip with prepaid hotels and flights — especially in the June-to-November hurricane season — a basic travel policy is cheap peace of mind. Either way, it's a money decision, not a safety one.
+
+## So, Is New Orleans Worth Visiting?
+
+**Yes — emphatically — and don't let the headlines talk you out of it.** Is New Orleans safe enough to be worth the trip? For a visitor with a little big-city sense, absolutely — and it would be a shame to skip one of the great American cities over a reputation that no longer fits.
+
+The version that scares people on the evening news is not the version you'll meet eating beignets in the Quarter or catching a brass band on Frenchmen Street. Locals will tell you the same thing: the city has its problems, but they aren't your weekend.
+
+Treat it like the big, soulful, slightly chaotic place it is — stay central, take rideshares at night, keep your wits — and the only thing you'll regret is not booking a third night.
+
+Whichever area you choose, the price you book here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee waiting on the last screen. Start with our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans), or browse the full [New Orleans hotels hub](/hotels/new-orleans) and book inside the safe corridor.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "where-to-stay-in-neworleans",
     title: "Where to Stay in New Orleans, LA: Best Hotels (2026)",
     description:
