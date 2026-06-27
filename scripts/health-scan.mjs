@@ -51,6 +51,9 @@ const decodeEntities = (s) =>
 const abs = (href) => {
   if (!href) return null;
   href = decodeEntities(href);
+  // Skip Cloudflare's injected infrastructure links (e.g. /cdn-cgi/l/email-protection from Email Address
+  // Obfuscation). They're not our links and 404 without JS, so they're not a broken page of ours.
+  if (href.includes("/cdn-cgi/")) return null;
   if (href.startsWith("http")) return href.startsWith(BASE) ? href : null;
   if (href.startsWith("/")) return BASE + href.split("#")[0];
   return null;
