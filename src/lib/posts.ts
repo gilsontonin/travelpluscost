@@ -60,11 +60,11 @@ export const POSTS: Post[] = [
       answer:
         "Mardi Gras 2027 peaks on Tuesday, February 9, with Carnival season running January 6 to Fat Tuesday. The parades are free and roll Uptown along St. Charles Avenue to Canal Street — not through the French Quarter. Watch family parades Uptown, costume up in the Quarter, and book a hotel 6 to 12 months ahead.",
       points: [
-        "**The date**, Fat Tuesday is February 9, 2027. Carnival runs Januaryundefinedto February 9.",
+        "**The date**, Fat Tuesday is February 9, 2027. Carnival runs January 6 to February 9.",
         "**Parades are free**, and roll Uptown to Canal Street, not down Bourbon.",
         "**Family vs party**, Uptown St. Charles for kids, the French Quarter for the adult scene.",
         "**The throws**, beads are the baseline. Chase Zulu coconuts, Muses shoes, and Nyx purses.",
-        "**Book early**, parade route hotels sell outundefinedtoundefinedmonths ahead.",
+        "**Book early**, parade route hotels sell out 6 to 12 months ahead.",
       ],
     },
     date: "2026-06-28",
@@ -80,7 +80,7 @@ export const POSTS: Post[] = [
     faqs: [
       {
         q: "When is Mardi Gras in New Orleans in 2027?",
-        a: "Mardi Gras Day (Fat Tuesday) is Tuesday, February 9, 2027. Carnival season starts on Twelfth Night, January 6, and builds to that finale, with Lundi Gras the day before on February 8. It is a short season in 2027, aboutundefineddays, because the date is tied to Easter and moves every year.",
+        a: "Mardi Gras Day (Fat Tuesday) is Tuesday, February 9, 2027. Carnival season starts on Twelfth Night, January 6, and builds to that finale, with Lundi Gras the day before on February 8. It is a short season in 2027, about 34 days, because the date is tied to Easter and moves every year.",
       },
       {
         q: "Is Mardi Gras free?",
@@ -100,7 +100,7 @@ export const POSTS: Post[] = [
       },
       {
         q: "What is king cake?",
-        a: "King cake is an oval cinnamon brioche iced in purple, green, and gold with a tiny plastic baby hidden inside. Whoever gets the baby in their slice is crowned for the day and traditionally hosts the next party or buys the next cake. It is sold only between Januaryundefinedand Fat Tuesday, order one the moment you arrive.",
+        a: "King cake is an oval cinnamon brioche iced in purple, green, and gold with a tiny plastic baby hidden inside. Whoever gets the baby in their slice is crowned for the day and traditionally hosts the next party or buys the next cake. It is sold only between January 6 and Fat Tuesday, order one the moment you arrive.",
       },
     ],
     body: `**Mardi Gras in New Orleans** in 2027 lands on **Tuesday, February 9**, the explosive finale of a Carnival season that starts quietly on January 6 and builds for weeks. It is the biggest free street party in America, and also the most misunderstood. Half of what first timers think they know is wrong, starting with this, the parades do not roll down Bourbon Street.
@@ -608,7 +608,7 @@ However you fill your table, the price you book your room at here is the same on
         "A swamp tour (Honey Island, ~45 min) and a River Road plantation like Oak Alley or Whitney (~1 hour) are the two classics — often combined in one tour with hotel pickup, so no car is needed. With a rental, add Baton Rouge, Cajun Country around Lafayette, the Northshore, or the Gulf Coast.",
       points: [
         "**The two classics**, a swamp tour and a River Road plantation.",
-        "**Do both**, a swamp + Oak Alley combo, ~$80 toundefinedwith hotel pickup.",
+        "**Do both**, a swamp + Oak Alley combo, ~$80 to 175 with hotel pickup.",
         "**Most honest stop**, Whitney Plantation, told from the enslaved people's view.",
         "**No car needed**, swamp and plantation tours include round trip transport.",
         "**With a car**, Baton Rouge, Cajun Country, the Northshore, the Gulf Coast.",
@@ -639,7 +639,7 @@ However you fill your table, the price you book your room at here is the same on
       },
       {
         q: "What is the best swamp tour near New Orleans?",
-        a: "Honey Island Swamp, aboutundefinedminutes east near Slidell, is the classic, cypress, Spanish moss and reliable alligator sightings. Choose a covered pontoon boat for a calmer ride or an airboat for speed and thrills. For a free, self guided option, the Barataria Preserve has boardwalk trails through the marsh.",
+        a: "Honey Island Swamp, about 45 minutes east near Slidell, is the classic, cypress, Spanish moss and reliable alligator sightings. Choose a covered pontoon boat for a calmer ride or an airboat for speed and thrills. For a free, self guided option, the Barataria Preserve has boardwalk trails through the marsh.",
       },
       {
         q: "Which plantation should you visit near New Orleans?",
@@ -917,7 +917,7 @@ Whatever you book, the room price you see here is the same one everyone else see
       },
       {
         q: "When is Mardi Gras 2027?",
-        a: "Fat Tuesday is February 9, 2027. Carnival season runs from Januaryundefined(Twelfth Night) up to that day, with the parades and crowds peaking in the final two weeks. Book a hotel up to a year ahead for that window, many requireundefinedtoundefinednight minimums. See our full [Mardi Gras in New Orleans guide](/blog/mardi-gras-in-new-orleans)for the parade schedule.",
+        a: "Fat Tuesday is February 9, 2027. Carnival season runs from January 6 (Twelfth Night) up to that day, with the parades and crowds peaking in the final two weeks. Book a hotel up to a year ahead for that window, many require 3 to 4 night minimums. See our full [Mardi Gras in New Orleans guide](/blog/mardi-gras-in-new-orleans) for the parade schedule.",
       },
       {
         q: "What is the worst time to visit New Orleans?",
@@ -925,11 +925,11 @@ Whatever you book, the room price you see here is the same one everyone else see
       },
       {
         q: "Is hurricane season a problem for visiting New Orleans?",
-        a: "Hurricane season runs Juneundefinedto November 30, peaking August, September. Direct hits are rare and storms are tracked days ahead, so a trip booked a few weeks out can dodge trouble. The bigger summer nuisance is daily heat and humidity, not hurricanes. Travel insurance is smart for late summer trips.",
+        a: "Hurricane season runs June 1 to November 30, peaking August, September. Direct hits are rare and storms are tracked days ahead, so a trip booked a few weeks out can dodge trouble. The bigger summer nuisance is daily heat and humidity, not hurricanes. Travel insurance is smart for late summer trips.",
       },
       {
         q: "What is the rainiest month in New Orleans?",
-        a: "Summer is the wettest stretch, with July typically the rainiest, but it is short, dramatic afternoon thunderstorms, not all day gloom. They roll in aroundundefinedp.m., dump for an hour, and clear. Carry a packable rain jacket and plan an indoor option for late afternoons.",
+        a: "Summer is the wettest stretch, with July typically the rainiest, but it is short, dramatic afternoon thunderstorms, not all day gloom. They roll in around 3 p.m., dump for an hour, and clear. Carry a packable rain jacket and plan an indoor option for late afternoons.",
       },
       {
         q: "How many days do you need in New Orleans?",
@@ -1268,7 +1268,7 @@ Most visitors who are not tied to a festival are happiest in October or November
       },
       {
         q: "What is the best age to visit New Orleans with kids?",
-        a: "Agesundefinedtoundefinedget the most out of it, old enough for the zoo, swamp tours, beignets and street performers, young enough to find it all magical. Toddlers love Storyland, the carousel and the aquarium touch pool. Tweens and teens get into the WWII Museum, ghost tours and cooking classes. There is a fit for every age.",
+        a: "Ages 4 to 12 get the most out of it, old enough for the zoo, swamp tours, beignets and street performers, young enough to find it all magical. Toddlers love Storyland, the carousel and the aquarium touch pool. Tweens and teens get into the WWII Museum, ghost tours and cooking classes. There is a fit for every age.",
       },
       {
         q: "Is Bourbon Street OK for kids?",
@@ -2288,7 +2288,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
         "**Nob Hill**, cable cars, views and classic hotels, a short climb up.",
         "**Fisherman's Wharf**, the waterfront, families, Alcatraz trips.",
         "**The Marina / Cow Hollow**, trendy, residential, Golden Gate views.",
-        "**Skip the car**, the city is 7×7 miles, walkable, with parking at $50 toundefineda night.",
+        "**Skip the car**, the city is 7×7 miles, walkable, with parking at $50 to 75 a night.",
       ],
     },
     date: "2026-06-26",
@@ -2316,7 +2316,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "Do you need a car in San Francisco?",
-        a: "No, and most visitors are better off without one. The city is only seven miles across, walkable, and well covered by cable cars, Muni and BART, while hotel parking runs roughly $50 toundefineda night and the hills and one way streets are a hassle. BART connects SFO to downtown in aboutundefinedminutes. Rent a car only if you are heading out to wine country, the coast or the redwoods.",
+        a: "No, and most visitors are better off without one. The city is only seven miles across, walkable, and well covered by cable cars, Muni and BART, while hotel parking runs roughly $50 to 75 a night and the hills and one way streets are a hassle. BART connects SFO to downtown in about 30 minutes. Rent a car only if you are heading out to wine country, the coast or the redwoods.",
       },
       {
         q: "What is the best area to stay in San Francisco on a budget?",
@@ -2642,7 +2642,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "How far is Scottsdale from the Phoenix airport?",
-        a: "Phoenix Sky Harbor (PHX) is aboutundefinedmiles and a 15-to-20-minute drive from Old Town Scottsdale, the closest major airport and an easy place to grab a rental car. North Scottsdale and the far resorts areundefinedtoundefinedminutes out, so factor the drive in when you pick a base.",
+        a: "Phoenix Sky Harbor (PHX) is about 12 miles and a 15-to-20-minute drive from Old Town Scottsdale, the closest major airport and an easy place to grab a rental car. North Scottsdale and the far resorts are 30 to 45 minutes out, so factor the drive in when you pick a base.",
       },
       {
         q: "Can you do a day trip to Sedona from Scottsdale?",
@@ -2832,7 +2832,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
         "**North Historic District**, River Street, City Market. The lively first timer pick.",
         "**South Historic District**, Forsyth Park and the quiet squares. The romantic choice.",
         "**Plant Riverside / waterfront**, the trendy, design forward splurge on the river.",
-        "**Midtown / Southside / airport**, the cheapest beds, aundefinedtoundefinedminute drive out.",
+        "**Midtown / Southside / airport**, the cheapest beds, a 10 to 20 minute drive out.",
         "**For a first trip**, stay in the Historic District. It is the heart of everything Savannah.",
       ],
     },
@@ -2857,15 +2857,15 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "Where should families stay in Savannah?",
-        a: "The north Historic District or one of the all suite hotels there. The north end keeps River Street, City Market and the river steps away, and the Embassy Suites and Homewood Suites add separate living space, a kitchenette and free breakfast within walking distance of the squares. For a beach trip, Tybee Island,undefinedminutes east, is the family beach.",
+        a: "The north Historic District or one of the all suite hotels there. The north end keeps River Street, City Market and the river steps away, and the Embassy Suites and Homewood Suites add separate living space, a kitchenette and free breakfast within walking distance of the squares. For a beach trip, Tybee Island, 30 minutes east, is the family beach.",
       },
       {
         q: "How far is Tybee Island from Savannah?",
-        a: "Aboutundefinedmiles and a 30-minute drive east, where the Savannah River meets the Atlantic. Tybee is the city's beach, wide sand, a fishing pier, a historic lighthouse and dolphin tours. It is an easy day trip from a downtown base, and most stays out there are vacation rentals and small beachfront motels rather than the big hotel brands.",
+        a: "About 18 miles and a 30-minute drive east, where the Savannah River meets the Atlantic. Tybee is the city's beach, wide sand, a fishing pier, a historic lighthouse and dolphin tours. It is an easy day trip from a downtown base, and most stays out there are vacation rentals and small beachfront motels rather than the big hotel brands.",
       },
       {
         q: "How far is the Savannah airport from downtown?",
-        a: "Savannah/Hilton Head International (SAV) is aboutundefinedmiles and a 20-minute drive northwest of the historic district. There is no rail link, so plan on a rental car, rideshare or shuttle. The cluster of value hotels near the airport and the Southside is the cheapest place to stay if you have an early flight.",
+        a: "Savannah/Hilton Head International (SAV) is about 13 miles and a 20-minute drive northwest of the historic district. There is no rail link, so plan on a rental car, rideshare or shuttle. The cluster of value hotels near the airport and the Southside is the cheapest place to stay if you have an early flight.",
       },
       {
         q: "When is the best time to visit Savannah?",
@@ -2873,7 +2873,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "What is Savannah known for?",
-        a: "Its planned grid ofundefinedoak shaded squares, Spanish moss and antebellum mansions, one of the country's great preserved historic districts. Founded in 1733, the \"Hostess City of the South\" is famous for River Street, Forsyth Park, Southern food, ghost tours, the Victorian Bonaventure Cemetery (of Midnight in the Garden of Good and Evil), and a huge St. Patrick's Day.",
+        a: "Its planned grid of 22 oak shaded squares, Spanish moss and antebellum mansions, one of the country's great preserved historic districts. Founded in 1733, the \"Hostess City of the South\" is famous for River Street, Forsyth Park, Southern food, ghost tours, the Victorian Bonaventure Cemetery (of Midnight in the Garden of Good and Evil), and a huge St. Patrick's Day.",
       },
     ],
     body: `**Where to stay in Savannah comes down to the Historic District** if you want to walk the oak shaded squares, or the riverfront, River Street and Plant Riverside, if you came for the cobblestones and the buzz. Founded in 1733, Georgia's oldest city laid out 22 squares draped in Spanish moss, and most of what you came to see sits within a flat, walkable mile of them.
@@ -3103,7 +3103,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       points: [
         "**Downtown / the peninsula**, the French Quarter, the Battery and King Street. The walkable first timer pick.",
         "**Mount Pleasant**, family friendly, near Shem Creek, the bridge and the beaches.",
-        "**The beaches**, Isle of Palms, Sullivan's Island and Folly Beach, aboutundefinedminutes out.",
+        "**The beaches**, Isle of Palms, Sullivan's Island and Folly Beach, about 20 minutes out.",
         "**North Charleston / the airport**, the cheapest beds, near CHS and the convention center.",
         "**For a first trip**, stay Downtown. It is the heart of everything Charleston.",
       ],
@@ -3133,11 +3133,11 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "How far is Charleston from the beaches?",
-        a: "Aboutundefinedminutes. Isle of Palms and Sullivan's Island sit just past Mount Pleasant, roughlyundefinedmiles northeast of downtown, and Folly Beach is a similar drive south. None are on the downtown peninsula, so a beach day means a short drive, easy as a day trip, or stay on the islands if the beach is the priority.",
+        a: "About 20 minutes. Isle of Palms and Sullivan's Island sit just past Mount Pleasant, roughly 12 miles northeast of downtown, and Folly Beach is a similar drive south. None are on the downtown peninsula, so a beach day means a short drive, easy as a day trip, or stay on the islands if the beach is the priority.",
       },
       {
         q: "How far is the Charleston airport from downtown?",
-        a: "Charleston International (CHS) is in North Charleston, aboutundefinedmiles and a 20-minute drive from the downtown historic district. There is no rail link, so plan on a rental car, rideshare or shuttle. The cluster of value hotels around the airport is the cheapest place to stay if you have an early flight.",
+        a: "Charleston International (CHS) is in North Charleston, about 12 miles and a 20-minute drive from the downtown historic district. There is no rail link, so plan on a rental car, rideshare or shuttle. The cluster of value hotels around the airport is the cheapest place to stay if you have an early flight.",
       },
       {
         q: "What is Charleston known for?",
@@ -3339,7 +3339,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
         "St. Augustine splits across the water. The Historic District holds the fort, St. George Street and the walkable Gilded-Age core; Anastasia Island and St. Augustine Beach have the sand and the lighthouse; Vilano Beach is the quieter barrier island to the north; and the highway and Uptown run cheapest. For a first trip, stay downtown.",
       points: [
         "**The Historic District**, the fort, St. George Street and the walkable old city core. The first timer pick.",
-        "**Anastasia Island / the beach**, the sand, the lighthouse and Anastasia State Park, aboutundefinedmiles east.",
+        "**Anastasia Island / the beach**, the sand, the lighthouse and Anastasia State Park, about 6 miles east.",
         "**Vilano Beach**, a quieter barrier island just north, family friendly and low key.",
         "**Uptown / the highway**, the cheapest beds, near US-1 and I-95.",
         "**Nights of Lights?**, stay downtown and book months ahead. Winter is peak.",
@@ -3358,7 +3358,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
     faqs: [
       {
         q: "How far is St. Augustine from Jacksonville?",
-        a: "Aboutundefinedmiles south, roughly a 45-minute drive up I-95 or A1A. St. Augustine has no commercial airport, so most visitors fly into Jacksonville (JAX) and drive down. Orlando is about two hours south, and Daytona Beach roughly an hour.",
+        a: "About 40 miles south, roughly a 45-minute drive up I-95 or A1A. St. Augustine has no commercial airport, so most visitors fly into Jacksonville (JAX) and drive down. Orlando is about two hours south, and Daytona Beach roughly an hour.",
       },
       {
         q: "Is St. Augustine walkable, or do you need a car?",
@@ -3374,7 +3374,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "Where should you stay for Nights of Lights?",
-        a: "In or right beside the Historic District, so you can walk the three million light display instead of fighting for parking, it is an on foot event, not a drive through. Book months ahead, since the season (roughly November 21,undefinedto January 18, 2027) is one of the busiest stretches of the year, and use the free park and ride shuttles if you are staying farther out.",
+        a: "In or right beside the Historic District, so you can walk the three million light display instead of fighting for parking, it is an on foot event, not a drive through. Book months ahead, since the season (roughly November 21, 2026 to January 18, 2027) is one of the busiest stretches of the year, and use the free park and ride shuttles if you are staying farther out.",
       },
       {
         q: "What is St. Augustine known for?",
@@ -3655,7 +3655,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "How far is the airport from Old Town and Downtown?",
-        a: "Albuquerque International Sunport (ABQ) is aboutundefinedmiles and a 10-to-15-minute drive south of Downtown and Old Town, one of the closest big city airports to its own downtown in the country. There is no rail link, so plan on a rental car or a rideshare. The cluster of value hotels right by the Sunport is the cheapest place to stay if you have an early flight.",
+        a: "Albuquerque International Sunport (ABQ) is about 5 miles and a 10-to-15-minute drive south of Downtown and Old Town, one of the closest big city airports to its own downtown in the country. There is no rail link, so plan on a rental car or a rideshare. The cluster of value hotels right by the Sunport is the cheapest place to stay if you have an early flight.",
       },
       {
         q: "Do you need a car in Albuquerque?",
@@ -3989,7 +3989,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "What types of places can you stay in on Kauai?",
-        a: "Four broad types, full service resorts (the Grand Hyatt and Sheraton at Poipu,undefinedHotel Hanalei Bay up north), condos and vacation rentals with kitchens (the island's quiet majority and the value pick for families and longer trips), beachfront and value hotels, and a small number of budget hotels. Resorts cluster on the South Shore and in Princeville. Condos and rentals are everywhere, especially the East Side. And there is very little inventory of any kind on the remote West Side.",
+        a: "Four broad types, full service resorts (the Grand Hyatt and Sheraton at Poipu, 1 Hotel Hanalei Bay up north), condos and vacation rentals with kitchens (the island's quiet majority and the value pick for families and longer trips), beachfront and value hotels, and a small number of budget hotels. Resorts cluster on the South Shore and in Princeville. Condos and rentals are everywhere, especially the East Side. And there is very little inventory of any kind on the remote West Side.",
       },
     ],
     body: `**Where to stay in Kauai comes down to the sunny South Shore around Poipu** if it is your first trip, the rain fed, jungle green North Shore around Princeville and Hanalei if you came for the scenery, or the East Side if you want a central, better value base. The oldest and greenest of the main Hawaiian islands wears its nickname, the Garden Isle, honestly, and picking a base is mostly about how much sun, scenery or value you want to wake up to.
@@ -4317,11 +4317,11 @@ Whichever side wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "How far is San Antonio from Austin?",
-        a: "Aboutundefinedmiles north up Interstate 35, roughlyundefinedminutes outside of rush hour. Many travelers pair the two, or fly into either San Antonio International (SAT) or Austin-Bergstrom (AUS). The Hill Country towns, New Braunfels, Gruene and Fredericksburg, sit between and just west, an easy hour out for the river and the wineries.",
+        a: "About 80 miles north up Interstate 35, roughly 90 minutes outside of rush hour. Many travelers pair the two, or fly into either San Antonio International (SAT) or Austin-Bergstrom (AUS). The Hill Country towns, New Braunfels, Gruene and Fredericksburg, sit between and just west, an easy hour out for the river and the wineries.",
       },
       {
         q: "When is Fiesta San Antonio?",
-        a: "Fiesta runs forundefineddays in late April, the city's biggest party, with parades (including the river parade), food, music and the Battle of Flowers. Downtown hotels sell out and rates climb for it, so book a few months ahead if you are coming for it. Spring around Fiesta is also the prettiest, mildest time to visit before the summer heat sets in.",
+        a: "Fiesta runs for 11 days in late April, the city's biggest party, with parades (including the river parade), food, music and the Battle of Flowers. Downtown hotels sell out and rates climb for it, so book a few months ahead if you are coming for it. Spring around Fiesta is also the prettiest, mildest time to visit before the summer heat sets in.",
       },
       {
         q: "Is San Antonio expensive?",
@@ -4648,7 +4648,7 @@ Whichever of the neighborhoods mentioned here wins, the price you book on any Sa
     faqs: [
       {
         q: "How far is Galveston from Houston?",
-        a: "Aboutundefinedmiles southeast, roughly an hour's drive down Interstate 45. Galveston has no major commercial airport, so most visitors fly into Houston, Hobby (HOU) is the closer of the two, aboutundefinedminutes away, and Bush Intercontinental (IAH) is around 75, and drive over the causeway onto the island.",
+        a: "About 50 miles southeast, roughly an hour's drive down Interstate 45. Galveston has no major commercial airport, so most visitors fly into Houston, Hobby (HOU) is the closer of the two, about 45 minutes away, and Bush Intercontinental (IAH) is around 75, and drive over the causeway onto the island.",
       },
       {
         q: "Where should you stay in Galveston before a cruise?",
@@ -4660,7 +4660,7 @@ Whichever of the neighborhoods mentioned here wins, the price you book on any Sa
       },
       {
         q: "Is Galveston an island?",
-        a: "Yes, Galveston is a barrier island aboutundefinedmiles long off the Texas Gulf Coast, connected to the mainland by the I-45 causeway and, at the far east end, the free Bolivar ferry. The Gulf beaches line the south shore. The bay, the harbor and the cruise port sit on the north.",
+        a: "Yes, Galveston is a barrier island about 30 miles long off the Texas Gulf Coast, connected to the mainland by the I-45 causeway and, at the far east end, the free Bolivar ferry. The Gulf beaches line the south shore. The bay, the harbor and the cruise port sit on the north.",
       },
       {
         q: "When is the best time to visit Galveston?",
@@ -4833,7 +4833,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
     faqs: [
       {
         q: "How far is Tucson from Phoenix?",
-        a: "Aboutundefinedmiles, roughly a two hour drive south on Interstate 10. Many visitors fly into Phoenix Sky Harbor (the bigger airport) and drive down, [Scottsdale](/blog/where-to-stay-in-scottsdale)makes a comfortable first or last night up there, though Tucson International (TUS) sits justundefinedminutes south of downtown and handles plenty of direct flights of its own.",
+        a: "About 110 miles, roughly a two hour drive south on Interstate 10. Many visitors fly into Phoenix Sky Harbor (the bigger airport) and drive down, [Scottsdale](/blog/where-to-stay-in-scottsdale) makes a comfortable first or last night up there, though Tucson International (TUS) sits just 15 minutes south of downtown and handles plenty of direct flights of its own.",
       },
       {
         q: "Is Tucson safe?",
@@ -4853,7 +4853,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "How far is Tucson from the Mexican border?",
-        a: "Aboutundefinedmiles south to Nogales, roughly an hour down I-19, close enough for a day trip, and the reason the region's food, missions and history are so deeply Sonoran. The historic mission town of Tubac and the wine country of the Santa Cruz Valley sit along the same drive.",
+        a: "About 60 miles south to Nogales, roughly an hour down I-19, close enough for a day trip, and the reason the region's food, missions and history are so deeply Sonoran. The historic mission town of Tubac and the wine country of the Santa Cruz Valley sit along the same drive.",
       },
     ],
     body: `**Where to stay in Tucson comes down to Downtown** if you want to walk to tacos and breweries, or the Catalina Foothills if you came for a desert resort under the mountains. This is the Old Pueblo, a Sonoran Desert city ringed by saguaro forests and sky island peaks, about two hours south of Phoenix, where a January afternoon is shirtsleeve weather and the food is good enough that UNESCO made it official.
@@ -5003,9 +5003,9 @@ Whichever area wins, the price you book here is the same one everyone else sees,
         "Flagstaff splits into a few simple zones. Downtown and Historic Route 66 keep the breweries, the train depot and the best restaurants on foot; the I-40 strip is wall-to-wall budget chains; Little America and the pines offer a quieter, woodsier stay; and the whole town is the affordable basecamp for the Grand Canyon and Sedona.",
       points: [
         "**Downtown / Historic Route 66**, walkable breweries, the train, the best food. The easy pick.",
-        "**The highway strip**, I-40 and Routeundefinedchains. Cheap and handy for an early Canyon start.",
+        "**The highway strip**, I-40 and Route 66 chains. Cheap and handy for an early Canyon start.",
         "**Little America & the pines**, a woodsier, quieter stay in the ponderosas.",
-        "**Basecamp**, about 1.5 hours to the Grand Canyon,undefinedminutes to Sedona,undefinedmiles to Snowbowl.",
+        "**Basecamp**, about 1.5 hours to the Grand Canyon, 45 minutes to Sedona, 14 miles to Snowbowl.",
         "**Pack layers**, at 7,000 feet, summer nights are cool and winter brings real snow.",
       ],
     },
@@ -5022,27 +5022,27 @@ Whichever area wins, the price you book here is the same one everyone else sees,
     faqs: [
       {
         q: "How far is Flagstaff from the Grand Canyon?",
-        a: "The Grand Canyon's South Rim is aboutundefinedmiles north of Flagstaff, roughly a 1.5-hour drive up US-180 through the pines. That is why so many visitors sleep in Flagstaff, rooms here run far cheaper than the in park lodges, and you can still be at the rim by midmorning.",
+        a: "The Grand Canyon's South Rim is about 80 miles north of Flagstaff, roughly a 1.5-hour drive up US-180 through the pines. That is why so many visitors sleep in Flagstaff, rooms here run far cheaper than the in park lodges, and you can still be at the rim by midmorning.",
       },
       {
         q: "How far is Flagstaff from Sedona?",
-        a: "Aboutundefinedmiles, or a 45-minute drive south down Oak Creek Canyon on US-89A, one of the prettiest stretches of road in Arizona. Many people base in Flagstaff for the lower rates and day trip to Sedona's red rocks, or split a trip between the two.",
+        a: "About 30 miles, or a 45-minute drive south down Oak Creek Canyon on US-89A, one of the prettiest stretches of road in Arizona. Many people base in Flagstaff for the lower rates and day trip to Sedona's red rocks, or split a trip between the two.",
       },
       {
         q: "How far is Flagstaff from Phoenix?",
-        a: "Roughlyundefinedmiles, about aundefinedto 2.5-hour drive south on Interstate 17. The drive climbs from desert into pine forest and gains a few thousand feet, so Flagstaff often sitsundefinedto 30°F cooler than Phoenix, which is exactly why Phoenicians flee here all summer.",
+        a: "Roughly 145 miles, about a 2 to 2.5-hour drive south on Interstate 17. The drive climbs from desert into pine forest and gains a few thousand feet, so Flagstaff often sits 25 to 30°F cooler than Phoenix, which is exactly why Phoenicians flee here all summer.",
       },
       {
         q: "Does it snow in Flagstaff?",
-        a: "Yes, a lot, Flagstaff sits at about 7,000 feet and averagesundefinedto 100+ inches of snow a year, with Arizona Snowbowl running lifts just north of town. Winter here means real cold and plowed streets, so pack accordingly and check road conditions before a Grand Canyon day trip.",
+        a: "Yes, a lot, Flagstaff sits at about 7,000 feet and averages 80 to 100+ inches of snow a year, with Arizona Snowbowl running lifts just north of town. Winter here means real cold and plowed streets, so pack accordingly and check road conditions before a Grand Canyon day trip.",
       },
       {
         q: "Should you stay in Flagstaff or Sedona?",
-        a: "Base in Flagstaff for lower rates, a walkable downtown, snow and the shortest drive to the Grand Canyon. Base in Sedona for the red rock scenery, resorts and spas, and warmer desert weather. For a Canyon focused or budget trip, Flagstaff wins. For a romantic or hiking trip built around the rocks, Sedona does. They are onlyundefinedminutes apart, so plenty of people do both.",
+        a: "Base in Flagstaff for lower rates, a walkable downtown, snow and the shortest drive to the Grand Canyon. Base in Sedona for the red rock scenery, resorts and spas, and warmer desert weather. For a Canyon focused or budget trip, Flagstaff wins. For a romantic or hiking trip built around the rocks, Sedona does. They are only 45 minutes apart, so plenty of people do both.",
       },
       {
         q: "What is Flagstaff known for?",
-        a: "Historic Routeundefinedand the railroad, the cool 7,000-foot pine forest setting, and its role as the basecamp for the Grand Canyon and Sedona. It is also a craft beer and college town (Northern Arizona University), home to Lowell Observatory, where Pluto was discovered, and the world's first International Dark Sky City.",
+        a: "Historic Route 66 and the railroad, the cool 7,000-foot pine forest setting, and its role as the basecamp for the Grand Canyon and Sedona. It is also a craft beer and college town (Northern Arizona University), home to Lowell Observatory, where Pluto was discovered, and the world's first International Dark Sky City.",
       },
     ],
     body: `**Where to stay in Flagstaff comes down to Downtown** if you came to walk to the breweries and Route 66, or the highway chains if you are really just sleeping before the Grand Canyon. At 7,000 feet in the pines, this old railroad town is the high country basecamp for the Canyon, Sedona and Arizona Snowbowl, a place where you can stand in the snow in the morning and red rock desert by lunch.
@@ -5203,7 +5203,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
     faqs: [
       {
         q: "How far is Santa Barbara from Los Angeles?",
-        a: "Aboutundefinedmiles up US-101, or roughly a two hour drive depending on LA traffic. The prettier option is Amtrak's Pacific Surfliner, which runs along the coast and drops you right downtown near the waterfront, no parking to hunt for. Santa Barbara Airport (SBA) in Goleta also handles regional flights, aboutundefinedminutes from State Street.",
+        a: "About 95 miles up US-101, or roughly a two hour drive depending on LA traffic. The prettier option is Amtrak's Pacific Surfliner, which runs along the coast and drops you right downtown near the waterfront, no parking to hunt for. Santa Barbara Airport (SBA) in Goleta also handles regional flights, about 15 minutes from State Street.",
       },
       {
         q: "Is Santa Barbara safe?",
@@ -5211,7 +5211,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "What is Santa Barbara known for?",
-        a: "The \"American Riviera\", red tile Spanish-Mediterranean architecture (rebuilt that way after theundefinedearthquake), palm lined beaches under the Santa Ynez Mountains, State Street's walkable shopping and dining, Stearns Wharf, the historic Mission, and the Santa Ynez wine country a short drive north.",
+        a: "The \"American Riviera\", red tile Spanish-Mediterranean architecture (rebuilt that way after the 1925 earthquake), palm lined beaches under the Santa Ynez Mountains, State Street's walkable shopping and dining, Stearns Wharf, the historic Mission, and the Santa Ynez wine country a short drive north.",
       },
       {
         q: "What is the best area to stay in Santa Barbara for first timers?",
@@ -5223,7 +5223,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "How far is the wine country from Santa Barbara?",
-        a: "The Santa Ynez Valley wine country, Los Olivos, Solvang and the Foxen Canyon trail of \"Sideways\" fame, sits aboutundefinedminutes north over the San Marcos Pass. Most people base in Santa Barbara and day trip up, which keeps you near the beach at night and the tasting rooms by day.",
+        a: "The Santa Ynez Valley wine country, Los Olivos, Solvang and the Foxen Canyon trail of \"Sideways\" fame, sits about 45 minutes north over the San Marcos Pass. Most people base in Santa Barbara and day trip up, which keeps you near the beach at night and the tasting rooms by day.",
       },
     ],
     body: `**Where to stay in Santa Barbara comes down to one question, the beach or State Street?** Book the Waterfront and you will roll out of bed onto the sand and the bike path. Book Downtown and you will walk to dinner, wine tasting and a hundred red tile storefronts without ever starting the car.
@@ -5406,7 +5406,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
         "Key West splits into five areas, and the right base comes down to noise and beaches. Old Town keeps Duval and the sunset on foot; Truman Annex stays quiet by Fort Zachary Taylor's beach; New Town and Stock Island swap the stroll for bigger rooms and lower rates.",
       points: [
         "**Old Town**, the walkable historic heart. The easy first timer and no car base.",
-        "**Duval Street**, stay a block off it for the nightlife without theundefineda.m. soundtrack.",
+        "**Duval Street**, stay a block off it for the nightlife without the 2 a.m. soundtrack.",
         "**Truman Annex / Fort Zachary Taylor**, quiet lanes and the island's best beach.",
         "**New Town & Smathers Beach**, more room and lower rates, a short bike from Duval.",
         "**Stock Island**, just off island, marina cool, a little cheaper.",
@@ -5425,7 +5425,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
     faqs: [
       {
         q: "How far is Key West from Miami?",
-        a: "Aboutundefinedmiles by road, or a 3.5 to 4-hour drive down US-1, the Overseas Highway, the only road in, crossingundefinedbridges including the Seven Mile Bridge. You can also fly straight into Key West International (EYW), usually connecting through Miami or Fort Lauderdale, which lands youundefinedminutes from Old Town.",
+        a: "About 165 miles by road, or a 3.5 to 4-hour drive down US-1, the Overseas Highway, the only road in, crossing 42 bridges including the Seven Mile Bridge. You can also fly straight into Key West International (EYW), usually connecting through Miami or Fort Lauderdale, which lands you 10 minutes from Old Town.",
       },
       {
         q: "Can you drive to Key West?",
@@ -5433,7 +5433,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "Do you need a car in Key West?",
-        a: "Not if you stay in Old Town. The island is about four square miles and the historic core walks end to end in roughlyundefinedminutes. Bikes and scooters cover the rest. You will want wheels if you base in New Town or on Stock Island, or if you plan day trips back up the Keys.",
+        a: "Not if you stay in Old Town. The island is about four square miles and the historic core walks end to end in roughly 20 minutes. Bikes and scooters cover the rest. You will want wheels if you base in New Town or on Stock Island, or if you plan day trips back up the Keys.",
       },
       {
         q: "Where should you not stay in Key West?",
@@ -5445,7 +5445,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       },
       {
         q: "Can you see Cuba from Key West?",
-        a: "No. Cuba is aboutundefinedmiles south, the famous buoy at the Southernmost Point marks the distance, and the curve of the earth hides it well below the horizon. On a clear night you are seeing stars and the odd cruise ship, not Havana.",
+        a: "No. Cuba is about 90 miles south, the famous buoy at the Southernmost Point marks the distance, and the curve of the earth hides it well below the horizon. On a clear night you are seeing stars and the odd cruise ship, not Havana.",
       },
       {
         q: "How many days do you need in Key West?",
@@ -5619,7 +5619,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       points: [
         "**Town of Telluride**, historic, walkable streets. The best dining, nightlife and budget range.",
         "**Mountain Village**, ski in, ski out resorts and the upscale hotels, at the top of the gondola.",
-        "**The free gondola**, links the two in aboutundefinedminutes, so a town stay still skis and a Village stay still dines out.",
+        "**The free gondola**, links the two in about 13 minutes, so a town stay still skis and a Village stay still dines out.",
         "**Skiers and luxury** lean Mountain Village. **first timers, foodies and festival goers** lean the town.",
         "**Two peak seasons**, winter skiing and summer festivals. Book early, and watch the spring and fall off season closures.",
       ],
@@ -5637,7 +5637,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
     faqs: [
       {
         q: "Is it better to stay in Telluride or Mountain Village?",
-        a: "It depends on the trip. The Town of Telluride wins for dining, nightlife, festivals and the widest budget range. Mountain Village wins for ski in, ski out access, the bigger luxury hotels and slope side convenience. The free gondola links the two in aboutundefinedminutes, so you can stay in either and still reach the other.",
+        a: "It depends on the trip. The Town of Telluride wins for dining, nightlife, festivals and the widest budget range. Mountain Village wins for ski in, ski out access, the bigger luxury hotels and slope side convenience. The free gondola links the two in about 13 minutes, so you can stay in either and still reach the other.",
       },
       {
         q: "Do you need a car in Telluride?",
@@ -6350,7 +6350,7 @@ Once you have picked your side of town, [search current Wisconsin Dells prices](
         "**The Old Mill District**, riverside shops, dining and the summer float take out. Families.",
         "**The Westside / toward Mount Bachelor**, golf, trails and the quickest ski access. Tetherow.",
         "**Along Highway 97**, the reliable brand value strip. Road trippers and longer stays.",
-        "**It sits at ~3,600 ft in the high desert**, sunny and dry, but it does snow. Redmond (RDM) airport is aboutundefinedminutes north.",
+        "**It sits at ~3,600 ft in the high desert**, sunny and dry, but it does snow. Redmond (RDM) airport is about 20 minutes north.",
       ],
     },
     date: "2026-06-24",
@@ -6366,7 +6366,7 @@ Once you have picked your side of town, [search current Wisconsin Dells prices](
     faqs: [
       {
         q: "How far is Bend from Portland?",
-        a: "Aboutundefinedmiles, and realistically three to three and a half hours by car over the Cascades, usually US-26 over Mount Hood, or US-20 over Santiam Pass from the I-5 side. It is a beautiful drive and an icy one in winter, so check the passes before you go. If you would rather skip it, Redmond (RDM) is the close airport, aboutundefinedminutes north of Bend.",
+        a: "About 160 miles, and realistically three to three and a half hours by car over the Cascades, usually US-26 over Mount Hood, or US-20 over Santiam Pass from the I-5 side. It is a beautiful drive and an icy one in winter, so check the passes before you go. If you would rather skip it, Redmond (RDM) is the close airport, about 20 minutes north of Bend.",
       },
       {
         q: "What is the elevation of Bend, Oregon?",
@@ -6374,11 +6374,11 @@ Once you have picked your side of town, [search current Wisconsin Dells prices](
       },
       {
         q: "Does it snow in Bend, Oregon?",
-        a: "Yes. Bend gets a real winter despite its roughlyundefineddays of sunshine, snow in town from about November into March, and a lot more up at Mount Bachelor, where the ski season often runs from late November well into May. Summers are warm, sunny and dry. The shoulder seasons are quiet and gorgeous.",
+        a: "Yes. Bend gets a real winter despite its roughly 300 days of sunshine, snow in town from about November into March, and a lot more up at Mount Bachelor, where the ski season often runs from late November well into May. Summers are warm, sunny and dry. The shoulder seasons are quiet and gorgeous.",
       },
       {
         q: "What is the closest airport to Bend?",
-        a: "Redmond Municipal Airport (RDM), aboutundefinedmiles andundefinedminutes north of Bend, is the closest, with nonstop flights to several western cities. Portland (PDX) is the big airport alternative, but that is a three plus hour drive over the mountains, so most visitors who can fly into Redmond do.",
+        a: "Redmond Municipal Airport (RDM), about 16 miles and 20 minutes north of Bend, is the closest, with nonstop flights to several western cities. Portland (PDX) is the big airport alternative, but that is a three plus hour drive over the mountains, so most visitors who can fly into Redmond do.",
       },
       {
         q: "What is the best area to stay in Bend for families?",
@@ -6593,15 +6593,15 @@ Once you have picked your side of town, [search current Bend prices](/search?des
     faqs: [
       {
         q: "How far is Sedona from Phoenix?",
-        a: "Aboutundefinedmiles and a two hour drive south via I-17, Phoenix Sky Harbor (PHX) is the airport nearly everyone flies into, and the climb up through the high desert into the red rocks is part of the trip. Flagstaff is closer, aboutundefinedminutes north, but has a much smaller airport.",
+        a: "About 116 miles and a two hour drive south via I-17, Phoenix Sky Harbor (PHX) is the airport nearly everyone flies into, and the climb up through the high desert into the red rocks is part of the trip. Flagstaff is closer, about 45 minutes north, but has a much smaller airport.",
       },
       {
         q: "What is the closest airport to Sedona?",
-        a: "Practically speaking, Phoenix Sky Harbor (PHX), about two hours south, is the one to fly into, it has the flights and the rental cars. Flagstaff (FLG), roughlyundefinedminutes north, is a small commercial airport. Sedona's own airport (SEZ) up on Airport Mesa is for scenic flights and private planes, not commercial service, so plan to drive in. If you want a night near the airport on either end, [Scottsdale](/blog/where-to-stay-in-scottsdale)is the easy choice.",
+        a: "Practically speaking, Phoenix Sky Harbor (PHX), about two hours south, is the one to fly into, it has the flights and the rental cars. Flagstaff (FLG), roughly 45 minutes north, is a small commercial airport. Sedona's own airport (SEZ) up on Airport Mesa is for scenic flights and private planes, not commercial service, so plan to drive in. If you want a night near the airport on either end, [Scottsdale](/blog/where-to-stay-in-scottsdale) is the easy choice.",
       },
       {
         q: "How far is the Grand Canyon from Sedona?",
-        a: "Aboutundefinedmiles and a little over two hours to the South Rim, which makes the Grand Canyon a long but very doable day trip from Sedona, most people loop up through Oak Creek Canyon and Flagstaff. If your schedule allows, an overnight beats a rushed there and back.",
+        a: "About 110 miles and a little over two hours to the South Rim, which makes the Grand Canyon a long but very doable day trip from Sedona, most people loop up through Oak Creek Canyon and Flagstaff. If your schedule allows, an overnight beats a rushed there and back.",
       },
       {
         q: "What is the elevation of Sedona?",
@@ -6859,7 +6859,7 @@ Once you have picked your side of the red rocks, [search current Sedona prices](
         "**Downtown Asheville**, walkable breweries, restaurants and galleries. First timers, no car.",
         "**Biltmore Village**, at the gates of the Biltmore Estate. Estate visits, walkable shops.",
         "**Blue Ridge Parkway / East Asheville**, the reliable brand value side near the mountains.",
-        "**The Omni Grove Park Inn**, the grandundefinedmountain resort. Books direct.",
+        "**The Omni Grove Park Inn**, the grand 1913 mountain resort. Books direct.",
         "**Fly into AVL** (~15 min south) or Charlotte/CLT (~2 hours east). Spring and fall are prettiest.",
       ],
     },
@@ -6876,11 +6876,11 @@ Once you have picked your side of the red rocks, [search current Sedona prices](
     faqs: [
       {
         q: "How far is Asheville from Charlotte?",
-        a: "Aboutundefinedmiles and a two hour drive west on I-40. Charlotte (CLT) has the big airport and the most flights, and the climb up into the Blue Ridge Mountains is a pretty drive. Asheville has its own airport too, which is closer if the flights line up.",
+        a: "About 130 miles and a two hour drive west on I-40. Charlotte (CLT) has the big airport and the most flights, and the climb up into the Blue Ridge Mountains is a pretty drive. Asheville has its own airport too, which is closer if the flights line up.",
       },
       {
         q: "Does Asheville have an airport?",
-        a: "Yes, Asheville Regional Airport (AVL) is aboutundefinedminutes south of downtown, with nonstop flights to a growing list of hubs including Atlanta, Charlotte, Chicago and New York. For more options, Charlotte (CLT) is about two hours east.",
+        a: "Yes, Asheville Regional Airport (AVL) is about 15 minutes south of downtown, with nonstop flights to a growing list of hubs including Atlanta, Charlotte, Chicago and New York. For more options, Charlotte (CLT) is about two hours east.",
       },
       {
         q: "Is Asheville, NC safe?",
@@ -7115,7 +7115,7 @@ Once you have picked your side of town, [search current Asheville prices](/searc
         "**Downtown Estes Park**, the walkable riverwalk, shops and restaurants. First timers, no car.",
         "**Fall River / the west side**, quiet riverside inns on the road toward the park.",
         "**Near the park entrance**, for hikers who want to beat the Rocky Mountain National Park crowds.",
-        "**The Stanley Hotel**, the grandundefinedhotel that inspired *The Shining*. Books direct.",
+        "**The Stanley Hotel**, the grand 1909 hotel that inspired *The Shining*. Books direct.",
         "**It sits at 7,522 ft**, take day one easy, drink water. Denver is ~90 minutes downhill.",
       ],
     },
@@ -7132,7 +7132,7 @@ Once you have picked your side of town, [search current Asheville prices](/searc
     faqs: [
       {
         q: "How far is Estes Park from Denver?",
-        a: "Aboutundefinedmiles andundefinedminutes, mostly up US-36 through the foothills. It is an easy drive from Denver International Airport (roughly two hours) and the most common way people arrive, so most visitors rent a car, you will want one for the park anyway.",
+        a: "About 65 miles and 90 minutes, mostly up US-36 through the foothills. It is an easy drive from Denver International Airport (roughly two hours) and the most common way people arrive, so most visitors rent a car, you will want one for the park anyway.",
       },
       {
         q: "What is the elevation of Estes Park?",
@@ -7144,7 +7144,7 @@ Once you have picked your side of town, [search current Asheville prices](/searc
       },
       {
         q: "Is the Stanley Hotel really haunted, and can I stay there?",
-        a: "The Stanley is the grandundefinedhotel above town that inspired Stephen King's The Shining, and it leans all the way into the ghost story reputation with night tours and all. You can absolutely stay there, it books direct on its own site rather than through us, so we cannot show you a price, but it is worth knowing about.",
+        a: "The Stanley is the grand 1909 hotel above town that inspired Stephen King's The Shining, and it leans all the way into the ghost story reputation with night tours and all. You can absolutely stay there, it books direct on its own site rather than through us, so we cannot show you a price, but it is worth knowing about.",
       },
       {
         q: "What is the best area to stay in Estes Park for first timers?",
@@ -7315,7 +7315,7 @@ Once you have picked your side of town, [check current Estes Park prices](/searc
     faqs: [
       {
         q: "How far is Moab from Salt Lake City?",
-        a: "Aboutundefinedmiles, or roughly four hours by car down US-6 and I-70. Salt Lake City has the most flights, but Grand Junction, Colorado is closer at about an hour and three quarters, and the small Canyonlands Field (CNY) right outside Moab is closest of all with limited service. Most visitors fly into Salt Lake or Grand Junction and drive, and you will want the car for the parks.",
+        a: "About 230 miles, or roughly four hours by car down US-6 and I-70. Salt Lake City has the most flights, but Grand Junction, Colorado is closer at about an hour and three quarters, and the small Canyonlands Field (CNY) right outside Moab is closest of all with limited service. Most visitors fly into Salt Lake or Grand Junction and drive, and you will want the car for the parks.",
       },
       {
         q: "What is there to do in Moab?",
@@ -7327,7 +7327,7 @@ Once you have picked your side of town, [check current Estes Park prices](/searc
       },
       {
         q: "What is the best area to stay in Moab for first timers?",
-        a: "Downtown, along Main Street. It keeps you walkable to the restaurants and breweries, central to both parks and the bike shuttles, and minutes from the Arches gate. The Colorado River resorts out on Highwayundefinedare more scenic but a drive from town. Downtown is the easy first trip base.",
+        a: "Downtown, along Main Street. It keeps you walkable to the restaurants and breweries, central to both parks and the bike shuttles, and minutes from the Arches gate. The Colorado River resorts out on Highway 128 are more scenic but a drive from town. Downtown is the easy first trip base.",
       },
       {
         q: "When is the best time to visit Moab?",
@@ -8010,7 +8010,7 @@ And if you change one habit after reading this, before you book anything, check 
         "For a first visit, base yourself in Waikiki — it's the most walkable, best-connected part of the island, so you spend less time driving and more time on the sand. Choose Ko Olina for young kids, the North Shore for winter surf, or Kailua if great beaches matter more than nightlife.",
       points: [
         "**Waikiki**, most hotels, walkable, no car needed. The easy default for first timers.",
-        "**Ko Olina**, calm lagoonsundefinedminutes west. The pick for families with young kids.",
+        "**Ko Olina**, calm lagoons 40 minutes west. The pick for families with young kids.",
         "**North Shore**, big winter surf and a slow pace. Rent a car and skip the nightlife.",
         "**Kailua**, the island's best beaches, residential and low key. A car is close to essential.",
       ],
