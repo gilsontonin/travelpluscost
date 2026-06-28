@@ -20,6 +20,9 @@ interface Dest { id: number; name: string; type: string; lat: number; lng: numbe
 const DESTS = destinations as Dest[];
 // Specific, bookable place types — match a hotel to "things to do nearby" (not COUNTRY/STATE/REGION).
 const NEAR_TYPES = new Set(["CITY", "TOWN", "NEIGHBORHOOD", "VILLAGE", "ISLAND", "NATIONAL_PARK", "AREA", "DISTRICT"]);
+// Viator tags most products to the CITY/TOWN level; NEIGHBORHOOD/DISTRICT/AREA destinations have sparse
+// catalogs (e.g. "French Quarter" = 1 product vs "New Orleans" = 40+). Prefer a catalog-rich city/town.
+const PRIMARY_TYPES = new Set(["CITY", "TOWN", "ISLAND", "NATIONAL_PARK"]);
 const NEAR = DESTS.filter((d) => NEAR_TYPES.has(d.type));
 
 function km(aLat: number, aLng: number, bLat: number, bLng: number): number {
@@ -30,12 +33,14 @@ function km(aLat: number, aLng: number, bLat: number, bLng: number): number {
 }
 
 export function nearestDestination(lat: number, lng: number): Dest | null {
-  let best: Dest | null = null, bestD = Infinity;
+  let city: Dest | null = null, cityD = Infinity, any: Dest | null = null, anyD = Infinity;
   for (const d of NEAR) {
     const dist = km(lat, lng, d.lat, d.lng);
-    if (dist < bestD) { bestD = dist; best = d; }
+    if (dist < anyD) { anyD = dist; any = d; }
+    if (PRIMARY_TYPES.has(d.type) && dist < cityD) { cityD = dist; city = d; }
   }
-  return best && bestD <= 160 ? best : null; // within ~160km, else no "nearby" activities
+  if (city && cityD <= 80) return city; // prefer the catalog-rich city/town within ~80km
+  return any && anyD <= 160 ? any : null; // else the nearest bookable place, within ~160km
 }
 
 const API = "https://api.viator.com/partner";
@@ -68,8 +73,10 @@ function mapProduct(p: RawProduct): Activity {
   };
 }
 
-async function searchDestination(destId: number, limit: number): Promise<Activity[]> {
-  const key = `${destId}|${limit}`;
+const POOL = 40; // fetch a generous pool per destination once, then quality-rank + slice/match per request
+
+async function destinationPool(destId: number): Promise<Activity[]> {
+  const key = `${destId}`;
   const hit = cache.get(key);
   if (hit && hit.exp > Date.now()) return hit.value;
   const apiKey = process.env.VIATOR_API_KEY;
@@ -81,7 +88,7 @@ async function searchDestination(destId: number, limit: number): Promise<Activit
       body: JSON.stringify({
         filtering: { destination: String(destId) },
         sorting: { sort: "TRAVELER_RATING", order: "DESCENDING" },
-        pagination: { start: 1, count: limit },
+        pagination: { start: 1, count: POOL },
         currency: "USD",
       }),
       signal: AbortSignal.timeout(8000),
@@ -96,10 +103,37 @@ async function searchDestination(destId: number, limit: number): Promise<Activit
   }
 }
 
-/** Top-rated activities near a lat/lng, plus the matched place name (for the section title). */
+// QUALITY CONTROL (rack-and-stack): only tours rated >= 4.5; rank the >=100-review ones first (proven),
+// then by rating, then by review count. A 4.5+ tour with < 100 reviews still qualifies (some great spots
+// are just less-traveled) — it just ranks below the proven ones. Never show a sub-4.5 card.
+function rankByQuality(list: Activity[]): Activity[] {
+  return list
+    .filter((a) => typeof a.rating === "number" && a.rating >= 4.5)
+    .sort((a, b) => {
+      const ap = (a.reviews ?? 0) >= 100 ? 1 : 0;
+      const bp = (b.reviews ?? 0) >= 100 ? 1 : 0;
+      if (ap !== bp) return bp - ap;
+      if ((b.rating ?? 0) !== (a.rating ?? 0)) return (b.rating ?? 0) - (a.rating ?? 0);
+      return (b.reviews ?? 0) - (a.reviews ?? 0);
+    });
+}
+
+/** Top-rated (>=4.5*) activities near a lat/lng, plus the matched place name (for the section title). */
 export async function activitiesNear(lat?: number | null, lng?: number | null, limit = 8): Promise<{ activities: Activity[]; place: string | null }> {
   if (typeof lat !== "number" || typeof lng !== "number" || Number.isNaN(lat) || Number.isNaN(lng)) return { activities: [], place: null };
   const dest = nearestDestination(lat, lng);
   if (!dest) return { activities: [], place: null };
-  return { activities: await searchDestination(dest.id, limit), place: dest.name };
+  return { activities: rankByQuality(await destinationPool(dest.id)).slice(0, limit), place: dest.name };
+}
+
+/** Quality tours near a point whose TITLE matches a topic (e.g. "swamp", "jazz", "cemetery ghost"), for
+ *  per-section blog offers. Matches any of the space-separated terms; returns the best `limit`, or []. */
+export async function activitiesMatching(lat?: number | null, lng?: number | null, query = "", limit = 2): Promise<Activity[]> {
+  if (typeof lat !== "number" || typeof lng !== "number" || Number.isNaN(lat) || Number.isNaN(lng)) return [];
+  const dest = nearestDestination(lat, lng);
+  if (!dest) return [];
+  const terms = query.toLowerCase().split(/\s+/).filter((t) => t.length > 2);
+  if (!terms.length) return [];
+  const pool = rankByQuality(await destinationPool(dest.id));
+  return pool.filter((a) => { const t = a.title.toLowerCase(); return terms.some((term) => t.includes(term)); }).slice(0, limit);
 }
