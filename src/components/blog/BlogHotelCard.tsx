@@ -5,14 +5,17 @@ import Image from "next/image";
 import type { DirectoryHotel } from "@/lib/directory";
 import { hotelHref } from "@/lib/hotelUrl";
 import { money, reviewLabel } from "@/lib/format";
-import { useHotelPrice } from "@/components/blog/BlogPriceProvider";
+import { useHotelPrice, useStayDates } from "@/components/blog/BlogPriceProvider";
 
 // Inline hotel card for blog posts — `::hotel <hotelId>`. Photo-forward (OTA-style), with a guest-score
 // badge and a live "from $X/night · all-in" SSP fetched client-side via BlogPriceProvider (one batched
 // call per page). Falls back to "See your price" when there's no near-term availability. SSP = the public
 // price, the same for everyone — never the net cost or markup.
 export default function BlogHotelCard({ hotel }: { hotel: DirectoryHotel }) {
-  const href = hotelHref(hotel);
+  const { checkin, checkout } = useStayDates();
+  // Link on the SAME dates the card was priced for, so the property page (and checkout) shows the exact
+  // same number — not its own default-date reprice. Clean URL until the dates load (canonical stays clean).
+  const href = checkin ? `${hotelHref(hotel)}?checkin=${checkin}&checkout=${checkout}&adults=2` : hotelHref(hotel);
   const loc = [hotel.city, hotel.state].filter(Boolean).join(", ");
   const rev = reviewLabel(hotel.rating ?? undefined);
   const price = useHotelPrice(hotel.id);
