@@ -476,5 +476,26 @@
     "status": "published",
     "cluster": "new-orleans",
     "history": []
+  },
+  "day-trips-from-new-orleans": {
+    "primary": "day trips from new orleans",
+    "secondary": [
+      "swamp tour new orleans",
+      "plantation tours new orleans",
+      "oak alley plantation",
+      "whitney plantation",
+      "honey island swamp",
+      "baton rouge from new orleans",
+      "cajun country lafayette",
+      "new orleans plantations"
+    ],
+    "volume": 1900,
+    "kd": 40,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-27",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
   }
 }

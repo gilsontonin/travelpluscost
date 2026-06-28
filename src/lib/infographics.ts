@@ -469,6 +469,41 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
     title: "Mardi Gras 2026 falls on February 17",
     body: "Carnival season runs from January 6 to Fat Tuesday (Feb 17, 2026). The two weeks before are the city's busiest and most expensive — hotels book up a year ahead and often require 3–4 night minimums. Want the party? Book early. Want the city calm? Avoid those two weeks entirely.",
   },
+  "nola-day-trips": {
+    kind: "stat",
+    title: "Best day trips from New Orleans, at a glance",
+    stats: [
+      { value: "Plantation Country", label: "Oak Alley, Whitney and Laura along River Road, ~1 hour west" },
+      { value: "Honey Island Swamp", label: "gator-filled bayou by flat-bottom boat, ~45 minutes east" },
+      { value: "Baton Rouge", label: "the state capital and tallest U.S. capitol, ~1.5 hours up I-10" },
+      { value: "Cajun Country", label: "Lafayette's dance halls and prairie towns, ~2 hours west" },
+    ],
+  },
+  "nola-plantations": {
+    kind: "stat",
+    title: "The River Road plantations",
+    stats: [
+      { value: "Oak Alley", label: "the famous quarter-mile of 28 oaks — the photogenic one" },
+      { value: "Whitney", label: "the one museum told from the enslaved people's perspective" },
+      { value: "Laura", label: "a Creole plantation and its generations of women" },
+      { value: "Destrehan", label: "the closest to the city, about 30 minutes out" },
+    ],
+  },
+  "nola-swamp-tours": {
+    kind: "stat",
+    title: "Swamp tours, decoded",
+    stats: [
+      { value: "Honey Island", label: "the classic — cypress, moss and gators near Slidell" },
+      { value: "Barataria", label: "free trails at the Jean Lafitte preserve, ~40 minutes south" },
+      { value: "Airboat vs pontoon", label: "airboats are fast and loud; covered pontoons are calmer" },
+      { value: "Hotel pickup", label: "most tours collect you from the Quarter — no car needed" },
+    ],
+  },
+  "nola-daytrip-callout": {
+    kind: "callout",
+    title: "Guided tour or rent a car?",
+    body: "A guided tour (usually with hotel pickup) is easiest for the swamp and the plantations — no driving, no parking, an expert along for the ride. Renting a car makes sense for Cajun Country, the Northshore, or stringing several stops together at your own pace. For one marquee stop like Oak Alley or Honey Island, let someone else drive.",
+  },
   "nola-by-interest": {
     kind: "stat",
     title: "Pick your New Orleans by interest",

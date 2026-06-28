@@ -140,3 +140,19 @@ single, actionable line. Prune lessons that are now fully enforced by a checker.
   The full festival name "New Orleans Jazz & Heritage Festival" nets ~6 SERP terms in one mention.
 - **Visual cadence (6.5) scales with length:** ~3,850w needs ~8 visuals; ::infographics AND Markdown tables
   both count, so a priority→month quick-reference table doubles as a visual and featured-snippet bait.
+
+## day-trips-from-new-orleans (2026-06-27)
+- **Commercial day-trip keywords have a HIGH band floor (2,999 here) and a THIN/junk SERP.** The rankers are
+  travel-blog listicles + OTA/operator pages; their term lists are polluted with nav/TOC/affiliate junk
+  (youtube, links, support, hawaii, blog, content, "tips ideas", "personally experienced", contents, table).
+  After heading 100% + every genuine day-trip term, serp capped at **76** — a reported exec-decision (cf.
+  Dells 66, Estes Park 88). Do NOT stuff junk to chase 90. Dropping the most-polluted competitor (trekaroo:
+  857w wrapped in a giant Disney/Hawaii/Christmas sidebar) actually LOWERED the score (smaller term sample) —
+  more competitors = more stable; keep them, take the exec-decision.
+- **Heading lever is decisive on thin SERPs:** converting the plantation section to named H3s (### Oak Alley
+  Plantation / ### Whitney Plantation) + a "road trip" heading took heading 20%→100% and serp 37→73.
+- **Estimate body length conservatively:** my first full draft of ~14 sections was only 1,393w; per-section
+  prose runs ~80-120w, so a 3,000w floor needs ~20 real sections or deep 3-paragraph ones. Deepen with more
+  destinations (Barataria, Avery Island, farther-afield, kids/food angles), not padding.
+- **Handle plantations honestly (claims bar):** centered Whitney (the enslaved people's story) and flagged
+  the slavery history plainly rather than "antebellum charm." On-brand and the right call.

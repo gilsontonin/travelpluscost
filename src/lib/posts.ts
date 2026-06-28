@@ -49,6 +49,284 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "day-trips-from-new-orleans",
+    title: "Best Day Trips from New Orleans (2026)",
+    description:
+      "The best day trips from New Orleans in 2026: swamp tours, River Road plantations, Baton Rouge, Cajun Country and the Northshore — with drive times.",
+    excerpt:
+      "Gators, oak-lined plantations, Cajun dance halls and Gulf beaches — all within a couple hours of the Quarter. The best day trips from New Orleans, with honest notes and drive times. As of 2026.",
+    tldr: {
+      answer:
+        "A swamp tour (Honey Island, ~45 min) and a River Road plantation like Oak Alley or Whitney (~1 hour) are the two classics — often combined in one tour with hotel pickup, so no car is needed. With a rental, add Baton Rouge, Cajun Country around Lafayette, the Northshore, or the Gulf Coast.",
+      points: [
+        "**The two classics** — a swamp tour and a River Road plantation.",
+        "**Do both** — a swamp + Oak Alley combo, ~$80–175 with hotel pickup.",
+        "**Most honest stop** — Whitney Plantation, told from the enslaved people's view.",
+        "**No car needed** — swamp and plantation tours include round-trip transport.",
+        "**With a car** — Baton Rouge, Cajun Country, the Northshore, the Gulf Coast.",
+      ],
+    },
+    date: "2026-06-27",
+    updated: "2026-06-27",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/37503965.jpg",
+      alt: "A colorful Creole guesthouse and a vintage car on a sunny New Orleans street",
+      credit: { name: "New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "What is the best day trip from New Orleans?",
+        a: "A swamp tour and a River Road plantation are the two quintessential day trips — and you can combine them in one outing. A swamp-and-Oak-Alley combo tour (with hotel pickup) is the single most popular choice, capturing Louisiana's bayou wilderness and its complicated history in one day.",
+      },
+      {
+        q: "How far is Oak Alley from New Orleans?",
+        a: "Oak Alley Plantation is about an hour's drive west along River Road. Most visitors go on a guided tour with round-trip transport from the French Quarter, which removes the driving and parking. The other big plantations — Whitney, Laura and Destrehan — are all in the same River Road corridor.",
+      },
+      {
+        q: "Do you need a car for day trips from New Orleans?",
+        a: "Not for the headliners. Swamp tours and plantation tours include round-trip hotel transport, so you can do the two classic day trips with no car at all. You'll want a rental for Cajun Country, the Northshore, Baton Rouge, or the Gulf Coast, where guided options are thinner.",
+      },
+      {
+        q: "What's the best swamp tour near New Orleans?",
+        a: "Honey Island Swamp, about 45 minutes east near Slidell, is the classic — cypress, Spanish moss and reliable alligator sightings. Choose a covered pontoon boat for a calmer ride or an airboat for speed and thrills. For a free, self-guided option, the Barataria Preserve has boardwalk trails through the marsh.",
+      },
+      {
+        q: "Which plantation should you visit near New Orleans?",
+        a: "It depends on what you want. Oak Alley is the photogenic one, with its quarter-mile alley of 250-year-old oaks. Whitney is the essential, sobering one — the only museum told from the enslaved people's perspective. Laura offers a Creole family history. Many visitors pair Oak Alley's beauty with Whitney's honesty.",
+      },
+      {
+        q: "How far is Baton Rouge from New Orleans?",
+        a: "Baton Rouge is about a 1.5-hour drive up I-10. The highlight is the State Capitol — the tallest in the country — with a free observation deck over the Mississippi. It pairs well with a River Road plantation stop along the way, and is best done with a rental car.",
+      },
+    ],
+    body: `Planning **day trips from New Orleans**? The city is a great base for it: within a couple of hours you can drift past alligators in a cypress swamp, walk the oak-lined grounds of a River Road plantation, or two-step through Cajun Country.
+
+Better still, most of the headline trips — the swamp, the plantations — run as half- or full-day tours with hotel pickup, so you don't even need a car. Here are the best day trips from New Orleans, as of 2026, with honest notes on what each one is really like and how to do it.
+
+We'll cover the two classics first — the swamp and the plantations — then branch out to the capital, Cajun Country, the Northshore, and the Gulf, with drive times and a guided-versus-driving call at the end.
+
+::infographic nola-day-trips
+
+## The Short List
+
+Short on time? The two quintessential day trips are a **swamp tour** (gators, cypress, Spanish moss) and a **River Road plantation** — and you can pair them in one combo day. With more time, **Baton Rouge**, **Cajun Country** around Lafayette, and the piney **Northshore** across Lake Pontchartrain each make an easy escape.
+
+Almost all of them sit within an hour or two of the French Quarter. The swamp and plantation tours include round-trip transport; the rest are best with a rental car. Below, each trip with the real story, the **travel** time, and your tour **options**.
+
+| If you want… | Take this day trip |
+|---|---|
+| Wildlife & nature | A swamp tour (Honey Island) |
+| History | A River Road plantation (Whitney) |
+| Food & music | Cajun Country (Lafayette) |
+| A quick, easy escape | The Northshore |
+| Beach time | The Gulf Coast (Bay St. Louis) |
+
+A quick rule of thumb: pick the swamp for nature, a plantation for history, Cajun Country for food and music, and the Northshore or Gulf for a slower, greener day. Most visitors do one or two and leave wanting more.
+
+## Tour the River Road Plantations
+
+Between New Orleans and Baton Rouge, a 60-mile stretch along the **Mississippi River** called **River Road** is lined with antebellum plantations — beautiful, photogenic, and built on slavery. The best visits of this **area** don't skip that second part.
+
+### Oak Alley Plantation
+
+**Oak Alley Plantation** is the famous one: a quarter-mile alley of 28 oaks, each more than 250 years old, framing a white-columned mansion you've seen in films. It's genuinely stunning — and worth choosing a tour that tells the full story, not just the architecture.
+
+### Whitney Plantation
+
+**Whitney Plantation** is the essential counterweight: the only plantation museum in the country told entirely from the perspective of the enslaved people who lived and died there. It's sobering, important, and the one many visitors come away calling the most worthwhile — a place to **learn** the history the mansions usually leave out.
+
+### Laura, a Creole Plantation
+
+For a third angle, **Laura** is a Creole plantation with a vivid history of the women who ran it for generations. Whichever you choose, it's about an hour west, and most tours run from the Quarter with hotel pickup.
+
+Tours range from a single house visit to combos that string two or three together. Mornings are cooler and far less crowded, and the grounds — those oaks especially — photograph best in the early light.
+
+::activity New Orleans | plantation oak alley
+
+::infographic nola-plantations
+
+## Take a Swamp Tour
+
+No day trip is more quintessentially Louisiana than a **swamp boat tour**, and the bayou is closer than you'd think. It's the quintessential Louisiana **adventure** — a slow **cruise** into a wilder world. **Local** operators run **boat tours** daily, and the best guides have grown up on these waters. **Honey Island Swamp**, about 45 minutes east near Slidell, is the classic: cypress draped in Spanish moss, herons, turtles, and alligators gliding right up to the boat. You're **surrounded** by living swamp on every side.
+
+Choose your boat by your crew. **Airboats** are fast and thrilling but loud — bring ear protection, and skip them with nervous little ones. **Covered pontoon boats** are calmer and far better for actually hearing the guide's stories about the ecosystem.
+
+Either way, most tours include hotel pickup, so you skip the drive entirely. If you'd rather go free and self-guided, the **Barataria Preserve** — part of Jean Lafitte National Historical Park, about 40 minutes south — has boardwalk trails through the marsh where you can spot gators at your own pace.
+
+Spring and fall are prime, when the gators are active and the heat is bearable; summer tours still deliver if you go early. Tours run rain or shine, and a light jacket helps on the water even in warm months.
+
+::activity New Orleans | swamp bayou
+
+::infographic nola-swamp-tours
+
+## See Houmas House, the Sugar Palace
+
+On the way to or from Baton Rouge, **Houmas House** is a restored Greek Revival mansion known for its lavish gardens and acclaimed fine-dining restaurant. It leans more "estate experience" than history lesson, with peacocks on the lawn and 38 acres of grounds to wander.
+
+It's a softer, prettier counterpoint to Whitney's gravity — best for travelers who want beauty, gardens, and a long lunch. Like the others, it sits along River Road about an hour out, and it's a popular add-on to a Baton Rouge run.
+
+## A Note on Visiting Plantations
+
+River Road's plantations are beautiful and historically important, but they were sites of slavery, and the best way to visit is with eyes open. The grandest mansions were built and sustained by enslaved people, and a good tour says so plainly rather than glossing it over.
+
+That's why **Whitney Plantation** stands out: it centers the lives of the enslaved rather than the owners, and many travelers come away calling it the most meaningful stop of their trip. If you choose a more traditional house tour like Oak Alley, look for guides who include the full history, not just the architecture and the movie cameos.
+
+You can appreciate the oaks and the craftsmanship while holding the harder truth at the same time. The honest version is the richer one — and it's the version we'd point a friend toward.
+
+## Do Both: a Swamp and Plantation Combo
+
+Can't choose? The single most popular day trip pairs them: a **swamp boat ride plus a plantation tour** — usually Oak Alley or Destrehan — in one outing, generally $80–175, **including** lunch and round-trip hotel transport.
+
+It's a long but efficient day: bayou in the morning, history in the afternoon, both of Louisiana's faces in a single shot. If you have only one free day outside the city, this is the move — and it's the trip most guided operators are built around.
+
+Expect an early start and a full day back by evening. Lunch is often included, and the better combos give you real time at each stop rather than a rushed drive-by. It's a lot of bus time, so it suits travelers who'd rather see two icons efficiently than linger at one.
+
+::activity New Orleans | swamp plantation combo
+
+## Wander the Barataria Preserve for Free
+
+If a boat tour isn't your speed, the **Barataria Preserve** — part of Jean Lafitte National Historical Park, about 40 minutes south of the city — lets you take a **self-guided tour** into the swamp on your own. Miles of boardwalk and dirt trail wind through marsh, bayou, and palmetto forest.
+
+It's free, it's quiet, and the wildlife is real: alligators sun on the banks, herons stalk the shallows, and turtles line every log. Rangers run free guided walks, and the visitor center maps the whole thing out.
+
+Bring bug spray, water, and closed shoes, and go early when the animals are active and the heat is bearable. It's the most budget-friendly swamp experience near New Orleans, and one of the most peaceful. Leashed dogs are welcome on the trails, and the boardwalks are stroller- and wheelchair-friendly — a rare swamp experience that's easy for everyone.
+
+## Visit Baton Rouge
+
+Louisiana's capital is an easy **1.5-hour** drive up I-10. The headliner is the **State Capitol** — at 34 stories, the tallest capitol building in the country, with a free observation deck and a sweeping view over the Mississippi.
+
+Add the riverfront, the LSU campus, and a plate of **Southern** cooking, and the Baton Rouge **area** makes a relaxed half-day. It's best with a rental car, and it pairs naturally with a River Road plantation stop on the way up or back.
+
+History buffs can add the USS Kidd, a WWII destroyer moored on the river, or the Rural Life Museum. It's an underrated, low-key capital that rewards a curious half-day more than you'd expect.
+
+## Take a Road Trip Through Cajun Country
+
+A **two-hour drive** west, **Lafayette** is the heart of **Cajun Country** — a classic Louisiana **road trip** — French-speaking prairie towns, zydeco dance halls, crawfish, and some of the best food in the state — **living** French **culture** you can still hear and taste. It's the most **cultural** of the day trips, and a delicious one. It's a fuller day (or a worthwhile overnight), but it's the real Acadiana, not the tourist version.
+
+Nearby, **Avery Island** is where Tabasco has been made since 1868; the factory tour and its lush Jungle Gardens are a quirky, genuinely kid-friendly stop. You'll want a car for this corner of the state, and an appetite to match.
+
+Time it with a weekend and you can catch live zydeco at a dance hall or a Saturday-morning jam session — the kind of authentic, unfiltered Louisiana most visitors never see.
+
+::activity New Orleans | cajun lafayette
+
+## Tour Avery Island and the Tabasco Factory
+
+Deep in Cajun Country, about 2.5 hours west, **Avery Island** is a genuine oddity worth the drive: a salt-dome island where **Tabasco** sauce has been made since 1868. The factory tour walks you through the mash barrels and the bottling line, with plenty of samples — Tabasco ice cream included.
+
+The real surprise is **Jungle Gardens**, a 170-acre semi-tropical garden on the same island, complete with a centuries-old Buddha statue and a rookery where thousands of egrets nest each spring.
+
+It's a quirky, kid-friendly half-day if you're already exploring Lafayette and Acadiana. Pair it with a crawfish lunch and a stop in New Iberia, and you have a full, very Louisiana day. It's a long haul from the city, so it makes most sense bundled with a Lafayette overnight rather than a same-day round trip.
+
+## Escape to the Northshore
+
+Cross the **Lake Pontchartrain Causeway** — one of the longest bridges in the world, nearly 24 miles over open water — and you reach the piney, laid-back **Northshore** in about 45 minutes. It's the calm counterpoint to a swamp-and-plantation marathon.
+
+**Abita Springs** is home to the famous Abita Brewery; **Covington** and **Mandeville** have walkable downtowns and good restaurants; and **Fontainebleau State Park** has lakeside trails and a small beach.
+
+It's an easy, low-key day, especially good with kids or when you just want trees and quiet after the crowds of the Quarter.
+
+The Tammany Trace, a 31-mile paved rail-trail, threads the towns together for cyclists, and the weekend farmers markets are excellent. It's the trip for green and quiet over history and crowds.
+
+## Hit the Gulf Coast
+
+For sand, the **Mississippi Gulf Coast** is about an hour east. **Bay St. Louis** is a charming arts town with a walkable beach, while Pass Christian and Gulfport stretch the white-sand shoreline further along.
+
+Closer to home, **Grand Isle** is Louisiana's only inhabited barrier island, about two hours south — a rustic fishing-and-beach day for travelers who want the Gulf without leaving the state. Neither is a tropical resort; both are easygoing, real-deal Gulf towns — the appeal is fresh seafood, low-key sand, and small-town **Southern** charm rather than high-rises and crowds.
+
+## Farther Afield
+
+Got more time, or an overnight? **Lake Charles**, about 3.5 hours west, brings casinos, festivals, and the Creole Nature Trail's wetlands. **St. Francisville**, north of Baton Rouge, has antebellum homes and the famously eerie Myrtles. And the Mississippi Gulf Coast stretches east into Biloxi's casinos and beaches.
+
+These stretch the definition of a day trip, but they make easy overnights — **another** set of Louisiana **adventures** that build naturally on a New Orleans base. If you have a long weekend, picking one and staying the night beats rushing back in the dark.
+
+## The Best Day Trips with Kids
+
+Traveling with little ones? A few of these trips are especially kid-friendly. A **covered pontoon swamp tour** is the easy winner for a **family** — gators up close, no screens, pure **fun**, and a guide who knows how to keep kids rapt. The **Tabasco factory** and its gardens, the lakeside beach at **Fontainebleau State Park**, and the drive-through **Global Wildlife Center** near Folsom all land well with families.
+
+Plantation tours can run long and heavy for young kids, so keep those short or save them for older ones. For more ideas in and around the city, see our guide to [things to do in New Orleans with kids](/blog/things-to-do-in-new-orleans-with-kids).
+
+Whatever you pick, build the day around one big outing plus snacks and a nap window, and everyone stays happy. Pack twice the water and snacks you think you'll need; Louisiana heat turns hungry kids cranky fast.
+
+## How Far Is Everything?
+
+Most day trips from New Orleans are surprisingly close. Here are the approximate one-way drive times from the French Quarter. Times assume light traffic — allow extra **travel** time during weekday rush hours on I-10.
+
+| Day trip | Drive time |
+|---|---|
+| Destrehan Plantation | ~30 min |
+| Barataria Preserve | ~40 min |
+| Honey Island Swamp (Slidell) | ~45 min |
+| The Northshore (Covington) | ~45 min |
+| Oak Alley / Laura / Whitney | ~1 hour |
+| Bay St. Louis (Gulf Coast) | ~1 hour |
+| Baton Rouge | ~1.5 hours |
+| Grand Isle | ~2 hours |
+| Lafayette (Cajun Country) | ~2 hours |
+| Avery Island (Tabasco) | ~2.5 hours |
+
+Anything under about an hour works comfortably as a half-day; the farther trips are better as a full day or a relaxed overnight.
+
+## What to Pack and When to Go
+
+Louisiana day trips reward a little prep. For the swamp, bring **bug spray, sunscreen, a hat, water, and a light jacket** — even warm days feel cool on the open water, and the mosquitoes are committed. Closed-toe shoes beat sandals on muddy banks and boardwalks.
+
+For plantations and Cajun Country, dress for sun and a lot of walking; the grounds are large and the shade is spotty. Spring (March–May) and fall (October–November) are the most comfortable seasons for any of these, while summer works if you start early and plan around the afternoon storms.
+
+Whatever the season, book swamp and plantation tours a few days ahead in peak months — the good operators and the morning slots fill first.
+
+## Guided Tour or Rent a Car?
+
+The big question for most day trips: drive yourself, or book a tour? For the **swamp and the plantations**, a guided tour is the easy call — hotel pickup, no parking, and a guide who knows both the bayou and the **Southern** history. **Rental cars** are easy to grab downtown if you'd rather drive.
+
+For **Cajun Country, the Northshore, and the Gulf**, a rental car wins, letting you string stops together and linger where you like. The deciding factor is usually whether you want to drive on vacation; if not, the marquee trips all come to your hotel lobby.
+
+Budget matters too. Guided combo tours run roughly $80–175 per person with transport and often lunch, while a rental car plus admissions can be cheaper for a group and far more flexible. Solo travelers and couples usually come out ahead on a tour; families and groups often save by driving.
+
+::infographic nola-daytrip-callout
+
+## Day Trips for Food Lovers
+
+Some of the best day trips from New Orleans are really food trips — a delicious way to **spend** a day in the **area**. **Cajun Country** is the headliner — boudin from a gas-station counter in Scott, crawfish étouffée in Breaux Bridge, **street**-food gems, and plate lunches that put plenty of city restaurants on notice.
+
+Closer in, the **Northshore** has Abita's brewery and a string of farm-to-table spots around Covington, while a **River Road** day can fold in a Creole lunch between plantations. Even a swamp tour often ends near a roadside seafood shack worth the stop.
+
+If your trip runs on appetite, point the car west toward Lafayette and don't bother with lunch reservations — just follow the boudin. A weekday lunch crowd of locals is the surest sign you've found the right spot.
+
+## One Day, Two Days, or More?
+
+With **one free day**, do a swamp-and-plantation combo and call it a perfect Louisiana sampler. With **two**, split them — a morning swamp tour one day, a slower plantation-and-Baton-Rouge run the next — so neither feels rushed.
+
+With **three or more**, point the car at Cajun Country or the Gulf and stay over; the farther trips reward an overnight far more than a round-trip slog of **travel**. Match the trip to the time you actually have and you'll come back relaxed instead of frazzled.
+
+## Where to Base Yourself in New Orleans
+
+A day trip is only as easy as your home base. Stay central — the **French Quarter** or the **CBD** — so early tour pickups are painless and you're back among the restaurants by night.
+
+Pickups for swamp and plantation tours are almost always in or near the Quarter and CBD, so a central room saves you a pre-dawn cab — and lets you stumble home after dinner instead of facing a long drive.
+
+The **NOPSI Hotel** in the CBD is a comfortable, central base, with a rooftop pool that's a gift after a long day in the Louisiana sun.
+
+::hotel lpa440f
+
+The grand **Hotel Monteleone** puts you right in the Quarter, an easy walk to most tour meeting points.
+
+::hotel lp6583c58d
+
+For the full area-by-area breakdown, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans), or browse the [New Orleans hotels hub](/hotels/new-orleans). Deciding when to come? Our guide to the [best time to visit New Orleans](/blog/best-time-to-visit-new-orleans) breaks it down by month.
+
+## The Bottom Line
+
+The **best day trips from New Orleans** let you have it both ways: the city by night, and Louisiana's swamps, history, and Cajun country by day. Start with a swamp tour or a River Road plantation — or both in a combo — then branch out to Baton Rouge, Lafayette, or the Northshore with a car. And if you only have one day, do the combo: the bayou and a plantation in a single, unforgettable outing.
+
+Whatever you book, the room price you see here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee sprung on the last screen.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "best-time-to-visit-new-orleans",
     title: "Best Time to Visit New Orleans (2026): Month by Month",
     description:
@@ -938,7 +1216,7 @@ A good rhythm is free wandering and street **vibe** by day, a great meal at dusk
 
 ::infographic nola-3-days
 
-If you're still sorting the **travel** logistics, our other New Orleans **guides** — from [where to stay](/blog/where-to-stay-in-neworleans) and the [best time to visit](/blog/best-time-to-visit-new-orleans) to [whether it's safe](/blog/is-new-orleans-safe) — pick up where this one leaves off, so you know what to read **next**. Every block down here has its own **story** and a slightly **different** mood, so slow down and let the city tell you.
+If you're still sorting the **travel** logistics, our other New Orleans **guides** — from [where to stay](/blog/where-to-stay-in-neworleans), the [best time to visit](/blog/best-time-to-visit-new-orleans) and [day trips](/blog/day-trips-from-new-orleans) to [whether it's safe](/blog/is-new-orleans-safe) — pick up where this one leaves off, so you know what to read **next**. Every block down here has its own **story** and a slightly **different** mood, so slow down and let the city tell you.
 
 ## Where to Stay Between Adventures
 
