@@ -1,8 +1,9 @@
 // Live RATES — the only thing fetched at request time (prices change). Server-only.
-// In-memory cache (per server instance, ~10 min) so repeat loads are instant. Swap for Upstash
-// Redis to share the cache across instances at scale (see docs/ARCHITECTURE.md).
+// Two-tier cache (~10 min): L1 in-memory per instance + L2 shared Upstash Redis so the price a guest
+// sees stays stable across refreshes/instances instead of re-rolling on every cold serverless instance.
 import { getRates } from "./liteapi";
 import { getHotelContent } from "./hotelContent";
+import { redis } from "./redis";
 import type { Room } from "./oahu";
 
 export interface Price {
@@ -218,15 +219,42 @@ interface RatesHotel {
   roomTypes?: RoomType[];
 }
 
+// L1 = in-memory (per instance, instant). L2 = Upstash Redis, SHARED across every serverless instance +
+// user, so the cached price is the SAME on refresh instead of re-rolling per cold instance. Keys are
+// namespaced (tpc:rate:) so a shared Upstash DB never collides with another app; every Redis call is
+// guarded — if Redis is unset/down we silently fall back to L1 (pricing never breaks).
 const cache = new Map<string, { value: unknown; exp: number }>();
 const TTL = 10 * 60 * 1000;
-function readCache<T>(key: string): T | undefined {
+const TTL_S = 10 * 60;
+const NS = "tpc:rate:";
+const REDIS_ON = !!(process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN);
+
+async function readCache<T>(key: string): Promise<T | undefined> {
   const e = cache.get(key);
-  if (e && e.exp > Date.now()) return e.value as T;
+  if (e && e.exp > Date.now()) return e.value as T; // L1 hit
+  if (REDIS_ON) {
+    try {
+      const v = await redis().get<T>(NS + key); // shared L2 (Upstash auto-deserializes JSON)
+      if (v != null) {
+        cache.set(key, { value: v, exp: Date.now() + TTL }); // warm L1
+        return v;
+      }
+    } catch {
+      /* Redis unavailable → treat as a miss and do a live fetch */
+    }
+  }
   return undefined;
 }
-function writeCache(key: string, value: unknown) {
+
+async function writeCache(key: string, value: unknown) {
   cache.set(key, { value, exp: Date.now() + TTL });
+  if (REDIS_ON) {
+    try {
+      await redis().set(NS + key, value, { ex: TTL_S });
+    } catch {
+      /* best-effort — L1 still serves this instance */
+    }
+  }
 }
 
 function nightsBetween(ci: string, co: string) {
@@ -301,7 +329,7 @@ export async function getPrices(
   if (!ids.length) return {};
   const n = nightsBetween(ci, co);
   const key = `prices|${ci}|${co}|${adults}|${[...ids].sort().join(",")}`;
-  const hit = readCache<Record<string, Price>>(key);
+  const hit = await readCache<Record<string, Price>>(key);
   if (hit) return hit;
 
   // LiteAPI caps hotels per rates call, so chunk + fetch in parallel + merge.
@@ -334,7 +362,7 @@ export async function getPrices(
       }
     }
   }
-  writeCache(key, out);
+  await writeCache(key, out);
   return out;
 }
 
@@ -388,7 +416,7 @@ export async function getRooms(
 ): Promise<{ offers: RoomOffer[]; nights: number }> {
   const n = nightsBetween(ci, co);
   const key = `rooms|${id}|${ci}|${co}|${adults}`;
-  const hit = readCache<{ offers: RoomOffer[]; nights: number }>(key);
+  const hit = await readCache<{ offers: RoomOffer[]; nights: number }>(key);
   if (hit) return hit;
 
   const data = await fetchRates([id], ci, co, adults, true); // roomMapping for exact room content
@@ -436,6 +464,6 @@ export async function getRooms(
   }
   const offers = [...byRoom.values()].sort((a, b) => a.price.amount - b.price.amount).slice(0, limit);
   const result = { offers, nights: n };
-  writeCache(key, result);
+  await writeCache(key, result);
   return result;
 }
