@@ -178,3 +178,19 @@ single, actionable line. Prune lessons that are now fully enforced by a checker.
   sits inside an Edit's `old_string` is deleted unless you re-add it in `new_string` — it happened here (the
   "## Mardi Gras Throws" heading vanished during a section insert, leaving its content under the wrong H2).
   After any structural insert, run `grep -n '^## '` on the post and eyeball the heading list before gating.
+- **(3-days-in-new-orleans) Spell out "Saint"/"Number" to dodge the voice CONCISE false-count.** The voice
+  gate counts `St.` / `No.` / `d.b.a.` periods as sentence ends, so a 3-sentence paragraph with "St. Louis
+  Cathedral" reads as 4 and trips the HARD CONCISE floor. Spelling them out ("Saint Louis Cathedral",
+  "Number 1") fixes the count AND matches the owner's "spell every word out" voice. Use it freely.
+- **(3-days-in-new-orleans) Long-form itinerary SERPs floor ~6,400w of genuine hour-by-hour content.** The
+  "3 days in <city>" winners run 6,000+ real words; serp landed 87 at ~4,560w with heading 100% and every
+  entity covered. The residual ADD list was junk boilerplate (com/content/check/offer/head/going/"itinerary
+  day") plus raw length the genuine top-3 reach via photo galleries + comments + the excluded 11k outlier.
+  Shipped at serp 87 as a flagged comprehensive-competitor exec-decision rather than stuff junk or pad. The
+  cheap real levers that moved it 64 -> 81 -> 87: per-stop H3 subheads (jackson square / bourbon street /
+  louis cemetery / 3-day new orleans) took heading to 100%, then genuine term-weaving (visit/tour/restaurant).
+- **(style-clean) The field-path mask sentinel bug ate 65 numbers in TL;DR/FAQ across 25 posts.** processQuoted
+  used a space-padded ` <n> ` restore token while the body path already used `\x00`; with an empty mask list
+  (typical for TL;DR/FAQ) the restore regex matched real numbers and resolved masks[n]=undefined. Fixed both
+  paths to the `\x00` sentinel; restored numbers from the pre-migration baseline (commit 9a55529). If you ever
+  see "undefined" mid-word in a rendered TL;DR/FAQ, this is it.

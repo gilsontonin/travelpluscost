@@ -1,4 +1,25 @@
 {
+  "3-days-in-new-orleans": {
+    "primary": "3 days in new orleans",
+    "secondary": [
+      "new orleans itinerary",
+      "3 day new orleans itinerary",
+      "new orleans 3 day itinerary",
+      "things to do in new orleans in 3 days",
+      "new orleans weekend itinerary",
+      "first day in new orleans",
+      "new orleans 3 days",
+      "perfect new orleans itinerary"
+    ],
+    "volume": 4830,
+    "kd": 12,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-28",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
+  },
   "mardi-gras-in-new-orleans": {
     "primary": "mardi gras in new orleans",
     "secondary": [

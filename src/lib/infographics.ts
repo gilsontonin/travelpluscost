@@ -955,6 +955,66 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { label: "You wake up to", left: "A parking lot and a billboard", right: "Open water and the odd bald eagle" },
     ],
   },
+
+  "nola-day1-plan": {
+    kind: "steps",
+    title: "Day 1, the French Quarter on foot",
+    steps: [
+      { title: "Morning", detail: "Beignets and chicory coffee at Café du Monde, then Jackson Square, St. Louis Cathedral, and a slow loop of Royal Street." },
+      { title: "Midday", detail: "The French Market, the Pharmacy Museum, and a muffuletta from Central Grocery or a dressed po'boy." },
+      { title: "Afternoon", detail: "A guided food or cocktail history walk, or wander the Quarter with a legal to-go cup." },
+      { title: "Evening", detail: "Live jazz on Frenchmen Street, the locals' answer to Bourbon. Catch a 7:30 or 9:30 set." },
+    ],
+  },
+  "nola-day2-plan": {
+    kind: "steps",
+    title: "Day 2, streetcar, Garden District, museums",
+    steps: [
+      { title: "Morning", detail: "Ride the St. Charles streetcar Uptown past the oak-lined mansions for the price of a coffee." },
+      { title: "Midday", detail: "Walk Magazine Street for lunch and shops. See Lafayette Cemetery through the fence, it is closed inside." },
+      { title: "Afternoon", detail: "The National WWII Museum, three to four hours and worth every one." },
+      { title: "Evening", detail: "Dinner Uptown or in the Warehouse District, then a nightcap with live music." },
+    ],
+  },
+  "nola-day3-options": {
+    kind: "compare",
+    title: "Day 3, get out of town or stay put?",
+    left: "Out of town",
+    right: "Stay in the city",
+    rows: [
+      { label: "The plan", left: "A swamp boat plus a River Road plantation", right: "City Park, a cemetery tour, a cooking class" },
+      { label: "Best for", left: "First-timers who want the bayou and the history", right: "Repeat visitors and slow mornings" },
+      { label: "How long", left: "A half or full day with hotel pickup", right: "Your own pace, no van schedule" },
+      { label: "Book ahead?", left: "Yes, combos sell out in spring", right: "Only the cooking class and tour" },
+    ],
+  },
+  "nola-transit-fares": {
+    kind: "stat",
+    title: "Getting around for the price of a coffee",
+    stats: [
+      { value: "$1.25", label: "a single streetcar or bus ride, exact change, no change given" },
+      { value: "$3", label: "a one-day Jazzy Pass, unlimited streetcars and buses" },
+      { value: "$9", label: "a three-day Jazzy Pass, which pays for itself fast" },
+      { value: "~30 min", label: "from Louis Armstrong airport (MSY) to downtown" },
+    ],
+  },
+  "nola-3day-budget": {
+    kind: "compare",
+    title: "What three days roughly costs",
+    left: "Doing it cheap",
+    right: "Doing it comfortable",
+    rows: [
+      { label: "A room a night", left: "$80 to 130 just off the Quarter", right: "$180 to 300 in the Quarter" },
+      { label: "Food for a day", left: "$35 to 50 at po'boy counters", right: "$90 to 150 white tablecloth Creole" },
+      { label: "Getting around", left: "$9 Jazzy Pass for all three days", right: "$15 to 25 a day in rideshares" },
+      { label: "One big day out", left: "A self-guided Garden District walk", right: "$80 to 175 swamp plus plantation" },
+    ],
+  },
+  "nola-3day-callout": {
+    kind: "callout",
+    title: "The three-day move",
+    body: "Base in or one streetcar stop from the French Quarter, so you walk to most of it. Skip the rental car, the parking and one-way streets are a tax you do not need. Front-load the Quarter on Day 1, ride the streetcar on Day 2, and save the swamp and plantation combo for Day 3. Book that combo before you fly in, because the good spring dates sell out.",
+  },
 };
 
 export function getInfographic(key: string): Infographic | null {

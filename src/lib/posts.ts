@@ -49,6 +49,331 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "3-days-in-new-orleans",
+    title: "3 Days in New Orleans: The Perfect Itinerary (2026)",
+    seoTitle: "3 Days in New Orleans: The Perfect Itinerary",
+    description:
+      "Three days in New Orleans, planned hour by hour. Day 1 the French Quarter, Day 2 the Garden District and WWII Museum, Day 3 the swamp, plus where to stay.",
+    excerpt:
+      "How to spend 3 days in New Orleans without wasting a minute. An honest, hour by hour itinerary, the French Quarter on Day 1, the Garden District and the WWII Museum on Day 2, a swamp and a plantation on Day 3, plus where to eat and where to sleep. As of 2026.",
+    tldr: {
+      answer:
+        "You can cover the headline city in three days without rushing. Spend Day 1 walking the French Quarter, Day 2 riding the streetcar to the Garden District and the National WWII Museum, and Day 3 on a swamp and plantation day trip. Base in or one streetcar stop from the Quarter, and skip the rental car.",
+      points: [
+        "**Day 1**, the French Quarter on foot. Beignets, Jackson Square, Royal Street, and jazz on Frenchmen Street at night.",
+        "**Day 2**, the St. Charles streetcar, the Garden District mansions, and the National WWII Museum.",
+        "**Day 3**, a swamp boat and a River Road plantation, or a slow day in City Park.",
+        "**Where to stay**, in or beside the French Quarter, so you walk to most of it.",
+        "**Getting around**, ride the streetcar and walk. A car is a liability you do not need.",
+      ],
+    },
+    date: "2026-06-28",
+    updated: "2026-06-28",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/171786560.jpg",
+      alt: "A lamplit French Quarter courtyard in New Orleans with a fountain, wrought-iron galleries, palms, and string lights at dusk",
+      credit: { name: "French Quarter, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "Is 3 days enough time in New Orleans?",
+        a: "Yes, three days covers the headline city well. You can walk the French Quarter, ride the streetcar through the Garden District, see the National WWII Museum, get out to a swamp and a plantation, and eat the local canon without rushing. What three days cannot do is the deep cuts, the far flung neighborhoods, a second plantation, or a full festival weekend, which is what a return trip is for.",
+      },
+      {
+        q: "Do you need a car for 3 days in New Orleans?",
+        a: "No, and most visitors are better off without one. The French Quarter is walkable, the streetcar and buses cover the Garden District and downtown, and rideshares fill the late night gaps. Parking runs roughly thirty to fifty dollars a night and the narrow one way streets are a hassle. Rent a car only if you plan to drive yourself to the swamp or a plantation on Day 3, and even then a combo tour with hotel pickup is easier.",
+      },
+      {
+        q: "Can you do a swamp tour and a plantation in the same day?",
+        a: "Yes, and it is the most popular way to spend Day 3. Combo tours pair a bayou boat ride with a River Road plantation and include hotel pickup, so you skip the rental car. The swamp sits about 45 minutes east near Slidell, and the plantations run west along River Road. Book ahead in spring, because the combos sell out.",
+      },
+      {
+        q: "How far is Louis Armstrong airport from downtown New Orleans?",
+        a: "Louis Armstrong International (MSY) is about 30 minutes from downtown by rideshare or the airport shuttle. There is no need for a rental car on a city trip. A rideshare runs a flat fare most of the day, and the shuttle is cheaper if you do not mind a few stops.",
+      },
+      {
+        q: "Is Bourbon Street worth visiting?",
+        a: "Worth a walk, not a night. See Bourbon Street once for the spectacle, then go where the locals go for actual music, which is Frenchmen Street in the Marigny. The frozen daiquiri shops and novelty drinks on Bourbon are a tourist tax, and the street is best appreciated as a story rather than a place to spend real time.",
+      },
+      {
+        q: "How much does a 3 day trip to New Orleans cost?",
+        a: "It flexes widely. A careful long weekend can run a room around eighty to a hundred thirty dollars a night just off the Quarter, food at thirty five to fifty a day, and nine dollars for a three day streetcar pass. A comfortable version rises to a Quarter room at a hundred eighty to three hundred a night, white tablecloth dinners, and a guided swamp and plantation combo. A lot of the city, the music drifting from bars, the architecture, the street life, is free.",
+      },
+      {
+        q: "When is the best time to visit New Orleans?",
+        a: "The shoulder months, roughly October through November and February through May, with mild 70s weather and lower humidity. Summer is hot and humid with a heat index over a hundred and is peak hurricane season from June 1 to November 30, though August brings the cheapest rooms. Mardi Gras and Jazz Fest are glorious but crowded and expensive, so plan around them on purpose.",
+      },
+    ],
+    body: `**Three days is enough time in New Orleans** to see the city properly and eat like it is your job, as long as you do not waste it hunting for parking. The trick is to give each day a clear job. The French Quarter on foot, the Garden District by streetcar, and one day that leaves town for the swamp and a plantation.
+
+This is an honest, hour by hour itinerary for **3 days in New Orleans**, built around walking, the streetcar, and exactly one day trip. It covers where to base yourself, what to do from morning to night, what to eat, what the trip costs, and which famous stops are worth skipping. Current as of 2026.
+
+One thing up front. New Orleans rewards a loose plan more than a packed checklist. Book the room, learn the streetcar, and leave room to follow a brass band down a side street when one finds you.
+
+## Your 3-Day New Orleans Itinerary at a Glance
+
+**Here is the whole three day plan in one breath, before the hour by hour detail below.** Each day owns a different part of the city, which keeps your feet happy and your map simple. Read the table, then dig into the day you care about most.
+
+| Day | Where you are | Morning to night | The one thing |
+|---|---|---|---|
+| Day 1 | French Quarter | Beignets, Jackson Square, Royal Street, a food walk, then jazz | Frenchmen Street at night |
+| Day 2 | Uptown and the CBD | Saint Charles streetcar, Garden District, the WWII Museum | The streetcar ride itself |
+| Day 3 | Out of town | A swamp boat and a River Road plantation | An airboat through the bayou |
+
+The shape of a good New Orleans itinerary almost never changes. You front load the Quarter while your legs are fresh, ride the streetcar on the middle day when you want to sit down, and save the big day trip for last so a late flight home does not cost you a museum. Everything else about your New Orleans itinerary is just preference, including how many beignets honestly count as breakfast.
+
+::infographic nola-3day-callout
+
+## Is 3 Days in New Orleans Enough?
+
+**Three days covers the headline New Orleans with room to eat well and hear real music.** You will not exhaust the city, people spend whole lives on that, but you can do the French Quarter, the Garden District, a swamp, a serious museum, and several rounds of live jazz without sprinting. That is a full trip, not a sampler.
+
+Most first timers worry that 3 days in New Orleans is too short for a city this dense. It is not, as long as you visit with a plan and do not try to see everything. Two days covers the Quarter and the Garden District, and the third day is what turns a good visit into a great one.
+
+What three days cannot do is the deep cuts. The far flung neighborhoods, a second plantation, a whole festival weekend, those are what trip number two is for. Treat this as the greatest hits and you leave happy instead of frazzled.
+
+The one real caveat is timing. Land during [Mardi Gras](/blog/mardi-gras-in-new-orleans) or a big festival and three days disappear into crowds and closed streets. That is glorious if it is why you came, and rough if it is not.
+
+For ordinary sightseeing, aim for the calm shoulder months and this plan clicks together. Our guide to the [best time to visit New Orleans](/blog/best-time-to-visit-new-orleans) has the month by month detail.
+
+## Where to Stay for Your New Orleans Itinerary
+
+**On a three day trip, location beats everything, so base in or one streetcar stop from the French Quarter.** Where you sleep decides how much of the day you lose getting places, and in New Orleans the good stuff clusters tight. Stay central and the whole itinerary happens on foot or on a streetcar.
+
+On a first visit, that means the French Quarter, with restaurants, bars, and live music a short walk from the lobby. We recommend it over a cheaper room on the edge of town nine times out of ten, because the minutes you save walking add up to a whole extra meal.
+
+::infographic nola-fq-vs-cbd
+
+The **French Quarter** is the obvious first timer base, walkable to almost everything on Day 1 and a short ride from the rest. The grand **Hotel Monteleone** sits at the top of Royal Street, home to the slowly rotating Carousel Bar that turns whether or not you have earned it.
+
+::hotel lp6583c58d
+
+If you want the Quarter without the Bourbon Street soundtrack, the **French Market Inn** hides a brick courtyard a few quiet blocks downriver, close to Café du Monde and the river. It is the kind of place where the loudest thing at night is the fountain.
+
+::hotel lp1da18
+
+One neighborhood over, the **Central Business District** trades a little charm for calmer nights, newer rooms, and an easy walk to the WWII Museum and the streetcar. The **NOPSI Hotel** anchors it with a rooftop pool that earns its keep after a long day on your feet.
+
+::hotel lpa440f
+
+Traveling cheap does not mean traveling far. The top rated **Chateau Hotel** keeps you inside the Quarter on a budget, courtyard and all, which beats saving twenty dollars to stay a cab ride from the fun.
+
+::hotel lp47c82
+
+Here is the quick way to pick a base for the kind of trip you are taking.
+
+| You want | Stay here | Why |
+|---|---|---|
+| Atmosphere and walkability | French Quarter | Day 1 is on foot, the rest is a short ride |
+| Quiet nights and value | Central Business District | Newer rooms, a few blocks from the noise |
+| To roll onto the streetcar | Uptown or the Garden District | The Saint Charles line at your door |
+| The lowest price | Mid-City or the CBD edge | Cheaper beds, a short ride to the action |
+
+Whatever you book, the price you see here is the same flat fee for everyone, never set from your phone, your location, or how many times you have searched the same room. For the full neighborhood breakdown, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) or browse the [New Orleans hotels hub](/hotels/new-orleans).
+
+## Day 1 Itinerary: The French Quarter on Foot
+
+**Spend the whole first day in the French Quarter, the oldest, densest, and most walkable part of the city.** Everything here sits within a few blocks, so you can wander without a map and still hit the highlights. Wear shoes you can log miles in, and start early, before the heat and the crowds wake up.
+
+::infographic nola-day1-plan
+
+### Morning: Beignets at Café du Monde and Jackson Square
+
+Start at **Café du Monde** for beignets and chicory café au lait. It has fried the same three square doughnuts since 1862, runs 24 hours, and closes only for Christmas and the odd hurricane. The line looks long and moves fast, and the sheer volume is exactly why your beignets arrive hot.
+
+From there it is a few steps to **Jackson Square**, the postcard heart of the Quarter, with **Saint Louis Cathedral** standing over it and artists and fortune tellers ringing the fence. Flanking the cathedral are the **Cabildo** and the **Presbytère**, two state museums worth a peek if the weather turns. One holds the room where the Louisiana Purchase was signed, and the other a sharp, honest Hurricane Katrina exhibit.
+
+Duck down **Pirates Alley** beside the church for the photo. It is one of those spots where the light, the brick, and the iron line up so well that even a phone camera looks like it tried.
+
+### Midday: The French Market and Royal Street
+
+Drift up **Royal Street** for the antique shops, galleries, and the balcony ironwork that put the Quarter on a thousand postcards. Royal is the calmer, prettier parallel to Bourbon, which is best met as a story you tell rather than a street you linger on before noon. Two blocks the other way, the **Mississippi** rolls past the Moon Walk promenade, a fine place to watch a steamboat and let breakfast settle.
+
+By midday, work the river side of the Quarter. The **French Market** runs open air stalls and a food hall where you can graze, and the small **Pharmacy Museum** on Chartres Street is a genuinely odd hour among 19th century apothecary jars and old surgical tools. For lunch, a **muffuletta** from Central Grocery, the Sicilian shop that invented it, splits neatly between two people.
+
+### Afternoon: A French Quarter Food Tour
+
+In the afternoon, hand the city to a guide. A walking **food tour** or a guided **cocktail history** crawl turns the Quarter from a pretty backdrop into a story, with gumbo, a Sazerac, and the reason this is the only American city that drinks quite like this. Most of these tours run both morning and afternoon, so book one to match your pace, and it doubles as a sneaky way to learn the streets so the evening feels like home turf.
+
+::activity New Orleans | food tour
+
+If you would rather wander solo, loop the back blocks toward Esplanade Avenue, where the crowds thin and the **Creole** townhouses get prettier. Stop at the **Old Ursuline Convent**, the oldest building in the Mississippi Valley, then cut back toward the river for a late afternoon drink on a balcony. The Quarter is small enough that getting lost just means finding the next good thing.
+
+## Day 1 at Night: Frenchmen Street, Not Bourbon Street
+
+**The night belongs to Frenchmen Street, three blocks of live music in the Marigny just downriver of the Quarter.** Clubs like the Spotted Cat, Snug Harbor, and Blue Nile run jazz, funk, and brass most nights, with early sets around 7:30 and a second wave near 9:30. Locals send you here, not to Bourbon Street, when you ask where the actual music is.
+
+::activity New Orleans | jazz music
+
+If you want the old guard sound, **Preservation Hall** back in the Quarter plays traditional jazz most nights in a tiny room with no air conditioning and a real line. The seats are wooden, the sets are short, and that scarcity is exactly the point. Get there early or buy ahead, because the room holds barely a hundred people.
+
+For a bigger room, the **House of Blues** near the Quarter books touring acts and a Sunday gospel brunch, and plenty of bar crawls and music tours will walk you between stages if you would rather not choose. However you do it, build one night around live music, because it is the thing most people visit New Orleans to feel.
+
+Do walk **Bourbon Street** once, because skipping it entirely feels like a dare you did not take. See the spectacle, grab one drink, and then go where the bands are real. The street is a story best told the next morning, ideally over more beignets.
+
+## Day 2 Itinerary: Streetcar, Garden District, and the WWII Museum
+
+**Day 2 leaves the Quarter for Uptown and the museums, and the ride there is half the fun.** The olive green **Saint Charles streetcar** has run since 1835, which makes the ride itself a piece of living history. It costs a dollar and a quarter, so hop on near Canal Street and rattle along under the oaks with the windows down.
+
+::infographic nola-day2-plan
+
+### Morning: The Saint Charles Streetcar and the Garden District
+
+Grab a quick breakfast near your hotel first, because the next good food stop is a streetcar ride away. We recommend riding early, before the line fills with other people who read the same tip.
+
+Get off in the **Garden District**, where 19th century cotton and sugar money built block after block of columned mansions, now shaded by enormous live oaks. Self guide it with a phone map, because the houses are the show and the streets are flat, leafy, and quiet. Anne Rice fans and architecture buffs both leave happy, often comparing notes on the same corner.
+
+You will pass **Lafayette Cemetery Number 1**, the famous above ground tombs from the Anne Rice novels, though you now see it only through the fence. The city closed it to the public in 2019 for repairs and it has not reopened as of 2026. Most older itineraries forget to mention that, so do not build your morning around getting inside.
+
+::activity New Orleans | garden district
+
+### Lunch: Magazine Street and Commander's Palace
+
+For lunch and a browse, walk over to **Magazine Street**, six miles of shops, cafés, and boutiques running parallel to the river. It is the unpretentious antidote to the Quarter, more locals than tourists, and a good place to find a **po'boy** without a line.
+
+If you would rather make lunch the event, **Commander's Palace** runs a jazz brunch and pours a famous twenty five cent lunch martini, which is exactly as dangerous as it sounds. Book a table ahead, wear something you do not mind being slightly overdressed in, and let the turtle soup talk you into a third martini you will regret on the walk back.
+
+### Afternoon: The National WWII Museum
+
+Spend the afternoon at the **National WWII Museum**, which sounds like a detour and turns into the highlight of a lot of trips. Give it three to four hours. It opens at 9 and closes at 5 every day except a few holidays, and the optional 4D film narrated by Tom Hanks plus the submarine experience cost a few dollars more.
+
+Buy a timed ticket ahead to skip the queue, and pick up the personal **dog tag** that follows one real soldier's story through the war. That small device is the part people talk about on the ride home, long after the tanks blur together. Three hours here will undo any worry that a war museum sounds heavy.
+
+Cap the night back near the museum in the **Warehouse District**, where the galleries, newer restaurants, and quieter rooms make an easy end to a long day. For where the locals actually eat across town, our guide to the [best restaurants in New Orleans](/blog/best-restaurants-in-new-orleans) sorts the icons from the tourist traps.
+
+If you would rather sleep Uptown and roll out of bed onto the streetcar, the **Alder Hotel** sits right on the line near the Garden District, away from the late night noise.
+
+::hotel lpaf414
+
+## Day 3 Itinerary: A Swamp, a Plantation, or a Slow City Day
+
+**Day 3 is the choose your own ending, and the strong pick for a first trip is to leave town.** An hour outside New Orleans the land turns to cypress swamp and the old River Road plantations, and seeing both is the part people remember longest. If you have done it before, or you just want a slow morning, the city has an easy plan B.
+
+::infographic nola-day3-options
+
+### Option A: A Swamp Tour and a Plantation
+
+The classic move is a guided tour of the **swamp** plus a plantation, often sold as a combo with hotel pickup, which spares you a rental car for the day. The **bayou** runs about 45 minutes east near Slidell, where a flat bottom pontoon or a faster airboat slides past alligators, turtles, and Spanish moss. Choose the covered pontoon for a calm ride or the airboat for the wind in your face and the bragging rights.
+
+::activity New Orleans | swamp bayou
+
+The plantations sit west along **River Road**, and which one you pick is a real choice, not a coin flip. **Oak Alley** is the photogenic one, with a quarter mile tunnel of 300 year old oaks that has launched a million photos. **Whitney** is the honest one, the only museum in Louisiana built to tell the story from the side of the enslaved people who actually worked the land.
+
+Pick Whitney if you want the history straight, told through first person accounts rather than ballroom tours, and give it the seriousness it asks for. Pick Oak Alley if you want the oaks and a lighter half day. A combo that pairs either with the swamp fills the day without a rushed feeling.
+
+::activity New Orleans | plantation oak alley
+
+### Option B: City Park and Saint Louis Cemetery Number 1
+
+Prefer to stay in town? Spend the morning in **City Park**, larger than New York's Central Park, with its oak groves, the free Besthoff Sculpture Garden, and the New Orleans Museum of Art. Add a Morning Call stand for a second round of beignets, and the kids get Storyland and the old wooden carousel.
+
+From there, take a guided tour of **Saint Louis Cemetery Number 1**, where voodoo queen Marie Laveau is buried and a guide is now required to enter. If the kids are restless, **Mardi Gras World** runs short tours through the warehouse where the parade floats are built year round, a fun backup that has nothing to do with the season.
+
+Finish with a hands on **cooking class** that sends you home able to build a roux, so the trip keeps feeding you for months. A slow city Day 3 is the move for repeat visitors who have already done the bayou.
+
+::activity New Orleans | cooking class
+
+For the full menu of trips beyond the parish line, our guide to [day trips from New Orleans](/blog/day-trips-from-new-orleans) covers the plantations, the swamps, and Cajun Country in detail.
+
+::infographic nola-day-trips
+
+## Tourist Traps to Skip (and What to Do Instead)
+
+**A short trip is too precious to spend on the things New Orleans sells to people who do not know better.** None of these are scams exactly, they are just where the value drains out. Trade each one for the local version and the same day gets better and usually cheaper.
+
+Skip a night built around **Bourbon Street** and the giant frozen daiquiris in novelty cups. Walk it once for the spectacle, then go to **Frenchmen Street** for the music that locals actually leave the house for. The drinks are cheaper and the bands are real.
+
+Skip the **mule carriage** as your main tour and the overpriced psychic readings off Jackson Square. A proper guided walking tour, food, history, or cemetery, costs about the same and teaches you something. Save the carriage for a tired afternoon when your feet have quit.
+
+And do not over invest in **Pat O'Brien's** beyond one Hurricane in the courtyard for the photo. The drink is sweet, strong, and a rite of passage exactly once. For everything genuinely worth your time, our guide to [things to do in New Orleans](/blog/things-to-do-in-new-orleans) ranks the real ones.
+
+## Getting Around New Orleans (Skip the Car)
+
+**Do not rent a car for a three day city trip, because you will spend more time parking it than driving it.** The Quarter is walkable end to end, the streetcars and buses cover the rest, and rideshares fill the late night gaps. A car is a liability on the narrow one way streets and a steady drain at thirty to fifty dollars a night to park.
+
+::infographic nola-transit-fares
+
+Fly into **Louis Armstrong International (MSY)**, about 30 minutes from downtown by rideshare or the airport shuttle. From there, lean on the **streetcar**. A single ride is a dollar and a quarter in exact change with no change given, and a Jazzy Pass runs three dollars for one day or nine for three days, covering every streetcar and bus in the city.
+
+For a three day trip, the three day pass is the easy math, and it pays for itself by the second ride. The **Saint Charles line** runs to the Garden District and Uptown, the **Canal** and **Riverfront** lines cover downtown and the river, and the **Rampart** line skirts the edge of the Quarter.
+
+### A Few Travel Tips Before You Go
+
+A handful of small habits make the trip smoother. Carry a little cash for the bands and the to go daiquiri stands, because not every counter takes a card in the crush. Always have a charged phone for the rideshare home, since service can buckle in a crowd.
+
+When the streetcar does not go where you are headed, a short rideshare does, and after midnight that is the smart way home. The free Algiers ferry across the Mississippi is a cheap thrill if you want a river view without booking a cruise. For more on which blocks to keep to, our guide on whether [New Orleans is safe](/blog/is-new-orleans-safe) walks through it honestly.
+
+## What 3 Days in New Orleans Costs
+
+**A three day New Orleans trip flexes from a cheap long weekend to a proper splurge without much effort.** The room is the biggest lever, then the dinners, then whatever you do on Day 3. The city is kind to a careful budget, because a lot of the joy here, the music drifting out of bars, the architecture, the street life, costs nothing at all.
+
+::infographic nola-3day-budget
+
+On the cheap end, a room just off the Quarter runs around eighty to a hundred thirty dollars a night, po'boy counters and the food hall feed you for thirty five to fifty a day, and a three day streetcar pass handles transport for nine dollars total. A self guided Garden District walk and a riverfront stroll cost nothing but shoe leather, which is the cheapest tour in the city and somehow still the one you remember.
+
+Lean comfortable and the same trip rises to a room in the Quarter at a hundred eighty to three hundred a night, white tablecloth Creole dinners at ninety to a hundred fifty a day, and a guided swamp and plantation combo around eighty to a hundred seventy five dollars per person. Most travelers land in the middle, splurging on one big dinner and keeping the rest simple.
+
+A note on our prices, since the whole brand is built on it. The fee we add is the same flat amount for everyone, never set from your device or your search history, so the number you see is the number your neighbor sees. The hotels set their own base rates, which climb on festival weekends the way airfares do, so the lever in your control is when you book.
+
+::cta New Orleans
+
+## The Food You Cannot Skip in 3 Days
+
+**Three days is just enough to eat the canon, so plan meals with the same care as sights.** New Orleans is a dining city first and a sightseeing city second, and a po'boy eaten standing up will outlast half the museums in your memory. Spread these across the trip so you are never more than a few hours from the next great bite.
+
+::infographic nola-must-eat-dishes
+
+Build breakfast into the plan too, because it is a meal this city takes seriously. Beignets at Café du Monde on Day 1, a long Creole breakfast at a place like Brennan's or the Ruby Slipper on Day 2, and good coffee from any corner house in between. A New Orleans restaurant at breakfast is as much a part of the trip as dinner, and the lines are shorter.
+
+Hit the icons in order of opportunity, and let the day decide. Here is the short list, mapped to when you will most likely run into it.
+
+| Dish | What it is | When to grab it |
+|---|---|---|
+| Beignets | Fried dough under a snowdrift of sugar | Day 1, Café du Monde |
+| Po'boy | Gulf shrimp or roast beef on crusty bread | Day 2, Magazine Street |
+| Gumbo | The holy trinity in a dark roux | Any sit down lunch |
+| Char grilled oysters | Gulf oysters, garlic butter, fire | A casual dinner |
+| Muffuletta | Olive salad and cured meat, round | Day 1, split one |
+
+Beyond the headliners, eat **red beans and rice** if it is Monday, the old washday tradition, and chase a **Sazerac** or a **Vieux Carré** at a proper bar rather than a slushie cup. Save one dinner for an old line Creole restaurant like Commander's Palace or Galatoire's, where the turtle soup and the ceremony are the whole point.
+
+Do not over plan it, either. Half the best meals here come from walking past a place with a line of locals out front and simply joining it. For the full ranked rundown, our guide to the [best restaurants in New Orleans](/blog/best-restaurants-in-new-orleans) sorts the legends from the traps.
+
+## Best Time to Visit for a 3 Day Trip
+
+**The sweet spot for three days is the shoulder season, roughly October through November and February through May.** That is when the weather sits in the mild 70s, the humidity backs off, and the festival calendar is busy without being overwhelming. Those are the months locals quietly recommend when a friend asks when to come.
+
+::infographic nola-best-time
+
+Summer is the honest catch. From June into September the heat index pushes past a hundred, the afternoons bring short violent thunderstorms, and it is peak hurricane season, which runs June 1 to November 30. The upside is price, because August can cut hotel rates almost in half, so a sweaty August long weekend is the budget traveler's open secret.
+
+Then there are the marquee weekends. [Mardi Gras](/blog/mardi-gras-in-new-orleans), which falls on February 9 in 2027, and Jazz Fest in late spring turn three quiet days into a packed, joyous, expensive scramble. Mardi Gras alone can fill every hotel for miles, so if your 3 days in New Orleans land anywhere near it, book close to a year out and read our full [Mardi Gras guide](/blog/mardi-gras-in-new-orleans) first.
+
+Come for the big weekends on purpose, or avoid them on purpose, but do not stumble into one by accident and wonder where every hotel room went. The same goes for a home Saints game, which turns the whole downtown into a black and gold tour of bars.
+
+## With a Fourth Day, or Only Two
+
+**If you steal a fourth day, spend it in the neighborhoods the first three skip.** The Bywater and the Marigny reward a slow morning of street art, coffee, and the quieter music rooms. Tremé gives you the cradle of jazz and a po'boy at a corner joint, and a longer afternoon in City Park rounds it out.
+
+::activities New Orleans
+
+Working with only two days? Drop Day 3 and keep the core, the Quarter on Day 1 and the streetcar plus the museum on Day 2, and save the swamp for next time. Traveling with kids changes the mix too, so our guide to [things to do in New Orleans with kids](/blog/things-to-do-in-new-orleans-with-kids) swaps the cocktail crawl for the aquarium and the streetcar.
+
+However long you have, the bones of the plan hold. Walk the Quarter, ride the streetcar, get out to the swamp if you can, and eat everything that is put in front of you.
+
+## Final Word: Book the Room, Then Loosen the Plan
+
+**Three days in New Orleans works because the city is small, walkable, and dense with good things.** Pick a base in or beside the French Quarter, skip the rental car, and let the streetcar and your feet do the rest. The itinerary above is a strong default, not a schedule to obey to the minute.
+
+This New Orleans itinerary is a strong default, not a rule. Do that, leave room in the evening for the brass band you did not plan for, and three days is enough to send you home already plotting the fourth, probably from the airport gate. Lock the room first, because the rest of New Orleans gets easy once you have a bed in the right place.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "mardi-gras-in-new-orleans",
     title: "Mardi Gras in New Orleans 2027: Dates, Parades & Tips",
     seoTitle: "Mardi Gras in New Orleans 2027: Dates & Parade Guide",
@@ -948,7 +1273,7 @@ If you want the **best weather**, target mid October through November, daytime h
 
 If you want the **lowest prices**, come in summer. June through September is hot, sticky, and stormy, which is exactly why hotels are cheap and the streets are quieter.
 
-And if you want [Mardi Gras](/blog/mardi-gras-in-new-orleans), that is its own animal, February 9 in 2027, planned a year ahead. For everything else, the shoulder months of **March and November** are the quiet sweet spot, great weather, fewer people, fairer rates. They are the months locals quietly recommend when a friend asks when to come.
+And if you want [Mardi Gras](/blog/mardi-gras-in-new-orleans), that is its own animal, February 9 in 2027, planned a year ahead. For everything else, the shoulder months of **March and November** are the quiet sweet spot, great weather, fewer people, fairer rates. They are the months locals quietly recommend when a friend asks when to come. Once your dates are set, our [3 day New Orleans itinerary](/blog/3-days-in-new-orleans) maps out exactly how to spend them.
 
 | Your priority | Best time to go |
 |---|---|
@@ -1764,7 +2089,7 @@ A good rhythm is free wandering and street **vibe** by day, a great meal at dusk
 
 ::infographic nola-3-days
 
-If you are still sorting the **travel** logistics, our other New Orleans **guides**, from [where to stay](/blog/where-to-stay-in-neworleans), the [best time to visit](/blog/best-time-to-visit-new-orleans) and [day trips](/blog/day-trips-from-new-orleans) to [whether it is safe](/blog/is-new-orleans-safe), pick up where this one leaves off, so you know what to read **next**. Every block down here has its own **story** and a slightly **different** mood, so slow down and let the city tell you.
+If you are still sorting the **travel** logistics, our other New Orleans **guides**, from [where to stay](/blog/where-to-stay-in-neworleans), the [best time to visit](/blog/best-time-to-visit-new-orleans) and our [3 day itinerary](/blog/3-days-in-new-orleans) to [day trips](/blog/day-trips-from-new-orleans) and [whether it is safe](/blog/is-new-orleans-safe), pick up where this one leaves off, so you know what to read **next**. Every block down here has its own **story** and a slightly **different** mood, so slow down and let the city tell you.
 
 ## Where to Stay Between Adventures
 
