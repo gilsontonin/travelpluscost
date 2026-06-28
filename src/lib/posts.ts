@@ -49,6 +49,247 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "things-to-do-in-new-orleans-with-kids",
+    title: "16 Things to Do in New Orleans With Kids (2026)",
+    description:
+      "Things to do in New Orleans with kids (2026): the Audubon zoo & aquarium, City Park's Storyland, swamp tours, beignets, and a kid-friendly ghost hunt.",
+    excerpt:
+      "Behind the Bourbon Street reputation, New Orleans is a genuinely great family town. The honest, local-grade list of things to do with kids — by age, rain or shine — as of 2026.",
+    tldr: {
+      answer:
+        "Top picks: the Audubon Aquarium, Zoo and Insectarium; City Park's Storyland playground and Carousel Gardens; the Louisiana Children's Museum; Mardi Gras World's giant floats; a gator swamp tour; the $1.25 streetcar; beignets; and a family ghost hunt. Best ages 4–12. Stay near the Quarter, and keep Bourbon Street for daytime only.",
+      points: [
+        "**Family trifecta** — the Audubon Aquarium, Zoo and Insectarium.",
+        "**Best playground** — City Park's Storyland + the Carousel Gardens rides.",
+        "**Kid-favorite tour** — a swamp tour (gators!) or the Steamboat Natchez.",
+        "**Cheapest thrill** — the $1.25 St. Charles streetcar.",
+        "**The rule** — French Quarter by day; Bourbon Street is an adults-after-dark zone.",
+      ],
+    },
+    date: "2026-06-27",
+    updated: "2026-06-27",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/430827996.jpg",
+      alt: "New Orleans skyline at sunset over the French Quarter and the Mississippi River",
+      credit: { name: "New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "Is New Orleans good for kids?",
+        a: "Yes — surprisingly so. Behind the party reputation, New Orleans has a top zoo and aquarium, a huge park with a storybook playground and rides, hands-on museums, swamp tours, and street performers everywhere. The one adjustment is Bourbon Street, which is an adult scene after dark — families do the French Quarter by day and base a few blocks off it.",
+      },
+      {
+        q: "What's the best age to visit New Orleans with kids?",
+        a: "Ages 4–12 get the most out of it — old enough for the zoo, swamp tours, beignets and street performers, young enough to find it all magical. Toddlers love Storyland, the carousel and the aquarium touch pool; tweens and teens get into the WWII Museum, ghost tours and cooking classes. There's a fit for every age.",
+      },
+      {
+        q: "Is Bourbon Street OK for kids?",
+        a: "By day it's just a street; after dark it becomes an open-container adult party — not a place for kids. Walk it in daylight if you're curious, then steer the evening to Frenchmen Street's edges, the riverfront, or back to your hotel. Base your family a few blocks off Bourbon and it's a non-issue.",
+      },
+      {
+        q: "What can kids do for free in New Orleans?",
+        a: "Plenty: street performers and the cathedral at Jackson Square, the Mississippi riverfront and the Moon Walk promenade, the French Market, City Park's Besthoff Sculpture Garden, and library storytimes for little ones. The St. Charles streetcar isn't free but at $1.25 it's the cheapest thrill in town.",
+      },
+      {
+        q: "What's the best time to visit New Orleans with kids?",
+        a: "Spring (March–May) and fall (October–November) bring the mildest weather for zoo-and-park days. Summer is hot and humid but quieter, with the Cool Zoo splash park open. For families, the regular Mardi Gras is intense — aim for Family Gras (a free, kid-friendly alternative two weekends before Fat Tuesday) instead.",
+      },
+      {
+        q: "Where should families stay in New Orleans?",
+        a: "The French Quarter, the CBD/Warehouse District, and the Garden District are the family-friendly bases — central, walkable and well-patrolled by day. Look for a pool and connecting rooms or a suite; the CBD has modern hotels a short, calm walk from the Quarter without Bourbon Street at your door.",
+      },
+    ],
+    body: `Looking for the best **things to do in New Orleans with kids**? Good news: behind the Bourbon Street reputation, the Big Easy is a genuinely great family town — gators, beignets, streetcars, and a zoo that'll wear the little ones out by lunch.
+
+This is the honest, local-grade list, updated for 2026, of the **activities** that actually work with kids in tow — by age, rain or shine, without a single thing you'd have to cover their eyes for. You'll **discover** a city built for curious **children**, not just stag parties.
+
+One rule up top: do the **French Quarter by day**, when it's street performers and powdered sugar, keep the crew off Bourbon Street after dark, and you've got a city that loves a curious kid.
+
+::infographic nola-kids-by-numbers
+
+## See Sharks and Penguins at the Audubon Aquarium
+
+Start with the sure thing: the **Audubon Aquarium** on the riverfront, where a 60-foot hands-on touch pool lets kids pet stingrays and small sharks, penguins waddle around their habitat, and a giant Gulf of Mexico tank swallows the whole room.
+
+It's fully air-conditioned, walkable from the French Quarter, and easily a half-morning of **fun** before anyone gets cranky. **Families** with young kids should arrive at opening, before the touch pool draws a crowd. The connected Insectarium now sits under the same roof, so you can knock out two attractions without stepping back into the heat.
+
+Buy the **combo ticket** if you're also doing the zoo — the three Audubon attractions are the family backbone of any New Orleans trip, and the bundle beats paying gate price three times.
+
+::activity New Orleans | aquarium
+
+## Meet the Animals at the Audubon Zoo
+
+Uptown, the **Audubon Zoo** is shady, walkable and genuinely good, with a famous **Louisiana Swamp exhibit** — alligators, a rare white gator, and a gentle preview of the real bayou you'll see on a swamp tour later.
+
+In summer, the **Cool Zoo** splash park is the move: bring swimsuits and let everyone melt down the slides instead of melting down on you. There's a little train and a carousel too — old-fashioned **fun** the under-fives never tire of.
+
+Get there on the **St. Charles streetcar** for a two-for-one outing — the ride is half the fun, and you skip the parking headache entirely.
+
+::activity New Orleans | zoo audubon
+
+## Run Wild at City Park's Storyland and Carousel Gardens
+
+Bigger than Central Park, **City Park** is the family heart of New Orleans, and **Storyland** is its crown jewel — a vintage playground of climbable fairy-tale sculptures (Pinocchio's whale, Jack's beanstalk) that toddlers absolutely lose their minds over; big **kids love** it too.
+
+Next door, the **Carousel Gardens** amusement park has a century-old wooden carousel — one of the last of its kind — plus a little train, a Ferris wheel and gentle rides scaled for the under-tens. It's nostalgic **fun**, tickets are cheap, and the weekday lines are short.
+
+Pack a picnic, rent a bike on the trails, and let the kids **play** while the moss-draped oaks handle the babysitting for an afternoon. The Besthoff Sculpture Garden next door is free and stroller-friendly if you need a quiet lap.
+
+## Get Hands-On at the Louisiana Children's Museum
+
+Also in City Park, the **Louisiana Children's Museum** is the rainy-day MVP — two airy floors of hands-on exhibits, including a **"Move With the River"** water-play area that explains the mighty Mississippi to kids who mostly just want to get their sleeves wet.
+
+There's a pretend French Market with a toy streetcar, an art studio, and a tot-only **play** zone for the under-twos. Every **interactive** exhibit is **designed** for the under-ten set, and it buys you a couple of low-stress, screen-free hours.
+
+Pair it with Storyland next door and you've got a full City Park day without ever moving the car.
+
+## Brave the Bugs at the Audubon Insectarium
+
+The **Audubon Insectarium** is exactly as gross and great as it sounds — a butterfly garden where wings land on you, a Japanese-style bug habitat, and, for the brave, a **bug bistro** where a chef will absolutely talk your eight-year-old into eating a seasoned cricket.
+
+It's small, indoors, and a guaranteed hit with the kind of kid who already collects things that crawl. Now housed with the aquarium on the riverfront, it's a tidy add-on rather than a separate trek.
+
+Give it an hour, then dare a parent to try the chocolate "chirp" cookies. Someone always does.
+
+## Explore the National WWII Museum
+
+Routinely ranked among the best **museums** in the country, the **National WWII Museum** is a surprise hit with older **children** — immersive galleries, planes hanging overhead, a real submarine experience, and a 4D theater narrated by Tom Hanks.
+
+It leans heavy in places, so it suits tweens and teens more than toddlers; a dog tag that lets each kid follow one real soldier through the **World War** makes the history personal. Over two or three **days** in the city, it easily earns half of one.
+
+A short walk from the CBD hotels, it's the **historic** indoor pick for a hot or rainy New Orleans afternoon — the kind of **visit** that sparks questions for days about **America** and the people who lived it.
+
+::infographic nola-rainy-day-kids
+
+## Gawk at the Giant Floats at Mardi Gras World
+
+You don't have to come during Carnival to see it: **Mardi Gras World** is the working warehouse where the city's giant parade floats are built, and the scale of the sculptures up close — two-story jesters, dragons, kings — is jaw-dropping for kids.
+
+You'll watch artists sculpt and paint, try on a costume, and get a slice of **king cake** on the tour, all with zero Bourbon Street chaos. There's a free shuttle from downtown, so you can leave the car at the hotel.
+
+It runs about an hour and a half of pure **fun** for every age — a **must** for first-timers and the most kid-friendly way to "do" Mardi Gras without the crowds or a string of beads to the face.
+
+::activity New Orleans | mardi gras world
+
+## Ride the St. Charles Streetcar
+
+The cheapest thrill in town is the **St. Charles Avenue streetcar** — for **$1.25** a century-old olive-green car rattles past Garden District mansions and **live** oaks, windows down, no screens required.
+
+Ride it Uptown toward the zoo and Audubon Park, let the kids hang an arm out the open window, and call it both transport and an attraction. Bring exact change or a Le Pass on your phone; drivers don't make change.
+
+A **day pass ($3)** pays for itself in about two rides, so hop on and off for beignets, the park, and back. It's the rare "attraction" that doubles as your ride home.
+
+## Cruise the Mississippi on the Steamboat Natchez
+
+A jazz cruise on the **Steamboat Natchez** sounds grown-up, but kids zero in on the wheezing **calliope** (a steam-powered organ), the giant red paddlewheel churning the river, and the museum-quality engine room they can actually poke around.
+
+Do the **daytime harbor cruise** for the port in full light — you'll slide past the working docks, the bridges and the skyline while a narrator points out what's what over **live** jazz. It's a calm, breezy hour or two with snacks and a real river breeze.
+
+It's the kind of low-stakes activity that resets a cranky afternoon, and it's the last authentic steamboat in the city to boot.
+
+::activity New Orleans | steamboat cruise
+
+## Hunt Gators on a New Orleans Swamp Tour
+
+Twenty to forty minutes out of New Orleans, a **swamp tour** is the day everyone remembers — cypress knees, Spanish moss, and alligators that glide up to the boat like they pay the mortgage on the bayou.
+
+For younger kids pick a **covered pontoon boat** over a roaring airboat — calmer, quieter, and you'll actually hear the guide's stories. Most tours include **hotel pickup**, so you skip renting a car and sleepy kids can doze on the ride out.
+
+Bring sunscreen, hats, bug spray and a healthy respect for the gators; the guides know exactly how close is too close. It's the wildest thing you'll do all trip, in the best way.
+
+::activity New Orleans | swamp bayou
+
+## Eat (and Wear) Beignets at Café du Monde
+
+No kid leaves New Orleans without **beignets at Café du Monde** — three hot squares of fried dough under a small avalanche of powdered sugar, best eaten outdoors where the mess is the entire point.
+
+It's open 24 hours and cash is king at the original on Decatur, so come early to dodge the line or late for the empty tables. Order a round, hand out napkins you already know won't be enough, and let the children watch the riverfront mules and street musicians.
+
+Warn them not to inhale near the plate — one good laugh sends the sugar everywhere, and half the **fun** is the mess. That's your souvenir photo right there.
+
+## Wander the French Quarter by Day
+
+By daylight the **French Quarter** is wholesome fun — living statues and brass bands around **Jackson Square**, mule-drawn carriage rides, and the **French Market** for a praline, a souvenir mask and a snack.
+
+Let children watch the artists set up along the cathedral fence, toss a tip to a tap dancer, and duck into **Pirate's Alley** for the pirate lore. Pop into St. Louis Cathedral (free and quick) and let them gawk at the ceiling.
+
+Keep to the busy, well-lit blocks and it's wholesome **fun** for **families**, as easy to manage as any theme park — with much better food, **live** music, and no ticket booth. Save Bourbon Street for a curious daytime walk-through, nothing more.
+
+::activity New Orleans | french quarter walking
+
+## Cook Like a Local in a New Orleans Cooking Class
+
+A hands-on **cooking class** — gumbo, jambalaya, or a simple beignet — turns New Orleans food into a souvenir the kids actually keep using at home. Several are explicitly family-friendly and feed you what you make at the end.
+
+It's a great plan for a hot or rainy afternoon and a sneaky way to get a picky eater to try something they helped stir. Look for a class that includes a **market walk**; the good ones send the kids hunting for okra and andouille first.
+
+Book a morning slot so the meal becomes a late lunch and frees the rest of the day. It's hands-on **fun** the whole family can do **together** — aprons and very serious chef hats included.
+
+::activity New Orleans | food
+
+## Brave a Kid-Friendly Ghost Hunt
+
+New Orleans leans hard into the spooky, and a **kid-friendly ghost or "haunted history" tour** hits the sweet spot for tweens and teens — eerie enough to feel like a dare, tame enough that everyone still sleeps.
+
+Skip the adult pub-crawl versions and pick one billed for families, ideally early evening rather than late night. The stories — pirates, voodoo, yellow-fever legends — are stranger and the history realer than any theme-park haunt.
+
+Little ones who'd rather not can do daytime cemetery or "vampire" walking **tours** instead, which land as **culture** with a costume. Either way, you've turned a walk into family **fun**.
+
+::activity New Orleans | ghost
+
+## Climb the Walls at a Rainy-Day Backup
+
+When a thunderstorm rolls in — and in a New Orleans summer one will, usually around 3 p.m. — an indoor **rock-climbing gym** burns off the energy a museum can't. It's the classic New Orleans afternoon-downpour rescue.
+
+Most gyms have auto-belay walls and kids' sessions, so even first-timers can scramble safely while the sky empties out. An hour of climbing **time** resets everyone before dinner.
+
+Between climbing, the aquarium, the Children's Museum and the Insectarium, a rainy day here is no emergency — just a reshuffle. Build your big outdoor outing for the morning and keep an indoor card in your back pocket.
+
+::infographic nola-kids-by-age
+
+## Free Things to Do in New Orleans With Kids
+
+You can fill a whole day on **free** alone. **Jackson Square** delivers nonstop street performers and the cathedral; the **Mississippi riverfront** and the **Moon Walk** promenade let kids watch ships and steamboats roll by for nothing.
+
+Browse the **French Market**, chase pigeons in the **Besthoff Sculpture Garden** at City Park, or catch a **library storytime** built for toddlers — songs, crafts, the works. Street performers put on a free **show**, and **everything** here is open to all ages — none of it costs a dime.
+
+The streetcar isn't free, but at $1.25 it's the cheapest paid thrill going. Stack a few of these family-friendly **activities** and you've earned a guilt-free splurge on beignets — proof you can **love** New Orleans on a budget.
+
+::infographic nola-kids-free
+
+## Where to Stay in New Orleans With Kids
+
+Base the family in or near the **French Quarter** or the calmer **CBD/Warehouse District** — central and walkable, but a few blocks off Bourbon Street so the evenings stay kid-paced. A pool earns its keep in a New Orleans summer, and a suite or connecting rooms save everyone's sanity.
+
+The **NOPSI Hotel** anchors the CBD with a **rooftop pool** and an easy, calm stroll to the Quarter — a genuine family win after a sweaty zoo morning.
+
+::hotel lpa440f
+
+The grand **Hotel Monteleone** sits right in the Quarter, with a pool, big classic rooms, and the slowly rotating Carousel Bar for the grown-ups after bedtime.
+
+::hotel lp6583c58d
+
+For the full area-by-area breakdown, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans), or browse the [New Orleans hotels hub](/hotels/new-orleans).
+
+::infographic nola-kids-callout
+
+## New Orleans Family Travel Tips: Ages, Timing and Bourbon Street
+
+**Ages 4–12 get the most out of New Orleans**, but there's a fit for everyone — toddlers for Storyland, teens for the ghost tours (see the by-age picks above). New Orleans has plenty to **offer families** of every age and budget, but the single most useful habit is pacing: give yourself **time** for one big outing a day, plus a park or a nap, and you'll **love** the trip more than a forced march every **time**.
+
+Time it for **spring or fall** for mild zoo-and-park weather; summer is hot and sticky but quieter, with the splash park open. If you're chasing Carnival, choose **Family Gras** — a free, kid-friendly **events** weekend two weekends before Fat Tuesday — over the **adults**-first parades the **children** would rather skip.
+
+For more on staying safe and which blocks to keep to, our guide on whether [New Orleans is safe](/blog/is-new-orleans-safe) covers the family corridor in detail. For everything beyond the family angle, see our full guide to [things to do in New Orleans](/blog/things-to-do-in-new-orleans). Do all that and the only meltdown will be over leaving.
+
+Whatever you book, the room price you see here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee sprung on the last screen.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "things-to-do-in-new-orleans",
     title: "16 Best Things to Do in New Orleans (2026)",
     description:
@@ -282,7 +523,7 @@ Traveling with kids, or just want a break from the Quarter? The **Audubon Aquari
 
 They're easy, shaded, and a welcome change of pace from cobblestones. The zoo's Louisiana Swamp exhibit is a gentle preview of the real thing.
 
-Both sit on the riverfront streetcar and ferry loop, so you can do them without a car — the easiest **fun** the city hands families.
+Both sit on the riverfront streetcar and ferry loop, so you can do them without a car — the easiest **fun** the city hands families. Traveling as a family? See our full guide to [things to do in New Orleans with kids](/blog/things-to-do-in-new-orleans-with-kids).
 
 ## Escape to City Park and the Sculpture Garden
 

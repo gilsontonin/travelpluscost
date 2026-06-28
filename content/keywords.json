@@ -115,7 +115,7 @@
     "researched": "2026-06-25",
     "status": "published",
     "history": [],
-    "note": "Vol/KD estimated (no Semrush \u2014 SERP-first). DEEP serp (competitors ~4,200-4,600w); shipped at serp 90 (the floor, no grind to 93) at ~2,640w. AZ cluster: links to/from where-to-stay-in-sedona, -tucson, -flagstaff (4-post AZ web for topical authority)."
+    "note": "Vol/KD estimated (no Semrush — SERP-first). DEEP serp (competitors ~4,200-4,600w); shipped at serp 90 (the floor, no grind to 93) at ~2,640w. AZ cluster: links to/from where-to-stay-in-sedona, -tucson, -flagstaff (4-post AZ web for topical authority)."
   },
   "where-to-stay-in-savannah": {
     "primary": "where to stay in savannah",
@@ -134,7 +134,7 @@
     "researched": "2026-06-25",
     "status": "published",
     "history": [],
-    "note": "Vol/KD estimated (no Semrush \u2014 SERP-first via WebSearch). DEEP serp: competitors ~4,500-5,200w; built to serp 93 at ~3,260w comprehensive (89->93 squeeze). Sister-city cross-links to/from where-to-stay-in-charleston."
+    "note": "Vol/KD estimated (no Semrush — SERP-first via WebSearch). DEEP serp: competitors ~4,500-5,200w; built to serp 93 at ~3,260w comprehensive (89->93 squeeze). Sister-city cross-links to/from where-to-stay-in-charleston."
   },
   "where-to-stay-in-charleston": {
     "primary": "where to stay in charleston",
@@ -153,7 +153,7 @@
     "researched": "2026-06-25",
     "status": "published",
     "history": [],
-    "note": "Charleston SC (not WV) \u2014 directory pool is SC-dominant; cards verified state=SC. serp 91 (comprehensive ~2380w)."
+    "note": "Charleston SC (not WV) — directory pool is SC-dominant; cards verified state=SC. serp 91 (comprehensive ~2380w)."
   },
   "where-to-stay-in-staugustine": {
     "primary": "where to stay in st augustine",
@@ -172,7 +172,7 @@
     "researched": "2026-06-25",
     "status": "published",
     "history": [],
-    "note": "vol/KD from earlier-session Semrush vet; new process is SERP-first (no Semrush). SERP is deep (mega-guides ~4000w) \u2014 serp score is a diagnostic, written helpful-first."
+    "note": "vol/KD from earlier-session Semrush vet; new process is SERP-first (no Semrush). SERP is deep (mega-guides ~4000w) — serp score is a diagnostic, written helpful-first."
   },
   "where-to-stay-in-albuquerque": {
     "primary": "where to stay in albuquerque",
@@ -434,6 +434,25 @@
     "database": "us",
     "researched": "2026-06-24",
     "status": "published",
+    "history": []
+  },
+  "things-to-do-in-new-orleans-with-kids": {
+    "primary": "things to do in new orleans with kids",
+    "secondary": [
+      "new orleans with kids",
+      "children's activities new orleans",
+      "family things to do in new orleans",
+      "new orleans with toddlers",
+      "new orleans family attractions",
+      "kid-friendly new orleans"
+    ],
+    "volume": 2400,
+    "kd": 7,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-27",
+    "status": "published",
+    "cluster": "new-orleans",
     "history": []
   }
 }

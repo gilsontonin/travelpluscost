@@ -110,3 +110,20 @@ single, actionable line. Prune lessons that are now fully enforced by a checker.
 - **is-new-orleans-safe** (NOLA cluster #1, safety post): a non-"where to stay" info post still wants `region:{name,destination}` so the inventory search-bar + 8-hotel rail (and the funnel) render. The SERP for "is X safe" is deep (median ~2,150w, many PAA H2s) — write the full set of distinct question-sections (safe areas / areas to avoid / FQ at night / Bourbon / scams / solo+family / tips / insurance / worth it); stats will flag them "thin" (~150-200w each) but that mirrors the SERP, so accept it rather than merging. Heading lever: competitors put `travel insurance`, `garden district`, `central city`, `solo female`, `safety tips` IN H2s — match. a11y ceiling 97 is shared chrome (search-bar + hotel-rail + header meta use text-black/35-50 faint grays under 4.5:1) — pre-existing site-wide, not the post; logged to backlog as a global contrast bump.
 
 - **things-to-do-in-new-orleans** (NOLA cluster #2, first Viator post): `::activities <City>` renders the Viator affiliate rail — coords resolve from the city hotel-cluster centroid, and /api/activities returns real city tours (confirmed NOLA). It is a CLIENT component (fetch on mount), so the rail is NOT in SSR HTML — do not "verify" it via curl; check /api/activities instead. PERF NOTE: the Viator post measures lower on localhost (perf ~69, TBT ~900ms) — the client tour-fetch + ~10 external tour images (raw <img>, lazy) + the live-price rail stack up; localhost cold-cache adds ~11MB. Real perf is higher on PSI/CDN, but Viator posts carry a genuine client cost — the parked lazy price/activities fetch is the fix when the owner greenlights it. A big listicle SERP wants ~3,057w; break the one French Quarter blob into per-landmark H2s (Jackson Square / cathedral / Royal Street) to win the heading lever + length.
+
+## things-to-do-in-new-orleans-with-kids (2026-06-27)
+- **Lighthouse perf/a11y on a loaded local machine is noise — run a CONTROL.** Local `npm start` + LH gave
+  perf 68–81 / a11y 97 on the NEW post. Running LH on an EXISTING live post (things-to-do-in-new-orleans)
+  scored the SAME (perf 81, a11y 97, same color-contrast) — proving it's the environment (CPU load + on-demand
+  next/image optimization on localhost), not a regression. Always control against a known-good live post before
+  treating a sub-90 perf as a real defect. CLS 0 + cover via `next/image priority` = the per-post LH levers held.
+- **color-contrast a11y (97, not 100) is pre-existing site-wide** (shared component, hits the control too) — see
+  backlog, not a per-post fix.
+- **SERP from 50→93:** the heading lever is decisive — "new orleans" was in 100% of competitor headings, 0 of
+  ours (score stuck at 50). Renaming ~5 H2s to include "New Orleans" + the exact phrase ("Free Things to Do in
+  New Orleans With Kids") jumped heading 0→100% and the score to 86; a natural body-term weave (fun/families/
+  time/play/love + the cheap singles) closed 86→93. Re-run blog:serp AFTER deepening — the brief caches the old
+  word count.
+- **::activity self-hides ~half the time:** of 9 topics, only swamp/ghost/french-quarter/food returned ≥4.5★
+  NOLA tours; aquarium/zoo/mardi-gras-world/steamboat/cooking → 0 (self-hide, harmless). Test topics against
+  /api/activities?lat&lng&q before trusting a directive will render.

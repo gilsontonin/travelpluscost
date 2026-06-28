@@ -369,6 +369,51 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { label: "The trade", left: "Some blocks fray toward the Tenderloin edge", right: "Pricey and crowded, and quiet after dark" },
     ],
   },
+  "nola-kids-by-numbers": {
+    kind: "stat",
+    title: "New Orleans with kids, at a glance",
+    stats: [
+      { value: "Audubon", label: "a beloved zoo, aquarium and insectarium — the family trifecta" },
+      { value: "City Park", label: "Storyland, the Carousel Gardens rides and the Children's Museum" },
+      { value: "$1.25", label: "a streetcar ride — the cheapest thrill in town for little ones" },
+      { value: "Ages 4–12", label: "the sweet spot, though toddlers and teens find plenty too" },
+    ],
+  },
+  "nola-kids-by-age": {
+    kind: "stat",
+    title: "Best picks by age",
+    stats: [
+      { value: "Toddlers", label: "Storyland, the Carousel Gardens, the aquarium touch pool, beignets" },
+      { value: "Big kids", label: "a swamp tour, the Insectarium, Mardi Gras World, the streetcar" },
+      { value: "Tweens & teens", label: "the WWII Museum, a ghost hunt, a cooking class" },
+      { value: "Any age", label: "City Park, Jackson Square street performers, the riverfront" },
+    ],
+  },
+  "nola-rainy-day-kids": {
+    kind: "stat",
+    title: "Rainy-day rescue (all indoors)",
+    stats: [
+      { value: "Aquarium", label: "sharks, penguins and a hands-on touch pool" },
+      { value: "Children's Museum", label: "the Move With the River exhibit in City Park" },
+      { value: "Insectarium", label: "bugs, a butterfly garden and a bug bistro if you dare" },
+      { value: "WWII Museum", label: "older kids' history that actually lands" },
+    ],
+  },
+  "nola-kids-free": {
+    kind: "stat",
+    title: "Free with kids in New Orleans",
+    stats: [
+      { value: "Jackson Square", label: "street performers, brass bands and the cathedral, free to watch" },
+      { value: "The riverfront", label: "the Moon Walk promenade and ships rolling down the Mississippi" },
+      { value: "French Market", label: "browsing, samples and people-watching cost nothing" },
+      { value: "Library storytime", label: "free songs-and-crafts sessions made for toddlers" },
+    ],
+  },
+  "nola-kids-callout": {
+    kind: "callout",
+    title: "The move: daytime Quarter, family base nearby",
+    body: "The French Quarter by day is street performers, beignets and the river — wholesome and walkable. Skip Bourbon Street with kids, base a few blocks off it, and build each day around one big outing plus a park or a nap.",
+  },
   "nola-by-interest": {
     kind: "stat",
     title: "Pick your New Orleans by interest",

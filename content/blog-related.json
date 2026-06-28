@@ -1,23 +1,33 @@
 {
+  "things-to-do-in-new-orleans-with-kids": [
+    "things-to-do-in-new-orleans",
+    "where-to-stay-in-neworleans",
+    "is-new-orleans-safe",
+    "where-to-stay-in-galveston",
+    "where-to-stay-in-oahu",
+    "where-to-stay-in-charleston",
+    "where-to-stay-in-wisconsindells",
+    "where-to-stay-in-savannah"
+  ],
   "things-to-do-in-new-orleans": [
+    "things-to-do-in-new-orleans-with-kids",
     "where-to-stay-in-neworleans",
     "is-new-orleans-safe",
     "where-to-stay-in-charleston",
     "where-to-stay-in-savannah",
     "where-to-stay-in-sanfrancisco",
     "where-to-stay-in-galveston",
-    "where-to-stay-in-sanantonio",
-    "where-to-stay-in-staugustine"
+    "where-to-stay-in-sanantonio"
   ],
   "is-new-orleans-safe": [
     "where-to-stay-in-neworleans",
     "things-to-do-in-new-orleans",
+    "things-to-do-in-new-orleans-with-kids",
     "where-to-stay-in-sanfrancisco",
     "where-to-stay-in-charleston",
     "where-to-stay-in-savannah",
     "where-to-stay-in-albuquerque",
-    "where-to-stay-in-sanantonio",
-    "where-to-stay-in-oahu"
+    "where-to-stay-in-sanantonio"
   ],
   "where-to-stay-in-neworleans": [
     "is-new-orleans-safe",
@@ -27,7 +37,7 @@
     "where-to-stay-in-albuquerque",
     "where-to-stay-in-savannah",
     "where-to-stay-in-sanantonio",
-    "where-to-stay-in-staugustine"
+    "things-to-do-in-new-orleans-with-kids"
   ],
   "where-to-stay-in-sanfrancisco": [
     "where-to-stay-in-neworleans",
