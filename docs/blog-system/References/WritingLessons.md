@@ -156,3 +156,15 @@ single, actionable line. Prune lessons that are now fully enforced by a checker.
   destinations (Barataria, Avery Island, farther-afield, kids/food angles), not padding.
 - **Handle plantations honestly (claims bar):** centered Whitney (the enslaved people's story) and flagged
   the slavery history plainly rather than "antebellum charm." On-brand and the right call.
+- **(best-restaurants-in-new-orleans) Cover source = a Lighthouse LCP trap — use cupid, not Unsplash.** An
+  Unsplash hero (`images.unsplash.com`, even at `?fm=webp&w=1200&q=80`) is re-optimized cold by `next/image`
+  and tanked LCP to ~3.8s → **perf 73**. Swapping to a `static.cupid.travel/hotels/<id>.jpg` cover (the program
+  standard) lifted it to **~87 median** (SEO/A11y/BP stayed 100), matching the other NOLA posts. Lesson: always
+  cover with a cupid hotel photo (inspect a non-carded hotel's image), never Unsplash, even when the Unsplash
+  shot is more on-topic. Localhost LH is also noisy (one cold run read 70; the 87/89 reruns are the real number)
+  — take the median of 3.
+- **(best-restaurants-in-new-orleans) blog:stats/checklist visual cadence is blind to `::` directives.** It
+  counts only markdown `![]()` images + `|---|` tables, so a directive-built post reads "Visuals: 0/1 ⚠" no
+  matter how many `::infographic`/`::hotel` blocks it has. Include ≥1 genuine markdown comparison table (also
+  AI-Overview bait) so the gate registers, and confirm the true cadence by hand (this post: 8 infographics +
+  table + 5 cards + 3 Viator blocks for 4,294w).

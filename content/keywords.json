@@ -1,4 +1,27 @@
 {
+  "best-restaurants-in-new-orleans": {
+    "primary": "best restaurants in new orleans",
+    "secondary": [
+      "new orleans restaurants",
+      "new orleans best dining",
+      "new orleans food",
+      "best new orleans restaurants",
+      "famous new orleans restaurants",
+      "where to eat in new orleans",
+      "new orleans dining",
+      "best coffee in new orleans",
+      "chicory coffee new orleans",
+      "vegan food new orleans"
+    ],
+    "volume": 12100,
+    "kd": 41,
+    "intent": "commercial",
+    "database": "us",
+    "researched": "2026-06-28",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
+  },
   "things-to-do-in-new-orleans": {
     "primary": "things to do in new orleans",
     "secondary": [

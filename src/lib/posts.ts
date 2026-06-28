@@ -49,6 +49,327 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "best-restaurants-in-new-orleans",
+    title: "Best Restaurants in New Orleans: 20 to Try in 2026",
+    seoTitle: "Best Restaurants in New Orleans: 20 to Try (2026)",
+    description:
+      "The best restaurants in New Orleans for 2026 — historic Creole rooms, James Beard winners, beignets and po-boys, jazz brunch, and where locals actually eat.",
+    excerpt:
+      "From the 1840s Creole grande dames to the corner po-boy shops locals swear by — the honest, local-grade guide to the best restaurants in New Orleans, sorted by occasion and neighborhood. As of 2026.",
+    tldr: {
+      answer:
+        "For the classics, book Commander's Palace, Antoine's, or Galatoire's; for award-winning cooking, Dakar NOLA and two-Michelin-star Emeril's; for where locals eat, Willie Mae's, Domilise's, and Dooky Chase's. Eat a beignet at Café du Monde and a dressed po-boy at least once, and reserve the big names weeks ahead.",
+      points: [
+        "**Historic splurge** — Commander's Palace, Antoine's, Galatoire's and Brennan's (jazz brunch; jackets after 5pm).",
+        "**Award winners** — Dakar NOLA (James Beard Best New Restaurant 2024) and two-Michelin-star Emeril's.",
+        "**Where locals eat** — Willie Mae's fried chicken, Domilise's po-boys, Dooky Chase's gumbo.",
+        "**Eat at least once** — a beignet at Café du Monde and a muffuletta from Central Grocery, where it was invented.",
+        "**Book ahead** — top tables go weeks out, and 2+ months for festival weekends.",
+      ],
+    },
+    date: "2026-06-28",
+    updated: "2026-06-28",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/104411623.jpg",
+      alt: "A warm evening on a French Quarter street corner in New Orleans, with lit storefronts and a horse-drawn carriage near the city's best restaurants",
+      credit: { name: "French Quarter, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "What is the most famous restaurant in New Orleans?",
+        a: "Commander's Palace and Antoine's are the two most famous. Antoine's, open since 1840, is the oldest family-run restaurant in the country and the birthplace of Oysters Rockefeller. Commander's Palace, the turquoise Garden District landmark, has collected a stack of James Beard awards and launched Emeril Lagasse and Paul Prudhomme.",
+      },
+      {
+        q: "What is the oldest restaurant in New Orleans?",
+        a: "Antoine's, founded in 1840. It's the oldest family-run restaurant in the United States, still run by the founding family in its original French Quarter building on St. Louis Street. Galatoire's (1905) and Arnaud's (1918) are the next-oldest grand Creole rooms.",
+      },
+      {
+        q: "What New Orleans restaurants have Michelin stars?",
+        a: "Emeril's holds two Michelin stars, the only two-star restaurant in the city. The Michelin Guide now covers New Orleans and also lists one-star and Bib Gourmand spots worth a detour. Reservations for the starred rooms book up well in advance, so plan early.",
+      },
+      {
+        q: "Where do celebrities dine in New Orleans?",
+        a: "The grand Creole rooms — Commander's Palace, Galatoire's, and Antoine's — are the classic celebrity haunts, along with newer award winners like Dakar NOLA. Galatoire's long Friday lunch in particular draws a who's-who of locals and visitors. You don't need to be famous to get in, though; you just need a reservation, or patience in the walk-in line.",
+      },
+      {
+        q: "Which New Orleans restaurants require a jacket or have a dress code?",
+        a: "Galatoire's requires jackets for men after 5pm and on Sundays, and keeps loaner jackets at the door. Commander's Palace asks for collared shirts and no shorts or flip-flops, with jackets preferred at dinner. Most other restaurants in the city, even excellent ones, are casual.",
+      },
+      {
+        q: "How much does dinner cost at a top New Orleans restaurant?",
+        a: "Expect a grand Creole dinner to run like fine dining in any major US city, and tasting menus at Dakar NOLA or Emeril's to cost more. The good news: a dressed po-boy, a plate lunch, or a bowl of gumbo at a neighborhood spot still costs about what a coffee does in a pricier city. Check current menus before you book.",
+      },
+    ],
+    body: `Looking for the **best restaurants in New Orleans**? You've picked a city that treats eating as a civic duty and still hands you more great meals than a week can hold.
+
+The grand 1840s Creole rooms sit at the top, the James Beard winners snap at their heels, and the corner po-boy shops quietly out-cook both. The hard part here isn't finding a good meal. It's leaving room for the next one.
+
+This is the honest, local-grade rundown, updated for 2026: the historic institutions that earn a splurge, the award winners that reward the reservation, the neighborhood joints that beat the cab fare, and exactly what to order at each. We've sorted it by occasion and by neighborhood, so you can eat your way through a long weekend without a single tourist-trap regret.
+
+A quick map of the cuisine first. New Orleans cooking runs on two traditions — Creole, the city food built on French, Spanish, and African American roots, and Cajun, the rustic South Louisiana country cooking — and the best restaurants here draw on both. The constants are fresh Gulf ingredients, a dark roux, the holy trinity of onion, celery, and bell pepper, and a dining-room atmosphere that treats a long, traditional meal as the whole point, not the delay.
+
+One rule before the menu: in this city, the line outside is the review. A grandmother's gumbo at a place with plastic tablecloths beats a fancier sign near Bourbon Street nearly every time.
+
+## Best Historic Restaurants in New Orleans
+
+**Start with the classics.** New Orleans has been cooking since 1718, and a handful of dining rooms have been at it for a century or more — the grand Creole institutions where the city learned to show off. The food is rich, the rooms are formal, and the bill will remind you why.
+
+::infographic nola-dining-by-numbers
+
+### Antoine's
+
+**Antoine's** opened in 1840 and is the oldest family-run restaurant in the United States, still run by the founding family in the same French Quarter building — a maze of dining rooms that today sprawls across most of a block. Oysters Rockefeller was invented here, and the menu has barely flinched since. They've numbered their guests for generations, so your check may note you were the four-millionth-and-something to sit down — humbling, in a powdered-wig sort of way.
+
+**The move:** the multi-course "25¢ menu" specials and the classic Baked Alaska · **Best for:** old-world occasions · **Watch:** it's a maze of rooms — let them lead you.
+
+### Commander's Palace
+
+**Commander's Palace** is the turquoise Garden District landmark on Washington Avenue that taught half of America to cook — both Emeril Lagasse and Paul Prudhomme ran this kitchen. The turtle soup, finished tableside with sherry, and the 25-cent martini lunch are the institution's institutions, and the bread pudding soufflé is the dessert people plan around. It's been collecting James Beard awards since before most of its rivals opened, and it still sets the bar for Creole fine dining in this city.
+
+The Brennan family bought and expanded the restaurant in 1969, and the upstairs now includes private dining rooms for the big celebrations. The main dining room and the garden room each have their fans; the upstairs garden is the brighter, leafier space. Save room, because every course here is built to be finished and the staff will notice if you don't.
+
+**The move:** weekend jazz brunch, the 25¢ martinis, the soufflé · **Best for:** a special-occasion lunch · **Watch:** collared shirts, no shorts, jackets preferred.
+
+### Galatoire's
+
+**Galatoire's** has run on Bourbon Street since 1905, and Friday lunch here is a New Orleans contact sport — long, boozy, and not to be rushed. The downstairs dining room takes no reservations, which is the city's politest way of telling you to show up early and make friends in line. Jackets are required for men after 5pm; they keep loaners by the door for anyone who packed like the forecast was the only variable.
+
+**The move:** trout meunière and a downstairs Friday lunch · **Best for:** the full old-Creole ritual · **Watch:** queue early; the upstairs takes bookings, downstairs doesn't.
+
+### Brennan's
+
+**Brennan's**, the Brennan family's pink palace on Royal Street, is where Bananas Foster was invented and where breakfast comes with a flambé. It's a splurge built for a long, indulgent morning — eggs Hussarde, a Brandy Milk Punch, and a dessert of bananas in caramel and rum, flamed tableside and spooned over vanilla ice cream. Go for the eggs, stay for the courtyard.
+
+**The move:** a long breakfast and tableside Bananas Foster · **Best for:** a celebratory morning · **Watch:** it's a real meal, not a quick bite.
+
+### Arnaud's
+
+**Arnaud's** has anchored the Quarter since 1918, a warren of dining rooms with a tile-and-cut-glass interior, a French 75 Bar whose vintage counter dates to the late 1800s, and a free Mardi Gras costume museum upstairs. Come for the soufflé potatoes and shrimp Arnaud, and budget time for the bar. The happy hour there is one of the Quarter's quietly great deals.
+
+**The move:** the French 75 Bar before dinner · **Best for:** a classic Creole evening out · **Watch:** the museum's a bonus, not the draw.
+
+### Dooky Chase's
+
+**Dooky Chase's** on Orleans Avenue in Treme is a civil rights landmark as much as a restaurant. Leah Chase, the Queen of Creole Cuisine and a pillar of African American culinary history, ran it for 70 years and won a James Beard Lifetime Achievement Award in 2016. During the civil rights era her upstairs dining room was one of the few places where Black and white organizers could meet and plan over a meal, and that history is served right alongside the food.
+
+Order the gumbo z'herbes — the green gumbo she made famous — and the fried chicken, and treat the weekday lunch buffet as the easiest way in. The restaurant's African American art collection on the walls rewards a slow look on your way out.
+
+**The move:** the Tuesday-through-Friday lunch buffet · **Best for:** real history with the meal · **Watch:** lunch-focused — check current hours.
+
+## Best Modern and Award-Winning Restaurants in New Orleans
+
+**New Orleans isn't living on its past.** The modern wave here has pulled in James Beard medals and Michelin stars, and these are the rooms a serious eater plans the trip around. Reserve them early — the recognition arrived faster than the tables grew.
+
+### Dakar NOLA
+
+**Dakar NOLA** is the breakout: chef Serigne Mbaye's Senegalese-meets-Gulf tasting menu won the [James Beard](https://www.jamesbeard.org/awards) Award for Best New Restaurant in 2024 and ranks among North America's 50 Best. It's a set multi-course experience, not an à la carte drop-in, and it sells out far ahead. Book the moment your dates are firm.
+
+**The move:** reserve the tasting menu weeks out · **Best for:** a destination dinner · **Watch:** Uptown, set menu only, plan ahead.
+
+### Emeril's
+
+**Emeril's** in the Warehouse District holds two Michelin stars, the only two-star restaurant in the city, with a tasting menu now led by Emeril Lagasse's son, E.J. This is the splurge of splurges — a slow, modern Creole progression that earns its price. If you book one tasting menu in New Orleans, this is the safe bet.
+
+**The move:** the chef's tasting menu · **Best for:** a fine-dining blowout · **Watch:** two-star prices and a long, seated evening.
+
+### Compère Lapin
+
+**Compère Lapin**, in a converted Warehouse District hotel, is chef Nina Compton's Caribbean-Creole crossover — she won a James Beard Best Chef: South award and was the fan favorite on Top Chef. The curried goat and the dirty rice arancini are the signatures. It's the kind of room that reads festive without trying.
+
+**The move:** the curried goat · **Best for:** a livelier upscale dinner · **Watch:** popular — reserve ahead.
+
+### Herbsaint and Pêche
+
+**Herbsaint and Pêche** are both Donald Link projects that earn a spot on your list. Herbsaint, on St. Charles Avenue, is a bistro with a James Beard pedigree; Pêche Seafood Grill cooks whole Gulf Coast fish over an open hearth with simple ingredients and took a Best New Restaurant medal of its own. Either is a strong, slightly-less-impossible-to-book pick when the headliners are full.
+
+**The move:** whole grilled fish at Pêche · **Best for:** seafood done simply and well · **Watch:** Pêche's small plates add up.
+
+### Saint-Germain
+
+**Saint-Germain** is the tiny, hard-won reservation — a 12-seat tasting counter behind a Bywater wine bar, running a long, set menu only a few nights a week. It's for the trip built around one extraordinary meal. The wine garden out front is open to walk-ins if the dinner is booked solid, which it usually is.
+
+**The move:** the wine garden if the counter's full · **Best for:** serious food obsessives · **Watch:** tiny, set nights, books out fast.
+
+## The Newest New Orleans Restaurants to Try in 2026
+
+**The city keeps opening doors worth knocking on.** The latest New Orleans restaurants lean younger, more global, and a little less buttoned-up than the grand rooms, though several have already become hard reservations. This is where to look when you want the meal nobody back home has eaten yet.
+
+::infographic nola-new-buzzy
+
+**Acamaya** in Bywater is the breakout of the new class — chef Ana Castro cooking Mexican mariscos and masa with Gulf seafood, the kind of room that earned national lists in its first year. **The Kingsway** brings sharp modern Asian cooking to Magazine Street, while **Bacchanal** is the long-running Bywater wine garden where you grab a bottle, a cheese plate, and a backyard table under the lights with live music most evenings.
+
+For the hidden end, **N7** is a French-Japanese wine spot down an unmarked Bywater alley that remains one of the city's worst-kept secrets, and **Pizza Delicious** is the no-frills Brooklyn-style slice shop locals lean on between richer meals. For something sweet and new, **Ayu Bakehouse** turns out pastries and breakfast sandwiches that draw their own morning line. None of these is old enough to be a tradition yet, but a few are clearly headed that way.
+
+**The move:** book Acamaya as soon as your dates are set · **Best for:** trips built around what's next · **Watch:** small Bywater rooms, limited nights, plan a rideshare.
+
+## Where Locals Actually Eat in New Orleans
+
+**Here's the honest part.** The best meal of your trip might cost twelve dollars and come on a paper plate. Locals judge a restaurant on the gumbo, the value, and the wait — not the chandelier — and these are the neighborhood spots they actually send you to for real Louisiana home cooking.
+
+::infographic nola-trap-vs-local
+
+### Willie Mae's Scotch House
+
+**Willie Mae's Scotch House** in Treme serves the fried chicken that won Willie Mae Seaton a James Beard "America's Classic" award — crackly, brined, and worth the line that forms before it opens. Get there early or expect to wait, because the secret is long out. Add the butter beans, a side of cornbread, and a slice of sweet potato pie.
+
+**The move:** go at opening to beat the line · **Best for:** the fried-chicken pilgrimage · **Watch:** cash-friendly, lunch-focused, expect a queue.
+
+### Jacques-Imo's
+
+**Jacques-Imo's** Uptown is the rowdy, Carnival-colored institution where you walk through the kitchen to your table and order the shrimp-and-alligator-cheesecake without flinching. It's loud, it's a scene, and the fried chicken and Creole plates back it up. Put your name down, then drink at the bar next door while you wait.
+
+**The move:** the alligator cheesecake appetizer · **Best for:** a fun, local evening Uptown · **Watch:** long waits; no big-group reservations.
+
+### Domilise's and Clancy's
+
+**Domilise's and Clancy's** are the two Uptown classics at opposite ends of the spectrum. Domilise's is a corner po-boy shop where the roast beef comes dressed and dripping; Clancy's is the white-tablecloth neighborhood bistro where locals celebrate. One's lunch in your travel clothes, the other's dinner you book ahead — both are the real city.
+
+**The move:** a Domilise's roast-beef po-boy · **Best for:** the local Uptown spread · **Watch:** Domilise's keeps short hours; Clancy's needs a reservation.
+
+### Turkey and the Wolf and Coop's Place
+
+**Turkey and the Wolf** in the Lower Garden District turned a fried-bologna sandwich into a national story, and the collard-greens melt is no joke either. **Coop's Place** in the Quarter is the opposite mood — a dive with a rabbit-and-sausage jambalaya that punches far above the room. Between them you've got the city's casual range in two stops.
+
+**The move:** the fried-bologna sandwich; the Coop's jambalaya · **Best for:** casual, no-fuss greatness · **Watch:** small rooms, cash culture, real waits.
+
+## The New Orleans Dishes You Can't Leave Without
+
+**Order by dish, not just by restaurant.** New Orleans has a short list of things you genuinely shouldn't fly home without trying, and most of them are cheap. Here's what to eat and the spot that does each one right.
+
+::infographic nola-must-eat-dishes
+
+A **dressed po-boy** is the everyday king — shrimp or roast beef on crackly Leidenheimer French bread, "dressed" meaning lettuce, tomato, pickle, and mayo, the roast-beef version served sloppy with "debris" gravy. **Gumbo** is the soul of the place, a dark roux with the holy trinity of onion, celery, and bell pepper, served over rice. **Char-grilled oysters**, blasted over flame with a garlic-butter sauce and parmesan, were invented at Drago's and are now everywhere for good reason.
+
+Then the everyday Louisiana plates: **red beans and rice** is the Monday tradition (wash-day cooking that stuck), **jambalaya** is the one-pot workhorse, and a **muffuletta** from Central Grocery is the round Sicilian sandwich that travels. Time it right and the menu shifts with the calendar — **crawfish** boils take over spring, and **king cake** appears between Epiphany and Mardi Gras, available for roughly six weeks and then gone.
+
+For the showpieces and the sweets, line up a **beignet** at Café du Monde, a course of **turtle soup** at Commander's, and **Bananas Foster** flamed tableside at Brennan's. A food tour is the efficient way to taste several in an afternoon without planning each stop yourself.
+
+One thing that helps you order well: knowing whether a dish leans Creole or Cajun, because the same word can land two very different bowls in front of you.
+
+::infographic nola-creole-vs-cajun
+
+::activities New Orleans
+
+## Iconic Casual Eats: Beignets, Po-Boys and Muffulettas
+
+**Some of the best food in New Orleans never sees a tablecloth.** These are the to-go counters and corner institutions you'll keep coming back to — cheap, fast, and as essential as any white-linen room.
+
+**Café du Monde** has been dusting visitors in powdered sugar since 1862, open around the clock at the foot of the French Market. Order three beignets and a chicory café au lait, beat the line at dawn or after midnight, and accept that you'll wear some of it home. The City Park location is the same idea with a fraction of the crowd.
+
+**Central Grocery** on Decatur Street invented the muffuletta — a round Sicilian loaf packed with cured meats, provolone, and the olive salad that makes it sing. Get a half to start; a whole one is a commitment most people regret only physically. For po-boys, **Parkway Bakery and Tavern** in Mid-City is the local benchmark, and **Killer PoBoys** in the Quarter does a modern, globe-trotting take.
+
+If the Café du Monde line looks brutal, **Cafe Beignet** on Royal Street is the calmer alternative, with a small courtyard and live music some mornings. The beignets are squarer and the wait is shorter, which on a hot day counts for a lot.
+
+For the oyster ritual, **Drago's** (the chargrilled-oyster originators) and **Acme Oyster House** are the two names, raw on the half shell or grilled in their shells with garlic butter. Drago's chargrills them by the dozen, and the dozen is a suggestion, not a limit. Acme's line on Iberville moves faster than it looks, and the char-grilled-plus-raw combo is the order.
+
+::activity New Orleans | food tour
+
+## The Best Jazz Brunch in New Orleans
+
+**Brunch here comes with a brass band.** A jazz brunch is how New Orleans answers the question of whether it's acceptable to drink at 11am — emphatically, and in three-quarter time. It's one of the city's great Sunday rituals.
+
+**Commander's Palace** runs the famous one, a jazz trio working the room and those 25-cent martinis doing real damage to your afternoon plans. The egg dishes are the move here — poached eggs over crispy ham and hollandaise, the Creole take on a brunch egg done properly. **Court of Two Sisters** in the Quarter does a daily jazz buffet in a gorgeous courtyard, more spectacle than precision but a lovely sit.
+
+**Brennan's** turns its breakfast into a celebration with eggs Hussarde and a tableside flambé, while **Atchafalaya** Uptown runs a build-your-own Bloody Mary bar that has ended more than a few productive afternoons. For the casual, no-reservation end, **Ruby Slipper** has several locations serving eggs Benedict variations all morning, and **Elizabeth's** in Bywater is the praline-bacon institution. Most jazz brunches are served Saturday and Sunday, so plan the weekend around one.
+
+**The move:** book Commander's brunch weeks ahead · **Best for:** a slow, musical Sunday · **Watch:** the buffets are about the setting, not the cooking.
+
+## Cheap Eats and Hole-in-the-Wall Spots
+
+**You can eat brilliantly here for the price of a sandwich, because that's often exactly what it is.** A dressed shrimp po-boy runs about what a coffee costs in a fancier city, which is one of the few honest deals left in American travel. These are the spots to lean on between splurges.
+
+::infographic nola-cheap-vs-splurge
+
+**Coop's Place** and **Domilise's** carry the load — jambalaya and rabbit at the former, the dripping roast-beef po-boy at the latter. **Mother's** near the CBD is the famous one for the "Ferdi" debris po-boy and a baked-ham breakfast, a line that moves and a bill that doesn't sting. **Verti Marte** in the Quarter is the 24-hour corner store with a hot deli counter, home of the "All That Jazz" po-boy and the patron saint of 2am decisions.
+
+For the deeper-cut cheap eats, **Pagoda Café** does a sunny Mid-City breakfast, **Slim's Goodies** is the cash-only diner locals send you to, and after a late night the food trucks parked under the Claiborne overpass serve tacos and plates well past midnight. **Killer PoBoys** and **Heard Dat Kitchen** round out the list when you want something a notch more ambitious without the white-tablecloth bill.
+
+The rule of thumb holds: the less a place advertises "authentic," the more authentic it usually is. Follow the line, not the neon.
+
+## Coffee, Vegan and Global New Orleans Dining
+
+**Not every meal here is gumbo and roux.** Between the Creole classics, New Orleans dining has a strong coffee habit and a deeper global bench than its reputation suggests — useful when you need a break from butter. Here's where to find it.
+
+Start with the coffee. New Orleans drinks its chicory coffee strong and a little bitter, the wartime workaround that became a local tradition; **Café du Monde** is the famous pour, but third-wave spots like **French Truck** and **Mammoth Espresso** handle the serious cup. For breakfast that isn't fried, **Willa Jean** in the Central Business District is the bakery-café where pastry chef Kelly Fields won a James Beard award.
+
+On the global and plant-based side, **Saba** on Magazine Street is chef Alon Shaya's James Beard-winning Israeli kitchen, with hummus and pita good enough to cross town for and plenty for vegetarians. **Magasin** does clean, affordable Vietnamese (the verm+ bowls and pho travel well to a hotel room), **Aroma** covers Indian, and the vegan scene has grown from a novelty into a real category. You won't go hungry here on any diet, which is more than most American food cities can say.
+
+**The move:** a chicory café au lait, then a Saba lunch · **Best for:** a butter break or a specific diet · **Watch:** Magazine Street spreads out — pick a stretch.
+
+## The Best New Orleans Restaurants by Neighborhood
+
+**Where you stay shapes what you eat.** New Orleans is walkable in pockets, so basing yourself near the restaurants you came for saves a lot of cab fare.
+
+And if a proper steak is what you're after between Creole meals, Dickie Brennan's Steakhouse in the Quarter and Doris Metropolitan on Chartres are the two most diners reach for. Here's the quick map, with a place to sleep in each.
+
+| Restaurant | Neighborhood | Known for | Price | Booking |
+|---|---|---|---|---|
+| Antoine's | French Quarter | Oysters Rockefeller, 1840 history | $$$ | Reserve ahead |
+| Galatoire's | French Quarter | Friday lunch, Creole classics | $$$ | Downstairs walk-in |
+| Commander's Palace | Garden District | Turtle soup, jazz brunch | $$$ | Reserve weeks ahead |
+| Dakar NOLA | Uptown | Senegalese-Creole tasting menu | $$$$ | Reserve far ahead |
+| Emeril's | Warehouse District | Two Michelin stars, tasting menu | $$$$ | Reserve far ahead |
+| Compère Lapin | Warehouse District | Caribbean-Creole, curried goat | $$$ | Reserve ahead |
+| Dooky Chase's | Treme | Gumbo, fried chicken, history | $$ | Lunch buffet |
+| Willie Mae's Scotch House | Treme | James Beard fried chicken | $ | Walk in, expect a line |
+| Café du Monde | French Quarter | Beignets, café au lait | $ | Walk in, 24 hours |
+| Parkway Bakery | Mid-City | Po-boys | $ | Walk in |
+
+The **French Quarter** keeps you steps from Antoine's, Galatoire's, Café du Monde, and Central Grocery — the densest eating in the city. The **Hotel Monteleone** is the grand Quarter classic, home to the slowly rotating Carousel Bar, and it puts you in the middle of all of it.
+
+::hotel lp6583c58d
+
+For the Quarter with its own marquee dining downstairs, the **Royal Sonesta** sits right on Bourbon with the Desire Oyster Bar and Restaurant R'evolution under the same roof.
+
+::hotel lp1c186
+
+The **Warehouse District** is the modern-dining base — Emeril's, Compère Lapin, and Pêche are all walkable, and the **NOPSI Hotel** anchors the neighboring CBD with a rooftop pool and an easy stroll to dinner.
+
+::hotel lpa440f
+
+Uptown is quieter and leafier, close to Dakar NOLA, Clancy's, and Domilise's, with the St. Charles streetcar at the door. The **Alder Hotel** is the comfortable, well-rated Uptown pick for eaters who want to escape the Quarter's noise after dark.
+
+::hotel lpaf414
+
+::infographic nola-dining-callout
+
+## How to Get a Table: Reservations and Dress Code
+
+**The food is easy; the table is the puzzle.** The marquee rooms book up fast, especially on festival weekends, and a couple of them play by old-school rules. A little planning is the difference between Commander's and a gas-station po-boy you'll narrate to a therapist.
+
+::infographic nola-reservations
+
+Reserve **Commander's, Antoine's, Emeril's, and Dakar NOLA** two to eight weeks out, and 2+ months ahead for Mardi Gras, Jazz Fest, or Essence weekends. Most book through Resy, OpenTable, or Tock, and the tasting-menu spots release dates on a rolling basis — set a reminder for when yours opens, because the prime slots vanish the day they go live.
+
+If nothing's available, lunch is the back door: the same kitchens are far easier to get into midday, and the menu is often the better value. Reservations are recommended almost everywhere good, and it pays to arrive a few minutes early, because tables here run on a schedule even when the meal doesn't.
+
+If the planning feels like a lot, a guided food tour does the legwork: a good one includes several stops, offers a guide who knows the kitchens, and serves up the tasting-as-you-go version of Louisiana's whole table in one afternoon.
+
+The insider move is **Galatoire's downstairs**, which takes no reservations at all — show up early, queue, and you're in the main dining room with the regulars. For the dress code, jackets are required for men at Galatoire's after 5pm and on Sundays, and Commander's asks for collared shirts and no shorts; most everywhere else is happily casual, which is good news for first-time visitors who packed light.
+
+One more local habit worth copying: tip well. Service in the grand rooms is a genuine craft here, and 20% and up is the floor. If you want to cook some of this at home, a Creole cooking class is the culinary souvenir that actually survives the flight.
+
+::activity New Orleans | cooking class
+
+## Where to Stay for the Food in New Orleans
+
+**Pick your base around your appetite.** Stay in or near the **French Quarter** and almost everything on this list is a walk, a streetcar, or a short ride away — Antoine's and Galatoire's at your feet, the Garden District and Uptown a streetcar ride out, the Warehouse District a few blocks over. Drop your bags, walk to dinner, wander home from the music without ever needing a car.
+
+For a first-time visitor who wants charm without the top-tier price, the **French Market Inn** sits on the quiet, downriver edge of the Quarter, within walking distance of Central Grocery and the riverfront, with a courtyard pool to come home to.
+
+::hotel lp1da18
+
+For the full area-by-area breakdown, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans), or browse the [New Orleans hotels hub](/hotels/new-orleans). Planning the rest of the trip? Pair this with [the best things to do in New Orleans](/blog/things-to-do-in-new-orleans), [the best time to visit](/blog/best-time-to-visit-new-orleans), and [day trips out of the city](/blog/day-trips-from-new-orleans) for the Cajun food beyond the parish line.
+
+However you fill your table, the price you book your room at here is the same one everyone else sees — no surveillance pricing, no fake "deal," no fee sprung on the last screen. Lock the rate, pick your reservations, and let Louisiana do the rest. For more on the city beyond the menu, the local tourism board's [restaurant guide](https://www.neworleans.com/restaurants/) and the daily critics at [nola.com](https://www.nola.com/entertainment_life/eat-drink/) keep the current openings straight.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "day-trips-from-new-orleans",
     title: "Best Day Trips from New Orleans (2026)",
     description:
@@ -1144,7 +1465,7 @@ You don't really **visit** New Orleans so much as eat your way across it. The **
 
 Beyond beignets, the must-eats are a **po-boy** (get a shrimp one, dressed), a bowl of gumbo, and a plate of char-grilled oysters. For the splurge, the grand Creole **restaurants** — Commander's Palace, Antoine's, Galatoire's — are an experience as much as a meal.
 
-Don't **miss** a jazz brunch, which is the most New Orleans way to eat eggs there is. Come hungry **every** single day, and walk between meals to make room.
+Don't **miss** a jazz brunch, which is the most New Orleans way to eat eggs there is. Come hungry **every** single day, and walk between meals to make room. For the full rundown, see our guide to the [best restaurants in New Orleans](/blog/best-restaurants-in-new-orleans).
 
 ## Browse the French Market and Magazine Street
 
@@ -1572,7 +1893,7 @@ The **Drury Plaza** is the value pick, with free evening drinks and snacks that 
 
 ## The Warehouse District: Museums, Galleries and Lofts
 
-The Warehouse and Arts District is downtown's **grown-up corner** — old warehouses turned into art galleries, lofts and the National WWII Museum, just upriver from the CBD. Julia Street's galleries, the Ogden and the Contemporary Arts Center anchor it, and some of the city's best newer restaurants are within walking distance. It's where to stay in New Orleans if you'd rather spend a morning at a museum than a night on Bourbon Street.
+The Warehouse and Arts District is downtown's **grown-up corner** — old warehouses turned into art galleries, lofts and the National WWII Museum, just upriver from the CBD. Julia Street's galleries, the Ogden and the Contemporary Arts Center anchor it, and some of the city's [best newer restaurants](/blog/best-restaurants-in-new-orleans) are within walking distance. It's where to stay in New Orleans if you'd rather spend a morning at a museum than a night on Bourbon Street.
 
 The easy access to both the Quarter and the convention center makes it a quiet, central base. Your one real decision is museum mornings or Bourbon Street nights.
 
