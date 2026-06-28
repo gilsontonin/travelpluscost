@@ -82,26 +82,38 @@ export default function BookingForm(props: Props) {
   const prefetch = useRef<Promise<PrebookData> | null>(null);
   const prefetchStarted = useRef(false);
 
-  const requestPrebook = (): Promise<PrebookData> =>
-    fetch("/api/prebook", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        hotelId: props.hotelId,
-        room: props.room,
-        checkin: props.checkin,
-        checkout: props.checkout,
-        adults: props.adults,
-        // Lock the SAME room/rate the guest saw + charge the price they accepted ("one true price").
-        board: props.board,
-        refundable: props.refundable === "1",
-        agreedPrice: Number(props.total) || undefined,
-      }),
-    }).then(async (res) => {
+  // One prebook attempt with a 20s timeout (LiteAPI's prebook can stall). On a timeout/transient failure we
+  // retry ONCE — since this is prefetched while the guest types, the retry usually finishes before they click.
+  const requestPrebook = async (attempt = 0): Promise<PrebookData> => {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 20000);
+    try {
+      const res = await fetch("/api/prebook", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        signal: ctrl.signal,
+        body: JSON.stringify({
+          hotelId: props.hotelId,
+          room: props.room,
+          checkin: props.checkin,
+          checkout: props.checkout,
+          adults: props.adults,
+          // Lock the SAME room/rate the guest saw + charge the price they accepted ("one true price").
+          board: props.board,
+          refundable: props.refundable === "1",
+          agreedPrice: Number(props.total) || undefined,
+        }),
+      });
       const d = await res.json();
       if (!res.ok) throw new Error(d?.error || "Could not confirm the room.");
       return d as PrebookData;
-    });
+    } catch (e) {
+      if (attempt < 1) return requestPrebook(attempt + 1); // one silent auto-retry on a slow/failed call
+      throw e instanceof Error && e.name === "AbortError" ? new Error("Confirming the room is taking longer than usual — please try again.") : e;
+    } finally {
+      clearTimeout(timer);
+    }
+  };
 
   // Warm everything up while the guest is typing: preload the payment SDK script AND kick off the
   // prebook (2 rate calls + walking production offers takes several seconds). By the time they click

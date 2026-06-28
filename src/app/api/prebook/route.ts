@@ -20,15 +20,23 @@ export async function POST(req: Request) {
 
   try {
     // Logged-in → charge the member price (below SSP, a permitted closed user group). Same as the price
-    // the cards/rooms/book page showed, so discovery → pay is one consistent number.
-    const { data: auth } = await (await authServer()).auth.getUser();
+    // the cards/rooms/book page showed, so discovery → pay is one consistent number. A corrupted/expired
+    // auth cookie must NEVER block a booking: if the member check throws (e.g. a bad base64 cookie →
+    // "The string did not match the expected pattern"), fall back to a guest (public) price and proceed.
+    let isMember = false;
+    try {
+      const { data: auth } = await (await authServer()).auth.getUser();
+      isMember = !!auth.user;
+    } catch {
+      isMember = false;
+    }
     const result = await sandboxPrebook({
       hotelId: String(body.hotelId),
       room: String(body.room),
       checkin: String(body.checkin),
       checkout: String(body.checkout),
       adults: Number(body.adults) || 2,
-      member: !!auth.user,
+      member: isMember,
       // Lock the SAME room the guest saw + charge the price they accepted ("one true price").
       board: body.board ? String(body.board) : undefined,
       refundable: typeof body.refundable === "boolean" ? body.refundable : undefined,
