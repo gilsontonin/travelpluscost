@@ -13,6 +13,7 @@ type Props = {
   checkin: string;
   checkout: string;
   adults: string;
+  board: string;
   refundable: string; // "1" | "0"
   freeCancelBefore: string;
 };
@@ -24,6 +25,7 @@ interface PrebookData {
   price: number; // amount charged NOW (room + online taxes, margin applied)
   currency: string;
   feesAtProperty: number; // mandatory fees paid at the hotel — NOT charged now
+  priceChanged?: boolean; // the room's live price rose above what was shown — the amount above is current
 }
 
 declare global {
@@ -90,6 +92,10 @@ export default function BookingForm(props: Props) {
         checkin: props.checkin,
         checkout: props.checkout,
         adults: props.adults,
+        // Lock the SAME room/rate the guest saw + charge the price they accepted ("one true price").
+        board: props.board,
+        refundable: props.refundable === "1",
+        agreedPrice: Number(props.total) || undefined,
       }),
     }).then(async (res) => {
       const d = await res.json();
@@ -218,6 +224,11 @@ export default function BookingForm(props: Props) {
               </>
             ) : null}
           </p>
+          {prebook.priceChanged ? (
+            <p className="text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 mb-3">
+              Heads up — this room&apos;s price changed since you viewed it. The amount above is the current price.
+            </p>
+          ) : null}
           {/* LiteAPI Payment SDK mounts the card form here */}
           <div id="pe" className="min-h-[220px]" />
         </section>

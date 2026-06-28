@@ -25,6 +25,7 @@ export default async function BookPage({
   const checkin = sp.checkin ?? "";
   const checkout = sp.checkout ?? "";
   const adults = sp.adults ?? "2";
+  const board = sp.board ?? "";
   const refundable = sp.refundable === "1";
   const freeCancelBefore = sp.freeCancelBefore ?? "";
   const cancelLabel = refundable
@@ -72,6 +73,7 @@ export default async function BookPage({
           checkin={checkin}
           checkout={checkout}
           adults={adults}
+          board={board}
           refundable={refundable ? "1" : "0"}
           freeCancelBefore={freeCancelBefore}
         />

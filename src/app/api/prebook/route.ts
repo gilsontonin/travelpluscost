@@ -29,6 +29,10 @@ export async function POST(req: Request) {
       checkout: String(body.checkout),
       adults: Number(body.adults) || 2,
       member: !!auth.user,
+      // Lock the SAME room the guest saw + charge the price they accepted ("one true price").
+      board: body.board ? String(body.board) : undefined,
+      refundable: typeof body.refundable === "boolean" ? body.refundable : undefined,
+      agreedPrice: Number(body.agreedPrice) || undefined,
     });
     return NextResponse.json(result);
   } catch (e) {

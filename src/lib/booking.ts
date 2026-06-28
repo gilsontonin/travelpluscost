@@ -42,6 +42,8 @@ interface TaxFee {
 }
 interface RateLite {
   name?: string;
+  boardName?: string;
+  cancellationPolicies?: { refundableTag?: string };
   retailRate?: {
     total?: { amount: number }[];
     suggestedSellingPrice?: { amount: number }[];
@@ -65,6 +67,11 @@ export interface PrebookInput {
   checkout: string;
   adults: number;
   member?: boolean; // logged-in → charge the member price (below SSP); set by the /api/prebook route
+  // The identity of the rate the guest actually saw + accepted on the card — so prebook re-prices the
+  // SAME room (never substitutes a cheaper one) and charges the price they agreed to ("one true price").
+  board?: string;       // displayed board name (e.g. "Room Only")
+  refundable?: boolean; // displayed cancellation terms — keeps the "free cancellation" promise honest
+  agreedPrice?: number; // the online price the guest saw + accepted — we charge THIS, capped to never go below cost
 }
 export interface PrebookResult {
   prebookId: string;
@@ -75,6 +82,7 @@ export interface PrebookResult {
   room: string;
   feesAtProperty: number; // sum of mandatory fees paid AT the hotel — NOT in `price`
   propertyFees: PropertyFeeLite[];
+  priceChanged?: boolean; // true if the room's live cost rose above the agreed price (we charge the new, higher price)
 }
 export interface BookInput {
   prebookId: string;
@@ -204,6 +212,8 @@ export async function cancelBooking(bookingId: string): Promise<CancelResult> {
 interface Offer {
   offerId: string;
   room: string;
+  board: string;
+  refundable: boolean;
   net: number; // retailRate.total — what the widget would charge for this offer
   ssp: number;
   fees: PropertyFeeLite[];
@@ -244,6 +254,8 @@ async function fetchOffers(input: PrebookInput, margin?: number): Promise<Offer[
         out.push({
           offerId,
           room: name,
+          board: rate.boardName ?? "",
+          refundable: rate.cancellationPolicies?.refundableTag === "RFN",
           net,
           ssp: typeof ssp === "number" ? ssp : net,
           fees: feesFrom(rate),
@@ -259,49 +271,57 @@ async function fetchOffers(input: PrebookInput, margin?: number): Promise<Offer[
 // member CHARGE must equal the member price shown on the cards/rooms/book page. INTERNAL — never display.
 const MEMBER_MARGIN_PCT = 15;
 
-// Smallest 2-decimal margin% that lifts net to >= SSP (decimals are supported per LiteAPI docs).
-// LiteAPI rule: never sell BELOW the suggested selling price on a public site — so PUBLIC bookings price at
-// SSP, not raw wholesale. MEMBER bookings (a permitted "closed user group") price at min(net×1.15, SSP).
-function marginToSSP(net: number, ssp: number): number {
-  if (!(net > 0) || !(ssp > net)) return 0;
-  return Math.ceil((ssp / net - 1) * 10000) / 100;
-}
+// The member CHARGE: cost + our flat fee, capped at SSP (a member never pays above the public price).
+const memberCharge = (net: number, ssp: number) => Math.min(Math.round(net * (1 + MEMBER_MARGIN_PCT / 100)), Math.round(ssp));
 
-// Step 1 — price the chosen room AT its SSP, prebook with the Payment SDK enabled.
-// Production has real availability: many offers 409 ("no availability"). So we walk MANY priced
-// offers (matched room first, then cheapest), trying each until one prebooks — never charging
-// below the room's SSP.
-const MAX_PREBOOK_ATTEMPTS = 10;
+// Step 1 — re-price the EXACT room the guest selected and prebook it with the Payment SDK enabled.
+// We match the SAME room (and, where available, the same board + cancellation terms) the card showed, then
+// price it to the amount the guest accepted — the "one true price" (PRICING.md §4c). We NEVER substitute a
+// cheaper room, NEVER charge below our cost, and (public site only) NEVER below SSP. If the room's cost has
+// risen above the agreed price we fall back to the honest live price; if it's gone we report it sold out.
+const MAX_PREBOOK_ATTEMPTS = 6;
 export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult> {
-  const base = await fetchOffers(input); // no margin: discover net + SSP
+  const base = await fetchOffers(input); // discover net + SSP + board + cancellation per offer
   if (!base.length) throw new Error("No availability for this hotel/date.");
   const want = canonRoom(input.room);
 
-  // SSP floor per room (the price we must never sell below on a public site).
-  const sspByKey = new Map<string, number>();
-  for (const o of base) {
-    const cur = sspByKey.get(o.key);
-    if (cur == null || o.ssp < cur) sspByKey.set(o.key, o.ssp);
-  }
+  // Only the SAME room the guest picked — we never swap in a different (cheaper) room.
+  const sameRoom = base.filter((o) => o.key === want);
+  if (!sameRoom.length) throw new Error("This room just sold out — please choose another room.");
 
-  // One margin tuned to the chosen (matched, else cheapest) room. Members charge at the member price
-  // (cost + flat fee, capped at SSP → the smaller of the member markup and the SSP margin); public at SSP.
-  // Same number the cards/rooms/book page already showed (PRICING.md §4c).
-  base.sort((a, b) => Number(b.key === want) - Number(a.key === want) || a.ssp - b.ssp);
-  const margin = input.member
-    ? Math.min(MEMBER_MARGIN_PCT, marginToSSP(base[0].net, base[0].ssp))
-    : marginToSSP(base[0].net, base[0].ssp);
-  const priced = margin > 0 ? await fetchOffers(input, margin) : base;
-  // Try the matched room first, then by ascending charge.
-  priced.sort((a, b) => Number(b.key === want) - Number(a.key === want) || a.net - b.net);
+  // Prefer the same cancellation terms (keeps the "free cancellation" promise honest), then the same board,
+  // then the cheapest cost (so any upside stays our margin). We charge the agreed price either way.
+  const matchScore = (o: Offer) =>
+    (input.refundable == null || o.refundable === input.refundable ? 2 : 0) + (!input.board || o.board === input.board ? 1 : 0);
+  // Members rank by cheapest COST (we charge the agreed price, so the cheapest rate maximises our margin);
+  // the public ranks by cheapest SSP — the exact rate the rooms page displayed — so the SSP we charge matches.
+  sameRoom.sort((a, b) => matchScore(b) - matchScore(a) || (input.member ? a.net - b.net : a.ssp - b.ssp));
 
   let lastError = "No bookable rate for this room.";
-  let attempts = 0;
-  for (const offer of priced) {
-    const floor = sspByKey.get(offer.key);
-    if (!input.member && floor != null && offer.net < floor - 0.5) continue; // public: never below SSP (members may)
-    if (attempts >= MAX_PREBOOK_ATTEMPTS) break;
-    attempts++;
+  for (const cand of sameRoom.slice(0, MAX_PREBOOK_ATTEMPTS)) {
+    // Charge = the price the guest agreed to. Guardrails: never below our cost; public never below SSP. If the
+    // cost has RISEN above the agreed price, charge the honest live price (member markup, else SSP) instead.
+    let target = input.agreedPrice && input.agreedPrice > 0 ? input.agreedPrice : input.member ? memberCharge(cand.net, cand.ssp) : Math.round(cand.ssp);
+    if (target < cand.net) target = input.member ? memberCharge(cand.net, cand.ssp) : Math.round(cand.ssp); // cost rose past agreed
+    if (!input.member && target < cand.ssp) target = Math.round(cand.ssp); // public floor = SSP
+    // Margin (floored, so the charge never lands ABOVE what they agreed) that lifts our cost up to the target.
+    const margin = cand.net > 0 ? Math.max(0, Math.floor((target / cand.net - 1) * 10000) / 100) : 0;
+
+    // Re-fetch at that margin to get the binding (margin-priced) offerId for THIS same rate.
+    let priced: Offer = cand;
+    if (margin > 0) {
+      let list: Offer[];
+      try {
+        list = await fetchOffers(input, margin);
+      } catch (e) {
+        lastError = e instanceof Error ? e.message : String(e);
+        continue;
+      }
+      priced =
+        list.find((p) => p.key === cand.key && p.board === cand.board && p.refundable === cand.refundable) ??
+        list.find((p) => p.key === cand.key) ??
+        cand;
+    }
     try {
       const pre = await call<{
         prebookId: string;
@@ -309,27 +329,32 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
         transactionId?: string;
         price?: number;
         currency?: string;
-      }>(`${BOOK}/rates/prebook`, { offerId: offer.offerId, usePaymentSdk: true });
+      }>(`${BOOK}/rates/prebook`, { offerId: priced.offerId, usePaymentSdk: true });
       if (pre.prebookId && pre.secretKey && pre.transactionId && typeof pre.price === "number") {
-        if (!input.member && floor != null && pre.price < floor - 0.5) {
-          lastError = "Confirmed price was below SSP.";
-          continue; // compliance: never charge below SSP on PUBLIC bookings (members may — closed user group)
+        if (pre.price < cand.net - 0.5) {
+          lastError = "Confirmed price below cost.";
+          continue; // never charge below our wholesale cost
         }
-        const feeSum = Math.round(offer.fees.reduce((s, f) => s + f.amount, 0) * 100) / 100;
+        if (!input.member && pre.price < cand.ssp - 0.5) {
+          lastError = "Confirmed price was below SSP.";
+          continue; // public site: never below SSP (members may — closed user group)
+        }
+        const feeSum = Math.round(cand.fees.reduce((s, f) => s + f.amount, 0) * 100) / 100;
         return {
           prebookId: pre.prebookId,
           secretKey: pre.secretKey,
           transactionId: pre.transactionId,
           price: pre.price,
           currency: pre.currency ?? "USD",
-          room: offer.room,
+          room: cand.room,
           feesAtProperty: feeSum,
-          propertyFees: offer.fees,
+          propertyFees: cand.fees,
+          priceChanged: !!(input.agreedPrice && input.agreedPrice > 0 && pre.price > input.agreedPrice + 0.5),
         };
       }
       lastError = "Prebook did not return Payment SDK credentials.";
     } catch (e) {
-      lastError = e instanceof Error ? e.message : String(e); // e.g. 409 "no availability" → try next
+      lastError = e instanceof Error ? e.message : String(e); // 409 → try the next rate of this SAME room
     }
   }
   throw new Error(lastError);
