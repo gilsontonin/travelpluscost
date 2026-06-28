@@ -319,7 +319,11 @@ export function memberPrice(net: number | undefined, ssp: number): number | unde
   return typeof net === "number" ? Math.min(Math.round(net * MEMBER_MARKUP), Math.round(ssp)) : undefined;
 }
 
-/** Cheapest SSP price per hotel (for result cards). */
+/** Cheapest BOOKABLE price per hotel (for result/blog cards). Derived from getRooms — the SAME call + cache
+ *  the property page uses — so the card "from" price IS the page's cheapest bookable rate. (Previously this
+ *  made its own separate rate call, which returned a different rate set than the page → card ≠ page, even a
+ *  bait-and-switch. Sharing getRooms makes them identical by construction, and removes the separate cache
+ *  that could drift.) */
 export async function getPrices(
   ids: string[],
   ci: string,
@@ -327,46 +331,18 @@ export async function getPrices(
   adults: number,
 ): Promise<Record<string, Price>> {
   if (!ids.length) return {};
-  const n = nightsBetween(ci, co);
-  const key = `prices|${ci}|${co}|${adults}|${[...ids].sort().join(",")}`;
-  const hit = await readCache<Record<string, Price>>(key);
-  if (hit) return hit;
-
-  // LiteAPI caps hotels per rates call, so chunk + fetch in parallel + merge.
-  const chunks: string[][] = [];
-  for (let i = 0; i < ids.length; i += 20) chunks.push(ids.slice(i, i + 20));
-  // roomMapping:true + only rooms with an offerId — the EXACT same rate set the property page (getRooms)
-  // shows + can book. Without this the card counts non-bookable rates the page never offers, so the card
-  // "from" price diverged from the page's cheapest (sometimes a bait-and-switch). Card == page now.
-  const results = await Promise.all(chunks.map((c) => fetchRates(c, ci, co, adults, true, 10)));
-
   const out: Record<string, Price> = {};
-  for (const data of results) {
-    for (const rh of data) {
-      let best: Money | undefined;
-      let bestRate: RateObj | undefined;
-      let bestRefundable = false;
-      for (const rt of rh.roomTypes ?? []) {
-        if (!rt.offerId) continue; // only bookable offers — match getRooms so the card price is real
-        for (const r of rt.rates ?? []) {
-          const sp = r.retailRate?.suggestedSellingPrice?.[0];
-          if (sp && typeof sp.amount === "number" && (!best || sp.amount < best.amount)) {
-            best = sp;
-            bestRate = r;
-            bestRefundable = r.cancellationPolicies?.refundableTag === "RFN";
-          }
-        }
+  await Promise.all(
+    ids.map(async (id) => {
+      try {
+        const { offers } = await getRooms(id, ci, co, adults); // sorted ascending by price.amount + cached
+        const cheapest = offers[0];
+        if (cheapest) out[id] = { ...cheapest.price, refundable: cheapest.refundable };
+      } catch {
+        /* a hotel with no availability just gets no card price */
       }
-      if (best) {
-        const fees = bestRate ? propertyFeesTotal(bestRate) : 0;
-        // Member price = cost + our flat fee, capped at SSP (a member never pays above the public price).
-        // Computed from net; `net` NEVER leaves the server — only `member` (the final price) does.
-        const member = memberPrice(bestRate?.retailRate?.total?.[0]?.amount, best.amount);
-        out[rh.hotelId] = { ...priced(best, n, fees), refundable: bestRefundable, member };
-      }
-    }
-  }
-  await writeCache(key, out);
+    }),
+  );
   return out;
 }
 
