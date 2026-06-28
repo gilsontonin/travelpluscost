@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getOahuHotel } from "@/lib/oahu";
+import { getDirectoryHotel } from "@/lib/directory";
 import Checkout from "@/components/Checkout";
 import TrackEvent from "@/components/TrackEvent";
 
@@ -31,8 +31,10 @@ export default async function BookPage({
       : "Fully refundable"
     : "Non-refundable";
 
-  const hotel = hotelId ? getOahuHotel(hotelId) : null;
-  const image = hotel?.images?.[0];
+  // Full national directory (not the Oahu-only shim), so the summary shows the right name + photo for ANY
+  // hotel — matches what the confirmation page already uses.
+  const hotel = hotelId ? await getDirectoryHotel(hotelId) : null;
+  const image = hotel?.thumbnail ?? undefined;
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8">
