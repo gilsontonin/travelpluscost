@@ -335,7 +335,10 @@ export async function getPrices(
   // LiteAPI caps hotels per rates call, so chunk + fetch in parallel + merge.
   const chunks: string[][] = [];
   for (let i = 0; i < ids.length; i += 20) chunks.push(ids.slice(i, i + 20));
-  const results = await Promise.all(chunks.map((c) => fetchRates(c, ci, co, adults, false, 10)));
+  // roomMapping:true + only rooms with an offerId — the EXACT same rate set the property page (getRooms)
+  // shows + can book. Without this the card counts non-bookable rates the page never offers, so the card
+  // "from" price diverged from the page's cheapest (sometimes a bait-and-switch). Card == page now.
+  const results = await Promise.all(chunks.map((c) => fetchRates(c, ci, co, adults, true, 10)));
 
   const out: Record<string, Price> = {};
   for (const data of results) {
@@ -344,6 +347,7 @@ export async function getPrices(
       let bestRate: RateObj | undefined;
       let bestRefundable = false;
       for (const rt of rh.roomTypes ?? []) {
+        if (!rt.offerId) continue; // only bookable offers — match getRooms so the card price is real
         for (const r of rt.rates ?? []) {
           const sp = r.retailRate?.suggestedSellingPrice?.[0];
           if (sp && typeof sp.amount === "number" && (!best || sp.amount < best.amount)) {
