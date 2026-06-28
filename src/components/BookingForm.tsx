@@ -16,6 +16,8 @@ type Props = {
   board: string;
   refundable: string; // "1" | "0"
   freeCancelBefore: string;
+  // Fired when prebook confirms, so the price sidebar can reconcile to the EXACT charged amount.
+  onConfirmed?: (d: { price: number; priceChanged?: boolean }) => void;
 };
 
 interface PrebookData {
@@ -205,6 +207,7 @@ export default function BookingForm(props: Props) {
       }
       if (!data) data = await requestPrebook();
       setPrebook(data);
+      props.onConfirmed?.({ price: data.price, priceChanged: data.priceChanged });
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not confirm the room.");
     } finally {

@@ -362,11 +362,7 @@ export async function sandboxPrebook(input: PrebookInput): Promise<PrebookResult
 
 // Step 2 — after the card is charged by the Payment SDK, finalise the reservation.
 export async function sandboxBookWithTransaction(input: BookInput): Promise<BookingResult> {
-  const booked = await call<{
-    bookingId?: string;
-    hotelConfirmationCode?: string;
-    status?: string;
-  }>(`${BOOK}/rates/book`, {
+  const body = {
     prebookId: input.prebookId,
     holder: { firstName: input.firstName, lastName: input.lastName, email: input.email },
     guests: [
@@ -375,12 +371,27 @@ export async function sandboxBookWithTransaction(input: BookInput): Promise<Book
     payment: { method: "TRANSACTION_ID", transactionId: input.transactionId },
     // Idempotency key: the booking-complete return URL can fire twice (reload/back), and the card
     // is already charged by then — a stable reference per paid transaction lets LiteAPI dedupe
-    // instead of creating a second reservation on the same charge.
+    // instead of creating a second reservation on the same charge. It also makes the retry below safe.
     clientReference: input.transactionId,
-  });
-  return {
-    bookingId: booked.bookingId ?? "—",
-    confirmationCode: booked.hotelConfirmationCode ?? booked.bookingId ?? "—",
-    status: booked.status ?? "UNKNOWN",
   };
+  // The card is ALREADY charged before this runs, so a transient finalise failure must not lose the
+  // reservation. Retry the (idempotent) book call a few times before surfacing an error to the guest.
+  let lastErr: unknown = new Error("Booking finalisation failed.");
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const booked = await call<{ bookingId?: string; hotelConfirmationCode?: string; status?: string }>(
+        `${BOOK}/rates/book`,
+        body,
+      );
+      return {
+        bookingId: booked.bookingId ?? "—",
+        confirmationCode: booked.hotelConfirmationCode ?? booked.bookingId ?? "—",
+        status: booked.status ?? "UNKNOWN",
+      };
+    } catch (e) {
+      lastErr = e;
+      if (attempt < 2) await new Promise((r) => setTimeout(r, 700 * (attempt + 1)));
+    }
+  }
+  throw lastErr instanceof Error ? lastErr : new Error("Booking finalisation failed.");
 }
