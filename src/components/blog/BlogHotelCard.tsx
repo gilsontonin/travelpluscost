@@ -8,9 +8,10 @@ import { money, reviewLabel } from "@/lib/format";
 import { useHotelPrice, useStayDates } from "@/components/blog/BlogPriceProvider";
 
 // Inline hotel card for blog posts — `::hotel <hotelId>`. Photo-forward (OTA-style), with a guest-score
-// badge and a live "from $X/night · all-in" SSP fetched client-side via BlogPriceProvider (one batched
-// call per page). Falls back to "See your price" when there's no near-term availability. SSP = the public
-// price, the same for everyone — never the net cost or markup.
+// badge and a live "from $X/night" price fetched client-side via BlogPriceProvider. The price is the same
+// ONLINE lead price the property page shows (member price if logged in, else public SSP) for the same
+// dates the card links to — so card == page == checkout. At-property fees are disclosed on the page, not
+// bundled into the teaser. Falls back to "See your price" when there's no near-term availability.
 export default function BlogHotelCard({ hotel }: { hotel: DirectoryHotel }) {
   const { checkin, checkout } = useStayDates();
   // Link on the SAME dates the card was priced for, so the property page (and checkout) shows the exact
@@ -58,7 +59,7 @@ export default function BlogHotelCard({ hotel }: { hotel: DirectoryHotel }) {
               <>
                 <span className="text-xs text-black/45">from </span>
                 <span className="text-xl font-bold tracking-tight text-black">
-                  {money(Math.round((price.allIn ?? price.amount) / price.nights), price.currency)}
+                  {money(Math.round((price.member ?? price.amount) / price.nights), price.currency)}
                 </span>
                 <span className="text-xs text-black/55">/night</span>
               </>
