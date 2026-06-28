@@ -67,7 +67,7 @@ people enjoy and skim easily converts better than one that ranks and bounces.
 ## 3. THE WORKFLOW (in order)
 1. `npm run blog:next -- "<City>"` — inventory pre-flight (≥8 rate-verified hotels) + the rate-verified card
    pool + the area list. `npm run blog:pros -- "<City>"` — backfills "Guests loved …" on the cards.
-2. `npm run blog:kd -- "<city>"` — the keyword cluster (head vol/KD + variants → FAQ + section seeds).
+2. **Keyword + the keyword MAP (full ref `References/KeywordResearch.md`):** `npm run blog:cluster -- "<city>"` (explore the Semrush-CSV topics) → `npm run blog:map -- "<city>"` (the priority queue → `content/keyword-map-<slug>.md`). **Pull the next keyword from the map. KD is a band, NOT a gate** — go broad: write easy KD<30 quick-wins (spokes that rank + link up) AND juicy KD 50–70+ pillars (anchor posts → topical authority). `blog:kd` adds head/variants for the FAQ + sections.
 3. **STEP 1 — SCAN THE TOP 3 (mandatory; the SERP already has the answer — do this BEFORE writing a word).**
    WebSearch the keyword → take the GENUINE top ranking guides (skip Reddit/Wikipedia/YouTube/news/OTA
    listings). Then run BOTH halves of the scan (Semrush is dropped — this is free and replaces Surfer/

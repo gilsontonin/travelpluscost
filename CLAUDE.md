@@ -25,6 +25,8 @@ eventual revenue.
 When asked to write or edit ANY blog post, BEFORE writing a word:
 1. Read `docs/blog-system/BLOG-PLAYBOOK.md` and `docs/blog-system/TheBible.md` and follow them top to
    bottom. (The playbook is the governing writing + QA/QC contract; do not free-write, do not skip steps.)
+1a. Pick the next keyword from the **keyword map** (`npm run blog:map -- "<city>"` → `content/keyword-map-<slug>.md`;
+   `References/KeywordResearch.md`). **KD is a band, not a gate** — go broad: easy KD<30 spokes + juicy KD 50–70+ pillars.
 1b. BEFORE writing: **STEP 1 — scan the top 3** (`npm run blog:scan` + `blog:serp` → TARGET SPEC + ★gaps),
    then **STEP 2 — facet-driven research** (`References/ResearchBrief.md`: 10–30 facets scaled by keyword
    depth → `scripts/blog/research-brief-<slug>.md`; write FROM the brief, not the top-3 echo).

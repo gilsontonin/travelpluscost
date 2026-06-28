@@ -88,7 +88,7 @@ Goal: never ship two posts chasing the **same search intent** (it splits our own
 **Step 1 — vet each candidate keyword** (before the owner picks): for each, `phrase_this` (volume) +
 `phrase_kdi` (KD) → derive intent → run the cannibalization check. Present a table — `kw | vol | KD |
 intent | cannibalization` — and PAUSE for the owner's pick. Target a new-domain-winnable keyword
-(roughly **KD ≤ 30, volume > 100**, informational/commercial intent), the brand/transparency angle first.
+(volume > 100, informational/commercial; **KD is a band, not a gate — go broad: easy spokes + juicy pillars, see `References/KeywordResearch.md`**), the brand/transparency angle first.
 
 **Step 2 — expand the locked keyword into the brief:** `phrase_related` (→ filtered secondary keywords +
 H2 phrases) and `phrase_questions` (→ FAQ seeds + body sub-questions), then feed those terms/questions into

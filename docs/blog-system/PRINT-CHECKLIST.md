@@ -11,7 +11,7 @@
 ## A · Keyword & SERP
 | # | Check | Bar | Verified by |
 |---|---|---|---|
-|A1|Primary keyword unused before + logged|in keywords.json|blog:kd / keywords.json|
+|A1|Primary pulled from the keyword map + unused + logged|keyword-map + keywords.json|blog:map / keywords.json|
 |A2|Slug clean, keyword in slug, not redirect-shadowed|lowercase-hyphen|manual|
 |A3|Genuine competitors only (no Reddit/TA/Wiki/OTA)|—|judgment|
 |A4|Cannibalization judged by intent|distinct→build|judgment|

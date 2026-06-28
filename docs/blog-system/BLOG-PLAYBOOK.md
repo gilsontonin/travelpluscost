@@ -196,8 +196,10 @@ This list exists because these are the exact shortcuts that ship bad posts. Name
 ## 5. The process, step by step
 
 ### 5.1 Pick the keyword (one per post, never reused)
-- Pull from your keyword bank / calendar. Pick an **unused** primary keyword that is **winnable** (low
-  difficulty) and has **real volume** and **clear intent**.
+- **Pull the next from the keyword map** (`blog:map` → `content/keyword-map-<slug>.md`; full ref
+  `References/KeywordResearch.md`). Pick an **unused** primary with **real volume** + **clear intent**.
+  **KD is a band, NOT a gate** — go broad: easy KD<30 quick-wins (spokes that rank + link up) AND juicy
+  KD 50–70+ pillars (anchor posts → topical authority; slow to rank but they anchor the cluster).
 - **Cannibalization check by INTENT, not word-match.** A phrase appearing in another post does NOT block a
   new page. Block only when the new page would serve the **same search intent** as an existing page's
   primary target. If intents differ, **build the dedicated page AND demote the old page's incidental

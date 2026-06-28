@@ -90,7 +90,9 @@ count ≈ working-target ÷ ~280.
 ## 4. Drafting method (order)
 1. **Pick the topic + vet it with live Semrush** (`References/Semrush.md` — the MCP, no stored cluster).
    Brand/transparency angle first, then destination. For each candidate pull `phrase_this` (volume) +
-   `phrase_kdi` (KD) and **derive intent**; aim KD ≤ 30 / volume > 100 / informational-or-commercial.
+   **derive intent**; volume > 100, informational/commercial. **KD is a band, not a gate** — go broad:
+   easy KD<30 spokes AND juicy KD 50–70+ pillars (topical authority). Pull the next keyword from the keyword
+   map (`blog:map`). See `References/KeywordResearch.md`.
    **Run the cannibalization check** (`npm run blog:keywords` lists the used cluster from
    `content/keywords.json`; `phrase_related` + `phrase_these` confirm vs the candidate): never ship two
    posts on one intent — update the existing post or pick a distinct sub-intent instead. **Log the locked
