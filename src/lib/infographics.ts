@@ -1063,6 +1063,32 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
       { title: "Where to sip them", detail: "Lafitte's Blacksmith Shop by candlelight, Napoleon House for a Pimm's Cup, the Carousel Bar for the slow spin." },
     ],
   },
+
+  "nola-gd-history": {
+    kind: "steps",
+    title: "How the Garden District grew",
+    steps: [
+      { title: "After 1803", detail: "Anglo-American newcomers arrive after the Louisiana Purchase, wanting distance from the Creole French Quarter." },
+      { title: "1832 onward", detail: "They subdivide the old Livaudais Plantation and build, a couple of grand houses per block." },
+      { title: "The gardens", detail: "Each home sits inside a large garden. Visiting writers dub the area the Garden District." },
+      { title: "The honest part", detail: "The wealth came from cotton, sugar, and enslaved labor, when New Orleans was the nation's largest slave market." },
+    ],
+  },
+  "nola-gd-homes": {
+    kind: "stat",
+    title: "The Garden District's famous homes",
+    stats: [
+      { value: "Buckner Mansion", label: "1856, Miss Robicheaux's Academy in American Horror Story Coven" },
+      { value: "The Cornstalk fence", label: "Colonel Short's Villa, 1859, the cast-iron cornstalk and morning glory fence" },
+      { value: "1239 First St", label: "the Brevard House, where Anne Rice wrote the Mayfair Witches" },
+      { value: "2707 Coliseum", label: "the retirement home in The Curious Case of Benjamin Button" },
+    ],
+  },
+  "nola-gd-callout": {
+    kind: "callout",
+    title: "The Garden District move",
+    body: "Ride the Saint Charles streetcar to Washington Avenue (a dollar and a quarter), then walk. The homes are the show, so do a self-guided loop down Prytania and First Streets. See Lafayette Cemetery through the gates, since it is closed inside, lunch on Magazine Street, and book Commander's Palace ahead for the jazz brunch. Go before 9am for photos, and stay on the busy streets after dark.",
+  },
 };
 
 export function getInfographic(key: string): Infographic | null {

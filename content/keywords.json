@@ -1,4 +1,25 @@
 {
+  "garden-district-new-orleans": {
+    "primary": "garden district new orleans",
+    "secondary": [
+      "new orleans garden district",
+      "things to do in the garden district",
+      "garden district walking tour",
+      "garden district map",
+      "is the garden district safe",
+      "garden district homes",
+      "lafayette cemetery new orleans",
+      "garden district restaurants"
+    ],
+    "volume": 14800,
+    "kd": 47,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-28",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
+  },
   "french-quarter-new-orleans": {
     "primary": "french quarter new orleans",
     "secondary": [

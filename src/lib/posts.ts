@@ -49,6 +49,214 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "garden-district-new-orleans",
+    title: "Garden District New Orleans: A Complete Guide (2026)",
+    seoTitle: "Garden District New Orleans: A Complete Guide",
+    description:
+      "A complete guide to the New Orleans Garden District. The historic mansions, Lafayette Cemetery, Magazine Street shopping, where to eat, and how to get there.",
+    excerpt:
+      "Everything for a first visit to the Garden District in New Orleans. The historic mansions and Anne Rice's house, Lafayette Cemetery, Magazine Street, Commander's Palace, and how to ride the streetcar there. As of 2026.",
+    tldr: {
+      answer:
+        "Spend half a day in the Garden District for the grandest houses in New Orleans. Ride the Saint Charles streetcar to Washington Avenue, then walk Prytania and First Streets past the mansions, Anne Rice's old home, and the Buckner house from American Horror Story. See Lafayette Cemetery through its gates, and lunch on Magazine Street.",
+      points: [
+        "**What it is**, an Uptown neighborhood of grand 1800s mansions built by American newcomers.",
+        "**Get there**, the Saint Charles streetcar to Washington Avenue, a dollar and a quarter.",
+        "**See**, the Buckner Mansion, the cornstalk fence, and Anne Rice's old house on First Street.",
+        "**Lafayette Cemetery**, gorgeous but closed to the public since 2019. View it through the gates.",
+        "**Eat**, Commander's Palace for the jazz brunch, then Magazine Street for everything else.",
+      ],
+    },
+    date: "2026-06-28",
+    updated: "2026-06-28",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/ex_b29f2005_z.jpg",
+      alt: "A white-columned Greek Revival mansion in the New Orleans Garden District with double-gallery cast-iron balconies behind an iron fence and an oak tree",
+      credit: { name: "Garden District, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "Is the Garden District worth visiting?",
+        a: "Yes, it is one of the best things to do in New Orleans and a complete change of pace from the French Quarter. The neighborhood is a free, open air museum of antebellum mansions, oak lined streets, and cast iron fences, with Magazine Street shopping and Commander's Palace on the edge. Half a day here rounds out almost any trip.",
+      },
+      {
+        q: "How do you get to the Garden District from the French Quarter?",
+        a: "Take the Saint Charles streetcar, which is the easiest and most scenic way. Catch the green car near Canal Street, ride about thirty minutes upriver under the oaks for a dollar and a quarter, and get off at Washington Avenue. From there the whole district is a flat, walkable grid.",
+      },
+      {
+        q: "Is the Garden District safe?",
+        a: "Yes, it is one of the safer neighborhoods in New Orleans, and walking it by day is low risk. It is residential and affluent, with steady foot traffic. After dark, keep to Saint Charles and the busier blocks, use the streetcar or a rideshare, and do not wander the quiet edges alone.",
+      },
+      {
+        q: "Can you go inside Lafayette Cemetery Number 1?",
+        a: "No, not right now. The city closed Lafayette Cemetery Number 1 to the public in September 2019 for repairs, and it has not reopened as of 2026. You can still walk the perimeter and view the historic tombs through the gates, and ghost and history tours stop there to tell the stories from the sidewalk.",
+      },
+      {
+        q: "Can you tour the Garden District mansions inside?",
+        a: "Mostly no, since the famous homes are private residences you admire from the public sidewalk. The draw is the architecture, the gardens, and the iron, not the interiors. A few house museums and the occasional charity tour open their doors, but plan on a walking tour of the exteriors rather than going inside.",
+      },
+      {
+        q: "How long do you need in the Garden District?",
+        a: "Half a day is plenty for the highlights, and a full day lets you slow down. A walking loop of the mansions takes one to two hours, then add lunch on Magazine Street and a stop at Lafayette Cemetery. Most people fold it into a longer New Orleans trip rather than visiting it alone.",
+      },
+      {
+        q: "Where do celebrities live in the Garden District?",
+        a: "Sandra Bullock, John Goodman, and the Manning football family all keep homes here, clustered around Coliseum and First Streets. Locals and tour guides will point out the houses, but the polite move is to admire the architecture from the sidewalk and leave the residents in peace.",
+      },
+    ],
+    body: `**The Garden District is the most beautiful neighborhood in New Orleans.** It is a walkable grid of columned mansions, oak lined streets, and one very famous cemetery, a short streetcar ride upriver from the French Quarter. There is no easier place in the city to spend a slow afternoon admiring houses, and the show is free.
+
+This is a complete guide to the **Garden District in New Orleans**, what it is, how to get there, the mansions worth seeking out, where to eat and shop on Magazine Street, and how safe it is. It is written for a first visit and current as of 2026.
+
+One thing to set up front. Where the French Quarter is dense and Spanish and loud, the Garden District is spread out, American, and hushed. New money trying to escape the old city built the Garden District New Orleans shows off today, a free museum of antebellum architecture you walk through at your own pace.
+
+| The Garden District | At a glance |
+|---|---|
+| What it is | New Orleans' grandest residential neighborhood |
+| Built | 1832 to 1900, on old plantation land |
+| Bounded by | Saint Charles, Magazine, Jackson, Toledano |
+| Get there | The Saint Charles streetcar, about 30 minutes |
+| The draw | Historic mansions, Magazine Street, Commander's Palace |
+
+::infographic nola-gd-callout
+
+## What Is the Garden District in New Orleans?
+
+**The Garden District is a neighborhood of historic mansions in Uptown New Orleans, built by wealthy Americans in the decades after the Louisiana Purchase.** When the United States bought the city in 1803, the new arrivals were lawyers, merchants, and bankers. The Creole families of the French Quarter did not want them. So they built their own world upriver instead.
+
+They bought up old sugar plantations, including the Livaudais Plantation that became the heart of the district, and subdivided them into big lots. Early on there were only a couple of houses per block, each ringed by a large garden, which is exactly how the neighborhood got its name.
+
+::infographic nola-gd-history
+
+The honest history matters here. Cotton, sugar, and the labor of enslaved people paid for the grand homes you came to photograph, in a city that was then the largest slave market in the country. The architecture is genuinely beautiful, the money behind it was genuinely brutal, and a good visit holds both facts at once.
+
+What survived is one of the best preserved collections of nineteenth century mansions in the South. Greek Revival columns, Italianate double galleries, cast iron fences, and live oaks that have had a century and a half to spread. It is, quite simply, a gorgeous place to walk.
+
+## Getting to the Garden District on the Saint Charles Avenue Streetcar
+
+**Take the Saint Charles Avenue streetcar, the oldest continuously running street railway in the world.** Catch the olive green car near Canal Street and ride about thirty minutes upriver under the oaks. The fare is a dollar and a quarter in exact change, the best deal in New Orleans.
+
+Get off at **Washington Avenue**, walk one block toward the river to Prytania Street, and you are standing at the edge of the district beside Lafayette Cemetery. From there it is all on foot. The neighborhood is flat, compact, and made for wandering, so leave the car at the hotel and let your feet and the streetcar carry you.
+
+## The Mansions of the New Orleans Garden District
+
+**The houses are the whole point, and the best way to see them is a slow self guided loop down Prytania and First Streets.** You cannot go inside most of them, since they are private homes. The show is the facades, the gardens, and the iron.
+
+A guided walking tour of the Garden District New Orleans adds the stories and the food, while a free self guided route lets you set your own pace. Either way, exploring on foot is the only real way to do it, so give yourself a couple of hours and some space.
+
+::infographic nola-gd-homes
+
+::activity New Orleans | garden district
+
+### The Buckner Mansion
+
+**The Buckner Mansion is the giant of the district and one of the most photographed homes in New Orleans.** Cotton magnate Henry Buckner built it in 1856 at Jackson Avenue and Coliseum Street, with wrap around galleries and rows of Corinthian and Ionic columns meant to out shout a rival's house. Television fans will know it as Miss Robicheaux's Academy from American Horror Story Coven.
+
+### Colonel Short's Villa and the Cornstalk Fence
+
+**Colonel Short's Villa is famous for its fence, not its walls.** The 1859 villa, designed by architect Henry Howard, is wrapped in a cast iron fence shaped like cornstalks and morning glories, supposedly a gift to soothe the colonel's homesick wife. It is one of only a couple of cornstalk fences in the city, and the prettiest.
+
+### Anne Rice's House and the Mayfair Witches
+
+**The Brevard House at 1239 First Street is where Anne Rice lived and wrote.** The 1857 mansion, also called Rosegate, was the author's home from 1989 to 2004, and it became the model for the haunted Mayfair manor in her witch novels. The AMC series filmed at a different house on Prytania, but this is the one Rice actually haunted.
+
+### The Jefferson Davis and Benjamin Button Houses
+
+**Two more homes draw a steady stream of visitors with cameras.** The Payne-Strachan House at 1134 First Street is where Jefferson Davis, the only president of the Confederacy, died in 1889. A few blocks away, the white center hall mansion at 2707 Coliseum Street played the retirement home in The Curious Case of Benjamin Button.
+
+## Lafayette Cemetery Number 1
+
+**Lafayette Cemetery Number 1 is the gothic, above ground cemetery at the heart of the district, and right now you can only see it through the gates.** The city closed it to the public in September 2019 for repairs, and it has not reopened as of 2026. Plenty of older guides still send you inside, so consider this your heads up.
+
+::activity New Orleans | ghost cemetery voodoo
+
+You can still walk the perimeter and peer in at the crumbling tombs and the vines, which is genuinely atmospheric and completely free. Ghost and history tours still stop here to tell the stories from the sidewalk, and the cemetery shows up constantly in film, including as a favorite haunt in American Horror Story. It is worth a slow lap even from the outside.
+
+## Magazine Street: Shopping and Brunch
+
+**Magazine Street is six miles of locally owned shops, cafés, and restaurants, and it forms the lively southern edge of the district.** This is where the neighborhood stops whispering and starts selling. Vintage stores, clothing boutiques like Trashy Diva, bookshops, candle makers, and brunch spots line the street more or less without a gap.
+
+::activity New Orleans | food tour
+
+Pace it like a stroll, not a sprint. Duck into the **Garden District Book Shop**, which keeps an actual wine and cocktail bar called Bar Epilogue in the back, then grab a coffee or a pastry. The Magazine Street Merchants Association prints a free map if you want to shop it block by block.
+
+Brunch is the local sport here. Stop for breakfast at a sidewalk café like Molly's Rise and Shine, then browse off the meal. The dining runs from grab and go po'boy sandwiches to white tablecloth rooms, and the strip stretches all the way from Uptown down toward downtown.
+
+## Where to Eat in the Garden District, New Orleans
+
+**The Garden District punches far above a residential neighborhood when it comes to food, anchored by one of the most famous restaurants in America.** You can do a white tablecloth blowout or a snowball on a curb, and both are correct. Here is the short list.
+
+| Spot | What it is | The move |
+|---|---|---|
+| Commander's Palace | The grande dame, since 1893 | The jazz brunch and a 25 cent martini |
+| Hansen's Sno-Bliz | The oldest sno-ball stand in the US | Shaved ice under homemade syrup |
+| Stein's Deli | A Jewish-Italian deli | Pastrami on rye, a wall of craft beer |
+| District Donuts | Giant donuts and chicken sliders | Whatever is fresh that morning |
+| Coquette | A chef-driven bistro | A long, low-key lunch |
+
+**Commander's Palace** is the one to plan around. The turquoise Victorian at Washington and Coliseum has run since 1893, and under the Brennan family it launched the careers of Paul Prudhomme and Emeril Lagasse. Book the weekend jazz brunch ahead, order the turtle soup or the Gulf seafood gumbo, and let the 25 cent martinis do their quiet damage.
+
+A long lunch here is the quintessential Garden District New Orleans experience.
+
+::activity New Orleans | cocktail crawl
+
+At the other end of the budget, **Hansen's Sno-Bliz** has been serving delicious shaved ice since the 1930s and holds a James Beard award as a true American classic. For a quick bite between mansions, grab a pastrami sandwich at Stein's Deli or fried chicken sliders at District Donuts, both local favorites. For everywhere else worth a table across the city, our guide to the [best restaurants in New Orleans](/blog/best-restaurants-in-new-orleans) sorts the legends from the traps.
+
+## Celebrity Homes of the Garden District
+
+**The Garden District is where a surprising number of famous people quietly live, and locals will happily point out the houses.** Sandra Bullock owns a Gothic Victorian near Fourth and Coliseum, and John Goodman keeps his primary home a couple of blocks over near Second Street. The Manning football family lives near First and Coliseum, where Peyton and Eli grew up while their father Archie played for the Saints.
+
+The polite rule is simple. Admire the houses from the public sidewalk, take your photo of the architecture, and do not knock, loiter, or treat someone's front door like a tourist attraction. The mansions are the draw, not the residents.
+
+## Beyond the District: Uptown and Audubon Park
+
+**Stay on the Saint Charles Avenue streetcar past the Garden District, and Uptown unfolds, green and grand and easy.** A few stops on, **Audubon Park** spreads out across from Tulane and Loyola, with oak groves, a lagoon, a two mile loop, and the nearby Audubon Zoo. It is the Uptown answer to a slow afternoon, and the avenue offers a free show the whole way there.
+
+The ride itself is the attraction. The line runs past block after block of mansions and live oaks, around the bend at the river, and into Carrollton, where local institution Camellia Grill serves omelets and milkshakes to a permanent line of regulars. Buy a Jazzy Pass and treat the whole avenue as a moving tour.
+
+## Where to Stay in the Garden District
+
+**The Garden District is a wonderful place to wake up, though its best hotels book direct rather than through us.** The historic **Pontchartrain Hotel**, a 1927 landmark with the Hot Tin rooftop bar, and the boutique **Henry Howard Hotel**, set in an 1860s townhouse on Prytania, are both lovely and both book on their own sites. We mention them because they are genuinely good, not because we can price them.
+
+For a room we can actually book at the same flat fee for everyone, the **Alder Hotel** sits Uptown right on the Saint Charles streetcar line, a short ride from the district and the heart of Magazine Street.
+
+::hotel lpaf414
+
+If you would rather sleep central and ride over for the day, a Warehouse District base like the **NOPSI Hotel** puts you near the streetcar and a walk from the French Quarter, with a rooftop pool for after.
+
+::hotel lpa440f
+
+Whatever you book, the price you see here never shifts based on your phone or your search history. For the full breakdown by neighborhood, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) or browse the [New Orleans hotels hub](/hotels/new-orleans).
+
+## Is the Garden District Safe?
+
+**The Garden District is one of the safest neighborhoods in New Orleans, and walking it by day is about as low risk as the city gets.** It is residential, affluent, and quiet, with steady foot traffic of tourists and locals doing the same loop you are. Daytime, you can wander freely.
+
+::infographic nola-safe-vs-avoid
+
+After dark, use a little more sense. Keep to **Saint Charles and the busier blocks**, ride the streetcar or a rideshare rather than walking long stretches alone, and do not drift into the quieter edges of the neighborhood late at night. Our full guide on whether [New Orleans is safe](/blog/is-new-orleans-safe) covers the whole city block by block.
+
+## When to Visit the Garden District in New Orleans
+
+**Come in spring or fall, and come early in the day.** October through November and February through May give you mild weather and soft light, while summer turns the walk into a sweaty slog. Mornings before 9am are best for photos and empty sidewalks.
+
+::infographic nola-best-time
+
+There is one perfect bit of timing for photographers. In the weeks after Mardi Gras, strands of beads stay caught in the branches of the oaks along Saint Charles, the so called bead trees, glinting purple and gold and green. For more on the seasons, our guide to the [best time to visit New Orleans](/blog/best-time-to-visit-new-orleans) breaks it down by month, and the [3 day New Orleans itinerary](/blog/3-days-in-new-orleans) folds the district into a full trip.
+
+## The Last Word on the Garden District
+
+**The Garden District New Orleans loves is the calm, beautiful counterweight to the French Quarter, and half a day here makes any trip feel complete.** Ride the streetcar, walk the mansions, see the cemetery through its gates, eat your way down Magazine Street, and let the oaks do the rest.
+
+It costs almost nothing and rewards a slow pace more than a checklist, which is the whole point of the place. For the other half of the city, our guide to the [French Quarter](/blog/french-quarter-new-orleans) picks up where this one leaves off.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "french-quarter-new-orleans",
     title: "French Quarter New Orleans: The Complete Guide (2026)",
     seoTitle: "French Quarter New Orleans: A Complete Guide",
@@ -505,7 +713,7 @@ Do walk **Bourbon Street** once, because skipping it entirely feels like a dare 
 
 Grab a quick breakfast near your hotel first, because the next good food stop is a streetcar ride away. We recommend riding early, before the line fills with other people who read the same tip.
 
-Get off in the **Garden District**, where 19th century cotton and sugar money built block after block of columned mansions, now shaded by enormous live oaks. Self guide it with a phone map, because the houses are the show and the streets are flat, leafy, and quiet. Anne Rice fans and architecture buffs both leave happy, often comparing notes on the same corner.
+Get off in the [**Garden District**](/blog/garden-district-new-orleans), where 19th century cotton and sugar money built block after block of columned mansions, now shaded by enormous live oaks. Self guide it with a phone map, because the houses are the show and the streets are flat, leafy, and quiet. Anne Rice fans and architecture buffs both leave happy, often comparing notes on the same corner.
 
 You will pass **Lafayette Cemetery Number 1**, the famous above ground tombs from the Anne Rice novels, though you now see it only through the fence. The city closed it to the public in 2019 for repairs and it has not reopened as of 2026. Most older itineraries forget to mention that, so do not build your morning around getting inside.
 
@@ -2216,7 +2424,7 @@ Check the local listings (the station WWOZ keeps a calendar) for where one's rol
 
 ## Ride the St. Charles Streetcar
 
-The St. Charles Avenue **streetcar** is a moving attraction and a genuine bargain, a century old olive green car that rattles past the oak lined mansions of the **Garden District** for the price of a coffee. There are three lines in all, St. Charles for the mansions, the red Canal Street cars, and the Riverfront line along the **Mississippi River**.
+The St. Charles Avenue **streetcar** is a moving attraction and a genuine bargain, a century old olive green car that rattles past the oak lined mansions of the [**Garden District**](/blog/garden-district-new-orleans) for the price of a coffee. There are three lines in all, St. Charles for the mansions, the red Canal Street cars, and the Riverfront line along the **Mississippi River**.
 
 A day pass costs only a few dollars and turns the **streetcars** themselves into a slow, breezy city tour. Grab a window seat, let the breeze do the work the air conditioning will not, and watch the city roll by.
 
