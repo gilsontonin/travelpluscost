@@ -78,13 +78,21 @@ people enjoy and skim easily converts better than one that ranks and bounces.
      band, heading gaps, term/entity ADD list, competitor PAA questions.
    Together these ARE the scan: **items 1–8 match the shape that already wins; item 9 (the gaps) is where you
    beat them** — the booking path they lack, the PAA they answer poorly, the cluster cross-links, freshness.
-   WebSearch the People-Also-Ask → FAQ + a section.
-4. **Verify cards:** for an ingested region, `blog:hotels` does NOT rate-check — POST the ids to
+4. **STEP 2 — RESEARCH (facet-driven; do your OWN research, don't regurgitate the top 3).** Full reference:
+   `References/ResearchBrief.md`. Research the facets that EXIST for the keyword, **scaled to breadth, not a
+   fixed 50** (broad pillar ≈ 8–10 facets / ~40–60 sources; narrow keyword ≈ 3 facets / ~15 — 50 on a narrow
+   one is busy work). Walk the facet checklist — one WebSearch each: famous · awarded (Michelin/JB) · where-
+   locals-eat (**Reddit/forums**) · by-dish · by-neighborhood · by-occasion (brunch/budget/kids/late-night) ·
+   new & buzzy · practical/PAA (reservations/hours/dress) · video/critic · **our LiteAPI data**. Travel source
+   types only (guides · local critics · Reddit · awards · video · practical · own-data) — **skip** industry
+   reports/studies/gov/product-specs (they don't exist for travel). Localize city posts. Subagents opt-in for
+   broad pillars only. Synthesize → **`scripts/blog/research-brief-<slug>.md`** and **write FROM that brief**.
+5. **Verify cards:** for an ingested region, `blog:hotels` does NOT rate-check — POST the ids to
    `https://travelpluscost.com/api/prices` (midweek ~3 weeks out) and card only the ✓ priced ones.
-5. **Write** into `src/lib/posts.ts` (new entry at the top of POSTS; `region:{name,destination}` fires the
+6. **Write** into `src/lib/posts.ts` (new entry at the top of POSTS; `region:{name,destination}` fires the
    inventory UI). Title = `Where to Stay in <City>, <ST>: Best Hotels (2026)` (keyword contiguous, ≤60).
    Apply §1 rules. Inspect the cover image (curl → Read it; a famous local property or a colourful city shot).
-6. **Loop the gates until green** (§4), then **PRINT THE CHECKLIST** (§5).
+7. **Loop the gates until green** (§4), then **PRINT THE CHECKLIST** (§5).
 
 ## 4. THE GATES (run, fix, re-run after every edit batch)
 ```

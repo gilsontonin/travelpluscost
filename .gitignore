@@ -61,9 +61,10 @@ next-env.d.ts
 # Reference images are someone else's IP — never commit them. The written specs live in docs/.
 /design/
 
-# generated QA logs + SERP briefs from the blog robots (scripts/blog/) — regenerate on demand
+# generated QA logs + SERP/research briefs from the blog robots (scripts/blog/) — regenerate on demand
 /qa-logs/
 /scripts/blog/serp-brief-*.md
+/scripts/blog/research-brief-*.md
 # local Claude settings (never commit personal/agent settings)
 /.claude/settings.local.json
 

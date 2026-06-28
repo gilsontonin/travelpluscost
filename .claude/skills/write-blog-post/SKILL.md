@@ -58,8 +58,16 @@ QA note (post exists). Then work it top to bottom. If no city was given, pick on
      long off-SERP listicles. If the rankers are thin/incoherent (a ~270w page, Reddit, OTA listings, resort
      homepages — no genuine guide) it's a **thin-SERP exec-decision keyword**: write the best honest guide
      and ship it; do not pad to a meaningless serp number. Log the cluster: `npm run blog:keywords`.
-2. **Backfill social proof:** `npm run blog:pros -- "<city>"` → the cards show "Guests loved …" (real LiteAPI sentiment).
-3. **Write the post** into `src/lib/posts.ts` (new entry; `region: { name, destination }` fires the
+2. **STEP 2 — RESEARCH (facet-driven; full ref `References/ResearchBrief.md`).** Do your OWN research so the
+   post isn't a top-3 echo. Walk the facet checklist (famous · awarded · where-locals-eat via Reddit · by-
+   dish · by-neighborhood · by-occasion · new/buzzy · practical/PAA · video/critic · our LiteAPI data) — one
+   WebSearch per facet, **scaled to keyword breadth** (broad pillar ≈8–10 facets/~50 sources; narrow ≈3/~15;
+   50 on a narrow keyword is busy work — **it's facets that matter, not raw count**). Travel source types
+   only (skip industry-reports/studies/gov/product-specs). Localize city posts; subagents opt-in for broad
+   pillars. Synthesize → `scripts/blog/research-brief-<slug>.md` (exemplar: best-restaurants-in-new-orleans)
+   and **write FROM the brief**.
+3. **Backfill social proof:** `npm run blog:pros -- "<city>"` → the cards show "Guests loved …" (real LiteAPI sentiment).
+4. **Write the post** into `src/lib/posts.ts` (new entry; `region: { name, destination }` fires the
    inventory-first UI). Target the **CLUSTER**: head + pairing in the title; the questions as the FAQ + a
    section; the pairings (families / near <attraction> / budget / by season / cabins …) as the H2s.
    - **Voice:** funny-first, real, dry (BLOG-PLAYBOOK §3). Answer-first intro, keyword verbatim in sentence
@@ -70,7 +78,7 @@ QA note (post exists). Then work it top to bottom. If no city was given, pick on
      Stanley) gets an honest "books direct, we can't price it" mention — no card.
    - **Cover:** a famous local property's best photo OR a cute, colourful town shot. **INSPECT it** (curl →
      Read a local file; never pick a URL blind — that's how a grey cover slipped out).
-4. **Loop the gates until green (re-run after every edit):**
+5. **Loop the gates until green (re-run after every edit):**
      `npm run blog:serp -- "<kw>" --draft <slug> --urls "<REAL rankers>"` — **serp ≥ 90**. Raise it the
        right way: heading lever first (it hits 100% when the exact phrase + the competitors' subtopics sit
        in H2/H3s), then loop the legit ADD list FULLY, never stuff. Honest ceilings: a **thin SERP**
@@ -79,16 +87,16 @@ QA note (post exists). Then work it top to bottom. If no city was given, pick on
      `npm run blog:slop -- <slug>` (0 HARD) · `npm run blog:stats -- <slug>` (in band) · `npm run blog:voice`
      `npm run blog:cta -- <slug>` — **0 leaks**, a CTA every section, every mentioned hotel carded/linked.
      `npm run blog:qa -- <slug>` (the aggregate).
-5. **Build + Lighthouse:** `npm run typecheck && npm run lint && npm run build && npm run check` (0 errors).
+6. **Build + Lighthouse:** `npm run typecheck && npm run lint && npm run build && npm run check` (0 errors).
    **`npm run check` is the Netlify DEPLOY GATE** (claims-integrity + ai-slop, per netlify.toml) — a RED
    check fails the WHOLE deploy, so a new post silently 404s on prod and stale content stays live. It
    flags unverifiable superlatives (e.g. "most-reviewed"); rephrase to verifiable wording. Then
    `npm run blog:lh -- /blog/<slug>` against a running server (`npm run build && npm start`; perf ≥ 90,
    a11y/BP/SEO = 100 — `References/Lighthouse.md`: every image via `next/image`, cover = `priority`).
    Cross-link the `/hotels/<city>` hub (don't cannibalise).
-6. **Commit, then HOLD the push until the owner says "go live."** Paste the keyword line (head + pairing +
+7. **Commit, then HOLD the push until the owner says "go live."** Paste the keyword line (head + pairing +
    vol/KD), the serp/slop/cta/lh numbers, and the honest serp verdict (≥90, or the named ceiling + why).
-7. **Log the lesson.** If this run surfaced anything systemic (a new gate quirk, a SERP-shape call, a
+8. **Log the lesson.** If this run surfaced anything systemic (a new gate quirk, a SERP-shape call, a
    compliance/claims trap), append a one-line, dated, post-tagged entry to
    `docs/blog-system/References/WritingLessons.md` so the next post doesn't re-pay for it.
 
