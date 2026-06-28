@@ -16,6 +16,8 @@
 |A3|Genuine competitors only (no Reddit/TA/Wiki/OTA)|—|judgment|
 |A4|Cannibalization judged by intent|distinct→build|judgment|
 |A5|SERP score ≥ 90 raw (or flagged exec-decision)|≥90|blog:serp|
+|A6|STEP 1 — top 3 scanned (cards + TARGET SPEC + 9-pt + gaps)|run|blog:scan|
+|A7|STEP 2 — research brief written, facet-driven|10–30 facets by depth|research-brief-&lt;slug&gt;.md|
 
 ## B · Length & Structure
 | # | Check | Bar | Verified by |

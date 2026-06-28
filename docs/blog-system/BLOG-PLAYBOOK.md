@@ -205,15 +205,26 @@ This list exists because these are the exact shortcuts that ship bad posts. Name
 - *travelpluscost:* favor city/neighborhood/cost questions you have hotel inventory for, so the post can
   funnel to a real `/hotels/<city>` hub.
 
-### 5.2 Research the live SERP (never skip — this replaces guessing)
-- Search the keyword. Open the **top ~5–8 GENUINE competitors** (exclude Reddit/Wikipedia/TripAdvisor/
+### 5.2 STEP 1 — Scan the top 3 (never skip — the SERP already has the answer)
+- Search the keyword. Open the **top GENUINE competitors** (exclude Reddit/Wikipedia/TripAdvisor/
   YouTube/Yelp/big-news/booking-widgets — they skew the targets). Select by **intent**, not domain.
-- Run the SERP scorer (`blog:serp` / `serp-optimize.mjs`) over those URLs. Read the brief: the **length
-  band**, the **must-have subtopics**, the **terms/phrases** to include, the **People-Also-Ask questions**
-  (FAQ seeds), and the **fact candidates** (the discrete numbers competitors cite that you must match).
-- Mine Reddit/forums for the *real questions people ask* (intent), but don't try to out-rank them.
-- **Find the gap:** the question everyone asks but nobody answers well (parking, real cost, timing,
-  is-it-worth-it, which-is-better). That gap is your edge.
+- `npm run blog:scan -- "<kw>" --urls "u1,u2,u3"` → the #1/#2/#3 cards + the averaged **TARGET SPEC**
+  (words · H2/H3 · images · FAQs) + the 9-point scan + the ★gaps. The fast structural pass.
+- `npm run blog:serp -- "<kw>" --draft <slug> --urls "u1,u2,…"` → the brief: the **length band**, the
+  **must-have subtopics**, the **terms/phrases**, the **People-Also-Ask questions** (FAQ seeds), and the
+  **fact candidates** (discrete numbers competitors cite that you must match).
+- Items 1–8 match the shape that already wins; item 9 (the gaps) is your edge — the question everyone asks
+  but nobody answers well (parking, real cost, timing, is-it-worth-it), plus the booking path they lack.
+
+### 5.2b STEP 2 — Research, facet-driven (do your OWN research; full ref `References/ResearchBrief.md`)
+- Don't regurgitate the top 3. Walk the **facet checklist** (famous · awarded · where-locals-eat via
+  Reddit · by-dish · by-neighborhood · by-occasion · new/buzzy · practical/PAA · video/critic · our LiteAPI
+  data), **one WebSearch per facet**.
+- **10–30 facets, scaled by keyword depth** — never fewer than 10 (no lazy skim), never more than 30 (deep
+  pillars sub-divide neighborhoods/dishes/occasions; past 30 it's re-digging). **Facets matter, not raw
+  count.** Travel source types only (skip industry-reports/studies/gov/product-specs). Localize city posts;
+  subagents opt-in for broad pillars.
+- Synthesize → **`scripts/blog/research-brief-<slug>.md`** and **write FROM that brief**, not the top-3 pages.
 
 ### 5.3 Plan structure + monetization together
 - Map every section to a benefit-driven, keyword-bearing H2. One named entity per H3 in any roundup

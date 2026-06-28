@@ -97,10 +97,13 @@ count ≈ working-target ÷ ~280.
    cluster to `content/keywords.json`** (the used-keyword ledger; flip to `status: published` when it ships).
    (If the Semrush MCP isn't loaded, restart; else note `semrush: unavailable` and fall back to SERP-only —
    never invent volumes/KD.)
-2. **Research the SERP:** expand the cluster with `phrase_related` (secondary keywords + H2 phrases) and
-   `phrase_questions` (FAQ seeds), then run `serp-optimize` over ~6–10 genuine competitor URLs (fresh
-   WebSearch, no pinning), feeding those terms in. Read the brief: must-have subtopics, questions, fact
-   candidates, length band.
+2. **Scan the top 3, then research** (full ref `References/ResearchBrief.md`): WebSearch genuine competitors,
+   then **STEP 1** — `blog:scan` (#1/#2/#3 cards + TARGET SPEC + 9-point + ★gaps) and `blog:serp` (length
+   band, subtopics, terms, PAA questions, fact candidates). Then **STEP 2** — do your OWN **facet-driven
+   research**: walk the facet checklist (famous · awarded · where-locals-eat/Reddit · by-dish ·
+   by-neighborhood · by-occasion · new · practical/PAA · video · our LiteAPI data), **10–30 facets scaled by
+   keyword depth** (never <10, never >30; facets matter, not raw count) → `scripts/blog/research-brief-<slug>.md`,
+   and write FROM the brief, not the top-3 echo.
 3. **Plan structure + the ONE CTA together** (`AffiliateLinks.md`): which city hub / search the post routes to. Headings carry the exact keyword phrases (heading match is the biggest lever).
 4. **Intro formula:** sentence 1 = the answer with the primary keyword verbatim, the answer phrase **bolded**; one dry hook within 50 words; then what it covers, who it's for, a visible "as of 2026".
 5. **Body unit per section:** benefit H2 → prose with a beat → 2–3 sentences of real detail → a quick-facts strip or a table. One opinion (Opinions.md, number/principle-backed), ≤1 true story (Stories.md), ≥2 honest "when not to" beats.

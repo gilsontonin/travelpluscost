@@ -25,6 +25,9 @@ eventual revenue.
 When asked to write or edit ANY blog post, BEFORE writing a word:
 1. Read `docs/blog-system/BLOG-PLAYBOOK.md` and `docs/blog-system/TheBible.md` and follow them top to
    bottom. (The playbook is the governing writing + QA/QC contract; do not free-write, do not skip steps.)
+1b. BEFORE writing: **STEP 1 — scan the top 3** (`npm run blog:scan` + `blog:serp` → TARGET SPEC + ★gaps),
+   then **STEP 2 — facet-driven research** (`References/ResearchBrief.md`: 10–30 facets scaled by keyword
+   depth → `scripts/blog/research-brief-<slug>.md`; write FROM the brief, not the top-3 echo).
 2. Run the gates and PRINT them on screen: `npm run blog:serp`, `blog:slop`, `blog:stats`,
    `blog:checklist`, `blog:lh`, `blog:freshness`, then `blog:qa`. Fix every red, re-run after every edit.
    (`blog:lh` = Lighthouse budget perf ≥ 90 / a11y, BP, SEO = 100; needs a running server — see
