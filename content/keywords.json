@@ -454,5 +454,27 @@
     "status": "published",
     "cluster": "new-orleans",
     "history": []
+  },
+  "best-time-to-visit-new-orleans": {
+    "primary": "best time to visit new orleans",
+    "secondary": [
+      "new orleans in december",
+      "new orleans in october",
+      "new orleans in march",
+      "new orleans in november",
+      "temp in new orleans in april",
+      "may temperatures in new orleans",
+      "best time to go to new orleans",
+      "new orleans weather by month",
+      "cheapest time to visit new orleans"
+    ],
+    "volume": 4400,
+    "kd": 37,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-27",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
   }
 }

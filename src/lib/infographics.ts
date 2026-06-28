@@ -414,6 +414,61 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
     title: "The move: daytime Quarter, family base nearby",
     body: "The French Quarter by day is street performers, beignets and the river — wholesome and walkable. Skip Bourbon Street with kids, base a few blocks off it, and build each day around one big outing plus a park or a nap.",
   },
+  "nola-weather-extremes": {
+    kind: "stat",
+    title: "New Orleans weather, at the extremes",
+    stats: [
+      { value: "Jul–Aug", label: "the hottest — highs near 92°F with brutal humidity" },
+      { value: "January", label: "the coolest — highs around 62°F, lows in the 40s" },
+      { value: "Mid-summer", label: "the wettest, with near-daily afternoon thunderstorms" },
+      { value: "October", label: "the driest and most comfortable stretch of the year" },
+    ],
+  },
+  "nola-festival-calendar": {
+    kind: "stat",
+    title: "New Orleans festival calendar (2026)",
+    stats: [
+      { value: "Feb 17", label: "Mardi Gras — Carnival builds from January 6" },
+      { value: "April", label: "French Quarter Festival — free music on the riverfront" },
+      { value: "Apr 23–May 3", label: "New Orleans Jazz & Heritage Festival (Jazz Fest)" },
+      { value: "July 4", label: "Essence Festival weekend — the summer headliner" },
+    ],
+  },
+  "nola-best-time": {
+    kind: "stat",
+    title: "Best time to visit New Orleans, in one glance",
+    stats: [
+      { value: "Oct–Nov", label: "the best weather — crisp 70s and low humidity" },
+      { value: "Feb–May", label: "festival season: Mardi Gras, French Quarter Fest, Jazz Fest" },
+      { value: "August", label: "the cheapest month — but brutally hot and peak hurricane season" },
+      { value: "Mar & Nov", label: "the sweet spot: great weather, smaller crowds, fair prices" },
+    ],
+  },
+  "nola-cheapest": {
+    kind: "stat",
+    title: "When New Orleans is cheapest",
+    stats: [
+      { value: "Summer", label: "June–September: rates fall as the heat scares everyone off" },
+      { value: "August", label: "the rock-bottom month — hotels can run far below spring rates" },
+      { value: "January", label: "a quiet, cheap lull after New Year and before Mardi Gras" },
+      { value: "Avoid", label: "Mardi Gras and Jazz Fest weekends — the priciest dates by far" },
+    ],
+  },
+  "nola-seasons": {
+    kind: "stat",
+    title: "New Orleans by season",
+    stats: [
+      { value: "Spring", label: "warm, gorgeous, festival-packed — and priced like it" },
+      { value: "Summer", label: "hot, humid and stormy, but the cheapest and least crowded" },
+      { value: "Fall", label: "the locals' favorite: best weather, easier prices" },
+      { value: "Winter", label: "cool and festive, with a cheap January lull before Carnival" },
+    ],
+  },
+  "nola-mardi-gras-2026": {
+    kind: "callout",
+    title: "Mardi Gras 2026 falls on February 17",
+    body: "Carnival season runs from January 6 to Fat Tuesday (Feb 17, 2026). The two weeks before are the city's busiest and most expensive — hotels book up a year ahead and often require 3–4 night minimums. Want the party? Book early. Want the city calm? Avoid those two weeks entirely.",
+  },
   "nola-by-interest": {
     kind: "stat",
     title: "Pick your New Orleans by interest",

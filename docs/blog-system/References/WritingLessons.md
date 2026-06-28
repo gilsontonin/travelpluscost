@@ -127,3 +127,16 @@ single, actionable line. Prune lessons that are now fully enforced by a checker.
 - **::activity self-hides ~half the time:** of 9 topics, only swamp/ghost/french-quarter/food returned ≥4.5★
   NOLA tours; aquarium/zoo/mardi-gras-world/steamboat/cooking → 0 (self-hide, harmless). Test topics against
   /api/activities?lat&lng&q before trusting a directive will render.
+
+## best-time-to-visit-new-orleans (2026-06-27)
+- **The voice gate counts bullet-list items as sentences.** A 4-bullet list with terminal periods reads as
+  a "4-sentence paragraph" and trips the ≤3-sentence HARD floor. Fix: drop terminal periods on list items
+  (they're fragments), or keep a list to ≤3 bullets.
+- **voice "length out of band" fires below the working TARGET, not just the floor.** post-stats said in-band
+  at 3,706w (floor 3,685) yet voice still flagged length; it cleared near ~3,790w (working target 3,813).
+  Aim for the working target, not the bare floor.
+- **High band floors are real — month-by-month pillars run long (floor 3,685 here).** Deepen with genuine
+  sections (festival calendar, what-to-pack, how-far-ahead-to-book, a 3rd paragraph per month), never pad.
+  The full festival name "New Orleans Jazz & Heritage Festival" nets ~6 SERP terms in one mention.
+- **Visual cadence (6.5) scales with length:** ~3,850w needs ~8 visuals; ::infographics AND Markdown tables
+  both count, so a priority→month quick-reference table doubles as a visual and featured-snippet bait.
