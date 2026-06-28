@@ -1,4 +1,25 @@
 {
+  "french-quarter-new-orleans": {
+    "primary": "french quarter new orleans",
+    "secondary": [
+      "new orleans french quarter",
+      "things to do in the french quarter",
+      "french quarter map",
+      "is the french quarter safe",
+      "where to stay in the french quarter",
+      "french quarter attractions",
+      "vieux carre new orleans",
+      "french quarter history"
+    ],
+    "volume": 18100,
+    "kd": 40,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-28",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
+  },
   "3-days-in-new-orleans": {
     "primary": "3 days in new orleans",
     "secondary": [

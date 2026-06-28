@@ -49,6 +49,287 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "french-quarter-new-orleans",
+    title: "French Quarter New Orleans: The Complete Guide (2026)",
+    seoTitle: "French Quarter New Orleans: A Complete Guide",
+    description:
+      "A complete guide to the French Quarter in New Orleans, what to do, the best streets, where to eat and stay inside it, the history, and how safe it is.",
+    excerpt:
+      "Everything for a first visit to the French Quarter in New Orleans, the Vieux Carré. What to do, the streets to walk, where to eat and sleep inside it, the Spanish history behind the French name, and how safe it really is. As of 2026.",
+    tldr: {
+      answer:
+        "Give the French Quarter a full day on foot. Start with beignets at Café du Monde and Jackson Square, browse Royal Street by day, and save Bourbon Street for one night after dark. Sleep inside the neighborhood so you can walk home, keep to the busy, well lit streets at night, and visit in spring or fall.",
+      points: [
+        "**What it is**, the Vieux Carré, the 1718 original city, mostly Spanish built after two great fires.",
+        "**Do**, Jackson Square, Saint Louis Cathedral, the French Market, beignets, and a jazz cruise.",
+        "**The streets**, Royal for the day, Bourbon for one night, Chartres and Decatur for the calm.",
+        "**Stay inside it**, so the whole neighborhood is a walk, not a ride.",
+        "**Safety**, the busy lit streets are fine at night. Mind pickpockets on Bourbon and car break ins.",
+      ],
+    },
+    date: "2026-06-28",
+    updated: "2026-06-28",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/614339620.jpg",
+      alt: "A French Quarter street corner in New Orleans at dusk, with brick buildings, wrought-iron galleries, and gas lamps",
+      credit: { name: "French Quarter, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "Is the French Quarter safe?",
+        a: "Yes, for the most part. The French Quarter is one of the safer parts of New Orleans because it is busy, well lit, and heavily policed, and the main streets stay full of people late into the night. The usual trouble is petty, pickpockets in the Bourbon Street crowds and break ins on parked cars. Favor Royal and Chartres after dark, walk in a group late, and you will be fine.",
+      },
+      {
+        q: "Why is it called the French Quarter if the architecture is Spanish?",
+        a: "Because the French founded it in 1718, but they did not build most of what stands today. Two great fires, in 1788 and 1794, destroyed the original wooden town while New Orleans was under Spanish rule. The Spanish rebuilt in brick and stucco with courtyards and iron balconies, so the look is Spanish even though the name and the street grid stayed French.",
+      },
+      {
+        q: "What is the French Quarter known for?",
+        a: "Music, food, and history packed into a tiny, walkable grid. It is the birthplace of much of New Orleans culture, home to Jackson Square, Saint Louis Cathedral, Bourbon Street, the French Market, Café du Monde beignets, and the city's voodoo and ghost lore. It is the oldest neighborhood in the city and the heart of a first visit.",
+      },
+      {
+        q: "How many days do you need in the French Quarter?",
+        a: "One full day covers the highlights, and two lets you slow down and wander. You can walk the whole neighborhood in an afternoon, but the Quarter rewards lingering over a long lunch, a courtyard cocktail, and a late jazz set. Most people fold it into a longer New Orleans trip rather than visiting it alone.",
+      },
+      {
+        q: "Is Bourbon Street worth visiting?",
+        a: "Worth a walk, not a whole night. See Bourbon Street once after dark for the neon and the spectacle, then go where the locals go for actual music, which is Frenchmen Street just past Esplanade Avenue. The frozen daiquiri shops and novelty drinks are a tourist tax, and the street is best taken in small doses.",
+      },
+      {
+        q: "Where are the best beignets in the French Quarter?",
+        a: "Café du Monde on Decatur Street at Jackson Square is the classic, serving the same three square beignets and chicory café au lait since 1862. It runs 24 hours and the line moves fast, which is why the beignets always arrive hot. Café Beignet on Royal Street is the calmer alternative if the main stand is mobbed.",
+      },
+      {
+        q: "Do you need a car in the French Quarter?",
+        a: "No, and a car is a liability here. The Quarter is flat and only about thirteen blocks by seven, so you walk everywhere, and the narrow one way streets plus pricey, scarce parking make driving a hassle. Fly into Louis Armstrong airport, take a rideshare in, and use the streetcar and your feet from there.",
+      },
+    ],
+    body: `**The French Quarter is the oldest neighborhood in New Orleans and the reason most people come.** It is a flat, walkable grid of pastel townhouses, iron balconies, courtyards, and live music packed into about thirteen blocks along the Mississippi. You can see the heart of it in a day and still be finding new corners on your fourth trip.
+
+This is a complete guide to the **French Quarter in New Orleans**, what it is, the things worth doing, the streets to walk, where to drink and eat and sleep inside it, and how safe it actually is. It is written for a first visit and current as of 2026.
+
+One myth to clear up first. The French Quarter is barely French. Two great fires and a long stretch of Spanish rule rebuilt almost all of it, so the architecture you came to photograph is mostly Spanish wearing a French name.
+
+| The French Quarter | At a glance |
+|---|---|
+| Also called | The Vieux Carré, "the Old Square" |
+| Founded | 1718, the original city |
+| Size | About 78 blocks, 13 long by 7 deep |
+| Bounded by | Canal, Esplanade, Rampart, the river |
+| Get around | On foot. It is flat and tiny |
+
+::infographic nola-fq-callout
+
+## What Is the French Quarter in New Orleans?
+
+**The French Quarter, or Vieux Carré, is the original city of New Orleans, laid out in 1718.** It sits in a tidy grid between Canal Street, Esplanade Avenue, North Rampart Street, and the Mississippi River, about thirteen blocks long and seven deep. The whole thing is flat and small enough to cross on foot in twenty minutes, which is the only way you should try.
+
+Here is the twist most visitors miss. The Quarter is named for the French who founded it, but it does not look French at all.
+
+The **Great Fire of 1788** burned about eighty percent of the wooden town. A second fire in 1794 took much of the rest. By then New Orleans belonged to Spain, so the rebuild came in brick and stucco, with shady courtyards and the wrought iron balconies you see today.
+
+So you are admiring Spanish bones under a French name. That is the most New Orleans thing imaginable, and it makes the Quarter the historical heart of one of the country's most walkable old neighborhoods.
+
+::infographic nola-fq-history
+
+## The Best Things to Do in the French Quarter
+
+**The Quarter is known for cramming three centuries of music, food, and history into a grid you can walk in an afternoon.** Start at the river and work inward, and the highlights line up almost in a row. These are the stops the French Quarter New Orleans built first is famous for, and a half day of walking or a little planning strings them together.
+
+::infographic nola-fq-attractions
+
+### Jackson Square and Saint Louis Cathedral
+
+**Jackson Square is the postcard center of New Orleans and a genuine National Historic Landmark.** It began as the Place d'Armes, a muddy military parade ground, and was renamed in 1851 for Andrew Jackson, hero of the 1815 Battle of New Orleans. The rearing bronze statue in the middle was the first equestrian statue ever made by an American.
+
+Local artists hang their work on the iron fence, fortune tellers set up tables, and brass bands busk for the crowd. The matching red brick **Pontalba Buildings** that frame the square hold the oldest continuously rented apartments in North America. Grab a café table on the edge and watch the whole city walk by.
+
+Saint Louis Cathedral presides over it, the oldest continuously active Catholic cathedral in the country and free to step inside until about 4pm. Its triple spires frame the skyline, and the 1924 organ inside runs more than eight thousand pipes.
+
+### The Cabildo and the Presbytère
+
+**Flanking the cathedral are two of the best museums in the city, and most visitors walk right past them.** The **Cabildo** is where the Louisiana Purchase was finalized in 1803, with three floors of colonial history in the room where it happened. Give it a couple of hours.
+
+The **Presbytère** next door, built to match, holds two exhibits worth the ticket. One lets you climb a Mardi Gras float and walk through the krewe history, and the other, "Living with Hurricanes," tells the Katrina story with rare honesty.
+
+### The French Market and the Riverfront
+
+**The French Market is the oldest public market site in the country, a covered run of stalls and a food hall along Decatur Street.** It started as a Native American trading post, became the city's meat market under the Spanish, and now sells pralines, hot sauce, crafts, and a respectable po'boy. Graze your way through it.
+
+From there it is a short walk to the river and the Moonwalk promenade, where you can watch a steamboat churn past and let a beignet settle. The riverfront is the most relaxed spot in the whole neighborhood.
+
+### The Pharmacy Museum, the Jazz Museum, and Preservation Hall
+
+**For rainy hours and real culture, the Quarter keeps a deep bench.** The odd little **Pharmacy Museum** on Chartres Street was the first licensed apothecary in the United States, full of 19th century jars and unsettling surgical tools. The **New Orleans Jazz Museum** sits in the Old Mint on the quiet Esplanade end, where the music was born.
+
+For traditional jazz at its source, **Preservation Hall** plays most nights at 726 Saint Peter Street in a tiny room with no air conditioning and a line that is part of the deal. It has guarded the old sound since 1961. Buy tickets ahead, leave the camera in your pocket, and just listen.
+
+### Pirates Alley, Faulkner House, and the Historic Homes
+
+**The quiet lanes hold as much history as the main drags.** Slip down **Pirates Alley** beside the cathedral, one of the best photo spots in the Quarter and home to Faulkner House Books, the 1837 townhouse where William Faulkner wrote his first novel. The Quarter shaped Faulkner, Tennessee Williams, and Truman Capote alike.
+
+A few blocks on, the **Old Ursuline Convent** is the oldest building in the Mississippi Valley, finished in 1753 and one of the few to survive the 1788 fire. House museums like **Gallier House** and the **Beauregard-Keyes House** open their courtyards and slave quarters for a fuller, more honest look at how the Quarter actually lived.
+
+::activity New Orleans | french quarter walking
+
+## Royal Street, Bourbon Street, and the Rest
+
+**The Quarter runs on a handful of streets, and knowing the difference saves your trip.** Royal and Bourbon run parallel one block apart, and they could not be more different. One is for the day, the other for exactly one night.
+
+::infographic nola-fq-streets
+
+### Royal Street, the Pretty One
+
+**Royal Street is the elegant spine of the Quarter, lined with antique shops, galleries, and the prettiest balconies in the city.** The grand old antique houses anchor it, names like Rau, Keil's, and Cohen that have traded here since the 1890s, where price tags run from hundreds into the millions. Window shop the lot of them for free.
+
+In between, duck into the **Historic New Orleans Collection**, a free museum of the city's past, and the Rodrigue art gallery for the famous Blue Dog. The balcony at Royal and Saint Peter, dripping with ferns, is the single most photographed corner in town, so plan a stop there early before the crowds.
+
+### Bourbon Street, the Loud One
+
+**Bourbon Street is the round the clock party, a parade of bars and neon that is fun to see once and exhausting to base a trip on.** It is named for the French royal House of Bourbon, not the whiskey, and it was residential long before it was rowdy. The famous **go cup** was invented right here, since open containers are legal as long as the cup is plastic.
+
+There is real history under the neon. **Lafitte's Blacksmith Shop**, built before 1772, is one of the oldest bar buildings in the country and drinks by candlelight. See Bourbon after dark for the spectacle, grab one go cup if you must, then go find real music elsewhere.
+
+### Decatur, Chartres, and Frenchmen Street
+
+**The rest of the grid fills in the map.** **Decatur Street** hugs the river and the French Market, while **Chartres Street** is the calm museum and cathedral spine. The prettiest quiet balconies hang over Dauphine.
+
+For the music locals actually leave the house for, walk to **Frenchmen Street** just past Esplanade in the Marigny. Clubs like the Spotted Cat, Snug Harbor, and d.b.a. stack authentic live jazz, funk, and brass from local bands most nights, often with no cover.
+
+::activity New Orleans | jazz music
+
+## Where to Drink in the French Quarter
+
+**The French Quarter did not just adopt cocktails, it helped invent them.** Three classic cocktails were born within these blocks, and locals still order them nightly. The French Quarter New Orleans pours like nowhere else, so pace yourself, because the go cups make it easy not to.
+
+::infographic nola-fq-cocktails
+
+The **Sazerac** is Louisiana's official cocktail, first mixed by Haitian immigrant Antoine Peychaud in his Quarter pharmacy, rye whiskey rinsed with absinthe and stained with his bitters. The **Hurricane** was born at **Pat O'Brien's** in the 1940s, when a rum glut left a bartender improvising, and it still arrives in a lamp shaped glass that should come with a warning.
+
+The **Vieux Carré**, named for the Quarter itself, was shaken up at the slowly rotating **Carousel Bar** inside the **Hotel Monteleone**, where Hemingway, Faulkner, and Capote all drank. The bar turns a full circle every fifteen minutes whether or not you have earned it, which makes it the most honest cocktail in town.
+
+::hotel lp6583c58d
+
+For the rest of the night, **Lafitte's Blacksmith Shop** pours by candlelight, **Napoleon House** does a proper Pimm's Cup in a courtyard, and guided cocktail tours will walk you between them with the stories attached. They are the rare bar tours that double as a history lesson.
+
+::activity New Orleans | cocktail crawl
+
+## Where to Eat in the French Quarter, New Orleans
+
+**You could eat every meal of your trip inside the Quarter and never repeat a classic.** The French Quarter New Orleans grew up around is a dense little food city, where beignets, the muffuletta, and a dozen Creole institutions all live within a few blocks of each other. Come hungry and pace yourself, because the portions do not negotiate.
+
+::infographic nola-must-eat-dishes
+
+### The Grande Dames
+
+**The old line Creole rooms are the reason people plan a trip around dinner.** **Antoine's** has run since 1840, the oldest family run restaurant in the country and the birthplace of Oysters Rockefeller, still served by the fifth generation. A few doors down, **Galatoire's** has done white tablecloth French Creole since 1905, and **Arnaud's** since 1918.
+
+Dress up a little, book ahead, and let the turtle soup and the ceremony be the whole point. These rooms are not cheap, but they are the real thing, and a long lunch in one is a New Orleans rite of passage.
+
+### The Casual Icons
+
+**Most of the canon, though, you eat standing up or at a counter, in no particular order.** **Beignets** with chicory coffee and a café au lait at **Café du Monde** since 1862, a **muffuletta** from **Central Grocery** on Decatur where it was invented, and a warm muffuletta at **Napoleon House**. If the line at Café du Monde is brutal, **Café Beignet** on Royal Street is the calmer stand.
+
+Round it out with a **gumbo** anywhere it is made fresh and **char grilled oysters** wherever you smell the garlic butter. A guided food tour is the efficient way to graze, and our full guide to the [best restaurants in New Orleans](/blog/best-restaurants-in-new-orleans) sorts the legends from the traps.
+
+::activity New Orleans | food tour
+
+## Voodoo, Ghosts, and the Haunted French Quarter
+
+**The Quarter wears its supernatural reputation proudly, and some of it is genuinely worth your time.** The ghost stories here are darker and better documented than the usual tourist fare. New Orleans Voodoo grew from West African religion blended with Catholicism and bolstered by refugees of the 1791 Haitian revolution, and the small **Historic Voodoo Museum** between Bourbon and Royal packs the altars and artifacts into two rooms.
+
+A guided ghost or cemetery tour after dark is the right way to meet **Marie Laveau**, the famed Voodoo Queen who lived on Saint Ann Street and is buried in **Saint Louis Cemetery Number 1** just outside the Quarter. That cemetery now requires a guide to enter, which keeps the tomb and the white Nicolas Cage pyramid in good company.
+
+::activity New Orleans | ghost cemetery voodoo
+
+Not all of it is fun, and the honest guide says so. The **LaLaurie Mansion** on Royal Street is the city's most infamous house because a fire in 1834 exposed the torture of at least seven enslaved people held there by Delphine LaLaurie. Stand outside, learn the real history, and treat it as the somber site it is rather than a photo op.
+
+Even the hotels are in on it. The grand old hotel at the top of Royal Street is among the most haunted in the city, with a long running story of a three year old guest who never checked out and still plays on the fourteenth floor. Between the voodoo, the cemeteries, and the architecture, the Quarter earns its haunted reputation without anyone having to make a thing up.
+
+## The French Quarter with Kids
+
+**The French Quarter is more family friendly than its reputation suggests, as long as you keep to the daylight version.** The riverfront **Audubon Aquarium** and its **Insectarium** sit right at the edge of the Quarter, with white alligators, African penguins, a walk through reef tunnel, and a butterfly garden. It is the easy win for restless kids.
+
+A jazz cruise on the **Steamboat Natchez** turns the Mississippi into a story, beignets at Café du Monde never miss, and the artists and buskers of Jackson Square are a free show. Keep little ones away from Bourbon Street after dark, when the scene turns adult, and the Quarter is a genuinely good time for families.
+
+::activity New Orleans | steamboat cruise
+
+## Festivals in the French Quarter
+
+**Time your trip right and the whole neighborhood becomes the venue.** The Quarter throws some of the best free festivals in the country, and they are the locals' favorite reason to come. Here are the big ones for 2026.
+
+| Festival | When | What |
+|---|---|---|
+| French Quarter Festival | April 16 to 19, 2026 | Free, 300+ acts on 20 stages, the locals' favorite |
+| Satchmo SummerFest | August 1 to 2, 2026 | Free, Louis Armstrong tribute at the Old Mint |
+| Southern Decadence | September 3 to 7, 2026 | The huge Labor Day LGBTQ celebration |
+| Holidays New Orleans Style | December | Réveillon dinners and free concerts |
+
+The **French Quarter Festival** is the one to plan around, a free music and food blowout that often out draws Jazz Fest in attendance. For the costumed king of them all, [Mardi Gras](/blog/mardi-gras-in-new-orleans) turns the Quarter into a party, though the parades themselves roll Uptown.
+
+## Where to Stay in the French Quarter, New Orleans
+
+**Stay inside the Quarter and the whole neighborhood becomes a walk, not a ride.** Rooms here run higher than the edges of downtown, but you trade that for stepping out of the lobby into the best of New Orleans. Pick a quiet block and you get the charm without the Bourbon Street soundtrack.
+
+On a first visit, that means the French Quarter, with restaurants, bars, and live music a short walk from the lobby. We recommend it over a cheaper room on the edge of town nine times out of ten, because the minutes you save walking add up to a whole extra meal.
+
+For a courtyard hideaway near the river, the **French Market Inn** keeps you steps from Café du Monde with a fountain instead of a nightclub next door.
+
+::hotel lp1da18
+
+If you want to be in the middle of the action, the **Royal Sonesta** anchors a famous corner right on Bourbon Street, with wrought iron balconies over the parade.
+
+::hotel lp1c186
+
+Down in the calmer lower Quarter, **Hotel Provincial** spreads across historic houses with lamplit courtyards and a quieter crowd.
+
+::hotel lp27f5e
+
+Traveling on a budget does not mean leaving the Quarter. The top rated **Chateau Hotel** keeps you inside it for less, courtyard and all.
+
+::hotel lp47c82
+
+Whatever you book, the price you see here is the same flat fee for everyone, never set from your phone or your search history. For the full breakdown, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) or browse the [New Orleans hotels hub](/hotels/new-orleans).
+
+## Is the French Quarter Safe?
+
+**The French Quarter is one of the safer parts of New Orleans, especially on the busy, well lit streets where most visitors stay.** It is heavily policed and rarely empty, and the sheer foot traffic keeps the main blocks comfortable late into the night. The trouble is mostly petty, pickpockets in the Bourbon Street crush and break ins on parked cars.
+
+::infographic nola-safe-vs-avoid
+
+A few habits keep it easy. Favor **Royal and Chartres** after dark over the rowdier Canal Street end of Bourbon, travel in a group late at night, and do not leave anything in a car you would miss. Our full guide on whether [New Orleans is safe](/blog/is-new-orleans-safe) breaks the city down block by block.
+
+## When to Visit the French Quarter in New Orleans
+
+**Aim for spring or fall, when the weather is mild and the festival calendar is generous.** October through November and February through May give you the 70s, lower humidity, and the easy walking that makes the Quarter shine. Summer is hot and sticky, with a heat index over a hundred and the year's heaviest rain.
+
+::infographic nola-best-time
+
+The locals' favorite weekend is the **French Quarter Festival** in mid April, but the shoulder months around it are the sweet spot for fewer crowds and fair prices. If you are planning a trip around Mardi Gras or Jazz Fest, book close to a year ahead, since those weekends fill every room for miles. Hurricane season runs June through November, so a late summer trip wants a flexible plan.
+
+Our guide to the [best time to visit New Orleans](/blog/best-time-to-visit-new-orleans) sorts the months in detail.
+
+## Getting to the French Quarter
+
+**You do not need a car for the French Quarter, and you will be happier without one.** Fly into Louis Armstrong International, about 30 minutes out by rideshare, and leave the driving to the locals. The Quarter is flat, compact, and built for exploring on foot, with narrow one way streets that punish anyone who tries to drive them.
+
+When your feet give out, the **Riverfront and Canal streetcar lines** skirt the edges of the Quarter, and a short rideshare covers anything farther. For a fuller plan that strings the Quarter together with the rest of the city, see our [3 day New Orleans itinerary](/blog/3-days-in-new-orleans).
+
+## The Last Word on the French Quarter
+
+**The French Quarter New Orleans treasures is small, old, walkable, and unlike anywhere else in the country, which is exactly why you came.** Spend your days on Royal and the river, see Bourbon once after dark, eat everything, and stay inside the Quarter so the walk home is part of the fun.
+
+This New Orleans guide is a strong default, not a rule. Do that, leave room in the evening for the brass band you did not plan for, and a few days is enough to send you home already plotting the next trip. Lock the room first, because the rest of the Quarter gets easy once you have a bed in the right place.
+
+For the day by day version, our guide to [things to do in New Orleans](/blog/things-to-do-in-new-orleans) picks up where this one leaves off.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "3-days-in-new-orleans",
     title: "3 Days in New Orleans: The Perfect Itinerary (2026)",
     seoTitle: "3 Days in New Orleans: The Perfect Itinerary",
@@ -176,7 +457,7 @@ Whatever you book, the price you see here is the same flat fee for everyone, nev
 
 ## Day 1 Itinerary: The French Quarter on Foot
 
-**Spend the whole first day in the French Quarter, the oldest, densest, and most walkable part of the city.** Everything here sits within a few blocks, so you can wander without a map and still hit the highlights. Wear shoes you can log miles in, and start early, before the heat and the crowds wake up.
+**Spend the whole first day in the French Quarter, the oldest, densest, and most walkable part of the city.** Everything here sits within a few blocks, so you can wander without a map and still hit the highlights. Wear shoes you can log miles in, and start early, before the heat and the crowds wake up. For the deep dive on this one neighborhood, see our [French Quarter New Orleans guide](/blog/french-quarter-new-orleans).
 
 ::infographic nola-day1-plan
 
@@ -2234,7 +2515,7 @@ None of these are no go zones to fear, and plenty are ordinary residential stree
 
 **The French Quarter is the safest neighborhood in New Orleans, day or night, though "safest" still means a city, not a cruise ship.** By day it is about as benign as a theme park with much better food, anchored by the busy tourist beats including Jackson Square, the French Market, Royal Street's galleries and the Decatur Street cafés.
 
-Those crowds are exactly why it is safe, there are too many people and too many officers around for much to happen on the main drags. The mounted police, foot patrols and sheer foot traffic make the central Quarter one of the most watched over patches of the city.
+Those crowds are exactly why it is safe, there are too many people and too many officers around for much to happen on the main drags. The mounted police, foot patrols and sheer foot traffic make the central Quarter one of the most watched over patches of the city. For everything to do, eat, and see there, our full [French Quarter New Orleans guide](/blog/french-quarter-new-orleans) covers the whole neighborhood.
 
 After dark it stays busy and patrolled, especially around the main streets and the Square. The move is simple, stay on the well lit, populated blocks and skip the empty side streets and alleys, which exist even here.
 

@@ -1015,6 +1015,54 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
     title: "The three-day move",
     body: "Base in or one streetcar stop from the French Quarter, so you walk to most of it. Skip the rental car, the parking and one-way streets are a tax you do not need. Front-load the Quarter on Day 1, ride the streetcar on Day 2, and save the swamp and plantation combo for Day 3. Book that combo before you fly in, because the good spring dates sell out.",
   },
+
+  "nola-fq-history": {
+    kind: "steps",
+    title: "How the French Quarter got Spanish bones",
+    steps: [
+      { title: "1718", detail: "Bienville founds New Orleans. The Quarter is the original city, the Vieux Carré." },
+      { title: "1763", detail: "France hands the colony to Spain after the Seven Years War." },
+      { title: "1788 and 1794", detail: "Two great fires burn most of the wooden French town to the ground." },
+      { title: "Rebuilt in brick", detail: "The Spanish rebuild with stucco, courtyards, and iron balconies. The French Quarter is mostly Spanish." },
+    ],
+  },
+  "nola-fq-streets": {
+    kind: "compare",
+    title: "Royal Street or Bourbon Street?",
+    left: "Royal Street",
+    right: "Bourbon Street",
+    rows: [
+      { label: "The vibe", left: "Antiques, galleries, iron balconies, calm", right: "Bars, neon, a round-the-clock party" },
+      { label: "Best by", left: "Day, for a slow stroll", right: "One night, to see it once" },
+      { label: "The sound", left: "A lone street musician", right: "Ten bands at once, all louder" },
+      { label: "Watch for", left: "Nothing much", right: "Pickpockets and the Canal end after dark" },
+    ],
+  },
+  "nola-fq-attractions": {
+    kind: "stat",
+    title: "What it costs to see the Quarter",
+    stats: [
+      { value: "Free", label: "St. Louis Cathedral, open daily until 4pm" },
+      { value: "$11", label: "the New Orleans Jazz Museum at the Old US Mint" },
+      { value: "$10", label: "the Historic Voodoo Museum, two rooms of folklore" },
+      { value: "$43.50", label: "a Steamboat Natchez jazz cruise on the Mississippi" },
+    ],
+  },
+  "nola-fq-callout": {
+    kind: "callout",
+    title: "The French Quarter move",
+    body: "Walk it. The whole Quarter is about 13 blocks by 7 and dead flat. Spend your days on Royal, Chartres, and the riverfront, and see Bourbon Street once after dark rather than building a trip around it. Stay inside the Quarter so you can walk home, and keep to the busy, well-lit streets at night.",
+  },
+  "nola-fq-cocktails": {
+    kind: "steps",
+    title: "Three cocktails the Quarter invented",
+    steps: [
+      { title: "The Sazerac", detail: "Mixed in a Quarter pharmacy by Antoine Peychaud. Rye, bitters, a whisper of absinthe. Louisiana's official cocktail." },
+      { title: "The Hurricane", detail: "Born at Pat O'Brien's in the 1940s. Rum and passion fruit in a lamp shaped glass. Sweet and lethal." },
+      { title: "The Vieux Carré", detail: "Invented at the Carousel Bar. Rye, cognac, vermouth, and two kinds of bitters, named for the Quarter itself." },
+      { title: "Where to sip them", detail: "Lafitte's Blacksmith Shop by candlelight, Napoleon House for a Pimm's Cup, the Carousel Bar for the slow spin." },
+    ],
+  },
 };
 
 export function getInfographic(key: string): Infographic | null {
