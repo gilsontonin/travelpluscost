@@ -13,6 +13,7 @@
     "typecheck": "tsc --noEmit",
     "blog:qa": "node scripts/blog/qa.mjs",
     "blog:checklist": "node scripts/blog/post-checklist.mjs",
+    "blog:scan": "node scripts/blog/scan.mjs",
     "blog:serp": "node scripts/blog/serp-optimize.mjs",
     "blog:stats": "node scripts/blog/post-stats.mjs",
     "blog:voice": "node scripts/blog/voice-scorecard.mjs",

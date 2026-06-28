@@ -48,7 +48,13 @@ QA note (post exists). Then work it top to bottom. If no city was given, pick on
      questions become the FAQ *and* a dedicated body section (Estes Park: Denver-distance 720, elevation
      ~1,200, "is it in RMNP" 520, "Stanley haunted" 210 — that's the gold, not guesses).
    - **KD vet** (`phrase_kdi`): aim KD ≤ ~30 / volume ≥ ~150; reject the too-hard (Pigeon Forge KD 53).
-   - **The REAL SERP** (`phrase_organic`): use the **actual ranking guide pages** as the serp `--urls`, NOT
+   - **STEP 1 — SCAN THE TOP 3 (do this BEFORE writing).** WebSearch the keyword → take the GENUINE top
+     ranking guides (not Reddit/Wikipedia/YouTube/news/OTA listings). Run **`npm run blog:scan -- "<kw>"
+     --urls "u1,u2,u3"`** → the #1/#2/#3 competitor cards + averaged **TARGET SPEC** (words · H2/H3 · images
+     · FAQs) + the 9-point scan + the ★gaps. This sets the shape the SERP already rewards; then the deep
+     `blog:serp` brief (below) fills the terms/PAA/gaps. Items 1–8 match the winners, item 9 is where you
+     beat them (the booking path they lack, the PAA they answer poorly, cluster cross-links, freshness).
+   - **The REAL SERP** (`blog:serp`): use those same **actual ranking guide pages** as the serp `--urls`, NOT
      long off-SERP listicles. If the rankers are thin/incoherent (a ~270w page, Reddit, OTA listings, resort
      homepages — no genuine guide) it's a **thin-SERP exec-decision keyword**: write the best honest guide
      and ship it; do not pad to a meaningless serp number. Log the cluster: `npm run blog:keywords`.

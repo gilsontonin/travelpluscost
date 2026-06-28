@@ -68,9 +68,17 @@ people enjoy and skim easily converts better than one that ranks and bounces.
 1. `npm run blog:next -- "<City>"` — inventory pre-flight (≥8 rate-verified hotels) + the rate-verified card
    pool + the area list. `npm run blog:pros -- "<City>"` — backfills "Guests loved …" on the cards.
 2. `npm run blog:kd -- "<city>"` — the keyword cluster (head vol/KD + variants → FAQ + section seeds).
-3. **SERP-first research (Semrush is dropped):** WebSearch `where to stay in <city>` → take the GENUINE
-   ranking guides (not Reddit/OTA) as `blog:serp --urls "u1,u2,…"` (comma-joined!). WebSearch the People-
-   Also-Ask → FAQ + a section. Read the brief: band, heading gaps, term ADD list, competitor questions.
+3. **STEP 1 — SCAN THE TOP 3 (mandatory; the SERP already has the answer — do this BEFORE writing a word).**
+   WebSearch the keyword → take the GENUINE top ranking guides (skip Reddit/Wikipedia/YouTube/news/OTA
+   listings). Then run BOTH halves of the scan (Semrush is dropped — this is free and replaces Surfer/
+   Clearscope):
+   - `npm run blog:scan -- "<kw>" --urls "u1,u2,u3"` → the #1/#2/#3 competitor cards + the averaged
+     **TARGET SPEC** (words · H2/H3 · images · FAQs) + the 9-point scan + the ★gaps. The fast structural pass.
+   - `npm run blog:serp -- "<kw>" --draft <slug> --urls "u1,u2,…"` (comma-joined!) → the deep brief: length
+     band, heading gaps, term/entity ADD list, competitor PAA questions.
+   Together these ARE the scan: **items 1–8 match the shape that already wins; item 9 (the gaps) is where you
+   beat them** — the booking path they lack, the PAA they answer poorly, the cluster cross-links, freshness.
+   WebSearch the People-Also-Ask → FAQ + a section.
 4. **Verify cards:** for an ingested region, `blog:hotels` does NOT rate-check — POST the ids to
    `https://travelpluscost.com/api/prices` (midweek ~3 weeks out) and card only the ✓ priced ones.
 5. **Write** into `src/lib/posts.ts` (new entry at the top of POSTS; `region:{name,destination}` fires the
