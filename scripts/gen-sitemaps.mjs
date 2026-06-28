@@ -210,6 +210,20 @@ const indexXml = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="h
 await writeFile(`public/${INDEX_FILE}`, indexXml);
 console.log(`[gen-sitemaps] wrote public/${INDEX_FILE} (${entries.length} child sitemaps, all /${SITEMAP_DIR}/)`);
 
+// Static robots.txt — generated HERE so its Sitemap line always matches the current SITEMAP_VERSION, and
+// served as a flat file from public/ (NOT a dynamic Next route) so it can never cold-start / 5xx during a
+// deploy. robots.txt unreachability can pause Google's crawl, so it must be bulletproof at request time.
+const ROBOTS_JUNK_BOTS = ["AhrefsBot", "MJ12bot", "DotBot", "BLEXBot", "Bytespider", "DataForSeoBot", "PetalBot"];
+const ROBOTS_DISALLOW = ["/api/", "/owner", "/account", "/auth/", "/book", "/booking-complete", "/booking-confirmed", "/cancel", "/compare", "/*_rsc="];
+const robotsTxt =
+  `User-Agent: *\nAllow: /\n` +
+  ROBOTS_DISALLOW.map((p) => `Disallow: ${p}\n`).join("") +
+  `\n` +
+  ROBOTS_JUNK_BOTS.map((b) => `User-Agent: ${b}\nDisallow: /\n\n`).join("") +
+  `Host: ${SITE}\nSitemap: ${SITE}/${INDEX_FILE}\n`;
+await writeFile("public/robots.txt", robotsTxt);
+console.log(`[gen-sitemaps] wrote public/robots.txt (static — Sitemap → /${INDEX_FILE})`);
+
 // content/geo-index.json — powers the /hotels browse index, state hubs and city-hub cross-links
 // (aggregated above). Committed (not gitignored) so dev/build always has it.
 const geo = {

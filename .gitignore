@@ -49,6 +49,7 @@ next-env.d.ts
 # /public/sitemap-*.xml covers every versioned index (sitemap-v3.xml, sitemap-v4.xml, …).
 /public/sitemaps/
 /public/sitemap-*.xml
+/public/robots.txt
 
 # local data snapshots / one-off exports (sitemap CSV dumps, screenshots) — not part of the build
 /exports/
