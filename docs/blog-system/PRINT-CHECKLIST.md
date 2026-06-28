@@ -36,6 +36,7 @@
 |C4|Paragraphs ≤ 3 sentences (favor 2; not a wall of 1-liners)|0 paras >3 sent.|blog:voice CONCISE|
 |C5|Active voice — instructional (what to do / avoid)|low passive|blog:voice ACTIVE|
 |C6|Simple words (grade ≤10 unless serp term)|—|blog:voice READING|
+|C7|**Owner punctuation rule**: NO dashes, NO prose colons/semicolons, NO contractions (spell out: "we will" not "we'll"). Split with . and , . Titles + "**The move:**" strips keep their colon.|clean|blog:style|
 
 ## D · Skimmability & Bolding  (HARD — the recent miss)
 | # | Check | Bar | Verified by |
@@ -113,7 +114,7 @@
 | # | Check | Bar | Verified by |
 |---|---|---|---|
 |M1|typecheck + lint (0 errors) + build clean|0 err|npm|
-|M2|Deploy gate (ai-slop + claims-integrity)|2/2|npm run check|
+|M2|Deploy gate (ai-slop + claims-integrity + prose-style)|3/3|npm run check|
 |M3|Lighthouse: perf ≥90* · a11y · BP · SEO = 100 (*card-heavy baseline ~86, edge-cached on prod)|—|blog:lh|
 
 ## N · Logging & Publish

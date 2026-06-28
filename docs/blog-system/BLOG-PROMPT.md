@@ -101,6 +101,7 @@ npm run blog:serp  -- "<kw>" --draft <slug> --urls "u1,u2,…"   # ≥90 (or fla
 npm run blog:slop  -- <slug>      # 0 HARD tells
 npm run blog:stats -- <slug>      # length IN band; sections not thin
 npm run blog:voice -- <slug>      # 0 paras >3 sentences · active · a beat per section (LIST each)
+npm run blog:style                # owner rule: no contractions/dashes/prose-colons/semicolons (auto-fixes); a check gate
 npm run blog:cta   -- <slug>      # 0 leaks · a CTA every section · named hotels carded
 npm run blog:checklist -- <slug>  # AUTO all pass
 npm run blog:related              # de-orphan / read-next

@@ -30,7 +30,11 @@ When asked to write or edit ANY blog post, BEFORE writing a word:
 1b. BEFORE writing: **STEP 1 — scan the top 3** (`npm run blog:scan` + `blog:serp` → TARGET SPEC + ★gaps),
    then **STEP 2 — facet-driven research** (`References/ResearchBrief.md`: 10–30 facets scaled by keyword
    depth → `scripts/blog/research-brief-<slug>.md`; write FROM the brief, not the top-3 echo).
-2. Run the gates and PRINT them on screen: `npm run blog:serp`, `blog:slop`, `blog:stats`,
+1c. **Owner punctuation rule (2026-06-28, HARD):** spell every word OUT — **no contractions** ("we will" not
+   "we'll", "it is" not "it's"). **No dashes in prose** (— – or compound hyphens). **No colons or semicolons in
+   prose** — split with `.` and `,`. Titles and the `**The move:**` quick-facts strips KEEP their colon. Enforced
+   by `npm run blog:style` (auto-fixes the safe cases, flags the rest) and wired into `npm run check`.
+2. Run the gates and PRINT them on screen: `npm run blog:serp`, `blog:slop`, `blog:stats`, `blog:style`,
    `blog:checklist`, `blog:lh`, `blog:freshness`, then `blog:qa`. Fix every red, re-run after every edit.
    (`blog:lh` = Lighthouse budget perf ≥ 90 / a11y, BP, SEO = 100; needs a running server — see
    `docs/blog-system/References/Lighthouse.md`. **Every image goes through `next/image`, never a raw

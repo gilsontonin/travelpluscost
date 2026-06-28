@@ -142,7 +142,7 @@ travelpluscost, also avoid hype superlatives that breach compliance — see §1.
 1. **Start with the answer, then add context.** Never tease ("keep reading to find out"); withholding the
    answer makes people pogo-stick back to Google.
 2. **Use real numbers, never round, never invent.** A number you can't verify gets deleted, not guessed.
-3. **Contractions always** (it's, you're, don't). It reads human and it's a free quality signal.
+3. **Spell every word OUT — NO contractions** (write "it is", "you are", "do not", never "it's/you're/don't"). **NO dashes in prose** (— – or compound hyphens); split with `.` and `,`. **NO colons or semicolons in prose** (titles and the `**The move:**` strips keep their colon). Owner rule 2026-06-28 — reverses the old "contractions always". Enforced by `npm run blog:style` (a `npm run check` gate).
 4. **Short paragraphs — max 3 sentences, favor 2–3.** One idea per paragraph. A wall of text is a bounce.
    (But don't write a wall of *one*-sentence lines either — that reads like a choppy listicle.)
 5. **Active voice, subject first.** "Magic Island sits ten minutes away," not "It takes ten minutes to
@@ -178,7 +178,7 @@ This list exists because these are the exact shortcuts that ship bad posts. Name
 4. **Running stats once, editing, then not re-running.** Every gate runs on the FINAL text. Re-run all.
 5. **Inventing or rounding facts.** Verified or deleted. Years/prices/counts: source it or drop it.
 6. **Humour as one quip in the intro.** A beat per section, written into the fact (§3).
-7. **Writing without contractions.** Check your "it is"/"you are" count before shipping.
+7. **Writing WITH contractions, dashes, or prose colons/semicolons.** Owner voice = fully spelled out, split with `.`/`,`. Run `npm run blog:style` (auto-fixes the safe cases) until it is clean.
 8. **An FAQ that re-answers the body.** FAQ = *leftover* long-tail questions only. Swap-test each one:
    if a section already answers it, replace it with a genuine new question.
 9. **Accepting the first stock photo / skipping attribution.** **Visually inspect EVERY image** for

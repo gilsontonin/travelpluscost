@@ -20,6 +20,8 @@ function run(label, cmd) {
 run("ai-slop · blog posts", "node scripts/blog/ai-slop-check.mjs --all");
 // 2) Claims integrity (no fake reviews / ratings / price overclaims in authored copy)
 run("claims-integrity", "node scripts/blog/claims-check.mjs");
+// 3) Prose style (owner voice: no dashes, no colons/semicolons in prose, no contractions — spelled out)
+run("prose-style", "node scripts/blog/style-clean.mjs");
 
 const failed = steps.filter(([, ok]) => !ok);
 console.log(`\n${"─".repeat(48)}\ncheck: ${steps.length - failed.length}/${steps.length} passed`);

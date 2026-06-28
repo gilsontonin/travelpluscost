@@ -26,7 +26,7 @@ is 16.5px, and the top search bar + 8-hotel rail stay above the body. SEO is nec
 1. **Short paragraphs (max 3 sentences).** One idea each.
 2. **Active voice, subject first.** "Your phone changes the price," not "the price is changed…".
 3. **Plain high-school words** — unless a fancier word is the actual search term (then keep it).
-4. **Contractions always. No exclamation marks. No emoji. No AI tells** (`ai-slop` 0 HARD).
+4. **Spell every word OUT — NO contractions** ("we will" not "we'll", "it is" not "it's"; owner rule 2026-06-28, reverses the old "contractions always"). **NO dashes in prose** (— – and compound hyphens; use `.` or `,`). **NO colons or semicolons in prose** (titles + the `**The move:**` strips keep their colon). **No exclamation marks. No emoji. No AI tells.** Enforced by `npm run blog:style` (now in `npm run check`).
 5. **Tell the honest downside, including about us** — we're not always the lowest *headline* price; say so.
 6. **One dry beat per section** (Humour.md) — a smile every ~200–300 words, deadpan, never at the reader.
 7. **Explain the price/point in 30 seconds, in plain words.** If you can't, the post is off-brand.
@@ -80,7 +80,7 @@ count ≈ working-target ÷ ~280.
 4. **Editing after stats, not re-running.** Re-run `blog:stats` + `blog:voice` + `blog:slop` after every edit batch.
 5. **Inventing/rounding facts.** Only `stats.md` + real LiteAPI data. Years/counts verified or dropped.
 6. **Humour as a garnish.** 1–2 dry beats per major section, written INTO the section, deadpan, never at the reader.
-7. **No contractions.** Always use them (voice + scorer).
+7. **Spell words out — NO contractions, NO dashes, NO prose colons/semicolons** (owner rule). Run `npm run blog:style` (a `check` gate); it auto-fixes the safe cases and flags the rest.
 8. **FAQ that re-answers the body.** FAQ = genuine leftover/long-tail questions only.
 9. **First stock photo / no credit.** One cover (real, on-topic, WebP), keyword alt, photographer credit.
 10. **Linking without curling.** Every external URL `curl`-200 before it ships; internal links must hit a real page.

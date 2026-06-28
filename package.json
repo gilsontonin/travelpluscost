@@ -19,6 +19,7 @@
     "blog:voice": "node scripts/blog/voice-scorecard.mjs",
     "blog:slop": "node scripts/blog/ai-slop-check.mjs",
     "blog:dehyphenate": "node scripts/blog/dehyphenate.mjs",
+    "blog:style": "node scripts/blog/style-clean.mjs",
     "blog:related": "node --env-file=.env.local scripts/blog/embed-related.mjs",
     "blog:photo": "node --env-file=.env.local scripts/blog/source-photo.mjs",
     "check": "node scripts/blog/check.mjs",

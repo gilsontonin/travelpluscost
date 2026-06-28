@@ -89,10 +89,13 @@ QA note (post exists). Then work it top to bottom. If no city was given, pick on
        (Dells 66) or a **coherent SERP where only junk listicle terms remain** ("information"/"journey"/
        "sweet" — Estes Park 88) is a reported exec-decision, NOT a lazy stop and NOT a reason to stuff.
      `npm run blog:slop -- <slug>` (0 HARD) · `npm run blog:stats -- <slug>` (in band) · `npm run blog:voice`
+     `npm run blog:style` — **owner punctuation rule (2026-06-28)**: spell every word out (NO contractions),
+       NO dashes in prose, NO prose colons/semicolons (titles + the `**The move:**` strips keep their colon);
+       split with `.` and `,`. It auto-fixes the safe cases and flags the rest. Now part of `npm run check`.
      `npm run blog:cta -- <slug>` — **0 leaks**, a CTA every section, every mentioned hotel carded/linked.
      `npm run blog:qa -- <slug>` (the aggregate).
 6. **Build + Lighthouse:** `npm run typecheck && npm run lint && npm run build && npm run check` (0 errors).
-   **`npm run check` is the Netlify DEPLOY GATE** (claims-integrity + ai-slop, per netlify.toml) — a RED
+   **`npm run check` is the Netlify DEPLOY GATE** (claims-integrity + ai-slop + prose-style, per netlify.toml) — a RED
    check fails the WHOLE deploy, so a new post silently 404s on prod and stale content stays live. It
    flags unverifiable superlatives (e.g. "most-reviewed"); rephrase to verifiable wording. Then
    `npm run blog:lh -- /blog/<slug>` against a running server (`npm run build && npm start`; perf ≥ 90,

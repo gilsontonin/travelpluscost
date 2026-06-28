@@ -12,7 +12,8 @@ print so you don't have to: plain, specific, a little dry, allergic to marketing
 *why you pay what you pay in 30 seconds.* If we can't, we don't deserve the booking.
 
 ## Hard rules (non-negotiable)
-1. **Contractions always** (it's, you're, don't). It's the voice *and* it reads human.
+1. **Spell every word OUT — no contractions** (write "it is", "you are", "do not"). Also **no dashes** and **no
+   colons or semicolons in prose** — split with `.` and `,` (owner rule 2026-06-28, enforced by `npm run blog:style`).
 2. **No exclamation marks. No emoji.** Deadpan beats hype.
 3. **No AI tells** — 0 HARD in `ai-slop-check`. (no "seamless / world-class / unlock / nestled / hidden
    gem / turn-key / elevate / in today's world …".)

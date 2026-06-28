@@ -69,8 +69,10 @@ failing `check` makes `git push` succeed but the deploy silently fail. Unverifia
 6. **Treating humour as a garnish.** §3, written FUNNY FIRST. An accurate-but-dry post fails even with
    every gate green. Draft the beat INTO the section so it carries the fact.
 
-7. **Writing without contractions.** Always (`Voice.md`). Also free scorer money — the tokenizer strips
-   apostrophes, so "don't"→`dont` matches competitor body terms "do not" never will.
+7. **Spell every word out — no contractions, no dashes, no prose colons/semicolons** (owner rule 2026-06-28).
+   Write "do not" / "we will" / "it is", split with `.` and `,`. Expanding to full words also matches the "do
+   not" / "we will" tokens competitors use, so the scorer does not suffer. Run `npm run blog:style` (a `check`
+   gate) to auto-fix and verify; titles and the `**The move:**` strips keep their colon.
 
 8. **FAQ that re-answers the body.** The swap test: if an H2 already answers it, swap for a genuine
    leftover. FAQ H3s carry scorer heading credit — re-run `blog:serp` after a swap.
