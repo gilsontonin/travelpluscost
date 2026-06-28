@@ -466,8 +466,65 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
   },
   "nola-mardi-gras-2026": {
     kind: "callout",
-    title: "Mardi Gras 2026 falls on February 17",
-    body: "Carnival season runs from January 6 to Fat Tuesday (Feb 17, 2026). The two weeks before are the city's busiest and most expensive — hotels book up a year ahead and often require 3–4 night minimums. Want the party? Book early. Want the city calm? Avoid those two weeks entirely.",
+    title: "Mardi Gras 2027 falls on February 9",
+    body: "Carnival season runs from January 6 to Fat Tuesday (Feb 9, 2027). The two weeks before are the city's busiest and most expensive — hotels book up a year ahead and often require 3–4 night minimums. Want the party? Book early. Want the city calm? Avoid those two weeks entirely.",
+  },
+  "nola-mg-2027-dates": {
+    kind: "stat",
+    title: "Mardi Gras 2027, at a glance",
+    stats: [
+      { value: "Feb 9, 2027", label: "Fat Tuesday — Mardi Gras Day, the grand finale" },
+      { value: "Jan 6", label: "Twelfth Night — Carnival season begins, king cakes appear" },
+      { value: "34 days", label: "a short 2027 season (2026 ran 43 days, 2025 ran 58)" },
+      { value: "Feb 8", label: "Lundi Gras — Zulu and Rex arrive by riverboat" },
+    ],
+  },
+  "nola-mg-colors": {
+    kind: "stat",
+    title: "What the Mardi Gras colors mean",
+    stats: [
+      { value: "Purple", label: "Justice — one of the three colors Rex chose in 1872" },
+      { value: "Green", label: "Faith" },
+      { value: "Gold", label: "Power" },
+      { value: "1872", label: "Rex debuts the King of Carnival and these colors" },
+    ],
+  },
+  "nola-mg-throws": {
+    kind: "stat",
+    title: "The throws worth catching",
+    stats: [
+      { value: "Zulu coconut", label: "the holy grail — hand-passed from the float, not thrown" },
+      { value: "Muses shoe", label: "a glittered high heel from the all-women krewe" },
+      { value: "Nyx purse", label: "a hand-decorated handbag" },
+      { value: "Tucks paper", label: "a roll of toilet paper — yes, really, and it's a classic" },
+    ],
+  },
+  "nola-mg-family-vs-party": {
+    kind: "compare",
+    title: "Family parade or adult party?",
+    left: "Family-friendly (Uptown)",
+    right: "Adult party (the Quarter)",
+    rows: [
+      { label: "Where", left: "St. Charles Ave and Napoleon Ave, Uptown", right: "Bourbon Street and the French Quarter" },
+      { label: "The vibe", left: "Ladders, picnics, kids, daytime parades", right: "Costumes, crowds, to-go cups, late nights" },
+      { label: "Best for", left: "Families, first-timers, a calmer curb", right: "Adults who came for the wild side" },
+      { label: "The catch", left: "Arrive early to claim a spot", right: "No parades roll here — it's the after-party" },
+    ],
+  },
+  "nola-mg-booking": {
+    kind: "steps",
+    title: "How to book a Mardi Gras room",
+    steps: [
+      { title: "Book 6–12 months out", detail: "Parade-route hotels sell out nearly a year ahead; most open Carnival bookings 10–12 months early." },
+      { title: "Expect minimums and deposits", detail: "Three-to-five-night stays and non-refundable deposits are standard for Carnival week." },
+      { title: "Pick your spot", detail: "St. Charles for the parades, the CBD for the Canal Street finish, the Quarter for the costume scene." },
+      { title: "Lock the rate early", detail: "Base rates climb across the whole city — the earlier you book, the better you sit." },
+    ],
+  },
+  "nola-mg-callout": {
+    kind: "callout",
+    title: "The first-timer's move",
+    body: "Catch a family parade Uptown on St. Charles by day, costume up for the Quarter by night, and eat king cake until Lent. Book your room 6–12 months out — and know the price you see is the same flat fee everyone sees, never set from your device or history.",
   },
   "nola-day-trips": {
     kind: "stat",

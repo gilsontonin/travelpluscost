@@ -1,4 +1,27 @@
 {
+  "mardi-gras-in-new-orleans": {
+    "primary": "mardi gras in new orleans",
+    "secondary": [
+      "new orleans mardi gras",
+      "mardi gras new orleans",
+      "when is mardi gras in new orleans",
+      "new orleans fat tuesday parades",
+      "king cake new orleans",
+      "new orleans parade schedule",
+      "second line new orleans",
+      "mardi gras 2027 new orleans",
+      "lundi gras new orleans",
+      "mardi gras throws"
+    ],
+    "volume": 3600,
+    "kd": 41,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-28",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
+  },
   "best-restaurants-in-new-orleans": {
     "primary": "best restaurants in new orleans",
     "secondary": [

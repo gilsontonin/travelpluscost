@@ -168,3 +168,13 @@ single, actionable line. Prune lessons that are now fully enforced by a checker.
   matter how many `::infographic`/`::hotel` blocks it has. Include ≥1 genuine markdown comparison table (also
   AI-Overview bait) so the gate registers, and confirm the true cadence by hand (this post: 8 infographics +
   table + 5 cards + 3 Viator blocks for 4,294w).
+- **(mardi-gras-in-new-orleans) Verify perishable dates, then grep the CLUSTER for the outgoing year.**
+  Mardi Gras 2027 is Feb 9 (47 days before Easter Mar 28) — not the Feb 16 I first assumed; always verify a
+  date at source before writing. Adding a seasonal post also exposed stale year-stamps hiding in SIBLING posts:
+  the best-time guide still said "Feb 17, 2026" in its TLDR, a TLDR point, an FAQ, the body, AND a shared
+  infographic. When you publish a seasonal/dated post, `grep` the whole cluster for the old year, refresh every
+  hit, and drop the inbound link while you're in there. This is the GSC-free half of the revision loop.
+- **(mardi-gras-in-new-orleans) Edit pitfall: a swallowed heading orphans a section.** An `## ...` heading that
+  sits inside an Edit's `old_string` is deleted unless you re-add it in `new_string` — it happened here (the
+  "## Mardi Gras Throws" heading vanished during a section insert, leaving its content under the wrong H2).
+  After any structural insert, run `grep -n '^## '` on the post and eyeball the heading list before gating.

@@ -49,6 +49,233 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "mardi-gras-in-new-orleans",
+    title: "Mardi Gras in New Orleans 2027: Dates, Parades & Tips",
+    seoTitle: "Mardi Gras in New Orleans 2027: Dates & Parade Guide",
+    description:
+      "Mardi Gras in New Orleans 2027 falls on February 9. The honest guide to the dates, parade schedule, throws, king cake, where to watch, and how to book a room.",
+    excerpt:
+      "Fat Tuesday 2027 is February 9. The honest, local-grade guide to Mardi Gras in New Orleans — real dates, the parade schedule, throws and king cake, family vs party, and how to book a room before it sells out. As of 2026.",
+    tldr: {
+      answer:
+        "Mardi Gras 2027 peaks on Tuesday, February 9, with Carnival season running January 6 to Fat Tuesday. The parades are free and roll Uptown along St. Charles Avenue to Canal Street — not through the French Quarter. Watch family parades Uptown, costume up in the Quarter, and book a hotel 6 to 12 months ahead.",
+      points: [
+        "**The date** — Fat Tuesday is February 9, 2027; Carnival runs January 6 to February 9.",
+        "**Parades are free** — and roll Uptown to Canal Street, not down Bourbon.",
+        "**Family vs party** — Uptown St. Charles for kids, the French Quarter for the adult scene.",
+        "**The throws** — beads are the baseline; chase Zulu coconuts, Muses shoes, and Nyx purses.",
+        "**Book early** — parade-route hotels sell out 6 to 12 months ahead.",
+      ],
+    },
+    date: "2026-06-28",
+    updated: "2026-06-28",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/171787351.jpg",
+      alt: "A classic French Quarter hotel in New Orleans with wrought-iron galleries and flags over the entrance, a base for Mardi Gras",
+      credit: { name: "French Quarter, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "When is Mardi Gras in New Orleans in 2027?",
+        a: "Mardi Gras Day (Fat Tuesday) is Tuesday, February 9, 2027. Carnival season starts on Twelfth Night, January 6, and builds to that finale, with Lundi Gras the day before on February 8. It's a short season in 2027 — about 34 days — because the date is tied to Easter and moves every year.",
+      },
+      {
+        q: "Is Mardi Gras free?",
+        a: "Yes. The parades are free and open to the public — you just claim a spot on the route. You can pay for reserved grandstand bleacher seats or a French Quarter balcony if you want a guaranteed view, and the krewes' formal balls are private, invitation-only events.",
+      },
+      {
+        q: "Do Mardi Gras parades go down Bourbon Street?",
+        a: "No — and this trips up most first-timers. Large floats have been banned from the narrow French Quarter since 1972, so the major parades roll Uptown along St. Charles Avenue and finish near Canal Street. Bourbon Street is the walking costume party, not a parade route.",
+      },
+      {
+        q: "Is Mardi Gras family-friendly?",
+        a: "Very. The Uptown stretch of St. Charles Avenue around Napoleon Avenue is family central — ladders, picnics, and daytime parades. Just keep little ones away from Bourbon Street and the French Quarter after dark, which turn into an adult party. The all-women Krewe of Muses is a great family night parade.",
+      },
+      {
+        q: "How far in advance should I book a hotel for Mardi Gras?",
+        a: "Six to twelve months ahead, and closer to a year for hotels right on the parade route. Expect three-to-five-night minimums and non-refundable deposits during Carnival week, and remember that base rates across the whole city climb steeply, so the earlier you lock a room the better you sit.",
+      },
+      {
+        q: "What is king cake?",
+        a: "King cake is an oval cinnamon brioche iced in purple, green, and gold with a tiny plastic baby hidden inside. Whoever gets the baby in their slice is crowned for the day and traditionally hosts the next party or buys the next cake. It's sold only between January 6 and Fat Tuesday — order one the moment you arrive.",
+      },
+    ],
+    body: `**Mardi Gras in New Orleans** in 2027 lands on **Tuesday, February 9** — the explosive finale of a Carnival season that starts quietly on January 6 and builds for weeks. It's the biggest free street party in America, and also the most misunderstood. Half of what first-timers think they know is wrong, starting with this: the parades don't roll down Bourbon Street.
+
+This is the honest, local-grade guide for the 2027 season: the real dates, the parade schedule, what the throws and king cake are actually about, where to watch with kids versus where to go wild, and the part people leave too late — how to get a room. Current as of 2026.
+
+One thing to set straight up front. Mardi Gras is a whole season, not a single day, and "Mardi Gras Day" is just the last and loudest of it. Plan around the final five days and you'll see the best of it.
+
+::infographic nola-mg-2027-dates
+
+## When Is Mardi Gras in New Orleans? (2027 Dates)
+
+**Fat Tuesday 2027 is February 9.** Carnival season opens on Twelfth Night, January 6, and runs straight through to that day, with the Monday before — **Lundi Gras** — on February 8. Ash Wednesday and the start of Lent follow on the 10th, which is the whole point of the party.
+
+The date jumps around every year because it's pinned to Easter, always 47 days earlier. That makes 2027 a **short season at about 34 days** — for comparison, 2026 ran 43 and 2025 stretched to 58. Looking further out, Fat Tuesday is February 29 in 2028 and February 13 in 2029.
+
+The season officially kicks off on January 6 with the **Phunny Phorty Phellows**, a small krewe that rides a St. Charles streetcar to announce Carnival, and the Joan of Arc walking parade through the French Quarter. From there it's a slow build: the first weekends bring the early risers — Krewe du Vieux's adults-only satire in the Marigny, then the first big Uptown parades — before the final stretch takes over.
+
+The takeaway for planning: the parades spread across the final two weekends, but the **big super-krewe stretch is Thursday through Fat Tuesday**. If you can only come for part of it, come for the end — and check the current schedule before you book flights, because times shift year to year.
+
+## What Is Mardi Gras, Exactly?
+
+**Mardi Gras is the citywide carnival before Lent** — French for "Fat Tuesday," the last day to indulge before the Catholic season of fasting begins. In practice that means weeks of parades, brass bands, costumes, king cake, and a city that treats joy as a civic project.
+
+**Krewes** run the whole thing — member-funded carnival clubs, more than 40 of them, each staging its own parade and a private ball. They build the floats, choose the themes, and toss the **throws**, and they've been doing it for over a century and a half. None of it is corporate; it's neighbors spending a year and their own money to throw you a party.
+
+Each krewe also crowns a royal court — a king and queen, maids and dukes drawn from its own ranks — and the masked ball behind closed doors is the real social engine of the season. What you watch in the street is the public half of a much older, more private tradition.
+
+It's also, importantly, **free**. The parades are public, you just show up. That's the part that surprises people who expect a ticketed festival — Mardi Gras is the opposite of that, often called the greatest free show on earth.
+
+What it isn't: a single rowdy night on Bourbon Street. The Bourbon scene is real, but the heart of it is **local** — families on St. Charles Avenue, **New Orleanians** in head-to-toe costumes, king cake at the office, and red beans on Monday. The tourists who only see Bourbon miss most of the actual celebration.
+
+## A Short History of Mardi Gras
+
+**Mardi Gras has rolled in Louisiana since the 1700s**, brought by French settlers, but the parade tradition you'll see is a 19th-century invention. By the 1850s, Carnival had grown so rowdy the city nearly banned it — then the Mistick Krewe of **Comus** staged the first organized parade and ball in **1857**, with themed floats and torchlight, and turned the chaos into a spectacle worth keeping.
+
+In **1872**, the Krewe of **Rex** crowned the first **King of Carnival**, gave the celebration its colors — **purple for justice, green for faith, gold for power** — and its unofficial anthem, "If Ever I Cease to Love." Rex also popularized the **doubloon**, the stamped aluminum coin krewes still toss by the bagful. The Krewe of **Zulu**, a Black Social Aid and Pleasure Club, first rode in **1915** and hands out the most coveted prize of all, the hand-painted coconut.
+
+::infographic nola-mg-colors
+
+Two traditions deserve real respect rather than a snapshot. The **flambeaux**, torch-bearers who have lit the night parades since 1857, and the **Black Masking Indians** — Mardi Gras Indians whose hand-sewn feather suits, sewn over a full year, honor the Native communities that sheltered escaped enslaved people.
+
+They appear on Mardi Gras morning, on Super Sunday, and on St. Joseph's night, moving through the back streets of their neighborhoods rather than the main route. Watch, tip the flambeaux, and let the Indians pass with the deference they've earned. The krewe **balls**, meanwhile, are the formal, invitation-only side of all this — the masked dances most visitors never see.
+
+## The 2027 Mardi Gras Parade Schedule
+
+**The final five days are the main event.** Dozens of parades roll across the two weeks before Fat Tuesday, but the three "super krewes" and the old-line finale all land in the home stretch. Here's the 2027 lineup for the marquee parades.
+
+| Day | Date | Major krewe(s) | Rolls | The vibe |
+|---|---|---|---|---|
+| Thursday | Feb 4 | Muses | 4:30pm | All-women krewe; the famous glitter shoes |
+| Friday | Feb 5 | Hermes, d'Etat, Morpheus | 5:30pm | Old-line elegance and biting satire |
+| Saturday | Feb 6 | Endymion | 4:00pm | Super krewe; ~3,000 riders; ends in the Superdome |
+| Sunday | Feb 7 | Bacchus | 5:15pm | Super krewe; a celebrity monarch |
+| Monday (Lundi Gras) | Feb 8 | Proteus, Orpheus | 5:15pm | Old-line floats and a star-studded krewe |
+| Mardi Gras Day | Feb 9 | Zulu, then Rex | 8:00am | The finale — coconuts, then the King of Carnival |
+
+**Endymion** on Saturday is the giant, ending inside the Caesars Superdome for its Extravaganza, while **Bacchus** on Sunday is the celebrity-led spectacle. Then Fat Tuesday opens with **Zulu** at dawn and **Rex** right behind — get out early, because the city is fully awake by 8am whether you are or not.
+
+Around the marquee names roll dozens more worth catching: **Iris** and **Tucks** on the second Saturday, **Thoth** and **Femme Fatale** on the Sunday, and the all-women **Nyx** earlier in the run. You don't need to chase a schedule to the minute — pick a day, grab a curb, and another parade will be along shortly.
+
+## Beyond the Big Parades: Neighborhood Krewes
+
+**The super krewes get the cameras, but the small ones get the heart.** Some of the most fun, most **local** Carnival happens in the **walking** krewes and neighborhood parades, where there's no float bigger than a shopping cart and everyone's in on the joke.
+
+**Chewbacchus** is the sci-fi krewe (think hand-built R2-D2s rolling through the Marigny), **Barkus** is the all-dog parade through the French Quarter, and the **Krewe of Red Beans** struts on Lundi Gras in suits sewn entirely from dried beans. **'tit Rex** runs the other direction with tiny shoebox floats you have to crouch to see.
+
+The one not to miss is the **Society of St. Anne**, a costumed walking parade that drifts from the Bywater through the Marigny and into the Quarter on Mardi Gras morning — no barricades, no schedule, just the best-dressed crowd in the city moving through the streets. Fall in behind and you're part of it.
+
+## Fat Tuesday: How the Big Day Goes
+
+**Fat Tuesday is the loudest, longest day of the year here, and it starts at dawn.** Zulu rolls first thing in the morning, Rex follows as the King of Carnival, and the family-run truck parades behind Rex can stretch for hours, tossing throws the whole way. By mid-morning the whole city is in costume and the street itself is the party.
+
+This is the day to wander rather than plan. The **Society of St. Anne** drifts through the Marigny and the Quarter, the costumes hit their most elaborate, and Frenchmen Street and the riverfront each pull their own crowds. Eat and hydrate whenever you can, because nothing keeps a schedule today.
+
+Traveling with kids? Do the morning Zulu and Rex parades, then head in before the Quarter turns rowdy after dark. The early hours are genuinely family time; the late ones are decidedly not.
+
+Then it ends on a hard deadline. At the stroke of midnight, mounted police sweep down Bourbon Street behind the street-cleaning trucks, formally announcing that Carnival is over and Lent has begun. One minute it's the biggest party in America; the next, the brooms are out and the city exhales — an ending that's as much a tradition as the parades themselves.
+
+## Mardi Gras Throws: What to Catch
+
+**Beads are just the baseline.** The real game is the **signature throws** — the hand-made items each krewe is known for, the things locals genuinely lunge for. Catch one and you'll guard it on the flight home.
+
+::infographic nola-mg-throws
+
+The **Zulu coconut** is the crown jewel, handed down carefully from the float rather than thrown, for obvious skull-related reasons. **Muses** members spend months gluing glitter onto **shoes**, **Nyx** is known for decorated **purses**, and **Tucks** famously throws toilet paper, which is funnier and more useful than it sounds.
+
+The list runs deeper than that: **Iris** sunglasses, **Athena** fedoras, **King Arthur** grails, **Carrollton** shrimp boots, **Alla** genie lamps, and the stamped aluminum **doubloons** nearly every krewe tosses by the bag. **Beads** are everywhere — you'll catch more than you can carry, and locals quietly donate the leftover **beads** to be recycled and thrown again next year.
+
+To actually catch things, stand where you can see the riders, make eye contact, and wave both arms. If a throw hits the ground, the rule is to stomp it first and grab it second, and you always pass the good stuff down to the kids near you. Bring a bag, too — you'll want somewhere to stash the haul by the second parade, and it's a party with manners.
+
+## King Cake: The Edible Tradition
+
+**King cake is the official taste of Carnival** — an oval cinnamon brioche iced in purple, green, and gold, with a tiny plastic **baby** baked inside. Whoever gets the slice with the baby is king or queen for the day and, by law of the office, buys or hosts the next cake.
+
+The icing colors aren't random — it's the same purple, green, and gold, for justice, faith, and power. Offices and house parties run a weeks-long relay on it: find the baby, bring in another cake, repeat until Lent mercifully ends the sugar.
+
+It's strictly seasonal: bakeries sell it only from **January 6 to Fat Tuesday**, and locals will judge you for wanting one in July. The names worth the line are **Manny Randazzo's**, **Haydel's** (baking them since 1959), **Sucre**, and **Gambino's**, with flavors that run well past plain into strawberry cream cheese and praline.
+
+And mind the baby when you slice it — biting straight into the little figurine is a rite of passage and, occasionally, a dental bill. Order one the day you arrive, because a Carnival trip without king cake is a technicality, and the good bakeries sell out of the popular flavors by mid-afternoon. For where else to find great **food** between parades, our guide to the [best restaurants in New Orleans](/blog/best-restaurants-in-new-orleans) has the full rundown.
+
+## Where to Watch the Parades: Family vs Party
+
+**Where you stand decides what kind of Mardi Gras you have.** The same day can be a family picnic or an adult free-for-all depending on the block, and the split is mostly Uptown versus the Quarter.
+
+::infographic nola-mg-family-vs-party
+
+For families, head **Uptown along St. Charles Avenue**, especially around Napoleon Avenue — wide neutral grounds, ladders, picnic blankets, and parents who've done this for years. The all-women **Muses** parade on the Thursday night is the gentle, joyful introduction. Get there early, because the good curb spots fill up hours ahead.
+
+The route itself runs from Uptown down St. Charles Avenue, through the leafy **Garden District**, and finishes near Canal Street. The wider sidewalks and neutral ground at the Canal end are the easiest place to land if you arrive late and just want to **look** for an open spot.
+
+One exception worth knowing: **Endymion** doesn't follow that Uptown line. It rolls through **Mid-City** on the Saturday before Fat Tuesday, so if that's the parade you came for, set up along Orleans Avenue or Canal, not St. Charles. It's the kind of detail that saves a first-timer from staking out the wrong street for six hours.
+
+For the wild version, the **French Quarter and Bourbon Street** are the costumed, round-the-clock party — just know that no parades actually roll through the Quarter, so it's the scene, not the show. If you'd rather not stand, you can buy a grandstand bleacher seat along the route or a French Quarter balcony spot, and families build kid-height "ladder seats" so the little ones can see. One rule the city enforces: no ladders or coolers within **six feet of the curb**, which keeps sightlines open and toes intact.
+
+## Where to Stay for Mardi Gras (Book Early)
+
+**This is the part people regret leaving late.** Hotels on the parade route sell out close to a year ahead, and the whole city's rates climb during Carnival week. The single best thing you can do for a Mardi Gras trip is book the room first and plan the rest later.
+
+::infographic nola-mg-booking
+
+Read the fine print, too: Carnival bookings usually mean three-to-five-night minimums and non-refundable deposits, often with full payment due a month or two out. If the central rates sting, the **Marigny and Bywater** run noticeably cheaper and sit a short ride from the route.
+
+Base on or near **St. Charles Avenue** to roll out of bed onto the route, in the **CBD** near Canal Street to catch the parade finishes and walk to the Quarter, or in the **French Quarter** itself for the costume scene. The **NOPSI Hotel** anchors the CBD a short walk from the Canal Street finish, with a rooftop pool to recover on.
+
+::hotel lpa440f
+
+A few blocks over, **Le Meridien** keeps you central on Canal-adjacent ground, an easy walk to both the parade route and the Quarter.
+
+::hotel lp1a214
+
+If you'd rather wake up Uptown right on the route, the **Alder Hotel** sits near the St. Charles parades and the streetcar, away from the densest crowds.
+
+::hotel lpaf414
+
+For the costume-and-Quarter version, the grand **Hotel Monteleone** drops you in the middle of the French Quarter party, Carousel Bar and all.
+
+::hotel lp6583c58d
+
+Whichever you pick, the price you book at here is the same flat fee everyone sees — never set from your device, your location, or how many times you've searched. The hotels' own base rates climb during Carnival, the same way airfares do, so the real lever in your control is timing: lock the room early and the rest of Carnival gets easy. For the full neighborhood breakdown, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) or browse the [New Orleans hotels hub](/hotels/new-orleans).
+
+## Getting Around During Mardi Gras
+
+**Do not plan to drive.** Parade routes shut down St. Charles Avenue and much of Uptown for hours at a stretch, tow trucks are merciless about the posted no-parking, and traffic on a parade day is its own slow-motion parade.
+
+Walk whenever you can, use the **streetcar** when the route isn't blocking it — the St. Charles line suspends service during the Uptown parades — and lean on rideshare for the long hops, expecting surge pricing and pickup zones that move around the closures. Give yourself far more time than the map suggests, because the map has not met Mardi Gras.
+
+On the big days, **walking** is honestly the fastest way across the route: a mile on foot beats an hour in a car going nowhere. If you do call a ride, agree on a meeting spot in advance and keep your group's plan simple, because the apps' pins wander when streets close and phone service buckles under the crowds.
+
+The upside of all that gridlock is the reason to stay central: when you can walk to the route, the transport problem mostly disappears. That's worth more than a slightly cheaper room a mile away.
+
+## Mardi Gras Tips for First-Timers
+
+**A few habits separate a great first Mardi Gras from a rough one.** None of them are complicated, and most come down to pacing yourself and reading the room.
+
+::infographic nola-mg-callout
+
+**Costume up** — locals take "masking" seriously, and on Fat Tuesday you'll feel out of place in street clothes, so pack purple, green, and gold. Dress in layers, because February here swings from balmy to bitter, and wear shoes you don't mind sacrificing. The **drink**s flow and to-go cups are legal, so hydrate between the Sazeracs and Hurricanes, not after them.
+
+A few logistics nobody mentions: carry some cash, because many spots go card-light in the crush, and use a restroom whenever you find one, because they get scarce fast. Keep a charged phone and a simple meeting plan, since crowds swallow groups whole — and a loud **costume** doubles as a way for your people to spot you when a text won't send.
+
+Plan your timing, too: **Lundi Gras** on the Monday is the calmer day before, when Zulu and Rex arrive by riverboat at the river. It has grown into its own event — free concerts at Spanish Plaza, the ceremonial meeting of the two kings, and a big-occasion feel without the Fat Tuesday crush. It's the local move for families and anyone easing into the week.
+
+If you'd rather skip the crush entirely, our guide to the [best time to visit New Orleans](/blog/best-time-to-visit-new-orleans) covers the calmer, cheaper windows, and [whether the city is safe](/blog/is-new-orleans-safe) covers crowds and common sense.
+
+## See It Once, Then Plan the Rest
+
+**Mardi Gras earns its reputation** — it's loud, generous, a little overwhelming, and unlike anything else in the country. Come once for the spectacle, then come back off-season for the version of New Orleans that's all yours.
+
+Either way, the move is the same: book the room early, plan the days loosely, and let the city do the rest. Catch one coconut, costume up once, and the photos won't matter half as much as the story. For everything around the parades, our other guides to [things to do in New Orleans](/blog/things-to-do-in-new-orleans) and [where to stay](/blog/where-to-stay-in-neworleans) pick up where this one leaves off.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "best-restaurants-in-new-orleans",
     title: "Best Restaurants in New Orleans: 20 to Try in 2026",
     seoTitle: "Best Restaurants in New Orleans: 20 to Try (2026)",
@@ -656,12 +883,12 @@ Whatever you book, the room price you see here is the same one everyone else see
       "When to go to New Orleans, decoded: the best weather, the cheapest months, when to dodge the crowds, and a straight month-by-month breakdown of heat, rain, and festivals. As of 2026.",
     tldr: {
       answer:
-        "October and November bring the best weather (crisp 70s, low humidity); February through May is festival season. The cheapest months are in summer, with August the rock bottom. Steer around the fortnight before Mardi Gras (Feb 17, 2026) unless the party is the point, and expect heat plus storms from June to September.",
+        "October and November bring the best weather (crisp 70s, low humidity); February through May is festival season. The cheapest months are in summer, with August the rock bottom. Steer around the fortnight before Mardi Gras (Feb 9, 2027) unless the party is the point, and expect heat plus storms from June to September.",
       points: [
         "**Best weather** — October and November: 70s and low humidity.",
         "**Cheapest** — summer (June–September), August the rock bottom.",
         "**Festival season** — February to May (Mardi Gras, French Quarter Fest, Jazz Fest).",
-        "**Peak crowds & prices** — the two weeks before Mardi Gras (Feb 17, 2026).",
+        "**Peak crowds & prices** — the two weeks before Mardi Gras (Feb 9, 2027).",
         "**Watch out** — June–November is hurricane season; July–August is brutally humid.",
       ],
     },
@@ -689,8 +916,8 @@ Whatever you book, the room price you see here is the same one everyone else see
         a: "October. Highs settle into the comfortable 70s–low 80s, the humidity finally breaks, and rain eases off. November is a close second (cooler, still pleasant). Both beat the steamy 90s of July and August by a mile.",
       },
       {
-        q: "When is Mardi Gras 2026?",
-        a: "Fat Tuesday is February 17, 2026. Carnival season runs from January 6 (Twelfth Night) up to that day, with the parades and crowds peaking in the final two weeks. Book a hotel up to a year ahead for that window — many require 3–4 night minimums.",
+        q: "When is Mardi Gras 2027?",
+        a: "Fat Tuesday is February 9, 2027. Carnival season runs from January 6 (Twelfth Night) up to that day, with the parades and crowds peaking in the final two weeks. Book a hotel up to a year ahead for that window — many require 3–4 night minimums. See our full [Mardi Gras in New Orleans guide](/blog/mardi-gras-in-new-orleans) for the parade schedule.",
       },
       {
         q: "What is the worst time to visit New Orleans?",
@@ -721,7 +948,7 @@ If you want the **best weather**, target mid-October through November — daytim
 
 If you want the **lowest prices**, come in summer. June through September is hot, sticky, and stormy, which is exactly why hotels are cheap and the streets are quieter.
 
-And if you want **Mardi Gras**, that's its own animal — February 17 in 2026, planned a year ahead. For everything else, the shoulder months of **March and November** are the quiet sweet spot: great weather, fewer people, fairer rates. They're the months locals quietly recommend when a friend asks when to come.
+And if you want [Mardi Gras](/blog/mardi-gras-in-new-orleans), that's its own animal — February 9 in 2027, planned a year ahead. For everything else, the shoulder months of **March and November** are the quiet sweet spot: great weather, fewer people, fairer rates. They're the months locals quietly recommend when a friend asks when to come.
 
 | Your priority | Best time to go |
 |---|---|
