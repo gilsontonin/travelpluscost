@@ -6,6 +6,7 @@ import Infographic from "./Infographic";
 import BlogHotelCard from "./BlogHotelCard";
 import ShowcaseHotel from "./ShowcaseHotel";
 import ViatorPackages from "@/components/ViatorPackages";
+import BlogActivity from "@/components/blog/BlogActivity";
 import PriceProof from "./PriceProof";
 import CtaWidget from "./CtaWidget";
 import BlogSearch from "./BlogSearch";
@@ -131,6 +132,10 @@ export default function PostBody({
         if (b.type === "activities") {
           const c = activitiesCoords[b.dest];
           return <ViatorPackages key={i} lat={c?.lat} lng={c?.lng} />;
+        }
+        if (b.type === "activity") {
+          const c = activitiesCoords[b.dest];
+          return <BlogActivity key={i} lat={c?.lat} lng={c?.lng} q={b.q} />;
         }
         if (b.type === "details")
           return (

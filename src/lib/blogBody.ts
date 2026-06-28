@@ -41,7 +41,8 @@ export type Block =
   | { type: "areas"; dest: string }
   | { type: "details"; summary: string; text: string }
   | { type: "showcase"; id: string; text: string }
-  | { type: "activities"; dest: string };
+  | { type: "activities"; dest: string }
+  | { type: "activity"; dest: string; q: string };
 
 /** Split the body into ordered blocks: Markdown prose, `::infographic <key>`, `::hotel <id>`. */
 export function parseBlocks(body: string): Block[] {
@@ -92,6 +93,7 @@ export function parseBlocks(body: string): Block[] {
     else if (/^::compare\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "compare", ids: /^::compare\s+(.+?)\s*$/.exec(t)![1].trim().split(/\s+/) }); }
     else if (/^::areas\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "areas", dest: /^::areas\s+(.+?)\s*$/.exec(t)![1].trim() }); }
     else if (/^::activities\s+(.+?)\s*$/.test(t)) { flush(); blocks.push({ type: "activities", dest: /^::activities\s+(.+?)\s*$/.exec(t)![1].trim() }); }
+    else if (/^::activity\s+(.+?)\s*\|\s*(.+?)\s*$/.test(t)) { flush(); const m = /^::activity\s+(.+?)\s*\|\s*(.+?)\s*$/.exec(t)!; blocks.push({ type: "activity", dest: m[1].trim(), q: m[2].trim() }); }
     else buf.push(line);
   }
   closeDetails(); // tolerate an unclosed ::details at end of body
@@ -128,7 +130,10 @@ export function areasDestsInBody(body: string): string[] {
   return [...new Set([...body.matchAll(/^\s*::areas\s+(.+?)\s*$/gm)].map((m) => m[1].trim()))];
 }
 
-/** Destinations referenced by `::activities <dest>` — the page resolves a center lat/lng for the Viator rail. */
+/** Destinations referenced by `::activities <dest>` AND `::activity <dest> | <topic>` — the page resolves a
+ *  center lat/lng for each so the Viator rail + per-section offer cards can fetch nearby tours. */
 export function activitiesDestsInBody(body: string): string[] {
-  return [...new Set([...body.matchAll(/^\s*::activities\s+(.+?)\s*$/gm)].map((m) => m[1].trim()))];
+  const rail = [...body.matchAll(/^\s*::activities\s+(.+?)\s*$/gm)].map((m) => m[1].trim());
+  const inline = [...body.matchAll(/^\s*::activity\s+(.+?)\s*\|/gm)].map((m) => m[1].trim());
+  return [...new Set([...rail, ...inline])];
 }

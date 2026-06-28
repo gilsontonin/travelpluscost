@@ -39,11 +39,18 @@ people enjoy and skim easily converts better than one that ranks and bounces.
    hotel, placed right where that hotel is discussed (intro the hotel in 1–2 sentences with a beat → its
    card → next hotel → its card). No 4-card stack then a wall of card-less text. **Skip stock photos** —
    the card carries the image; add a photo only if it's genuinely illustrative of something a card can't show.
-   **VIATOR (just-in-time):** hotels are the main focus, but on any post about **tours / activities /
-   experiences** (things to do, swamp tours, ghost & cemetery tours, day trips, plantations, music/food
-   tours), drop a `::activities <City>` block where it fits — it renders ready-to-book Viator cards with our
-   affiliate tracking (~7–8% commission), and self-hides if there's nothing. Scan every post for the
-   opportunity; never force it on a pure-lodging/planning post (e.g. "is it safe", "best time to visit").
+   **MONETIZE EVERY SECTION — scan each H2 for an offer (this is the point of the post):** a post with no
+   monetization is pointless. Two offer types, both ~7–8% / margin: **`::hotel <id>`** (lodging) and
+   **`::activity <City> | <topic>`** (a Viator tour matched to the section — e.g. `::activity New Orleans |
+   swamp bayou`, `| ghost cemetery voodoo`, `| garden district`, `| cocktail crawl`, `| culinary cooking`).
+   It pulls 1–2 quality (≥4.5★) tours whose title matches the topic and **self-hides if nothing matches** —
+   so you can drop one under any relevant H2 with no risk. Rules:
+   - **Where-to-stay / lodging posts → prioritize `::hotel` cards** (our hotels are the play).
+   - **Things-to-do / activity / itinerary / day-trip / food / nightlife posts → aim for ~1 offer PER H2**
+     (`::activity` on each section that's a real experience; `::hotel` only where lodging is the point).
+   - **Pure planning/safety posts** (is-it-safe, best-time) → 0–2 offers, don't force it.
+   - Keep `::activities <City>` (the full rail) for one "browse all tours" moment; use `::activity` for the
+     distributed per-section offers. Cards are styled as real Viator offers (badge + rating + price + CTA).
 6. **EVERY infographic ≥1 per ~500 words, and well-designed** (the native `::infographic` kinds: stat panel
    / compare / steps / callout — NOT a bare markdown table). Cards + infographics both count toward cadence.
 7. **LAYOUT (already in the components — use them):** the `The move: … · Best for: … · Watch: …` quick-facts

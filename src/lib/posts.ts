@@ -152,6 +152,8 @@ Go later in the evening, wander between the bars, and tip the band. It's the sin
 
 There's a nightly outdoor art market at the corner, too, so you can browse **local** work between sets. Skip the cover-charge traps on Bourbon and spend the night here instead — your ears will thank you.
 
+::activity New Orleans | jazz music
+
 ## Hear Traditional Jazz at Preservation Hall
 
 For the real, reverent thing, line up for **Preservation Hall** — a tiny, no-frills room in the Quarter that has honored traditional New Orleans jazz since 1961. No drinks, no photos, and no air conditioning to speak of, just a master band a few feet away.
@@ -196,6 +198,8 @@ Peek through the gates of **Lafayette Cemetery No. 1**, then drift down to Magaz
 
 Give it a half-day, and pair it with the streetcar ride out and back.
 
+::activity New Orleans | garden district
+
 ::infographic nola-first-day
 
 ## Tour the National WWII Museum
@@ -213,6 +217,8 @@ Twenty minutes outside the city, the **swamp** is another world — cypress, Spa
 Most tours include hotel pickup, so it's an easy half-day, and they run year-round — though spring and fall are the most active for wildlife.
 
 Bring sunscreen and a hat, because the bayou offers no shade and the gators have zero sympathy for a sunburn. It's the excursion everyone's quietly glad they did.
+
+::activity New Orleans | swamp bayou kayak
 
 ## Cruise the Mississippi on the Steamboat Natchez
 
@@ -251,6 +257,8 @@ New Orleans practically **invented** the American cocktail, so drink like it. Th
 For the tourist classics, a Hurricane at Pat O'Brien's and a frozen daiquiri on Bourbon both count. Treat the **bars** here as an attraction in their own right, not just a stop between sights.
 
 It's a cocktail list you can tour like a museum — ideally, a little responsibly.
+
+::activity New Orleans | cocktail crawl
 
 ## Eat Your Way Through New Orleans
 
@@ -292,6 +300,8 @@ Most run a couple of hours and feed you what you cook, which is the best kind of
 
 **Check** whether yours includes a market tour — the good ones do, and you'll leave knowing why everything down here starts with the holy trinity.
 
+::activity New Orleans | culinary brunch cooking
+
 ## Take a Day Trip into Plantation Country
 
 With an extra day, head up the **Mississippi River** to River Road, where the old plantations tell the harder **history** of the region — Oak Alley's quarter-mile oak canopy is the famous one. It's about an hour from the city.
@@ -299,6 +309,8 @@ With an extra day, head up the **Mississippi River** to River Road, where the ol
 Pair it with a swamp stop and you've got a full day out of New Orleans without needing a car, since most tours include pickup.
 
 It's the easiest way to **see** beyond the city limits and put the place in context.
+
+::activity New Orleans | plantation
 
 ## Time Your Trip for Mardi Gras or a Festival
 

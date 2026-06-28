@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { activitiesNear } from "@/lib/viator";
+import { activitiesNear, activitiesMatching } from "@/lib/viator";
 
 // Viator "things to do" near a point. Property page passes ?lat&lng (the hotel); the home rail
 // passes nothing and we use the visitor's Netlify geo. Server-side keeps the Viator key off the client.
@@ -25,6 +25,12 @@ export async function GET(req: Request) {
     let lng = sp.get("lng") ? Number(sp.get("lng")) : null;
     if (lat == null || lng == null || Number.isNaN(lat) || Number.isNaN(lng)) {
       ({ lat, lng } = geoFromReq(req));
+    }
+    // ?q=<topic> → topic-matched offers for a single blog section (::activity City | topic); else the rail.
+    const q = sp.get("q")?.trim();
+    if (q) {
+      const activities = await activitiesMatching(lat, lng, q, Math.min(Number(sp.get("limit")) || 2, 4));
+      return NextResponse.json({ activities, place: null });
     }
     const limit = Math.min(Number(sp.get("limit")) || 8, 16);
     const { activities, place } = await activitiesNear(lat, lng, limit);
