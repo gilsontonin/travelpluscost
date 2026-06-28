@@ -65,12 +65,12 @@ export default function DateField({
         onClick={() => setOpen((o) => !o)}
         className="w-full flex items-center gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 text-left transition hover:border-black/30"
       >
-        <svg className="shrink-0 text-black/40" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg className="shrink-0 text-black/60" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
         </svg>
         <span className="min-w-0 flex-1">
-          <span className="block text-xs text-black/45">Dates</span>
-          <span className={`block mt-0.5 text-[15px] font-medium truncate ${ci ? "text-black/90" : "text-black/50"}`}>{label}</span>
+          <span className="block text-xs text-black/60">Dates</span>
+          <span className={`block mt-0.5 text-[15px] font-medium truncate ${ci ? "text-black/90" : "text-black/60"}`}>{label}</span>
         </span>
       </button>
 
@@ -98,7 +98,7 @@ export default function DateField({
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m9 18 6-6-6-6" /></svg>
             </button>
           </div>
-          <div className="grid grid-cols-7 text-center text-[11px] text-black/40 mb-1">
+          <div className="grid grid-cols-7 text-center text-[11px] text-black/60 mb-1">
             {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => (
               <span key={i}>{d}</span>
             ))}

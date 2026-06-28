@@ -129,7 +129,7 @@ export default function SearchPanel({
               <VerticalIcon id={v.id} />
               <span className="text-xs font-medium">{TAB_LABEL[v.id]}</span>
               {!v.enabled ? (
-                <span className="absolute right-1 -top-0.5 rounded bg-black/[0.07] px-1 py-px text-[8px] font-bold uppercase tracking-wide text-black/40">
+                <span className="absolute right-1 -top-0.5 rounded bg-black/[0.07] px-1 py-px text-[8px] font-bold uppercase tracking-wide text-black/60">
                   Soon
                 </span>
               ) : null}
@@ -187,14 +187,14 @@ export default function SearchPanel({
           <label className="flex w-full items-start gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 transition hover:border-black/30 focus-within:border-accent">
             <AiSparkle size={20} className="mt-1.5 shrink-0 text-accent" />
             <span className="min-w-0 flex-1">
-              <span className="block text-xs text-black/45">Describe your perfect trip</span>
+              <span className="block text-xs text-black/60">Describe your perfect trip</span>
               <input
                 value={vibe}
                 onChange={(e) => setVibe(e.target.value)}
                 required
                 placeholder="romantic beachfront resort in Maui with ocean views"
                 autoComplete="off"
-                className="mt-0.5 w-full bg-transparent text-[15px] font-medium outline-none placeholder:font-normal placeholder:text-black/40"
+                className="mt-0.5 w-full bg-transparent text-[15px] font-medium outline-none placeholder:font-normal placeholder:text-black/60"
               />
             </span>
             {vibe ? (
@@ -202,7 +202,7 @@ export default function SearchPanel({
                 type="button"
                 onClick={() => setVibe("")}
                 aria-label="Clear"
-                className="shrink-0 self-center rounded-full p-1 text-black/35 transition hover:bg-black/[0.05] hover:text-black/70"
+                className="shrink-0 self-center rounded-full p-1 text-black/60 transition hover:bg-black/[0.05] hover:text-black/70"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12" /></svg>
               </button>

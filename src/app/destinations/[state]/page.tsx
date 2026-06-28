@@ -78,7 +78,7 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
 
       <section className="mt-12">
         <h2 className="text-lg font-semibold">All {st.name} destinations</h2>
-        <p className="mt-1 text-xs text-black/50">{st.cityCount.toLocaleString()} cities</p>
+        <p className="mt-1 text-xs text-black/60">{st.cityCount.toLocaleString()} cities</p>
         <div className="mt-4 columns-2 gap-6 sm:columns-3 lg:columns-4">
           {st.cities.map((c) => (
             <Link
@@ -86,7 +86,7 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
               href={`/hotels/${c.slug}`}
               className="block break-inside-avoid py-1 text-sm text-black/70 hover:text-accent"
             >
-              {c.name} <span className="text-black/40">({c.count})</span>
+              {c.name} <span className="text-black/60">({c.count})</span>
             </Link>
           ))}
         </div>

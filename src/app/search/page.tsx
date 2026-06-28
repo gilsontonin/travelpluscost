@@ -63,16 +63,16 @@ export default async function SearchPage({
           <VibeResults key={`${vibe}|${checkin}|${checkout}|${adults}`} query={vibe} checkin={checkin} checkout={checkout} adults={adults} />
         </div>
       ) : vibeMode ? (
-        <p className="text-black/50 py-16 text-center">Describe your perfect trip in the box above to search by vibe.</p>
+        <p className="text-black/60 py-16 text-center">Describe your perfect trip in the box above to search by vibe.</p>
       ) : !destination ? (
-        <p className="text-black/50 py-16 text-center">
+        <p className="text-black/60 py-16 text-center">
           Enter a destination above to see hotels.{" "}
           <Link className="text-accent" href="/">
             Back home
           </Link>
         </p>
       ) : hotels.length === 0 ? (
-        <div className="text-black/50 py-16 text-center">
+        <div className="text-black/60 py-16 text-center">
           <p>
             No stays found for <span className="font-medium">{destination}</span>. Check the spelling, or try a
             popular destination:

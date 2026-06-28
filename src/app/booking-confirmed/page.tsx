@@ -92,7 +92,7 @@ export default async function ConfirmedPage({
           </div>
         </div>
 
-        <p className="mt-6 text-xs text-black/40">
+        <p className="mt-6 text-xs text-black/60">
           {process.env.NEXT_PUBLIC_PAYMENT_ENV !== "live"
             ? "This is a real reservation in LiteAPI's sandbox — a genuine confirmation code, but no card was charged and no live booking was made. The price shown is the same price everyone sees."
             : "A confirmation has been sent to your email. The price shown is the same price everyone sees — never based on your data."}

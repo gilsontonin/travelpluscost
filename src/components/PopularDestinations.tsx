@@ -31,7 +31,7 @@ export default function PopularDestinations() {
       <div className="space-y-5">
         {GROUPS.map((g) => (
           <div key={g.title}>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-black/40">{g.title}</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-black/60">{g.title}</p>
             <div className="flex gap-2 overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0 snap-x scroll-pl-4 sm:scroll-pl-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
               {g.cities.map((c, i) => (
                 <Link

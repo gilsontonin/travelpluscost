@@ -57,7 +57,7 @@ export default function AuthForm({ next = "/account" }: { next?: string }) {
         Continue with Google
       </button>
 
-      <div className="flex items-center gap-3 text-xs text-black/35">
+      <div className="flex items-center gap-3 text-xs text-black/60">
         <span className="h-px flex-1 bg-black/10" /> or <span className="h-px flex-1 bg-black/10" />
       </div>
 
@@ -80,7 +80,7 @@ export default function AuthForm({ next = "/account" }: { next?: string }) {
       </form>
 
       {error ? <p className="text-sm text-red-600">{error}</p> : null}
-      <p className="text-xs text-black/40 text-center">No password — sign in with Google or a one-time email link.</p>
+      <p className="text-xs text-black/60 text-center">No password — sign in with Google or a one-time email link.</p>
     </div>
   );
 }

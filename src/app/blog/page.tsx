@@ -50,7 +50,7 @@ export default function BlogIndexPage() {
               <span className="text-xs font-semibold uppercase tracking-wide text-accent">{p.category}</span>
               <h2 className="mt-1.5 text-base font-bold leading-snug group-hover:text-accent">{p.title}</h2>
               <p className="mt-1.5 flex-1 text-sm text-black/65">{p.excerpt}</p>
-              <p className="mt-3 text-xs text-black/50">
+              <p className="mt-3 text-xs text-black/60">
                 {fmtDate(p.date)} · {readingMinutes(p.body)} min read
               </p>
             </div>

@@ -79,7 +79,7 @@ export default function HotelList({
                 <div className="text-[15px] font-semibold leading-snug line-clamp-2 group-hover:text-accent">{h.name}</div>
                 <div className="mt-0.5 text-sm text-black/55">
                   {h.city}
-                  {h.reviewCount ? <span className="text-black/40"> · {h.reviewCount.toLocaleString()} reviews</span> : null}
+                  {h.reviewCount ? <span className="text-black/60"> · {h.reviewCount.toLocaleString()} reviews</span> : null}
                 </div>
                 <div className="mt-3 flex items-center justify-between">
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3.5 py-1.5 text-[13px] font-semibold text-white transition group-hover:opacity-90">
@@ -88,7 +88,7 @@ export default function HotelList({
                       <path d="M5 12h14M13 6l6 6-6 6" />
                     </svg>
                   </span>
-                  <span className="text-[11px] text-black/40">one flat fee</span>
+                  <span className="text-[11px] text-black/60">one flat fee</span>
                 </div>
               </div>
             </Link>

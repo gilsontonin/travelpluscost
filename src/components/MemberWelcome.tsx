@@ -35,7 +35,7 @@ export default function MemberWelcome() {
     <div className="rounded-2xl border border-accent/30 bg-accent-tint px-4 py-3 sm:px-5 sm:py-4">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <p className="font-semibold text-accent text-sm">✓ Member{no ? ` · #${no}` : ""}</p>
-        <button onClick={signOut} className="text-xs text-black/45 hover:text-black/80">
+        <button onClick={signOut} className="text-xs text-black/60 hover:text-black/80">
           Sign out
         </button>
       </div>

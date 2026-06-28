@@ -18,9 +18,21 @@ export const useStayDates = () => {
   return { checkin: c.checkin, checkout: c.checkout };
 };
 
-export default function BlogPriceProvider({ ids, children }: { ids: string[]; children: React.ReactNode }) {
+export default function BlogPriceProvider({
+  ids,
+  dates: serverDates,
+  children,
+}: {
+  ids: string[];
+  /** Dates computed ONCE on the server and passed down so SSR and client hydration agree (no React #418
+   *  hydration mismatch). Falls back to a client compute only if a caller omits it. */
+  dates?: { checkin: string; checkout: string };
+  children: React.ReactNode;
+}) {
   const [prices, setPrices] = useState<Record<string, Price>>({});
-  const [dates] = useState(fromDate); // computed once; cards link on the SAME dates they were priced for
+  // Use the server-computed dates verbatim on both SSR and client; the lazy initializer never diverges
+  // because serverDates is identical in both passes. Cards link on the SAME dates they were priced for.
+  const [dates] = useState(() => serverDates ?? fromDate());
   const idsKey = [...new Set(ids)].sort().join(",");
 
   useEffect(() => {

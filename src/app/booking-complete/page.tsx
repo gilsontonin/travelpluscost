@@ -87,7 +87,7 @@ export default async function BookingCompletePage({
         <>
           <h1 className="text-xl font-semibold">We couldn&apos;t start your booking</h1>
           <p className="mt-2 text-sm text-black/55">{error}</p>
-          <p className="mt-2 text-xs text-black/45">No charge was made — please try again.</p>
+          <p className="mt-2 text-xs text-black/60">No charge was made — please try again.</p>
         </>
       )}
       <Link href="/" className="mt-6 inline-block bg-accent text-white font-medium px-6 py-3 rounded-full">

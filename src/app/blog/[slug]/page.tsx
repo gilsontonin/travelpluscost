@@ -18,6 +18,11 @@ import BlogDatePicks from "@/components/blog/BlogDatePicks";
 import BlogStatsStrip from "@/components/blog/BlogStatsStrip";
 import BlogStickyCta from "@/components/blog/BlogStickyCta";
 import BlogPriceProvider from "@/components/blog/BlogPriceProvider";
+import { fromDate } from "@/lib/fromDate";
+
+// Daily ISR: keeps the time-relative "from" date (and the hotel rails) fresh without rebuilding, while the
+// page stays cached/static between revalidations.
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -231,11 +236,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <span className="text-xs font-semibold uppercase tracking-wide text-accent">{post.category}</span>
         <h1 className="mt-2 text-2xl sm:text-4xl font-bold leading-tight tracking-tight">{post.title}</h1>
         <p className="mt-3 text-sm">
-          <span className="text-black/50">By </span>
+          <span className="text-black/60">By </span>
           <span className="font-semibold text-black/85">{post.author}</span>
           <span className="text-black/55"> · Founder of {SITE_NAME}</span>
         </p>
-        <p className="mt-0.5 text-xs text-black/45">
+        <p className="mt-0.5 text-xs text-black/60">
           {fmtDate(post.date)}
           {post.updated && post.updated !== post.date ? ` · Updated ${fmtDate(post.updated)}` : ""} ·{" "}
           {readingMinutes(post.body)} min read
@@ -252,7 +257,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <BlogSearch dest={post.region.destination} />
           </div>
           {post.cover.credit ? (
-            <p className="mt-1.5 text-right text-xs text-black/40">
+            <p className="mt-1.5 text-right text-xs text-black/60">
               Photo:{" "}
               {post.cover.credit.url ? (
                 <a href={post.cover.credit.url} target="_blank" rel="noopener noreferrer" className="underline">
@@ -290,7 +295,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           className="w-full rounded-2xl object-cover"
         />
         {post.cover.credit ? (
-          <figcaption className="mt-1.5 text-xs text-black/45">
+          <figcaption className="mt-1.5 text-xs text-black/60">
             Photo:{" "}
             {post.cover.credit.url ? (
               <a href={post.cover.credit.url} target="_blank" rel="noopener noreferrer" className="underline">
@@ -326,7 +331,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       {/* Table of contents */}
       {headings.filter((h) => h.level === 2).length >= 3 ? (
         <nav aria-label="Contents" className="mt-6 rounded-2xl border border-black/[0.08] p-4">
-          <p className="text-[11px] font-bold uppercase tracking-wide text-black/45">On this page</p>
+          <p className="text-[11px] font-bold uppercase tracking-wide text-black/60">On this page</p>
           <ul className="mt-2 space-y-1.5">
             {headings
               .filter((h) => h.level === 2)
@@ -340,7 +345,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       ) : null}
 
       {/* body */}
-      <BlogPriceProvider ids={Object.keys(hotels)}>
+      <BlogPriceProvider ids={Object.keys(hotels)} dates={fromDate()}>
         <PostBody blocks={blocks} hotels={hotels} rails={rails} maps={maps} areas={areas} showcaseImages={showcaseImages} activitiesCoords={activitiesCoords} cityLink={cityLink} stateLink={stateLink} />
       </BlogPriceProvider>
 

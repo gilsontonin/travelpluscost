@@ -24,7 +24,7 @@ export default function LegalLayout({
       </nav>
 
       <h1 className="mt-4 text-3xl font-semibold tracking-tight">{title}</h1>
-      <p className="mt-2 text-sm text-black/50">Last updated: {updated}</p>
+      <p className="mt-2 text-sm text-black/60">Last updated: {updated}</p>
 
       {intro ? (
         <div className="mt-6 rounded-xl bg-accent-tint/50 p-5 text-[15px] leading-relaxed text-black/75">{intro}</div>

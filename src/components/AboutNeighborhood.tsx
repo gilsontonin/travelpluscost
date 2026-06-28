@@ -51,7 +51,7 @@ function Col({ title, places, mode }: { title: string; places: Place[]; mode: "d
               strokeWidth="1.8"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="mt-0.5 shrink-0 text-black/45"
+              className="mt-0.5 shrink-0 text-black/60"
             >
               {ICON[p.icon]}
             </svg>
@@ -133,7 +133,7 @@ export default function AboutNeighborhood({
           ) : (
             <p className="text-sm text-black/55">See the map and address for the exact location.</p>
           )}
-          <p className="mt-4 text-xs text-black/45">Distances are straight-line; drive times via OpenStreetMap.</p>
+          <p className="mt-4 text-xs text-black/60">Distances are straight-line; drive times via OpenStreetMap.</p>
         </div>
 
         <div>

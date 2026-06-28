@@ -175,7 +175,7 @@ function RoomCard({ o, href, isLowest }: { o: RoomOffer; href: string; isLowest?
 
         <div className="shrink-0 sm:text-right flex sm:flex-col items-end justify-between sm:justify-start gap-2 border-t sm:border-t-0 border-black/[0.06] pt-3 sm:pt-0">
           <div>
-            {deal ? <div className="text-xs text-black/40 line-through">{money(pubAllIn, o.price.currency)}</div> : null}
+            {deal ? <div className="text-xs text-black/60 line-through">{money(pubAllIn, o.price.currency)}</div> : null}
             <div className={`font-bold text-lg ${deal ? "text-accent" : ""}`}>
               {money(Math.round(showAllIn / o.price.nights), o.price.currency)}
               <span className="text-black/60 font-normal text-sm">/night</span>

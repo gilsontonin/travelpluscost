@@ -100,7 +100,7 @@ export default function CancelClient({ initialBookingId = "" }: { initialBooking
           <div className="mt-4 text-left text-sm border-t border-black/5 pt-4 space-y-1.5 max-w-sm mx-auto">
             <Row label="Refunded to your card" value={money(refunded, currency)} />
             {fee > 0 ? <Row label="Cancellation charge" value={money(fee, currency)} /> : null}
-            <p className="text-xs text-black/45 pt-2">
+            <p className="text-xs text-black/60 pt-2">
               {refunded > 0
                 ? "Refunds typically take 5–10 business days to appear, depending on your bank."
                 : "Per this room's cancellation policy, no refund is due for this cancellation."}

@@ -66,7 +66,7 @@ export default function VibeResults({
 
   if (!hotels.length) {
     return (
-      <p className="py-16 text-center text-black/50">
+      <p className="py-16 text-center text-black/60">
         No vibe matches{errored ? " (something went wrong)" : ""} for “<span className="font-medium">{query}</span>”. Try
         describing the trip a little differently.
       </p>

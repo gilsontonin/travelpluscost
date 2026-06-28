@@ -140,12 +140,12 @@ export default function DestinationField({
   return (
     <div className="relative" ref={ref}>
       <label className={`${FIELD} cursor-text`}>
-        <svg className="shrink-0 text-black/40" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg className="shrink-0 text-black/60" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M20 10c0 4.4-5.5 9-8 11-2.5-2-8-6.6-8-11a8 8 0 0 1 16 0Z" />
           <circle cx="12" cy="10" r="3" />
         </svg>
         <span className="min-w-0 flex-1">
-          <span className="block text-xs text-black/45">Where to?</span>
+          <span className="block text-xs text-black/60">Where to?</span>
           <input
             value={value}
             onChange={(e) => { onChange(e.target.value); setOpen(true); setActive(-1); }}
@@ -159,7 +159,7 @@ export default function DestinationField({
             aria-autocomplete="list"
             aria-expanded={open}
             aria-controls="tpc-dest-list"
-            className="w-full bg-transparent outline-none text-[15px] font-medium mt-0.5 placeholder:font-normal placeholder:text-black/40"
+            className="w-full bg-transparent outline-none text-[15px] font-medium mt-0.5 placeholder:font-normal placeholder:text-black/60"
           />
         </span>
         {value ? (
@@ -168,7 +168,7 @@ export default function DestinationField({
             onMouseDown={(e) => e.preventDefault()}
             onClick={() => { onChange(""); setOpen(true); }}
             aria-label="Clear destination"
-            className="shrink-0 self-center rounded-full p-1 text-black/35 transition hover:bg-black/[0.06] hover:text-black/70"
+            className="shrink-0 self-center rounded-full p-1 text-black/60 transition hover:bg-black/[0.06] hover:text-black/70"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12" /></svg>
           </button>
@@ -178,7 +178,7 @@ export default function DestinationField({
       {open ? (
         <div className="absolute left-0 right-0 top-full z-[70] mt-2 overflow-hidden rounded-xl border border-black/10 bg-white shadow-xl">
           {header ? (
-            <p className="px-4 pt-3 pb-1.5 text-[11px] font-semibold uppercase tracking-wide text-black/40">{header}</p>
+            <p className="px-4 pt-3 pb-1.5 text-[11px] font-semibold uppercase tracking-wide text-black/60">{header}</p>
           ) : null}
           <ul id="tpc-dest-list" role="listbox" className="py-1">
             {list.map((s, i) => (
@@ -189,10 +189,10 @@ export default function DestinationField({
                   onMouseEnter={() => setActive(i)}
                   className={`flex w-full items-center gap-3 px-4 py-2.5 text-left ${i === active ? "bg-accent-tint/60" : "hover:bg-black/[0.03]"}`}
                 >
-                  <BuildingIcon className={s.kind === "region" ? "text-accent shrink-0" : "text-black/35 shrink-0"} />
+                  <BuildingIcon className={s.kind === "region" ? "text-accent shrink-0" : "text-black/60 shrink-0"} />
                   <span className="min-w-0">
                     <span className="block text-sm font-semibold leading-tight truncate">{s.title}</span>
-                    <span className="block text-xs text-black/50 truncate">{s.subtitle}</span>
+                    <span className="block text-xs text-black/60 truncate">{s.subtitle}</span>
                   </span>
                 </button>
               </li>

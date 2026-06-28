@@ -45,7 +45,7 @@ export default function BlogSearch({ dest: initial }: { dest: string }) {
           Search
         </button>
       </div>
-      <p className="mt-2.5 flex items-center gap-1.5 text-xs text-black/50">
+      <p className="mt-2.5 flex items-center gap-1.5 text-xs text-black/60">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0 text-accent">
           <path d="M20 6 9 17l-5-5" />
         </svg>

@@ -48,7 +48,7 @@ export default async function BookPage({
       />
       <Link
         href={hotelId ? `/hotel/${hotelId}?checkin=${checkin}&checkout=${checkout}&adults=${adults}` : "/"}
-        className="text-sm text-black/50 hover:text-black"
+        className="text-sm text-black/60 hover:text-black"
       >
         ← Back
       </Link>

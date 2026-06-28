@@ -66,7 +66,7 @@ export default function PriceCta({ hotelId }: { hotelId: string }) {
             One honest price — <span className="text-accent">the same for everyone.</span>
           </p>
         ) : (
-          <p className="text-sm text-black/45">Checking price…</p>
+          <p className="text-sm text-black/60">Checking price…</p>
         )}
       </div>
       <a

@@ -296,7 +296,7 @@ export default function ResultsList({
         ))}
 
         {n > 0 ? (
-          <button onClick={() => setFilters(EMPTY_FILTERS)} className="shrink-0 text-sm text-black/50 underline whitespace-nowrap px-1">
+          <button onClick={() => setFilters(EMPTY_FILTERS)} className="shrink-0 text-sm text-black/60 underline whitespace-nowrap px-1">
             Clear all
           </button>
         ) : null}
@@ -324,7 +324,7 @@ export default function ResultsList({
       {view === "map" ? (
         <MapResults hotels={visible} prices={prices} query={cardQuery} onClose={() => setView("list")} />
       ) : visible.length === 0 ? (
-        <div className="py-16 text-center text-black/50">
+        <div className="py-16 text-center text-black/60">
           No stays match your filters.{" "}
           <button onClick={() => setFilters(EMPTY_FILTERS)} className="text-accent">
             Clear filters
@@ -354,7 +354,7 @@ export default function ResultsList({
               Show more stays
             </button>
           ) : (
-            <p className="py-8 text-center text-sm text-black/35">That&apos;s all {visible.length} stays.</p>
+            <p className="py-8 text-center text-sm text-black/60">That&apos;s all {visible.length} stays.</p>
           )}
         </>
       )}

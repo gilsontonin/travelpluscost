@@ -26,11 +26,11 @@ export default function BlogCompare({ hotels }: { hotels: DirectoryHotel[] }) {
               <p className="mt-2 text-sm font-semibold leading-snug text-black">{h.name}</p>
               <p className="text-xs text-black/55">{h.city}{h.state ? `, ${h.state}` : ""}</p>
               <dl className="mt-2 space-y-1 text-xs text-black/70">
-                <div><dt className="inline text-black/45">Type: </dt><dd className="inline">{h.property_type ?? "Hotel"}</dd></div>
-                {h.stars ? <div><dt className="inline text-black/45">Class: </dt><dd className="inline">{h.stars}-star</dd></div> : null}
+                <div><dt className="inline text-black/60">Type: </dt><dd className="inline">{h.property_type ?? "Hotel"}</dd></div>
+                {h.stars ? <div><dt className="inline text-black/60">Class: </dt><dd className="inline">{h.stars}-star</dd></div> : null}
                 {rev ? (
                   <div>
-                    <dt className="inline text-black/45">Guests: </dt>
+                    <dt className="inline text-black/60">Guests: </dt>
                     <dd className="inline">{rev.score} {rev.label}{h.review_count ? ` (${h.review_count.toLocaleString()})` : ""}</dd>
                   </div>
                 ) : null}

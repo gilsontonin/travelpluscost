@@ -40,5 +40,5 @@ export default function AuthCallback() {
     };
   }, [router]);
 
-  return <div className="mx-auto max-w-xl px-4 py-16 text-center text-black/50">{msg}</div>;
+  return <div className="mx-auto max-w-xl px-4 py-16 text-center text-black/60">{msg}</div>;
 }

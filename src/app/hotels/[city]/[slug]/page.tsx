@@ -399,7 +399,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
           ) : null}
           {(sib && sib.cities.length) || (stateHref && stateNm) ? (
             <div className="mt-5">
-              <p className="text-xs font-semibold uppercase tracking-wide text-black/40">
+              <p className="text-xs font-semibold uppercase tracking-wide text-black/60">
                 More destinations in {stateNm ?? "the area"}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">

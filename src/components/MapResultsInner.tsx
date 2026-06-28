@@ -259,7 +259,7 @@ export default function MapResultsInner({
 
   if (!geo.length) {
     return (
-      <div className="fixed inset-0 z-50 bg-white grid place-items-center text-black/50">
+      <div className="fixed inset-0 z-50 bg-white grid place-items-center text-black/60">
         {listButton}
         No mappable stays.
       </div>

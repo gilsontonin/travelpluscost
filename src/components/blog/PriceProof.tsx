@@ -21,11 +21,11 @@ export default function PriceProof() {
         ].map((d, i) => (
           <div key={d.label} className={`bg-white px-4 py-3 ${i === 1 ? "order-3" : ""}`}>
             <div className="text-xs font-semibold text-black">{d.label}</div>
-            <div className="mt-0.5 text-[11px] text-black/50">{d.sub}</div>
+            <div className="mt-0.5 text-[11px] text-black/60">{d.sub}</div>
             <div className="mt-1.5 text-lg font-extrabold tracking-tight text-accent">Same price</div>
           </div>
         ))}
-        <div className="order-2 grid place-items-center bg-white px-3 text-xl font-bold text-black/40">=</div>
+        <div className="order-2 grid place-items-center bg-white px-3 text-xl font-bold text-black/60">=</div>
       </div>
       <div className="px-5 py-3">
         <Link href="/#how" className="text-sm font-semibold text-accent hover:underline">

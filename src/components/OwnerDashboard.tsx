@@ -57,7 +57,7 @@ export default function OwnerDashboard() {
     setBusy(false);
   }
 
-  if (state === "loading") return <div className="mx-auto max-w-2xl px-4 py-16 text-black/50">Loading…</div>;
+  if (state === "loading") return <div className="mx-auto max-w-2xl px-4 py-16 text-black/60">Loading…</div>;
 
   if (state === "signin")
     return (
@@ -106,7 +106,7 @@ export default function OwnerDashboard() {
         <div className="mt-6 overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="text-left text-xs uppercase tracking-wide text-black/45 border-b border-black/10">
+              <tr className="text-left text-xs uppercase tracking-wide text-black/60 border-b border-black/10">
                 <th className="py-2 pr-3">Hotel</th>
                 <th className="px-3 text-right">Net</th>
                 <th className="px-3 text-right">SSP</th>
@@ -127,12 +127,12 @@ export default function OwnerDashboard() {
                   <td className="px-3 text-right tabular-nums text-emerald-700">{money(r.marginSSP)}</td>
                   <td className="px-3 text-right tabular-nums text-emerald-700">{money(r.marginMember)}</td>
                   <td className="px-3 text-right tabular-nums">{r.spreadPct}%</td>
-                  <td className="px-3 text-right tabular-nums text-black/45">{money(r.atProperty)}</td>
+                  <td className="px-3 text-right tabular-nums text-black/60">{money(r.atProperty)}</td>
                 </tr>
               ))}
               {rows.length === 0 ? (
                 <tr>
-                  <td colSpan={8} className="py-8 text-center text-black/40">No rates — try another city or dates.</td>
+                  <td colSpan={8} className="py-8 text-center text-black/60">No rates — try another city or dates.</td>
                 </tr>
               ) : null}
             </tbody>

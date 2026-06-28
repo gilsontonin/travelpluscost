@@ -252,7 +252,7 @@ export default function BookingForm(props: Props) {
             {error}
           </p>
         ) : null}
-        <p className="text-xs text-black/40 text-center">
+        <p className="text-xs text-black/60 text-center">
           {IS_SANDBOX
             ? "Sandbox test booking — no card is charged and no live reservation is made."
             : "Your card is processed securely. One honest price — the same for everyone."}
@@ -294,7 +294,7 @@ export default function BookingForm(props: Props) {
       >
         {busy ? "Confirming the room…" : `Continue to payment · ${money(payToday, props.currency)}`}
       </button>
-      <p className="text-xs text-black/40 text-center">
+      <p className="text-xs text-black/60 text-center">
         {IS_SANDBOX
           ? "Sandbox test booking — creates a real, no-charge test reservation via LiteAPI."
           : "One honest price — the same for everyone, never based on your data."}

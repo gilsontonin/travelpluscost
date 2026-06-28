@@ -348,7 +348,7 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className="shrink-0 text-black/40 transition group-open:rotate-180"
+                  className="shrink-0 text-black/60 transition group-open:rotate-180"
                 >
                   <path d="m6 9 6 6 6-6" />
                 </svg>

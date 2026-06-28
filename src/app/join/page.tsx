@@ -28,7 +28,7 @@ export default function JoinPage() {
         <AuthForm />
       </div>
 
-      <p className="mt-6 text-xs text-black/40">
+      <p className="mt-6 text-xs text-black/60">
         Free forever. We only ever make our one small flat fee when you book — the same fee for everyone, never
         based on who you are.
       </p>

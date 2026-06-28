@@ -49,11 +49,11 @@ export default function ShowcaseHotel({
           ) : null}
         </div>
         <div className="p-4">
-          {hotel.stars ? <div className="text-xs text-black/45">{"★".repeat(Math.round(hotel.stars))}</div> : null}
+          {hotel.stars ? <div className="text-xs text-black/60">{"★".repeat(Math.round(hotel.stars))}</div> : null}
           <div className="text-lg font-semibold leading-snug text-black">{hotel.name}</div>
           <div className="mt-0.5 flex flex-wrap items-center gap-x-2 text-sm text-black/55">
             {loc ? <span>{loc}</span> : null}
-            {hotel.review_count ? <span className="text-black/40">· {hotel.review_count.toLocaleString()} reviews</span> : null}
+            {hotel.review_count ? <span className="text-black/60">· {hotel.review_count.toLocaleString()} reviews</span> : null}
           </div>
           {hotel.pros?.length ? (
             <p className="mt-1.5 line-clamp-1 text-xs text-black/55">
@@ -64,7 +64,7 @@ export default function ShowcaseHotel({
             <div className="leading-tight">
               {price ? (
                 <>
-                  <span className="text-xs text-black/45">from </span>
+                  <span className="text-xs text-black/60">from </span>
                   <span className="text-xl font-bold tracking-tight text-black">
                     {money(Math.round((price.allIn ?? price.amount) / price.nights), price.currency)}
                   </span>
@@ -73,7 +73,7 @@ export default function ShowcaseHotel({
               ) : (
                 <span className="text-base font-semibold text-black">See your price</span>
               )}
-              <div className="text-[0.68rem] text-black/45">All-in · same for everyone</div>
+              <div className="text-[0.68rem] text-black/60">All-in · same for everyone</div>
             </div>
             <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-accent px-3.5 py-2 text-[13px] font-semibold text-white transition group-hover:opacity-90">
               See rooms

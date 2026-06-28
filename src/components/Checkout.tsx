@@ -61,16 +61,16 @@ export default function Checkout(p: Props) {
           </div>
         ) : null}
         <p className="font-semibold">{p.hotelName ?? "Your stay"}</p>
-        <p className="text-sm text-black/50">{p.room}</p>
-        <p className="text-sm text-black/50 mt-1">
+        <p className="text-sm text-black/60">{p.room}</p>
+        <p className="text-sm text-black/60 mt-1">
           {p.checkin} → {p.checkout} · {p.adults} adult{Number(p.adults) > 1 ? "s" : ""}
         </p>
-        <p className={`text-sm mt-1 ${p.refundable ? "text-[#1a7a4c]" : "text-black/45"}`}>{p.cancelLabel}</p>
+        <p className={`text-sm mt-1 ${p.refundable ? "text-[#1a7a4c]" : "text-black/60"}`}>{p.cancelLabel}</p>
 
         <div className="mt-4 border-t border-black/5 pt-4 text-sm space-y-1.5">
           <h3 className="font-semibold mb-1">Price details</h3>
           {memberSave >= 1 ? (
-            <div className="flex justify-between text-black/45">
+            <div className="flex justify-between text-black/60">
               <span>Public price</span>
               <span className="line-through">{money(p.publicOnline, p.currency)}</span>
             </div>

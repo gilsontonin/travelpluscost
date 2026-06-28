@@ -85,11 +85,11 @@ export default function CompareClient() {
 
       <div className="mt-4 flex flex-wrap items-end gap-3">
         <label className="text-sm">
-          <span className="block text-black/50 text-xs mb-1">Passphrase</span>
+          <span className="block text-black/60 text-xs mb-1">Passphrase</span>
           <input type="password" value={k} onChange={(e) => setK(e.target.value)} className="border border-black/15 rounded-lg px-3 py-2 text-sm" />
         </label>
         <label className="text-sm">
-          <span className="block text-black/50 text-xs mb-1">Market</span>
+          <span className="block text-black/60 text-xs mb-1">Market</span>
           <select value={region} onChange={(e) => setRegion(e.target.value)} className="border border-black/15 rounded-lg px-3 py-2 text-sm bg-white">
             {REGIONS.map((r) => (
               <option key={r.slug} value={r.slug}>
@@ -99,11 +99,11 @@ export default function CompareClient() {
           </select>
         </label>
         <label className="text-sm">
-          <span className="block text-black/50 text-xs mb-1">Check-in</span>
+          <span className="block text-black/60 text-xs mb-1">Check-in</span>
           <input type="date" value={checkin} onChange={(e) => setCheckin(e.target.value)} className="border border-black/15 rounded-lg px-3 py-2 text-sm" />
         </label>
         <label className="text-sm">
-          <span className="block text-black/50 text-xs mb-1">Check-out</span>
+          <span className="block text-black/60 text-xs mb-1">Check-out</span>
           <input type="date" value={checkout} onChange={(e) => setCheckout(e.target.value)} className="border border-black/15 rounded-lg px-3 py-2 text-sm" />
         </label>
         <button onClick={load} className="bg-accent text-white text-sm font-semibold px-5 py-2 rounded-full">
@@ -124,7 +124,7 @@ export default function CompareClient() {
         <div className="mt-4 overflow-x-auto">
           <table className="w-full text-sm border-collapse min-w-[820px]">
             <thead>
-              <tr className="text-left text-black/50 border-b border-black/10">
+              <tr className="text-left text-black/60 border-b border-black/10">
                 <th className="py-2 pr-3">Hotel</th>
                 <th className="py-2 px-2 text-right">NET</th>
                 <th className="py-2 px-2 text-right">SSP</th>
@@ -145,7 +145,7 @@ export default function CompareClient() {
                   <tr key={r.id} className="border-b border-black/[0.06]">
                     <td className="py-2 pr-3">
                       <div className="font-medium leading-tight">{r.name}</div>
-                      <div className="text-xs text-black/45">{r.city}</div>
+                      <div className="text-xs text-black/60">{r.city}</div>
                     </td>
                     <td className="py-2 px-2 text-right tabular-nums">{money(r.net)}</td>
                     <td className="py-2 px-2 text-right tabular-nums text-black/60">{money(r.ssp)}</td>

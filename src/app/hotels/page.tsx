@@ -46,7 +46,7 @@ export default function HotelsIndexPage() {
               >
                 Hotels in {s.name}
               </Link>
-              <p className="mt-0.5 text-xs text-black/50">
+              <p className="mt-0.5 text-xs text-black/60">
                 {s.hotels.toLocaleString()} hotels · {s.cityCount.toLocaleString()} cities
               </p>
               <div className="mt-1.5 flex flex-wrap gap-x-2 gap-y-0.5 text-[13px] text-black/60">

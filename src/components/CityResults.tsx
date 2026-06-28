@@ -169,7 +169,7 @@ export default function CityResults({
   return (
     <div className="mt-5">
       {/* date chips — drive the indicative price (Expedia "Check prices for these dates") */}
-      <p className="mb-1.5 text-xs font-medium text-black/45">Check prices for these dates</p>
+      <p className="mb-1.5 text-xs font-medium text-black/60">Check prices for these dates</p>
       <div className="mb-3 flex flex-nowrap items-center gap-2 -mx-4 px-4 sm:mx-0 sm:px-0 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         {DATE_OPTS.map((o) => (
           <button key={o.key} type="button" onClick={() => setDateKey(o.key)} className={pill(o.key === dateKey)}>

@@ -87,7 +87,7 @@ export default function Footer() {
                       {l.label}
                     </Link>
                   ) : (
-                    <span className="text-black/35 cursor-default" title="Coming soon">
+                    <span className="text-black/60 cursor-default" title="Coming soon">
                       {l.label}
                     </span>
                   )}
@@ -98,7 +98,7 @@ export default function Footer() {
         ))}
       </div>
       <div className="border-t border-black/[0.08]">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-6 py-5 text-xs text-black/45">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-6 py-5 text-xs text-black/60">
           <span>© {new Date().getFullYear()} travelpluscost</span>
           <span>One honest price. The same for everyone.</span>
         </div>

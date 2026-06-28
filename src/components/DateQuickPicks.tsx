@@ -73,7 +73,7 @@ export default function DateQuickPicks({ compact = false, className = "" }: { co
             }`}
           >
             <span className="text-sm font-semibold text-black">{r.label}</span>
-            <span className={`text-xs ${active ? "text-accent" : "text-black/50"}`}>
+            <span className={`text-xs ${active ? "text-accent" : "text-black/60"}`}>
               {fmtShort(r.checkin)} – {fmtShort(r.checkout)}
             </span>
           </button>

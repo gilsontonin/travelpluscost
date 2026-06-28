@@ -12,7 +12,7 @@ export default function ComingSoon({ id }: { id: Vertical }) {
       </span>
       <h1 className="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight">{v.label}, at cost — soon.</h1>
       <p className="mt-3 text-black/55 max-w-xl mx-auto">{v.blurb}</p>
-      <p className="mt-2 text-sm text-black/45">
+      <p className="mt-2 text-sm text-black/60">
         Built on the same engine as hotels — one honest price, the same for everyone, never based on your data.
       </p>
       <div className="mt-8">

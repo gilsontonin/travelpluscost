@@ -62,11 +62,11 @@ export default function GuestField({
         onClick={() => setOpen((o) => !o)}
         className="w-full flex items-center gap-3 rounded-xl border border-black/15 bg-white px-4 py-3 text-left transition hover:border-black/30"
       >
-        <svg className="shrink-0 text-black/40" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg className="shrink-0 text-black/60" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
         </svg>
         <span className="min-w-0 flex-1">
-          <span className="block text-xs text-black/45">Travelers</span>
+          <span className="block text-xs text-black/60">Travelers</span>
           <span className="block mt-0.5 text-[15px] font-medium text-black/90 truncate">{label}</span>
         </span>
       </button>

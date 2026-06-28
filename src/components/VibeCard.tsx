@@ -51,14 +51,14 @@ export default function VibeCard({ hotel, query, priority = false }: { hotel: Vi
         ) : null}
 
         <div className="mt-auto flex items-end justify-between gap-2 pt-1.5">
-          {hotel.style ? <span className="line-clamp-1 pr-1 text-[0.72rem] italic text-black/45">{hotel.style}</span> : <span />}
+          {hotel.style ? <span className="line-clamp-1 pr-1 text-[0.72rem] italic text-black/60">{hotel.style}</span> : <span />}
           {hotel.perNight ? (
             <span className="shrink-0 text-right">
               <span className="font-bold text-[1.1rem] tracking-tight text-black">{money(hotel.perNight, hotel.currency)}</span>
               <span className="text-[0.78rem] text-black/60">/night</span>
             </span>
           ) : (
-            <span className="text-xs text-black/40">Unavailable</span>
+            <span className="text-xs text-black/60">Unavailable</span>
           )}
         </div>
       </div>

@@ -102,7 +102,7 @@ export default function HotelRow({
         </h3>
 
         <p className="flex items-center gap-1 text-[0.8rem] text-black/60">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 text-black/40">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 text-black/60">
             <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
             <circle cx="12" cy="10" r="3" />
           </svg>
@@ -116,7 +116,7 @@ export default function HotelRow({
           <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.76rem] text-black/65">
             {amenities.map((a) => (
               <span key={a} className="inline-flex items-center gap-1">
-                <AmenityIcon name={a} className="w-3.5 h-3.5 text-black/40" />
+                <AmenityIcon name={a} className="w-3.5 h-3.5 text-black/60" />
                 {a}
               </span>
             ))}
@@ -141,7 +141,7 @@ export default function HotelRow({
           {price ? (
             memberDeal ? (
               <>
-                <div className="text-[0.78rem] text-black/40">
+                <div className="text-[0.78rem] text-black/60">
                   <span className="line-through">{money(memberDeal.publicAllIn, price.currency)}</span> public
                 </div>
                 <div className="leading-tight">
@@ -167,7 +167,7 @@ export default function HotelRow({
                   <span className="text-[0.84rem] text-black/70">/night</span>
                 </div>
                 <div className="text-[0.84rem] text-black/80">{money(price.allIn ?? price.amount, price.currency)} total</div>
-                <div className="text-[0.68rem] text-black/45">
+                <div className="text-[0.68rem] text-black/60">
                   All-in · taxes &amp; fees included
                   {price.feesAtProperty ? ` (incl. ${money(price.feesAtProperty, price.currency)} property fees)` : ""}
                 </div>
@@ -181,7 +181,7 @@ export default function HotelRow({
               </>
             )
           ) : loading ? (
-            <span className="text-xs text-black/40">Checking price…</span>
+            <span className="text-xs text-black/60">Checking price…</span>
           ) : awaitingDates ? (
             <div className="leading-tight">
               <span className="inline-flex items-center gap-1 whitespace-nowrap text-[0.98rem] font-semibold text-accent">
@@ -190,7 +190,7 @@ export default function HotelRow({
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
               </span>
-              <div className="text-[0.68rem] text-black/45">All-in · same price for everyone</div>
+              <div className="text-[0.68rem] text-black/60">All-in · same price for everyone</div>
             </div>
           ) : (
             <span className="text-xs font-medium text-accent">Select dates to see prices →</span>

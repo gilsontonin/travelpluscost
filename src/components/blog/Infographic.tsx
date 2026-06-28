@@ -32,11 +32,11 @@ export default function Infographic({ id }: { id: string }) {
           {ig.rows.map((r, i) => (
             <div key={i} className="contents">
               <div className="border-b border-black/[0.06] px-4 py-2.5">
-                <div className="text-[11px] uppercase tracking-wide text-black/40">{r.label}</div>
+                <div className="text-[11px] uppercase tracking-wide text-black/60">{r.label}</div>
                 <div className="mt-0.5 text-black/75">{r.left}</div>
               </div>
               <div className="border-b border-l border-black/[0.06] bg-accent-tint/20 px-4 py-2.5">
-                <div className="text-[11px] uppercase tracking-wide text-black/40">&nbsp;</div>
+                <div className="text-[11px] uppercase tracking-wide text-black/60">&nbsp;</div>
                 <div className="mt-0.5 font-medium text-black/85">{r.right}</div>
               </div>
             </div>
