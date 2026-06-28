@@ -10,11 +10,13 @@ A deeper pass is worth it **only when it adds new FACETS, not when it re-digs th
 querying **new angles** (brunch, cheap eats, by-neighborhood, global) surfaced whole missing categories and
 two legends the 30 missed (Bacchanal, Jacques-Imo's). Re-searching "best restaurants" five more times would
 have been pure busy work. So:
-- **Scale to keyword BREADTH, never a fixed 50.** Broad pillar = ~8–10 facets (~40–60 sources); narrow
-  keyword = ~3 facets (~15). 50 sources on a narrow keyword ("New Orleans in December") IS the busy work.
-- **One search per FACET**, not five per facet.
+- **Hard band: 10–30 facets, scaled by keyword DEPTH** — **never fewer than 10** (no lazy skim, even on a
+  narrow keyword) and **never more than 30** (deep pillars only; don't go infinite). A narrow keyword earns
+  ≥10 angles from the core menu; a deep pillar expands each core facet into specific sub-angles up to 30.
+- **It's the FACETS that matter, not raw source count.** 50 sources re-digging one angle is the busy work;
+  20 distinct facets is gold. **One search per facet**, not five per facet.
 
-## The facet checklist (pick the ones that EXIST for the keyword)
+## The core facet menu (≥10 — this is the FLOOR; pick the ones that exist)
 - **Famous / iconic** — the names everyone expects
 - **Awarded** — Michelin, James Beard, "50 Best", local critics' picks
 - **Where locals eat** — Reddit/forums; the honesty angle (tourist-trap vs gem)
@@ -25,6 +27,16 @@ have been pure busy work. So:
 - **Practical / PAA** — reservations, hours, dress code, how-far-ahead (snippet bait)
 - **Video / critic** — local critic video series, vlogs (real, current detail)
 - **Our own data** — LiteAPI: neighborhoods, real prices/spreads, proximity to inventory
+
+## Reaching 10–30: sub-divide the core facets by depth
+A narrow keyword runs the ~10 core facets and stops. A **deep pillar** enumerates the broad ones into
+specific sub-angles until you hit the depth the keyword deserves (cap 30). E.g. for "best restaurants in
+New Orleans":
+- **By neighborhood** → French Quarter · Garden District · Bywater/Marigny · Uptown/Magazine · Mid-City · CBD/Warehouse (≈6 facets)
+- **By dish** → gumbo · po-boy · beignets · oysters · muffuletta · crawfish (≈6)
+- **By occasion/segment** → brunch · cheap eats · fine dining · romantic · late-night · with-kids · vegan (≈7)
+Stack those on top of famous/awarded/local/new/practical/video/our-data and a deep pillar naturally lands
+in the 20–30 band. Stop at 30 — past that it's re-digging, not new facets.
 
 ## Travel source types (and what to SKIP)
 USE: guides · local critics (Eater/nola.com-style) · Reddit/forums · awards bodies · video · practical

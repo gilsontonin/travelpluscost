@@ -79,9 +79,10 @@ people enjoy and skim easily converts better than one that ranks and bounces.
    Together these ARE the scan: **items 1–8 match the shape that already wins; item 9 (the gaps) is where you
    beat them** — the booking path they lack, the PAA they answer poorly, the cluster cross-links, freshness.
 4. **STEP 2 — RESEARCH (facet-driven; do your OWN research, don't regurgitate the top 3).** Full reference:
-   `References/ResearchBrief.md`. Research the facets that EXIST for the keyword, **scaled to breadth, not a
-   fixed 50** (broad pillar ≈ 8–10 facets / ~40–60 sources; narrow keyword ≈ 3 facets / ~15 — 50 on a narrow
-   one is busy work). Walk the facet checklist — one WebSearch each: famous · awarded (Michelin/JB) · where-
+   `References/ResearchBrief.md`. Research **10–30 facets scaled by keyword depth —
+   never fewer than 10, never more than 30** (it's facets that matter, not raw count; 50 sources re-digging
+   one angle is busy work). A narrow keyword runs the ~10 core facets; a deep pillar sub-divides them
+   (neighborhoods · dishes · occasions) up to 30. Walk the facet checklist — one WebSearch each: famous · awarded (Michelin/JB) · where-
    locals-eat (**Reddit/forums**) · by-dish · by-neighborhood · by-occasion (brunch/budget/kids/late-night) ·
    new & buzzy · practical/PAA (reservations/hours/dress) · video/critic · **our LiteAPI data**. Travel source
    types only (guides · local critics · Reddit · awards · video · practical · own-data) — **skip** industry

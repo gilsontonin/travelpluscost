@@ -61,8 +61,9 @@ QA note (post exists). Then work it top to bottom. If no city was given, pick on
 2. **STEP 2 — RESEARCH (facet-driven; full ref `References/ResearchBrief.md`).** Do your OWN research so the
    post isn't a top-3 echo. Walk the facet checklist (famous · awarded · where-locals-eat via Reddit · by-
    dish · by-neighborhood · by-occasion · new/buzzy · practical/PAA · video/critic · our LiteAPI data) — one
-   WebSearch per facet, **scaled to keyword breadth** (broad pillar ≈8–10 facets/~50 sources; narrow ≈3/~15;
-   50 on a narrow keyword is busy work — **it's facets that matter, not raw count**). Travel source types
+   WebSearch per facet, **10–30 facets scaled by keyword depth (floor 10, cap 30)** — facets matter, not raw
+   count; a narrow keyword runs the ~10 core facets, a deep pillar sub-divides them (neighborhoods/dishes/
+   occasions) up to 30. Travel source types
    only (skip industry-reports/studies/gov/product-specs). Localize city posts; subagents opt-in for broad
    pillars. Synthesize → `scripts/blog/research-brief-<slug>.md` (exemplar: best-restaurants-in-new-orleans)
    and **write FROM the brief**.
