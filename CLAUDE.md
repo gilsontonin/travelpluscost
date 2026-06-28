@@ -28,8 +28,12 @@ When asked to write or edit ANY blog post, BEFORE writing a word:
 1a. Pick the next keyword from the **keyword map** (`npm run blog:map -- "<city>"` → `content/keyword-map-<slug>.md`;
    `References/KeywordResearch.md`). **KD is a band, not a gate** — go broad: easy KD<30 spokes + juicy KD 50–70+ pillars.
 1b. BEFORE writing: **STEP 1 — scan the top 3** (`npm run blog:scan` + `blog:serp` → TARGET SPEC + ★gaps),
-   then **STEP 2 — facet-driven research** (`References/ResearchBrief.md`: 10–30 facets scaled by keyword
-   depth → `scripts/blog/research-brief-<slug>.md`; write FROM the brief, not the top-3 echo).
+   then **STEP 2 — facet-driven research** (`References/ResearchBrief.md`: ~20–30 facets scaled by keyword
+   depth → `scripts/blog/research-brief-<slug>.md`; write FROM the brief, not the top-3 echo). **⛔ OWNER HARD
+   FLOOR (2026-06-28, no leeway): the brief must document ≥30 distinct sources in a ledger — fewer is a FAIL;
+   do not write a word until you are there.** Also: **MATCH the winners** — mirror the genuine top-3 ranker's
+   STRUCTURE and LENGTH (the comprehensive per-entity blocks are what Google rewards); never write shorter and
+   call it an exec-decision. Paste-ready prompts: **`PROMPTS.md` (project root)**.
 1c. **Owner punctuation rule (2026-06-28, HARD):** spell every word OUT — **no contractions** ("we will" not
    "we'll", "it is" not "it's"). **No dashes in prose** (— – or compound hyphens). **No colons or semicolons in
    prose** — split with `.` and `,`. Titles and the `**The move:**` quick-facts strips KEEP their colon. Enforced

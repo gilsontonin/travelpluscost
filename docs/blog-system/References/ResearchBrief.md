@@ -4,7 +4,14 @@ _The deep-research pass that runs **after `blog:scan`/`blog:serp` (Step 1) and b
 tells you the SHAPE that wins; this tells you the SUBSTANCE so you write from your own research, not a
 top-3 echo. Reverse-engineered from Jono's "50+ sources / 5 subagents" step and adapted for travel._
 
-## The one lesson that matters: facets, not source count
+## ⛔ OWNER HARD FLOOR (2026-06-28, no leeway): 30 SOURCES MINIMUM
+**Every post's `research-brief-<slug>.md` must document AT LEAST 30 distinct, credible sources in a SOURCE
+LEDGER, grouped by facet.** Fewer than 30 is a FAIL — do not write a word until you are there. This is on
+top of the facet rule below (facets drive WHAT you research; 30+ sources is the floor you must hit and show).
+In practice ~20–30 facets at one search per facet clears 30 sources comfortably. **No "facets over count"
+shortcut to dodge the floor** — the owner reads the ledger.
+
+## The facet lesson (HOW to hit the floor without busy work): new facets, not re-digging
 A deeper pass is worth it **only when it adds new FACETS, not when it re-digs the same one.** Tested on
 "best restaurants in New Orleans": the first ~30 sources nailed famous/awarded/historic; pushing to ~55 by
 querying **new angles** (brunch, cheap eats, by-neighborhood, global) surfaced whole missing categories and
@@ -13,8 +20,10 @@ have been pure busy work. So:
 - **Hard band: 10–30 facets, scaled by keyword DEPTH** — **never fewer than 10** (no lazy skim, even on a
   narrow keyword) and **never more than 30** (deep pillars only; don't go infinite). A narrow keyword earns
   ≥10 angles from the core menu; a deep pillar expands each core facet into specific sub-angles up to 30.
-- **It's the FACETS that matter, not raw source count.** 50 sources re-digging one angle is the busy work;
-  20 distinct facets is gold. **One search per facet**, not five per facet.
+- **Facets drive WHAT you research; the 30-source floor is non-negotiable.** Hit BOTH: ~20–30 distinct
+  facets AND ≥30 sources in the ledger. 50 sources re-digging one angle is busy work, but fewer than 30 is
+  a fail — the answer is always MORE FACETS (new angles), never fewer sources. **One search per facet**, not
+  five per facet, and keep adding facets until the ledger clears 30.
 
 ## The core facet menu (≥10 — this is the FLOOR; pick the ones that exist)
 - **Famous / iconic** — the names everyone expects

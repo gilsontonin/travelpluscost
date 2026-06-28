@@ -222,10 +222,13 @@ This list exists because these are the exact shortcuts that ship bad posts. Name
 - Don't regurgitate the top 3. Walk the **facet checklist** (famous · awarded · where-locals-eat via
   Reddit · by-dish · by-neighborhood · by-occasion · new/buzzy · practical/PAA · video/critic · our LiteAPI
   data), **one WebSearch per facet**.
-- **10–30 facets, scaled by keyword depth** — never fewer than 10 (no lazy skim), never more than 30 (deep
-  pillars sub-divide neighborhoods/dishes/occasions; past 30 it's re-digging). **Facets matter, not raw
-  count.** Travel source types only (skip industry-reports/studies/gov/product-specs). Localize city posts;
-  subagents opt-in for broad pillars.
+- **⛔ OWNER HARD FLOOR (2026-06-28, no leeway): the brief must document ≥30 distinct sources in a SOURCE
+  LEDGER, grouped by facet — fewer than 30 is a FAIL; do not write a word until you are there.** Run **~20–30
+  facets, scaled by keyword depth** (one search per facet); facets drive WHAT you research, and you keep
+  adding angles until the ledger clears 30. Travel source types only (skip industry-reports/studies/gov/
+  product-specs). Localize city posts; subagents opt-in for broad pillars.
+- **And MATCH the winners:** mirror the genuine top-3 ranker's STRUCTURE and LENGTH (the comprehensive
+  per-entity blocks are the ranking signal) — never write shorter and call it an exec-decision.
 - Synthesize → **`scripts/blog/research-brief-<slug>.md`** and **write FROM that brief**, not the top-3 pages.
 
 ### 5.3 Plan structure + monetization together

@@ -5,6 +5,8 @@ A US hotel-search site (flights + rentals later), built in public as an SEO expe
 
 **Philosophy:** the anti–surveillance-pricing OTA. See [docs/POSITIONING.md](docs/POSITIONING.md).
 
+**✍️ Writing a blog post?** Copy a kickoff prompt from [PROMPTS.md](PROMPTS.md) (project root). Hard rules: **30 sources minimum** in research, and **match the winners' structure + length**.
+
 **Model:** affiliate-first, merchant-ready. v1 searches hotels and hands off to partners (no
 checkout, no liability). The own-checkout path (LiteAPI book → the transparent **cost-plus** engine)
 and the flights vertical (Duffel) are architected in but **feature-flagged off** until traffic
