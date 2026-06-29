@@ -16,6 +16,67 @@ export type Infographic =
   | { kind: "callout"; title: string; body: string };
 
 export const INFOGRAPHICS: Record<string, Infographic> = {
+  "nola-bach-stay": {
+    kind: "compare",
+    title: "Central hotel, or a house in the suburbs?",
+    left: "Central French Quarter hotel",
+    right: "Cheaper rental, 20 minutes out",
+    rows: [
+      { label: "Getting to Bourbon Street", left: "A short walk, at any hour", right: "A ride, and a surge at 1am" },
+      { label: "Keeping the group together", left: "One block of rooms", right: "Scattered and texting" },
+      { label: "The real budget", left: "Higher room, lower everything else", right: "Lower room, eighty dollars in rides" },
+      { label: "The vibe", left: "In the middle of it all", right: "A quiet street and an early night" },
+    ],
+  },
+  "nola-bach-when": {
+    kind: "stat",
+    title: "When to go for a New Orleans bachelorette",
+    stats: [
+      { value: "Spring", label: "March to May, the prettiest weather of the year" },
+      { value: "Fall", label: "September to November, festival season" },
+      { value: "Avoid", label: "the summer heat and the 90s humidity" },
+      { value: "Book a year out", label: "for a Mardi Gras or Jazz Fest weekend" },
+    ],
+  },
+  "nola-bach-plan": {
+    kind: "steps",
+    title: "The honest three day plan",
+    steps: [
+      { title: "Friday, arrive and dine", detail: "Drop the bags and have a real dinner while the memories still form." },
+      { title: "Saturday, one thing then the night", detail: "A daytime activity, a nap, brunch into dinner into Bourbon Street." },
+      { title: "Sunday, beignets and goodbyes", detail: "Cafe du Monde, then everyone leaves on their own headache." },
+    ],
+  },
+  "nola-bach-drinks": {
+    kind: "stat",
+    title: "The drinks you flew here for",
+    stats: [
+      { value: "Sazerac", label: "the official cocktail of New Orleans" },
+      { value: "Hurricane", label: "the rum classic from Pat O Brien's" },
+      { value: "Hand Grenade", label: "melon, 24 percent, handle with care" },
+      { value: "Go cup", label: "plastic only, and the street is yours" },
+    ],
+  },
+  "nola-bach-activities": {
+    kind: "stat",
+    title: "Daytime things that are not a bar",
+    stats: [
+      { value: "$35 to $119", label: "an airboat swamp tour with alligators" },
+      { value: "about $150", label: "a hands on Creole cooking class" },
+      { value: "about $30", label: "a two hour ghost and cemetery tour" },
+      { value: "$500 and up", label: "your own hired second line parade" },
+    ],
+  },
+  "nola-bach-cost": {
+    kind: "stat",
+    title: "What it costs, split across the group",
+    stats: [
+      { value: "$1,000 to $1,300", label: "per person for a four day weekend" },
+      { value: "$220 to $280", label: "a night, mid range French Quarter hotel" },
+      { value: "Split it", label: "a hotel block divides fast across a dozen people" },
+      { value: "Same price", label: "our flat fee is identical for everyone" },
+    ],
+  },
   "nola-mgh-areas": {
     kind: "stat",
     title: "Where to stay for Mardi Gras, by area",

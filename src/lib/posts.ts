@@ -49,6 +49,213 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "new-orleans-bachelorette-weekend",
+    title: "Bachelorette Weekend in New Orleans: The Honest Guide (2026)",
+    seoTitle: "New Orleans Bachelorette Weekend: 2026 Guide",
+    description: "A New Orleans bachelorette weekend guide. Where to stay, the three day plan, drag brunch, Bourbon Street, what to do, and what it costs split across the group.",
+    excerpt: "The honest guide to a New Orleans bachelorette weekend. Where to stay, the three day plan, drag brunch, Bourbon Street and the go cups, the daytime activities, and what it all costs once you split it twelve ways. As of 2026.",
+    tldr: {
+      answer: "Plan a New Orleans bachelorette as a three day weekend with everyone in one walkable downtown hotel. Build the days around drag brunch, a night on Bourbon Street, and one daytime thing like a swamp tour. Budget roughly 1,000 to 1,300 dollars a head, less once you split the room block.",
+      points: [
+        "**Stay central.** A walkable French Quarter hotel beats a rental out in the suburbs.",
+        "**Brunch is the main event.** Book the drag brunch two to three months ahead.",
+        "**Bourbon then Frenchmen.** Go cups on Bourbon, real live music on Frenchmen Street.",
+        "**Spring or fall.** Skip the summer heat, and book a year out for Mardi Gras or Jazz Fest.",
+        "**Budget $1,000 to $1,300 each** for four days, less once you split the hotel block.",
+      ],
+    },
+    date: "2026-06-29",
+    updated: "2026-06-29",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: { src: "https://static.cupid.travel/hotels/171786560.jpg", alt: "A French Quarter scene in New Orleans with wrought iron balconies, the walkable heart of a bachelorette weekend" },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "What is the best area to stay for a bachelorette in New Orleans?",
+        a: "**The French Quarter is the best base, since it is walkable, central, and steps from Bourbon Street, the bars, and the brunch spots.** The nearby Central Business District and Warehouse District are slightly cheaper and still walkable. Staying central means your group can walk almost everywhere and skip the late night rides, which keeps both the budget and the chaos under control.",
+      },
+      {
+        q: "How many days do you need for a New Orleans bachelorette?",
+        a: "**Three days, a Friday to Sunday weekend, is the sweet spot.** Friday is arrival and dinner, Saturday is one daytime activity plus the big night out, and Sunday is brunch and beignets before everyone flies home. Four days suits a group that wants a slower pace, a swamp tour, and a recovery day.",
+      },
+      {
+        q: "How much does a New Orleans bachelorette weekend cost?",
+        a: "**Budget roughly 1,000 to 1,300 dollars per person for a four day trip, including hotel, food, activities, and nightlife.** Mid range French Quarter hotels run about 220 to 280 dollars a night before you split the room across the group. Splitting the hotel block and a few group activities brings the per person number down quickly.",
+      },
+      {
+        q: "When is the best time to go to New Orleans for a bachelorette?",
+        a: "**Spring and fall, roughly March through May or September through November, have the best weather for walking and partying.** Avoid the summer heat and humidity if you can, and book a year ahead if you want to overlap with Mardi Gras or Jazz Fest, since those weekends sell out fast and cost far more.",
+      },
+      {
+        q: "What should you do at a New Orleans bachelorette party?",
+        a: "**Build the weekend around a drag brunch, a night on Bourbon Street, and one daytime activity like a swamp tour, cooking class, or ghost tour.** Add Frenchmen Street for live music, Pat O Brien's for a Hurricane, and a hired second line parade if the budget allows. Book the brunches and tours a few weeks to a few months ahead.",
+      },
+      {
+        q: "Is New Orleans safe for a bachelorette party?",
+        a: "**Yes, for a group sticking to the busy, well lit parts of the French Quarter and downtown at night.** Travel together, stay on the lively streets nearer the river, and use the free downtown SafeWalk escort service if a street feels quiet. Watch your drinks and your group, the same as any big party city.",
+      },
+    ],
+    body: `The winning move for a New Orleans bachelorette is to **book one central French Quarter hotel**, plan three days around brunch instead of alarms, and let the city do the rest. New Orleans is built for exactly this trip. It has 50 plus bars inside a 13 block stretch, it lets you carry your drink down the street in a plastic cup, and nobody here has ever once judged a bachelorette party in matching shirts.
+
+Planning a bachelorette weekend in New Orleans is mostly a matter of getting a few big things right, and this guide is the honest version, the kind of NOLA itinerary a maid of honor actually needs. Where to actually stay, the weekend laid out by realistic wake up times, the brunch that doubles as a recovery room, and what the whole thing costs once you split it twelve ways. It is current as of 2026.
+
+One straight note up front, since we run a hotel booking site. A bachelorette group is a dozen people splitting a bill, so the last thing the maid of honor planning a New Orleans bachelorette party needs is a price that grows three screens after she picks the room.
+
+We show the hotel rate plus one small flat fee, the same fee for everyone, and the all in number up front. The only surprise that weekend should be the bride.
+
+## When to Go for a New Orleans Bachelorette
+
+**Aim for spring or fall, roughly March through May or September through November, when the weather is walkable and the streets are not a sauna.** Spring runs from the low 50s into the upper 70s and is the prettiest stretch of the year. Fall cools off the same way and brings festival season.
+
+::infographic nola-bach-when
+
+Summer is the one to think twice about. June through August sits in the 90s with the humidity of a dishwasher, plus six or seven inches of rain a month, which is a lot of weather to do in a costume sash.
+
+Then there are the two weekends that book out a year ahead. Mardi Gras runs in February and Jazz Fest takes the last weekend of April into May, and both turn a fun bachelorette into a logistical hostage situation. Either lean all the way in on purpose, or check the calendar before the bride falls in love with a date that happens to be Fat Tuesday.
+
+## Where to Stay for a New Orleans Bachelorette Party
+
+**Book a walkable French Quarter or downtown hotel, not a charming rental twenty minutes out.** The Quarter is a tidy grid you can cross on foot in about twenty minutes, rated a Walker's Paradise, with more than 26,000 hotel rooms and 500 restaurants inside a two mile circle. Staying in the middle of that is the entire point, and it makes the whole weekend easy, whether your group wants to walk to brunch or stumble home from Bourbon Street.
+
+Every bachelorette party has the one friend who finds a house three miles away to save forty dollars a head. That friend has not yet done the math on twelve people taking rides to and from Bourbon Street at 1am, which is how you save forty dollars on the room and spend eighty getting back to it.
+
+::infographic nola-bach-stay
+
+::hotel lp1c186
+
+For the group that wants to be in the thick of it, the **Royal Sonesta** sits right on Bourbon Street with a heated pool and balconies over the action. The **Hotel Monteleone** anchors Royal Street with the famous Carousel Bar, a rotating bar that quietly turns while you drink, which after a few rounds is either delightful or alarming.
+
+::hotel lpa440f
+
+If you want a pool day and a little distance from the noise, the **NOPSI** has a rooftop bar and pool a short walk from the Quarter, and the **Moxy** practically built itself for groups, with a lobby bar check in and a free welcome cocktail. Whichever you pick, a block of rooms in one hotel keeps the group together and the budget legible, which a scattered set of rentals never does.
+
+## The Honest New Orleans Bachelorette Itinerary
+
+**A New Orleans bachelorette is a three day event, and the schedule should respect that nobody is rising at 8am.** Friday is arrival and a real dinner. Saturday is the big day and the bigger night.
+
+Sunday is beignets, hugs, and a quiet reckoning with the group chat.
+
+::infographic nola-bach-plan
+
+Friday, land, drop the bags, and go to dinner like adults, because it is the last clear memory some of you will form. New Orleans has serious food, including Emeril's, the only two star Michelin restaurant in the South, plus Commander's Palace and Coquette for a proper first night, the one restaurant dinner worth dressing for. The grand old rooms like Antoine's and Arnaud's keep private dining spaces built for a party of twelve, so put the big group dinner first on the NOLA itinerary and let the rest of the weekend stay loose.
+
+Saturday, do one daytime thing that is not a bar, then nap, then brunch into dinner into Bourbon Street. Sunday, the itinerary is mercifully short.
+
+Get coffee and beignets early at Café du Monde, the café that has fueled every hungover morning since, which has been dusting powdered sugar onto tourists since 1862, and then let everyone leave on their own timeline and their own headache. That is the whole NOLA weekend, and it is a good one.
+
+## Brunch, the Heart of the Bachelorette Weekend
+
+**In New Orleans, brunch is not a meal before the day, it is the day.** This is the city that invented bottomless and then added a live band, and a bachelorette party runs on it. Book the good ones early, two to three months out, because they sell out the moment reservations open, and brunch planning is the one part of this trip worth a spreadsheet.
+
+The crown jewel is **drag brunch**. The Country Club in Bywater runs the longest standing one in the city, Saturdays and Sundays, with bottomless mimosas and a Bloody Mary bar, and you bring cash for tips because the performers earn every dollar and the building has no ATM.
+
+For something grander, the **Court of Two Sisters** does a live jazz brunch buffet of sixty plus dishes in a courtyard for around fifty dollars a head. And the local power move is **Commander's Palace**, where a lunch entrée on a Thursday or Friday unlocks 25 cent martinis, capped at three per person, a limit that exists for reasons you will fully understand by the second one.
+
+## A Bachelorette Night on Bourbon Street
+
+**Bourbon Street is the loud, neon, every corner kind of night your group flew here for, and the secret to it is the go cup.** New Orleans lets you drink on the street as long as it is in a plastic cup, so the bars hand you one on the way out, and the whole strip becomes one rolling party. Glass stays inside.
+
+Everything else moves.
+
+::infographic nola-bach-drinks
+
+The required stop is **Pat O'Brien's**, the home of the Hurricane and a dueling piano bar that will absolutely play your song if you tip. Down the block, **Cat's Meow** is the karaoke bar where the bride will perform whether or not she planned to, with a thousand songs and a three for one happy hour that explains a great deal.
+
+A word of warning about the **Hand Grenade**, the melon green drink in the tall plastic glass sold only at Tropical Isle. It markets itself as the most powerful drink in New Orleans, it is roughly 24 percent alcohol, and it has ended more bachelorette nights than closing time ever has. Respect it, or at least pace it.
+
+## Frenchmen Street, for when Bourbon becomes a lot
+
+**Two blocks past the Quarter, Frenchmen Street is where the locals go, and where you will want to be by the third night.** It trades neon and frozen drinks for ten or so small clubs with real live music and the kind of jazz the music history books are about, jazz and funk and brass, the live music the city is actually famous for, and it is the most fun your group will have with its shoes still on.
+
+The **Spotted Cat** is the classic, packed and sweaty with a five dollar cover and a band that is genuinely excellent.
+
+Snug Harbor, d.b.a., and the Blue Nile round out the strip.
+
+It is the same group, the same bachelorette party, with the volume of the bad decisions turned down and the volume of the music turned up.
+
+## The Best Bachelorette Photo Spots in New Orleans
+
+**Half a New Orleans bachelorette lives on a phone, so build in time for the backdrops the city is famous for.** The good news is most of them are free and an easy walk apart.
+
+**Jackson Square** is the postcard, the cathedral and the artists and the iron fences, and it is the simplest group photo in town. From Jackson Square it is a short stroll to the pastel Creole townhouses with their cast iron balconies, the kind of New Orleans color that needs no filter.
+
+For a skyline shot, Crescent Park runs along the river, and the St. Charles streetcar gives you golden hour light through the oaks in the evening. The street art in Bywater is the other easy backdrop.
+
+Art lovers can detour to the Studio BE mural in Bywater, a 35,000 square foot wall that has launched a thousand bachelorette posts. The whole crawl is its own little adventure between brunch and the evening, and it folds the city culture into the trip without anyone calling it a museum day.
+
+Leave room for the fun, low key stuff a bachelorette actually remembers, too. The French Market and Magazine Street are made for window shopping, whether you buy anything or not, and a slow lunch, the food halls and po boy shops are a cheap and delicious break from restaurant prices, and a guided food tour turns eating into its own planned activity, with a guide who books the good shops so you do not have to.
+
+## Bachelorette Activities That Are Not a Bar
+
+**Plan one real bachelorette party activity for Saturday afternoon, both because it is fun and because the group needs proof the weekend was not only bars.** New Orleans has a deep bench here, and most of it books a few weeks out.
+
+::infographic nola-bach-activities
+
+The classic is an airboat **swamp tour**, two hours of alligators and Spanish moss for somewhere between 35 and 119 dollars depending on the boat, with hotel pickup for a bit more. There is something clarifying about watching a creature that has its entire life together while you are running on four hours of sleep.
+
+If you would rather stay in town, a hands on **cooking class** at the New Orleans School of Cooking runs about 150 dollars and teaches you gumbo with a beer in hand. A **ghost tour** is around 30 dollars and two hours of cemeteries and bad history. If you want the party to move with you, a **Pedal Pub** party bike carries 8 to 15 people for about 600 dollars and two hours, coolers and playlist included, which is exactly the vibe it sounds like.
+
+A **steamboat** jazz cruise on the Natchez runs about 107 dollars and is the rare activity that lets the group sit down. Guided **pub crawls** range from 18 to 98 dollars a head and make the bar hopping somebody else's job.
+
+And if the budget allows, you can hire a real **second line parade**, a brass band and a permit and a parade just for your group, which is the single most New Orleans bachelorette party thing money can buy. Book it well ahead, since the city itself has to sign off.
+
+## The New Orleans Drinks You Flew Here For
+
+**New Orleans takes its cocktails seriously enough that the state legislature made one of them official.** That would be the **Sazerac**, rye whiskey and Peychaud's bitters and a whisper of absinthe, the city's signature and a genuinely great drink to set the vibe for a night you intend to remember.
+
+The **Hurricane** is the rum colored classic from Pat O'Brien's, invented in the 1940s to use up a glut of rum, and still poured in its original curved glass. The **Vieux Carré** was born at the Monteleone's Carousel Bar in 1938 and is the move when you want to feel briefly sophisticated.
+
+And then there are the **frozen daiquiris**, sold from walk up windows and yes, drive through windows, in flavors and souvenir cups that defy good taste in the best way. Lafitte's Blacksmith Shop, an 18th century building lit mostly by candles, pours a grape Voodoo Daiquiri that is stronger than it has any right to be.
+
+## What to Wear to a New Orleans Bachelorette
+
+**Wear closed toe shoes you can walk miles in, and save the heels for the bachelorette party photos you take before you leave the room.** Bourbon Street pavement is famously uneven, the kind that eats a stiletto and a good mood at the same time, and you will cover real distance over three days in the heat.
+
+A few more honest notes. Skip white unless the bride asks, since white is hers for the weekend. Pack light and breathable for the humidity, with a small umbrella for the afternoon showers that arrive on schedule from June on.
+
+Tip generously, because this city runs on it, 20 percent at restaurants, a dollar or two a drink at the bar, and a few bucks into the band's jar at the end of a set. And travel as a group at night, stick to the lit, busy streets near the river, and know that downtown offers free SafeWalk escorts if a street feels off.
+
+## A Few New Orleans Bachelorette Mistakes to Skip
+
+**Most of what goes wrong on a bachelorette weekend is avoidable, and all of it has already been done by a group exactly like yours.** Learn from their suffering, and your planning gets easier.
+
+Do not over plan. A bachelorette party itinerary with a timed activity every two hours becomes a group text full of apologies by Saturday afternoon, because nobody told the schedule about the Hand Grenades. Leave whole blocks of the day open and let the city fill them.
+
+Do not skip the dinner reservation. A party of twelve that wanders into the French Quarter at 8pm on a Saturday hoping to be seated together is a party of twelve eating separately, an hour apart, in a slowly darkening mood. Book the restaurant weeks ahead.
+
+Do not wear the heels. We said it once and we will say it again, because every single weekend somebody learns it the hard way on the most uneven pavement in America. And do not put the whole NOLA weekend on one credit card to sort out later, because later is always a Tuesday, and the math is never as fun as the trip was.
+
+## Getting Around New Orleans With a Group of Twelve
+
+**Staying in the walkable core means your group of twelve mostly travels on foot, which is the cheapest and funniest way to move a bachelorette.** From the airport, a taxi is a flat 36 dollars for one or two people or 14 dollars a head for three or more, and a rideshare runs about the same.
+
+Once you are downtown, you may not touch a car again. The Quarter is 85 small blocks, the streetcar is a charming dollar twenty five, and almost everything you want is a walk away.
+
+The real logistics challenge is dinner. Most restaurants want a heads up for a party over ten, and the grand old rooms like Antoine's and Arnaud's have private spaces built for exactly this, so book the big group dinner early and let everyone find their own way to brunch.
+
+## What a New Orleans Bachelorette Costs, Split Twelve Ways
+
+**Budget around 1,000 to 1,300 dollars per person for a four day New Orleans bachelorette, covering the hotel, meals, activities, and the nightlife that is the whole reason you came.** Mid range French Quarter hotels run about 220 to 280 dollars a night, with the Warehouse District a little cheaper.
+
+::infographic nola-bach-cost
+
+The math gets friendlier the moment you split it. A hotel block divided across the group, a few group activities, and a shared dinner or two spread the cost out fast, and tools like Splitwise keep the Venmo requests from arriving as a surprise on Tuesday.
+
+The fair way to split a hotel is by nights attended, so the friend who can only make Saturday pays for Saturday and not the whole weekend. Set the deposit deadline a few weeks out, decide early what is refundable if someone drops, and the back end of the trip stays friendly. A NOLA bachelorette is one of the easier and more fun group travel trips to budget, because almost everything worth doing sits inside an easy walk.
+
+::priceproof
+
+Here is the part we care about. The hotel sets its own weekend rate, and we cannot change that, but the fee we add on top is one small flat fee, the same for every person who searches, never set by your phone or your history. For a group already dividing one bill twelve ways, a price that is the same for everyone and honest up front is not a small thing.
+
+When you are ready to compare real rooms for the weekend, here is the New Orleans search.
+
+::cta New Orleans
+
+For the rest of the planning, our guides to the [French Quarter](/blog/french-quarter-new-orleans), the [best restaurants](/blog/best-restaurants-in-new-orleans), and [where to stay](/blog/where-to-stay-in-neworleans) pick up where this leaves off.
+`,
+  },
+  {
     slug: "new-orleans-mardi-gras-hotels",
     title: "Hotel Rooms in New Orleans for Mardi Gras: Where to Stay (2027)",
     seoTitle: "New Orleans Mardi Gras Hotels: Where to Stay 2027",
