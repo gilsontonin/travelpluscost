@@ -49,6 +49,215 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "new-orleans-mardi-gras-hotels",
+    title: "Hotel Rooms in New Orleans for Mardi Gras: Where to Stay (2027)",
+    seoTitle: "New Orleans Mardi Gras Hotels: Where to Stay 2027",
+    description: "Where to stay in New Orleans for Mardi Gras 2027, by area, with real hotels on the St. Charles parade route, what a room costs, and how to book early.",
+    excerpt: "The honest guide to booking a hotel for Mardi Gras 2027 in New Orleans. Where the parades actually roll, the best areas and real hotels for each, what a room costs during the surge, and how to lock a fair rate early. As of 2026.",
+    tldr: {
+      answer: "The best Mardi Gras hotels sit on the St. Charles to Canal Street parade route, and the move is to book six to twelve months ahead. Stay Uptown for the family parades or in the CBD for the finish line. Expect a steep Carnival surge, plus three to five night minimums and non refundable deposits.",
+      points: [
+        "**Book 6 to 12 months out.** Parade route hotels sell out nearly a year ahead.",
+        "**Stay on the route.** St. Charles Avenue Uptown and Canal Street in the CBD put you on the parades.",
+        "**The Quarter is the scene, not the route.** Big floats roll St. Charles and Canal, not Bourbon Street.",
+        "**Expect a surge.** A normal $150 to $200 room runs $400 to $800 during Carnival week.",
+        "**Cheaper nearby.** The Marigny and Bywater save 30 to 40 percent and stay walkable.",
+      ],
+    },
+    date: "2026-06-29",
+    updated: "2026-06-29",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: { src: "https://static.cupid.travel/hotels/614339620.jpg", alt: "A French Quarter hotel in New Orleans with wrought iron balconies, a short walk from the Mardi Gras parade route on Canal Street" },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "When should I book a hotel for Mardi Gras in New Orleans?",
+        a: "**Book six to twelve months ahead.** Parade route hotels sell out nearly a year out, and most open Carnival room blocks ten to twelve months before the event. The earlier you book, the more you choose from and the less you pay, since base rates climb across the whole city as Fat Tuesday nears.",
+      },
+      {
+        q: "What is the best area to stay for Mardi Gras?",
+        a: "**Uptown along St. Charles Avenue or the CBD on Canal Street.** St. Charles is the parade route itself, family friendly and lined with oaks. The CBD sits at the parade finish, central and walkable to the French Quarter. The Quarter is the costume scene, but the big floats do not roll through it.",
+      },
+      {
+        q: "How much do hotels cost during Mardi Gras in New Orleans?",
+        a: "**A normal $150 to $200 room runs $400 to $800 during Carnival week.** French Quarter rates jump the hardest, 200 to 300 percent, and parade route hotels can triple. The Marigny and Bywater run 30 to 40 percent cheaper, and the suburbs cheaper still.",
+      },
+      {
+        q: "Do Mardi Gras parades go through the French Quarter?",
+        a: "**No, the big parades do not roll through the French Quarter.** The super krewe floats are too large for its narrow streets, so the main route runs up St. Charles Avenue and finishes on Canal Street. The Quarter gets costumes and small walking krewes, not Bacchus and Rex.",
+      },
+      {
+        q: "Is there a minimum stay for Mardi Gras hotels?",
+        a: "**Yes, most hotels require a three to five night minimum over the Mardi Gras weekend.** Many also ask for a non refundable deposit with full payment due thirty to sixty days out, and some will not let you check in on Fat Tuesday itself. Read the cancellation terms before you book.",
+      },
+      {
+        q: "What is the cheapest way to stay for Mardi Gras?",
+        a: "**Stay in the Marigny, Bywater, or a suburb like Metairie.** The Marigny and Bywater run 30 to 40 percent below French Quarter rates and stay walkable. Metairie and Kenner are 20 to 30 minutes out by ride share for far less, and run their own smaller family parades.",
+      },
+    ],
+    body: `**The single most important move for Mardi Gras is to book the room first and plan everything else later.** Hotels on the parade route sell out close to a year ahead, and the whole city raises rates 200 to 300 percent during Carnival week. For Mardi Gras 2027, which lands on Fat Tuesday, February 9, that means choosing where to stay sooner than feels reasonable.
+
+This guide covers booking hotel rooms in New Orleans for Mardi Gras the smart way, where to actually stay for the parades, what a stay costs and why, and how to book one without getting gouged on the part of the price that should never move. It is written for a first Mardi Gras and current as of 2026.
+
+One honest note up front, since we run a hotel booking site. We cannot stop a hotel from charging more when a million and a half people want the same week. What we can promise is the part we control.
+
+The fee we add is one small flat fee, the same for everyone, never set from your device or your search history. More on that below, because Mardi Gras is exactly when that matters.
+
+## When Is Mardi Gras 2027, and When to Book
+
+**Fat Tuesday 2027 is February 9, and the honest answer on timing is to book six to twelve months ahead.** Carnival season opens on Twelfth Night, January 6, and the parades roll nightly through the final week, roughly February 3 to the 9th. Lundi Gras, the Monday before, falls on February 8.
+
+::infographic nola-mg-2027-dates
+
+Parade route hotels sell out nearly a year out, and the best balcony rooms go first. Most hotels open Carnival bookings 10 to 12 months ahead, with room blocks opening around August for a February event.
+
+If you are reading this with six months to go, you can still find something. You will just pay more and choose from less.
+
+2027 is a short season at 34 days, which packs the demand tighter than usual. For comparison, 2026 ran 43 days and 2025 stretched to 58. Planning further out, Fat Tuesday is February 29 in 2028, a rare Leap Day Mardi Gras and the first since 1972.
+
+## Which Parades Roll Where in 2027
+
+**Here is the thing most first timers get backwards. The big parades do not roll through the French Quarter.** The giant super krewe floats are too large for those narrow streets, so the main route runs up St. Charles Avenue and finishes on Canal Street.
+
+The Quarter gets the costume scene and the small walking krewes, not Bacchus and Rex.
+
+The headline parades of the final 2027 week tell you which nights to be where. Muses rolls Uptown on Thursday, February 4.
+
+Endymion takes its own Mid-City route on Saturday, February 6, ending inside the Caesars Superdome. Bacchus follows Uptown on Sunday the 7th, Orpheus on Lundi Gras Monday the 8th, and on Fat Tuesday itself Zulu rolls at 8 in the morning with Rex behind it at 10:30, both down St. Charles to Canal.
+
+::infographic nola-mg-family-vs-party
+
+That schedule is why where you sleep matters. St. Charles Avenue is the spine of the route, about three miles from Napoleon Avenue in Uptown down to Canal Street.
+
+Stay on or near it and you roll out of bed onto the parade. Stay deep in the Quarter and you walk a few blocks to Canal for the floats.
+
+The Uptown stretch between Napoleon and Jackson is the family end, all ladders, picnics, and oak trees. The Quarter end is the adult party.
+
+## New Orleans Mardi Gras Hotels by Area
+
+**Four areas put you in range of the parades, and each trades price against proximity and noise.** The French Quarter is the scene, the Central Business District on Canal Street is the parade finish, Uptown along St. Charles is the route itself, and the Marigny is the cheaper walkable option.
+
+::infographic nola-mgh-areas
+
+Below are the real hotels in each, with the catch that matters during Carnival. Every rate here is a Mardi Gras week rate, not a normal one, and that gap is the whole story.
+
+## The French Quarter: the Scene, Not the Route
+
+**Stay in the French Quarter for the costumes, the balconies, and the all night energy, not for watching parades from your curb.** You walk to Canal Street, about ten minutes, to catch the big floats. What the Quarter gives you is everything else, at the highest prices in the city.
+
+Hotel Monteleone anchors Royal Street with 523 rooms in an 1886 building, the slowly spinning Carousel Bar, and a rooftop pool. Expect around $700 to $900 a night for Mardi Gras week when rooms are left.
+
+::hotel lp6583c58d
+
+The Royal Sonesta sits right on Bourbon Street with 483 rooms and the wrought iron balconies people picture when they picture the Quarter, a front row to the festivities. The Omni Royal Orleans, at Royal and St. Louis, runs 345 rooms and just finished a 2026 renovation.
+
+The Bourbon Orleans, a block behind Jackson Square, is a touch gentler at $500 to $700 a night. For a deeper tour of the area, our [French Quarter guide](/blog/french-quarter-new-orleans) walks the whole grid.
+
+::hotel lp1c186
+
+## Canal Street and the CBD: Where the Parades Finish
+
+**The Central Business District along Canal Street is the smartest all around base, because nearly every major parade finishes here and the Quarter is a short walk away.** Canal is wide, with neutral ground and room to actually see the floats, and the big hotels line up along it.
+
+The Roosevelt, a Waldorf Astoria with 504 rooms just off Canal, runs special Mardi Gras programming and sits steps from the route. The Sheraton at 500 Canal and the New Orleans Marriott at 555 Canal are the convention size towers, the Marriott with 1,333 rooms and river views from the upper floors.
+
+::hotel lp4c753
+
+The Ritz-Carlton at 921 Canal and the JW Marriott at 614 Canal round out the high end. For something smaller, the NOPSI and the Drury Plaza sit a block or two off Canal, walkable to the finish without paying for a Canal Street address. This is the area our general [where to stay guide](/blog/where-to-stay-in-neworleans) recommends for most first visits, and Mardi Gras only sharpens the case.
+
+::hotel lpa440f
+
+## The Warehouse District: Arts, Lofts, and a Walk to the Route
+
+**The Warehouse District sits just upriver of the CBD, an arts quarter of galleries and restaurants within easy walking access of the Canal Street parade routes.** It is quieter than the Quarter and a little cheaper than a Canal Street address.
+
+The Cambria Hotel and Roami at Factors Row are the modern picks in the Warehouse District, walkable to both the parades and the museums. For Mardi Gras the area offers the same easy access to the finish line as the CBD, with a more local feel and a rooftop bar or two for watching the crowds.
+
+::hotel lpaf047
+
+## Uptown and the Garden District: On the Route
+
+**If you want to walk out your front door onto the parade, stay in the [Garden District](/blog/garden-district-new-orleans) or Uptown along St. Charles Avenue.** This is the family end of the route, where locals stake out spots under the oaks with ladders and ice chests. It is also where hotels are fewer and book fastest.
+
+### The Pontchartrain Hotel and the Avenue Landmarks
+
+The Pontchartrain Hotel, 106 rooms in a historic 1927 landmark, is the grande dame of the avenue, with a rooftop bar made for watching the parade experience roll by. The Henry Howard, an 1867 mansion with just 18 rooms, throws in free breakfast and a complimentary evening bar, and runs around $350 to $500 a night for Carnival.
+
+::hotel lpaf414
+
+The Hampton Inn Garden District and the Hotel Indigo Garden District sit right on the streetcar line, the Indigo with a bar overlooking the tracks. These mid range rooms put you on the spine of the route for a good bit less than a Quarter address, which is the trade most families happily make.
+
+::hotel lp21a0c
+
+## The Marigny and Bywater: Cheaper, and Still Walkable
+
+**The Faubourg Marigny and Bywater are the value play, running 30 to 40 percent less than comparable French Quarter rooms while staying a short walk away.** Frenchmen Street, the local music strip, is five to ten minutes from the Quarter on foot.
+
+Hotel Provincial sits on the quiet downriver edge of the Quarter near the Marigny line, with courtyard pools. The Hotel Peter and Paul, a 71 room boutique in a restored 1848 church, and the Lamothe House on Esplanade are the characterful Marigny stays. Both run far below Quarter rates outside Carnival, and a real discount during it.
+
+::hotel lp27f5e
+
+The trade is convenience for money. You are a walk or a short ride from the route instead of on top of it, which during Mardi Gras is often the saner choice anyway. For a group, this is also where a rental can beat a block of hotel rooms.
+
+## What a Mardi Gras Room Actually Costs
+
+**A room that goes for $150 to $200 on a normal night runs $400 to $800 during Mardi Gras week, and parade route hotels can triple their rate.** The French Quarter jumps the hardest, 200 to 300 percent.
+
+This is not a scam. It is supply and demand for a finite number of beds during the biggest street party in the country.
+
+::infographic nola-mgh-costs
+
+Here is the part worth understanding, because hotels do not raise the price by hand anymore. They run automated revenue systems that watch event calendars, flight bookings, and search trends, and lift rates within an hour of sensing the surge. The base room rate during Mardi Gras is going to climb no matter where you book it.
+
+What should not change is the rest of the price. **The fee a booking site adds on top should be the same for everyone, and it should not move because of who you are or what device you searched on.** That is the whole idea behind how we price.
+
+::infographic honest-vs-surveillance
+
+We cannot flatten Mardi Gras demand, and we will not pretend to. What we do instead is show the hotel's rate plus one small flat fee, the same fee every person sees, never set from your location or history. You can open the same room in another browser and check that the number holds.
+
+::priceproof
+
+## Booking the Room: Minimums, Deposits, and Fine Print
+
+**Carnival bookings come with strings, so read the rules before you click.** Most hotels require a three to five night minimum over the Mardi Gras weekend, and many ask for a non refundable deposit with full payment due 30 to 60 days out.
+
+::infographic nola-mg-booking
+
+Some properties will not even let you check in on Mardi Gras Day itself, since they want you there for the whole run. Availability shrinks fast as travel plans firm up across the country.
+
+Cancellation terms vary, so confirm them in writing. The Bourbon Orleans, for one, takes a one night deposit that is refundable if you cancel 21 days ahead, which is friendlier than most parade week policies.
+
+The pattern is simple. The earlier you book, the more you choose from and the gentler the terms, on both the room and the deposit.
+
+## Cheaper Alternatives: Suburbs and Rentals
+
+**If downtown rates are out of range, Metairie and Kenner put you 20 to 30 minutes from the parades for a fraction of the price.** These suburbs run their own family parades, less crowded than the downtown routes, and a ride share or shuttle gets you to St. Charles.
+
+Vacation rentals are the other option, and here New Orleans has rules worth knowing. Short term rentals are legal but strictly regulated, and they are largely prohibited inside the French Quarter except for a few owner occupied or lottery permitted units. A whole home listing inside the Quarter is a red flag worth questioning before you pay.
+
+Outside the Quarter, rentals are plentiful, with well over a thousand whole home listings across the city. For a group, a rental in the Marigny, the Garden District, or Mid-City can beat a block of hotel rooms on both price and space, as long as the permit is real.
+
+## Getting Around During Mardi Gras
+
+**Plan to walk, because driving across the parade route is impossible for most of Carnival week.** Streets close two hours before each parade, the St. Charles streetcar suspends service on parade days, and the police shut Bourbon Street to cars entirely for about five days.
+
+Parking is its own trap. The French Quarter bans on street parking from the Friday before through the Wednesday after, and a car left on a closed route gets towed, a $162 fee plus daily storage to get it back. If you drive in, park it at the hotel and leave it there until you leave.
+
+Ride share works between parades but surges hard during peak hours, sometimes doubling or worse. The honest move is to book a room within walking distance of where you want to be, which loops right back to why the area you pick matters so much.
+
+## The One Booking Move That Matters
+
+**If you do one thing, book your Mardi Gras room six to twelve months out, on or near the St. Charles to Canal Street route, and lock the rate while it is still sane.** Everything else, the parades, the king cake, the costumes, falls into place once the bed is sorted.
+
+When you are ready to compare real hotel rooms in New Orleans for Mardi Gras, here is the New Orleans search, with the price built the honest way.
+
+::cta New Orleans
+
+For the rest of the trip, our guides to [Mardi Gras itself](/blog/mardi-gras-in-new-orleans), [where to stay year round](/blog/where-to-stay-in-neworleans), and the [best time to visit New Orleans](/blog/best-time-to-visit-new-orleans) pick up where this leaves off.
+`,
+  },
+  {
     slug: "frenchmen-street-new-orleans",
     title: "Frenchmen Street New Orleans: Live Music Guide (2026)",
     seoTitle: "Frenchmen Street New Orleans: Live Music Guide",
@@ -1201,6 +1410,8 @@ For the wild version, the **French Quarter and Bourbon Street** are the costumed
 **This is the part people regret leaving late.** Hotels on the parade route sell out close to a year ahead, and the whole city's rates climb during Carnival week. The single best thing you can do for a Mardi Gras trip is book the room first and plan the rest later.
 
 ::infographic nola-mg-booking
+
+Where you sleep is worth its own plan, so our guide to [hotel rooms for Mardi Gras](/blog/new-orleans-mardi-gras-hotels) breaks down every area with real hotels for each.
 
 Read the fine print, too, Carnival bookings usually mean three to five night minimums and non refundable deposits, often with full payment due a month or two out. If the central rates sting, the **Marigny and Bywater** run noticeably cheaper and sit a short ride from the route.
 

@@ -16,6 +16,26 @@ export type Infographic =
   | { kind: "callout"; title: string; body: string };
 
 export const INFOGRAPHICS: Record<string, Infographic> = {
+  "nola-mgh-areas": {
+    kind: "stat",
+    title: "Where to stay for Mardi Gras, by area",
+    stats: [
+      { value: "Uptown / St. Charles", label: "On the parade route. Family vibe, oak trees, roll out of bed onto the floats." },
+      { value: "CBD / Canal St", label: "Where the parades finish. Wide, central, a short walk to the Quarter." },
+      { value: "French Quarter", label: "The costume scene, not the route. Walk to Canal for floats. Priciest." },
+      { value: "Marigny / Bywater", label: "Roughly 30 to 40 percent cheaper, a short walk from the Quarter." },
+    ],
+  },
+  "nola-mgh-costs": {
+    kind: "stat",
+    title: "What a Mardi Gras room costs",
+    stats: [
+      { value: "200 to 300%", label: "how much French Quarter rates jump during Carnival week" },
+      { value: "$400 to $800", label: "a normal $150 to $200 room, during Mardi Gras" },
+      { value: "30 to 40%", label: "what the Marigny and Bywater save vs the Quarter" },
+      { value: "3 to 5 nights", label: "the minimum stay most hotels require" },
+    ],
+  },
   "honest-vs-surveillance": {
     kind: "compare",
     title: "Two ways to price a hotel room",
