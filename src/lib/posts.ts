@@ -72,8 +72,8 @@ export const POSTS: Post[] = [
     author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
-      src: "https://static.cupid.travel/hotels/ex_b29f2005_z.jpg",
-      alt: "A white-columned Greek Revival mansion in the New Orleans Garden District with double-gallery cast-iron balconies behind an iron fence and an oak tree",
+      src: "https://static.cupid.travel/hotels/ex_629622ff_z.jpg",
+      alt: "The historic Pontchartrain Hotel in the New Orleans Garden District, a green-tiled facade with red awnings and flags framed by live oak trees",
       credit: { name: "Garden District, New Orleans" },
     },
     region: { name: "New Orleans", destination: "New Orleans" },
