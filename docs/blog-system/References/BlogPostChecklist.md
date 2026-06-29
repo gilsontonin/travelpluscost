@@ -16,7 +16,7 @@ checkable distillation.
 > - **3.4 — FAQ = leftover questions only** (never re-answer a body section).
 > - **4.6 — X-vs-Y must be a compare VISUAL**, not just prose.
 > - **4.7 — visible "as of 2026" freshness signal.**
-> - **0 · HOUSE STYLE — convert, don't impress:** ≤3 sentences/paragraph (favor 2–3, AUTO 6.4b) · positive/toward-framing (say what to DO, never "don't") · active subject-first · simple words ONLY when not serp-dictated · "partner" not "her" · TL;DR ≠ first paragraph (AUTO 3.3e) · no "lush"/"turquoise".
+> - **0 · HOUSE STYLE — convert AND delight (clarity serves the funny, cut filler not beats):** ≤3 sentences/paragraph (favor 2–3, AUTO 6.4b) · positive/toward-framing (say what to DO, never "don't") · active subject-first · simple words ONLY when not serp-dictated · "partner" not "her" · TL;DR ≠ first paragraph (AUTO 3.3e) · no "lush"/"turquoise".
 >
 > **Run this whole file line-by-line and report a ✅/❌ table — do not spot-check.**
 

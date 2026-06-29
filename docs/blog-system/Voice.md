@@ -3,16 +3,29 @@
 > Read this before writing any page or post. This is the **canonical voice file** (the hard rules +
 > how we sound). It sits above the companions:
 > - `DanKennedyVoice.md` — deeper "how to sound" (direct, proof-with-numbers, one next step)
-> - `Humour.md` — the dry-wit seasoning (sparing, never at the reader or Hawaiian culture)
+> - `Humour.md` — the **dry-plus wit**: a real beat or two per section, written funny FIRST (never at the reader, or sacred/tragic topics)
 > - `Opinions.md` / `Stories.md` / `stats.md` — the substance (one opinion, one story, real numbers)
 > - `BlogStructure.md` — post anatomy (incl. §3a Hawaiian spelling) · `PassAISlopAndDetection.md` + `scripts/ai-slop-check.mjs` — enforcement
 >
-> Humour is **seasoning, not a mandate** (see `Humour.md`) — a calm, honest post with no joke beats a
-> forced one. What's non-negotiable is honesty, real numbers, and answering the question.
+> Humour is **load-bearing, not garnish** (see `Humour.md`) — **write funny FIRST**, a dry beat or two
+> per section. A *forced* joke is still bad, but a post with **no** beats is a miss, not a safe default.
+> Non-negotiable: honesty, real numbers, answering the question — **and** the dry-plus wit that makes the
+> post get read. **Clear and funny are independent floors, not a trade** (cut filler, never beats — a
+> tight line can BE the joke). Where this file and `Humour.md` ever seem to disagree on *how funny*,
+> they agree: funnier, as long as every beat earns the nose-exhale and never blocks the answer.
+>
+> **Two brands, one engine.** The UNIVERSAL rules here — sentence rhythm, the AI-tell list, funny-FIRST,
+> clarity-serves-funny — apply to BOTH **Hawaii Picnics** and **TravelPlusCost**. The brand narrator, the
+> example words/prices, and the Hawaiian-spelling section are Hawaii Picnics; **TravelPlusCost's narrator
+> is the dry, transparent cost-plus booker** (its brand + compliance rules live in its config and
+> `TheBible.md`). Same wit, different mouth — a TPC joke never undercuts the flat-fee promise, and that
+> promise is always stated straight.
 
-## House writing style — convert, don't impress (owner-locked 2026-06-20)
+## House writing style — convert AND delight (owner-locked 2026-06-20; humour primacy added 2026-06-29)
 
-The job is **conversion, not impressing the reader.** Humans skim for the 1–2 facts they need and hate
+The job is **conversion**, and on a vacation-mood read the **wit is how you convert** — funny-for-humans
+is the best engagement there is. So the clarity rules below **serve the funny, they never replace it**:
+cut filler, never beats; a tight line can BE the joke. Humans skim for the 1–2 facts they need and hate
 spending cognitive energy. Apply to every post + page, from the first draft (two rules are AUTO-checked
 by `post-checklist.mjs` 3.3e + 6.4b):
 
@@ -108,5 +121,6 @@ parens) before publishing.
 
 ## One-line summary
 
-**Write like a straight-talking Oahu local who runs beach picnics — answer the question first, back it
-with a real number, say honestly when something isn't worth it, and let the occasional dry line land.**
+**Write like a straight-talking local who does this for a living — answer first, back it with a real
+number, say honestly when something is not worth it, and land a dry beat or two in every section.
+Funny-FIRST, clear-second, never funny *instead* of useful.**

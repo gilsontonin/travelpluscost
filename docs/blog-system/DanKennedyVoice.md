@@ -45,7 +45,7 @@ to do/buy/hire** — the single biggest thing that makes us sound real.
 - "Rainbow Falls isn't worth a special two-hour drive from the Kona side — it's a Hilo-day stop."
 - "We run beach picnics on Oahu, not the Big Island, so we have no stake in your plans."
 
-**Wry, dry humor as seasoning.** A light parenthetical aside, never a comedy routine (see `humour.md`).
+**Wry, dry humor, funny FIRST.** A real dry beat or two per section that *carries* the fact, never a comedy routine (see `humour.md`).
 One wry line per few hundred words, and it never derails the point.
 
 ---
@@ -103,7 +103,7 @@ One wry line per few hundred words, and it never derails the point.
 - **No throat-clearing intros.** Answer the query in sentence one (also the featured-snippet play).
 - **No fluff adjectives.** Cut "very/really/incredibly." Specifics beat intensifiers.
 - **Don't bury the next step**, and never end on "hopefully this helps."
-- **Don't over-joke.** Humor is seasoning.
+- **Don't force-joke.** A beat must earn the nose-exhale, but a dry section is a miss, not a safe default — write funny FIRST (see `humour.md`).
 - **And, per voice.md and the brand:** no exclamation marks, no emoji, no ALL-CAPS, no hard-sell
   urgency, no invented or rounded numbers.
 

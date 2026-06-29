@@ -28,6 +28,24 @@ always **respectful — warm, never mean-funny.**
 
 ---
 
+## Two brands, one wit (universal mechanics vs per-site mouth)
+
+The **mechanics** in this file are universal and apply to **both** sites — dry and deadpan, no
+exclamation marks, hyper-specific, funny FIRST, the on-point nose-exhale test, a beat or two per section,
+self-deprecation, the safe targets. What changes per brand is the **mouth** and the **no-go list**:
+
+- **Hawaii Picnics** — the narrator is the Oahu picnic local described above. Never joke about Hawaiian
+  culture, language, sacred sites, ocean drownings, or the 2023 Lahaina fire.
+- **TravelPlusCost** — the narrator is the dry, transparent cost-plus booker (the anti-surveillance-pricing
+  travel site). The wit punches at hidden fees, surge gouging, surveillance pricing, tourist clichés, and
+  ourselves — never the traveler. Never joke about the real tragedy a city carries (Katrina, a cemetery's
+  actual dead), and **never let a joke soften or muddy a compliance line** — the flat-fee, same-price-for-
+  everyone promise is stated straight, and a dry beat can ride alongside it but never inside it.
+
+Same wit, different mouth. The examples below are Hawaii Picnics; translate the *energy*, not the nouns.
+
+---
+
 ## The one rule above all: respect
 
 Humour **never** punches at:
@@ -67,10 +85,12 @@ deprecation is free real estate; everything else is risky.
 
 ## Frequency — a beat or two per section (the "dry-plus" standard, adopted 2026-06-16)
 
-**Aim for 1–2 genuine humour beats per major section** — a dry observation, an absurd-but-true
-comparison, or a clean dad joke where one actually fits. A smile roughly every **200–300 words** is the
-target. This is dialed UP from the old "one per section at most": the owner wants posts that are
-noticeably funnier, not just informative (the `maui-swap-meet` draft is the reference — read it).
+**Aim for at least one, and lean to two, genuine humour beats per major section** — a dry observation, an
+absurd-but-true comparison, or a clean dad joke where one actually fits. A smile roughly every **~200
+words** is the target now (tighter than before). This is dialed UP again (2026-06-29): the owner has said
+it plainly — **when in doubt, funnier.** One beat too many beats one too few, as long as each still earns
+the nose-exhale. **Nearly every section should land a real beat**, and the standout posts are the funniest
+ones, not the most thorough (the `maui-swap-meet` draft is the reference — read it).
 
 **Write funny FIRST, not last (the 2026-06-16 correction).** The recurring miss is *info-first-then-
 sprinkle*: writing the encyclopedia entry, then dropping a mild aside on top. That produces decoration,

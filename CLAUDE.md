@@ -38,6 +38,9 @@ When asked to write or edit ANY blog post, BEFORE writing a word:
    "we'll", "it is" not "it's"). **No dashes in prose** (— – or compound hyphens). **No colons or semicolons in
    prose** — split with `.` and `,`. Titles and the `**The move:**` quick-facts strips KEEP their colon. Enforced
    by `npm run blog:style` (auto-fixes the safe cases, flags the rest) and wired into `npm run check`.
+1d. **Write FUNNY FIRST (dry-plus).** A real dry beat or two in every section, drafted INTO the prose so it
+   carries the fact (see `docs/blog-system/Humour.md` + `Voice.md`). An accurate-but-dry post is a miss
+   even with every gate green — but never let a joke soften the flat-fee promise, which is stated straight.
 2. Run the gates and PRINT them on screen: `npm run blog:serp`, `blog:slop`, `blog:stats`, `blog:style`,
    `blog:checklist`, `blog:lh`, `blog:freshness`, then `blog:qa`. Fix every red, re-run after every edit.
    (`blog:lh` = Lighthouse budget perf ≥ 90 / a11y, BP, SEO = 100; needs a running server — see

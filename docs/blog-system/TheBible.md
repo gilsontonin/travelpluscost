@@ -28,7 +28,7 @@ is 16.5px, and the top search bar + 8-hotel rail stay above the body. SEO is nec
 3. **Plain high-school words** — unless a fancier word is the actual search term (then keep it).
 4. **Spell every word OUT — NO contractions** ("we will" not "we'll", "it is" not "it's"; owner rule 2026-06-28, reverses the old "contractions always"). **NO dashes in prose** (— – and compound hyphens; use `.` or `,`). **NO colons or semicolons in prose** (titles + the `**The move:**` strips keep their colon). **No exclamation marks. No emoji. No AI tells.** Enforced by `npm run blog:style` (now in `npm run check`).
 5. **Tell the honest downside, including about us** — we're not always the lowest *headline* price; say so.
-6. **One dry beat per section** (Humour.md) — a smile every ~200–300 words, deadpan, never at the reader.
+6. **At least one dry beat per section, leaning to two** (Humour.md) — a smile every ~200 words; when in doubt, funnier. Deadpan, never at the reader or a sacred/tragic topic.
 7. **Explain the price/point in 30 seconds, in plain words.** If you can't, the post is off-brand.
 
 ## 1. Standing owner rules (non-negotiable)
