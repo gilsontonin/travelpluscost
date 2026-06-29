@@ -49,6 +49,189 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "haunted-new-orleans",
+    title: "Haunted New Orleans: Ghosts, Cemeteries & Haunted Hotels (2026)",
+    seoTitle: "Haunted New Orleans: A 2026 Guide",
+    description: "A haunted New Orleans guide to the real history behind the ghosts, the cemeteries and their rules, the best ghost tours, and the haunted hotels you can book.",
+    excerpt: "The honest guide to haunted New Orleans. The real history behind the ghosts, the Cities of the Dead and how to visit them respectfully, the ghost tours worth taking, and the famously haunted hotels you can actually book. As of 2026.",
+    tldr: {
+      answer: "Haunted New Orleans lives up to the name, rooted in three centuries of yellow fever, fires, and above ground cemeteries. Take a history focused ghost tour, visit St. Louis Cemetery No. 1 with a licensed guide, and book a famously haunted hotel like the Bourbon Orleans or Monteleone. Come off season to skip the Halloween surge.",
+      points: [
+        "**It is real history first.** Yellow fever and fire built the ghost stories long before the tours did.",
+        "**Cemeteries need a guide.** St. Louis No. 1 only allows licensed tours, and the rules are firm.",
+        "**Pick a history focused tour.** From $22, and book two to three weeks ahead in October.",
+        "**Sleep in a haunted hotel.** The Bourbon Orleans, Monteleone, and Andrew Jackson are all bookable.",
+        "**Skip the Halloween surge.** Hotels double, so come November to March for quiet and lower rates.",
+      ],
+    },
+    date: "2026-06-29",
+    updated: "2026-06-29",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: { src: "https://static.cupid.travel/hotels/614339620.jpg", alt: "A historic French Quarter hotel in New Orleans with wrought iron balconies, the heart of the haunted Quarter" },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "Is New Orleans really haunted?",
+        a: "**New Orleans is widely called the most haunted city in America, and the reputation is rooted in real history** of yellow fever, fires, and above ground cemeteries. Whether you believe in ghosts or not, the documented history behind the stories is worth the visit. The best guides separate fact from folklore for you.",
+      },
+      {
+        q: "What is the best ghost tour in New Orleans?",
+        a: "**Haunted History Tours is the original, since 1995, and French Quarter Phantoms is a long running top pick at about $22.** Ghost City Tours offers both family friendly and adults only walks. Pick a company that teaches documented history, not just jump scares, and book two to three weeks ahead in October.",
+      },
+      {
+        q: "Can you visit St. Louis Cemetery No. 1?",
+        a: "**Only with a licensed tour guide.** Under Archdiocese rules, St. Louis Cemetery No. 1 no longer allows solo visits, and tours leave every fifteen minutes from 9am. It is an active burial ground, so the rules are firm, with no marking tombs, no offerings, and no treating it as a photo backdrop.",
+      },
+      {
+        q: "What is the most haunted place in New Orleans?",
+        a: "**The LaLaurie Mansion at 1140 Royal Street is the most infamous**, tied to the real 1834 torture of enslaved people. The Bourbon Orleans Hotel, St. Louis Cemetery No. 1, and the Sultan's Palace round out the list. The mansion is best viewed respectfully from the street, since the real history is a tragedy, not an attraction.",
+      },
+      {
+        q: "Are the haunted hotels real hotels you can stay in?",
+        a: "**Yes.** The Bourbon Orleans, Hotel Monteleone, Andrew Jackson Hotel, and Hotel Provincial are all working French Quarter hotels with documented ghost stories and normal front desks. The Bourbon Orleans even runs an annual paranormal weekend. You book a room the usual way.",
+      },
+      {
+        q: "When is the best time for haunted New Orleans?",
+        a: "**October for the Halloween scene, or November through March for quiet and lower prices.** Ghost tours run year round, but hotels double their rates on Halloween weekend, so book two to three months ahead if you come then. The cooler off season has kinder weather and far smaller crowds.",
+      },
+    ],
+    body: `Haunted New Orleans is **the most haunted city in America**, a town where the spirits are practically locals and the past never quite leaves. The trick to doing it well is knowing which parts are real history and which parts are a guy in a cape upselling you a cold spot. This guide sorts the two. Where to actually feel the city's ghosts, which tours and hotels are worth it, and how to be a guest rather than a nuisance in a place where a lot of the spooky is also somebody's real grave.
+
+It is written for a first haunted visit and current as of 2026. One honest note up front, since we run a hotel booking site. The scariest thing about a New Orleans October is not the ghosts, it is the hotel rates, and we will get to that.
+
+Our part is simple. The price we show is the hotel's rate plus one small flat fee, the same for everyone, no surprise waiting three screens down.
+
+## Is New Orleans actually haunted, or just very good at marketing it?
+
+**Both, and the city is honest about it if you listen.** New Orleans earned the reputation the hard way, through three centuries of yellow fever, fires, and a water table that would not let the dead stay buried. Roughly 8,600 people died in the yellow fever summer of 1853 alone.
+
+A city that loses that many neighbors builds a relationship with death, and the ghost stories grew out of real grief before they ever became a tour.
+
+Then the tourism machine arrived and turned the grief into a gift shop. So you get both layers at once, the genuine history underneath and a cheerful man named Brent narrating it in a velvet cape on top.
+
+The spirits people came to meet are real history today, even to the locals who do not believe in ghosts. The good news is you can have the real version, the fun version, or both, as long as you know which one you are buying.
+
+A fair test for the whole trip. If a story makes you feel something true about the place, keep it. If it just makes you reach for your wallet, you have found the gift shop.
+
+::infographic nola-haunt-real-vs-legend
+
+## The Cemeteries, the Cities of the Dead
+
+**New Orleans buries its dead above ground in marble tombs because the city sits below sea level, and early coffins had an unsettling habit of floating back up after a hard rain.** The solution, three hundred years old now, is the row upon row of stone vaults that locals call the Cities of the Dead. One of them was designed by Benjamin Latrobe, who also drew the United States Capitol.
+
+This is the part of the city that asks for your respect rather than your camera. **St. Louis Cemetery Number One**, the oldest and the resting place of the Voodoo Queen Marie Laveau, no longer lets anyone wander in alone, not now. Under Archdiocese rules you visit only with a licensed guide, on tours that leave every fifteen minutes from 9am, and the rules inside are firm for a reason.
+
+### Marie Laveau, and the rule about her tomb
+
+Do not draw on the tombs. The old tradition of marking Marie Laveau's grave with three Xs is a myth that flakes the fragile plaster off a real woman's tomb, and the cemetery has had to fight grave robbery and vandalism for years. Leave no coins, no candles, no chalk.
+
+These are active graves where families still bury their people, not a backdrop. Out in the Garden District, **Lafayette Cemetery Number One** keeps similar hours and a five dollar admission, and the same simple manners apply.
+
+::infographic nola-haunt-cemetery
+
+## The LaLaurie Mansion, where history stops being a ghost story
+
+**The grand house at 1140 Royal Street is the darkest address in the French Quarter, and it deserves the truth instead of the embroidery.** On April 10, 1834, a fire broke out, set on purpose by a seventy year old enslaved cook chained to the kitchen stove, who chose the fire over another day of Madame Delphine LaLaurie's cruelty. Rescuers found seven more enslaved people held and tortured in the attic.
+
+The city was horrified. Around four thousand people gathered, a mob tore the mansion apart, and LaLaurie fled to Paris and was never punished. Funeral records show at least twelve enslaved people died in that house.
+
+Tours will offer you wilder details, limbs and experiments and bodies in the walls. Historians are clear that those specific horrors are legend, secondhand and unproven, while the documented facts are terrible enough on their own. Stand outside, learn the real history, and skip the version that turns murdered people into a haunted house attraction.
+
+That is the one stop on this whole list where the right move is to be quiet.
+
+## Haunted New Orleans Hotels You Can Sleep In
+
+**If you want to be kept awake by something other than Bourbon Street, several of the city's grand old hotels come with a resident ghost and a perfectly good front desk.** This is the rare haunting you can book a room inside, and most of them lean into it.
+
+::infographic nola-haunt-hotels
+
+The **Bourbon Orleans**, a former convent and Civil War hospital, has reported a dancing woman in its old ballroom for two centuries, and it runs an annual paranormal weekend called Ghost Camp for around 500 dollars a person, which is itself a little frightening. The **Hotel Monteleone** on Royal Street, family run since 1886, has a gentle resident named Maurice, a child who died in the hotel and was identified during a 2003 investigation, and a Carousel Bar that slowly spins whether or not you have seen a ghost.
+
+::hotel lp6583c58d
+
+The **Andrew Jackson Hotel** sits on the site of an 1790s boys' orphanage where five children died in a fire, and guests today still report small footsteps and laughter. The **Hotel Provincial** keeps a wing that served as a Civil War hospital and a few soldiers who never checked out, and the **Le Pavillon**, a 1907 grande dame, throws in hidden Prohibition passageways for good measure. None of them will scare you off your sleep, but a few of them will give you a story better than the minibar.
+
+::hotel lp27f5e
+
+## Ghost tours, the good, the theatrical, and the one rule
+
+**A walking ghost tour is the best two hours you will spend on the haunted side of New Orleans, as long as you pick a company that teaches history rather than just jumping out from behind a lamppost.** The Quarter is small, the stories are dense, and a good guide ties them to real events. A single tour can pass the notorious LaLaurie Mansion, Lafitte's Blacksmith Shop, and a dozen smaller stops, each with a date you can check.
+
+::infographic nola-haunt-tours
+
+**Haunted History Tours** has run since 1995 and is the original, with French Quarter ghost walks from about 30 dollars. **French Quarter Phantoms**, voted the top haunted tour for years running, does a tidy ghost and vampire walk for 22 dollars in well under two hours.
+
+And **Ghost City Tours** splits the difference by age, with a family friendly Ghosts of New Orleans walk and several adults only options for the group that wants the unedited version. Either way the experience has the same shape, a small group, a dark street, and a guide turning the city's restless spirits and real history into the best two hour experience you can have on foot.
+
+Book two to three weeks ahead in October, and a full day or two ahead the rest of the year. One honest filter. The best guides will tell you when a story is documented and when it is folklore, and the weakest ones never break character.
+
+You want the first kind. The cape is optional, the honesty is not.
+
+## Voodoo, the real religion behind the gift shop
+
+**Voodoo in New Orleans is a living religion practiced by two to three percent of the city, and almost nothing sold to tourists under that name has anything to do with it.** It is worth getting this one right. Authentic Louisiana Voodoo is monotheistic, built around a creator reached through ancestor spirits called lwa, and centered on healing, family, and community.
+
+Marie Laveau, the famous nineteenth century Voodoo Queen, was a free woman of color, a devout Catholic who also led ceremonies, and a tireless nurse and charity worker who, despite the legends, lived modestly and owned no grand estate. The voodoo doll stuck with pins you will see in a hundred shop windows is a Hollywood invention with no basis in the real practice.
+
+So enjoy the kitsch with your eyes open. The plastic doll keychain is a souvenir, not a spell, and the difference matters to the people who actually practice. To meet the real thing, the **Historic Voodoo Museum** on Dumaine Street and the Voodoo Spiritual Temple are the front doors, opened on purpose for genuine curiosity rather than a jump scare.
+
+## The vampires, which everyone agrees are made up
+
+**This is the part you are allowed to find completely silly, because even the vampire tour guides in this city will tell you vampires are not real.** The legends are great fun, and the city has decided to commit to the bit entirely.
+
+It traces back to **Anne Rice**, who set Interview with the Vampire here in 1976 and lived in a Garden District mansion that fans still visit. Around her grew a tidy mythology, the Casket Girls whose dowry trunks became coffins in the retelling, a Comte who never aged, and a couple of brothers no court records can confirm ever existed. Every bit of it is legend, which the better tours say out loud.
+
+The modern scene is pure theater and all the better for it. The **New Orleans Vampire Café** serves a dish called Stake Tartar, and the **Boutique du Vampyre** has sold capes and coffin shaped backpacks since 2003 to mortals and vampires alike. Buy the cape.
+
+You are on vacation.
+
+## A Free Self Guided Ghost Walk
+
+**If you would rather keep your 30 dollars and scare yourself for nothing, the French Quarter is small enough to haunt on your own.** It is about thirteen blocks, founded in 1718, and you can cross the whole thing in twenty minutes, which means every dark story is a short stroll from the last.
+
+### From the St. Louis Cathedral to Lafitte's Blacksmith Shop
+
+A good loop strings together the **LaLaurie Mansion** on Royal, the **Sultan's Palace** at 716 Dauphine with its lurid and entirely undocumented massacre legend, and the **Bourbon Orleans** with its ballroom ghost.
+
+From there, **Pere Antoine Alley** runs beside the **St. Louis Cathedral** on Jackson Square, where a long dead priest named Pere Dagobert reportedly still sings through the empty aisles, and **Lafitte's Blacksmith Shop**, a candle lit 1700s building and one of the oldest bars in the country, is said to have been the smuggling front of the pirate **Jean Lafitte** himself. Locals swear the pirate Jean Lafitte still guards buried treasure in the old fireplace and that a ghostly figure with red eyes keeps an eye on the back room, which is exactly the kind of story that improves with a second drink in the dark.
+
+On Jackson Square itself, **Muriel's** is one of the few haunted restaurants where the management keeps a table set every night for its resident spirit, a former owner who lost the house at cards. Add the **Old Ursuline Convent**, the oldest building in the Mississippi Valley and home of the Casket Girls tale, and the 1823 **Pharmacy Museum** on Chartres, where a long gone doctor is blamed for the ghostly trouble. Read up the night before, walk it at dusk, and you have a ghost tour with a guide who tells exactly the jokes you find funny.
+
+## The haunted Garden District
+
+**Take the streetcar uptown and the hauntings change their accent, arriving as whispers rather than shouts.** The Garden District is calmer, leafier, and richer than the Quarter, and its ghosts are more genteel about the whole thing.
+
+The anchor is **Lafayette Cemetery Number One**, established in 1833 and packed with the story of the 1853 yellow fever summer, when the city buried thousands in a matter of weeks. A few blocks away, the **Buckner Mansion** stood in for the witches' academy in American Horror Story Coven, and is said to keep the spirit of Josephine, a governess who announces herself with the scent of lemon peel. It is the part of the haunting you can do in daylight, between brunch and a nap.
+
+## When to go, and the Halloween problem
+
+**Ghost tours run year round, but New Orleans treats Halloween the way it treats every holiday, which is to say completely seriously.** The season brings the Krewe of Boo parade through the Quarter, a costume takeover of Frenchmen Street and lower Bourbon Street on the 31st, and the Voodoo Music Experience out in City Park.
+
+::infographic nola-haunt-when
+
+Here is the catch, and it is a real one. Hotels routinely **double their rates** for Halloween weekend, the same way they do for Mardi Gras, and the good rooms book two to three months out.
+
+The Krewe of Boo parade rolls through the Quarter in late October, and the Voodoo Music Experience fills City Park with bands, so the whole city is in costume and the calendar is full. If your heart is set on being here for the costumes, book early and brace yourself.
+
+If it is set on the ghosts and not the crowds, come in November through March, when the weather is kind, the tours are cheaper, and the cemeteries are quiet in the way they are supposed to be.
+
+That surge is the hotel's call, not ours, and we cannot wave it away. What we can promise is that the fee we add sits flat and identical for every guest, in October and in April, so at least one number on the page is not trying to spook you.
+
+::priceproof
+
+## Where to stay for a haunted weekend
+
+**Base yourself in the French Quarter, where the ghosts, the tours, and the late night walk home are all a few blocks apart.** It is also the safest part of the city to wander after dark, with heavy foot traffic and police on the main streets, though you still keep to the busy blocks and skip the quiet side streets late at night.
+
+If the theme is the whole point, book one of the genuinely haunted hotels above and let the building do the work. If you would rather just sleep, any central Quarter or downtown room puts you in the middle of it. Either way, here is the New Orleans search, with the price built the honest way.
+
+::cta New Orleans
+
+For the rest of the trip, our guides to the [French Quarter](/blog/french-quarter-new-orleans), the [things to do](/blog/things-to-do-in-new-orleans), and [where to stay](/blog/where-to-stay-in-neworleans) pick up where the ghosts leave off.
+`,
+  },
+  {
     slug: "new-orleans-bachelorette-weekend",
     title: "Bachelorette Weekend in New Orleans: The Honest Guide (2026)",
     seoTitle: "New Orleans Bachelorette Weekend: 2026 Guide",
@@ -1037,7 +1220,7 @@ A guided ghost or cemetery tour after dark is the right way to meet **Marie Lave
 
 Not all of it is fun, and the honest guide says so. The **LaLaurie Mansion** on Royal Street is the city's most infamous house because a fire in 1834 exposed the torture of at least seven enslaved people held there by Delphine LaLaurie. Stand outside, learn the real history, and treat it as the somber site it is rather than a photo op.
 
-Even the hotels are in on it. The grand old hotel at the top of Royal Street is among the most haunted in the city, with a long running story of a three year old guest who never checked out and still plays on the fourteenth floor. Between the voodoo, the cemeteries, and the architecture, the Quarter earns its haunted reputation without anyone having to make a thing up.
+Even the hotels are in on it. The grand old hotel at the top of Royal Street is among the most haunted in the city, with a long running story of a three year old guest who never checked out and still plays on the fourteenth floor. Between the voodoo, the cemeteries, and the architecture, the Quarter earns its haunted reputation without anyone having to make a thing up. For the cemeteries, the ghost tours, the voodoo, and the haunted hotels you can actually book, see our full [guide to haunted New Orleans](/blog/haunted-new-orleans).
 
 ## The French Quarter with Kids
 
@@ -3058,7 +3241,7 @@ New Orleans **buries its dead above ground**, the water table votes no on the al
 
 It holds the reputed tomb of voodoo queen Marie Laveau, and the Garden District's Lafayette Cemetery is the other classic. After dark, the city's ghost and voodoo tours lean hard into the spooky.
 
-There is a surprising amount of real **history** under the theatrics, and the guide is genuinely the reason you came.
+There is a surprising amount of real **history** under the theatrics, and the guide is genuinely the reason you came. For the full breakdown of the cemeteries, ghost tours, and famously haunted hotels, see our [guide to haunted New Orleans](/blog/haunted-new-orleans).
 
 ::infographic nola-things-callout
 

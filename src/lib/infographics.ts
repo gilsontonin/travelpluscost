@@ -16,6 +16,53 @@ export type Infographic =
   | { kind: "callout"; title: string; body: string };
 
 export const INFOGRAPHICS: Record<string, Infographic> = {
+  "nola-haunt-real-vs-legend": {
+    kind: "compare",
+    title: "Documented history, or tourist legend?",
+    left: "Documented history",
+    right: "Tourist legend",
+    rows: [
+      { label: "LaLaurie Mansion", left: "A real 1834 fire, seven enslaved people tortured", right: "Mad experiments, bodies in the walls" },
+      { label: "Voodoo", left: "A living religion, Marie Laveau, the lwa spirits", right: "Pin-stuck dolls and gift-shop spells" },
+      { label: "The Casket Girls", left: "Orphan brides with dowry trunks, 1728", right: "Pale vampires sealed in the convent attic" },
+      { label: "The vampires", left: "Anne Rice fiction, written here in 1976", right: "Real, says nobody, including the guides" },
+    ],
+  },
+  "nola-haunt-cemetery": {
+    kind: "callout",
+    title: "Visiting the Cities of the Dead",
+    body: "St. Louis Cemetery No. 1 allows visits only with a licensed guide, on tours every 15 minutes from 9am. The rules are simple and they matter: do not mark the tombs, leave no offerings or coins, do not lean or climb. These are active graves where families still bury their people, not a photo backdrop.",
+  },
+  "nola-haunt-hotels": {
+    kind: "stat",
+    title: "Haunted hotels you can actually book",
+    stats: [
+      { value: "Bourbon Orleans", label: "the ballroom dancer, plus a $500 Ghost Camp weekend" },
+      { value: "Monteleone", label: "Maurice, a child ghost, family-run since 1886" },
+      { value: "Andrew Jackson", label: "an 1790s orphanage, small footsteps reported" },
+      { value: "Provincial", label: "a wing that was a Civil War hospital" },
+    ],
+  },
+  "nola-haunt-tours": {
+    kind: "stat",
+    title: "Ghost tours, the short list",
+    stats: [
+      { value: "Haunted History", label: "the original, since 1995, from $30" },
+      { value: "FQ Phantoms", label: "the top-voted ghost and vampire walk, $22" },
+      { value: "Ghost City", label: "family friendly or adults only versions" },
+      { value: "2 to 3 weeks", label: "how far ahead to book in October" },
+    ],
+  },
+  "nola-haunt-when": {
+    kind: "stat",
+    title: "When to come for the ghosts",
+    stats: [
+      { value: "Year-round", label: "tours run nightly in every season" },
+      { value: "October", label: "peak Halloween, book 2 to 3 months ahead" },
+      { value: "Double", label: "what hotels charge on Halloween weekend" },
+      { value: "Nov to Mar", label: "cheaper, kinder weather, quiet cemeteries" },
+    ],
+  },
   "nola-bach-stay": {
     kind: "compare",
     title: "Central hotel, or a house in the suburbs?",
