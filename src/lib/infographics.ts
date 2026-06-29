@@ -1089,6 +1089,34 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
     title: "The Garden District move",
     body: "Ride the Saint Charles streetcar to Washington Avenue (a dollar and a quarter), then walk. The homes are the show, so do a self-guided loop down Prytania and First Streets. See Lafayette Cemetery through the gates, since it is closed inside, lunch on Magazine Street, and book Commander's Palace ahead for the jazz brunch. Go before 9am for photos, and stay on the busy streets after dark.",
   },
+
+  "nola-fs-venues": {
+    kind: "stat",
+    title: "The clubs to hop between on Frenchmen",
+    stats: [
+      { value: "The Spotted Cat", label: "623, the iconic trad and swing jazz room, cash and a tip jar" },
+      { value: "Snug Harbor", label: "626, serious modern jazz, ticketed sets at 7:30 and 9:30" },
+      { value: "d.b.a.", label: "618, brass and funk, early set free, late set a small cover" },
+      { value: "Blue Nile", label: "532, the club that sparked the street, funk and brass" },
+    ],
+  },
+  "nola-fs-vs-bourbon": {
+    kind: "compare",
+    title: "Frenchmen Street or Bourbon Street?",
+    left: "Frenchmen Street",
+    right: "Bourbon Street",
+    rows: [
+      { label: "The point", left: "The music, real bands every night", right: "The party, the booze, the neon" },
+      { label: "The crowd", left: "Locals and music fans", right: "Bachelorette parties and to-go cups" },
+      { label: "Cover", left: "Often free or a few dollars, tip the band", right: "No cover, pricey novelty drinks" },
+      { label: "Go for", left: "Jazz, brass, funk, soul, reggae", right: "One loud lap, then leave" },
+    ],
+  },
+  "nola-fs-callout": {
+    kind: "callout",
+    title: "The Frenchmen Street move",
+    body: "Walk down from the French Quarter after dark, about ten minutes past Esplanade Avenue. Bring cash, wander in and out of three or four clubs (most are free or a few dollars early), and always tip the band, since the jar is half their pay. See the brass band at Frenchmen and Chartres, browse the night art market, and rideshare home after midnight.",
+  },
 };
 
 export function getInfographic(key: string): Infographic | null {

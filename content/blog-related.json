@@ -1,4 +1,14 @@
 {
+  "frenchmen-street-new-orleans": [
+    "french-quarter-new-orleans",
+    "things-to-do-in-new-orleans",
+    "where-to-stay-in-neworleans",
+    "3-days-in-new-orleans",
+    "is-new-orleans-safe",
+    "best-restaurants-in-new-orleans",
+    "garden-district-new-orleans",
+    "things-to-do-in-new-orleans-with-kids"
+  ],
   "garden-district-new-orleans": [
     "3-days-in-new-orleans",
     "french-quarter-new-orleans",
@@ -12,12 +22,12 @@
   "french-quarter-new-orleans": [
     "things-to-do-in-new-orleans",
     "3-days-in-new-orleans",
+    "frenchmen-street-new-orleans",
     "where-to-stay-in-neworleans",
     "garden-district-new-orleans",
     "is-new-orleans-safe",
     "best-restaurants-in-new-orleans",
-    "things-to-do-in-new-orleans-with-kids",
-    "day-trips-from-new-orleans"
+    "things-to-do-in-new-orleans-with-kids"
   ],
   "3-days-in-new-orleans": [
     "things-to-do-in-new-orleans",
@@ -27,17 +37,17 @@
     "is-new-orleans-safe",
     "things-to-do-in-new-orleans-with-kids",
     "garden-district-new-orleans",
-    "best-restaurants-in-new-orleans"
+    "frenchmen-street-new-orleans"
   ],
   "mardi-gras-in-new-orleans": [
     "best-time-to-visit-new-orleans",
     "things-to-do-in-new-orleans",
     "3-days-in-new-orleans",
     "french-quarter-new-orleans",
+    "frenchmen-street-new-orleans",
     "best-restaurants-in-new-orleans",
     "things-to-do-in-new-orleans-with-kids",
-    "where-to-stay-in-neworleans",
-    "is-new-orleans-safe"
+    "where-to-stay-in-neworleans"
   ],
   "best-restaurants-in-new-orleans": [
     "things-to-do-in-new-orleans",
@@ -46,8 +56,8 @@
     "french-quarter-new-orleans",
     "day-trips-from-new-orleans",
     "things-to-do-in-new-orleans-with-kids",
-    "garden-district-new-orleans",
-    "is-new-orleans-safe"
+    "frenchmen-street-new-orleans",
+    "garden-district-new-orleans"
   ],
   "day-trips-from-new-orleans": [
     "3-days-in-new-orleans",
@@ -67,7 +77,7 @@
     "is-new-orleans-safe",
     "french-quarter-new-orleans",
     "things-to-do-in-new-orleans-with-kids",
-    "day-trips-from-new-orleans"
+    "frenchmen-street-new-orleans"
   ],
   "things-to-do-in-new-orleans-with-kids": [
     "things-to-do-in-new-orleans",
@@ -81,33 +91,33 @@
   ],
   "things-to-do-in-new-orleans": [
     "3-days-in-new-orleans",
-    "things-to-do-in-new-orleans-with-kids",
     "french-quarter-new-orleans",
+    "things-to-do-in-new-orleans-with-kids",
+    "frenchmen-street-new-orleans",
     "where-to-stay-in-neworleans",
     "day-trips-from-new-orleans",
     "best-restaurants-in-new-orleans",
-    "garden-district-new-orleans",
-    "is-new-orleans-safe"
+    "garden-district-new-orleans"
   ],
   "is-new-orleans-safe": [
     "where-to-stay-in-neworleans",
     "3-days-in-new-orleans",
     "french-quarter-new-orleans",
     "things-to-do-in-new-orleans",
+    "frenchmen-street-new-orleans",
     "garden-district-new-orleans",
     "best-time-to-visit-new-orleans",
-    "things-to-do-in-new-orleans-with-kids",
-    "day-trips-from-new-orleans"
+    "things-to-do-in-new-orleans-with-kids"
   ],
   "where-to-stay-in-neworleans": [
     "3-days-in-new-orleans",
     "is-new-orleans-safe",
     "french-quarter-new-orleans",
     "things-to-do-in-new-orleans",
+    "frenchmen-street-new-orleans",
     "where-to-stay-in-sanfrancisco",
     "garden-district-new-orleans",
-    "where-to-stay-in-charleston",
-    "where-to-stay-in-albuquerque"
+    "where-to-stay-in-charleston"
   ],
   "where-to-stay-in-sanfrancisco": [
     "where-to-stay-in-neworleans",

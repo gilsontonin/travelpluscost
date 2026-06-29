@@ -1,4 +1,25 @@
 {
+  "frenchmen-street-new-orleans": {
+    "primary": "frenchmen street new orleans",
+    "secondary": [
+      "frenchmen street",
+      "frenchmen street bars",
+      "frenchmen street music",
+      "frenchmen street vs bourbon",
+      "live music new orleans",
+      "frenchmen street clubs",
+      "is frenchmen street safe",
+      "frenchmen art market"
+    ],
+    "volume": 4400,
+    "kd": 41,
+    "intent": "informational",
+    "database": "us",
+    "researched": "2026-06-28",
+    "status": "published",
+    "cluster": "new-orleans",
+    "history": []
+  },
   "garden-district-new-orleans": {
     "primary": "garden district new orleans",
     "secondary": [

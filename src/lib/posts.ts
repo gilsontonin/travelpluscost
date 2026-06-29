@@ -49,6 +49,172 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "frenchmen-street-new-orleans",
+    title: "Frenchmen Street New Orleans: Live Music Guide (2026)",
+    seoTitle: "Frenchmen Street New Orleans: Live Music Guide",
+    description:
+      "A guide to Frenchmen Street in New Orleans, the city's live-music strip. The best jazz clubs, cover charges and tipping, where to eat, and how to get there.",
+    excerpt:
+      "Everything for a first night on Frenchmen Street in New Orleans, the locals' live-music strip in the Marigny. The best jazz clubs, how cover charges and tipping work, where to eat, and the walk from the French Quarter. As of 2026.",
+    tldr: {
+      answer:
+        "Skip Bourbon Street and spend a night on Frenchmen Street for the real live music. The Marigny strip packs jazz, brass, and funk clubs into a few blocks a short walk past the French Quarter. Most are free or a few dollars, so hop between three or four rooms, and always tip the band.",
+      points: [
+        "**What it is**, the live music strip in the Marigny, the locals' answer to Bourbon Street.",
+        "**The clubs**, hop between the Spotted Cat, Snug Harbor, d.b.a., and Blue Nile.",
+        "**Cover**, often free or a few dollars early. Bring cash and tip the band.",
+        "**Get there**, walk 10 minutes down from the French Quarter, past Esplanade Avenue.",
+        "**Go for**, jazz, brass, funk, soul, and reggae, most nights of the week.",
+      ],
+    },
+    date: "2026-06-28",
+    updated: "2026-06-28",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://static.cupid.travel/hotels/ex_03f4aec6_z.jpg",
+      alt: "A peach Creole townhouse with green shutters and a wrought-iron balcony on Frenchmen Street in the New Orleans Marigny under a blue sky",
+      credit: { name: "Frenchmen Street, New Orleans" },
+    },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "Is Frenchmen Street worth visiting?",
+        a: "Yes, for live music it is the best night out in New Orleans. Frenchmen Street is where locals and visiting music fans go to hear real jazz, brass, and funk in a few blocks of clubs, rather than the party scene on Bourbon Street. If you only do one music night in the city, do it here.",
+      },
+      {
+        q: "Is there a cover charge on Frenchmen Street?",
+        a: "Often not. Many clubs on Frenchmen Street charge no cover at all, and the ones that do usually want a small door fee of five to ten dollars, mostly for the later sets. The bigger thing to budget for is the tip jar, since that is how the musicians make most of their money.",
+      },
+      {
+        q: "How do you get to Frenchmen Street from the French Quarter?",
+        a: "Walk. From the French Quarter, head downriver along Decatur Street, cross Esplanade Avenue, and Frenchmen opens up in front of you, about ten minutes from the heart of the Quarter. Driving is not worth it because parking is scarce, so walk over and take a rideshare home after midnight.",
+      },
+      {
+        q: "Is Frenchmen Street safe at night?",
+        a: "The main strip is generally safe, busy and well lit and policed, and the city's violent crime has dropped sharply since 2022. The side streets go quiet within a block, though, so stay on Frenchmen itself, mind your drink and your pockets, travel with someone, and use a rideshare after midnight.",
+      },
+      {
+        q: "What is the best music club on Frenchmen Street?",
+        a: "The Spotted Cat is the iconic one for traditional jazz, and Snug Harbor is the serious modern jazz listening room with ticketed sets. d.b.a. and Blue Nile are the go to rooms for brass and funk. The real answer is to hop between several, since each runs a different band every night.",
+      },
+      {
+        q: "Is Frenchmen Street or Bourbon Street better?",
+        a: "It depends what you want. Frenchmen Street is for live music and a more local night, with a real band on almost every stage. Bourbon Street is for the party, the booze, and the neon. Most people walk Bourbon once for the spectacle and spend their actual music night on Frenchmen.",
+      },
+      {
+        q: "Do you tip the bands on Frenchmen Street?",
+        a: "Yes, always. Musicians make a large share of their pay from tips, often half or more of a night's wages, and the jar comes around after most sets. Drop in a few dollars, tip more if you request a song, and bring cash, though many bands now also take Venmo or a card.",
+      },
+    ],
+    body: `Frenchmen Street is **where New Orleans goes to hear live music**, three blocks of jazz clubs and brass bands just downriver from the French Quarter. Where Bourbon Street sells you a giant drink, Frenchmen sells you the band, and the difference is the whole point. If you only do one night of music in New Orleans, do it here.
+
+This is a complete guide to **Frenchmen Street in New Orleans**, what it is, the clubs worth hopping between, how cover charges and tipping actually work, where to eat, and how to get there. It is written for a first visit and current as of 2026.
+
+One thing to know up front. Frenchmen is a working music street, not a theme park, so the etiquette matters. Bring cash, wander in and out, and tip the band, because that jar is half their pay.
+
+| Frenchmen Street | At a glance |
+|---|---|
+| Where it is | The Faubourg Marigny, just past Esplanade Avenue |
+| Known for | The highest concentration of live music in the city |
+| Cover | Often free or a few dollars, tip the band |
+| Get there | A 10 minute walk down from the French Quarter |
+| Go for | Jazz, brass, funk, soul, and reggae, most nights |
+
+::infographic nola-fs-callout
+
+## What Is Frenchmen Street in New Orleans?
+
+**Frenchmen Street is a short live music strip in the Faubourg Marigny, the neighborhood just downriver of the French Quarter.** Locals point visitors to the Frenchmen Street New Orleans built for music instead of Bourbon Street, because this is where the real bands play. On a good night you can stand on one corner and hear three different groups at once.
+
+The street has a dark name and a recent fame. It is named for five French Creole men executed in 1769 for rebelling against the new Spanish governor, and the surrounding Marigny was a plantation subdivided back in 1806. The music scene, though, is newer, growing from the 1980s as Bourbon Street tilted toward tourists and the musicians drifted here.
+
+What you get today is a few blocks of Creole cottages with their windows flung open and the sound pouring out. It is loud, friendly, a little gritty, and gloriously alive.
+
+## The Best Live Music Clubs on Frenchmen Street
+
+**The move on Frenchmen Street is not to pick one club, it is to hop between four or five.** Most venues run several sets a night, so you can catch jazz music at one, brass at the next, and reggae at a third without spending much. The live music on Frenchmen Street New Orleans loves runs from late afternoon to early morning, whether you wander solo or take a guided pub crawl tour. Here are the rooms worth your ears.
+
+::infographic nola-fs-venues
+
+### The Spotted Cat
+
+The **Spotted Cat** is the iconic music club, a tiny, cash only room with traditional jazz, swing, and blues from late afternoon until early morning. Grab a spot near the band, drop a few dollars in the jar, and let the night start here.
+
+### Snug Harbor Jazz Bistro
+
+**Snug Harbor** is the serious listening room, located at 626 Frenchmen, with ticketed modern jazz sets at 7:30 and 9:30 and the Marsalis family on the calendar. Book a seat in the music room, and dinner next door if you want to make an evening of it.
+
+### d.b.a. and Blue Nile
+
+**d.b.a.** anchors the street with a deep beer and wine list and a strong nightly lineup, the early set usually free and the late one a small cover. A few doors down, **Blue Nile** is the club credited with sparking the whole scene, heavy on funk and brass with a balcony upstairs.
+
+::activity New Orleans | jazz music
+
+### The Maison, Three Muses, and the Apple Barrel
+
+**The Maison** packs three floors with free jazz, dancing, and weekend drag shows, while **Café Negril** is the reggae room, **Three Muses** pairs a stage with dinner, and **Dragon's Den** runs the weird late night sets. The tiny **Apple Barrel** is the locals' secret bar, with live jazz, blues, and local acts every night and acoustics good enough that bands have recorded there. Check each venue before you go, since the eclectic lineup changes daily.
+
+## The Frenchmen Art Market
+
+**Tucked behind the clubs is a nightly open air art market that most first timers walk right past.** The **Palace Market** sets up at 619 Frenchmen after dark, with more than 80 local artists, jewelers, and makers selling under strings of lights. It is free to wander and a nice breather between sets.
+
+The market runs from 7pm to midnight on weeknights and until 1am on weekends. Buy something directly from the artist who made it, which is a better souvenir than anything you will find on Bourbon Street.
+
+## Where to Eat and Drink on Frenchmen Street
+
+**You will want food between bands, and Frenchmen has just enough of it.** This is bar food and neighborhood spots more than fine dining, which is exactly right for the night you are having. Keep some cash on you, since a few of the best bars do not take cards.
+
+::activity New Orleans | food tour
+
+For a sit down meal, **Adolfo's** upstairs from the Apple Barrel does cash only Italian Creole at honest prices, and the **Praline Connection** on the corner serves soul food worth the detour. For something fast, **Dat Dog** slings artisan sausages from a colorful corner with a balcony made for people watching. From that Dat Dog balcony you look down on the brass band at the corner of Frenchmen and Chartres, the free dinner show.
+
+## Cover Charges and Tipping the Band on Frenchmen Street
+
+**Here is how the night actually works, since nobody hands you the rules at the door.** Many clubs charge no cover at all, and the ones that do usually want a small door fee of five to ten dollars, mostly for the later sets. You really can pop in and out for the price of a drink.
+
+The part visitors miss is the **tip jar**. Musicians make a big share of their living from tips, often half or more of the night's pay, and the jar comes around after most sets. Drop in a few dollars, tip more if you request a song, and bring cash, though plenty of bands now take Venmo or a card.
+
+## Frenchmen Street vs Bourbon Street
+
+**If you are choosing between the two famous music streets, Frenchmen is for the music and Bourbon is for the party.** Most Frenchmen clubs put a real band on a real stage, while many Bourbon bars just sell you a cup and a cover song. One is a night out for the ears, the other for the liver.
+
+::infographic nola-fs-vs-bourbon
+
+That said, Frenchmen has gotten more crowded and a little more touristy in recent years, with bachelor parties wandering over from the Quarter. The fix is simple. Go earlier in the evening, when the music is just as good and the sidewalks are still walkable.
+
+## Where to Stay Near Frenchmen Street
+
+**You do not need to sleep on Frenchmen Street, you just need to be a short walk away.** The lodging on the Frenchmen Street New Orleans visitors picture is mostly small guesthouses, like the **Royal Frenchmen Hotel** right on the street and the **Lamothe House** on Esplanade, which book direct rather than through us. We mention them because they are genuinely charming, not because we can price them.
+
+For a room we can book at the same flat fee for everyone, the **French Market Inn** sits in the lower French Quarter, a ten minute stroll from the clubs with a quiet courtyard to come home to.
+
+::hotel lp1da18
+
+A few blocks over, **Hotel Provincial** spreads across historic buildings on the calm downriver edge of the Quarter, close to both Frenchmen and the river.
+
+::hotel lp27f5e
+
+Whatever you book, the price you see here never changes based on your phone or your search history. For the full neighborhood breakdown, see our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) or browse the [New Orleans hotels hub](/hotels/new-orleans).
+
+## Is Frenchmen Street Safe, and How Do You Get There?
+
+**The main strip of Frenchmen Street is generally safe at night, busy and well lit and policed, and the city's violent crime has dropped sharply since 2022.** The catch is the side streets, which go quiet and dark within a block. Stay on Frenchmen itself, mind your drink and your pockets, and travel with at least one other person.
+
+Getting there is easy and free. From the French Quarter, walk downriver along Decatur Street, cross Esplanade Avenue, and Frenchmen opens up in front of you, about ten minutes from the heart of the Quarter. Do not bother driving, since parking is scarce, and take a rideshare home after midnight.
+
+Our full guide on whether [New Orleans is safe](/blog/is-new-orleans-safe) covers the city block by block.
+
+## When to Go, and the Last Word
+
+**Come after 7pm, when the bars fill, the first bands start, and the art market opens.** Weeknights and early evenings are calmer and more intimate, while weekends pack the street shoulder to shoulder. There is no wrong day to go, only louder and quieter nights, and all of them are fun.
+
+The Frenchmen Street New Orleans loves is the best argument that the city is a music town first and a party town second. Walk it slow, follow the sound, tip the band, and you will understand the place better than a week on Bourbon could teach you. For the rest of the neighborhood next door, our guide to the [French Quarter](/blog/french-quarter-new-orleans) picks up where this one leaves off.
+
+::cta New Orleans
+`,
+  },
+  {
     slug: "garden-district-new-orleans",
     title: "Garden District New Orleans: A Complete Guide (2026)",
     seoTitle: "Garden District New Orleans: A Complete Guide",
@@ -405,7 +571,7 @@ There is real history under the neon. **Lafitte's Blacksmith Shop**, built befor
 
 **The rest of the grid fills in the map.** **Decatur Street** hugs the river and the French Market, while **Chartres Street** is the calm museum and cathedral spine. The prettiest quiet balconies hang over Dauphine.
 
-For the music locals actually leave the house for, walk to **Frenchmen Street** just past Esplanade in the Marigny. Clubs like the Spotted Cat, Snug Harbor, and d.b.a. stack authentic live jazz, funk, and brass from local bands most nights, often with no cover.
+For the music locals actually leave the house for, walk to [**Frenchmen Street**](/blog/frenchmen-street-new-orleans) just past Esplanade in the Marigny. Clubs like the Spotted Cat, Snug Harbor, and d.b.a. stack authentic live jazz, funk, and brass from local bands most nights, often with no cover.
 
 ::activity New Orleans | jazz music
 
@@ -773,7 +939,7 @@ For the full menu of trips beyond the parish line, our guide to [day trips from 
 
 **A short trip is too precious to spend on the things New Orleans sells to people who do not know better.** None of these are scams exactly, they are just where the value drains out. Trade each one for the local version and the same day gets better and usually cheaper.
 
-Skip a night built around **Bourbon Street** and the giant frozen daiquiris in novelty cups. Walk it once for the spectacle, then go to **Frenchmen Street** for the music that locals actually leave the house for. The drinks are cheaper and the bands are real.
+Skip a night built around **Bourbon Street** and the giant frozen daiquiris in novelty cups. Walk it once for the spectacle, then go to [**Frenchmen Street**](/blog/frenchmen-street-new-orleans) for the music that locals actually leave the house for. The drinks are cheaper and the bands are real.
 
 Skip the **mule carriage** as your main tour and the overpriced psychic readings off Jackson Square. A proper guided walking tour, food, history, or cemetery, costs about the same and teaches you something. Save the carriage for a tired afternoon when your feet have quit.
 
