@@ -49,6 +49,173 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "christmas-in-new-orleans",
+    title: "Christmas in New Orleans: Lights, Reveillon & New Year's (2026)",
+    seoTitle: "Christmas in New Orleans (2026 Guide)",
+    description: "A guide to Christmas in New Orleans, the Celebration in the Oaks lights, Reveillon dinners, levee bonfires, free caroling, New Year's Eve, and where to stay.",
+    excerpt: "The honest guide to Christmas in New Orleans. Celebration in the Oaks, Reveillon dinners, the Christmas Eve levee bonfires, free caroling in Jackson Square, New Year's Eve, and which December nights to book first. As of 2026.",
+    tldr: {
+      answer: "Christmas in New Orleans means a full month of holiday lights, Creole feasts, and Mississippi bonfires, late November to January 3. The Celebration in the Oaks, Reveillon dinners, and free Jackson Square caroling anchor it. Early December is cheap and calm, while New Year's Eve is the costliest week, so book those nights first.",
+      points: [
+        "**Book the right nights.** Early December is off season and cheap, while New Year's Eve is the priciest week of the year.",
+        "**See Celebration in the Oaks.** A million lights through City Park's ancient oaks, from late November to January 1.",
+        "**Eat a Reveillon dinner.** A multi course Creole feast at more than 50 restaurants, December 1 through early January.",
+        "**Catch the free events.** Caroling in Jackson Square, the cathedral concert, and the midnight river fireworks all cost nothing.",
+        "**See the levee bonfires.** Lit on Christmas Eve upriver to guide Papa Noel, reachable by car, bus, or riverboat.",
+      ],
+    },
+    date: "2026-06-29",
+    updated: "2026-06-29",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: { src: "https://static.cupid.travel/hotels/614339620.jpg", alt: "A historic French Quarter hotel in New Orleans dressed for the Christmas holiday season" },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "When is the best time to see Christmas in New Orleans?",
+        a: "**Early to mid December for mild weather, low crowds, and off season hotel rates, or the week of New Year's Eve for the biggest celebration.** Celebration in the Oaks and Reveillon dinners run all month, while the Christmas Eve bonfires and caroling fall on fixed December dates, so plan those around your trip.",
+      },
+      {
+        q: "How much does Celebration in the Oaks cost?",
+        a: "**The driving tour runs about $25 to $40 per car, and the walking tour about $20 to $35 a person.** The walking ticket adds the Botanical Garden, Storyland, and Carousel Gardens rides. Parking in City Park is free, and children under 2 are free. Buy timed tickets online in advance.",
+      },
+      {
+        q: "What is a Reveillon dinner?",
+        a: "**A Reveillon dinner is a multi course Creole holiday feast, a New Orleans tradition that runs December 1 through early January at more than 50 restaurants.** Most are fixed price menus around $65 to $135. Reserve directly with each restaurant, and book early for Christmas week.",
+      },
+      {
+        q: "Where are the Christmas Eve bonfires in New Orleans?",
+        a: "**The bonfires are on the Mississippi levee in St. James Parish, about an hour upriver in Gramercy, Lutcher, and Paulina.** They light at 7pm on December 24 to guide Papa Noel. See them free from River Road, or take a bus or riverboat from the city if you do not have a car.",
+      },
+      {
+        q: "Is New Orleans good for New Year's Eve?",
+        a: "**Yes. New Orleans Eve is a free riverfront concert at Woldenberg Park, ending with a fleur de lis drop and fireworks over the Mississippi as midnight strikes.** Families can hit the Children's Museum's Noon Year's Eve. Book hotels early, since New Year's is the priciest week of the holidays.",
+      },
+      {
+        q: "What should you pack for New Orleans in December?",
+        a: "**Pack layers and one warm jacket. December highs reach the low 60s, but evenings on the river turn cold, and the city freezes hard about once a decade.** Add a compact umbrella for the roughly eight rainy days, and comfortable closed toe walking shoes.",
+      },
+    ],
+    body: `Christmas in New Orleans is **a month long season of lights, Creole feasts, river bonfires, and free caroling**, and the smartest thing you can do is book the right nights. Early December is quietly off season and cheap.
+
+The week of New Year's Eve is the priciest of the whole year. Knowing which is which is most of the planning.
+
+This guide covers the lights at City Park, the Reveillon dinners, the levee bonfires, what is free, what is ticketed, and where to stay. It is written for a first holiday visit and current as of 2026. One honest note, since we run a hotel booking site.
+
+December rates here swing wildly by the night, and that is the hotel reading the calendar, not us. The price we show is the hotel's rate plus one small flat fee, the same for everyone.
+
+## When is Christmas in New Orleans?
+
+**The holiday season, branded Christmas New Orleans Style, runs from the Friday after Thanksgiving through January 3, with most of the marquee events landing in December.** The big lights, the special dinners, and the home tours all live in that window.
+
+December weather is the catch nobody packs for. Highs sit in the low to mid 60s and lows in the upper 40s, mild enough for shirtsleeves at noon and cold enough to regret them at a riverfront fireworks show. New Orleans also freezes hard about once a decade, including a 1989 cold snap that held the city below freezing for 64 hours and a January 2025 day that dropped eight inches of snow.
+
+Pack a real jacket. The city does a convincing impression of mild right up until it does not.
+
+::infographic christmas-nola-when
+
+## Celebration in the Oaks, the New Orleans holiday lights
+
+**Celebration in the Oaks is the city's marquee holiday display, more than a million lights strung through the 800-year old oaks of City Park, and it draws over 135,000 people a year.** It runs most nights from late November to January 1. The 2026 dates post around October, so confirm them before you book.
+
+You see it two ways. The driving tour is a roughly two mile self guided loop at 25 to 40 dollars per car, which is the move on a cold night or with restless kids. The walking tour, 20 to 35 dollars a person, is the better one, since it folds in the Botanical Garden, Storyland, and the Carousel Gardens rides, plus the City Park train, hot chocolate, and a 50-foot Mr.
+
+Bingle, the snowman mascot New Orleanians have loved since 1948. Parking in City Park is free, which in this town counts as a Christmas miracle. Buy tickets online ahead of time, since each night sells a fixed number.
+
+::infographic christmas-nola-oaks
+
+If the lights are your priority, a hotel in Mid-City near City Park puts you minutes away on the Canal Street streetcar.
+
+## Reveillon dinners, a Creole Christmas tradition
+
+**Reveillon is a New Orleans Christmas tradition worth planning a night around, a multi course holiday feast the city's best restaurants serve all December.** The word is French for awakening, and the history runs deep. Creole families in the 1800s came home from midnight Mass to a lavish meal at two in the morning, and the city revived the custom in the 1990s, mercifully at a more civilized hour.
+
+Here is how it actually works, since most guides skip the part you need. From December 1 through early January, more than 50 restaurants offer a fixed price Reveillon menu, usually three or more courses for around 65 to 135 dollars, which is less than ordering the same plates one by one. You reserve directly with each restaurant, by phone or online, not through any central office.
+
+The grandes dames book up fast, so make a reservation when you book your room. Antoine's has served since 1840, Commander's Palace runs a five course version, and Arnaud's, Brennan's, and Galatoire's all join in.
+
+## The Christmas Eve bonfires on the Mississippi levee
+
+**On December 24, the towns upriver light a chain of giant bonfires along the Mississippi levee to guide Papa Noel, the Cajun Santa who, per local lore, travels by pirogue pulled by eight alligators.** It is one of the most genuinely Louisiana experiences you will ever have, a holiday season highlight worth the drive.
+
+The bonfires sit in St. James Parish, about an hour upriver in the towns of Gramercy, Lutcher, and Paulina, where families spend weeks building more than a hundred log structures shaped like 20-foot teepees. They light at 7pm on December 24, and the river road closes to through traffic for the crowds.
+
+::infographic christmas-nola-bonfires
+
+You have three ways in. Drive up River Road and park at the foot of the levee, where the show costs nothing and a few locals hand out gumbo.
+
+Take a chartered bus from the city if you would rather not drive home in the dark. Or board a riverboat that floats past the lit levee.
+
+No car and short on time? The bus or boat is your answer. And if you are not in town on the night itself, the Festival of the Bonfires in Lutcher runs the second weekend of December.
+
+## Caroling in Jackson Square, and the free New Orleans Christmas
+
+**The best night of a New Orleans Christmas costs nothing, with candlelight caroling in Jackson Square in front of St. Louis Cathedral, a community singalong the city has held every year since 1946.** In 2026 it falls on Sunday, December 20, from 7 to 8pm. Volunteers hand out songbooks and candles, and a few thousand strangers sing together under the cathedral spires.
+
+::infographic christmas-nola-free
+
+A surprising amount of the season costs nothing. The caroling, the cathedral Christmas concert earlier that same evening, the New Year fireworks, the bonfires from the levee road, and a slow walk through the Roosevelt Hotel's astonishing decorated lobby cost nothing, whether or not you are a guest.
+
+The lights at City Park, the home tours, and the indoor festival are the ones that cost money. Plan around the free anchors and spend on the two or three that matter to you.
+
+## New Year's Eve in New Orleans
+
+**New Year's Eve centers on New Orleans Eve, a riverfront concert at Woldenberg Park that ends with a glowing fleur de lis sliding down the Jax Brewery and fireworks over the Mississippi as the year turns.** It is the city's answer to the ball drop, only the falling object is a fleur de lis and the backdrop is a working river.
+
+For families, the Louisiana Children's Museum runs a Noon Year's Eve, counting down to noon with confetti, a brass band, and pure family fun so the small ones can celebrate before bedtime. One thing to get right, since old guides get it wrong. The Allstate Sugar Bowl is not a New Year's Day game this season.
+
+It is a College Football Playoff semifinal on January 15, 2027, in the Superdome, which means the football crowd crushes the hotels a second time in mid January. Plan accordingly if your dates are flexible.
+
+## More Christmas things to do in the French Quarter and beyond
+
+**Beyond the headline events, the city stacks the calendar with skating, home tours, and lobby displays worth a detour.** There is more holiday fun here than any week can hold, and most of it is one long, walkable experience.
+
+NOLA ChristmasFest takes over the Convention Center for about ten days in late December with a real ice skating rink, indoor rides, carnival fun, and an adults only Polar Pub, for around 25 to 30 dollars. The Krewe of Jingle parade kicks off the holidays downtown along St. Charles Avenue, a small taste of the Mardi Gras parade tradition that follows in the new year.
+
+For a slower experience, two home tours open private doors, the Patio Planters walk through French Quarter homes on December 20 and the Preservation Resource Center walk through the Garden District in mid December. The grand hotel lobbies make the free walk the best holiday shopping research there is, with the Roosevelt and its thousands of twinkling lights the long running champion and the Hotel Monteleone close behind.
+
+For gifts, a holiday shopping stroll down Magazine Street covers six miles of locally owned shops, and the French Market is the place for a fleur de lis ornament. Add some live music from a brass band on a French Quarter corner, do not miss a slow walk past the lit streets of the Garden District, and the holiday spirit takes care of itself.
+
+## Is anything open on Christmas Day in New Orleans?
+
+**Yes, and this is where New Orleans beats most cities at the holidays. The food does not close for Christmas.** Several of the famous rooms serve all day, including Commander's Palace, Antoine's, Brennan's, and Tujague's, which runs a three course Christmas dinner around 68 dollars.
+
+Reserve ahead, because locals book these tables too.
+
+The rest of the day cooperates as well. Celebration in the Oaks glows on Christmas night, the bonfires light the night before, and the streetcars run a holiday schedule. The one day a lot of cities go dark is a day this one keeps the kitchen open.
+
+## What to pack for a New Orleans December
+
+**Pack layers and one warm jacket, because a New Orleans December runs mild by day and genuinely cold after dark, especially on the river.** A long sleeve shirt under a sweater handles most days, with a medium jacket and a scarf for the evening light shows and the midnight fireworks.
+
+Bring a compact umbrella or a light rain shell too, since December averages about eight wet days, and add closed toe shoes you can walk miles in. The humidity stays high even in winter, so the cold feels colder than the number.
+
+And keep that jacket handy. The freeze does not visit often, but when it does, it does not warn you.
+
+## Where to stay for Christmas in New Orleans
+
+**Book the French Quarter for a walkable holiday of caroling and decorations, or Mid-City near City Park if the lights are your main event, and book New Year's Eve early because it is the priciest week of the year.** December is really two seasons. The first three weeks run at gentle off season rates, roughly 180 to 280 dollars for a mid range room, while the stretch from December 30 into January 1 climbs to a peak as the whole city celebrates at once.
+
+::infographic christmas-nola-stay
+
+The French Quarter is the easy choice for most holiday visitors. You can walk to the caroling, the cathedral, the lit hotel lobbies, and the riverfront fireworks without ever finding parking. The Hotel Monteleone decks its historic lobby and spins its Carousel Bar a little more festively each December.
+
+::hotel lpa440f
+
+For the Quarter on a lighter budget, the courtyard rooms a few blocks off the action do the job without the marquee price.
+
+::hotel lp47c82
+
+That New Year's spike is the hotel reading a very busy calendar, and we cannot wave it away. What we can promise is a fee that sits flat and identical for every guest, in late December and in dull February, so one number on your screen is behaving.
+
+::priceproof
+
+::cta New Orleans
+
+For the rest of the trip, our guides to [things to do](/blog/things-to-do-in-new-orleans), the [French Quarter](/blog/french-quarter-new-orleans), and the [best time to visit](/blog/best-time-to-visit-new-orleans) carry on where the holidays leave off.
+`,
+  },
+  {
     slug: "new-orleans-jazz-fest",
     title: "New Orleans Jazz Fest 2027: Dates, Tickets, Food & Where to Stay",
     seoTitle: "New Orleans Jazz Fest 2027 Guide",
@@ -2739,7 +2906,7 @@ New Orleans has two real seasons, pleasant (October, April) and tropical (May, S
 | September | 88°F | 71°F | Still steamy, still cheap |
 | October | 80°F | 60°F | The best month |
 | November | 71°F | 51°F | Crisp and easy |
-| December | 64°F | 46°F | Cool and festive |
+| December | 64°F | 46°F | [Cool and festive](/blog/christmas-in-new-orleans) |
 
 Humidity is the wild card, a 90°F July day *feels* like 100°F plus, while an 80°F October day feels just right. Plan around the feels like, not the number.
 
@@ -3868,7 +4035,7 @@ The **NOPSI Hotel** is the standout, set in a beautifully restored 1920s power c
 
 ::hotel lpa440f
 
-The **Roosevelt New Orleans**, a Waldorf Astoria, is the grand marble landmark that gave the world the Sazerac Bar, order one, you will understand. Its block long lobby goes full Hollywood at Christmas, draped in lights people drive in just to see.
+The **Roosevelt New Orleans**, a Waldorf Astoria, is the grand marble landmark that gave the world the Sazerac Bar, order one, you will understand. Its block long lobby goes full Hollywood at Christmas, draped in lights people drive in just to see, and our [Christmas in New Orleans guide](/blog/christmas-in-new-orleans) maps the rest of the season.
 
 ::hotel lp4c753
 

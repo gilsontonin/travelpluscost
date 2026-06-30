@@ -16,6 +16,55 @@ export type Infographic =
   | { kind: "callout"; title: string; body: string };
 
 export const INFOGRAPHICS: Record<string, Infographic> = {
+  "christmas-nola-when": {
+    kind: "stat",
+    title: "The New Orleans holiday season at a glance",
+    stats: [
+      { value: "Late Nov to Jan 3", label: "the Christmas New Orleans Style season" },
+      { value: "Low 60s by day", label: "December highs, upper 40s after dark" },
+      { value: "Two price worlds", label: "early December is cheap, New Year's Eve peaks" },
+      { value: "Dec 24, 7pm", label: "the levee bonfires light to guide Papa Noel" },
+    ],
+  },
+  "christmas-nola-oaks": {
+    kind: "stat",
+    title: "Celebration in the Oaks",
+    stats: [
+      { value: "1M+ lights", label: "strung through the 800 year old oaks of City Park" },
+      { value: "$25 to $40", label: "per car for the self guided driving tour" },
+      { value: "$20 to $35", label: "per person walking, with rides and Storyland" },
+      { value: "Free", label: "parking in City Park, a holiday miracle" },
+    ],
+  },
+  "christmas-nola-free": {
+    kind: "compare",
+    title: "What is free, and what costs money",
+    left: "Free",
+    right: "Ticketed",
+    rows: [
+      { label: "Lights and fireworks", left: "New Year's Eve fireworks, the bonfires from River Road", right: "Celebration in the Oaks, $20 to $80" },
+      { label: "Music and services", left: "Caroling in Jackson Square, the cathedral concert", right: "Reveillon dinners, $65 to $135" },
+      { label: "Walking around", left: "The hotel lobby displays, all City Park parking", right: "Home tours, $35 to $40" },
+      { label: "Indoor fun", left: "Window shopping on Magazine Street", right: "NOLA ChristmasFest skating, $25 to $30" },
+    ],
+  },
+  "christmas-nola-bonfires": {
+    kind: "callout",
+    title: "Three ways to see the Christmas Eve bonfires",
+    body: "They light at 7pm on December 24 in St. James Parish, about an hour upriver in Gramercy, Lutcher, and Paulina. Drive up River Road and park at the foot of the levee for the free show. Take a bus tour from the city if you would rather not drive home in the dark. Or book a riverboat that floats past the lit levee. Not in town on the Eve? The Festival of the Bonfires in Lutcher runs the second weekend of December.",
+  },
+  "christmas-nola-stay": {
+    kind: "compare",
+    title: "Where to stay for the holidays",
+    left: "Best for",
+    right: "Getting around and rates",
+    rows: [
+      { label: "French Quarter", left: "Caroling, decorations, the midnight fireworks", right: "Walk everywhere, no car needed" },
+      { label: "Mid-City", left: "Celebration in the Oaks at City Park", right: "Canal streetcar, 10 minutes to the Quarter" },
+      { label: "Early December", left: "Mild weather and low crowds", right: "Off-season, $180 to $280 a mid range room" },
+      { label: "New Year's week", left: "The whole city celebrating at once", right: "The priciest nights of the year" },
+    ],
+  },
   "jazz-fest-tickets": {
     kind: "stat",
     title: "What a day at Jazz Fest costs",
