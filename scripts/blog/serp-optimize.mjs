@@ -149,8 +149,8 @@ if (draftSlug) {
   else {
     const body = m[1].replace(/::\w+[^\n]*/g, " ").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[#*>`_]/g, " ");
     const tk = tokenize(body);
-    const headingsN = (m[1].match(/^#{2,4} /gm) || []).length;
-    const headingTexts = (m[1].match(/^#{2,4} .+$/gm) || []).map((h) => h.replace(/^#{2,4}\s+/, "").toLowerCase());
+    const headingsN = (m[1].match(/^ {0,3}#{2,4} /gm) || []).length;
+    const headingTexts = (m[1].match(/^ {0,3}#{2,4} .+$/gm) || []).map((h) => h.replace(/^ {0,3}#{2,4}\s+/, "").toLowerCase());
     const images = (m[1].match(/!\[/g) || []).length + (m[1].match(/::(infographic|tour|directions)/g) || []).length;
     const paras = m[1].split(/\n\n+/).filter((p) => p.trim().length > 40).length;
     draft = { words: tk.length, raw: body.toLowerCase(), norm: tk.join(" "), headings: headingsN, headingTexts, headNorm: headingTexts.map((h) => tokenize(h).join(" ")), images, paras, chars: body.length, g: { 1: gramCounts(tk, 1), 2: gramCounts(tk, 2), 3: gramCounts(tk, 3) } };

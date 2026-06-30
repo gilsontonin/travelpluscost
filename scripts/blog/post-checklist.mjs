@@ -48,12 +48,12 @@ eye("1.4", "Length IN the serp band — see blog:stats", `${words}w`);
 eye("1.5", "Gap found: must-haves · PAA · friend-details · freshness");
 
 // ---- 2 · First paragraph ----
-const intro = body.split(/\n##/)[0];
+const intro = body.split(/\n {0,3}##/)[0];
 const firstBold = (intro.match(/\*\*([^*]+)\*\*/) || [])[1] || "";
 auto("2.2", "Intro bolds the answer PHRASE (not a sentence)", !!firstBold && firstBold.length <= 120 && !/[.!?] /.test(firstBold), firstBold ? `"${firstBold.slice(0, 60)}"` : "no bold in intro");
 const bodyBolds = [...body.matchAll(/\*\*([^*]+)\*\*/g)].map((m) => m[1].trim());
 const proseBolds = bodyBolds.filter((b) => !b.endsWith(":")).length;
-const bodyH2 = (body.match(/^## /gm) || []).length;
+const bodyH2 = (body.match(/^ {0,3}## /gm) || []).length;
 auto("2.2b", `Body bolds key phrases for skimmers (${proseBolds} prose bolds / ${bodyH2} H2 → need ≥${bodyH2})`, proseBolds >= bodyH2, "skim the bolds alone, the gist should hold");
 if (kw) {
   const first100 = body.toLowerCase().split(/\s+/).slice(0, 100).join(" ");
@@ -75,7 +75,7 @@ if (tldrM) {
     const aSh = sh(norm(ans)), pSh = sh(norm(fp)); let shared = 0; for (const x of aSh) if (pSh.has(x)) shared++;
     auto("3.3e", `TL;DR answer ≠ first paragraph (${shared} shared 5-word phrases)`, shared === 0); }
   auto("3.3c", `TL;DR 3-5 bold-led takeaways (${pts.length} pts)`, pts.length >= 3 && pts.length <= 5 && pts.every((p) => p.startsWith("**")));
-  const h2s = [...body.matchAll(/^## (.+)$/gm)].map((m) => m[1].trim().toLowerCase());
+  const h2s = [...body.matchAll(/^ {0,3}## (.+)$/gm)].map((m) => m[1].trim().toLowerCase());
   auto("3.3d", "TL;DR points are not section titles", !pts.some((p) => h2s.includes(p.replace(/\*/g, "").trim().toLowerCase())));
 } else auto("3.3", "TL;DR box present (tldr field)", false, "no tldr field — add { answer, points }");
 const faqM = meta.match(/faqs:\s*\[([\s\S]*?)\]/);
