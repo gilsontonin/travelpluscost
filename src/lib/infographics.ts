@@ -16,6 +16,97 @@ export type Infographic =
   | { kind: "callout"; title: string; body: string };
 
 export const INFOGRAPHICS: Record<string, Infographic> = {
+  "nola-neighborhoods": {
+    kind: "stat",
+    title: "Where the bars cluster, by neighborhood",
+    stats: [
+      { value: "French Quarter", label: "the historic icons and Bourbon Street, all walkable" },
+      { value: "The Marigny", label: "Frenchmen Street and the local live music scene" },
+      { value: "Uptown and Magazine", label: "Cure and the low key residential craft bars" },
+      { value: "Warehouse District and CBD", label: "hotel bars like the Sazerac Bar plus Compere Lapin" },
+      { value: "Mid-City", label: "neighborhood bars off the tourist track" },
+    ],
+  },
+  "nola-signature-drinks": {
+    kind: "stat",
+    title: "The cocktails New Orleans invented",
+    stats: [
+      { value: "Sazerac", label: "1838, the official cocktail of New Orleans, best at the Sazerac Bar" },
+      { value: "Ramos Gin Fizz", label: "1888, a twelve minute shake, poured at the Sazerac Bar" },
+      { value: "Vieux Carre", label: "1938, invented at the Carousel Bar in Hotel Monteleone" },
+      { value: "Hurricane", label: "1940s, born at Pat O'Brien's, rum and passion fruit" },
+      { value: "Pimm's Cup", label: "the cool garden cooler at Napoleon House" },
+      { value: "Grasshopper", label: "1918, the mint green dessert from Tujague's" },
+    ],
+  },
+  "nola-historic-bars": {
+    kind: "stat",
+    title: "The historic icons, by address and drink",
+    stats: [
+      { value: "Sazerac Bar", label: "The Roosevelt, 130 Roosevelt Way, the Sazerac and Ramos Gin Fizz" },
+      { value: "Carousel Bar", label: "Hotel Monteleone, 214 Royal St, the revolving bar and the Vieux Carre" },
+      { value: "Napoleon House", label: "500 Chartres St, the Pimm's Cup in a 1794 landmark" },
+      { value: "Pat O'Brien's", label: "718 St. Peter St, the Hurricane and the dueling pianos" },
+      { value: "Lafitte's Blacksmith Shop", label: "941 Bourbon St, candlelit, around 1722, the Purple Drank" },
+      { value: "Old Absinthe House", label: "240 Bourbon St, the Absinthe Frappe since 1874" },
+    ],
+  },
+  "bourbon-vs-frenchmen": {
+    kind: "compare",
+    title: "Bourbon Street or Frenchmen Street",
+    left: "Bourbon Street",
+    right: "Frenchmen Street",
+    rows: [
+      { label: "The vibe", left: "Neon party spectacle", right: "Local live music strip" },
+      { label: "The drinks", left: "Novelty go cups, the Hand Grenade", right: "Craft cocktails and cold beer" },
+      { label: "The music", left: "Cover bands and DJs", right: "Real jazz and brass" },
+      { label: "The cover", left: "None, drink prices add up", right: "Usually none, one drink minimum" },
+      { label: "Best for", left: "Seeing it once", right: "Where to actually spend a night" },
+    ],
+  },
+  "nola-craft-cocktail-bars": {
+    kind: "stat",
+    title: "The craft cocktail bars locals rate",
+    stats: [
+      { value: "Cure", label: "4905 Freret St Uptown, a James Beard winner, the modern flagship" },
+      { value: "Jewel of the South", label: "1026 St. Louis St, a James Beard winner, historian grade drinks" },
+      { value: "Cane and Table", label: "1113 Decatur St, rum forward proto tiki in a crumbling courtyard" },
+      { value: "Compere Lapin", label: "535 Tchoupitoulas St, Nina Compton's Caribbean-Creole star" },
+      { value: "Latitude 29", label: "321 N. Peters St, Beachbum Berry's serious tiki bar" },
+      { value: "Manolito", label: "508 Dumaine St, expert blended and thrown Cuban daiquiris" },
+    ],
+  },
+  "nola-bar-crawl": {
+    kind: "steps",
+    title: "A self guided classic cocktail crawl",
+    steps: [
+      { title: "Start at the Sazerac Bar", detail: "A late afternoon Sazerac and a Ramos Gin Fizz in The Roosevelt, before the crowd." },
+      { title: "Spin at the Carousel Bar", detail: "A Vieux Carre on the slow turning bar at Hotel Monteleone, a few blocks into the Quarter." },
+      { title: "Cool off at Napoleon House", detail: "A Pimm's Cup in the courtyard, the most atmospheric room in the city." },
+      { title: "See the show at Pat O'Brien's", detail: "One Hurricane and the dueling pianos, then keep the souvenir glass." },
+      { title: "End on Frenchmen Street", detail: "A nightcap and live jazz where the locals actually go." },
+    ],
+  },
+  "go-cup-law": {
+    kind: "steps",
+    title: "The go cup rules, in four lines",
+    steps: [
+      { title: "Plastic, not glass", detail: "You can drink on French Quarter streets from a plastic go cup or a can. Glass is banned outdoors." },
+      { title: "Ask for a go cup", detail: "Leaving a bar, ask the bartender to pour your drink into a plastic cup to take with you." },
+      { title: "Stay in the Quarter", detail: "The legal zone runs between Canal, Esplanade, Rampart, and the river. Public drunkenness is still illegal." },
+      { title: "Never in the car", detail: "Louisiana bans open containers in vehicles. Drive thru daiquiris stay sealed with tape over the straw hole." },
+    ],
+  },
+  "nola-hotel-bars": {
+    kind: "stat",
+    title: "The famous bars that live inside hotels",
+    stats: [
+      { value: "Carousel Bar", label: "inside Hotel Monteleone, the revolving French Quarter icon" },
+      { value: "Sazerac Bar", label: "inside The Roosevelt, the best classic bar in the city" },
+      { value: "Hot Tin", label: "rooftop at the Pontchartrain Hotel, Garden District sunset views" },
+      { value: "Davenport Lounge", label: "inside the Ritz-Carlton, live jazz from Jeremy Davenport" },
+    ],
+  },
   "resort-fees-at-a-glance": {
     kind: "stat",
     title: "Resort fees at a glance",

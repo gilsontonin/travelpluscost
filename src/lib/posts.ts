@@ -49,6 +49,203 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "best-bars-in-new-orleans",
+    title: "Best Bars in New Orleans: Iconic Cocktail Bars and the Drinks They Invented",
+    seoTitle: "Best Bars in New Orleans: Iconic Cocktail Bars (2026)",
+    description:
+      "The best bars in New Orleans, from the Sazerac Bar and the revolving Carousel Bar to Frenchmen Street and the craft cocktail scene, plus the go cup rules.",
+    excerpt:
+      "The historic rooms where the Sazerac, the Ramos Gin Fizz, and the Hurricane were born, and exactly where to drink each one.",
+    tldr: {
+      answer:
+        "Skip the generic bar crawl. The smart move in New Orleans is to order each classic cocktail in the room that created it, a Sazerac at The Roosevelt, a Vieux Carre on the spinning Carousel Bar at Hotel Monteleone, then trade Bourbon Street for live jazz on Frenchmen Street.",
+      points: [
+        "**Drink the classics where they were born.** The Sazerac, Ramos Gin Fizz, and Vieux Carre each have a home bar you can still walk into.",
+        "**The Sazerac Bar is the top pick.** It pours about 20,000 Ramos Gin Fizzes a year inside The Roosevelt hotel.",
+        "**The Carousel Bar actually rotates.** One slow lap every 15 minutes inside Hotel Monteleone.",
+        "**Frenchmen Street beats Bourbon Street for music.** Locals go there, and most clubs charge no cover.",
+        "**You can drink on the street, legally.** Plastic go cups are fine in the French Quarter, glass is not.",
+      ],
+    },
+    date: "2026-06-29",
+    updated: "2026-06-29",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: {
+      src: "https://images.unsplash.com/photo-1570578066030-a5792a08ec7e?fm=webp&fit=crop&w=1200&h=675&q=80",
+      alt: "Bourbon Street in New Orleans at night, lit up with neon bar and restaurant signs above a crowd of barhoppers.",
+      credit: { name: "Eric Tompkins", url: "https://unsplash.com/@erictompkins" },
+    },
+    faqs: [
+      { q: "What is the official cocktail of New Orleans?", a: "The Sazerac. The Louisiana Legislature made it official in 2008. It started around 1838 as a brandy drink from the apothecary Antoine Peychaud, then switched to rye whiskey, with Peychaud's bitters, a little sugar, and an absinthe or Herbsaint rinse. Drink the best one at the Sazerac Bar or Arnaud's French 75 Bar." },
+      { q: "Can you drink alcohol on the street in New Orleans?", a: "Yes, in the French Quarter, as long as the cup is not glass. Plastic go cups and cans are legal on the sidewalk, and any bar will pour your unfinished drink into a go cup when you leave. Glass is banned outdoors, public drunkenness is still illegal, and open containers in a moving car are against state law." },
+      { q: "What is the oldest bar in New Orleans?", a: "Lafitte's Blacksmith Shop at 941 Bourbon Street, in a Creole cottage built around 1722, is widely called one of the oldest bar buildings in the United States, and it still runs on candlelight. Tujague's, founded in 1867, holds the separate title of America's oldest stand up bar." },
+      { q: "Where do you get the best Sazerac in New Orleans?", a: "The Sazerac Bar inside The Roosevelt is the iconic answer, since the bar is the drink's namesake home. For a craft version, Arnaud's French 75 Bar and Cure Uptown are local favorites, and the free Sazerac House museum on Magazine Street will teach you to spot a good one." },
+    ],
+    body: `The best bars in New Orleans are not a list of nightclubs. They are **the historic rooms where the American cocktail was largely invented**, the Sazerac Bar, the Carousel Bar, Napoleon House, Pat O'Brien's, plus a Frenchmen Street music scene and a craft revival the rest of the country quietly copies.
+
+Most cities have bars. New Orleans has bars that hold a patent. The Sazerac was mixed here in 1838. The Ramos Gin Fizz in 1888. The Vieux Carre in 1938. You can still order all three in the rooms that made them, which is the rare case where the tourist move and the right move are the same move.
+
+This guide skips the generic crawl. It covers the drinks the city invented and exactly where to drink them, the historic icons worth your time, the honest difference between Bourbon Street and Frenchmen Street, the craft bars locals actually rate, the go cup laws that let you carry a drink down the sidewalk, and where to stay so you can walk to all of it. Everything here was checked for 2026.
+
+## The drinks New Orleans invented, and where to drink them
+
+Before the bars, the drinks. New Orleans has a serious claim to being the birthplace of the cocktail, and most of its famous pours were born in a specific room you can still walk into.
+
+The **Sazerac** is the headliner. A Creole apothecary named Antoine Peychaud mixed the first one around 1838, originally with cognac and his secret family bitters. The base later switched to rye whiskey, and when the country banned absinthe in 1912 the local anise liqueur Herbsaint took its place in the rinse. In 2008 the Louisiana Legislature made it the [official cocktail of New Orleans](https://www.neworleans.com/drink/cocktails/sazerac/). It is widely called America's oldest branded cocktail.
+
+The **Ramos Gin Fizz** is the showpiece. Henry Ramos built it in 1888 with gin, citrus, egg white, cream, and orange flower water, then shook it for a punishing twelve minutes to get a souffle like head. During Mardi Gras 1915 he reportedly ran 35 shaker boys at once just to keep up. The **Vieux Carre**, French for the Old Square, came out of Hotel Monteleone in 1938, a near even pour of rye, cognac, and sweet vermouth with a whisper of Benedictine.
+
+Then the crowd pleasers. The **Hurricane** is rum and passion fruit in a lamp shaped glass, born at Pat O'Brien's in the 1940s. The **Pimm's Cup** is the long, cool garden drink at Napoleon House. The **Grasshopper**, a mint green dessert in a glass, was invented at Tujague's in 1918. And the **Hand Grenade** is the melon green Bourbon Street bomb in the foot tall cup. Two of these are craft cocktails. The other three are a dare. Order accordingly. There are deeper cuts too, the Roffignac and the Cafe Brulot among them, but the list above is the canon, and drinking through it is a real itinerary.
+
+::infographic nola-signature-drinks
+
+## The historic icons, the bars that made the legends
+
+These eight rooms are the reason New Orleans is a drinking city with a museum's worth of history. None of them charge a cover, and all of them are open in 2026.
+
+### The Sazerac Bar at The Roosevelt
+
+The single best bar in the city for a classic, full stop. The Sazerac Bar sits off the lobby of [The Roosevelt New Orleans](/hotels/neworleans), a Waldorf Astoria property at 130 Roosevelt Way, and the Roosevelt hotel has poured these drinks since the 1930s, walled in African walnut and 1930s murals by Paul Ninas. It is the spiritual home of both the Sazerac and the Ramos Gin Fizz, and it pours roughly 20,000 of the latter a year. Governor Huey Long loved the place so much he once dragged a Roosevelt bartender to New York City so the New Yorker Hotel could learn to make his Ramos correctly. Look for the bullet hole one of his bodyguards reportedly left in the wall.
+
+### The Carousel Bar at Hotel Monteleone
+
+The bar literally turns. Inside [Hotel Monteleone](/hotels/neworleans) at 214 Royal Street, the 25-seat Carousel Bar rotates on a 1949 merry go round chassis, one slow lap every 15 minutes on 2,000 steel rollers under 186 lights. Order the Vieux Carre, the drink invented here in 1938, and let the room do the moving. Hemingway, Faulkner, Tennessee Williams, and Truman Capote all drank here, which is either inspiring or a warning. Seats are first come, and on weekends the wait for the moving part is real. The tip locals know, the lounge seats around the edge of the room are not on the carousel and rarely have a wait, so you can drink the same Vieux Carre in the same room without standing in line for the ride. Open daily until midnight, and 21 and up after 6pm.
+
+### Napoleon House
+
+The most atmospheric room in the Quarter, and it is not close. Napoleon House occupies a 1794 landmark at 500 Chartres Street, all peeling plaster, open courtyard, and Beethoven on the speakers. The house drink is the Pimm's Cup, a tall, cucumber garnished cooler they sell more of than anywhere else in America. The building was once offered as a refuge for the exiled Napoleon, a plot his death politely canceled. Get a muffuletta with it.
+
+### Pat O'Brien's
+
+The birthplace of the Hurricane, and a tourist machine that earns it. Pat O'Brien's opened the day after Prohibition ended in 1933 and settled at 718 St. Peter Street in a 1791 building that was once the first Spanish theater in the country. The courtyard has a fountain that shoots fire, the piano room invented the dueling pianos format, and the Hurricane runs about $11. Here is the move locals know, the glass carries a $3 deposit, so return it and the souvenir nets out to roughly $3. Drink one Hurricane for the story, then switch to something that will let you keep your evening.
+
+### Lafitte's Blacksmith Shop
+
+Possibly the oldest bar building in the United States, and lit like it. The Creole cottage at 941 Bourbon Street went up around 1722, and the front room runs on candlelight, lanterns, and a fireplace, no harsh electric bulbs. The pirate Jean Lafitte connection is legend rather than fact, but the spooky, low lit calm at the quiet end of Bourbon is real. The signature is the Purple Drank, a grape colored frozen daiquiri spiked with bourbon and Everclear that locals treat with the respect you would give live ammunition.
+
+### The Old Absinthe House
+
+The green fairy landmark at 240 Bourbon Street has poured since around 1836, and its Absinthe Frappe dates to 1874, served the proper way from marble fountains that drip ice water over a sugar cube. The walls are papered in old business cards and currency, and the guest list over the years reads like a syllabus, Mark Twain, Oscar Wilde, Walt Whitman, Frank Sinatra. Two presidents drank here too, which feels about right for a bar this old. Order the Absinthe Frappe and a Sazerac, then add your own business card to the few thousand already pinned to the wall.
+
+### Tujague's
+
+The second oldest restaurant in the city and the home of America's oldest stand up bar, where the Grasshopper was born in 1918. Tujague's traces to 1867, and in 2020 it moved a few doors to 429 Decatur Street, carrying the tradition with it. Come for a frothy Brandy Milk Punch and a Grasshopper, the original mint green dessert cocktail that placed second at a national contest more than a century ago. It is the most old line, least ironic stop on this list.
+
+### Arnaud's French 75 Bar
+
+The grown-up's choice, tucked beside the grand old Arnaud's restaurant at 813 Bienville Street. Fodor's rates its Sazerac among the best in the city, made with chilled Old Overholt rye, and the namesake French 75 of champagne and cognac is the house move. The room is jacket and tie energy without the rule, a hushed, elegant counterpoint to the Bourbon Street roar one block over.
+
+::infographic nola-historic-bars
+
+## Bourbon Street or Frenchmen Street
+
+This is the question every first visit asks, and the honest answer is both, for about an hour each, for completely different reasons.
+
+### Bourbon Street, the French Quarter spectacle
+
+Bourbon Street is loud, sticky, and worth seeing once. The lower 600 and 700 blocks are a neon corridor of daiquiri windows and novelty drinks, anchored by the **Hand Grenade**, the melon flavored, secret recipe cup sold only at the handful of Tropical Isle bars that own it. Walk it, gawk at it, buy the silly green cup, and keep your wits and your wallet close. Then walk three blocks to the quiet, historic end near Lafitte's and remember the street has a soul under the plastic. Skip it entirely if crowds and noise are your idea of a bad night. Nobody is required to love Bourbon Street, and the historic hotel bars and Frenchmen Street are a better use of the same evening for most people.
+
+### Frenchmen Street, the locals' answer
+
+Frenchmen Street, just downriver in the Marigny, is where New Orleanians actually go to hear music. It is the densest live music strip in the city, and most clubs charge no cover, just a one drink minimum. The street comes alive after about 9pm, and the move is to wander, lean in the open doorways, and follow the band that sounds best rather than picking one room and staying. The Spotted Cat is the tiny, sweaty jazz room of postcards. d.b.a. pours a serious beer and whiskey list under nightly local bands. Bamboula's brings the brass and the oysters, and Snug Harbor is the dressed up, ticketed jazz bistro for a proper seated show. **If you only have one night for music, spend it here, not on Bourbon.**
+
+::infographic bourbon-vs-frenchmen
+
+## The craft cocktail bars locals actually rate
+
+New Orleans did not stop inventing drinks in 1938. A modern bartending family tree, much of it interconnected, has turned the city into one of the best craft cocktail towns in the country. These are the rooms worth a cab.
+
+### Cure
+
+The flagship of the modern scene, at 4905 Freret Street Uptown. Cure won a James Beard Award for its bar program in 2018 and lands on the North America's 50 Best Bars list year after year. The house Sazerac is precise to the drop, and the Gunshop Fizz, a rosy, low proof highball of Peychaud's, strawberry, and cucumber, is the drink to order if you are pacing yourself for a long night.
+
+### Jewel of the South
+
+A James Beard winner at 1026 St. Louis Street, opened in 2019 by Chris Hannah of the Arnaud's French 75 lineage and Nick Detrich of Cane and Table. The cocktails are historian grade, the food is genuinely good, and a second story lounge gives you a quieter perch. This is the bar to send a friend who thinks they have already seen the city's best.
+
+### Cane and Table
+
+The rum room, at 1113 Decatur Street, in a gorgeously crumbling courtyard space. Cane and Table runs a rum forward, proto tiki menu that reaches back to pre Prohibition Caribbean drinks rather than the mid century tiki craze. Bon Appetit once called it one of the best new cocktail bars in America, and it has only gotten more comfortable in its own skin since.
+
+### Compere Lapin
+
+Nina Compton's Caribbean-Creole star, inside the Old No. 77 Hotel at 535 Tchoupitoulas Street in the Warehouse District. The cocktails keep pace with a menu built around her signature curried goat with sweet potato gnocchi, and OpenTable named it one of the country's top hotel restaurants for 2025. Go hungry and thirsty.
+
+### Latitude 29
+
+The serious tiki bar, inside the Bienville House at 321 N. Peters Street. It is the flagship of cocktail historian Jeff Berry, better known as Beachbum Berry, and Esquire has named it one of the best bars in America. Since Tiki Tolteca closed in 2021, it is the city's one true dedicated tiki destination, with a Demerara rum house drink and a kitchen turning out Loco Moco beside the mai tais.
+
+### Manolito
+
+The Cuban corner, at 508 Dumaine Street, from the same Chris Hannah and Nick Detrich circle behind Cane and Table and Jewel of the South. Manolito specializes in blended and thrown daiquiris and classic Havana cocktails, modeled on the cantineros of El Floridita in its heyday. It is small, it is expert, and it is the quiet antidote to the frozen daiquiri window version of the daiquiri three blocks away. Get a properly made daiquiri here once and the slushie machines will never look the same.
+
+### The Chandelier Bar
+
+The modern showpiece, on the lower level of the [Four Seasons hotel](/hotels/neworleans) at 2 Canal Street, built around a custom chandelier of 15,000 crystals near the river. The menu reads like a love letter to the city, with expert versions of the Brandy Crusta, the Roffignac, the Sazerac, and the French 75, and the house Chandelier Martini took Esquire's Martini of the Year in 2023. Food and Wine has named it the best hotel bar in the country. It is the dressed up, big occasion room on this list, an experience as much as a drink, and the bartenders earn the ticket.
+
+::infographic nola-craft-cocktail-bars
+
+## New Orleans bars by neighborhood
+
+Where you drink depends a lot on where you are, and the scene clusters into a handful of distinct neighborhoods. The **French Quarter** holds the historic icons and the Bourbon Street circus, walkable end to end. The **Marigny**, just downriver, is Frenchmen Street and the local music scene. **Uptown and Magazine Street** is where Cure and the low key residential craft bars live, an easy streetcar ride from the Quarter. The **Warehouse District and Central Business District** mix hotel bars like the Sazerac Bar and the Chandelier Bar with rooms like Compere Lapin. And **Mid-City** rewards anyone who ventures off the tourist track for a neighborhood bar and a slower pace. For a first trip you will spend most nights in the French Quarter and the Marigny, which is exactly why sleeping there pays off.
+
+::infographic nola-neighborhoods
+
+## The best bar for each famous drink
+
+If you only have a few nights and a short list of drinks to check off, this is the cheat sheet. Order each cocktail where it was born or where it is poured best, and you have a self guided tour of the city's whole drinking history in five or six stops.
+
+::infographic nola-bar-crawl
+
+The short version. The **Sazerac** belongs at the Sazerac Bar or Arnaud's French 75 Bar. The **Ramos Gin Fizz** is the Sazerac Bar, no contest. The **Vieux Carre** wants the Carousel Bar. The **Pimm's Cup** is Napoleon House, the **Hurricane** is Pat O'Brien's, the **Grasshopper** is Tujague's, and the **Absinthe Frappe** is the Old Absinthe House. Drink each in its home and you will understand the city better than any walking tour can explain it.
+
+## When to go, and what a night actually costs
+
+A few honest logistics the listicles skip. Most New Orleans bars charge no cover, but Frenchmen Street music rooms run a one drink minimum per set, which is the cover wearing a different hat. A classic cocktail at the historic icons runs roughly $14 to $18, the craft bars a dollar or two more, and a Bourbon Street novelty drink less in price but more in regret. Tip a dollar or two a drink, and a little extra for a Ramos Gin Fizz that someone just shook by hand for twelve minutes. Many craft bars and hotel lounges run a happy hour in the late afternoon, and the old line rooms pour a serious brunch cocktail, a Brandy Milk Punch or a Ramos, if you would rather drink with eggs than at midnight.
+
+Timing beats luck. The famous rooms are calm and conversational in the late afternoon, then turn into a wait after about 8pm on weekends, so the smart move is a 4pm Sazerac when the light comes gold through the Sazerac Bar windows and a later table somewhere with music. Bourbon Street peaks loud and late and is best treated as a walk through, not a destination, with your phone and wallet zipped away. Almost none of this needs a car, which is the entire argument for sleeping in the Quarter.
+
+A few last expectations. Dress is casual almost everywhere, though the hotel bars and the craft rooms reward a collar over a tank top. Most of the historic spots are walk-ins, but Snug Harbor and the ticketed jazz rooms want a reservation. And the oldest bars lean warm and dim by design, so the romance of candlelight at Lafitte's comes with the air conditioning of 1722.
+
+**If you have one night and one drink, make it a Sazerac at the Sazerac Bar at golden hour, then walk to Frenchmen Street for the music.** That is the whole city in one evening, history in the glass and a brass band three blocks later.
+
+## The go cup rules, or how to drink on the street legally
+
+New Orleans is one of the only American cities where carrying a drink down the public sidewalk is legal, and the rules are simpler than they look. Under the city code, you can drink alcohol on the streets of the French Quarter as long as the cup is **not glass**. Plastic go cups and cans are fine. Glass is banned outdoors to keep broken bottles off Bourbon Street.
+
+When you leave any bar, you can ask the bartender to pour your unfinished drink into a plastic go cup to take with you. That is the whole trick behind the river of frozen daiquiris walking down the street. The legal zone is the Quarter, roughly between Canal Street, Esplanade Avenue, Rampart Street, and the river. Public drunkenness is still illegal, so the freedom is to walk with a drink, not to fall over with one.
+
+One hard line. The street is generous, the car is not. Louisiana bans open containers in vehicles, drivers and passengers both. Drive thru daiquiri shops stay legal only by sealing the cup with a lid and taping over the straw hole, so the moment you punch the straw in while parked, you have an open container. Walk, do not drive. And carry small bills, the older bars and the daiquiri windows move faster on cash, and a dollar in the tip jar reliably buys you a better second round.
+
+::infographic go-cup-law
+
+## A quick cocktail history detour
+
+If the drinks themselves grab you, the city has built a temple to them. The [Sazerac House](https://www.sazerachouse.com/) at 101 Magazine Street is a free, six floor cocktail museum and working distillery with exhibits, demos, and a paid tasting tour. Start here on your first afternoon, the free floors hand you the whole backstory before you have spent a dollar, and every drink that follows tastes like you are in on the joke. Every July, [Tales of the Cocktail](https://talesofthecocktail.org/) turns the Ritz-Carlton into the world's biggest cocktail festival, running July 19 to 24 in 2026 for its 24th year. And year round, small group cocktail walking tours move through the historic bars so a guide can pour the history with the Sazerac.
+
+## Where to stay so you can walk to all of it
+
+Here is the quiet advantage of New Orleans bar hopping, the best bars are inside the best hotels, so where you sleep is where you drink. The Carousel Bar is in Hotel Monteleone. The Sazerac Bar is in The Roosevelt. The rooftop Hot Tin sits atop the Pontchartrain Hotel in the Garden District, and the Davenport Lounge is inside the Ritz-Carlton on Canal Street.
+
+Two of those are worth a special trip even if you sleep elsewhere. Hot Tin is the sunset move, a converted penthouse with a near-270-degree view of the river and downtown, built to look like a 1940s artist's loft and best with a glass of champagne in hand. The Davenport Lounge is the dressed up nightcap, named for resident trumpeter Jeremy Davenport, who has played the room for 25 years and still lives in the building. Live jazz runs Wednesday through Saturday, and the house drink is a Davenportini.
+
+For a first trip, **stay in the French Quarter or the adjacent CBD**, where you can walk to the historic icons, roll home from Frenchmen Street, and never need a car.
+
+::infographic nola-hotel-bars
+
+Here are three well located places in the Quarter to start, and you can compare the rest on our [New Orleans hotels](/hotels/neworleans) page.
+
+::hotel lp6583c58d
+
+::hotel lp1da18
+
+::hotel lp1c186
+
+When you book with us the price you see is the all in price, the hotel's rate plus our one small flat fee, the same for every shopper, with no resort fee surprise at the desk. For more on picking an area, our [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) guide breaks the neighborhoods down, and our [French Quarter](/blog/french-quarter-new-orleans) and [Frenchmen Street](/blog/frenchmen-street-new-orleans) guides cover the two districts most of these bars live in.
+`,
+  },
+  {
     slug: "resort-fees-explained",
     title: "Resort Fees, Explained: What They Are, the FTC Rule, and How to Avoid Them",
     seoTitle: "Resort Fees Explained: Costs, the FTC Rule, How to Avoid",
