@@ -41,11 +41,11 @@ for (const f of slopFiles) run(`ai-slop · ${f}`, `node scripts/blog/ai-slop-che
 run("claims-integrity", "node scripts/blog/claims-check.mjs");
 // 3) Prose style (owner voice: no dashes, no colons/semicolons in prose, no contractions). SHARED
 // engine now (the local copy had drifted) so the rule is IDENTICAL to HP. (2026-06-29)
-run("prose-style", "node ../blog-system/scripts/style-clean.mjs --all");
+run("prose-style", "node scripts/blog/style-clean.mjs --all");
 // 3a) Infographics text — same human style (native-visual prose is customer-facing). UNIFORM with HP.
-run("prose-style · infographics", "node ../blog-system/scripts/style-clean.mjs --ig");
+run("prose-style · infographics", "node scripts/blog/style-clean.mjs --ig");
 // 3b) No duplicate slugs (silent route collision) — UNIFORM shared gate.
-run("dup-slugs", "node ../blog-system/scripts/check-dup-slugs.mjs");
+run("dup-slugs", "node scripts/blog/check-dup-slugs.mjs");
 // 4) Structural HTML audit (JSON-LD BlogPosting+BreadcrumbList, canonical, img alt) — UNIFORM with HP. Build-gated.
 if (fs.existsSync(".next/server/app/blog")) run("html audit (.next)", "node scripts/blog/audit-html.mjs");
 else console.log("▶ html audit … skipped (no .next — run after build)");
