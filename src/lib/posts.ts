@@ -4648,7 +4648,7 @@ Here is our part of the bill, in plain English, you pay what the hotel charges u
 
 **The Golden Gate Bridge is about three miles from downtown**, an easy bus, bike or rideshare from the Marina (closest), Fisherman's Wharf, or Union Square, no neighborhood puts you at its foot, but the Marina gets you nearest.
 
-Whichever area wins, the price you book here is the same one everyone else sees, no surveillance pricing, no fake "deal," no fee waiting at the end. Browse the full [San Francisco hotels hub](/hotels/sanfrancisco) for every property, and if California has you planning more, our guide to [where to stay in Santa Barbara](/blog/where-to-stay-in-santabarbara) is the next stop down the coast.
+Whichever area wins, the price you book here is the same one everyone else sees, [no surveillance pricing](/blog/surveillance-pricing), no fake "deal," no fee waiting at the end. Browse the full [San Francisco hotels hub](/hotels/sanfrancisco) for every property, and if California has you planning more, our guide to [where to stay in Santa Barbara](/blog/where-to-stay-in-santabarbara) is [the next stop down the coast](/blog/where-to-stay-in-santabarbara).
 
 ::cta San Francisco
 `,
@@ -5076,7 +5076,7 @@ Here is how far the beaches, the airport and the main day trips sit from a downt
 | Savannah airport (SAV) | ~13 mi | ~20 min |
 | Bonaventure Cemetery | ~4 mi | ~10 min |
 | Tybee Island beach | ~18 mi | ~30 min |
-| Charleston, SC | ~110 mi | ~2 hr |
+| [Charleston, SC](/blog/where-to-stay-in-charleston) | ~110 mi | ~2 hr |
 
 **The move:** base where you can walk, drive for the rest · **Best for:** everyone planning the trip · **Watch:** downtown parking is the real headache.
 
@@ -5143,7 +5143,7 @@ Once you have matched an area to your trip, here are real, well reviewed Savanna
 | Andaz Savannah | Ellis Square | 9.0 | Central boutique |
 | Embassy Suites Historic District | Historic District | 9.0 | Family suites |
 
-Whichever area wins, the price you book here is the same one everyone else sees, no surveillance pricing, no fake "deal," no fee waiting at the end. Planning more of the South? Our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) breaks down the Big Easy the same way.
+Whichever area wins, the price you book here is the same one everyone else sees, no surveillance pricing, no fake "deal," no fee waiting at the end. Planning more of the South? Our guide to [where to stay in New Orleans](/blog/where-to-stay-in-neworleans) breaks down [the Big Easy](/blog/where-to-stay-in-neworleans) the same way.
 
 ::cta Savannah
 `,
@@ -5206,7 +5206,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
 
 Below are the real, bookable hotels in each area, then the honest neighborhood guide to where to stay in Charleston, South Carolina, as of 2026.
 
-Charleston spreads from a dense, walkable downtown peninsula across the rivers to Mount Pleasant and the barrier island beaches, so picking a base is mostly about whether you want to walk to dinner among the history, or wake up near the sand.
+Charleston spreads from a dense, walkable downtown peninsula across the rivers to Mount Pleasant and the [barrier island beaches](/blog/where-to-stay-in-galveston), so picking a base is mostly about whether you want to walk to dinner among the history, or wake up near the sand.
 
 ## Best Areas to Stay in Charleston, at a Glance
 
@@ -5281,7 +5281,7 @@ It is the practical, friendlier priced base for a family or a longer stay, with 
 
 ## The Beaches: Isle of Palms, Sullivan's Island and Folly Beach
 
-**Charleston's beaches sit on the barrier islands about 20 minutes from downtown, and each has its own personality.** Isle of Palms is the developed, family friendly one, with shops and dining on Palm Boulevard and the Wild Dunes Resort and its golf courses anchoring the north end (it books direct). Sullivan's Island is the quieter, upscale neighborhood next door, with a historic lighthouse and a handful of great restaurants. And Folly Beach, "the Edge of America," is the laid back surf town south of the city, known for its waves and its pier.
+**Charleston's beaches sit on the barrier islands about 20 minutes from downtown, and each has its own personality.** Isle of Palms is the developed, family friendly one, with shops and dining on Palm Boulevard and the Wild Dunes Resort and its golf courses anchoring the north end (it books direct). Sullivan's Island is the quieter, upscale neighborhood next door, with a historic lighthouse and a handful of great restaurants. And Folly Beach, "the Edge of America," is the [laid back surf town](/blog/where-to-stay-in-keywest) south of the city, known for its waves and its pier.
 
 Staying on the islands trades downtown's history for sand and surf, and you will want a car for both the beach and the city. For a beach first Charleston trip with the history as a day trip, it is the call.
 
@@ -5380,7 +5380,7 @@ Once you have matched an area to your trip, here are real, well reviewed Charles
 | Cambria | Mount Pleasant | 9.2 | Families, value |
 | Comfort Suites | Isle of Palms | 9.0 | Near the beach |
 
-Whichever area wins, the price you book here is the same one everyone else sees, no surveillance pricing, no fake "deal," no fee waiting at the end.
+Whichever area wins, the price you book here is the same one everyone else sees, no [surveillance pricing](/blog/surveillance-pricing), no fake "deal," no fee waiting at the end.
 
 ::cta Charleston
 `,
@@ -5550,9 +5550,9 @@ For a retro, walkable to downtown alternative, the Marion Motor Lodge restores a
 
 ## Lincolnville: Historic Character Off the Tourist Trail
 
-**Lincolnville is where to stay in Saint Augustine for old city architecture without the crowds, the Victorian neighborhood just southwest of the tourist core.** Founded by freed slaves after the Civil War, it became the heart of Saint Augustine's civil rights movement in the 1960s, and today its blocks of restored gingerbread trimmed homes hold a handful of bed and breakfasts, a brewery and a quieter, more local feel a short walk or bike from the fort.
+**Lincolnville is where to stay in Saint Augustine for old city architecture without the crowds, the [Victorian neighborhood](/blog/where-to-stay-in-galveston) just southwest of the tourist core.** Founded by freed slaves after the Civil War, it became the heart of Saint Augustine's civil rights movement in the 1960s, and today its blocks of restored gingerbread trimmed homes hold a handful of bed and breakfasts, a brewery and a quieter, more local feel a short walk or bike from the fort.
 
-It suits travelers who want the history and the colonial era architecture of the old city but a calmer night, and these areas tend to run friendlier rates than the St. George Street core. You are close enough to walk into the action, far enough to actually sleep, and right beside some of the best preserved 19th-century streets in Florida.
+It suits travelers who want the history and the colonial era architecture of the old city but a calmer night, and these areas tend to run friendlier rates than the St. George Street core. You are close enough to walk into the action, far enough to actually sleep, and right beside some of the [best preserved 19th-century streets in Florida](/blog/where-to-stay-in-keywest).
 
 [Search Lincolnville and historic St. Augustine stays](/search?destination=St.%20Augustine&adults=2)
 
@@ -5882,7 +5882,7 @@ The historic Old Town plaza anchors it, with the Albuquerque Museum and the **Ne
 
 ### The Sandia Peak Tramway and the Foothills
 
-The signature outdoor outing is the **Sandia Peak Tramway**, one of the longest aerial tramways in the world, which climbs from the foothills to a 10,378-foot summit with views over 11,000 square miles of high desert. At sunset the granite turns the watermelon pink that gave the Sandias their name, sandía is Spanish for watermelon, and people time the ride up to catch it. The same foothills hold miles of hiking and biking trails, and in winter there is skiing at the top, base in Uptown or the Heights to reach the tram quickest.
+The signature outdoor outing is the **Sandia Peak Tramway**, one of the longest aerial tramways in the world, which climbs from the foothills to a 10,378-foot summit with views over 11,000 square miles of high desert. At sunset the granite turns the watermelon pink that gave the Sandias their name, sandía is Spanish for watermelon, and people time the ride up to catch it. The same foothills hold miles of hiking and biking trails, and in winter there is [skiing at the top](/blog/where-to-stay-in-flagstaff), base in Uptown or the Heights to reach the tram quickest.
 
 ### Petroglyphs and Taylor Ranch on the West Side
 
@@ -5945,7 +5945,7 @@ Spring (April and May) is the quieter, cheaper twin, mild and clear before the s
 
 A few travel tips for the choices here, at a mile high the sun is strong, so a pool with shade is worth more than it sounds. Parking is easy and usually free outside Downtown, so a car friendly hotel helps. And if the Balloon Fiesta is the point of the trip, a location near the launch field beats everything else. Whatever you pick, the guest scores below are real, use them, and book the area first.
 
-**Albuquerque is one of the better value Southwest cities, and the gap between areas is modest, except in October.** The different areas offer a real range, luxury adobe and boutique inns at the top, solid midrange rooms in Nob Hill and Uptown, and genuine budget value out by the airport. Old Town and the Downtown historic hotels sit at the top, Nob Hill and Uptown fall in the middle, and the airport and freeway chains run cheapest, but the city stays affordable across the board for the Southwest, and for New Mexico. The one thing that overrides all of it is the Fiesta, when every rate in town jumps.
+**Albuquerque is one of the better value [Southwest cities](/blog/where-to-stay-in-tucson), and the gap between areas is modest, except in October.** The different areas offer a real range, luxury adobe and boutique inns at the top, solid midrange rooms in Nob Hill and Uptown, and genuine budget value out by the airport. Old Town and the Downtown historic hotels sit at the top, Nob Hill and Uptown fall in the middle, and the airport and freeway chains run cheapest, but the city stays affordable across the board for the Southwest, and for New Mexico. The one thing that overrides all of it is the Fiesta, when every rate in town jumps.
 
 Outside of Fiesta week, midweek and the spring shoulder bring the best value. Prices move daily, so the only honest number is the live one, search your exact dates rather than trusting a stamped figure from a blog.
 
@@ -5983,7 +5983,7 @@ Once you have matched an area to your trip, here are real, well reviewed Albuque
 | The Monterey Motel | Route 66 | 9.0 | Neon road-trip vibe |
 | Sheraton Uptown | Uptown | 8.7 | Shopping, business |
 
-Whichever area wins, the price you book here is the same one everyone else sees, no surveillance pricing, no fake "deal," no fee waiting at the end. If New Mexico's high desert has you planning a wider loop, our guide to [where to stay in Sedona](/blog/where-to-stay-in-sedona) is the next red rock stop west.
+Whichever area wins, the price you book here is the same one everyone else sees, no [surveillance pricing](/blog/surveillance-pricing), no fake "deal," no fee waiting at the end. If New Mexico's high desert has you planning a wider loop, our guide to [where to stay in Sedona](/blog/where-to-stay-in-sedona) is the next red rock stop west.
 
 ::cta Albuquerque
 `,
@@ -6050,7 +6050,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
         a: "Four broad types, full service resorts (the Grand Hyatt and Sheraton at Poipu, 1 Hotel Hanalei Bay up north), condos and vacation rentals with kitchens (the island's quiet majority and the value pick for families and longer trips), beachfront and value hotels, and a small number of budget hotels. Resorts cluster on the South Shore and in Princeville. Condos and rentals are everywhere, especially the East Side. And there is very little inventory of any kind on the remote West Side.",
       },
     ],
-    body: `**Where to stay in Kauai comes down to the sunny South Shore around Poipu** if it is your first trip, the rain fed, jungle green North Shore around Princeville and Hanalei if you came for the scenery, or the East Side if you want a central, better value base. The oldest and greenest of the main Hawaiian islands wears its nickname, the Garden Isle, honestly, and picking a base is mostly about how much sun, scenery or value you want to wake up to.
+    body: `**Where to stay in Kauai comes down to the sunny South Shore around Poipu** if it is your first trip, the rain fed, jungle green North Shore around Princeville and Hanalei if you came for the scenery, or the East Side if you want a central, better value base. The oldest and greenest of the [main Hawaiian islands](/blog/where-to-stay-in-maui) wears its nickname, the Garden Isle, honestly, and picking a base is mostly about how much sun, scenery or value you want to wake up to.
 
 Below are the real, bookable hotels in each area, then the honest travel guide to where to stay in Kauai, Hawaii, as of 2026.
 
@@ -6289,7 +6289,7 @@ Here is how far the main areas and sights sit from a central East Side base,
 
 ## What a Night in Kauai Costs
 
-**Kauai is one of the pricier Hawaiian islands to sleep on, it is small, remote and resort heavy, with little budget inventory.** Expect to pay more here than on Oahu for a comparable room, including taxes and the resort fees many properties add, and the cost climbs the closer you get to the sand. The North Shore and the Poipu resorts sit at the top, the East Side runs less expensive, and Lihue and the condos are where the value is. Rates rise in the dry summer and over the holidays and dip in the wetter, quieter shoulders.
+**Kauai is one of the pricier Hawaiian islands to sleep on, it is small, remote and resort heavy, with little budget inventory.** Expect to pay more here than [on Oahu](/blog/where-to-stay-in-oahu) for a comparable room, including taxes and the resort fees many properties add, and the cost climbs the closer you get to the sand. The North Shore and the Poipu resorts sit at the top, the East Side runs less expensive, and Lihue and the condos are where the value is. Rates rise in the dry summer and over the holidays and dip in the wetter, quieter shoulders.
 
 Outside of peak summer and the holidays, the spring and fall shoulders and a midweek stay bring the best value, and a condo with a kitchen on the East Side cuts the food bill on an island where dinner adds up. Prices move daily, so the only honest number is the live one, search your exact dates rather than trusting a stamped figure from a travel site.
 
@@ -6626,7 +6626,7 @@ Outside of Fiesta and convention weekends, midweek and the spring and fall shoul
 
 ::infographic how-pricing-works
 
-Here is our part of the bill, in plain English, you pay what the hotel charges us, plus one small flat fee, the same fee for everyone, never set from your device or your search history. The price you see is all in and shown up front, with nothing waiting to pounce on the last screen.
+Here is our part of the bill, in plain English, you pay what the hotel charges us, plus one small flat fee, the same fee for everyone, [never set from your device or your search history](/blog/surveillance-pricing). The price you see is all in and shown up front, with nothing waiting to pounce on the last screen.
 
 ::priceproof
 
@@ -6670,7 +6670,7 @@ Once you have matched an area to your trip, here are real, well reviewed San Ant
 | Hotel Valencia Riverwalk | River Walk | 9.1 | Design-forward boutique |
 | Omni La Mansion del Rio | River Walk | 9.0 | Romantic, Spanish-colonial |
 
-Whichever of the neighborhoods mentioned here wins, the price you book on any San Antonio hotel is the same one everyone else sees, no surveillance pricing, no fake "deal," no fee waiting at the end. You might pay more for the river and less for the suburbs, but the flat fee never changes. If Texas has you planning a wider loop, our guide to [where to stay in Galveston](/blog/where-to-stay-in-galveston) is the next stop, an hour past Houston on the Gulf.
+Whichever of the neighborhoods mentioned here wins, the price you book on any San Antonio hotel is the same one everyone else sees, [no surveillance pricing](/blog/surveillance-pricing), no fake "deal," no fee waiting at the end. You might pay more for the river and less for the suburbs, but the flat fee never changes. If Texas has you planning a wider loop, our guide to [where to stay in Galveston](/blog/where-to-stay-in-galveston) is the next stop, [an hour past Houston on the Gulf](/blog/where-to-stay-in-galveston).
 
 ::cta San Antonio
 `,
@@ -6729,7 +6729,7 @@ Whichever of the neighborhoods mentioned here wins, the price you book on any Sa
         a: "It is sediment, not pollution, the Mississippi and other rivers pour silt into the Gulf, and Galveston's shallow, stirred up shoreline near the bay keeps the water a muddy green brown. It is perfectly swimmable. For clearer blue water, locals drive to the West End beaches or down the coast.",
       },
     ],
-    body: `**Where to stay in Galveston comes down to the Seawall** if you want the beach out your door, or the historic Strand if you came for the Victorian downtown and the harbor. This Gulf barrier island an hour southeast of Houston wears its history on its sleeve, a grand turn of the century coastal resort town that survived the deadliest hurricane in American memory and rebuilt behind a ten mile seawall.
+    body: `**Where to stay in Galveston comes down to the Seawall** if you want the beach out your door, or the historic Strand if you came for the Victorian downtown and the harbor. This [Gulf barrier island](/blog/where-to-stay-in-keywest) an hour southeast of Houston wears its history on its sleeve, a grand turn of the century coastal resort town that survived the deadliest hurricane in American memory and rebuilt behind a ten mile seawall.
 
 Below are the real, bookable hotels in each area, then the honest neighborhood guide to where to stay in Galveston, Texas, as of 2026.
 
@@ -6760,7 +6760,7 @@ The trade is that this is the busy, built up side of the island, and the closest
 
 ### Holiday Inn Resort, Hotel Lucine and the Beach Hotels
 
-The Seawall hotels range from full beachfront resorts to restored mid century motels, with the landmark San Luis Resort and a Hilton anchoring the high end, both book direct, and a long row of beach hotels you can price right here alongside them. The Holiday Inn Resort sits right on the beach with a pool deck and easy Pleasure Pier access. Hotel Lucine is the design forward pick, a reimagined 1960s motor inn with a rooftop bar and a great restaurant a block off the sand.
+The Seawall hotels range from [full beachfront resorts](/blog/where-to-stay-in-maui) to restored mid century motels, with the landmark San Luis Resort and a Hilton anchoring the high end, both book direct, and a long row of beach hotels you can price right here alongside them. The Holiday Inn Resort sits right on the beach with a pool deck and easy Pleasure Pier access. Hotel Lucine is the design forward pick, a reimagined 1960s motor inn with a rooftop bar and a great restaurant a block off the sand.
 
 ::hotel lp247dd
 
@@ -6806,7 +6806,7 @@ Many island hotels bundle a pre cruise night with parking for the length of your
 
 ## Moody Gardens and the West End: Family Stays and Beach Houses
 
-**The West End is where to stay in Galveston for families and a quieter, greener island, home to Moody Gardens, the state park and miles of Galveston's quieter beaches and beach houses.** This is the residential, lower key half of the island, where the crowds thin, the water runs clearer and locals outnumber tourists, and the lodging skews toward resorts and vacation rentals with room to spread out.
+**The West End is where to stay in Galveston for families and a quieter, greener island, home to Moody Gardens, the state park and miles of Galveston's quieter beaches and beach houses.** This is the residential, lower key half of the island, where the crowds thin, the water runs clearer and locals outnumber tourists, and the lodging skews toward resorts and [vacation rentals](/blog/where-to-stay-in-kauai) with room to spread out.
 
 Moody Gardens, with its rainforest and aquarium pyramids, anchors a family trip of coastal activities, and its hotel keeps the attractions and a golf course right there. Farther west, the beach houses suit a longer stay or a big group.
 
@@ -7015,7 +7015,7 @@ A private vacation rental earns its keep for a snowbird month, a family reunion 
 
 ## What a Night in Tucson Actually Costs
 
-**Tucson is one of the better value desert cities, and that is part of the appeal.** Downtown boutiques and midtown chains generally run midrange, the airport and south side hotels run cheapest, and only the Catalina Foothills resorts climb toward Scottsdale money, and even then, usually for less than Phoenix's big resorts.
+**Tucson is one of the better value desert cities, and that is part of the appeal.** Downtown boutiques and midtown chains generally run midrange, the airport and south side hotels run cheapest, and only the Catalina Foothills resorts climb toward [Scottsdale money](/blog/where-to-stay-in-scottsdale), and even then, usually for less than Phoenix's big resorts.
 
 The catch is the calendar, winter and the February Gem Show are the peak, priciest time, while the summer heat brings the year's lowest rates. Prices move daily, so the only honest number is the live one, search your exact dates rather than trusting a stamped figure from a blog.
 
@@ -7044,7 +7044,7 @@ Save midtown for a central, value minded base near the University, and the airpo
 | Wyndham Tucson Airport | Airport | 10.0 | Convenient, cheap |
 | Red Roof Inn South | Airport | 9.6 | Cheapest clean room |
 
-Whichever area wins, the price you book here is the same one everyone else sees, no surveillance pricing, no fake "deal," no fee waiting at the end.
+Whichever area wins, the price you book here is the same one everyone else sees, no [surveillance pricing](/blog/surveillance-pricing), no fake "deal," no fee waiting at the end.
 
 ::cta Tucson
 `,
@@ -7447,7 +7447,7 @@ Save the Riviera and Montecito for a celebration or a return trip, and Goleta fo
 | The Upham Hotel | Downtown | 9.0 | Historic, walkable |
 | Residence Inn | Goleta | 8.9 | Value, suites |
 
-Whichever area wins, the price you book here is the same one everyone else sees, no surveillance pricing, no fake "deal," no fee waiting at the end. Heading up the coast to the city? Our guide to [where to stay in San Francisco](/blog/where-to-stay-in-sanfrancisco) breaks down its neighborhoods the same way.
+Whichever area wins, the price you book here is the same one everyone else sees, no [surveillance pricing](/blog/surveillance-pricing), no fake "deal," no fee waiting at the end. Heading [up the coast](/blog/where-to-stay-in-sanfrancisco) to the city? Our guide to [where to stay in San Francisco](/blog/where-to-stay-in-sanfrancisco) breaks down its neighborhoods the same way.
 
 ::cta Santa Barbara
 `,
@@ -7534,7 +7534,7 @@ Five areas, one deciding factor, how much you will pay in noise and rate to walk
 
 ## Old Town: the Walkable Heart of Key West
 
-**Old Town is where most people should stay in Key West, the historic, walkable west end where you can leave the car parked and forget it.** This is downtown Key West, gas lamp lanes, tin roofed conch houses and one way streets packing Duval, Mallory Square and the island's headline attractions, the Hemingway House, the Truman Little White House, the Southernmost Point buoy, into a grid you can cross on foot.
+**Old Town is where most people should stay in Key West, the historic, walkable west end where you can leave the car parked and forget it.** This is downtown Key West, [gas lamp lanes](/blog/where-to-stay-in-staugustine), tin roofed conch houses and one way streets packing Duval, Mallory Square and the island's headline attractions, the Hemingway House, the Truman Little White House, the Southernmost Point buoy, into a grid you can cross on foot.
 
 The trade is the obvious one, you are paying for the most in demand square mile in the Keys, and the historic properties here lean boutique, not budget. You also share the sidewalks with the town's famous wild roosters, who keep their own hours and answer to no one.
 
@@ -7586,7 +7586,7 @@ That fort is the headline, Fort Zach has the best swimming beach in Key West, wi
 
 **New Town and neighboring Stock Island are where to stay in Key West for a bigger room, a real pool and a lower nightly rate, if you do not mind a bike or a short drive to Duval.** New Town is the east half of the island, home to the chains, the resorts, Smathers Beach (the long public one), the airport and most of the island's parking. Stock Island, one bridge northeast, is the working waterfront, boat slips, galleries and a couple of design forward properties without the Old Town crowds.
 
-You give up the walk to Duval magic. You get more space for the money, beachfront mornings and, in places, real ocean views. Rent a bike or scooter and the 10-minute ride into Old Town stops feeling like a commute and starts feeling like the best part of the day.
+You give up the walk to Duval magic. You get more space for the money, [beachfront mornings and, in places, real ocean views](/blog/where-to-stay-in-maui). Rent a bike or scooter and the 10-minute ride into Old Town stops feeling like a commute and starts feeling like the best part of the day.
 
 ### Margaritaville Beach House and Havana Cabana
 
@@ -7830,13 +7830,13 @@ One timing note, Telluride has two peak seasons. Winter brings skiing, with Chri
 
 ## Getting to Telluride: Montrose, the Regional Airport, or the Drive
 
-**Half of planning a Telluride trip is just getting there, it is gloriously, deliberately remote.** There are three ways in. The easiest is to fly into Montrose Regional Airport, about an hour and a half away by car, which has the most flights and the most reliable weather. You can also fly into the tiny Telluride Regional Airport, the highest commercial airport in the country, perched on a mesa above town, spectacular, but flights cancel for weather often enough that locals treat it as a coin flip. The third way is the drive, roughly six and a half hours from Denver, or about five from Albuquerque, over some of the prettiest mountain passes in the Rockies.
+**Half of planning a Telluride trip is just getting there, it is gloriously, deliberately remote.** There are three ways in. The easiest is to fly into Montrose Regional Airport, about an hour and a half away by car, which has the most flights and the most reliable weather. You can also fly into the tiny Telluride Regional Airport, the highest commercial airport in the country, perched on a mesa above town, spectacular, but flights cancel for weather often enough that locals treat it as a coin flip. The third way is the drive, roughly six and a half hours from Denver, or about five from [Albuquerque](/blog/where-to-stay-in-albuquerque), over some of the prettiest mountain passes in the Rockies.
 
 Plan the lodging around the arrival. If you are flying into Montrose and the weather turns, you may land late and tired, so a town hotel near the gondola beats a down valley rental for the first night. And if your trip is built around a festival, Bluegrass in June, the Telluride Film Festival over Labor Day, Blues & Brews in September, book the moment dates are announced, because both the town and Mountain Village sell out for festival weeks and the prices climb with demand.
 
 ## Do You Need a Car in Telluride?
 
-**No, Telluride is one of the rare mountain towns you can do car free.** The town is walkable, the gondola is free, and both bases have restaurants and lifts within reach. A car helps only if you are flying into Montrose, an hour and a half away, or planning day trips. In town, parking is tight and you will not miss it.
+**No, Telluride is one of the [rare mountain towns](/blog/where-to-stay-in-bend) you can do car free.** The town is walkable, the gondola is free, and both bases have restaurants and lifts within reach. A car helps only if you are flying into Montrose, an hour and a half away, or planning day trips. In town, parking is tight and you will not miss it.
 
 ::map Telluride
 
@@ -7886,7 +7886,7 @@ A timber lodge and cabins on the Mountain Village side with an outdoor pool and 
 
 **Whatever base you choose, the price you see from us is the rate plus one small, flat fee, the same for everyone, never shaped by your device, location or history.** That is the opposite of [surveillance pricing](/blog/surveillance-pricing), where two people pricing the same Telluride hotel can be shown two different numbers.
 
-So weighing the town against Mountain Village is a fair comparison, no fake discounts, no "1 room left" pressure, just the honest, all in number on any device. Comparing Telluride with somewhere warmer? See our other [where to stay guides](/blog), like [Maui](/blog/where-to-stay-in-maui).
+So weighing the town against Mountain Village is a fair comparison, no fake discounts, no "1 room left" pressure, just the honest, all in number on any device. Comparing Telluride with [somewhere warmer](/blog/where-to-stay-in-keywest)? See our other [where to stay guides](/blog), like [Maui](/blog/where-to-stay-in-maui).
 
 ::priceproof`,
   },
@@ -7974,7 +7974,7 @@ The big shows, Dolly Parton's Stampede, the Sight & Sound Theatre, sit on it or 
 
 ### Strip Hotels: Lodge of the Ozarks and the Show-District Brands
 
-Strip hotels compete on the amenities families actually use, including indoor and outdoor pools, free breakfast and arcades. A few even hide an indoor water park, for the afternoon the Ozark weather turns on you. The best reviewed of them, the Lodge of the Ozarks, sits right in the entertainment district, with a deep bench of dependable national brand hotels around it.
+Strip hotels compete on the amenities families actually use, including indoor and outdoor pools, free breakfast and arcades. A few even hide an [indoor water park](/blog/where-to-stay-in-wisconsindells), for the afternoon the Ozark weather turns on you. The best reviewed of them, the Lodge of the Ozarks, sits right in the entertainment district, with a deep bench of dependable national brand hotels around it.
 
 ::hotel lp40c1a
 
@@ -8044,7 +8044,7 @@ The neighbourhood mixes vacation condos (you book those direct) with dependable 
 
 ## Big Cedar Lodge: The Splurge South of Town
 
-**Big Cedar Lodge is not in Branson, and that is the entire point.** Ten miles south in Ridgedale, it is the Ozarks' marquee luxury lake resort, stone lodges and cabins, championship golf, a spa and restaurants spread across a bluff over Table Rock Lake.
+**Big Cedar Lodge is not in Branson, and that is the entire point.** Ten miles south in Ridgedale, it is the Ozarks' marquee luxury lake resort, stone lodges and cabins, [championship golf](/blog/where-to-stay-in-scottsdale), a spa and restaurants spread across a bluff over Table Rock Lake.
 
 It is a destination, not a base, so you will drive in for shows. But if the whole trip is the splurge, this is the unforgettable one.
 
@@ -8156,7 +8156,7 @@ Once you have picked your side of town, [search current Branson prices](/search?
       "Downtown strip or the waterpark side? A plain English guide to picking your Wisconsin Dells base, by area, budget and the trip you are taking.",
     tldr: {
       answer:
-        "Wisconsin Dells splits in two, downtown Dells, the walkable historic strip on the river, and Lake Delton, the village just south where the waterparks and big resorts sit. Pick downtown for a no car, first timer trip. Pick Lake Delton to be next to the parks. The famous mega resorts (Kalahari, Wilderness, Great Wolf) book direct, the hotels you can actually book are the brands and motels around them.",
+        "Wisconsin Dells splits in two. Downtown Dells is the walkable historic strip on the river. Lake Delton, just south, holds the waterparks and big resorts. Pick downtown for a no car first trip, Lake Delton to be next to the parks. The mega resorts (Kalahari, Wilderness, Great Wolf) book direct.",
       points: [
         "**Downtown Dells**, the walkable strip on the Wisconsin River. First timers, no car needed.",
         "**Lake Delton**, the village by the waterparks, go karts and the lake. Families and the parks.",
@@ -9351,7 +9351,7 @@ Once you have picked your side of town, [check current Estes Park prices](/searc
       "Central downtown or a red rock river ranch? A plain English guide to picking your Moab base, by area, budget, and how close you want to be to Arches, Canyonlands and the Slickrock trails.",
     tldr: {
       answer:
-        "Moab is the basecamp between two national parks, Arches is five minutes north, Canyonlands about forty, plus the Slickrock mountain biking and Colorado River rafting that made it famous. Stay downtown to walk to the restaurants and sit central to everything. Stay out on Highway 128 for a red rock river resort. Spring and fall are the seasons. Summer is brutally hot.",
+        "Moab is the basecamp between two national parks. Arches sits five minutes north, Canyonlands about forty, plus Slickrock mountain biking and Colorado River rafting. Stay downtown to walk to restaurants and sit central. Stay on Highway 128 for a red rock river resort. Visit spring or fall. Summer is brutally hot.",
       points: [
         "**Downtown Moab**, Main Street, walkable to restaurants and breweries, minutes from Arches.",
         "**Near Arches (north end)**, the brand hotels closest to the park gate, for early starts.",
@@ -9529,7 +9529,7 @@ The closest thing to a luxury hotel downtown, a Curio Collection property with a
 
 ## What to Do from Your Moab Base
 
-**Where you stay in Moab is really a question of what you are here to do.** Arches National Park, with Delicate Arch and the Windows, is five minutes north, close enough for a sunrise hike before breakfast. Canyonlands National Park's Island in the Sky, all canyon rim overlooks and 360-degree views, is about forty minutes out, with Dead Horse Point State Park on the way, and the quieter Needles district of Canyonlands National Park further south for a longer day of hiking, cycling and four wheeling. The Slickrock Trail and the Moab Brand Trails put the mountain biking that made Moab famous minutes from town, and the Colorado River runs rafting trips from gentle float to real whitewater. Add the 4x4 routes near Moab, the dark sky stargazing and the Hollywood-Western scenery, and the bigger road trips to Monument Valley and the rest of southern Utah's parks, and the only real planning question is how early you will start to beat the heat. A central base keeps all of it, both nearby national parks, the trails and the river, within a short drive, the whole Utah desert at your door and some of the darkest skies in the developed world overhead.
+**Where you stay in Moab is really a question of what you are here to do.** Arches National Park, with Delicate Arch and the Windows, is five minutes north, close enough for a sunrise hike before breakfast. Canyonlands National Park's Island in the Sky, all canyon rim overlooks and 360-degree views, is about forty minutes out, with Dead Horse Point State Park on the way, and the quieter Needles district of Canyonlands National Park further south for a longer day of hiking, cycling and four wheeling. The Slickrock Trail and the Moab Brand Trails put [the mountain biking that made Moab famous](/blog/where-to-stay-in-bend) minutes from town, and the Colorado River runs rafting trips from gentle float to real whitewater. Add the 4x4 routes near Moab, the dark sky stargazing and the Hollywood-Western scenery, and the bigger road trips to Monument Valley and the rest of southern Utah's parks, and the only real planning question is how early you will start to beat the heat. A central base keeps all of it, both nearby national parks, the trails and the river, within a short drive, the whole Utah desert at your door and some of the darkest skies in the developed world overhead.
 
 ## Getting to Moab, and When to Go
 
@@ -9543,7 +9543,7 @@ One practical note that is really a safety note, in summer, Moab is not a place 
 
 **Whatever base you choose, the price you see from us is the rate plus one small, flat fee, the same for everyone, never shaped by your device, location or history.** That is the opposite of [surveillance pricing](/blog/surveillance-pricing), where two people pricing the same Moab hotel can be shown two different numbers.
 
-Comparing Moab with another red rock or mountain trip? See our other [where to stay guides](/blog), like [Estes Park](/blog/where-to-stay-in-estespark).
+Comparing Moab with [another red rock](/blog/where-to-stay-in-sedona) or [mountain trip](/blog/where-to-stay-in-telluride)? See our other [where to stay guides](/blog), like [Estes Park](/blog/where-to-stay-in-estespark).
 
 ::priceproof
 
@@ -10032,7 +10032,7 @@ And shop before you are desperate, a model reads a frantic, last day search very
 
 Now the honest part, twice over. First, these are band aids, a determined model can still fingerprint your device or match you by login, so a clean private window is no guarantee.
 
-Second, you should not have to do any of this. Stripping your own data, opening incognito, and routing through a VPN turns booking a hotel into a low budget heist, and most people, reasonably, will not bother.
+Second, you should not have to do any of this. Stripping your own data, opening incognito, and routing through a VPN turns [booking a hotel](/blog/where-to-stay-in-kauai) into a low budget heist, and most people, reasonably, will not bother.
 
 The real fix is not a browser trick. It is buying from a seller that does not price you in the first place.
 
@@ -10052,7 +10052,7 @@ You can check our work, which is the point. Open a stay on your laptop, then ope
 
 We are not promising the lowest headline rate on the internet, the hotel sets its own base rate, and that still moves with demand for everyone. What we promise is the part we control, one honest, all in number, shown up front, identical for every shopper. That is [how our pricing works](/#how), and [why we built it this way](/about).
 
-Planning a real trip rather than a principle? Our guide to [where to stay in Oahu](/blog/where-to-stay-in-oahu) runs on the same honest pricing.
+[Planning a real trip](/blog/where-to-stay-in-maui) rather than a principle? Our guide to [where to stay in Oahu](/blog/where-to-stay-in-oahu) runs on the same honest pricing.
 
 And if you change one habit after reading this, before you book anything, check the price on a second device. If it matches, you have found a seller worth keeping.`,
   },
