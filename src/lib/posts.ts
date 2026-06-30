@@ -4128,6 +4128,8 @@ The Quarter is the postcard, the **first timer's pick**, and the one neighborhoo
 
 The catch is **Bourbon Street**, which runs loud and late every single night, including the ones you would hoped it would not. Book two or three blocks toward Royal, Chartres or Esplanade, and the volume drops to a civilized hum.
 
+::infographic where-to-stay-in-neworleans-bourbon-noise
+
 When people ask where to stay in New Orleans for a first trip, this is the default answer, and for good reason, nearly everything is within walking distance, including the part where you regret the third order of beignets. Spend your days the way the Quarter intends, a slow lap of Royal Street's galleries, a mule drawn carriage you will pretend you are too cool for, and a praline you buy anyway.
 
 The street musicians around Jackson Square are the real soundtrack, and they are better than half the bars that charge a cover. So pick a hotel that lets you stumble home, not commute.
@@ -4250,6 +4252,8 @@ A few habits cover the rest, keep your phone in your pocket on a crowded Bourbon
 
 For a first trip, **pick the French Quarter** and do not overthink it. For everything else, weigh your options and match the area to the trip you are actually taking, the table below is the fast version.
 
+::infographic where-to-stay-in-neworleans-pick-steps
+
 | Your trip | Best area | Why |
 |---|---|---|
 | First visit, atmosphere | French Quarter | Walkable, historic, the center of it all |
@@ -4317,6 +4321,8 @@ Walk the Quarter, but respect the sidewalks, which were last level around the Ei
 Most of the year, New Orleans is **mid priced**, a solid central room usually runs $120 to 200. But the calendar runs the show, a Mardi Gras or Jazz Fest weekend can double or triple that without blinking. Weekdays and the quiet summer weeks are where the value hides. Festival weekends are where it goes to die.
 
 Book the big events months ahead or skip them, and search your exact dates either way, a stamped number in a blog is fiction by checkout.
+
+::infographic where-to-stay-in-neworleans-price-by-area
 
 ::infographic how-pricing-works
 
@@ -4446,6 +4452,8 @@ The Beacon Grand (the grand old Sir Francis Drake, beautifully redone) is the ma
 
 This is the pick for couples and repeat visitors who want a little polish. The InterContinental Mark Hopkins crowns the hill with its Top of the Mark sky lounge. Grace Cathedral and the cable cars are at the door. And the climb back up after dinner is the city's free stairmaster. The catch is the price and the hills, pack shoes with grip, and know that "a short walk downhill" is never short coming back.
 
+::infographic where-to-stay-in-sanfrancisco-nobhill-vs-marina
+
 [See Nob Hill hotels and live rates](/search?destination=San%20Francisco&adults=2)
 
 ### The Mark Hopkins, Stanford Court and the Hilltop Hotels
@@ -4552,6 +4560,8 @@ Chinatown, the oldest in the country, sits right between Union Square, Nob Hill 
 
 For a calmer, upscale stay, Pacific Heights and adjacent Japantown offer leafy streets, grand Victorians and easy access to the Marina and the bridge, pretty and residential, if light on hotels. And if you came for the beach and Golden Gate Park, the Richmond and Sunset districts out west put you near Ocean Beach and the park's museums, with the major trade off that they are foggy, far from downtown, and the longest commute in the Bay Area's most spread out corner of the city. Most visitors who want the park and the beach base centrally and ride out for the day.
 
+::infographic where-to-stay-in-sanfrancisco-other-hoods
+
 [Search San Francisco stays near the neighborhoods you want](/search?destination=San%20Francisco&adults=2)
 
 ## Where Not to Stay in San Francisco
@@ -4560,11 +4570,15 @@ For a calmer, upscale stay, Pacific Heights and adjacent Japantown offer leafy s
 
 This is not about fear, San Francisco is, by the numbers, a safe city for visitors who use normal big city sense, and most of these blocks are more grim than dangerous. By day they are busy and fine to pass through. It is the late night walk back with luggage, and the quiet corners after dark, that you are avoiding. The difference can be a single street, a hotel on the good side of Geary or Mason is fine, one a few blocks southwest is not. Mid-Market has been slowly turning over for years, new towers beside old problems, so it really is block by block rather than a line on a map. The fix is simple, pin the exact address before you book, check the cross streets, and when a downtown rate looks too good to be true, that is usually why.
 
+::infographic where-to-stay-in-sanfrancisco-block-check
+
 [Search central San Francisco hotels by exact location](/search?destination=San%20Francisco&adults=2)
 
 ## The Best Area for Your Trip
 
 **For a first trip, choose Union Square and do not overthink it, it is the most central, walkable and connected base, with everything else a cable car away.** Pick Nob Hill for views and calm, Fisherman's Wharf for families, the Marina for a residential feel, and SoMa or the Embarcadero for a modern room near the ballpark. To help narrow the options, here is each kind of trip matched to its area.
+
+::infographic where-to-stay-in-sanfrancisco-how-to-pick
 
 | Your trip | Best area | Why |
 |---|---|---|
@@ -4944,6 +4958,8 @@ Savannah's whole historic district is the draw, so picking a base is mostly abou
 
 Five areas, one deciding factor, the walkable squares of the historic district, or value and space a short drive out. Choose the area by your trip, then the hotel, here is the whole Hostess City on one screen.
 
+::infographic where-to-stay-in-savannah-pick-base-steps
+
 | Area | The feel | Best for | The rate |
 |---|---|---|---|
 | [North Historic District](/search?destination=Savannah&adults=2) | River Street, City Market, the buzz | First-timers, nightlife, families | High |
@@ -5015,6 +5031,8 @@ The JW Marriott anchors the whole Plant Riverside District, and a little east al
 
 These neighborhoods lean toward vacation rental accommodation and small inns rather than big hotels, so they offer a longer stay or return visit base once you already know the squares. They are a 10-to-20-minute walk or a short ride from downtown, and they are where a lot of locals actually eat and drink.
 
+::infographic where-to-stay-in-savannah-local-neighborhoods
+
 ## Suites for Families and Longer Stays
 
 **For families and longer stays, Savannah's all suite Savannah Historic District hotels are the practical pick**, separate living space, a kitchenette and free breakfast, still within walking distance of the squares. The Embassy Suites sits in the heart of the historic district with its included cooked breakfast, and the Homewood Suites pairs suites with a location near the riverfront and the action.
@@ -5066,6 +5084,8 @@ River Street and City Market add the casual, lively end, seafood, restaurants an
 **The Savannah Historic District is very walkable, one of the flattest, most strollable old towns in the South.** The squares, River Street, Forsyth Park and most restaurants are all on foot, and the free DOT shuttle and the Savannah Belles Ferry loop the district and the river at no charge, so a downtown base means you can park once and leave the car.
 
 The catch is the parking, downtown garages and metered spots fill up, so a walkable base is worth more than a cheaper room you will drive in from. Tybee Island, Bonaventure and the Southside hotels all need a car, 15 to 30 minutes out.
+
+::infographic where-to-stay-in-savannah-parking-tip
 
 ::infographic savannah-getting-there
 
@@ -5518,6 +5538,8 @@ For a smaller, friendlier value stay, The Cozy Inn is a well loved budget inn on
 
 This is the family and beach day base, oceanfront hotels, condos and rentals near the Saint Augustine Beach pier, with Butler Beach and Crescent Beach to the south for quieter sands. The fishing pier, the surf shops and the seaside bars give the island its own low key scene, and Anastasia State Park's beaches and trails are right there. You will want a car, both to reach downtown and to get around the island, but you wake up steps from the ocean.
 
+::infographic where-to-stay-in-staugustine-area-snapshot
+
 [Search St. Augustine Beach and Anastasia Island stays](/search?destination=St.%20Augustine&adults=2)
 
 **The move:** book Anastasia for sand over cobblestones · **Best for:** beach days, families, quiet · **Watch:** a car is a must out here.
@@ -5563,6 +5585,8 @@ It suits travelers who want the history and the colonial era architecture of the
 **The Historic District is one of the most walkable old towns in Florida, but the rest of St. Augustine needs wheels.** Stay downtown and the fort, the museums, St. George Street and dozens of restaurants are all on foot. The hop on Old Town Trolleys loop the sights if your feet give out, and many visitors never move the car for a couple of days.
 
 The catch is the same one locals live with, downtown parking is scarce and the lots fill fast, especially on weekends and through Nights of Lights. The beaches, the outlet malls and the state park all sit a short drive away, so if your trip is half history and half sand, you will want a car, just do not expect to park it easily downtown.
+
+::infographic where-to-stay-in-staugustine-parking-tip
 
 **The move:** base where you can walk, drive to the beach · **Best for:** everyone planning the trip · **Watch:** budget time and patience for downtown parking.
 
@@ -5652,6 +5676,8 @@ Here is our part of the bill, in plain English, you pay what the hotel charges u
 
 **For a first trip, choose the Historic District and do not overthink it.** The fort, St. George Street and four and a half centuries of history are the heart of what makes St. Augustine its own place, and you are a short drive from the beach when you want it. Pick Anastasia Island or Vilano Beach instead when sand and quiet matter more than cobblestones, they are the easy call for families who want the ocean and a pool. Couples and history lovers tend to favor the Historic District or a Lincolnville inn, while the highway and Uptown win when the nightly rate matters most.
 
+::infographic where-to-stay-in-staugustine-how-to-pick
+
 Once you have matched an area to your trip, here are real, well reviewed St. Augustine hotels across the price range, guest scores as of 2026, no stamped prices, because the rates move daily.
 
 | Hotel | Area | Guest score | Best for |
@@ -5738,6 +5764,8 @@ Below are the real, bookable hotels in each area, then the honest neighborhood g
 
 Albuquerque is more spread out than it is dense, so most visitors end up basing in one walkable district and driving to the rest. The good news, the districts each have a clear personality, and a couple of them are genuinely lovely.
 
+::infographic where-to-stay-in-albuquerque-how-to-pick
+
 ## Best Areas to Stay in Albuquerque, at a Glance
 
 Six areas, one deciding factor, the walkable historic charm of Old Town and Nob Hill, or the value and convenience of the corridors. These are the areas most visitors stay in, and each one is a different kind of trip. Choose the area by your trip, then the hotel, here is the whole high desert New Mexico city on one screen. Use the table to narrow it to one or two areas, then jump to that section for the hotels and the honest watch outs. Most people only need one base, Albuquerque rewards staying put somewhere walkable and driving to the rest, so pick Old Town or Nob Hill if you want to walk, the corridors if you want value, and the north end if the balloons are why you came.
@@ -5754,6 +5782,8 @@ Six areas, one deciding factor, the walkable historic charm of Old Town and Nob 
 ::infographic albuquerque-by-numbers
 
 [See every Albuquerque hotel and its live nightly price](/search?destination=Albuquerque&adults=2)
+
+::infographic where-to-stay-in-albuquerque-areas-at-a-glance
 
 ## Old Town Albuquerque: the Historic Heart of New Mexico
 
@@ -5798,6 +5828,8 @@ The hotels here are the city's most characterful, the 1939 Hotel Andaluz is a re
 ::hotel lp1dbd0
 
 **The move:** book Downtown for the bars, music and the historic buildings · **Best for:** nightlife, business, no car · **Watch:** Central Avenue gets edgier a few blocks out, stick to the lit, busy core after dark.
+
+::infographic where-to-stay-in-albuquerque-downtown-vs-nobhill
 
 ## Nob Hill and the University: Route 66 Cool
 
@@ -5862,6 +5894,8 @@ Most of these hotels run a free 24-hour airport shuttle, free parking, and a hot
 **The Albuquerque International Balloon Fiesta, the world's biggest balloon gathering, fills the first nine days of October, and it changes the whole where to stay calculus.** Hundreds of balloons lift off at dawn from the launch park on the north edge of town, and for that week the city's hotels sell out close to a year ahead at their highest rates of the year.
 
 To be closest to the dawn mass ascensions, base on the I-25 north corridor or in the North Valley. But Old Town and Uptown work fine too, with a predawn drive or the official park and ride shuttle, which spares you the legendary Fiesta morning parking. The dawn patrol lifts off before sunrise, the mass ascension fills the sky just after, and the weekend Special Shape Rodeo and the evening balloon glows are worth building a day around. The one rule, book early. Rates run their highest of the year and many hotels set multi night minimums, so the people who do it happily are the ones who booked last winter, not last week. Fiesta week is the single hardest time to find a room in New Mexico, and a last minute search is how you end up in Santa Fe.
+
+::infographic where-to-stay-in-albuquerque-fiesta-booking
 
 | The plan | What to know |
 |---|---|
@@ -6150,6 +6184,8 @@ This is the postcard side. Hanalei Bay is the perfect two mile crescent you have
 
 This is the smart pick for families, longer stays and budget minded travelers who want a home base over a resort. Rates run lower than Poipu or Princeville, the bike and walk coastal path runs for miles along the shore, and the Wailua River leads up to Opaekaa Falls and the Fern Grotto. It trades beachfront resort polish for convenience and value, and the beaches here are better for strolling than for swimming.
 
+::infographic where-to-stay-in-kauai-poipu-vs-kapaa
+
 [See all East Side hotels and live rates](/search?destination=Kauai&adults=2)
 
 ### Kauai Shores, the Sheraton Coconut Beach and the East Side Hotels
@@ -6216,6 +6252,8 @@ Almost no one bases here, and the inventory shows it, the historic Waimea Planta
 
 **Budget hotels** do exist if you know where to look, Kauai Shores in Kapaa, the Kauai Inn near Lihue, and a handful of plain, well run small hotels generally start around $250 to 300 a night, high for the mainland, low for Hawaii, and many include free parking and Wi-Fi that the resorts often charge for. Whatever the format, search your exact dates, because the live price is the only honest one.
 
+::infographic where-to-stay-in-kauai-nightly-rates
+
 [Compare resorts, condos and value stays on Kauai](/search?destination=Kauai&adults=2)
 
 ## North Shore or South Shore: Which Side of Kauai?
@@ -6239,6 +6277,8 @@ It depends on the season, which trips up a lot of first timers. In summer (rough
 The North Shore, by a wide margin, that is why it is so green. Climate data puts Hanalei at roughly nine inches of rain in December against about five in Poipu, and the island's interior peak, Mount Waialeale, is one of the wettest places on Earth. The rain tends to come in fast passing showers rather than all day gloom, but in a wet North Shore winter it really can settle in for days. The South Shore stays reliably drier and sunnier every month of the year, which is the whole case for basing there on a first trip.
 
 The honest answer for a week or more, do not choose. Split your stay, a few nights in Poipu for the sun and a few in Princeville for the scenery, so you wake up in both Kauais and skip the daily cross island drive.
+
+::infographic where-to-stay-in-kauai-split-stay-tip
 
 [Search Kauai hotels on both shores](/search?destination=Kauai&adults=2)
 
@@ -6304,6 +6344,8 @@ Here is our part of the bill, in plain English, you pay what the hotel charges u
 ## Which Kauai Area Should You Choose?
 
 **For a first trip, choose Poipu and the South Shore, the sun, the calm beaches and the resorts make the easiest base, with the rest of the island a drive away.** Pick the North Shore for scenery and a slower pace, the East Side for value and a central location, and Lihue for a short, convenient or budget trip. To help you decide, here is the whole island matched to the kind of trip you might be taking.
+
+::infographic where-to-stay-in-kauai-how-to-pick
 
 | Your trip | Best area | Why |
 |---|---|---|
@@ -6392,6 +6434,8 @@ Below are the real, bookable hotels in each area, then the honest neighborhood g
 
 San Antonio is more spread out than it is dense, so most visitors base in one walkable district downtown and drive to the theme parks and the outer missions. The good news, the core is genuinely lovely, and the areas each have a clear personality.
 
+::infographic where-to-stay-in-sanantonio-areas-at-a-glance
+
 ## San Antonio Hotels by Area, at a Glance
 
 The single deciding factor is the river, the walkable charm of the River Walk and downtown, or the value and easy parking of the highway corridors. These are the areas most visitors stay in, and each one is a different kind of trip. Choose the area by your trip, then the hotel, here is the whole city on one screen. The neighborhoods break down simply, downtown San Antonio and the River Walk for a first time trip, the Pearl and Southtown for food and a local feel, and the highway corridors for value. Each has its own vibe, the river for the classic visit, the Pearl and Southtown for living like a local, the suburbs for an ideal value family base.
@@ -6458,6 +6502,8 @@ The River Walk is as much a place to eat as to sleep. Riverside tables run from 
 **The Pearl is where to stay in San Antonio for the food and the trendiest corner of town, a former brewery just north of downtown, reborn as a square of restaurants, a farmers' market, a culinary school and independent shops along Broadway.** It is walkable, lively and the locals' answer to "where should we eat," and the Museum Reach of the River Walk connects it straight back downtown.
 
 The Pearl's anchor hotel, Hotel Emma, is a celebrated boutique inside the old brewhouse that books direct, so we cannot price it here, but the area's real draw is spending a morning at the market and an evening grazing the restaurants. The San Antonio Museum of Art sits between the Pearl and downtown, and the river barges and a short rideshare make a car unnecessary.
+
+::infographic where-to-stay-in-sanantonio-pearl-vs-southtown
 
 The Pearl brewery dates to the 1880s, and the restored brewhouse and its smokestack still anchor the square. Today the draw is the weekend farmers' market, the bakery, the bars and a dozen of the city's best restaurants. The nightlife here is low key and food led rather than loud, a wine bar, a cocktail bar, patios and a good drink, and the cultural stops, the art museum among them, are an easy walk. For a first time visitor who has already done the Alamo, the Pearl is where downtown San Antonio feels most like a place people actually live.
 
@@ -6624,6 +6670,8 @@ Here is how far the main sights and the airport sit from a downtown base,
 
 Outside of Fiesta and convention weekends, midweek and the spring and fall shoulders bring the best value. Prices move daily, so the only honest number is the live one, search your exact dates rather than trusting a stamped figure from a blog.
 
+::infographic where-to-stay-in-sanantonio-value-tip
+
 ::infographic how-pricing-works
 
 Here is our part of the bill, in plain English, you pay what the hotel charges us, plus one small flat fee, the same fee for everyone, [never set from your device or your search history](/blog/surveillance-pricing). The price you see is all in and shown up front, with nothing waiting to pounce on the last screen.
@@ -6631,6 +6679,8 @@ Here is our part of the bill, in plain English, you pay what the hotel charges u
 ::priceproof
 
 A few things separate the San Antonio hotels worth booking. Decide whether you want character or convenience. The historic River Walk hotels trade on location and charm. The Medical Center, Stone Oak and airport chains offer newer, larger rooms and the full amenities, a pool, free parking, free breakfast, room service, for less. We recommend the all suite hotels for families and longer stays, and a central River Walk hotel when walkability is the point. Wherever you land, the right San Antonio hotel offers more than a bed, it sets the tone of the trip, and the luxury and budget ends are both well covered here.
+
+::infographic where-to-stay-in-sanantonio-how-to-choose
 
 [Search live San Antonio prices](/search?destination=San%20Antonio&adults=2)
 
@@ -7768,6 +7818,8 @@ The Village Core is the compact, pedestrian heart, hotels, condos, restaurants a
 
 The trade off is character. Mountain Village is handsome but modern and quiet, the historic, lived in feel is all down in the old town.
 
+::infographic where-to-stay-in-telluride-base-quickfacts
+
 **Best for:** skiers, luxury, families who want everything a few steps away.
 
 ::compare lp2ff71 lp21ee2
@@ -7775,6 +7827,8 @@ The trade off is character. Mountain Village is handsome but modern and quiet, t
 ## The Free Gondola: How Town and Mountain Village Connect
 
 **Telluride's free gondola is the thing that makes the two base choice low stakes.** It runs between the Town of Telluride and Mountain Village from about 7 a.m. to midnight, takes roughly 13 minutes, and costs nothing to ride. It carries skis, bikes and dogs, and the trip over the ridge is sightseeing in itself.
+
+::infographic where-to-stay-in-telluride-town-vs-village
 
 What that means in practice, stay in town and you can still ski Mountain Village. Stay in the Village and you can still get down to main street for dinner. The one catch is the off season, the gondola usually shuts for a few weeks in spring and fall for maintenance, so check the dates if you are visiting in April, May or November.
 
@@ -7821,6 +7875,8 @@ If you are still deciding, start from the trip. Skiers who want convenience lean
 
 One timing note, Telluride has two peak seasons. Winter brings skiing, with Christmas and Presidents' week the busiest. Summer brings the festivals and hiking. The shoulder weeks are quiet and cheaper, but many places, and sometimes the gondola, close.
 
+::infographic where-to-stay-in-telluride-how-to-pick
+
 | Season | The scene | Booking |
 |---|---|---|
 | Winter (Dec, Mar) | Skiing; Christmas is peak | Book early |
@@ -7831,6 +7887,8 @@ One timing note, Telluride has two peak seasons. Winter brings skiing, with Chri
 ## Getting to Telluride: Montrose, the Regional Airport, or the Drive
 
 **Half of planning a Telluride trip is just getting there, it is gloriously, deliberately remote.** There are three ways in. The easiest is to fly into Montrose Regional Airport, about an hour and a half away by car, which has the most flights and the most reliable weather. You can also fly into the tiny Telluride Regional Airport, the highest commercial airport in the country, perched on a mesa above town, spectacular, but flights cancel for weather often enough that locals treat it as a coin flip. The third way is the drive, roughly six and a half hours from Denver, or about five from [Albuquerque](/blog/where-to-stay-in-albuquerque), over some of the prettiest mountain passes in the Rockies.
+
+::infographic where-to-stay-in-telluride-getting-there
 
 Plan the lodging around the arrival. If you are flying into Montrose and the weather turns, you may land late and tired, so a town hotel near the gondola beats a down valley rental for the first night. And if your trip is built around a festival, Bluegrass in June, the Telluride Film Festival over Labor Day, Blues & Brews in September, book the moment dates are announced, because both the town and Mountain Village sell out for festival weeks and the prices climb with demand.
 
@@ -8205,6 +8263,8 @@ Once you have picked your side of town, [search current Branson prices](/search?
 
 Below are the real, bookable hotels in each area, then the honest, area by area guide to where to stay in Wisconsin Dells, Wisconsin, as of 2026.
 
+::infographic where-to-stay-in-wisconsindells-areas
+
 Wisconsin Dells calls itself the Waterpark Capital of the World, and unlike most town mottos, this one is just true, more indoor waterparks sit in this one small stretch of central Wisconsin than anywhere else on earth. There is a catch for booking, though. The giant resorts everyone pictures, Kalahari, Wilderness, Great Wolf, mostly sell their rooms direct, bundled with park passes. The hotels you can actually book here at one honest price are the brand hotels and indie motels around them, many within walking distance of a slide. Here is how the town lays out.
 
 ## Wisconsin Dells Hotels by Area, at a Glance
@@ -8236,6 +8296,8 @@ A locally run motel scoring a remarkable 9.6, proof you do not need a 600-room m
 **Lake Delton is the other half of the Dells, the village just south where most of the waterparks, go kart tracks and the big resorts actually sit.** This is the engine room, Mt. Olympus and its giant Trojan horse, the parkway lined end to end with slides, and a real lake, Lake Delton itself, with a sand beach for the fifteen minutes a year your kids are not in a wave pool. If the trip is the parks, this is where you want to be, close enough that the daily commute to a slide is a walk, not a drive.
 
 ::rail Lake Delton
+
+::infographic where-to-stay-in-wisconsindells-downtown-vs-delton
 
 ### Staybridge Suites Wisconsin Dells, Lake Delton, room to spread out
 
@@ -8361,9 +8423,13 @@ Bigger suites with room for the kids to crash, an indoor pool and a Marriott bre
 
 The rest of the year, the indoor waterparks keep the place open and the rates fall. January and the stretch from October into November are typically the cheapest months, and a January waterpark weekend, toasty inside while it snows past the window, is one of the Midwest's better value family trips. Whatever month you pick, the price you see here is the same one everyone else sees, because we never change it based on who is looking.
 
+::infographic where-to-stay-in-wisconsindells-cheapest-months
+
 ## Getting Around: Do You Need a Car?
 
 Stay downtown and you can walk the strip, the river docks and the restaurants without one. But the waterparks, the go karts and the Lake Delton resorts are strung along the Wisconsin Dells Parkway, so most families end up driving between them. If the trip is all parks, base yourself out on the parkway and the daily hops are short. If it is the river and the strip, downtown keeps the car parked.
+
+::infographic where-to-stay-in-wisconsindells-how-to-pick
 
 ## The Dells Attractions, by Area
 
@@ -9400,6 +9466,8 @@ Once you have picked your side of town, [check current Estes Park prices](/searc
 
 Below are the real, bookable hotels in each area, then the honest, area by area guide to where to stay in Moab, Utah, as of 2026.
 
+::infographic where-to-stay-in-moab-areas
+
 Moab is a small desert town wedged between two national parks in southeast Utah, and it long ago figured out that its job is to feed, caffeinate and bed down everyone heading into the red rock. There is a lot of lodging packed along one main street, so the question is not whether you will find a room, it is how close you want to be to the Arches gate, the Slickrock trails, and a cold drink at the end of a hot day.
 
 ## Moab Hotels by Area, at a Glance
@@ -9451,6 +9519,8 @@ The Hampton you know, near the north end gate with an outdoor pool and free brea
 ## The Colorado River, Highway 128 and Castle Valley: Red-Rock Ranch Resorts
 
 **For scenery over walkability, head out State Route 128 along the Colorado River, where the ranch resorts sit right under the red cliffs.** This is the postcard Moab, the river on one side, thousand foot walls on the other, dark skies overhead and not a strip mall in sight. You will drive fifteen to twenty minutes into town for dinner and the parks, which is the trade for waking up somewhere this beautiful.
+
+::infographic where-to-stay-in-moab-downtown-vs-river
 
 ### Red Cliffs Lodge Moab, the river ranch
 
@@ -9531,11 +9601,15 @@ The closest thing to a luxury hotel downtown, a Curio Collection property with a
 
 **Where you stay in Moab is really a question of what you are here to do.** Arches National Park, with Delicate Arch and the Windows, is five minutes north, close enough for a sunrise hike before breakfast. Canyonlands National Park's Island in the Sky, all canyon rim overlooks and 360-degree views, is about forty minutes out, with Dead Horse Point State Park on the way, and the quieter Needles district of Canyonlands National Park further south for a longer day of hiking, cycling and four wheeling. The Slickrock Trail and the Moab Brand Trails put [the mountain biking that made Moab famous](/blog/where-to-stay-in-bend) minutes from town, and the Colorado River runs rafting trips from gentle float to real whitewater. Add the 4x4 routes near Moab, the dark sky stargazing and the Hollywood-Western scenery, and the bigger road trips to Monument Valley and the rest of southern Utah's parks, and the only real planning question is how early you will start to beat the heat. A central base keeps all of it, both nearby national parks, the trails and the river, within a short drive, the whole Utah desert at your door and some of the darkest skies in the developed world overhead.
 
+::infographic where-to-stay-in-moab-pick
+
 ## Getting to Moab, and When to Go
 
 **Half of planning a Moab trip is the logistics, because it is gloriously out of the way.** The nearest big airport is Salt Lake City, about four hours north. Grand Junction, Colorado is closer at around an hour and three quarters. And the tiny Canyonlands Field right outside town has limited service for those who'd rather not drive. Whichever you pick, you will want a car, the parks, the trailheads and the river all need one.
 
 And go in the right season. Spring and fall are Moab at its best, warm days, cool nights, the rock comfortable underfoot. Summer is another story, temperatures routinely top 100°F and the heat on exposed slickrock is genuinely dangerous, so start at dawn and carry more water than seems reasonable. Winter is quiet, cold and underrated, the red rock often dusted with snow and the trails nearly empty.
+
+::infographic where-to-stay-in-moab-heat
 
 One practical note that is really a safety note, in summer, Moab is not a place to wing it. Carry at least a gallon of water per person per day, start hikes at first light, and treat the midday hours as time for the pool, a brewery, or an air conditioned drive out to a Canyonlands National Park overlook. The desert is gorgeous and completely indifferent to your itinerary, plan around it and it rewards you. Ignore it and it does not.
 
@@ -9730,6 +9804,8 @@ The beaches are the real argument for Kihei. The three Kamaole parks, Kam I, II 
 
 **Best for:** budgets, first timers, families who want a kitchen and a beach.
 
+::infographic where-to-stay-in-maui-kaanapali-vs-kihei
+
 ::hotel lp20390
 
 ## West Maui and Lahaina in 2026
@@ -9753,6 +9829,8 @@ Napili Bay is the standout, a small, protected crescent with calm water, residen
 The trade off is age and simplicity. You are trading a resort's grounds and service for a condo's space and a fridge, and some of the buildings show their decades. For families and longer stays, that is usually the right trade, laundry and a kitchen beat a minibar by the third day.
 
 Each pocket has its own feel. Honokowai has a small beach park and a Saturday farmers market, Kahana sits a little higher with bigger units, and Napili is the prettiest and priciest of the three, anchored by that postcard bay. Napili Kai and a row of mid century complexes set the tone, unflashy, repeat visitor places.
+
+::infographic where-to-stay-in-maui-condo-strip-stats
 
 The math is the appeal. A one-bedroom condo here with a full kitchen and an ocean view often lands well under a single resort room ten minutes south, and the snorkeling off Kahekili and Napili Bay beats what fronts many of the big hotels.
 
@@ -9816,6 +9894,8 @@ One more consideration is service. A resort handles housekeeping, towels and a f
 
 A few details are worth weighing as you decide. Hawaii has tightened the rules on short term rentals in recent years, so book a legitimate, licensed listing rather than a too good to be true one. Condos also vary a lot unit by unit, the same building can hold a dated studio and a renovated oceanfront two-bedroom, so read the specific listing, not just the complex's name.
 
+::infographic where-to-stay-in-maui-rental-licensing-tip
+
 Whichever you choose, the booking math is the same with us, which is the part most travel sites would rather you did not think about.
 
 ## Match the area to your trip
@@ -9832,6 +9912,8 @@ Whichever you choose, the booking math is the same with us, which is the part mo
 | Slowing all the way down | Hana, for a night or two |
 
 The pattern underneath the table is simple. Sun and savings push you South to Kihei. Calm and polish pull you to Wailea or Kapalua. A first, do everything trip is happiest in Kaanapali, where you are central to the most without committing to a splurge.
+
+::infographic where-to-stay-in-maui-how-to-pick
 
 One more variable is how long you are staying. For a short three- or four night trip, pick one sunny base and do not move, packing up and re checking in eats a half day you do not have. For a week or more, splitting a few nights on the West side and the rest down South is a fine way to see both coasts without living in the car.
 
@@ -10119,11 +10201,15 @@ Waikiki has more range than its skyline suggests. The Diamond Head end, around S
 
 About 40 minutes west of the airport, Ko Olina is a planned resort area built around four calm, man made lagoons. The water is gentle and sheltered, which makes it the standout choice for families with small children. The resorts here are self contained, so you can settle in and barely leave. The four lagoons, Kohola, Honu, Nai'a and Ulua, are calm, snorkelable and numbered for easy navigating with kids. Disney's Aulani and the Four Seasons anchor the accommodations, with a marina, a championship golf course and a weekly luau rounding out a stay you never really have to leave. Look here for the gentlest water on the island.
 
+::infographic where-to-stay-in-oahu-waikiki-vs-koolina
+
 The cost of that calm is distance. Ko Olina is far from Honolulu's restaurants, the North Shore and most of the island's sights, so you will either rent a car or accept longer drives for day trips.
 
 **Best for:** families with young kids, resort focused stays, travelers who want quiet over convenience.
 
 The marquee Ko Olina resorts, Disney's Aulani and the Four Seasons, book direct, but the Hampton Inn & Suites in Kapolei nearby is the rate verified pick for a lagoon trip without the resort bill.
+
+::infographic where-to-stay-in-oahu-budget-tip
 
 ::hotel lp96b5f
 
@@ -10132,6 +10218,8 @@ The marquee Ko Olina resorts, Disney's Aulani and the Four Seasons, book direct,
 The North Shore is the Oahu of postcards, long beaches, food trucks, sea turtles, and in winter, some of the biggest surf in the world. The pace is noticeably slower than Honolulu, and lodging leans toward vacation rentals and small inns rather than big hotels.
 
 You will want a car here, and you should know that the famous winter waves mean strong currents, beautiful to watch, not always safe to swim. In summer the same beaches turn calm and swimmable.
+
+::infographic where-to-stay-in-oahu-bases
 
 The North Shore is a string of legendary beaches over a few miles, Waimea Bay for the cliff jump and summer snorkel, Ehukai for the Banzai Pipeline, Sunset Beach for the winter giants, and Laniakea where green sea turtles haul out on the sand. Haleiwa town anchors it with shrimp trucks, shave ice and surf shops. Lodging is overwhelmingly vacation rentals and a few small inns, the one big resort, Turtle Bay, books direct, so plan to reserve a house or a condo, and to drive.
 
@@ -10209,6 +10297,8 @@ A 9.2 resort ten minutes east in the exclusive Kahala neighborhood, on its own q
 ## Match Your Trip to an Oahu Base
 
 If you are still deciding, start from the trip rather than the map.
+
+::infographic where-to-stay-in-oahu-how-to-pick
 
 | Your trip | Stay |
 |---|---|
