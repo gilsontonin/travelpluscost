@@ -49,6 +49,135 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "magazine-street-new-orleans",
+    title: "Magazine Street New Orleans: Shopping, Dining & Where to Stay (2026)",
+    seoTitle: "Magazine Street New Orleans Guide (2026)",
+    description: "A guide to Magazine Street in New Orleans, six miles of local shops, antiques, art, and James Beard restaurants, with the best stretches and where to stay.",
+    excerpt: "The honest guide to Magazine Street, the best shopping in New Orleans. Six miles of local boutiques, antiques, art, and James Beard restaurants, broken into walkable stretches, with how to get around and where to stay. Verified as of 2026.",
+    tldr: {
+      answer: "Magazine Street in New Orleans packs six miles of mostly local boutiques, antique dealers, galleries, and acclaimed restaurants, from downtown through the Garden District to Uptown. The shops sit in walkable pockets, so pick one stretch by what you want to buy and ride the Route 11 bus between them.",
+      points: [
+        "**Do not try to walk all six miles.** Pick one cluster, then hop the $1.25 Route 11 bus to the next.",
+        "**Vintage and gifts go to the 2000 blocks.** Century Girl, Trashy Diva, and Dirty Coast in the Lower Garden District.",
+        "**Antiques and art fill the 3000s.** The Magazine Antique Mall and Mignon Faget jewelry between Napoleon and Louisiana.",
+        "**Eat Uptown.** La Petite Grocery and Shaya, two James Beard winners, face each other near 4200.",
+        "**Stay on the street.** Hotel Saint Vincent and the Henry Howard keep the shops at your door and the car parked.",
+      ],
+    },
+    date: "2026-06-29",
+    updated: "2026-06-29",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: { src: "https://static.cupid.travel/hotels/171786560.jpg", alt: "A historic New Orleans hotel near the Garden District and the shops of Magazine Street" },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "What is Magazine Street known for?",
+        a: "**Magazine Street is known for six miles of mostly locally owned shops, art galleries, antiques, and restaurants** running from downtown New Orleans through the Garden District to Uptown. It is the city's best shopping, with vintage boutiques, James Beard restaurants, and local makers, far from the French Quarter souvenir stalls.",
+      },
+      {
+        q: "How long is Magazine Street, and can you walk it?",
+        a: "**Magazine Street is about six miles long, but you cannot realistically walk all of it.** The shops cluster into a handful of walkable pockets separated by residential blocks. Pick one stretch to walk, and use the Route 11 bus to hop between clusters.",
+      },
+      {
+        q: "What is the best part of Magazine Street for shopping?",
+        a: "**The Lower Garden District around the 2000 blocks is best for vintage and local gifts, and the 3000 to 4000 blocks for antiques and art.** The Uptown stretch past 4200 has the best dining and the higher end boutiques. Choose the stretch by what you want to buy.",
+      },
+      {
+        q: "Where should you eat on Magazine Street?",
+        a: "**For a splurge, La Petite Grocery and Shaya face each other Uptown, both James Beard winners.** Casamento's serves classic oysters but closes every summer, and Stein's Deli, Dat Dog, and Joey K's cover the casual end. Commander's Palace is a block off Magazine.",
+      },
+      {
+        q: "How do you get around Magazine Street?",
+        a: "**Take the Route 11 bus, which runs the whole street for $1.25 a ride, or buy a $3 day pass.** The St. Charles streetcar runs one block over. If you drive, meters are $2 an hour Monday to Saturday and free on Sundays and after 7pm.",
+      },
+      {
+        q: "Where should you stay near Magazine Street?",
+        a: "**Hotel Saint Vincent sits right on Magazine in the Lower Garden District, and the Henry Howard is a block away.** The Pontchartrain on St. Charles puts you on the streetcar. Staying nearby means you walk to the shops and keep the car parked.",
+      },
+    ],
+    body: `Magazine Street New Orleans is **a six mile run of mostly local shops, galleries, and restaurants**, stretching from downtown out to Audubon Park, and the trick is to pick one stretch rather than do all six miles. It is the best shopping in the city, where local stores carry everything from clothing to contemporary art, and the antidote to a French Quarter full of airport gift shop tat. Locals love it, and it feels like the New Orleans people actually live in.
+
+This guide breaks the street into stretches by what you actually want, vintage and gifts, antiques and art, or dining and design, plus how to get around and where to stay. It is current as of 2026, with shops verified open in June. One honest note, since we run a hotel booking site.
+
+Stay on or near Magazine and you never move the car, which is most of the battle. The price we show is the hotel's rate plus one small flat fee, the same for everyone.
+
+## What is Magazine Street New Orleans, and how do you shop six miles?
+
+**Magazine Street runs about six miles from Canal Street through the Lower Garden District, the Garden District, and Uptown, but it is not one continuous strip.** It is a string of walkable pockets separated by quiet residential blocks, a leftover of four old neighborhood markets that anchored commerce back in the 1850s.
+
+So the six mile figure is one people quote and nobody walks. Roughly 13 blocks are genuinely meant for strolling, broken into clusters.
+
+The smart play is to pick the cluster that matches your day, visit it on foot, then hop the Route 11 bus to a second one if you have the time. Trying to do the whole thing on foot is how a fun afternoon becomes a forced march past a lot of nice houses. Pop into the cluster that fits your day instead.
+
+## Magazine Street vintage, gifts, and local souvenirs
+
+**The 2000 blocks in the Lower Garden District are the spot for vintage finds and genuinely local gifts, the part of Magazine Street that feels like a treasure hunt.** Start at Century Girl, a curated vintage boutique with Old Hollywood decor and a literal Press for Champagne button, then cross to Lionheart Prints, a letterpress shop running cards off two antique machines you can watch from the floor.
+
+A few doors along sit Trashy Diva, the local pin up and vintage clothing label, plus Funky Monkey, an eclectic vintage clothing and accessories store that has been a NOLA favorite since 1997 and moved to 3127 Magazine in 2026. Peony pours you a glass while you browse, and Funky Monkey is the spot for a costume. For souvenirs that do not scream airport, Dirty Coast sells New Orleans tees and goods designed by locals who are in on the joke.
+
+These are the stores to visit for a gift you would actually keep, filled with local pieces and New Orleans culture rather than mass made items. You always leave with a bag.
+
+::infographic magazine-stretches
+
+## Magazine Street antiques, art, and jewelry
+
+**Between Napoleon and Louisiana, the 3000 and 3900 blocks are the antiques and art stretch, where most of the street's antique dealers cluster.** The anchor is the Magazine Antique Mall at 3017, over 7,000 square feet and 40 dealers under one roof, billed as the oldest and largest in South Louisiana. Next door, the Terrance Osborne Gallery shows the bright, joyful work of a New Orleans painter who has become a local institution.
+
+Keep walking for Mac Maison and its European antiques, and at 3801, the studio of Mignon Faget, whose fine jewelry is handcrafted on Magazine Street with motifs drawn from local nature and old ironwork. It is the stretch for a piece you keep for thirty years rather than a weekend.
+
+## The Uptown end of Magazine Street, for dining and old money style
+
+**The Uptown blocks past Louisiana Avenue trade vintage for polish, with the best dining on the street and the preppy boutiques the locals grew up on.** Around 4200, two James Beard winners face each other across the street, which never gets less funny.
+
+Head farther up near Audubon Park, where the 5500 to 6100 blocks are the old money finale. Perlis, family run since 1939, invented the crawfish logo that is basically the prep uniform of New Orleans, and sits on the very block where it started.
+
+Azby's, Pied Nu, and Hazelnut round out a stretch where the chic women's clothing runs higher end, the pace is slower, and the trendy crowd thins out. The boutiques here carry a wide variety of labels and a different feel. It is a calmer side of New Orleans life.
+
+## Where to eat on Magazine Street New Orleans
+
+**Magazine Street New Orleans is a dining destination on its own, with food from James Beard kitchens to a hot dog stand and cafes good for a night out, so plan to eat where you shop.** The two big names sit across from each other Uptown, La Petite Grocery at 4238, a French Creole bistro packed with bold flavors and blue crab beignets, and Shaya at 4213, the modern Israeli spot named the country's best new restaurant in 2016. A handful of wine bars sit between them, so you can stop in for a drink.
+
+::infographic magazine-eat
+
+The rest of the street keeps up. Casamento's, an oyster house since 1919, serves a delicious fried oyster and seafood loaf, though it shuts down every summer and runs Thursday to Sunday, which is the most New Orleans thing a restaurant can do.
+
+For something casual, Stein's Deli and the District Donuts coffee bar sit side by side at 2207, Dat Dog grills gourmet sausages at 3336, and Joey K's, a neighborhood staple, does an honest plate lunch. These are the spots for a cheap, good meal between stores. Commander's Palace, the turquoise landmark since 1893, is one block off Magazine on Washington Avenue and worth the detour for its jazz brunch.
+
+## Getting around Magazine Street
+
+**The Route 11 bus runs the entire length of Magazine Street for $1.25 a ride, which makes it the cheat code for covering distance between clusters.** A one day Jazzy Pass is three dollars and covers the bus, the streetcar, and the ferry, so you can hop pockets without paying per leg.
+
+::infographic magazine-around
+
+The St. Charles streetcar runs one block over and serves the Garden District and Uptown stretches too, so check your location and grab whichever now comes first. If you drive, meters run two dollars an hour Monday to Saturday and are free on Sundays and after 7pm, and the side streets work as long as you stay clear of residential permit zones and park a good twenty feet off the corner.
+
+## Where to stay on Magazine Street in New Orleans
+
+**Stay on or near Magazine Street and the shopping is at your door while the car stays parked, which beats commuting in from the French Quarter for a day of browsing.** The standout is the Hotel Saint Vincent at 1507 Magazine, an 1860s former orphanage turned luxury boutique with a tiled courtyard pool, sitting right on the street with the Route 11 bus at the corner.
+
+A block off Magazine, the Henry Howard is an 1867 mansion turned 18 room boutique, and the Pontchartrain on St. Charles puts you on the streetcar with a rooftop bar over the Garden District. Here are two central options we can book at the same flat fee for everyone.
+
+::hotel lpaf414
+
+::hotel lp21a0c
+
+That keeps you walking distance from the shops and a short ride from the rest of the city, with no surge pricing buried in the total.
+
+::priceproof
+
+::cta New Orleans
+
+## When to go, and how to shop Magazine Street like a local
+
+**Start mid morning around 10am when the shops open, because most are locally owned and close by 5 or 6pm, and a fair number shut on Sunday or Monday.** Anchor in one cluster, shop before lunch, eat on the street, and browse into the early afternoon before the gates come down.
+
+The one date to circle is Art for Art's Sake, on the first Saturday of October, when the shops and galleries stay open late with wine, music, and sales. The merchants list current hours and local favorites at magazinestreet.com, so let that guide your day.
+
+For the rest of the trip, our guides to the [Garden District](/blog/garden-district-new-orleans), [where to stay](/blog/where-to-stay-in-neworleans), and [things to do](/blog/things-to-do-in-new-orleans) pick up where the shopping ends.
+`,
+  },
+  {
     slug: "christmas-in-new-orleans",
     title: "Christmas in New Orleans: Lights, Reveillon & New Year's (2026)",
     seoTitle: "Christmas in New Orleans (2026 Guide)",
@@ -1288,9 +1417,9 @@ A guided walking tour of the Garden District New Orleans adds the stories and th
 
 You can still walk the perimeter and peer in at the crumbling tombs and the vines, which is genuinely atmospheric and completely free. Ghost and history tours still stop here to tell the stories from the sidewalk, and the cemetery shows up constantly in film, including as a favorite haunt in American Horror Story. It is worth a slow lap even from the outside.
 
-## Magazine Street: Shopping and Brunch
+## Shopping and Brunch on the District's Edge
 
-**Magazine Street is six miles of locally owned shops, cafés, and restaurants, and it forms the lively southern edge of the district.** This is where the neighborhood stops whispering and starts selling. Vintage stores, clothing boutiques like Trashy Diva, bookshops, candle makers, and brunch spots line the street more or less without a gap.
+**Magazine Street is six miles of locally owned shops, cafés, and restaurants, and it forms the lively southern edge of the district.** For the full six miles of shopping and dining, see our [Magazine Street guide](/blog/magazine-street-new-orleans). This is where the neighborhood stops whispering and starts selling. Vintage stores, clothing boutiques like Trashy Diva, bookshops, candle makers, and brunch spots line the street more or less without a gap.
 
 ::activity New Orleans | food tour
 
@@ -1834,7 +1963,7 @@ You will pass **Lafayette Cemetery Number 1**, the famous above ground tombs fro
 
 ### Lunch: Magazine Street and Commander's Palace
 
-For lunch and a browse, walk over to **Magazine Street**, six miles of shops, cafés, and boutiques running parallel to the river. It is the unpretentious antidote to the Quarter, more locals than tourists, and a good place to find a **po'boy** without a line.
+For lunch and a browse, walk over to [**Magazine Street**](/blog/magazine-street-new-orleans), six miles of shops, cafés, and boutiques running parallel to the river. It is the unpretentious antidote to the Quarter, more locals than tourists, and a good place to find a **po'boy** without a line.
 
 If you would rather make lunch the event, **Commander's Palace** runs a jazz brunch and pours a famous twenty five cent lunch martini, which is exactly as dangerous as it sounds. Book a table ahead, wear something you do not mind being slightly overdressed in, and let the turtle soup talk you into a third martini you will regret on the walk back.
 
@@ -2355,7 +2484,7 @@ Order the gumbo z'herbes, the green gumbo she made famous, and the fried chicken
 
 ::infographic nola-new-buzzy
 
-**Acamaya** in Bywater is the breakout of the new class, chef Ana Castro cooking Mexican mariscos and masa with Gulf seafood, the kind of room that earned national lists in its first year. **The Kingsway** brings sharp modern Asian cooking to Magazine Street, while **Bacchanal** is the long running Bywater wine garden where you grab a bottle, a cheese plate, and a backyard table under the lights with live music most evenings.
+**Acamaya** in Bywater is the breakout of the new class, chef Ana Castro cooking Mexican mariscos and masa with Gulf seafood, the kind of room that earned national lists in its first year. **The Kingsway** brings sharp modern Asian cooking to [Magazine Street](/blog/magazine-street-new-orleans), while **Bacchanal** is the long running Bywater wine garden where you grab a bottle, a cheese plate, and a backyard table under the lights with live music most evenings.
 
 For the hidden end, **N7** is a French-Japanese wine spot down an unmarked Bywater alley that remains one of the city's worst kept secrets, and **Pizza Delicious** is the no frills Brooklyn style slice shop locals lean on between richer meals. For something sweet and new, **Ayu Bakehouse** turns out pastries and breakfast sandwiches that draw their own morning line. None of these is old enough to be a tradition yet, but a few are clearly headed that way.
 
@@ -3952,7 +4081,7 @@ Whichever area you choose, the price you book here is the same one everyone else
       },
       {
         q: "Which is better, the French Quarter or the Garden District?",
-        a: "It depends on the trip. The French Quarter puts you in the middle of the action, the music, the food, the history, at the cost of noise and crowds. The Garden District is the opposite, leafy, residential, lined with mansions and Magazine Street's shops, calm at night, but a 15-minute streetcar ride from the Quarter. First timers usually want the Quarter. Repeat visitors often prefer the Garden District.",
+        a: "It depends on the trip. The French Quarter puts you in the middle of the action, the music, the food, the history, at the cost of noise and crowds. The Garden District is the opposite, leafy, residential, lined with mansions and [Magazine Street](/blog/magazine-street-new-orleans)'s shops, calm at night, but a 15-minute streetcar ride from the Quarter. First timers usually want the Quarter. Repeat visitors often prefer the Garden District.",
       },
       {
         q: "When is the best time to visit New Orleans?",

@@ -1,11 +1,21 @@
 {
+  "magazine-street-new-orleans": [
+    "garden-district-new-orleans",
+    "where-to-stay-in-neworleans",
+    "3-days-in-new-orleans",
+    "things-to-do-in-new-orleans",
+    "french-quarter-new-orleans",
+    "frenchmen-street-new-orleans",
+    "best-restaurants-in-new-orleans",
+    "new-orleans-mardi-gras-hotels"
+  ],
   "christmas-in-new-orleans": [
     "things-to-do-in-new-orleans",
     "best-time-to-visit-new-orleans",
     "3-days-in-new-orleans",
+    "new-orleans-mardi-gras-hotels",
     "haunted-new-orleans",
     "mardi-gras-in-new-orleans",
-    "new-orleans-mardi-gras-hotels",
     "where-to-stay-in-neworleans",
     "things-to-do-in-new-orleans-with-kids"
   ],
@@ -14,19 +24,19 @@
     "3-days-in-new-orleans",
     "things-to-do-in-new-orleans",
     "frenchmen-street-new-orleans",
-    "where-to-stay-in-neworleans",
     "best-time-to-visit-new-orleans",
     "new-orleans-bachelorette-weekend",
+    "where-to-stay-in-neworleans",
     "christmas-in-new-orleans"
   ],
   "haunted-new-orleans": [
     "things-to-do-in-new-orleans",
     "3-days-in-new-orleans",
-    "where-to-stay-in-neworleans",
     "is-new-orleans-safe",
+    "where-to-stay-in-neworleans",
     "french-quarter-new-orleans",
-    "day-trips-from-new-orleans",
     "christmas-in-new-orleans",
+    "day-trips-from-new-orleans",
     "garden-district-new-orleans"
   ],
   "new-orleans-bachelorette-weekend": [
@@ -47,27 +57,27 @@
     "christmas-in-new-orleans",
     "3-days-in-new-orleans",
     "new-orleans-bachelorette-weekend",
-    "is-new-orleans-safe"
+    "magazine-street-new-orleans"
   ],
   "frenchmen-street-new-orleans": [
     "french-quarter-new-orleans",
     "things-to-do-in-new-orleans",
     "where-to-stay-in-neworleans",
     "3-days-in-new-orleans",
+    "magazine-street-new-orleans",
     "new-orleans-jazz-fest",
     "is-new-orleans-safe",
-    "new-orleans-bachelorette-weekend",
-    "christmas-in-new-orleans"
+    "new-orleans-bachelorette-weekend"
   ],
   "garden-district-new-orleans": [
     "3-days-in-new-orleans",
+    "magazine-street-new-orleans",
     "french-quarter-new-orleans",
     "things-to-do-in-new-orleans",
     "where-to-stay-in-neworleans",
     "haunted-new-orleans",
     "day-trips-from-new-orleans",
-    "is-new-orleans-safe",
-    "things-to-do-in-new-orleans-with-kids"
+    "is-new-orleans-safe"
   ],
   "french-quarter-new-orleans": [
     "things-to-do-in-new-orleans",
@@ -77,7 +87,7 @@
     "garden-district-new-orleans",
     "haunted-new-orleans",
     "is-new-orleans-safe",
-    "new-orleans-bachelorette-weekend"
+    "magazine-street-new-orleans"
   ],
   "3-days-in-new-orleans": [
     "things-to-do-in-new-orleans",
@@ -102,12 +112,12 @@
   "best-restaurants-in-new-orleans": [
     "things-to-do-in-new-orleans",
     "3-days-in-new-orleans",
+    "magazine-street-new-orleans",
     "christmas-in-new-orleans",
     "where-to-stay-in-neworleans",
     "french-quarter-new-orleans",
     "new-orleans-bachelorette-weekend",
-    "haunted-new-orleans",
-    "day-trips-from-new-orleans"
+    "haunted-new-orleans"
   ],
   "day-trips-from-new-orleans": [
     "3-days-in-new-orleans",
@@ -156,8 +166,8 @@
     "french-quarter-new-orleans",
     "things-to-do-in-new-orleans",
     "new-orleans-bachelorette-weekend",
-    "frenchmen-street-new-orleans",
-    "christmas-in-new-orleans"
+    "christmas-in-new-orleans",
+    "frenchmen-street-new-orleans"
   ],
   "where-to-stay-in-neworleans": [
     "3-days-in-new-orleans",
@@ -397,7 +407,7 @@
     "where-to-stay-in-branson",
     "where-to-stay-in-oahu",
     "where-to-stay-in-moab",
-    "where-to-stay-in-flagstaff"
+    "magazine-street-new-orleans"
   ],
   "where-to-stay-in-oahu": [
     "where-to-stay-in-maui",

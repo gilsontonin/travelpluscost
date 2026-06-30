@@ -16,6 +16,38 @@ export type Infographic =
   | { kind: "callout"; title: string; body: string };
 
 export const INFOGRAPHICS: Record<string, Infographic> = {
+  "magazine-stretches": {
+    kind: "compare",
+    title: "Pick your stretch of Magazine Street",
+    left: "What it is for",
+    right: "The shops",
+    rows: [
+      { label: "2000-2300, Lower Garden", left: "Vintage and local gifts", right: "Century Girl, Trashy Diva, Dirty Coast" },
+      { label: "3000-4000, Napoleon to Louisiana", left: "Antiques, art, and jewelry", right: "Magazine Antique Mall, Mignon Faget" },
+      { label: "4200-4800, Uptown", left: "James Beard dining", right: "La Petite Grocery, Shaya, Casamento's" },
+      { label: "5500-6100, Uptown", left: "Old-money boutiques", right: "Perlis, Azby's, Hazelnut" },
+    ],
+  },
+  "magazine-eat": {
+    kind: "stat",
+    title: "Where to eat on Magazine Street",
+    stats: [
+      { value: "La Petite Grocery", label: "James Beard French-Creole, blue crab beignets, 4238" },
+      { value: "Shaya", label: "best new US restaurant 2016, modern Israeli, 4213" },
+      { value: "Casamento's", label: "oyster house since 1919, closed every summer, 4330" },
+      { value: "Commander's Palace", label: "the 1893 landmark, a block off, jazz brunch" },
+    ],
+  },
+  "magazine-around": {
+    kind: "stat",
+    title: "Getting around the six miles",
+    stats: [
+      { value: "Route 11 bus", label: "runs the whole street, $1.25 a ride" },
+      { value: "$3 day pass", label: "bus, streetcar, and ferry, all day" },
+      { value: "St. Charles streetcar", label: "one block over, Garden District to Uptown" },
+      { value: "$2 an hour", label: "meters Mon to Sat, free Sundays and after 7pm" },
+    ],
+  },
   "christmas-nola-when": {
     kind: "stat",
     title: "The New Orleans holiday season at a glance",
