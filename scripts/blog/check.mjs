@@ -23,6 +23,8 @@ run("ai-slop · blog posts", "node scripts/blog/ai-slop-check.mjs --all");
 run("claims-integrity", "node scripts/blog/claims-check.mjs");
 // 3) Prose style (owner voice: no dashes, no colons/semicolons in prose, no contractions — spelled out)
 run("prose-style", "node scripts/blog/style-clean.mjs");
+// 3b) No duplicate slugs (silent route collision) — UNIFORM shared gate.
+run("dup-slugs", "node ../blog-system/scripts/check-dup-slugs.mjs");
 // 4) Structural HTML audit (JSON-LD BlogPosting+BreadcrumbList, canonical, img alt) — UNIFORM with HP. Build-gated.
 if (fs.existsSync(".next/server/app/blog")) run("html audit (.next)", "node scripts/blog/audit-html.mjs");
 else console.log("▶ html audit … skipped (no .next — run after build)");
