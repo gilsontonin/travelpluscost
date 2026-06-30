@@ -16,6 +16,64 @@ export type Infographic =
   | { kind: "callout"; title: string; body: string };
 
 export const INFOGRAPHICS: Record<string, Infographic> = {
+  "jazz-fest-tickets": {
+    kind: "stat",
+    title: "What a day at Jazz Fest costs",
+    stats: [
+      { value: "$99 to $149", label: "single day at the gate, depending on the day of week" },
+      { value: "From $399", label: "a four day weekend pass (Louisiana residents pay less)" },
+      { value: "$2,099", label: "the top Big Chief VIP tier, which buys air conditioning" },
+      { value: "$5", label: "kids 2 to 10, sold only at the gate" },
+    ],
+  },
+  "jazz-fest-getting-there": {
+    kind: "stat",
+    title: "How to reach the Fair Grounds",
+    stats: [
+      { value: "None", label: "general parking at the venue, do not drive yourself" },
+      { value: "~$29", label: "the Jazz Fest Express shuttle, the only ride that drops inside" },
+      { value: "Outer ring", label: "where Uber and Lyft must drop, a few blocks out" },
+      { value: "Route 91", label: "the city bus, within a short walk for a couple of dollars" },
+    ],
+  },
+  "jazz-fest-stay": {
+    kind: "compare",
+    title: "Where to stay, by how you reach the gate",
+    left: "Getting to the Fair Grounds",
+    right: "The trade-off",
+    rows: [
+      { label: "Mid-City", left: "A genuine 10 to 15 minute walk, no surge", right: "Thin hotel inventory that books up first" },
+      { label: "French Quarter / CBD", left: "About 30 minutes on the Canal streetcar", right: "The most rooms and the best nightlife" },
+      { label: "Marigny / Frenchmen", left: "A short ride or a long walk", right: "Closest to the late night club shows" },
+    ],
+  },
+  "jazz-fest-food": {
+    kind: "stat",
+    title: "Eat these first",
+    stats: [
+      { value: "Crawfish Monica", label: "the best selling dish since 1983, a creamy Cajun pasta" },
+      { value: "Cochon de lait", label: "slow cooked pork po-boy with a crunchy slaw" },
+      { value: "Mango Freeze", label: "the frozen palate cleanser, a WWOZ radio fundraiser" },
+      { value: "Cards only", label: "every booth is cashless, bring a card or your phone" },
+    ],
+  },
+  "jazz-fest-bring": {
+    kind: "callout",
+    title: "Pack for sun and a swamp",
+    body: "Jazz Fest is rain or shine, and rain turns the dirt track to deep mud, so bring a poncho and shoes you can ruin, plus extra socks. Bags must be under 17 by 12 by 10 inches and get searched at the gate. One folding chair, a personal umbrella, sealed water, and a small soft cooler are allowed. Leave the tents, glass, outside alcohol, and pets at home.",
+  },
+  "jazz-fest-vs-mardigras": {
+    kind: "compare",
+    title: "Jazz Fest or Mardi Gras?",
+    left: "Jazz Fest",
+    right: "Mardi Gras",
+    rows: [
+      { label: "What it is", left: "A ticketed music, food, and culture festival", right: "A free, citywide street party" },
+      { label: "Where", left: "One venue, the Fair Grounds", right: "Parades all over the city" },
+      { label: "When", left: "Late April into early May", right: "February, on a date that moves" },
+      { label: "Come for", left: "A music marathon and the food", right: "The parades and the streets" },
+    ],
+  },
   "nola-haunt-real-vs-legend": {
     kind: "compare",
     title: "Documented history, or tourist legend?",
@@ -809,7 +867,7 @@ export const INFOGRAPHICS: Record<string, Infographic> = {
     steps: [
       { title: "Fly into MSY", detail: "Louis Armstrong airport is about 30 minutes from downtown by rideshare or airport shuttle — no rental car needed for a city trip." },
       { title: "Skip the car", detail: "The French Quarter is walkable and parking is pricey and scarce; a car is a liability on the narrow one-way streets. Rent only for swamp tours or plantations." },
-      { title: "Streetcars and rideshare", detail: "The historic St. Charles line runs to the Garden District and Uptown; the Canal and Riverfront lines cover downtown; rideshares fill the late-night gaps." },
+      { title: "Streetcars and rideshare", detail: "The historic St. Charles line runs to the Garden District and Uptown; the Canal and Riverfront lines cover downtown; rideshares fill the late night gaps." },
     ],
   },
   "nola-dining-by-numbers": {

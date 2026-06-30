@@ -1,13 +1,23 @@
 {
+  "new-orleans-jazz-fest": [
+    "new-orleans-mardi-gras-hotels",
+    "3-days-in-new-orleans",
+    "things-to-do-in-new-orleans",
+    "frenchmen-street-new-orleans",
+    "where-to-stay-in-neworleans",
+    "best-time-to-visit-new-orleans",
+    "new-orleans-bachelorette-weekend",
+    "mardi-gras-in-new-orleans"
+  ],
   "haunted-new-orleans": [
     "things-to-do-in-new-orleans",
     "3-days-in-new-orleans",
-    "is-new-orleans-safe",
     "where-to-stay-in-neworleans",
+    "is-new-orleans-safe",
     "french-quarter-new-orleans",
     "day-trips-from-new-orleans",
     "garden-district-new-orleans",
-    "new-orleans-bachelorette-weekend"
+    "things-to-do-in-new-orleans-with-kids"
   ],
   "new-orleans-bachelorette-weekend": [
     "3-days-in-new-orleans",
@@ -22,22 +32,22 @@
   "new-orleans-mardi-gras-hotels": [
     "mardi-gras-in-new-orleans",
     "where-to-stay-in-neworleans",
+    "new-orleans-jazz-fest",
     "best-time-to-visit-new-orleans",
     "3-days-in-new-orleans",
     "new-orleans-bachelorette-weekend",
     "is-new-orleans-safe",
-    "haunted-new-orleans",
-    "french-quarter-new-orleans"
+    "haunted-new-orleans"
   ],
   "frenchmen-street-new-orleans": [
     "french-quarter-new-orleans",
     "things-to-do-in-new-orleans",
     "where-to-stay-in-neworleans",
     "3-days-in-new-orleans",
+    "new-orleans-jazz-fest",
     "is-new-orleans-safe",
     "new-orleans-bachelorette-weekend",
-    "haunted-new-orleans",
-    "best-restaurants-in-new-orleans"
+    "haunted-new-orleans"
   ],
   "garden-district-new-orleans": [
     "3-days-in-new-orleans",
@@ -71,13 +81,13 @@
   ],
   "mardi-gras-in-new-orleans": [
     "new-orleans-mardi-gras-hotels",
+    "new-orleans-jazz-fest",
     "best-time-to-visit-new-orleans",
     "things-to-do-in-new-orleans",
     "new-orleans-bachelorette-weekend",
     "3-days-in-new-orleans",
     "french-quarter-new-orleans",
-    "frenchmen-street-new-orleans",
-    "haunted-new-orleans"
+    "frenchmen-street-new-orleans"
   ],
   "best-restaurants-in-new-orleans": [
     "things-to-do-in-new-orleans",
@@ -102,12 +112,12 @@
   "best-time-to-visit-new-orleans": [
     "new-orleans-mardi-gras-hotels",
     "new-orleans-bachelorette-weekend",
+    "new-orleans-jazz-fest",
     "where-to-stay-in-neworleans",
     "mardi-gras-in-new-orleans",
     "haunted-new-orleans",
     "3-days-in-new-orleans",
-    "things-to-do-in-new-orleans",
-    "is-new-orleans-safe"
+    "things-to-do-in-new-orleans"
   ],
   "things-to-do-in-new-orleans-with-kids": [
     "things-to-do-in-new-orleans",
@@ -200,8 +210,8 @@
     "where-to-stay-in-sanfrancisco"
   ],
   "where-to-stay-in-albuquerque": [
-    "where-to-stay-in-tucson",
     "where-to-stay-in-sanantonio",
+    "where-to-stay-in-tucson",
     "where-to-stay-in-flagstaff",
     "where-to-stay-in-scottsdale",
     "where-to-stay-in-neworleans",
@@ -247,7 +257,7 @@
     "where-to-stay-in-sanantonio",
     "where-to-stay-in-asheville",
     "where-to-stay-in-santabarbara",
-    "where-to-stay-in-moab"
+    "where-to-stay-in-bend"
   ],
   "where-to-stay-in-flagstaff": [
     "where-to-stay-in-sedona",
@@ -292,9 +302,9 @@
   "where-to-stay-in-branson": [
     "where-to-stay-in-wisconsindells",
     "where-to-stay-in-estespark",
-    "where-to-stay-in-flagstaff",
     "where-to-stay-in-telluride",
     "where-to-stay-in-savannah",
+    "where-to-stay-in-flagstaff",
     "where-to-stay-in-sedona",
     "where-to-stay-in-moab",
     "where-to-stay-in-asheville"
@@ -332,9 +342,9 @@
   "where-to-stay-in-asheville": [
     "where-to-stay-in-flagstaff",
     "where-to-stay-in-bend",
-    "where-to-stay-in-tucson",
     "where-to-stay-in-albuquerque",
     "where-to-stay-in-estespark",
+    "where-to-stay-in-tucson",
     "where-to-stay-in-sedona",
     "where-to-stay-in-scottsdale",
     "where-to-stay-in-charleston"
@@ -372,12 +382,12 @@
   "surveillance-pricing": [
     "haunted-new-orleans",
     "new-orleans-mardi-gras-hotels",
+    "new-orleans-jazz-fest",
     "where-to-stay-in-maui",
     "where-to-stay-in-branson",
     "where-to-stay-in-oahu",
     "where-to-stay-in-moab",
-    "where-to-stay-in-flagstaff",
-    "where-to-stay-in-santabarbara"
+    "where-to-stay-in-flagstaff"
   ],
   "where-to-stay-in-oahu": [
     "where-to-stay-in-maui",

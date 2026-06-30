@@ -49,6 +49,187 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "new-orleans-jazz-fest",
+    title: "New Orleans Jazz Fest 2027: Dates, Tickets, Food & Where to Stay",
+    seoTitle: "New Orleans Jazz Fest 2027 Guide",
+    description: "New Orleans Jazz Fest 2027 runs April 22 to May 2. Your guide to dates, tickets, the food, getting to the Fair Grounds, and where to stay for the festival.",
+    excerpt: "The honest guide to New Orleans Jazz Fest 2027 (April 22 to May 2). When it is, what tickets cost, how to reach the Fair Grounds, the food to eat first, and where to stay during the most expensive hotel week of the year. As of 2026.",
+    tldr: {
+      answer: "Jazz Fest, the New Orleans Jazz and Heritage Festival, takes over the Fair Grounds for eight days starting April 22 in 2027. Lock in a hotel before tickets, because lodging is the costliest week on the city calendar and sells out fast. Day passes open near $99, and the food is as much the draw as the music.",
+      points: [
+        "**Book the hotel first.** Jazz Fest is the most expensive room week of the year, and rooms sell out within days of the lineup drop.",
+        "**The 2027 dates are April 22 to May 2.** Two four day weekends at the Fair Grounds Race Course.",
+        "**Tickets start near $99 a day.** Four day passes from $399, VIP up to $2,099, and kids 2 to 10 are $5.",
+        "**Do not drive yourself.** There is no parking at the gate, so take the Jazz Fest Express shuttle, the bus, or a bike.",
+        "**Eat the Crawfish Monica.** The food rivals the music, and every booth is now cashless.",
+      ],
+    },
+    date: "2026-06-29",
+    updated: "2026-06-29",
+    author: "Gilson Tonin, MBA",
+    category: "Destination guides",
+    cover: { src: "https://static.cupid.travel/hotels/171786560.jpg", alt: "A historic New Orleans hotel near the French Quarter, a home base for Jazz Fest week" },
+    region: { name: "New Orleans", destination: "New Orleans" },
+    faqs: [
+      {
+        q: "When is New Orleans Jazz Fest 2027?",
+        a: "**New Orleans Jazz Fest 2027 runs April 22 to May 2**, across two four day weekends (Thursday April 22 to Sunday April 25, then Thursday April 29 to Sunday May 2) at the Fair Grounds Race Course. Gates open 11am to 7pm daily, with last entry at 6:30pm. The festival has run every spring since 1970.",
+      },
+      {
+        q: "How much are Jazz Fest tickets?",
+        a: "**A single day runs about $99 to $149 at the gate, and a four day weekend pass starts around $399.** Louisiana residents pay less, including a $55 Locals Thursday, and VIP tiers climb to $2,099. Kids 2 to 10 are $5. Buy through nojazzfest.com or AXS once 2027 tickets go on sale, usually in December.",
+      },
+      {
+        q: "Where is Jazz Fest, and how do you get there?",
+        a: "**Jazz Fest is at the Fair Grounds Race Course on Gentilly Boulevard, about three miles from the French Quarter.** There is no general parking, so take the official Jazz Fest Express shuttle (the only ride that drops inside the gates, about $29), the RTA route 91 bus, or a bike. Rideshare drops a few blocks out on the outer ring.",
+      },
+      {
+        q: "What food should you eat at Jazz Fest?",
+        a: "**Start with Crawfish Monica, the best selling dish since 1983, then the cochon de lait po boy, crawfish bread, and a Mango Freeze.** More than 60 vendors serve over 200 dishes, most around $10 to $15. The festival is fully cashless, so bring a card or your phone, not just cash.",
+      },
+      {
+        q: "Which Jazz Fest weekend is better?",
+        a: "**Pick by the lineup, which is announced around January.** As a loose rule the first weekend leans pop and hip hop and the second leans classic rock and funk. For a first visit, a Locals Thursday is the smartest day, the cheapest, with smaller crowds and shorter food lines.",
+      },
+      {
+        q: "What should you bring to Jazz Fest?",
+        a: "**Pack for sun and mud, a poncho, shoes you can ruin, sunscreen, a hat, and a portable charger.** Bags must be under 17 by 12 by 10 inches and get searched. One folding chair, a personal umbrella, and sealed water are allowed. Tents, glass, outside alcohol, and pets are not.",
+      },
+    ],
+    body: `New Orleans Jazz Fest is **the city's eight day music, food, and culture festival**, and the next one runs April 22 to May 2, 2027 across two four day weekends at the Fair Grounds in New Orleans. It is one of the great festivals in America, and the most important thing to know is dull. Book your hotel before anything else, because Jazz Fest is the priciest hotel week of the year in New Orleans, and rooms sell out within days of the lineup drop.
+
+This guide covers when it is, what tickets cost, how to actually get to the gate, where to stay, and which food to eat first. It is written for a first Jazz Fest experience and current as of 2026. One honest note, since we run a hotel booking site.
+
+Those room rates double during Jazz Fest, and that is the hotel's doing, not ours. The price we show is the hotel's rate plus one small flat fee, the same for everyone, no surge math hidden three screens down.
+
+## What is the New Orleans Jazz Heritage Festival, also called Jazz Fest, in 2027?
+
+**Jazz Fest is the New Orleans Jazz & Heritage Festival, eight days of music spread over two long weekends, and in 2027 it runs Thursday April 22 to Sunday April 25, then Thursday April 29 to Sunday May 2.** Gates are open 11am to 7pm each day, and the last people are let in at 6:30pm.
+
+Calling it "jazz" is the understatement of the year. You will find rock, funk, gospel, blues, R&B, hip hop, Cajun, zydeco, and Latin and African music across fourteen stages, with around 600 acts over the run.
+
+About 475,000 people came to New Orleans for it in 2026. It is held at the Fair Grounds on Gentilly Boulevard, a real horse track about three miles and ten minutes from the French Quarter, which matters more than it sounds.
+
+The festival started in 1970 and has been the spring centerpiece of New Orleans ever since. If you like live music and you can stand a little heat, it belongs on the list once.
+
+## Jazz Fest 2027 dates, and which weekend to pick
+
+**If you can only do one weekend, pick it by the lineup, then book the moment that lineup is announced, usually in January.** The two weekends are different festivals wearing the same hat. As a loose rule, the first weekend leans pop, indie, and hip hop, and the second leans classic rock, funk, and legacy acts, though the festival enjoys breaking its own rule.
+
+The smartest first timer move is a Thursday. Both weekends open with a Locals Thursday, the cheapest day with the smallest crowds and the shortest food lines, which is the ideal day to learn the place before the Saturday wall of people arrives.
+
+Sunny Saturdays are the monster crowds. In 2026 the festival had its first daytime sellout in history on a Saturday, after two rained out days sent everyone piling in at once. The 2026 bill shows the range, with the Eagles, Stevie Nicks, Rod Stewart, and Tyler Childers on the big stages, and local artists like Jon Batiste and Trombone Shorty holding the home turf.
+
+You cannot see everything, and trying is how you end up seeing nothing. Pick three or four acts a day off the official schedule grid, called the Cubes, and let the wandering fill the gaps.
+
+## Jazz Fest tickets, and what they actually cost
+
+**A single day at the gate runs about $99 to $149, and a four day weekend pass starts around $399, with VIP tiers climbing well past two thousand dollars.** Here is the 2026 pricing as your guide, since 2027 tickets are not on sale yet.
+
+Confirm the real numbers on nojazzfest.com when they go live, usually in December.
+
+::infographic jazz-fest-tickets
+
+In 2026, standard single day early bird tickets were $99 on Thursday, $129 Friday and Sunday, and $149 Saturday. Louisiana residents paid less, including a $55 Locals Thursday.
+
+The standard four day pass started at $399, the GA+ pass with a lounge and express entry ran about $659, and the top Big Chief VIP tier was $2,099, which buys air conditioning, a real seat, and private restrooms. By 3pm in the sun, all three of those start to sound reasonable.
+
+Kids 2 to 10 are $5 at the gate, and under 2 are free. Tickets sell through nojazzfest.com and AXS, and there is a payment plan that starts at $49 down for the people pacing themselves.
+
+## Getting to Jazz Fest at the Fair Grounds
+
+**There is essentially no general parking at the Fair Grounds, so do not drive yourself and expect to leave the car nearby.** Street parking close to the track is resident only and aggressively enforced, and a boot on your wheel is a bad start to a day about joy.
+
+::infographic jazz-fest-getting-there
+
+The cleanest option is the official Jazz Fest Express shuttle, the only ride that drops you inside the gates. It ran about $29 round trip in 2026, leaving from four spots including the French Quarter steamboat dock and a free lot at Wisner near City Park. Rideshare works, but Uber and Lyft cannot reach the gate during the fest.
+
+They drop on the outer ring, on streets like Esplanade, Broad, and Ursulines, and you walk the last few blocks with everyone else. The city bus, the RTA route 91, gets you within a short walk for a couple of dollars, and a Blue Bikes rental plus the free bike parking at the gates is the move locals quietly swear by.
+
+## Where to stay for Jazz Fest, from Mid-City to the French Quarter
+
+**Your neighborhood choice is really your transportation plan, so pick the room first and let it decide how you reach the Fair Grounds.** This is the part thin guides bury, and it is the part that makes or breaks the week. Jazz Fest is the most expensive hotel week in New Orleans, with rates running roughly two to three times normal, and the best rooms vanish within days of the lineup announcement.
+
+::infographic jazz-fest-stay
+
+Mid-City puts a few properties within a genuine ten to fifteen minute walk of the gate, with zero rideshare surge to pay, though the hotel inventory there is thin and goes first. The French Quarter and the Central Business District have the most rooms and the best nightlife a few blocks off Bourbon Street, and the Canal Street streetcar gets you to the track in about half an hour, which beats a surging car during festival hours. The Marigny and Frenchmen Street sit closest to the late night shows and a long walk or short ride from the gate.
+
+Book two to three months out for a normal year, and three to six months for a heavy second weekend. For a central base near the night shows and the streetcar, here are two we can book at the same flat fee for everyone.
+
+::hotel lp1da18
+
+::hotel lpaf414
+
+That surge in the room rate is the hotel reading the calendar, and we cannot wave it away. What we can promise is that our fee sits flat and identical for every guest, in Jazz Fest week and in November, so at least one number on the page is not trying to pick your pocket.
+
+::priceproof
+
+::cta New Orleans
+
+## The food at Jazz Fest is half the reason to go
+
+**The food at Jazz Fest is a genuine New Orleans culinary event, with more than 60 vendors and over 200 dishes, and you should arrive hungry and with a plan.** Most plates run about $10 to $15. One important update, since old guides get this wrong.
+
+The festival is now fully cashless, so bring a card or your phone, and keep a little cash for exactly one job, which is tipping the restroom attendants who hand out free sunscreen.
+
+::infographic jazz-fest-food
+
+Start with Crawfish Monica, the festival's best selling dish since 1983, a creamy Cajun pasta with crawfish tails that people line up for the way they line up for headliners. Then work through the cochon de lait po boy, the crawfish bread, and Prejean's pheasant, quail, and andouille gumbo, a dark roux bowl with a real kick.
+
+Finish with a Mango Freeze, the frozen palate cleanser sold by the New Orleans radio station WWOZ as a fundraiser. Veterans bring foil and zip top bags to haul a spread of dishes back to one shady spot, which is less greedy than it is strategic.
+
+## Jazz Fest music beyond the headliners
+
+**The headliners fill the two main stages, but the soul of Jazz Fest lives in the smaller tents, where you can sit in shade and catch some of the best players alive with no crowd at all.** This is also your heat strategy. The covered tents have fans and misting, and ducking into one is how you survive a 3pm Saturday.
+
+The Gospel Tent is a New Orleans rite of passage, an air of a Sunday service with the musicianship of a record. The WWOZ Jazz Tent and Economy Hall hold the modern and traditional jazz, the Blues Tent does what it says, and the Fais Do-Do Stage runs Cajun and zydeco all day. Congo Square, named for the historic ground where enslaved and free Black New Orleanians once gathered to make music, carries the R&B, hip hop, and African and Caribbean sounds.
+
+The Jazz and Heritage Stage gives the brass bands and the Mardi Gras Indians their daily due. By tradition the whole thing closes on the final Sunday with Trombone Shorty, a New Orleans local who grew up in Treme, sending everyone home.
+
+## The Jazz Heritage half most tourists walk past
+
+**Half of Jazz Fest is New Orleans and Louisiana craft and culture, and it was part of the founder's vision from the first day in 1970, not a gift shop bolted on later.** It is worth slowing down for.
+
+Three juried marketplaces run the length of the grounds. The Congo Square African Marketplace, the Contemporary Crafts fair, and the Louisiana Marketplace of handmade local work. The Louisiana Folklife Village shows the old trades happening in real time, from Mardi Gras float sculpting to accordion making to Mardi Gras Indian beading.
+
+The Native American Village hosts basket weaving, drumming, and dance from Louisiana tribal elders, and a yearly Cultural Exchange Pavilion spotlights a different country. Daily second line parades wind through the crowd, so if you hear a brass band coming, step aside and let it pass, or fall in behind it.
+
+## What to bring to Jazz Fest, and the mud
+
+**Pack for sun and for a swamp on the same day, because late April in New Orleans serves both, often within an hour of each other.** Jazz Fest is rain or shine, and when it rains the dirt horse track turns to deep mud. In 2026 the second weekend had downpours bad enough to close stages early.
+
+::infographic jazz-fest-bring
+
+Wear a poncho and shoes or boots you are willing to lose, and pack extra socks, sunscreen, sunglasses, a hat, and a portable phone charger. Bags must be no bigger than about 17 by 12 by 10 inches, and they get searched at the gate. You may bring one folding chair, a personal umbrella, sealed water, and a small soft cooler with sealed water and ice.
+
+You may not bring tents, big shade canopies, glass, outside alcohol, pets, or wagons. Download the official app for the stage map and the daily Cubes, since cell service in a field of half a million people is its own kind of adventure.
+
+## Jazz Fest after dark, the second festival
+
+**When the Fair Grounds close at 7pm, a whole second festival of late night club shows takes over New Orleans, and many of the same artists play.** The fest is a day event, so the nights are yours, and the locals plan them as carefully as the days.
+
+Club sets mostly run $20 to $50, a fraction of a festival ticket, at rooms like Tipitina's, the Maple Leaf, Snug Harbor on Frenchmen Street, and the Howlin' Wolf. The marquee reunions cost more and sell out fast, so buy those the day they go on sale. The local paper publishes a Jazz Fest After Dark guide every year that lists hundreds of them.
+
+## Jazz Fest or Mardi Gras: which trip is for you?
+
+**Jazz Fest and Mardi Gras are not the same trip, and picking the wrong one is a common and avoidable mistake.** Jazz Fest is a ticketed daytime festival of music, food, and culture, held in one place over late April and early May. You buy in, and the city itself mostly happens after you leave the gate.
+
+::infographic jazz-fest-vs-mardigras
+
+Mardi Gras is the opposite. A free, citywide street party of parades with no single venue, on a date that moves with the calendar. In 2026 it fell on February 17.
+
+If you want a music marathon with some of the best food in America on the side, come for New Orleans Jazz Fest. If you want New Orleans to turn itself inside out in the streets, come for Mardi Gras. Both are worth doing once, just not, as some optimists try, on the same trip.
+
+## A short history of Jazz Fest
+
+**The first Jazz Fest in 1970 drew about 350 people, which was roughly half the number of performers, so the early years were less a festival than a very good private party.** It was the work of the impresario George Wein, who built the Newport Jazz Festival before it, and a young local named Quint Davis, who still runs it today.
+
+That first year in Congo Square, Wein handed Mahalia Jackson a microphone as a brass band led a second line, and she sang with Duke Ellington watching. The festival moved to the Fair Grounds in 1972 and grew from there, past 100,000 people by the late 1970s and to the roughly 475,000 of today.
+
+The yearly festival poster has become a collectible in its own right, and the 2026 edition honored the 125th anniversary of Louis Armstrong's birth. For the rest of the trip, our guides to [things to do](/blog/things-to-do-in-new-orleans), the [French Quarter](/blog/french-quarter-new-orleans), and [Mardi Gras](/blog/mardi-gras-in-new-orleans) pick up where the music leaves off.
+`,
+  },
+  {
     slug: "haunted-new-orleans",
     title: "Haunted New Orleans: Ghosts, Cemeteries & Haunted Hotels (2026)",
     seoTitle: "Haunted New Orleans: A 2026 Guide",
@@ -1861,12 +2042,12 @@ Either way, the move is the same, book the room early, plan the days loosely, an
     title: "Best Restaurants in New Orleans: 20 to Try in 2026",
     seoTitle: "Best Restaurants in New Orleans: 20 to Try (2026)",
     description:
-      "The best restaurants in New Orleans for 2026 — historic Creole rooms, James Beard winners, beignets and po-boys, jazz brunch, and where locals actually eat.",
+      "The best restaurants in New Orleans for 2026 — historic Creole rooms, James Beard winners, beignets and po boys, jazz brunch, and where locals actually eat.",
     excerpt:
-      "From the 1840s Creole grande dames to the corner po-boy shops locals swear by — the honest, local-grade guide to the best restaurants in New Orleans, sorted by occasion and neighborhood. As of 2026.",
+      "From the 1840s Creole grande dames to the corner po boy shops locals swear by — the honest, local-grade guide to the best restaurants in New Orleans, sorted by occasion and neighborhood. As of 2026.",
     tldr: {
       answer:
-        "For the classics, book Commander's Palace, Antoine's, or Galatoire's; for award-winning cooking, Dakar NOLA and two-Michelin-star Emeril's; for where locals eat, Willie Mae's, Domilise's, and Dooky Chase's. Eat a beignet at Café du Monde and a dressed po-boy at least once, and reserve the big names weeks ahead.",
+        "For the classics, book Commander's Palace, Antoine's, or Galatoire's; for award-winning cooking, Dakar NOLA and two-Michelin-star Emeril's; for where locals eat, Willie Mae's, Domilise's, and Dooky Chase's. Eat a beignet at Café du Monde and a dressed po boy at least once, and reserve the big names weeks ahead.",
       points: [
         "**Historic splurge**, Commander's Palace, Antoine's, Galatoire's and Brennan's (jazz brunch. Jackets after 5pm).",
         "**Award winners**, Dakar NOLA (James Beard Best New Restaurant 2024) and two Michelin star Emeril's.",
@@ -2468,7 +2649,7 @@ Whatever you book, the room price you see here is the same one everyone else see
       points: [
         "**Best weather**, October and November, 70s and low humidity.",
         "**Cheapest**, summer (June, September), August the rock bottom.",
-        "**Festival season**, February to May (Mardi Gras, French Quarter Fest, Jazz Fest).",
+        "**Festival season**, February to May (Mardi Gras, French Quarter Fest, [Jazz Fest](/blog/new-orleans-jazz-fest)).",
         "**Peak crowds & prices**, the two weeks before Mardi Gras (Feb 9, 2027).",
         "**Watch out**, June, November is hurricane season. July, August is brutally humid.",
       ],
@@ -3600,7 +3781,7 @@ Whichever area you choose, the price you book here is the same one everyone else
       },
       {
         q: "What is the best area to stay in New Orleans on a budget?",
-        a: "The Central Business District and the edges of the French Quarter have the most well located rooms under about $130 a night, and the value climbs further if you base in Mid-City or Uptown and ride the streetcar in. Rates swing hard with the calendar, though, a cheap weekend can triple over Mardi Gras or Jazz Fest, so search your exact dates.",
+        a: "The Central Business District and the edges of the French Quarter have the most well located rooms under about $130 a night, and the value climbs further if you base in Mid-City or Uptown and ride the streetcar in. Rates swing hard with the calendar, though, a cheap weekend can triple over Mardi Gras or [Jazz Fest](/blog/new-orleans-jazz-fest), so search your exact dates.",
       },
       {
         q: "Which is better, the French Quarter or the Garden District?",
@@ -3647,7 +3828,7 @@ The honest truth is there is no wrong answer here, only the difference between r
 
 ## The French Quarter: Where to Stay in New Orleans for a First Time Visit
 
-The Quarter is the postcard, the **first-timer's pick**, and the one neighborhood where ditching the car is the whole point rather than a sacrifice. You wake up steps from Jackson Square and St. Louis Cathedral, with beignets at Cafe du Monde and Royal Street's antique shops a short walk away.
+The Quarter is the postcard, the **first timer's pick**, and the one neighborhood where ditching the car is the whole point rather than a sacrifice. You wake up steps from Jackson Square and St. Louis Cathedral, with beignets at Cafe du Monde and Royal Street's antique shops a short walk away.
 
 The catch is **Bourbon Street**, which runs loud and late every single night, including the ones you would hoped it would not. Book two or three blocks toward Royal, Chartres or Esplanade, and the volume drops to a civilized hum.
 
@@ -4185,7 +4366,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       "Walk to the bars in Old Town or wake up at a desert golf resort? A plain-English guide to picking the right Scottsdale base — by area, budget, golf, and the trip you're taking.",
     tldr: {
       answer:
-        "Scottsdale splits between walkable Old Town and the spread-out resorts. Old Town is the lively, walkable heart — best for first-timers, nightlife and no car; Paradise Valley and Camelback hold the iconic spa resorts; North Scottsdale is golf, desert views and quiet luxury; and the Salt River and airport side run cheapest, a short drive out.",
+        "Scottsdale splits between walkable Old Town and the spread-out resorts. Old Town is the lively, walkable heart — best for first timers, nightlife and no car; Paradise Valley and Camelback hold the iconic spa resorts; North Scottsdale is golf, desert views and quiet luxury; and the Salt River and airport side run cheapest, a short drive out.",
       points: [
         "**Old Town Scottsdale**, walkable bars, galleries and shopping. The first timer pick.",
         "**Paradise Valley / Camelback**, the iconic desert resort and spa splurge.",
@@ -4408,7 +4589,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       "Walk the oak-shaded squares or wake up on the riverfront? A plain-English guide to picking the right Savannah base — by area, budget, romance, and the trip you're taking.",
     tldr: {
       answer:
-        "Savannah is really one big walkable Historic District. The north end, by River Street and City Market, is lively and best for first-timers and families; the south end, around Forsyth Park, is quiet and romantic; Plant Riverside and the waterfront are the trendy splurge; and Midtown and the Southside near the airport run cheapest, a short drive out.",
+        "Savannah is really one big walkable Historic District. The north end, by River Street and City Market, is lively and best for first timers and families; the south end, around Forsyth Park, is quiet and romantic; Plant Riverside and the waterfront are the trendy splurge; and Midtown and the Southside near the airport run cheapest, a short drive out.",
       points: [
         "**North Historic District**, River Street, City Market. The lively first timer pick.",
         "**South Historic District**, Forsyth Park and the quiet squares. The romantic choice.",
@@ -5202,7 +5383,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       "Adobe Old Town or Route 66 Nob Hill? A plain-English guide to picking the right Albuquerque base — by area, budget, the Balloon Fiesta, and the trip you're taking.",
     tldr: {
       answer:
-        "Albuquerque splits into a few areas. Old Town is the adobe historic heart and the first-timer pick; Downtown has the Route 66 nightlife; Nob Hill is the hip, walkable Route 66 stretch; Uptown is the shopping base near the Sandias; and the airport and I-25 north run cheapest — and are the Balloon Fiesta base.",
+        "Albuquerque splits into a few areas. Old Town is the adobe historic heart and the first timer pick; Downtown has the Route 66 nightlife; Nob Hill is the hip, walkable Route 66 stretch; Uptown is the shopping base near the Sandias; and the airport and I-25 north run cheapest — and are the Balloon Fiesta base.",
       points: [
         "**Old Town**, adobe plaza, museums, the BioPark. The walkable first timer pick.",
         "**Downtown**, Central Avenue (Route 66) nightlife and the historic hotels.",
@@ -5520,7 +5701,7 @@ Whichever area wins, the price you book here is the same one everyone else sees,
       "Sunny South Shore or lush North Shore? A plain-English guide to picking the right Kauai base — by area, budget, the weather, and the trip you're taking.",
     tldr: {
       answer:
-        "Kauai splits into a few areas. Poipu on the sunny South Shore is the easy first-timer pick; Princeville and Hanalei on the lush North Shore are the most scenic; the East Side (Kapaa and Wailua) is the central, better-value base near the airport; and Lihue is the convenient airport town.",
+        "Kauai splits into a few areas. Poipu on the sunny South Shore is the easy first timer pick; Princeville and Hanalei on the lush North Shore are the most scenic; the East Side (Kapaa and Wailua) is the central, better-value base near the airport; and Lihue is the convenient airport town.",
       points: [
         "**Poipu / South Shore**, sunniest, calm swimming, resorts. The first timer pick.",
         "**Princeville & Hanalei / North Shore**, the most beautiful, lush and rainier. For scenery.",
@@ -5864,7 +6045,7 @@ Whichever side wins, the price you book here is the same one everyone else sees,
       "River Walk or the Pearl? A plain-English guide to picking the right San Antonio base — by area, budget, the Alamo, and the trip you're taking.",
     tldr: {
       answer:
-        "San Antonio splits into a few areas. Downtown along the river is the walkable first-timer pick, steps from the Alamo; the Pearl and Southtown are the trendy, artsy food districts; near SeaWorld and Six Flags suits families; and the Medical Center, Stone Oak and the airport run cheapest.",
+        "San Antonio splits into a few areas. Downtown along the river is the walkable first timer pick, steps from the Alamo; the Pearl and Southtown are the trendy, artsy food districts; near SeaWorld and Six Flags suits families; and the Medical Center, Stone Oak and the airport run cheapest.",
       points: [
         "**River Walk & downtown**, the Alamo, the river cafes, walkable. The first timer pick.",
         "**The Pearl & Broadway**, the food district, trendy and walkable, just north of downtown.",
@@ -6449,7 +6630,7 @@ Four zones, one deciding factor, how much you will trade walkable tacos for a po
 
 | Area | The feel | Best for | The rate |
 |---|---|---|---|
-| [Downtown / 4th Avenue](/search?destination=Tucson&adults=2) | Historic, walkable, arts, food | Walkers, foodies, first-timers | Mid |
+| [Downtown / 4th Avenue](/search?destination=Tucson&adults=2) | Historic, walkable, arts, food | Walkers, foodies, first timers | Mid |
 | [The Catalina Foothills](/search?destination=Tucson&adults=2) | Desert resorts, mountain views | Resort days, hiking, golf | Higher |
 | [Midtown / University of Arizona](/search?destination=Tucson&adults=2) | Central, leafy, college town | UA visits, a central base | Mid |
 | [Airport & south side](/search?destination=Tucson&adults=2) | Chains, casinos, near I-10 | Budgets, the parks, the missions | Low |
@@ -6638,7 +6819,7 @@ Four zones, one deciding factor, how much you will pay to walk to a brewery inst
 
 | Area | The feel | Best for | The rate |
 |---|---|---|---|
-| [Downtown / Historic Route 66](/search?destination=Flagstaff&adults=2) | Walkable, breweries, historic | Food, walkers, first-timers | Mid to high |
+| [Downtown / Historic Route 66](/search?destination=Flagstaff&adults=2) | Walkable, breweries, historic | Food, walkers, first timers | Mid to high |
 | [The I-40 / Route 66 strip](/search?destination=Flagstaff&adults=2) | Chains, parking, convenient | Budgets, early Canyon starts | Low |
 | [Little America & the pines](/search?destination=Flagstaff&adults=2) | Woodsy, quiet, resort-ish | A calmer, greener stay | Mid to high |
 | [Near NAU & south](/search?destination=Flagstaff&adults=2) | University, spread out | Budgets, longer stays | Low |
@@ -7679,7 +7860,7 @@ Once you have picked your side of town, [search current Branson prices](/search?
       "Downtown strip or the waterpark side? A plain-English guide to picking your Wisconsin Dells base — by area, budget and the trip you're taking.",
     tldr: {
       answer:
-        "Wisconsin Dells splits in two: downtown Dells, the walkable historic strip on the river, and Lake Delton, the village just south where the waterparks and big resorts sit. Pick downtown for a no-car, first-timer trip; pick Lake Delton to be next to the parks. The famous mega-resorts (Kalahari, Wilderness, Great Wolf) book direct — the hotels you can actually book are the brands and motels around them.",
+        "Wisconsin Dells splits in two: downtown Dells, the walkable historic strip on the river, and Lake Delton, the village just south where the waterparks and big resorts sit. Pick downtown for a no-car, first timer trip; pick Lake Delton to be next to the parks. The famous mega-resorts (Kalahari, Wilderness, Great Wolf) book direct — the hotels you can actually book are the brands and motels around them.",
       points: [
         "**Downtown Dells**, the walkable strip on the Wisconsin River. First timers, no car needed.",
         "**Lake Delton**, the village by the waterparks, go karts and the lake. Families and the parks.",
@@ -9085,7 +9266,7 @@ Once you have picked your side of town, [check current Moab prices](/search?dest
       "West side or South side? A plain-English guide to picking the right Maui base — by area, by budget, and by the trip you're taking.",
     tldr: {
       answer:
-        "Pick your Maui coast first. The sunny South side (Wailea, Kihei) suits couples and budgets; the lively West side (Kaanapali, Kapalua) is the easy first-timer base; Hana, out east, is a remote night or two and never a home base. Choose the area, then the hotel.",
+        "Pick your Maui coast first. The sunny South side (Wailea, Kihei) suits couples and budgets; the lively West side (Kaanapali, Kapalua) is the easy first timer base; Hana, out east, is a remote night or two and never a home base. Choose the area, then the hotel.",
       points: [
         "**Kaanapali (West)**, the lively, walkable resort beach. The easiest first timer default.",
         "**Wailea (South)**, polished luxury and calm beaches. The splurge pick for couples.",
