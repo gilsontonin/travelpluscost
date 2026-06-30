@@ -46,6 +46,9 @@ run("prose-style", "node scripts/blog/style-clean.mjs --all");
 run("prose-style · infographics", "node scripts/blog/style-clean.mjs --ig");
 // 3b) No duplicate slugs (silent route collision) — UNIFORM shared gate.
 run("dup-slugs", "node scripts/blog/check-dup-slugs.mjs");
+// 3c) Region + hotel cover — every post funnels to hotels (search widget + "Top-rated stays" rail +
+// a static.cupid.travel cover, never Unsplash). TPC-only. (2026-06-30, after region-less posts shipped.)
+run("region+cover", "node scripts/blog/check-region-cover.mjs");
 // 4) Structural HTML audit (JSON-LD BlogPosting+BreadcrumbList, canonical, img alt) — UNIFORM with HP. Build-gated.
 if (fs.existsSync(".next/server/app/blog")) run("html audit (.next)", "node scripts/blog/audit-html.mjs");
 else console.log("▶ html audit … skipped (no .next — run after build)");

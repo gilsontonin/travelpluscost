@@ -71,10 +71,11 @@ export const POSTS: Post[] = [
     updated: "2026-06-29",
     author: "Gilson Tonin, MBA",
     category: "Destination guides",
+    region: { name: "New Orleans", destination: "New Orleans" },
     cover: {
-      src: "https://images.unsplash.com/photo-1570578066030-a5792a08ec7e?fm=webp&fit=crop&w=1200&h=675&q=80",
-      alt: "Bourbon Street in New Orleans at night, lit up with neon bar and restaurant signs above a crowd of barhoppers.",
-      credit: { name: "Eric Tompkins", url: "https://unsplash.com/@erictompkins" },
+      src: "https://static.cupid.travel/hotels/307606457.jpg",
+      alt: "Wyndham New Orleans French Quarter, a hotel in the heart of the French Quarter",
+      credit: { name: "Wyndham New Orleans French Quarter" },
     },
     faqs: [
       { q: "What is the official cocktail of New Orleans?", a: "The Sazerac. The Louisiana Legislature made it official in 2008. It started around 1838 as a brandy drink from the apothecary Antoine Peychaud, then switched to rye whiskey, with Peychaud's bitters, a little sugar, and an absinthe or Herbsaint rinse. Drink the best one at the Sazerac Bar or Arnaud's French 75 Bar." },
@@ -268,10 +269,11 @@ When you book with us the price you see is the all in price, the hotel's rate pl
     updated: "2026-06-29",
     author: "Gilson Tonin, MBA",
     category: "Pricing & transparency",
+    region: { name: "Las Vegas", destination: "Las Vegas" },
     cover: {
-      src: "https://images.unsplash.com/photo-1759038085950-1234ca8f5fed?fm=webp&fit=crop&w=1200&h=675&q=80",
-      alt: "A modern hotel reception desk, where mandatory resort fees usually surface at check in.",
-      credit: { name: "Neon Wang", url: "https://unsplash.com/@neonwangphotography" },
+      src: "https://static.cupid.travel/hotels/ex_66a81d0e_z.jpg",
+      alt: "Las Vegas Hilton at Resorts World on the Las Vegas Strip",
+      credit: { name: "Las Vegas Hilton at Resorts World" },
     },
     faqs: [
       { q: "Can you legally refuse to pay a resort fee?", a: "Not if it was clearly disclosed before you booked, a properly shown fee is part of the contract, and refusing it can get your card charged anyway. Your leverage is non disclosure or a missing amenity. If the mandatory fee was not in the total price you agreed to, or the pool and gym it paid for were closed, you have real grounds to dispute it at the desk or through a credit card chargeback." },
@@ -8069,9 +8071,9 @@ Whichever area wins, the price you book here is the same one everyone else sees,
     author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
-      src: "https://images.unsplash.com/photo-1632440672308-e84787ecc86a?fm=webp&fit=crop&w=1200&h=675&q=80",
-      alt: "Telluride, Colorado, a historic town in its box canyon below the San Juan Mountains",
-      credit: { name: "Balazs Busznyak", url: "https://unsplash.com/@balazsbusznyak" },
+      src: "https://static.cupid.travel/hotels/62925056.jpg",
+      alt: "The Hotel Telluride in the Colorado mountains",
+      credit: { name: "The Hotel Telluride" },
     },
     region: { name: "Telluride", destination: "Telluride" },
     faqs: [
@@ -9982,9 +9984,9 @@ Once you have picked your side of town, [check current Moab prices](/search?dest
     author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
-      src: "https://images.unsplash.com/photo-1678157933167-0938f1ccfe3b?fm=webp&fit=crop&w=1200&h=675&q=80",
-      alt: "Resorts lining a sunny Maui beach, the kind of place to weigh when deciding where to stay in Maui",
-      credit: { name: "Luke Scarpino", url: "https://unsplash.com/@lrscarpino" },
+      src: "https://static.cupid.travel/hotels/426617983.jpg",
+      alt: "Wailea Beach Resort Marriott on Maui",
+      credit: { name: "Wailea Beach Resort Marriott, Maui" },
     },
     region: { name: "Maui", destination: "Maui" },
     faqs: [
@@ -10315,10 +10317,11 @@ Planning the rest of the trip or comparing islands? Our guides to [where to stay
     updated: "2026-06-23",
     author: "Gilson Tonin, MBA",
     category: "Pricing & transparency",
+    region: { name: "Las Vegas", destination: "Las Vegas" },
     cover: {
-      src: "https://images.unsplash.com/photo-1758598307153-f1c53d9db23e?fm=webp&fit=crop&w=1200&h=675&q=80",
-      alt: "Traveler checking hotel prices on a phone and laptop, the kind of cross-device shopping surveillance pricing tracks",
-      credit: { name: "Vitaly Gariev", url: "https://unsplash.com/@silverkblack" },
+      src: "https://static.cupid.travel/hotels/44103227.jpg",
+      alt: "Trump International Hotel Las Vegas near the Strip",
+      credit: { name: "Trump International Hotel Las Vegas" },
     },
     faqs: [
       {
@@ -10492,9 +10495,9 @@ And if you change one habit after reading this, before you book anything, check 
     author: "Gilson Tonin, MBA",
     category: "Destination guides",
     cover: {
-      src: "https://images.unsplash.com/photo-1698094276348-c542aa9c5609?fm=webp&fit=crop&w=1200&h=675&q=80",
-      alt: "Aerial view of Waikiki Beach and the Honolulu skyline on Oahu",
-      credit: { name: "Spenser Sembrat", url: "https://unsplash.com/@spensersembrat" },
+      src: "https://static.cupid.travel/hotels/573211454.jpg",
+      alt: "Hilton Hawaiian Village Waikiki Beach Resort on Oahu",
+      credit: { name: "Hilton Hawaiian Village Waikiki Beach Resort" },
     },
     region: { name: "Oahu", destination: "Oahu" },
     faqs: [
