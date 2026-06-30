@@ -3,6 +3,7 @@
 // good version stays live). Network/Lighthouse checks run separately (blog:links, blog:lh).
 //   npm run check
 import { execSync } from "node:child_process";
+import fs from "node:fs";
 
 const steps = [];
 function run(label, cmd) {
@@ -22,6 +23,9 @@ run("ai-slop · blog posts", "node scripts/blog/ai-slop-check.mjs --all");
 run("claims-integrity", "node scripts/blog/claims-check.mjs");
 // 3) Prose style (owner voice: no dashes, no colons/semicolons in prose, no contractions — spelled out)
 run("prose-style", "node scripts/blog/style-clean.mjs");
+// 4) Structural HTML audit (JSON-LD BlogPosting+BreadcrumbList, canonical, img alt) — UNIFORM with HP. Build-gated.
+if (fs.existsSync(".next/server/app/blog")) run("html audit (.next)", "node scripts/blog/audit-html.mjs");
+else console.log("▶ html audit … skipped (no .next — run after build)");
 
 const failed = steps.filter(([, ok]) => !ok);
 console.log(`\n${"─".repeat(48)}\ncheck: ${steps.length - failed.length}/${steps.length} passed`);
