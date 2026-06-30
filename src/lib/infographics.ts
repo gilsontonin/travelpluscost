@@ -16,6 +16,59 @@ export type Infographic =
   | { kind: "callout"; title: string; body: string };
 
 export const INFOGRAPHICS: Record<string, Infographic> = {
+  "resort-fees-at-a-glance": {
+    kind: "stat",
+    title: "Resort fees at a glance",
+    stats: [
+      { value: "$33 to $42", label: "Average US resort fee per night, about 11 percent of the room cost" },
+      { value: "$25 to $60", label: "The usual range, climbing past $55 in Las Vegas and Hawaii" },
+      { value: "28 percent", label: "Share of US hotels charging one in 2025, up from 2 percent in 2010" },
+      { value: "$2.9 billion", label: "Collected in resort and amenity fees by the hotel industry in a year" },
+      { value: "1997", label: "When the first mandatory resort fees appeared, mostly in Las Vegas" },
+    ],
+  },
+  "why-hotels-charge-resort-fees": {
+    kind: "steps",
+    title: "How the resort fee trick works",
+    steps: [
+      { title: "Quote the low number", detail: "The hotel advertises $199 and leaves the $45 fee out, so it looks cheaper than the honest hotel next door." },
+      { title: "Win the comparison", detail: "Travel sites sort by price, so the lower headline number gets the click. The FTC calls this drip pricing." },
+      { title: "Dodge the commission", detail: "For years the fee sat outside the room rate, so the hotel kept all of it and paid the booking site nothing on that part." },
+      { title: "Collect at the desk", detail: "The fee lands after you have stopped shopping, free money on a stay you already booked." },
+    ],
+  },
+  "resort-fees-by-place": {
+    kind: "stat",
+    title: "Where resort fees cost the most",
+    stats: [
+      { value: "$54 to $59", label: "Top fees in Las Vegas and Hawaii, the Hilton Hawaiian Village hits $59 a night" },
+      { value: "$30 to $50", label: "Typical range in New York City, where destination fees spread fast after 2016" },
+      { value: "About $50", label: "Marriott's average fee when charged, the highest of the big chains" },
+      { value: "Over $100", label: "The most extreme fee found, a Ritz Carlton Reserve in Puerto Rico" },
+    ],
+  },
+  "ftc-junk-fee-rule": {
+    kind: "compare",
+    title: "The FTC junk fees rule, effective May 12, 2025",
+    left: "What it does",
+    right: "What it does not do",
+    rows: [
+      { label: "The price", left: "Forces the all in total up front, fees included", right: "Does not cap or lower the fee" },
+      { label: "The fee", left: "Bans hiding a mandatory fee", right: "Does not ban the fee itself" },
+      { label: "The math", left: "A $199 room plus a $39 fee must show $238", right: "The hotel can still charge the $39" },
+      { label: "The teeth", left: "Penalties up to $53,088 per violation", right: "Taxes can still be added at the end" },
+    ],
+  },
+  "how-to-avoid-resort-fees": {
+    kind: "steps",
+    title: "Four ways to skip a resort fee",
+    steps: [
+      { title: "Book points at Hilton or Hyatt", detail: "Both waive resort fees on award stays booked entirely with points, at every tier. Marriott does not." },
+      { title: "Reach Hyatt Globalist", detail: "The only major elite status that waives the fee on regular cash stays, not just award nights." },
+      { title: "Pick a hotel with no fee", detail: "Drury, every Disney resort, and most select service brands skip it. ResortFeeChecker lists the fee before you book." },
+      { title: "Dispute a closed amenity", detail: "If the pool or gym was shut, the fee bought a service you could not use. Ask the manager, then a card chargeback." },
+    ],
+  },
   "where-to-stay-in-maui-kaanapali-vs-kihei": {
     kind: "compare",
     title: "Kaanapali or Kihei, the two first timer bases",

@@ -49,6 +49,141 @@ export interface Post {
 
 export const POSTS: Post[] = [
   {
+    slug: "resort-fees-explained",
+    title: "Resort Fees, Explained: What They Are, the FTC Rule, and How to Avoid Them",
+    seoTitle: "Resort Fees Explained: Costs, the FTC Rule, How to Avoid",
+    description:
+      "Resort fees are mandatory hotel charges of $25 to $60 a night. What they cover, why hotels charge them, the 2026 FTC rule, and how to avoid them.",
+    excerpt:
+      "Why a $199 room is really a $244 room, and the handful of moves that actually get you out of paying the fee.",
+    tldr: {
+      answer:
+        "A resort fee is the second, mandatory charge a hotel tacks onto your nightly rate, commonly $25 to $60, for perks like wifi and the gym you may never touch. Since May 2025 a federal rule makes hotels reveal it in the price before checkout, though the fee itself is still here.",
+      points: [
+        "**It is the price, split in two.** The hotel quotes a low room rate, then adds a fee you cannot decline.",
+        "**It is not small.** US fees average about $33 to $42 a night, and top $55 in Las Vegas and Hawaii.",
+        "**The FTC rule shows it, does not ban it.** As of May 2025 hotels must display the all in total up front.",
+        "**Points can beat it.** Hilton and Hyatt waive resort fees on all points award stays. Marriott does not.",
+        "**The closed pool dispute works.** If an amenity was unavailable, you can fight the fee and often win.",
+      ],
+    },
+    date: "2026-06-29",
+    updated: "2026-06-29",
+    author: "Gilson Tonin, MBA",
+    category: "Pricing & transparency",
+    cover: {
+      src: "https://images.unsplash.com/photo-1759038085950-1234ca8f5fed?fm=webp&fit=crop&w=1200&h=675&q=80",
+      alt: "A modern hotel reception desk, where mandatory resort fees usually surface at check in.",
+      credit: { name: "Neon Wang", url: "https://unsplash.com/@neonwangphotography" },
+    },
+    faqs: [
+      { q: "Can you legally refuse to pay a resort fee?", a: "Not if it was clearly disclosed before you booked, a properly shown fee is part of the contract, and refusing it can get your card charged anyway. Your leverage is non disclosure or a missing amenity. If the mandatory fee was not in the total price you agreed to, or the pool and gym it paid for were closed, you have real grounds to dispute it at the desk or through a credit card chargeback." },
+      { q: "Are resort fees taxed?", a: "It depends on the state and on whether the fee is truly mandatory. Many states tax a mandatory resort fee at the lower sales tax rate instead of the higher hotel occupancy rate, which is part of why hotels like the split. Hawaii is stricter, it treats a mandatory resort fee as rental income and applies the full accommodations tax." },
+      { q: "Do hotel points get rid of resort fees?", a: "At some brands, yes. Hilton and Hyatt both waive resort fees on award stays booked entirely with points, at every tier. Marriott, IHG, Choice, and Accor still charge the fee on points stays, and elite status does not waive it. So a free night is only fee free if you booked it with the right program." },
+      { q: "Did the FTC rule ban resort fees?", a: "No. The rule that took effect on May 12, 2025 bans hiding the fee, not charging it. Hotels now have to show the all in total price up front, fees included, but there is no cap on the amount and no requirement to remove it. The fee is the same. You just get to see it before you pay." },
+    ],
+    body: `Resort fees are **mandatory daily charges a hotel adds on top of the room rate it advertised**, usually $25 to $60 a night, for amenities like wifi, the pool, and the gym most people assumed came with the room. It is the same room either way. The fee just lets the hotel quote a lower number first and collect the rest at the end.
+
+That gap is the whole game. A $199 room with a $45 resort fee is a $244 room. The hotel prints the $199, you budget the $199, and the extra $45 a night arrives after you have stopped comparing. Over five nights that is $225 you did not plan for, on a room you already paid for.
+
+As of 2026 this is finally changing, sort of. A new federal rule forces hotels to show the all in price up front. The fees themselves are still legal, still here, and still climbing. So here is the honest version, what resort fees are, why they exist, what the new rule does and does not fix, and the handful of moves that actually get you out of one.
+
+## What a hotel resort fee actually is
+
+A resort fee is a second price tag. The hotel splits one room rate into two charges, the part it advertises and the part it does not, then makes the second part mandatory. You cannot decline it. You pay it whether you swim or never leave the room.
+
+It travels under a lot of names. **Resort fee, destination fee, amenity fee, facility fee, urban fee.** A downtown hotel with no resort for a hundred miles calls it a destination fee and charges it anyway. The label changes. The math does not.
+
+The first mandatory resort fees showed up around 1997, mostly in Las Vegas and at beach resorts, and for years they stayed rare. In 2010 about 2 percent of US hotels charged one. By 2025 that figure was roughly 28 percent, and the fee had spread well past resorts into business hotels, airport hotels, and a few budget chains. New York City went from 15 hotels charging a fee in 2016 to more than 125 by 2020.
+
+There is a quiet tax angle too. In many states the room rate is taxed at the high hotel occupancy rate while the resort fee is taxed at the lower sales tax rate. In New York the room is taxed at 14.75 percent and the resort fee at 8.875 percent, so splitting the price also shifts money off the higher tax. Hawaii closed that door, its tax department ruled a mandatory resort fee counts as rental income and owes the full accommodations tax.
+
+::infographic resort-fees-at-a-glance
+
+## What the fee claims to cover, and what you actually use
+
+Ask a hotel what the resort fee buys and you get a generous list. Wifi. Pool and hot tub access. The fitness center. Pool towels, beach chairs, umbrellas. Bottled water. A welcome drink. Local phone calls. A newspaper nobody reads. Sometimes a shuttle or a couple of bike rentals.
+
+Now read that list again as a traveler. Most of it is free everywhere else, something you would never use, or something you already assumed came with a hotel room. The wifi is the tell. The industry spent a decade making wifi free, then quietly folded it back into a charge you cannot refuse.
+
+The real problem is that the fee does not flex with your trip. **It is mandatory whether the amenity is open, useful, or even real.** People have been billed the full fee for a gym that was closed and a pool under renovation, which, as it happens, is also where the best case for getting one removed comes from. We will get there. The industry collects roughly $2.9 billion a year in these fees, which tells you how little it matters to them whether you ever touched the towels.
+
+## Why hotels really charge them
+
+Three reasons, and none of them is the towels.
+
+The first is the headline number. Travel shopping is a wall of prices, and the lowest one wins the click. A hotel that quotes $199 and hides $45 looks cheaper than the honest hotel next door that quotes $244 all in. The FTC studied this in 2017 and named it plainly, drip pricing, built to make comparison harder and the cheap looking room win.
+
+The second is commissions. When you book through an online travel site, the hotel pays that site a cut of the room rate, typically 15 to 25 percent. For years the resort fee sat outside the room rate, collected at the front desk, so the hotel kept all of it and paid commission on none of it. The fee was a way to move money out of the commissionable column. That loophole is closing now, Booking.com has started charging commission on fees too, but the habit is set.
+
+The third reason is the simplest. It is free money on a stay you already booked. An extra $40 a night across a few hundred rooms is a large, reliable revenue stream that never appears in the price you actually shopped.
+
+::infographic why-hotels-charge-resort-fees
+
+## What you actually pay, by city and brand
+
+When a hotel charges a resort fee, the US average lands around [$33 to $42 a night](https://www.nerdwallet.com/travel/learn/hotel-resort-fees), or about 11 percent of the room cost. Hotel resort fees typically run higher than that for luxury properties, and it clusters in a few familiar places.
+
+Las Vegas is the capital. Most Strip hotels run $35 to $55 a night before tax, with the luxury properties MGM Grand, Aria, and Caesars Palace at or near the top around $54 to $55. [Hawaii](/blog/where-to-stay-in-maui) holds the single highest published fees, the Hilton Hawaiian Village in [Waikiki](/blog/where-to-stay-in-oahu) at $59 a night, the Royal Hawaiian at $52, the Hyatt Regency Waikiki at $49. New York runs $30 to $50 and up. The most extreme one we found, a Ritz Carlton Reserve in Puerto Rico, tops $100 a day.
+
+By brand, when a fee is charged, Marriott averages the most at about $50, then Hyatt near $34, Hilton near $33, and Wyndham lowest near $25. The lesson is that the fee tracks the brand and the city more than the actual amenities, which is another way of saying **it is a revenue number, not a cost.**
+
+::infographic resort-fees-by-place
+
+## The new FTC rule, and what it does not do
+
+Here is the part that changed. On May 12, 2025 the [FTC Rule on Unfair or Deceptive Fees](https://www.ftc.gov/news-events/news/press-releases/2025/05/ftc-rule-unfair-or-deceptive-fees-take-effect-may-12-2025), the one the press calls the junk fees rule, took effect. It makes it illegal for a hotel or a short term rental to advertise a price that leaves out a mandatory fee. The total price, fees included, has to be the most prominent number you see, before you reach checkout.
+
+The FTC's own example is clean. A room at $199 a night with a mandatory $39 resort fee must be advertised at the $238 total, not the $199. Hotels can still itemize the breakdown, they just cannot lead with the smaller number anymore. The penalty for hiding it runs up to $53,088 per violation, and the agency estimates the rule saves travelers more than $11 billion over a decade.
+
+Read the rule carefully, though, because **it bans hiding the fee, not the fee itself.** There is no cap on the amount and no requirement to drop it. A hotel can charge a $55 resort fee all day long, as long as it shows you the all in price first. Two things also still get added after the headline total, government taxes and any truly optional extras you choose to add. So the number you book at is more honest than it was, but it is still not always your final number at the desk.
+
+::infographic ftc-junk-fee-rule
+
+## The states that went first
+
+The federal rule did not appear from nowhere. State attorneys general spent years dragging the big chains toward honest pricing, one lawsuit at a time.
+
+Washington, DC sued Marriott back in 2019 over resort fees of $9 to $95 a night across at least 189 properties. Pennsylvania settled with Marriott in 2021, then fined the company $225,000 when it missed the deadline to show total prices on the first booking page. Nebraska reached settlements with Hilton, Marriott, Omni, and Choice in 2024. California's own all in pricing law took effect on July 1, 2024. And on the last day of 2025, Texas secured a $1.25 million settlement with Hyatt, the state's sixth deal over deceptive hotel pricing. The pattern across all of them is the same, **the states forced disclosure, not refunds.** They made the price honest going forward and mostly left the past alone.
+
+## How to avoid paying a resort fee
+
+The rule makes the fee visible. It does not make it vanish. These are the moves that actually avoid resort fees, ranked from most reliable to most situational.
+
+### Book an award stay at Hilton or Hyatt
+
+This is the cleanest one. **Hilton Honors and World of Hyatt both waive resort fees on award stays booked entirely with points, at every tier.** Hilton's terms say it outright, no resort fees on reward stays booked using all points. A points night at a fee charging Waikiki hotel can save you $50 or more a night on the fee alone. The catch is the brand. Marriott, IHG, Choice, and Accor all still charge the resort fee on points stays, and status does not change it, so confirm the program before you assume a free night is actually free.
+
+### Reach Hyatt Globalist elite status
+
+Points are not the only door. Hyatt's top tier, Globalist, waives resort and destination fees on regular cash stays, not just award nights. It is the only major hotel elite status that does. Marriott and IHG do not waive the fee at any tier, so chasing their status for this reason will not pay off.
+
+### Pick a hotel that does not charge one
+
+The surest way to skip a resort fee is to book a hotel that has none. A few groups bundle real amenities and charge nothing extra, Drury Hotels with its free breakfast and evening drinks, every Disney owned resort including Aulani in Hawaii, and the boutique Ovolo brand. Most select service hotels skip the fee too, the Hyatt Place and House, Holiday Inn Express, Hampton Inn, Courtyard, and Residence Inn end of the market. To check any specific hotel, [ResortFeeChecker](https://www.resortfeechecker.com/), a free site tracking more than 2,000 properties, lists the fee and what it supposedly covers before you book.
+
+### Dispute a fee for an amenity you could not use
+
+When the fee is already on the bill, your strongest ground is a service you were sold but could not get. If the pool was closed or the gym was dark, that is the amenity you paid for, undelivered. Ask politely at the front desk, then escalate to a manager, who actually has the authority to remove it. If the hotel refuses, you have a real backstop, a credit card chargeback for services not rendered. Under the Fair Credit Billing Act you have 60 days from the statement to submit a written dispute, with your booking confirmation and a dated photo of the closed amenity as evidence. One traveler did exactly this over an undisclosed $20 a night fee at a Las Vegas hotel and won when the hotel could not justify the charge.
+
+::infographic how-to-avoid-resort-fees
+
+## Vacation rentals run the same play
+
+Hotels did not invent the split price, and they are not the only ones running it. **The vacation rental cleaning fee is the same move in a different costume,** a mandatory charge bolted onto a nightly rate that looked cheaper without it. One analysis put the average cleaning fee around a quarter of the total price paid.
+
+The good news is that the same FTC rule covers short term rentals, and the platforms moved early. Airbnb made the all in total its global default on April 21, 2025, dropping the old toggle entirely, and Booking.com and Vrbo show the full price too. The fee is still there. You can just finally see it before you book, which was always the only thing travelers asked for.
+
+## Where this leaves you
+
+Resort fees are the textbook version of the trick we built this company to refuse. Take one honest price, saw it in half, advertise the small half, and spring the rest at the end. The FTC rule is a real win, it forces the all in number into the open. But it is a disclosure rule. The fee did not shrink, it just stopped hiding.
+
+Here is the line we will not cross. **A charge you cannot decline is not a fee, it is the price.** The honest move was always to print the full price, and it took a federal rule to make an industry do what a fair seller would have done on day one.
+
+We cannot make a hotel drop its resort fee, that number belongs to the hotel. What we can do is refuse to bury it. The price you see from us is the all in price, the hotel's rate plus its fees plus our one small flat fee, the same for every shopper, on every device, before you ever reach a checkout screen. No surveillance pricing, no hidden markup, no surprise at the desk. If you want the longer version of why two people can search the same room and see two different numbers, that is the whole story behind [surveillance pricing](/blog/surveillance-pricing).
+`,
+  },
+  {
     slug: "magazine-street-new-orleans",
     title: "Magazine Street New Orleans: Shopping, Dining & Where to Stay (2026)",
     seoTitle: "Magazine Street New Orleans Guide (2026)",
