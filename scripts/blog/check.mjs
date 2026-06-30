@@ -21,8 +21,11 @@ function run(label, cmd) {
 run("ai-slop · blog posts", "node scripts/blog/ai-slop-check.mjs --all");
 // 2) Claims integrity (no fake reviews / ratings / price overclaims in authored copy)
 run("claims-integrity", "node scripts/blog/claims-check.mjs");
-// 3) Prose style (owner voice: no dashes, no colons/semicolons in prose, no contractions — spelled out)
-run("prose-style", "node scripts/blog/style-clean.mjs");
+// 3) Prose style (owner voice: no dashes, no colons/semicolons in prose, no contractions). SHARED
+// engine now (the local copy had drifted) so the rule is IDENTICAL to HP. (2026-06-29)
+run("prose-style", "node ../blog-system/scripts/style-clean.mjs --all");
+// 3a) Infographics text — same human style (native-visual prose is customer-facing). UNIFORM with HP.
+run("prose-style · infographics", "node ../blog-system/scripts/style-clean.mjs --ig");
 // 3b) No duplicate slugs (silent route collision) — UNIFORM shared gate.
 run("dup-slugs", "node ../blog-system/scripts/check-dup-slugs.mjs");
 // 4) Structural HTML audit (JSON-LD BlogPosting+BreadcrumbList, canonical, img alt) — UNIFORM with HP. Build-gated.
