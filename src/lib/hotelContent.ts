@@ -20,8 +20,8 @@ const NAMED_ENTITIES: Record<string, string> = {
   amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ",
   eacute: "é", egrave: "è", agrave: "à", ccedil: "ç", ntilde: "ñ",
   uuml: "ü", ouml: "ö", auml: "ä", iexcl: "¡", iquest: "¿",
-  hellip: "…", mdash: "—", ndash: "–", rsquo: "’", lsquo: "‘",
-  rdquo: "”", ldquo: "“", deg: "°", trade: "™", reg: "®", copy: "©",
+  hellip: "…", mdash: "—", ndash: "–", rsquo: "\u2019", lsquo: "\u2018",
+  rdquo: "\u201d", ldquo: "\u201c", deg: "°", trade: "™", reg: "®", copy: "©",
 };
 function decodeEntities(s: string): string {
   return s.replace(/&(#x?[0-9a-f]+|[a-z]+);/gi, (m, code: string) => {

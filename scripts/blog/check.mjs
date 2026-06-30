@@ -4,6 +4,17 @@
 //   npm run check
 import { execSync } from "node:child_process";
 import fs from "node:fs";
+import path from "node:path";
+
+function walk(dir, exts, out = []) {
+  if (!fs.existsSync(dir)) return out;
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) walk(p, exts, out);
+    else if (exts.some((x) => e.name.endsWith(x)) && !e.name.endsWith(".d.ts")) out.push(p);
+  }
+  return out;
+}
 
 const steps = [];
 function run(label, cmd) {
@@ -19,6 +30,13 @@ function run(label, cmd) {
 
 // 1) AI-slop on every blog post (0 HARD tells to ship)
 run("ai-slop · blog posts", "node scripts/blog/ai-slop-check.mjs --all");
+// 1b) AI-slop on EVERY other prose-bearing source file (data + pages), one per file — UNIFORM with HP,
+// which sweeps content/*.ts + app/* the same way. (Added 2026-06-29 — TPC had been checking blog posts only.)
+const slopFiles = [
+  ...walk("src/lib", [".ts"]).filter((f) => !f.endsWith("posts.ts") && !f.endsWith("infographics.ts")),
+  ...walk("src/app", [".ts", ".tsx"]),
+];
+for (const f of slopFiles) run(`ai-slop · ${f}`, `node scripts/blog/ai-slop-check.mjs ${f}`);
 // 2) Claims integrity (no fake reviews / ratings / price overclaims in authored copy)
 run("claims-integrity", "node scripts/blog/claims-check.mjs");
 // 3) Prose style (owner voice: no dashes, no colons/semicolons in prose, no contractions). SHARED

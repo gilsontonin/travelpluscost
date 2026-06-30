@@ -2,7 +2,7 @@
 // the readable city + name are for SEO + the breadcrumb. /hotels/{city} is reserved for the city hub.
 
 // NFKD splits accents off their base letter; the [^a-z0-9\s-] strip then removes the leftover marks,
-// so "Kōʻolina" -> "koolina" without a separate combining-marks pass.
+// so a diacritic name like Ko Olina collapses to "koolina" without a separate combining-marks pass.
 export function slugify(s: string | null | undefined): string {
   return (s || "")
     .toLowerCase()
