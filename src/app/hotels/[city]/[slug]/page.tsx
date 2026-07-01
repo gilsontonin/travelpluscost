@@ -116,6 +116,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
   const hotel = await getHotel(id);
   if (!hotel) notFound();
   const dir = await getDir(id);
+  if (dir?.kind === "rental") notFound(); // reclassified short-term rentals are purged from the site (reversible: flip kind back)
   // Self URL from the DIRECTORY name — matches the canonical + sitemap + internal links (the live
   // LiteAPI name drifts as listings get retitled, which would make these self-refs non-canonical).
   const selfHref = hotelHref({ id, name: dir?.name ?? hotel.name, city: dir?.city ?? hotel.city });
