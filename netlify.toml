@@ -10,6 +10,10 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  # Playwright is a devDependency for LOCAL screenshots (scripts/shoot.mjs) only — the deploy never
+  # launches a browser. Skip its ~1GB browser-binary download, which Netlify does NOT cache and so
+  # re-fetched on EVERY build (minutes of waste; risked the 15-min build timeout → failed deploys). (2026-07-01)
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

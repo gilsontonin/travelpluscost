@@ -9,8 +9,13 @@ import HotelRow from "@/components/HotelRow";
 
 const getState = cache((slug: string) => stateBySlug(slug));
 
+// On-demand ISR (return []): each of the 50 state hubs runs a Supabase top-hotels query, and a slow
+// one (e.g. Wisconsin — ORDER BY review_count with no covering index) hit Postgres statement_timeout
+// AT BUILD and killed the whole deploy (intermittently, as query speed varies — the cause of stuck
+// builds). Rendering on first request keeps that DB load off the build's critical path; pages still
+// cache and serve full HTML to crawlers. Real root fix: a composite index on the sort. (2026-07-01)
 export function generateStaticParams() {
-  return allStateSlugs().map((state) => ({ state }));
+  return [];
 }
 export const revalidate = 86400;
 
@@ -36,11 +41,15 @@ export default async function StateHubPage({ params }: { params: Promise<{ state
   if (!st) notFound();
 
   // Real top hotels in the state (live directory) — keeps the page substantial, not just a link list.
-  const rows = await hotelsByStates([st.code], 24);
-  const cards = rankHotels(rows)
-    .filter((h) => h.thumbnail)
-    .slice(0, 12)
-    .map(directoryToCard);
+  // Resilient: a slow state query (Postgres statement_timeout) must NEVER fail the render or the build,
+  // so fall back to the city list below rather than throwing.
+  let cards: ReturnType<typeof directoryToCard>[] = [];
+  try {
+    const rows = await hotelsByStates([st.code], 24);
+    cards = rankHotels(rows).filter((h) => h.thumbnail).slice(0, 12).map(directoryToCard);
+  } catch {
+    cards = [];
+  }
 
   const topNames = st.cities.slice(0, 3).map((c) => c.name);
   const topList =
