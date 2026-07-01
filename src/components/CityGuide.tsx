@@ -1,6 +1,8 @@
 import { getCityGuide, milesBetween, walkMinutes, type GuideAttraction } from "@/lib/cityGuides";
 
-type Props = { city: string | null | undefined; lat: number | null | undefined; lng: number | null | undefined; name: string };
+// The FULL city guide — used on the city hub page (/hotels/<city>). Pass lat/lng/name only when you
+// want per-origin distances (kept optional); the city page renders the plain, complete guide.
+type Props = { city: string | null | undefined; lat?: number | null; lng?: number | null; name?: string };
 
 // "Exploring <City>" — the evergreen city guide, rendered THROUGH this hotel's location so every
 // page is unique: attractions are sorted by real distance from the hotel and labelled with it.

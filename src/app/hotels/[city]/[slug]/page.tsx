@@ -28,7 +28,7 @@ import PriceTransparency from "@/components/PriceTransparency";
 import SimilarHotels from "@/components/SimilarHotels";
 import TrackView from "@/components/TrackView";
 import CityHotels from "@/components/CityHotels";
-import CityGuide from "@/components/CityGuide";
+import HotelAreaSnippet from "@/components/HotelAreaSnippet";
 import { nearbyLabel } from "@/lib/distance";
 import { REGIONS } from "@/lib/regions";
 import { stateName, stateSlugFromCode } from "@/lib/states";
@@ -356,7 +356,7 @@ export default async function HotelPage({ params }: { params: Promise<{ city: st
       <PriceTransparency name={hotel.name} />
 
       <Reviews hotel={hotel} />
-      <CityGuide city={hotel.city} lat={hotel.lat} lng={hotel.lng} name={hotel.name} />
+      <HotelAreaSnippet city={hotel.city} lat={hotel.lat} lng={hotel.lng} name={hotel.name} citySlug={slugify(hotel.city ?? "")} />
       <ExploreArea name={hotel.name} lat={hotel.lat} lng={hotel.lng} address={hotel.address} city={hotel.city} landmarks={landmarks} />
 
       <SimilarHotels id={hotel.id} name={hotel.name} />
