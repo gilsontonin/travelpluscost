@@ -13,7 +13,6 @@ import { getPrices } from "@/lib/rates";
 import CityResults from "@/components/CityResults";
 import HotelRail from "@/components/HotelRail";
 import ViatorPackages from "@/components/ViatorPackages";
-import CityGuide from "@/components/CityGuide";
 
 // Title-case a city slug for display when the directory has no row to read the real casing from.
 function cityFromSlug(slug: string): string {
@@ -320,10 +319,6 @@ export default async function CityHubPage({ params }: { params: Promise<{ city: 
           seeAllHref={searchHref}
         />
       ))}
-
-      {/* THE rich city guide (grounded on OSM + Wikipedia) — where to stay, attractions, neighborhoods,
-          things to do, when to visit. This is the hero content; hotel pages link UP to it. */}
-      <CityGuide city={city} />
 
       {/* things to do — real Viator activities near the city center (self-hides if none) */}
       {center ? <ViatorPackages lat={center.lat} lng={center.lng} /> : null}
